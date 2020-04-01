@@ -377,8 +377,8 @@ services:
       - web
       - backend
     ports:
-      - '80:80'
-      - '443:443'
+      - '4080:80'
+      - '40443:443'
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
