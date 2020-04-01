@@ -26,8 +26,12 @@ services:
       context: ../mongodb
     volumes:
       - mongo-data:/data/db
+      - ../mongodb/initdb.d/:/docker-entrypoint-initdb.d/
     networks:
       - backend
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
     restart: always
     logging: *default-logging
 
