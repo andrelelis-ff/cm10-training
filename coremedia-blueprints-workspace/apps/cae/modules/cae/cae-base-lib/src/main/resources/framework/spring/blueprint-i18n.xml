@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <description>
+    Internationalization (i18n) features
+  </description>
+
+  <import resource="classpath:/com/coremedia/cae/handler-services.xml"/>
+  <import resource="classpath:/com/coremedia/cache/cache-services.xml"/>
+  <import resource="classpath:/com/coremedia/cap/multisite/multisite-services.xml"/>
+
+  <context:component-scan base-package="com.coremedia.blueprint.localization.configuration" />
+  <context:component-scan base-package="com.coremedia.blueprint.coderesources" />
+  <context:annotation-config />
+
+<!--
+  Activate this and set it as pageResourceBundleFactory alias only if you keep
+  your resource bundles mixed with the linked settings, rather than moving
+  them to the new resourceBundles property.
+
+  <bean id="settingsPageResourceBundleFactory" class="com.coremedia.blueprint.cae.web.i18n.SettingsPageResourceBundleFactory">
+    <description>
+      Settings based ResourceBundleFactory
+    </description>
+    <property name="cache" ref="cache"/>
+  </bean>
+-->
+
+  <bean id="linklistPageResourceBundleFactory" class="com.coremedia.blueprint.cae.web.i18n.LinklistPageResourceBundleFactory">
+    <description>
+      Linklist based ResourceBundleFactory
+    </description>
+    <property name="cache" ref="cache"/>
+    <property name="useLocalresources" value="${cae.use.local.resources:false}"/>
+    <property name="sitesService" ref="sitesService"/>
+    <property name="localizationService" ref="localizationService"/>
+    <property name="themeService" ref="themeService"/>
+  </bean>
+  <alias name="linklistPageResourceBundleFactory" alias="pageResourceBundleFactory"/>
+
+
+  <bean id="pageResourceBundlesInterceptor" class="com.coremedia.blueprint.cae.web.i18n.ResourceBundleInterceptor">
+    <description>
+      Makes a Page's resource bundle available to &lt;spring:message&gt; and &lt;fmt:message&gt;
+    </description>
+    <property name="resourceBundleFactory" ref="pageResourceBundleFactory"/>
+  </bean>
+
+  <customize:append id="i18nInterceptors" bean="handlerInterceptors">
+    <description>
+      Registers pageResourceBundlesInterceptor. This interceptor's #postHandle method should be invoked
+      quite early so that other interceptors can make use of the registered message source. This
+      can be achieved by putting the other interceptors IN FRONT of this one, i.e by prepending them.
+
+      Depends on the UserVariantHandlerInterceptor.
+    </description>
+    <list>
+      <ref bean="pageResourceBundlesInterceptor"/>
+    </list>
+  </customize:append>
+
+  <bean id="messageSource" class="com.coremedia.blueprint.cae.web.i18n.RequestMessageSource">
+    <description>
+      A special message source that is able to delegate to a message source that is stored in the current request.
+    </description>
+    <!--
+     A parent message source can be injected here like this.
+    <property name="parentMessageSource" ref="yourMessageSource"/>
+    -->
+  </bean>
+
+  <bean id="localeResolver" class="com.coremedia.blueprint.cae.web.i18n.RequestLocaleResolver">
+    <description>
+      Enables modifying the current locale per request, but does not store cookie or create a session.
+    </description>
+  </bean>
+
+</beans>

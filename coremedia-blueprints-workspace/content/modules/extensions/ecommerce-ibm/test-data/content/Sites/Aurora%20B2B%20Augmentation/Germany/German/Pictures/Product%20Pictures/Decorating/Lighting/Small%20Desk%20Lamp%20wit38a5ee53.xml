@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Pictures/Product Pictures/Decorating/Lighting" name="Small Desk Lamp with White Shade Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Pictures/Product%20Pictures/Decorating/Lighting/Small%20Desk%20Le2c9c5d0.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Decorating/Lighting/Small%20Desk%20Lamp%20with%20White%20Shade%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0.2932098765432099</StringProperty>
+<StringProperty Name="y1">0.20164609053497942</StringProperty>
+<StringProperty Name="x2">0.7067901234567902</StringProperty>
+<StringProperty Name="y2">0.7777777777777778</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=903;y=378;width=694;height=1080</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=849;y=378;width=810;height=1080</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=733;y=401;width=1034;height=1034</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=733;y=532;width=1034;height=779</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=394;y=355;width=1728;height=972</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=340;y=540;width=1836;height=733</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=610;width=2500;height=625</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.3611111111111111;y1=0.20164609053497942;x2=0.6388888888888888;y2=0.7777777777777778</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.3395061728395062;y1=0.20164609053497942;x2=0.6635802469135802;y2=0.7777777777777778</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.2932098765432099;y1=0.2139917695473251;x2=0.7067901234567902;y2=0.7654320987654321</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.2932098765432099;y1=0.2839506172839506;x2=0.7067901234567902;y2=0.6995884773662552</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.1574074074074074;y1=0.18930041152263374;x2=0.8487654320987654;y2=0.7078189300411523</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0.13580246913580246;y1=0.2880658436213992;x2=0.8703703703703703;y2=0.6790123456790124</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.32510288065843623;x2=1;y2=0.6584362139917695</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_HLG028_280118</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Small Desk Lamp with White Shade</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Small Desk Lamp with White Shade</alt>
+<copyright>Sararwut Jaimassiri / Shutterstock 314466050</copyright>
+<dataUrl></dataUrl>
+<width>2500</width>
+<height>1875</height>
+<data md5="9c1b59a824b88b68a6f6125da01a0780" size="165911" href="../../../../../../../../__blob/9c1b59a824b88b68a6f6125da01a0780.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

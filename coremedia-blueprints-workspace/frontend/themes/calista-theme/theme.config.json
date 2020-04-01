@@ -1,0 +1,26 @@
+{
+  "name": "calista",
+  "description": "The Calista Theme demonstrates the hybrid e-Commerce solution with HCL Commerce and the Aurora B2C store examples.",
+  "thumbnail": "theme.jpg",
+
+  "scripts": [
+    {
+      "type": "webpack",
+      "src": "src/js/calista.js",
+      "inHead": true
+    }
+  ],
+  "styles": [
+    {
+      "type": "webpack",
+      "src": "src/sass/calista.scss"
+    }
+  ],
+  "l10n": {
+    "bundleNames": [
+      "Calista",
+      "SharedExample",
+      "Bricks"
+    ]
+  }
+}

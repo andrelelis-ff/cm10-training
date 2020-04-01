@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMALXPageList folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial" name="Most Viewed" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Most Viewed</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<maxLength>3</maxLength>
+<timeRange>30</timeRange>
+<analyticsProvider>googleAnalytics</analyticsProvider>
+<documentType>CMArticle</documentType>
+<baseChannel>
+<link href="../Navigation/Hybris%20Apparel%20UK.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Navigation/Hybris%20Apparel%20UK"/>
+</baseChannel>
+<defaultContent>
+<link href="Content/Snow/Is%20Speed%20Riding%20Dangerous%3F.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Is%20Speed%20Riding%20Dangerous%3F"/>
+<link href="Content/Snow/Speed%20Riding%20Challenge%20in%20Chamonix.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Speed%20Riding%20Challenge%20in%20Chamonix"/>
+</defaultContent>
+</CMALXPageList>

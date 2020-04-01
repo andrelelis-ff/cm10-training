@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./Germany/German/Editorial/Homepage/Company/About" name="Management Board Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Homepage/Company/About/Management%20Board%20Article.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Company/About/Management%20Board%20Article"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Meet the Board</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Vorstand</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Führende Chef Corp. to Excellence </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Der Vorstand leitet das Unternehmen in eigener Verantwortung und arbeitet eng mit den Gesellschafterausschuss und Aufsichtsrat zum Wohle des Unternehmens. </p> <p><br/></p> <p class="p--heading-3"> Christian Margolis - CEO </p> <p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Assets/Pictures/Management%20Board/Portraits/Christian%20Margolis%20%28CEO%225e83354.xml#data" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Management%20Board/Portraits/Christian%20Margolis%20%28CEO%29%20Picture"/> Born in 1971 in Ottawa, Canada, Christian Margolis became a member of our Management Board on April 1, 2008. He has been with Chef Corp. since 2002, when he was the head of the engineering department.</p> <p> Mr. Margolis hat sich das Geschäft an der Yale University studierte. Von 1999 - 2002 Produktmanager bei Giganto Corp. war er </p> <p class="p--heading-3"> Jack Beneke - CFO </p> <p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Assets/Pictures/Management%20Board/Portraits/Jack%20Beneke%20%28CFO%29%20Picture.xml#data" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Management%20Board/Portraits/Jack%20Beneke%20%28CFO%29%20Picture"/>Born in 1960 in Albuquerque, New Mexico, Jack Beneke joined the Management Board on July 1, 2009. Mr. Beneke came to Chef Corp. from Wells Fargo, where he was state manager.</p> <p> Mr. Margolis hat sich das Geschäft an der Princeton University untersucht. </p> <p class="p--heading-3"> Gretchen Cantillo - VP Marketing </p> <p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Assets/Pictures/Management%20Board/Portraits/Gretchen%20Cantillo%20%28VP%20M1da65e6e.xml#data" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Management%20Board/Portraits/Gretchen%20Cantillo%20%28VP%20Marketing%29%20Picture"/>Born in 1981 in Chicago, Illinois, Gretchen Cantillo became a member of our Management Board on January 1, 2014 as the youngest member in the Chef Corp. history. She has been with Chef Corp. since 2012, when she was a team lead in the marketing department.</p> <p> Ms. Cantillo hat Marketing an der Columbia University, wo sie entdeckt wurde und durch unsere Personalabteilung angestellt sucht. </p> <p class="p--heading-3"> Sonya Schwartz - VP Human Resources </p> <p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Assets/Pictures/Management%20Board/Portraits/Sonya%20Schwartz%20%28VP%20HR%225e83354.xml#data" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Management%20Board/Portraits/Sonya%20Schwartz%20%28VP%20HR%29%20Picture"/>Born in 1973 in Sacramento, Californoa, Sonya Schwartz became a member of our Management Board on November 1, 2011. Ms. Schwartz joined the company from Yum! Brands, where she was a regional human resources manager.</p> <p> Ms. Cantillo hat Psychologie an der Dartmouth Universität studiert. </p> </div></detailText>
+<pictures>
+<link href="../../../Assets/Pictures/Management%20Board/Group%20Shots/Management%20Board%20Close-b1068356.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Management%20Board/Group%20Shots/Management%20Board%20Close-Up%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

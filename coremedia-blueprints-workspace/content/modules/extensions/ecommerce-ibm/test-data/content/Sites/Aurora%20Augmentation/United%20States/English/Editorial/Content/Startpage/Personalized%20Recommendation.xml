@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSelectionRules folder="/Sites/Aurora Augmentation/United States/English/Editorial/Content/Startpage" name="Personalized Recommendation" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<rules grammarName="coremedia-selectionrules-1.0"><rules version="1.0" xmlns="http://www.coremedia.com/2010/selectionrules" xmlns:xlink="http://www.w3.org/1999/xlink">select <content xlink:href="coremedia:///cap/resources/Men%20Homepage%20Teaser.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Startpage/Men%20Homepage%20Teaser"/> if commerce.usersegments#"ibm:///catalog/segment/8000000000000001004" and commerce.usersegments#"ibm:///catalog/segment/8000000000000001007"; select <content xlink:href="coremedia:///cap/resources/Women%20Homepage%20Teaser.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Startpage/Women%20Homepage%20Teaser"/> if commerce.usersegments#"ibm:///catalog/segment/8000000000000001005" and commerce.usersegments#"ibm:///catalog/segment/8000000000000001007"; select <content xlink:href="coremedia:///cap/resources/Men%27s%20Category.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Startpage/Men%27s%20Category"/> if commerce.usersegments#"ibm:///catalog/segment/8000000000000001004" and commerce.usersegments#"ibm:///catalog/segment/8000000000000001006"; select <content xlink:href="coremedia:///cap/resources/Women%27s%20Category.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Startpage/Women%27s%20Category"/> if commerce.usersegments#"ibm:///catalog/segment/8000000000000001005" and commerce.usersegments#"ibm:///catalog/segment/8000000000000001006"</rules></rules>
+<defaultContent>
+<link href="../Fashion/Editorial%20Blog%20Teaser.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Editorial%20Blog%20Teaser"/>
+</defaultContent>
+</CMSelectionRules>

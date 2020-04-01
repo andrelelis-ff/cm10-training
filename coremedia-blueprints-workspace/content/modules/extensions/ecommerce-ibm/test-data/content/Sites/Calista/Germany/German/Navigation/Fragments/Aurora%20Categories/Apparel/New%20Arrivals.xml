@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Calista/Germany/German/Navigation/Fragments/Aurora Categories/Apparel" name="New Arrivals" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Navigation/Fragments/Aurora%20Categories/Apparel/New%20Arrivals.xml" path="/Sites/Calista/United%20States/English/Navigation/Fragments/Aurora%20Categories/Apparel/New%20Arrivals"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Neu</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../../../Editorial/Content/Startpage/Gender%20Specific%20Teaser.xml" path="/Sites/Calista/Germany/German/Editorial/Content/Startpage/Gender%20Specific%20Teaser"/>
+<link href="Elegant%20Women%20List.xml" path="/Sites/Calista/Germany/German/Navigation/Fragments/Aurora%20Categories/Apparel/Elegant%20Women%20List"/>
+<link href="Elegant%20Men%20List.xml" path="/Sites/Calista/Germany/German/Navigation/Fragments/Aurora%20Categories/Apparel/Elegant%20Men%20List"/>
+</items>
+</CMCollection>

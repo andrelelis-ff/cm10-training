@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd"
+       default-init-method="validateConfig">
+
+  <import resource="classpath:/framework/spring/personalization-plugin/personalization-context.xml"/>
+
+  <!-- ===============================================================
+
+  Special handling for the test user context URL parameters
+
+ ================================================================ -->
+
+  <customize:append id="personalizationLinkTransformerCustomizer" bean="linkTransformers">
+    <list>
+      <bean class="com.coremedia.blueprint.personalization.preview.PersonaParameterAppendingLinkTransformer">
+        <description>
+          Creates a CAE LinkTransformer that rewrites all generated links
+          and adds the request parameter for the test user context.
+          This ensures that navigating in the preview within the editor does
+          not loose the selected test context after clicking a hyperlink.
+        </description>
+      </bean>
+    </list>
+  </customize:append>
+
+</beans>

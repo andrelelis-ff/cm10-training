@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Pictures/Management Board/Portraits" name="Sonya Schwartz (VP HR) Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=9;y=11;width=783;height=783</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=6;y=73;width=785;height=588</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=14;y=170;width=774;height=435</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.01160541586073501;y1=0.013539651837524178;x2=0.9903288201160542;y2=0.9922630560928434</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.007736943907156673;y1=0.09090909090909091;x2=0.988394584139265;y2=0.8259187620889749</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.017408123791102514;y1=0.2127659574468085;x2=0.9845261121856866;y2=0.7562862669245648</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Sonya Schwartz (VP HR)</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Portrait Photo of Sonya Schwartz (VP HR)</alt>
+<copyright>Andrey_Popov/Shutterstock 211325935</copyright>
+<dataUrl></dataUrl>
+<width>800</width>
+<height>800</height>
+<data md5="030202dffb37c212e9e4ce8c7fb35c9e" size="331909" href="../../../../../../../../../__blob/030202dffb37c212e9e4ce8c7fb35c9e.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

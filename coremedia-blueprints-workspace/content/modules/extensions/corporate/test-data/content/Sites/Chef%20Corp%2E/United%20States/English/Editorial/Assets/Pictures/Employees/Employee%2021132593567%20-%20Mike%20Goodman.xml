@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Pictures/Employees" name="Employee 21132593567 - Mike Goodman" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0.020151133501259445</StringProperty>
+<StringProperty Name="y1">0.015113350125944584</StringProperty>
+<StringProperty Name="x2">0.9848866498740554</StringProperty>
+<StringProperty Name="y2">0.9899244332493703</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=15;y=20;width=772;height=772</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=15;y=144;width=771;height=578</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=8;y=258;width=784;height=441</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=150;y=13;width=520;height=780</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=15;y=288;width=774;height=290</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.020151133501259445;y1=0.020151133501259445;x2=0.9848866498740554;y2=0.9848866498740554</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.020151133501259445;y1=0.14105793450881612;x2=0.9848866498740554;y2=0.8639798488664987</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.010075566750629723;y1=0.3224181360201511;x2=0.9899244332493703;y2=0.8740554156171285</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.5094637223974764</StringProperty>
+<StringProperty Name="y">0.5378548895899053</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Mike Goodman</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Portrait of Mike Goodman</alt>
+<copyright>Andrey_Popov/Shutterstock 211325935</copyright>
+<dataUrl></dataUrl>
+<width>800</width>
+<height>800</height>
+<data md5="24052bb4b3f5212e258c633d7356b3d1" size="518138" href="../../../../../../../../__blob/24052bb4b3f5212e258c633d7356b3d1.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

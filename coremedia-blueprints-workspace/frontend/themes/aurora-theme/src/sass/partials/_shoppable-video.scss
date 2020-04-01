@@ -1,0 +1,12 @@
+.#{$cm-shoppable-prefix}{
+  &__teaser {
+    color: #373737;
+    border: 1px solid #CCCBCB;
+  }
+
+  &-teaser {
+    &__text {
+      font-size: 14px;
+    }
+  }
+}

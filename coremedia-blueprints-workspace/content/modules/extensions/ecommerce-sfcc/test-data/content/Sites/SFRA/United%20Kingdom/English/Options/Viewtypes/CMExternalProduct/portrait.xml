@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/SFRA/United Kingdom/English/Options/Viewtypes/CMExternalProduct" name="portrait" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<description>Displays a collection in a tiles layout (portrait).</description>
+<layout>portrait</layout>
+</CMViewtype>

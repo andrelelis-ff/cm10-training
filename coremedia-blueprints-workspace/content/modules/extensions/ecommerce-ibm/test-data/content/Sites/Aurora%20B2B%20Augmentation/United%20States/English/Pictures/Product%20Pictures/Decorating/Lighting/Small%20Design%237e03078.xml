@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Decorating/Lighting" name="Small Design Table Lamp Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0.24691358024691357</StringProperty>
+<StringProperty Name="y1">0.29723502304147464</StringProperty>
+<StringProperty Name="x2">0.7561728395061729</StringProperty>
+<StringProperty Name="y2">0.7142857142857143</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=599;y=743;width=673;height=1043</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=547;y=743;width=783;height=1043</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=460;y=789;width=950;height=951</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=414;y=818;width=1082;height=813</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=242;y=818;width=1405;height=789</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=876;width=1865;height=749</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=1060;width=1865;height=467</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.32098765432098764;y1=0.29723502304147464;x2=0.6820987654320988;y2=0.7142857142857143</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2932098765432099;y1=0.29723502304147464;x2=0.7129629629629629;y2=0.7142857142857143</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.24691358024691357;y1=0.315668202764977;x2=0.7561728395061729;y2=0.695852534562212</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.2222222222222222;y1=0.3271889400921659;x2=0.8024691358024691;y2=0.652073732718894</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.12962962962962962;y1=0.3271889400921659;x2=0.8827160493827161;y2=0.6428571428571429</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.35023041474654376;x2=1;y2=0.6497695852534562</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.423963133640553;x2=1;y2=0.6105990783410138</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_HLG028_280110</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Small Design Table Lamp</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Small Design Table Lamp</alt>
+<copyright>Dmitri Mikitenko / Shutterstock 40291519</copyright>
+<dataUrl></dataUrl>
+<width>1865</width>
+<height>2501</height>
+<data md5="412eef540dffccfd65322127d68f0733" size="211723" href="../../../../../../../../__blob/412eef540dffccfd65322127d68f0733.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

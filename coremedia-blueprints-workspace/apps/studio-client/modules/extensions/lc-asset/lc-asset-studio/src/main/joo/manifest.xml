@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.livecontext.asset.studio.LivecontextAssetStudioPlugin"/>
+  <component class="com.coremedia.livecontext.asset.studio.library.LivecontextAssetLibraryPlugin"/>
+  <component class="com.coremedia.livecontext.asset.studio.action.InheritReferencesAction"/>
+  <component class="com.coremedia.livecontext.asset.studio.action.SearchProductPicturesAction"/>
+  <component class="com.coremedia.livecontext.asset.studio.components.CommerceReferencesForm"/>
+  <component class="com.coremedia.livecontext.asset.studio.components.InheritReferencesButton"/>
+</componentPackage>

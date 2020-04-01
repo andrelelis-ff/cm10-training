@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Pictures/Microsites/Guide to Perfect Lighting" name="A Modern Home Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/A%20Modern%2ce2ec8ca.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/A%20Modern%20Home%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=944;y=0;width=877;height=1363</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=851;y=0;width=1021;height=1363</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=686;y=0;width=1362;height=1363</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=129;y=0;width=1816;height=1363</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=5;width=2048;height=1151</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=165;width=2048;height=821</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=62;width=2048;height=511</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.4609571788413098;y1=0;x2=0.889168765743073;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.4156171284634761;y1=0;x2=0.9143576826196473;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.3350125944584383;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.06297229219143577;y1=0;x2=0.9496221662468514;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.003787878787878788;x2=1;y2=0.8484848484848485</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.12121212121212122;x2=1;y2=0.7234848484848485</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.045454545454545456;x2=1;y2=0.42045454545454547</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>A Modern Home</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>A Modern Home</alt>
+<copyright>Det-anan/Shutterstock 140911372</copyright>
+<dataUrl></dataUrl>
+<width>2048</width>
+<height>1363</height>
+<data md5="1aa9ecad38957a75bf3507b595f5d9c8" size="345029" href="../../../../../../../__blob/1aa9ecad38957a75bf3507b595f5d9c8.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

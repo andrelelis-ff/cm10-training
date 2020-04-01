@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Hybris Apparel/Germany/German/Navigation/Snowboard Newsletter" name="Snowboard Newsletter" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Navigation/Snowboard%20Newsletter/Snowboard%20Newsletter.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Navigation/Snowboard%20Newsletter/Snowboard%20Newsletter"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="pricesInImage">false</BooleanProperty>
+<StringProperty Name="fromName">Hybris Shop</StringProperty>
+<StringProperty Name="fromAddress">testmail@silverpop.com</StringProperty>
+<StringProperty Name="replyTo">testmail@silverpop.com</StringProperty>
+<StringProperty Name="mailingId">558576</StringProperty>
+<StringProperty Name="lastModified">09/09/16 05:55 AM</StringProperty>
+<StringProperty Name="name">Snowboard Newsletter</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>snowboard-newsletter</segment>
+<title>Snowboard Newsletter</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Snowboard.xml" path="/Settings/Taxonomies/Subject/Snowboard"/>
+<link href="../../../../../../Settings/Taxonomies/Subject/News.xml" path="/Settings/Taxonomies/Subject/News"/>
+<link href="../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Lieber %% Vorname %%, </p> <p/> <p> Hier ist es: die größten Nachrichten aus der Snowboardwelt. Kommen Sie herein und erfahren Sie mehr über aktuelle Trends und coole Produkte. </p> </div></teaserText>
+<pictures>
+<link href="../../Pictures/CM%20Action%20Goggles%2006.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/CM%20Action%20Goggles%2006"/>
+</pictures>
+<notSearchable>1</notSearchable>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<hidden>1</hidden>
+<hiddenInSitemap>0</hiddenInSitemap>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Layouts/PagegridNavigation.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Layouts/PagegridNavigation"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Snow/Action%20Goggle%20Microsite%20Content/Call%20To%20Action%20Article.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Snow/Action%20Goggle%20Microsite%20Content/Call%20To%20Action%20Article"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Snow/Speed%20Riding%20with%20your%20Snowboard.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Snow/Speed%20Riding%20with%20your%20Snowboard"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Products/Goggles/CM%20Action%20Goggles%20-%20Augmented.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Products/Goggles/CM%20Action%20Goggles%20-%20Augmented"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Snow/Speed%20Riding%20Challenge%20in%20Chamonix.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Snow/Speed%20Riding%20Challenge%20in%20Chamonix"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Products/Bandana%20300515779.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Products/Bandana%20300515779"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../Options/Viewtypes/CMChannel/left-right.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Viewtypes/CMChannel/left-right"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

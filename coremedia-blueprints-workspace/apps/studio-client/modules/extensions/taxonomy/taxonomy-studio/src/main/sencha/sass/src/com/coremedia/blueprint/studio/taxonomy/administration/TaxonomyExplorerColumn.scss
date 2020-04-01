@@ -1,0 +1,30 @@
+@if $cm-include-taxonomy-explorer-column {
+
+  .cm-column-entry {
+    font-weight: bold;
+    white-space:pre-wrap;
+    word-wrap:break-word;
+
+    &--empty {
+      font-style: italic;
+    }
+
+    &--leaf {
+      font-weight: normal;
+    }
+
+    &--marked-for-copy {
+      color: $cm-grey-5;
+
+      .#{$prefix}grid-item-selected & {
+        color: $cm-grey-1;
+      }
+    }
+
+    &--not-extendable {
+      color: $cm-grey-0;
+      font-weight: normal;
+      font-style: italic;
+    }
+  }
+}

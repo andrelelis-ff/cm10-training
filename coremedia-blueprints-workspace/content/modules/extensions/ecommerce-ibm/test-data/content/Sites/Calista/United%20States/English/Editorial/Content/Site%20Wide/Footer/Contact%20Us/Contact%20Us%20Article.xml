@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Calista/United States/English/Editorial/Content/Site Wide/Footer/Contact Us" name="Contact Us Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>contact-us</segment>
+<title>Contact Us</title>
+<htmlTitle></htmlTitle>
+<keywords>CoreMedia contact</keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Contact Us</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2">Which innovation do you use to conquer the market?</p><p>Consult our technology experts. We will be pleased to help you.<br/>Contact us. Call the CoreMedia infoline at <a xlink:href="http://tel:+49-40-325587-587" xlink:show="replace" xlink:type="simple">+49-40-325 587-587</a></p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1">Which innovation do you use to conquer the market?</p><p>We are happy to hear from you and to discuss how our exciting digital experience solutions can help to accelerate your business.</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/Address%20USA%20Teaser.xml" cmexport:path="/Sites/Calista/United%20States/English/Editorial/Content/Site%20Wide/Footer/Contact%20Us/Address%20USA%20Teaser">USA Teaser</a></p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/Address%20Germany%20Teaser.xml" cmexport:path="/Sites/Calista/United%20States/English/Editorial/Content/Site%20Wide/Footer/Contact%20Us/Address%20Germany%20Teaser">Germany Teaser</a></p></div></detailText>
+<pictures>
+</pictures>
+<notSearchable>1</notSearchable>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

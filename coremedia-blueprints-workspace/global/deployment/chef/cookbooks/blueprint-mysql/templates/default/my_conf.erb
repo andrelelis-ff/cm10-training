@@ -1,0 +1,13 @@
+[mysqld]
+wait_timeout = 7200
+innodb_buffer_pool_size = <%= @innodb_buffer_pool_size_mb * 1024 * 1024 %>
+log-error = /var/log/mysql/mysql-error.log
+general-log = <%= @general_log ? '1' : '0' %>
+general_log_file = <%= @log_dir %>/mysql-general.log
+slow-query-log = <%= @slow_query_log ? '1' : '0' %>
+slow_query_log_file = <%= @log_dir %>/mysql-slowquery.log
+
+# avoid SSL Warning during startup
+skip_ssl
+
+default-time-zone = '<%= @timezone %>'

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./Germany/German/Editorial/Assets/Pictures/Products/ChefWave" name="ChefWave HD Small Fryer 1 Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../United%20States/English/Editorial/Assets/Pictures/Products/ChefWave/ChefWave%20HD%20Small%20Fryer%201fefc665b.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Products/ChefWave/ChefWave%20HD%20Small%20Fryer%201%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=123;y=0;width=1367;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=111;y=0;width=1822;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=214;width=2048;height=1151</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=574;y=0;width=910;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=420;width=2048;height=768</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.059961315280464215;y1=0;x2=0.7272727272727273;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.05415860735009671;y1=0;x2=0.9439071566731141;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.1565217391304348;x2=1;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.5010504201680672</StringProperty>
+<StringProperty Name="y">0.5851735015772871</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>ChefWave ™ HD Kleine Fryer</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Bild der ChefWave ™ HD Kleine Fryer</alt>
+<copyright>Kondor83 / Shutterstock 81245353</copyright>
+<dataUrl></dataUrl>
+<width>2048</width>
+<height>1365</height>
+<data md5="58d669869d2dc729e6b69d16c22fd875" size="369938" href="../../../../../../../../../__blob/58d669869d2dc729e6b69d16c22fd875.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

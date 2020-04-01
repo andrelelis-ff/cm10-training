@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+
+  <!--
+    Test content for the MergedCodeViewTests
+  -->
+  <content>
+    <folder id="1" name="">
+      <folder id="11" name="Sites">
+        <folder id="111" name="Media">
+          <folder id="1111" name="Navigation">
+            <document id="4" name="Media" type="CMChannel">
+              <!--
+                The Root Channel of the Media site.
+                Contains js and css.
+              -->
+              <version number="1">
+                <stringProperty name="segment" value="media"/>
+                <linkProperty name="css">
+                  <link id="30"/>
+                </linkProperty>
+                <linkProperty name="javaScript">
+                  <link id="40"/>
+                </linkProperty>
+                <!--excludes are defined here-->
+                <markupProperty name="localSettings" url="4settings.xml" grammar="coremedia-struct-2008"/>
+              </version>
+            </document>
+          </folder>
+        </folder>
+      </folder>
+
+      <!--
+        js and css to test
+      -->
+      <folder id="15" name="Themes">
+        <folder id="153" name="css">
+          <document id="30" type="CMCSS" name="root.css">
+            <version number="1">
+              <markupProperty name="code" url="30code.xml" grammar="coremedia-richtext-1.0"/>
+              <stringProperty name="description" value="CSS root document"/>
+              <linkProperty name="include">
+                <link id="32"/>
+                <link id="40"/>
+              </linkProperty>
+              <intProperty name="disableCompress" value="0"/>
+            </version>
+          </document>
+          <document id="32" type="CMCSS" name="included.css">
+            <version number="1">
+              <markupProperty name="code" url="32code.xml" grammar="coremedia-richtext-1.0"/>
+              <stringProperty name="description" value="CSS included through linklist"/>
+              <linkProperty name="include">
+                <link id="34"/>
+                <link id="36"/>
+                <link id="38"/>
+              </linkProperty>
+              <intProperty name="disableCompress" value="0"/>
+            </version>
+          </document>
+          <document id="34" type="CMCSS" name="included-included.css">
+            <version number="1">
+              <markupProperty name="code" url="34code.xml" grammar="coremedia-richtext-1.0"/>
+              <stringProperty name="description" value="CSS included through linklist or already included document"/>
+              <intProperty name="disableCompress" value="0"/>
+            </version>
+          </document>
+          <document id="36" type="CMCSS" name="ieexpression.css">
+            <version number="1">
+              <!--never used because this document is excluded-->
+              <!--<markupProperty name="code" url="36code.xml" grammar="coremedia-richtext-1.0"/>-->
+              <stringProperty name="description" value="excluded CSS document because it's marked as IE only"/>
+              <stringProperty name="ieExpression" value="excluded CSS document because it's marked as IE only"/>
+              <intProperty name="disableCompress" value="0"/>
+            </version>
+          </document>
+          <document id="38" type="CMCSS" name="excluded.css">
+            <version number="1">
+              <!--never used because this document is excluded, see settings of CMChannel-->
+              <!--<markupProperty name="code" url="38code.xml" grammar="coremedia-richtext-1.0"/>-->
+              <stringProperty name="description" value="excluded CSS document because it's marked excluded by type"/>
+              <intProperty name="disableCompress" value="0"/>
+            </version>
+          </document>
+          <document id="40" type="CMCSS" name="external-link.css">
+            <version number="1">
+              <!--never used because this document is excluded, see settings of CMChannel-->
+              <markupProperty name="code" url="40code.xml" grammar="coremedia-richtext-1.0"/>
+              <stringProperty name="description" value="excluded CSS document because it's marked excluded by type"/>
+              <stringProperty name="dataUrl" value="excluded CSS document because it's got a dataUrl"/>
+              <intProperty name="disableCompress" value="0"/>
+            </version>
+          </document>
+        </folder>
+      </folder>
+
+      <folder id="153" name="js">
+        <document id="50" type="CMJavaScript" name="not-merged.js">
+          <version number="1">
+            <markupProperty name="code" url="50code.xml" grammar="coremedia-richtext-1.0"/>
+            <stringProperty name="description" value="not yet merged JavaScript"/>
+            <intProperty name="disableCompress" value="0"/>
+          </version>
+        </document>
+      </folder>
+    </folder>
+  </content>
+</contentRepository>

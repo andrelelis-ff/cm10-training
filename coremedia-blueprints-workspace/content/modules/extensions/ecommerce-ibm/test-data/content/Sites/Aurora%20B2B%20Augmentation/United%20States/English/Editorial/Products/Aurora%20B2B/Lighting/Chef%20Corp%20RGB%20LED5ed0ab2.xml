@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Products/Aurora B2B/Lighting" name="Chef Corp RGB LED Strip Product Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>ChefSupply RGB LED Strip</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></teaserText>
+<pictures>
+<link href="../../../../Pictures/Product%20Pictures/Lighting/Chef%20Corp%20RGB%20LED%20S36bd3752.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Lighting/Chef%20Corp%20RGB%20LED%20Strip%20Main%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>ibm:///catalog/product/ChefSupply_RGB_LED_Strip</externalId>
+</CMProductTeaser>

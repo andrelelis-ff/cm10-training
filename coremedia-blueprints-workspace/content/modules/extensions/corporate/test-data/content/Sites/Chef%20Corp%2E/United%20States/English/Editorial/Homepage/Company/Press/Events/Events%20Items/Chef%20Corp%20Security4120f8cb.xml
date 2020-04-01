@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./United States/English/Editorial/Homepage/Company/Press/Events/Events Items" name="Chef Corp Security Audit Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<extDisplayedDate format="dd.MM.yyyy HH:mm:ss Z">10.10.2018 00:00:00 +0200</extDisplayedDate>
+<segment></segment>
+<title>Chef Corp. Security Audit</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Events.xml" path="/Settings/Taxonomies/Subject/Events"/>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Press.xml" path="/Settings/Taxonomies/Subject/Press"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Is your kitchen safe? Find out on June 23rd.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="align--left"><img alt="" class="float--left" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../../../Assets/Pictures/Events/Man%20with%20tie%20stuck%20in%20meat%20grind55ea3ec8.xml#data" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Events/Man%20with%20tie%20stuck%20in%20meat%20grinder%20Picture"/>Is your kitchen safe? Find out on June 23rd with the Chef Supply Security Audit Program that will help restaurant owners to provide a safe place to work for their kitchen and restaurant staff. The introductory meeting will take place at our research center in Wilmington, Delaware. We will introduce our guests to the basic security measures that every restaurant has to implement by law. We will then cover some advanced strategies that can help restaurants to remain efficient while being in accordance with the rules and regulations.</p><p class="align--left">Chef Corp. offers extensive security audits to all attendants. These audits have been developed in close collaboration with the OSHA and prepare restaurants for their local health inspector's scrutiny without the risk of penalization.</p><p class="align--left">Attendants of the kick-off meeting on June 23rd can take advantage of 10% lower audit rates!</p></div></detailText>
+<pictures>
+<link href="../../../../../Assets/Pictures/Events/Security%20Audit%20Picture.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Events/Security%20Audit%20Picture"/>
+<link href="../../../../../Assets/Pictures/Events/Man%20with%20tie%20stuck%20in%20meat%20grind55ea3ec8.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Events/Man%20with%20tie%20stuck%20in%20meat%20grinder%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

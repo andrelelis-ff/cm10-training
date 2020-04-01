@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:TaxonomyLinkListPropertyFieldBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                                         xmlns:local="com.coremedia.blueprint.studio.taxonomy.selection.*"
+                                         xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                                         xmlns="exml:ext.config"
+                                         xmlns:taxonomy="exml:com.coremedia.blueprint.studio.config.taxonomy"
+                                         xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                                         xmlns:ui="exml:com.coremedia.ui.config"
+                                         labelAlign="top"
+                                         labelSeparator="">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.util.PropertyEditorUtil;
+    import com.coremedia.ui.bem.LinkListBEMEntities;
+    import com.coremedia.ui.skins.TextfieldSkin;
+    import com.coremedia.ui.skins.ToolbarSkin;
+    import com.coremedia.ui.util.createComponentSelector;
+
+    import mx.resources.ResourceManager;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.taxonomy.taxonomyLinkListPropertyField";
+
+    private var config:TaxonomyLinkListPropertyField;
+
+    public native function TaxonomyLinkListPropertyField(config:TaxonomyLinkListPropertyField = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <fx:Boolean id="hideIssues"/>
+  </fx:Declarations>
+  <local:layout>
+    <layout_VBox align="stretch"/>
+  </local:layout>
+  <local:actionList>
+    <editor:LinkListCutAction text="{ResourceManager.getInstance().getString('com.coremedia.cms.editor.sdk.actions.Actions', 'Action_cutToClipboard_text')}"
+                              tooltip="{ResourceManager.getInstance().getString('com.coremedia.cms.editor.sdk.actions.Actions', 'Action_cutToClipboard_tooltip')}"
+                              linkListWrapper="{getLinkListWrapper(config)}"
+                              selectedValuesExpression="{getSelectedValuesVE()}"
+                              selectedPositionsExpression="{getSelectedPositionsVE()}"/>
+    <editor:LinkListCopyAction text="{ResourceManager.getInstance().getString('com.coremedia.cms.editor.sdk.actions.Actions', 'Action_copyToClipboard_text')}"
+                               tooltip="{ResourceManager.getInstance().getString('com.coremedia.cms.editor.sdk.actions.Actions', 'Action_copyToClipboard_tooltip')}"
+                               linkListWrapper="{getLinkListWrapper(config)}"
+                               selectedValuesExpression="{getSelectedValuesVE()}" />
+    <editor:LinkListPasteAction text="{ResourceManager.getInstance().getString('com.coremedia.cms.editor.sdk.actions.Actions', 'Action_pasteFromClipboard_text')}"
+                                tooltip="{ResourceManager.getInstance().getString('com.coremedia.cms.editor.sdk.actions.Actions', 'Action_pasteFromClipboard_tooltip')}"
+                                linkListWrapper="{getLinkListWrapper(config)}"
+                                selectedValuesExpression="{getSelectedValuesVE()}"
+                                selectedPositionsExpression="{getSelectedPositionsVE()}"/>
+    <editor:LinkListRemoveAction text="{ResourceManager.getInstance().getString('com.coremedia.cms.editor.sdk.actions.Actions', 'Action_deleteSelectedLinks_text')}"
+                                 tooltip="{ResourceManager.getInstance().getString('com.coremedia.cms.editor.sdk.actions.Actions', 'Action_deleteSelectedLinks_tooltip')}"
+                                 linkListWrapper="{getLinkListWrapper(config)}"
+                                 selectedValuesExpression="{getSelectedValuesVE()}"
+                                 selectedPositionsExpression="{getSelectedPositionsVE()}"/>
+    <taxonomy:OpenTaxonomyChooserAction text="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'Taxonomy_action_tooltip')}"
+                                        tooltip="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'Taxonomy_action_tooltip')}"
+                                        iconCls="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'Taxonomy_action_icon')}"
+                                        bindTo="{config.bindTo}"
+                                        forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                        propertyValueExpression="{config.bindTo.extendBy('properties.' + config.propertyName)}"
+                                        taxonomyId="{config.taxonomyId}"/>
+  </local:actionList>
+  <local:plugins>
+    <editor:SetPropertyLabelPlugin bindTo="{config.bindTo}"
+                                   propertyName="{config.propertyName}"/>
+  </local:plugins>
+  <local:items>
+    <taxonomy:TaxonomyLinkListGridPanel itemId="{GRID_PANEL_ITEM_ID}"
+                                        linkListWrapper="{getLinkListWrapper(config)}"
+                                        taxonomyId="{config.taxonomyId}"
+                                        bindTo="{config.bindTo}"
+                                        selectedPositionsExpression="{getSelectedPositionsVE()}"
+                                        selectedValuesExpression="{getSelectedValuesVE()}"
+                                        readOnlyValueExpression="{PropertyEditorUtil.createReadOnlyValueExpression(config.bindTo, config.forceReadOnlyValueExpression)}">
+      <taxonomy:plugins exml:mode="append">
+        <editor:ShowIssuesPlugin bindTo="{config.bindTo}"
+                                 ifUndefined=""
+                                 propertyName="{config.propertyName}"
+                                 hideIssues="{config.hideIssues}"/>
+
+        <editor:PropertyFieldPlugin propertyName="{config.propertyName}"/>
+        <ui:BEMPlugin block="{LinkListBEMEntities.BLOCK}"
+                      bodyElement="{LinkListBEMEntities.ELEMENT_LIST}"
+                      modifier="{getModifierVE(config)}"/>
+        <ui:ContextMenuPlugin>
+          <ui:contextMenu>
+            <Menu plain="true">
+              <plugins>
+                <ui:HideObsoleteSeparatorsPlugin/>
+              </plugins>
+              <items>
+                <MenuItem>
+                  <baseAction>
+                    <ActionRef actionId="{OpenTaxonomyChooserAction.ACTION_ID}"/>
+                  </baseAction>
+                </MenuItem>
+                <MenuSeparator/>
+                <MenuItem>
+                  <baseAction>
+                    <ActionRef actionId="{LinkListCutAction.ACTION_ID}"/>
+                  </baseAction>
+                </MenuItem>
+                <MenuItem>
+                  <baseAction>
+                    <ActionRef actionId="{LinkListCopyAction.ACTION_ID}"/>
+                  </baseAction>
+                </MenuItem>
+                <MenuItem>
+                  <baseAction>
+                    <ActionRef actionId="{LinkListPasteAction.ACTION_ID}"/>
+                  </baseAction>
+                </MenuItem>
+                <MenuSeparator/>
+                <MenuItem>
+                  <baseAction>
+                    <ActionRef actionId="{LinkListRemoveAction.ACTION_ID}"/>
+                  </baseAction>
+                </MenuItem>
+              </items>
+            </Menu>
+          </ui:contextMenu>
+        </ui:ContextMenuPlugin>
+      </taxonomy:plugins>
+      <taxonomy:tbar>
+        <Toolbar ui="{ToolbarSkin.FIELD.getSkin()}">
+          <items>
+            <ui:IconButton itemId="{DELETE_BUTTON_ITEM_ID}">
+              <ui:baseAction>
+                <ActionRef actionId="{LinkListRemoveAction.ACTION_ID}"/>
+              </ui:baseAction>
+            </ui:IconButton>
+            <ui:IconButton itemId="{OPEN_TAXONOMY_CHOOSER_BUTTON_ITEM_ID}">
+              <ui:baseAction>
+                <ActionRef actionId="{OpenTaxonomyChooserAction.ACTION_ID}"/>
+              </ui:baseAction>
+            </ui:IconButton>
+
+            <TbSeparator/>
+            <!-- cut -->
+            <ui:IconButton>
+              <ui:baseAction>
+                <ActionRef actionId="{LinkListCutAction.ACTION_ID}"/>
+              </ui:baseAction>
+            </ui:IconButton>
+            <!-- copy -->
+            <ui:IconButton>
+              <ui:baseAction>
+                <ActionRef actionId="{LinkListCopyAction.ACTION_ID}"/>
+              </ui:baseAction>
+            </ui:IconButton>
+            <!-- paste -->
+            <ui:IconButton>
+              <ui:baseAction>
+                <ActionRef actionId="{LinkListPasteAction.ACTION_ID}"/>
+              </ui:baseAction>
+            </ui:IconButton>
+          </items>
+        </Toolbar>
+      </taxonomy:tbar>
+      <taxonomy:dockedItems>
+        <!--We are setting the default focus to the text field since we are not interested in opening the library -->
+        <editor:LinkListDropArea dock="bottom"
+                                 linkListWrapper="{getLinkListWrapper(config)}"
+                                 ddGroups="{['ContentDD', 'ContentLinkDD']}"
+                                 defaultFocus="{createComponentSelector().itemId(TAXONOMY_SEARCH_FIELD_ITEM_ID).build()}"
+                                 appendOnDrop="false"
+                                 dropHandler="{handleDropAreaDrop}"
+                                 readOnlyValueExpression="{PropertyEditorUtil.createReadOnlyValueExpression(config.bindTo, config.forceReadOnlyValueExpression)}">
+          <editor:mixins>
+            <ui:BEMMixin bemElement="{LinkListBEMEntities.ELEMENT_TAIL}"/>
+          </editor:mixins>
+          <editor:layout>
+            <layout_HBox/>
+          </editor:layout>
+          <editor:items>
+            <ui:IconDisplayField iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'add')}"
+                                 width="16"
+                                 margin="0 0 0 8"/>
+            <taxonomy:TaxonomySearchField itemId="{TAXONOMY_SEARCH_FIELD_ITEM_ID}"
+                                          ui="{TextfieldSkin.EMBEDDED.getSkin()}"
+                                          flex="1"
+                                          resetOnBlur="true"
+                                          showSelectionPath="false"
+                                          taxonomyId="{config.taxonomyId}"
+                                          bindTo="{config.bindTo}"
+                                          forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                          propertyName="{config.propertyName}"
+                                          siteSelectionExpression="{getSiteSelectionExpression(config.bindTo)}"
+                                          searchResultExpression="{getSearchResultExpression()}">
+            </taxonomy:TaxonomySearchField>
+          </editor:items>
+        </editor:LinkListDropArea>
+      </taxonomy:dockedItems>
+    </taxonomy:TaxonomyLinkListGridPanel>
+  </local:items>
+
+</local:TaxonomyLinkListPropertyFieldBase>

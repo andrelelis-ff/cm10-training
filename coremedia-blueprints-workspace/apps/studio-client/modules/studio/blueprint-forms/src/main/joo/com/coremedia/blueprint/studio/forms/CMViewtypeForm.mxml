@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.cmViewtypeForm";
+
+    private var config:CMViewtypeForm;
+
+    public native function CMViewtypeForm(config:CMViewtypeForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMViewtype_text')}"
+                itemId="cmViewtypeLayoutForm">
+          <editor:items>
+            <editor:StringPropertyField propertyName="layout"/>
+            <editor:StringPropertyField propertyName="description"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMSymbol_icon_text')}"
+                itemId="cmViewTypeIconForm">
+          <editor:items>
+            <editor:BlobPropertyField propertyName="icon"
+                                      hideLabel="true"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataWithoutSettingsForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

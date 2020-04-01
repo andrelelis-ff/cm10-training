@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/SiteGenesis Global/France/French/Editorial/Content/Lookbooks" name="lookbook-sample" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Lookbooks/lookbook-sample.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Lookbooks/lookbook-sample"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+</CMCollection>

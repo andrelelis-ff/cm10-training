@@ -1,0 +1,89 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>studio-client.studio</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>blueprint-forms</artifactId>
+  <packaging>swc</packaging>
+
+  <description>CoreMedia Studio Forms</description>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.coremedia.blueprint.base</groupId>
+      <artifactId>bpbase-studio-dynamic-query-list</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.blueprint.base</groupId>
+      <artifactId>bpbase-pagegrid-studio-plugin</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>core-icons</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>ui-components</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>editor-components</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>image-editor-components</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>image-map-editor-components</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>net.jangaroo</groupId>
+      <artifactId>ext-as</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui</groupId>
+      <artifactId>studio-theme</artifactId>
+      <type>swc</type>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/sencha</directory>
+        <targetPath>../packages/${project.groupId}__${project.artifactId}</targetPath>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>net.jangaroo</groupId>
+        <artifactId>jangaroo-maven-plugin</artifactId>
+        <extensions>true</extensions>
+        <version>${jangaroo.version}</version>
+        <configuration>
+          <publicApiViolations>warn</publicApiViolations>
+          <namespaces>
+            <namespace>
+              <uri>exml:com.coremedia.blueprint.studio.config</uri>
+            </namespace>
+          </namespaces>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

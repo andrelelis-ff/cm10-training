@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMMail folder="/Settings/Meta/Mail" name="profileChanged" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<locale>en-US</locale>
+<master>
+</master>
+<masterVersion>1</masterVersion>
+<keywords></keywords>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<segment></segment>
+<title></title>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<subject>Profile Changed</subject>
+<from>no-reply@coremedia.com</from>
+<text href="profileChanged.text.plain" mimetype="text/plain"/>
+<contentType></contentType>
+</CMMail>

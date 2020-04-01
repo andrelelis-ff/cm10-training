@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/United Kingdom/English/Pictures" name="shutterstock_344145503" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=605;y=0;width=791;height=1054</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=473;y=0;width=1054;height=1054</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=297;y=0;width=1405;height=1054</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=63;y=0;width=1874;height=1054</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=86;width=2000;height=750</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.08185053380782918;x2=1;y2=0.793425486369499</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>sfcc:///catalog/product/25493635</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>shutterstock_344145503</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>shutterstock_344145503</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1054</height>
+<data md5="a63adfcf63c33a07e72d252ebd8f0afd" size="403144" href="../../../../../__blob/a63adfcf63c33a07e72d252ebd8f0afd.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

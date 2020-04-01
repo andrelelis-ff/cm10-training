@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Aurora Augmentation/Germany/German/Navigation/Microsites/Editorial Blog" name="Editorial Blog Microsite" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Navigation/Microsites/Editorial%20Blog/Editorial%20Blog%20Microsite.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Microsites/Editorial%20Blog/Editorial%20Blog%20Microsite"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>editorial-blog</segment>
+<title>Blog</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../../Editorial/Content/Fashion/Photo%20Shooting%20in%20Prague%20-%20Cool.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/Photo%20Shooting%20in%20Prague%20-%20Cool"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<hidden>0</hidden>
+<hiddenInSitemap>0</hiddenInSitemap>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Layouts/Single%20Column%20Hero%20Layout.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Layouts/Single%20Column%20Hero%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../../../Editorial/Content/Fashion/Editorial%20Blog%20Query%20List.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/Editorial%20Blog%20Query%20List"/>
+</LinkListProperty>
+<BooleanProperty Name="locked">false</BooleanProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../../../Editorial/Content/Fashion/Design%20is%20a%20series%20of%20creative%20choices.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/Design%20is%20a%20series%20of%20creative%20choices"/>
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/hero.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/hero"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/United Kingdom/English/Pictures" name="Men Black &amp; White" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0;x2=0.8886666666666666;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.00949367088607595;x2=0.9999999999999999;y2=0.853454661133638</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.0031645569620253164;x2=0.9999999999999999;y2=0.6033145944714027</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.022151898734177215;x2=0.9999999999999999;y2=0.5847925588992184</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.05379746835443038;x2=0.9999999999999999;y2=0.4288912417977912</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.1371308016877637;y1=0;x2=0.8036308016877637;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=3555;height=2666</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=25;width=4000;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=333;width=4000;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=8;width=4000;height=1600</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=59;width=4000;height=1500</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=143;width=4000;height=1000</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=549;y=0;width=2666;height=2666</StringProperty>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1140;y=0;width=1720;height=2666</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=1000;y=0;width=1999;height=2666</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Men Black &amp; White</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Men%281%29.xml" path="/Settings/Taxonomies/Subject/Men%281%29"/>
+<link href="../../../../../Settings/Taxonomies/Subject/Fashion.xml" path="/Settings/Taxonomies/Subject/Fashion"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Men Black &amp; White</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2666</height>
+<data md5="c44ef6fa95d6698d5614368831f42508" size="930588" href="../../../../../__blob/c44ef6fa95d6698d5614368831f42508.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<!--
+ |  This appender can be used in conjuction with fatclient tools like lilith, logmx to simplify local development.
+ -->
+
+<included>
+  <appender name="socket" class="ch.qos.logback.classic.net.SocketAppender">
+    <RemoteHost>${log.socket.destination}</RemoteHost>
+    <Port>${log.socket.port:-4560}</Port>
+    <ReconnectionDelay>${log.socket.reconnectDelay:170}</ReconnectionDelay>
+    <IncludeCallerData>true</IncludeCallerData>
+  </appender>
+</included>

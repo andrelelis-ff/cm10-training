@@ -1,0 +1,57 @@
+// default variables
+$cm-search-prefix: "cm-search" !default;
+
+// breakpoint
+$cm-search-breakpoint: "sm-and-up" !default;
+
+// search form
+$cm-search-show-label: none !default;
+$cm-search-input-width: 200px !default;
+$cm-search-input-height: auto !default;
+$cm-search-button-padding: 1px 10px !default;
+
+// search links
+$cm-search-link-color: blue !default;
+$cm-search-link-decoration: none !default;
+$cm-search-link-color-hover: blue !default;
+$cm-search-link-decoration-hover: underline !default;
+
+// search results
+$cm-search-result-highlight-color: red !default;
+$cm-search-result-margin-bottom: 20px !default;
+$cm-search-result-picture-width: 25% !default;
+$cm-search-result-picture-max-width: 250px !default;
+$cm-search-result-date-color: grey !default;
+$cm-search-result-date-divider: "–" !default;
+
+// search filter
+$cm-search-filter-width: 25% !default;
+$cm-search-filter-padding: 0 20px 20px 0 !default;
+$cm-search-filter-count-bracket-left: "(" !default;
+$cm-search-filter-count-bracket-right: ")" !default;
+$cm-search-filter-open: ">" !default;
+$cm-search-filter-close: "<" !default;
+
+// search pagination
+$cm-search-pagination-align: center !default;
+$cm-search-pagination-margin: 20px 0 !default;
+$cm-search-pagination-button-padding: 10px 20px !default;
+$cm-search-pagination-button-border: 1px solid #ccc !default;
+$cm-search-pagination-first: "<<" !default;
+$cm-search-pagination-prev: "<" !default;
+$cm-search-pagination-next: ">" !default;
+$cm-search-pagination-last: ">>" !default;
+
+// fallback for responsive images on breakpoint "sm-and-up"
+@if not global_variable_exists(breakpoints) {
+  @debug "No Breakpoints defined. Adding a default value for 'sm-and-up'.";
+  $breakpoints: (
+    "sm-and-up": "screen and (min-width: 768px)"
+  ) !default !global;
+} @else {
+  $sm-and-up: map-get($breakpoints, "sm-and-up");
+  @if not $sm-and-up {
+    @debug "Adding a default value for breakpoint 'sm-and-up'.";
+    $breakpoints: map-merge($breakpoints, ("sm-and-up": "screen and (min-width: 768)"));
+  }
+}

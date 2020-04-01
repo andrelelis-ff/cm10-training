@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!--
+      You will need to change the groupId in all modules
+      A global search&replace will do the job !
+  -->
+  <groupId>com.coremedia.blueprint</groupId>
+  <artifactId>content.blueprint-parent</artifactId>
+  <version>1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <organization>
+    <name>Blueprint</name>
+  </organization>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.compiler.release>11</maven.compiler.release>
+    <sonar.java.source>${maven.compiler.release}</sonar.java.source>
+    <customer>Blueprint</customer>
+  </properties>
+
+  <scm>
+    <connection>scm:git:git@github.com:CoreMedia/cms.git</connection>
+    <developerConnection>scm:git:git@github.com:CoreMedia/cms.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>localfs</id>
+      <url>file://${project.basedir}/target</url>
+    </snapshotRepository>
+    <repository>
+      <id>coremedia.external.releases</id>
+      <url>https://repository.coremedia.com/nexus/service/local/staging/deploy/maven2</url>
+    </repository>
+    <site>
+      <id>localsite</id>
+      <url>file://${project.basedir}/target/site-deploy</url>
+    </site>
+  </distributionManagement>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>1.8</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>3.1.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.1.0</version>
+          <configuration>
+            <filesets>
+              <fileset>
+                <directory>overlays</directory>
+                <includes>
+                  <include>**/*.*</include>
+                </includes>
+                <followSymlinks>false</followSymlinks>
+              </fileset>
+              <!-- node is created by frontend-maven-plugin -->
+              <fileset>
+                <directory>node</directory>
+              </fileset>
+            </filesets>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>3.0.0-M1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>3.1.1</version>
+          <configuration>
+            <doclint>none</doclint>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>3.0.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>3.0.0-M1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.1.0</version>
+          <configuration>
+            <includeEmptyDirs>true</includeEmptyDirs>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.1.0</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <reporting>
+    <excludeDefaults>true</excludeDefaults>
+  </reporting>
+
+  <repositories>
+    <repository>
+      <id>coremedia.external.releases</id>
+      <name>CoreMedia CMS</name>
+      <url>https://repository.coremedia.com/nexus/content/groups/cms/</url>
+      <layout>default</layout>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>coremedia.external.releases</id>
+      <name>CoreMedia CMS</name>
+      <url>https://repository.coremedia.com/nexus/content/groups/cms/</url>
+      <layout>default</layout>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+
+</project>

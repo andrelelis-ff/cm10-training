@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Decorating/Lighting" name="Desk Lamp Black Picture 1" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=379;y=535;width=2092;height=3243</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=222;width=2669;height=3556</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=667;width=2669;height=2667</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=1004;width=2669;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=1251;width=2669;height=1498</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=1465;width=2669;height=1070</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=1671;width=2669;height=667</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.1419753086419753;y1=0.1337448559670782;x2=0.9259259259259259;y2=0.9444444444444444</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.05555555555555555;x2=1;y2=0.9444444444444444</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.16666666666666666;x2=1;y2=0.8333333333333334</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.25102880658436216;x2=1;y2=0.7510288065843621</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.31275720164609055;x2=1;y2=0.6872427983539094</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.3662551440329218;x2=1;y2=0.6337448559670782</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.4176954732510288;x2=1;y2=0.5843621399176955</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_HLG028_280116</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Desk Lamp Black Picture 2</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Desk Lamp Black Picture 2</alt>
+<copyright>Happy Together / Shutterstock 325104947</copyright>
+<dataUrl></dataUrl>
+<width>2670</width>
+<height>4000</height>
+<data md5="2b39c6185a3944c2b71803517ea00cb9" size="245343" href="../../../../../../../../__blob/2b39c6185a3944c2b71803517ea00cb9.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

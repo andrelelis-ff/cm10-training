@@ -1,0 +1,24 @@
+{
+  "name": "hybris",
+  "description": "The Hybris Theme demonstrates the fragment-based integration approach with SAP Hybris Apparel.",
+  "thumbnail": "theme.jpg",
+
+  "scripts": [
+    {
+      "type": "webpack",
+      "src": "src/js/index.js"
+    }
+  ],
+  "styles": [
+    {
+      "type": "webpack",
+      "src": "src/sass/hybris.scss"
+    }
+  ],
+  "l10n": {
+    "bundleNames": [
+      "Hybris",
+      "Bricks"
+    ]
+  }
+}

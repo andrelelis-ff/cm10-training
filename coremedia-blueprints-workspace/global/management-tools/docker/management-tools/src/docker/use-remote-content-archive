@@ -1,0 +1,35 @@
+#!/bin/sh
+
+echo "[DOCKER ENTRYPOINT] - entering $0"
+set -e
+if [ "${DEBUG_ENTRYPOINT}" = "true" ]; then
+  echo "[DOCKER ENTRYPOINT] - DEBUG_ENTRYPOINT detected, all commands will be printed"
+  set -x
+fi
+
+# do not remove '< /dev/null 2> /dev/null | grep -v groovy\:' - this ensures groovysh exit and only value printing
+IMPORTED=$(./tools/bin/cm groovysh /coremedia/getSystemTableProperty.groovy -q -DpropKey=content-imported < /dev/null 2> /dev/null | grep -v groovy\:)
+
+if [ ! -z "${CONTENT_ARCHIVE_URL}" ]; then
+  if [ "${IMPORTED}" != "true"  ] || [ "${FORCE_REIMPORT_CONTENT}" = "true" ]; then
+    echo "[DOCKER ENTRYPOINT] - content archive url configured, will download archive from ${CONTENT_ARCHIVE_URL}"
+    curl -L --insecure -o /var/tmp/content-archive.zip "${CONTENT_ARCHIVE_URL}"
+    mkdir -p /var/tmp/content-archive
+    unzip -qo /var/tmp/content-archive.zip -d /var/tmp/content-archive
+    if [ "$(ls -A /var/tmp/content-archive/content)" ]; then
+      echo "[DOCKER ENTRYPOINT] - content found in content archive, moving to import dir"
+      mv -n /var/tmp/content-archive/content/* ${IMPORT_CONTENT_DIR}/
+    fi
+    if [ "$(ls -A /var/tmp/content-archive/users)" ]; then
+      echo "[DOCKER ENTRYPOINT] - user files found in content archive, moving to import dir"
+      mv -n /var/tmp/content-archive/users/* ${IMPORT_USERS_DIR}/
+    fi
+    rm -rf /var/tmp/content-archive /var/tmp/content-archive.zip
+  else
+    echo "[DOCKER ENTRYPOINT] - content archive already downloaded and extracted, skipping ..."
+  fi
+else
+  echo "[DOCKER ENTRYPOINT] - no content archive url set, skipping ..."
+fi
+
+test $# -gt 0 && exec ./$@ || echo "[DOCKER ENTRYPOINT] - entrypoint chain finished"

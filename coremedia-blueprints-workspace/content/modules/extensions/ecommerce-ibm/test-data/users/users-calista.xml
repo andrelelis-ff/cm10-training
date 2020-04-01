@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository xmlns="http://www.coremedia.com/2005/contentserver/userrepository">
+  <group id="staff" name="staff" contentgroup="true" livegroup="false" administrative="false">
+    <!-- Global group, no calista specific rules here! -->
+    <members>
+      <group id="global-manager" name="global-manager" contentgroup="true" livegroup="false" administrative="false">
+        <!-- Global group, no calista specific rules here! -->
+        <members>
+          <group id="global-site-manager-calista" name="global-site-manager-calista" contentgroup="true" livegroup="false" administrative="false">
+            <rule content="/Sites/Calista" type="CMObject" rights="RMDAPS"/>
+            <rule content="/Sites/Calista" type="Folder_" rights="RMDAPS"/>
+            <!-- in order to define topic pages, global site managers need write access to taxonomies. -->
+            <rule content="/Settings/Taxonomies" type="CMTaxonomy" rights="RMDAP"/>
+            <members>
+              <user id="rickcal" name="Rick Cal" home="/Home/Rick Cal"/>
+              <user id="carol" name="Carol" home="/Home/Carol"/>
+            </members>
+          </group>
+        </members>
+      </group> <!-- global-manager -->
+      <group id="local-manager" name="local-manager" contentgroup="true" livegroup="false" administrative="false">
+        <!-- Global group, no calista specific rules here! -->
+        <members>
+          <group id="local-site-manager-calista" name="local-site-manager-calista" contentgroup="true" livegroup="false" administrative="false">
+            <!-- all local site managers can read the global master site. -->
+            <rule content="/Sites/Calista/United States/English" type="CMObject" rights="R"/>
+            <rule content="/Sites/Calista/United States/English" type="Folder_" rights="R"/>
+            <!-- in order to define topic pages, local site managers need write access to taxonomies. -->
+            <rule content="/Settings/Taxonomies" type="CMTaxonomy" rights="RMDAP"/>
+            <members>
+              <group name="manager-calista-en-US" contentgroup="true" livegroup="false" administrative="false">
+                <rule content="/Sites/Calista/United States/English" type="CMObject" rights="RMDAP"/>
+                <rule content="/Sites/Calista/United States/English" type="Folder_" rights="RMDAP"/>
+                <members>
+                  <user id="petercal" name="Peter Cal" home="/Home/Peter Cal"/>
+                  <!-- Rick must be member of the master site group as translation workflow role. -->
+                  <userref id="rickcal"/>
+                  <userref id="carol"/>
+                </members>
+              </group>
+              <group name="manager-calista-de-DE" contentgroup="true" livegroup="false" administrative="false">
+                <rule content="/Sites/Calista/Germany/German" type="CMObject" rights="RMDAP"/>
+                <rule content="/Sites/Calista/Germany/German" type="Folder_" rights="RMDAP"/>
+                <members>
+                  <user id="pietcal" name="Piet Cal" home="/Home/Piet Cal"/>
+                </members>
+              </group>
+            </members>
+          </group> <!-- local-site-manager-calista -->
+        </members>
+      </group> <!-- local-manager -->
+    </members>
+  </group> <!-- staff -->
+</repository>

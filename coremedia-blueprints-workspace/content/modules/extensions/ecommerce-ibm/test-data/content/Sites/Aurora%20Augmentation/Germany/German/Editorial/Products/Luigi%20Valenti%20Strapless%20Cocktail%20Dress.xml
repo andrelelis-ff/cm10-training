@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Products" name="Luigi Valenti Strapless Cocktail Dress" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Editorial/Products/Luigi%20Valenti%20Strapless%20Cocktail%20Dress.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Luigi%20Valenti%20Strapless%20Cocktail%20Dress"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Versatil Short Dress</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Kurzarm-Wickelkleid mit Glockenrock</p></div></teaserText>
+<pictures>
+<link href="../../Pictures/Product%20Pictures/Women/Dresses/Luigi%20Valenti%20Strapless%20Cocktaiec500eae.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Pictures/Product%20Pictures/Women/Dresses/Luigi%20Valenti%20Strapless%20Cocktail%20Dress%201"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>ibm:///catalog/product/AuroraWMDRS-6</externalId>
+</CMProductTeaser>

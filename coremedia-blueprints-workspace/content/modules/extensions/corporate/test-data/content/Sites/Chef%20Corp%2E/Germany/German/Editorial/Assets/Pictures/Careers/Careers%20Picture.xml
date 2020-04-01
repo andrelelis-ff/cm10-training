@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./Germany/German/Editorial/Assets/Pictures/Careers" name="Careers Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Assets/Pictures/Careers/Careers%20Picture.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Careers/Careers%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=147;y=0;width=1368;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=67;width=1681;height=1258</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=160;width=2048;height=1152</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=325;y=0;width=910;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=192;width=2048;height=768</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.07166123778501629;y1=0;x2=0.739413680781759;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.04878048780487805;x2=0.8208469055374593;y2=0.9707317073170731</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.11707317073170732;x2=1;y2=0.9609756097560975</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.3792016806722689</StringProperty>
+<StringProperty Name="y">0.41798107255520506</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Karriere</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Symbolische Karrieren Bild von einem Mann, der vor einem Hochhaus der Suche nach oben in den Himmel</alt>
+<copyright>aslysun / Shutterstock 177501410</copyright>
+<dataUrl></dataUrl>
+<width>2048</width>
+<height>1365</height>
+<data md5="36c908159d3921beed6e1662cfc7351f" size="335804" href="../../../../../../../../__blob/36c908159d3921beed6e1662cfc7351f.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+
+  <!--
+    Test content for the SearchServiceTest
+  -->
+  <content>
+    <folder id="1" name="">
+      <folder id="11" name="Sites">
+        <folder id="111" name="Media">
+          <document id="2" name="MediaSite" type="CMSite">
+            <!--
+              The Site Indicator for the site, references the Root Channel.
+              Needed to resolve the first URL segment ("root")
+            -->
+            <version number="1">
+              <linkProperty name="root">
+                <link id="4"/>
+              </linkProperty>
+              <stringProperty name="locale" value="en-US"/>
+              <stringProperty name="id" value="the-site-id"/>
+              <stringProperty name="name" value="the-site-name"/>
+            </version>
+          </document>
+          <folder id="1111" name="Navigation">
+            <document id="4" name="Root" type="CMChannel">
+              <!-- The Root Channel of the site. -->
+              <version number="1">
+                <stringProperty name="segment" value="root"/>
+                <linkProperty name="headerItems">
+                  <link id="22"/>
+                </linkProperty>
+                <markupProperty name="localSettings" url="4localSettings.xml" grammar="coremedia-struct-2008"/>
+              </version>
+            </document>
+            <document id="24" name="SearchPageResult" type="CMChannel">
+              <!-- The SearchResult Channel of the site. -->
+              <version number="1">
+                <stringProperty name="segment" value="searchPageResult"/>
+                <linkProperty name="headerItems">
+                  <link id="22"/>
+                </linkProperty>
+              </version>
+            </document>
+          </folder>
+
+          <!--<folder id="1113" name="Editorial">-->
+          <!--<document id="12" type="CMArticle" name="Doc">-->
+          <!--<version number="1">-->
+          <!--<stringProperty name="segment" value="doc"/>-->
+          <!--<linkProperty name="contexts">-->
+          <!--<link id="2"/>-->
+          <!--</linkProperty>-->
+          <!--<markupProperty name="localSettings" url="4settings.xml" grammar="coremedia-struct-2008"/>-->
+          <!--</version>-->
+          <!--</document>-->
+          <!--</folder>-->
+          <folder id="1115" name="Options">
+            <folder id="11151" name="Actions">
+              <document id="22" type="CMAction" name="Doc">
+                <version number="1">
+                  <stringProperty name="id" value="search"/>
+                  <markupProperty name="localSettings" url="22settings.xml" grammar="coremedia-struct-2008"/>
+                </version>
+              </document>
+            </folder>
+          </folder>
+        </folder>
+      </folder>
+    </folder>
+  </content>
+  <rules>
+    <rule resourceId="1" group="0" doctype="Folder_">
+      <right value="ALL"/>
+    </rule>
+    <rule resourceId="1" group="0" doctype="Document_">
+      <right value="ALL"/>
+    </rule>
+  </rules>
+</contentRepository>

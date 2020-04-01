@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CatalogPreferencesBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                              xmlns:local="com.coremedia.ecommerce.studio.components.preferences.*"
+                              xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                              xmlns="exml:ext.config"
+                              xmlns:ui="exml:com.coremedia.ui.config"
+                              title="{resourceManager.getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'EcCatalogPreferences_tab_title')}"
+                              itemId="{CATALOG_PREFERENCES_ITEM_ID}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.ecommerce.studio.ECommerceStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.ecommerce.studio.config.catalogPreferences";
+
+    public static const CATALOG_PREFERENCES_ITEM_ID:String = "contentCatalogPreferences";
+
+    private var config:CatalogPreferences;
+
+    public native function CatalogPreferences(config:CatalogPreferences = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <CheckboxGroup columns="1"
+                   fieldLabel="{resourceManager.getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'EcCatalogPreferences_catalog_title')}">
+      <items>
+        <Checkbox itemId="catalogSettingsGroup"
+                  boxLabel="{resourceManager.getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'EcCatalogPreferences_show_catalog_items')}">
+          <plugins>
+            <ui:BindPropertyPlugin bidirectional="true"
+                                   ifUndefined="false"
+                                   bindTo="{getShowCatalogValueExpression()}"/>
+          </plugins>
+        </Checkbox>
+        <Checkbox itemId="sortChildrenAndDisableLazyLoading"
+                  boxLabel="{resourceManager.getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'EcCatalogPreferences_sort_children')}">
+          <plugins>
+            <ui:BindPropertyPlugin bidirectional="true"
+                                   ifUndefined="true"
+                                   bindTo="{getSortCategoriesByNameExpression()}"/>
+          </plugins>
+        </Checkbox>
+      </items>
+    </CheckboxGroup>
+  </local:items>
+  <local:layout>
+    <layout_Anchor/>
+  </local:layout>
+</local:CatalogPreferencesBase>

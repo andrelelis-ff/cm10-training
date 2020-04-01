@@ -1,0 +1,31 @@
+{
+  "name": "@coremedia/tool-utils",
+  "version": "1.0.0",
+  "description": "CoreMedia Utilities for workspace analysis and handling.",
+  "author": {
+    "name": "CoreMedia",
+    "url": "http://www.coremedia.com"
+  },
+  "dependencies": {
+    "@coremedia/cm-logger": "^1.0.0",
+    "ajv": "^6.0.0",
+    "closest-package": "^1.0.0",
+    "get-installed-path": "^4.0.0",
+    "json5": "^2.0.0",
+    "lodash": "^4.0.0",
+    "selfsigned": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^24.0.0",
+    "prettier": "^1.0.0"
+  },
+  "scripts": {
+    "prettier": "prettier \"**/*\" --write",
+    "test": "jest"
+  },
+  "main": "src/index.js",
+  "private": true,
+  "engines": {
+    "node": ">=10"
+  }
+}

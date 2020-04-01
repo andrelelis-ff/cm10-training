@@ -1,0 +1,10 @@
+@import "variables/variables";
+@import "variables/breakpoints";
+@import "variables/detail";
+@import "variables/imagemap";
+@import "variables/popup";
+@import "variables/shoppable-video";
+@import "variables/elastic-social";
+
+// Dependency variables
+@import "?smart-import-variables";

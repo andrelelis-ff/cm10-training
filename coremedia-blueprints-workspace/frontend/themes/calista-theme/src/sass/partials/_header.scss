@@ -1,0 +1,55 @@
+.cm-logo {
+  background: url("../../img/calista-logo-mobile.svg") no-repeat center center transparent;
+  // keep in sync with image dimensions
+  width: 81px;
+  height: 25px;
+
+  @include breakpoints(("sm", landscape) "lg-and-up") {
+    background-image: url("../../img/calista-logo.svg");
+    // keep in sync with image dimensions
+    width: 115px;
+    height: 41px;
+  }
+}
+
+// Login
+#cm-login,
+#cm-logout {
+  // initially hide login/logout, will be overridden in JavaScript
+  display: none;
+}
+
+.cm-header {
+  &__mobile-navigation-button {
+    // make sure that logo is centered
+    // margin right should is set in a way that the button to the left
+    // takes the same space as the buttons (cart/search) to the right
+    margin-right: 30px;
+  }
+
+
+  &-icon {
+    // badge
+    &__symbol > span {
+      font-family: $cm-font-family-serif;
+      font-style: normal;
+    }
+  }
+
+  &__cart {
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 10px;
+    // make sure that the badge is inside the box
+    padding-top: 10px;
+    padding-right: 10px;
+    // always occupy space as the cart is a dynamic fragment and will be added to the
+    // DOM with small delay which would cause the header to be realigned otherwise
+    width: 28px;
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      order: 4;
+      margin-left: 15px;
+    }
+  }
+}

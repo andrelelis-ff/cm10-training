@@ -1,0 +1,38 @@
+.cm-popup {
+
+  &__title {
+    margin-right: 20px;
+  }
+
+  &__content {
+    box-sizing: border-box;
+  }
+
+  &__price,
+  &__text {
+    margin-top: 6px;
+  }
+
+  &__price .cm-price--old {
+    float: left;
+    margin-right: 12px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .cm-button-group__button {
+    display: table;
+    width: auto;
+    margin-top: 6px;
+    margin-left: 0;
+
+    &,
+    & .cm-button__text {
+      font-size: 14px;
+      line-height: 29px;
+    }
+  }
+}

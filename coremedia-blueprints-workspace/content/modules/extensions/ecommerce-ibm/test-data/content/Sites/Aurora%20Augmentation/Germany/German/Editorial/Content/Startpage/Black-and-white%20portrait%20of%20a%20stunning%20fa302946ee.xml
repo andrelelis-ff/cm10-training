@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Startpage" name="Black-and-white portrait of a stunning fashionable model Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Startpage/Black-and-white%20portrait%20of%20a%20stund1866bc4.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Startpage/Black-and-white%20portrait%20of%20a%20stunning%20fashionable%20model%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1857;y=0;width=1722;height=2669</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=1662;y=0;width=2002;height=2669</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=1333;y=0;width=2667;height=2667</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=439;y=0;width=3559;height=2669</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=270;width=4000;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=144;width=4000;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=279;width=4000;height=1600</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=279;width=4000;height=1500</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=194;width=4000;height=1000</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/category/Women</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.46413502109704635;y1=0;x2=0.8946188920647883;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.41561181434599154;y1=0;x2=0.9160493143459916;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.3333333333333333;y1=0;x2=1;y2=0.9991257649556637</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.10970464135021096;y1=0;x2=0.9993713080168776;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.10126582278481013;x2=0.9999999999999999;y2=0.9442781869661514</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.05379746835443038;x2=0.9999999999999999;y2=0.8031417920711781</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.10443037974683544;x2=0.9999999999999999;y2=0.7039058387202337</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.10443037974683544;x2=0.9999999999999999;y2=0.6664386225343963</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.07278481012658228;x2=0.9999999999999999;y2=0.44745697198495615</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Schwarzweiss-Porträt eines erstaunlichen modernen Baumusters, das in einem Stuhl in Art Nouveau-Art sitzt. Geschäft, elegante Geschäftsfrau. Interieur, Möbel.</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>Kiselev Andrey Valerevich / Shutterstock 255801109</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2670</height>
+<data md5="7b5048883f61a682b181358a11668572" size="784608" href="../../../../../../../__blob/7b5048883f61a682b181358a11668572.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

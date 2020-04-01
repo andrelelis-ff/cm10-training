@@ -1,0 +1,9 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StringProperty Name="livecontext.connectionId">wcs1</StringProperty>
+  <StructProperty Name="livecontext.store.config">
+    <Struct>
+      <!--catalog configuration-->
+      <StringProperty Name="config.id">anAlternativeStoreConfig</StringProperty>
+    </Struct>
+  </StructProperty>
+</Struct>

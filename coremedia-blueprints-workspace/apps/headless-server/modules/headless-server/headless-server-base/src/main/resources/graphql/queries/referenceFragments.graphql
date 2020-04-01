@@ -1,0 +1,15 @@
+
+fragment ContentInfo on Content_ {
+  name
+  creationDate
+}
+
+fragment Reference on CMLinkable {
+  ... ContentInfo
+  title
+  segment
+  link {
+    id
+    type
+  }
+}

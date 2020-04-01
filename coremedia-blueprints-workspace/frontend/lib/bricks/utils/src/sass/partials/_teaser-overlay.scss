@@ -1,0 +1,36 @@
+.#{$cm-teaser-overlay-prefix} {
+  position: absolute;
+  padding: $cm-teaser-overlay-padding;
+
+  // hide overflow
+  overflow: hidden;
+  // limit width and height to 100%
+  box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%;
+  // disable any pointer events, so e.g. when the overlay is placed over a link, the link can be clicked
+  pointer-events: none;
+
+  &__text {
+    // remove the margin-top of the first richtext item, otherwise there will always be a gap
+    :first-child {
+      margin-top: 0;
+    }
+
+    // remove the margin-bottom of the last richtext item, otherwise there will always be a gap
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__cta {
+    margin: $cm-teaser-overlay-cta-margin;
+    text-align: $cm-teaser-overlay-cta-align;
+    width: 100%;
+  }
+
+  &__cta-button {
+    // reenable pointer events for the buttons, so their link can be clicked
+    pointer-events: auto;
+  }
+}

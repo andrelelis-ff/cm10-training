@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ The form used to edit a document of type CMALXPageList.
+-->
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:alx="exml:com.coremedia.blueprint.studio.config.analytics"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:ui="exml:com.coremedia.ui.config" xmlns:quickcreate="com.coremedia.cms.editor.sdk.quickcreate.*">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+    [ResourceBundle('com.coremedia.blueprint.studio.analytics.AnalyticsStudioPlugin')]
+    [ResourceBundle('com.coremedia.blueprint.studio.analytics.AnalyticsStudioPluginDocTypes')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.studio.forms.columns.ValidityColumn;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.analytics.cmalxPageListForm";
+
+    private var config:CMALXPageListForm;
+
+    public native function CMALXPageListForm(config:CMALXPageListForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <bpforms:TeaserDocumentForm/>
+        <editor:PropertyFieldGroup itemId="alxPageListDefaultContentForm"
+                                   title="{resourceManager.getString('com.coremedia.blueprint.studio.analytics.AnalyticsStudioPluginDocTypes', 'CMALXPageList_defaultContent_text')}">
+          <editor:items>
+            <editor:LinkListPropertyField linkType="CMTeasable"
+                                          showThumbnails="true"
+                                          hideLabel="true"
+                                          propertyName="defaultContent"
+                                          bindTo="{config.bindTo}">
+              <editor:additionalToolbarItems>
+                <TbSeparator/>
+                <quickcreate:QuickCreateLinklistMenu bindTo="{config.bindTo}"
+                                                     propertyName="defaultContent"/>
+              </editor:additionalToolbarItems>
+              <editor:fields>
+                <ui:DataField name="{ValidityColumn.STATUS_ID}"
+                              ifUnreadable=""
+                              mapping=""
+                              convert_="{ValidityColumn.convert}"/>
+              </editor:fields>
+              <editor:columns>
+                <editor:ThumbnailColumn/>
+                <editor:TypeIconColumn/>
+                <editor:NameColumn flex="1"/>
+                <bpforms:ValidityColumn/>
+                <editor:StatusColumn/>
+              </editor:columns>
+            </editor:LinkListPropertyField>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <editor:PropertyFieldGroup itemId="alxPageListGenericForm"
+                                   title="{resourceManager.getString('com.coremedia.blueprint.studio.analytics.AnalyticsStudioPlugin', 'SpacerTitle_generic')}">
+          <editor:items>
+            <alx:FilteringContentTypeStringPropertyField propertyName="documentType"
+                                                         baseType="CMLinkable"/>
+            <editor:LinkListPropertyField propertyName="baseChannel">
+              <editor:additionalToolbarItems>
+                <TbSeparator/>
+                <quickcreate:QuickCreateToolbarButton bindTo="{config.bindTo}"
+                                                      contentType="CMChannel"
+                                                      propertyName="baseChannel"/>
+              </editor:additionalToolbarItems>
+            </editor:LinkListPropertyField>
+            <editor:SpinnerPropertyField propertyName="maxLength"
+                                         minValue="1"/>
+            <editor:SpinnerPropertyField propertyName="timeRange"
+                                         minValue="1"/>
+            <alx:AnalyticsProviderComboBox propertyName="analyticsProvider"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <bpforms:ContainerViewTypeSelectorForm collapsed="false"/>
+        <bpforms:ValidityDocumentForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:DefaultExtraDataForm/>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataWithoutSettingsForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

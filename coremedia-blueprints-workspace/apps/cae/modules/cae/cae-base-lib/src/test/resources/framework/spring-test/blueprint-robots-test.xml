@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+  <import resource="classpath:/com/coremedia/cae/link-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/settings/impl/bpbase-settings-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/links/bpbase-links-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/dataview-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/view-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/view-error-services.xml"/>
+  <import resource="classpath:/com/coremedia/cap/multisite/multisite-services.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-richtextfilters.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-services.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-handlers.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-services.xml"/>
+
+  <bean id="robotsView" class="com.coremedia.blueprint.cae.view.RobotsView">
+    <property name="linkFormatter" ref="linkFormatter"/>
+    <property name="sitemapHelper" ref="sitemapHelper"/>
+  </bean>
+
+  <bean id="sitemapHelper" class="com.coremedia.blueprint.cae.sitemap.SitemapHelper">
+    <property name="settingsService" ref="settingsService"/>
+    <property name="urlPrefixResolver" ref="ruleUrlPrefixResolver"/>
+    <property name="sitemapConfigurations" ref="sitemapConfigurations"/>
+    <property name="prependBaseUri" value="${cae.is.standalone:true}"/>
+  </bean>
+
+  <util:map id="sitemapConfigurations" key-type="java.lang.String" value-type="com.coremedia.blueprint.cae.sitemap.SitemapSetup">
+  </util:map>
+</beans>

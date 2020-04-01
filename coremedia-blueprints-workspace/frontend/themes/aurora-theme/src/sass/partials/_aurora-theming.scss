@@ -1,0 +1,278 @@
+#header {
+  font-size: 12px;
+  &:before {
+    display: none;
+  }
+}
+
+#footer {
+  background: $cm-main-color-grey;
+}
+
+#footerRow1 > .section > .header:before {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+#headerRow1 {
+  background-color: $cm-main-color-grey;
+  height: 60px;
+
+  @include breakpoint(sm-and-up) {
+
+    #quickLinksBar > li.quickLinks {
+      position: relative;
+    }
+
+    .GlobalLoginWidgetAlt {
+      position: relative;
+      .loginMenuDropdown.active {
+        right: -1px;
+        top: 9px;
+        left: initial;
+      }
+    }
+  }
+
+  #quickLinksMenu.active {
+    @include breakpoint(lg) {
+      right: calc(((100vw - #{$cm-screen-lg-min}) / 2) - -85px);
+      top: 46px;
+    }
+
+    @include breakpoint(sm-and-up) {
+      top: 45px;
+    }
+  }
+}
+
+#quick_cart_container,
+#MiniShopCartProductAdded {
+  @include breakpoint(lg) {
+    left: auto !important;
+    right: calc((100vw - #{$cm-screen-lg-min}) / 2) !important;
+    top: 48px !important;
+  }
+}
+
+#headerRow2 {
+  background: $cm-page-background-color;
+}
+
+#quickLinksBar > li > a.panelLinkSelected.selected, #quickLinksBar > li > span.panelLinkSelected.selected {
+  color: $cm-text-color-light;
+}
+
+.basicMenu > h3 {
+  @include breakpoint(xs) {
+    background-color: $cm-main-color;
+  }
+}
+
+#quickLinksBar {
+  height: 50px;
+  padding-top: 3px;
+
+  > li > a, > li > span {
+    color: $cm-text-color-light;
+    &.panelLinkSelected.selected {
+      color: $cm-main-color-grey-dark;
+    }
+  }
+}
+
+#widget_minishopcart {
+  margin: 9px 20px 9px 16px;
+  background: inherit;
+  border: none !important;
+  border-radius: 0;
+  height: 35px;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.45) none;
+  }
+  &:not(.nohover):hover {
+    background: rgba(255, 255, 255, 0.45) none;
+  }
+
+  &:before {
+    content: "";
+    background-image: url("../../img/cart.svg");
+    width: 27px;
+    height: 25px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    clip: auto;
+  }
+}
+
+#minishopcart_total {
+  background-color: $cm-main-color;
+}
+
+.static_page_content .info_table_1,
+.static_page_content > .content_box,
+.gift_header,
+.myaccount_header {
+  border-top-color: $cm-main-color;
+}
+
+#breadcrumb .on {
+  color: $cm-main-color-grey-dark;
+}
+
+.loginMenuDropdown {
+  right: 189px;
+  top: 47px;
+}
+
+#quickLinksButton .arrow_button_icon:before,
+#widget_minishopcart .arrow_button_icon:before,
+#departmentsButton .arrow_button_icon:before,
+#allDepartmentsButton .arrow_button_icon:before {
+  left: -141px;
+}
+
+#searchBar {
+  top: 5px;
+  width: 25%;
+}
+
+#searchBox {
+  border-radius: 0;
+  border: 1px solid $cm-main-color-light;
+
+}
+
+#searchFilterButton {
+  border-left: 1px solid $cm-main-color-light;
+  border-right: 1px solid $cm-main-color-light;
+}
+
+.button.primary,
+.button_primary,
+.basicButton,
+.cm-button-group--linked-large .cm-button--primary,
+.cm-button-group--overlay .cm-button--primary,
+.cm-shoppable__teaser .cm-button,
+.cm-reviews .cm-button,
+.cm-popup .cm-button {
+  background: $cm-main-color none;
+  border: 1px solid $cm-main-color-light;
+  color: $cm-text-color-light !important; //important is important since IBM is using it a lot
+  border-radius: 0;
+
+  &:hover,
+  &:focus {
+    color: $cm-text-color-light;
+    background: $cm-main-color-hover none;
+  }
+
+  &:active,
+  &.is-active,
+  &.active {
+    transition-duration: 0s;
+    background: $cm-main-color-light;
+    color: $cm-text-color-light;
+  }
+
+  > .button_text,
+  > span {
+    border: none;
+  }
+}
+
+.button_primary > .button_text {
+  border: none;
+}
+
+.button_secondary {
+  background: #FFFFFF none;
+  border: 1px solid $cm-button-secondary-main-color;
+  color: #000000;
+  border-radius: 0;
+
+  &:hover,
+  &:focus {
+    background: $cm-button-secondary-main-color none;
+    color: $cm-text-color-light;
+  }
+
+  &:active,
+  &.is-active,
+  &.active {
+    transition-duration: 0s;
+    background: $cm-button-secondary-main-color none;
+    color: $cm-text-color-light;
+  }
+
+  .button_text {
+    border: none;
+  }
+}
+
+#cartDropdown {
+  border-top: 3px solid $cm-main-color-light;
+}
+
+.shopperActions .dropdown_primary {
+  background: inherit;
+  border-radius: 0;
+}
+
+
+#departmentsButton {
+  display: none !important;
+}
+
+@include breakpoint(sm-and-up) {
+
+  #page {
+    .max-width,
+    #contentWrapper {
+      max-width: $cm-screen-lg-min;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    #headerRow2 .max-width {
+      > div.dijitContentPane {
+        display: inline-block;
+      }
+
+      #searchBar {
+        float: right;
+        position: absolute;
+        z-index: 1;
+      }
+    }
+  }
+
+  #Header_GlobalLogin_loggedInDropdown.menuDropdown {
+    top: 8px;
+    right: -1px;
+  }
+}
+
+.cm-breadcrumb {
+  &__item {
+    color: $cm-main-color-light;
+    a {
+      color: $cm-main-color-light;
+    }
+  }
+}
+
+div#widget_breadcrumb > ul li a {
+  color: $cm-main-color-light;
+}
+
+// the wcs storefront sets "display: none" for all iframes
+.cm-mediaelementwrapper {
+  > iframe {
+    display: initial;
+  }
+}

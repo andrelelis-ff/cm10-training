@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Calista/United States/English/Editorial/Content/Blog/Fashion Trends" name="Design is a series of creative choices" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Design is a series of creative choices</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Fashion%20Trends.xml" path="/Settings/Taxonomies/Subject/Fashion%20Trends"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Luxury will be always around, no matter what happens in the world. You have a more interesting life if you wear impressive clothes.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>I was the first person to have a punk rock hairstyle. Design is a series of creative choices - it's a collaborative effort, an evolutionary process. You choose your fabrics depending upon what you want to say, then you work with mills to get those fabrics. Through the process, you realize what you want it to be. Luxury will be always around, no matter what happens in the world. You have a more interesting life if you wear impressive clothes. My aim is to make the poor look rich and the rich look poor.</p><p>Men have got more of a discerning eye. They appreciate cut and details, things that aren't so obvious. They like things that have cachet and gentlemanliness. Clothes mean nothing until someone lives in them. Awkwardness gives me great comfort. I've never been cool, but I've felt cool. I've been in the cool place, but I wasn't really cool - I was trying to pass for hip or cool. It's the awkwardness that's nice. Over the years I have learned that what is important in a dress is the woman who is wearing it. I didn't consider myself a fashion designer at all at the time of punk. I was just using fashion as a way to express my resistance and to be rebellious. I came from the country, and by the time I got to London, I considered myself to be very stupid. It was my ambition to understand the world I live in.</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Products/Gusso%20Cloth%20Satchel%20Bag.xml" cmexport:path="/Sites/Calista/United%20States/English/Editorial/Products/Gusso%20Cloth%20Satchel%20Bag">Gusso Cloth Satchel Bag</a></p><p>You're only as good as your last collection, which is an enormous pressure. When I was young, I lived like an old woman, and when I got old, I had to live like a young person. Fashion is not something that exists in dresses only. Fashion is in the sky, in the street, fashion has to do with ideas, the way we live, what is happening. I think there is something about luxury - it's not something people need, but it's what they want. It really pulls at their heart. In order to be irreplaceable one must always be different.</p><p>When I was young, I lived like an old woman, and when I got old, I had to live like a young person. Dressing is a way of life. Fashions fade, style is eternal. I'm a fashion designer and people think, what do I know? Awkwardness gives me great comfort. I've never been cool, but I've felt cool. I've been in the cool place, but I wasn't really cool - I was trying to pass for hip or cool. It's the awkwardness that's nice.</p><p>Fashion is a very stressful place to work because of the demands of doing the shows - no one expects a writer to produce two books a year on the dot - but it's also a very toxic place to work. I love things that age well - things that don't date, that stand the test of time and that become living examples of the absolute best. I believe in comfort. If you don't feel comfortable in your clothes, it's hard to think of anything else. It pains me physically to see a woman victimized, rendered pathetic, by fashion. The important thing is to take your time and not get stressed.</p><p>I'm a fashion designer and people think, what do I know? I didn't want to be a fashion designer, and for a good half of my career I didn't like it. I always wanted to do other things. We must never confuse elegance with snobbery. Elegance is not the prerogative of those who have just escaped from adolescence, but of those who have already taken possession of their future. Doing collections, doing fashion is like a non-stop dialogue.</p></div></detailText>
+<pictures>
+<link href="../../../../Pictures/Blog/Sketching%20the%20Look.xml" path="/Sites/Calista/United%20States/English/Pictures/Blog/Sketching%20the%20Look"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../../Authors/David%20Fuller%20Person.xml" path="/Sites/Calista/United%20States/English/Editorial/Authors/David%20Fuller%20Person"/>
+<link href="../../../Authors/Elle%20Quinn%20Person.xml" path="/Sites/Calista/United%20States/English/Editorial/Authors/Elle%20Quinn%20Person"/>
+</authors>
+</CMArticle>

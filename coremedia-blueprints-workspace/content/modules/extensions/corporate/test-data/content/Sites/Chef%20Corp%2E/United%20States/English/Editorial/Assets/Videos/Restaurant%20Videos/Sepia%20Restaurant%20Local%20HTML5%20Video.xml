@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Videos/Restaurant Videos" name="Sepia Restaurant Local HTML5 Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Watch The Video</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>video-sepia-restaurant-sydney</segment>
+<title>Sepia Restaurant</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Explore the design of an award winner.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Explore the kitchen and dining rooms of the award winning Sepia Restaurant in Sydney, Australia - designed by the Chef Corp. Design team.<br/></p><p>Source: <a xlink:href="http://player.vimeo.com/video/27793509" xlink:show="replace" xlink:type="simple">Vimeo</a></p></div></detailText>
+<pictures>
+<link href="Sepia%20Restaurant%20Local%20HTML9b4ee56d.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Videos/Restaurant%20Videos/Sepia%20Restaurant%20Local%20HTML5%20Video%20Still%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>Trixie Barretto/Vimeo CC-BY</copyright>
+<dataUrl></dataUrl>
+<data md5="b5e6a605c22e9c3bb3656533c1d079a1" size="79775641" href="../../../../../../../../__blob/b5e6a605c22e9c3bb3656533c1d079a1.blob" mimetype="video/mp4"/>
+<asset>
+</asset>
+</CMVideo>

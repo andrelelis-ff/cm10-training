@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/Germany/German/Pictures/Product Pictures/Women/Dresses" name="Hermitage Fit and Flare Dress 2" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Pictures/Product%20Pictures/Women/Dresses/Hermitage%20Fit%20and%20Flar66bae128.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Women/Dresses/Hermitage%20Fit%20and%20Flare%20Dress%202"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=19;y=0;width=2581;height=4000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=254;width=2619;height=3492</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=240;width=2619;height=2619</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=189;width=2619;height=1964</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=252;width=2619;height=1473</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=240;width=2619;height=1048</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=315;width=2619;height=655</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.05993690851735015;x2=1;y2=0.7146869085173502</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.0473186119873817;x2=1;y2=0.5383811119873818</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.06309148264984227;x2=1;y2=0.4313883576498423</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.05993690851735015;x2=1;y2=0.3218369085173502</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.07886435331230283;x2=1;y2=0.24255185331230283</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/AuroraWMDRS-1</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Hermitage Fit und Flare Kleid</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>Crystalphoto / shutterstock_287546828</copyright>
+<dataUrl></dataUrl>
+<width>2619</width>
+<height>4000</height>
+<data md5="7ec6a2f51555bdb77aedec5af9775a43" size="606217" href="../../../../../../../../__blob/7ec6a2f51555bdb77aedec5af9775a43.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

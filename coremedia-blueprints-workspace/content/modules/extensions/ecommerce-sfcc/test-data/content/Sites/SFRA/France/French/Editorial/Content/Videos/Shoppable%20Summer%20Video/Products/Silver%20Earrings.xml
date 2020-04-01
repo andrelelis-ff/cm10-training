@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable Summer Video/Products" name="Silver Earrings" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../../United%20Kingdom/English/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Silver%20Earrings.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Silver%20Earrings"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../../Settings/Taxonomies/Subject/Earrings.xml" path="/Settings/Taxonomies/Subject/Earrings"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Boucles d'oreilles en argent</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Complétez le look et rendez votre style iconique. </p> </div></teaserText>
+<pictures>
+<link href="../../../../Pictures/Earrings.xml" path="/Sites/SFRA/France/French/Editorial/Pictures/Earrings"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>sfcc:///catalog/product/25492705M</externalId>
+</CMProductTeaser>

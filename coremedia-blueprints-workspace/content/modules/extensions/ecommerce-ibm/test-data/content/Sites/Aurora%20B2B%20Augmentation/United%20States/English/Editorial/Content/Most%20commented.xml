@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ESDynamicList folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content" name="Most commented" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Most commented</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<maxLength>4</maxLength>
+<channel>
+<link href="../../Navigation/Fragments/Aurora%20B2B%20Homepage/Aurora%20B2B%20Home%20Page.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Navigation/Fragments/Aurora%20B2B%20Homepage/Aurora%20B2B%20Home%20Page"/>
+</channel>
+<type></type>
+<interval>LAST_YEAR</interval>
+<aggregationType>MOST_COMMENTED</aggregationType>
+</ESDynamicList>

@@ -1,0 +1,92 @@
+<VirtualHost *:80 >
+  ServerName <%= @server_name %>
+  <% unless @server_aliases.nil? || @server_aliases.empty? -%>
+    ServerAlias <%= @server_aliases.join " " %>
+  <% end -%>
+  #####################
+  ###    Rewrite    ###
+  #####################
+  RewriteEngine On
+
+  RewriteCond %{HTTPS} off
+  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+  LogLevel <%= @apache_log_level.nil? ? 'warn' : @apache_log_level %> rewrite:<%= @rewrite_log_level.nil? ? 'trace1' : @rewrite_log_level %>
+  ErrorLog /var/log/httpd/<%= @application_name %>-error.log
+  CustomLog /var/log/httpd/<%= @application_name %>-access.log combined
+</Virtualhost>
+
+<VirtualHost *:443 >
+  ServerName <%= @server_name %>
+  <% unless @server_aliases.nil? || @server_aliases.empty? -%>
+  ServerAlias <%= @server_aliases.join " " %>
+  <% end -%>
+  SSLEngine  On
+
+  <%- unless @custom_conf.nil? || @custom_conf.empty? -%>
+  <%- @custom_conf.each do |custom| %>
+  <%= custom %>
+  <%- end -%>
+  <%- end -%>
+
+  #####################
+  ###    Rewrite    ###
+  #####################
+  RewriteEngine On
+  <%- if @preview -%>
+  RequestHeader set X-FragmentHost preview
+  Header unset X-Frame-Options
+
+  # Send empty URL to shop home page
+  RewriteRule ^/$ /s/SiteGenesisGlobal/home?preview=true [R=302,L]
+  <%- else -%>
+  RequestHeader set X-FragmentHost live
+  Header unset X-Frame-Options
+
+  # Send empty URL to shop home page
+  RewriteRule ^/$ /s/SiteGenesisGlobal/home [R=302,L]
+  <%- end -%>
+
+
+  #####################
+  ###    Proxy      ###
+  #####################
+  SSLProxyEngine On
+  <%- unless @ssl_proxy_verify -%>
+  SSLProxyVerify none
+  SSLProxyCheckPeerCN off
+  SSLProxyCheckPeerName off
+  <%- end -%>
+
+  <%- if @headers -%>
+  # during development it may be convenient to add headers
+  <%- @headers.sort.each do |header| -%>
+  <%= header %>
+  <%- end -%>
+  <%- end -%>
+
+  # rewrite all occurrences of the Sandbox hostname to our proxied hostname
+  # thus we stay on the virtual host with our own name, especially important when using a shared SFCC host
+
+  # CMS-14960: Apache 2.4.6 used on Chef bootstrapped testsystems has bugs with inflating
+  # HTML filtering for substituting absolute links is currently disabled
+
+  # first, load the subsitute module (note: mod_proxy_html did not work well, it broke the HTML)
+  # LoadModule substitute_module modules/mod_substitute.so
+
+  # add an output filter chain that first inflates potential gzipped data, then substitutes and last deflates it, again
+  # AddOutputFilterByType INFLATE;SUBSTITUTE;DEFLATE text/html
+
+  # replace all hostnames of the real sandbox with our virtual server host
+  # Substitute "s|<%= @sfcc_host %>|<%= @server_name %>|n"
+
+  ProxyPass / https://<%= @sfcc_host %>/ timeout=600
+  ProxyPassReverse / https://<%= @sfcc_host %>/
+
+  #####################
+  ###    Logging    ###
+  #####################
+  LogLevel <%= @apache_log_level.nil? ? 'warn' : @apache_log_level %> rewrite:<%= @rewrite_log_level.nil? ? 'trace1' : @rewrite_log_level %>
+  ErrorLog /var/log/httpd/<%= @application_name %>-ssl-error.log
+  CustomLog /var/log/httpd/<%= @application_name %>-ssl-access.log combined
+
+</VirtualHost>

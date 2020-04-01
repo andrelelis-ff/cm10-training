@@ -1,0 +1,33 @@
+.cm-hero-banner {
+  &__headline {
+    font-size: 2em;
+
+    @include breakpoint("lg-and-up") {
+      font-size: 3em;
+    }
+  }
+
+  &__text {
+    font-size: 1.2em;
+
+    @include breakpoint("lg-and-up") {
+      font-size: 2em;
+    }
+  }
+
+  .cm-teaser-overlay {
+    &__text {
+
+      @include breakpoint(sm-and-up) {
+        h1 {
+          font-size: 3em;
+        }
+
+        p {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+
+}

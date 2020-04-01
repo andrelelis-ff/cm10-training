@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>cae.lc</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>lc-contentbeans-api</artifactId>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>cap-contentbean-aspect</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>cap-unified-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.livecontext</groupId>
+      <artifactId>lc-ecommerce-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.blueprint</groupId>
+      <artifactId>ec-contentbeans</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.blueprint</groupId>
+      <artifactId>lc-services-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.blueprint</groupId>
+      <artifactId>contentbeans</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>cap-multisite</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.github.spotbugs</groupId>
+      <artifactId>spotbugs-annotations</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+  </dependencies>
+</project>

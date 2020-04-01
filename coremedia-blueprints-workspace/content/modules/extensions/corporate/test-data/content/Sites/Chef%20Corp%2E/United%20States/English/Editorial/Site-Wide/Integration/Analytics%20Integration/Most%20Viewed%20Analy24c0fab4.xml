@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMALXPageList folder="/Sites/Chef Corp./United States/English/Editorial/Site-Wide/Integration/Analytics Integration" name="Most Viewed Analytics Page List" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Most Viewed</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<maxLength>3</maxLength>
+<timeRange>20</timeRange>
+<analyticsProvider>googleAnalytics</analyticsProvider>
+<documentType>CMArticle</documentType>
+<baseChannel>
+<link href="../../../../Navigation/Chef%20Corp%2E%20USA%20Home%20Page.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Navigation/Chef%20Corp%2E%20USA%20Home%20Page"/>
+</baseChannel>
+<defaultContent>
+<link href="../../../Homepage/Company/Press/Events/Events%20Items/Chef%20Corp%20BBQ%20Coba3c93c5.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Company/Press/Events/Events%20Items/Chef%20Corp%20BBQ%20Cookout%20Article"/>
+<link href="../../../Homepage/Professionals/Service/Design%20Article.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Professionals/Service/Design%20Article"/>
+<link href="../../../Homepage/Professionals/Service/Financing%20Article.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Professionals/Service/Financing%20Article"/>
+</defaultContent>
+</CMALXPageList>

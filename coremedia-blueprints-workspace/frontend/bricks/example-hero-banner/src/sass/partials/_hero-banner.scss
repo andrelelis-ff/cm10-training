@@ -1,0 +1,119 @@
+$_aspect-ratio-by-breakpoint: (
+  ("xs-and-up") (1, 1),
+  ("xs-and-up", "landscape") (8, 3),
+  ("sm-and-up") (16, 9),
+  ("sm-and-up", "landscape") (8, 3),
+  ("lg-and-up") (8, 3)
+);
+
+@include cm-default-teaser(
+  $block-class: "cm-hero-banner",
+  $wrapper-enable: false,
+  $media-background-color: transparent,
+  $media-aspect-ratio-by-breakpoint: $_aspect-ratio-by-breakpoint,
+  $headline-color: #FFFFFF
+);
+
+
+.cm-hero-banner {
+
+  &__caption {
+    > :last-child {
+      margin-bottom: 0;
+    }
+
+    @include caption(48px);
+    padding: 0 8%;
+    // disable any pointer events, so e.g. when the overlay is placed over a link, the link can be clicked
+    pointer-events: none;
+    transform: none;
+  }
+
+  &__headline {
+    margin-bottom: 4px;
+    font-size: 40px;
+    // re-enable pointer events to headline (disabled in caption)
+    pointer-events: auto;
+  }
+
+  &__title {
+    display: block;
+  }
+
+  &__text {
+    margin-bottom: 12px;
+  }
+
+  &__additional {
+    margin-bottom: 12px;
+  }
+
+  &__picture-box {
+    //youtube videos inside the banner
+    .cm-mediaelementwrapper iframe {
+      @include stretch-absolute();
+    }
+  }
+
+  &__shop-now {
+    @include aspect-ratio-box-by-breakpoint($_aspect-ratio-by-breakpoint);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+
+    &-button {
+      @include center-absolute();
+      pointer-events: initial;
+    }
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      :hover > & {
+        display: block;
+      }
+    }
+  }
+
+  .cm-teaser-overlay {
+    &__text {
+      margin-bottom: 12px;
+    }
+
+    > :last-child{
+      margin-bottom: 0;
+    }
+
+    // The specification says that all "mobile" breakpoints should show the teaser-overlay positioned the same way
+    // than without teaser-overlay no matter the custom positioning. This doesn't apply for colors, fonts styles, etc.
+    @include breakpoint(xs) {
+      // disable any pointer events, so e.g. when the overlay is placed over a link, the link can be clicked
+      pointer-events: none !important;
+      transform: none !important;
+
+      width: 100% !important;
+      top: auto !important;
+      left: auto !important;
+      bottom: 48px !important;
+      margin-bottom: auto !important;
+      margin-right: auto !important;
+    }
+  }
+
+  > .cm-rating {
+    display: none;
+  }
+}
+
+/* next/prev arrow position */
+
+.cm-placement--hero {
+  .slick-arrow.slick-prev {
+    margin-left: 15px;
+  }
+
+  .slick-arrow.slick-next {
+    margin-right: 15px;
+  }
+}

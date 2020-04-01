@@ -1,0 +1,8 @@
+/*this file is imported in a test*/
+.my-imported-class {
+  color: #000000;
+}
+
+#my-imported-id {
+  background: #ffffff;
+}

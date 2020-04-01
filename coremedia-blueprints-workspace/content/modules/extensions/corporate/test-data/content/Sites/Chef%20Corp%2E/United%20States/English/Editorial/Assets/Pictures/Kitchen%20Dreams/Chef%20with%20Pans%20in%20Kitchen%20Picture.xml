@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Pictures/Kitchen Dreams" name="Chef with Pans in Kitchen Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=428;y=0;width=1149;height=1784</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=332;y=0;width=1335;height=1784</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=0;width=1784;height=1784</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=180;width=2000;height=1500</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=186;width=2000;height=1125</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=393;width=2000;height=1003</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=494;width=2000;height=801</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=135;width=2000;height=750</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=645;width=2000;height=499</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=259;y=0;width=1189;height=1784</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2141057934508816;y1=0;x2=0.7884130982367759;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.16624685138539042;y1=0;x2=0.8337531486146096;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.055415617128463476;y1=0;x2=0.947103274559194;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.10094637223974763;x2=1;y2=0.94175354712764</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.10410094637223974;x2=1;y2=0.7347063275381591</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.22033898305084745;x2=1;y2=0.7824858757062146</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2768361581920904;x2=1;y2=0.7259887005649718</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.2909604519774011;x2=1;y2=0.711864406779661</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3615819209039548;x2=1;y2=0.6412429378531074</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio8x3">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.423943661971831</StringProperty>
+<StringProperty Name="y">0.2823343848580442</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Chef with Pans in Kitchen</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Chef.xml" path="/Settings/Taxonomies/Subject/Chef"/>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Kitchen.xml" path="/Settings/Taxonomies/Subject/Kitchen"/>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Cooking.xml" path="/Settings/Taxonomies/Subject/Cooking"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Chef with Pans in Kitchen</alt>
+<copyright>shutterstock_297678083</copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1784</height>
+<data md5="cf6fa0a45aeaf51c5d4f2146fca20ca7" size="809103" href="../../../../../../../../__blob/cf6fa0a45aeaf51c5d4f2146fca20ca7.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

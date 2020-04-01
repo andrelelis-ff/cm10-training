@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CreateFromTemplateDialogBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                                    xmlns:local="com.coremedia.blueprint.studio.template.*"
+                                    xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                                    xmlns="exml:ext.config"
+                                    xmlns:ui="exml:com.coremedia.ui.config"
+                                    xmlns:bpb-components="exml:com.coremedia.blueprint.base.components.config"
+                                    xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                                    title="{resourceManager.getString('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPlugin', 'text')}"
+                                    id_="createFromTemplate"
+                                    resizable="true"
+                                    stateful="true"
+                                    stateId="createFromTemplateDialogState"
+                                    resizeHandles="e"
+                                    minWidth="401"
+                                    width="401"
+                                    x="{config.positionFun ? config.positionFun()[0] : 113}"
+                                    y="{config.positionFun ? config.positionFun()[1] : 84}"
+                                    constrainHeader="true"
+                                    ui="{WindowSkin.GRID_200.getSkin()}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPlugin')]
+    [ResourceBundle('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPluginSettings')]
+    [ResourceBundle('com.coremedia.cms.editor.Editor')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.studio.template.model.ProcessingData;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+    import com.coremedia.ui.skins.ButtonSkin;
+    import com.coremedia.ui.skins.LabelableSkin;
+    import com.coremedia.ui.skins.WindowSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.template.config.createFromTemplateDialog";
+
+    [ExtConfig]
+    public var positionFun:Function;
+
+    private var config:CreateFromTemplateDialog;
+
+    public native function CreateFromTemplateDialog(config:CreateFromTemplateDialog = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <Panel itemId="{EDITOR_CONTAINER_ITEM_ID}"
+           scrollable="y">
+      <items>
+        <FieldContainer fieldLabel="{resourceManager.getString('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPlugin', 'name_label')}">
+          <items>
+            <ui:AdvancedFieldContainer ui="{LabelableSkin.PLAIN_LABEL.getSkin()}" anchor="100%"
+                                       labelAlign="top"
+                                       labelSeparator=""
+                                       fieldLabel="{resourceManager.getString('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPlugin', 'name_text')}"
+                                       hideLabel="false">
+              <ui:items>
+                <ui:StatefulTextField name="{ProcessingData.NAME_PROPERTY}" anchor="100%"
+                                      itemId="{NAME_FIELD_ID}"
+                                      allowBlank="false"
+                                      emptyText="{resourceManager.getString('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPlugin', 'name_empty_text')}"
+                                      checkChangeBuffer="500">
+                  <ui:plugins>
+                    <ui:BindPropertyPlugin bidirectional="true">
+                      <ui:bindTo>
+                        <ui:ValueExpression context="{getModel()}"
+                                            expression="{ProcessingData.NAME_PROPERTY}"/>
+                      </ui:bindTo>
+                    </ui:BindPropertyPlugin>
+                    <ui:BlockEnterPlugin/>
+                  </ui:plugins>
+                </ui:StatefulTextField>
+              </ui:items>
+              <ui:layout>
+                <layout_Anchor/>
+              </ui:layout>
+            </ui:AdvancedFieldContainer>
+          </items>
+          <layout>
+            <layout_Anchor/>
+          </layout>
+        </FieldContainer>
+
+        <bpb-components:NavigationLinkFieldWrapper
+                label="{resourceManager.getString('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPlugin', 'parent_label')}"
+                doctype="{resourceManager.getString('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPluginSettings', 'doctype')}"
+                model="{getModel()}"
+                labelAlign="top"
+                itemId="{PARENT_PAGE_FIELD_ID}"
+                propertyName="{resourceManager.getString('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPluginSettings', 'parent_property')}"/>
+
+        <FieldContainer
+                fieldLabel="{resourceManager.getString('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPlugin', 'choose_template_text')}">
+          <items>
+            <local:TemplateBeanListChooser height="230"
+                                           itemId="{TEMPLATE_CHOOSER_FIELD_ID}"
+                                           validate="{templateChooserNonEmptyValidator}"
+                                           configPaths="{resourceManager.getString('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPlugin', 'template_paths')}"
+                                           bindTo="{ValueExpressionFactory.createFromValue(getModel())}"/>
+          </items>
+          <layout>
+            <layout_Anchor/>
+          </layout>
+        </FieldContainer>
+        <FieldContainer>
+          <items>
+            <editor:FolderChooserListView
+                    bindTo="{getFolderValueExpression()}"
+                    title="{resourceManager.getString('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPlugin', 'channel_folder_text')}"
+                    itemId="{BASE_FOLDER_CHOOSER_ID}"
+                    contentTypeToCreate="{getContentType(resourceManager.getString('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPluginSettings', 'doctype'))}"
+                    folderPathsExpression="{ValueExpressionFactory.createFromFunction(getNavigationFolders)}"/>
+          </items>
+        </FieldContainer>
+        <FieldContainer>
+          <items>
+            <editor:FolderChooserListView
+                    title="{resourceManager.getString('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPlugin', 'editorial_folder_text')}"
+                    bindTo="{getEditorialFolderValueExpression()}"
+                    itemId="{CONTENT_BASE_FOLDER_CHOOSER_ID}"
+                    contentTypeToCreate="{getContentType('CMArticle')}"
+                    folderPathsExpression="{ValueExpressionFactory.createFromFunction(getEditorialFolders)}"/>
+          </items>
+        </FieldContainer>
+      </items>
+      <layout>
+        <layout_VBox align="stretch"/>
+      </layout>
+      <defaults>
+        <Labelable labelSeparator=""
+                   labelAlign="top"/>
+      </defaults>
+      <plugins>
+        <ui:VerticalSpacingPlugin/>
+      </plugins>
+    </Panel>
+  </local:items>
+  <local:layout>
+    <layout_VBox align="stretch"/>
+  </local:layout>
+  <local:buttons>
+    <Button itemId="createBtn"
+            ui="{ButtonSkin.FOOTER_PRIMARY.getSkin()}"
+            scale="small"
+            text="{resourceManager.getString('com.coremedia.cms.editor.Editor', 'dialog_defaultCreateButton_text')}"
+            handler="{handleSubmit}">
+      <plugins>
+        <ui:BindPropertyPlugin componentProperty="disabled"
+                               bindTo="{getDisabledValueExpression()}"/>
+      </plugins>
+    </Button>
+    <Button itemId="cancelBtn"
+            ui="{ButtonSkin.FOOTER_SECONDARY.getSkin()}"
+            scale="small"
+            text="{resourceManager.getString('com.coremedia.cms.editor.Editor', 'dialog_defaultCancelButton_text')}"
+            handler="{close}"/>
+  </local:buttons>
+
+</local:CreateFromTemplateDialogBase>

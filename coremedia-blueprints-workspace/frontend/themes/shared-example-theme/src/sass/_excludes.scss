@@ -1,0 +1,4 @@
+// Mark scss files to be excluded from the theme build process
+
+// Don't import styles for play buttons, since we use our own styles
+@import "~@coremedia/brick-media/src/sass/partials/play?exclude";

@@ -1,0 +1,39 @@
+.cm-price {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.cm-left-right-banner,
+.cm-carousel-banner,
+.cm-portrait-banner,
+.cm-landscape-banner {
+  &__headline {
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2.4rem;
+  }
+}
+
+.cm-hero-banner {
+  &__headline {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+  }
+}
+
+.cm-portrait-banner-grid--50-50 {
+  .cm-portrait-banner-grid__item {
+    width: 50%;
+  }
+}
+
+.cm-landscape-banner-grid--50-50 {
+  .cm-landscape-banner-grid__item {
+    width: 50%;
+  }
+}

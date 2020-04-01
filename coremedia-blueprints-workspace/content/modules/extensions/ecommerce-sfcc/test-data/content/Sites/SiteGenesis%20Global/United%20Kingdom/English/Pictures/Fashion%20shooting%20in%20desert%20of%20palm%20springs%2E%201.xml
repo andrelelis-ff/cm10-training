@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/United Kingdom/English/Pictures" name="Fashion shooting in desert of palm springs. 1" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0;x2=0.8888888888888888;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0;x2=0.9999999999999999;y2=0.84375</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0;x2=0.9999999999999999;y2=0.75</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0;x2=0.9999999999999999;y2=0.5999999999999999</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0;x2=0.9999999999999999;y2=0.5625</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0;x2=0.9999999999999999;y2=0.375</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.1371308016877637;y1=0;x2=0.8037974683544303;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2510548523206751;y1=0;x2=0.6811623792023955;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=2475;height=1856</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=2784;height=1566</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=0;width=2784;height=1392</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=0;width=2784;height=1114</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=0;width=2784;height=1044</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=0;width=2784;height=696</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=382;y=0;width=1856;height=1856</StringProperty>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=699;y=0;width=1197;height=1856</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=696;y=0;width=1392;height=1856</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Fashion shooting in desert of palm springs. 1</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Fashion.xml" path="/Settings/Taxonomies/Subject/Fashion"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Fashion shooting in desert of palm springs. 1</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2784</width>
+<height>1856</height>
+<data md5="410d068e7653b63eac0e03ddf80b3b04" size="2744831" href="../../../../../__blob/410d068e7653b63eac0e03ddf80b3b04.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

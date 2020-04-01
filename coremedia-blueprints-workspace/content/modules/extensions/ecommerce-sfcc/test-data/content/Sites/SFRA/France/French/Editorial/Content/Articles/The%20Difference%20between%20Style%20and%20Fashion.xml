@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/SFRA/France/French/Editorial/Content/Articles" name="The Difference between Style and Fashion" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Articles/The%20Difference%20between%20Style%20and%20Fashion.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Articles/The%20Difference%20between%20Style%20and%20Fashion"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/SFRA/France/French/Options/Settings/Teaser%20Styles/Light"/>
+<IntProperty Name="positionY">41</IntProperty>
+<IntProperty Name="width">77</IntProperty>
+</Struct>
+</StructProperty>
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>La différence entre le style et la mode</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Women%282%29.xml" path="/Settings/Taxonomies/Subject/Women%282%29"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Luxury.xml" path="/Settings/Taxonomies/Subject/Luxury"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Style.xml" path="/Settings/Taxonomies/Subject/Style"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Fashion.xml" path="/Settings/Taxonomies/Subject/Fashion"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center"> La mode est toujours une question de style </p> <p class="align--center"> Trouvez votre style maintenant </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> La mode en 2018 est faite pour devenir démodée. La mode est toujours du temps dans lequel vous vivez. Ce n'est pas quelque chose qui reste seul. Mais le grand problème, le problème le plus important, est de rajeunir les femmes. Rendre les femmes plus jeunes. Cela va changer. Ils se sentent plus joyeux. La mode s'efface, seul le style reste le même. Pour être irremplaçable, il faut toujours être différent. L'élégance n'est pas l'apanage de ceux qui viennent de fuir l'adolescence, mais de ceux qui ont déjà pris possession de leur avenir. </p> <p> La mode s'efface, seul le style reste le même. Une fille devrait être deux choses: classe et fabuleuse. Certaines personnes pensent que le luxe est le contraire de la pauvreté. Ce n'est pas. C'est le contraire de la vulgarité. L'élégance n'est pas l'apanage de ceux qui viennent de fuir l'adolescence, mais de ceux qui ont déjà pris possession de leur avenir. L'élégance n'est pas l'apanage de ceux qui viennent de fuir l'adolescence, mais de ceux qui ont déjà pris possession de leur avenir. </p> <p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Light%20Hematite%20Bracelet%20-%20Augmented.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Products/Light%20Hematite%20Bracelet%20-%20Augmented">Light Hematite Bracelet</a></p> <p> Pour être irremplaçable, il faut toujours être différent. Certaines personnes pensent que le luxe est le contraire de la pauvreté. Ce n'est pas. C'est le contraire de la vulgarité. L'élégance n'est pas l'apanage de ceux qui viennent de fuir l'adolescence, mais de ceux qui ont déjà pris possession de leur avenir. La mode est toujours du temps dans lequel vous vivez. Ce n'est pas quelque chose qui reste seul. Mais le grand problème, le problème le plus important, est de rajeunir les femmes. Rendre les femmes plus jeunes. Les perspectives changent. Ils se sentent plus joyeux. La mode est faite pour devenir démodé. </p> <p> Certaines personnes pensent que le luxe est le contraire de la pauvreté. Ce n'est pas. C'est le contraire de la vulgarité. Une fille devrait être deux choses: élégante et fabuleuse. L'élégance n'est pas la prérogative de ceux qui viennent d'échapper à l'adolescence, mais de ceux qui ont déjà pris possession de leur avenir. La mode est faite pour devenir démodée. La mode se fane, seul le style reste le même. </p> </div></detailText>
+<pictures>
+<link href="../../Pictures/Stylish%20Women%20with%20Sunglasses.xml" path="/Sites/SFRA/France/French/Editorial/Pictures/Stylish%20Women%20with%20Sunglasses"/>
+</pictures>
+<related>
+<link href="../Personalization/Personalized%20Hero%20Banner.xml" path="/Sites/SFRA/France/French/Editorial/Content/Personalization/Personalized%20Hero%20Banner"/>
+<link href="Fashions%20fade%2C%20style%20is%20eternal.xml" path="/Sites/SFRA/France/French/Editorial/Content/Articles/Fashions%20fade%2C%20style%20is%20eternal"/>
+<link href="Fashion%20should%20be%20Fun.xml" path="/Sites/SFRA/France/French/Editorial/Content/Articles/Fashion%20should%20be%20Fun"/>
+</related>
+<authors>
+<link href="../../Authors/Joshua%20Campos%20Person.xml" path="/Sites/SFRA/France/French/Editorial/Authors/Joshua%20Campos%20Person"/>
+</authors>
+</CMArticle>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/United States/English/Pictures/Categories" name="happy young woman or teen girl in casual clothes" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1272;y=0;width=2044;height=3172</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=1119;y=0;width=2374;height=3172</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=555;y=0;width=3171;height=3172</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=169;width=4000;height=3003</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=362;width=4000;height=2254</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=370;width=4000;height=2005</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=378;width=4000;height=1602</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=370;width=4000;height=1497</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=346;width=4000;height=998</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.317907444668008;y1=0;x2=0.8289738430583501;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2796780684104628;y1=0;x2=0.8732394366197183;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.13883299798792756;y1=0;x2=0.93158953722334;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.0532994923857868;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.11421319796954314;x2=1;y2=0.8248730964467005</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.116751269035533;x2=1;y2=0.748730964467005</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.11928934010152284;x2=1;y2=0.6243654822335025</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.116751269035533;x2=1;y2=0.5888324873096447</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.10913705583756345;x2=1;y2=0.42385786802030456</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/category/Women Sweaters</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>people, style and fashion concept - happy young woman or teen girl in casual clothes and sunglasses having fun</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>shutterstock_419213197</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>3172</height>
+<data md5="41c87f885321b3f0e7d16721a205201d" size="1458006" href="../../../../../../__blob/41c87f885321b3f0e7d16721a205201d.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

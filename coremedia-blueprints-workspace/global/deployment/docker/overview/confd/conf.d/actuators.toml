@@ -1,0 +1,12 @@
+[template]
+src   = "actuators.html.tmpl"
+dest  = "/usr/share/nginx/html/assets/actuators.html"
+keys  = [
+        "/studio/packages/proxy/enabled",
+        "/commerce/mock/enabled",
+        "/commerce/sfcc/enabled",
+        "/commerce/hybris/enabled",
+        "/commerce/wcs/enabled",
+
+
+]

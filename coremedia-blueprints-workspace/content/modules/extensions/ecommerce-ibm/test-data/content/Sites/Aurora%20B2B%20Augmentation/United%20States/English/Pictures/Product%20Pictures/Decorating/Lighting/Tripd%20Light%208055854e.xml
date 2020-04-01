@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Decorating/Lighting" name="Tripd Light Black with Ivory Head Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=613;y=1253;width=987;height=1527</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=447;y=1087;width=1334;height=1780</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=333;y=1133;width=1567;height=1567</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=153;y=1220;width=1934;height=1453</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=220;y=1227;width=1867;height=1053</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=153;y=1253;width=1934;height=773</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=127;y=1313;width=1960;height=493</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2939297124600639;y1=0.31333333333333335;x2=0.7667731629392971;y2=0.695</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.21405750798722045;y1=0.27166666666666667;x2=0.853035143769968;y2=0.7166666666666667</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.1597444089456869;y1=0.2833333333333333;x2=0.9105431309904153;y2=0.675</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.07348242811501597;y1=0.305;x2=1;y2=0.6683333333333333</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.10543130990415335;y1=0.30666666666666664;x2=1;y2=0.57</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0.07348242811501597;y1=0.31333333333333335;x2=1;y2=0.5066666666666667</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0.06070287539936102;y1=0.3283333333333333;x2=1;y2=0.45166666666666666</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_HLG028_280114</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Tripd Light Black with Ivory Head</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Tripd Light Black with Ivory Head</alt>
+<copyright>Selin Aydogan / Shutterstock 396073411</copyright>
+<dataUrl></dataUrl>
+<width>2087</width>
+<height>4000</height>
+<data md5="6cd48de29d6fd0072ef14da539c1e5f2" size="136406" href="../../../../../../../../__blob/6cd48de29d6fd0072ef14da539c1e5f2.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

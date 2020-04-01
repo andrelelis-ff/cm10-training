@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/Germany/German/Pictures" name="Wool Hat 01" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Pictures/Wool%20Hat%2001.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Wool%20Hat%2001"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="originReferences">
+<String>hybris:///catalog/product/300515779</String>
+</StringListProperty>
+<StringListProperty Name="references">
+<String>hybris:///catalog/product/300515779</String>
+<String>hybris:///catalog/sku/300515779</String>
+<String>hybris:///catalog/category/330000</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0.21980676328502416</StringProperty>
+<StringProperty Name="y1">0.2028985507246377</StringProperty>
+<StringProperty Name="x2">0.8115942028985508</StringProperty>
+<StringProperty Name="y2">0.8115942028985508</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=638;y=406;width=787;height=1217</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=575;y=406;width=913;height=1217</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=440;y=425;width=1184;height=1184</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=290;width=2000;height=1502</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=93;y=444;width=1907;height=1074</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=87;y=522;width=1913;height=957</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=531;width=2000;height=802</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=565;width=2000;height=749</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=604;width=2000;height=502</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.3188405797101449;y1=0.2028985507246377;x2=0.7125603864734299;y2=0.8115942028985508</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.28743961352657005;y1=0.2028985507246377;x2=0.7439613526570048;y2=0.8115942028985508</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.21980676328502416;y1=0.21256038647342995;x2=0.8115942028985508;y2=0.8043478260869565</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.14492753623188406;x2=1;y2=0.8961352657004831</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.046296296296296294;y1=0.2222222222222222;x2=1;y2=0.7592592592592593</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0.043478260869565216;y1=0.2608695652173913;x2=1;y2=0.7391304347826086</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.26570048309178745;x2=1;y2=0.6666666666666666</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.2826086956521739;x2=1;y2=0.6570048309178744</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.30193236714975846;x2=1;y2=0.5531400966183575</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Wollmütze</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Wollmütze</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>2000</height>
+<data md5="d4ad365cc6d3cc772de9a588daaafce6" size="419048" href="../../../../../__blob/d4ad365cc6d3cc772de9a588daaafce6.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

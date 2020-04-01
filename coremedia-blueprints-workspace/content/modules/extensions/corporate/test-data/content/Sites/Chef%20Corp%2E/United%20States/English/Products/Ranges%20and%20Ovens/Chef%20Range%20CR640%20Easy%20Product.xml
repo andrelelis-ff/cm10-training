@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProduct folder="/Sites/Chef Corp./United States/English/Products/Ranges and Ovens" name="Chef Range CR640 Easy Product" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">More Product Information</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>chef-range-cr640-easy</segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+<link href="Ranges%20and%20Ovens.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Ranges%20and%20Ovens/Ranges%20and%20Ovens"/>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>The Chef Range CR640 Standard range cooker with a Gas hob is a great value choice amongst US chefs because of its professional build quality and durability.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-3">Description</p><p>The Chef Range CR640 Standard range cooker with a Gas hob is a great value choice amongst US chefs because of its professional build quality and durability. The improved standard features now include a superior, smoother operating Roll-out grill, which allows you to turn your food safely, whilst offering the same four variable height settings, heavy-duty control knobs and stainless steel side panels.</p><p><br/></p><p class="p--heading-3">Key Features</p><p>•Stainless steel hotplate</p><p>•Multifunction oven<br/>•Dual circuit grill<br/>•Heavy-duty pan supports<br/>•5kW central burner<br/>•Roll-out grill<br/>•Heavy-duty oven shelves<br/>•2 year warranty<br/></p><p><br/></p><p class="p--heading-3">Technical Specifications</p><p/><p/><table dir="ltr"><tbody><tr><td>Width</td><td>800 mm</td></tr><tr><td>Depth</td><td>600 mm</td></tr><tr><td>Height</td><td>913 mm</td></tr><tr><td>Weight</td><td>527 lbs</td></tr><tr><td>Fuel Types</td><td>Electric</td></tr><tr><td>Hob configuration:</td><td>-</td></tr><tr><td>Burners</td><td>4</td></tr><tr><td>Power Ratings Hob</td><td>1x1.4KW, 1x1.85KW,1x2.3KW</td></tr><tr><td>Total Power Ratings</td><td>Gas - 17.9kW (gas)<br/>Electric - 7.4kW (electric)</td></tr><tr><td>Oven capacity (LH)</td><td>65 litres</td></tr><tr><td>Oven capacity (RH)</td><td>78 litres</td></tr><tr><td>Internal Oven Dimensions (LH)</td><td>-</td></tr><tr><td>W x D x H</td><td>433 x 380 x 380 mm</td></tr><tr><td>Internal Oven Dimensions (RH)</td><td>-</td></tr><tr><td>W x D x H</td><td>433 x 380 x 380 mm</td></tr><tr><td>Accessories Included</td><td>Front plinth and five shelves, including one deep shelf, Wok Ring</td></tr></tbody></table><p><br/></p></div></detailText>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Products/Ranges%20and%20Ovens/Chef%20Range%20CR640%fbf03dbb.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Products/Ranges%20and%20Ovens/Chef%20Range%20CR640%20Easy%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<downloads>
+</downloads>
+<productCode>CC-CRE-640</productCode>
+<productName>Chef Range CR640 Easy</productName>
+</CMProduct>

@@ -1,0 +1,8 @@
+.cm-row > div {
+  &:last-child {
+    padding-bottom: $cm-grid-gutter-width;
+  }
+  &.cm-placement--header {
+    padding-bottom: 0;
+  }
+}

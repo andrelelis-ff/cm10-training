@@ -1,0 +1,54 @@
+query SiteQuery($id: String!) {
+  content {
+    site(id: $id) {
+      name
+      id
+      root {
+        ... Reference
+        ... Navigation
+      }
+      crops {
+        name
+        aspectRatio {
+          width
+          height
+        }
+        sizes {
+          width
+          height
+        }
+      }
+    }
+  }
+}
+
+fragment NavigationEntry on CMLinkable {
+  ... Reference
+  title
+}
+
+fragment Navigation on CMNavigation {
+  ... NavigationEntry
+  ... on CMNavigation {
+    children  {
+      ... NavigationEntry
+      ... on CMNavigation {
+        children {
+          ... NavigationEntry
+          ... on CMNavigation {
+            children  {
+              ... NavigationEntry
+              ... on CMNavigation {
+                children {
+                  ... NavigationEntry
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#import "./referenceFragments.graphql"

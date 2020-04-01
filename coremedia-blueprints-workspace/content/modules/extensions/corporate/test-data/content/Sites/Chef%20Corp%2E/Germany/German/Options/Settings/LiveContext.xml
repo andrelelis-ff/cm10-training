@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Chef Corp./Germany/German/Options/Settings" name="LiveContext" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Options/Settings/LiveContext.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/LiveContext"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="livecontext.store.name">Corporate-Catalog</StringProperty>
+<StringProperty Name="livecontext.connectionId">cms1</StringProperty>
+<BooleanProperty Name="livecontext.contentLed">true</BooleanProperty>
+<LinkProperty Name="livecontext.rootCategory" LinkType="coremedia:///cap/contenttype/CMCategory" xlink:href="coremedia:///cap/resources/../../Products/Chef%20Corp%2E%20%5BCatalog%5D.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Products/Chef%20Corp%2E%20%5BCatalog%5D"/>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

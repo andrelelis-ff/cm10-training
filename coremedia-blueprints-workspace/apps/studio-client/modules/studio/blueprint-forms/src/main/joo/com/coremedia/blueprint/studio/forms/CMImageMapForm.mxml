@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:im="exml:com.coremedia.cms.studio.im.config"
+        xmlns:ui="exml:com.coremedia.ui.config" xmlns:quickcreate="com.coremedia.cms.editor.sdk.quickcreate.*">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.studio.forms.containers.CallToActionConfigurationForm;
+    import com.coremedia.cms.editor.sdk.util.AnnotatedLinkListHelper;
+    import com.coremedia.cms.editor.sdk.util.ILinkListWrapper;
+    import com.coremedia.cms.editor.sdk.util.StructContentLinkListWrapper;
+    import com.coremedia.ui.skins.PanelSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.cmImageMapForm";
+    public static const TARGET_ANNOTATION_WIDGET_ITEM_ID:String = "target-annotation-widget";
+
+    public static const OVERLAY_CONFIG_ITEMID:String = "overlayConfig";
+
+    private var config:CMImageMapForm;
+
+    private var structContentLinkListWrapper:StructContentLinkListWrapper;
+
+    public native function CMImageMapForm(config:CMImageMapForm = null);
+
+    private function getStructContentLinkListWrapper(config:CMImageMapForm):ILinkListWrapper {
+      if (!structContentLinkListWrapper) {
+        structContentLinkListWrapper = AnnotatedLinkListHelper.createStructContentLinkListWrapper(config.bindTo, config.forceReadOnlyValueExpression);
+      }
+      return structContentLinkListWrapper;
+    }
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!---
+     The content type to fill the tree with.
+    -->
+    <fx:String id="contentType"/>
+
+    <!---
+     The comma separated folder values to read the content from.
+    -->
+    <fx:String id="folders"/>
+  </fx:Declarations>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <bpforms:TeaserDocumentForm itemId="detailsForm" collapsed="false">
+          <bpforms:plugins exml:mode="append">
+            <ui:RemoveItemsPlugin recursive="true">
+              <ui:items>
+                <bpforms:CallToActionConfigurationForm/>
+              </ui:items>
+            </ui:RemoveItemsPlugin>
+          </bpforms:plugins>
+        </bpforms:TeaserDocumentForm>
+        <bpforms:SinglePictureDocumentForm itemId="cmImageMapPicturesForm"/>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMTeaser_targets_text')}"
+                itemId="cmImageMapTargetForm">
+          <editor:items>
+            <editor:LinkListPropertyField propertyName="targets"
+                                          hideLabel="true"
+                                          showThumbnails="true"
+                                          linkListWrapper="{getStructContentLinkListWrapper(config)}"
+                                          linkType="CMTeasable"
+                                          rowWidgetsAnnotatedPredicates="{[CallToActionConfigurationForm.isAnnotated]}">
+              <editor:additionalToolbarItems>
+                <TbSeparator/>
+                <quickcreate:QuickCreateToolbarButton contentType="CMPicture"
+                                                      propertyName="target"
+                                                      bindTo="{config.bindTo}"/>
+              </editor:additionalToolbarItems>
+              <editor:fields>
+                <ui:DataField name="{ValidityColumn.STATUS_ID}"
+                              ifUnreadable=""
+                              mapping=""
+                              convert_="{ValidityColumn.convert}"/>
+              </editor:fields>
+              <editor:rowWidget>
+                <ui:AnnotatedLinkListWidget itemId="{TARGET_ANNOTATION_WIDGET_ITEM_ID}">
+                  <ui:items>
+                    <bpforms:CallToActionConfigurationForm bindTo="{config.bindTo}"
+                                                           collapsible="false"
+                                                           ui="{PanelSkin.DEFAULT.getSkin()}"
+                                                           forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}">
+                      <bpforms:header>
+                        <Header padding="6 6 6 0"/>
+                      </bpforms:header>
+                    </bpforms:CallToActionConfigurationForm>
+                  </ui:items>
+                </ui:AnnotatedLinkListWidget>
+              </editor:rowWidget>
+              <editor:columns>
+                <editor:ThumbnailColumn/>
+                <editor:TypeIconColumn/>
+                <editor:NameColumn flex="1"/>
+                <bpforms:ValidityColumn/>
+                <editor:StatusColumn/>
+              </editor:columns>
+            </editor:LinkListPropertyField>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <editor:PropertyFieldGroup itemId="{OVERLAY_CONFIG_ITEMID}"
+                                   title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMImageMap_overlayConfiguration_title')}">
+          <editor:plugins exml:mode="append">
+            <editor:ShowIssuesPlugin bindTo="{config.bindTo}"
+                                     propertyName="localSettings.overlay"/>
+            <editor:PropertyFieldPlugin propertyName="localSettings.overlay"/>
+          </editor:plugins>
+          <editor:items>
+            <editor:BooleanPropertyField propertyName="localSettings.overlay.displayTitle"
+                                         hideLabel="true"
+                                         dontTransformToInteger="true"/>
+            <editor:BooleanPropertyField propertyName="localSettings.overlay.displayShortText"
+                                         hideLabel="true"
+                                         dontTransformToInteger="true"/>
+            <editor:BooleanPropertyField propertyName="localSettings.overlay.displayPicture"
+                                         hideLabel="true"
+                                         dontTransformToInteger="true"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <bpforms:ViewTypeSelectorForm/>
+        <bpforms:ValidityDocumentForm bindTo="{config.bindTo}"/>
+      </editor:items>
+    </editor:DocumentForm>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMImageMap_title')}"
+            itemId="hotzones">
+      <editor:items>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMImageMap_title')}"
+                itemId="cmImageMapEditorForm">
+          <editor:items>
+            <im:ImageMapEditor
+                    imageBlobValueExpression="{config.bindTo.extendBy('properties.pictures.0.properties.data')}"
+                    structPropertyName="localSettings"
+                    areaContentType="CMTeasable">
+              <im:plugins>
+                <ui:VerticalSpacingPlugin/>
+              </im:plugins>
+            </im:ImageMapEditor>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:DefaultExtraDataForm/>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataWithoutSearchableForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

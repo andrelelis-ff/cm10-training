@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Settings/Options/Settings" name="LocaleSettings" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringListProperty Name="availableLocales">
+<String>en</String>
+<String>en-US</String>
+<String>en-GB</String>
+<String>en-JP</String>
+<String>en-DE</String>
+<String>en-CA</String>
+<String>en-FR</String>
+<String>en-142</String>
+<String>ar-AE</String>
+<String>bg</String>
+<String>cs</String>
+<String>et</String>
+<String>da</String>
+<String>de</String>
+<String>de-DE</String>
+<String>fi</String>
+<String>fr</String>
+<String>fr-FR</String>
+<String>fr-CA</String>
+<String>el</String>
+<String>es</String>
+<String>es-ES</String>
+<String>it</String>
+<String>it-IT</String>
+<String>hr</String>
+<String>hu</String>
+<String>lt</String>
+<String>lv</String>
+<String>nl</String>
+<String>pl</String>
+<String>pt</String>
+<String>ro</String>
+<String>sl</String>
+<String>sk</String>
+<String>sv</String>
+<String>ru</String>
+<String>zh-CN</String>
+<String>ja-JP</String>
+<String>ko-KR</String>
+</StringListProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

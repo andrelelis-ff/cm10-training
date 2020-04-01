@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./United States/English/Editorial/Site-Wide/Footer" name="Imprint Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>imprint</segment>
+<title>Imprint</title>
+<htmlTitle></htmlTitle>
+<keywords>CoreMedia imprint</keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Imprint</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>This is a demonstration website for the CoreMedia Content Experience Platform by CoreMedia</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>This is a demonstration website for the<br/></p><p class="p--heading-2"><a xlink:show="replace" xlink:type="simple" xlink:href="coremedia:///cap/resources/../External%20Links/CoreMedia%20Content%20Experience%20Platf1bd02259.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Site-Wide/External%20Links/CoreMedia%20Content%20Experience%20Platform%20External%20Link">CoreMedia Content Experience Platform</a></p><p>provided by CoreMedia AG.</p><p><br/></p><table><tbody><tr valign="top"><td colspan="1" rowspan="1"><p>Hamburg, Germany<br/><strong>CoreMedia AG</strong></p><p>Ludwig-Erhard-Straße 18      <br/>20459 Hamburg<br/>Germany<br/></p><p><a xlink:href="http://tel:+49.40.3255.870" xlink:show="replace" xlink:type="simple">+49.40.325.5870</a><br/><a xlink:href="mailto:info@coremedia.com" xlink:show="replace" xlink:type="simple">info@coremedia.com</a></p></td><td colspan="1" rowspan="1"><p>San Francisco, USA<br/><strong>CoreMedia Corporation</strong></p><p>114 Sansome Street, Suite 1300<br/>San Francisco, CA 94104<br/><a xlink:href="http://tel:+1.415.371.0400" xlink:show="replace" xlink:type="simple">+1.415.371.0400</a><br/><a xlink:href="mailto:usa-info@coremedia.com" xlink:show="replace" xlink:type="simple">usa-info@coremedia.com</a></p></td></tr></tbody></table><p><strong>Registered with the trade registry of Hamburg under the number</strong><br/>HR B 76277</p><p><strong>Representatives: </strong>Sören Stamer, Dr. Klemens Kleiminger</p><p><strong>Value Added Tax Identification Number</strong><br/>DE 179 733 607</p><p><strong>Provider pursuant to the German Teleservices Act (TDG):</strong><br/>CoreMedia AG, Ludwig-Erhard-Straße 18, 20459 Hamburg</p><p><br/></p><p>All images are licensed by CoreMedia AG under copyright by <strong><a xlink:href="http://www.shutterstock.com" xlink:show="new" xlink:type="simple">ShutterStock</a></strong> unless noted otherwise.<br/>No redistribution of images is allowed without separate licensing.<br/></p><p>Any <strong><a xlink:show="replace" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Navigation/Hidden%20Navigation/Embedding%20Demo%20Page.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Navigation/Hidden%20Navigation/Embedding%20Demo%20Page">embedded 3rd party services</a></strong> may have to be licensed separately.<br/></p><p><br/></p><p><br/></p></div></detailText>
+<pictures>
+<link href="../../Assets/Pictures/Kitchen%20Dreams/Young%20Chef%20in%20Kitchen%20Picture.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Kitchen%20Dreams/Young%20Chef%20in%20Kitchen%20Picture"/>
+</pictures>
+<notSearchable>1</notSearchable>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

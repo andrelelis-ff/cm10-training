@@ -1,0 +1,15 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--
+    Legacy format to ensure compatibility.
+    Do not introduce any new content of this format, but use placements_2 structs instead.
+  -->
+  <StructListProperty Name="placements">
+    <Struct>
+      <LinkProperty LinkType="coremedia:///cap/contenttype/CMSymbol" Name="LinkPropertyName" xlink:href="coremedia:///cap/content/34"/>
+      <LinkListProperty LinkType="coremedia:///cap/contenttype/CMLinkable" Name="LinkListPropertyName">
+        <Link xlink:href="coremedia:///cap/content/42"/>
+        <Link xlink:href="coremedia:///cap/content/44"/>
+      </LinkListProperty>
+    </Struct>
+  </StructListProperty>
+</Struct>

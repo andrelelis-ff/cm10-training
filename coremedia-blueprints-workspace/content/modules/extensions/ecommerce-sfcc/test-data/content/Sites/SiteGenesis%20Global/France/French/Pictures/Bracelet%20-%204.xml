@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/France/French/Pictures" name="Bracelet - 4" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Pictures/Bracelet%20-%204.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Pictures/Bracelet%20-%204"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=114;y=0;width=238;height=317</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=74;y=0;width=317;height=317</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=21;y=0;width=423;height=317</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=28;width=465;height=262</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=71;width=465;height=174</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Bracelet - 4</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Bracelet - 4</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>465</width>
+<height>317</height>
+<data md5="df27b3eb82def2cd6a76ed5df82c20c7" size="96374" href="../../../../../__blob/df27b3eb82def2cd6a76ed5df82c20c7.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

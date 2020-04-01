@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMUserProfile folder="/Sites/Chef Corp./United States/English/Options/Personalization/Profiles" name="Peter Preston - Press Persona" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<profileSettings href="Peter%20Preston%20-%20Press%20Pebf73197f.plain" mimetype="text/plain"/>
+<profileExtensions>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="properties">
+<Struct>
+<IntListProperty Name="subjectTaxonomies_count">
+<Int>95</Int>
+</IntListProperty>
+<LinkListProperty Name="explicit" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Press.xml" cmexport:path="/Settings/Taxonomies/Subject/Press"/>
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Press%20Release.xml" cmexport:path="/Settings/Taxonomies/Subject/Press%20Release"/>
+</LinkListProperty>
+<LinkListProperty Name="subjectTaxonomies" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Press.xml" cmexport:path="/Settings/Taxonomies/Subject/Press"/>
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Press%20Release.xml" cmexport:path="/Settings/Taxonomies/Subject/Press%20Release"/>
+</LinkListProperty>
+<LinkListProperty Name="profileImage" LinkType="coremedia:///cap/contenttype/CMPicture">
+<Link xlink:href="coremedia:///cap/resources/Peter%20Preston%20Picture.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Personalization/Profiles/Peter%20Preston%20Picture"/>
+</LinkListProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="usersegments">
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</profileExtensions>
+</CMUserProfile>

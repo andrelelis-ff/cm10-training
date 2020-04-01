@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMDownload folder="/Sites/Hybris Apparel/United Kingdom/English/Downloads" name="CM Action Goggles 2 Instruction Manual" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>hybris:///catalog/product/300020294</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>CM Action Goggles Instruction Manual</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../Pictures/CM%20Action%20Goggles%2001.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/CM%20Action%20Goggles%2001"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<data md5="a68a701cd9f8954824626e2ce58d0ff0" size="142852" href="../../../../../__blob/a68a701cd9f8954824626e2ce58d0ff0.blob" mimetype="application/pdf"/>
+<filename></filename>
+</CMDownload>

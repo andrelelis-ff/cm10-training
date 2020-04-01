@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>studio-client.modules</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>studio-client.extensions</artifactId>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>alx</module>
+    <module>alx-google</module>
+    <module>alx-webtrends</module>
+    <module>am</module>
+    <module>catalog</module>
+    <module>content-hub-default</module>
+    <module>create-from-template</module>
+    <module>custom-topic-pages</module>
+    <module>ecommerce-ibm</module>
+    <module>es</module>
+    <module>es-alx</module>
+    <module>external-preview</module>
+    <module>feedback-hub</module>
+    <module>lc</module>
+    <module>lc-asset</module>
+    <module>lc-es</module>
+    <module>lc-p13n</module>
+    <module>nuggad</module>
+    <module>optimizely</module>
+    <module>osm</module>
+    <module>p13n</module>
+    <module>taxonomy</module>
+    <module>validators</module>
+  </modules>
+
+</project>

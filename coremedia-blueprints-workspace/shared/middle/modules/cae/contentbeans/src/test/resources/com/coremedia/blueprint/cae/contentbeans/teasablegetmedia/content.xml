@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+
+  <!--
+    Test content for the CodeResourceHelper
+  -->
+  <content>
+    <folder id="1" name="">
+      <folder id="11" name="Sites">
+        <folder id="111" name="Media">
+          <document id="30" type="CMArticle" name="a1">
+            <version number="1">
+              <linkProperty name="pictures">
+                <link id="16"/>
+                <link id="18"/>
+              </linkProperty>
+            </version>
+          </document>
+
+          <document id="32" type="CMChannel" name="c1">
+            <version number="1">
+              <markupProperty name="placement" url="222placement.xml" grammar="coremedia-struct-2008"/>
+            </version>
+          </document>
+          <document id="220" type="CMSymbol" name="main">
+            <version number="1">
+              <stringProperty name="description" value="main"/>
+            </version>
+          </document>
+          <document id="224" type="CMSettings" name="LayoutSettings">
+            <version number="1">
+              <markupProperty name="settings" url="224settings.xml" grammar="coremedia-struct-2008"/>
+            </version>
+          </document>
+
+          <document id="34" type="CMTeaser" name="t1">
+            <version number="1">
+              <linkProperty name="target">
+                <link id="32"/>
+              </linkProperty>
+            </version>
+          </document>
+
+          <document id="16" type="CMPicture" name="pic1">
+            <version number="1">
+            </version>
+          </document>
+          <document id="18" type="CMPicture" name="pic2">
+            <version number="1">
+            </version>
+          </document>
+        </folder>
+      </folder>
+    </folder>
+  </content>
+</contentRepository>

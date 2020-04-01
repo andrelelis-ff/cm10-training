@@ -1,0 +1,54 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/framework/spring/blueprint-contextstrategy.xml"/>
+  <import resource="classpath:/com/coremedia/cae/dataview-services.xml"/>
+  <import resource="blueprint-cache.xml" />
+  <import resource="classpath:/com/coremedia/blueprint/base/pagegrid/impl/bpbase-pagegrid-services.xml"/>
+  <import resource="classpath:/framework/spring/search/solr-search.xml"/>
+
+  <context:component-scan base-package="com.coremedia.blueprint.viewtype.configuration"/>
+
+  <bean id="currentContextService" class="com.coremedia.blueprint.common.services.context.CurrentContextServiceImpl"/>
+
+  <bean id="validationService" class="com.coremedia.blueprint.cae.services.validation.ValidationServiceImpl">
+    <property name="validators" ref="contentbeanValidatorList" />
+  </bean>
+
+  <util:list id="contentbeanValidatorList">
+    <description>list bean of Validator implementations used by the validationService</description>
+    <ref bean="validityPeriodValidator"/>
+  </util:list>
+
+  <bean id="validityPeriodValidator"
+        class="com.coremedia.blueprint.common.datevalidation.ValidityPeriodValidator">
+    <property name="preview" value="${cae.is.preview}"/>
+  </bean>
+
+  <customize:append id="addValidityPeriodValidatorSolrSearchFilter" bean="solrSearchFilters">
+    <list>
+      <ref bean="validityPeriodValidator"/>
+    </list>
+  </customize:append>
+
+  <bean id="contextHelper" class="com.coremedia.blueprint.common.services.context.ContextHelper">
+    <property name="contextStrategy" ref="contextStrategy"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+    <property name="currentContextService" ref="currentContextService"/>
+  </bean>
+
+
+  <bean id="pageGridService" class="com.coremedia.blueprint.cae.layout.PageGridServiceImpl">
+    <property name="contentBackedPageGridService" ref="contentBackedPageGridService"/>
+    <property name="validationService" ref="validationService"/>
+    <property name="viewtypeService" ref="viewtypeService"/>
+    <property name="visibilityValidator" ref="validityPeriodValidator"/>
+  </bean>
+</beans>

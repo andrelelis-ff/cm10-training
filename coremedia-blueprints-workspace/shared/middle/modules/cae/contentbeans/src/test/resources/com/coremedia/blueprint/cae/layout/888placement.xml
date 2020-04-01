@@ -1,0 +1,53 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <StructProperty Name="placements_2">
+    <Struct>
+      <LinkProperty Name="layout" xlink:href="coremedia:///cap/content/224"
+                    LinkType="coremedia:///cap/contenttype/CMSettings"/>
+    </Struct>
+  </StructProperty>
+  <StructListProperty Name="placements">
+    <Struct>
+      <LinkProperty Name="section" xlink:href="coremedia:///cap/content/218"
+                    LinkType="coremedia:///cap/contenttype/CMSymbol"/>
+      <StructListProperty Name="extendedItems">
+        <Struct>
+          <LinkProperty Name="target" xlink:href="coremedia:///cap/content/40"
+                        LinkType="coremedia:///cap/contenttype/CMLinkable"/>
+          <DateProperty Name="visibleFrom">2005-12-31T06:00:00+01:00</DateProperty>
+          <DateProperty Name="visibleTo">2007-01-01T03:00:00+01:00</DateProperty>
+        </Struct>
+        <Struct>
+          <LinkProperty Name="target" xlink:href="coremedia:///cap/content/42"
+                        LinkType="coremedia:///cap/contenttype/CMLinkable"/>
+          <DateProperty Name="visibleFrom">2007-12-31T06:00:00+01:00</DateProperty>
+          <DateProperty Name="visibleTo">2015-01-01T03:00:00+01:00</DateProperty>
+        </Struct>
+        <Struct>
+          <LinkProperty Name="target" xlink:href="coremedia:///cap/content/42"
+                        LinkType="coremedia:///cap/contenttype/CMLinkable"/>
+          <DateProperty Name="visibleFrom">1963-11-19T06:00:00+01:00</DateProperty>
+          <DateProperty Name="visibleTo">2000-01-01T03:00:00+01:00</DateProperty>
+        </Struct>
+        <Struct>
+          <LinkProperty Name="target" xlink:href="coremedia:///cap/content/42"
+                        LinkType="coremedia:///cap/contenttype/CMLinkable"/>
+          <DateProperty Name="visibleFrom">1963-11-19T06:00:00+01:00</DateProperty>
+          <DateProperty Name="visibleTo">2015-01-01T03:00:00+01:00</DateProperty>
+        </Struct>
+        <Struct>
+          <LinkProperty Name="target" xlink:href="coremedia:///cap/content/42"
+                        LinkType="coremedia:///cap/contenttype/CMLinkable"/>
+          <DateProperty Name="visibleTo">2005-01-01T03:00:00+01:00</DateProperty>
+        </Struct>
+        <Struct>
+          <!-- empty struct values must be ignored, test CMS-14155 -->
+        </Struct>
+        <Struct>
+          <LinkProperty Name="target" xlink:href="coremedia:///cap/content/42"
+                        LinkType="coremedia:///cap/contenttype/CMLinkable"/>
+          <DateProperty Name="visibleFrom">2007-11-19T06:00:00+01:00</DateProperty>
+        </Struct>
+      </StructListProperty>
+    </Struct>
+  </StructListProperty>
+</Struct>

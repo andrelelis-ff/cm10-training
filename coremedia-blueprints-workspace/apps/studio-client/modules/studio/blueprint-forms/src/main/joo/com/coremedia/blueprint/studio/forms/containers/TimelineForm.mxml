@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PropertyFieldGroup
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config" xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:local="com.coremedia.blueprint.studio.forms.containers.*"
+        xmlns:quickcreate="com.coremedia.cms.editor.sdk.quickcreate.*"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMVideo_timeLine_text')}"
+        itemId="timelineForm">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.studio.forms.columns.ValidityColumn;
+    import com.coremedia.cms.editor.sdk.util.AnnotatedLinkListHelper;
+    import com.coremedia.cms.editor.sdk.util.ILinkListWrapper;
+    import com.coremedia.cms.editor.sdk.util.StructContentLinkListWrapper;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.timelineForm";
+
+    private var structContentLinkListWrapper:StructContentLinkListWrapper;
+
+    /**
+     * A constant for the linklist property name
+     */
+    public static const TIMELINE_PROPERTY_NAME:String = "timeLine";
+    public static const DEFAULT_LINK_TYPE:String = "CMTeasable";
+
+    public static const TIMELINE_ANNOTATION_WIDGET_ITEM_ID:String = "timeline-annotation-widget";
+
+    private var config:TimelineForm;
+
+    public native function TimelineForm(config:TimelineForm = null);
+
+    private function getStructContentLinkListWrapper(config:TimelineForm):ILinkListWrapper {
+      if (!structContentLinkListWrapper) {
+        structContentLinkListWrapper = AnnotatedLinkListHelper.createStructContentLinkListWrapper(config.bindTo,
+                config.forceReadOnlyValueExpression,
+                config.linkType || DEFAULT_LINK_TYPE,
+                config.propertyName || TIMELINE_PROPERTY_NAME,
+                "sequences",
+                "link"
+        );
+      }
+      return structContentLinkListWrapper;
+    }
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!--- the property of the Bean to bind in this field - defaults to "extendedItems" -->
+    <fx:String id="propertyName"/>
+    <!-- The allowed type of links - default to "CMTeasable" -->
+    <fx:String id="linkType"/>
+  </fx:Declarations>
+
+  <editor:items>
+    <editor:LinkListPropertyField propertyName="{config.propertyName || TIMELINE_PROPERTY_NAME}"
+                                  showThumbnails="true"
+                                  hideLabel="true"
+                                  bindTo="{config.bindTo}"
+                                  linkListWrapper="{getStructContentLinkListWrapper(config)}"
+                                  linkType="{config.linkType || DEFAULT_LINK_TYPE}">
+      <editor:additionalToolbarItems>
+        <TbSeparator/>
+        <quickcreate:QuickCreateLinklistMenu bindTo="{config.bindTo}"
+                                             sourceLinkListVE="{getStructContentLinkListWrapper(config).getVE()}"/>
+      </editor:additionalToolbarItems>
+      <editor:fields>
+        <ui:DataField name="{ValidityColumn.STATUS_ID}"
+                      ifUnreadable=""
+                      mapping=""
+                      convert_="{ValidityColumn.convert}"/>
+      </editor:fields>
+      <editor:columns>
+        <editor:ThumbnailColumn/>
+        <editor:TypeIconColumn/>
+        <editor:NameColumn flex="1"/>
+        <bpforms:ValidityColumn/>
+        <editor:StatusColumn/>
+      </editor:columns>
+      <editor:rowWidget>
+        <ui:AnnotatedLinkListWidget itemId="{TIMELINE_ANNOTATION_WIDGET_ITEM_ID}">
+          <ui:items>
+            <local:TimelineConfigurationForm bindTo="{config.bindTo}"
+                                             collapsible="false"
+                                             forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                             propertyName="{config.propertyName || TIMELINE_PROPERTY_NAME}"/>
+          </ui:items>
+        </ui:AnnotatedLinkListWidget>
+      </editor:rowWidget>
+    </editor:LinkListPropertyField>
+  </editor:items>
+</editor:PropertyFieldGroup>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Fashion" name="Editorial Blog Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Fashion/Editorial%20Blog%20Teaser.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Editorial%20Blog%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Editorial Blog</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Check out the latest trends.</p> </div></teaserText>
+<pictures>
+<link href="Photo%20Shooting%20in%20Prague%20-%20Cool.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/Photo%20Shooting%20in%20Prague%20-%20Cool"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../Navigation/Microsites/Editorial%20Blog/Editorial%20Blog%20Microsite.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Navigation/Microsites/Editorial%20Blog/Editorial%20Blog%20Microsite"/>
+</target>
+</CMTeaser>

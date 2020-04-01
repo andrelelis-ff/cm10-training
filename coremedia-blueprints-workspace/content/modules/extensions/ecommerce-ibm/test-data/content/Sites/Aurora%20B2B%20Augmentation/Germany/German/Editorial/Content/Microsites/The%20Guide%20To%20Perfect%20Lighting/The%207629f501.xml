@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content/Microsites/The Guide To Perfect Lighting" name="The Art of Perfect Lighting Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Content/Microsites/The%20Guide%20To%20Perfect%20Lightida7577b9.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/The%20Guide%20To%20Perfect%20Lighting/The%20Art%20of%20Perfect%20Lighting%20Article"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Settings/Teaser%20Styles/Light"/>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<IntProperty Name="positionY">38</IntProperty>
+<IntProperty Name="width">71</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Die Kunst der perfekten Beleuchtung</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center">Licht Technologien erklärt</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p><br/>Seit Jahrtausenden nutzt der Mensch künstliches Licht.  Basierend auf archäologischen Untersuchungen wird angenommen, dass die erste Lampe vor bis zu 70.000 Jahren mit einer primitiven Hülle wie einem ausgehöhlten Felsen, einem Brennstoff wie Gras oder Holz und tierischem Fett als Beschleuniger hergestellt wurde.  Die Lampen entwickelten sich weiter, als Keramik und Alabaster entdeckt wurden, und schließlich wurden Dochte hinzugefügt, um die Verbrennungsrate zu kontrollieren.</p><p>Eine kurze Geschichte der Lichttechnik</p><p>Um das 7. Jahrhundert v. Chr. erschienen in Griechenland Terrakotta-Lampen, die handgehaltene Taschenlampen ersetzen sollten. Solche Lampen blieben viele Jahrhunderte lang die Hauptquelle für künstliches Licht, wobei das Design nur geringfügig verbessert wurde.</p><p>Standard-Glühlampe</p><p>Der nächste große Technologiesprung erfolgte erst 1801, als ein englischer Chemiker namens Sir Humphrey Davy die erste elektrische Lampe, die Carbon-Arc-Lampe, entwickelte.  Die Kohle-Bogenlampe fand breite Anwendung als Straßenleuchte und Innenbeleuchtung für große Gebäude, bis sie Anfang des 20. Jahrhunderts durch das Glühlampenlicht abgelöst wurde.  Es fand weitere Verwendung für etwa ½ Jahrhundert mehr in spezialisierten Anwendungen wie Suchscheinwerfer und Filmprojekte, wurde aber bis zum Ende des Zweiten Weltkriegs fast vollständig abgebaut.</p><p>Glühlampen mit Glühlampen</p><p>Es ist umstritten, wer die Glühbirne zuerst erfunden hat, aber normalerweise ist es Thomas Edison, der die ersten kommerziell nutzbaren Versionen entworfen hat, und er war es sicherlich, der die erste patentierte Version entwickelte.  Die Erfindung der Glühlampe kann leicht als das Ereignis identifiziert werden, das die breite Akzeptanz der Innenbeleuchtung im Haushalt ausgelöst hat.</p><p>Kompaktleuchtstofflampen (CFL's)</p><p>Um die revolutionäre Wirkung der Glühbirne zu unterstreichen, wurden Kompaktleuchtstofflampen (CFL's) als deutlich energieeffizientere Alternative entwickelt.  Mit ⅔ bis ¾ weniger Energie und einer acht- bis fünfzehnmal längeren Lebensdauer als Glühlampen reduzieren CFLs den Energieverbrauch erheblich und bieten dem Verbraucher erhebliche Kosteneinsparungen.  Der größte Nachteil von CFL's ist, dass sie Quecksilber enthalten, das ein Gesundheitsrisiko für jeden darstellt, der ihnen ausgesetzt ist, wenn sie brechen, sowie ein Umweltrisiko bei der Entsorgung.</p><p>Licht emittierende Diode (LED) Lampen</p><p>Leuchtdioden (LED)-Lampen sind die neueste Lichttechnik.  Durch die Kombination von Energieeinsparung und längerer Lebensdauer über sogar CFL's mit einer weniger gefährlichen, quecksilberfreien Konstruktion werden LEDs zur bevorzugten Beleuchtungsoption.  Derzeit sind ihre Kosten unerschwinglich, aber wie bei CFLs, als sie zum ersten Mal auf dem kommerziellen Markt eingeführt wurden, fallen die Preise rapide und LED-Lampen werden schnell zur intelligenten Wahl bei Glühbirnen.</p><p>Durch ihre kompakte Bauweise ist es viel einfacher, LED-Glühbirnen in einer Vielzahl von Formen und Größen zu entwickeln, und LEDs können sogar zum Farbwechsel verwendet werden!  Farbige Lichtleisten sind mit Fernbedienungen erhältlich, um die Farben je nach Laune des Besitzers zu ändern.</p><p>Heimautomationsfähige Systeme - einschließlich des Philips Hue - können an die Steuerung von Smartphones angeschlossen und sogar mit anderen Systemen, wie beispielsweise Ihrem Fernseher, verbunden werden, um eine adaptive Umgebungsbeleuchtung zu gewährleisten, die das Bild auf dem Bildschirm in Farbe und Intensität ergänzt.</p><p>Übersetzt mit www.DeepL.com/Translator</p></div></detailText>
+<pictures>
+<link href="../../../../Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Artful%20Antique%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Artful%20Antique%20Picture"/>
+<link href="../../../../Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Rockin%20in%20Red%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Rockin%20in%20Red%20Picture"/>
+<link href="../../../../Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Stairs%20with%20Ambia3336abab.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Stairs%20with%20Ambiance%20Picture"/>
+<link href="../../../../Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Perfect%20Lighting%20b890ce37.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Perfect%20Lighting%20Guide%20Picture"/>
+<link href="../../../../Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Purple%20Accents%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Purple%20Accents%20Picture"/>
+</pictures>
+<related>
+<link href="../../../../Navigation/Fragments/Aurora%20B2B%20Homepage/Lighting%20Category%20Promote6b30a4b.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Navigation/Fragments/Aurora%20B2B%20Homepage/Lighting%20Category%20Promotion%20Teaser"/>
+<link href="../../../Products/Aurora%20B2B/Lighting/Medium-base%20Chandelier%20Bulb%220277a2.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Lighting/Medium-base%20Chandelier%20Bulb%20Product%20Teaser"/>
+<link href="../../../Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED%20Strip%220277a2.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED%20Strip%20Product%20Teaser"/>
+<link href="../../../../Navigation/Fragments/Aurora%20B2B%20Homepage/Guide%20to%20Exterior%20Ligh7e636ab2.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Navigation/Fragments/Aurora%20B2B%20Homepage/Guide%20to%20Exterior%20Lighting%20Article%20Teaser"/>
+</related>
+<authors>
+<link href="../../../Authors/Michelle%20Villegas%20Person.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Authors/Michelle%20Villegas%20Person"/>
+</authors>
+</CMArticle>

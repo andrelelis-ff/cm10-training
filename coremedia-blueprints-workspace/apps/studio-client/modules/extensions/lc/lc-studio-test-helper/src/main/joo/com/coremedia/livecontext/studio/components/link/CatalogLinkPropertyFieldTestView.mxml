@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Viewport xmlns:fx="http://ns.adobe.com/mxml/2009"
+          xmlns:exml="http://www.jangaroo.net/exml/0.8"
+          xmlns="exml:ext.config"
+          xmlns:ec="exml:com.coremedia.ecommerce.studio.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.ecommerce.studio.helper.CatalogHelper;
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.testhelper.config.catalogLinkPropertyFieldTestView";
+
+    public static const CATALOG_LINK_PROPERTY_FIELD_ITEM_ID:String = "catalogLinkPropertyField";
+
+    private var config:CatalogLinkPropertyFieldTestView;
+
+    public native function CatalogLinkPropertyFieldTestView(config:CatalogLinkPropertyFieldTestView = null);
+
+    [Bindable]
+    public var bindTo:ValueExpression;
+
+    /**
+     * An optional ValueExpression which makes the component read-only if it is evaluated to true.
+     */
+    [Bindable]
+    public var forceReadOnlyValueExpression:ValueExpression;
+    ]]></fx:Script>
+
+  <items>
+    <ec:CatalogLinkPropertyField itemId="{CATALOG_LINK_PROPERTY_FIELD_ITEM_ID}"
+                                 bindTo="{config.bindTo}"
+                                 propertyName="externalId"
+                                 emptyText="irrelevant"
+                                 forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+  </items>
+
+</Viewport>

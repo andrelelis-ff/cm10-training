@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMFolderProperties folder="/Sites/Hybris Apparel/United Kingdom/English" name="_folderProperties" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<contexts>
+<link href="Navigation/Hybris%20Apparel%20UK.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Navigation/Hybris%20Apparel%20UK"/>
+</contexts>
+</CMFolderProperties>

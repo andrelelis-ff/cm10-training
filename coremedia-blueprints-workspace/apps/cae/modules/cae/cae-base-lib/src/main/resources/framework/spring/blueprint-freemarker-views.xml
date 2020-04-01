@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <description>
+    Blueprint specific definitions of the CAE View layer.
+  </description>
+
+  <import resource="classpath:/com/coremedia/image/image-service.xml"/>
+  <import resource="classpath:/com/coremedia/cae/view-freemarker-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/settings/impl/bpbase-settings-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/contentbean-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/dataview-services.xml"/>
+  <import resource="classpath:/framework/spring/mediatransform.xml"/>
+
+  <customize:append id="blueprintFreemarkerSharedVariablesCustomizer" bean="freemarkerSharedVariables">
+    <map>
+      <entry key="blueprintFreemarkerFacade" value-ref="blueprintFreemarkerFacade"/>
+    </map>
+  </customize:append>
+
+  <bean id="stringAbbreviator" class="com.coremedia.common.util.WordAbbreviator">
+    <property name="appendToEnd" value="..."/>
+  </bean>
+
+  <bean name="blueprintFreemarkerFacade" class="com.coremedia.blueprint.cae.web.taglib.BlueprintFreemarkerFacade" />
+
+  <customize:append id="blueprintFreemarkerConfigurerAutoImportsCustomizer" bean="freemarkerConfigurer"
+                    property="autoImports">
+    <map>
+      <entry key="bp" value="/lib/coremedia.com/blueprint.ftl"/>
+      <entry key="spring" value="/spring.ftl"/>
+    </map>
+  </customize:append>
+
+</beans>

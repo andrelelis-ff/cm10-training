@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Microsites/RGB LED Strip" name="Chef Corp RGB LED Strip Unboxing Video Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=411;y=0;width=462;height=720</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=371;y=0;width=537;height=720</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=280;y=0;width=719;height=720</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=162;y=0;width=960;height=720</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=1280;height=720</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=103;width=1280;height=514</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=202;width=1280;height=320</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.32098765432098764;y1=0;x2=0.6820987654320988;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.29012345679012347;y1=0;x2=0.7098765432098766;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.2191358024691358;y1=0;x2=0.7808641975308642;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.12654320987654322;y1=0;x2=0.8765432098765432;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.14285714285714285;x2=1;y2=0.8571428571428571</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.2802197802197802;x2=1;y2=0.7252747252747253</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>ChefSupply RGB LED Strip Unboxing Video Image</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>ChefSupply RGB LED Strip Unboxing Video Image</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1280</width>
+<height>720</height>
+<data md5="858a05aaf8d79f19d08338227361ffc2" size="532471" href="../../../../../../../../__blob/858a05aaf8d79f19d08338227361ffc2.blob" mimetype="image/png"/>
+<asset>
+<link href="../../../../../../../../Assets/Products/Lighting/Unboxing%20the%20Chef%20Corp%2E%20RGB%20LED%20Strips.xml" path="/Assets/Products/Lighting/Unboxing%20the%20Chef%20Corp%2E%20RGB%20LED%20Strips"/>
+</asset>
+</CMPicture>

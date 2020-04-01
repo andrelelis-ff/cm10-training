@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/United States/English/Editorial/Content/Campaigns/Fashion Trends" name="Summer Accessories Campaign Portrait Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.34542586750788645</StringProperty>
+<StringProperty Name="y">0.2476340694006309</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=2000;height=1125</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=0;width=1500;height=2000</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=32;y=0;width=1333;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=2000;height=1500</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=126;width=2000;height=750</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Summer Accessories Campaign Portrait Picture</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Dress.xml" path="/Settings/Taxonomies/Subject/Dress"/>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Sunglasses.xml" path="/Settings/Taxonomies/Subject/Sunglasses"/>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Summer.xml" path="/Settings/Taxonomies/Subject/Summer"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Summer Accessories Campaign Portrait Picture</alt>
+<copyright>shutterstock_451264153</copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>2000</height>
+<data md5="850bd837bf6ed864c0dc75010836cd91" size="781206" href="../../../../../../../../__blob/850bd837bf6ed864c0dc75010836cd91.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

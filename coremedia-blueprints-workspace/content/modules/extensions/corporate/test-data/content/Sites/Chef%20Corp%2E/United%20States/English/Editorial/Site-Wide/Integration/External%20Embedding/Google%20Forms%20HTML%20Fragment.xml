@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMHTML folder="/Sites/Chef Corp./United States/English/Editorial/Site-Wide/Integration/External Embedding" name="Google Forms HTML Fragment" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<description></description>
+<data grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>&lt;div class="cm-container cm-container--default" style="text-align: center;"&gt;<br/></p><p>&lt;iframe src="https://docs.google.com/forms/d/1nkvQKV5T5GVGh3dZ0L_AlCLTIUPvVfC6-Kk5PwvkFQo/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0"&gt;Loading...&lt;/iframe&gt;</p><p>&lt;/div&gt;</p></div></data>
+</CMHTML>

@@ -1,0 +1,198 @@
+// layout for sections
+@mixin cm-details-text-layout {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include breakpoint("sm-and-up") {
+    padding: 0 10%;
+  }
+}
+
+/* --- detail page --- */
+.#{$cm-details-prefix} {
+  margin-top: 24px;
+
+  // title
+  &__headline {
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 0;
+  }
+
+  // media content
+  &__media-box {
+    @include aspect-ratio-box(16, 9);
+
+    @include breakpoint("sm-and-up") {
+      @include aspect-ratio-box(8, 3);
+    }
+  }
+
+  &__medias {
+    margin-bottom: 24px;
+
+    @include breakpoint("sm-and-up") {
+      margin-bottom: 48px;
+    }
+  }
+
+  // text container
+  &__text {
+    @include cm-details-text-layout;
+    hyphens: auto;
+
+    h1, h2, h3 {
+      font-weight: bold;
+      margin: 30px 0 0 0;
+    }
+
+    > *,
+    > blockquote,
+    > .rte--list {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    table {
+      border: none;
+    }
+
+    p {
+      font-size: $cm-font-size-base;
+      line-height: 24px;
+
+      a {
+        color: $cm-text-color;
+        text-decoration: none;
+        padding-bottom: 0;
+        border-bottom: 1px solid $cm-border-color-default;
+        transition: all 0.1s ease;
+
+        &:hover {
+          text-decoration: none;
+          padding-bottom: 2px;
+        }
+      }
+    }
+
+    .cm-richtext-embedded--teasable {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+    }
+  }
+
+  .cm-richtext-embedded {
+    //Fix for CMS-4977: Do not split embedded links or pictures
+    break-inside: avoid;
+
+    // set aspect ratio to 4x3 for embedded images
+    &__picture-box {
+      @include aspect-ratio-box(4, 3);
+    }
+
+    //Fix for CMS-4976: For multi-column-buggy webkit
+    &__picture {
+      @include stretch-absolute();
+      transform: translateZ(0);
+    }
+  }
+
+  &__authors {
+    @include cm-details-text-layout;
+
+    &-headline {
+      display: none;
+    }
+  }
+
+  /* --- person detail page --- */
+  &__introduction {
+    @include cm-details-text-layout;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__picture-person {
+    margin-right: 15px;
+
+    @include breakpoint("sm-and-up") {
+      margin-right: $cm-details-padding-large-vertical;
+    }
+  }
+
+  &__name {
+    margin-top: -6px; // align with image
+    margin-bottom: 6px;
+
+    @include breakpoint("sm-and-up") {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__job {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.4;
+
+    @include breakpoint("sm-and-up") {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__email {
+    &-icon {
+      @include icon;
+      background-image: url("../../img/envelope.svg");
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  &__organization,
+  &__email {
+    margin-bottom: 0;
+
+    @include breakpoint("sm-and-up") {
+      margin-bottom: 10px;
+    }
+  }
+
+  .cm-comments, .cm-reviews {
+    @include cm-details-text-layout();
+    margin-top: 3 * $cm-standard-spacing;
+  }
+
+  // hide cta on related content on person detail page
+  &--person {
+    .#{$cm-related-prefix} {
+      .cm-cta {
+        display: none;
+      }
+    }
+  }
+}
+
+/* --- authors section --- */
+.#{$cm-author-prefix} {
+  &__picture-box {
+    margin-top: 7px; // align with headline
+  }
+}
+
+/* --- tags section --- */
+.#{$cm-tag-prefix} {
+  &__headline {
+    font-size: $cm-font-size-large;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__items {
+    display: block;
+    text-align: center;
+  }
+}

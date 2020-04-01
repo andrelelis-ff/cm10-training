@@ -1,0 +1,29 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+  <import resource="classpath:/framework/spring/blueprint-services.xml"/>
+
+  <customize:prepend id="addLiveContextValidators" bean="contentbeanValidatorList" order="9999999">
+    <list>
+      <ref bean="emptyTargetValidator"/>
+      <ref bean="cmExternalChannelValidator"/>
+      <ref bean="externalProductValidator"/>
+      <ref bean="invalidTeaserTargetValidator"/>
+    </list>
+  </customize:prepend>
+
+  <bean id="emptyTargetValidator" class="com.coremedia.livecontext.validation.EmptyProductValidator">
+    <property name="preview" value="${cae.is.preview}"/>
+  </bean>
+
+  <bean id="cmExternalChannelValidator" class="com.coremedia.livecontext.validation.CMExternalChannelValidator"/>
+  <bean id="externalProductValidator" class="com.coremedia.livecontext.validation.ExternalProductValidator"/>
+
+  <bean id="invalidTeaserTargetValidator" class="com.coremedia.livecontext.validation.InvalidTeaserTargetValidator">
+    <property name="settingsService" ref="settingsService"/>
+  </bean>
+
+</beans>

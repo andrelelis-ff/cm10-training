@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCategory folder="/Sites/Chef Corp./Germany/German/Products/Ranges and Ovens" name="Ranges and Ovens" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Products/Ranges%20and%20Ovens/Ranges%20and%20Ovens.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Ranges%20and%20Ovens/Ranges%20and%20Ovens"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="callToActionCustomText">Browse all models</StringProperty>
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>ranges-and-ovens</segment>
+<title>Bereiche und Backöfen</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription>Chef Corp. reicht und Öfen sind berühmt für großen Wert und Haltbarkeit.</htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Der Chef Reichweite Serie ist ein Liebling der Köche weltweit aufgrund des guten Preis-Leistungs-Verhältnis, Qualität bauen und Haltbarkeit. </p> </div></teaserText>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Products/Ranges%20and%20Ovens/Chef%20Range%20CR1020%20Premiu645c8288.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Products/Ranges%20and%20Ovens/Chef%20Range%20CR1020%20Premium%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Layouts/PagegridNavigation.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Pagegrid/Layouts/PagegridNavigation"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+<categoryName></categoryName>
+<displayName></displayName>
+</CMCategory>

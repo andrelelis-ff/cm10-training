@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Pictures/Company" name="Enjoying a Picnic Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">0.9971830985915493</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=667;y=194;width=2295;height=2294</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=372;y=349;width=2860;height=2147</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=326;y=426;width=3333;height=1875</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=748;y=0;width=1772;height=2658</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=450;width=4000;height=1500</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.16666666666666666;y1=0.07267441860465117;x2=0.7403100775193798;y2=0.9331395348837209</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.09302325581395349;y1=0.1308139534883721;x2=0.8081395348837209;y2=0.936046511627907</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.08139534883720931;y1=0.15988372093023256;x2=0.9147286821705426;y2=0.8633720930232558</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.4065126050420168</StringProperty>
+<StringProperty Name="y">0.44637223974763407</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Enjoying a Picnic</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Enjoying a Picnic</alt>
+<copyright>altafulla/Shutterstock 77524825</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2667</height>
+<data md5="2f55aae10f14bc180edd73657c78a10e" size="1241232" href="../../../../../../../../__blob/2f55aae10f14bc180edd73657c78a10e.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

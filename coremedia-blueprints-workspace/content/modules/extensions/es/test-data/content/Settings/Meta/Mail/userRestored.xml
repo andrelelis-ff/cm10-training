@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMMail folder="/Settings/Meta/Mail" name="userRestored" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<locale>en-US</locale>
+<master>
+</master>
+<masterVersion>1</masterVersion>
+<keywords></keywords>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<segment></segment>
+<title></title>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<subject>User profile has been reset at coremedia.com</subject>
+<from>no-reply@coremedia.com</from>
+<text href="userRestored.text.plain" mimetype="text/plain"/>
+<contentType></contentType>
+</CMMail>

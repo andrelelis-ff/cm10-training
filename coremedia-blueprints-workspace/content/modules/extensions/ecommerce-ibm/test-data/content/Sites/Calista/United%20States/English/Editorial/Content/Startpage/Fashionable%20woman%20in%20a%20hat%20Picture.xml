@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/United States/English/Editorial/Content/Startpage" name="Fashionable woman in a hat Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1629;y=0;width=1721;height=2667</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=1520;y=0;width=2000;height=2667</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=1187;y=0;width=2667;height=2667</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=446;y=0;width=3554;height=2665</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=4000;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=0;width=4000;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=0;width=4000;height=1600</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=0;width=4000;height=1500</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=34;width=4000;height=1000</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=1167;y=0;width=1667;height=2667</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=0;width=4000;height=1702</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=1634;y=0;width=1778;height=2667</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="landscape_ratio235x100">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.4071729957805907;y1=0;x2=0.8373342861031713;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.3713080168776371;y1=0;x2=0.8713705168776371;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.3333333333333333;y1=0;x2=1;y2=0.9998750156230471</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.11181434599156118;y1=0;x2=0.9999999999999999;y2=0.9990839752625859</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0;x2=0.9999999999999999;y2=0.843644544431946</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0;x2=0.9999999999999999;y2=0.7499062617172854</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0;x2=0.9999999999999999;y2=0.5999250093738282</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.015822784810126583;x2=0.9999999999999999;y2=0.5782524810980906</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.012658227848101266;x2=0.9999999999999999;y2=0.38761135870674396</StringProperty>
+<StringProperty Name="landscape_ratio235x100">position;x1=0;y1=0;x2=1;y2=0.6382180950785407</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.628421052631579</StringProperty>
+<StringProperty Name="y">0.21608832807570977</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Fashionable woman in a hat, dress and long grey sweater, accessories, high heels, posing in studio. Fashion autumn photo</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Fashionable woman in a hat, dress and long grey sweater, accessories, high heels, posing in studio. Fashion autumn photo</alt>
+<copyright>HighKey/Shutterstock 327014693</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2667</height>
+<data md5="8b3776b2911ff30d71c098308c78705b" size="778947" href="../../../../../../../__blob/8b3776b2911ff30d71c098308c78705b.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

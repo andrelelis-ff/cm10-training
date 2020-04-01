@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMQueryList folder="/Sites/SFRA/United Kingdom/English/Navigation/Topic Pages" name="Topicpage-Default" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+<link href="../../Options/Viewtypes/CMChannel/landscape.xml" path="/Sites/SFRA/United%20Kingdom/English/Options/Viewtypes/CMChannel/landscape"/>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="fq">
+<Struct>
+<BooleanProperty Name="contextTaxonomies">true</BooleanProperty>
+<LinkListProperty Name="documents" LinkType="coremedia:///cap/contenttype/CMChannel">
+<Link xlink:href="coremedia:///cap/resources/../Homepage%20UK.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Navigation/Homepage%20UK"/>
+</LinkListProperty>
+<StringProperty Name="documenttype">CMArticle</StringProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="order">freshness desc</StringProperty>
+<IntProperty Name="limit"/>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+</CMQueryList>

@@ -1,0 +1,38 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StructProperty  Name="focusArea">
+    <Struct>
+      <StringProperty Name="x1">0</StringProperty>
+      <StringProperty Name="y1">0</StringProperty>
+      <StringProperty Name="x2">1</StringProperty>
+      <StringProperty Name="y2">1</StringProperty>
+    </Struct>
+  </StructProperty>
+  <StructProperty  Name="transforms">
+    <Struct>
+      <StringProperty Name="large3x2">crop;x=0;y=26;width=639;height=427/scale;width=700;height=0</StringProperty>
+      <StringProperty Name="large2x3">crop;x=161;y=0;width=318;height=478/scale;width=0;height=600</StringProperty>
+      <StringProperty Name="large4x3">crop;x=2;y=0;width=637;height=478/scale;width=700;height=0</StringProperty>
+      <StringProperty Name="large3x4">crop;x=141;y=0;width=358;height=478/scale;width=0;height=600</StringProperty>
+      <StringProperty Name="large1x1">crop;x=81;y=0;width=478;height=478/scale;width=600;height=600</StringProperty>
+    </Struct>
+  </StructProperty>
+  <StructProperty  Name="relative">
+    <Struct>
+      <StringProperty Name="large3x2">position;x1=0;y1=0.05351170568561873;x2=1;y2=0.9464882943143813</StringProperty>
+      <StringProperty Name="large2x3">position;x1=0.2525;y1=0;x2=0.75;y2=1</StringProperty>
+      <StringProperty Name="large4x3">position;x1=0.0025;y1=0;x2=1;y2=1</StringProperty>
+      <StringProperty Name="large3x4">position;x1=0.22;y1=0;x2=0.78;y2=1</StringProperty>
+      <StringProperty Name="large1x1">position;x1=0.1275;y1=0;x2=0.875;y2=1</StringProperty>
+    </Struct>
+  </StructProperty>
+  <StructProperty  Name="isDefault">
+    <Struct>
+      <StringProperty Name="large3x2">true</StringProperty>
+      <StringProperty Name="large2x3">true</StringProperty>
+      <StringProperty Name="large4x3">true</StringProperty>
+      <StringProperty Name="large3x4">true</StringProperty>
+      <StringProperty Name="large1x1">true</StringProperty>
+    </Struct>
+  </StructProperty>
+  <BooleanProperty Name="disableCropping">true</BooleanProperty>
+</Struct>

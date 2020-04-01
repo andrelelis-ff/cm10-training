@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Best Picture Contest" name="See what others have already uploaded" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="elasticSocial">
+<Struct>
+<BooleanProperty Name="enabled">false</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>The Gallery of Best Pictures</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="align--center">See what others have already uploaded:<br/></p></div></detailText>
+<pictures>
+<link href="../../Pictures/CM%20Action%20Goggles%2004.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/CM%20Action%20Goggles%2004"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../Authors/David%20Fuller%20Person.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Authors/David%20Fuller%20Person"/>
+</authors>
+</CMArticle>

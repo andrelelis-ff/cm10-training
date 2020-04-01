@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content">
+  <schema>
+    <type name="AMTaxonomy" parent="CMTaxonomy">
+      <property name="assetThumbnail" type="link" linkType="AMAsset" maxCardinality="1"/>
+    </type>
+    <type name="AMAsset" abstract="true">
+      <property name="original" type="blob"/>
+      <property name="thumbnail" type="blob"/>
+      <property name="keywords" type="string"/>
+      <property name="metadata" type="markup" grammar="coremedia-struct-2008"/>
+      <property name="state"  type="markup" grammar="coremedia-struct-2008"/>
+      <property name="subjectTaxonomy" type="link" linkType="CMTaxonomy"/>
+      <property name="locationTaxonomy" type="link" linkType="CMLocTaxonomy"/>
+      <property name="assetTaxonomy" type="link" linkType="AMTaxonomy"/>
+    </type>
+    <type name="AMPictureAsset" parent="AMAsset">
+      <property name="web" type="blob"/>
+      <property name="print" type="blob"/>
+    </type>
+    <type name="AMDocumentAsset" parent="AMAsset">
+      <property name="download" type="blob"/>
+    </type>
+    <type name="CMTaxonomy" parent="CMTeasable">
+      <property name="value" type="string" length="256" encodedLength="768"/>
+      <property name="children" type="link" linkType="CMTaxonomy"/>
+      <property name="externalReference" type="string" length="256" encodedLength="768"/>
+    </type>
+    <type name="CMLocTaxonomy" parent="CMTaxonomy">
+      <property name="postcode" type="string" length="10" encodedLength="30"/>
+      <property name="latitudeLongitude" type="string" length="100" encodedLength="300"/>
+      <property name="children" type="link" linkType="CMLocTaxonomy"/>
+    </type>
+    <type name="CMTeasable" abstract="true" parent="CMHasContexts">
+      <property name="master" type="link" linkType="CMTeasable" maxCardinality="1"/>
+      <property name="teaserTitle" type="string" length="512" encodedLength="1536"/>
+      <property name="teaserText" type="markup" grammar="coremedia-richtext-1.0"/>
+      <property name="detailText" type="markup" grammar="coremedia-richtext-1.0"/>
+      <property name="pictures" type="link" linkType="CMPicture"/>
+      <property name="notSearchable" type="int"/>
+      <property name="related" type="link" linkType="CMTeasable"/>
+    </type>
+    <type name="CMHasContexts" abstract="true" parent="CMLinkable">
+      <property name="master" type="link" linkType="CMHasContexts" maxCardinality="1"/>
+      <property name="contexts" type="link" linkType="CMContext"/>
+    </type>
+    <type name="CMLinkable" abstract="true" parent="CMLocalized">
+      <property name="master" type="link" linkType="CMLinkable" maxCardinality="1"/>
+      <property name="viewtype" type="link" linkType="CMViewtype" maxCardinality="1"/>
+      <property name="localSettings" type="markup" grammar="coremedia-struct-2008"/>
+      <property name="linkedSettings" type="link" linkType="CMSettings"/>
+      <property name="validFrom" type="date"/>
+      <property name="validTo" type="date"/>
+      <property name="extDisplayedDate" type="date"/>
+      <property name="segment" type="string" length="64" encodedLength="192"/>
+      <property name="title" type="string" length="512" encodedLength="1536"/>
+      <property name="htmlTitle" type="string" length="128" encodedLength="384"/>
+      <property name="keywords" type="string" length="1024" encodedLength="3072"/>
+      <property name="htmlDescription" type="string" length="512" encodedLength="1536"/>
+      <property name="subjectTaxonomy" type="link" linkType="CMTaxonomy"/>
+      <property name="locationTaxonomy" type="link" linkType="CMLocTaxonomy"/>
+    </type>
+    <type name="CMLocalized" abstract="true" parent="CMObject">
+      <property name="locale" type="string" length="64" encodedLength="192"/>
+      <property name="master" type="link" linkType="CMLocalized" maxCardinality="1"/>
+      <property name="masterVersion" type="int"/>
+    </type>
+    <type name="CMObject" abstract="true"/>
+  </schema>
+
+  <content>
+    <folder id="1" name="">
+      <folder id="11" name="Sites">
+        <folder id="111" name="Media">
+          <folder id="1111" name="Navigation">
+            <document id="2" type="AMTaxonomy" name="Taxonomy">
+              <version number="1">
+                <stringProperty name="value" value="amTaxonomy"/>
+                <linkProperty name="assetThumbnail">
+                  <link id="4"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="4" type="AMPictureAsset" name="PictureAsset" >
+              <version number="1">
+                <blobProperty name="web" url="rendition1.jpg" type="image/jpeg"/>
+                <blobProperty name="print" url="rendition2.jpg" type="image/jpeg"/>
+                <stringProperty name="keywords" value="test123"/>
+              </version>
+            </document>
+            <document id="6" type="AMDocumentAsset" name="DocumentAsset">
+              <version number="1">
+                <blobProperty name="download" url="rendition1.jpg" type="image/jpeg"/>
+                <blobProperty name="original" url="rendition2.jpg" type="image/jpeg"/>
+                <blobProperty name="thumbnail" url="rendition3.jpg" type="image/jpeg"/>
+                <markupProperty name="metadata" url="metadata.xml" grammar="coremedia-struct-2008"/>
+                <linkProperty name="subjectTaxonomy">
+                  <link id="8"/>
+                </linkProperty>
+                <linkProperty name="locationTaxonomy">
+                  <link id="10"/>
+                </linkProperty>
+                <linkProperty name="assetTaxonomy">
+                  <link id="2"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="8" type="CMTaxonomy" name="subjectTaxonomy">
+              <version number="1">
+                <stringProperty name="value" value="Sport"/>
+                <linkProperty name="children"/>
+              </version>
+            </document>
+            <document id="10" type="CMLocTaxonomy" name="locationTaxonomy">
+              <version number="1">
+                <stringProperty name="value" value="Hamburg"/>
+                <linkProperty name="children"/>
+              </version>
+            </document>
+          </folder>
+        </folder>
+      </folder>
+    </folder>
+  </content>
+  <rules>
+    <rule resourceId="11" group="0" doctype="Folder_">
+      <right value="ALL"/>
+    </rule>
+    <rule resourceId="11" group="0" doctype="Document_">
+      <right value="ALL"/>
+    </rule>
+  </rules>
+</contentRepository>

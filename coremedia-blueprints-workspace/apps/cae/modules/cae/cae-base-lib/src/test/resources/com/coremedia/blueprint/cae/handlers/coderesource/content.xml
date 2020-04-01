@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+
+  <!--
+    Test content for the CodeResourceHandlerTest
+  -->
+  <content>
+    <folder id="1" name="">
+      <folder id="11" name="Sites">
+        <folder id="111" name="Media">
+          <folder id="1111" name="Navigation">
+            <document id="4" name="Media" type="CMChannel">
+              <!--
+                The Root Channel of the Media site.
+                Contains some dummy js and css.
+              -->
+              <version number="1">
+                <stringProperty name="segment" value="media"/>
+                <linkProperty name="css">
+                  <link id="30"/>
+                </linkProperty>
+                <linkProperty name="javaScript">
+                  <link id="40"/>
+                </linkProperty>
+                <linkProperty name="children">
+                  <link id="6"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="6" name="Apparel" type="CMChannel">
+              <version number="1">
+                <stringProperty name="segment" value="apparel"/>
+              </version>
+            </document>
+            <document id="8" name="BrokenChannel" type="CMChannel">
+              <!--
+                The Root Channel of the site containing broken JS.
+              -->
+              <version number="1">
+                <stringProperty name="segment" value="broken"/>
+                <linkProperty name="javaScript">
+                  <link id="50"/>
+                </linkProperty>
+              </version>
+            </document>
+          </folder>
+        </folder>
+      </folder>
+
+      <!--
+        Dummy js and css to test
+      -->
+        <folder id="17" name="com">
+          <folder id="19" name="coremedia">
+            <folder id="21" name="blueprint">
+              <folder id="23" name="cae">
+                <folder id="25" name="handlers">
+                  <folder id="27" name="coderesource">
+                    <folder id="153" name="js">
+                      <document id="40" type="CMJavaScript" name="my-custom.js"
+                                modificationDate="2004-05-01T20:59:00.000+01:00">
+                        <version number="2">
+                          <markupProperty name="code" url="40code.xml" grammar="coremedia-richtext-1.0"/>
+                          <stringProperty name="description" value="JavaScript"/>
+                        </version>
+                      </document>
+                      <document id="42" type="CMJavaScript" name="not-local.js"
+                                modificationDate="2004-05-01T20:59:00.000+01:00">
+                        <version number="3">
+                          <markupProperty name="code" url="40code.xml" grammar="coremedia-richtext-1.0"/>
+                          <stringProperty name="description" value="JavaScript"/>
+                        </version>
+                      </document>
+                      <!-- this content is deleted (!) -->
+                      <document id="50" type="CMJavaScript" name="deleted.js" lastFolder="153" toBeDeleted="true"
+                                archived="true" modificationDate="2004-05-01T20:59:00.000+01:00">
+                        <version number="2">
+                          <markupProperty name="code" url="40code.xml" grammar="coremedia-richtext-1.0"/>
+                          <stringProperty name="description" value="JavaScript"/>
+                        </version>
+                      </document>
+                    </folder>
+                  </folder>
+                </folder>
+              </folder>
+            </folder>
+          </folder>
+
+        <folder id="151" name="css">
+          <document id="30" type="CMCSS" name="my-custom.css">
+            <version number="1">
+              <!-- currently not used for testing -->
+              <!--<markupProperty name="code" url="mergedcodehandlertest-40code.xml" grammar="coremedia-richtext-1.0"/>-->
+              <stringProperty name="description" value="dummy CSS"/>
+            </version>
+          </document>
+        </folder>
+      </folder>
+    </folder>
+  </content>
+</contentRepository>

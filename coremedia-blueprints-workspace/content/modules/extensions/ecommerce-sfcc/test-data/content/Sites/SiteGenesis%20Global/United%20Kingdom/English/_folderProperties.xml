@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMFolderProperties folder="/Sites/SiteGenesis Global/United Kingdom/English" name="_folderProperties" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<contexts>
+<link href="Navigation/SiteGenesis%20UK.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Navigation/SiteGenesis%20UK"/>
+</contexts>
+</CMFolderProperties>

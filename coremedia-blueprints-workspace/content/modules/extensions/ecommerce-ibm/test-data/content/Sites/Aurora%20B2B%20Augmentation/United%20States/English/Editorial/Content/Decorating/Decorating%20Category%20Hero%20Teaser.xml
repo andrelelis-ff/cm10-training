@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Decorating" name="Decorating Category Hero Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="Decorating%20Restaurant%20Lighting%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Decorating/Decorating%20Restaurant%20Lighting%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+</target>
+</CMTeaser>

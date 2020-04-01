@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMQueryList folder="/Sites/SiteGenesis Global/United Kingdom/English/Editorial/Content" name="Editorial Blog" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+<link href="../../Options/Viewtypes/CMChannel/left-right.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Viewtypes/CMChannel/left-right"/>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<IntProperty Name="limit">5</IntProperty>
+<StructProperty Name="fq">
+<Struct>
+<StringProperty Name="documenttype">CMArticle</StringProperty>
+<LinkListProperty Name="authors" LinkType="coremedia:///cap/contenttype/CMPerson">
+<Link xlink:href="coremedia:///cap/resources/../Authors/Michelle%20Villegas%20Person.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Authors/Michelle%20Villegas%20Person"/>
+<Link xlink:href="coremedia:///cap/resources/../Authors/Joshua%20Campos%20Person.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Authors/Joshua%20Campos%20Person"/>
+<Link xlink:href="coremedia:///cap/resources/../Authors/David%20Fuller%20Person.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Authors/David%20Fuller%20Person"/>
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="order">creationdate desc</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<extendedItems>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="links">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/Articles/The%20Difference%20between%20Style%20and%20Fashion.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Articles/The%20Difference%20between%20Style%20and%20Fashion"/>
+<IntProperty Name="index">2</IntProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</extendedItems>
+</CMQueryList>

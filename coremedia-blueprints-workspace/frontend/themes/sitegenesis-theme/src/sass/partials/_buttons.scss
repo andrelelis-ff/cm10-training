@@ -1,0 +1,39 @@
+/*
+Buttons
+========================================================================================================================
+
+Contains styling definitions for all content types as cm-button.
+- cm-button
+- cm-button--primary
+- cm-button--white
+*/
+
+.cm-button {
+  transition: all 0.25s ease;
+  cursor: pointer;
+  padding: 0.5em 2em;
+  text-align: center;
+
+  @include transparent-button(palette(black), palette(white));
+
+  //primay button with white hover
+  &--primay {
+    @include transparent-button(palette(grey, darker), palette(white));
+  }
+
+  //white button with grey-darker hover
+  &--white {
+    @include transparent-button(palette(white), palette(grey, darker))
+  }
+
+  //green button with green-dark hover
+  &--green {
+    @include transparent-button(palette(green), palette(green, dark))
+  }
+
+  //black button with grey hover
+  &--black {
+    @include transparent-button(palette(black), palette(grey))
+  }
+
+}

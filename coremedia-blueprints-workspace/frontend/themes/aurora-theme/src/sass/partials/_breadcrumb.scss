@@ -1,0 +1,43 @@
+// breadcrumb
+.cm-breadcrumb {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  line-height: 12px;
+
+  // outer container
+  &--outer {
+    padding: 0 10px;
+    height: 14px;
+  }
+
+  // items
+  &__item {
+    display: inline;
+    color: #CA4200;
+    font-size: 12px;
+    margin: 0;
+
+    //divider "/"  between items
+    & + &:before {
+      content: "\\";
+      padding: 0 6px;
+      color: #DEDEDE;
+    }
+
+    // last item
+    &.active {
+      color: #767676;
+    }
+
+    // links
+    a {
+      text-decoration: none;
+      color: #CA4200;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

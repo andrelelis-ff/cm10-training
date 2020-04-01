@@ -1,0 +1,70 @@
+// Special animated styling
+.cm-hamburger-icon {
+  $_bar-height: 2px;
+  $_bar-width: 22px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  width: 44px;
+  height: 44px;
+
+  &__bar1,
+  &__bar2,
+  &__bar3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -($_bar-width / 2);
+    display: block;
+    width: $_bar-width;
+    height: $_bar-height;
+    border-radius: 1px;
+    background-color: black;
+  }
+
+  &__bar1 {
+    margin-top: -($_bar-height / 2) - 6px;
+  }
+
+  &__bar2 {
+    margin-top: -($_bar-height / 2);
+  }
+
+  &__bar3 {
+    margin-top: -($_bar-height / 2) + 6px;
+  }
+
+  &__bar1,
+  &__bar3 {
+    transition: margin .2s .2s ease(in-out-quad), transform .2s ease(in-out-quad);
+  }
+
+  &--toggled & {
+    &__bar1,
+    &__bar3 {
+      margin-top: 0;
+    }
+
+    &__bar1 {
+      transform: rotate3d(0, 0, 1, 45deg);
+    }
+
+    &__bar2 {
+      background-color: transparent;
+    }
+
+    &__bar3 {
+      transform: rotate3d(0, 0, 1, -45deg);
+    }
+
+    &__bar1,
+    &__bar3 {
+      background-color: black;
+      transition: margin .2s ease(in-out-quad), transform .2s .2s ease(in-out-quad);
+    }
+  }
+}

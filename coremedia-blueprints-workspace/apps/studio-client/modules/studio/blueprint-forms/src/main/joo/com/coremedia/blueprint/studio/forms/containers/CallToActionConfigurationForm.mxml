@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ This is a form panel which combines several form elements to an editor for local settings to configure
+ the call to action behaviour. A combination of a radio group and a string property field.
+-->
+<local:CallToActionConfigurationFormBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.forms.containers.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        itemId="callToActionConfigurationForm"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMTeasable_callToActionConfiguration_text')}"
+        propertyNames="{[]}"
+        collapsed="{config.collapsed || true}"
+        settingsVE="{config.bindTo.extendBy('properties','localSettings')}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cap.struct.Struct;
+    import com.coremedia.cms.editor.sdk.util.IAnnotatedLinkListProvider;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+
+    import ext.Ext;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.callToActionConfigurationForm";
+
+    private var config:CallToActionConfigurationForm;
+
+    public native function CallToActionConfigurationForm(config:CallToActionConfigurationForm = null);
+
+    private function transformEnabledToEmptyText(enabled:Boolean):String {
+      return enabled
+              ? resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMTeasable_CTAText_emptyText')
+              : null;
+    }
+
+    public static function isAnnotated(annotatedLinkListProvider:IAnnotatedLinkListProvider, rowIndex:Number):Boolean {
+      var linkList:Array = annotatedLinkListProvider.getAnnotatedLinkListVE().getValue();
+      var struct:Struct = null;
+      if (!Ext.isEmpty(linkList)) {
+        struct = linkList[rowIndex] as Struct;
+      }
+      return struct ? struct.get('callToActionEnabled') === true : false;
+    }
+    ]]></fx:Script>
+
+  <local:plugins exml:mode="append">
+    <ui:Binding source="ctaSettings.callToActionEnabled"
+                destination="ctaViewModel.CTAEnabled"
+                twoWay="true"/>
+    <ui:Binding source="ctaSettings.callToActionCustomText"
+                destination="ctaViewModel.CTAText"
+                twoWay="true"/>
+    <editor:PropertyFieldPlugin propertyName="callToActionConfiguration"/>
+    <editor:ShowIssuesPlugin propertyName="callToActionConfiguration"
+                             bindTo="{config.bindTo}"/>
+  </local:plugins>
+  <local:items>
+    <ui:StatefulCheckbox
+            boxLabel="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMTeasable_callToActionConfiguration_enable_cta_text')}">
+      <ui:plugins>
+        <ui:BindPropertyPlugin bidirectional="true">
+          <ui:bindTo>
+            <ui:ValueExpression context="{ctaViewModel}"
+                                expression="{CallToActionViewModel.CTA_ENABLED_PROPERTY_NAME}"/>
+          </ui:bindTo>
+        </ui:BindPropertyPlugin>
+        <editor:BindDisablePlugin bindTo="{config.bindTo}"
+                                  forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+        <editor:ShowIssuesPlugin propertyName="callToActionConfiguration"
+                                 bindTo="{config.bindTo}"/>
+      </ui:plugins>
+    </ui:StatefulCheckbox>
+    <ui:StatefulTextField hideLabel="true"
+                          flex="1"
+                          itemId="customCTAText"
+                          margin="0 0 0 22"
+                          checkChangeBuffer="500">
+      <ui:plugins>
+        <ui:BindPropertyPlugin
+                bindTo="{ValueExpressionFactory.create(CallToActionViewModel.CTA_TEXT_PROPERTY_NAME, ctaViewModel)}"
+                bidirectional="true"/>
+        <!-- Do not use BindDisablePlugin here, as it expects content as a value of bindTo.getValue() -->
+        <ui:BindPropertyPlugin componentProperty="disabled"
+                               bindTo="{getTextDisabledVE()}"/>
+        <ui:BindPropertyPlugin componentProperty="emptyText"
+                               bindTo="{ValueExpressionFactory.create(CallToActionViewModel.CTA_ENABLED_PROPERTY_NAME, ctaViewModel)}"
+                               transformer="{transformEnabledToEmptyText}"/>
+        <ui:BlockEnterPlugin/>
+        <editor:BindReadOnlyPlugin bindTo="{config.bindTo}"
+                                   forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+        <editor:ShowIssuesPlugin propertyName="callToActionConfiguration"
+                                 bindTo="{config.bindTo}"/>
+      </ui:plugins>
+    </ui:StatefulTextField>
+  </local:items>
+
+</local:CallToActionConfigurationFormBase>

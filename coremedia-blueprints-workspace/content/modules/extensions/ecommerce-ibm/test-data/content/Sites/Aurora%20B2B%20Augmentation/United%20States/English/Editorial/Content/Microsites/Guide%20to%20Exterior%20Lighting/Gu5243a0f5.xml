@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Microsites/Guide to Exterior Lighting" name="Guide to Exterior Lighting Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Guide to Exterior Lighting</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Architectural lighting design is a field of design specializing in lighting systems</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p><strong>Architectural lighting design</strong> is a field of design specializing in lighting systems that incorporate natural light, artificial light, or both to serve the specific human needs a certain structure is designed to meet.  It falls within the disciplines of <em>architecture</em>, <em>interior design</em>and <em>electrical engineering</em>.</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Products/Aurora%20B2B/Lighting/Linear%20Fluorescent%20740608be.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Linear%20Fluorescent%20Bulb%20Product%20Teaser">Linear Fluorescent Bulb</a><br/></p><p>Historically, architecture has incorporated advanced lighting concepts, focusing on alignment with the Sun and/or stars.  A much-debated example of this is Stonehenge; experts continue to study and hypothesize about its originally intended uses and their meanings astronomically.</p><p>Today, this discipline of study is used to highlight features of both the interior and exterior of buildings, and can cause striking effects when leveraged on a building’s exterior facades.  Lighting can be constant, slowly varying, or can vary rapidly as part of a lighting show.  An exciting modern example of this technology is on display on the Empire State Building in New York City.  The new lighting system was unveiled in 2012.  It is computer-driven, and capable of 16,000,000 different colors!<br/></p><p>An example of static lighting that is almost as iconic can be seen just a few blocks away on the Chrysler Building.  Completely on May 20, 1930, the Chrysler Building’s Art Deco design is considered to be one of the finest in New York City, and the timelessness of the lighting is appreciated even today.</p><p>Beautiful exterior lighting can be viewed on a number of the world’s skyscrapers, such as:</p><ul><li>Burj Khalifa (Dubai)</li><li>The Shard (London)</li><li>The Space Needle (Seattle)</li><li>Aspire Tower (Qatar)</li></ul><p>As you can see, exterior lighting is more popular than ever!</p><p><br/></p></div></detailText>
+<pictures>
+<link href="../../../../Pictures/Microsites/Guide%20to%20Exterior%20Lighting/ESB%20Firew3e7c2326.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Microsites/Guide%20to%20Exterior%20Lighting/ESB%20Fireworks%20Picture"/>
+<link href="../../../../Pictures/Microsites/Guide%20to%20Exterior%20Lighting/ESB%20Red-Gb0cccd77.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Microsites/Guide%20to%20Exterior%20Lighting/ESB%20Red-Green%20Picture"/>
+<link href="../../../../Pictures/Microsites/Guide%20to%20Exterior%20Lighting/Chrysler%20c337bb22.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Microsites/Guide%20to%20Exterior%20Lighting/Chrysler%20and%20Mercury%20Picture"/>
+<link href="../../../../Pictures/Microsites/Guide%20to%20Exterior%20Lighting/ESB%20and%2fde89317.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Microsites/Guide%20to%20Exterior%20Lighting/ESB%20and%20River%20Picture"/>
+</pictures>
+<related>
+<link href="../../../../Navigation/Fragments/Aurora%20B2B%20Homepage/Lighting%20Categoryf2cd0e93.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Navigation/Fragments/Aurora%20B2B%20Homepage/Lighting%20Category%20Promotion%20Teaser"/>
+<link href="../../../Products/Aurora%20B2B/Lighting/Linear%20Fluorescent%20740608be.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Linear%20Fluorescent%20Bulb%20Product%20Teaser"/>
+<link href="../../../../Navigation/Fragments/Aurora%20B2B%20Categories/Lighting/The%20Gu718254e2.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Navigation/Fragments/Aurora%20B2B%20Categories/Lighting/The%20Guide%20To%20Perfect%20Lighting%20Teaser"/>
+<link href="../../../Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED5ed0ab2.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED%20Strip%20Product%20Teaser"/>
+</related>
+<authors>
+<link href="../../../Authors/David%20Fuller%20Person.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Authors/David%20Fuller%20Person"/>
+</authors>
+</CMArticle>

@@ -1,0 +1,10 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <BooleanProperty Name="grandfather">true</BooleanProperty>
+  <StructProperty Name="elasticSocial">
+    <Struct>
+      <BooleanProperty Name="enabled">false</BooleanProperty>
+      <IntProperty Name="port">78</IntProperty>
+      <BooleanProperty Name="linkedSetting">true</BooleanProperty>
+    </Struct>
+  </StructProperty>
+</Struct>

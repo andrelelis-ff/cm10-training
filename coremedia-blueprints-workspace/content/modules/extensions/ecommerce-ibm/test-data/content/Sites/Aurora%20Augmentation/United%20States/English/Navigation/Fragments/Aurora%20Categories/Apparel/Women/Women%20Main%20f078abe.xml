@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora Augmentation/United States/English/Navigation/Fragments/Aurora Categories/Apparel/Women" name="Women Main Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+<link href="../../../../../Options/Viewtypes/CMChannel/hero.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Viewtypes/CMChannel/hero"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Women Main Collection</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../../../../Editorial/Content/Fashion/Women%27s%20Dresses%20Image%20Map.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Women%27s%20Dresses%20Image%20Map"/>
+</items>
+</CMCollection>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <description>
+    Asset management blobstore configuration.
+  </description>
+
+  <customize:append id="addAMBlobstore" bean="blobstore" property="mediaStores" enabled="#{'' != '${am.blobstore.rootdir:}'}">
+    <description>
+      Add asset management media store.
+    </description>
+    <map>
+      <entry key="am">
+        <bean id="amFilestore" class="hox.corem.server.media.FileStore">
+          <description>
+            The filestore stores blob data in the file system of the content server
+            for use with the asset management extension.
+          </description>
+          <property name="storeDir" value="${am.blobstore.rootdir:}"/>
+          <property name="bitsPerDirectory" value="10"/>
+        </bean>
+      </entry>
+    </map>
+  </customize:append>
+
+
+  <customize:prepend id="addAMBlobstoreSelector" bean="blobstore" property="mediaStoreSelectors" enabled="#{'' != '${am.blobstore.rootdir:}'}">
+    <description>
+      Map AMAsset documents to asset management media store.
+    </description>
+    <list>
+      <bean class="hox.corem.server.media.ConditionalMediaStoreSelector">
+        <property name="storeName" value="am"/>
+        <property name="condition">
+          <bean class="hox.corem.server.media.OrCondition">
+            <property name="conditions">
+              <list>
+                <bean class="hox.corem.server.media.MatchCondition">
+                  <property name="declaringDocumentTypeName" value="AMAsset"/>
+                  <property name="propertyName" value="original"/>
+                </bean>
+                <!-- Add further match conditions for additional asset types here. -->
+              </list>
+            </property>
+          </bean>
+        </property>
+      </bean>
+    </list>
+  </customize:prepend>
+
+</beans>

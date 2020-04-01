@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/France/French/Editorial/Content/Microsites/Fashion Show" name="fashion-show-1746588" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Editorial/Content/Microsites/Fashion%20Show/fashion-show-1746588.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Microsites/Fashion%20Show/fashion-show-1746588"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=198;width=1894;height=2525</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=166;width=1894;height=1894</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=176;width=1894;height=1421</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=194;width=1894;height=1065</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=203;width=1894;height=710</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.056962025316455694;x2=1;y2=0.7051481991699806</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.060126582278481014;x2=1;y2=0.5462662126686249</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.06645569620253164;x2=1;y2=0.43106041899513947</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.06962025316455696;x2=1;y2=0.31269006835962887</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>sfcc:///catalog/product/25589481</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>Https://pixabay.com/fr/fashion-show-fashion-catwalk-model-1746588/</copyright>
+<dataUrl></dataUrl>
+<width>1894</width>
+<height>2922</height>
+<data md5="cd50c30062e15d3a26e0da2f7a60550f" size="876677" href="../../../../../../../../__blob/cd50c30062e15d3a26e0da2f7a60550f.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

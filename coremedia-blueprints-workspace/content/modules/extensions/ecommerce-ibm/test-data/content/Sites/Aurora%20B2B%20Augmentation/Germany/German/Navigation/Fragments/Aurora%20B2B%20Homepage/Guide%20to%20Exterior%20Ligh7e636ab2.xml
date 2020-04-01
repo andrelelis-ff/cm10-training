@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Aurora B2B Augmentation/Germany/German/Navigation/Fragments/Aurora B2B Homepage" name="Guide to Exterior Lighting Article Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Navigation/Fragments/Aurora%20B2B%20Homepage/Guide%20to%20Exteri82fe3154.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Navigation/Fragments/Aurora%20B2B%20Homepage/Guide%20to%20Exterior%20Lighting%20Article%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Guide to Exterior Lighting</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>lorem</p> </div></teaserText>
+<pictures>
+<link href="../../../Pictures/Microsites/Guide%20to%20Exterior%20Lighting/ESB%20and%20River%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Pictures/Microsites/Guide%20to%20Exterior%20Lighting/ESB%20and%20River%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../Editorial/Content/Microsites/Guide%20to%20Exterior%20Lighting/Guide%20to%e6dc4f46.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Microsites/Guide%20to%20Exterior%20Lighting/Guide%20to%20Exterior%20Lighting%20Article"/>
+</target>
+</CMTeaser>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSelectionRules folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Personalization" name="Contract-Based Personalized Video Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Editorial/Personalization/Contract-Based%20Personalized%20Video%20Teaser.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Personalization/Contract-Based%20Personalized%20Video%20Teaser"/>
+</master>
+<viewtype>
+<link href="../../Options/Viewtypes/CMChannel/hero.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Viewtypes/CMChannel/hero"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<rules grammarName="coremedia-selectionrules-1.0"><rules version="1.0" xmlns="http://www.coremedia.com/2010/selectionrules" xmlns:xlink="http://www.w3.org/1999/xlink">select <content xlink:href="coremedia:///cap/resources/../../Videos/Ciglio%20LED%20Lights%20Local%20Video.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Videos/Ciglio%20LED%20Lights%20Local%20Video"/> if commerce.usersegments#"ibm:///catalog/segment/8500000000000323451"; select <content xlink:href="coremedia:///cap/resources/../../Videos/Architectural%20Lighting%20Local%20Video.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Videos/Architectural%20Lighting%20Local%20Video"/> if commerce.usersegments#"ibm:///catalog/segment/8500000000000323452"</rules></rules>
+<defaultContent>
+<link href="../Products/Aurora%20B2B/Lighting/Standard%20Incandescent%20Bulb%2bd844d94.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Lighting/Standard%20Incandescent%20Bulb%20Product%20Teaser"/>
+</defaultContent>
+</CMSelectionRules>

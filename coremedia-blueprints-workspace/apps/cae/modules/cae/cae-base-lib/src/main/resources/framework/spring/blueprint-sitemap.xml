@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <context:property-placeholder ignore-unresolvable="true"
+                                location="classpath:/framework/spring/blueprint-sitemap.properties"/>
+  <!--
+    If you include the sitemap controller, you can obtain sitemap xml
+    (s. http://www.sitemaps.org/protocol.html)
+    for a site of the blueprint, e.g.
+    http://localhost:49080/blueprint/servlet/internal/perfectchef/sitemap-org
+  -->
+  <import resource="classpath:/com/coremedia/cae/uapi-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/contentbean-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/link-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/settings/impl/bpbase-settings-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/links/bpbase-links-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/links/bpbase-urlpathformatting.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-services.xml"/>
+
+  <!--
+    Shared sitemap related features.
+  -->
+  <bean id="sitemapHelper" class="com.coremedia.blueprint.cae.sitemap.SitemapHelper">
+    <property name="settingsService" ref="settingsService"/>
+    <property name="urlPrefixResolver" ref="ruleUrlPrefixResolver"/>
+    <property name="sitemapConfigurations" ref="sitemapConfigurations"/>
+    <property name="prependBaseUri" value="${cae.is.standalone:true}"/>
+  </bean>
+
+  <!--
+    Utility bean, suitable for most sitemap configurations.
+  -->
+  <bean id="sitemapIndexRendererFactory" class="com.coremedia.blueprint.cae.sitemap.SitemapIndexRendererFactory">
+    <property name="targetDirectory" value="${blueprint.sitemap.target.root}"/>
+    <property name="urlPrefixResolver" ref="ruleUrlPrefixResolver"/>
+    <property name="sitemapHelper" ref="sitemapHelper"/>
+    <property name="prependBaseUri" value="${cae.is.standalone:true}"/>
+  </bean>
+
+  <!--
+    Abstract parent bean for content url generators.
+  -->
+  <bean id="abstractContentUrlGenerator" abstract="true" class="com.coremedia.blueprint.cae.sitemap.ContentUrlGenerator">
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="linkFormatter" ref="linkFormatter"/>
+    <property name="validationService" ref="validationService"/>
+  </bean>
+
+  <!--
+    The handler that serves the (generated) sitemaps.
+  -->
+  <bean id="sitemapHandler" class="com.coremedia.blueprint.cae.sitemap.SitemapHandler">
+    <property name="sitemapDirectory" value="${blueprint.sitemap.target.root}"/>
+    <property name="capConnection" ref="connection"/>
+  </bean>
+
+  <!--
+    The handler that generates the sitemaps.
+  -->
+  <bean id="sitemapGenerationHandler" class="com.coremedia.blueprint.cae.sitemap.SitemapGenerationHandler">
+    <property name="siteResolver" ref="siteResolver"/>
+    <property name="sitemapSetupFactory" ref="contentBasedSitemapSetupFactory"/>
+  </bean>
+
+  <!--
+    SitemapSetupFactory which uses the settings "sitemapOrgConfiguration" from the site
+  -->
+  <bean id="contentBasedSitemapSetupFactory" class="com.coremedia.blueprint.cae.sitemap.ContentBasedSitemapSetupFactory">
+    <property name="sitemapHelper" ref="sitemapHelper"/>
+  </bean>
+
+  <!--
+    Site specific configurations, to be populated by extensions.
+  -->
+  <util:map id="sitemapConfigurations" key-type="java.lang.String" value-type="com.coremedia.blueprint.cae.sitemap.SitemapSetup">
+  </util:map>
+
+  <!--
+    Template for "cronjobs".
+  -->
+  <bean id="sitemapGenerationJobParent" class="com.coremedia.blueprint.cae.sitemap.SitemapGenerationJob">
+    <property name="sitemapTrigger" ref="sitemapTrigger"/>
+    <property name="startTime" value="${blueprint.sitemap.starttime:-}"/>
+    <property name="periodMinutes" value="${blueprint.sitemap.period:1440}"/>
+  </bean>
+
+  <!--
+    Triggers a Sitemap by sending a request to the cae by using the HttpClient
+  -->
+  <bean id="sitemapTrigger" class="com.coremedia.blueprint.cae.sitemap.SitemapTriggerImpl">
+    <property name="sitesService" ref="sitesService"/>
+    <property name="urlPathFormattingHelper" ref="urlPathFormattingHelper"/>
+    <property name="sitemapHelper" ref="sitemapHelper"/>
+    <property name="myOwnPort" value="${blueprint.sitemap.cae.port}"/>
+  </bean>
+</beans>

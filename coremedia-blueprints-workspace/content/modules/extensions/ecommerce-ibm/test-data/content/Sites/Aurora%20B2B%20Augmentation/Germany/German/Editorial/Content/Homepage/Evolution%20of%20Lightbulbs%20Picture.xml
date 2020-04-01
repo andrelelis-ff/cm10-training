@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content/Homepage" name="Evolution of Lightbulbs Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Homepage/Evolution%20of%20Lightbulbs%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Homepage/Evolution%20of%20Lightbulbs%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=943;y=0;width=1114;height=1727</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=852;y=0;width=1295;height=1727</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=637;y=0;width=1727;height=1727</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=349;y=0;width=2303;height=1727</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=20;width=3000;height=1688</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=625;y=473;width=1780;height=712</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=489;width=3000;height=750</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.31626506024096385;y1=0;x2=0.6867469879518072;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.286144578313253;y1=0;x2=0.7168674698795181;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.21385542168674698;y1=0;x2=0.7891566265060241;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.11746987951807229;y1=0;x2=0.8855421686746988;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.010471204188481676;x2=1;y2=0.9895287958115183</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0.20817120622568094;y1=0.2736486486486487;x2=0.8013412512707261;y2=0.6858108108108109</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.28272251308900526;x2=1;y2=0.7172774869109948</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Evolution of Lightbulbs</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Evolution of Lightbulbs</alt>
+<copyright>tr3gin / Shutterstock 100372673</copyright>
+<dataUrl></dataUrl>
+<width>3000</width>
+<height>1727</height>
+<data md5="420fd1192a9c7dc0c0d3192e3daa5390" size="292240" href="../../../../../../../__blob/420fd1192a9c7dc0c0d3192e3daa5390.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

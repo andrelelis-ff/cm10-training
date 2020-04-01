@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Microsites/RGB LED Strip" name="Chef Corp RGB LED Strip Datasheet Preview Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=113;y=0;width=1127;height=1746</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=25;y=0;width=1306;height=1746</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=196;width=1352;height=1353</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=4;width=1352;height=1015</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=493;width=1352;height=760</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=601;width=1352;height=543</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=706;width=1352;height=338</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.08333333333333333;y1=0;x2=0.9166666666666666;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.018518518518518517;y1=0;x2=0.9845679012345679;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.11244019138755981;x2=1;y2=0.8875598086124402</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.0023923444976076554;x2=1;y2=0.583732057416268</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.2822966507177033;x2=1;y2=0.7177033492822966</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.3444976076555024;x2=1;y2=0.6555023923444976</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.4043062200956938;x2=1;y2=0.5980861244019139</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>chef-supply-datasheet-data_preview</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>chef-supply-datasheet-data_preview</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1352</width>
+<height>1746</height>
+<data md5="fcf6a44e9cde5260884ca6780d206d5b" size="491859" href="../../../../../../../../__blob/fcf6a44e9cde5260884ca6780d206d5b.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

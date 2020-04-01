@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.studio.externalpreview.AddExternalPreviewButtonPlugin"/>
+  <component class="com.coremedia.blueprint.studio.externalpreview.ExternalPreviewAction"/>
+  <component class="com.coremedia.blueprint.studio.externalpreview.ExternalPreviewButton"/>
+  <component class="com.coremedia.blueprint.studio.externalpreview.ExternalPreviewPlugin"/>
+  <component class="com.coremedia.blueprint.studio.externalpreview.ExternalPreviewStudioPlugin"/>
+  <component class="com.coremedia.blueprint.studio.externalpreview.dialog.ExternalPreviewWindow"/>
+  <component class="com.coremedia.blueprint.studio.externalpreview.dialog.ExternalPreviewWindowBase"/>
+</componentPackage>

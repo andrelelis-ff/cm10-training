@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Videos/Hero Videos" name="Restaurant Kitchen Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Restaurant Kitchen</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Steam fumes above vegetables and kitchen utensils near glass with silhouettes of people at restaurant</p></div></detailText>
+<pictures>
+<link href="Restaurant%20Kitchen%20Video%20Still%20Picture.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Videos/Hero%20Videos/Restaurant%20Kitchen%20Video%20Still%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Shutterstock_v3418772_1280</alt>
+<copyright>Pavel L Photo and Video/Shutterstock 3418772</copyright>
+<dataUrl></dataUrl>
+<data md5="44ba900ab0de61e37d9b554100e840a9" size="655653" href="../../../../../../../../__blob/44ba900ab0de61e37d9b554100e840a9.blob" mimetype="video/mp4"/>
+<asset>
+</asset>
+</CMVideo>

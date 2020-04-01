@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Fashion" name="Relaxing on the stairs" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Fashion/Relaxing%20on%20the%20stairs.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Relaxing%20on%20the%20stairs"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=314;y=0;width=2336;height=3623</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=47;width=2650;height=3536</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=467;width=2650;height=2649</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=454;width=2650;height=1988</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=460;width=2650;height=1488</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=487;width=2650;height=1061</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=580;width=2650;height=661</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.11838790931989925;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.01289134438305709;x2=1;y2=0.988950276243094</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.1289134438305709;x2=1;y2=0.860036832412523</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.1252302025782689;x2=1;y2=0.6740331491712708</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.1270718232044199;x2=1;y2=0.5377532228360957</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.13443830570902393;x2=1;y2=0.427255985267035</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.16022099447513813;x2=1;y2=0.3425414364640884</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Entspannung auf der Treppe</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Entspannung auf der Treppe</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2650</width>
+<height>3623</height>
+<data md5="4be537afe1a0f765f4dca165e145bd29" size="5823699" href="../../../../../../../__blob/4be537afe1a0f765f4dca165e145bd29.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

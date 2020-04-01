@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Calista/United States/English/Editorial/Content/Blog/Eveningwear" name="Eveningwear Trends" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Eveningwear Trends</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Eveningwear%281%29.xml" path="/Settings/Taxonomies/Subject/Eveningwear%281%29"/>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Eveningwear.xml" path="/Settings/Taxonomies/Subject/Eveningwear"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2 align--center">Check out our evening wear trends</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Fashion to me has become very disposable; I wanted to get back to craft, to clothes that could last. My job is to bring out in people what they wouldn't dare do themselves. That is the key of this collection, being yourself. Don't be into trends. Don't make fashion own you, but you decide what you are, what you want to express by the way you dress and the way to live. Luxury must be comfortable, otherwise it is not luxury. I'm an accomplice to helping women get what they want.<br/></p></div></detailText>
+<pictures>
+<link href="../../../../Pictures/Blog/Luigi%20Valenti%20Mid%20Length%20Cocktail%20Dress%20%28shutterstock_55370716%29.xml" path="/Sites/Calista/United%20States/English/Pictures/Blog/Luigi%20Valenti%20Mid%20Length%20Cocktail%20Dress%20%28shutterstock_55370716%29"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../../Authors/Elle%20Quinn%20Person.xml" path="/Sites/Calista/United%20States/English/Editorial/Authors/Elle%20Quinn%20Person"/>
+</authors>
+</CMArticle>

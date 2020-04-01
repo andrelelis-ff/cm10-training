@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <!--
+  Generated content bean mappings. These are spring prototype bean definitions with a special
+  naming scheme. These are called by the bean factory in .../framework/contentbeanfactory.xml.
+  -->
+  <import resource="classpath:/com/coremedia/cache/cache-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/uapi-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/contentbean-services.xml"/>
+  <import resource="classpath:/com/coremedia/cap/multisite/multisite-services.xml"/>
+  <import resource="classpath:/framework/spring/search/solr-search.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/tree/bpbase-treerelation-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/settings/impl/bpbase-settings-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/links/bpbase-links-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/segments/blueprint-segments.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/tree/bpbase-treerelation-services.xml"/>
+
+  <import resource="classpath:/com/coremedia/cap/transform/transform-services.xml"/>
+  <import resource="classpath:/framework/spring/mediatransform.xml"/>
+  <import resource="blueprint-contentbeans-settings.xml"/>
+  <import resource="blueprint-services.xml"/>
+
+  <context:component-scan base-package="com.coremedia.blueprint.coderesources" />
+  <context:component-scan base-package="com.coremedia.blueprint.viewtype.configuration"/>
+  <context:annotation-config/>
+
+  <bean id="mediaTransformer" class="com.coremedia.transform.impl.ExpressionBasedBeanBlobTransformer">
+    <property name="blobTransformer" ref="blobTransformer"/>
+
+    <property name="dataExpression" value="data">
+      <description>
+        Spring EL expression to return the Blob to transform the bean passed to the transformer.
+      </description>
+    </property>
+
+    <property name="transformMapExpression" value="transformMap">
+      <description>
+        Spring EL expression to return the transform map (mapping transform names to operation strings)
+        for the bean passed to the transformer.
+      </description>
+    </property>
+  </bean>
+
+  <bean id="contentBeanCollections" class="com.coremedia.objectserver.beans.ContentBeanCollections">
+    <constructor-arg ref="contentBeanFactory"/>
+  </bean>
+
+  <bean id="aspectsProvider" class="com.coremedia.cae.aspect.provider.CompoundAspectsProvider">
+    <property name="aspectsProviders" ref="aspectsProviders"/>
+  </bean>
+
+  <bean id="aspectsProviders" class="org.springframework.beans.factory.config.ListFactoryBean">
+    <property name="sourceList">
+      <list>
+      </list>
+    </property>
+  </bean>
+
+  <bean name="abstractContentBean-blueprint-doctypes" scope="prototype" abstract="true">
+    <property name="aspectsProviders" ref="aspectsProvider"/>
+  </bean>
+
+  <bean name="abstractLocalized-blueprint-doctypes" scope="prototype" abstract="true"
+        parent="abstractContentBean-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMLocalizedImpl">
+    <property name="sitesService" ref="sitesService"/>
+    <property name="contentBeanCollections" ref="contentBeanCollections"/>
+  </bean>
+
+  <bean name="abstractLinkable-blueprint-doctypes" scope="prototype" abstract="true"
+        parent="abstractLocalized-blueprint-doctypes" class="com.coremedia.blueprint.cae.contentbeans.CMLinkableBase">
+    <property name="contextStrategy" ref="contextStrategy"/>
+    <property name="validationService" ref="validationService"/>
+    <property name="settingsService" ref="settingsService"/>
+    <property name="urlPathFormattingHelper" ref="urlPathFormattingHelper"/>
+  </bean>
+
+  <bean name="abstractHasContexts-blueprint-doctypes" scope="prototype" abstract="true"
+        parent="abstractLinkable-blueprint-doctypes" class="com.coremedia.blueprint.cae.contentbeans.CMHasContextsImpl">
+    <property name="currentContextService" ref="currentContextService"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+  </bean>
+
+  <bean name="abstractTeasable-blueprint-doctypes" scope="prototype" abstract="true"
+        parent="abstractHasContexts-blueprint-doctypes" class="com.coremedia.blueprint.cae.contentbeans.CMTeasableBase">
+    <property name="resultFactory" ref="resultFactory"/>
+  </bean>
+
+  <bean name="abstractChannel-blueprint-doctypes" scope="prototype" abstract="true"
+        parent="abstractTeasable-blueprint-doctypes" class="com.coremedia.blueprint.cae.contentbeans.CMChannelImpl">
+    <property name="pageGridService" ref="pageGridService"/>
+    <property name="treeRelation" ref="cmNavigationTreeRelation"/>
+    <property name="codeResourcesTreeRelation" ref="navigationTreeRelation"/>
+    <property name="themeService" ref="themeService"/>
+    <property name="cache" ref="cache"/>
+  </bean>
+
+  <bean name="abstractMediaBean-blueprint-doctypes" parent="abstractTeasable-blueprint-doctypes"
+        scope="prototype" abstract="true">
+    <property name="mediaTransformer" ref="mediaTransformer"/>
+  </bean>
+
+  <bean name="abstractTaxonomyBean-blueprint-doctypes" parent="abstractTeasable-blueprint-doctypes"
+        scope="prototype" abstract="true">
+    <property name="treeRelation" ref="taxonomyTreeRelation"/>
+  </bean>
+
+  <bean name="contentBeanFactory:CMSite" parent="abstractLocalized-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMSiteImpl" scope="prototype">
+    <property name="validationService" ref="validationService"/>
+  </bean>
+
+  <bean name="contentBeanFactory:CMTeaser" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMTeaserImpl" scope="prototype">
+  </bean>
+  <bean name="contentBeanFactory:CMImage" parent="abstractLocalized-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMImageImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMSymbol" parent="abstractLocalized-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMSymbolImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMCSS" parent="abstractLocalized-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMCSSImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMJavaScript" parent="abstractLocalized-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMJavaScriptImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMTheme" parent="abstractLocalized-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMThemeImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMViewtype" parent="abstractLocalized-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMViewtypeImpl" scope="prototype">
+    <property name="viewtypeService" ref="viewtypeService"/>
+  </bean>
+
+  <bean name="contentBeanFactory:CMInteractive" parent="abstractMediaBean-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMInteractiveImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMVideo" parent="abstractMediaBean-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMVideoImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMAudio" parent="abstractMediaBean-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMAudioImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMPicture" parent="abstractMediaBean-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMPictureImpl" scope="prototype">
+    <property name="transformImageService" ref="transformImageService"/>
+  </bean>
+
+  <bean name="contentBeanFactory:CMImageMap" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMImageMapImpl" scope="prototype">
+    <property name="imageMapAreaFilters" ref="imageMapAreaFilters" />
+  </bean>
+
+  <bean name="contentBeanFactory:CMCollection" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMCollectionImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMLocTaxonomy" parent="abstractTaxonomyBean-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMLocTaxonomyImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMTaxonomy" parent="abstractTaxonomyBean-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMTaxonomyImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMSettings" parent="abstractLocalized-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMSettingsImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMResourceBundle" parent="abstractLocalized-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMResourceBundleImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMFolderProperties" parent="abstractLocalized-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMFolderPropertiesImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMGallery" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMGalleryImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMSpinner" parent="abstractMediaBean-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMSpinnerImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMArticle" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMArticleImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMPerson" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMPersonImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMExternalLink" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMExternalLinkImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMDownload" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMDownloadImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMHTML" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMHTMLImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMChannel" parent="abstractChannel-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMChannelImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMQueryList" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMQueryListImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMAction" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMActionImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMPlaceholder" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMPlaceholderImpl" scope="prototype"/>
+  <bean name="contentBeanFactory:CMSitemap" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMSitemapImpl" scope="prototype"/>
+
+  <bean id="cmNavigationTreeRelation"
+        class="com.coremedia.blueprint.cae.navigation.CMNavigationLinkListContentTreeRelation">
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="treeRelation" ref="navigationTreeRelation"/>
+  </bean>
+
+  <!--
+    Generic fallback, so that bulk transformations from contents to beans do
+    not fail, even if the set contains contents of types for which there is no
+    more specific content bean definition.
+
+    The Blueprint does not provide any views for GenericContentBeans, because
+    it never renders contents outside the CMObject hierarchy.  If you want to
+    do so in your project, you have to provide appropriate views.
+  -->
+  <bean name="contentBeanFactory:Content_"
+        class="com.coremedia.objectserver.beans.GenericContentBean" scope="prototype"/>
+</beans>

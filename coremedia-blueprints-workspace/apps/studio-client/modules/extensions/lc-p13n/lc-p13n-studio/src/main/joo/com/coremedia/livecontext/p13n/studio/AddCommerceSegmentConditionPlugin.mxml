@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<perso:Addconditionitems xmlns:perso="exml:com.coremedia.personalization.ui.config"
+                         xmlns:lc-p13n="exml:com.coremedia.livecontext.p13n.studio.config"
+                         xmlns:fx="http://ns.adobe.com/mxml/2009">
+  <fx:Script><![CDATA[
+    import mx.resources.ResourceManager;
+
+    private var componentConfig:Object;
+
+    // called by generated constructor code
+    //noinspection JSUnusedLocalSymbols
+    private function __initialize__(config:AddCommerceSegmentConditionPlugin):void {
+      componentConfig = config.cmp.initialConfig;
+    }
+
+    //noinspection JSUnusedLocalSymbols
+    private var config:AddCommerceSegmentConditionPlugin;
+
+    public native function AddCommerceSegmentConditionPlugin(config:AddCommerceSegmentConditionPlugin = null);
+    ]]></fx:Script>
+  <perso:items>
+    <!-- livecontext perso commerce conditions -->
+    <lc-p13n:CommerceSegmentCondition
+            bindTo="{componentConfig.bindTo}"
+            conditionName="{ResourceManager.getInstance().getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'p13n_context_commerce_segment')}"
+            propertyPrefix="commerce"/>
+  </perso:items>
+</perso:Addconditionitems>
+

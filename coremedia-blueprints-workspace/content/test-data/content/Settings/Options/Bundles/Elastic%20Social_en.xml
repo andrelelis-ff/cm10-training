@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMResourceBundle folder="/Settings/Options/Bundles" name="Elastic Social_en" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<localizations>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="mailTemplate_tokens">
+<Struct>
+<StringProperty Name="mailTemplate_token_baseUrl">http://coremedia.com/ConfirmPasswordRequest.html?token=</StringProperty>
+<StringProperty Name="mailTemplate_token_commentDate">Date of the Comment (if applicable)</StringProperty>
+<StringProperty Name="mailTemplate_token_commentText">Comment Text of the User (if applicable)</StringProperty>
+<StringProperty Name="mailTemplate_token_commentUrl">http://coremedia.com/article (if applicable)</StringProperty>
+<StringProperty Name="mailTemplate_token_email">E-Mail Address of the User</StringProperty>
+<StringProperty Name="mailTemplate_token_givenName">Given Name of the User</StringProperty>
+<StringProperty Name="mailTemplate_token_name">Name of the User</StringProperty>
+<StringProperty Name="mailTemplate_token_replyAuthorName">Name of the Reply User (if applicable)</StringProperty>
+<StringProperty Name="mailTemplate_token_replyDate">Date of the Reply (if applicable)</StringProperty>
+<StringProperty Name="mailTemplate_token_replyText">Reply text of the User (if applicable)</StringProperty>
+<StringProperty Name="mailTemplate_token_surName">Surname of the User</StringProperty>
+<StringProperty Name="mailTemplate_token_token">1e-2sp-c570c337</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localizations>
+</CMResourceBundle>

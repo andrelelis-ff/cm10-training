@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Pictures/Products/ChefWave" name="ChefWave HD Large Fryer 2 Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=508;y=220;width=1029;height=1029</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=447;y=323;width=1125;height=844</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=288;y=332;width=1240;height=698</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=701;y=0;width=910;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=312;width=2048;height=768</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.24789915966386553;y1=0.1608832807570978;x2=0.7504052593286921;y2=0.9148264984227129</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.2184873949579832;y1=0.23659305993690852;x2=0.7679501315510431;y2=0.8548895899053627</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.1407563025210084;y1=0.24290220820189273;x2=0.7462866652970335;y2=0.7539432176656151</StringProperty>
+<StringProperty Name="portrait_ratio2x3">position;x1=0.34243697478991597;y1=0;x2=0.786772912289916;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="portrait_ratio2x3">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.6060924369747899</StringProperty>
+<StringProperty Name="y">0.5063091482649842</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>ChefWave™ HD (large)</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Picture of the ChefWave™ HD Fryer (large)</alt>
+<copyright>Kondor83/Shutterstock 79688635</copyright>
+<dataUrl></dataUrl>
+<width>2048</width>
+<height>1365</height>
+<data md5="608896ac253cad28158e392caf2093e2" size="414386" href="../../../../../../../../../__blob/608896ac253cad28158e392caf2093e2.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

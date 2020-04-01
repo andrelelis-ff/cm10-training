@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       ">
+
+  <import resource="classpath:/com/coremedia/cap/common/uapi-services.xml"/>
+
+  <context:component-scan base-package="com.coremedia.elastic"/>
+  <context:component-scan base-package="com.coremedia.blueprint.personalization.elastic"/>
+
+  <bean name="interestsConfiguration" class="com.coremedia.blueprint.personalization.elastic.InterestsConfiguration">
+    <property name="implicitSubjectTaxonomyContextName" value="subjectTaxonomies"/>
+    <property name="implicitLocationTaxonomyContextName" value="locationTaxonomies"/>
+    <property name="explicitContextName" value="explicit"/>
+  </bean>
+
+  <!-- ===============================================================
+
+    Configuration of context sources.
+
+  ================================================================ -->
+
+  <bean id="elasticSocialSource_explicit"
+        class="com.coremedia.blueprint.personalization.sources.ElasticSocialContextSource">
+    <property name="contextName" value="explicit"/>
+    <property name="contextCoDec">
+      <bean class="com.coremedia.personalization.context.PropertyProfile$CoDec"/>
+    </property>
+    <property name="modelService" ref="modelService"/>
+  </bean>
+
+  <bean id="elasticSocialSource_userInfo"
+        class="com.coremedia.blueprint.personalization.sources.ElasticSocialUserInfoContextSource">
+    <description>
+      Is logged on, number of comments, number of ratings, etc.
+    </description>
+    <property name="contextName" value="es_check"/>
+  </bean>
+
+  <customize:append id="addElasticContextSources" bean="contextSources" order="101">
+    <list>
+      <ref bean="elasticSocialSource_explicit"/>
+      <ref bean="elasticSocialSource_userInfo"/>
+    </list>
+  </customize:append>
+
+</beans>

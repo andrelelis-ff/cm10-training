@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AMDocumentAsset folder="/Assets/Products/Fryers" name="CC-WAV-001-EU-COMPLIANCE" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<original md5="957bfd69e68082c3ba5abdd7cdfbacf6" size="473649" href="../../../__blob/957bfd69e68082c3ba5abdd7cdfbacf6.blob" mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+<thumbnail md5="58d669869d2dc729e6b69d16c22fd875" size="369938" href="../../../__blob/58d669869d2dc729e6b69d16c22fd875.blob" mimetype="image/jpeg"/>
+<state>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="original">
+<Struct>
+<StringProperty Name="modificationDate">1458659689800</StringProperty>
+<StringProperty Name="modifier">Teresa</StringProperty>
+<IntProperty Name="version">5</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="download">
+<Struct>
+<StringProperty Name="modificationDate">1448030873398</StringProperty>
+<StringProperty Name="modifier">Teresa</StringProperty>
+<IntProperty Name="version">1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="thumbnail">
+<Struct>
+<StringProperty Name="modificationDate">1448031100782</StringProperty>
+<StringProperty Name="modifier">Teresa</StringProperty>
+<IntProperty Name="version">1</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</state>
+<metadata>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="renditions">
+<Struct>
+<StructProperty Name="download">
+<Struct>
+<BooleanProperty Name="show">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="original">
+<Struct>
+<BooleanProperty Name="show">false</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StringListProperty Name="regions">
+<String>Europe</String>
+</StringListProperty>
+<StringListProperty Name="channels">
+<String>print</String>
+<String>mobile</String>
+<String>web</String>
+<String>social</String>
+</StringListProperty>
+<StringProperty Name="copyright">Chef Corp. 2016</StringProperty>
+<StringListProperty Name="productIds">
+<String>CC-WAV-001</String>
+</StringListProperty>
+</Struct>
+</metadata>
+<keywords></keywords>
+<subjectTaxonomy>
+<link href="../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<assetTaxonomy>
+<link href="../../../Settings/Taxonomies/Asset%20Download%20Portal/Fryer.xml" path="/Settings/Taxonomies/Asset%20Download%20Portal/Fryer"/>
+</assetTaxonomy>
+<download md5="aa41c121cf5d17830e2bbdcf1e7f89ea" size="232962" href="../../../__blob/aa41c121cf5d17830e2bbdcf1e7f89ea.blob" mimetype="application/pdf"/>
+</AMDocumentAsset>

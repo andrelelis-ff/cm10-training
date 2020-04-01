@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/France/French/Editorial/Content/Navigation/Summer Promotion" name="Fashion shooting in desert of palm springs. 3" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Editorial/Content/Navigation/Summer%20Promotion/Fashion%20shooting%20i7d0f9dc0.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Navigation/Summer%20Promotion/Fashion%20shooting%20in%20desert%20of%20palm%20springs%2E%203"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.12341772151898733;x2=0.9999999999999999;y2=0.7234177215189872</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.11075949367088607;x2=0.9999999999999999;y2=0.6732594936708861</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.11708860759493671;x2=0.9999999999999999;y2=0.4920886075949367</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=155;y=0;width=2475;height=1856</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=145;width=2784;height=1566</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=232;width=2784;height=1392</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=229;width=2784;height=1114</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=206;width=2784;height=1044</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=217;width=2784;height=696</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=464;y=0;width=1856;height=1856</StringProperty>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=793;y=0;width=1197;height=1856</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=696;y=0;width=1392;height=1856</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Fashion.xml" path="/Settings/Taxonomies/Subject/Fashion"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Tir de mode dans les sources de désert de palmier. 3</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2784</width>
+<height>1856</height>
+<data md5="f1ebe6c5c2d1b553f6d0892debd40288" size="2489271" href="../../../../../../../../__blob/f1ebe6c5c2d1b553f6d0892debd40288.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMImageMap folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Snow" name="Snowboarders Group Image Map" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="overlay">
+<Struct>
+<BooleanProperty Name="displayTitle">true</BooleanProperty>
+<BooleanProperty Name="displayDefaultPrice">true</BooleanProperty>
+<BooleanProperty Name="displayPicture">true</BooleanProperty>
+<BooleanProperty Name="displayDiscountedPrice">true</BooleanProperty>
+<BooleanProperty Name="displayShortText">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="image-map">
+<Struct>
+<StringProperty Name="id">map-area-5</StringProperty>
+<StringProperty Name="coords">587,18,978,146</StringProperty>
+<StringProperty Name="alt"/>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">false</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">dark-on-light</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Products/Freestyle%20Snow%20Board%20110839.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Freestyle%20Snow%20Board%20110839"/>
+</Struct>
+<Struct>
+<StringProperty Name="id">map-area-4</StringProperty>
+<StringProperty Name="coords">147,240,264,453</StringProperty>
+<StringProperty Name="alt"/>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">false</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">dark-on-light</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Products/Arc%20Jacket%20Women%20passion%20fruit.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Arc%20Jacket%20Women%20passion%20fruit"/>
+</Struct>
+<Struct>
+<StringProperty Name="id">map-area-2</StringProperty>
+<StringProperty Name="coords">663,264,750,358</StringProperty>
+<StringProperty Name="alt"/>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">false</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">dark-on-light</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Products/Method%20Jacket%20Women%20aloe.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Method%20Jacket%20Women%20aloe"/>
+</Struct>
+<Struct>
+<StringProperty Name="id">map-area-1</StringProperty>
+<StringProperty Name="coords">461,195,571,321</StringProperty>
+<StringProperty Name="alt"/>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">false</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">dark-on-light</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Products/Beacon%20Jacket%20glacier.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Beacon%20Jacket%20glacier"/>
+</Struct>
+</StructListProperty>
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Explore our Snowboards</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snowboard.xml" path="/Settings/Taxonomies/Subject/Snowboard"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Ride a new Shape</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>The new snowboard season is ahead - Check out the latest trends and find the equipment you need.</p></div></teaserText>
+<pictures>
+<link href="../../../Pictures/Group%20of%20Snowboarders.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Group%20of%20Snowboarders"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../Augmentation/Categories%20-%20categories/Snowboards%20-%2010000/Snowboards.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Augmentation/Categories%20-%20categories/Snowboards%20-%2010000/Snowboards"/>
+</target>
+</CMImageMap>

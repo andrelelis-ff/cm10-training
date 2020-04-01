@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Chef Corp./Germany/German/Editorial/Assets/Videos/Hero Videos" name="Delicious Burgers" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Assets/Videos/Hero%20Videos/Delicious%20Burgers.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Videos/Hero%20Videos/Delicious%20Burgers"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Leckere Burger</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Ein köstliches Gourmet-Essen wird den letzten Schliff vom Küchenchef in einem Restaurant oder Hotelküche gegeben, bereit für den Dienst am Kunden. </p> </div></detailText>
+<pictures>
+<link href="Delicious%20Burgers%20Video%20Still.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Videos/Hero%20Videos/Delicious%20Burgers%20Video%20Still"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>Hotelfoxtrot / Shutterstock 4450061</copyright>
+<dataUrl></dataUrl>
+<data md5="361ed6922614e603d2e960117400f900" size="1802143" href="../../../../../../../../__blob/361ed6922614e603d2e960117400f900.blob" mimetype="video/x-m4v"/>
+<asset>
+</asset>
+</CMVideo>

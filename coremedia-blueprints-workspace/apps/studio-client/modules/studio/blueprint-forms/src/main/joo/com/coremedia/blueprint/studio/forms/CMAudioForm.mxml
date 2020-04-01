@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.cmAudioForm";
+
+    private static const LOCAL_SETTINGS:String = "localSettings";
+    private static const PLAYER_SETTINGS:String = "playerSettings";
+
+    private var config:CMAudioForm;
+
+    public native function CMAudioForm(config:CMAudioForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <bpforms:DetailsDocumentForm/>
+        <bpforms:TeaserDocumentForm collapsed="true"/>
+        <bpforms:DataDocumentForm
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMAudio_data_text')}"
+                helpText="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMAudio_data_helpText')}"/>
+        <bpforms:PlayerSettingsPropertyGroup itemId="mediaOptionsPropertyFieldGroup"
+                                             columns="2"
+                                             hideHideControlsCheckbox="true"
+                                             hideMuteCheckbox="true"
+                                             title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_AudioProperties_label')}"/>
+        <bpforms:MediaDocumentForm collapsed="true"
+                                     expandOnValues="pictures"/>
+        <bpforms:ViewTypeSelectorForm/>
+        <bpforms:ValidityDocumentForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_extras_title')}"
+            itemId="metadata">
+      <editor:items>
+        <bpforms:CategoryDocumentForm/>
+        <bpforms:CollapsibleStringPropertyForm
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMMedia_copyright_text')}"
+                propertyName="copyright"/>
+        <bpforms:SEOForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataWithoutSearchableForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

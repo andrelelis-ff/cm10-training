@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.studio.webtrends.WebtrendsCMALXBaseListRetrievalTab"/>
+  <component class="com.coremedia.blueprint.studio.webtrends.WebtrendsReportPreviewButton"/>
+  <component class="com.coremedia.blueprint.studio.webtrends.WebtrendsRetrievalFields"/>
+  <component class="com.coremedia.blueprint.studio.webtrends.WebtrendsStudioPlugin"/>
+</componentPackage>

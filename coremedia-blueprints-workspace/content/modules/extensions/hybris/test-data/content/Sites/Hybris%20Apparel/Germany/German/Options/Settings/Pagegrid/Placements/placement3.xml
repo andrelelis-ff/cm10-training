@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSymbol folder="/Sites/Hybris Apparel/Germany/German/Options/Settings/Pagegrid/Placements" name="placement3" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Options/Settings/Pagegrid/Placements/placement3.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/placement3"/>
+</master>
+<description>Placement 3</description>
+</CMSymbol>

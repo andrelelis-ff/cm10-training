@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ Plugin that adds a path relative to the current user's home folder to a PersonaSelector.
+-->
+<local:AddSiteSpecificPathPlugin
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.personalization.editorplugin.plugin.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+
+    private var config:Addsitespecificpath;
+
+    public native function Addsitespecificpath(config:Addsitespecificpath = null);
+
+    /**
+     * A value expression evaluating to the active Content of the preview panel.
+     */
+    [Bindable]
+    public var activeContentValueExpression:ValueExpression;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!---
+     path containing a placeholder for the site that will be added to a 'PersonaSelector'
+    -->
+    <fx:String id="path"/>
+
+    <!---
+     optional header label that will visible inside the PersonaSelector
+    -->
+    <fx:String id="groupHeaderLabel"/>
+  </fx:Declarations>
+
+</local:AddSiteSpecificPathPlugin>

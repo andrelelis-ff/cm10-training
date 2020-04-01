@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/United Kingdom/English/Pictures" name="Snowboarder Man Persona" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=65;y=0;width=228;height=354</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=47;y=0;width=265;height=354</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=2;y=0;width=354;height=354</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=43;width=358;height=269</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=77;width=358;height=201</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=88;width=358;height=179</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=106;width=358;height=143</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=110;width=358;height=134</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=132;width=358;height=90</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.18156424581005587;y1=0;x2=0.8184357541899442;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.13128491620111732;y1=0;x2=0.8715083798882681;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.00558659217877095;y1=0;x2=0.994413407821229;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.12146892655367232;x2=1;y2=0.8813559322033898</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.2175141242937853;x2=1;y2=0.7853107344632768</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.24858757062146894;x2=1;y2=0.7542372881355932</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2994350282485876;x2=1;y2=0.7033898305084746</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.3107344632768362;x2=1;y2=0.6892655367231638</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3728813559322034;x2=1;y2=0.6271186440677966</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio2x1">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio8x3">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<BooleanProperty Name="disableCropping">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Snowboarder Man</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Snowboarder Man</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>358</width>
+<height>354</height>
+<data md5="768e4a051a10a9108bd069888523dfea" size="294211" href="../../../../../__blob/768e4a051a10a9108bd069888523dfea.blob" mimetype="image/png"/>
+<asset>
+</asset>
+</CMPicture>

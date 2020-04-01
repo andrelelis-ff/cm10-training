@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AMPictureAsset folder="/Assets/Company/Management Board" name="Management Board Agreement" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<original md5="33f54e64da70ecac24dc66d305363dc6" size="701598" href="../../../__blob/33f54e64da70ecac24dc66d305363dc6.blob" mimetype="image/tiff"/>
+<thumbnail md5="232d170d8ae971259a5d4c9e4adbd592" size="13439" href="../../../__blob/232d170d8ae971259a5d4c9e4adbd592.blob" mimetype="image/jpeg"/>
+<state>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="original">
+<Struct>
+<StringProperty Name="modificationDate">1447772007942</StringProperty>
+<StringProperty Name="modifier">Amy</StringProperty>
+<IntProperty Name="version">1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="thumbnail">
+<Struct>
+<StringProperty Name="modificationDate">1447772011193</StringProperty>
+<StringProperty Name="modifier">Amy</StringProperty>
+<IntProperty Name="version">1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="web">
+<Struct>
+<StringProperty Name="modificationDate">1447772018706</StringProperty>
+<StringProperty Name="modifier">Amy</StringProperty>
+<IntProperty Name="version">1</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</state>
+<metadata>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="renditions">
+<Struct>
+<StructProperty Name="original">
+<Struct>
+<BooleanProperty Name="show">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="web">
+<Struct>
+<BooleanProperty Name="show">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="print">
+<Struct>
+<BooleanProperty Name="show">false</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="copyright">Andrey Popov/Shutterstock 125874827</StringProperty>
+<StringListProperty Name="channels">
+<String>print</String>
+<String>social</String>
+</StringListProperty>
+<StringListProperty Name="regions">
+<String>USA</String>
+<String>Europe</String>
+</StringListProperty>
+</Struct>
+</metadata>
+<keywords></keywords>
+<subjectTaxonomy>
+<link href="../../../Settings/Taxonomies/Subject/Press.xml" path="/Settings/Taxonomies/Subject/Press"/>
+<link href="../../../Settings/Taxonomies/Subject/Investors.xml" path="/Settings/Taxonomies/Subject/Investors"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<assetTaxonomy>
+<link href="../../../Settings/Taxonomies/Asset%20Download%20Portal/Management.xml" path="/Settings/Taxonomies/Asset%20Download%20Portal/Management"/>
+</assetTaxonomy>
+<web md5="d1c0bd140b18bff659def7cb60370ff7" size="274403" href="../../../__blob/d1c0bd140b18bff659def7cb60370ff7.blob" mimetype="image/jpeg"/>
+</AMPictureAsset>

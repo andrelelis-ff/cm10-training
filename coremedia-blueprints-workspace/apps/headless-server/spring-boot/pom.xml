@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>headless-server.blueprint-parent</artifactId>
+    <version>1-SNAPSHOT</version>
+    <relativePath>../blueprint-parent/pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.coremedia.blueprint.boot</groupId>
+  <artifactId>headless-server.spring-boot</artifactId>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>headless-server-app</module>
+  </modules>
+
+  <properties>
+    <skipGitCommitIdPlugin>true</skipGitCommitIdPlugin>
+  </properties>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>pl.project13.maven</groupId>
+          <artifactId>git-commit-id-plugin</artifactId>
+          <version>2.2.6</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>revision</goal>
+              </goals>
+            </execution>
+          </executions>
+          <configuration>
+            <failOnNoGitDirectory>false</failOnNoGitDirectory>
+            <verbose>false</verbose>
+            <dateFormat>yyyy-MM-dd'T'HH:mm:ssZ</dateFormat>
+            <generateGitPropertiesFile>true</generateGitPropertiesFile>
+            <generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties</generateGitPropertiesFilename>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-maven-plugin</artifactId>
+          <version>${spring.boot.version}</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>repackage</goal>
+                <goal>build-info</goal>
+              </goals>
+            </execution>
+          </executions>
+
+          <configuration>
+            <!--
+             | build executable war that can be run like this:
+             | JAVA_OPTS="<PUT_SYSTEM_PROPS_HERE>" $(PATH_TO_MODULE_ARTIFACT)
+             | only set to 'true' if chef run won't fail on warning when unzipping the webapp
+            -->
+            <executable>false</executable>
+            <!-- select the artifact layout; JAR is the default; ZIP allows custom extensions -->
+            <layout>${spring-boot-maven-plugin.layout}</layout>
+            <!-- common main class -->
+            <addResources>true</addResources>
+            <profiles>
+              <!-- spring profile for local development, activates application-local.properties -->
+              <profile>local</profile>
+              <profile>dev</profile>
+            </profiles>
+            <!--
+             | DO NOT USE jvmArguments, the spring boot plugin will then fork a VM, which is not possible on Windows
+             | hosts due to command line length restrictions.
+             -->
+            <fork>false</fork>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>properties-maven-plugin</artifactId>
+          <version>1.0.0</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+      <plugin>
+        <groupId>pl.project13.maven</groupId>
+        <artifactId>git-commit-id-plugin</artifactId>
+        <configuration>
+          <skip>${skipGitCommitIdPlugin}</skip>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <!-- This profile should be activated during CI or release builds. -->
+      <id>add-git-info</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>pl.project13.maven</groupId>
+            <artifactId>git-commit-id-plugin</artifactId>
+            <version>2.2.6</version>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>revision</goal>
+                </goals>
+              </execution>
+            </executions>
+            <configuration>
+              <verbose>false</verbose>
+              <dateFormat>yyyy-MM-dd'T'HH:mm:ssZ</dateFormat>
+              <generateGitPropertiesFile>true</generateGitPropertiesFile>
+              <generateGitPropertiesFilename>${project.build.outputDirectory}/git.properties</generateGitPropertiesFilename>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>

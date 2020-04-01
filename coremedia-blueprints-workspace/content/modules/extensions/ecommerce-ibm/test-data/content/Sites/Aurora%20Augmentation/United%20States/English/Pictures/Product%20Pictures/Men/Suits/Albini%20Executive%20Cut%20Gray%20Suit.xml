@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/United States/English/Pictures/Product Pictures/Men/Suits" name="Albini Executive Cut Gray Suit" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=544;y=341;width=2108;height=3268</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=177;y=341;width=2451;height=3268</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=315;width=2857;height=2857</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=328;width=2857;height=2143</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=341;width=2857;height=1607</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=315;width=2857;height=1143</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=328;width=2857;height=714</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.1902654867256637;y1=0.08517350157728706;x2=0.9282692130033584;y2=0.9022082018927445</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.061946902654867256;y1=0.08517350157728706;x2=0.9198762344526875;y2=0.9022082018927445</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.07886435331230283;x2=1;y2=0.7931143533123028</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.08201892744479496;x2=1;y2=0.6177064274447951</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.08517350157728706;x2=1;y2=0.4869391265772871</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.07886435331230283;x2=1;y2=0.36456435331230286</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.08201892744479496;x2=1;y2=0.26058142744479496</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="originReferences">
+</StringListProperty>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/MCL008_0811</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Albini Executive Cut Gray Suit</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>Viorel Sima/shutterstock_390303388</copyright>
+<dataUrl></dataUrl>
+<width>2857</width>
+<height>4000</height>
+<data md5="a3e95cc97329400475ca1cd70b8c543b" size="519456" href="../../../../../../../../__blob/a3e95cc97329400475ca1cd70b8c543b.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

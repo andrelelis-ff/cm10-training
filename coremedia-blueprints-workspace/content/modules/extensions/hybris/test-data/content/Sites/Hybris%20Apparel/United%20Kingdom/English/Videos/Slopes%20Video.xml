@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Hybris Apparel/United Kingdom/English/Videos" name="Slopes Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>hybris:///catalog/product/300020294</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Bunny Slopes</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Watch Bunny Slopes going downhill - What a fantastic ride!</p></div></teaserText>
+<pictures>
+<link href="../Pictures/Bunny%20Slopes%20Image.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Bunny%20Slopes%20Image"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="e3fea626a9ac166270d05bdfa9ad4cea" size="36600756" href="../../../../../__blob/e3fea626a9ac166270d05bdfa9ad4cea.blob" mimetype="video/mp4"/>
+<timeLine>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="sequences">
+</StructListProperty>
+<LinkProperty Name="defaultTarget" LinkType="coremedia:///cap/contenttype/CMTeasable"/>
+</Struct>
+</timeLine>
+<asset>
+</asset>
+</CMVideo>

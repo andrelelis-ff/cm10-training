@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository xmlns="http://www.coremedia.com/2005/contentserver/userrepository">
+  <group id="staff" name="staff" contentgroup="true" livegroup="false" administrative="false">
+    <!-- Global group, no corporate specific rules here! -->
+    <members>
+      <group id="global-manager" name="global-manager" contentgroup="true" livegroup="false" administrative="false">
+        <!-- Global group, no corporate specific rules here! -->
+        <members>
+          <group id="global-site-manager-sfra" name="global-site-manager-sfra" contentgroup="true" livegroup="false" administrative="false">
+            <rule content="/Sites/SFRA" type="CMObject" rights="RMDAPS"/>
+            <rule content="/Sites/SFRA" type="Folder_" rights="RMDAPS"/>
+            <!-- in order to define topic pages, global site managers need write access to taxonomies. -->
+            <rule content="/Settings/Taxonomies" type="CMTaxonomy" rights="RMDAP"/>
+            <members>
+              <user id="sofia" name="Sofia" home="/Home/Sofia"/>
+            </members>
+          </group>
+        </members>
+      </group> <!-- global-manager -->
+      <group id="local-manager" name="local-manager" contentgroup="true" livegroup="false" administrative="false">
+        <!-- Global group, no corporate specific rules here! -->
+        <members>
+          <group id="local-site-manager-sfra" name="local-site-manager-sfra" contentgroup="true" livegroup="false" administrative="false">
+            <!-- all local site managers can read the global master site. -->
+            <rule content="/Sites/SFRA/United Kingdom/English" type="CMObject" rights="R"/>
+            <rule content="/Sites/SFRA/United Kingdom/English" type="Folder_" rights="R"/>
+            <!-- in order to define topic pages, local site managers need write access to taxonomies. -->
+            <rule content="/Settings/Taxonomies" type="CMTaxonomy" rights="RMDAP"/>
+            <members>
+              <group name="manager-sfra-en-GB" contentgroup="true" livegroup="false" administrative="false">
+                <rule content="/Sites/SFRA/United Kingdom/English" type="CMObject" rights="RMDAP"/>
+                <rule content="/Sites/SFRA/United Kingdom/English" type="Folder_" rights="RMDAP"/>
+                <members>
+                  <user id="petersfra" name="Peter SFRA" home="/Home/Peter SFRA"/>
+                  <!-- Sofia must be member of the master site group as translation workflow role. -->
+                  <userref id="sofia"/>
+                </members>
+              </group>
+              <group name="manager-sfra-fr-FR" contentgroup="true" livegroup="false" administrative="false">
+                <rule content="/Sites/SFRA/France/French" type="CMObject" rights="RMDAP"/>
+                <rule content="/Sites/SFRA/France/French" type="Folder_" rights="RMDAP"/>
+                <!-- add rules after cloning sites. -->
+                <members>
+                  <user id="pierresfra" name="Pierre SFRA" home="/Home/Pierre SFRA"/>
+                </members>
+              </group>
+              <group name="manager-sfra-it-IT" contentgroup="true" livegroup="false" administrative="false">
+                <rule content="/Sites/SFRA/Italy/Italian" type="CMObject" rights="RMDAP"/>
+                <rule content="/Sites/SFRA/Italy/Italian" type="Folder_" rights="RMDAP"/>
+                <!-- add rules after cloning sites. -->
+                <members>
+                  <user id="pietrosfra" name="Pietro SFRA" home="/Home/Pietro SFRA"/>
+                </members>
+              </group>
+              <group name="manager-sfra-ja-JP" contentgroup="true" livegroup="false" administrative="false">
+
+                <rule content="/Sites/SFRA/Japan/Japanese" type="CMObject" rights="RMDAP"/>
+                <rule content="/Sites/SFRA/Japan/Japanese" type="Folder_" rights="RMDAP"/>
+                <!-- add rules after cloning sites. -->
+                <members>
+                  <user id="yoshisfra" name="Yoshi SFRA" home="/Home/Yoshi SFRA"/>
+                </members>
+              </group>
+              <group name="manager-sfra-zh-CN" contentgroup="true" livegroup="false" administrative="false">
+
+                <rule content="/Sites/SFRA/China/Chinese" type="CMObject" rights="RMDAP"/>
+                <rule content="/Sites/SFRA/China/Chinese" type="Folder_" rights="RMDAP"/>
+                <!-- add rules after cloning sites. -->
+                <members>
+                  <user id="yangsfra" name="Yang SFRA" home="/Home/Yang SFRA"/>
+                </members>
+              </group>
+            </members>
+          </group> <!-- local-site-manager-sfra -->
+        </members>
+      </group> <!-- local-manager -->
+    </members>
+  </group> <!-- staff -->
+</repository>

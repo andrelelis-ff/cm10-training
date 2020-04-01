@@ -1,0 +1,8 @@
+$cm-preview-prefix: "cm-preview";
+
+// CSS class which is attached to the html root element if the preview is loaded in the studio (via iframe)
+// can be used to apply special styling rules in this context
+$cm-studio-preview-class-name: "cm-preview--studio";
+
+//default variables
+$cm-preview-width: 400px !default;

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Fashion" name="Kid in Italy" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Fashion/Kid%20in%20Italy.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Kid%20in%20Italy"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1270;y=0;width=1292;height=2001</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=1126;y=0;width=1504;height=2001</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=718;y=0;width=2003;height=2001</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=181;y=0;width=2668;height=2001</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=159;width=3000;height=1684</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=143;width=3000;height=1201</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=204;width=3000;height=748</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.42317380352644834;y1=0;x2=0.853904282115869;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.37531486146095716;y1=0;x2=0.8765743073047859;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.23929471032745592;y1=0;x2=0.906801007556675;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.060453400503778336;y1=0;x2=0.9496221662468514;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.07924528301886792;x2=1;y2=0.9207547169811321</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.07169811320754717;x2=1;y2=0.6716981132075471</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.1018867924528302;x2=1;y2=0.47547169811320755</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Kid in Italien</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Kid in Italien</alt>
+<copyright>Levranii / Shutterstock 102170473</copyright>
+<dataUrl></dataUrl>
+<width>3000</width>
+<height>2001</height>
+<data md5="e5be38bc990f223fd19626b63a25ab1c" size="1959339" href="../../../../../../../__blob/e5be38bc990f223fd19626b63a25ab1c.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

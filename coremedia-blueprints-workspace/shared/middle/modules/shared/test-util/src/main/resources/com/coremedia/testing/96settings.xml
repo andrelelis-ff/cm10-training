@@ -1,0 +1,12 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <StructListProperty Name="image-map">
+    <Struct>
+      <StringProperty Name="id">map-area-1</StringProperty>
+      <StringProperty Name="alt">one</StringProperty>
+      <StringProperty Name="shape">rect</StringProperty>
+      <StringProperty Name="target">_blank</StringProperty>
+      <StringProperty Name="coords">100,100,200,200</StringProperty>
+      <LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/content/2"/>
+    </Struct>
+  </StructListProperty>
+</Struct>

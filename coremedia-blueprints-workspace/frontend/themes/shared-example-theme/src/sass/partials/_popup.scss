@@ -1,0 +1,61 @@
+.#{$cm-popup-prefix} {
+  font-family: $cm-font-family-sans-serif;
+  font-size: $cm-font-size-base;
+
+  @include breakpoint("xs") {
+    height: auto;
+  }
+
+  &__title {
+    margin: 24px 0 0 0;
+    font-size: $cm-font-size-h1;
+    text-transform: uppercase;
+    line-height: 1.4;
+  }
+
+  &__text {
+    margin-top: 24px;
+    line-height: 24px;
+  }
+}
+
+//use different arrows for popup
+.mfp-arrow {
+  transform: none;
+
+  &::before {
+    display: block;
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    opacity: 1;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    margin-top: 43px; //(110 - 24) / 2
+  }
+
+  &::after {
+    display: none;
+  }
+
+  &-left {
+    &::before {
+      margin-left: 13px;
+      @include breakpoint("sm-and-up") {
+        margin-left: 33px;
+      }
+      background-image: url(~@coremedia/brick-slick-carousel/src/img/arrow-prev.svg);
+    }
+  }
+
+  &-right {
+    &::before {
+      margin-left: 53px;
+      @include breakpoint("sm-and-up") {
+        margin-left: 33px;
+      }
+      background-image: url(~@coremedia/brick-slick-carousel/src/img/arrow-next.svg);
+    }
+  }
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMQueryList folder="/Sites/SFRA/France/French/Navigation/Microsites/Editorial Blog" name="Editorial Blog Query List" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Navigation/Microsites/Editorial%20Blog/Editorial%20Blog%20Query%20List.xml" path="/Sites/SFRA/United%20Kingdom/English/Navigation/Microsites/Editorial%20Blog/Editorial%20Blog%20Query%20List"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<IntProperty Name="limit">6</IntProperty>
+<StructProperty Name="fq">
+<Struct>
+<StringProperty Name="documenttype">CMArticle</StringProperty>
+<LinkListProperty Name="authors" LinkType="coremedia:///cap/contenttype/CMPerson">
+<Link xlink:href="coremedia:///cap/resources/../../../Editorial/Authors/Charlotte%20May%20Person.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Authors/Charlotte%20May%20Person"/>
+<Link xlink:href="coremedia:///cap/resources/../../../Editorial/Authors/Elle%20Quinn%20Person.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Authors/Elle%20Quinn%20Person"/>
+<Link xlink:href="coremedia:///cap/resources/../../../Editorial/Authors/David%20Fuller%20Person.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Authors/David%20Fuller%20Person"/>
+<Link xlink:href="coremedia:///cap/resources/../../../Editorial/Authors/Joshua%20Campos%20Person.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Authors/Joshua%20Campos%20Person"/>
+<Link xlink:href="coremedia:///cap/resources/../../../Editorial/Authors/Michelle%20Villegas%20Person.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Authors/Michelle%20Villegas%20Person"/>
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<BooleanProperty Name="loadMore">true</BooleanProperty>
+<StringProperty Name="order">creationdate desc</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+</CMQueryList>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora Augmentation/Germany/German/Navigation/Fragments/Aurora Categories/Apparel/Women" name="Women Main Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../United%20States/English/Navigation/Fragments/Aurora%20Categories/Apparel/Women/Women%20Main%20f078abe.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Aurora%20Categories/Apparel/Women/Women%20Main%20Collection"/>
+</master>
+<viewtype>
+<link href="../../../../../Options/Viewtypes/CMChannel/hero.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Options/Viewtypes/CMChannel/hero"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Women Hauptkollektion</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../../../../Editorial/Content/Fashion/Women%27s%20Dresses%20Image%20Map.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/Women%27s%20Dresses%20Image%20Map"/>
+</items>
+</CMCollection>

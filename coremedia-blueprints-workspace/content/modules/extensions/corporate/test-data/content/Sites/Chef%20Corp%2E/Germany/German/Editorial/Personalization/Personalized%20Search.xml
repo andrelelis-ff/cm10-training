@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMP13NSearch folder="/Sites/Chef Corp./Germany/German/Editorial/Personalization" name="Personalized Search" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Editorial/Personalization/Personalized%20Search.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Personalization/Personalized%20Search"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Personalisierte Empfehlungen</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<maxLength>5</maxLength>
+<documentType>CMArticle</documentType>
+<searchContext>
+<link href="../../Navigation/Chef%20Corp%2E%20DE%20Home%20Page.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Chef%20Corp%2E%20DE%20Home%20Page"/>
+</searchContext>
+<searchQuery href="Personalized%20Search.searchQuery.plain" mimetype="text/plain"/>
+<defaultContent>
+<link href="../Homepage/Company/Press/Events/Events%20Items/Chef%20Corp%20BBQ%20Cookout%20Article.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Homepage/Company/Press/Events/Events%20Items/Chef%20Corp%20BBQ%20Cookout%20Article"/>
+<link href="../Homepage/Professionals/Service/Design%20Article.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Homepage/Professionals/Service/Design%20Article"/>
+<link href="../Homepage/Professionals/Service/Financing%20Article.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Homepage/Professionals/Service/Financing%20Article"/>
+</defaultContent>
+</CMP13NSearch>

@@ -1,0 +1,75 @@
+/* =====================================================================================================================
+   Notification classes
+   Contains styling definitions for notifications.
+   ================================================================================================================== */
+
+/* box */
+.cm-notification {
+  position: relative;
+  padding: 10px 25px 10px 35px;
+  min-height: 20px;
+  color: #cccccc;
+  line-height: 20px;
+  margin: 5px 0;
+
+  /* title */
+  &__headline {
+    font-weight: bold;
+  }
+
+  // helper function to uri-encode color values, so they can be used in utf8 svg
+  @function colorUriEncode($color) {
+    $color: inspect($color);
+    $hasHash: str-index($color, '#');
+    @if $hasHash {
+      @return '%23' + str_slice($color, 2, str_length($color));
+    }
+    @return $color;
+  }
+
+  @mixin notification-icon {
+    content: "";
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    vertical-align: text-top;
+  }
+
+  &--error {
+    color: $cm-notification-color-error;
+    &:before {
+      @include notification-icon;
+      background-image: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg'><path fill='" + colorUriEncode($cm-notification-color-error) + "' d='M8,1C4.13,1,1,4.13,1,8s3.13,7,7,7c3.87,0,7-3.13,7-7S11.87,1,8,1z M9.13,3L8.87,9.7H7.11L6.85,3H9.13zM8.91,12.6c-0.23,0.21-0.53,0.32-0.9,0.32c-0.37,3-0.67-0.11-0.91-0.33c-0.24-0.22-0.36-0.49-0.36-0.81c0-0.33,0.12-0.6,0.36-0.81c0.24-0.21,0.54-0.32,0.9-0.32c0.37,0,0.67,0.11,0.9,0.32c0.23,0.21,0.35,0.48,0.35,0.81C9.26,12.11,9.14,12.38,8.91,12.6z'/></svg>");
+    }
+  }
+
+  &--warning {
+    color: $cm-notification-color-warning;
+    &:before {
+      @include notification-icon;
+      background-image: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg'><path fill='" + colorUriEncode($cm-notification-color-warning) + "' d='M8,1C4.13,1,1,4.13,1,8s3.13,7,7,7c3.87,0,7-3.13,7-7S11.87,1,8,1z M9.13,3L8.87,9.7H7.11L6.85,3H9.13zM8.91,12.6c-0.23,0.21-0.53,0.32-0.9,0.32c-0.37,3-0.67-0.11-0.91-0.33c-0.24-0.22-0.36-0.49-0.36-0.81c0-0.33,0.12-0.6,0.36-0.81c0.24-0.21,0.54-0.32,0.9-0.32c0.37,0,0.67,0.11,0.9,0.32c0.23,0.21,0.35,0.48,0.35,0.81C9.26,12.11,9.14,12.38,8.91,12.6z'/></svg>");
+    }
+  }
+
+  &--info {
+    color: $cm-notification-color-info;
+    &:before {
+      @include notification-icon;
+      background-image: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg'><path fill='" + colorUriEncode($cm-notification-color-info) + "' d='M8,1C4.13,1,1,4.13,1,8s3.13,7,7,7s7-3.13,7-7S11.87,1,8,1z M7,3h2v2H7V3z M10,13H6v-1h1V7H6V6h3v6h1V13z'/></svg>");
+    }
+  }
+
+  &--success {
+    color: $cm-notification-color-success;
+    &:before {
+      @include notification-icon;
+      background-image: url("data:image/svg+xml; utf8, <svg xmlns='http://www.w3.org/2000/svg'><path fill='" + colorUriEncode($cm-notification-color-success) + "' d='M12.9,3c-2.7-2.7-7.2-2.7-9.9,0s-2.7,7.2,0,9.9c2.7,2.7,7.2,2.7,9.9,0C15.7,10.2,15.7,5.8,12.9,3C13,3.1,13,3.1,12.9,3z M7.3,11.5l-1.4,1.4l-1.4-1.4L2.3,9.4L3.8,8l2.1,2.1l6.4-6.4l1.4,1.4L7.3,11.5z'/></svg>");
+    }
+  }
+
+  &--inactive {
+    display: none;
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Hybris Apparel/United Kingdom/English/Options/Settings/Teaser Styles" name="Light on Dark" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="title">Light on Dark</StringProperty>
+<StringProperty Name="description">Light Text on Dark Background</StringProperty>
+<StructProperty Name="style">
+<Struct>
+<StringProperty Name="color">#fafafa</StringProperty>
+<StringProperty Name="backgroundColor">rgba(0,0,0,0.65)</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

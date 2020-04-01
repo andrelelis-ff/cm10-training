@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalChannel folder="/Sites/SiteGenesis Global/France/French/Augmentation" name="Storefront Catalog - EN" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Augmentation/Storefront%20Catalog%20-%20EN.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Augmentation/Storefront%20Catalog%20-%20EN"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringListProperty Name="legacyUrls">
+<String>storefront-catalog---en</String>
+</StringListProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>storefront-catalog-en</segment>
+<title>Boutique Catalogue - FR</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<hidden>1</hidden>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Layouts/Category%20Landingpage%20Layout.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Layouts/Category%20Landingpage%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../Editorial/Content/Teaser/Women%20Black%20%26%20White%20Teaser.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/Teaser/Women%20Black%20%26%20White%20Teaser"/>
+<Link xlink:href="coremedia:///cap/resources/../Editorial/Content/ImageMaps/Women%20Image%20Map.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/ImageMaps/Women%20Image%20Map"/>
+<Link xlink:href="coremedia:///cap/resources/../Editorial/Content/Articles/The%20Difference%20between%20Style%20and%20Fashion.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/Articles/The%20Difference%20between%20Style%20and%20Fashion"/>
+<Link xlink:href="coremedia:///cap/resources/../Editorial/Products/Belted%20Shirt%20Dress.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Editorial/Products/Belted%20Shirt%20Dress"/>
+<Link xlink:href="coremedia:///cap/resources/../Editorial/Content/Articles/Fashions%20fade%2C%20style%20is%20eternal.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/Articles/Fashions%20fade%2C%20style%20is%20eternal"/>
+</LinkListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../Options/Viewtypes/CMChannel/hero.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Viewtypes/CMChannel/hero"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/banner.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/banner"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+<pdpPagegrid>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Layouts/Fragment%20PDP.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Layouts/Fragment%20PDP"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../Editorial/Slots/Header/Free%202-Day%20Shipping%20Promo.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Editorial/Slots/Header/Free%202-Day%20Shipping%20Promo"/>
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/header.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/header"/>
+</Struct>
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMLinkable">
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/footer.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/footer"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</pdpPagegrid>
+<externalId>sfcc:///catalog/category/root</externalId>
+</CMExternalChannel>

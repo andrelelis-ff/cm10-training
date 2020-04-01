@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<dataviews xmlns="http://www.coremedia.com/2004/objectserver/dataviewfactory">
+
+  <cachesize class="com.coremedia.blueprint.assets.contentbeans.AMAsset" size="1000"/>
+
+  <dataview appliesTo="com.coremedia.blueprint.assets.contentbeans.AMPictureAssetImpl">
+    <property name="contentId"/>
+    <property name="primaryCategory" associationType="static"/>
+    <property name="publishedRenditions" associationType="static"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.assets.contentbeans.AMDocumentAssetImpl">
+    <property name="contentId"/>
+    <property name="primaryCategory" associationType="static"/>
+    <property name="allSubjects" associationType="static"/>
+    <property name="publishedRenditions" associationType="static"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.assets.contentbeans.AMTaxonomyImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="taxonomyPathList" associationType="static"/>
+  </dataview>
+
+</dataviews>

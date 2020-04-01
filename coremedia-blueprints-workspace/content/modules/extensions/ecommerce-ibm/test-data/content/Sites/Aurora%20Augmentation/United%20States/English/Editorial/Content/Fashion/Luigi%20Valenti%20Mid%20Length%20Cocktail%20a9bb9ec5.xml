@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/United States/English/Editorial/Content/Fashion" name="Luigi Valenti Mid Length Cocktail Dress (shutterstock_55370716)" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=240;y=0;width=970;height=1500</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=199;y=0;width=1124;height=1500</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=127;y=0;width=1501;height=1500</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=59;width=1800;height=1350</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=140;width=1800;height=1011</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=122;width=1800;height=721</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=154;width=1800;height=449</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.13350125944584382;y1=0;x2=0.672544080604534;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.11083123425692695;y1=0;x2=0.7355163727959698;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.07052896725440806;y1=0;x2=0.9042821158690176;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.03927492447129909;x2=1;y2=0.9395770392749244</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.09365558912386707;x2=1;y2=0.7673716012084593</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.08157099697885196;x2=1;y2=0.5619335347432024</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.1027190332326284;x2=1;y2=0.40181268882175225</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/AuroraWMDRS-33</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Luigi Valenti Mid Length Cocktail Dress</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Luigi Valenti Mid Length Cocktail Dress (shutterstock_55370716)</alt>
+<copyright>Miramiska/Shutterstock_55370716</copyright>
+<dataUrl></dataUrl>
+<width>1800</width>
+<height>1500</height>
+<data md5="8230c3383f974485cf44676b4a350a4a" size="704725" href="../../../../../../../__blob/8230c3383f974485cf44676b4a350a4a.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/Chef Corp./Germany/German/Options/Viewtypes/CMPlaceholder" name="category-list-products" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Options/Viewtypes/CMPlaceholder/category-list-products.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Viewtypes/CMPlaceholder/category-list-products"/>
+</master>
+<description>Zeigt eine Liste der Produkte</description>
+<icon md5="456c00f02501c981da4a8cca7113eb87" size="34147" href="../../../../../../../__blob/456c00f02501c981da4a8cca7113eb87.blob" mimetype="image/png"/>
+<layout>category-list-products</layout>
+</CMViewtype>

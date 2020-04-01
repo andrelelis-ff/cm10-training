@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCategory folder="/Sites/Chef Corp./United States/English/Products/Cooling and Storage" name="Cooling and Storage" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="callToActionCustomText">Browse all models</StringProperty>
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>cooling-and-storage</segment>
+<title>Cooling and Storage</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription>Chef Corp. cooling solutions ensure proper cold storage of foods.</htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Products/Cooling%20and%20Storage/Refrigerator%20Roo645c8288.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Products/Cooling%20and%20Storage/Refrigerator%20Room%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Layouts/PagegridNavigation.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Pagegrid/Layouts/PagegridNavigation"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+<categoryName></categoryName>
+<displayName></displayName>
+</CMCategory>

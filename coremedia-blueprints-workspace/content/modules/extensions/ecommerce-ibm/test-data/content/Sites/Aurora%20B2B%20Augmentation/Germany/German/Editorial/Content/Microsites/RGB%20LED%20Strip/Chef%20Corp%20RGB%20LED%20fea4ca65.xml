@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content/Microsites/RGB LED Strip" name="Chef Corp RGB LED Sidebar Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Content/Microsites/RGB%20LED%20Strip/Chef%20Corp%20RGB39226920.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/RGB%20LED%20Strip/Chef%20Corp%20RGB%20LED%20Sidebar%20Collection"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="Chef%20Corp%20RGB%20LED%2040902028.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Microsites/RGB%20LED%20Strip/Chef%20Corp%20RGB%20LED%20Strip%20Mounting%20Instruction%204%3A3%20Video"/>
+<link href="Chef%20Corp%20RGB%20LED%20b44c1381.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Microsites/RGB%20LED%20Strip/Chef%20Corp%20RGB%20LED%20Strip%20Datasheet%20Download"/>
+<link href="../../../../Navigation/Fragments/Aurora%20B2B%20Homepage/Lighting%20Category%20Promote6b30a4b.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Navigation/Fragments/Aurora%20B2B%20Homepage/Lighting%20Category%20Promotion%20Teaser"/>
+<link href="Chef%20Corp%20RGB%20LED%20ff9244a4.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Microsites/RGB%20LED%20Strip/Chef%20Corp%20RGB%20LED%20Strip%20Unboxing%204%3A3%20Video"/>
+<link href="../../../Products/Aurora%20B2B/Lighting/Screw-in%20LED%20Bulb%20Product%20Teaser.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Lighting/Screw-in%20LED%20Bulb%20Product%20Teaser"/>
+<link href="../../../Products/Aurora%20B2B/Lighting/Compact%20Fluorescent%20Bulb%20%220277a2.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Lighting/Compact%20Fluorescent%20Bulb%20%20Product%20Teaser"/>
+</items>
+</CMCollection>

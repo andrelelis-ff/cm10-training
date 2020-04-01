@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Microsites/RGB LED Strip" name="Chef Corp RGB LED Sidebar Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="Chef%20Corp%20RGBf5b7b23.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/RGB%20LED%20Strip/Chef%20Corp%20RGB%20LED%20Strip%20Mounting%20Instruction%204%3A3%20Video"/>
+<link href="Chef%20Corp%20RGBac48c73c.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/RGB%20LED%20Strip/Chef%20Corp%20RGB%20LED%20Strip%20Datasheet%20Download"/>
+<link href="../../../../Navigation/Fragments/Aurora%20B2B%20Homepage/Lighting%20Categoryf2cd0e93.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Navigation/Fragments/Aurora%20B2B%20Homepage/Lighting%20Category%20Promotion%20Teaser"/>
+<link href="Chef%20Corp%20RGB7e48a2df.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/RGB%20LED%20Strip/Chef%20Corp%20RGB%20LED%20Strip%20Unboxing%204%3A3%20Video"/>
+<link href="../../../Products/Aurora%20B2B/Lighting/Screw-in%20LED%20Bulb%2bd844d94.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Screw-in%20LED%20Bulb%20Product%20Teaser"/>
+<link href="../../../Products/Aurora%20B2B/Lighting/Compact%20Fluorescent%28c216b1d.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Compact%20Fluorescent%20Bulb%20%20Product%20Teaser"/>
+</items>
+</CMCollection>

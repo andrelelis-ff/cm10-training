@@ -1,0 +1,80 @@
+// --- wcs8 ---
+.cm-collection--marketingspot {
+  font-size: 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cm-marketing-text,
+.cm-marketing-image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #80A3BF;
+  color: #ffffff;
+  font-size: 1.1rem;
+  line-height: 1.1;
+  vertical-align: middle;
+
+  @include breakpoint("lg-and-up") {
+    font-size: 1.6rem;
+  }
+}
+
+.cm-marketing-image {
+  &__box {
+    @include stretch-absolute();
+  }
+}
+
+.cm-marketing-text {
+  &__content {
+    padding: 10px;
+    color: #ffffff;
+
+    @include breakpoint("lg-and-up") {
+      padding: 10px 20px;
+    }
+  }
+}
+
+// --- wcs9 ---
+.cm-marketingspot {
+  .contentRecommendationWidget {
+    padding: 0;
+
+    .owl-carousel {
+      margin: 0;
+      width: 100% !important;
+    }
+
+    .owl-wrapper {
+      display: flex !important;
+    }
+
+    .owl-item {
+      box-sizing: border-box;
+      padding: 10px;
+      float: none;
+      flex: 0 0 auto;
+
+      .left_espot {
+        box-sizing: border-box;
+        border: none;
+        background-color: #80A3BF;
+        color: #ffffff;
+        font-size: 1.1rem;
+        line-height: 1.1;
+        vertical-align: middle;
+        padding: 15px;
+        text-align: center;
+        height: 100%;
+
+        @include breakpoint("lg-and-up") {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+}

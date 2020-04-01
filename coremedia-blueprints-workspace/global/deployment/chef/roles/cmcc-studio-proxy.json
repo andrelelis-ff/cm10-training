@@ -1,0 +1,12 @@
+{
+  "name": "cmcc-studio-proxy",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The role for the preview proxy node",
+  "run_list": [
+    "recipe[blueprint-proxy::studio]",
+    "recipe[blueprint-proxy::preview]",
+    "recipe[blueprint-proxy::headless-server-preview]",
+    "recipe[blueprint-cmcc::shop-preview-proxy]"
+  ]
+}

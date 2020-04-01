@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMLocTaxonomy folder="/Settings/Taxonomies/Location" name="United States of America" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>United States of America</value>
+<children>
+<link href="California.xml" path="/Settings/Taxonomies/Location/California"/>
+<link href="Tennessee.xml" path="/Settings/Taxonomies/Location/Tennessee"/>
+<link href="Georgia.xml" path="/Settings/Taxonomies/Location/Georgia"/>
+<link href="New%20York.xml" path="/Settings/Taxonomies/Location/New%20York"/>
+<link href="Florida.xml" path="/Settings/Taxonomies/Location/Florida"/>
+</children>
+<externalReference>http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305</externalReference>
+<postcode></postcode>
+<latitudeLongitude>40,-100</latitudeLongitude>
+</CMLocTaxonomy>

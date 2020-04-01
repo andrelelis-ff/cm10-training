@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentForm xmlns:fx="http://ns.adobe.com/mxml/2009"
+                     xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                     xmlns="exml:ext.config"
+                     xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                     xmlns:taxonomy="exml:com.coremedia.blueprint.studio.config.taxonomy"
+                     xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+                     xmlns:am="exml:com.coremedia.blueprint.assets.studio.config"
+                     xmlns:ui="exml:com.coremedia.ui.config"
+                     title="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'Tab_metadata_title')}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.assets.studio.AMStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.assets.studio.AssetConstants;
+    import com.coremedia.blueprint.assets.studio.AssetManagementConfigurationUtil;
+    import com.coremedia.ui.skins.ButtonSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.assets.studio.config.amAssetMetaDataTab";
+
+    private var config:AMAssetMetaDataTab;
+
+    public native function AMAssetMetaDataTab(config:AMAssetMetaDataTab = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <bpforms:CategoryDocumentForm bindTo="{config.bindTo}"/>
+    <editor:PropertyFieldGroup
+            title="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'PropertyGroup_categories_label')}"
+            bindTo="{config.bindTo}"
+            expandOnValues="{AssetConstants.PROPERTY_ASSET_ASSETTAXONOMY}"
+            itemId="assetTaxonomyForm"
+            collapsed="true">
+      <editor:items>
+        <taxonomy:TaxonomyPropertyField itemId="assetTaxonomyItemId"
+                                        bindTo="{config.bindTo}"
+                                        hideLabel="true"
+                                        forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                        propertyName="{AssetConstants.PROPERTY_ASSET_ASSETTAXONOMY}"
+                                        taxonomyId="{AssetConstants.ASSET_TAXONOMY_ID}"/>
+      </editor:items>
+    </editor:PropertyFieldGroup>
+
+    <editor:PropertyFieldGroup
+            title="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'PropertyGroup_rights_label')}"
+            itemId="rightsForm"
+            propertyNames="{[]}"
+            expandOnValues="{AssetConstants.PROPERTY_ASSET_METADATA + '.' + AssetConstants.PROPERTY_ASSET_METADATA_CHANNELS + ','
+                                   + AssetConstants.PROPERTY_ASSET_METADATA + '.' + AssetConstants.PROPERTY_ASSET_METADATA_REGIONS + ','
+                                   + AssetConstants.PROPERTY_ASSET_METADATA + '.' + AssetConstants.PROPERTY_ASSET_METADATA_EXPIRATIONDATE + ','
+                                   + AssetConstants.PROPERTY_ASSET_METADATA + '.' + AssetConstants.PROPERTY_ASSET_METADATA_COPYRIGHT}">
+      <editor:items>
+        <Container>
+          <layout>
+            <layout_Column/>
+          </layout>
+          <items>
+            <am:StringListCheckboxPropertyField bindTo="{config.bindTo}"
+                                                structName="{AssetConstants.PROPERTY_ASSET_METADATA}"
+                                                propertyName="{AssetConstants.PROPERTY_ASSET_METADATA_CHANNELS}"
+                                                availableValuesValueExpression="{AssetManagementConfigurationUtil.getConfiguredRightsChannelsValueExpression()}"
+                                                forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                                columnWidth="0.5"/>
+            <am:StringListCheckboxPropertyField bindTo="{config.bindTo}"
+                                                structName="{AssetConstants.PROPERTY_ASSET_METADATA}"
+                                                propertyName="{AssetConstants.PROPERTY_ASSET_METADATA_REGIONS}"
+                                                availableValuesValueExpression="{AssetManagementConfigurationUtil.getConfiguredRightsRegionsValueExpression()}"
+                                                forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                                columnWidth="0.5"/>
+          </items>
+        </Container>
+
+        <ui:AdvancedFieldContainer labelAlign="top"
+                                   labelSeparator=""
+                                   defaultField=":first">
+          <ui:layout>
+            <layout_HBox/>
+          </ui:layout>
+          <ui:plugins>
+            <editor:SetPropertyLabelPlugin bindTo="{config.bindTo}"
+                                           propertyName="{AssetConstants.PROPERTY_ASSET_METADATA + '.' + AssetConstants.PROPERTY_ASSET_METADATA_EXPIRATIONDATE }"/>
+          </ui:plugins>
+          <ui:items>
+            <editor:DatePropertyField bindTo="{config.bindTo}"
+                                      propertyName="{AssetConstants.PROPERTY_ASSET_METADATA + '.' + AssetConstants.PROPERTY_ASSET_METADATA_EXPIRATIONDATE}"
+                                      format="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'ExpirationDate_dateFormat')}"
+                                      anchor="{null}"
+                                      forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                      width="150"
+                                      hideLabel="{true}"
+                                      writeCalendar="{true}"/>
+            <Button itemId="reset"
+                    ui="{ButtonSkin.SIMPLE.getSkin()}"
+                    handler="{function():void { config.bindTo.extendBy('properties', AssetConstants.PROPERTY_ASSET_METADATA, AssetConstants.PROPERTY_ASSET_METADATA_EXPIRATIONDATE).setValue(null); }}"
+                    text="Reset">
+              <plugins>
+                <editor:BindDisablePlugin forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                          bindTo="{config.bindTo}"/>
+              </plugins>
+            </Button>
+          </ui:items>
+        </ui:AdvancedFieldContainer>
+
+        <editor:StringPropertyField
+                propertyName="{AssetConstants.PROPERTY_ASSET_METADATA + '.' + AssetConstants.PROPERTY_ASSET_METADATA_COPYRIGHT}"
+                ifUndefined=""/>
+      </editor:items>
+    </editor:PropertyFieldGroup>
+
+    <editor:PropertyFieldGroup
+            title="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'PropertyGroup_product_codes_label')}"
+            itemId="productCodesPropertyForm">
+      <editor:items>
+        <editor:StringListPropertyField propertyName="{AssetConstants.PROPERTY_ASSET_METADATA + '.' +
+                                                     AssetConstants.PROPERTY_ASSET_METADATA_PRODUCT_CODES}"
+                                        textFieldEmptyText="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'PropertyGroup_product_codes_textfield_empty_text')}"
+                                        forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+      </editor:items>
+    </editor:PropertyFieldGroup>
+  </editor:items>
+
+</editor:DocumentForm>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Products" name="Red Satin Evening Gown Picture-2" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Editorial/Products/Red%20Satin%20Evening%20Gown%20Picture-2.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Red%20Satin%20Evening%20Gown%20Picture-2"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="originReferences">
+<String>ibm:///catalog/sku/PC_EVENING_DRESS-RED-M</String>
+</StringListProperty>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/AuroraWMDRS-19</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=284;y=0;width=432;height=669</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=249;y=0;width=502;height=669</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=165;y=0;width=669;height=669</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=54;y=0;width=892;height=669</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=53;width=1000;height=563</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=135;width=1000;height=400</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=210;width=1000;height=250</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Red Satin Abendkleid Bild-2</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Red Satin Abendkleid Bild-2</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1000</width>
+<height>669</height>
+<data md5="6343ff6d99f2ec07d5b0dcdc74879aeb" size="121844" href="../../../../../../__blob/6343ff6d99f2ec07d5b0dcdc74879aeb.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

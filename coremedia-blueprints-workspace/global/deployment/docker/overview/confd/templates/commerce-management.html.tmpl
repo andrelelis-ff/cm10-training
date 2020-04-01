@@ -1,0 +1,38 @@
+<div>
+{{ if eq (getv "/commerce/wcs/enabled" "true") "true" }}
+<h3>HCL Commerce</h3>
+<ul>
+  {{ if eq (getv "/commerce/wcs/version") "9.0" }}
+    <li><a href="https://{{ getv "/commerce/wcs/host" }}:8000/lobtools/cmc/ManagementCenterMain?locale=en_US" target="_blank" data-cm-test="">WebSphere Management Center</a> <span class="login">Login: wcsadmin/wcsadmin01</span></li>
+    <li><a href="https://{{ getv "/commerce/wcs/host" }}:8001/webapp/wcs/tools/servlet/ToolsLogon?XMLFile=common.mcLogon" target="_blank" data-cm-test="">WebSphere Commerce Accelerator</a></li>
+    <li><a href="https://{{ getv "/commerce/wcs/host" }}:8002/webapp/wcs/admin/servlet/ToolsLogon?XMLFile=adminconsole.AdminConsoleLogon" target="_blank">WebSphere Administration Console</a></li>
+    <li><a href="https://{{ getv "/commerce/wcs/host" }}:8004/webapp/wcs/orgadmin/servlet/ToolsLogon?XMLFile=buyerconsole.BuyAdminConsoleLogon&storeId=0" target="_blank">WebSphere Organization Administration Console</a></li>
+    <li><a href="https://{{ getv "/commerce/wcs/host" }}:9043/ibm/console/" target="_blank">WebSphere Integrated Solutions Console</a> <span class="login">Login: configadmin/passw0rd</span></li>
+  {{ end }}
+  {{ if ne (getv "/commerce/wcs/version") "9.0" }}
+    <li><a href="https://{{ getv "/commerce/wcs/host" }}:8000/lobtools/cmc/ManagementCenterMain?locale=en_US" target="_blank" data-cm-test="">WebSphere Management Center</a> <span class="login">Login: wcsadmin/wcsadmin01</span></li>
+    <li><a href="https://{{ getv "/commerce/wcs/host" }}:8000/webapp/wcs/tools/servlet/ToolsLogon?XMLFile=common.mcLogon" target="_blank" data-cm-test="">WebSphere Accelerator</a></li>
+    <li><a href="https://{{ getv "/commerce/wcs/host" }}:8002/webapp/wcs/admin/servlet/ToolsLogon?XMLFile=adminconsole.AdminConsoleLogon" target="_blank">WebSphere Administration Console</a></li>
+    <li><a href="https://{{ getv "/commerce/wcs/host" }}:8004/webapp/wcs/orgadmin/servlet/ToolsLogon?XMLFile=buyerconsole.BuyAdminConsoleLogon&storeId=0" target="_blank">WebSphere Organization Administration Console</a></li>
+    <li><a href="https://{{ getv "/commerce/wcs/host" }}:9104/ibm/console/" target="_blank">WebSphere Integrated Solutions Console</a> <span class="login">Login: configadmin/configadmin01</span></li>
+  {{ end }}
+</ul>
+{{ end }}
+
+{{ if eq (getv "/commerce/hybris/enabled" "true") "true" }}
+<h3>SAP Commerce Cloud</h3>
+<ul>
+  <li><a href="https://{{ getv "/commerce/hybris/host" }}:9002" target="_blank" data-cm-test="">SAP Hybris Administration Console</a></li>
+  <li><a href="https://{{ getv "/commerce/hybris/host" }}:9002/backoffice" target="_blank" data-cm-test="">SAP Back Office</a></li>
+  <li><a href="https://{{ getv "/commerce/hybris/host" }}:9002/smartedit" target="_blank" data-cm-test="">SAP SmartEdit</a></li>
+</ul>
+{{ end }}
+
+{{ if eq (getv "/commerce/sfcc/enabled" "true") "true" }}
+<h3>Salesforce Commerce Cloud</h3>
+<ul>
+  <li>
+    <a href="https://{{ getv "/commerce/sfcc/host" }}/on/demandware.store/Sites-Site/default/ViewApplication-DisplayWelcomePage" target="_blank" data-cm-test="">Salesforce Business Manager</a></li>
+</ul>
+{{ end }}
+</div>

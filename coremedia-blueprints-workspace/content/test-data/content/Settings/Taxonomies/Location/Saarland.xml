@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMLocTaxonomy folder="/Settings/Taxonomies/Location" name="Saarland" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Saarland</value>
+<children>
+<link href="Saarbr%C3%BCcken.xml" path="/Settings/Taxonomies/Location/Saarbr%C3%BCcken"/>
+</children>
+<externalReference></externalReference>
+<postcode></postcode>
+<latitudeLongitude>49.383333,6.833333</latitudeLongitude>
+</CMLocTaxonomy>

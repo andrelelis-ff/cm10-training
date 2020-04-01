@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+  <!-- public imports for this service -->
+  <import resource="classpath:/framework/spring/blueprint-contentbeans.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-services.xml"/>
+
+  <!-- "private" imports needed for this file's beans -->
+  <import resource="classpath:/framework/spring/blueprint-page.xml"/>
+  <import resource="classpath:/META-INF/coremedia/livecontext-navigation.xml"/>
+  <import resource="classpath:/META-INF/coremedia/lc-services.xml"/>
+
+  <context:component-scan base-package="com.coremedia.blueprint.viewtype.configuration"/>
+
+  <bean name="contentBeanFactory:CMMarketingSpot" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.livecontext.contentbeans.CMMarketingSpotImpl" scope="prototype">
+    <property name="liveContextNavigationFactory" ref="liveContextNavigationFactory"/>
+    <property name="commerceConnectionSupplier" ref="commerceConnectionSupplier"/>
+  </bean>
+
+  <bean name="contentBeanFactory:CMProductList" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.livecontext.contentbeans.CMProductListImpl" scope="prototype">
+  </bean>
+
+  <bean name="contentBeanFactory:CMProductTeaser" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.livecontext.contentbeans.CMProductTeaserImpl" scope="prototype">
+  </bean>
+
+  <bean name="pdpPage" parent="cmPage"
+        class="com.coremedia.livecontext.contentbeans.ProductDetailPage" scope="prototype">
+    <constructor-arg index="3" name="contentTreeRelation" ref="externalChannelContentTreeRelation"/>
+  </bean>
+
+  <bean name="contentBeanFactory:CMExternalPage" parent="abstractChannel-blueprint-doctypes"
+        class="com.coremedia.livecontext.contentbeans.CMExternalPageImpl" scope="prototype"/>
+
+  <bean name="contentBeanFactory:CMExternalChannel" parent="abstractChannel-blueprint-doctypes"
+        class="com.coremedia.livecontext.contentbeans.LiveContextExternalChannelImpl" scope="prototype">
+    <property name="treeRelation" ref="liveContextNavigationTreeRelation"/>
+    <property name="codeResourcesTreeRelation" ref="externalChannelContentTreeRelation"/>
+    <property name="liveContextNavigationFactory" ref="liveContextNavigationFactory"/>
+    <property name="pageGridService" ref="extCategoryPageGridService"/>
+    <property name="pdpPageGridService" ref="pdpPageGridService"/>
+    <property name="commerceConnectionInitializer" ref="commerceConnectionInitializer"/>
+    <property name="commerceConnectionSupplier" ref="commerceConnectionSupplier"/>
+
+  </bean>
+
+  <bean name="contentBeanFactory:CMExternalProduct"
+        parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.livecontext.contentbeans.LiveContextExternalProductImpl"
+        scope="prototype">
+    <property name="pageGridService" ref="productPageGridService"/>
+    <property name="commerceConnectionSupplier" ref="commerceConnectionSupplier"/>
+  </bean>
+
+  <bean id="productTeasableHelper" class="com.coremedia.livecontext.contentbeans.ProductTeasableHelper">
+    <property name="commerceConnectionSupplier" ref="commerceConnectionSupplier"/>
+  </bean>
+
+  <bean id="pdpPageGridService" class="com.coremedia.blueprint.cae.layout.PageGridServiceImpl">
+    <property name="contentBackedPageGridService" ref="pdpContentBackedPageGridService"/>
+    <property name="validationService" ref="validationService"/>
+    <property name="visibilityValidator" ref="validityPeriodValidator"/>
+    <property name="viewtypeService" ref="viewtypeService"/>
+  </bean>
+
+  <bean id="extCategoryPageGridService" class="com.coremedia.blueprint.cae.layout.PageGridServiceImpl">
+    <property name="contentBackedPageGridService" ref="extCategoryContentBackedPageGridService"/>
+    <property name="validationService" ref="validationService"/>
+    <property name="visibilityValidator" ref="validityPeriodValidator"/>
+    <property name="viewtypeService" ref="viewtypeService"/>
+  </bean>
+
+  <bean id="productPageGridService" class="com.coremedia.blueprint.cae.layout.PageGridServiceImpl">
+    <property name="contentBackedPageGridService" ref="productContentBackedPageGridService"/>
+    <property name="visibilityValidator" ref="validityPeriodValidator"/>
+    <property name="validationService" ref="validationService"/>
+    <property name="viewtypeService" ref="viewtypeService"/>
+  </bean>
+
+  <bean id="extCategoryContentBackedPageGridService" class="com.coremedia.livecontext.pagegrid.ContentAugmentedPageGridServiceImpl"
+        parent="contentBackedPageGridService">
+    <property name="treeRelation" ref="externalChannelContentTreeRelation"/>
+  </bean>
+
+  <bean id="pdpContentBackedPageGridService" class="com.coremedia.livecontext.pagegrid.ContentAugmentedPageGridServiceImpl"
+        parent="contentBackedPageGridService">
+    <property name="structPropertyName">
+      <util:constant static-field="com.coremedia.blueprint.ecommerce.common.contentbeans.CMAbstractCategory.PDP_PAGEGRID"/>
+    </property>
+    <property name="treeRelation" ref="externalChannelContentTreeRelation"/>
+    <property name="fallbackStructPropertyName" value="placement"/>
+  </bean>
+
+  <bean id="productContentBackedPageGridService"
+        class="com.coremedia.livecontext.pagegrid.ContentAugmentedProductPageGridServiceImpl"
+        parent="contentBackedPageGridService">
+    <property name="structPropertyName">
+      <util:constant static-field="com.coremedia.livecontext.contentbeans.CMExternalProduct.PAGEGRID"/>
+    </property>
+    <property name="treeRelation" ref="externalChannelContentTreeRelation"/>
+    <property name="fallbackStructPropertyName" value="placement"/>
+  </bean>
+
+</beans>
+

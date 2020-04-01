@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Snow" name="Snow Hero Collection 3col" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMChannel/portrait.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Viewtypes/CMChannel/portrait"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Neuer Inhalt</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../../Pictures/Ski%20Season%20Begins.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Ski%20Season%20Begins"/>
+<link href="../../Products/Freestyle%20Snow%20Board%20110839.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Freestyle%20Snow%20Board%20110839"/>
+<link href="../../Products/Freestyle%20Snowboard%20108295.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Freestyle%20Snowboard%20108295"/>
+</items>
+</CMCollection>

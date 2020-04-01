@@ -1,0 +1,125 @@
+@include cm-default-teaser(
+  $block-class: "cm-left-right-banner",
+  $wrapper-enable: false,
+  $media-background-color: transparent,
+  $media-aspect-ratio-by-breakpoint: ("xs-and-up": (4, 3)),
+  $dimmer-enable: false
+);
+
+// left right banner item
+.cm-left-right-banner {
+  &__caption {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    position: static;
+    transform: initial;
+    margin-top: 24px;
+
+    @include breakpoint("sm-and-up") {
+      margin-top: 0;
+      justify-content: center;
+      padding: 15px;
+    }
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__headline {
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    margin-bottom: 12px;
+  }
+
+  &__picture-box {
+    //youtube videos inside the banner
+    .cm-mediaelementwrapper iframe {
+      @include stretch-absolute();
+    }
+  }
+
+  &__additional {
+    margin-bottom: 12px;
+  }
+
+  &__editorial {
+    margin-bottom: 10px;
+
+    span + span {
+      :before {
+        content: "•";
+        margin: 0 5px 0 2px;
+        display: inline-block;
+      }
+    }
+  }
+
+  &__author {
+    text-decoration: underline;
+  }
+
+  .cm-product-info {
+    &__pricing {
+      text-align: center;
+    }
+  }
+
+  &__shop-now {
+    display: none;
+  }
+
+  @include breakpoint("sm-and-up") {
+    display: flex;
+    flex-direction: row;
+
+    &__caption,
+    &__media {
+      flex: 0 0 auto;
+      width: 50%;
+    }
+
+    &__shop-now {
+      // 4:3 aspect ratio but as it is a 50:50 banner we need 8:3
+      @include aspect-ratio-box(8, 3);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      pointer-events: none;
+
+      &-button {
+        @include center-absolute();
+        pointer-events: initial;
+        right: 75%;
+      }
+
+      @include breakpoints(("sm", landscape) "lg-and-up") {
+        :hover > & {
+          display: block;
+        }
+      }
+    }
+
+    // change position of text and image
+    &--alternative {
+      flex-direction: row-reverse;
+
+      .cm-left-right-banner__shop-now-button {
+        right: 25%;
+      }
+    }
+  }
+
+  > .cm-rating {
+    display: none;
+  }
+}

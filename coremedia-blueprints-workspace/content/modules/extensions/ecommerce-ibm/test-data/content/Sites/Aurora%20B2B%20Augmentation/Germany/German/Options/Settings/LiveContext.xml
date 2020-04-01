@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Aurora B2B Augmentation/Germany/German/Options/Settings" name="LiveContext" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Options/Settings/LiveContext.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Options/Settings/LiveContext"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce.example">
+<Struct>
+<StringProperty Name="description">Remove the structs '.example' postfix to activate the WCS commerce connection via the commerce-adapter-wcs</StringProperty>
+<StringProperty Name="endpoint">${commerce.hub.data.endpoints.wcs}</StringProperty>
+<StringProperty Name="currency">EUR</StringProperty>
+<StringProperty Name="locale">de-DE</StringProperty>
+<StructProperty Name="storeConfig">
+<Struct>
+<StringProperty Name="name">AuroraB2BESite</StringProperty>
+<StringProperty Name="id">AuroraB2BESite</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="catalogConfig">
+<Struct>
+<StringProperty Name="id">AuroraB2BESite</StringProperty>
+<StringProperty Name="alias">catalog</StringProperty>
+<StringProperty Name="name">AuroraB2BESite</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<IntProperty Name="livecontext.navigation.depth">2</IntProperty>
+<BooleanProperty Name="livecontext.manageNavigation">true</BooleanProperty>
+<BooleanProperty Name="livecontext.displayAvailability">true</BooleanProperty>
+<BooleanProperty Name="livecontext.policy.commerce-product-links">true</BooleanProperty>
+<BooleanProperty Name="livecontext.policy.commerce-category-links">true</BooleanProperty>
+<BooleanProperty Name="livecontext.policy.commerce-page-links">true</BooleanProperty>
+<BooleanProperty Name="p13n-dynamic-includes-enabled">false</BooleanProperty>
+<StringProperty Name="livecontext.connectionId">wcs1</StringProperty>
+<StructProperty Name="livecontext.store.config">
+<Struct>
+<StringProperty Name="store.name">AuroraB2BESite</StringProperty>
+<StringProperty Name="config.id">aurora</StringProperty>
+<StringProperty Name="currency" Length="3">EUR</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

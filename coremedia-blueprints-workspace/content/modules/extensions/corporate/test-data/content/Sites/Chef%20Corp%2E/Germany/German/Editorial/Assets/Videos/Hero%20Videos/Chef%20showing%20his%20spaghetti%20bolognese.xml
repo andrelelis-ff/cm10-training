@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Chef Corp./Germany/German/Editorial/Assets/Videos/Hero Videos" name="Chef showing his spaghetti bolognese" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Assets/Videos/Hero%20Videos/Chef%20showing%20his%20spaghetti%20bolognese.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Videos/Hero%20Videos/Chef%20showing%20his%20spaghetti%20bolognese"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Spaghetti Bolognese</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Chef seines Spaghetti Bolognese auf Kamera in Grossküche </p> </div></detailText>
+<pictures>
+<link href="Chef%20showing%20his%20spaghetti%20bolognese%20V7aba1a25.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Videos/Hero%20Videos/Chef%20showing%20his%20spaghetti%20bolognese%20Video%20Still%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>wavebreakmedia / Shutterstock 5944631</copyright>
+<dataUrl></dataUrl>
+<data md5="6bc3b6ef1e160b254c91807af8160b69" size="2992932" href="../../../../../../../../__blob/6bc3b6ef1e160b254c91807af8160b69.blob" mimetype="video/x-m4v"/>
+<asset>
+</asset>
+</CMVideo>

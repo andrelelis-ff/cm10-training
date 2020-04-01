@@ -1,0 +1,23 @@
+// Flex Grid for Square Banner
+.cm-square-banner-grid {
+  $_cm-square-banner-grid-gutter-width: 30px;
+  $_cm-square-banner-per-row-for-xs-landscape-and-up: 3;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -$_cm-square-banner-grid-gutter-width;
+  margin-left: -$_cm-square-banner-grid-gutter-width;
+
+  &__item {
+    box-sizing: border-box;
+    width: 100%;
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      width: percentage((100/$_cm-square-banner-per-row-for-xs-landscape-and-up)/100);
+    }
+
+    padding-top: $_cm-square-banner-grid-gutter-width;
+    padding-left: $_cm-square-banner-grid-gutter-width;
+  }
+}

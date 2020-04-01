@@ -1,0 +1,77 @@
+//
+// CTA Buttons
+// --------------------------------------------------
+
+
+.cm-cta-button {
+  font-family: $cm-font-family-sans-serif;
+  background-color: $cm-cta-button-background-color;
+  border-color: $cm-ci-color;
+  border-width: 1px;
+  color: $cm-cta-button-color;
+  padding: 10px 18px;
+  font-size: 14px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $cm-cta-button-background-color-hover;
+    border-color: $cm-cta-button-background-color-hover;
+    color: $cm-text-color-light;
+    text-decoration: none;
+    transition: background-color 0.3s ease-out, border-color 0.3s ease-out;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $cm-cta-button-background-color-focus-active;
+    border-color: $cm-cta-button-background-color-focus-active;
+    color: $cm-text-color-light;
+    text-decoration: none;
+    box-shadow: none;
+  }
+}
+/* Hero CTA */
+
+@mixin red-cta-button {
+  font-family: $cm-font-family-sans-serif;
+  background-color: $cm-ci-color;
+  border-color: $cm-ci-color;
+  color: $cm-text-color-light;
+  padding: 10px 18px;
+  font-size: 14px;
+
+  &:after {
+    display: none;
+  }
+
+  &:hover {
+    background-color: $cm-cta-button-background-color-hover;
+    border-color: $cm-cta-button-background-color-hover;
+    color: $cm-text-color-light;
+    transition: background-color 0.3s ease-out, border-color 0.3s ease-out;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $cm-cta-button-background-color-focus-active;
+    border-color: $cm-cta-button-background-color-focus-active;
+    color: $cm-text-color-light;
+    box-shadow: none;
+  }
+}
+
+/* Secondary Button */
+.cm-button.cm-button--secondary {
+  border-color: $cm-cta-button-secondary-border-color;
+
+  &:hover {
+    background-color: $cm-cta-button-secondary-background-color-hover;
+    border-color: $cm-cta-button-secondary-border-color;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $cm-cta-button-secondary-background-color-focus-active;
+    border-color: $cm-cta-button-secondary-border-color;
+  }
+}

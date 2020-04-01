@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+  <p>/*this file contains valid CSS*/</p>
+  <p>@import url(<a xlink:type="simple" xlink:href="coremedia:///cap/resources/media/resets%2Ecss.xml" cmexport:path="/Themes/media/css/resets%2Ecss">media/css/resets.css</a>);</p>
+  <p>.my-custom-class-30 {</p>
+  <p>content: css code id 30;</p>
+  <p>}</p>
+</div>

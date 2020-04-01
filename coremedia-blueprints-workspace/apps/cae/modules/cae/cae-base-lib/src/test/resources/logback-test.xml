@@ -1,0 +1,40 @@
+<configuration>
+
+  <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener"/>
+
+  <contextName>unit-tests</contextName>
+
+  <variable scope="system"
+            resource="default-logback-test.properties"/>
+
+  <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${config.log.file}</file>
+    <encoder>
+      <pattern>${config.log.pattern}</pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+      <maxIndex>10</maxIndex>
+      <FileNamePattern>${config.log.file}.%i</FileNamePattern>
+    </rollingPolicy>
+    <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+      <MaxFileSize>4MB</MaxFileSize>
+    </triggeringPolicy>
+  </appender>
+
+  <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>${config.log.pattern}</pattern>
+    </encoder>
+  </appender>
+
+  <logger name="${config.tests.package}" additivity="false" level="${config.tests.log.level}">
+    <appender-ref ref="file"/>
+    <appender-ref ref="console"/>
+  </logger>
+
+  <root level="${config.root.log.level}">
+    <appender-ref ref="file"/>
+    <appender-ref ref="console"/>
+  </root>
+
+</configuration>

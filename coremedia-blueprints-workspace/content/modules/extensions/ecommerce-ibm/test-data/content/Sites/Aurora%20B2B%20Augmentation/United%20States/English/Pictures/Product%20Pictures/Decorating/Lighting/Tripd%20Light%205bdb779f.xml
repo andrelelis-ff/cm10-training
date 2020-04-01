@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Decorating/Lighting" name="Tripd Light White with Purple Head Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=346;y=696;width=667;height=1033</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=300;y=708;width=759;height=1013</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=163;y=667;width=1076;height=1075</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=83;y=763;width=1222;height=917</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=129;y=771;width=1176;height=663</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=88;y=808;width=1217;height=488</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=92;y=792;width=1213;height=304</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.26517571884984026;y1=0.2783333333333333;x2=0.7763578274760383;y2=0.6916666666666667</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.23003194888178913;y1=0.2833333333333333;x2=0.8115015974440895;y2=0.6883333333333334</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.12460063897763578;y1=0.26666666666666666;x2=0.9488817891373802;y2=0.6966666666666667</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.06389776357827476;y1=0.305;x2=1;y2=0.6716666666666666</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.09904153354632587;y1=0.30833333333333335;x2=1;y2=0.5733333333333334</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0.0670926517571885;y1=0.3233333333333333;x2=1;y2=0.5183333333333333</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0.07028753993610223;y1=0.31666666666666665;x2=1;y2=0.43833333333333335</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_HLG028_280114</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Tripd Light White with Purple Head</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Tripd Light White with Purple Head</alt>
+<copyright>Selin Aydogan / Shutterstock 396073396</copyright>
+<dataUrl></dataUrl>
+<width>1305</width>
+<height>2500</height>
+<data md5="a1ea1c70c8703063798315726f86d7a5" size="154522" href="../../../../../../../../__blob/a1ea1c70c8703063798315726f86d7a5.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Pictures/Kitchen Dreams" name="Young Chef in Kitchen Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=0;y=0;width=1293;height=2000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=138;width=1333;height=1779</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=202;width=1333;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=208;width=1333;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=170;width=1333;height=750</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=235;width=1333;height=668</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=238;width=1333;height=534</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=232;width=1333;height=500</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=319;width=1333;height=332</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0;y1=0;x2=0.9697732997481109;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.06879194630872483;x2=1;y2=0.9580536912751678</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.10094637223974763;x2=1;y2=0.7674463722397477</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.10410094637223974;x2=1;y2=0.6039759463722397</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.08517350157728706;x2=1;y2=0.4600797515772871</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.1174496644295302;x2=1;y2=0.4513422818791946</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.11912751677852348;x2=1;y2=0.3859060402684564</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.11577181208053691;x2=1;y2=0.36577181208053694</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.1593959731543624;x2=1;y2=0.32550335570469796</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.2962085308056872</StringProperty>
+<StringProperty Name="y">0.23501577287066247</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Young Chef in Kitchen</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Chef.xml" path="/Settings/Taxonomies/Subject/Chef"/>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Kitchen.xml" path="/Settings/Taxonomies/Subject/Kitchen"/>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Young.xml" path="/Settings/Taxonomies/Subject/Young"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Young Chef in Kitchen</alt>
+<copyright>shutterstock 201279005</copyright>
+<dataUrl></dataUrl>
+<width>1333</width>
+<height>2000</height>
+<data md5="207348e516468aa974c61e4d30c796dc" size="529594" href="../../../../../../../../__blob/207348e516468aa974c61e4d30c796dc.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

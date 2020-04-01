@@ -1,0 +1,56 @@
+.#{$cm-popup-prefix} {
+
+  @include breakpoint("sm-and-up") {
+    flex-direction: column;
+  }
+
+  &__content {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 1rem;
+    color: $cm-hybris-text;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 1rem;
+    text-align: center;
+
+    @include breakpoint("sm-and-up") {
+      flex: none;
+    }
+  }
+
+  &__price {
+    display: block;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 600;
+    padding: 0;
+    color: $cm-hybris-price;
+
+    .cm-popup__listprice {
+      font-size: 2.4rem;
+      font-weight: 600;
+      padding: 0;
+      margin: 0;
+      color: $cm-hybris-price;
+    }
+  }
+}
+
+.cm-button--popup {
+  @extend .cm-cta-button;
+}

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>studio-server.validators</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>validators-studio-lib</artifactId>
+  <packaging>jar</packaging>
+
+  <properties>
+    <coremedia.project.extension.for>studio-lib</coremedia.project.extension.for>
+  </properties>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>com.coremedia.blueprint.base</groupId>
+      <artifactId>bpbase-studio-rest</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.blueprint.base</groupId>
+      <artifactId>bpbase-navigation-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.blueprint.base</groupId>
+      <artifactId>bpbase-pagegrid-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.blueprint.base</groupId>
+      <artifactId>bpbase-links-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>cap-unified-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>cap-transform</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>coremedia-spring</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>coremedia-common</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>coremedia-transform</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>cap-multisite</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>coremedia-rest-plugins</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.ui</groupId>
+      <artifactId>coremedia-rest-core</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.ui</groupId>
+      <artifactId>cap-rest-service</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.blueprint.base</groupId>
+      <artifactId>bpbase-pagegrid-impl</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.blueprint.base</groupId>
+      <artifactId>bpbase-pagegrid-rest-extension</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.blueprint.base</groupId>
+      <artifactId>bpbase-multisite</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.github.spotbugs</groupId>
+      <artifactId>spotbugs-annotations</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>theme-importer</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>theme-importer-base</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>theme-importer-component</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>cap-rest-plugins</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>coremedia-xml</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.vintage</groupId>
+      <artifactId>junit-vintage-engine</artifactId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-scratchpad</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>stax</groupId>
+          <artifactId>stax-api</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.tika</groupId>
+      <artifactId>tika-core</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.tika</groupId>
+      <artifactId>tika-parsers</artifactId>
+      <scope>runtime</scope>
+      <exclusions>
+        <!-- exclude javax.activation and jakarta.activation-api, we use jakarta.activation as defined separately -->
+        <exclusion>
+          <groupId>com.sun.activation</groupId>
+          <artifactId>javax.activation</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>jakarta.activation</groupId>
+          <artifactId>jakarta.activation-api</artifactId>
+        </exclusion>
+        <!-- exclude javax.annotation-api, we use jakarta.annotation-api as defined separately -->
+        <exclusion>
+          <groupId>javax.annotation</groupId>
+          <artifactId>javax.annotation-api</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <!-- begin java-11-dependencies -->
+    <dependency>
+      <!-- this is also a replacement for tika-parser's excluded transitive activation dependencies -->
+      <groupId>com.sun.activation</groupId>
+      <artifactId>jakarta.activation</artifactId>
+    </dependency>
+    <dependency>
+      <!-- this a replacement for tika-parser's excluded transitive javax.annotation-api dependency -->
+      <groupId>jakarta.annotation</groupId>
+      <artifactId>jakarta.annotation-api</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <!-- end java-11-dependencies -->
+  </dependencies>
+
+</project>

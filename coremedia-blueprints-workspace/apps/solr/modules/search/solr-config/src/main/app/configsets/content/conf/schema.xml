@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  This is the default Solr schema file for the CoreMedia Content Feeder in the Blueprint.
+-->
+<schema name="content" version="1.6">
+
+  <!--
+    Field to use to determine and enforce index document uniqueness.
+  -->
+  <uniqueKey>id</uniqueKey>
+
+  <!-- =====================================================================
+       FIELDS
+
+       All fields configured with stored="true" or docValues="true"
+       to allow usage of Solr partial updates, except for fields that
+       are copyField destinations.
+       ===================================================================== -->
+
+  <!--
+    Solr internal field - used for optimistic locking, transaction log and real-time get.
+  -->
+  <field name="_version_" type="plong" indexed="false" stored="false"/>
+
+  <!--
+    The ID of the index document. For indexed CoreMedia content this is the numeric content ID.
+    This field is required.
+  -->
+  <field name="id" type="string" indexed="true" stored="true" required="true"/>
+
+  <!--
+    The state of the index document. Successfully indexed CoreMedia contents
+    contain the value SUCCESS. Use feederstate:SUCCESS as part of
+    search queries to only find successfully indexed contents.
+
+    This field is required for the Content Feeder.
+
+    Possible values:
+     SUCCESS:  Denotes a successfully indexed content.
+     ERROR:    Denotes an error index document, which serves as placeholder
+               for a content that failed to be indexed.
+               See field feederinfo for a description of the error.
+     INTERNAL: Denotes an internally used index document such as a timestamp.
+     PARTIAL:  Denotes a partially indexed content which is caused
+               by a partial update on a non-existing index document.
+               See field feederinfo for a description of the error.
+  -->
+  <field name="feederstate" type="string" indexed="true" stored="true" required="true"/>
+
+  <!--
+    Additional information about the index document such as error messages.
+    This field is required for the Content Feeder.
+  -->
+  <field name="feederinfo" type="string" indexed="false" stored="true"/>
+
+  <!--
+    The time when the index document was created or updated by the Feeder.
+    This field is required for the Content Feeder.
+  -->
+  <field name="feedertime" type="pdate" indexed="true" stored="false" required="true"/>
+
+  <!--
+    A date field that represents the freshness of the index document.
+    The Content Feeder fills it with the modification date of the CoreMedia content.
+    If not set explicitly, this field contains the same value as feedertime.
+  -->
+  <field name="freshness" type="pdate" indexed="true" stored="false"/>
+
+  <!--
+    The content ID in numeric form.
+  -->
+  <field name="numericid" type="content" indexed="true" stored="false"/>
+
+  <!--
+    The name of the content.
+    This field is required for the Content Feeder.
+    It also gets copied to the "name_lc" field, which supports case-insenstive sorting.
+  -->
+  <field name="name" type="text_gen_sort" indexed="true" stored="true"/>
+  <copyField source="name" dest="name_lc"/>
+
+  <!--
+    The lower-cased name of the content to support case-insensitive sorting.
+
+    This field is not set directly but only as destination of <copyField> instructions.
+    It uses stored="false" to allow partial updates.
+  -->
+  <field name="name_lc" type="lowercase" indexed="true" stored="false"/>
+
+  <!--
+    The ID of the parent folder of the CoreMedia content.
+    This field is required for the Content Feeder.
+  -->
+  <field name="folderid" type="content" indexed="true" stored="false"/>
+
+  <!--
+    The ID of the last folder of the CoreMedia content, set if the content is deleted.
+    This field is required for the Content Feeder.
+  -->
+  <field name="lastfolderid" type="content" indexed="true" stored="false"/>
+
+  <!--
+    The folder path of the CoreMedia content as list of numeric folder IDs
+    from the root folder up to the parent folder.
+
+    This field is required for the Content Feeder.
+  -->
+  <field name="folderpath" type="content" indexed="true" stored="true" multiValued="true" useDocValuesAsStored="false"/>
+
+  <!--
+    The path of the CoreMedia content including the name.
+  -->
+  <field name="path" type="text_general" indexed="true" stored="true"/>
+
+  <!--
+    The type of the content.
+
+    (The field name is "documenttype" instead of "contenttype" just for backwards-compatibility.
+     For indexed CoreMedia folders, this field contains the value "Folder_")
+
+    This field is required for the Content Feeder.
+  -->
+  <field name="documenttype" type="string" indexed="true" stored="true"/>
+
+  <!--
+    The type of the object.
+    If this is a Content, this is the same as field documenttype.
+  -->
+  <field name="type" type="string" indexed="true" stored="true"/>
+
+  <!--
+    All types of the object including parent content types.
+
+    This field is required for the Content Feeder.
+  -->
+  <field name="types" type="string" indexed="true" stored="true" multiValued="true"/>
+
+  <!--
+    The isDeleted state of the CoreMedia content.
+    This field is required for the Content Feeder.
+  -->
+  <field name="isdeleted" type="boolean" indexed="true" stored="true"/>
+
+  <!--
+    A set of IDs of CoreMedia groups which potentially have read rights on the
+    CoreMedia content. This can be used to restrict the number of candidate
+    search results.
+
+    The Content Feeder feeds this field with the correct groups that have read rights on the content
+    as long as the following constructs of the rights system are not used:
+    - revoking rights in subgroups
+    - revoking rights in other groups of the same user (denial-on-path)
+
+    This field is required for the Content Feeder.
+  -->
+  <field name="groups" type="group" indexed="true" stored="false" multiValued="true"/>
+
+  <!--
+    Contains the language of the content as ISO 639-1 two-letter code.
+    If the language is not set by the Content Feeder, the language is detected
+    based on the content as configured in solrconfig.xml.
+  -->
+  <field name="language" type="string" indexed="true" stored="true"/>
+
+  <!--
+    The following fields are set with meta-properties of CoreMedia contents
+    by the CoreMedia Content Feeder.
+  -->
+  <field name="basefolderid"         type="content" indexed="true" stored="false"/>
+  <field name="creator"              type="user"    indexed="true" stored="false"/>
+  <field name="modifier"             type="user"    indexed="true" stored="false"/>
+  <field name="editor"               type="user"    indexed="true" stored="false"/>
+  <field name="approver"             type="user"    indexed="true" stored="false"/>
+  <field name="publisher"            type="user"    indexed="true" stored="false"/>
+  <field name="placeapprover"        type="user"    indexed="true" stored="false"/>
+  <field name="placepublisher"       type="user"    indexed="true" stored="false"/>
+  <field name="creationdate"         type="pdate"   indexed="true" stored="false"/>
+  <field name="modificationdate"     type="pdate"   indexed="true" stored="false"/>
+  <field name="editiondate"          type="pdate"   indexed="true" stored="false"/>
+  <field name="approvaldate"         type="pdate"   indexed="true" stored="false"/>
+  <field name="publicationdate"      type="pdate"   indexed="true" stored="false"/>
+  <field name="placeapprovaldate"    type="pdate"   indexed="true" stored="false"/>
+  <field name="placepublicationdate" type="pdate"   indexed="true" stored="false"/>
+  <field name="ischeckedout"         type="boolean" indexed="true" stored="true"/>
+  <field name="istobedeleted"        type="boolean" indexed="true" stored="true"/>
+  <field name="istobewithdrawn"      type="boolean" indexed="true" stored="true"/>
+  <field name="isapproved"           type="boolean" indexed="true" stored="true"/>
+  <field name="ispublished"          type="boolean" indexed="true" stored="true"/>
+  <field name="isplaceapproved"      type="boolean" indexed="true" stored="true"/>
+  <field name="isplacepublished"     type="boolean" indexed="true" stored="true"/>
+  <field name="latestversion"        type="pint"    indexed="true" stored="false"/>
+
+  <!-- The set of referenced contents as numeric IDs -->
+  <field name="references"           type="content" indexed="true" stored="false" multiValued="true"/>
+
+  <!--
+    The status indicates whether a content is in production (not
+    approved and not deleted), approved, published or deleted.
+    .......................
+    |Status         | Value|
+    .......................
+    |In Production | 0    |
+    |Approved      | 1    |
+    |Published     | 2    |
+    |Deleted       | 3    |
+    .......................
+
+    This field is used by Studio.
+  -->
+  <field name="status" type="pint" indexed="true" stored="false"/>
+
+  <!--
+    Contains the keywords of documents of type CMLinkable.
+    The field is tokenized at comma characters only.
+
+    This field is used by the Blueprint.
+  -->
+  <field name="keywords" type="text_comma_tokenizer_lc" indexed="true" stored="true"/>
+
+  <!--
+    The set of subject taxonomies of CMLinkable contents as numeric IDs.
+  -->
+  <field name="subjecttaxonomy"  type="content" indexed="true" stored="false" multiValued="true"/>
+
+  <!--
+    The set of location taxonomies of CMLinkable contents as numeric IDs.
+  -->
+  <field name="locationtaxonomy" type="content" indexed="true" stored="false" multiValued="true"/>
+
+  <!--
+    The set of asset taxonomies of AMAsset contents as numeric IDs.
+  -->
+  <field name="assettaxonomy"    type="content" indexed="true" stored="false" multiValued="true"/>
+
+  <!--
+    Contains the references from CMLinkable to catalog items of a commerce system. They are interpreted as
+    something like "the CM document enriches the catalog item in some way". E.g. a product picture.
+  -->
+  <field name="commerceitems" type="string" indexed="true" stored="true" multiValued="true"/>
+
+  <!--
+    Contains the product code of CMProduct documents.
+
+    This field is used by the Corporate Blueprint and its product catalog extension.
+    It also gets copied to the "stringSuggestions" field to have its values in search suggestions.
+  -->
+  <field name="productCode" type="string" indexed="true" stored="true"/>
+  <copyField source="productCode" dest="stringSuggestions"/>
+
+  <!--
+    Contains the product codes of AMAsset documents added by the asset management extension.
+
+    This field is used for searching for assets by product codes provided by the original asset.
+    It also gets copied to the "stringSuggestions" field to have its values in search suggestions.
+  -->
+  <field name="assetProductCodes" type="string" indexed="true" stored="true" multiValued="true"/>
+  <copyField source="assetProductCodes" dest="stringSuggestions"/>
+
+  <!--
+    The list of direct parent categories of a product or category as numeric IDs.
+
+    This field is used by the Corporate Blueprint and its product catalog extension.
+  -->
+  <field name="directProductCategories" type="content" indexed="true" stored="true" multiValued="true"
+         useDocValuesAsStored="false"/>
+
+  <!--
+    The set of all categories of a product or category as numeric IDs.
+    This includes all direct parent categories and their transitive parent categories.
+
+    This field is used by the Corporate Blueprint and its product catalog extension.
+  -->
+  <field name="allProductCategories" type="content" indexed="true" stored="false" multiValued="true"/>
+
+  <!--
+    The licensed channels of AMAsset documents.
+
+    This field is used by the Asset Management extension to filter for channels.
+  -->
+  <field name="rightsChannels" type="string" indexed="true" stored="true" multiValued="true"/>
+
+  <!--
+    The licensed regions of AMAsset documents
+
+    This field is used by the Asset Management extension to filter for regions.
+  -->
+  <field name="rightsRegions" type="string" indexed="true" stored="true" multiValued="true"/>
+
+  <!--
+    The expiration date of AMAsset documents.
+
+    This field is used by the Asset Management extension to filter for expiring assets.
+  -->
+  <field name="expirationDate" type="pdate" indexed="true" stored="false"/>
+
+
+  <!--
+    Contains strings that are returned as search suggestions.
+
+    This field is not set directly but only as destination of <copyField> instructions.
+    It uses stored="false" to allow partial updates.
+  -->
+  <field name="stringSuggestions" type="string" indexed="true" stored="false" multiValued="true"/>
+
+  <!--
+    The default text search field.
+    This field and the field name are used as default search fields
+    for the /editor search request handler.
+
+    The Content Feeder stores the text of all indexed fields of
+    the CoreMedia content in this field.
+  -->
+  <field name="textbody" type="text_general" indexed="true" stored="true" multiValued="true"/>
+
+  <!--
+    For each derived site create a field to store the translation state like "translationstate_<siteId>:not-up-to-date"
+  -->
+  <dynamicField name="translationstate_*" type="string" indexed="true" stored="true"/>
+
+  <!-- Field to not make solr throw errors if field to index does not exist in schema -->
+  <dynamicField name="*" type="ignored" />
+
+  <!-- =====================================================================
+       FIELD TYPES
+
+       Note that Apache Solr defines lots of further useful field types in
+       its example configuration. This includes special field types for lots
+       of languages (e.g. with stemming) and advanced Solr features.
+
+       These field types are not defined in this default configuration file
+       to keep it simple and avoid unnecessary overhead.
+
+       You can find these additional field types in the configuration file
+       server/solr/configsets/_default/conf/managed-schema
+       after downloading and unpacking the Apache Solr distribution.
+
+       For searching in different languages, see also chapter
+       "Searching In Different Languages" in the CoreMedia Search Engine Manual.
+       ===================================================================== -->
+
+  <!-- The StrField type is not analyzed, but indexed/stored verbatim. -->
+  <fieldType name="string" class="solr.StrField" sortMissingLast="true" />
+
+  <!-- boolean type: "true" or "false" -->
+  <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true"/>
+
+  <!--
+    Field types to store CoreMedia Content, Users and Groups by their ID.
+
+    The definition of these types is identical to type "pint".
+    The separate types are used to distinguish plain numeric fields from fields with CoreMedia IDs,
+    so that clients can interpret found values correctly.
+  -->
+  <fieldType name="content" class="solr.IntPointField" docValues="true"/>
+  <fieldType name="group"   class="solr.IntPointField" docValues="true"/>
+  <fieldType name="user"    class="solr.IntPointField" docValues="true"/>
+
+  <!--
+    Numeric field types that index values using KD-trees.
+    Point fields don't support FieldCache, so they must have docValues="true" if needed for sorting, faceting, functions, etc.
+  -->
+  <fieldType name="pint" class="solr.IntPointField" docValues="true"/>
+  <fieldType name="pfloat" class="solr.FloatPointField" docValues="true"/>
+  <fieldType name="plong" class="solr.LongPointField" docValues="true"/>
+  <fieldType name="pdouble" class="solr.DoublePointField" docValues="true"/>
+
+  <!-- The format for this date field is of the form 1995-12-31T23:59:59Z, and
+       is a more restricted form of the canonical representation of dateTime
+       http://www.w3.org/TR/xmlschema-2/#dateTime
+       The trailing "Z" designates UTC time and is mandatory.
+       Optional fractional seconds are allowed: 1995-12-31T23:59:59.999Z
+       All other components are mandatory.
+
+       Expressions can also be used to denote calculations that should be
+       performed relative to "NOW" to determine the value, ie...
+
+             NOW/HOUR
+                ... Round to the start of the current hour
+             NOW-1DAY
+                ... Exactly 1 day prior to now
+             NOW/DAY+6MONTHS+3DAYS
+                ... 6 months and 3 days in the future from the start of
+                    the current day
+
+  -->
+  <!-- KD-tree versions of date fields -->
+  <fieldType name="pdate" class="solr.DatePointField" docValues="true"/>
+
+  <!--
+    A general text field that has reasonable, generic cross-language defaults:
+    It tokenizes with StandardTokenizer and uses lower-casing.
+
+    Opposed to the Apache Solr example configuration for this field type,
+    stop-word removal and synonyms have been disabled here.
+    If you want to remove stop-words and/or add synonyms, enable the respective
+    outcommented filters below and add the referenced configuration files with
+    stop-word and synonym definitions for your project.
+
+    Furthermore autoGeneratePhraseQueries was set to true to improve precision
+    and multiValued has been set to false as default.
+  -->
+  <fieldType name="text_general" class="solr.TextField" positionIncrementGap="100" autoGeneratePhraseQueries="true"
+             multiValued="false">
+    <analyzer type="index">
+      <tokenizer class="solr.StandardTokenizerFactory"/>
+      <!-- <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" /> -->
+      <filter class="solr.LowerCaseFilterFactory"/>
+    </analyzer>
+    <analyzer type="query">
+      <tokenizer class="solr.StandardTokenizerFactory"/>
+      <!-- <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" /> -->
+      <!-- <filter class="solr.SynonymGraphFilterFactory" expand="true" ignoreCase="true" synonyms="synonyms.txt"/> -->
+      <filter class="solr.LowerCaseFilterFactory"/>
+    </analyzer>
+  </fieldType>
+
+  <!--
+    SortableTextField generally functions exactly like TextField,
+    except that it supports, and by default uses, docValues for sorting (or faceting)
+    on the first 1024 characters of the original field values (which is configurable).
+
+    This makes it a bit more useful then TextField in many situations, but the trade-off
+    is that it takes up more space on disk; which is why it's not used in place of TextField
+    for every fieldType in this _default schema.
+
+    Opposed to the Apache Solr example configuration for this field type,
+    stop-word removal and synonyms have been disabled here.
+    If you want to remove stop-words and/or add synonyms, enable the respective
+    outcommented filters below and add the referenced configuration files with
+    stop-word and synonym definitions for your project.
+
+    Furthermore autoGeneratePhraseQueries was set to true to improve precision
+    and multiValued has been set to false as default.
+  -->
+  <fieldType name="text_gen_sort" class="solr.SortableTextField" positionIncrementGap="100"
+             autoGeneratePhraseQueries="true" multiValued="false">
+    <analyzer type="index">
+      <tokenizer class="solr.StandardTokenizerFactory"/>
+      <!-- <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" /> -->
+      <filter class="solr.LowerCaseFilterFactory"/>
+    </analyzer>
+    <analyzer type="query">
+      <tokenizer class="solr.StandardTokenizerFactory"/>
+      <!-- <filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" /> -->
+      <!-- <filter class="solr.SynonymGraphFilterFactory" synonyms="synonyms.txt" ignoreCase="true" expand="true"/> -->
+      <filter class="solr.LowerCaseFilterFactory"/>
+    </analyzer>
+  </fieldType>
+
+  <!-- A text field that only splits on commas for exact matching of words. The words are converted to lower-case. -->
+  <fieldType name="text_comma_tokenizer_lc" class="solr.TextField" positionIncrementGap="100">
+    <analyzer>
+      <tokenizer class="solr.PatternTokenizerFactory" pattern=","/>
+      <filter class="solr.LowerCaseFilterFactory"/>
+      <filter class="solr.TrimFilterFactory"/>
+    </analyzer>
+  </fieldType>
+
+  <!-- lowercases the entire field value, keeping it as a single token.  -->
+  <fieldType name="lowercase" class="solr.TextField" positionIncrementGap="100">
+    <analyzer>
+      <tokenizer class="solr.KeywordTokenizerFactory"/>
+      <filter class="solr.LowerCaseFilterFactory" />
+    </analyzer>
+  </fieldType>
+
+  <!-- since fields of this type are by default not stored or indexed,
+       any data added to them will be ignored outright.  -->
+  <fieldType name="ignored" stored="false" indexed="false" multiValued="true" class="solr.StrField" />
+
+  <!--
+    Field type for Chinese text using the SmartChineseAnalyzer.
+
+    Enable it and follow the instructions from chapter "Searching In Different Languages"
+    of the CoreMedia Search Engine Manual if you want to search in Chinese content.
+
+    While you can find field types for various languages in the example schema of the
+    Apache Solr distribution, an example for Chinese with this analyzer is missing.
+  -->
+  <!--
+  <fieldType name="text_zh" class="solr.TextField">
+    <analyzer class="org.apache.lucene.analysis.cn.smart.SmartChineseAnalyzer"/>
+  </fieldType>
+  -->
+
+</schema>

@@ -1,0 +1,163 @@
+.cm-logo {
+  background: url("../../img/logo-mobile.svg") no-repeat center center transparent;
+  // keep in sync with image dimensions
+  width: 36px;
+  height: 36px;
+
+  @include breakpoints(("sm", landscape) "lg-and-up") {
+    background-image: url("../../img/logo.svg");
+    // keep in sync with image dimensions
+    width: 239px;
+    height: 40px;
+  }
+}
+
+.cm-mobile-search-button {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background: url("../../img/magnifier.svg") no-repeat center center transparent;
+  background-size: 44px;
+
+  @include breakpoints(("sm", landscape) "lg-and-up") {
+    background-size: 32px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.cm-header {
+  @include breakpoints(("sm", landscape) "lg-and-up") {
+    padding-bottom: 60px; //align height of header with navigation
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 50px;
+    font-family: $cm-font-family-sans-serif;
+    border-bottom: 1px solid $cm-text-color;
+  }
+
+  &__mobile-navigation-button,
+  &__mobile-search-button {
+    cursor: pointer;
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      display: none;
+    }
+  }
+
+  // Logo
+  &__logo {
+    margin: 0 auto;
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      margin-left: 10px;
+    }
+  }
+
+  &__search {
+    margin-left: 10px;
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      margin-left: 15px;
+    }
+  }
+
+  &__divider {
+    border-top: 1px solid #FFFFFF;
+    margin: 0 $cm-standard-spacing;
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      display: none;
+    }
+  }
+
+  // Navigation
+  &__navigation {
+    display:  none;
+    // reset unordered list styles
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    flex-direction: column;
+    background-color: #000000;
+    color: #FFFFFF;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: calc(100vh - 100%);
+    text-align: center;
+    z-index: 100;
+    overflow-y: auto; // make large navigation scrollable
+
+    .cm-hamburger-icon--toggled ~ & {
+      display: flex;
+    }
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      display: flex;
+      position: static;
+      top: auto;
+      left: auto;
+      right: auto;
+      height: auto;
+      text-align: left;
+      z-index: auto;
+      background-color: transparent;
+      color: inherit;
+      flex-direction: row;
+      flex-wrap: wrap;
+      overflow-y: visible;
+
+      > .cm-navigation {
+        background-color: #fff;
+        top: calc(100% + 1px);
+      }
+    }
+  }
+
+  .cm-search--form {
+    margin-right: 15px;
+
+    .cm-search__form-button {
+      top: 7px;
+      background-size: 44px;
+
+      @include breakpoints(("sm", landscape) "lg-and-up") {
+        top: 3px;
+        background-size: 32px;
+      }
+    }
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      margin-right: 0;
+    }
+  }
+
+  .cm-search__form-close{
+    position: relative;
+    margin-right: 15px;
+  }
+
+  @include breakpoints(("sm", landscape) "lg-and-up") {
+    &__logo {
+      order: 1;
+    }
+
+    &__search {
+      order: 3;
+      margin-left: 15px;
+    }
+
+    &__navigation {
+      order: 2;
+    }
+  }
+}

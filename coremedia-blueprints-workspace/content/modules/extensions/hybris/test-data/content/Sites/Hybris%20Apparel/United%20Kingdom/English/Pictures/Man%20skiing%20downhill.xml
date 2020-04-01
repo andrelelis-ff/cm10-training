@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/United Kingdom/English/Pictures" name="Man skiing downhill" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=30;y=0;width=967;height=1500</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=0;width=1123;height=1500</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=0;width=1501;height=1500</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=274;width=2000;height=1125</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=290;width=2000;height=1001</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=298;width=2000;height=800</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=294;width=2000;height=750</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=267;width=2000;height=498</StringProperty>
+<StringProperty Name="landscape_ratio3x1">b;a=0;c=1/crop;x=0;y=284;width=2000;height=667</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.015113350125944584;y1=0;x2=0.4987405541561713;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0;x2=0.5617128463476071;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0;x2=0.7506297229219143;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.18298969072164947;x2=1;y2=0.9329896907216495</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.19329896907216496;x2=1;y2=0.8608247422680413</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.19845360824742267;x2=1;y2=0.7319587628865979</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.1958762886597938;x2=1;y2=0.6958762886597938</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.17785234899328858;x2=1;y2=0.5100671140939598</StringProperty>
+<StringProperty Name="landscape_ratio3x1">position;x1=0;y1=0.1892744479495268;x2=1;y2=0.6337188923939712</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="landscape_ratio3x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Man skiing downhill</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Ski.xml" path="/Settings/Taxonomies/Subject/Ski"/>
+<link href="../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+<link href="../../../../../Settings/Taxonomies/Subject/Snow%20Action.xml" path="/Settings/Taxonomies/Subject/Snow%20Action"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Man skiing downhill</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1500</height>
+<data md5="a2d987eec6e2b6f60ddc45283894e43b" size="521225" href="../../../../../__blob/a2d987eec6e2b6f60ddc45283894e43b.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AMTaxonomy folder="/Settings/Taxonomies/Asset Download Portal" name="Management" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Management</value>
+<children>
+<link href="Portraits.xml" path="/Settings/Taxonomies/Asset%20Download%20Portal/Portraits"/>
+</children>
+<externalReference></externalReference>
+<assetThumbnail>
+<link href="../../../Assets/Company/Management%20Board/Management%20Board%20Close-Up%20Picture.xml" path="/Assets/Company/Management%20Board/Management%20Board%20Close-Up%20Picture"/>
+</assetThumbnail>
+</AMTaxonomy>

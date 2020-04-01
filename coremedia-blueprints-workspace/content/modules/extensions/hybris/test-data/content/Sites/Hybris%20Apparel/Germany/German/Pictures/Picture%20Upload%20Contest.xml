@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/Germany/German/Pictures" name="Picture Upload Contest" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Pictures/Picture%20Upload%20Contest.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Picture%20Upload%20Contest"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=680;y=0;width=645;height=1000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=625;y=0;width=751;height=1000</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=499;y=0;width=1003;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=332;y=0;width=1335;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=111;y=0;width=1783;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=0;width=2000;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=101;width=2000;height=799</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=126;width=2000;height=749</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=251;width=2000;height=497</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.34005037783375314;y1=0;x2=0.6624685138539043;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.3123425692695214;y1=0;x2=0.6876574307304786;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.24937027707808565;y1=0;x2=0.7506297229219143;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.16624685138539042;y1=0;x2=0.8337531486146096;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.055415617128463476;y1=0;x2=0.947103274559194;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.10050251256281408;x2=1;y2=0.8994974874371859</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.12562814070351758;x2=1;y2=0.8743718592964824</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.25125628140703515;x2=1;y2=0.7487437185929648</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio2x1">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio8x3">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Picture Upload-Wettbewerb</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Picture Upload-Wettbewerb</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1000</height>
+<data md5="c097ed13d590fd879e9b11e6b3a1e6f9" size="411991" href="../../../../../__blob/c097ed13d590fd879e9b11e6b3a1e6f9.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

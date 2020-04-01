@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!--
+  Website Blueprint Base Doctypes
+-->
+
+<DocumentTypeModel xmlns="http://www.coremedia.com/2008/documenttypes"
+                   xmlns:extensions="http://www.coremedia.com/2013/documenttypes-extensions"
+                   Root="CMObject"
+                   Name="test-doctypes"
+                   Title="test">
+
+  <!--- well known grammars -->
+  <ImportGrammar Name="coremedia-struct-2008"/>
+
+  <XmlGrammar Name="coremedia-richtext-1.0"
+              Root="div"
+              PublicId="-//CoreMedia//DTD Rich Text 1.0//EN"
+	      SystemId="classpath:xml/coremedia-richtext-1.0.dtd"/>
+
+  <!-- Root -->
+
+  <!--
+    For CAE's oo contentbean model a common root is more convenient than a
+    forest.
+   -->
+  <DocType Name="CMObject" Abstract="true">
+  </DocType>
+
+
+  <!-- FolderConfig -->
+
+  <!--
+    A FolderConfig document type allows to attach properties to folders,
+    used to assign virtual properties to all documents below this folder
+  -->
+  <DocType Name="CMFolderProperties" Parent="CMLocalized">
+    <LinkListProperty Name="contexts" LinkType="CMContext"/>
+    <LinkListProperty Name="master" Max="1" LinkType="CMFolderProperties" Override="true" extensions:weakLink="true"/>
+  </DocType>
+
+  <!-- Multi Language -->
+
+  <!--
+    Nearly everything except very technical entities is localizable, so this
+    type is nearly top level.
+
+    Derived doctypes MUST override the master linklist and restrict it to
+    exactly their own type.
+   -->
+  <DocType Name="CMLocalized" Parent="CMObject" Abstract="true">
+    <StringProperty Name="locale" Length="64"/>
+    <LinkListProperty Name="master" Max="1" LinkType="CMLocalized" extensions:weakLink="true"/>
+    <IntProperty Name="masterVersion"/>
+    <IntProperty Name="ignoreUpdates"/>
+  </DocType>
+
+
+  <!-- Links -->
+
+  <!--
+    Linkable is the base type for each document which can be referenced
+    as standalone content or navigation unit.
+   -->
+  <DocType Name="CMLinkable" Parent="CMLocalized" Abstract="true">
+    <LinkListProperty Name="master" Max="1" LinkType="CMLinkable" Override="true" extensions:weakLink="true"/>
+
+    <LinkListProperty Name="viewtype" Max="1" LinkType="CMViewtype"/>
+    <XmlProperty Name="localSettings" Grammar="coremedia-struct-2008"/>
+    <LinkListProperty Name="linkedSettings" LinkType="CMSettings"/>
+
+    <!--
+      We switched to resourceBundles2 of type CMResourceBundle.
+      You may reactivate the old property in order to spare database migration
+      efforts for existing repositories.
+
+      <LinkListProperty Name="resourceBundles" LinkType="CMSettings"/>
+    -->
+
+    <!--
+      The resourceBundles are available only via Spring's MessageSource.
+      No direct access by contentbean getters.
+      Moreover, resourceBundles are currently supported only for channels
+      due to performance/caching considerations.  Nonetheless, topically they
+      belong to CMLinkable, and defining them here enables us to support them
+      for other content types in later versions without another doctype change.
+    -->
+    <LinkListProperty Name="resourceBundles2" LinkType="CMResourceBundle"/>
+
+    <DateProperty Name="validFrom"/>
+    <DateProperty Name="validTo"/>
+    <!--
+      Date which is displayed externally on CAE side.
+    -->
+    <DateProperty Name="extDisplayedDate"/>
+    <!--
+      The segment is used to create "nice" URLs. If it is omitted,
+      the ID is used as fallback.
+     -->
+    <StringProperty Name="segment" Length="64"/>
+    <StringProperty Name="title" Length="512" extensions:translatable="true"/>
+    <!--
+      HTML head and meta tags for SEO
+    -->
+    <StringProperty Name="htmlTitle" Length="128" extensions:translatable="true"/>
+    <StringProperty Name="keywords" Length="1024" extensions:translatable="true"/>
+    <StringProperty Name="htmlDescription" Length="512" extensions:translatable="true"/>
+    <!--
+      Taxonomies
+    -->
+    <LinkListProperty Name="subjectTaxonomy" LinkType="CMTaxonomy" extensions:weakLink="true"/>
+    <LinkListProperty Name="locationTaxonomy" LinkType="CMLocTaxonomy" extensions:weakLink="true"/>
+  </DocType>
+
+  <!--
+    Actually, contexts are related to segment and link building
+    and thus belong to CMLinkable.  However, we want to enforce
+    navigation trees (no arbitrary graphs), therefore we don't want
+    explicit contexts in CMNavigation documents which are also
+    derived from CMLinkable.  In the content beans we implement
+    contexts in CMLinkable.
+   -->
+  <DocType Name="CMHasContexts" Parent="CMLinkable" Abstract="true">
+    <LinkListProperty Name="master" Max="1" LinkType="CMHasContexts" Override="true" extensions:weakLink="true"/>
+    <LinkListProperty Name="contexts" LinkType="CMContext"/>
+  </DocType>
+
+
+  <!-- Teasers -->
+
+  <!--
+    Each content has an embedded Teaser and a detailText for the page view.
+   -->
+  <DocType Name="CMTeasable" Parent="CMHasContexts" Abstract="true">
+    <LinkListProperty Name="master" Max="1" LinkType="CMTeasable" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="teaserTitle" Length="512" extensions:translatable="true"/>
+    <XmlProperty Name="teaserText" Grammar="coremedia-richtext-1.0" extensions:translatable="true"/>
+    <XmlProperty Name="detailText" Grammar="coremedia-richtext-1.0" extensions:translatable="true"/>
+    <!--
+      Late change from CMPicture to CMMedia.
+      We preserved the name "pictures" for compatibility reasons, though.
+    -->
+    <LinkListProperty Name="pictures" LinkType="CMMedia"/>
+    <IntProperty Name="notSearchable"/>
+    <LinkListProperty Name="related" LinkType="CMTeasable"/>
+    <LinkListProperty Name="authors" LinkType="CMPerson"/>
+  </DocType>
+
+  <!--
+    Stand-alone teaser, in case you need multiple teasers to some content,
+    so that the embedded teaser is not sufficient.
+   -->
+  <DocType Name="CMTeaser" Parent="CMTeasable">
+    <LinkListProperty Name="master" Max="1" LinkType="CMTeaser" Override="true" extensions:weakLink="true"/>
+    <LinkListProperty Name="target" Max="1" LinkType="CMLinkable"/>
+    <XmlProperty Name="targets" Grammar="coremedia-struct-2008" extensions:translatable="true"/>
+  </DocType>
+
+
+  <!-- Content -->
+
+  <!-- CMMedia hierarchy-->
+  <!--  The abstract CMMedia type starts the media hierarchy defining data,caption and an alt property.
+        All subtypes override and specialize the BlobProperty defining the MIME-type. Additionally needed
+        properties should be attached via a DocTypeAspect.
+  -->
+  <DocType Abstract="true" Name="CMMedia" Parent="CMTeasable">
+    <LinkListProperty Name="master" Max="1" LinkType="CMMedia" Override="true" extensions:weakLink="true"/>
+    <XmlProperty Name="caption" Grammar="coremedia-richtext-1.0" extensions:translatable="true"/>
+    <StringProperty Name="alt" Length="128" extensions:translatable="true"/>
+    <StringProperty Name="copyright" Length="128" extensions:translatable="true"/>
+  </DocType>
+
+  <!--  The CMVisual type splits the media hierarchy to visual components. It adds visibility properties
+        like width and height. Additionally needed properties should be attached via a DocTypeAspect.
+  -->
+  <DocType Abstract="true" Name="CMVisual" Parent="CMMedia">
+    <LinkListProperty Name="master" Max="1" LinkType="CMVisual" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="dataUrl" Length="1024"/>
+    <IntProperty Name="width"/>
+    <IntProperty Name="height"/>
+  </DocType>
+
+  <!--  The CMAudio type splits the media hierarchy to audio components. It adds no extra
+        properties but leaves a spot where needed properties could be attached via a
+        DocTypeAspect.
+  -->
+  <DocType Name="CMAudio" Parent="CMMedia">
+    <LinkListProperty Name="master" Max="1" LinkType="CMAudio" Override="true" extensions:weakLink="true"/>
+    <BlobProperty Name="data" MimeType="audio/*"/>
+    <StringProperty Name="dataUrl" Length="1024"/>
+  </DocType>
+
+  <!--  Leaves a spot where needed properties could be
+        attached via a DocTypeAspect.
+  -->
+  <DocType Name="CMVideo" Parent="CMVisual">
+    <LinkListProperty Name="master" Max="1" LinkType="CMVideo" Override="true" extensions:weakLink="true"/>
+    <BlobProperty Name="data" MimeType="video/*"/>
+    <XmlProperty Name="timeLine" Grammar="coremedia-struct-2008"/>
+  </DocType>
+
+  <!--
+        A picture with the actual image blob and some metadata.
+
+        Note that a Picture is a first class content object. If you are sure
+        that your picture is used only in an article or in a photoshow, just
+        ignore the teaser properties. We could have introduced an "Asset" type
+        for such purposes, but we wanted to keep the doctypes simple.
+   -->
+  <DocType Name="CMPicture" Parent="CMVisual">
+    <LinkListProperty Name="master" Max="1" LinkType="CMPicture" Override="true" extensions:weakLink="true"/>
+    <BlobProperty Name="data" MimeType="image/*"/>
+  </DocType>
+
+  <!--
+        Adds an image map to a linked picture.
+  -->
+  <DocType Name="CMImageMap" Parent="CMTeaser">
+    <LinkListProperty Name="master" Max="1" LinkType="CMImageMap" Override="true" extensions:weakLink="true"/>
+  </DocType>
+
+  <DocType Name="CMInteractive" Parent="CMVisual">
+    <LinkListProperty Name="master" Max="1" LinkType="CMInteractive" Override="true" extensions:weakLink="true"/>
+    <BlobProperty Name="data" MimeType="application/*"/>
+  </DocType>
+
+  <!--
+    360-Spinner.
+    A Teasable with a sequence of images.  Unlike CMGallery#items, the images
+    of the sequence are not independent of each other but constitute a common
+    entity, comparable to the frames of a video.  Editors must not modify such
+    a sequence, or they would most probably break the spinner experience.
+  -->
+  <DocType Name="CMSpinner" Parent="CMVisual">
+    <LinkListProperty Name="master" Max="1" LinkType="CMSpinner" Override="true" extensions:weakLink="true"/>
+    <LinkListProperty Name="sequence" LinkType="CMPicture"/>
+  </DocType>
+
+  <!--
+    A collection of contents.
+    Although Collection is not abstract, you are encouraged to subclass it
+    and restrict the LinkType. E.g. a PhotoShow doctype with LinkType Picture.
+   -->
+  <DocType Name="CMCollection" Parent="CMTeasable">
+    <LinkListProperty Name="master" Max="1" LinkType="CMCollection" Override="true" extensions:weakLink="true"/>
+    <LinkListProperty Name="items" LinkType="CMTeasable"/>
+    <XmlProperty Name="extendedItems" Grammar="coremedia-struct-2008" extensions:translatable="true"/>
+  </DocType>
+
+  <!-- Dynamic content -->
+
+  <!--
+    A placeholder for a dynamically populated list of content objects.
+
+    The actual entries of the dynamic list depend on the concrete subtype and
+    the plug-in implementation reponsible for providing the list entries.
+  -->
+  <DocType Name="CMDynamicList" Parent="CMCollection" Abstract="true">
+    <!--
+      Maximum number of entries in the dynamic content list.
+
+      The list may return fewer entries. A value of 0 or less indicates no restriction.
+    -->
+    <IntProperty Name="maxLength"/>
+  </DocType>
+
+  <!-- Navigation -->
+
+  <!--
+    Base type for navigation items.
+   -->
+  <DocType Name="CMNavigation" Parent="CMTeasable" Abstract="true">
+    <LinkListProperty Name="master" Max="1" LinkType="CMNavigation" Override="true" extensions:weakLink="true"/>
+    <LinkListProperty Name="children" LinkType="CMLinkable"/>
+
+    <!--
+      Use hidden in order to provide "nice" URLs for content
+      which should not be reachable by navigation.
+      Semantic: hidden implies hiddenInSitemap.
+    -->
+    <IntProperty Name="hidden"/>
+
+    <!--
+      Do not show this channel in a sitemap. We recommend to use this flag
+      in exceptional cases only, because a sitemap is not very helpful if it
+      differs too much from the actual navigation.
+    -->
+    <IntProperty Name="hiddenInSitemap"/>
+
+    <LinkListProperty Name="javaScript" LinkType="CMJavaScript"/>
+    <LinkListProperty Name="css" LinkType="CMCSS"/>
+    <LinkListProperty Name="theme" Max="1" LinkType="CMTheme"/>
+    <BlobProperty Name="favicon" MimeType="image/x-icon"/>
+    <XmlProperty Name="placement" Grammar="coremedia-struct-2008"/>
+  </DocType>
+
+  <!--
+    A document identifying a site. All root navigations must
+    be referred to by a CMSite. A site is identified by a string ID.
+    It defines content for a given locale. It may be derived from
+    a master site.
+  -->
+  <DocType Name="CMSite" Parent="CMLocalized">
+    <StringProperty Name="id" Length="32"/>
+    <StringProperty Name="name" Length="64"/>
+    <LinkListProperty Name="master" Max="1" LinkType="CMSite" Override="true" extensions:weakLink="true"/>
+    <LinkListProperty Name="root" LinkType="CMNavigation" Max="1"/>
+    <StringProperty Name="siteManagerGroup" Length="256"/>
+    <!-- localSettings/linkedSettings: same as in CMLinkable -->
+    <XmlProperty Name="localSettings" Grammar="coremedia-struct-2008"/>
+    <LinkListProperty Name="linkedSettings" LinkType="CMSettings"/>
+  </DocType>
+
+  <!--
+    Abstract container for the page aspects of a navigation entity.
+  -->
+  <DocType Name="CMContext" Parent="CMNavigation" Abstract="true">
+    <LinkListProperty Name="master" Max="1" LinkType="CMContext" Override="true" extensions:weakLink="true"/>
+  </DocType>
+
+
+  <!-- Technical, Layout -->
+
+  <!--
+    A technical image, e.g. for usage in stylesheets.
+    (Any other usecase at all?)
+    Not for editorial usage. Use Picture instead. In order to avoid confusion,
+    you should withdraw all rights on doctype Image from ordinary editors.
+   -->
+  <DocType Name="CMImage" Parent="CMLocalized">
+    <LinkListProperty Name="master" Max="1" LinkType="CMImage" Override="true" extensions:weakLink="true"/>
+    <BlobProperty Name="data" MimeType="*/*"/>
+    <StringProperty Name="description" Length="512" extensions:translatable="true"/>
+  </DocType>
+
+  <DocType Name="CMSymbol" Parent="CMLocalized">
+    <StringProperty Name="description" Length="512" extensions:translatable="true"/>
+    <BlobProperty Name="icon" MimeType="image/*"/>
+    <LinkListProperty Name="master" Max="1" LinkType="CMSymbol" Override="true" extensions:weakLink="true"/>
+  </DocType>
+
+  <DocType Name="CMTaxonomy" Parent="CMTeasable">
+    <LinkListProperty Name="master" Max="1" LinkType="CMTaxonomy" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="value" Length="256" extensions:translatable="true"/>
+    <LinkListProperty Name="children" LinkType="CMTaxonomy" extensions:weakLink="true"/>
+    <StringProperty Name="externalReference" Length="256"/>
+  </DocType>
+
+  <DocType Name="CMLocTaxonomy" Parent="CMTaxonomy">
+    <LinkListProperty Name="master" Max="1" LinkType="CMLocTaxonomy" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="postcode" Length="10"/>
+    <StringProperty Name="latitudeLongitude" Length="100"/>
+    <LinkListProperty Name="children" LinkType="CMLocTaxonomy" Override="true" extensions:weakLink="true"/>
+  </DocType>
+
+  <DocType Name="CMSettings" Parent="CMLocalized">
+    <LinkListProperty Name="master" Max="1" LinkType="CMSettings" Override="true" extensions:weakLink="true"/>
+    <XmlProperty Name="settings" Grammar="coremedia-struct-2008"/>
+    <StringProperty Name="identifier" Length="100"/>
+  </DocType>
+
+  <DocType Name="CMResourceBundle" Parent="CMLocalized">
+    <LinkListProperty Name="master" Max="1" LinkType="CMResourceBundle" Override="true" extensions:weakLink="true"/>
+    <XmlProperty Name="localizations" Grammar="coremedia-struct-2008" extensions:translatable="true" extensions:automerge="true"/>
+  </DocType>
+
+  <!--
+    Aka ClientCode. E.g. for CSS, JS, third party HTML fragments.
+
+    We represent script code as CoreMedia Richtext because of
+    internal link support.
+   -->
+  <DocType Name="CMAbstractCode" Parent="CMLocalized" Abstract="true">
+    <LinkListProperty Name="master" Max="1" LinkType="CMAbstractCode" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="description" Length="512" extensions:translatable="true"/>
+    <XmlProperty Name="code" Grammar="coremedia-richtext-1.0"/>
+    <StringProperty Name="ieExpression" Length="64"/>
+    <IntProperty Name="ieRevealed"/>
+    <LinkListProperty Name="include" LinkType="CMAbstractCode"/>
+    <StringProperty Name="dataUrl" Length="1024"/>
+    <XmlProperty Name="htmlAttributes" Grammar="coremedia-struct-2008"/>
+    <!-- deprecated:
+     We will be removing the compression of code from the CAE as the frontend workspace provides options to compress the
+      code before it is uploaded to the content repository. When the compression is removed this property does not have
+      any effect.
+    -->
+    <IntProperty Name="disableCompress"/>
+  </DocType>
+
+  <DocType Name="CMCSS" Parent="CMAbstractCode">
+    <LinkListProperty Name="master" Max="1" LinkType="CMCSS" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="media" Length="64"/>
+    <LinkListProperty Name="include" LinkType="CMCSS" Override="true"/>
+  </DocType>
+
+  <DocType Name="CMJavaScript" Parent="CMAbstractCode">
+    <LinkListProperty Name="master" Max="1" LinkType="CMJavaScript" Override="true" extensions:weakLink="true"/>
+    <IntProperty Name="inHead"/>
+    <LinkListProperty Name="include" LinkType="CMJavaScript" Override="true"/>
+  </DocType>
+
+  <DocType Name="CMTheme"  Parent="CMLocalized">
+    <LinkListProperty Name="master" Max="1" LinkType="CMTheme" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="description" Length="512" extensions:translatable="true"/>
+    <BlobProperty Name="icon" MimeType="image/*"/>
+    <XmlProperty Name="detailText" Grammar="coremedia-richtext-1.0"/>
+    <LinkListProperty Name="javaScriptLibs" LinkType="CMJavaScript"/>
+    <LinkListProperty Name="javaScripts" LinkType="CMJavaScript"/>
+    <LinkListProperty Name="css" LinkType="CMCSS"/>
+    <StringProperty Name="viewRepositoryName" Length="128"/>
+    <!-- localSettings/linkedSettings: same as in CMLinkable -->
+    <XmlProperty Name="localSettings" Grammar="coremedia-struct-2008"/>
+    <LinkListProperty Name="linkedSettings" LinkType="CMSettings"/>
+    <LinkListProperty Name="resourceBundles" LinkType="CMResourceBundle"/>
+    <LinkListProperty Name="templateSets" LinkType="CMTemplateSet"/>
+  </DocType>
+
+
+  <DocType Name="CMViewtype" Parent="CMSymbol">
+    <LinkListProperty Name="master" Max="1" LinkType="CMViewtype" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="layout" Length="64"/>
+  </DocType>
+
+  <!--
+    The Website Blueprint provides the following concrete content types which occur
+    more or less similar in all web projects. Feel free to add new properties
+    and new Teasable content types.
+   -->
+  <!--
+     RichText content with pictures and related content
+   -->
+  <DocType Name="CMArticle" Parent="CMTeasable">
+    <LinkListProperty Name="master" Max="1" LinkType="CMArticle" Override="true" extensions:weakLink="true"/>
+  </DocType>
+
+  <DocType Name="CMExternalLink" Parent="CMTeasable">
+    <LinkListProperty Name="master" Max="1" LinkType="CMExternalLink" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="url" Length="1024"/>
+    <IntProperty Name="openInNewTab" />
+  </DocType>
+
+  <DocType Name="CMDownload" Parent="CMTeasable">
+    <LinkListProperty Name="master" Max="1" LinkType="CMDownload" Override="true" extensions:weakLink="true"/>
+    <BlobProperty Name="data" MimeType="*/*"/>
+    <StringProperty Name="filename" Length="128"/>
+  </DocType>
+
+  <DocType Name="CMHTML" Parent="CMMedia">
+    <LinkListProperty Name="master" Max="1" LinkType="CMHTML" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="description" Length="512" extensions:translatable="true"/>
+    <XmlProperty Name="data" Grammar="coremedia-richtext-1.0" extensions:translatable="true"/>
+  </DocType>
+
+
+  <!--
+    Navigation
+  -->
+
+  <!--
+    A channel is a hierarchical navigation entity with "booked content".
+    The booked content is divided into several linklists which represent
+    the areas of a page. You are encouraged to change these content linklists
+    according to your particular page layout.
+
+    Some parts of a page are typically the same for many different channels,
+    e.g. headers and footers with company information, ad blocks, ...
+    Therefore the implementation bean of CMChannel supports a fallback to the
+    parent channel for header and footer.
+
+    If a channel has several parents (i.e. referenced by the children property
+    of other channels) an arbitrary parent is chosen to inherit from. I.e.
+    channels with several parents (not recommended anyway) should bring their
+    own properties to ensure a reliable behaviour.
+   -->
+  <DocType Name="CMChannel" Parent="CMContext">
+    <LinkListProperty Name="master" Max="1" LinkType="CMChannel" Override="true" extensions:weakLink="true"/>
+    <BlobProperty Name="picture" MimeType="image/*"/>
+    <LinkListProperty Name="header" LinkType="CMLinkable"/>
+    <LinkListProperty Name="footer" LinkType="CMLinkable"/>
+  </DocType>
+
+  <!--
+    Dynamic resource that doesn't contain actual content in the shape of
+    properties but generates it on the fly by business logic.
+
+    Usecases:  RSS, Language Switch, ...
+  -->
+  <DocType Name="CMPlaceholder" Parent="CMTeasable">
+    <StringProperty Name="id" Length="512"/>
+    <LinkListProperty Name="master" Max="1" LinkType="CMPlaceholder" Override="true" extensions:weakLink="true"/>
+  </DocType>
+
+  <!--
+    Dynamic resource that doesn't contain actual content in the shape of
+    properties but generates it on the fly by business logic.
+
+    Usecases:  Search, Login, ...
+  -->
+  <DocType Name="CMAction" Parent="CMPlaceholder">
+    <StringProperty Name="type" Length="512"/>
+    <LinkListProperty Name="master" Max="1" LinkType="CMAction" Override="true" extensions:weakLink="true"/>
+  </DocType>
+
+  <!--
+    Specialized CMTeasable used for displaying a Sitemap.
+   -->
+  <DocType Name="CMSitemap" Parent="CMTeasable">
+    <LinkListProperty Name="master" Max="1" LinkType="CMSitemap" Override="true" extensions:weakLink="true"/>
+    <LinkListProperty Name="root" Max="1" LinkType="CMNavigation"/>
+  </DocType>
+
+  <DocType Name="CMQueryList" Parent="CMDynamicList">
+    <LinkListProperty Name="master" Max="1" LinkType="CMQueryList" Override="true" extensions:weakLink="true"/>
+  </DocType>
+
+  <!--
+   A collection of media contents.
+   E.g. PictureGallery, VideoGallery
+  -->
+  <DocType Name="CMGallery" Parent="CMCollection">
+    <LinkListProperty Name="master" Max="1" LinkType="CMGallery" Override="true" extensions:weakLink="true"/>
+    <LinkListProperty Name="items" LinkType="CMMedia" Override="true"/>
+  </DocType>
+
+  <!--
+   Dynamic Templating: A set of FreeMarker templates for Site rendering
+  -->
+  <DocType Name="CMTemplateSet">
+    <StringProperty Name="description" Length="512" extensions:translatable="true"/>
+    <BlobProperty Name="archive" MimeType="application/java-archive"/>
+  </DocType>
+
+  <!--
+    Person
+  -->
+  <DocType Name="CMPerson" Parent="CMTeasable">
+    <LinkListProperty Name="master" Max="1" LinkType="CMPerson" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="firstName" Length="128"/>
+    <StringProperty Name="lastName" Length="128"/>
+    <StringProperty Name="displayName" Length="512"/>
+    <StringProperty Name="eMail" Length="128"/>
+    <StringProperty Name="organization" Length="128"/>
+    <StringProperty Name="jobTitle" Length="128"/>
+    <XmlProperty Name="misc" Grammar="coremedia-struct-2008"/>
+  </DocType>
+
+</DocumentTypeModel>

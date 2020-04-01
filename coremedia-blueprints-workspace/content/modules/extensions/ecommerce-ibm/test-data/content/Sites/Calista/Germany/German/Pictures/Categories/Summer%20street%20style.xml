@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/Germany/German/Pictures/Categories" name="Summer street style" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Pictures/Categories/Summer%20street%20style.xml" path="/Sites/Calista/United%20States/English/Pictures/Categories/Summer%20street%20style"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/category/Women Accessories</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1046;y=0;width=1722;height=2666</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=773;y=0;width=2000;height=2666</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=648;y=0;width=2666;height=2666</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=451;y=0;width=3549;height=2662</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=144;width=4000;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=0;width=4000;height=2006</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=660;width=4000;height=1603</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=127;width=4000;height=1500</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=838;width=4000;height=999</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=1167;y=0;width=1666;height=2666</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=482;width=4000;height=1702</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=748;y=0;width=1777;height=2666</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.26156941649899396;y1=0;x2=0.6921529175050302;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.193158953722334;y1=0;x2=0.693033953722334;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.16204986149584488;y1=0;x2=0.8285498614958449;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.11267605633802813;y1=0;x2=1;y2=0.9984890588844395</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.05405405405405406;x2=1;y2=0.8980150443016162</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0;x2=1;y2=0.7522658610271903</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.24773413897280966;x2=1;y2=0.8489425981873112</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.04781704781704782;x2=1;y2=0.6104577079820892</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.31419939577039274;x2=1;y2=0.6888217522658611</StringProperty>
+<StringProperty Name="portrait_ratio2x3">position;x1=0.18698060941828254;y1=0;x2=0.6313139427516159;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+<StringProperty Name="portrait_ratio2x3">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="enlarge">
+<Struct>
+<BooleanProperty Name="portrait_ratio1x1">false</BooleanProperty>
+<BooleanProperty Name="portrait_ratio10x16">false</BooleanProperty>
+<BooleanProperty Name="landscape_ratio235x100">false</BooleanProperty>
+<BooleanProperty Name="landscape_ratio4x3">false</BooleanProperty>
+<BooleanProperty Name="portrait_ratio3x4">false</BooleanProperty>
+<BooleanProperty Name="landscape_ratio16x9">false</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Sommer-Straßenart. Mode Sommer Mädchen Kleidung Set, Zubehör. Trendy Sonnenbrille, Labs2, Top, Handtasche Kupplung, Halskette Hut, Blumen. Sommer Dame. Draufsicht des kreativen städtischen obenliegenden Sommers</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>Shutterstock_420284560</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2667</height>
+<data md5="40e31bef95743a321d8cb8b39957280f" size="1658610" href="../../../../../../__blob/40e31bef95743a321d8cb8b39957280f.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

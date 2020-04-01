@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Microsites/RGB LED Strip" name="Chef Corp RGB LED Strip Promotion (fallback) Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Endless Possibilities</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>The latest LED Strips have arrived! </p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p><strong>The latest LED Strips from Chef Supply have just arrived in stock! </strong><br/></p><p>These light strips employ the absolute latest technology to ensure the most dynamic lighting combinations possible.  Their advanced low-power consumption and industry-leading longevity ensure you will get the best value for your money. Use them for decoration around homes, added ambiance in the office, or as an advanced replacement for standard fixtures.</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED5ed0ab2.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED%20Strip%20Product%20Teaser">ChefSupply RGB LED Strip</a></p><p><br/></p><p>There are different variants of the Chef Corp. LED Strips designed for both indoor and outdoor use. This flexible strip can easily be separated at any point between LEDs, which makes them extremely versatile and allows them to be used in a number of installations. Outside of traditional lighting, strip lighting is extensively used in DIY projects or lighted clothing. These strip lights can be powered by a <span class="mw-redirect">USB device, </span>battery pack, or AC converter, which makes them extremely portable.</p><p>The multicolor RGB LED strips by Chef Supply can be used in many different and creative ways:</p><ul><li>In the latest clubs and bars to create a welcoming and modern atmosphere</li><li>In industrial lighting situations to replace less enercy-efficient bulbs</li><li>In office situations to update older lighting fixtures to the latest technology, or to add a more employee-friendly ambiance to an existing lighting situation</li></ul><ul><li>At home, either as a replacement for existing lights or to enhance your currently lighting</li><li>On clothing and in many other new and innovative applications</li><li>The waterproof editions make a great alternative to classy boat lighting, where there is usually limited place and replacing classy light bulbs might be cumbersome</li></ul><p><br/></p><p>Take advantage of this promotion and purchase extra strips now at our <strong>discounted</strong> introductory price! </p><p>Please find some tips and tricks on mounting your LED strips and all important product fact sheets on this page.</p></div></detailText>
+<pictures>
+<link href="Chef%20Corp%20RGBb3a002c3.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/RGB%20LED%20Strip/Chef%20Corp%20RGB%20LED%20Stripe%20Picture"/>
+<link href="Chef%20Corp%20RGB1d431547.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/RGB%20LED%20Strip/Chef%20Corp%20RGB%20LED%20Stripe%20Detail%20Picture"/>
+</pictures>
+<related>
+<link href="Chef%20Corp%20RGB39226920.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/RGB%20LED%20Strip/Chef%20Corp%20RGB%20LED%20Sidebar%20Collection"/>
+</related>
+<authors>
+<link href="../../../Authors/Charlotte%20May%20Person.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Authors/Charlotte%20May%20Person"/>
+</authors>
+</CMArticle>

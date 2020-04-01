@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>solr.search</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>solr-config</artifactId>
+  <packaging>coremedia-application</packaging>
+
+  <description>
+    Configuration of Apache Solr for CoreMedia.
+
+    You can start Solr for local development and testing with the exec-maven-plugin from this POM as follows:
+
+    Prerequisites:
+
+    - Download the official Solr distribution,
+      for example from http://archive.apache.org/dist/lucene/solr/8.4.1/solr-8.4.1.tgz
+    - Extract it into a directory of your choice
+    - Set the environment variable SOLR_SCRIPT to point to the Solr start/stop script
+      in the extracted directory. Choose "bin/solr" for Unix or "bin/solr.cmd" for a Windows shell.
+    - Build this module.
+    - Open a shell and go to this file's directory.
+
+    You can then start and stop Solr, with its admin interface available at http://localhost:40080/solr
+      mvn exec:exec@start-solr
+      mvn exec:exec@stop-solr
+
+    You can additionally start and stop a Solr Slave, with its admin interface available at http://localhost:40081/solr
+      mvn exec:exec@start-solr-slave
+      mvn exec:exec@stop-solr-slave
+
+    Alternatively, you can start a single-node SolrCloud instance with embedded Zookeeper:
+      mvn exec:exec@start-solr-cloud
+      mvn exec:exec@stop-solr-cloud
+
+    However, after the first start of SolrCloud, the config sets must be uploaded manually:
+      $SOLR_SCRIPT zk upconfig -z :40085 -d target/solr-config/configsets/content/conf -n content
+      $SOLR_SCRIPT zk upconfig -z :40085 -d target/solr-config/configsets/cae/conf     -n cae
+      $SOLR_SCRIPT zk upconfig -z :40085 -d target/solr-config/configsets/elastic/conf -n elastic
+  </description>
+
+  <properties>
+    <solr.port>40080</solr.port>
+    <solr.slavePort>40081</solr.slavePort>
+    <solr.stopPort>40090</solr.stopPort>
+    <solr.stopSlavePort>40091</solr.stopSlavePort>
+    <solr.embeddedZookeeperPort>40085</solr.embeddedZookeeperPort>
+    <solr.coreRootDirectory>${project.build.directory}/cores</solr.coreRootDirectory>
+    <solr.slaveCoreRootDirectory>${project.build.directory}/slave-cores</solr.slaveCoreRootDirectory>
+    <solr.tooling.srcConfigsets>${project.basedir}/src/main/app/configsets</solr.tooling.srcConfigsets>
+    <solr.tooling.extensions>${project.build.directory}/extension-configsets</solr.tooling.extensions>
+    <solr.tooling.targetConfigsets>${project.build.directory}/${project.build.finalName}/configsets</solr.tooling.targetConfigsets>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- SOLR BOM IMPORT -->
+      <dependency>
+        <groupId>com.coremedia.cms</groupId>
+        <artifactId>solr-thirdparty-bom</artifactId>
+        <version>${cm.solr.core.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>solr-configuration</artifactId>
+      <type>coremedia-application</type>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>solr-configuration</artifactId>
+      <type>pom</type>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>solr-config-extension-dependencies</artifactId>
+      <version>${project.version}</version>
+      <type>pom</type>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>solr-config</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>fetch-extension-configsets</id>
+            <goals>
+              <goal>unpack-dependencies</goal>
+            </goals>
+            <phase>generate-resources</phase>
+            <configuration>
+              <includeClassifiers>solrconfig</includeClassifiers>
+              <includeTypes>zip</includeTypes>
+              <outputDirectory>${project.build.directory}/extension-configsets</outputDirectory>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>com.coremedia.maven</groupId>
+        <artifactId>coremedia-application-maven-plugin</artifactId>
+        <configuration>
+          <!--exclude the empty lib dir we get from the skinny solr-configuration artifact-->
+          <overlays>
+            <overlay>
+              <groupId>com.coremedia.cms</groupId>
+              <artifactId>solr-configuration</artifactId>
+              <excludes>
+                <exclude>lib</exclude>
+              </excludes>
+            </overlay>
+          </overlays>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.gmaven</groupId>
+        <artifactId>groovy-maven-plugin</artifactId>
+        <executions>
+          <!--
+            POM Order Note:
+            This execution must be declared *behind* the coremedia-application-maven-plugin,
+            because it interferes between the package-inplace and zip-it goals, and there is
+            no other phase between prepare-package and package.  So we must share the
+            prepare-package phase with c-a-m-p#package-inplace and take care of the order.
+          -->
+          <execution>
+            <id>apply-extension-configsets</id>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>execute</goal>
+            </goals>
+            <configuration>
+              <source>${project.basedir}/src/tooling/groovy/applyConfigsetExtensions.groovy</source>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <phase>pre-integration-test</phase>
+            <configuration>
+              <target>
+                <!-- must create empty directories to store Solr cores for "mvn exec:exec@start-..." to avoid errors in log -->
+                <mkdir dir="${solr.coreRootDirectory}" />
+                <mkdir dir="${solr.slaveCoreRootDirectory}" />
+                <!-- write Zookeeper configuration for SolrCloud -->
+                <echo file="${project.build.directory}/solr-config/zoo.cfg" append="true">
+clientPort=${solr.embeddedZookeeperPort}
+dataDir=${project.build.directory}/zoo_data
+                </echo>
+              </target>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <configuration>
+          <executable>${env.SOLR_SCRIPT}</executable>
+          <environmentVariables>
+            <SOLR_PID_DIR>${project.build.directory}</SOLR_PID_DIR>
+          </environmentVariables>
+        </configuration>
+        <executions>
+          <execution>
+            <id>start-solr</id>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <commandlineArgs>start -s ${project.build.directory}/solr-config</commandlineArgs>
+              <environmentVariables>
+                <SOLR_LOGS_DIR>${project.build.directory}/logs</SOLR_LOGS_DIR>
+                <SOLR_OPTS>-DcoreRootDirectory=${solr.coreRootDirectory} -Dsolr.master=true</SOLR_OPTS>
+                <SOLR_PORT>${solr.port}</SOLR_PORT>
+                <STOP_PORT>${solr.stopPort}</STOP_PORT>
+              </environmentVariables>
+            </configuration>
+          </execution>
+          <execution>
+            <id>stop-solr</id>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <commandlineArgs>stop</commandlineArgs>
+              <environmentVariables>
+                <SOLR_PORT>${solr.port}</SOLR_PORT>
+                <STOP_PORT>${solr.stopPort}</STOP_PORT>
+              </environmentVariables>
+            </configuration>
+          </execution>
+          <execution>
+            <id>start-solr-slave</id>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <commandlineArgs>start -s ${project.build.directory}/solr-config</commandlineArgs>
+              <environmentVariables>
+                <SOLR_LOGS_DIR>${project.build.directory}/slave-logs</SOLR_LOGS_DIR>
+                <SOLR_OPTS>-DcoreRootDirectory=${solr.slaveCoreRootDirectory} -Dsolr.slave=true -Dsolr.master.url=http://localhost:${solr.port}/solr</SOLR_OPTS>
+                <SOLR_PORT>${solr.slavePort}</SOLR_PORT>
+                <STOP_PORT>${solr.stopSlavePort}</STOP_PORT>
+              </environmentVariables>
+            </configuration>
+          </execution>
+          <execution>
+            <id>stop-solr-slave</id>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <commandlineArgs>stop</commandlineArgs>
+              <environmentVariables>
+                <SOLR_PORT>${solr.slavePort}</SOLR_PORT>
+                <STOP_PORT>${solr.stopSlavePort}</STOP_PORT>
+              </environmentVariables>
+            </configuration>
+          </execution>
+          <execution>
+            <id>start-solr-cloud</id>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <commandlineArgs>start -c -s ${project.build.directory}/solr-config</commandlineArgs>
+              <environmentVariables>
+                <SOLR_LOGS_DIR>${project.build.directory}/logs</SOLR_LOGS_DIR>
+                <SOLR_OPTS>-DcoreRootDirectory=${solr.coreRootDirectory}</SOLR_OPTS>
+                <SOLR_PORT>${solr.port}</SOLR_PORT>
+                <STOP_PORT>${solr.stopPort}</STOP_PORT>
+              </environmentVariables>
+            </configuration>
+          </execution>
+          <execution>
+            <id>stop-solr-cloud</id>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <configuration>
+              <commandlineArgs>stop</commandlineArgs>
+              <environmentVariables>
+                <SOLR_PORT>${solr.port}</SOLR_PORT>
+                <STOP_PORT>${solr.stopPort}</STOP_PORT>
+              </environmentVariables>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

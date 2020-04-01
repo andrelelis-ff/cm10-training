@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <context:annotation-config/>
+
+  <import resource="classpath:/framework/spring/blueprint-contentbeans.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-page.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-search.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-i18n.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-handlers.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-views.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-links.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-freemarker-views.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-servlet.xml"/>
+  <import resource="classpath:/framework/spring/errorhandling.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-sitemap.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-testUrls.xml"/>
+
+  <bean class="com.coremedia.blueprint.component.cae.CaeBaseComponentConfiguration"/>
+
+  <bean class="com.coremedia.objectserver.beans.ContentBeanPrefetcher">
+    <description>
+      initialize content beans when starting the CAE instance
+    </description>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="contentRepository" ref="contentRepository"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+    <property name="query" value="${blueprint.contentbean.initialization.query}"/>
+    <property name="lenientLogging" value="true"/>
+  </bean>
+
+  <!-- ================== Data views cache capacity configuration ================== -->
+
+  <bean id="blueprintDataviewsCacheCapacityConfigurer" class="com.coremedia.cache.CacheCapacityConfigurer" init-method="init">
+    <property name="cache" ref="cache"/>
+    <property name="capacities">
+      <map>
+        <entry key="com.coremedia.objectserver.dataviews.AssumesIdentity" value="${assumesIdentity.cache.capacity}"/>
+        <entry key="com.coremedia.blueprint.common.contentbeans.Page" value="${page.cache.capacity}"/>
+        <entry key="com.coremedia.blueprint.cae.layout.PageGridImpl" value="${pageGridImpl.cache.capacity}"/>
+        <entry key="com.coremedia.blueprint.cae.layout.ContentBeanBackedPageGridPlacement" value="${contentBeanBackedPageGridPlacement.cache.capacity}"/>
+        <entry key="com.coremedia.cae.aspect.Aspect" value="${aspect.cache.capacity}"/>
+      </map>
+    </property>
+  </bean>
+
+</beans>

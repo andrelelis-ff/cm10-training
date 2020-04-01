@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Settings/Options/Settings" name="Content Creation" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="paths">
+<Struct>
+<LinkProperty Name="AMDocumentAsset" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Assets/" cmexport:path="/Assets/"/>
+<LinkProperty Name="AMPictureAsset" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Assets/" cmexport:path="/Assets/"/>
+<LinkProperty Name="AMVideoAsset" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Assets/" cmexport:path="/Assets/"/>
+<LinkProperty Name="CMSegment" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../System/personalization/segments/" cmexport:path="/System/personalization/segments/"/>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

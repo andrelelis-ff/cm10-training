@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMGallery folder="/Sites/SiteGenesis Global/France/French/Editorial/Slots/Homepage/home-main" name="homepage-main-slideshow" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Editorial/Slots/Homepage/home-main/homepage-main-slideshow.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Slots/Homepage/home-main/homepage-main-slideshow"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Homepage Main Slideshow</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Neuer Inhalt</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+</CMGallery>

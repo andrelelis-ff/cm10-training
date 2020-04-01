@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/SiteGenesis Global/United Kingdom/English/Options/Viewtypes/CMExternalProduct" name="landscape" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<description>Displays a collection in a tiles layout (landscape).</description>
+<icon href="landscape.icon.svg%2Bxml" mimetype="image/svg+xml"/>
+<layout>landscape</layout>
+</CMViewtype>

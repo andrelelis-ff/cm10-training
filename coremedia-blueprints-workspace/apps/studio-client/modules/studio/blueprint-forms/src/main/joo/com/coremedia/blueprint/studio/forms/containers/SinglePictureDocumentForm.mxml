@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpforms:PictureDocumentForm
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Single_Picture_label')}"
+        itemId="pictureDocumentForm"
+        maxCardinality="1"
+        picturePropertyName="{PICTURE_PROPERTY_NAME}"
+        contentType="{config.contentType}"
+        openCollectionViewHandler="{config.openCollectionViewHandler}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.singlePictureDocumentForm";
+
+    /**
+     * A constant for the linklist property name
+     */
+    public static const PICTURE_PROPERTY_NAME:String = "pictures";
+
+    private var config:SinglePictureDocumentForm;
+
+    public native function SinglePictureDocumentForm(config:SinglePictureDocumentForm = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!---
+     The content type to create, optional if the content type value expression is set. Defaults to CMPicture.
+    -->
+    <fx:String id="contentType">CMPicture</fx:String>
+
+    <!---
+     An optional handler, to open the collection view in a different state. If not set, the collection view
+     opens per default in search mode for the corresponding content type.
+     Signature: function(linkListTargetType:ContentType, sourceContent:Content):void
+    -->
+    <fx:Function id="openCollectionViewHandler"/>
+  </fx:Declarations>
+
+</bpforms:PictureDocumentForm>

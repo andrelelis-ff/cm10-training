@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/United States/English/Pictures/Categories" name="Summer street style" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/category/Women Accessories</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1046;y=0;width=1722;height=2666</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=773;y=0;width=1996;height=2666</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=1046;y=0;width=2664;height=2666</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=451;y=0;width=3549;height=2666</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=4000;height=2255</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=0;width=4000;height=2006</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=660;width=4000;height=1603</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=588;width=4000;height=1498</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=838;width=4000;height=999</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.26156941649899396;y1=0;x2=0.6921529175050302;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.193158953722334;y1=0;x2=0.6921529175050302;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.26156941649899396;y1=0;x2=0.9275653923541247;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.11267605633802817;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0;x2=1;y2=0.8459214501510574</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0;x2=1;y2=0.7522658610271903</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.24773413897280966;x2=1;y2=0.8489425981873112</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.22054380664652568;x2=1;y2=0.7824773413897281</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.31419939577039274;x2=1;y2=0.6888217522658611</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Summer street style. Fashion summer girl clothes set, accessories. Trendy sunglasses, gumshoes, top, handbag clutch, necklace hat,flowers. Summer lady. Creative urban overhead summer top view</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>shutterstock_420284560</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2667</height>
+<data md5="40e31bef95743a321d8cb8b39957280f" size="1658610" href="../../../../../../__blob/40e31bef95743a321d8cb8b39957280f.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

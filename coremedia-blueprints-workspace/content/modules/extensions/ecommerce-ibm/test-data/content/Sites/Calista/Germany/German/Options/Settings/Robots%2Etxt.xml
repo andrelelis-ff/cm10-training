@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Calista/Germany/German/Options/Settings" name="Robots.txt" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Options/Settings/Robots%2Etxt.xml" path="/Sites/Calista/United%20States/English/Options/Settings/Robots%2Etxt"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="Robots.txt">
+<Struct>
+<StringProperty Name="User-agent">*</StringProperty>
+<StringListProperty Name="custom-entries">
+<String>Disallow: /</String>
+</StringListProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

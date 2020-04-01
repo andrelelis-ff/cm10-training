@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalChannel folder="/Sites/Aurora B2B Augmentation/Germany/German/Augmentation/B2B_Decorating/B2B_Lighting" name="Lighting" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Augmentation/B2B_Decorating/B2B_Lighting/Lighting.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Augmentation/B2B_Decorating/B2B_Lighting/Lighting"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>b2b-lighting</segment>
+<title>Lighting</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Layouts/Two%20Column%20Layout.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Settings/Pagegrid/Layouts/Two%20Column%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../../../Videos/Lighting%20Category%20Collection.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Videos/Lighting%20Category%20Collection"/>
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/header.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/header"/>
+</Struct>
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../../../Editorial/Personalization/Contract-Specific%20Call-To-Action%20Teaser.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Personalization/Contract-Specific%20Call-To-Action%20Teaser"/>
+<Link xlink:href="coremedia:///cap/resources/../../../Editorial/Products/Modern%20Tripod%20Spotlight.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Modern%20Tripod%20Spotlight"/>
+<Link xlink:href="coremedia:///cap/resources/../../../Editorial/Content/Microsites/The%20Guide%20To%20Perfect%20Lighting/The%2074fa8ff6.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Microsites/The%20Guide%20To%20Perfect%20Lighting/The%20Guide%20to%20Perfect%20Lighting%20Article"/>
+<Link xlink:href="coremedia:///cap/resources/../../../Editorial/Personalization/Contract-Specific%20Hero%20Teaser.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Personalization/Contract-Specific%20Hero%20Teaser"/>
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/sidebar.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/sidebar"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+<pdpPagegrid>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Layouts/Fragment%20PDP.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Settings/Pagegrid/Layouts/Fragment%20PDP"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../../../Navigation/Site-Wide/Elastic%20Social/Elastic%20Social%20Reviews.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Navigation/Site-Wide/Elastic%20Social/Elastic%20Social%20Reviews"/>
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/additional.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/additional"/>
+</Struct>
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../../../Editorial/Content/Lighting%20Related.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Lighting%20Related"/>
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/banner.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/banner"/>
+</Struct>
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/tab.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/tab"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</pdpPagegrid>
+<externalId>ibm:///catalog/category/B2B_Lighting</externalId>
+</CMExternalChannel>

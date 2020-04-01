@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMHTML folder="/Sites/SFRA/France/French/Editorial/Content/Homepage" name="Product tiles on the home page" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Homepage/Product%20tiles%20on%20the%20home%20page.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Homepage/Product%20tiles%20on%20the%20home%20page"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<description></description>
+<data grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><pre xml:space="preserve">&lt;!--VTL $include.template('homepageProductTiles') VTL--&gt;</pre> </div></data>
+</CMHTML>

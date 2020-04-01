@@ -1,0 +1,83 @@
+<content>
+  <folder id="1" name="">
+    <folder id="11" name="Sites">
+      <folder id="111" name="Media">
+        <document id="2" name="standalone" type="CMResourceBundle">
+          <version number="1">
+            <markupProperty name="localizations" url="bundle2.xml" grammar="coremedia-struct-2008"/>
+          </version>
+        </document>
+
+        <document id="4" name="bundle-de-DE-hamburg" type="CMResourceBundle">
+          <version number="1">
+            <linkProperty name="master"><link id="6"/></linkProperty>
+            <stringProperty name="locale" value="de-DE-hamburg"/>
+            <markupProperty name="localizations" url="bundle4.xml" grammar="coremedia-struct-2008"/>
+          </version>
+        </document>
+        <document id="6" name="bundle-de-DE" type="CMResourceBundle">
+          <version number="1">
+            <linkProperty name="master"><link id="8"/></linkProperty>
+            <stringProperty name="locale" value="de-DE"/>
+            <markupProperty name="localizations" url="bundle6.xml" grammar="coremedia-struct-2008"/>
+          </version>
+        </document>
+        <document id="8" name="bundle-de" type="CMResourceBundle">
+          <version number="1">
+            <linkProperty name="master"><link id="14"/></linkProperty>
+            <stringProperty name="locale" value="de"/>
+            <markupProperty name="localizations" url="bundle8.xml" grammar="coremedia-struct-2008"/>
+          </version>
+        </document>
+        <document id="10" name="bundle" type="CMResourceBundle">
+          <version number="1">
+            <markupProperty name="localizations" url="bundle10.xml" grammar="coremedia-struct-2008"/>
+          </version>
+        </document>
+        <document id="12" name="bundle-fr" type="CMResourceBundle">
+          <version number="1">
+            <linkProperty name="master"><link id="10"/></linkProperty>
+            <stringProperty name="locale" value="fr"/>
+            <markupProperty name="localizations" url="bundle12.xml" grammar="coremedia-struct-2008"/>
+          </version>
+        </document>
+        <document id="14" name="bundle-en" type="CMResourceBundle">
+          <version number="1">
+            <linkProperty name="master"><link id="10"/></linkProperty>
+            <stringProperty name="locale" value="en"/>
+            <markupProperty name="localizations" url="bundle14.xml" grammar="coremedia-struct-2008"/>
+          </version>
+        </document>
+
+        <document id="20" name="other-de-DE-hamburg" type="CMResourceBundle">
+          <version number="1">
+            <linkProperty name="master"><link id="22"/></linkProperty>
+            <stringProperty name="locale" value="de-DE-hamburg"/>
+            <markupProperty name="localizations" url="bundle20.xml" grammar="coremedia-struct-2008"/>
+          </version>
+        </document>
+        <document id="22" name="other-de-DE" type="CMResourceBundle">
+          <version number="1">
+            <linkProperty name="master"><link id="24"/></linkProperty>
+            <stringProperty name="locale" value="de-DE"/>
+            <markupProperty name="localizations" url="bundle22.xml" grammar="coremedia-struct-2008"/>
+          </version>
+        </document>
+        <document id="24" name="other-de" type="CMResourceBundle">
+          <version number="1">
+            <linkProperty name="master"><link id="26"/></linkProperty>
+            <stringProperty name="locale" value="de"/>
+            <markupProperty name="localizations" url="bundle24.xml" grammar="coremedia-struct-2008"/>
+          </version>
+        </document>
+        <document id="26" name="other-en" type="CMResourceBundle">
+          <version number="1">
+            <stringProperty name="locale" value="en"/>
+            <markupProperty name="localizations" url="bundle26.xml" grammar="coremedia-struct-2008"/>
+          </version>
+        </document>
+
+      </folder>
+    </folder>
+  </folder>
+</content>

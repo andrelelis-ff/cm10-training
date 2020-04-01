@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/SiteGenesis Global/United Kingdom/English/Options/Viewtypes/CMExternalProduct" name="hero" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<description>Displays content as a hero banner.</description>
+<icon md5="4cc42b3f71547f289936120401bb603c" size="1463" href="../../../../../../../__blob/4cc42b3f71547f289936120401bb603c.blob" mimetype="image/svg+xml"/>
+<layout>hero</layout>
+</CMViewtype>

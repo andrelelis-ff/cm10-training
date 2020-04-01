@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Decorating" name="Decorating Products Category Promotion Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMChannel/square.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Options/Viewtypes/CMChannel/square"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../Products/Aurora%20B2B/Decorating/Orange%20Vase%20Produ7dd67c02.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Decorating/Orange%20Vase%20Product%20Teaser"/>
+<link href="../../Products/Aurora%20B2B/Decorating/Table%20Runner%20whit3e7c2c02.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Decorating/Table%20Runner%20white%20Product%20Teaser"/>
+<link href="../../Products/Aurora%20B2B/Decorating/White%20Vase%20Produce9655b5f.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Decorating/White%20Vase%20Product%20Teaser"/>
+</items>
+</CMCollection>

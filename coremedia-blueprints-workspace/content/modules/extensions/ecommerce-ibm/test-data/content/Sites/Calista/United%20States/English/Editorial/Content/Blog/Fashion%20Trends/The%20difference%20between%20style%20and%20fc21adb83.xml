@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMImageMap folder="/Sites/Calista/United States/English/Editorial/Content/Blog/Fashion Trends" name="The difference between style and fashion Image Map" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="overlay">
+<Struct>
+<BooleanProperty Name="displayTitle">true</BooleanProperty>
+<BooleanProperty Name="displayDefaultPrice">true</BooleanProperty>
+<BooleanProperty Name="displayPicture">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="image-map">
+<Struct>
+<StringProperty Name="id">map-area-1</StringProperty>
+<StringProperty Name="coords">432,937,612,1178</StringProperty>
+<StringProperty Name="alt"/>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">false</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">dark-on-light</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Products/Gusso%20Cloth%20Satchel%20Bag.xml" cmexport:path="/Sites/Calista/United%20States/English/Editorial/Products/Gusso%20Cloth%20Satchel%20Bag"/>
+</Struct>
+<Struct>
+<StringProperty Name="id">map-area-0</StringProperty>
+<StringProperty Name="coords">665,794,941,964</StringProperty>
+<StringProperty Name="alt"/>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">false</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">dark-on-light</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Products/Luigi%20Valenti%20Urban%20Shirt.xml" cmexport:path="/Sites/Calista/United%20States/English/Editorial/Products/Luigi%20Valenti%20Urban%20Shirt"/>
+</Struct>
+</StructListProperty>
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">false</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_"/>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Find your personal style</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Find your personal style</p><p>The difference between style and fashion is quality.</p></div></teaserText>
+<pictures>
+<link href="../../../../Pictures/Blog/Photo%20Shooting%20in%20Prague%20-%20Teasing.xml" path="/Sites/Calista/United%20States/English/Pictures/Blog/Photo%20Shooting%20in%20Prague%20-%20Teasing"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="The%20difference%20between%20style%20and%20fashion.xml" path="/Sites/Calista/United%20States/English/Editorial/Content/Blog/Fashion%20Trends/The%20difference%20between%20style%20and%20fashion"/>
+</target>
+</CMImageMap>

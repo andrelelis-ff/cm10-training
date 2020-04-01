@@ -1,0 +1,158 @@
+// teaser extension
+.cm-teasable {
+  &--video {
+    cursor: pointer;
+  }
+
+  &--video &__caption {
+    // set to the bottom to clear space for play-button
+    top: auto;
+    bottom: 0;
+
+    @include breakpoint("sm-and-up") {
+      bottom: -7%;
+    }
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      bottom: 8%;
+    }
+  }
+}
+
+// shoppable videos
+.#{$cm-shoppable-prefix} {
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  &__video,
+  &__content {
+    //noinspection CssRedundantUnit IE11 fix (percentage and full definition)
+      flex: 1 1 0%;
+  }
+
+  // hide shoppable video teasers by default
+  &__teasers {
+    display: none;
+  }
+
+  &__teaser {
+    height: 100%;
+  }
+
+  &-teaser {
+    position: relative;
+    visibility: visible;
+    width: 100%;
+    height: inherit;
+    color: $cm-shoppable-teaser-color;
+    background: transparent;
+    box-shadow: none;
+
+    &__media {
+      z-index: 1;
+    }
+
+    &__caption {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: $cm-shoppable-teaser-background-color;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: auto;
+      min-height: 35%;
+      padding: 15px;
+
+      .cm-product-info {
+        &__offerprice {
+          color: $cm-shoppable-teaser-specialprice-color;
+        }
+
+        &__title {
+          display: none;
+        }
+      }
+    }
+
+    &__headline {
+      color: $cm-shoppable-teaser-color;
+    }
+
+    &__text {
+      //noinspection CssRedundantUnit IE11 fix (percentage and full definition)
+      flex: 1 1 0%;
+    }
+
+    &__shop-now {
+      @include aspect-ratio-box(1, 1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      pointer-events: none;
+
+      &-button {
+        @include center-absolute();
+        pointer-events: initial;
+      }
+    }
+
+    &__picture-box {
+      @include aspect-ratio-box(1, 1);
+    }
+
+    &__picture {
+      @include stretch-absolute();
+    }
+  }
+
+  &__content,
+  &__player {
+    @include aspect-ratio-box(16, 9);
+  }
+
+  &__still-picture,
+  &__video-element {
+    @include stretch-absolute();
+  }
+
+  @include breakpoints(("sm", landscape) "lg-and-up") {
+    &__video,
+    &__content {
+      //noinspection CssRedundantUnit IE11 fix (percentage and full definition)
+      flex: 3 1 0%;
+    }
+
+    &__video {
+      margin-right: 10px;
+    }
+
+    &__teasers {
+      display: block;
+      //noinspection CssRedundantUnit IE11 fix (percentage and full definition)
+      flex: 1 1 0%;
+      margin-left: 10px;
+    }
+
+    &__teaser {
+      box-sizing: border-box;
+      display: none;
+      background: $cm-shoppable-teaser-background-color;
+      overflow: hidden; // just in case there is more text
+    }
+
+    &__default {
+      display: block;
+    }
+
+    .cm-teasable__play.cm-hidden + .cm-teasable__caption,
+    .cm-hero-banner__caption {
+      display: none;
+    }
+  }
+}

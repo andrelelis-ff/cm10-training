@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Aurora Augmentation/United States/English/Options/Settings/Templates/CMChannel/Landing Page" name="Landing Page" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>to_be_replaced</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../Pagegrid/Layouts/Hero%20Layout.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Layouts/Hero%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+</StructListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Pagegrid/Placements/hero.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/hero"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+</StructListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Pagegrid/Placements/placement1.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/placement1"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+</StructListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Pagegrid/Placements/placement2.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/placement2"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+</StructListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Pagegrid/Placements/placement3.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/placement3"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

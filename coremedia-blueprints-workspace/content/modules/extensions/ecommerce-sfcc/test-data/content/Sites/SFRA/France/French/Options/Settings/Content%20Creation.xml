@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/SFRA/France/French/Options/Settings" name="Content Creation" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Options/Settings/Content%20Creation.xml" path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/Content%20Creation"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="paths">
+<Struct>
+<LinkProperty Name="CMAudio" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/"/>
+<LinkProperty Name="CMArticle" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Articles/" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Articles/"/>
+<LinkProperty Name="CMChannel" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Navigation/" cmexport:path="/Sites/SFRA/France/French/Navigation/"/>
+<LinkProperty Name="CMCollection" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/"/>
+<LinkProperty Name="CMDownload" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Downloads/" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Downloads/"/>
+<LinkProperty Name="CMExternalChannel" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Navigation/" cmexport:path="/Sites/SFRA/France/French/Navigation/"/>
+<LinkProperty Name="CMGallery" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Pictures/" cmexport:path="/Sites/SFRA/France/French/Editorial/Pictures/"/>
+<LinkProperty Name="CMImageMap" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Image%20Maps/" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Image%20Maps/"/>
+<LinkProperty Name="CMMarketingSpot" LinkType="coremedia:///cap/contenttype/Content_"/>
+<LinkProperty Name="CMP13NSearch" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Personalization/" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Personalization/"/>
+<LinkProperty Name="CMPerson" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Authors/" cmexport:path="/Sites/SFRA/France/French/Editorial/Authors/"/>
+<LinkProperty Name="CMPicture" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Pictures/" cmexport:path="/Sites/SFRA/France/French/Editorial/Pictures/"/>
+<LinkProperty Name="CMProduct" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Products/" cmexport:path="/Sites/SFRA/France/French/Editorial/Products/"/>
+<LinkProperty Name="CMProductList" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Products/" cmexport:path="/Sites/SFRA/France/French/Editorial/Products/"/>
+<LinkProperty Name="CMProductTeaser" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Products/" cmexport:path="/Sites/SFRA/France/French/Editorial/Products/"/>
+<LinkProperty Name="CMQueryList" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/"/>
+<LinkProperty Name="CMSelectionRules" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Personalization/" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Personalization/"/>
+<LinkProperty Name="CMSite" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Navigation/" cmexport:path="/Sites/SFRA/France/French/Navigation/"/>
+<LinkProperty Name="CMTeaser" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Banners/" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Banners/"/>
+<LinkProperty Name="CMUserProfile" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Personalization/Profiles/" cmexport:path="/Sites/SFRA/France/French/Options/Personalization/Profiles/"/>
+<LinkProperty Name="CMVideo" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Videos/" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/"/>
+<LinkProperty Name="editorial" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/"/>
+<LinkProperty Name="navigation" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Navigation/" cmexport:path="/Sites/SFRA/France/French/Navigation/"/>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

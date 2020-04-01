@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Startpage" name="Men and Women Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Startpage/Men%20and%20Women%20Teaser.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Startpage/Men%20and%20Women%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Teaser%20Styles/Light"/>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<IntProperty Name="positionY">38</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="align--center p--heading-1">Die neue Kollektion ist da</p></div></teaserText>
+<pictures>
+<link href="../Fashion/Photo%20Shooting%20in%20Prague%20-%20Cool.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/Photo%20Shooting%20in%20Prague%20-%20Cool"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+</target>
+<targets>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="links">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Augmentation/Apparel/Men/Men.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Augmentation/Apparel/Men/Men"/>
+<BooleanProperty Name="callToActionEnabled">true</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Herrenmode</StringProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Augmentation/Apparel/Women/Women.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Augmentation/Apparel/Women/Women"/>
+<BooleanProperty Name="callToActionEnabled">true</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Damenmode</StringProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</targets>
+</CMTeaser>

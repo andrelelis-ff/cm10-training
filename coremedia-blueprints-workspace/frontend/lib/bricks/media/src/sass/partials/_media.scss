@@ -1,0 +1,29 @@
+//default styles
+.#{$cm-media-prefix} {
+  max-width: 100%;
+
+  &--responsive {
+    color: transparent; // hide alt text
+  }
+
+  &--uncropped {
+    object-fit: cover;
+    // for object fit, the video actually needs a specified width/height (top, left, right and bottom is not sufficient).
+    width: 100%;
+    height: 100%;
+  }
+
+  // lazy loading, show spinner
+  &--loading {
+    background-color: $cm-media-loading-background-color;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../img/loader_big.gif");
+  }
+
+  // alternative image
+  &--missing {
+    background-color: $cm-media-missing-background-color;
+    background-size: 50%;
+  }
+}

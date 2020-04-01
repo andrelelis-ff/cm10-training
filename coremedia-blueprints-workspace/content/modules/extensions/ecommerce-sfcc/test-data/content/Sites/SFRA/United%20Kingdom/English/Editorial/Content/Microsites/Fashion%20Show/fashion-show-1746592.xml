@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/United Kingdom/English/Editorial/Content/Microsites/Fashion Show" name="fashion-show-1746592" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=151;width=1819;height=2425</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=147;width=1819;height=1819</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=129;width=1819;height=1364</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=138;width=1819;height=1023</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=155;width=1819;height=682</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.05379746835443038;x2=1;y2=0.7205863246594156</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.04746835443037974;x2=1;y2=0.5475599966591188</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.05063291139240506;x2=1;y2=0.4257016430639593</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.056962025316455694;x2=1;y2=0.30700784643082524</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>https://pixabay.com/en/fashion-show-fashion-catwalk-model-1746592/</copyright>
+<dataUrl></dataUrl>
+<width>1819</width>
+<height>2728</height>
+<data md5="3ce4a96f1c754781e5e90a2123f6f913" size="693869" href="../../../../../../../../__blob/3ce4a96f1c754781e5e90a2123f6f913.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

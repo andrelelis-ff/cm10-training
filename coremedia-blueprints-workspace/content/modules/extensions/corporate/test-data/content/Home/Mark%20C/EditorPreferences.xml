@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EditorPreferences folder="/Home/Mark C" name="EditorPreferences" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<data>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="collection">
+<Struct>
+<StructListProperty Name="savedSearches">
+<Struct>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">Document_</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">list</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">me</StringProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Last edited</StringProperty>
+</Struct>
+<Struct>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">CMPicture</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">thumbnails</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="site">
+<Struct>
+<StringProperty Name="site">PREFERRED</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">anyone</StringProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Pictures</StringProperty>
+</Struct>
+<Struct>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">CMVideo</StringProperty>
+<StringProperty Name="repository">cms</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">thumbnails</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<StringProperty Name="orderByRepo">name asc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">anyone</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Location">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Subject">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="datefilter-panel-modificationdate">
+<Struct>
+<IntProperty Name="modificationdate">-1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="datefilter-panel-publicationdate">
+<Struct>
+<IntProperty Name="publicationdate">-1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="site">
+<Struct>
+<StringProperty Name="site">PREFERRED</StringProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Videos</StringProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="preferredSite">abffe57734feeee</StringProperty>
+<StructProperty Name="dashboard">
+<Struct>
+<StringProperty Name="widgets">[{"widgetTypeId":"com.coremedia.cms.editor.sdk.config.simpleSearchWidget","rowspan":1,"contentType":"CMPicture","column":0},{"widgetTypeId":"editedByMe","rowspan":1,"column":1},{"widgetTypeId":"editedByOthers","rowspan":1,"column":1}]</StringProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="locale">en</StringProperty>
+<LinkListProperty Name="bookmarks" LinkType="coremedia:///cap/contenttype/Content_">
+<Link xlink:href="coremedia:///cap/resources/../../Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/"/>
+<Link xlink:href="coremedia:///cap/resources/../../Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Videos/" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Videos/"/>
+</LinkListProperty>
+<StructProperty Name="workarea">
+<Struct>
+<StructListProperty Name="tabs">
+<Struct>
+<StringProperty Name="type">com.coremedia.cms.editor.sdk.config.startTab</StringProperty>
+</Struct>
+</StructListProperty>
+<IntProperty Name="activeTabIndex">0</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="view">
+<Struct>
+<BooleanProperty Name="showColoredContent">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StringListProperty Name="preferredTypesForCreation">
+<String>CMArticle</String>
+<String>CMTeaser</String>
+<String>CMCollection</String>
+<String>CMPicture</String>
+</StringListProperty>
+</Struct>
+</data>
+</EditorPreferences>

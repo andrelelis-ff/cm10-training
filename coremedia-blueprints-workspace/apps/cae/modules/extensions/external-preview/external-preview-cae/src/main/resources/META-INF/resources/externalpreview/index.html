@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>CoreMedia - External Studio Preview</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/login.css">
+  <script src="scripts/jquery-3.4.1.min.js"></script>
+  <script src="scripts/login.js"></script>
+</head>
+
+<body>
+<div class="cm-external-preview fade-in">
+  <header class="cm-external-preview__icon"></header>
+  <form class="cm-external-preview__form">
+    <fieldset>
+      <legend class="cm-external-preview__title">External Preview</legend>
+      <div class="cm-external-preview__animation-wrapper">
+        <input class="cm-external-preview__input"
+               type="tel"
+               id="previewToken"
+               name="token"
+               maxlength="4"
+               autocomplete="on"
+               pattern="[0-9]{4}"
+               autofocus
+               required
+               onkeyup="this.setAttribute('value', this.value)"
+               value=""/>
+        <label class="cm-external-preview__label"
+               for="previewToken">
+          Key
+        </label>
+      </div>
+      <button class="cm-external-preview__login-button"
+              aria-label="Start"
+              type="button"
+              id="loginButton">
+        START
+        <span id="loginError"
+              class="cm-external-preview__error-text">
+          The key you have entered is invalid.<br/>
+          <span class="cm-external-preview__optional-text">You can find the correct key in the Studio. Please try again.</span>
+        </span>
+      </button>
+    </fieldset>
+  </form>
+</div>
+</body>
+</html>

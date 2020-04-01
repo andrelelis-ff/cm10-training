@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/Germany/German/Pictures" name="Social Media in the Snow" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Pictures/Social%20Media%20in%20the%20Snow.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Social%20Media%20in%20the%20Snow"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=827;y=0;width=782;height=1214</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=723;y=0;width=906;height=1214</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=423;y=0;width=1212;height=1214</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=208;y=0;width=1616;height=1214</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=7;width=2000;height=1129</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=65;width=2000;height=1005</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=320;width=2000;height=803</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=320;width=2000;height=751</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=366;width=2000;height=503</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.41368078175895767;y1=0;x2=0.8045602605863192;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.36156351791530944;y1=0;x2=0.8143322475570033;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.21172638436482086;y1=0;x2=0.8175895765472313;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.10423452768729642;y1=0;x2=0.9120521172638436;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.005376344086021506;x2=1;y2=0.9354838709677419</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.053763440860215055;x2=1;y2=0.8817204301075269</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.26344086021505375;x2=1;y2=0.9247311827956989</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.26344086021505375;x2=1;y2=0.8817204301075269</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3010752688172043;x2=1;y2=0.7150537634408602</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Social Media im Schnee</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Social Media im Schnee</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1214</height>
+<data md5="48de4c6a71d8c060eba6d9576a1e2886" size="469212" href="../../../../../__blob/48de4c6a71d8c060eba6d9576a1e2886.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

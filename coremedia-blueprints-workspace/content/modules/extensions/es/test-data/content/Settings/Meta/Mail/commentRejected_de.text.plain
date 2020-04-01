@@ -1,0 +1,10 @@
+Hallo ${name},
+
+Dein folgender Beitrag vom ${commentDate} wurde nicht veröffentlicht:
+
+"${commentText}"
+
+Bitte halte Dich an die Community Regeln, wenn Du Beiträge schreibst.
+
+Mit freundlichen Grüßen,
+die Redaktion

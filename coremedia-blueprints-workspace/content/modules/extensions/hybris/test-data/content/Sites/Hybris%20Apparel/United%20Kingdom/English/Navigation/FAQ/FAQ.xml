@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Hybris Apparel/United Kingdom/English/Navigation/FAQ" name="FAQ" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>faq</segment>
+<title>FAQ</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Get answers to all your questions.</p></div></teaserText>
+<pictures>
+<link href="../../Pictures/On%20the%20Top.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/On%20the%20Top"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<hidden>1</hidden>
+<hiddenInSitemap>0</hiddenInSitemap>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Layouts/Multi%20Slot%20Layout.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Pagegrid/Layouts/Multi%20Slot%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Snow/What%20is%20Speed-Flying%3F.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/What%20is%20Speed-Flying%3F"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Snow/Is%20Speed%20Riding%20Dangerous%3F.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Is%20Speed%20Riding%20Dangerous%3F"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Snow/The%20Power%20of%20Speed%20Riding.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/The%20Power%20of%20Speed%20Riding"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Snow/Speed%20Riding%20with%20your%20Skis.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Speed%20Riding%20with%20your%20Skis"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Snow/3%20Snowboard%20design%20trends.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/3%20Snowboard%20design%20trends"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Snow/Best%20places%20to%20snowboard%20in%20Austria.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Best%20places%20to%20snowboard%20in%20Austria"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Snow/Speed%20Flying%20for%20Beginners.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Speed%20Flying%20for%20Beginners"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../Options/Viewtypes/CMChannel/left-right.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Viewtypes/CMChannel/left-right"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/placement1.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/placement1"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+</StructListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/placement2.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/placement2"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Hybris%20Apparel%20UK.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Navigation/Hybris%20Apparel%20UK"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../Options/Viewtypes/CMChannel/hero.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Viewtypes/CMChannel/hero"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/placement3.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/placement3"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/FAQ/FAQ%20Article.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/FAQ/FAQ%20Article"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../Options/Viewtypes/CMChannel/hero.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Viewtypes/CMChannel/hero"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/hero.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/hero"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

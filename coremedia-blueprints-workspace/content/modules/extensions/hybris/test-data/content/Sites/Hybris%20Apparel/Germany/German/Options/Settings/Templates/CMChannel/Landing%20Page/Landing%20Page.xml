@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Hybris Apparel/Germany/German/Options/Settings/Templates/CMChannel/Landing Page" name="Landing Page" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../United%20Kingdom/English/Options/Settings/Templates/CMChannel/Landing%20Page/Landing%20Page.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Templates/CMChannel/Landing%20Page/Landing%20Page"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>to-be-replaced</segment>
+<title>to_be_replaced</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../Pagegrid/Layouts/Multi%20Slot%20Layout.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Layouts/Multi%20Slot%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+</StructListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Pagegrid/Placements/placement1.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/placement1"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+</StructListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Pagegrid/Placements/placement2.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/placement2"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Pagegrid/Placements/placement3.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/placement3"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../../../Viewtypes/CMChannel/hero.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Viewtypes/CMChannel/hero"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Pagegrid/Placements/hero.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/hero"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

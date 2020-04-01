@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/Germany/German/Pictures/Categories" name="Handsome man in shirt and sports pants (1)" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Pictures/Categories/Handsome%20man%20in%20shirt%20and%20sports%20pants%20%281%29.xml" path="/Sites/Calista/United%20States/English/Pictures/Categories/Handsome%20man%20in%20shirt%20and%20sports%20pants%20%281%29"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=45;y=0;width=2581;height=4000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=0;width=2670;height=3567</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=236;y=1615;width=2286;height=2286</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=2670;height=2007</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=2670;height=1507</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=0;width=2670;height=1340</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=20;width=2670;height=1067</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=0;width=2670;height=1001</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=60;width=2670;height=667</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=85;y=0;width=2500;height=4000</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=25;width=2670;height=1136</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=0;y=0;width=2667;height=4000</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.017456359102244388;y1=0;x2=0.9825436408977556;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0;x2=1;y2=0.8916666666666667</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.08837209302325581;y1=0.40372670807453415;x2=0.9444448592083815;y2=0.9751552795031055</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0;x2=1;y2=0.5016666666666667</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0;x2=1;y2=0.37666666666666665</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0;x2=1;y2=0.335</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.005;x2=1;y2=0.27166666666666667</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0;x2=1;y2=0.2503125</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.015;x2=1;y2=0.18166666666666667</StringProperty>
+<StringProperty Name="landscape_ratio235x100">position;x1=0;y1=0.006309148264984227;x2=1;y2=0.2903517014564736</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="landscape_ratio235x100">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/category/Men Pants</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.5155763239875389</StringProperty>
+<StringProperty Name="y">0.5166320166320166</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Gut aussehender Mann in Hemd- und Sporthosen</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>shutterstock_348788813</copyright>
+<dataUrl></dataUrl>
+<width>2670</width>
+<height>4000</height>
+<data md5="889245775c28ad2564afab271a127c79" size="360956" href="../../../../../../__blob/889245775c28ad2564afab271a127c79.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

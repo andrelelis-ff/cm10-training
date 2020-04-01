@@ -1,0 +1,22 @@
+[Unit]
+Description=<%= @description %>
+After=syslog.target
+
+[Service]
+Type=simple
+User=<%= @user %>
+Group=<%= @group %>
+UMask=0007
+WorkingDirectory=<%= @working_dir %>
+<%- @pre_start_cmds.sort.each do |cmd| %>
+  ExecStartPre=<%= cmd %>
+<%- end %>
+ExecStart=<%= @java_home %>/bin/java <%= @java_opts %> -Djava.security.egd=file:/dev/./urandom -jar <%= @jar_path %> <%= @boot_opts %>
+<%- @post_start_cmds.sort.each do |cmd| %>
+ExecStartPost=<%= cmd %>
+<%- end %>
+TimeoutStartSec=<%= @service_timeout %>
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target

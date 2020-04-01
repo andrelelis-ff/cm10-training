@@ -1,0 +1,58 @@
+// general
+$cm-font-family-sans-serif: Roboto, Helvetica, Arial, sans-serif;
+$cm-font-family-serif: $cm-font-family-sans-serif;
+
+$cm-font-size-base: 14px;
+$cm-font-size-large: 16px;
+$cm-font-size-normal: 14px;
+$cm-font-size-small: 12px;
+
+$cm-font-size-h1: 26px;
+$cm-font-size-h2: 22px;
+$cm-font-size-h3: 16px;
+$cm-font-size-h4: $cm-font-size-large;
+
+// styleguide colors
+$cm-ci-color: #C30033;
+$cm-standard-component-background-color: #FFFFFF;
+$cm-component-border: 1px solid #000000;
+$cm-text-color: #222222;
+$cm-text-color-light: #FFFFFF;
+
+// footer
+$cm-footer-navigation-headline-block-color: $cm-ci-color;
+$cm-footer-background-color: $cm-ci-color;
+
+// buttons
+$cm-btn-primary-color: $cm-text-color-light;
+$cm-btn-primary-bg: $cm-ci-color;
+$cm-btn-primary-border: $cm-ci-color;
+
+$cm-btn-secondary-color: $cm-text-color-light;
+$cm-btn-secondary-bg: $cm-standard-component-background-color;
+$cm-btn-secondary-border: $cm-ci-color;
+
+$cm-cta-button-color: $cm-text-color;
+$cm-cta-button-background-color: $cm-standard-component-background-color;
+$cm-cta-button-background-color-hover: #96002B;
+$cm-cta-button-background-color-focus-active: #63001c;
+$cm-cta-button-border-color: $cm-ci-color;
+
+$cm-cta-button-secondary-border-color: #969696;
+$cm-cta-button-secondary-background-color-hover: #ACACAC;
+$cm-cta-button-secondary-background-color-focus-active: #969696;
+
+// search
+$cm-search-result-picture-max-width: 200px;
+
+// default-teaser
+$cm-teasable-headline-color: $cm-text-color;
+
+// Elastic Social
+$cm-rating-statistics-color: $cm-ci-color;
+$cm-rating-statistics-background-color: #EFEFEF;
+$cm-notification-color-info-success: #17C37B;
+$cm-notification-color-warning-error: #FB7C00;
+
+// Page Brick
+$cm-no-js-background: $cm-ci-color;

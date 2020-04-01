@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/United Kingdom/English/Editorial/Pictures" name="Flower Dress" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="uploadDone">true</BooleanProperty>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="originReferences">
+</StringListProperty>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/AuroraWMDRS-36</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.542654028436019</StringProperty>
+<StringProperty Name="y">0.10883280757097792</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=44;y=0;width=1289;height=1998</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=0;width=1333;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=0;width=1333;height=567</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=1333;height=1000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=0;width=1333;height=1777</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=1333;height=750</StringProperty>
+<StringProperty Name="quickview_ratio5x6">b;a=0;c=1/crop;x=0;y=0;width=1333;height=1600</StringProperty>
+<StringProperty Name="portrait_ratio5x6">b;a=0;c=1/crop;x=0;y=0;width=1333;height=1600</StringProperty>
+<StringProperty Name="thumbnail">b;a=0;c=1/crop;x=0;y=0;width=1333;height=1777</StringProperty>
+<StringProperty Name="landscape_ratio7x2">b;a=0;c=1/crop;x=0;y=35;width=1333;height=381</StringProperty>
+<StringProperty Name="landscape_ratio5x3">b;a=0;c=1/crop;x=0;y=0;width=1333;height=800</StringProperty>
+<StringProperty Name="portrait_ratio3x5">b;a=0;c=1/crop;x=130;y=0;width=1200;height=2000</StringProperty>
+<StringProperty Name="portrait_ratio1x2">b;a=0;c=1/crop;x=208;y=0;width=1000;height=2000</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x2">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x2">position;x1=0.15639810426540285;y1=0;x2=0.9065856511521246;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Flower Dress</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Flower Dress</alt>
+<copyright>shutterstock_355164566</copyright>
+<dataUrl></dataUrl>
+<width>1333</width>
+<height>2000</height>
+<data md5="0d8fc794365227107856e2178b9f94ed" size="574760" href="../../../../../../__blob/0d8fc794365227107856e2178b9f94ed.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

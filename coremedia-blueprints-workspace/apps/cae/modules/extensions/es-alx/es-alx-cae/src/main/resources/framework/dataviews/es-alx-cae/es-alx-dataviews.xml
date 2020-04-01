@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<dataviews xmlns="http://www.coremedia.com/2004/objectserver/dataviewfactory">
+
+  <dataview appliesTo="com.coremedia.blueprint.analytics.elastic.contentbeans.CMALXPageListImpl">
+    <property name="items" associationType="dynamic"/>
+    <property name="defaultContent" associationType="static"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.analytics.elastic.contentbeans.CMALXEventListImpl">
+    <property name="items" associationType="dynamic"/>
+  </dataview>
+</dataviews>

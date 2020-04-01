@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalChannel folder="/Sites/Hybris Apparel/United Kingdom/English/Augmentation/Categories - categories/Accessoires - 220000" name="Accessoires - 220000" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Accessoires</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../../Pictures/A%20Wool%20Hat.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/A%20Wool%20Hat"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Layouts/Two%20Column%20Layout.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Pagegrid/Layouts/Two%20Column%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../../../Pictures/Accessories.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Accessories"/>
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+<pdpPagegrid>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Layouts/Fragment%20PDP.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Pagegrid/Layouts/Fragment%20PDP"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/header.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/header"/>
+</Struct>
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/product-detail.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/product-detail"/>
+</Struct>
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/banner.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/banner"/>
+</Struct>
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../../../Navigation/AddThis%20Social%20Sharing%20HTML%20Fragment.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Navigation/AddThis%20Social%20Sharing%20HTML%20Fragment"/>
+<Link xlink:href="coremedia:///cap/resources/../../../Navigation/Site-Wide/Elastic%20Social/Elastic%20Social%20Reviews.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Navigation/Site-Wide/Elastic%20Social/Elastic%20Social%20Reviews"/>
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/additional.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/additional"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</pdpPagegrid>
+<externalId>hybris:///catalog/category/220000</externalId>
+</CMExternalChannel>

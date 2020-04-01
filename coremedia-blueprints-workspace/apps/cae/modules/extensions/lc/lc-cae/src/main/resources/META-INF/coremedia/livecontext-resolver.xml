@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <import resource="classpath:/com/coremedia/cae/uapi-services.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-handlers.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/navigation/context/bpbase-default-contextstrategy.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/links/bpbase-urlpathformatting.xml"/>
+
+  <bean id="externalReferenceResolverBase" abstract="true" class="com.coremedia.livecontext.fragment.resolver.ExternalReferenceResolverBase" >
+    <property name="contentRepository" ref="contentRepository"/>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="contextHelper" ref="contextHelper"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+  </bean>
+
+  <bean id="contentCapIdExternalReferenceResolver" parent="externalReferenceResolverBase"
+        class="com.coremedia.livecontext.fragment.resolver.ContentCapIdExternalReferenceResolver"/>
+
+  <bean id="contentPathExternalReferenceResolver" parent="externalReferenceResolverBase"
+        class="com.coremedia.livecontext.fragment.resolver.ContentPathExternalReferenceResolver"/>
+
+  <bean id="contentNumericIdExternalReferenceResolver" parent="externalReferenceResolverBase"
+        class="com.coremedia.livecontext.fragment.resolver.ContentNumericIdExternalReferenceResolver"/>
+
+  <bean id="contentNumericIdWithChannelIdExternalReferenceResolver" parent="externalReferenceResolverBase"
+        class="com.coremedia.livecontext.fragment.resolver.ContentNumericIdWithChannelIdExternalReferenceResolver"/>
+
+  <bean id="contentSeoSegmentExternalReferenceResolver" parent="externalReferenceResolverBase"
+        class="com.coremedia.livecontext.fragment.resolver.ContentSeoSegmentExternalReferenceResolver" />
+
+  <bean id="seoSegmentExternalReferenceResolver" parent="externalReferenceResolverBase"
+        class="com.coremedia.livecontext.fragment.resolver.SeoSegmentExternalReferenceResolver">
+    <property name="navigationSegmentsUriHelper" ref="navigationSegmentsUriHelper"/>
+    <property name="urlPathFormattingHelper" ref="urlPathFormattingHelper"/>
+  </bean>
+
+  <bean id="searchTermExternalReferenceResolver" parent="externalReferenceResolverBase"
+        class="com.coremedia.livecontext.fragment.resolver.SearchTermExternalReferenceResolver">
+    <property name="cache" ref="cache"/>
+    <property name="navigationTreeRelation" ref="navigationTreeRelation"/>
+    <property name="searchResultFactory" ref="resultFactory"/>
+    <property name="segmentPath" value="${livecontext.slp.segmentPath}" />
+    <property name="contentType" value="${searchTermExternalReferenceResolver.contentType:CMChannel}"/>
+    <property name="field" value="${searchTermExternalReferenceResolver.field:keywords}"/>
+    <property name="cacheForSeconds" value="${searchTermExternalReferenceResolver.cacheTime:60}"/>
+  </bean>
+  <bean id="breadcrumbExternalReferenceResolver" parent="externalReferenceResolverBase"
+        class="com.coremedia.livecontext.fragment.resolver.BreadcrumbExternalReferenceResolver">
+    <property name="storefrontUrl" value="${livecontext.storefront.url}" />
+    <property name="lowerCaseSiteName" value="true"/>
+  </bean>
+
+  <bean id="segmentPathResolver" parent="externalReferenceResolverBase"
+        class="com.coremedia.livecontext.fragment.resolver.SegmentPathResolver">
+    <property name="navigationSegmentsUriHelper" ref="navigationSegmentsUriHelper"/>
+    <property name="segmentResolver" ref="segmentResolver"/>
+  </bean>
+
+</beans>

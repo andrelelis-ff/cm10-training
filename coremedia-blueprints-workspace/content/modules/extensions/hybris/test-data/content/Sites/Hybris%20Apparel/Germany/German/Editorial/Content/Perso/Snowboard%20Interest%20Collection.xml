@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Hybris Apparel/Germany/German/Editorial/Content/Perso" name="Snowboard Interest Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Perso/Snowboard%20Interest%20Collection.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Perso/Snowboard%20Interest%20Collection"/>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMChannel/hero.xml" path="/Sites/Hybris%20Apparel/Germany/German/Options/Viewtypes/CMChannel/hero"/>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+<StringProperty Name="callToActionCustomText"/>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../Snow/Speed%20Riding%20with%20your%20Snowboard.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Snow/Speed%20Riding%20with%20your%20Snowboard"/>
+</items>
+</CMCollection>

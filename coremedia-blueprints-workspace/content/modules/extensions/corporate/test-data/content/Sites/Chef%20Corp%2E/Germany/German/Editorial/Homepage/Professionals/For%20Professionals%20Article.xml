@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./Germany/German/Editorial/Homepage/Professionals" name="For Professionals Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Homepage/Professionals/For%20Professionals%20Article.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Professionals/For%20Professionals%20Article"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Für Professionals</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Chef Corp. ist der führende Anbieter für Küchenprofis und Restaurantbesitzer. Unsere engagierten Mitarbeiter arbeitet mit den besten Köchen weltweit die effizientesten Entwürfe und Werkzeuge für Ihre Küche perfekt optimiert werden. </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Chef Corp. ist der führende Anbieter für Küchenprofis und Restaurantbesitzer. Unsere engagierten Mitarbeiter arbeitet mit den besten Köchen weltweit die effizientesten Entwürfe und Werkzeuge für Ihre Küche perfekt optimiert werden. </p> <p><br/></p> </div></detailText>
+<pictures>
+<link href="../../Assets/Pictures/Company/Perfect%20Dinner%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Company/Perfect%20Dinner%20Picture"/>
+</pictures>
+<related>
+<link href="../../Assets/Pictures/Company/Perfect%20Dinner%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Company/Perfect%20Dinner%20Picture"/>
+<link href="../../Assets/Pictures/Company/Perfect%20Dinner%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Company/Perfect%20Dinner%20Picture"/>
+<link href="../../Assets/Pictures/Company/Perfect%20Dinner%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Company/Perfect%20Dinner%20Picture"/>
+</related>
+<authors>
+</authors>
+</CMArticle>

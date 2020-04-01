@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ The structure form of a catalog category. Commerce object based.
+-->
+<editor:DocumentForm
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:livecontext="exml:com.coremedia.livecontext.studio.config"
+        xmlns:ec="exml:com.coremedia.ecommerce.studio.config"
+        title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Tab_structure_title')}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ecommerce.studio.helper.AugmentationUtil;
+    import com.coremedia.ecommerce.studio.model.CatalogObjectPropertyNames;
+    import com.coremedia.livecontext.studio.LivecontextStudioPluginBase;
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.commerceCategoryStructureForm";
+
+    private var config:CommerceCategoryStructureForm;
+    private var catalogObjectExpression:ValueExpression;
+
+    // called by generated constructor code
+    private function __initialize__(config:CommerceCategoryStructureForm):void {
+      catalogObjectExpression = AugmentationUtil.getCatalogObjectExpression(config.bindTo);
+    }
+
+    public native function CommerceCategoryStructureForm(config:CommerceCategoryStructureForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:PropertyFieldGroup
+            title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Category_Website_Navigation')}"
+            itemId="websiteNavigation">
+      <editor:plugins exml:mode="append">
+        <ui:BindVisibilityPlugin bindTo="{LivecontextStudioPluginBase.isContentLedValueExpression(config.bindTo)}"/>
+      </editor:plugins>
+      <editor:items>
+        <livecontext:SelectSubCategoriesRadioGroup itemId="inheritOrSelectRadioGroup"
+                                                   bindTo="{ValueExpressionFactory.createFromValue(false)}"
+                                                   disabled="true"/>
+        <Component height="6"/>
+        <ec:ReadOnlyCatalogLinkPropertyField propertyName="{CatalogObjectPropertyNames.SUB_CATEGORIES}"
+                                             emptyText="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Category_subcategories_emptyText')}"/>
+      </editor:items>
+    </editor:PropertyFieldGroup>
+    <livecontext:CommerceCatalogHierarchyForm/>
+  </editor:items>
+
+</editor:DocumentForm>

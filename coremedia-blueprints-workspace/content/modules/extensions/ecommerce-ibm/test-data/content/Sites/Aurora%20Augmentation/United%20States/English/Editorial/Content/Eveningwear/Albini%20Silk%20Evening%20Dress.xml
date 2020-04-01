@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/Aurora Augmentation/United States/English/Editorial/Content/Eveningwear" name="Albini Silk Evening Dress" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Eveningwear.xml" path="/Settings/Taxonomies/Subject/Eveningwear"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="Blue%20Strapless%20Dress%20%28shuttersto50adc5f4.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Eveningwear/Blue%20Strapless%20Dress%20%28shutterstock_109609103%29"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>ibm:///catalog/product/AuroraWMDRS-13</externalId>
+</CMProductTeaser>

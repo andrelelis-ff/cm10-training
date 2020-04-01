@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora B2B Augmentation/Germany/German/Videos" name="Lighting Category Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20States/English/Videos/Lighting%20Category%20Collection.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Videos/Lighting%20Category%20Collection"/>
+</master>
+<viewtype>
+<link href="../Options/Viewtypes/CMChannel/hero.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Viewtypes/CMChannel/hero"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../Editorial/Content/Microsites/The%20Guide%20To%20Perfect%20Lighting/The%20c0636ce5.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Microsites/The%20Guide%20To%20Perfect%20Lighting/The%20Art%20of%20Perfect%20Lighting%20Teaser"/>
+<link href="Lighting%20Category%20Hero%20Video.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Videos/Lighting%20Category%20Hero%20Video"/>
+</items>
+</CMCollection>

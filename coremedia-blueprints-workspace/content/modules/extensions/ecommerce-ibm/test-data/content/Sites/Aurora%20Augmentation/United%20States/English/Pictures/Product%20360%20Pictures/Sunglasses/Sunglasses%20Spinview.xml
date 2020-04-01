@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSpinner folder="/Sites/Aurora Augmentation/United States/English/Pictures/Product 360 Pictures/Sunglasses" name="Sunglasses Spinview" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/WAC007_0715</String>
+<String>ibm:///catalog/sku/PC_HERMITAGE_CATTY_SUNGLASSES_SKU</String>
+<String>ibm:///catalog/product/PC_HERMITAGE_CATTY_SUNGLASSES</String>
+</StringListProperty>
+<StringListProperty Name="originReferences">
+<String>ibm:///catalog/sku/PC_HERMITAGE_CATTY_SUNGLASSES_SKU</String>
+<String>ibm:///catalog/product/PC_HERMITAGE_CATTY_SUNGLASSES</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Sunglasses Spinview</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Sunglasses Spinview</teaserTitle>
+<pictures>
+<link href="Sunglasses%20Frontshot.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses%20Frontshot"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<sequence>
+<link href="Sunglasses-01.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-01"/>
+<link href="Sunglasses-02.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-02"/>
+<link href="Sunglasses-03.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-03"/>
+<link href="Sunglasses-04.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-04"/>
+<link href="Sunglasses-05.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-05"/>
+<link href="Sunglasses-06.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-06"/>
+<link href="Sunglasses-07.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-07"/>
+<link href="Sunglasses-08.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-08"/>
+<link href="Sunglasses-09.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-09"/>
+<link href="Sunglasses-10.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-10"/>
+<link href="Sunglasses-11.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-11"/>
+<link href="Sunglasses-12.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-12"/>
+<link href="Sunglasses-13.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-13"/>
+<link href="Sunglasses-14.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-14"/>
+<link href="Sunglasses-15.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-15"/>
+<link href="Sunglasses-16.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-16"/>
+<link href="Sunglasses-17.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-17"/>
+<link href="Sunglasses-18.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-18"/>
+<link href="Sunglasses-19.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-19"/>
+<link href="Sunglasses-20.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-20"/>
+<link href="Sunglasses-21.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-21"/>
+<link href="Sunglasses-22.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-22"/>
+<link href="Sunglasses-23.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-23"/>
+<link href="Sunglasses-24.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-24"/>
+<link href="Sunglasses-25.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-25"/>
+<link href="Sunglasses-26.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-26"/>
+<link href="Sunglasses-27.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-27"/>
+<link href="Sunglasses-28.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-28"/>
+<link href="Sunglasses-29.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-29"/>
+<link href="Sunglasses-30.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-30"/>
+<link href="Sunglasses-31.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-31"/>
+<link href="Sunglasses-32.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-32"/>
+<link href="Sunglasses-33.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-33"/>
+<link href="Sunglasses-34.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-34"/>
+<link href="Sunglasses-35.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-35"/>
+<link href="Sunglasses-36.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses-36"/>
+</sequence>
+</CMSpinner>

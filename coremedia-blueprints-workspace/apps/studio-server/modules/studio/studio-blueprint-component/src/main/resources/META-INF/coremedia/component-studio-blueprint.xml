@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.springframework.org/schema/context
+          http://www.springframework.org/schema/context/spring-context.xsd
+          http://www.coremedia.com/2007/coremedia-spring-beans-customization
+          http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <context:component-scan base-package="com.coremedia.blueprint.studio.blueprint.component.boot"/>
+  <context:component-scan base-package="com.coremedia.blueprint.studio.blueprint.component.preview"/>
+
+  <import resource="classpath:/com/coremedia/blueprint/base/uapi/bpbase-uapi-cache-services.xml"/>
+  <import resource="classpath:/framework/spring/mediatransform.xml"/>
+
+  <!-- Must configure the urlSegmentService which comes in via component-bpbase-studio-rest / bpbase-links-services -->
+  <import resource="classpath:/com/coremedia/blueprint/segments/blueprint-segments.xml"/>
+
+  <!--
+
+  Extension Point for Adding Contents to XLIFF: List Bean translate.xliff.translatableExpressions
+
+  Typically used for adding struct entries to XLIFF, where the struct itself is not marked as translatable.
+  For details see CoreMedia Manual/Translation Workflow Configuration.
+
+  -->
+  <customize:append id="blueprint.translate.xliff.translatableExpressions" bean="translate.xliff.translatableExpressions">
+    <list>
+      <value>CMLinkable.localSettings.callToActionCustomText</value>
+    </list>
+  </customize:append>
+
+</beans>

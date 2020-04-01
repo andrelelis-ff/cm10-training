@@ -1,0 +1,151 @@
+.cm-product-asset {
+  position: relative;
+
+  &__media-box {
+    @include aspect-ratio-box(nth($cm-product-assets-slideshow-aspect-ratio, 1), nth($cm-product-assets-slideshow-aspect-ratio, 2));
+  }
+
+  &__media {
+    @include stretch-absolute();
+  }
+
+  &__icon {
+    @include center-absolute();
+    pointer-events: none; // no functionality, just click through
+  }
+
+  .cm-media--uncropped {
+    object-fit: contain;
+  }
+
+  &--portrait {
+    .cm-product-asset__media-box {
+      @include aspect-ratio-box(nth($cm-product-assets-slideshow-aspect-ratio-portrait, 1), nth($cm-product-assets-slideshow-aspect-ratio-portrait, 2));
+    }
+  }
+
+  &--landscape {
+    .cm-product-asset__media-box {
+      @include aspect-ratio-box(nth($cm-product-assets-slideshow-aspect-ratio-landscape, 1), nth($cm-product-assets-slideshow-aspect-ratio-landscape, 2));
+    }
+  }
+}
+
+.cm-product-assets {
+  &__carousel {
+    .cm-product-asset {
+      cursor: pointer;
+    }
+
+    .slick-arrow {
+      width: 10%;
+
+
+      &.slick-disabled {
+        // make sure that the underlying slide is easy to click
+        pointer-events: none;
+      }
+    }
+
+    .slick-track {
+      margin-left: 0;
+    }
+
+    .slick-slide {
+      padding: 2px;
+
+      &--active {
+        background-color: #CA4200;
+        outline-color: transparent;
+      }
+    }
+  }
+
+  /** product assets */
+  &__slideshow ~ &__downloads {
+    margin-top: 20px;
+  }
+}
+
+.cm-product-assets-downloads {
+  &__title {
+    font-weight: normal;
+    display: block;
+    color: #767676;
+    font-size: 1rem;
+
+    @include breakpoint("sm-and-up") {
+      font-size: 1.125rem;
+    }
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__list {
+    list-style: square;
+    margin-left: 0;
+    padding-left: 15px;
+  }
+
+  &__title ~ &__list {
+    margin-top: 6px;
+  }
+
+  &__item {
+    font-size: 0.8rem;
+  }
+}
+
+.cm-zoom-lens {
+  display: none;
+  box-sizing: border-box;
+  position: absolute;
+  border: 1px solid black;
+  background-color: white;
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 999;
+
+  &--active {
+    display: block;
+  }
+}
+
+.cm-zoom-window {
+  display: none;
+  position: absolute;
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  overflow: hidden;
+  z-index: 100;
+  pointer-events: none;
+
+  &::before {
+    content: "";
+    @include stretch-absolute();
+    background-image: url(~@coremedia/brick-media/src/img/loader_big.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0;
+  }
+
+  &--active {
+    display: block;
+  }
+
+  &--loading {
+    &::before {
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+  }
+}
+
+.cm-product-assets-popup .mfp-content {
+  padding: 40px 0;
+  max-width: 500px;
+}

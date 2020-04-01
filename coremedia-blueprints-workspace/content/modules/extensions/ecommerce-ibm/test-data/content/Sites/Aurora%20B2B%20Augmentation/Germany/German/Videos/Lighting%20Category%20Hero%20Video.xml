@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Aurora B2B Augmentation/Germany/German/Videos" name="Lighting Category Hero Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20States/English/Videos/Lighting%20Category%20Hero%20Video.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Videos/Lighting%20Category%20Hero%20Video"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="autoplay">true</BooleanProperty>
+<BooleanProperty Name="loop">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Woman shopping Lights</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="Lighting%20Category%20Hero%20Video%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Videos/Lighting%20Category%20Hero%20Video%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>Ergin Mikhail / Shutterstock 8281840</copyright>
+<dataUrl></dataUrl>
+<height>40</height>
+<data md5="8923791286873afbc01f2f508ebf2576" size="19082499" href="../../../../../__blob/8923791286873afbc01f2f508ebf2576.blob" mimetype="video/mp4"/>
+<asset>
+</asset>
+</CMVideo>

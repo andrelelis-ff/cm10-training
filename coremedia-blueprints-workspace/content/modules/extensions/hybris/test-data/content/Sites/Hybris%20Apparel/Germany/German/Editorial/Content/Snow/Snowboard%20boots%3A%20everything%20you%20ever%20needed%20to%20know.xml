@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/Germany/German/Editorial/Content/Snow" name="Snowboard boots: everything you ever needed to know" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Snow/Snowboard%20boots%3A%20everything%20you%20ever%20ne96227e0e.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Snowboard%20boots%3A%20everything%20you%20ever%20needed%20to%20know"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Snowboard-Stiefel: alles, was Sie jemals wissen musste,</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snowboard.xml" path="/Settings/Taxonomies/Subject/Snowboard"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Equipment.xml" path="/Settings/Taxonomies/Subject/Equipment"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Tips%20and%20Tricks.xml" path="/Settings/Taxonomies/Subject/Tips%20and%20Tricks"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Von Tipps auf häufig gestellte Fragen zu Erklärungen zu Fachbegriffen zu kaufen, hier ist unsere komplette Anleitung zum Snowboardschuhe. </p> <p/> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Von Tipps auf häufig gestellte Fragen zu Erklärungen zu Fachbegriffen zu kaufen, hier ist unsere komplette Anleitung zum Snowboardschuhe. Wenn Sie bereit sind zu kaufen sind, überprüfen diese Saison Must-Have aus Snowboardschuhe. </p> <p class="p--heading-1"> Snowboard-Boot-FAQs </p> <p class="p--heading-2"> Warum brauche ich ein professionelles Boot fitter? </p> <p> Wenn es darum geht, die richtigen Stiefel kommt, gibt es viele Faktoren zu berücksichtigen, wie zum Beispiel, wie erfahren Sie sind, ob Sie lieber Park, Pulver oder Piste, Ihr Gewicht und Ihre Ziele. Ein professionelles Boot-Monteur Ihre Fußform bewerten und Ihre Anforderungen zu besprechen Stiefel mit die richtige Passform, Flex und Leistung zu finden, Ihren Fahrstil und Fähigkeiten gerecht zu werden. </p> <p class="p--heading-2"> Sollte ich meine Liner Wärme geformt? </p> <p> Der Vorteil von formbar Liner ist, dass sie erhitzt und dann auf die Füße durch einen Boot fitter zu geben, eine individuelle Passform geformt werden kann. Das Gießen hilft auch das Brechen-in-Prozess zu beschleunigen. </p> <p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Pictures/Snowboard%20Boots%2002.xml#data" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Snowboard%20Boots%2002"/><br/></p> <p class="p--heading-2"> Muss ich Spezialist Fußbetten / Einlegesohlen benötigen? </p> <p> Einige Stiefel kommen mit anpassbaren Fußbetten oder Einlegesohlen, oder sie können auf Ihre Stiefel hinzugefügt werden. Während dies die Kosten erhöhen können, sind sie zusätzliche Unterstützung zu bieten entworfen, Müdigkeit verringern, Stoßabsorption zu erhöhen und Körperhaltung zu verbessern, so dass Drehen zu erleichtern, sind so lohnt sich der Mehraufwand. Sie sind besonders wichtig für diejenigen, die von spezifischen Problemen wie Plattfüße leiden. </p> <p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Freestyle%20Snow%20Board%20110839.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Products/Freestyle%20Snow%20Board%20110839">Freestyle Snow Board 110839</a><br/></p> <p class="p--heading-2"> Sind Boa und ein Pull-Schnürung Systeme besser als normale Schnürsenkel? </p> <p> Diese werden Sie Zeit sparen, wenn Sie Ihre Schuhe zu tun, aber im Wesentlichen alle Schnürsysteme das gleiche tun, sichern Sie Ihre Füße in den Stiefeln. Also glaube nicht, es als ein Deal Breaker, sondern vorrangig die Stiefel bekommen, die am besten passen. Dann, wenn Sie die Schnürung erhalten Sie auch Lust, es wird das Sahnehäubchen auf dem Kuchen. </p> <p class="p--heading-2"> Was ist der Unterschied zwischen Freeride und Freestyle-Stiefel? </p> <p> Für aggressivere Snowboarden, neigen Freeride Stiefel steifer und unterstützend sein. Freestyle-Stiefel sind in der Regel weicher, besonders von Seite zu Seite, wodurch es leichter zu zwicken heraus Tricks zu machen. </p> </div></detailText>
+<pictures>
+<link href="../../../Pictures/Snowboard%20Boots%20Detail%20Image.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Snowboard%20Boots%20Detail%20Image"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../Authors/Elle%20Quinn%20Person.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Authors/Elle%20Quinn%20Person"/>
+</authors>
+</CMArticle>

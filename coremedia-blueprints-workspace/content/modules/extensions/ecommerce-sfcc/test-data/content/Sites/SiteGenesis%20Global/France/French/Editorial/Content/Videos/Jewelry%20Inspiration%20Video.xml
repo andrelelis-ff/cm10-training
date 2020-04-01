@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/SiteGenesis Global/France/French/Editorial/Content/Videos" name="Jewelry Inspiration Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Videos/Jewelry%20Inspiration%20Video.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Videos/Jewelry%20Inspiration%20Video"/>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMVideo/background.xml" path="/Sites/SiteGenesis%20Global/France/French/Options/Viewtypes/CMVideo/background"/>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">true</BooleanProperty>
+<StringListProperty Name="originReferences">
+</StringListProperty>
+<StringListProperty Name="references">
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Dark.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Teaser%20Styles/Dark"/>
+<IntProperty Name="width">68</IntProperty>
+<IntProperty Name="positionY">33</IntProperty>
+</Struct>
+</StructProperty>
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Inspiration de bijoux</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center"> Inspiration de bijoux </p> <p class="align--center"> Inspirez-vous de nos nouvelles collections </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Profitez de votre style </p> </div></detailText>
+<pictures>
+<link href="../../../Pictures/Jewelry%20Inspiration.xml" path="/Sites/SiteGenesis%20Global/France/French/Pictures/Jewelry%20Inspiration"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="95ddce60be2db32e37535a9b413ca97b" size="1485470" href="../../../../../../../__blob/95ddce60be2db32e37535a9b413ca97b.blob" mimetype="video/mp4"/>
+<asset>
+</asset>
+</CMVideo>

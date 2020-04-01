@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Pictures/Product Pictures/Decorating" name="Three Square Glass Vases with Lotus Flowers Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Pictures/Product%20Pictures/Decorating/Three%20Square%20Glass%20319ba6af.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Decorating/Three%20Square%20Glass%20Vases%20with%20Lotus%20Flowers%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=29;y=0;width=1613;height=2500</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=138;width=1667;height=2225</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=417;width=1667;height=1667</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=625;width=1667;height=1250</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=783;width=1667;height=938</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=917;width=1667;height=667</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=1042;width=1667;height=417</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.0175;y1=0;x2=0.985;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.055;x2=1;y2=0.945</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.16666666666666666;x2=1;y2=0.8333333333333334</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.25;x2=1;y2=0.75</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.31333333333333335;x2=1;y2=0.6883333333333334</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.36666666666666664;x2=1;y2=0.6333333333333333</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.4166666666666667;x2=1;y2=0.5833333333333334</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Three Sqare Glass Vases with Lotus Flowers</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Three Square Glass Vases with Lotus Flowers</alt>
+<copyright>Smith1972 / Shutterstock 319367987</copyright>
+<dataUrl></dataUrl>
+<width>1667</width>
+<height>2500</height>
+<data md5="730072f1c0ec3bb262f50629af21bb9a" size="1721250" href="../../../../../../../__blob/730072f1c0ec3bb262f50629af21bb9a.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

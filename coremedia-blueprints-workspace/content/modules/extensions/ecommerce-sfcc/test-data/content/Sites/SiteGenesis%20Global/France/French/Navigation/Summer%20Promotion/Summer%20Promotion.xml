@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/SiteGenesis Global/France/French/Navigation/Summer Promotion" name="Summer Promotion" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Navigation/Summer%20Promotion/Summer%20Promotion.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Navigation/Summer%20Promotion/Summer%20Promotion"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="pricesInImage">false</BooleanProperty>
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">false</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_"/>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>summer-promotion</segment>
+<title>Promotion d'été</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Bonjour %% FIRSTNAME %% %% LASTNAME %%, </p> <p/> <p> Au fil des années, j'ai appris que ce qui est important dans une robe, c'est la femme qui la porte. Certaines personnes pensent que le luxe est le contraire de la pauvreté. </p> <p> Ce n'est pas. C'est le contraire de la vulgarité. On dit parfois que je suis rebelle et que je fais des choses pour pousser les boutons des gens, mais j'aime bien le défi. </p> <p> Les modes fanent, le style est éternel. Nous ne devons jamais confondre l'élégance avec le snobisme. </p> </div></teaserText>
+<pictures>
+</pictures>
+<notSearchable>1</notSearchable>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<hidden>1</hidden>
+<hiddenInSitemap>1</hiddenInSitemap>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Layouts/PagegridNavigation.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Layouts/PagegridNavigation"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../../Editorial/Content/Navigation/Summer%20Promotion/Palm%20Springs%20Shooting.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/Navigation/Summer%20Promotion/Palm%20Springs%20Shooting"/>
+<Link xlink:href="coremedia:///cap/resources/../../Editorial/Placeholders/Product%20Recommendations.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Editorial/Placeholders/Product%20Recommendations"/>
+<Link xlink:href="coremedia:///cap/resources/../../Editorial/Content/Navigation/Summer%20Promotion/Contact%20Us.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/Navigation/Summer%20Promotion/Contact%20Us"/>
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/footer.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/footer"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

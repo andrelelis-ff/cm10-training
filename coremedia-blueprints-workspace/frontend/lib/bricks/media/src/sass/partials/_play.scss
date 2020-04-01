@@ -1,0 +1,23 @@
+// video play button
+@function playicon($circle-background-color: rgba(0,0,0,0.5), $circle-color: '#FFFFFF', $color: '#FFFFFF') {
+  @return url("../../img/playicon.param.svg?circleBackgroundColor=#{encodeColor($circle-background-color)}&circleColor=#{encodeColor($circle-color)}&color=#{encodeColor($color)}");
+}
+
+.#{$cm-play-button} {
+  width: $cm-play-button-overlay-size;
+  height: $cm-play-button-overlay-size;
+  //avoid icon larger than container, e.g. in pdp
+  max-width: 75%;
+  max-height: 75%;
+  background: transparent playicon($cm-play-button-color) no-repeat;
+  transition: all $cm-play-button-transition-duration ease(in-out-quad);
+
+  // when parent is hovered or focused button changes color and fill
+  &:hover {
+    background: transparent playicon($cm-play-button-hover-color, $cm-play-button-hover-fill, $cm-play-button-hover-fill) no-repeat;
+    transition: all $cm-play-button-transition-duration ease(in-out-quad); // firefox 43 needs it twice
+  }
+  &:focus {
+    background: transparent playicon($cm-play-button-focus-color, $cm-play-button-focus-fill, $cm-play-button-focus-fill) no-repeat;
+  }
+}

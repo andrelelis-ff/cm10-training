@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CommerceChildCategoriesFormBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.livecontext.studio.desktop.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:livecontext="exml:com.coremedia.livecontext.studio.config"
+        xmlns:ec="exml:com.coremedia.ecommerce.studio.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ecommerce.studio.CatalogModel;
+    import com.coremedia.ecommerce.studio.model.CatalogObjectPropertyNames;
+    import com.coremedia.ui.data.ValueExpression;
+
+    import mx.resources.ResourceManager;
+
+    /**
+     * A ValueExpression that indicates whether the property fields should be read only
+     */
+    [Bindable]
+    public var forceReadOnlyValueExpression:ValueExpression;
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.commerceChildCategoriesForm";
+
+    public static const INHERITED_CATEGORIES_ITEM_ID:String = "inheritedCategories";
+
+    public static const SELECTED_CATEGORIES_ITEM_ID:String = "selectedCategories";
+
+    private var config:CommerceChildCategoriesForm;
+    private var stringToBoolean:Function;
+
+    // called by generated constructor code
+    private function __initialize__():void {
+      stringToBoolean = function (value:String):Boolean {
+        return value === 'selectChildrenRadioButton'
+      };
+    }
+
+    public native function CommerceChildCategoriesForm(config:CommerceChildCategoriesForm = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <livecontext:SelectSubCategoriesRadioGroup itemId="inheritOrSelectRadioGroup"
+                                               toValue="{stringToBoolean}"
+                                               bindTo="{isSelectChildrenExpression(config.bindTo)}">
+      <livecontext:plugins exml:mode="append">
+        <editor:BindDisablePlugin bindTo="{config.bindTo}"
+                                  forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+      </livecontext:plugins>
+    </livecontext:SelectSubCategoriesRadioGroup>
+    <Component height="6"/>
+    <ec:ReadOnlyCatalogLinkPropertyField itemId="{INHERITED_CATEGORIES_ITEM_ID}"
+                                         bindTo="{getCategoryExpression(config.bindTo)}"
+                                         propertyName="{CatalogObjectPropertyNames.SUB_CATEGORIES}"
+                                         emptyText="{ResourceManager.getInstance().getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Category_subcategories_emptyText')}">
+      <ec:plugins exml:mode="append">
+        <ui:BindVisibilityPlugin bindTo="{isInheritExpression(config.bindTo)}"/>
+      </ec:plugins>
+    </ec:ReadOnlyCatalogLinkPropertyField>
+    <ec:CatalogLinkPropertyField itemId="{SELECTED_CATEGORIES_ITEM_ID}"
+                                 bindTo="{config.bindTo}"
+                                 forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                 propertyName="{CHILDREN_PROPERTY_NAME}"
+                                 linkTypeNames="{[CatalogModel.TYPE_CATEGORY]}"
+                                 dropAreaText="{ResourceManager.getInstance().getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Category_Link_empty_text')}">
+      <ec:plugins exml:mode="append">
+        <ui:BindVisibilityPlugin bindTo="{isSelectChildrenExpression(config.bindTo)}"/>
+      </ec:plugins>
+    </ec:CatalogLinkPropertyField>
+  </local:items>
+</local:CommerceChildCategoriesFormBase>

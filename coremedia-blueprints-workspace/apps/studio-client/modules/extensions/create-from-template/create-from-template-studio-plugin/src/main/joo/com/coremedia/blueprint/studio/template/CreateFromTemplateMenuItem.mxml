@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuItem xmlns:fx="http://ns.adobe.com/mxml/2009"
+          xmlns:exml="http://www.jangaroo.net/exml/0.8"
+          xmlns="exml:ext.config"
+          xmlns:template="exml:com.coremedia.blueprint.studio.template.config"
+          xmlns:ui="exml:com.coremedia.ui.config"
+          itemId="createFromTemplate">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPlugin')]
+    [ResourceBundle('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPluginSettings')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.util.ContentLocalizationUtil;
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.template.config.createFromTemplateMenuItem";
+
+    private var config:CreateFromTemplateMenuItem;
+
+    public native function CreateFromTemplateMenuItem(config:CreateFromTemplateMenuItem = null);
+
+    /**
+     * Contains the active content.
+     */
+    [Bindable]
+    public var bindTo:ValueExpression;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!--- The content property name of the list to bind the newly created content to. -->
+    <fx:String id="propertyName"/>
+  </fx:Declarations>
+
+  <baseAction>
+    <ui:OpenDialogAction
+            iconCls="{ContentLocalizationUtil.getIconStyleClassForContentTypeName(resourceManager.getString('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPluginSettings', 'doctype'))}"
+            toggleDialog="true"
+            text="{resourceManager.getString('com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPlugin', 'text')}">
+      <ui:dialog>
+        <template:CreateFromTemplateDialog positionFun="{getPosition}"/>
+      </ui:dialog>
+    </ui:OpenDialogAction>
+  </baseAction>
+
+</MenuItem>

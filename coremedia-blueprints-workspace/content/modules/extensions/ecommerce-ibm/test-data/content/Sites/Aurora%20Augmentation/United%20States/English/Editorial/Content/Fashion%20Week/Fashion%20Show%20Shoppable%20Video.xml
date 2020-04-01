@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Aurora Augmentation/United States/English/Editorial/Content/Fashion Week" name="Fashion Show Shoppable Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMVideo/shoppable.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Viewtypes/CMVideo/shoppable"/>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="playerSettings">
+<Struct>
+<BooleanProperty Name="autoplay">true</BooleanProperty>
+<BooleanProperty Name="loop">true</BooleanProperty>
+<BooleanProperty Name="muted">true</BooleanProperty>
+<BooleanProperty Name="hideControls">true</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Fashion Show Black Trend</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Fashion%20Week.xml" path="/Settings/Taxonomies/Subject/Fashion%20Week"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../../Pictures/Product%20Pictures/Women/Dresses/Hermitage%20Pencil%20Dress%203.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Women/Dresses/Hermitage%20Pencil%20Dress%203"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="8cc0894bc7bd2b315442e13788988df6" size="6968969" href="../../../../../../../__blob/8cc0894bc7bd2b315442e13788988df6.blob" mimetype="video/mp4"/>
+<timeLine>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<LinkProperty Name="defaultTarget" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Products/Versatil%20Short%20Sleeved%20Wrap%20Dress.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Versatil%20Short%20Sleeved%20Wrap%20Dress"/>
+<StructListProperty Name="sequences">
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Products/Luigi%20Valenti%20Sleeveless%20Slip%20Dress.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Luigi%20Valenti%20Sleeveless%20Slip%20Dress"/>
+<IntProperty Name="startTimeMillis">2000</IntProperty>
+<IntProperty Name="position">0</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Products/Gusso%20Casual%20Strapless%20Dress.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Gusso%20Casual%20Strapless%20Dress"/>
+<IntProperty Name="startTimeMillis">8000</IntProperty>
+<IntProperty Name="position">2</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Products/Albini%20Straight%20Cocktail%20Dress.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Albini%20Straight%20Cocktail%20Dress"/>
+<IntProperty Name="startTimeMillis">5000</IntProperty>
+<IntProperty Name="position">1</IntProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</timeLine>
+<asset>
+</asset>
+</CMVideo>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Chef Corp./Germany/German/Navigation/Consumers/Aurora B2C" name="Aurora B2C Page" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Navigation/Consumers/Aurora%20B2C/Aurora%20B2C%20Page.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Navigation/Consumers/Aurora%20B2C/Aurora%20B2C%20Page"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>aurora-b2c</segment>
+<title>Aurora B2C</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription>Die Verbraucher finden, Chef Corp. Küche zu Hause Produkte auf dem Aurora-Shop.</htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Consumers.xml" path="/Settings/Taxonomies/Subject/Consumers"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Finden Sie tolle Chef Corp. Küche Produkte für zu Hause auf der Aurora Webshop. </p> </div></teaserText>
+<pictures>
+<link href="../../../Editorial/Assets/Pictures/Consumers/Kitchen%20Mixer%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Consumers/Kitchen%20Mixer%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Layouts/PagegridNavigation.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Pagegrid/Layouts/PagegridNavigation"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../../../Editorial/Homepage/Consumers/Aurora%20B2C/Aurora%20B2C%20Article.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Homepage/Consumers/Aurora%20B2C/Aurora%20B2C%20Article"/>
+</LinkListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../../Options/Viewtypes/CMChannel/full-details.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Viewtypes/CMChannel/full-details"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/Germany/German/Options/Personalization/Profiles" name="Matt Weller Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Options/Personalization/Profiles/Matt%20Weller%20Picture.xml" path="/Sites/Calista/United%20States/English/Options/Personalization/Profiles/Matt%20Weller%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=494;y=0;width=745;height=1152</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=433;y=0;width=862;height=1152</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=290;y=0;width=1152;height=1152</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=95;y=0;width=1537;height=1152</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=91;width=1728;height=970</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=230;width=1728;height=693</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=359;width=1728;height=433</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2857142857142857;y1=0;x2=0.7167919799498746;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2506265664160401;y1=0;x2=0.7493734335839599;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.16791979949874686;y1=0;x2=0.8345864661654135;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.05513784461152882;y1=0;x2=0.9448621553884712;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.07894736842105263;x2=1;y2=0.9210526315789473</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.19924812030075187;x2=1;y2=0.8007518796992481</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.31203007518796994;x2=1;y2=0.6879699248120301</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>BBQ-Nahrungsmittel</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>BBQ-Nahrungsmittel</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="ecb1c5cf7751352d9d4285f44fbbb356" size="361767" href="../../../../../../../__blob/ecb1c5cf7751352d9d4285f44fbbb356.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

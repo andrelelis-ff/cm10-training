@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/SiteGenesis Global/France/French/Options/Settings/Pagegrid/Layouts" name="Category Landingpage Layout" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Options/Settings/Pagegrid/Layouts/Category%20Landingpage%20Layout.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Settings/Pagegrid/Layouts/Category%20Landingpage%20Layout"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<IntProperty Name="colCount">2</IntProperty>
+<IntProperty Name="rowCount">4</IntProperty>
+<StringProperty Name="cssClassName">lc-one-column</StringProperty>
+<StructListProperty Name="items">
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/header.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/header"/>
+<IntProperty Name="row">1</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">10</IntProperty>
+<IntProperty Name="width">100</IntProperty>
+<IntProperty Name="colspan">2</IntProperty>
+</Struct>
+<Struct>
+<BooleanProperty Name="editable">false</BooleanProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/product-detail.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/product-detail"/>
+<IntProperty Name="row">2</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">40</IntProperty>
+<IntProperty Name="width">20</IntProperty>
+<IntProperty Name="colspan">1</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/banner.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/banner"/>
+<IntProperty Name="row">2</IntProperty>
+<IntProperty Name="col">2</IntProperty>
+<IntProperty Name="height">40</IntProperty>
+<IntProperty Name="width">80</IntProperty>
+<IntProperty Name="colspan">1</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/main.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/main"/>
+<IntProperty Name="row">3</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">40</IntProperty>
+<IntProperty Name="width">100</IntProperty>
+<IntProperty Name="colspan">2</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/footer.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/footer"/>
+<IntProperty Name="row">4</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">10</IntProperty>
+<IntProperty Name="width">100</IntProperty>
+<IntProperty Name="colspan">2</IntProperty>
+</Struct>
+</StructListProperty>
+<StringProperty Name="name">SiteGenesis Category Landingpage Layout</StringProperty>
+<StringProperty Name="description">Layout used on the SiteGenesis category landingpages.</StringProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

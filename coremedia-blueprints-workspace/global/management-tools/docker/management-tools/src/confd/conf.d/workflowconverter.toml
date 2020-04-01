@@ -1,0 +1,9 @@
+[template]
+src   = "workflowserver.properties.tmpl"
+dest  = "/coremedia/tools/properties/corem/workflowserver.properties"
+keys  = [
+         "/workflow/server/orbserverhost",
+         "/workflow/server/orbserverport",
+         "/workflow/map/role/translation/manager/role",
+         "/workflow/map/role/administratoren"
+]

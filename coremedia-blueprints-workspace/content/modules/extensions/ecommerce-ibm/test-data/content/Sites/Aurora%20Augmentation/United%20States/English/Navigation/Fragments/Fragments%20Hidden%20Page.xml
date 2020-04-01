@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Aurora Augmentation/United States/English/Navigation/Fragments" name="Fragments Hidden Page" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>innovation</segment>
+<title>Fragments Hidden Page</title>
+<htmlTitle></htmlTitle>
+<keywords>CoreMedia,Demo,Blueprint</keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<notSearchable>1</notSearchable>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+<link href="Augmented%20Pages/Header/Wishlist%20Page.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Augmented%20Pages/Header/Wishlist%20Page"/>
+<link href="Augmented%20Pages/Footer/Customer%20Service/Help%20Page.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Augmented%20Pages/Footer/Customer%20Service/Help%20Page"/>
+<link href="Augmented%20Pages/Footer/Customer%20Service/Conta4d841302.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Augmented%20Pages/Footer/Customer%20Service/Contact%20Us%20Page"/>
+<link href="Augmented%20Pages/Footer/Customer%20Service/Retur785ed0eb.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Augmented%20Pages/Footer/Customer%20Service/Return%20Policy%20Page"/>
+<link href="Augmented%20Pages/Footer/Customer%20Service/Privaf415ccf3.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Augmented%20Pages/Footer/Customer%20Service/Privacy%20Policy%20Page"/>
+<link href="Augmented%20Pages/Footer/Corporate%20Info/About%2b00857a4.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Augmented%20Pages/Footer/Corporate%20Info/About%20Us%20Page"/>
+<link href="Augmented%20Pages/Footer/Corporate%20Info/Contacte1602811.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Augmented%20Pages/Footer/Corporate%20Info/Contact%20Us%20Page"/>
+<link href="Augmented%20Pages/Footer/Corporate%20Info/Store%2f0c2c54c.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Augmented%20Pages/Footer/Corporate%20Info/Store%20Locator%20Page"/>
+<link href="Augmented%20Pages/Footer/Explore/Advanced%20Search%20Page.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Augmented%20Pages/Footer/Explore/Advanced%20Search%20Page"/>
+<link href="Augmented%20Pages/Footer/Explore/Sitemap%20Page.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Augmented%20Pages/Footer/Explore/Sitemap%20Page"/>
+</children>
+<hidden>1</hidden>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Layouts/Two%20Column%20Layout.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Layouts/Two%20Column%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+</LinkListProperty>
+<BooleanProperty Name="locked">false</BooleanProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+</LinkListProperty>
+<BooleanProperty Name="locked">false</BooleanProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/footer.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/footer"/>
+</Struct>
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+</LinkListProperty>
+<BooleanProperty Name="locked">false</BooleanProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/header.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/header"/>
+</Struct>
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+</LinkListProperty>
+<BooleanProperty Name="locked">false</BooleanProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/sidebar.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/sidebar"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

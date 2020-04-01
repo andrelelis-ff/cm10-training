@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Microsites/History of Interior Design" name="Shang Palace main dining hall Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=542;y=0;width=965;height=1496</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=464;y=0;width=1119;height=1496</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=279;y=0;width=1496;height=1496</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=26;y=0;width=1996;height=1496</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=175;width=2048;height=1150</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=423;width=2048;height=820</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=495;width=2048;height=511</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.26448362720403024;y1=0;x2=0.7355163727959698;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.22670025188916876;y1=0;x2=0.7732997481108312;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.13602015113350127;y1=0;x2=0.8664987405541562;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.012594458438287154;y1=0;x2=0.9874055415617129;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.11724137931034483;x2=1;y2=0.8862068965517241</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2827586206896552;x2=1;y2=0.8310344827586207</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3310344827586207;x2=1;y2=0.6724137931034483</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Shang Palace main dining hall</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/><p><br/></p></div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Shang Palace main dining hall</alt>
+<copyright>Ksl.communications/WikiMedia Commons, CC-BY-SA-3.0</copyright>
+<dataUrl></dataUrl>
+<width>2048</width>
+<height>1496</height>
+<data md5="7ccafb8bdb1b97165e076666990a3eb8" size="2305584" href="../../../../../../../../__blob/7ccafb8bdb1b97165e076666990a3eb8.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

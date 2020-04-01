@@ -1,0 +1,11 @@
+.cm-price {
+  display: inline-block;
+
+  &--old {
+    text-decoration: line-through;
+  }
+
+  & + & {
+    margin-left: 4px;
+  }
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Settings/Options/Settings/Content Hub/Connections" name="YouTube" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="connections">
+<Struct>
+<StringProperty Name="connectionId">coremediaYouTube</StringProperty>
+<StringProperty Name="factoryId">youtube</StringProperty>
+<BooleanProperty Name="enabled">false</BooleanProperty>
+<StructProperty Name="settings">
+<Struct>
+<StringProperty Name="displayName">CoreMedia YouTube Channel</StringProperty>
+<StringProperty Name="credentialsJson"/>
+<StringProperty Name="channelId">UC3u29ExYv1263SfUBWnsgdQ</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

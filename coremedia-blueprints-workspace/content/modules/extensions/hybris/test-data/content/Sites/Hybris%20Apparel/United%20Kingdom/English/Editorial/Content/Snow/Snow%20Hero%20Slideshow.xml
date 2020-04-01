@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Snow" name="Snow Hero Slideshow" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<validFrom format="dd.MM.yyyy HH:mm:ss Z">28.08.2016 00:00:00 +0200</validFrom>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Neuer Inhalt</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="Snowboarders%20Group%20Image%20Map.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Snowboarders%20Group%20Image%20Map"/>
+<link href="Speed%20Riding%20Challenge%20in%20Chamonix.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Speed%20Riding%20Challenge%20in%20Chamonix"/>
+<link href="../../../Videos/Snowboarding%20in%20Action.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Videos/Snowboarding%20in%20Action"/>
+</items>
+</CMCollection>

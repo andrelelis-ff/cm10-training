@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Button xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:livecontext="exml:com.coremedia.livecontext.ibm.studio.config"
+        iconAlign="top">
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.livecontext.ibm.studio.config.openManagementCenterButton";
+
+    private var config:OpenManagementCenterButton;
+
+    public native function OpenManagementCenterButton(config:OpenManagementCenterButton = null);
+    ]]></fx:Script>
+
+  <baseAction>
+    <livecontext:OpenManagementCenterAction/>
+  </baseAction>
+
+</Button>

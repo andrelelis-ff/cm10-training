@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/framework/spring/blueprint-handlers.xml"/>
+  <import resource="classpath:/META-INF/coremedia/livecontext-site-services.xml"/>
+  <import resource="classpath:/META-INF/coremedia/livecontext-handler-interceptors.xml"/>
+  <context:component-scan base-package="com.coremedia.livecontext.asset.license"/>
+
+  <!-- These transformations are fallbacks/defaults and are only applied if they are not defined in the site's responsiveImageSettings -->
+  <bean name="productPictureFallback" class="com.coremedia.cap.transform.Transformation">
+    <property name="name" value="portrait_ratio20x31"/>
+    <property name="widthRatio" value="20"/>
+    <property name="heightRatio" value="31"/>
+    <property name="minWidth" value="646"/>
+    <property name="minHeight" value="100"/>
+    <property name="previewWidth" value="400"/>
+  </bean>
+  <bean name="categoryPictureFallback" class="com.coremedia.cap.transform.Transformation">
+    <property name="name" value="landscape_ratio16x9"/>
+    <property name="widthRatio" value="16"/>
+    <property name="heightRatio" value="9"/>
+    <property name="minWidth" value="512"/>
+    <property name="minHeight" value="288"/>
+    <property name="previewWidth" value="400"/>
+  </bean>
+
+  <bean id="catalogPictureHandlerBase" abstract="true" class="com.coremedia.livecontext.asset.CatalogPictureHandlerBase" parent="handlerBase">
+    <property name="siteResolver" ref="liveContextSiteResolver"/>
+    <property name="transformImageService" ref="transformImageService"/>
+  </bean>
+
+  <bean id="productCatalogPictureHandler" class="com.coremedia.livecontext.asset.ProductCatalogPictureHandler" parent="catalogPictureHandlerBase">
+    <description>
+      Handles catalog images for products
+    </description>
+    <property name="pictureFormats">
+      <map>
+        <entry value="portrait_ratio20x31/200/310">
+          <key>
+            <util:constant static-field="com.coremedia.livecontext.asset.CatalogPictureHandlerBase.FORMAT_KEY_THUMBNAIL"/>
+          </key>
+        </entry>
+        <entry value="portrait_ratio20x31/646/1000">
+          <key>
+            <util:constant static-field="com.coremedia.livecontext.asset.CatalogPictureHandlerBase.FORMAT_KEY_FULL"/>
+          </key>
+        </entry>
+      </map>
+    </property>
+  </bean>
+
+  <bean id="categoryCatalogPictureHandler" class="com.coremedia.livecontext.asset.CategoryCatalogPictureHandler" parent="catalogPictureHandlerBase">
+    <description>
+      Handles catalog images for catgories
+    </description>
+    <property name="pictureFormats">
+      <map>
+        <entry value="landscape_ratio16x9/256/144">
+          <key>
+            <util:constant static-field="com.coremedia.livecontext.asset.CatalogPictureHandlerBase.FORMAT_KEY_THUMBNAIL"/>
+          </key>
+        </entry>
+        <entry value="landscape_ratio16x9/512/288">
+          <key>
+            <util:constant static-field="com.coremedia.livecontext.asset.CatalogPictureHandlerBase.FORMAT_KEY_FULL"/>
+          </key>
+        </entry>
+      </map>
+    </property>
+  </bean>
+
+  <bean id="assetCommerceContextInterceptor" class="com.coremedia.livecontext.asset.AssetCommerceContextInterceptor" parent="storeContextInterceptor">
+    <property name="initUserContext" value="false"/>
+    <property name="liveContextSiteResolver" ref="liveContextSiteResolver"/>
+  </bean>
+
+  <bean class="com.coremedia.objectserver.web.MappedInterceptor" id="mappedAssetCommerceContextInterceptor">
+      <property name="interceptor" ref="assetCommerceContextInterceptor"/>
+      <property name="includePatterns">
+        <list>
+          <util:constant static-field="com.coremedia.livecontext.asset.CategoryCatalogPictureHandler.IMAGE_URI_PATTERN"/>
+          <util:constant static-field="com.coremedia.livecontext.asset.CategoryCatalogPictureHandler.IMAGE_URI_PATTERN_FOR_CATALOG"/>
+          <util:constant static-field="com.coremedia.livecontext.asset.ProductCatalogPictureHandler.IMAGE_URI_PATTERN"/>
+          <util:constant static-field="com.coremedia.livecontext.asset.ProductCatalogPictureHandler.IMAGE_URI_PATTERN_FOR_CATALOG"/>
+        </list>
+      </property>
+    </bean>
+
+  <!-- add commerce context interceptors to the beginning -->
+  <customize:prepend id="appendLcAssetManagementInterceptors" bean="handlerInterceptors" order="9999999">
+    <list>
+      <ref bean="mappedAssetCommerceContextInterceptor"/>
+    </list>
+  </customize:prepend>
+
+
+  <customize:prepend id="appendAssetNoCacheHeader" bean="uriToCacheSecondsMapping" enabled="#{!${cae.is.preview}}">
+    <map>
+      <!-- XCatalogPictureHandler do support etags. The options request itself is cached for 5 minutes.
+           The payload is only reloaded, if the picture data realy changed. -->
+      <entry key="#{T(com.coremedia.livecontext.asset.ProductCatalogPictureHandler).IMAGE_URI_PATTERN}" value="300"/>
+      <entry key="#{T(com.coremedia.livecontext.asset.CategoryCatalogPictureHandler).IMAGE_URI_PATTERN}" value="300"/>
+      <entry key="#{T(com.coremedia.livecontext.asset.ProductCatalogPictureHandler).IMAGE_URI_PATTERN_FOR_CATALOG}" value="300"/>
+      <entry key="#{T(com.coremedia.livecontext.asset.CategoryCatalogPictureHandler).IMAGE_URI_PATTERN_FOR_CATALOG}" value="300"/>
+    </map>
+  </customize:prepend>
+
+</beans>

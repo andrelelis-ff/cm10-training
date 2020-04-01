@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Products" name="Method Jacket Women aloe" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Snowboard.xml" path="/Settings/Taxonomies/Subject/Snowboard"/>
+<link href="../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../Pictures/Method%20Jacket%20Women%20aloe.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Method%20Jacket%20Women%20aloe"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>hybris:///catalog/product/95430</externalId>
+</CMProductTeaser>

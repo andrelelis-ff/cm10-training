@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Hybris Apparel/Germany/German/Options/Settings" name="Authors" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Options/Settings/Authors.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Authors"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="authors">
+<Struct>
+<StringProperty Name="name">Sebastian</StringProperty>
+</Struct>
+<Struct>
+<StringProperty Name="name">Oliver</StringProperty>
+</Struct>
+<Struct>
+<StringProperty Name="name">Philip</StringProperty>
+</Struct>
+<Struct>
+<StringProperty Name="name">Delf</StringProperty>
+</Struct>
+<Struct>
+<StringProperty Name="name">Philipp</StringProperty>
+</Struct>
+<Struct>
+<StringProperty Name="name">Ake</StringProperty>
+</Struct>
+<Struct>
+<StringProperty Name="name">Michael</StringProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

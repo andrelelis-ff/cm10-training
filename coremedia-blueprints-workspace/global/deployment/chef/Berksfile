@@ -1,0 +1,15 @@
+source 'https://supermarket.chef.io'
+
+# comment in only for debug purposes
+# solver :ruby, :required
+
+
+excludes = %w(chefignore apache2)
+cwd = File.dirname(__FILE__)
+Dir.glob('*cookbooks').each do |dir|
+  Dir.chdir(File.join(cwd, dir))
+  Dir.glob('*').each do |cookbook_name|
+    cookbook cookbook_name, :path => "#{dir}/#{cookbook_name}" unless excludes.include?(cookbook_name)
+  end
+  Dir.chdir(cwd)
+end

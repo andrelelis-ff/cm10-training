@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Snow" name="What is Speed-Flying?" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>What is Speed-Flying?</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Speed%20Flying.xml" path="/Settings/Taxonomies/Subject/Speed%20Flying"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Speed Flying is a new winter sport created by paraglider pilots and skydivers.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Speed Flying is a new winter sport created by paraglider pilots and skydivers looking for a new sensation and to create a link between gliding by ski and gliding through the air. For a few years, pioneers have used skydiving parachutes or modified kites. Now there are a specially designed SpeedFlying wings and Linking the flight of a glider with the turn of your skis adds a whole new dimension to the descent from a mountain. <br/></p><p>It’s an exhilarating sport which will excite and fascinate both participants and spectators. This new sport has taken the slopes by storm, quickly attracting more and more enthusiasts as the buzz of excitement sweeps across Europe! First in France, where Speed Flying was born, but now also in Switzerland and Austria with Italy and Germany not far behind. As it's an extreme sport in the same league as Skydiving and BASE jumping etc. it is also very dangerous with a high risk of injury or even death. Wings can reach speeds in excess of 100km/h in the hands of the top Speed Flyers but normally are flown between 35 &amp; 70 km/h and unlike Paragliding you don't have a reserve/safety parachute if anything goes wrong.<br/></p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Freestyle%20Snowboard%20108295.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Freestyle%20Snowboard%20108295">Trace Helm white pearl</a><br/></p><p>Two similar sports have been around longer created by skydivers one is called Blade Running, this is where the rider exits an airplane then flys their open parachute down a marked course of Blade shaped flags. The other is Swooping where the pilot again exits an airplane and scores points for tricks and style marks for their controlled swoop landing which is often over water or grass.</p><p class="p--heading-3">Speed-Flying or Speed-Riding ?</p><p>2010 - Now the sport has been around for a few years the terms Speed-Riding and Speed-Flying have become the standard definitions when talking about the individual activities of both the Winter and Summer aspects of the sport.</p><ul><li>Speed-Riding is flying down snow covered slopes with ski's with frequent ground contact.</li><li>Speed-Flying is flying down snow free slopes after foot launching with no ground contact until landing.</li></ul><p>Speed-Flying is also the general definition which covers ALL the activities - both riding and flying and everything in between.</p></div></detailText>
+<pictures>
+<link href="In%20the%20Sky%20Speed%20Gliding.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/In%20the%20Sky%20Speed%20Gliding"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../Authors/Michelle%20Villegas%20Person.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Authors/Michelle%20Villegas%20Person"/>
+</authors>
+</CMArticle>

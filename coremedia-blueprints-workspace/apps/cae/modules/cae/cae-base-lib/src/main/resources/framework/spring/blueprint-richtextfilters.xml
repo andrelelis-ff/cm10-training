@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <import resource="classpath:/com/coremedia/cae/link-services.xml"/>
+  <import resource="classpath:/com/coremedia/id/id-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/contentbean-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/dataview-services.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-services.xml"/>
+
+  <bean id="blueprintRichtextMarkupView" class="com.coremedia.objectserver.view.XmlMarkupView">
+    <description>Predefined programmed view for markup of grammar "coremedia-richtext-1.0"</description>
+    <property name="xmlFilterFactory" ref="richtextMarkupViewRichtextToHtmlFilterFactory"/>
+  </bean>
+
+  <bean id="richtextMarkupViewRichtextToHtmlFilterFactory"
+        class="com.coremedia.blueprint.cae.richtext.filter.ConfigurableRichtextToHtmlFilterFactory">
+    <property name="idProvider" ref="idProvider"/>
+    <property name="linkFormatter" ref="linkFormatter"/>
+    <property name="xmlFiltersBeforeUriFormatter">
+      <list>
+        <ref bean="linkValidationFilter"/>
+        <ref bean="cmDownloadLinkValidationFilter"/>
+        <ref bean="imgCompletionFilter"/>
+        <ref bean="linkEmbedFilter"/>
+        <ref bean="imageFilter"/>
+      </list>
+    </property>
+    <property name="xmlFilters">
+      <list>
+        <ref bean="p2TagFilter"/>
+        <ref bean="appendClassToElementFilter"/>
+        <ref bean="unsurroundFilter"/>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="linkValidationFilter" class="com.coremedia.blueprint.cae.richtext.filter.LinkValidationFilter">
+    <description>
+      Suppresses links to CMDownloads not containing blob data.
+    </description>
+    <property name="idProvider" ref="idProvider"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+    <property name="validationService" ref="validationService"/>
+    <property name="renderLinkText" value="false"/>
+  </bean>
+
+  <bean id="cmDownloadLinkValidationFilter" class="com.coremedia.blueprint.cae.richtext.filter.CMDownloadLinkValidationFilter">
+    <description>
+      Suppresses links to invalid content.
+    </description>
+    <property name="idProvider" ref="idProvider"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+    <property name="validationService" ref="validationService"/>
+  </bean>
+
+  <bean id="imgCompletionFilter" class="com.coremedia.blueprint.cae.richtext.filter.ImgCompletionFilter">
+    <description>
+      Amends missing img attributes.
+    </description>
+    <property name="idProvider" ref="idProvider"/>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+  </bean>
+
+  <bean id="imageFilter" class="com.coremedia.blueprint.cae.richtext.filter.ImageFilter">
+    <description>
+      Enables embedding of images by rendering theses documents with the view "asRichttextEmbed".
+    </description>
+    <property name="contentRepository" ref="contentRepository"/>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+    <property name="validationService" ref="validationService"/>
+  </bean>
+
+  <bean id="linkEmbedFilter" class="com.coremedia.blueprint.cae.richtext.filter.LinkEmbedFilter">
+    <description>
+      Enables embedding of linked documents by rendering theses documents with the view "asRichttextEmbed".
+    </description>
+    <property name="idProvider" ref="idProvider"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+  </bean>
+
+  <bean id="appendClassToElementFilter" class="com.coremedia.blueprint.cae.richtext.filter.AppendClassToElementFilter">
+    <property name="elementList">
+      <map>
+        <entry key="ul" value="rte--list"/>
+        <entry key="ol" value="rte--list"/>
+      </map>
+    </property>
+  </bean>
+
+  <bean id="p2TagFilter" class="com.coremedia.blueprint.cae.richtext.filter.P2TagFilter">
+    <description>
+      Converts p-paragraphs with formatting that has native HTML elements to their
+      respective HTML element.
+    </description>
+    <property name="mapping">
+      <map>
+        <entry key="p--heading-1" value="h1"/>
+        <entry key="p--heading-2" value="h2"/>
+        <entry key="p--heading-3" value="h3"/>
+        <entry key="p--heading-4" value="h4"/>
+        <entry key="p--heading-5" value="h5"/>
+        <entry key="p--heading-6" value="h6"/>
+        <entry key="p--heading-7" value="h7"/>
+        <entry key="p--heading-8" value="h8"/>
+        <entry key="p--standard" value="p"/>
+        <entry key="p--pre" value="pre"/>
+      </map>
+    </property>
+  </bean>
+
+  <bean id="unsurroundFilter" class="com.coremedia.blueprint.cae.richtext.filter.UnsurroundFilter">
+    <description>
+      Removes surrounding divs from coremedia-richtext-1.0.
+    </description>
+  </bean>
+
+</beans>

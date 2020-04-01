@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProduct folder="/Sites/Chef Corp./Germany/German/Products/Cooling and Storage" name="Chef Cold Store CCS80 Freezing Storage Unit Convenience Product" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Products/Cooling%20and%20Storage/Chef%20Cold%20Store%20CCS80%20Freezing%20Sto4a0aa57a.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Cooling%20and%20Storage/Chef%20Cold%20Store%20CCS80%20Freezing%20Storage%20Unit%20Convenience%20Product"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="callToActionCustomText">More Product Information</StringProperty>
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>chef-cold-store-ccs80-freezing-storage</segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+<link href="Cooling%20and%20Storage.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/Cooling%20and%20Storage/Cooling%20and%20Storage"/>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Chef Cold Store CCS80 Comfort Lösungen verbinden Kühlleistung mit Effizienz und Umweltverträglichkeit. </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-3"> Beschreibung </p> <p> Chef Cold Store CCS80 Comfort Lösungen verbinden die Kühlleistung mit Effizienz und Umweltverträglichkeit. <br/> Alle Chef Cold Store-Einheiten sind begehbar; Vollraum-Einheiten werden in einen bereits bestehenden Raum mit unseren flexiblen Ausbau Isolationstechnik ausgestattet. Ein Einfrieren Chef Cold Store ist die richtige Wahl für große Operationen. Je nach Größe und Kühlaggregat können diese Gefriergeräte so tief wie 25 ° F zu gehen (-4 ° C). Chef Cold Stores sind mit dem flexiblen Hochleistungs-Chef Lagerregalsystem (HDCSSS) ausgestattet. </p> <p/> <p class="p--heading-3"> Hauptmerkmale </p> <p> • Edelstahl-Außen- und Innenwände <br/> • Schwere Chef Lagerregalsystem <br/> • Leistungsstarke Kühleinheit auf 25 ° F (4 ° C) <br/> • 6 Jahre Garantie </p> <p/> <p class="p--heading-3"> Technische Daten </p> <p/> <table dir="ltr"><tbody><tr><td> Breite </td><td> 2000 mm - 4500 mm </td></tr><tr><td> Tiefe </td><td> 2000 mm - 4500 mm </td></tr><tr><td> Höhe </td><td> 1800 mm - 2800 mm </td></tr><tr><td> Max. Energieverbrauch </td><td> 1,8 kWh / 24h </td></tr></tbody></table> <p/> </div></detailText>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Products/Cooling%20and%20Storage/Refrigerator%20Room%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Products/Cooling%20and%20Storage/Refrigerator%20Room%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<downloads>
+</downloads>
+<productCode>CC-CCS-80</productCode>
+<productName>Chef Cold Store CCS80 Freezing Storage Unit Convenience</productName>
+</CMProduct>

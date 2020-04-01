@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/United States/English/Pictures/Product Pictures/Women/Dresses" name="Evening Dress Gold" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0;x2=1;y2=0.843956043956044</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0;x2=1;y2=0.6001465201465201</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0;x2=1;y2=0.3750915750915751</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=584;y=0;width=881;height=1365</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=512;y=0;width=1024;height=1365</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=342;y=0;width=1365;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=114;y=0;width=1820;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=2048;height=1152</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=0;width=2048;height=819</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=0;width=2048;height=512</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/sku/AuroraWMDRS-659</String>
+<String>ibm:///catalog/sku/AuroraWMDRS-660</String>
+<String>ibm:///catalog/sku/AuroraWMDRS-661</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Evening Dress Gold</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Evening Dress Gold</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2048</width>
+<height>1365</height>
+<data md5="9855cfe230a7236d1b1f767f25dac29f" size="1242430" href="../../../../../../../../__blob/9855cfe230a7236d1b1f767f25dac29f.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

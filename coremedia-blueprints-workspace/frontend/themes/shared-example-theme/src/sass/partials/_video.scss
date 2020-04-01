@@ -1,0 +1,9 @@
+.cm-play-button {
+  width: $cm-video-play-icon-size;
+  height: $cm-video-play-icon-size;
+  //avoid icon larger than container, e.g. in pdp
+  max-width: 75%;
+  max-height: 75%;
+  background: transparent url("../../img/play-button.svg") center center no-repeat;
+  background-size: contain;
+}

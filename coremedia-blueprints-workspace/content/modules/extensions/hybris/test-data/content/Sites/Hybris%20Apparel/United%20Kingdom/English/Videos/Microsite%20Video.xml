@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Hybris Apparel/United Kingdom/English/Videos" name="Microsite Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Shoppable Video - Watch and Explore</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+<link href="../../../../../Settings/Taxonomies/Subject/Snow%20Action.xml" path="/Settings/Taxonomies/Subject/Snow%20Action"/>
+<link href="../../../../../Settings/Taxonomies/Subject/Snowboard.xml" path="/Settings/Taxonomies/Subject/Snowboard"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Enjoy these fantastic rides - and explore the products as you go along</p></div></detailText>
+<pictures>
+<link href="../Pictures/Snowbord%20Fun.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Snowbord%20Fun"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="b05097c847d16b1590470132a5fcfde3" size="11842878" href="../../../../../__blob/b05097c847d16b1590470132a5fcfde3.blob" mimetype="video/mp4"/>
+<timeLine>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<LinkProperty Name="defaultTarget" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Editorial/Products/Goggles/CM%20Action%20Goggles%20-%20Augmented.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Goggles/CM%20Action%20Goggles%20-%20Augmented"/>
+<StructListProperty Name="sequences">
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Editorial/Products/Cargo%20Pant.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Cargo%20Pant"/>
+<IntProperty Name="startTimeMillis">7000</IntProperty>
+<IntProperty Name="position">0</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Editorial/Products/Freestyle%20Snow%20Board%20110839.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Freestyle%20Snow%20Board%20110839"/>
+<IntProperty Name="startTimeMillis">12000</IntProperty>
+<IntProperty Name="position">2</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Editorial/Products/Trenchtown%20Jacket.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Trenchtown%20Jacket"/>
+<IntProperty Name="startTimeMillis">15000</IntProperty>
+<IntProperty Name="position">3</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Editorial/Products/Goggles/CM%20Action%20Goggles%20-%20Augmented.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Goggles/CM%20Action%20Goggles%20-%20Augmented"/>
+<IntProperty Name="startTimeMillis">20000</IntProperty>
+<IntProperty Name="position">4</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Editorial/Products/Annex%20Pant.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Annex%20Pant"/>
+<IntProperty Name="startTimeMillis">10000</IntProperty>
+<IntProperty Name="position">1</IntProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</timeLine>
+<asset>
+</asset>
+</CMVideo>

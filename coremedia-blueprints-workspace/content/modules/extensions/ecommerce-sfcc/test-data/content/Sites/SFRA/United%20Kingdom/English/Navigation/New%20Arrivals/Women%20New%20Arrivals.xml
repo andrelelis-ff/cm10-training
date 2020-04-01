@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductList folder="/Sites/SFRA/United Kingdom/English/Navigation/New Arrivals" name="Women New Arrivals" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="productList">
+<Struct>
+<IntProperty Name="offset">1</IntProperty>
+<IntProperty Name="maxLength">5</IntProperty>
+<StringProperty Name="selectedFacet">New Arrival</StringProperty>
+<StringProperty Name="orderBy">ORDER_BY_TYPE_PRICE_DSC</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Women</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<externalId>sfcc:///catalog/category/newarrivals-womens</externalId>
+</CMProductList>

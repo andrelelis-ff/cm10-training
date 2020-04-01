@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/United Kingdom/English/Editorial/Pictures" name="Smiling beautiful young woman in sunglasses, black and white striped dress posing in the sunlight" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="uploadDone">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=0;width=2666;height=3555</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=0;width=2666;height=2666</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=2666;height=1999</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=530;width=2666;height=667</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=114;width=2666;height=1500</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=366;width=2666;height=1000</StringProperty>
+<StringProperty Name="quickview_ratio5x6">b;a=0;c=1/crop;x=0;y=0;width=2666;height=3199</StringProperty>
+<StringProperty Name="portrait_ratio5x6">b;a=0;c=1/crop;x=0;y=0;width=2666;height=3199</StringProperty>
+<StringProperty Name="thumbnail">b;a=0;c=1/crop;x=0;y=0;width=2666;height=3555</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.504739336492891</StringProperty>
+<StringProperty Name="y">0.21293375394321767</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Smiling beautiful young woman in sunglasses, black and white striped dress posing in the sunlight</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Dress.xml" path="/Settings/Taxonomies/Subject/Dress"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>shutterstock_411178387</copyright>
+<dataUrl></dataUrl>
+<width>2667</width>
+<height>4000</height>
+<data md5="fa514b2aec9573d7365862a6f9c67dcd" size="763688" href="../../../../../../__blob/fa514b2aec9573d7365862a6f9c67dcd.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

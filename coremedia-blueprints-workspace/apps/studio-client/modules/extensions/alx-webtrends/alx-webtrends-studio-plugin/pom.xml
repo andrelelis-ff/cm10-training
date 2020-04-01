@@ -1,0 +1,65 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>studio-client.alx-webtrends</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>alx-webtrends-studio-plugin</artifactId>
+  <packaging>swc</packaging>
+
+  <description>Webtrends Plugin for the CoreMedia Studio</description>
+
+  <properties>
+    <coremedia.project.extension.for>studio-dynamic</coremedia.project.extension.for>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>alx-studio-plugin</artifactId>
+      <version>${project.version}</version>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>core-icons</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>editor-components</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>ui-components</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>net.jangaroo</groupId>
+      <artifactId>ext-as</artifactId>
+      <type>swc</type>
+    </dependency>
+   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>net.jangaroo</groupId>
+        <artifactId>jangaroo-maven-plugin</artifactId>
+        <version>${jangaroo.version}</version>
+        <extensions>true</extensions>
+        <configuration>
+          <namespaces>
+            <namespace>
+              <uri>exml:com.coremedia.blueprint.studio.config.webtrends</uri>
+            </namespace>
+          </namespaces>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

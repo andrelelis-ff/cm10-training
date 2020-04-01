@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/SFRA/France/French/Editorial/Content/Videos" name="Red Satin Evening Gown Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Videos/Red%20Satin%20Evening%20Gown%20Video.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Videos/Red%20Satin%20Evening%20Gown%20Video"/>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMVideo/shoppable.xml" path="/Sites/SFRA/France/French/Options/Viewtypes/CMVideo/shoppable"/>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>sfcc:///catalog/product/25589481</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Robe de soirée satin rouge</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../Pictures/Red%20Satin%20Evening%20Gown%20Picture.xml" path="/Sites/SFRA/France/French/Editorial/Pictures/Red%20Satin%20Evening%20Gown%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="915c0b421eec321fecb9f02dc4ce4545" size="597796" href="../../../../../../../__blob/915c0b421eec321fecb9f02dc4ce4545.blob" mimetype="video/mp4"/>
+<timeLine>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<LinkProperty Name="defaultTarget" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Microsites/Fashion%20Show/Product%20Teaser%2004.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Microsites/Fashion%20Show/Product%20Teaser%2004"/>
+</Struct>
+</timeLine>
+<asset>
+</asset>
+</CMVideo>

@@ -1,0 +1,17 @@
+//
+// Create a caption with absolute position from bottom
+// @param: {string} distance to bottom, default is 10%
+//
+// @example:
+// .wrapper {
+//   @include caption();
+// }
+//
+@mixin caption($bottom: 10%) {
+  position: absolute;
+  // do not collide with any paddings or borders
+  box-sizing: border-box;
+  width: 100%;
+  bottom: $bottom;
+  text-align: center;
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Category Pictures/Fasteners" name="Nuts" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/category/Nuts</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=95;y=0;width=129;height=200</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=85;y=0;width=150;height=200</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=60;y=0;width=200;height=200</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=27;y=0;width=267;height=200</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=10;width=320;height=180</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=36;width=320;height=128</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=60;width=320;height=80</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Nuts</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Nuts</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>320</width>
+<height>200</height>
+<data md5="7b79e64585aee270fb3c6d472c65ca2f" size="37835" href="../../../../../../../__blob/7b79e64585aee270fb3c6d472c65ca2f.blob" mimetype="image/png"/>
+<asset>
+</asset>
+</CMPicture>

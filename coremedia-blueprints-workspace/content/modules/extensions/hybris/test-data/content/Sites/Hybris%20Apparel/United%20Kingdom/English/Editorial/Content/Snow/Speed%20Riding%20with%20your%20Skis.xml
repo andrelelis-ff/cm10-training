@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Snow" name="Speed Riding with your Skis" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Speed Riding with your Skis</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Speed riding gives you the rush resembling rush proximity wingsuit flying and speed hang gliding.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Speed riding gives you the rush resembling rush proximity wingsuit flying and speed hang gliding, but with some of its own sweets and treats of adrenaline candies.</p><p>In Speed riding you can go as fast as 80 knots (144 km/h), and its canopy maneuverability and small size allows you to go inside very tight places with it. The beauty of it is that you can combine skiing with flying sharpens the feeling of freedom even more.</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Goggles/CM%20Action%20Goggles%20-%20Augmented.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Goggles/CM%20Action%20Goggles%20-%20Augmented">CM Action Goggles 2.0</a><br/></p><p>Imagine yourself skiing on a slope, increasing your speed until at some point you are lifting up from the snow. Now imagine that you are coming fast and low above the snow, there is no way you can pass above the surface, you are too low, the skies touch the snow, the body weight transfers from the harness to the legs…you are skiing at about 90 km/h… right out of cliff…then you are airborne again, maneuvering yourself to the next adrenaline dose.</p><p>But the most exiting thing in this extreme sport is the aggressive maneuverability of the small Speed Wings in the proximity to the changing terrain. You can pull pretty decent G’s with it. One of the biggest adrenaline rush is when you succeeding to perfectly control with aggression yourself in a demanding surroundings with a perfect balance… this is the purest form of adrenaline, this is why we do all these sorts of extreme sports… To be in a place or a situation that normal people can’t, challenge the lows of physics. This is the secret that they will never understand and Speed riding opens you to it all and more…</p></div></detailText>
+<pictures>
+<link href="../../../Pictures/Man%20skiing%20downhill.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Man%20skiing%20downhill"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../Authors/Joshua%20Campos%20Person.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Authors/Joshua%20Campos%20Person"/>
+</authors>
+</CMArticle>

@@ -1,0 +1,21 @@
+.cm-reviews, .cm-comments {
+  .cm-button {
+    @include sfra-primary-button();
+
+    &--secondary {
+      @include sfra-secondary-button();
+    }
+  }
+
+  .cm-reviews {
+    &__headline {
+      font-size: 2rem;
+    }
+  }
+
+  .cm-readmore__button {
+    &-more, &-less {
+      background: transparent;
+    }
+  }
+}

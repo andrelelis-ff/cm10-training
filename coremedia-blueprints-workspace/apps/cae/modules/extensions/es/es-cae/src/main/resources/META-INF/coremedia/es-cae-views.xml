@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <description>
+    View registration.
+  </description>
+
+  <import resource="classpath:/com/coremedia/cae/view-freemarker-services.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-views.xml"/>
+
+  <customize:append id="addAuthenticationStatePredicate" bean="dynamicIncludePredicates">
+    <list>
+      <bean id="authenticationStatePrediate" class="com.coremedia.blueprint.elastic.social.cae.view.ESDynamicIncludePredicate"/>
+    </list>
+  </customize:append>
+
+  <customize:append id="elasticSocialPluginProgrammedViewsCustomizer" bean="blueprintProgrammedViews" order="100">
+    <map>
+      <entry key="com.coremedia.blueprint.elastic.social.cae.controller.HandlerInfo" value-ref="handlerInfoJsonView"/>
+    </map>
+  </customize:append>
+
+  <customize:append id="elasticSocialFreemarkerSharedVariablesCustomizer" bean="freemarkerSharedVariables">
+    <map>
+      <entry key="elasticSocialFreemarkerFacade" value-ref="elasticSocialFreemarkerFacade"/>
+    </map>
+  </customize:append>
+
+  <customize:append id="esFreemarkerConfigurerAutoImportsCustomizer" bean="freemarkerConfigurer" property="autoImports">
+    <map>
+      <entry key="es" value="/lib/coremedia.com/blueprint/elasticsocial.ftl"/>
+    </map>
+  </customize:append>
+
+</beans>

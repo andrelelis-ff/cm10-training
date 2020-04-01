@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util
+                                 http://www.springframework.org/schema/util/spring-util.xsd">
+
+  <import resource="classpath:/framework/spring/blobstore/am/blobstore.xml"/>
+
+  <util:map id="removeOverride" key-type="java.lang.String" value-type="java.lang.Boolean">
+    <description>
+      Override removal behavior for a given rendition. Setting this to false might be used if the given
+      rendition is required on the download portal and must not be excluded upon publication.
+    </description>
+    <entry key="thumbnail" value="false"/>
+  </util:map>
+
+  <bean id="assetPublishInterceptor" class="com.coremedia.blueprint.assets.server.AssetPublishInterceptor">
+    <description>
+      A publish interceptor that makes sure to remove blobs on publication
+      unless the blobs are needed for the download portal.
+    </description>
+
+    <property name="type" value="AMAsset"/>
+    <property name="interceptingSubtypes" value="true"/>
+    <property name="assetMetadataProperty" value="metadata"/>
+    <property name="removeDefault" value="true"/>
+    <property name="removeOverride" ref="removeOverride"/>
+  </bean>
+</beans>

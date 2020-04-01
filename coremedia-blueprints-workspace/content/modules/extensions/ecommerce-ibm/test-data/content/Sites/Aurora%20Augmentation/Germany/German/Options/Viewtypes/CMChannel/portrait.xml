@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/Aurora Augmentation/Germany/German/Options/Viewtypes/CMChannel" name="portrait" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Options/Viewtypes/CMChannel/portrait.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Viewtypes/CMChannel/portrait"/>
+</master>
+<description>Zeigt den Inhalt im Hochformat an.</description>
+<icon href="portrait.icon.svg%2Bxml" mimetype="image/svg+xml"/>
+<layout>portrait</layout>
+</CMViewtype>

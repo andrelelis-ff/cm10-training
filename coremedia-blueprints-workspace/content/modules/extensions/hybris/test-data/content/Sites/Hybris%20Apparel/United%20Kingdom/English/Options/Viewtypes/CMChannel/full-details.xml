@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/Hybris Apparel/United Kingdom/English/Options/Viewtypes/CMChannel" name="full-details" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<description>Displays content with full detail, e.g. as a full article with text, instead of a banner.</description>
+<icon href="full-details.icon.svg%2Bxml" mimetype="image/svg+xml"/>
+<layout>full-details</layout>
+</CMViewtype>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Pictures/Product Pictures/Decorating/Lighting" name="Sphere Ceiling Pendant Light Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Pictures/Product%20Pictures/Decorating/Lighting/Sphere%20Ceiling54f89d07.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Decorating/Lighting/Sphere%20Ceiling%20Pendant%20Light%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=510;y=0;width=1837;height=2848</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=360;y=0;width=2136;height=2848</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=580;y=580;width=1661;height=1661</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=352;y=607;width=2180;height=1635</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=519;width=2848;height=1600</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=817;width=2848;height=1143</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=1072;width=2848;height=712</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.17901234567901234;y1=0;x2=0.8240740740740741;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.12654320987654322;y1=0;x2=0.8765432098765432;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.2037037037037037;y1=0.2037037037037037;x2=0.7870370370370371;y2=0.7870370370370371</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.12345679012345678;y1=0.21296296296296297;x2=0.8888888888888888;y2=0.7870370370370371</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.18209876543209877;x2=1;y2=0.7438271604938271</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.28703703703703703;x2=1;y2=0.6882716049382716</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3765432098765432;x2=1;y2=0.6265432098765432</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_HLG028_280104</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Sphere Ceiling Pendant Light</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Sphere Ceiling Pendant Light</alt>
+<copyright>Vodolazky Victor / Shutterstock 392156014</copyright>
+<dataUrl></dataUrl>
+<width>2848</width>
+<height>2848</height>
+<data md5="cb7ef00e9529759d9d27ff9caa2b6f81" size="3980580" href="../../../../../../../../__blob/cb7ef00e9529759d9d27ff9caa2b6f81.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

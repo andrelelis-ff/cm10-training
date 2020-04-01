@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Lighting" name="Lighting Products Promotion Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMChannel/portrait.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Options/Viewtypes/CMChannel/portrait"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED5ed0ab2.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED%20Strip%20Product%20Teaser"/>
+<link href="../../Products/Aurora%20B2B/Lighting/Compact%20Fluorescent%28c216b1d.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Compact%20Fluorescent%20Bulb%20%20Product%20Teaser"/>
+<link href="Lighting%20Products%20Personalized%20Teaser.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Lighting/Lighting%20Products%20Personalized%20Teaser"/>
+</items>
+</CMCollection>

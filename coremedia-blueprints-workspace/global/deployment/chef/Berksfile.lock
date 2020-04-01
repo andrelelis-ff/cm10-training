@@ -1,0 +1,116 @@
+DEPENDENCIES
+  apt
+    path: thirdparty-cookbooks/apt
+  blueprint
+    path: cookbooks/blueprint
+  blueprint-base
+    path: cookbooks/blueprint-base
+  blueprint-cmcc
+    path: cookbooks/blueprint-cmcc
+  blueprint-dev-tooling
+    path: cookbooks/blueprint-dev-tooling
+  blueprint-mongodb
+    path: cookbooks/blueprint-mongodb
+  blueprint-mysql
+    path: cookbooks/blueprint-mysql
+  blueprint-postgresql
+    path: cookbooks/blueprint-postgresql
+  blueprint-proxy
+    path: cookbooks/blueprint-proxy
+  blueprint-solr
+    path: cookbooks/blueprint-solr
+  blueprint-spring-boot
+    path: cookbooks/blueprint-spring-boot
+  blueprint-tools
+    path: cookbooks/blueprint-tools
+  blueprint-yum
+    path: cookbooks/blueprint-yum
+  chef-sugar
+    path: thirdparty-cookbooks/chef-sugar
+  coremedia_maven
+    path: coremedia-cookbooks/coremedia_maven
+  mongodb3
+    path: thirdparty-cookbooks/mongodb3
+  mysql
+    path: thirdparty-cookbooks/mysql
+  packagecloud
+    path: thirdparty-cookbooks/packagecloud
+  postgresql
+    path: thirdparty-cookbooks/postgresql
+  runit
+    path: thirdparty-cookbooks/runit
+  ulimit
+    path: thirdparty-cookbooks/ulimit
+  user
+    path: thirdparty-cookbooks/user
+  yum
+    path: thirdparty-cookbooks/yum
+  yum-centos
+    path: thirdparty-cookbooks/yum-centos
+  yum-pgdg
+    path: thirdparty-cookbooks/yum-pgdg
+
+GRAPH
+  apache2 (7.1.1)
+  apt (7.1.1)
+  blueprint (1.0.0)
+  blueprint-base (1.0.0)
+    ulimit (~> 1.0.0)
+  blueprint-cmcc (1.0.0)
+    apache2 (~> 7.1.0)
+    blueprint-base (>= 0.0.0)
+    blueprint-proxy (>= 0.0.0)
+  blueprint-dev-tooling (1.0.0)
+    blueprint-base (>= 0.0.0)
+    blueprint-mongodb (>= 0.0.0)
+    blueprint-mysql (>= 0.0.0)
+    blueprint-postgresql (>= 0.0.0)
+    blueprint-tools (>= 0.0.0)
+    blueprint-yum (>= 0.0.0)
+    chef-sugar (~> 5.0.4)
+  blueprint-mongodb (1.0.0)
+    mongodb3 (~> 5.3.0)
+    ulimit (~> 1.0.0)
+  blueprint-mysql (1.0.0)
+    blueprint-base (>= 0.0.0)
+    mysql (~> 8.5.1)
+  blueprint-postgresql (1.0.0)
+    blueprint-base (>= 0.0.0)
+    blueprint-yum (>= 0.0.0)
+    postgresql (~> 7.1.4)
+    yum-pgdg (~> 3.0.0)
+  blueprint-proxy (1.0.0)
+    apache2 (~> 7.1.0)
+    blueprint-base (>= 0.0.0)
+    blueprint-spring-boot (>= 0.0.0)
+  blueprint-solr (1.0.0)
+    blueprint-base (>= 0.0.0)
+    coremedia_maven (~> 3.0.0)
+    ulimit (~> 1.0.0)
+  blueprint-spring-boot (0.1.0)
+    blueprint-base (>= 0.0.0)
+    chef-sugar (~> 5.0.4)
+    coremedia_maven (~> 3.0.1)
+  blueprint-tools (1.0.0)
+    blueprint-base (>= 0.0.0)
+    coremedia_maven (~> 3.0.1)
+  blueprint-yum (1.0.0)
+    yum (~> 5.1.0)
+    yum-centos (~> 3.1.0)
+  chef-sugar (5.0.4)
+  coremedia_maven (3.0.2)
+  mongodb3 (5.3.0)
+    apt (>= 0.0.0)
+    runit (~> 1.7.0)
+    user (>= 0.0.0)
+    yum (>= 0.0.0)
+  mysql (8.5.1)
+  packagecloud (1.0.1)
+  postgresql (7.1.4)
+  runit (1.7.8)
+    packagecloud (>= 0.0.0)
+  ulimit (1.0.0)
+  user (0.7.0)
+  yum (5.1.0)
+  yum-centos (3.1.0)
+  yum-pgdg (3.0.0)

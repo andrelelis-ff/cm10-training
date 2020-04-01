@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalPage folder="/Sites/Aurora B2B Augmentation/United States/English/Navigation/Fragments/Augmented Pages/Footer/Customer Service" name="Quick Order Page" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Quick Order</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<header>
+</header>
+<footer>
+</footer>
+<externalUriPath>QuickOrderView?catalogId={catalogId}&amp;langId={langId}&amp;storeId={storeId}</externalUriPath>
+<externalId>QuickOrderView</externalId>
+</CMExternalPage>

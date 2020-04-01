@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/SFRA/France/French/Options/Settings/Templates/CMChannel" name="Templates" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Options/Settings/Templates/CMChannel/Templates.xml" path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/Templates/CMChannel/Templates"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Modèles</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+<link href="Empty/Empty%20Page.xml" path="/Sites/SFRA/France/French/Options/Settings/Templates/CMChannel/Empty/Empty%20Page"/>
+<link href="Landing%20Page/Landing%20Page.xml" path="/Sites/SFRA/France/French/Options/Settings/Templates/CMChannel/Landing%20Page/Landing%20Page"/>
+</children>
+<hidden>1</hidden>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

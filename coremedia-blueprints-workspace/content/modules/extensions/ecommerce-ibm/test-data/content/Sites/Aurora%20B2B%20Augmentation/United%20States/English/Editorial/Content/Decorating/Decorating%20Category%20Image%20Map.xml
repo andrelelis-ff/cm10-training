@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMImageMap folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Decorating" name="Decorating Category Image Map" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="overlay">
+<Struct>
+<BooleanProperty Name="displayTitle">true</BooleanProperty>
+<BooleanProperty Name="displayPicture">true</BooleanProperty>
+<BooleanProperty Name="displayShortText">true</BooleanProperty>
+<BooleanProperty Name="displayDefaultPrice">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="image-map">
+<Struct>
+<StringProperty Name="id">map-area-0</StringProperty>
+<StringProperty Name="coords">52,545,1152,1511</StringProperty>
+<StringProperty Name="alt"/>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">true</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">light-on-dark</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Products/Aurora%20B2B/Decorating/Square%20Vase%20Produ7dd67c02.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Decorating/Square%20Vase%20Product%20Teaser"/>
+</Struct>
+</StructListProperty>
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Dark.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Options/Settings/Teaser%20Styles/Dark"/>
+<IntProperty Name="positionX">50</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--left">Decorating</p><p class="align--left">The new trends in decorating.</p></div></teaserText>
+<pictures>
+<link href="../../../Pictures/Product%20Pictures/Decorating/Square%20Glass%20Vase%20w93e609f0.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Decorating/Square%20Glass%20Vase%20with%20Rose%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../Augmentation/B2B_Decorating/Decorating.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Augmentation/B2B_Decorating/Decorating"/>
+</target>
+</CMImageMap>

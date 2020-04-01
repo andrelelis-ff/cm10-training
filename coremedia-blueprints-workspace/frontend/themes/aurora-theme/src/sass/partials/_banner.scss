@@ -1,0 +1,21 @@
+.cm-left-right-banner {
+  .cm-placement > & + & {
+    @include breakpoint("sm-and-up") {
+      // no margin top grid override
+      margin-top: 0;
+    }
+  }
+}
+
+.cm-hero-banner,
+.cm-landscape-banner,
+.cm-portrait-banner,
+.cm-square-banner,
+.cm-left-right-banner,
+.cm-carousel-banner,
+.cm-shoppable-teaser {
+  &__shop-now-button {
+    // .cm-button rule in _button.scss sets position to relative, reset
+    position: absolute;
+  }
+}

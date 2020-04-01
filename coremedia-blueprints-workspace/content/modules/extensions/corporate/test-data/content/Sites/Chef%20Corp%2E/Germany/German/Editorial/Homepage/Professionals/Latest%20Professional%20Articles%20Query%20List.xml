@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMQueryList folder="/Sites/Chef Corp./Germany/German/Editorial/Homepage/Professionals" name="Latest Professional Articles Query List" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Homepage/Professionals/Latest%20Professional%20Articles%20Query%20List.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Professionals/Latest%20Professional%20Articles%20Query%20List"/>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMChannel/landscape.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Options/Viewtypes/CMChannel/landscape"/>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<IntProperty Name="limit">3</IntProperty>
+<StructProperty Name="fq">
+<Struct>
+<StringProperty Name="documenttype">CMArticle</StringProperty>
+<LinkListProperty Name="documents" LinkType="coremedia:///cap/contenttype/CMChannel">
+<Link xlink:href="coremedia:///cap/resources/../../../Navigation/Chef%20Corp%2E%20DE%20Home%20Page.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Chef%20Corp%2E%20DE%20Home%20Page"/>
+</LinkListProperty>
+<LinkListProperty Name="subjecttaxonomy" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Professionals.xml" cmexport:path="/Settings/Taxonomies/Subject/Professionals"/>
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="order">freshness desc</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+</CMQueryList>

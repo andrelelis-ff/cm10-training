@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Aurora Augmentation/United States/English/Navigation/Fragments/Search Landing Pages" name="Fall Evening Dresses Hidden Landing Page" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>fall-dresses-landingpage</segment>
+<title>Cocktail Elegance</title>
+<htmlTitle></htmlTitle>
+<keywords>evening dresses</keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../../Pictures/Product%20Pictures/PC_EVENING_DRESS%20red%20Actionshot.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20Pictures/PC_EVENING_DRESS%20red%20Actionshot"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<hidden>1</hidden>
+<hiddenInSitemap>1</hiddenInSitemap>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin"/>
+  <component class="com.coremedia.blueprint.elastic.social.studio.forms.CMMailForm"/>
+  <component class="com.coremedia.blueprint.elastic.social.studio.forms.CMMailHelpWindow"/>
+  <component class="com.coremedia.blueprint.elastic.social.studio.forms.SimpleComboBoxField"/>
+  <component class="com.coremedia.blueprint.elastic.social.studio.forms.ESDynamicListForm"/>
+  <component class="com.coremedia.blueprint.elastic.social.studio.plugin.ElasticPluginLabel"/>
+  <component class="com.coremedia.blueprint.elastic.social.studio.plugin.ElasticPluginPropertyField"/>
+</componentPackage>

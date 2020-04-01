@@ -1,0 +1,100 @@
+$cm-taxonomy-node-background-color-readonly: dynamic($cm-background-color-readonly);
+
+@if $cm-include-taxonomy-node-wrap {
+
+  $_block: "cm-taxonomy-node-wrap";
+  .#{$_block} {
+    font-size:0;
+  }
+}
+
+@if $cm-include-taxonomy-node {
+
+  $_block: "cm-taxonomy-node";
+  $_node-height: 17px;
+
+  .cm-read-only .#{$_block} {
+    &__box {
+      background-color: $cm-taxonomy-node-background-color-readonly;
+    }
+  }
+
+  .#{$prefix}keyboard-mode .#{$_block} {
+    &__control::before.focus {
+      outline: 1px solid black;
+    }
+  }
+
+  .#{$_block} {
+    padding-right: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: $_node-height;
+
+    &__box {
+      background-color: $cm-white;
+      color: $cm-black;
+
+      border-color: $cm-grey-4;
+      border-radius: 2px;
+      border-style: solid;
+      border-width: 1px;
+
+      padding-left: 3px;
+      padding-right: 3px;
+
+      display: inline-block;
+      vertical-align: middle;
+
+      line-height: $_node-height;
+    }
+
+    &__name {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: $cm-font-size;
+    }
+
+    &__control {
+      padding-left: 6px;
+      padding-right: 3px;
+      cursor: pointer;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: $cm-font-size;
+    }
+
+    &__link {
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    &--has-children {
+      &:after {
+        content: $cm-core-icons-100-var-arrow-right;
+        font-family: $cm-core-icons-100-font-name;
+        padding-left: 6px;
+        padding-right: 3px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: $_node-height;
+        font-size: $cm-font-size;
+      }
+    }
+
+    &--ellipsis {
+      .#{$_block}__name {
+        white-space: nowrap;
+        overflow: hidden; /* "overflow" value must be different from "visible" */
+        text-overflow: ellipsis;
+      }
+    }
+
+    &--leaf {
+      .#{$_block}__box {
+        background-color: $cm-grey-4;
+        color: $cm-white;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!--
+  Elastic Social Plugin Document Types for Blueprint
+  (c) CoreMedia AG, 2011
+-->
+
+<DocumentTypeModel xmlns="http://www.coremedia.com/2008/documenttypes"
+                   xmlns:extensions="http://www.coremedia.com/2013/documenttypes-extensions"
+                   Name="elastic-social-plugin-doctypes"
+                   Title="Elastic Social Document Types for Blueprint">
+
+  <ImportDocType Name="CMLocalized" From="blueprint-doctypes"/>
+  <ImportDocType Name="CMLinkable" From="blueprint-doctypes"/>
+  <ImportDocType Name="CMHasContexts" From="blueprint-doctypes"/>
+  <ImportDocType Name="CMChannel" From="blueprint-doctypes"/>
+  <ImportDocType Name="CMDynamicList" From="blueprint-doctypes"/>
+
+  <DocType Name="CMMail" Parent="CMHasContexts" Abstract="false">
+    <LinkListProperty Name="master" Max="1" LinkType="CMMail" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="subject" Length="255" />
+    <StringProperty Name="from" Length="255" />
+    <BlobProperty Name="text" MimeType="text/plain"/>
+    <StringProperty Name="contentType" Length="255" />
+  </DocType>
+
+  <!--
+      Represents a document whose content is determined by a list of selection rules.
+  -->
+  <DocType Name="ESDynamicList" Parent="CMDynamicList">
+    <LinkListProperty Name="master" Max="1" LinkType="ESDynamicList" Override="true" extensions:weakLink="true"/>
+    <LinkListProperty Name="channel" Max="1" LinkType="CMChannel"/>
+    <StringProperty Name="type" Length="50" />
+    <StringProperty Name="interval" Length="50" />
+    <StringProperty Name="aggregationType" Length="50" />
+  </DocType>
+</DocumentTypeModel>

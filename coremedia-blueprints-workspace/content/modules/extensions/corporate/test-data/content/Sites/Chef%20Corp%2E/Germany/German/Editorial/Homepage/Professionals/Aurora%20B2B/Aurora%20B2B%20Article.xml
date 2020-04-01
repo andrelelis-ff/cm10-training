@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./Germany/German/Editorial/Homepage/Professionals/Aurora B2B" name="Aurora B2B Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Homepage/Professionals/Aurora%20B2B/Aurora%20B2B%20Article.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Professionals/Aurora%20B2B/Aurora%20B2B%20Article"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Find Out More</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Aurora B2B Shop - Ersatzteile für Küchengeräte und Kleinteile für Ihr Restaurant</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Aurora B2B Shop - Ersatzteile und Kleinteile</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Holen Sie Ersatzteile für Ihren Küchengeräten oder mehr über Dekoration und Beleuchtung für Ihre Küche und Ihr Restaurant. </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Seit 1999 haben unsere mehr als 125.000 Kunden zu kennen und vertrauen <em>Chef Corp.</em> als führender Anbieter, um praktisch alles für das Restaurant Zulieferindustrie benötigt zu finden. Wir sind entschlossen, Expertenlösungen mit der persönliche Aufmerksamkeit, die Sie verdienen verpflichtet. </p> <p> Wir bei Chef Corp. unser erstes Internet-Auftritt im Jahr 2001 in Form einer Corporate Website beschreiben unser Unternehmen und unsere Dienstleistungen sowie einige unserer Produkte und Dienstleistungen wie Küchenplanung - die nur offline in-Person durch einen Account Manager bezogen werden kann . </p> <p> Im Jahr 2009 haben wir unseren B2B-Bereich in der Aurora Internet Shopping Mall eröffnet und Ersatzteile für unsere Küchengeräte sowie kleinere Artikel, wie beispielsweise Beleuchtungszubehör für Ihr Restaurant, verkauft, die problemlos versandt werden können. </p> <p>Since 2014, we have been using the <a xlink:show="new" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Site-Wide/External%20Links/CoreMedia%20Content%20Experience%20Platform%20Ext4ccadcf1.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Site-Wide/External%20Links/CoreMedia%20Content%20Experience%20Platform%20External%20Link">CoreMedia Content Experience Platform</a> to enhance our B2B shopping experience by adding valuable content, such as shopping guides, product data sheets, engaging product images, and inspirational galleries, as well as articles relating to interior design for restaurants.</p> <p> Da unsere Bemühungen für den B2B-Website-Content Wartung wurden drastisch mit Hilfe der Coremedia Studio reduziert wird, haben wir in der Lage, mehr und bessere Inhalte hinzufügen, wie wir entlang gingen, mit der gleichen Anzahl von Editoren. </p> <p> Wir haben gesehen, sowohl die Umrechnungskurse als auch unsere Gesamtverkaufszahlen deutlich steigern, nachdem wir unseren Shop Erfahrung mit unseren Mehrwert-Inhalte bereichert. </p> </div></detailText>
+<pictures>
+<link href="../../../Assets/Pictures/Products/LED%20Color%20Lightstrip%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Products/LED%20Color%20Lightstrip%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

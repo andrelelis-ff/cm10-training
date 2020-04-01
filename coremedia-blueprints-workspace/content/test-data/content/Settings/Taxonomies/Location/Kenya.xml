@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMLocTaxonomy folder="/Settings/Taxonomies/Location" name="Kenya" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Kenya</value>
+<children>
+<link href="Nairobi.xml" path="/Settings/Taxonomies/Location/Nairobi"/>
+<link href="Mombasa.xml" path="/Settings/Taxonomies/Location/Mombasa"/>
+<link href="Nakuru.xml" path="/Settings/Taxonomies/Location/Nakuru"/>
+</children>
+<externalReference></externalReference>
+<postcode></postcode>
+<latitudeLongitude>1.234868573969767,38.003808593750136</latitudeLongitude>
+</CMLocTaxonomy>

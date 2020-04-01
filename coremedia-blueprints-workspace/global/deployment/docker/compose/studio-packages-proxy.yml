@@ -1,0 +1,28 @@
+version: "3.4"
+x-logging:
+  &default-logging
+  options:
+    max-size: '12m'
+    max-file: '5'
+  driver: json-file
+
+services:
+  studio-client:
+    labels:
+      traefik.enable: "false"
+
+  studio-packages-proxy:
+    image: ${REPOSITORY_PREFIX:-coremedia}/studio-packages-proxy
+    container_name: studio-packages-proxy
+    restart: always
+    logging: *default-logging
+    networks:
+      - backend
+    labels:
+      traefik.enable: "true"
+      traefik.port: "8080"
+      traefik.frontend.entryPoints: http,https
+      traefik.frontend.headers.SSLRedirect: "true"
+      traefik.studio-packages-proxy.frontend.rule: Host:studio.${ENVIRONMENT_FQDN:-docker.localhost}
+      # this priority is required so that the client backend rules are prioritized first
+      traefik.priority: "10"

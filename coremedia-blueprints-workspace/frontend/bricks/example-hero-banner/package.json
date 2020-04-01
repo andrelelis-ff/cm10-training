@@ -1,0 +1,19 @@
+{
+  "name": "@coremedia-examples/brick-hero-banner",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@coremedia/brick-utils": "^1.0.0",
+    "@coremedia/brick-default-teaser": "^1.0.0",
+    "@coremedia/brick-slick-carousel": "^1.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.0.0"
+  },
+  "scripts": {
+    "prettier": "prettier \"**/*\" --write"
+  },
+  "coremedia": {
+    "type": "brick"
+  }
+}

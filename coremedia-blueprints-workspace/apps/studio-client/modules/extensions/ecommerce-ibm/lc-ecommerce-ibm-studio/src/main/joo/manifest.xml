@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.livecontext.ibm.studio.AddCatalogLinkActionsPlugin"/>
+  <component class="com.coremedia.livecontext.ibm.studio.AddCatalogActionsToWorkAreaTabContextMenuPlugin"/>
+  <component class="com.coremedia.livecontext.ibm.studio.EcommerceIbmStudioPlugin"/>
+  <component class="com.coremedia.livecontext.ibm.studio.action.OpenInManagementCenterAction"/>
+  <component class="com.coremedia.livecontext.ibm.studio.action.OpenManagementCenterAction"/>
+  <component class="com.coremedia.livecontext.ibm.studio.components.OpenManagementCenterButton"/>
+  <component class="com.coremedia.livecontext.ibm.studio.library.EcommerceIbmCollectionViewActionsPlugin"/>
+  <component class="com.coremedia.livecontext.ibm.studio.mgmtcenter.ManagementCenterFrame"/>
+  <component class="com.coremedia.livecontext.ibm.studio.mgmtcenter.ManagementCenterWindow"/>
+</componentPackage>

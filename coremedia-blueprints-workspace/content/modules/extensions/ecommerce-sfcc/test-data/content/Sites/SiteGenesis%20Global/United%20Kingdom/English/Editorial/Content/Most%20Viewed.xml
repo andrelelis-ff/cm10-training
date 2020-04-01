@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMALXPageList folder="/Sites/SiteGenesis Global/United Kingdom/English/Editorial/Content" name="Most Viewed" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Most Viewed</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<maxLength>3</maxLength>
+<timeRange>30</timeRange>
+<analyticsProvider>googleAnalytics</analyticsProvider>
+<documentType>CMArticle</documentType>
+<baseChannel>
+<link href="../../Navigation/SiteGenesis%20UK.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Navigation/SiteGenesis%20UK"/>
+</baseChannel>
+<defaultContent>
+<link href="Articles/Fashion%20should%20be%20Fun.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Articles/Fashion%20should%20be%20Fun"/>
+<link href="Articles/Fashions%20fade%2C%20style%20is%20eternal.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Articles/Fashions%20fade%2C%20style%20is%20eternal"/>
+</defaultContent>
+</CMALXPageList>

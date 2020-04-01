@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<dataviews xmlns="http://www.coremedia.com/2004/objectserver/dataviewfactory">
+
+  <!-- This file defines the data views for content beans of the personalization package -->
+
+  <dataview appliesTo="com.coremedia.blueprint.personalization.contentbeans.CMSelectionRulesImpl">
+    <property name="selectionRuleProcessor" associationType="static"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.personalization.contentbeans.CMP13NSearchImpl">
+    <property name="searchStatusAsJSON" associationType="dynamic"/>
+    <property name="items" associationType="dynamic"/>
+    <property name="navigationList" associationType="dynamic"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.personalization.contentbeans.CMUserProfileImpl">
+    <property name="aspectByName" associationType="composition"/>
+  </dataview>
+
+</dataviews>

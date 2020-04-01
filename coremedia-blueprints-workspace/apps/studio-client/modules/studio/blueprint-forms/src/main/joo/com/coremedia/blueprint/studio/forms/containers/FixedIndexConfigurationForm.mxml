@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ This is a form panel which combines several form elements to an editor for local settings to configure
+ the fixed index behaviour. A combination of integer field and reset button.
+-->
+<local:FixedIndexConfigurationFormBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.forms.containers.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        itemId="fixedIndexConfigurationForm"
+        header="{false}"
+        hideSingleComponentLabel="false"
+        propertyNames="{[]}"
+        collapsed="{config.collapsed || true}"
+        settingsVE="{config.bindTo.extendBy(ContentPropertyNames.PROPERTIES, config.propertyName)}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cap.content.ContentPropertyNames;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+    import com.coremedia.ui.skins.LabelableSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.fixedIndexConfigurationForm";
+
+    private var config:FixedIndexConfigurationForm;
+
+    public native function FixedIndexConfigurationForm(config:FixedIndexConfigurationForm = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!--- the property of the Bean to bind in this field -->
+    <fx:String id="propertyName"/>
+  </fx:Declarations>
+
+  <local:plugins exml:mode="append">
+    <ui:Binding source="indexSettings.index"
+                destination="indexViewModel.index"
+                twoWay="true"/>
+
+  </local:plugins>
+  <local:items>
+    <FieldContainer
+            fieldLabel="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMQueryList_fixedIndex_title')}">
+      <items>
+        <ui:AdvancedFieldContainer ui="{LabelableSkin.PLAIN_LABEL.getSkin()}"
+                                   labelAlign="top"
+                                   labelSeparator=""
+                                   fieldLabel="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMQueryList_fixedIndex_label')}"
+                                   hideLabel="false">
+          <ui:items>
+            <ui:StatefulNumberField allowBlank="true"
+                                    allowDecimals="false"
+                                    emptyText="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMQueryList_fixedIndex_emptyText')}"
+                                    width="200"
+                                    itemId="fixedIndex">
+              <ui:plugins>
+                <ui:BlockEnterPlugin/>
+                <ui:BindPropertyPlugin
+                        bindTo="{ValueExpressionFactory.create(FixedIndexViewModel.INDEX_PROPERTY_NAME, indexViewModel)}"
+                        bidirectional="true"/>
+              </ui:plugins>
+            </ui:StatefulNumberField>
+          </ui:items>
+        </ui:AdvancedFieldContainer>
+      </items>
+    </FieldContainer>
+  </local:items>
+</local:FixedIndexConfigurationFormBase>

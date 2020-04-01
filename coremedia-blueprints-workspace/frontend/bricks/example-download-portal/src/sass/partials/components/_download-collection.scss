@@ -1,0 +1,175 @@
+.am-download-collection-rendition-control {
+
+  &__add,
+  &__remove {
+    display: none; // without a state the buttons are not visible
+  }
+
+  &--addable {
+    .am-download-collection-rendition-control__add {
+      display: inline-block;
+      padding-left: 0;
+      white-space: nowrap;
+    }
+  }
+
+  &--removable {
+    .am-download-collection-rendition-control__remove {
+      display: inline-block;
+      padding-left: 0;
+      white-space: nowrap;
+    }
+  }
+
+  &__download {
+    padding-right: 15px;
+    white-space: nowrap;
+  }
+}
+
+.am-download-collection-overview {
+
+  display: block;
+  font-size: 0;
+
+  &__notification {
+    margin-top: $am-margin-large;
+  }
+
+  &__items,
+  &__controls {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: $am-margin-large;
+  }
+
+  &__items {
+    width: 70%;
+  }
+
+  &__controls {
+    width: 30%;
+    text-align: right;
+  }
+
+  &__item + &__item {
+    margin-top: $am-margin-medium;
+  }
+}
+
+.am-download-collection {
+
+  &__downloadButton {
+    display: inline-block;
+    text-align: center;
+    @include extra-small-device {
+      width: 90%;
+    }
+    @include small-device {
+      width: 80%;
+    }
+    @include medium-device {
+      width: 90%;
+    }
+    @include large-device {
+      width: 100%;
+    }
+  }
+}
+
+.am-download-collection-item {
+
+  $picture-width: 120px;
+  $picture-box-border: 1px solid $am-picture-box-border-color$am-picture-box-border-color;
+  $picture-aspect-ratio-x: 1;
+  $picture-aspect-ratio-y: 1;
+
+  display: block;
+  font-size: 0;
+
+  &__picture-box,
+  &__info {
+    display: inline-block;
+    vertical-align: top;
+    font-size: $am-text-size;
+  }
+
+  &__picture-box {
+    width: $picture-width;
+
+    // TODO: introduce globally accessible library module containing aspect ratio box
+    position: relative;
+    overflow: hidden;
+
+    box-sizing: border-box;
+    border: $picture-box-border;
+
+    &:before {
+      display: block;
+      padding-top: percentage($picture-aspect-ratio-y / $picture-aspect-ratio-x);
+      content: "";
+    }
+
+    @include extra-small-device {
+      width: 100%;
+    }
+    @include small-device {
+      width: 100%;
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__info {
+    box-sizing: border-box;
+    width: 100%;
+    @include medium-device {
+      margin-left: -$picture-width;
+      padding-left: $picture-width;
+    }
+    @include large-device {
+      margin-left: -$picture-width;
+      padding-left: $picture-width;
+    }
+  }
+
+  &__title {
+    margin-top: $am-margin-medium;
+  }
+
+  &__description {
+    display: inline-block;
+    margin-top: $am-margin-medium;
+  }
+
+  &__title,
+  &__description,
+  &__controls {
+    @include medium-device {
+      margin-left: $am-margin-large;
+    }
+    @include large-device {
+      margin-left: $am-margin-large;
+    }
+  }
+
+  &__type {
+    margin-top: $am-margin-medium;
+    float: right;
+  }
+
+  &__controls {
+    display: block;
+    margin-top: $am-margin-medium;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}

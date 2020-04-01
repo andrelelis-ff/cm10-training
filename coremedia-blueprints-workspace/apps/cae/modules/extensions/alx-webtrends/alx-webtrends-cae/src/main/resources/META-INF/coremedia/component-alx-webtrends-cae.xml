@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd"
+       default-init-method="validateConfig">
+
+  <import resource="classpath:/framework/spring/blueprint-contentbeans.xml" />
+  <import resource="classpath:/framework/spring/blueprint-views.xml" />
+
+  <customize:prepend id="addWebtrendsRepositoryName" bean="viewRepositories" order="1600">
+    <list>
+      <value>webtrends</value>
+    </list>
+  </customize:prepend>
+</beans>

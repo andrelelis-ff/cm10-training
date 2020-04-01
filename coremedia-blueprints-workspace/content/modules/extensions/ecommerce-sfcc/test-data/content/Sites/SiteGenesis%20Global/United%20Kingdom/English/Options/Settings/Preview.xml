@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/SiteGenesis Global/United Kingdom/English/Options/Settings" name="Preview" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<LinkListProperty Name="fragmentPreviewCss" LinkType="coremedia:///cap/contenttype/Content_">
+<Link xlink:href="coremedia:///cap/resources/sitegenesis-styles%2Ecss.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Settings/sitegenesis-styles%2Ecss"/>
+</LinkListProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

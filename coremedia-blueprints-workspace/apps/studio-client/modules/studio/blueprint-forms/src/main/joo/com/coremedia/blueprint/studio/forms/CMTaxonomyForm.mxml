@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.cmTaxonomyForm";
+
+    private var config:CMTaxonomyForm;
+
+    public native function CMTaxonomyForm(config:CMTaxonomyForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <!--Do not rename itemId, because the TaxonomyExplorerPanel uses it to highlight the value field-->
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="CMTaxonomy">
+      <editor:items>
+        <editor:PropertyFieldGroup itemId="taxonomy"
+                                   title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_tags_label')}"
+                                   propertyNames="{['value','externalReference']}">
+          <editor:items>
+            <editor:StringPropertyField bindTo="{config.bindTo}"
+                                        propertyName="value"/>
+            <editor:StringPropertyField bindTo="{config.bindTo}"
+                                        propertyName="externalReference"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:MetaDataWithoutSearchableForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

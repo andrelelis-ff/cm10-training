@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:quickcreate="com.coremedia.cms.editor.sdk.quickcreate.*">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.util.AnnotatedLinkListHelper;
+    import com.coremedia.cms.editor.sdk.util.ILinkListWrapper;
+    import com.coremedia.cms.editor.sdk.util.StructContentLinkListWrapper;
+    import com.coremedia.ui.skins.PanelSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.cmTeaserForm";
+    public static const TARGET_ANNOTATION_WIDGET_ITEM_ID:String = "target-annotation-widget";
+
+    private var config:CMTeaserForm;
+
+    private var structContentLinkListWrapper:StructContentLinkListWrapper;
+
+    public native function CMTeaserForm(config:CMTeaserForm = null);
+
+    private function getStructContentLinkListWrapper(config:CMTeaserForm):ILinkListWrapper {
+      if (!structContentLinkListWrapper) {
+        structContentLinkListWrapper = AnnotatedLinkListHelper.createStructContentLinkListWrapper(config.bindTo, config.forceReadOnlyValueExpression);
+      }
+      return structContentLinkListWrapper;
+    }
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMTeaser_targets_text')}"
+                itemId="cmTeaserTargetsForm">
+          <editor:items>
+            <editor:LinkListPropertyField propertyName="targets"
+                                          showThumbnails="true"
+                                          hideLabel="true"
+                                          bindTo="{config.bindTo}"
+                                          linkListWrapper="{getStructContentLinkListWrapper(config)}"
+                                          linkType="CMTeasable"
+                                          rowWidgetsAnnotatedPredicates="{[CallToActionConfigurationForm.isAnnotated]}">
+              <editor:additionalToolbarItems>
+                <TbSeparator/>
+                <quickcreate:QuickCreateToolbarButton contentType="CMArticle"
+                                                      bindTo="{config.bindTo}"
+                                                      linkListWrapper="{getStructContentLinkListWrapper(config)}"/>
+              </editor:additionalToolbarItems>
+              <editor:fields>
+                <ui:DataField name="{ValidityColumn.STATUS_ID}"
+                              ifUnreadable=""
+                              mapping=""
+                              convert_="{ValidityColumn.convert}"/>
+              </editor:fields>
+              <editor:columns>
+                <editor:ThumbnailColumn/>
+                <editor:TypeIconColumn/>
+                <editor:NameColumn flex="1"/>
+                <bpforms:ValidityColumn/>
+                <editor:StatusColumn/>
+              </editor:columns>
+              <editor:rowWidget>
+                <ui:AnnotatedLinkListWidget itemId="{TARGET_ANNOTATION_WIDGET_ITEM_ID}">
+                  <ui:items>
+                    <bpforms:CallToActionConfigurationForm bindTo="{config.bindTo}"
+                                                           collapsible="false"
+                                                           ui="{PanelSkin.DEFAULT.getSkin()}"
+                                                           forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}">
+                      <bpforms:header>
+                        <Header padding="6 6 6 0"/>
+                      </bpforms:header>
+                    </bpforms:CallToActionConfigurationForm>
+                  </ui:items>
+                </ui:AnnotatedLinkListWidget>
+              </editor:rowWidget>
+            </editor:LinkListPropertyField>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <bpforms:TeaserDocumentForm>
+          <bpforms:plugins exml:mode="append">
+            <ui:RemoveItemsPlugin recursive="true">
+              <ui:items>
+                <bpforms:CallToActionConfigurationForm/>
+              </ui:items>
+            </ui:RemoveItemsPlugin>
+          </bpforms:plugins>
+        </bpforms:TeaserDocumentForm>
+        <bpforms:MediaDocumentForm/>
+        <bpforms:ViewTypeSelectorForm/>
+        <bpforms:ValidityDocumentForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:DefaultExtraDataForm/>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataWithoutSearchableForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

@@ -1,0 +1,25 @@
+{
+  "name": "sfra",
+  "description": "The SFRA Theme demonstrates the fragment-based integration approach with the Salesforce's Storefront Reference Architecture.",
+  "thumbnail": "theme.jpg",
+
+  "styles": [
+    {
+      "type": "webpack",
+      "src": "src/sass/sfra.scss"
+    }
+  ],
+  "scripts": [
+    {
+      "type": "webpack",
+      "src": "src/js/index.js",
+      "defer": true
+    }
+  ],
+  "l10n": {
+    "bundleNames": [
+      "Sfra",
+      "Bricks"
+    ]
+  }
+}

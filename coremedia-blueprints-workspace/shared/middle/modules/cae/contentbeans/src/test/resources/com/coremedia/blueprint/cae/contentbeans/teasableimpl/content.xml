@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+
+  <!--
+    Test content for the CodeResourceHelper
+  -->
+  <content>
+    <folder id="1" name="">
+      <folder id="11" name="Sites">
+        <folder id="111" name="Media">
+          <document id="30" type="CMArticle" name="a1">
+            <version number="1">
+              <markupProperty name="detailText" url="richtext.xml" grammar="coremedia-richtext-1.0"/>
+            </version>
+          </document>
+        </folder>
+      </folder>
+    </folder>
+  </content>
+</contentRepository>

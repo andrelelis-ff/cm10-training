@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Viewport
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ec="exml:com.coremedia.ecommerce.studio.config"
+        id_="{TEST_VIEW_ID}">
+  <fx:Script><![CDATA[
+    import com.coremedia.cap.content.Content;
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.livecontext.p13n.studio.config.commerceCatalogObjectsSelectFormTestView";
+
+    public static const TEST_VIEW_ID:String = "viewport";
+
+    public static const SELECT_FORM_ITEM_ID:String = "testSelectForm";
+
+    private var config:CommerceCatalogObjectsSelectFormTestView;
+
+    public native function CommerceCatalogObjectsSelectFormTestView(config:CommerceCatalogObjectsSelectFormTestView = null);
+
+    [Bindable]
+    public var content:Content;
+
+    [Bindable]
+    public var bindTo:ValueExpression;
+
+    [Bindable]
+    public var forceReadOnlyValueExpression:ValueExpression;
+
+    [Bindable]
+    public var catalogObjectIdsExpression:ValueExpression;
+    ]]></fx:Script>
+
+  <items>
+    <ec:CommerceCatalogObjectsSelectForm itemId="{SELECT_FORM_ITEM_ID}"
+                                         bindTo="{config.bindTo}"
+                                         forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                         catalogObjectIdsExpression="{config.catalogObjectIdsExpression}"
+                                         invalidMessage="Invalid e-Commerce user contract ID: \{0}"
+                                         getCommerceObjectsFunction="{LivecontextP13NStudioPluginBase.getContracts}"
+                                         height="400"/>
+  </items>
+
+</Viewport>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+  <content>
+    <folder id="1" name="">
+      <folder id="11" name="Sites">
+        <folder id="111" name="Media">
+          <document id="504" name="MediaSite" type="CMSite">
+            <!--
+              The Site Indicator for the site, references the Root Channel.
+              Needed to resolve the first URL segment ("root")
+            -->
+            <version number="1">
+              <linkProperty name="root">
+                <link id="124"/>
+              </linkProperty>
+              <stringProperty name="locale" value="en-US"/>
+              <stringProperty name="id" value="site1"/>
+              <stringProperty name="name" value="site1"/>
+            </version>
+          </document>
+          <folder id="1111" name="Navigation">
+            <document id="124" name="Root" type="CMChannel">
+              <!-- The Root Channel of the site, referenced by the Site Indicator. -->
+              <version number="1">
+                <stringProperty name="segment" value="root"/>
+                <linkProperty name="children">
+                  <link id="126"/>
+                  <link id="128"/>
+                </linkProperty>
+              </version>
+            </document>
+
+            <!--
+              Nested channels
+            -->
+            <document id="128" name="Level1" type="CMChannel">
+              <version number="1">
+                <stringProperty name="segment" value="level1"/>
+                <linkProperty name="children">
+                  <link id="130"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="130" name="Level2" type="CMChannel">
+              <version number="1">
+                <stringProperty name="segment" value="level2"/>
+              </version>
+            </document>
+          </folder>
+
+          <folder id="1113" name="Editorial">
+            <document id="4" type="CMArticle" name="Doc">
+              <version number="1">
+                <stringProperty name="segment" value="doc"/>
+                <linkProperty name="contexts">
+                  <link id="130"/>
+                  <link id="124"/>
+                </linkProperty>
+              </version>
+            </document>
+
+            <document id="8" type="CMArticle" name="EvilDoc">
+              <version number="1">
+                <stringProperty name="segment" value="böses!Dokument"/>
+                <linkProperty name="contexts">
+                  <link id="128"/>
+                </linkProperty>
+              </version>
+            </document>
+
+          </folder>
+        </folder>
+      </folder>
+    </folder>
+  </content>
+  <rules>
+    <rule resourceId="1" group="0" doctype="Folder_">
+      <right value="ALL"/>
+    </rule>
+    <rule resourceId="1" group="0" doctype="Document_">
+      <right value="ALL"/>
+    </rule>
+  </rules>
+</contentRepository>

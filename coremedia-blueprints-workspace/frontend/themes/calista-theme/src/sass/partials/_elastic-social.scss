@@ -1,0 +1,132 @@
+// Elastic Social
+//
+// contains styling for the Elastic Social Extension:
+//   -comments
+//   -comment
+//   -review
+// =====================================================================================================================
+
+.cm-comments {
+  color: $cm-text-color;
+  font-size: $cm-font-size-base;
+
+  @include breakpoint("sm-and-up") {
+    padding: 0 10%;
+  }
+
+  &__title {
+    font-size: $cm-font-size-large;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+
+  .cm-toolbar {
+    margin-top: $cm-standard-spacing;
+
+    > * {
+      font-size: $cm-font-size-base;
+    }
+
+    > .cm-button:first-child {
+      margin-right: $cm-standard-spacing;
+    }
+  }
+
+  .cm-button {
+    // TODO: avoid @extend
+    @extend .cm-button--secondary;
+
+  }
+
+  &__list {
+    margin-top: calc(#{$cm-standard-spacing} * 2);
+  }
+
+  .cm-textarea {
+    border-color: $cm-text-color;
+  }
+
+  .cm-button-group {
+    text-align: right;
+    font-size: 0;
+    margin-top: $cm-standard-spacing;
+
+    > .cm-button:first-child {
+      margin-right: $cm-standard-spacing;
+    }
+
+    [data-cm-button--submit] {
+      color: $cm-standard-component-background-color;
+      background-color: $cm-text-color;
+
+      &:after {
+        border-color: $cm-standard-component-background-color;
+      }
+    }
+  }
+
+  &__list > .cm-collection__item > .cm-collection--comments {
+    margin-left: calc(#{$cm-standard-spacing} * 2);
+
+    [data-cm-button--comment]:first-child {
+      display: none;
+    }
+  }
+
+  .cm-new-comment__form .cm-textarea {
+    display: block;
+  }
+}
+
+/* --- Comment --- */
+
+.cm-comment {
+  margin-top: calc(#{$cm-standard-spacing} * 3);
+
+  &__header {
+    border: none;
+  }
+
+  &__author-date {
+    font-size: $cm-font-size-large;
+    text-transform: uppercase;
+  }
+
+  &__date {
+    font-size: $cm-font-size-base;
+    color: $cm-text-color;
+    text-transform: initial;
+    float: right;
+    line-height: 1.6;
+
+    @include breakpoint("xs") {
+      float: none;
+      display: block;
+    }
+  }
+
+  &__text {
+    margin: $cm-standard-spacing 0;
+  }
+
+  .cm-quote {
+    margin: 0;
+    font-size: $cm-font-size-base;
+    border-left: 1px solid black;
+    padding: 0 0 0 $cm-standard-spacing;
+  }
+}
+
+.cm-field {
+  &__name {
+    font-weight: 700;
+  }
+}
+
+// review
+.cm-review {
+  .cm-button {
+    // TODO: avoid @extend
+    @extend .cm-button--secondary;
+  }
+}

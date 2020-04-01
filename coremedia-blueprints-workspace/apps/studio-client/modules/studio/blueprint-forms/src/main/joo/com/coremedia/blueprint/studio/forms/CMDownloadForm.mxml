@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.cmDownloadForm";
+
+    private var config:CMDownloadForm;
+
+    public native function CMDownloadForm(config:CMDownloadForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <bpforms:DetailsDocumentForm/>
+        <bpforms:TeaserDocumentForm collapsed="true"/>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMDownload_data_text')}"
+                itemId="cmDownloadDataForm">
+          <editor:items>
+            <editor:BlobPropertyField bindTo="{config.bindTo}"
+                                      hideLabel="true"
+                                      propertyName="data"/>
+            <editor:StringPropertyField propertyName="filename"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <bpforms:MediaDocumentForm collapsed="true"
+                                     expandOnValues="pictures"/>
+        <bpforms:RelatedDocumentForm collapsed="true"
+                                     expandOnValues="related"/>
+        <bpforms:ValidityDocumentForm/>
+        <bpforms:ViewTypeSelectorForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:DefaultExtraDataForm/>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:CMDownloadSystemForm bindTo="{config.bindTo}"/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

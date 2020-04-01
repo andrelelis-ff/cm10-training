@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.studio.osm.OSMPanel"/>
+  <component class="com.coremedia.blueprint.studio.osm.OSMPropertyField"/>
+  <component class="com.coremedia.blueprint.studio.osm.OSMStudioPlugin"/>
+</componentPackage>

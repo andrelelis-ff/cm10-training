@@ -1,0 +1,6 @@
+#!/bin/sh
+# if we have corem-home, set it.
+if [ -d "/coremedia/corem-home" ]; then
+  export APPLICATION_OPTS="${APPLICATION_OPTS} -Dcorem.home=/coremedia/corem-home"
+fi
+exec ./$@

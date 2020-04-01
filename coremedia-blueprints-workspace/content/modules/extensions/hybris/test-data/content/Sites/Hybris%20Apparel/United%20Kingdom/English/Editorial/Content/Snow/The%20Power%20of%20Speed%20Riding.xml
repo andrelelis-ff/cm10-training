@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Snow" name="The Power of Speed Riding" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>The Power of Speed Riding</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Speed%20Riding.xml" path="/Settings/Taxonomies/Subject/Speed%20Riding"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Speed riding the new extreme sport combining skiing and paragliding. </p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Speed riding is a new extreme sport combining skiing and paragliding. The basics are simple- put your skies on, strap yourself to an open wing- shaped canopy and start skiing down the slope. There are no limits on how steep the slope is, or how big the jumps are. If it’s too steep you just go airborn and maneuver yourself down until you touch the snow again.</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Freestyle%20Snowboard%20108295.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Freestyle%20Snowboard%20108295">Bandana 300515779</a><br/></p><p>Speed riding has its roots in the 70′s in France, when the mountaineers started experimenting with launching themselves from steep mountain slopes while skiing. Very quickly the parachutes evolved to wing- like canopies similar to those used in paragliding. The successful idea took off in the US in the 90′s. Since then, more and more adrenaline junkies who loved skiing discovering this wonderful extreme sport and it became quit popular. Today’s canopies are specially made for speed flying and speed riding.</p><p>Speed riding is similar to speed flying. The difference between the two is in the launching method. While in Speed flying you launch yourself by your feet, in Speed riding you do it wearing skies, which you get to keep on your way down, skiing on the snowy slope if you don’t have enough altitude to cross it, or just for fun.</p></div></detailText>
+<pictures>
+<link href="Speed%20Riding%20Touch%20Down.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Speed%20Riding%20Touch%20Down"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../Authors/Michelle%20Villegas%20Person.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Authors/Michelle%20Villegas%20Person"/>
+</authors>
+</CMArticle>

@@ -1,0 +1,34 @@
+#!/bin/sh
+
+echo "[DOCKER ENTRYPOINT] - entering $0"
+set -eu
+
+if [ "${DEBUG_ENTRYPOINT}" = "true" ]; then
+  echo "[DOCKER ENTRYPOINT] - DEBUG_ENTRYPOINT detected, all commands will be printed"
+  set -x
+fi
+
+DEFAULT_WORKFLOWS="StudioSimplePublication:studio-simple-publication.xml \
+ImmediatePublication:immediate-publication.xml \
+StudioTwoStepPublication:studio-two-step-publication.xml \
+ThreeStepPublication:three-step-publication.xml \
+GlobalSearchAndReplace:global-search-replace.xml \
+DeriveSite:/com/coremedia/translate/workflow/derive-site.xml \
+Synchronization:/com/coremedia/translate/workflow/synchronization.xml"
+
+echo "[DOCKER ENTRYPOINT] - importing default workflows"
+# get all definitions already imported
+WORKFLOWS_FOUND="$(./tools/bin/cm processdefinitions -u ${TOOLS_USER} -p ${TOOLS_PASSWORD} 2> /dev/null | grep processdefinition | awk '{print substr($4, 1, length($4)-1)}')"
+
+for i in $DEFAULT_WORKFLOWS; do
+  WORKFLOW_NAME=$(echo $i | awk -F: '{print $1}')
+  WORKFLOW_PATH=$(echo $i | awk -F: '{print $2}')
+  if ! `echo $WORKFLOWS_FOUND | grep -w $WORKFLOW_NAME > /dev/null` || [ "${FORCE_REIMPORT_CONTENT}" = "true" ]; then
+    echo "[DOCKER ENTRYPOINT] - importing $WORKFLOW_NAME from $WORKFLOW_PATH"
+    ./tools/bin/cm upload -u ${TOOLS_USER} -p ${TOOLS_PASSWORD} -n ${WORKFLOW_PATH} 2> /dev/null
+  else
+    echo "[DOCKER ENTRYPOINT] - $WORKFLOW_NAME already imported, skipping."
+ fi
+done
+
+test $# -gt 0 && exec ./$@ || echo "[DOCKER ENTRYPOINT] - entrypoint chain finished"

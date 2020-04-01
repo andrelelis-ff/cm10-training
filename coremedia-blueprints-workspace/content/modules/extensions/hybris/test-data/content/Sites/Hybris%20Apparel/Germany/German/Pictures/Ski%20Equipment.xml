@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/Germany/German/Pictures" name="Ski Equipment" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Pictures/Ski%20Equipment.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Ski%20Equipment"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=295;y=0;width=413;height=639</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=261;y=0;width=481;height=639</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=181;y=0;width=640;height=639</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=75;y=0;width=853;height=639</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=39;width=1000;height=562</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=70;width=1000;height=499</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=121;width=1000;height=400</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=133;width=1000;height=374</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=195;width=1000;height=251</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2946859903381642;y1=0;x2=0.7077294685990339;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2608695652173913;y1=0;x2=0.7415458937198067;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.18115942028985507;y1=0;x2=0.821256038647343;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.0748792270531401;y1=0;x2=0.927536231884058;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.06037735849056604;x2=1;y2=0.939622641509434</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.10943396226415095;x2=1;y2=0.8905660377358491</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.18867924528301888;x2=1;y2=0.8150943396226416</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.20754716981132076;x2=1;y2=0.7924528301886793</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.30566037735849055;x2=1;y2=0.6981132075471698</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio2x1">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio8x3">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Ski Ausrüstung</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+<link href="../../../../../Settings/Taxonomies/Subject/Ski.xml" path="/Settings/Taxonomies/Subject/Ski"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Ski Ausrüstung</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1000</width>
+<height>639</height>
+<data md5="b9e83f33aabcf7ed6eda00d91f811c39" size="612656" href="../../../../../__blob/b9e83f33aabcf7ed6eda00d91f811c39.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

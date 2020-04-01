@@ -1,0 +1,30 @@
+// default variables
+$cm-navigation-delay: 0s; // no delay for navigation
+$cm-navigation-border-bottom-width: 0;
+$cm-screen-sm-min: 768px;
+$cm-screen-lg-min: 1024px;
+$cm-spacing-default: 15px;
+
+// colors
+$cm-hybris-border-color: #CCCCCC;
+$cm-hybris-text-default: #000000;
+$cm-hybris-text: #154259;
+$cm-hybris-price: #19212B;
+$cm-hybris-orange: #CC7205;
+$cm-hybris-hover: #154259;
+$cm-navigation-color: #FFFFFF;
+$cm-navigation-menu-color: transparentize(#000000,.3);
+
+// background colors
+$cm-navigation-background-color: #128A9E;
+$cm-navigation-background-color-hover: #259EB3;
+$cm-navigation-menu-background-color: #F8F8F8;
+$cm-navigation-menu-background-color-hover: #F2F2F2;
+
+// border colors
+$cm-navigation-border-color: #F2F2F2;
+
+// text sizes
+$cm-navigation-label-font-size: 18px;
+$cm-navigation-title-font-size: 14px;
+$cm-navigation-sub-title-font-size: 13px;

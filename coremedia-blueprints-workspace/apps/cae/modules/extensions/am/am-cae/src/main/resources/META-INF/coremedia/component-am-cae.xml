@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/framework/spring/blueprint-handlers.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-views.xml"/>
+  <!-- import am contentbeans -->
+  <import resource="classpath:/framework/spring/search/solr-search.xml"/>
+  <import resource="classpath:/framework/spring/am-contentbeans.xml"/>
+
+  <bean id="amDownloadPortal" class="com.coremedia.blueprint.assets.cae.DownloadPortal"/>
+
+  <!-- register factory that creates the AMCategoryOverview model -->
+  <bean id="amDownloadPortalFactory" class="com.coremedia.blueprint.assets.cae.DownloadPortalFactory">
+    <property name="settingsService" ref="settingsService"/>
+    <property name="downloadPortalSearchService" ref="amDownloadPortalSearchService"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+    <property name="contentRepository" ref="contentRepository"/>
+    <property name="mimeTypeService" ref="mimeTypeService"/>
+  </bean>
+
+  <bean id="amDownloadPortalSearchService" class="com.coremedia.blueprint.assets.cae.DownloadPortalSearchService">
+    <property name="searchResultFactory" ref="resultFactory"/>
+    <property name="contentRepository" ref="contentRepository"/>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+    <property name="cacheTimeInSecs" value="60"/>
+    <property name="preview" value="${cae.is.preview}"/>
+  </bean>
+
+  <!-- register link handler for asset download portal -->
+  <bean id="assetDownloadPortalHandler" class="com.coremedia.blueprint.assets.cae.handlers.DownloadPortalHandler">
+    <property name="contextHelper" ref="contextHelper"/>
+    <property name="downloadPortalFactory" ref="amDownloadPortalFactory"/>
+    <property name="validationService" ref="amValidationService"/>
+    <property name="contentRepository" ref="contentRepository"/>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+  </bean>
+
+  <bean id="amValidationService" class="com.coremedia.blueprint.cae.services.validation.ValidationServiceImpl">
+    <property name="validators" ref="amValidatorsList" />
+  </bean>
+
+  <util:list id="amValidatorsList">
+    <description>list bean of Validator implementations used by the amValidationService</description>
+    <ref bean="hasPublishedRenditionsValidator"/>
+    <ref bean="validityPeriodValidator"/>
+  </util:list>
+
+  <bean id="assetRenditionBlobHandler" class="com.coremedia.blueprint.assets.cae.handlers.AssetRenditionBlobHandler">
+    <property name="capBlobHandler" ref="capBlobHandler"/>
+  </bean>
+
+  <customize:append id="addDownloadPortalPredicates" bean="dynamicIncludePredicates">
+    <list>
+      <bean class="com.coremedia.blueprint.assets.cae.handlers.DownloadPortalPredicate" />
+      <bean class="com.coremedia.blueprint.assets.cae.handlers.PaginatedCategoryAssetsPredicate" />
+      <bean class="com.coremedia.blueprint.assets.cae.handlers.PaginatedSearchAssetsPredicate" />
+      <bean class="com.coremedia.blueprint.assets.cae.handlers.PaginatedSubjectAssetsPredicate"/>
+    </list>
+  </customize:append>
+
+  <customize:append id="amFreemarkerSharedVariablesCustomizer" bean="freemarkerSharedVariables">
+    <map>
+      <entry key="amFreemarkerFacade">
+        <bean class="com.coremedia.blueprint.assets.cae.tags.AMFreemarkerFacade" >
+          <property name="settingsService" ref="settingsService" />
+          <property name="downloadPortal" ref="amDownloadPortal" />
+        </bean>
+      </entry>
+    </map>
+  </customize:append>
+
+  <customize:append id="amFreemarkerConfigurerAutoImportsCustomizer" bean="freemarkerConfigurer"
+                    property="autoImports">
+    <map>
+      <entry key="am" value="/lib/coremedia.com/blueprint/am.ftl"/>
+    </map>
+  </customize:append>
+
+</beans>

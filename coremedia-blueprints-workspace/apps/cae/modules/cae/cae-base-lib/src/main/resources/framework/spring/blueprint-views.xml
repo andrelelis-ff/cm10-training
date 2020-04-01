@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd
+                           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+  <description>
+    Blueprint specific definitions of the CAE View layer.
+  </description>
+
+  <context:component-scan base-package="com.coremedia.cap.util.configuration" />
+  <context:component-scan base-package="com.coremedia.blueprint.coderesources" />
+
+  <import resource="classpath:/com/coremedia/cache/cache-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/dataview-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/view-services-lifecycle.xml"/>
+  <import resource="classpath:/com/coremedia/cae/view-error-services.xml"/>
+  <import resource="classpath:/com/coremedia/cap/common/uapi-services.xml"/>
+  <import resource="classpath:/com/coremedia/cap/multisite/multisite-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/settings/impl/bpbase-settings-services.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-richtextfilters.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-services.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-handlers.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-sitemap.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-cae-services.xml"/>
+
+  <!-- *************************************
+    Programmed Views
+  **************************************  -->
+
+  <customize:replace id="richtextMarkupViewCustomizer" bean="richtextMarkupView"
+                     custom-ref="blueprintRichtextMarkupView">
+    <description>
+      Register the Blueprint programmed view for CoreMedia richtext.
+    </description>
+  </customize:replace>
+
+  <bean id="cmRichtextToHtmlFilterFactory" class="com.coremedia.objectserver.view.RichtextToHtmlFilterFactory">
+    <description>
+      The CAE default RichtextToHtmlFilterFactory providing the default set of richtext filters (not the Blueprint
+      specific one) for programmed views that need it.
+    </description>
+    <property name="idProvider" ref="idProvider"/>
+    <property name="linkFormatter" ref="linkFormatter"/>
+  </bean>
+
+  <bean id="scriptView" class="com.coremedia.blueprint.cae.view.ScriptView">
+    <description>
+      A programmed view to generate CSS/JS stored in CoreMedia richtext.
+    </description>
+    <property name="xmlFilterFactory" ref="cmRichtextToHtmlFilterFactory"/>
+  </bean>
+
+  <bean id="javaScriptMinifier" class="com.coremedia.blueprint.cae.view.processing.JavaScriptMinifier">
+    <description>
+      A JavaScript minifier.
+    </description>
+    <property name="linebreak" value="-1"/>
+    <property name="disableOptimization" value="false"/>
+    <property name="munge" value="true"/>
+    <property name="preserveAllSemicolons" value="false"/>
+    <property name="verbose" value="false"/>
+  </bean>
+
+  <bean id="cssMinifier" class="com.coremedia.blueprint.cae.view.processing.CssMinifier">
+    <description>
+      A CSS minifier.
+    </description>
+    <property name="linebreak" value="-1">
+      <description>
+        Specifies the linebreak-param for the YUICompressor. From YUI-Documentation:
+        Specify 0 to get a line break after each semi-colon in JavaScript, and after each rule in CSS.
+      </description>
+    </property>
+  </bean>
+
+  <bean id="mergedCodeResourcesViewBase" abstract="true">
+    <description>
+      Abstract super bean of merged code views.
+    </description>
+    <property name="xmlFilterFactory" ref="cmRichtextToHtmlFilterFactory"/>
+    <property name="cache" ref="cache"/>
+  </bean>
+
+  <bean id="mergedJavaScriptResourcesView" class="com.coremedia.blueprint.cae.view.MergeableResourcesView" parent="mergedCodeResourcesViewBase">
+    <description>
+      A view for merging the JavaScript of a page into one file.
+    </description>
+    <property name="minifier" ref="javaScriptMinifier"/>
+    <property name="contentType" value="text/javascript"/>
+  </bean>
+
+  <bean id="mergedCssResourcesView" class="com.coremedia.blueprint.cae.view.MergeableResourcesView" parent="mergedCodeResourcesViewBase">
+    <description>
+      A view for merging the CSS of a page into one file.
+    </description>
+    <property name="minifier" ref="cssMinifier"/>
+    <property name="contentType" value="text/css"/>
+  </bean>
+
+  <bean id="blueprintHttpErrorView" class="com.coremedia.blueprint.cae.view.BlueprintHttpErrorView">
+    <description>
+      Handles instances of com.coremedia.objectserver.web.HttpError
+    </description>
+    <property name="errorsRendered">
+      <list>
+        <value>400</value>
+        <value>404</value>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="httpHeadView" class="com.coremedia.blueprint.cae.view.HttpHeadView"/>
+
+  <bean id="plainView" class="com.coremedia.blueprint.cae.view.PlainView">
+    <description>
+      A programmed view to generate plain text from markup.
+    </description>
+  </bean>
+
+  <bean id="robotsView" class="com.coremedia.blueprint.cae.view.RobotsView">
+    <description>
+      A programmed view to generate a Robots.txt from CMChannel settings.
+    </description>
+    <property name="linkFormatter" ref="linkFormatter"/>
+    <property name="sitemapHelper" ref="sitemapHelper"/>
+  </bean>
+
+  <bean class="com.coremedia.blueprint.cae.view.FeedView" id="feedView">
+    <description>
+      Programmed view that generates RSS/ATOM feeds for several document types.
+    </description>
+    <property name="sitesService" ref="sitesService"/>
+    <property name="linkFormatter" ref="linkFormatter"/>
+    <property name="feedItemDataProviders" ref="feedItemDataProviders"/>
+    <property name="feedItemLimit" value="20"/>
+    <property name="settingsService" ref="settingsService"/>
+  </bean>
+
+  <bean id="htmlMarkupView" class="com.coremedia.objectserver.view.XmlMarkupView">
+    <description>
+      Programmed view for rendering markup without further filters, e.g. for plain HTML"
+    </description>
+  </bean>
+
+  <bean id="blueprintProgrammedViews" class="org.springframework.beans.factory.config.MapFactoryBean">
+    <description>
+      Contains programmed views injected into all view repositories.
+    </description>
+    <property name="targetMapClass" value="java.util.HashMap"/>
+    <property name="sourceMap">
+      <map>
+        <entry key="com.coremedia.xml.Markup" value-ref="richtextMarkupView"/>
+        <!-- new -->
+        <entry key="com.coremedia.xml.Markup#html" value-ref="htmlMarkupView"/>
+        <!-- /new -->
+        <entry key="com.coremedia.cap.common.Blob" value-ref="blobView"/>
+        <entry key="com.coremedia.objectserver.view.events.ViewHookEvent" value-ref="viewHookEventView"/>
+        <entry key="java.lang.Throwable" value-ref="errorView"/>
+        <entry key="com.coremedia.xml.Markup#script" value-ref="scriptView"/>
+        <entry key="com.coremedia.blueprint.common.contentbeans.MergeableResources#js" value-ref="mergedJavaScriptResourcesView"/>
+        <entry key="com.coremedia.blueprint.common.contentbeans.MergeableResources#css" value-ref="mergedCssResourcesView"/>
+        <entry key="com.coremedia.xml.Markup#plain" value-ref="plainView"/>
+        <entry key="com.coremedia.objectserver.web.HttpError" value-ref="blueprintHttpErrorView"/>
+        <entry key="com.coremedia.objectserver.web.HttpError#asError" value-ref="blueprintHttpErrorView"/>
+        <entry key="com.coremedia.blueprint.cae.web.HttpHead" value-ref="httpHeadView"/>
+        <entry key="com.coremedia.blueprint.common.robots.RobotsBean" value-ref="robotsView"/>
+        <entry key="com.coremedia.blueprint.common.feeds.FeedSource#asFeed" value-ref="feedView"/>
+      </map>
+    </property>
+  </bean>
+
+  <bean id="teasableFeedItemDataProvider" class="com.coremedia.blueprint.cae.feeds.impl.TeasableFeedItemDataProvider">
+    <property name="linkFormatter" ref="linkFormatter"/>
+  </bean>
+  <bean id="pictureFeedItemDataProvider" class="com.coremedia.blueprint.cae.feeds.impl.PictureFeedItemDataProvider" parent="teasableFeedItemDataProvider"/>
+
+  <bean id="feedItemDataProviders" class="java.util.ArrayList">
+    <constructor-arg>
+      <list>
+        <!-- order: from special to generic -->
+        <ref bean="pictureFeedItemDataProvider"/>
+        <ref bean="teasableFeedItemDataProvider"/>
+      </list>
+    </constructor-arg>
+  </bean>
+
+  <customize:replace id="customizeProgrammedViews" bean="programmedViews" custom-ref="blueprintProgrammedViews">
+    <description>
+      Registers the Blueprint programmed views by replacing the default CAE bean.
+    </description>
+  </customize:replace>
+
+
+  <!-- *************************************
+     View Dispatcher
+  **************************************  -->
+
+  <bean id="blueprintViewRepositoryNameProvider"
+        class="com.coremedia.blueprint.cae.view.resolver.BlueprintViewRepositoryNameProvider">
+    <description>
+      This bean provides symbolic names for each view lookup the view repositories to be queried for views.
+      The Blueprint implementation takes repository names from
+      1. the String list setting "viewRepositoryNames" of the current navigation
+      2. the chosen viewRepository string property of a theme if attached to navigation
+      3. a list of common view repository names added in the property "commonViewRepositoryNames" below
+      The resulting repository names are later matched to view repositories by a CAE ViewRespositoryProvider.
+    </description>
+    <property name="commonViewRepositoryNames" ref="viewRepositories"/>
+    <property name="settingsService" ref="settingsService"/>
+    <property name="themeTemplateViewRepositoryProvider" ref="themeTemplateViewRepositoryProvider"/>
+  </bean>
+
+  <util:list id="viewRepositories">
+    <description>
+      Empty list of common (i.e. not lookup-specific) view repositories.
+      Exposed as a bean in order to allow plugins and extensions to add to the list via customizers.
+    </description>
+  </util:list>
+
+  <customize:prepend id="addCommonRepositoryName" bean="viewRepositories" order="1000">
+    <list>
+      <value>common</value>
+    </list>
+  </customize:prepend>
+
+  <customize:prepend id="addErrorRepositoryName" bean="viewRepositories" order="900">
+    <list>
+      <value>error</value>
+    </list>
+  </customize:prepend>
+
+  <customize:append id="addViewlookupExcludes" bean="viewLookupPredicate" property="excludes"
+                    enabled="${filter.viewlookup.by.predicate}">
+    <description>
+      Exclude these interfaces in ViewLookups (otherwise, all Interfaces would be used).
+    </description>
+    <list>
+      <value>com.coremedia.blueprint.common.contentbeans.BelowRootNavigation</value>
+      <value>com.coremedia.blueprint.common.contentbeans.HasViewtype</value>
+      <value>com.coremedia.blueprint.common.datevalidation.ValidityPeriod</value>
+    </list>
+  </customize:append>
+
+  <!-- *************************************
+     View Type specific customizations
+  **************************************  -->
+
+  <customize:append id="addBlueprintRenderNodeDecoratorProvider" bean="renderNodeDecoratorProviders">
+    <description>
+      Add the RenderNodeDecoratorProvider which decorates views with content managed "viewtypes"
+    </description>
+    <list>
+      <bean class="com.coremedia.blueprint.cae.view.viewtype.ViewTypeRenderNodeDecoratorProvider">
+        <property name="decorator">
+          <bean class="com.coremedia.blueprint.cae.view.viewtype.ViewTypeRenderNodeDecorator"/>
+        </property>
+      </bean>
+      <bean class="com.coremedia.blueprint.cae.view.DynamicIncludeRenderNodeDecoratorProvider">
+        <property name="decorator">
+          <bean class="com.coremedia.blueprint.cae.view.DynamicIncludeRenderNodeDecorator">
+            <property name="predicates" ref="dynamicIncludePredicates"/>
+          </bean>
+        </property>
+        <property name="predicates" ref="dynamicIncludePredicates"/>
+      </bean>
+    </list>
+  </customize:append>
+
+  <util:list id="dynamicIncludePredicates" value-type="com.coremedia.blueprint.cae.view.DynamicIncludePredicate">
+    <description>
+      This list of predicates will be traversed by the dynamicIncludeRenderDecorator/Provider in order to decide
+      whether a DynamicInclude should be used for a given Bean/View combination.
+    </description>
+  </util:list>
+
+  <bean id="blueprintViewLookupTraversal"
+        class="com.coremedia.blueprint.cae.view.resolver.BlueprintViewLookupTraversal">
+    <description>
+      Creates a ViewLookupTraversal considering viewtypes.
+    </description>
+  </bean>
+
+  <customize:replace id="customizeModelAwareViewResolver" bean="modelAwareViewResolver" property="viewLookupTraversal"
+                     custom-ref="blueprintViewLookupTraversal">
+    <description>
+      Registers the ViewLookupTraversal for viewtypes.
+    </description>
+  </customize:replace>
+
+
+  <!-- *************************************
+   View Repository and resolving
+  **************************************  -->
+
+  <customize:append id="addViewLookupTypeTriggers" bean="viewLookupTypeTriggers">
+    <description>
+      Add types that trigger the clearing of the viewcache if they are modified / created / deleted
+    </description>
+    <list>
+      <value>CMTemplateSet</value>
+      <value>CMTheme</value>
+    </list>
+  </customize:append>
+
+  <customize:replace id="customizeTemplateLocationPatterns" bean="templateLocationPatterns" order="0">
+    <description>Register the template location patterns of this module.</description>
+    <list>
+      <value>/WEB-INF/templates/%s</value>
+    </list>
+  </customize:replace>
+
+  <customize:prepend id="addRepositoryTemplateLocationPattern" bean="templateLocationPatterns" order="1" enabled="#{ !'${cae.use.local.resources:false}' }">
+    <description>
+      Register template location pattern that loads templates from the Content Repository.
+      (!) Make sure that this customizer runs after "customizeTemplateLocationPatterns" since this customizer prepends, while
+      the other one replaces the list (!)
+    </description>
+    <list>
+      <value>jar:id:contentproperty:/Themes/%1$s/templates/%1$s-templates.jar/archive!/META-INF/resources/WEB-INF/templates/%1$s</value>
+    </list>
+  </customize:prepend>
+
+  <bean id="themeTemplateViewRepositoryProvider"
+        class="com.coremedia.blueprint.cae.view.resolver.ThemeTemplateViewRepositoryProvider"
+        parent="abstractTemplateViewRepositoryProvider">
+    <property name="cache" ref="cache"/>
+    <property name="themeService" ref="themeService"/>
+    <property name="capConnection" ref="connection"/>
+    <property name="jarBlobResourceLoader" ref="jarBlobResourceLoader"/>
+    <property name="useLocalResources" value="${cae.use.local.resources:false}"/>
+  </bean>
+
+  <customize:prepend id="addThemeViewRepositoryProvider" bean="viewRepositoryProviders">
+    <list>
+      <ref bean="themeTemplateViewRepositoryProvider"/>
+    </list>
+  </customize:prepend>
+
+  <customize:replace id="setBlueprintViewRepositoryNameProvider" bean="viewRepositoryNameProviders">
+    <description>Register the Blueprint ViewRepositoryNameProvider</description>
+    <list>
+      <ref bean="blueprintViewRepositoryNameProvider"/>
+    </list>
+  </customize:replace>
+
+  <customize:append id="blueprintViewResolverCustomizer" bean="viewResolverAttributes">
+    <map>
+      <description>
+        These values will be added to every request that is processed by the DispatcherServlet.
+      </description>
+      <entry>
+        <key>
+          <util:constant static-field="com.coremedia.blueprint.common.services.context.ContextHelper.NAME_CONTEXTHELPER"/>
+        </key>
+        <ref bean="contextHelper"/>
+      </entry>
+      <entry>
+        <key>
+          <util:constant static-field="com.coremedia.blueprint.base.navigation.context.ContextStrategy.NAME_CONTEXTSTRATEGY"/>
+        </key>
+        <ref bean="contextStrategy"/>
+      </entry>
+    </map>
+  </customize:append>
+
+  <!-- *************************************
+    Preview webresources
+  **************************************  -->
+
+  <customize:append id="addPreviewCss" bean="previewResourcesCssList">
+    <list>
+      <value>/com/coremedia/cae/css/coremedia.preview.blueprint.css</value>
+    </list>
+  </customize:append>
+
+  <customize:append id="addPreviewJs" bean="previewResourcesJsList">
+    <list value-type="java.lang.String">
+      <value>/com/coremedia/cae/js/coremedia.preview.blueprint.js</value>
+    </list>
+  </customize:append>
+
+</beans>

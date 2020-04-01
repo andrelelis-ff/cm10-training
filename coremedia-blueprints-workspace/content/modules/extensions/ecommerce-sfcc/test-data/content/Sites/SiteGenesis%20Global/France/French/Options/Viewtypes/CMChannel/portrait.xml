@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/SiteGenesis Global/France/French/Options/Viewtypes/CMChannel" name="portrait" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Options/Viewtypes/CMChannel/portrait.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Viewtypes/CMChannel/portrait"/>
+</master>
+<description>Affiche une collection dans une disposition de tuiles (portrait).</description>
+<icon href="portrait.icon.svg%2Bxml" mimetype="image/svg+xml"/>
+<layout>portrait</layout>
+</CMViewtype>

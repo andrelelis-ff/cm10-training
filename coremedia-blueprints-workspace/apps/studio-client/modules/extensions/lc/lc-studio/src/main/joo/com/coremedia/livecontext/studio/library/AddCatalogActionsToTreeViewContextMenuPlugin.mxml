@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:AddItemsPlugin xmlns:fx="http://ns.adobe.com/mxml/2009"
+                   xmlns="exml:ext.config"
+                   xmlns:ui="exml:com.coremedia.ui.config"
+                   xmlns:livecontext="exml:com.coremedia.livecontext.studio.config">
+<fx:Script><![CDATA[
+  import com.coremedia.cms.editor.sdk.collectionview.AbstractContextMenu;
+  import com.coremedia.cms.editor.sdk.collectionview.tree.TreeViewContextMenu;
+  import com.coremedia.livecontext.studio.LivecontextStudioPlugin;
+
+  private var config:AddCatalogActionsToTreeViewContextMenuPlugin;
+  private var componentConfig:TreeViewContextMenu;
+
+  // called by generated constructor code
+  private function __initialize__(config:AddCatalogActionsToTreeViewContextMenuPlugin):void {
+    componentConfig = TreeViewContextMenu(config.cmp.initialConfig);
+  }
+
+  public native function AddCatalogActionsToTreeViewContextMenuPlugin(config:AddCatalogActionsToTreeViewContextMenuPlugin = null);
+  ]]></fx:Script>
+  <ui:items>
+    <MenuItem itemId="{LivecontextStudioPlugin.SEARCH_PRODUCT_VARIANTS_MENU_ITEM_ID}">
+      <baseAction>
+        <livecontext:SearchProductVariantsAction
+                catalogObjectExpression="{componentConfig.selectedFolderValueExpression}"/>
+      </baseAction>
+    </MenuItem>
+    <MenuSeparator/>
+    <MenuItem itemId="{LivecontextStudioPlugin.AUGMENT_CATEGORY_MENU_ITEM_ID}">
+      <baseAction>
+        <livecontext:AugmentCategoryAction
+                catalogObjectExpression="{componentConfig.selectedFolderValueExpression}"/>
+      </baseAction>
+    </MenuItem>
+    <MenuItem itemId="{LivecontextStudioPlugin.CREATE_PRODUCT_TEASER_MENU_ITEM_ID}">
+      <baseAction>
+        <livecontext:CreateProductTeaserAction
+                catalogObjectExpression="{componentConfig.selectedFolderValueExpression}"/>
+      </baseAction>
+    </MenuItem>
+    <MenuItem itemId="{LivecontextStudioPlugin.CREATE_MARKETING_SPOT_MENU_ITEM_ID}">
+      <baseAction>
+        <livecontext:CreateMarketingSpotAction
+                catalogObjectExpression="{componentConfig.selectedFolderValueExpression}"/>
+      </baseAction>
+    </MenuItem>
+  </ui:items>
+  <ui:after>
+    <Component itemId="{AbstractContextMenu.OPEN_IN_TAB_MENU_ITEM_ID}"/>
+  </ui:after>
+</ui:AddItemsPlugin>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Pictures/Company" name="Press Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0.029315960912052116</StringProperty>
+<StringProperty Name="y1">0.0975609756097561</StringProperty>
+<StringProperty Name="x2">0.9641693811074918</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=447;y=13;width=1181;height=1179</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=180;y=133;width=1648;height=1233</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=155;width=2048;height=1150</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=625;y=134;width=822;height=1232</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=60;y=134;width=1919;height=720</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.2182410423452769;y1=0.00975609756097561;x2=0.7947882736156352;y2=0.8731707317073171</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.08794788273615635;y1=0.0975609756097561;x2=0.8925081433224755;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.11320754716981132;x2=1;y2=0.9547169811320755</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.5063157894736842</StringProperty>
+<StringProperty Name="y">0.30757097791798105</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Press</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Symbolic picture for Chef Corp. press and media relations</alt>
+<copyright>photomak/Shutterstock 63188920</copyright>
+<dataUrl></dataUrl>
+<width>2048</width>
+<height>1366</height>
+<data md5="d282a4d4aac991333993837e750c7377" size="190371" href="../../../../../../../../__blob/d282a4d4aac991333993837e750c7377.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

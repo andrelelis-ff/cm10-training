@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>studio-client.lc</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>lc-studio-test-helper</artifactId>
+  <packaging>swc</packaging>
+  <description>Internally reused test helpers for lc-studio</description>
+
+  <properties>
+    <selenium.host>localhost</selenium.host>
+    <jooUnitSeleniumBrowserStartCommand>*firefox</jooUnitSeleniumBrowserStartCommand>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>ui-components</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>ec-studio-model</artifactId>
+      <version>${project.version}</version>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>ec-studio</artifactId>
+      <version>${project.version}</version>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>ec-studio-test-helper</artifactId>
+      <version>${project.version}</version>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>client-core-test-helper</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>editor-components</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>net.jangaroo</groupId>
+      <artifactId>ext-as</artifactId>
+      <type>swc</type>
+    </dependency>
+   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>net.jangaroo</groupId>
+        <artifactId>jangaroo-maven-plugin</artifactId>
+        <version>${jangaroo.version}</version>
+        <extensions>true</extensions>
+        <configuration>
+          <namespaces>
+            <namespace>
+              <uri>exml:com.coremedia.livecontext.studio.testhelper.config</uri>
+            </namespace>
+          </namespaces>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

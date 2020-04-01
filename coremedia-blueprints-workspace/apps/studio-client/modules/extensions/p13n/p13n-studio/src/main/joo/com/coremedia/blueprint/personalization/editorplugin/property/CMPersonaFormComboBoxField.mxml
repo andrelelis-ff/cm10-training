@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p13n:CMPersonaFormComboBox
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:p13n="exml:com.coremedia.blueprint.personalization.editorplugin.config"
+        xmlns:plugins="com.coremedia.cms.editor.sdk.premular.fields.plugins.*"
+        properties="{config.values}"
+        typeAhead="true"
+        queryMode="local"
+        triggerAction="all">
+  <fx:Script><![CDATA[
+    import com.coremedia.personalization.ui.util.PersonaContextHelper;
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.blueprint.personalization.editorplugin.config.cmPersonaFormComboBoxField";
+
+    private var config:CMPersonaFormComboBoxField;
+
+    public native function CMPersonaFormComboBoxField(config:CMPersonaFormComboBoxField = null);
+
+    /**
+     * property path expression leading to the Content to use for the property field
+     */
+    [Bindable]
+    public var bindTo:ValueExpression;
+
+    [Bindable]
+    public var forceReadOnlyValueExpression:ValueExpression;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!--- the context of the Bean-property to bind in this field -->
+    <fx:String id="propertyContext"/>
+
+    <!--- the property of the Bean to bind in this field -->
+    <fx:String id="propertyName"/>
+
+    <!--- the values of the Bean to bind in this field -->
+    <fx:Object id="values"/>
+  </fx:Declarations>
+
+  <p13n:plugins>
+    <ui:BindPropertyPlugin
+            bindTo="{config.bindTo.extendBy(config.propertyContext+PersonaContextHelper.CONTEXT_NAME_SEPARATOR+config.propertyName)}"
+            bidirectional="true"/>
+    <plugins:BindDisablePlugin forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}" bindTo="{bindTo}"/>
+  </p13n:plugins>
+
+</p13n:CMPersonaFormComboBox>

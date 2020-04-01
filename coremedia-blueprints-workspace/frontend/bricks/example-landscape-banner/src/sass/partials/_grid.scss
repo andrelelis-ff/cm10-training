@@ -1,0 +1,25 @@
+// Flex Grid for Landscape Banner
+.cm-landscape-banner-grid {
+  $_cm-landscape-banner-grid-gutter-width: 30px;
+  $_cm-landscape-banner-per-row-for-xs-landscape-and-up: 3;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -$_cm-landscape-banner-grid-gutter-width;
+  margin-left: -$_cm-landscape-banner-grid-gutter-width;
+
+  &__item {
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      $width: percentage((100/$_cm-landscape-banner-per-row-for-xs-landscape-and-up)/100);
+      width: $width;
+    }
+
+    padding-top: $_cm-landscape-banner-grid-gutter-width;
+    padding-left: $_cm-landscape-banner-grid-gutter-width;
+  }
+}

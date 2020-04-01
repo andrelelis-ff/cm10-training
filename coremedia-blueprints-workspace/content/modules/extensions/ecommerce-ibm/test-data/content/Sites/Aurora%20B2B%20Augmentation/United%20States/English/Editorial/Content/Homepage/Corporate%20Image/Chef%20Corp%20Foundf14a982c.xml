@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Homepage/Corporate Image" name="Chef Corp Founder Portrait Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1068;y=0;width=1614;height=2500</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=1044;y=0;width=1875;height=2500</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=733;y=0;width=2500;height=2500</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=315;y=0;width=3333;height=2500</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=3750;height=2109</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=239;width=3406;height=1358</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=784;width=3750;height=940</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=1146;y=0;width=1667;height=2500</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=0;width=3750;height=1406</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2848605577689243;y1=0;x2=0.7151394422310757;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.250996015936255;y1=0;x2=0.750996015936255;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.16733067729083664;y1=0;x2=0.8346613545816733;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.055776892430278883;y1=0;x2=0.9462151394422311;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.08059701492537313;x2=1;y2=0.9223880597014925</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.0955223880597015;x2=0.9083665338645418;y2=0.6388059701492538</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.31343283582089554;x2=1;y2=0.6895522388059702</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.5262605042016807</StringProperty>
+<StringProperty Name="y">0.2697160883280757</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Renaud Bozinsky, Founder of Chef Corp</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Restaurant Owner</alt>
+<copyright>Monkey Business Images / Shutterstock 289811471</copyright>
+<dataUrl></dataUrl>
+<width>3750</width>
+<height>2500</height>
+<data md5="ca7598086b377032c4fa4aba5602c329" size="3360903" href="../../../../../../../../__blob/ca7598086b377032c4fa4aba5602c329.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

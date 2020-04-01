@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AMVideoAsset folder="/Assets/Products/Lighting" name="Chef Corp. RGB LED Strip Mounting Instructions" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<thumbnail md5="4b2b628325047b8a532649a24659f938" size="160931" href="../../../__blob/4b2b628325047b8a532649a24659f938.blob" mimetype="image/png"/>
+<state>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="original">
+<Struct>
+<StringProperty Name="modificationDate">1452594096604</StringProperty>
+<StringProperty Name="modifier">Amy</StringProperty>
+<IntProperty Name="version">2</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="web">
+<Struct>
+<StringProperty Name="modificationDate">1452594100200</StringProperty>
+<StringProperty Name="modifier">Amy</StringProperty>
+<IntProperty Name="version">1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="thumbnail">
+<Struct>
+<StringProperty Name="modificationDate">1452594140198</StringProperty>
+<StringProperty Name="modifier">Amy</StringProperty>
+<IntProperty Name="version">1</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</state>
+<metadata>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="renditions">
+<Struct>
+<StructProperty Name="original">
+<Struct>
+<BooleanProperty Name="show">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="web">
+<Struct>
+<BooleanProperty Name="show">true</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StringListProperty Name="productIds">
+<String>ChefSupply_RGB_LED_Strip</String>
+</StringListProperty>
+<StringListProperty Name="channels">
+<String>mobile</String>
+<String>web</String>
+<String>social</String>
+</StringListProperty>
+<StringListProperty Name="regions">
+<String>USA</String>
+<String>Europe</String>
+</StringListProperty>
+<StringProperty Name="copyright">azuri/Shutterstock Video 6975667</StringProperty>
+<DateProperty Name="expirationDate" TimeZone="GMT+01:00">2019-12-31T00:00:00+01:00</DateProperty>
+</Struct>
+</metadata>
+<keywords></keywords>
+<subjectTaxonomy>
+<link href="../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<assetTaxonomy>
+<link href="../../../Settings/Taxonomies/Asset%20Download%20Portal/Lighting.xml" path="/Settings/Taxonomies/Asset%20Download%20Portal/Lighting"/>
+</assetTaxonomy>
+<web md5="834ccd1b54dffd057a87c33a1cc93115" size="617816" href="../../../__blob/834ccd1b54dffd057a87c33a1cc93115.blob" mimetype="video/mp4"/>
+</AMVideoAsset>

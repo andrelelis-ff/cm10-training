@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<%- host = node['blueprint']['hostname'] -%>
+<%- wcs_host = node['blueprint']['ibm-wcs']['host'] -%>
+<%- wcs_version = node['blueprint']['ibm-wcs']['version'].to_s -%>
+<%- hybris_host = node['blueprint']['sap-hybris']['host'] -%>
+<%- sfcc_host = node['blueprint']['sfcc']['host'] -%>
+<head>
+  <meta charset="UTF-8"/>
+  <title>CoreMedia Content Cloud</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="noindex, nofollow"/>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/overview.css">
+  <script src="assets/jquery.min.js"></script>
+  <script src="assets/tooling.js"></script>
+</head>
+<body>
+
+<%= render "overview/header-partial.erb", :cookbook => 'blueprint-cmcc' %>
+
+<div class="cm-grid">
+
+  <div class="cm-hero">
+    <div class="cm-hero__image">
+      <img src="assets/overview.jpg">
+    </div>
+    <div class="cm-hero__content">
+      <h1>CoreMedia Content Cloud</h1>
+      <a class="cm-hero__button" href="https://studio.<%= host %>" target="_blank" role="button">Open Studio</a>
+    </div>
+  </div>
+
+  <div id="main" class="cm-container">
+    <article class="cm-details">
+      <h2>Demo Sites</h2>
+      <div>
+      <table class="sites">
+        <thead>
+        <tr>
+          <th></th>
+          <th>Preview</th>
+          <th>Live</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Chef Corp.</td>
+          <td>
+            <a href="https://preview.<%= host %>/corporate" target="_blank" data-cm-test="cae">English</a> ·
+            <a href="https://preview.<%= host %>/corporate-de-de" target="_blank" data-cm-test="cae">German</a>
+          </td>
+          <td>
+            <a href="https://corporate.<%= host %>/corporate" target="_blank" data-cm-test="cae">English</a> ·
+            <a href="https://corporate.<%= host %>/corporate-de-de" target="_blank" data-cm-test="cae">German</a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <% if node['blueprint']['ibm-wcs']['enabled']%>
+      <h3>HCL Commerce</h3>
+      <table class="sites">
+        <thead>
+        <tr>
+          <th></th>
+          <th>Preview</th>
+          <th>Live</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Aurora</td>
+          <td>
+            <a href="https://shop-preview-production-ibm.<%= host %>/wcs/shop/en/auroraesite" target="_blank" data-cm-test="cae">English</a> ·
+            <a href="https://shop-preview-production-ibm.<%= host %>/wcs/shop/de/auroraesite" target="_blank" data-cm-test="cae">German</a>
+          </td>
+          <td>
+            <a href="https://shop-ibm.<%= host %>/wcs/shop/en/auroraesite" target="_blank" data-cm-test="cae">English</a> ·
+            <a href="https://shop-ibm.<%= host %>/wcs/shop/de/auroraesite" target="_blank" data-cm-test="cae">German</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Aurora B2B</td>
+          <td>
+            <a href="https://shop-preview-production-ibm.<%= host %>/wcs/shop/en/aurorab2besite" target="_blank" data-cm-test="cae">English</a> ·
+            <a href="https://shop-preview-production-ibm.<%= host %>/wcs/shop/de/aurorab2besite" target="_blank" data-cm-test="cae">German</a>
+          </td>
+          <td>
+            <a href="https://shop-ibm.<%= host %>/wcs/shop/en/aurorab2besite" target="_blank" data-cm-test="cae">English</a> ·
+            <a href="https://shop-ibm.<%= host %>/wcs/shop/de/aurorab2besite" target="_blank" data-cm-test="cae">German</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Calista</td>
+          <td>
+            <a href="https://preview.<%= host %>/calista" target="_blank" data-cm-test="cae">English</a> ·
+            <a href="https://preview.<%= host %>/calista-de-de" target="_blank" data-cm-test="cae">German</a>
+          </td>
+          <td>
+            <a href="https://calista.<%= host %>/calista" target="_blank" data-cm-test="cae">English</a> ·
+            <a href="https://calista.<%= host %>/calista-de-de" target="_blank" data-cm-test="cae">German</a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <% end %>
+
+      <% if node['blueprint']['sap-hybris']['enabled'] %>
+      <h3>SAP Commerce Cloud</h3>
+      <table class="sites">
+        <thead>
+        <tr>
+          <th></th>
+          <th>Preview</th>
+          <th>Live</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Apparel</td>
+          <td>
+            <a href="https://shop-preview-hybris.<%= host %>/yacceleratorstorefront/?site=apparel-uk&clear=true" target="_blank" data-cm-test="cae">English</a> ·
+            <a href="https://shop-preview-hybris.<%= host %>/yacceleratorstorefront/?site=apparel-de&clear=true" target="_blank" data-cm-test="cae">German</a>
+          </td>
+          <td>
+            <a href="https://shop-hybris.<%= host %>/yacceleratorstorefront/?site=apparel-uk&clear=true" target="_blank" data-cm-test="cae">English</a> ·
+            <a href="https://shop-hybris.<%= host %>/yacceleratorstorefront/?site=apparel-de&clear=true" target="_blank" data-cm-test="cae">German</a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <% end %>
+
+      <% if node['blueprint']['sfcc']['enabled'] %>
+      <h3>Salesforce Commerce Cloud</h3>
+      <table class="sites">
+        <thead>
+        <tr>
+          <th></th>
+          <th>Preview</th>
+          <th>Live</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Storefront Reference Architecture</td>
+          <td>
+            <a href="https://shop-preview-sfcc.<%= host %>/s/RefArchGlobal/home?preview=true" target="_blank" data-cm-test="cae">English</a> ·
+            <a href="https://shop-preview-sfcc.<%= host %>/s/RefArchGlobal/home?preview=true&lang=fr_FR" target="_blank" data-cm-test="cae">French</a>
+          </td>
+          <td>
+            <a href="https://shop-sfcc.<%= host %>/s/RefArchGlobal/home" target="_blank" data-cm-test="cae">English</a> ·
+            <a href="https://shop-sfcc.<%= host %>/s/RefArchGlobal/home?lang=fr_FR" target="_blank" data-cm-test="cae">French</a>
+          </td>
+        </tr>
+        <tr>
+          <td>SiteGenesis</td>
+          <td>
+            <a href="https://shop-preview-sfcc.<%= host %>/s/SiteGenesisGlobal/home?preview=true" target="_blank" data-cm-test="cae">English</a> ·
+            <a href="https://shop-preview-sfcc.<%= host %>/s/SiteGenesisGlobal/home?preview=true&lang=fr_FR" target="_blank" data-cm-test="cae">French</a>
+          </td>
+          <td>
+            <a href="https://shop-sfcc.<%= host %>/s/SiteGenesisGlobal/home" target="_blank" data-cm-test="cae">English</a> ·
+            <a href="https://shop-sfcc.<%= host %>/s/SiteGenesisGlobal/home?lang=fr_FR" target="_blank" data-cm-test="cae">French</a>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <% end %>
+
+      <h2>Management Interfaces</h2>
+      <ul>
+        <li><a href="https://studio.<%= host %>" target="_blank" data-cm-test="">CoreMedia Studio</a></li>
+        <!--<li><a href="https://site-manager.docker.localhost/sitemanager" target="_blank">CoreMedia Sitemanager</a></li>-->
+      </ul>
+
+      <% if node['blueprint']['ibm-wcs']['enabled']%>
+      <h3>HCL Commerce</h3>
+      <ul>
+        <% if wcs_version == '9.0'%>
+          <li><a href="https://<%= wcs_host %>:8000/lobtools/cmc/ManagementCenterMain?locale=en_US" target="_blank" data-cm-test="">WebSphere Management Center</a> <span class="login">Login: wcsadmin/wcsadmin01</span></li>
+          <li><a href="https://<%= wcs_host %>:8001/webapp/wcs/tools/servlet/ToolsLogon?XMLFile=common.mcLogon" target="_blank" data-cm-test="">WebSphere Accelerator</a></li>
+          <li><a href="https://<%= wcs_host %>:8002/webapp/wcs/admin/servlet/ToolsLogon?XMLFile=adminconsole.AdminConsoleLogon" target="_blank">WebSphere Administration Console</a></li>
+          <li><a href="https://<%= wcs_host %>:8004/webapp/wcs/orgadmin/servlet/ToolsLogon?XMLFile=buyerconsole.BuyAdminConsoleLogon&storeId=0" target="_blank">WebSphere Organization Administration Console</a></li>
+          <li><a href="https://<%= wcs_host %>:9043/ibm/console/" target="_blank">WCS9 Websphere Console</a> <span class="login">Login: configadmin/passw0rd</span></li>
+        <% end %>
+        <% if wcs_version != '9.0'%>
+          <li><a href="https://<%= wcs_host %>:8000/lobtools/cmc/ManagementCenterMain?locale=en_US" target="_blank" data-cm-test="">WebSphere Management Center</a> <span class="login">Login: wcsadmin/wcsadmin01</span></li>
+          <li><a href="https://<%= wcs_host %>:8000/webapp/wcs/tools/servlet/ToolsLogon?XMLFile=common.mcLogon" target="_blank" data-cm-test="">WebSphere Accelerator</a></li>
+          <li><a href="https://<%= wcs_host %>:8002/webapp/wcs/admin/servlet/ToolsLogon?XMLFile=adminconsole.AdminConsoleLogon" target="_blank">WebSphere Administration Console</a></li>
+          <li><a href="https://<%= wcs_host %>:8004/webapp/wcs/orgadmin/servlet/ToolsLogon?XMLFile=buyerconsole.BuyAdminConsoleLogon&storeId=0" target="_blank">WebSphere Organization Administration Console</a></li>
+          <li><a href="https://<%= wcs_host %>:9104/ibm/console/" target="_blank">WebSphere Websphere Console</a> <span class="login">Login: configadmin/configadmin01</span></li>
+        <% end %>
+      </ul>
+      <% end %>
+
+      <% if node['blueprint']['sap-hybris']['enabled'] %>
+      <h3>SAP Commerce Cloud</h3>
+      <ul>
+        <li><a href="https://<%= hybris_host %>:9002" target="_blank" data-cm-test="">Hybris Administration Console</a></li>
+        <li><a href="https://<%= hybris_host %>:9002/backoffice" target="_blank" data-cm-test="">SAP Back Office</a></li>
+        <li><a href="https://<%= hybris_host %>:9002/smartedit" target="_blank" data-cm-test="">SAP SmartEdit</a></li>
+      </ul>
+      <% end %>
+
+      <% if node['blueprint']['sfcc']['enabled'] %>
+      <h3>Salesforce Commerce Cloud</h3>
+      <ul>
+        <li><a href="https://<%= sfcc_host %>/on/demandware.store/Sites-Site/default/ViewApplication-DisplayWelcomePage" target="_blank" data-cm-test="">Salesforce Business Manager</a></li>
+      </ul>
+      <% end %>
+
+      <%= render 'overview/other-links-partial.erb',
+                 :cookbook => 'blueprint-cmcc',
+                 :variables => { :host => host , :sfcc => node['blueprint']['sfcc']['enabled'], :ibm_wcs => node['blueprint']['ibm-wcs']['enabled'], :sap_hybris => node['blueprint']['sap-hybris']['enabled']}
+      %>
+
+    </article>
+  </div>
+</div>
+
+<%= render "overview/footer-partial.erb", :cookbook => 'blueprint-cmcc' %>
+
+</body>
+</html>

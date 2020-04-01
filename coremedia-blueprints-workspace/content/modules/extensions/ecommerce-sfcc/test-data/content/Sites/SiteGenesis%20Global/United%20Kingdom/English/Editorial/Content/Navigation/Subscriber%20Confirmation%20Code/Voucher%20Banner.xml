@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/United Kingdom/English/Editorial/Content/Navigation/Subscriber Confirmation Code" name="Voucher Banner" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=719;y=0;width=2999;height=3999</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=1;y=0;width=3999;height=3999</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=177;width=4000;height=3000</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=164;width=4000;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=151;width=4000;height=1500</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.17981072555205047;y1=0;x2=0.9296232255520505;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.044164037854889586;x2=1;y2=0.7943515847416114</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.04100946372239748;x2=1;y2=0.6036501238874388</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.03785488958990536;x2=1;y2=0.41294866303326627</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>3999</height>
+<data md5="cff9a605379ecc97c5ca37481f500a37" size="1151148" href="../../../../../../../../__blob/cff9a605379ecc97c5ca37481f500a37.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

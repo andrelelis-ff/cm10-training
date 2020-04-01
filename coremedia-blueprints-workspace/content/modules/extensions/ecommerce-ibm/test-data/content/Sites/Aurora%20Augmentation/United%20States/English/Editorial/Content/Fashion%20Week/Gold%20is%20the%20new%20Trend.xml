@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Aurora Augmentation/United States/English/Editorial/Content/Fashion Week" name="Gold is the new Trend" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Teaser%20Styles/Light"/>
+<IntProperty Name="positionY">40</IntProperty>
+<IntProperty Name="width">75</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Gold is the new trend 2018</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Fashion.xml" path="/Settings/Taxonomies/Subject/Fashion"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Trends.xml" path="/Settings/Taxonomies/Subject/Trends"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Fashion%20Week.xml" path="/Settings/Taxonomies/Subject/Fashion%20Week"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center">Gold is the Trend in 2018</p><p class="align--center">Discover the trends </p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Doing collections, doing fashion is like a non-stop dialogue. We look our best in subdued colors, sophisticated cuts, and a general air of sleek understatement. The only way to do something in depth is to work hard. Sometimes incompetence is useful. It helps you keep an open mind. You have to always work against what you did before, and even against your taste.</p><p>Attitude is everything. My job is to bring out in people what they wouldn't dare do themselves. I am never satisfied with myself and that is what keeps me going - I have no post-satisfaction. Elegance isn't solely defined by what you wear. It's how you carry yourself, how you speak, what you read. It is difficult to talk about fashion in the abstract, without a human body before my eyes, without drawings, without a choice of fabric - without a practical or visual reality.</p><p>I think there is something about luxury - it's not something people need, but it's what they want. It really pulls at their heart. Sometimes the simplest things are the most profound. You can hide so much behind theatrics, and I don't need to do that any more. I like the things around me to be beautiful and slightly dreamy, with a feeling of worldliness. Nostalgia is a very complicated subject for me. I'm attracted by nostalgia but I refuse it intellectually.</p><p>I still appreciate individuality. Style is much more interesting than fashion, really. People said making clothes inside out was not proper. I disagreed, because clothes that are inside out are as beautiful as a cathedral. War taught me that not everything is glamorous. A lot of self-importance goes on in the fashion industry. I'm not like that. I never like to think that I design for a particular person. I design for the woman I wanted to be, the woman I used to be, and - to some degree - the woman I'm still a little piece of.</p><p>I wish I had invented blue jeans. They have expression, modesty, sex appeal, simplicity - all I hope for in my clothes. Clothes mean nothing until someone lives in them. Never in my wildest dreams did I entertain the idea that I would become a fashion designer. I couldn't love a woman who inspired me to be totally disinterested. If I fell in love with a woman for an artistic reason, or from the point of view of my work, I think it would rob her of something. A girl should be two things: classy and fabulous.</p><p>I want to thank all the women who have worn my clothes, the famous and the unknown, who have been so faithful to me and given me so much joy. I can't get sucked into that celebrity thing, because I think it's just crass. I always say: To be well dressed you must be well naked. I love to design things that people can actually buy. I'm staggered by what a boot costs today. My breakfast is very important.</p><p>Design is a constant challenge to balance comfort with luxe, the practical with the desirable. Beauty is perfect in its imperfections, so you just have to go with the imperfections. Fashion is made to become unfashionable. I've always tried to push myself technically and to push myself visually. That's been part of the journey. I still appreciate individuality. Style is much more interesting than fashion, really.</p></div></detailText>
+<pictures>
+<link href="Fashion%20Trend%20Gold%20Picture.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion%20Week/Fashion%20Trend%20Gold%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../Authors/Elle%20Quinn%20Person.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Authors/Elle%20Quinn%20Person"/>
+</authors>
+</CMArticle>

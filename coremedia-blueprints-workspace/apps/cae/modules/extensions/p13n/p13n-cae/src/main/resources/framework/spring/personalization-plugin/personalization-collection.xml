@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean name="contextCollection"
+        class="com.coremedia.personalization.context.DefaultContextCollection"
+        scope="singleton">
+    <description>
+      The context collection of the user whose request is currently being processed. It is filled by the
+      contextCollector and used by all beans that require access to the collection.
+    </description>
+  </bean>
+
+</beans>

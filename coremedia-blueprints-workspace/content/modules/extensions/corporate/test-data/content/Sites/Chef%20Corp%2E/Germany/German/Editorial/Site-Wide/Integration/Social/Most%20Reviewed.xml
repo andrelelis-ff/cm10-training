@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ESDynamicList folder="/Sites/Chef Corp./Germany/German/Editorial/Site-Wide/Integration/Social" name="Most Reviewed" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Site-Wide/Integration/Social/Most%20Reviewed.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Site-Wide/Integration/Social/Most%20Reviewed"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Most Reviewed</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<maxLength>5</maxLength>
+<channel>
+<link href="../../../../Navigation/Chef%20Corp%2E%20DE%20Home%20Page.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Chef%20Corp%2E%20DE%20Home%20Page"/>
+</channel>
+<type></type>
+<interval>LAST_YEAR</interval>
+<aggregationType>MOST_REVIEWED</aggregationType>
+</ESDynamicList>

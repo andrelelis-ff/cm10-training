@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:TaxonomyExplorerPanelBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                                 xmlns:local="com.coremedia.blueprint.studio.taxonomy.administration.*"
+                                 xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                                 xmlns="exml:ext.config"
+                                 xmlns:ui="exml:com.coremedia.ui.config"
+                                 xmlns:taxonomy="exml:com.coremedia.blueprint.studio.config.taxonomy"
+                                 xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                                 ui="{PanelSkin.FRAME.getSkin()}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.skins.ButtonSkin;
+    import com.coremedia.ui.skins.ContainerSkin;
+    import com.coremedia.ui.skins.PanelSkin;
+    import com.coremedia.ui.skins.SplitterSkin;
+    import com.coremedia.ui.skins.TabBarSkin;
+    import com.coremedia.ui.skins.TextfieldSkin;
+    import com.coremedia.ui.skins.ToolbarSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.taxonomy.taxonomyExplorerPanel";
+
+    /**
+     * The itemId of the first taxonomy explorer toolbar separator.
+     */
+    public static const TAXONOMY_EXPLORER_SEP_FIRST_ITEM_ID:String = "taxonomyExplorerSepFirst";
+
+    /**
+     * The itemId of the second taxonomy explorer toolbar separator.
+     */
+    public static const TAXONOMY_EXPLORER_SEP_SECOND_ITEM_ID:String = "taxonomyExplorerSepSecond";
+
+    public static const TAXONOMY_EXPLORER_PANEL_BLOCK:String = "cm-taxonomy-explorer-panel";
+    public static const TAXONOMY_DOCUMENT_VIEW_ITEM_ID:String = "taxonomyStandaloneDocumentView";
+
+    private var config:TaxonomyExplorerPanel;
+
+    public native function TaxonomyExplorerPanel(config:TaxonomyExplorerPanel = null);
+
+    /**
+     * Contains the active selected site, selected by site chooser component.
+     */
+    [Bindable]
+    public var siteSelectionExpression:ValueExpression;
+
+    /**
+     * Contains a node list with the path of the of the selected node.
+     */
+    [Bindable]
+    public var searchResultExpression:ValueExpression;
+    ]]></fx:Script>
+
+  <local:layout>
+    <layout_HBox align="stretch"/>
+  </local:layout>
+  <local:plugins>
+    <ui:BEMPlugin block="{TAXONOMY_EXPLORER_PANEL_BLOCK}"/>
+  </local:plugins>
+  <local:items>
+    <!--Tree Panel Left-->
+    <Container id_="taxSplitPanelLeft"
+               flex="1">
+      <items>
+        <!--Fix Root items panel-->
+        <taxonomy:TaxonomyExplorerColumn width="200"
+                                         id_="taxonomyRootsColumn"
+                                         itemId="taxonomyRootsColumn"
+                                         siteSelectionExpression="{config.siteSelectionExpression}"
+                                         clipboardValueExpression="{getClipboardValueExpression()}"
+                                         selectedNodeExpression="{getSelectedValueExpression()}">
+          <taxonomy:mixins>
+            <ui:BEMMixin bemElement="root"/>
+          </taxonomy:mixins>
+        </taxonomy:TaxonomyExplorerColumn>
+        <!--Dynamic columns panel-->
+        <Container itemId="columnsContainer"
+                   id_="columnsContainer"
+                   flex="1"
+                   ui="{ContainerSkin.LIGHT.getSkin()}"
+                   autoScroll="true">
+          <defaults>
+            <taxonomy:TaxonomyExplorerColumn width="200">
+              <taxonomy:mixins>
+                <ui:BEMMixin bemElement="non-root"/>
+              </taxonomy:mixins>
+            </taxonomy:TaxonomyExplorerColumn>
+          </defaults>
+          <items/>
+          <layout>
+            <layout_HBox align="stretch"/>
+          </layout>
+        </Container>
+      </items>
+      <layout>
+        <layout_HBox align="stretch"/>
+      </layout>
+    </Container>
+
+    <Splitter width="4px"
+              ui="{SplitterSkin.DARK.getSkin()}"/>
+
+    <Container itemId="preview">
+      <layout>
+        <layout_VBox align="stretch"/>
+      </layout>
+      <items>
+        <TabPanel id_="taxonomyTabs">
+          <items>
+          </items>
+          <tabBar>
+            <TabBar ui="{TabBarSkin.WORKAREA_PANEL.getSkin()}"/>
+          </tabBar>
+        </TabPanel>
+
+        <!--Display Panel Right-->
+        <local:TaxonomyStandAloneDocumentView id_="{TAXONOMY_DOCUMENT_VIEW_ITEM_ID}"
+                                              width="400"
+                                              flex="1"
+                                              minWidth="200"
+                                              bindTo="{getDisplayedTaxonomyContentExpression()}"
+                                              forceReadOnlyValueExpression="{getForceReadOnlyValueExpression()}">
+          <local:mixins>
+            <ui:BEMMixin bemElement="form"/>
+          </local:mixins>
+        </local:TaxonomyStandAloneDocumentView>
+      </items>
+    </Container>
+  </local:items>
+  <local:tbar>
+    <Toolbar ui="{ToolbarSkin.WORKAREA.getSkin()}">
+      <items>
+        <ui:IconButton itemId="delete"
+                       disabled="true"
+                       text="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyExplorerPanel_remove_button_label')}"
+                       tooltip="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyExplorerPanel_remove_button_label')}"
+                       handler="{deleteNodes}"
+                       iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'trash_bin')}"/>
+        <ui:IconButton itemId="add"
+                       disabled="true"
+                       text="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyExplorerPanel_add_button_label')}"
+                       tooltip="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyExplorerPanel_add_button_label')}"
+                       iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'add_tag')}"
+                       handler="{createChildNode}"/>
+        <TbSeparator itemId="{TAXONOMY_EXPLORER_SEP_FIRST_ITEM_ID}" hidden="true"/>
+        <ui:IconButton itemId="reload"
+                       disabled="false"
+                       id_="taxonomy-reload-button"
+                       text="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyExplorerPanel_reload_button_label')}"
+                       tooltip="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyExplorerPanel_reload_button_label')}"
+                       iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'reload')}"
+                       handler="{reload}"/>
+        <TbSeparator itemId="{TAXONOMY_EXPLORER_SEP_SECOND_ITEM_ID}" hidden="true"/>
+        <ui:IconButton itemId="cut"
+                       disabled="true"
+                       text="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyExplorerPanel_cut_button_label')}"
+                       tooltip="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyExplorerPanel_cut_button_label')}"
+                       iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'cut')}">
+          <ui:baseAction>
+            <taxonomy:CutKeywordAction clipboardValueExpression="{getClipboardValueExpression()}"
+                                       selectionExpression="{getSelectedValueExpression()}"/>
+          </ui:baseAction>
+        </ui:IconButton>
+        <ui:IconButton itemId="paste"
+                       disabled="true"
+                       text="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyExplorerPanel_paste_button_label')}"
+                       tooltip="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyExplorerPanel_paste_button_label')}"
+                       iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'paste')}">
+          <ui:baseAction>
+            <taxonomy:PasteKeywordAction clipboardValueExpression="{getClipboardValueExpression()}"
+                                         selectionExpression="{getSelectedValueExpression()}"/>
+          </ui:baseAction>
+        </ui:IconButton>
+        <TbSpacer/>
+        <taxonomy:TaxonomySearchField searchResultExpression="{config.searchResultExpression}"
+                                      siteSelectionExpression="{config.siteSelectionExpression}"
+                                      resetOnBlur="true"
+                                      width="300"
+                                      ui="{TextfieldSkin.DEFAULT.getSkin()}"
+                                      itemId="taxonomySearchField"
+                                      id_="taxonomySearchField"/>
+      </items>
+      <defaults>
+        <ui:IconButton scale="medium"
+                       ui="{ButtonSkin.WORKAREA.getSkin()}"/>
+      </defaults>
+    </Toolbar>
+  </local:tbar>
+
+</local:TaxonomyExplorerPanelBase>

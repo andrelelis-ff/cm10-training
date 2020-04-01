@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMDownload folder="/Sites/SiteGenesis Global/France/French/Editorial/Content/Downloads" name="Enjoy Your Passion - Bracelet Product Details" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Downloads/Enjoy%20Your%20Passion%20-%20Bracelet%20Pr2240bc10.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Downloads/Enjoy%20Your%20Passion%20-%20Bracelet%20Product%20Details"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>sfcc:///catalog/product/25448070</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Enjoy Your Passion - Bracelet Détails du produit</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../../Pictures/Bracelet%20-%203.xml" path="/Sites/SiteGenesis%20Global/France/French/Pictures/Bracelet%20-%203"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<data md5="1530272a80c547eec3b55028be99e23e" size="285386" href="../../../../../../../__blob/1530272a80c547eec3b55028be99e23e.blob" mimetype="application/pdf"/>
+<filename></filename>
+</CMDownload>

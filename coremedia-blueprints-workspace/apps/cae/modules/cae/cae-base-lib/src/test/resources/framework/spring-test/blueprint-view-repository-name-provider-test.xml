@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/com/coremedia/cae/link-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/settings/impl/bpbase-settings-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/links/bpbase-links-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/dataview-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/view-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/view-error-services.xml"/>
+  <import resource="classpath:/com/coremedia/cap/multisite/multisite-services.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-richtextfilters.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-services.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-handlers.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-views.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-services.xml"/>
+
+  <bean id="blueprintViewRepositoryNameProvider"
+        class="com.coremedia.blueprint.cae.view.resolver.BlueprintViewRepositoryNameProvider">
+    <description>
+      This bean provides symbolic names for each view lookup the view repositories to be queried for views.
+      The Blueprint implementation takes repository names from
+      1. the String list setting "viewRepositoryNames" of the current navigation
+      2. a list of common view repository names added in the property "commonViewRepositoryNames" below
+      The resulting repository names are later matched to view repositories by a CAE ViewRespositoryProvider.
+    </description>
+    <property name="commonViewRepositoryNames" ref="viewRepositories"/>
+    <property name="settingsService" ref="settingsService"/>
+    <property name="themeTemplateViewRepositoryProvider" ref="themeTemplateViewRepositoryProvider"/>
+  </bean>
+  <util:list id="viewRepositories">
+    <description>
+      Empty list of common (i.e. not lookup-specific) view repositories.
+      Exposed as a bean in order to allow plugins and extensions to add to the list via customizers.
+    </description>
+  </util:list>
+  <customize:prepend id="addCommonRepositoryName" bean="viewRepositories" order="1000">
+    <list>
+      <value>basic</value>
+    </list>
+  </customize:prepend>
+
+  <customize:prepend id="addErrorRepositoryName" bean="viewRepositories" order="900">
+    <list>
+      <value>error</value>
+    </list>
+  </customize:prepend>
+</beans>

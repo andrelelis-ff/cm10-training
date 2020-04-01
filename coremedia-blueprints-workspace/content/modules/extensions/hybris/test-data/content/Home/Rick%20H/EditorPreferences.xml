@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EditorPreferences folder="/Home/Rick H" name="EditorPreferences" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<data>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="collection">
+<Struct>
+<StructListProperty Name="savedSearches">
+<Struct>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">Document_</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">list</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">me</StringProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Last edited</StringProperty>
+</Struct>
+<Struct>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">CMArticle</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">list</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="site">
+<Struct>
+<StringProperty Name="site">PREFERRED</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">anyone</StringProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Articles</StringProperty>
+</Struct>
+<Struct>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">CMPicture</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">thumbnails</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="site">
+<Struct>
+<StringProperty Name="site">PREFERRED</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">anyone</StringProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Pictures</StringProperty>
+</Struct>
+<Struct>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">CMChannel</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">list</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="site">
+<Struct>
+<StringProperty Name="site">PREFERRED</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">anyone</StringProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Pages</StringProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="preferredSite">Hybris-Apparel-UK-Site-ID</StringProperty>
+<StructProperty Name="forms">
+<Struct>
+<StructProperty Name="CMExternalPage">
+<Struct>
+<BooleanProperty Name="content-2976">false</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="bookmarks">
+<Struct>
+<StringProperty Name="name">Hybris Apparel UK</StringProperty>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Hybris%20Apparel/United%20Kingdom/English/Navigation/Hybris%20Apparel%20UK.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Navigation/Hybris%20Apparel%20UK"/>
+</Struct>
+<Struct>
+<StringProperty Name="name">Snowwear Women</StringProperty>
+</Struct>
+<Struct>
+<StringProperty Name="name">Snowwear Men</StringProperty>
+</Struct>
+<Struct>
+<StringProperty Name="name">Shoppable Video</StringProperty>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Hybris%20Apparel/United%20Kingdom/English/Videos/Shoppable%20Video.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Videos/Shoppable%20Video"/>
+</Struct>
+</StructListProperty>
+<StructProperty Name="dashboard">
+<Struct>
+<StructListProperty Name="widgets">
+<Struct>
+<StringProperty Name="xclass">com.coremedia.cms.editor.sdk.dashboard.widgets.search.SimpleSearchWidgetState</StringProperty>
+<StringProperty Name="widgetTypeId">com.coremedia.cms.editor.sdk.config.simpleSearchWidget</StringProperty>
+<IntProperty Name="rowspan">1</IntProperty>
+<StringProperty Name="contentType">CMChannel</StringProperty>
+<IntProperty Name="column">0</IntProperty>
+</Struct>
+<Struct>
+<StringProperty Name="xclass">com.coremedia.cms.editor.sdk.dashboard.widgets.search.SimpleSearchWidgetState</StringProperty>
+<StringProperty Name="widgetTypeId">com.coremedia.cms.editor.sdk.config.simpleSearchWidget</StringProperty>
+<IntProperty Name="rowspan">1</IntProperty>
+<StringProperty Name="contentType">CMArticle</StringProperty>
+<IntProperty Name="column">0</IntProperty>
+</Struct>
+<Struct>
+<StringProperty Name="xclass">com.coremedia.cms.editor.sdk.dashboard.widgets.search.SimpleSearchWidgetState</StringProperty>
+<StringProperty Name="widgetTypeId">com.coremedia.cms.editor.sdk.config.simpleSearchWidget</StringProperty>
+<IntProperty Name="rowspan">1</IntProperty>
+<StringProperty Name="contentType">CMPicture</StringProperty>
+<IntProperty Name="column">0</IntProperty>
+</Struct>
+<Struct>
+<StringProperty Name="xclass">com.coremedia.cms.editor.sdk.dashboard.WidgetState</StringProperty>
+<StringProperty Name="widgetTypeId">com.coremedia.cms.editor.controlroom.config.projectsTodosWidget</StringProperty>
+<IntProperty Name="rowspan">2</IntProperty>
+<IntProperty Name="column">0</IntProperty>
+</Struct>
+<Struct>
+<StringProperty Name="xclass">com.coremedia.cms.editor.sdk.dashboard.WidgetState</StringProperty>
+<StringProperty Name="widgetTypeId">editedByMe</StringProperty>
+<IntProperty Name="rowspan">1</IntProperty>
+<IntProperty Name="column">1</IntProperty>
+</Struct>
+<Struct>
+<StringProperty Name="xclass">com.coremedia.cms.editor.sdk.dashboard.WidgetState</StringProperty>
+<StringProperty Name="widgetTypeId">editedByOthers</StringProperty>
+<IntProperty Name="rowspan">1</IntProperty>
+<IntProperty Name="column">1</IntProperty>
+</Struct>
+<Struct>
+<StringProperty Name="xclass">com.coremedia.cms.editor.sdk.dashboard.WidgetState</StringProperty>
+<StringProperty Name="widgetTypeId">com.coremedia.cms.editor.sdk.config.translationStatusWidget</StringProperty>
+<IntProperty Name="rowspan">1</IntProperty>
+<StringProperty Name="title">Translation State</StringProperty>
+<IntProperty Name="column">1</IntProperty>
+</Struct>
+<Struct>
+<StringProperty Name="xclass">com.coremedia.cms.editor.sdk.dashboard.WidgetState</StringProperty>
+<StringProperty Name="widgetTypeId">com.coremedia.blueprint.studio.config.esanalytics.esAnalyticsChartWidget</StringProperty>
+<IntProperty Name="rowspan">3</IntProperty>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Hybris%20Apparel/United%20Kingdom/English/Navigation/Hybris%20Apparel%20UK.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Navigation/Hybris%20Apparel%20UK"/>
+<IntProperty Name="column">2</IntProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="workarea">
+<Struct>
+<StructListProperty Name="tabs">
+<Struct>
+<StringProperty Name="type">com.coremedia.cms.editor.sdk.config.premular</StringProperty>
+<StructProperty Name="state">
+<Struct>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Hybris%20Apparel/United%20Kingdom/English/Navigation/Hybris%20Apparel%20UK.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Navigation/Hybris%20Apparel%20UK"/>
+</Struct>
+</StructProperty>
+</Struct>
+</StructListProperty>
+<IntProperty Name="activeTabIndex">0</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</data>
+</EditorPreferences>

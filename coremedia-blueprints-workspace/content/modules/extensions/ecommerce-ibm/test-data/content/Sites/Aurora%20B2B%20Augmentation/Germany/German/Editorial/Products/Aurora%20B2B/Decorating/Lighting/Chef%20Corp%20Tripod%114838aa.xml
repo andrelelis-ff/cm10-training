@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSpinner folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Products/Aurora B2B/Decorating/Lighting" name="Chef Corp Tripod Light HIgh Res 360 Spinner" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../United%20States/English/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%2348f0b7.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20HIgh%20Res%20360%20Spinner"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_CHEF_CORP_TRIPOD_LIGHT</String>
+</StringListProperty>
+<StringListProperty Name="originReferences">
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Chef Corp Tripod Light</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../../../../Pictures/Product%20Pictures/Decorating/Lighting/Chef%20Corp%20Tripod%20Li3c2f90ac.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Pictures/Product%20Pictures/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20Default%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<sequence>
+<link href="Chef%20Corp%20Tripod%ba630780.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light36"/>
+<link href="Chef%20Corp%20Tripod%ba63077e.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light34"/>
+<link href="Chef%20Corp%20Tripod%ba63077c.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light32"/>
+<link href="Chef%20Corp%20Tripod%ba63077a.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light30"/>
+<link href="Chef%20Corp%20Tripod%ba630763.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light28"/>
+<link href="Chef%20Corp%20Tripod%ba630761.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light26"/>
+<link href="Chef%20Corp%20Tripod%ba63075f.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light24"/>
+<link href="Chef%20Corp%20Tripod%ba63075d.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light22"/>
+<link href="Chef%20Corp%20Tripod%ba63075b.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light20"/>
+<link href="Chef%20Corp%20Tripod%ba630744.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light18"/>
+<link href="Chef%20Corp%20Tripod%ba630742.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light16"/>
+<link href="Chef%20Corp%20Tripod%ba630740.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light14"/>
+<link href="Chef%20Corp%20Tripod%ba63073e.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light12"/>
+<link href="Chef%20Corp%20Tripod%ba63073c.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light10"/>
+<link href="Chef%20Corp%20Tripod%ba630725.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light08"/>
+<link href="Chef%20Corp%20Tripod%ba630723.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light06"/>
+<link href="Chef%20Corp%20Tripod%ba630721.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light04"/>
+<link href="Chef%20Corp%20Tripod%ba63071f.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20360%20Pictures/light02"/>
+</sequence>
+</CMSpinner>

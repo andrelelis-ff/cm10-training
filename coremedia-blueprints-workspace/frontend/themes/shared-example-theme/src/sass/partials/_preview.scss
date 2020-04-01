@@ -1,0 +1,10 @@
+// ### FRAGMENT PREVIEW ###
+
+// layout
+.cm-preview-item {
+  &__content > * {
+    margin-left: auto;
+    margin-right: auto;
+    @include cm-grid-container();
+  }
+}

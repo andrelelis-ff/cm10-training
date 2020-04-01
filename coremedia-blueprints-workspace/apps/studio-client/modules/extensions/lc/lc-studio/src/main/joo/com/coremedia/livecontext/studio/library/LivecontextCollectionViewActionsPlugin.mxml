@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Extend the standard Studio and Blueprint components for Live Context -->
+<editor:StudioPlugin
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:ec="exml:com.coremedia.ecommerce.studio.config"
+        xmlns:local="com.coremedia.livecontext.studio.library.*">
+  <fx:Script><![CDATA[
+    //noinspection JSUnusedLocalSymbols
+    private var config:LivecontextCollectionViewActionsPlugin;
+
+    public native function LivecontextCollectionViewActionsPlugin(config:LivecontextCollectionViewActionsPlugin = null);
+    ]]></fx:Script>
+
+  <editor:rules>
+    <ec:CatalogRepositoryToolbar>
+      <ec:plugins>
+        <local:AddActionsToCatalogRepositoryToolbarPlugin/>
+      </ec:plugins>
+    </ec:CatalogRepositoryToolbar>
+
+    <ec:CatalogRepositoryContextMenu>
+      <ec:plugins>
+        <local:AddActionsToCatalogRepositoryContextMenuPlugin/>
+      </ec:plugins>
+    </ec:CatalogRepositoryContextMenu>
+
+    <ec:CatalogSearchToolbar>
+      <ec:plugins>
+        <local:AddActionsToCatalogSearchToolbarPlugin/>
+      </ec:plugins>
+    </ec:CatalogSearchToolbar>
+
+    <ec:CatalogSearchContextMenu>
+      <ec:plugins>
+        <local:AddActionsToCatalogSearchContextMenuPlugin/>
+      </ec:plugins>
+    </ec:CatalogSearchContextMenu>
+
+    <editor:TreeViewContextMenu>
+      <editor:plugins>
+        <local:AddCatalogActionsToTreeViewContextMenuPlugin/>
+      </editor:plugins>
+    </editor:TreeViewContextMenu>
+  </editor:rules>
+</editor:StudioPlugin>

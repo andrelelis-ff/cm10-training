@@ -1,0 +1,51 @@
+.#{$cm-shoppable-prefix} {
+  &__video {
+    padding: 0;
+  }
+
+  &__teasers {
+    border: 1px solid #ccc;
+  }
+
+  &-teaser {
+    @include breakpoint(lg) {
+      padding: 1rem;
+    }
+
+    &__picture.cm-media--uncropped {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &__caption {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    &__headline {
+      order: 1;
+      margin: 15px 0;
+      color: $cm-hybris-text;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    &__additional {
+      order: 2;
+      font-weight: 600;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    &__text {
+      order: 3;
+    }
+
+    &__cta {
+      order: 4;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ The context menu for the list or thumbnail view in the catalog search view.
+-->
+<Menu
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        width="210"
+        plain="true">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.collectionview.CollectionView;
+    import com.coremedia.ecommerce.studio.ECommerceStudioPlugin;
+    import com.coremedia.ui.data.ValueExpression;
+
+    [Bindable]
+    public var selectedSearchItemsValueExpression:ValueExpression;
+
+    public static const xtype:String = "com.coremedia.ecommerce.studio.config.catalogSearchContextMenu";
+
+    private var config:CatalogSearchContextMenu;
+
+    public native function CatalogSearchContextMenu(config:CatalogSearchContextMenu = null);
+    ]]></fx:Script>
+
+  <plugins>
+    <ui:HideObsoleteSeparatorsPlugin/>
+  </plugins>
+  <items>
+    <MenuItem itemId="{ECommerceStudioPlugin.OPEN_IN_TAB_MENU_ITEM_ID}">
+      <baseAction>
+        <editor:OpenEntitiesInTabsAction entitiesValueExpression="{config.selectedSearchItemsValueExpression}"/>
+      </baseAction>
+    </MenuItem>
+  </items>
+
+</Menu>

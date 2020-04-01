@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalChannel folder="/Sites/SFRA/United Kingdom/English/Augmentation/Mens/Clothing/Jackets &amp; Coats" name="Jackets &amp; Coats" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/Teaser%20Styles/Light"/>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<IntProperty Name="positionX">45</IntProperty>
+<IntProperty Name="positionY">45</IntProperty>
+</Struct>
+</StructProperty>
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>jackets-coats</segment>
+<title>Jackets &amp; Coats</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--right">Men's Jackets</p></div></teaserText>
+<pictures>
+<link href="../../../../Editorial/Pictures/Elegant%20young%20handsome%20man.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Pictures/Elegant%20young%20handsome%20man"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Pagegrid/Layouts/Category%20Landingpage%20Layout.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/Pagegrid/Layouts/Category%20Landingpage%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../../Editorial/Content/Banners/Men%20Category%20Teaser.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Banners/Men%20Category%20Teaser"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../../../Options/Viewtypes/CMChannel/hero.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Options/Viewtypes/CMChannel/hero"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Pagegrid/Placements/banner.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/banner"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+<pdpPagegrid>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Pagegrid/Layouts/Fragment%20PDP.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/Pagegrid/Layouts/Fragment%20PDP"/>
+<StructListProperty Name="placements">
+<Struct>
+</Struct>
+</StructListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</pdpPagegrid>
+<externalId>sfcc:///catalog/category/mens-clothing-jackets</externalId>
+</CMExternalChannel>

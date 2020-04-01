@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Chef Corp./Germany/German/Editorial/Assets/Videos/Hero Videos" name="Professional Chefs" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Assets/Videos/Hero%20Videos/Professional%20Chefs.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Videos/Hero%20Videos/Professional%20Chefs"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Profiköche</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Team professioneller Köche die Zubereitung und das Kochen von Essen in einer Großküche. </p> </div></detailText>
+<pictures>
+<link href="Professional%20Chefs%20Video%20Still.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Videos/Hero%20Videos/Professional%20Chefs%20Video%20Still"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>Hotelfoxtrot / Shutterstock 4447949</copyright>
+<dataUrl></dataUrl>
+<data md5="6148ee460428aae19d027914002c97dd" size="19234367" href="../../../../../../../../__blob/6148ee460428aae19d027914002c97dd.blob" mimetype="video/x-m4v"/>
+<asset>
+</asset>
+</CMVideo>

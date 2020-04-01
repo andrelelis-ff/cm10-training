@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans.xsd
+          http://www.coremedia.com/2007/coremedia-spring-beans-customization
+          http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <description>
+    only include if memory cap list connector is to be used
+  </description>
+
+    <customize:append id="uapiMemoryCapListConnector" bean="connectionParameters" order="42">
+      <map>
+        <entry key="usecaplist" value="true"/>
+        <entry key="caplist" value="com.coremedia.cotopaxi.list.memory.MemoryCapListConnectorFactory"/>
+      </map>
+    </customize:append>
+
+</beans>

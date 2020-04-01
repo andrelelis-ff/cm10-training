@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Microsites/Guide to Perfect Lighting" name="Worker Changing a CFL Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=98;y=0;width=960;height=1492</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=67;y=0;width=1119;height=1492</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=212;y=0;width=1491;height=1492</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=31;y=0;width=1986;height=1492</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=274;width=2048;height=1151</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=563;width=2048;height=821</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=723;width=2048;height=511</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.04785894206549118;y1=0;x2=0.5163727959697733;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.0327455919395466;y1=0;x2=0.5793450881612091;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.10327455919395466;y1=0;x2=0.8312342569269522;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.015113350125944584;y1=0;x2=0.9848866498740554;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.18339100346020762;x2=1;y2=0.9550173010380623</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.3771626297577855;x2=1;y2=0.9273356401384083</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.4844290657439446;x2=1;y2=0.8269896193771626</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Changing a CFL</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Worker Changing a CFL</alt>
+<copyright>Shcherbakov Ilya/Shutterstock 114447940</copyright>
+<dataUrl></dataUrl>
+<width>2048</width>
+<height>1492</height>
+<data md5="11f96c6880a030149b4ea219d337885f" size="333335" href="../../../../../../../__blob/11f96c6880a030149b4ea219d337885f.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

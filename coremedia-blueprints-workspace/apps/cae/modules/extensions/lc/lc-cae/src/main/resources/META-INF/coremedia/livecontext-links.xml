@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.coremedia.com/2007/coremedia-spring-beans-customization
+         http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd
+         http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+  <description>Commerce Link Building</description>
+
+  <import resource="classpath:/com/coremedia/blueprint/base/settings/impl/bpbase-settings-services.xml"/>
+  <import resource="classpath:/META-INF/coremedia/livecontext-handlers.xml"/>
+
+  <bean id="microSiteHandler" class="com.coremedia.livecontext.handler.LiveContextChannelLinkBuilder"
+        parent="ecommerceHandlerBase">
+    <property name="resolveContextStrategy" ref="resolveLivecontextContextStrategy"/>  <!-- ## actually not needed -->
+    <property name="commerceLedLinkBuilderHelper" ref="commerceLedLinkBuilderHelper"/>
+    <property name="searchLandingPagesLinkBuilderHelper" ref="searchLandingPagesLinkBuilderHelper"/>
+    <property name="commerceConnectionInitializer" ref="commerceConnectionInitializer"/>
+  </bean>
+
+  <!--
+  The com.coremedia.livecontext.fragment.links.transformers.LiveContextLinkTransformer
+  must be the last one in the chain as it needs to pick up the query parameters added by other link transformers
+  before it returns an alternative, final representation (e.g. an HTML comment) which other transformers do not understand.
+  -->
+  <customize:append id="livecontextLinkTransformerCustomizer" bean="linkTransformers" order="100000000">
+    <list>
+      <ref bean="fragmentParamsAppendingLinkTransformer"/>
+      <bean class="com.coremedia.livecontext.handler.LiveContextLinkTransformer"/>
+      <ref bean="lcLinkTransformer"/>
+    </list>
+  </customize:append>
+
+  <bean id="fragmentParamsAppendingLinkTransformer"
+        class="com.coremedia.livecontext.fragment.links.transformers.FragmentParamsAppendingLinkTransformer"/>
+
+  <bean id="lcLinkTransformer" class="com.coremedia.livecontext.fragment.links.transformers.LiveContextLinkTransformer">
+    <property name="removeJSession" value="true"/>
+    <property name="liveContextLinkResolverList" ref="liveContextLinkResolvers"/>
+    <property name="currentContextService" ref="currentContextService"/>
+    <property name="settingsService" ref="settingsService"/>
+  </bean>
+
+  <util:list id="liveContextLinkResolvers">
+    <description>
+      List of handler LinkResolvers.
+      This list might be populated with customizers.
+    </description>
+    <ref bean="genericClientLinkResolver"/>
+  </util:list>
+
+  <bean id="commerceLedLinkBuilderHelper" class="com.coremedia.livecontext.logictypes.CommerceLedLinkBuilderHelper">
+    <property name="contentURLKeyword" value="${livecontext.content-url-prefix}"/>
+    <!--Use legacyExternalSeoSegmentBuilder for the legacy format-->
+    <property name="seoSegmentBuilder" ref="externalSeoSegmentBuilder"/>
+    <property name="settingsService" ref="settingsService"/>
+  </bean>
+
+  <bean class="com.coremedia.livecontext.fragment.links.CommerceLinkConfiguration"/>
+</beans>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <description>
+    LiveContext specific definitions of the CAE View layer.
+  </description>
+
+  <import resource="classpath:/com/coremedia/cae/view-freemarker-services.xml"/>
+
+  <customize:append id="livecontextFreemarkerConfigurerAutoImportsCustomizer" bean="freemarkerConfigurer"
+                    property="autoImports">
+    <map>
+      <entry key="lc" value="/lib/coremedia.com/livecontext.ftl"/>
+    </map>
+  </customize:append>
+
+</beans>

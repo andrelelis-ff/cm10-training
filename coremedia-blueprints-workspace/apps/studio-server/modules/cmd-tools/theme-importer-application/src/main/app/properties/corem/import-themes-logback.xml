@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true" scanPeriod="10 seconds">
+
+  <!--
+   | Common logger configuration for all tools. You can overwrite a logger by defining the logger below the inclusion
+   -->
+  <include resource="logging-tools.xml"/>
+
+  <logger name="com.coremedia.blueprint.themeimporter" level="${config.stdout.log.level}" additivity="false">
+    <appender-ref ref="stdout"/>
+  </logger>
+
+  <!--We do not want the log events duplicated so no appender ref here-->
+  <root level="WARN">
+    <appender-ref ref="stdout"/>
+  </root>
+
+</configuration>

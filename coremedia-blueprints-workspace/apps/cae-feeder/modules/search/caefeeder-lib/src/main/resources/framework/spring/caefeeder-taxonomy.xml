@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/framework/spring/persistentcache/persistentcache-dependency.xml"/>
+  <!-- import bean "navigationTreeRelation" -->
+  <import resource="classpath:/com/coremedia/blueprint/base/tree/bpbase-treerelation-services.xml"/>
+
+  <bean id="subjectTaxonomyPathKeyFactory" class="com.coremedia.blueprint.base.caefeeder.TreePathKeyFactory">
+    <description>The PersistentCacheKeyFactory for subject taxonomy paths.</description>
+    <constructor-arg index="0" name="keyPrefix" value="taxonomypath.subject:"/>
+    <constructor-arg index="1" name="persistentCache" ref="persistentDependencyCache"/>
+    <constructor-arg index="2" name="contentRepository" ref="contentRepository"/>
+    <constructor-arg index="3" name="treeRelation" ref="taxonomyTreeRelation"/>
+    <constructor-arg index="4" name="segmentTransformer">
+      <bean class="com.coremedia.blueprint.caefeeder.NamedTaxonomyFactory"/>
+    </constructor-arg>
+  </bean>
+
+  <bean id="locationTaxonomyPathKeyFactory" class="com.coremedia.blueprint.base.caefeeder.TreePathKeyFactory">
+    <description>The PersistentCacheKeyFactory for location taxonomy paths.</description>
+    <constructor-arg index="0" name="keyPrefix" value="taxonomypath.location:"/>
+    <constructor-arg index="1" name="persistentCache" ref="persistentDependencyCache"/>
+    <constructor-arg index="2" name="contentRepository" ref="contentRepository"/>
+    <constructor-arg index="3" name="treeRelation" ref="locationTaxonomyTreeRelation"/>
+    <constructor-arg index="4" name="segmentTransformer">
+      <bean class="com.coremedia.blueprint.caefeeder.NamedTaxonomyFactory"/>
+    </constructor-arg>
+  </bean>
+
+  <customize:append id="addTaxonomyPathPersistentCacheKeyFactories"
+                    bean="fragmentPersistentCacheKeyFactory"
+                    property="keyFactories">
+    <description>
+      Registers the PersistentCacheKeyFactory for taxonomy path fragment keys with the PersistentDependencyCache.
+    </description>
+    <list>
+      <ref bean="subjectTaxonomyPathKeyFactory"/>
+      <ref bean="locationTaxonomyPathKeyFactory"/>
+    </list>
+  </customize:append>
+
+</beans>

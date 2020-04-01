@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Calista/United States/English/Navigation/Fragments/Aurora Categories/Apparel/Men" name="Men Casual Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../../../Options/Settings/Teaser%20Styles/Dark%20on%20Light.xml" cmexport:path="/Sites/Calista/United%20States/English/Options/Settings/Teaser%20Styles/Dark%20on%20Light"/>
+<IntProperty Name="positionY">40</IntProperty>
+</Struct>
+</StructProperty>
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="align--center p--heading-1">Casual</p><p class="align--center">Find your everyday style</p></div></teaserText>
+<pictures>
+<link href="../../../../../Pictures/PC_BLUE_SWEATER%20Actionshot%201.xml" path="/Sites/Calista/United%20States/English/Pictures/PC_BLUE_SWEATER%20Actionshot%201"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../../../Augmentation/Apparel/Men/Men%20Shirts/Men%20Shirts.xml" path="/Sites/Calista/United%20States/English/Augmentation/Apparel/Men/Men%20Shirts/Men%20Shirts"/>
+</target>
+</CMTeaser>

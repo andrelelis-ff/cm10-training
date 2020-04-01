@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./United States/English/Editorial/Homepage/Company/Investor Relations/Events/Event Items" name="Annual Report on fiscal 2020 with press conference and investor and analyst conference call" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Annual Report on the fiscal year 2019</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Events.xml" path="/Settings/Taxonomies/Subject/Events"/>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Investors.xml" path="/Settings/Taxonomies/Subject/Investors"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Annual Report on the fiscal year 2019 with press conference and investor and analyst conference call</p></div></detailText>
+<pictures>
+<link href="../../../../../Assets/Pictures/Kitchen%20Dreams/Kitchen%20Interior%20Picture.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Kitchen%20Dreams/Kitchen%20Interior%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

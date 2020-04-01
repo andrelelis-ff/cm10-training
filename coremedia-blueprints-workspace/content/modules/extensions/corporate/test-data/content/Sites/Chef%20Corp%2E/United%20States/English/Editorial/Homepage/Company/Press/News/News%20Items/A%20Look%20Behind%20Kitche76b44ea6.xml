@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./United States/English/Editorial/Homepage/Company/Press/News/News Items" name="A Look Behind Kitchen Design Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<extDisplayedDate format="dd.MM.yyyy HH:mm:ss Z">26.06.2019 00:00:00 +0200</extDisplayedDate>
+<segment></segment>
+<title>A Look Behind the Design of a Great Kitchen</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Press%20Release.xml" path="/Settings/Taxonomies/Subject/Press%20Release"/>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Press.xml" path="/Settings/Taxonomies/Subject/Press"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>The 3 Secrets of Great Kitchen Design</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>A great kitchen – what does that mean for a professional chef? Here at Chef Corp., we have a clear vision and a refined process that enables us to design, build, and deliver some of the best kitchens in the world. What makes our kitchens so good is a combination of these factors:</p><ul><li>Outstanding degree of space utilization</li><li>Chef-centric design</li><li>High build quality without compromise</li></ul><p class="p--heading-2">Space Utilization</p><p>"Most restaurants operate on a limited space. Kitchens need to be as small as feasible to make the most room for paying customers. Of course, the food quality can't suffer because of this. A tradeoff has to be made," says Chef Corp. product manager George Pastore. "But if done right, limited space can also be an asset." This is because large kitchens also lengthen the distances that chefs have to cover each day.</p><p class="p--heading-2">Chef-centric Design</p><p>One of the most underrated factor in restaurant kitchen design is the kind of food that the restaurant usually prepares. Obviously, an Italian pizza restaurant has different needs from a Scandinavic fish restaurant. But the difference doesn't end with professional ovens, the movement sequences of the chefs are where the real savings can be achieved. A cupboard placed closer to a preparation surface can mean a dozen menus more per day. "Optimizing for type of cuisine, or even single recipes takes a lot of experience. Chef Corp. works closely with chefs and managers, but we also employ our own chefs who can run tests on our modular test kitchen," says George.</p><p class="p--heading-2">High Build Quality</p><p>Great preparation is one thing, but without great execution no great kitchen will come of it. That's why we use only the highest quality Type 304 stainless steel for our surfaces. With proper maintenance, these surfaces will outlive even the sturdiest chef.</p><p>Great materials are an obvious necessity for a Chef Corp. kitchen, but we achieve the most leverage by the outstanding workmanship of our factory operatives and delivery managers. These hand-picked, highly qualified and motivated colleagues are able to polish even the most bedraggled cookery into a shiny gem of a kitchen.</p><p><br/></p><p>So there you have it, a Chef Corp. kitchen is a compact, chef-oriented piece of craftsmanship that supports chefs around the world to achieve superb quality.</p></div></detailText>
+<pictures>
+<link href="../../../../../Assets/Pictures/Products/ChefWave/ChefWave%20HD%20Large%20Fryer%202fefc665b.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Products/ChefWave/ChefWave%20HD%20Large%20Fryer%202%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../../../../Authors/Charlotte%20May%20Person.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Authors/Charlotte%20May%20Person"/>
+</authors>
+</CMArticle>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/United Kingdom/English/Editorial/Pictures" name="Versatil Sunglasses" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="uploadDone">true</BooleanProperty>
+<StringListProperty Name="references">
+<String>sfcc:///catalog/product/25772792M</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="enlarge">
+<Struct>
+<BooleanProperty Name="portrait_ratio20x31">true</BooleanProperty>
+<BooleanProperty Name="portrait_ratio1x1">true</BooleanProperty>
+<BooleanProperty Name="landscape_ratio235x100">true</BooleanProperty>
+<BooleanProperty Name="landscape_ratio4x3">true</BooleanProperty>
+<BooleanProperty Name="landscape_ratio7x2">true</BooleanProperty>
+<BooleanProperty Name="landscape_ratio5x3">true</BooleanProperty>
+<BooleanProperty Name="portrait_ratio3x5">true</BooleanProperty>
+<BooleanProperty Name="portrait_ratio3x4">true</BooleanProperty>
+<BooleanProperty Name="landscape_ratio16x9">true</BooleanProperty>
+<BooleanProperty Name="quickview_ratio5x6">true</BooleanProperty>
+<BooleanProperty Name="portrait_ratio5x6">true</BooleanProperty>
+<BooleanProperty Name="thumbnail">true</BooleanProperty>
+<BooleanProperty Name="portrait_ratio1x2">true</BooleanProperty>
+<BooleanProperty Name="landscape_ratio8x3">true</BooleanProperty>
+<BooleanProperty Name="portrait_ratio2x3">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=0;y=-884;width=2000;height=3101;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=-334;width=2000;height=2001;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=-566;y=0;width=3133;height=1333;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=-84;width=2000;height=1501;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="landscape_ratio7x2">b;a=0;c=1/crop;x=-1333;y=0;width=4666;height=1333;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="landscape_ratio5x3">b;a=0;c=1/crop;x=-111;y=0;width=2222;height=1333;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="portrait_ratio3x5">b;a=0;c=1/crop;x=0;y=-1000;width=2000;height=3334;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=-667;width=2000;height=2667;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=-185;y=0;width=2370;height=1333;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="quickview_ratio5x6">b;a=0;c=1/crop;x=0;y=-534;width=2000;height=2401;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="portrait_ratio5x6">b;a=0;c=1/crop;x=0;y=-534;width=2000;height=2401;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="thumbnail">b;a=0;c=1/crop;x=0;y=-667;width=2000;height=2667;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="portrait_ratio1x2">b;a=0;c=1/crop;x=0;y=-1334;width=2000;height=4001;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=-777;y=0;width=3555;height=1333;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=0;y=-834;width=2000;height=3001;bg=FFFFFFFF</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.47791798107255523</StringProperty>
+<StringProperty Name="y">0.5</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Versatil Sunglasses</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Versatil Sunglasses</alt>
+<copyright>shutterstock_773110399</copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1333</height>
+<data md5="42d6a56643480bea653e3f8825eb69f0" size="260164" href="../../../../../../__blob/42d6a56643480bea653e3f8825eb69f0.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

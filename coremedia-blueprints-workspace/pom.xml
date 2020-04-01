@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.coremedia.blueprint</groupId>
+  <artifactId>blueprint</artifactId>
+  <version>1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>shared/common</module>
+    <module>shared/middle</module>
+
+    <module>apps/cae</module>
+    <module>apps/elastic-worker</module>
+    <module>apps/content-feeder</module>
+    <module>apps/cae-feeder</module>
+    <module>apps/content-server</module>
+    <module>apps/headless-server</module>
+    <module>apps/workflow-server</module>
+    <module>apps/site-manager</module>
+    <module>apps/solr</module>
+    <module>apps/studio-client</module>
+    <module>apps/studio-packages-proxy</module>
+    <module>apps/studio-server</module>
+    <module>apps/user-changes</module>
+
+    <module>frontend</module>
+
+    <module>global/management-tools</module>
+  </modules>
+
+  <profiles>
+    <profile>
+      <id>with-content</id>
+      <activation>
+        <property>
+          <name>!skipContent</name>
+          <value>!true</value>
+        </property>
+      </activation>
+      <modules>
+        <module>content</module>
+      </modules>
+    </profile>
+
+    <profile>
+      <id>with-chef</id>
+      <!--
+       | This profile creates the deployment archive containing the chef setup, the deployment artifacts
+       | (spring-boot apps, tools and some jars) and the content.
+       -->
+      <modules>
+        <module>global/deployment/chef</module>
+      </modules>
+    </profile>
+
+    <profile>
+      <id>check-dependencies-owasp</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.owasp</groupId>
+            <artifactId>dependency-check-maven</artifactId>
+            <version>5.3.0</version>
+            <configuration>
+              <skipArtifactType>pom|coremedia-application</skipArtifactType>
+              <skipProvidedScope>true</skipProvidedScope>
+              <skipSystemScope>true</skipSystemScope>
+              <failOnError>true</failOnError>
+              <assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
+              <nodeAnalyzerEnabled>false</nodeAnalyzerEnabled>
+              <nodeAuditAnalyzerEnabled>false</nodeAuditAnalyzerEnabled>
+              <cveUrlBase>https://nvd.nist.gov/feeds/json/cve/1.0/nvdcve-1.0-%d.json.gz</cveUrlBase>
+              <cveUrlModified>https://nvd.nist.gov/feeds/json/cve/1.0/nvdcve-1.0-modified.json.gz</cveUrlModified>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>3.0.0-M1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>3.1.1</version>
+          <configuration>
+            <doclint>none</doclint>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>3.0.1</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+</project>

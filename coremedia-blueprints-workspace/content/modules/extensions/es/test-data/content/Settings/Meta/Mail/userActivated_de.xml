@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMMail folder="/Settings/Meta/Mail" name="userActivated_de" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<locale>en-US</locale>
+<master>
+</master>
+<masterVersion>1</masterVersion>
+<keywords></keywords>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<segment></segment>
+<title></title>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<subject>Dein Account bei coremedia.com</subject>
+<from>registration@coremedia.com</from>
+<text href="userActivated_de.text.plain" mimetype="text/plain"/>
+<contentType></contentType>
+</CMMail>

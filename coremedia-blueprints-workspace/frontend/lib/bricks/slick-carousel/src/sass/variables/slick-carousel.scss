@@ -1,0 +1,7 @@
+$cm-slick-carousel-prefix: "cm-slick-carousel" !default;
+$cm-slick-carousel-custom-arrows-enabled: true !default;
+
+@if $cm-slick-carousel-custom-arrows-enabled {
+  $slick-prev-character: "" !global !default;
+  $slick-next-character: "" !global !default;
+}

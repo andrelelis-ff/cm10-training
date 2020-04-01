@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Chef Corp./United States/English/Navigation/Company/Investor Relations/News" name="News Page" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="customTitleSuffixText">| News | Chef Corp.</StringProperty>
+<StringProperty Name="callToActionCustomText">Read All Press Releases</StringProperty>
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>news</segment>
+<title>News</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription>Find all current Chef Corp. press releases.</htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Press.xml" path="/Settings/Taxonomies/Subject/Press"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>News</teaserTitle>
+<pictures>
+<link href="../../../../Editorial/Assets/Pictures/Company/Press%20Picture.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Company/Press%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Pagegrid/Layouts/PagegridNavigation.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Pagegrid/Layouts/PagegridNavigation"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../../../../Editorial/Homepage/Company/Press/News/All%20News%20Dynamic%20Query%20List.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Company/Press/News/All%20News%20Dynamic%20Query%20List"/>
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

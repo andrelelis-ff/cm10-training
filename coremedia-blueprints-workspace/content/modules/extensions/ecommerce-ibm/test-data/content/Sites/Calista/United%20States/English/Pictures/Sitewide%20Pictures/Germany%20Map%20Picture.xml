@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/United States/English/Pictures/Sitewide Pictures" name="Germany Map Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=1145;y=1137;width=1710;height=1710</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=921;y=1191;width=2166;height=1625</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=464;y=1137;width=3079;height=1733</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.2862669245647969;y1=0.28433268858800775;x2=0.7137330754352031;y2=0.7117988394584139</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.23017408123791103;y1=0.2978723404255319;x2=0.7717601547388782;y2=0.7040618955512572</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.11605415860735009;y1=0.28433268858800775;x2=0.8858800773694391;y2=0.7176015473887815</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Germany Map</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Symbolic picture of a map of Germany</alt>
+<copyright>Filip Bjorkman/Shutterstock 151001624</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>4000</height>
+<data md5="4f4e372d43259d65039edfd6a4587afa" size="148408" href="../../../../../../__blob/4f4e372d43259d65039edfd6a4587afa.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

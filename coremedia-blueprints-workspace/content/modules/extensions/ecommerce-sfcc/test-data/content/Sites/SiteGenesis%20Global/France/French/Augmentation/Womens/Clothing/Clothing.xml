@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalChannel folder="/Sites/SiteGenesis Global/France/French/Augmentation/Womens/Clothing" name="Clothing" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Augmentation/Womens/Clothing/Clothing.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Augmentation/Womens/Clothing/Clothing"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>clothing</segment>
+<title>Vêtements</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../../Editorial/Slots/Categories/Women/Clothing/shutterstock_426670183.xml" path="/Sites/SiteGenesis%20Global/France/French/Editorial/Slots/Categories/Women/Clothing/shutterstock_426670183"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<header>
+</header>
+<footer>
+</footer>
+<externalId>sfcc:///catalog/category/womens-clothing</externalId>
+</CMExternalChannel>

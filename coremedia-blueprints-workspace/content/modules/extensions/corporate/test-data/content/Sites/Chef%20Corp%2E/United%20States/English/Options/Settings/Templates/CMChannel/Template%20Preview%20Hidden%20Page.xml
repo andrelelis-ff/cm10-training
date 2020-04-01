@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Chef Corp./United States/English/Options/Settings/Templates/CMChannel" name="Template Preview Hidden Page" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>template-preview</segment>
+<title>Template Preview</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<notSearchable>1</notSearchable>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+<link href="Hero%20Page/New%20Hero%20Page.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Templates/CMChannel/Hero%20Page/New%20Hero%20Page"/>
+<link href="Detail%20Page/New%20Detail%20Page.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Templates/CMChannel/Detail%20Page/New%20Detail%20Page"/>
+</children>
+<hidden>1</hidden>
+<hiddenInSitemap>0</hiddenInSitemap>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Pagegrid/Layouts/PagegridNavigation.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Pagegrid/Layouts/PagegridNavigation"/>
+</Struct>
+</StructProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content/Homepage" name="Hardware Lighting Category Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Homepage/Hardware%20Lighting%20Category%20Teaser.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Homepage/Hardware%20Lighting%20Category%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Dark%20on%20Light.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Settings/Teaser%20Styles/Dark%20on%20Light"/>
+<IntProperty Name="positionX">-39</IntProperty>
+<IntProperty Name="positionY">-42</IntProperty>
+<IntProperty Name="width">23</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--left">Beleuchtung</p><p class="align--left">Moderne Glühbirnen in allen Formfaktoren</p></div></teaserText>
+<pictures>
+<link href="Evolution%20of%20Lightbulbs%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Homepage/Evolution%20of%20Lightbulbs%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../Augmentation/B2B_Decorating/B2B_Lighting/Lighting.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Augmentation/B2B_Decorating/B2B_Lighting/Lighting"/>
+</target>
+</CMTeaser>

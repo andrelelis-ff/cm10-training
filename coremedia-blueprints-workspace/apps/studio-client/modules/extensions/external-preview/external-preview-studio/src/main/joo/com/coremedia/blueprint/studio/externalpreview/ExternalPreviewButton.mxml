@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuItem
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns:ep="exml:com.coremedia.blueprint.studio.externalpreview.config"
+        xmlns="exml:ext.config"
+        itemId="externalPreviewButton"
+        iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'external_preview')}"
+        text="{resourceManager.getString('com.coremedia.blueprint.studio.externalpreview.ExternalPreviewStudioPlugin', 'ExternalPreview_button_text')}"
+>
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.externalpreview.ExternalPreviewStudioPlugin')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.externalpreview.config.externalPreviewMenuItem";
+
+    private var config:ExternalPreviewButton;
+
+    public native function ExternalPreviewButton(config:ExternalPreviewButton = null);
+    ]]></fx:Script>
+
+  <baseAction>
+    <ep:ExternalPreviewAction/>
+  </baseAction>
+
+</MenuItem>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <description>
+    Add site model to excludeUsersPredicate in order to exclude the translationWorkflowRobotUser.
+  </description>
+
+  <import resource="classpath:com/coremedia/jmx/mbean-services.xml"/>
+  <import resource="classpath:com/coremedia/cap/common/uapi-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-services.xml"/>
+
+  <bean name="userChangesConfiguration" class="com.coremedia.collaboration.userchanges.UserChangesConfiguration"/>
+
+  <bean name="workflowNotificationsConfiguration" class="com.coremedia.collaboration.notifications.WorkflowNotificationsConfiguration"/>
+
+  <context:component-scan base-package="com.coremedia.elastic.core"/>
+  <context:component-scan base-package="com.coremedia.notification.elastic"/>
+
+  <customize:append id="customizeExcludeUsersPredicate" bean="excludeUsersPredicate" property="siteModel">
+    <ref bean="siteModel"/>
+  </customize:append>
+
+  <bean id="studioMBeanRegistrator" class="com.coremedia.jmx.MBeanRegistrator">
+    <property name="registry" ref="mbeanRegistry"/>
+    <property name="mbeans">
+      <map>
+        <entry key="type=CapConnection" value-ref="capConnectionManager"/>
+        <entry key="type=Cache" value-ref="cacheManagement"/>
+        <entry key="type=Cache.Entries" value-ref="cacheBrowserManagement"/>
+      </map>
+    </property>
+  </bean>
+
+</beans>

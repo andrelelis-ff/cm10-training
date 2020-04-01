@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ This catalog object action can be used to open the catalog object in the IBM WCS Management Center view.
+ Currently only product and product variants are supported.
+-->
+<local:OpenInManagementCenterActionBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.livecontext.ibm.studio.action.*">
+  <fx:Script><![CDATA[
+    private var config:OpenInManagementCenterAction;
+
+    public native function OpenInManagementCenterAction(config:OpenInManagementCenterAction = null);
+    ]]></fx:Script>
+
+</local:OpenInManagementCenterActionBase>

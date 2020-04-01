@@ -1,0 +1,24 @@
+//
+// Applies styles to stretch to parent container using position absolute.
+//
+// @param: {boolean} vertically stretched? default: true
+// @param: {boolean} horizontally stretched? default: true
+//
+// @example:
+// img {
+//   @include stretch-absolute();
+// }
+//
+@mixin stretch-absolute($vertical: true, $horizontal: true) {
+  position: absolute;
+  @if $vertical {
+    top: 0;
+    bottom: 0;
+    height: 100%;
+  }
+  @if $horizontal {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+}

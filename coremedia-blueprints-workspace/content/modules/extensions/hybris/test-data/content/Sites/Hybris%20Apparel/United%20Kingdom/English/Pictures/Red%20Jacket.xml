@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/United Kingdom/English/Pictures" name="Red Jacket" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0;x2=1;y2=0.5625</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0;x2=1;y2=0.75</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0;x2=1;y2=0.375</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=36;y=0;width=213;height=284</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=284;height=213</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=284;height=160</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=0;width=284;height=107</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Red Jacket</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>download</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>284</width>
+<height>284</height>
+<data md5="905d60ad7dcfbeb92be54a76b496b1e4" size="19519" href="../../../../../__blob/905d60ad7dcfbeb92be54a76b496b1e4.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

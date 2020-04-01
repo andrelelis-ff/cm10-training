@@ -1,0 +1,26 @@
+############################################################################
+##                                                                        ##
+##   we need to keep all file/dir mounts separated, otherwise we won't    ##
+##   be able to use those mounts in any docker swarm, DooD, K8s setups.   ##
+##                                                                        ##
+############################################################################
+version: "3.4"
+services:
+
+  content-management-server:
+    volumes:
+      - ../coremedia-licenses:/coremedia/licenses
+
+  master-live-server:
+    volumes:
+      - ../coremedia-licenses:/coremedia/licenses
+
+  replication-live-server:
+    volumes:
+    - ../coremedia-licenses:/coremedia/licenses
+
+  management-tools:
+    volumes:
+    - "${CONTENT_IMPORT_DIR:-../../../../content/test-data/target}/users:/coremedia/import/users"
+    - "${CONTENT_IMPORT_DIR:-../../../../content/test-data/target}/content:/coremedia/import/content"
+    - "${THEMES_ARCHIVE_FILE:-../../../../frontend/target/frontend.zip}:/coremedia/import/frontend.zip"

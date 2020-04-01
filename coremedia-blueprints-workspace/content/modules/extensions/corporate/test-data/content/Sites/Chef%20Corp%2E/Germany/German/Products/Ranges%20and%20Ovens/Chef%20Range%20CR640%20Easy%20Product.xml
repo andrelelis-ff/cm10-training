@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProduct folder="/Sites/Chef Corp./Germany/German/Products/Ranges and Ovens" name="Chef Range CR640 Easy Product" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Products/Ranges%20and%20Ovens/Chef%20Range%20CR640%20Easy%20Product.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Ranges%20and%20Ovens/Chef%20Range%20CR640%20Easy%20Product"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Mehr Information</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>chef-range-cr640-easy</segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+<link href="Ranges%20and%20Ovens.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/Ranges%20and%20Ovens/Ranges%20and%20Ovens"/>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Der Chef Range CR640 Standard-Herd mit Gaskochfeldern überzeugt durch sein exzellentes Preis/Leistungsverhältnis.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Beschreibung</p><p>Der Chef Bereich CR640 Standard-Herd mit Gas-Kochfeld ist ein großer Wert Wahl unter US Köchen wegen seiner professionelle Verarbeitungsqualität und Langlebigkeit. Die verbesserten Standard-Features gehören jetzt eine überlegene, glatter Betriebs Rollout-Grill, mit dem Sie Ihre Lebensmittel sicher schalten, während die die gleichen vier variable Höheneinstellungen, Heavy-Duty-Drehknöpfe und Edelstahl-Seitenteile ermöglicht.</p><p><br/></p><p>Hauptmerkmale</p><p>• Edelstahl-Warmhalteplatte</p><p>• Multifunktions-Backofen<br/>• Zweikreisgrill<br/>• Massive Topfträger<br/>• 5 kW Zentralbrenner<br/>• Rollout grill<br/>• Massive Ofenroste<br/>• 2 Jahre Garantie</p><p><br/></p><p>Technische Spezifikationen</p><p><br/></p><p><br/></p><table dir="ltr"><tbody><tr><td><p>Breite</p></td><td><p>800 mm</p></td></tr><tr><td><p>Tiefe</p></td><td><p>600 mm</p></td></tr><tr><td><p>Höhe</p></td><td><p>913 mm</p></td></tr><tr><td><p>Gewicht</p></td><td><p>527 £</p></td></tr><tr><td><p>Kraftstoffarten</p></td><td><p>Elektrisch</p></td></tr><tr><td><p>Hob-Konfiguration:</p></td><td><p>-</p></td></tr><tr><td><p>Brenner</p></td><td><p>4</p></td></tr><tr><td><p>Leistungen Hob</p></td><td><p>1x1.4KW, 1x1.85KW, 1x2.3KW</p></td></tr><tr><td><p>Total Power Bewertungen</p></td><td>Gas - 17.9kW (Gas)<br/>Electric - 7,4 kW (elektrisch)</td></tr><tr><td><p>Ofenkapazität (LH)</p></td><td><p>65 Liter</p></td></tr><tr><td><p>Ofenkapazität (RH)</p></td><td><p>78 Liter</p></td></tr><tr><td><p>Interne Ofen Abmessungen (LH)</p></td><td><p>-</p></td></tr><tr><td><p>B x T x H</p></td><td><p>433 x 380 x 380 mm</p></td></tr><tr><td><p>Interne Ofen Abmessungen (RH)</p></td><td><p>-</p></td></tr><tr><td><p>B x T x H</p></td><td><p>433 x 380 x 380 mm</p></td></tr><tr><td><p>Zubehör im Lieferumfang enthalten</p></td><td><p>Front Sockel und fünf Regalböden, darunter eine tiefe Regal, Wok Ring</p></td></tr></tbody></table></div></detailText>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Products/Ranges%20and%20Ovens/Chef%20Range%20CR640%20Easy%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Products/Ranges%20and%20Ovens/Chef%20Range%20CR640%20Easy%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<downloads>
+</downloads>
+<productCode>CC-CRE-640</productCode>
+<productName>Chef Range CR640 Easy</productName>
+</CMProduct>

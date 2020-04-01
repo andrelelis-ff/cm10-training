@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Decorating" name="Sqare Glass Vase with Rose Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=712;y=0;width=1076;height=1667</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=627;y=0;width=1250;height=1667</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=418;y=0;width=1668;height=1667</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=139;y=0;width=2226;height=1667</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=134;width=2500;height=1403</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=333;width=2500;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=522;width=2500;height=627</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2848605577689243;y1=0;x2=0.7151394422310757;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.250996015936255;y1=0;x2=0.750996015936255;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.16733067729083664;y1=0;x2=0.8346613545816733;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.055776892430278883;y1=0;x2=0.9462151394422311;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.08059701492537313;x2=1;y2=0.9223880597014925</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2;x2=1;y2=0.8</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.31343283582089554;x2=1;y2=0.6895522388059702</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Sqare Glass Vase with Rose</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Sqare Glass Vase with Rose</alt>
+<copyright>Smith1972 / Shutterstock 315963785</copyright>
+<dataUrl></dataUrl>
+<width>2500</width>
+<height>1667</height>
+<data md5="a2311d0e0a660c134f834654011e4760" size="798555" href="../../../../../../../__blob/a2311d0e0a660c134f834654011e4760.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

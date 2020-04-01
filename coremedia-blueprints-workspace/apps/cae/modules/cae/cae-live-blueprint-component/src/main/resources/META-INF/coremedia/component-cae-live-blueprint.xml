@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="validateConfig">
+
+  <!-- Activate sitemap generation -->
+  <import resource="classpath:/framework/spring/blueprint-sitemap.xml"/>
+
+  <bean id="urlHandler" class="com.coremedia.blueprint.cae.handlers.UrlHandler">
+    <description>
+      Url Handler
+    </description>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="dataViewFactory">
+      <description>
+        Don't use dataviews here because we will run into trouble with non-contentbean generated classes otherwise
+      </description>
+      <null/>
+    </property>
+    <property name="idProvider" ref="idProvider"/>
+    <property name="linkFormatter" ref="linkFormatter"/>
+    <property name="sitesService" ref="sitesService"/>
+  </bean>
+
+</beans>
+

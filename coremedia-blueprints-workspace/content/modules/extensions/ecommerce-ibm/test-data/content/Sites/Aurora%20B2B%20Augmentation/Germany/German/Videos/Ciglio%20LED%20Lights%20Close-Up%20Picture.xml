@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Videos" name="Ciglio LED Lights Close-Up Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20States/English/Videos/Ciglio%20LED%20Lights%20Close-Up%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Videos/Ciglio%20LED%20Lights%20Close-Up%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=409;y=0;width=464;height=720</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=371;y=0;width=538;height=720</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=281;y=0;width=719;height=720</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=161;y=0;width=958;height=720</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=3;y=0;width=1277;height=720</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=103;width=1280;height=513</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=200;width=1280;height=320</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.3198992443324937;y1=0;x2=0.6826196473551638;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.28967254408060455;y1=0;x2=0.7103274559193955;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.21914357682619648;y1=0;x2=0.7808564231738035;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.12594458438287154;y1=0;x2=0.8740554156171285;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.0025188916876574307;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.14349775784753363;x2=1;y2=0.8565022421524664</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.27802690582959644;x2=1;y2=0.7219730941704036</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Ciglio LED Lights</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Ciglio LED Lights</alt>
+<copyright>Vimeo 178663918/CC-BY-SA</copyright>
+<dataUrl></dataUrl>
+<width>1280</width>
+<height>720</height>
+<data md5="f4b4b086c5d13fee246b96eafb564f13" size="39584" href="../../../../../__blob/f4b4b086c5d13fee246b96eafb564f13.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

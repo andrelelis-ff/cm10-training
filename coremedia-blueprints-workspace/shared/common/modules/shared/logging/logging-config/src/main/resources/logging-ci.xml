@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<included>
+
+  <if condition='!isDefined("log.pattern")'>
+    <then>
+      <property name="log.pattern" value="%d{yyyy-MM-dd HH:mm:ss} %-7([%level]) %logger - %message \\(%thread\\)%n" />
+    </then>
+  </if>
+
+  <if condition='!isDefined("log.ci.html")'>
+    <then>
+      <property name="log.ci.html" value="${log.dir}/${application.name}-ci.html" />
+    </then>
+  </if>
+
+  <if condition='!isDefined("log.ci.file")'>
+    <then>
+      <property name="log.ci.file" value="${log.dir}/${application.name}-ci.log" />
+    </then>
+  </if>
+
+  <!--
+   | This appender is similar to the default, but it does not append, so we can
+   | use the textfinder plugin to grep the log from the last restart i.e. update
+   | and mark the build unstable if a certain keywords are found.
+   | Alternatively the logparser plugin can be used.
+   | Be aware, that you should not use both plugins with level "info" or above, otherwise
+   | analyzing can be exhausting for jenkins.
+   -->
+  <appender name="ci-file" class="ch.qos.logback.core.FileAppender">
+    <append>false</append>
+    <file>${log.ci.file}</file>
+    <encoder>
+      <pattern>${log.pattern}</pattern>
+    </encoder>
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>${log.ci.levelThreshold:-warn}</level>
+    </filter>
+  </appender>
+
+  <!--
+   | This appender can be used in conjunction of the publish html reports plugin.
+   -->
+  <appender name="ci-html" class="ch.qos.logback.core.FileAppender">
+    <append>false</append>
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>${log.ci.levelThreshold:-warn}</level>
+    </filter>
+    <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+      <layout class="ch.qos.logback.classic.html.HTMLLayout">
+        <pattern>%date%thread%mdc%level%logger%msg</pattern>
+      </layout>
+    </encoder>
+
+    <file>${log.ci.html}</file>
+  </appender>
+
+</included>

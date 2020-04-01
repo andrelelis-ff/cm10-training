@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMImageMap folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content" name="Kitchen Teaser Image Map" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="overlay">
+<Struct>
+<BooleanProperty Name="displayTitle">true</BooleanProperty>
+<BooleanProperty Name="displayDefaultPrice">true</BooleanProperty>
+<BooleanProperty Name="displayShortText">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="image-map">
+<Struct>
+<StringProperty Name="id">map-area-0</StringProperty>
+<StringProperty Name="coords">785,1207,2889,1778</StringProperty>
+<StringProperty Name="alt">Foobar</StringProperty>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">true</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">dark-on-light</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/Kitchen%20Teaser.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Kitchen%20Teaser"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Renaud Bozinsky, Restaurant Owner</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></teaserText>
+<pictures>
+<link href="Homepage/Corporate%20Image/Chef%20Corp%20Foundf14a982c.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Homepage/Corporate%20Image/Chef%20Corp%20Founder%20Portrait%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../Augmentation/B2B_Kitchen_Products/Kitchen%20Products.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Augmentation/B2B_Kitchen_Products/Kitchen%20Products"/>
+</target>
+</CMImageMap>

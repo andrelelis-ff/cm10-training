@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<perso:EnumCondition
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:perso="exml:com.coremedia.personalization.ui.config"
+        conditionName="{resourceManager.getString('com.coremedia.blueprint.studio.NuggadStudioPlugin', 'p13n_context_nuggad_household_income')}"
+        propertyName="nuggad.householdIncome"
+        operators="{['eq']}"
+        operatorNames="{{
+                                  eq: resourceManager.getString('com.coremedia.blueprint.studio.NuggadStudioPlugin', 'p13n_context_nuggad_household_income_eq')
+                               }}"
+        value="{[
+                                [1, resourceManager.getString('com.coremedia.blueprint.studio.NuggadStudioPlugin', 'p13n_context_nuggad_household_income_1')],
+                                [2, resourceManager.getString('com.coremedia.blueprint.studio.NuggadStudioPlugin', 'p13n_context_nuggad_household_income_2')],
+                                [3, resourceManager.getString('com.coremedia.blueprint.studio.NuggadStudioPlugin', 'p13n_context_nuggad_household_income_3')],
+                                [4, resourceManager.getString('com.coremedia.blueprint.studio.NuggadStudioPlugin', 'p13n_context_nuggad_household_income_4')],
+                                [5, resourceManager.getString('com.coremedia.blueprint.studio.NuggadStudioPlugin', 'p13n_context_nuggad_household_income_5')],
+                                [9, resourceManager.getString('com.coremedia.blueprint.studio.NuggadStudioPlugin', 'p13n_context_nuggad_household_income_9')]]}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.NuggadStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.nuggad.nuggAdHouseholdIncomeCondition";
+
+    private var config:NuggAdHouseholdIncomeCondition;
+
+    public native function NuggAdHouseholdIncomeCondition(config:NuggAdHouseholdIncomeCondition = null);
+    ]]></fx:Script>
+
+</perso:EnumCondition>

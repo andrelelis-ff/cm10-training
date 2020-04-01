@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSymbol folder="/Sites/Hybris Apparel/Germany/German/Options/Settings/Templates/CMChannel/Landing Page" name="Descriptor" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../United%20Kingdom/English/Options/Settings/Templates/CMChannel/Landing%20Page/Descriptor.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Templates/CMChannel/Landing%20Page/Descriptor"/>
+</master>
+<description>Landungsseite</description>
+<icon href="Descriptor.icon.png" mimetype="image/png"/>
+</CMSymbol>

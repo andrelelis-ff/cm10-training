@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Pictures/Product Pictures/Decorating/Lighting" name="Five Flame Chandelier Black Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Pictures/Product%20Pictures/Decorating/Lighting/Five%20Flame%20Ce0c0d1b7.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Decorating/Lighting/Five%20Flame%20Chandelier%20Black%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=710;y=579;width=1073;height=1667</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=556;y=509;width=1404;height=1875</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=517;y=694;width=1466;height=1466</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=409;y=741;width=1705;height=1281</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=301;y=756;width=1898;height=1065</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=748;width=2500;height=1003</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=1011;width=2500;height=625</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2839506172839506;y1=0.23148148148148148;x2=0.7129629629629629;y2=0.8981481481481481</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2222222222222222;y1=0.2037037037037037;x2=0.7839506172839507;y2=0.9537037037037037</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.20679012345679013;y1=0.2777777777777778;x2=0.7932098765432098;y2=0.8641975308641975</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.16358024691358025;y1=0.2962962962962963;x2=0.845679012345679;y2=0.808641975308642</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.12037037037037036;y1=0.30246913580246915;x2=0.8796296296296297;y2=0.7283950617283951</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2993827160493827;x2=1;y2=0.7006172839506173</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.404320987654321;x2=1;y2=0.654320987654321</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_HLG028_280108</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Five Flame Chandelier Black</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Five Flame Chandelier Black</alt>
+<copyright>Hard Ligth / Shutterstock 370122857</copyright>
+<dataUrl></dataUrl>
+<width>2500</width>
+<height>2500</height>
+<data md5="de89ac87fce1bb7ed69b113a10247e7e" size="507882" href="../../../../../../../../__blob/de89ac87fce1bb7ed69b113a10247e7e.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

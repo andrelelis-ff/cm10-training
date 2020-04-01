@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Aurora Augmentation/Germany/German/Navigation/Microsites/Paris Fashion Week Trends" name="Paris Fashion Week Trends" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Navigation/Microsites/Paris%20Fashion%20Week%20Trends/Paris%20Fashion%fd1da67.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Microsites/Paris%20Fashion%20Week%20Trends/Paris%20Fashion%20Week%20Trends"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Paris Fashion Week Trends</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Layouts/Hero%20Layout.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Layouts/Hero%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../../Editorial/Content/Fashion%20Week/Black%20is%20the%20new%20Black.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion%20Week/Black%20is%20the%20new%20Black"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../../Options/Viewtypes/CMChannel/hero.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Viewtypes/CMChannel/hero"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/hero.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/hero"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../../Editorial/Content/Fashion%20Week/Why%20designers%20fall%20in%20love%20with%20Black.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion%20Week/Why%20designers%20fall%20in%20love%20with%20Black"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../../Editorial/Content/Fashion%20Week/The%20Meaning%20of%20Black.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion%20Week/The%20Meaning%20of%20Black"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../../Options/Viewtypes/CMChannel/portrait.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Viewtypes/CMChannel/portrait"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/placement1.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/placement1"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../../Editorial/Content/Fashion%20Week/Black%20is%20the%20new%20Black%20Dresses.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion%20Week/Black%20is%20the%20new%20Black%20Dresses"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../../Editorial/Content/Fashion%20Week/Fashion%20Show%20Shoppable%20Video.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion%20Week/Fashion%20Show%20Shoppable%20Video"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/placement2.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/placement2"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../../Editorial/Content/Fashion%20Week/Milano%20Fashion%20Trends.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion%20Week/Milano%20Fashion%20Trends"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../../Editorial/Content/Fashion%20Week/New%20York%20Fashion%20Trends.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion%20Week/New%20York%20Fashion%20Trends"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../../Editorial/Content/Fashion%20Week/Paris%20Fashion%20Trends.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion%20Week/Paris%20Fashion%20Trends"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../../Options/Viewtypes/CMChannel/portrait.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Viewtypes/CMChannel/portrait"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/placement3.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/placement3"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

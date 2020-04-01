@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:TopicPreviewPanelBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.topicpages.administration.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        layout="fit"
+        itemId="topic-pages-preview">
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.topicpages.config.topicPreviewPanel";
+
+    private var config:TopicPreviewPanel;
+
+    public native function TopicPreviewPanel(config:TopicPreviewPanel = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <Label itemId="{PREVIEW_FRAME}"
+           width="100%"
+           height="100%"
+           flex="1"/>
+  </local:items>
+
+</local:TopicPreviewPanelBase>

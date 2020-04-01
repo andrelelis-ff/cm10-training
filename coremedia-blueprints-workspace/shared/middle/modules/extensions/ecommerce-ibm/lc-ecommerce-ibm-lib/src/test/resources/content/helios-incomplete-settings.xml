@@ -1,0 +1,9 @@
+ <Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <StructProperty Name="livecontext.store.config">
+     <Struct>
+       <!--catalog configuration with missing currency-->
+       <StringProperty Name="store.id">10851</StringProperty>
+       <StringProperty Name="store.name">PerfectChefESite</StringProperty>
+     </Struct>
+   </StructProperty>
+</Struct>

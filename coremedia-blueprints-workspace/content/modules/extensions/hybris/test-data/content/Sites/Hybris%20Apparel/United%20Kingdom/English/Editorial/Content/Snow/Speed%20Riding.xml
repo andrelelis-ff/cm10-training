@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Snow" name="Speed Riding" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1068;y=0;width=861;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=967;y=0;width=1003;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=665;y=0;width=1335;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=222;y=0;width=1778;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=50;width=2000;height=1122</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=45;width=2000;height=1001</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=297;width=2000;height=800</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=412;width=2000;height=749</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=614;width=2000;height=498</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.5340050377833753;y1=0;x2=0.964735516372796;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.4836272040302267;y1=0;x2=0.9848866498740554;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.33249370277078083;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.11083123425692695;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.03773584905660377;x2=1;y2=0.879245283018868</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.033962264150943396;x2=1;y2=0.7849056603773585</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.22264150943396227;x2=1;y2=0.8226415094339623</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.30943396226415093;x2=1;y2=0.8716981132075472</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.46037735849056605;x2=1;y2=0.8339622641509434</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Speed Riding</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Speed%20Riding.xml" path="/Settings/Taxonomies/Subject/Speed%20Riding"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Speed%20Gliding.xml" path="/Settings/Taxonomies/Subject/Speed%20Gliding"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Speed Riding</alt>
+<copyright>shutterstock_170682338</copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1333</height>
+<data md5="96a633503f3ba0e98aa49fb1a513cead" size="645800" href="../../../../../../../__blob/96a633503f3ba0e98aa49fb1a513cead.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

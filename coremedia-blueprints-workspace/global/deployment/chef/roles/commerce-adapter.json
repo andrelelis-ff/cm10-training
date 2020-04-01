@@ -1,0 +1,17 @@
+{
+  "name": "commerce-adapter",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The role for the commerce-adapter node",
+  "run_list": [
+    "role[base]",
+    "recipe[blueprint-spring-boot::commerce-adapter]"
+  ],
+  "env_run_lists": {
+    "development": [
+      "role[base]",
+      "recipe[blueprint-spring-boot::commerce-adapter]",
+      "recipe[blueprint-spring-boot::commerce-adapter-mock]"
+    ]
+  }
+}

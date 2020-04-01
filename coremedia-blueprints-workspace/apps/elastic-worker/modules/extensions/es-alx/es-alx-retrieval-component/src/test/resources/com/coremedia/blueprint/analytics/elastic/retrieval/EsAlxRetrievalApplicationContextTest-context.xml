@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:components="http://www.coremedia.com/2012/coremedia-spring-beans-components"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.coremedia.com/2012/coremedia-spring-beans-components http://www.coremedia.com/2012/coremedia-spring-beans-components.xsd">
+
+  <components:load id="testComponents" verbose="true">
+    <components:component name="es-alx-retrieval"/>
+    <components:directory location="classpath:/META-INF/coremedia"/>
+  </components:load>
+
+</beans>

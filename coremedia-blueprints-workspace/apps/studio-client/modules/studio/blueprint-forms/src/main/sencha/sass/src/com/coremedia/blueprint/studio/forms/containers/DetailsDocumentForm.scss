@@ -1,0 +1,7 @@
+@if $cm-include-details-document-form {
+  $_block: "cm-details-document-form";
+  .#{$_block} {
+    // workaround to eliminate the browser miscalculated height with manageHeight="{false}" config.
+    line-height: 0;
+  }
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/United Kingdom/English/Pictures" name="The Reservoir Beanie" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0.2222222222222222</StringProperty>
+<StringProperty Name="y1">0.20048309178743962</StringProperty>
+<StringProperty Name="x2">0.7729468599033816</StringProperty>
+<StringProperty Name="y2">0.782608695652174</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=312;y=200;width=374;height=582</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=280;y=200;width=437;height=582</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=222;y=217;width=551;height=551</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=222;y=285;width=551;height=413</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=179;y=300;width=734;height=413</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=97;y=292;width=860;height=430</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=36;y=307;width=964;height=386</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=307;width=1000;height=374</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=367;width=1000;height=251</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.3115942028985507;y1=0.20048309178743962;x2=0.6859903381642513;y2=0.782608695652174</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.28019323671497587;y1=0.20048309178743962;x2=0.717391304347826;y2=0.782608695652174</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.2222222222222222;y1=0.21739130434782608;x2=0.7729468599033816;y2=0.7681159420289855</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.2222222222222222;y1=0.28502415458937197;x2=0.7729468599033816;y2=0.6980676328502415</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.178743961352657;y1=0.2995169082125604;x2=0.9130434782608695;y2=0.7125603864734299</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0.0966183574879227;y1=0.2922705314009662;x2=0.9565217391304348;y2=0.7222222222222222</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0.036231884057971016;y1=0.30676328502415456;x2=1;y2=0.6932367149758454</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.30676328502415456;x2=1;y2=0.6811594202898551</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3671497584541063;x2=1;y2=0.6183574879227053</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>hybris:///catalog/product/104668_magenta</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>The Reservoir Beanie</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>The Reservoir Beanie</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1000</width>
+<height>1000</height>
+<data md5="25af77ae4a51847ed5d05a8e6419e489" size="15330" href="../../../../../__blob/25af77ae4a51847ed5d05a8e6419e489.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

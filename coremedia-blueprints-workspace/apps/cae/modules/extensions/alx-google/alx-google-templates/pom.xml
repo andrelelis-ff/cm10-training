@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>cae.alx-google</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>alx-google-templates</artifactId>
+
+  <properties>
+    <coremedia.project.extension.for>cae</coremedia.project.extension.for>
+  </properties>
+
+  <!-- dependencies needed for code-completion in IDEs only -->
+  <dependencies>
+    <!-- cae module includes all dependencies to spring, freemarker, javascript and coremedia taglibs -->
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>alx-google-cae</artifactId>
+      <version>${project.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+</project>

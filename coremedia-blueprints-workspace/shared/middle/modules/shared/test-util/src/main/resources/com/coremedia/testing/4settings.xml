@@ -1,0 +1,20 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <BooleanProperty Name="booleanProperty">true</BooleanProperty>
+  <StringProperty Name="stringProperty">testString</StringProperty>
+  <IntProperty Name="integerProperty">42</IntProperty>
+  <StringProperty Name="dateProperty">2010-01-01T10:00:23-10:00</StringProperty>
+  <StringProperty Name="doubleProperty">2.3</StringProperty>
+  <LinkListProperty Name="linkProperty" LinkType="coremedia:///cap/contenttype/CMTeasable">
+    <Link xlink:href="coremedia:///cap/resources/6"/>
+  </LinkListProperty>
+  <StructListProperty Name="structProperty">
+    <Struct>
+      <StringProperty Name="simpleString1">simple string1</StringProperty>
+      <StringProperty Name="simpleString2">simple string2</StringProperty>
+    </Struct>
+    <Struct>
+      <StringProperty Name="simpleString3">simple string3</StringProperty>
+      <StringProperty Name="simpleString4">simple string4</StringProperty>
+    </Struct>
+  </StructListProperty>
+</Struct>

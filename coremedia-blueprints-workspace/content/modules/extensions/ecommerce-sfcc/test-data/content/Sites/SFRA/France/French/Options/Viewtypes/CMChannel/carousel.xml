@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/SFRA/France/French/Options/Viewtypes/CMChannel" name="carousel" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Options/Viewtypes/CMChannel/carousel.xml" path="/Sites/SFRA/United%20Kingdom/English/Options/Viewtypes/CMChannel/carousel"/>
+</master>
+<description>Affiche le contenu dans une vue carrousel affichant plusieurs bannières à la fois.</description>
+<icon href="carousel.icon.svg%2Bxml" mimetype="image/svg+xml"/>
+<layout>carousel</layout>
+</CMViewtype>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content">
+  <schema>
+    <type name="AMAsset" abstract="true">
+      <property name="original" type="blob" contentType="*/*"/>
+      <property name="thumbnail" type="blob" contentType="image/*"/>
+      <property name="state" type="markup" grammar="coremedia-struct-2008"/>
+      <property name="metadata" type="markup" grammar="coremedia-struct-2008"/>
+    </type>
+    <type name="AMPictureAsset" parent="AMAsset">
+      <property name="web" type="blob" contentType="image/*"/>
+      <property name="print" type="blob" contentType="image/*"/>
+      <property name="title" type="string"/>
+    </type>
+  </schema>
+  <content>
+    <folder id="1" name="">
+      <document id="2"
+                type="AMPictureAsset"
+                name="Asset">
+        <version number="1">
+          <blobProperty name="original" base64="b3JpZ2luYWwK" type="image/test"/>
+          <blobProperty name="web" base64="d2ViCg==" type="image/test"/>
+          <blobProperty name="print" base64="cHJpbnQK" type="image/test"/>
+          <blobProperty name="thumbnail" base64="dGh1bWJuYWlsCg==" type="image/test"/>
+          <markupProperty name="metadata" grammar="coremedia-struct-2008"
+                          url="AssetPublishInterceptorTest-metadata-mixed.xml"/>
+        </version>
+      </document>
+      <document id="4"
+                type="AMPictureAsset"
+                name="AssetWithoutRenditions">
+        <version number="1">
+          <blobProperty name="original" base64="b3JpZ2luYWwK" type="image/test"/>
+          <blobProperty name="web" base64="d2ViCg==" type="image/test"/>
+          <blobProperty name="print" base64="cHJpbnQK" type="image/test"/>
+          <blobProperty name="thumbnail" base64="dGh1bWJuYWlsCg==" type="image/test"/>
+          <markupProperty name="metadata" grammar="coremedia-struct-2008"
+                          url="AssetPublishInterceptorTest-metadata-no-renditions.xml"/>
+        </version>
+      </document>
+      <document id="6"
+                type="AMPictureAsset"
+                name="AssetWithoutMetadata">
+        <version number="1">
+          <blobProperty name="original" base64="b3JpZ2luYWwK" type="image/test"/>
+          <blobProperty name="web" base64="d2ViCg==" type="image/test"/>
+          <blobProperty name="print" base64="cHJpbnQK" type="image/test"/>
+          <blobProperty name="thumbnail" base64="dGh1bWJuYWlsCg==" type="image/test"/>
+        </version>
+      </document>
+      <document id="8"
+                type="AMPictureAsset"
+                name="AssetWithBadRenditions">
+        <version number="1">
+          <blobProperty name="original" base64="b3JpZ2luYWwK" type="image/test"/>
+          <blobProperty name="web" base64="d2ViCg==" type="image/test"/>
+          <blobProperty name="print" base64="cHJpbnQK" type="image/test"/>
+          <blobProperty name="thumbnail" base64="dGh1bWJuYWlsCg==" type="image/test"/>
+          <markupProperty name="metadata" grammar="coremedia-struct-2008"
+                          url="AssetPublishInterceptorTest-metadata-bad-renditions.xml"/>
+        </version>
+      </document>
+      <document id="10"
+                type="AMPictureAsset"
+                name="AssetAllTrue">
+        <version number="1">
+          <blobProperty name="original" base64="b3JpZ2luYWwK" type="image/test"/>
+          <blobProperty name="web" base64="d2ViCg==" type="image/test"/>
+          <blobProperty name="print" base64="cHJpbnQK" type="image/test"/>
+          <blobProperty name="thumbnail" base64="dGh1bWJuYWlsCg==" type="image/test"/>
+          <markupProperty name="metadata" grammar="coremedia-struct-2008"
+                          url="AssetPublishInterceptorTest-metadata-all-true.xml"/>
+        </version>
+      </document>
+      <document id="12"
+                type="AMPictureAsset"
+                name="AssetAllFalse">
+        <version number="1">
+          <blobProperty name="original" base64="b3JpZ2luYWwK" type="image/test"/>
+          <blobProperty name="web" base64="d2ViCg==" type="image/test"/>
+          <blobProperty name="print" base64="cHJpbnQK" type="image/test"/>
+          <blobProperty name="thumbnail" base64="dGh1bWJuYWlsCg==" type="image/test"/>
+          <markupProperty name="metadata" grammar="coremedia-struct-2008"
+                          url="AssetPublishInterceptorTest-metadata-all-false.xml"/>
+        </version>
+      </document>
+    </folder>
+  </content>
+  <rules>
+    <rule resourceId="1" group="0" doctype="Document_"><right value="ALL"/></rule>
+    <rule resourceId="1" group="0" doctype="Folder_"><right value="ALL"/></rule>
+  </rules>
+</contentRepository>

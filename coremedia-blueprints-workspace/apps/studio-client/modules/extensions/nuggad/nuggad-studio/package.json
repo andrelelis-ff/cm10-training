@@ -1,0 +1,8 @@
+{
+  "studioPlugins": [
+    {
+      "mainClass": "com.coremedia.blueprint.studio.NuggadStudioPlugin",
+      "name": "Nuggad Plugin"
+    }
+  ]
+}

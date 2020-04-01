@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Fashion Week" name="Everyday Looks" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Fashion%20Week/Everyday%20Looks.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion%20Week/Everyday%20Looks"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Options/Settings/Teaser%20Styles/Default.xml" cmexport:path="/Settings/Options/Settings/Teaser%20Styles/Default"/>
+<IntProperty Name="width">80</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1"> Alltägliches Aussehen </p> <p> Fühlen Sie sich gut und sehen Sie einfach gut aus mit Ihrem neuen schwarzen Kleid - Schwarz ist das neue Schwarz vereint beides und ist perfekt für Ihren Alltag. Das Beste von allem ist, dass Sie für diese unaufgeregten Looks keine Zeit vor dem Kleiderschrank verschwenden müssen. </p> </div></teaserText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+</target>
+</CMTeaser>

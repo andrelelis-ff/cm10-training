@@ -1,0 +1,63 @@
+// additional optional styles (not automatically included)
+
+.#{$cm-details-prefix} {
+  &__headline {
+    text-align: center;
+  }
+
+  &__text {
+    p {
+      font-size: 17px;
+    }
+    & > *,
+    & > blockquote,
+    & > .rte--list {
+      margin: 15px auto 20px auto;
+      width: 70%;
+    }
+    & > blockquote {
+      border: none;
+
+      .cm-richtext-embedded--image {
+        width: 100%;
+        margin: 1em 0;
+      }
+    }
+  }
+
+  .cm-richtext-embedded {
+    width: 80%;
+
+    //Fix for CMS-4977: Do not split embedded links or pictures
+    break-inside: avoid;
+
+    /* centered image with 50% width */
+    &.float--none {
+      margin: 1.26667rem auto;
+      width: 50%;
+    }
+
+    /* image left with margin right */
+    &.float--left {
+      margin: 0 1.26667rem 0 0;
+      width: 50%;
+    }
+
+    /* image right with margin left */
+    &.float--right {
+      margin: 0 0 0 1.26667rem;
+      width: 50%;
+    }
+
+    /* set aspect ratio to 4x3 for embedded images */
+    &__picture-box {
+      @include aspect-ratio-box(4, 3);
+    }
+
+    //Fix for CMS-4976: For multi-column-buggy webkit
+    &__picture {
+      @include stretch-absolute();
+      transform: translateZ(0);
+    }
+  }
+}

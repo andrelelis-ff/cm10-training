@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:AddItemsPlugin
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns="exml:ext.config"
+        xmlns:livecontext="exml:com.coremedia.livecontext.studio.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.desktop.reusability.WorkAreaTabProxiesContextMenu;
+    import com.coremedia.ecommerce.studio.model.CatalogObject;
+    import com.coremedia.livecontext.studio.LivecontextStudioPlugin;
+    import com.coremedia.livecontext.studio.LivecontextStudioPluginBase;
+
+    import mx.resources.ResourceManager;
+
+    private var component:WorkAreaTabProxiesContextMenu;
+    private var componentConfig:WorkAreaTabProxiesContextMenu;
+
+    // called by generated constructor code
+    //noinspection JSUnusedLocalSymbols
+    private function __initialize__(config:AddCatalogObjectActionsToWorkAreaTabProxiesContextMenu):void {
+      component = WorkAreaTabProxiesContextMenu(config.cmp);
+      componentConfig = WorkAreaTabProxiesContextMenu(config.cmp.initialConfig);
+    }
+
+    //noinspection JSUnusedLocalSymbols
+    private var config:AddCatalogObjectActionsToWorkAreaTabProxiesContextMenu;
+
+    public native function AddCatalogObjectActionsToWorkAreaTabProxiesContextMenu(config:AddCatalogObjectActionsToWorkAreaTabProxiesContextMenu = null);
+    ]]></fx:Script>
+
+  <ui:items>
+    <MenuSeparator/>
+    <MenuItem itemId="{LivecontextStudioPlugin.SHOW_CONTENT_OF_ACTIVE_TAB_IN_LIBRARY_MENU_ITEM_ID}">
+      <baseAction>
+        <editor:ShowTabEntityInRepositoryAction
+                contextClickedTabPanelValueExpression="{component.getContextClickedTabPanelValueExpression()}"
+                contextClickedTabValueExpression="{component.getContextClickedTabValueExpression()}"
+                text="{ResourceManager.getInstance().getString('com.coremedia.cms.editor.sdk.actions.Actions', 'Action_showInTree_text')}"
+                entityType="{CatalogObject}"
+                handleEntity="{LivecontextStudioPluginBase.showInCatalogTree}"/>
+      </baseAction>
+    </MenuItem>
+    <MenuSeparator/>
+    <MenuItem>
+      <baseAction>
+        <livecontext:CreateProductTeaserAction
+                catalogObjectExpression="{componentConfig.tabEntityExpression}"/>
+      </baseAction>
+    </MenuItem>
+    <MenuItem>
+      <baseAction>
+        <livecontext:AugmentCategoryAction
+                catalogObjectExpression="{componentConfig.tabEntityExpression}"/>
+      </baseAction>
+    </MenuItem>
+    <MenuItem>
+      <baseAction>
+        <livecontext:AugmentProductAction
+                catalogObjectExpression="{componentConfig.tabEntityExpression}"/>
+      </baseAction>
+    </MenuItem>
+  </ui:items>
+</ui:AddItemsPlugin>

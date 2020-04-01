@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ Button to open a new browser window with the Google Analytics report for the current preview document.
+-->
+<alx:OpenAnalyticsDeepLinkUrlButton
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:alx="exml:com.coremedia.blueprint.studio.config.analytics"
+        windowName="GoogleReportWindow"
+        tooltip="{resourceManager.getString('com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsStudioPlugin', 'googleanalytics_preview_btn_tooltip')}"
+        text="{resourceManager.getString('com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsStudioPlugin', 'googleanalytics_preview_btn_tooltip')}"
+        itemId="btn-analytics-report-google"
+        iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'analytics')}"
+        ui="{ButtonSkin.WORKAREA.getSkin()}"
+        scale="medium"
+        serviceName="googleAnalytics">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsStudioPlugin')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.skins.ButtonSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.googleanalytics.googleAnalyticsReportPreviewButton";
+
+    private var config:GoogleAnalyticsReportPreviewButton;
+
+    public native function GoogleAnalyticsReportPreviewButton(config:GoogleAnalyticsReportPreviewButton = null);
+    ]]></fx:Script>
+
+</alx:OpenAnalyticsDeepLinkUrlButton>

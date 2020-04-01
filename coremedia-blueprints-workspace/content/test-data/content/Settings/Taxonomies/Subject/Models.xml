@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTaxonomy folder="/Settings/Taxonomies/Subject" name="Models" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Models</value>
+<children>
+<link href="Florence%20Grebine.xml" path="/Settings/Taxonomies/Subject/Florence%20Grebine"/>
+<link href="Olive%20Haydon.xml" path="/Settings/Taxonomies/Subject/Olive%20Haydon"/>
+<link href="Pheline%20Hoffman.xml" path="/Settings/Taxonomies/Subject/Pheline%20Hoffman"/>
+<link href="Martine%20Shriver.xml" path="/Settings/Taxonomies/Subject/Martine%20Shriver"/>
+<link href="Bjorne%20Grabossy.xml" path="/Settings/Taxonomies/Subject/Bjorne%20Grabossy"/>
+</children>
+<externalReference></externalReference>
+</CMTaxonomy>

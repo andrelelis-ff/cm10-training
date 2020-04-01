@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:PictureDocumentFormBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.forms.containers.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config" xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:quickcreate="com.coremedia.cms.editor.sdk.quickcreate.*"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Picture_label')}"
+        itemId="pictureDocumentForm">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.studio.forms.columns.ValidityColumn;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.pictureDocumentForm";
+
+    private var config:PictureDocumentForm;
+
+    public native function PictureDocumentForm(config:PictureDocumentForm = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!--- Maximum amount of items in the list -->
+    <fx:int id="maxCardinality"/>
+
+    <!---
+     The content property name of the list to bind the newly created content to.
+     Defaults to pictures.
+    -->
+    <fx:String id="picturePropertyName">pictures</fx:String>
+
+    <!---
+     The content type to create, optional if the content type value expression is set. Defaults to CMPicture.
+    -->
+    <fx:String id="contentType">CMPicture</fx:String>
+
+    <!---
+     An optional handler, to open the collection view in a different state. If not set, the collection view
+     opens per default in search mode for the corresponding content type.
+     Signature: function(linkListTargetType:ContentType, sourceContent:Content):void
+    -->
+    <fx:Function id="openCollectionViewHandler"/>
+  </fx:Declarations>
+
+  <local:items>
+    <editor:LinkListPropertyField propertyName="{config.picturePropertyName}"
+                                  linkType="{config.contentType}"
+                                  hideLabel="true"
+                                  showThumbnails="true"
+                                  maxCardinality="{config.maxCardinality}"
+                                  openCollectionViewHandler="{config.openCollectionViewHandler}">
+      <editor:additionalToolbarItems>
+        <TbSeparator/>
+        <quickcreate:QuickCreateToolbarButton contentType="{config.contentType}"
+                                              propertyName="{config.picturePropertyName}"
+                                              forceReadOnlyValueExpression="{getGridEmptyValueExpression(config)}"
+                                              bindTo="{config.bindTo}"/>
+      </editor:additionalToolbarItems>
+      <editor:fields>
+        <ui:DataField name="{ValidityColumn.STATUS_ID}"
+                      ifUnreadable=""
+                      mapping=""
+                      convert_="{ValidityColumn.convert}"/>
+      </editor:fields>
+      <editor:columns>
+        <editor:ThumbnailColumn/>
+        <editor:TypeIconColumn/>
+        <editor:NameColumn flex="1"/>
+        <bpforms:ValidityColumn/>
+        <editor:StatusColumn/>
+      </editor:columns>
+    </editor:LinkListPropertyField>
+  </local:items>
+
+</local:PictureDocumentFormBase>

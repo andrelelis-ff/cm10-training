@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./Germany/German/Editorial/Homepage/Company/Careers" name="Description and Open Positions" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Homepage/Company/Careers/Description%20and%20Open%20Positions.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Company/Careers/Description%20and%20Open%20Positions"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Join the Chef Corp. Family!</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Offene Positionen</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Helfen Sie große Chefs machen große Mahlzeiten mit großen Werkzeugen Chef Corp. zur Verfügung gestellt! </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Jeder mag eine gute Mahlzeit. Helfen Sie große Chefs machen große Mahlzeiten mit großen Werkzeugen Chef Corp. zur Verfügung gestellt! </p> <p> Unsere Firma wurde ständig erweitert in den letzten Jahren, und wir sind immer auf der Suche, um unser Team in der Lage Menschen, die alles über die Freude der Zubereitung von Speisen kennen zu verlängern. </p> <p> Wenn Sie eine Position, die Sie interessiert sind, zögern Sie bitte nicht uns zu kontaktieren! </p> <p class="p--heading-3"> Offene Positionen </p> <table><tbody><tr><td> <strong>Position</strong> </td><td> <strong>Lage</strong> </td><td> <strong>Aufzeichnungen</strong> </td></tr><tr><td> Metzger </td><td> Chef Corp. Research Center, Wilmington, Delaware </td><td><br/></td></tr><tr><td> Metzger </td><td> Chef Corp. Research Center, Wilmington, Delaware </td><td><br/></td></tr><tr><td> Senior Butcher </td><td> Chef Corp. Research Center, Wilmington, Delaware </td><td><br/></td></tr><tr><td> Buchhalter </td><td> Chef Corp. HQ, Chicago, Illinois </td><td><br/></td></tr><tr><td> Security Officer </td><td> Chef Corp. HQ, Chicago, Illinois </td><td> Muss bieten eigene Uniform. </td></tr><tr><td> Installation und Service Engineer </td><td> Chef Corp. European HQ, Hamburg, Deutschland </td><td> Muss bereit sein, Hamburg Reise sein </td></tr><tr><td> Empfangsdame </td><td> Chef Corp. European HQ, Hamburg, Deutschland </td><td><br/></td></tr></tbody></table> <p><br/></p> </div></detailText>
+<pictures>
+<link href="../../../Assets/Pictures/Careers/Hands%20placed%20on%20top%20of%20each%20other%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Careers/Hands%20placed%20on%20top%20of%20each%20other%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

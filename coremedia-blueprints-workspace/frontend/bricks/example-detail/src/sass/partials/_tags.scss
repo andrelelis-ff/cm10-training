@@ -1,0 +1,22 @@
+/* --- tags / taxonomies --- */
+.#{$cm-tag-prefix} {
+  &__items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: $cm-tag-padding-small-vertical $cm-tag-padding-base-vertical;
+    background: $cm-tag-item-background-color;
+    margin: 0 $cm-tag-padding-small-vertical $cm-tag-padding-small-vertical $cm-tag-padding-small-vertical;
+    border: $cm-tag-item-border-width $cm-tag-item-border-style $cm-tag-item-border-color;
+    border-radius: 5px;
+    color: $cm-tag-item-color;
+
+    & > a {
+      color: $cm-tag-item-color;
+    }
+  }
+}

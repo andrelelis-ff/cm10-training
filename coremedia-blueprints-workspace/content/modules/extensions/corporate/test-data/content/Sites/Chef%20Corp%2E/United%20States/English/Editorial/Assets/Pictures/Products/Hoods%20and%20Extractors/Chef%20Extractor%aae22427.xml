@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Pictures/Products/Hoods and Extractors" name="Chef Extractor Hood HD900 Super Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=587;y=338;width=1820;height=1824</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=578;y=560;width=1839;height=1380</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=356;y=608;width=2215;height=1245</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.19614147909967847;y1=0.13513513513513514;x2=0.8038585209003215;y2=0.8648648648648649</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.19292604501607716;y1=0.22393822393822393;x2=0.8070739549839229;y2=0.7760617760617761</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.1189710610932476;y1=0.24324324324324326;x2=0.8585209003215434;y2=0.7413127413127413</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Chef Extractor Hood HD900</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Picture of the Chef Extractor Hood HD900</alt>
+<copyright>ppart/Shutterstock 96106493</copyright>
+<dataUrl></dataUrl>
+<width>2995</width>
+<height>2499</height>
+<data md5="4380999c5c78bfa6c832f9132e17467a" size="343883" href="../../../../../../../../../__blob/4380999c5c78bfa6c832f9132e17467a.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

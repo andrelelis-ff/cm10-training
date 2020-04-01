@@ -1,0 +1,21 @@
+{
+  "name": "@coremedia/brick-preview",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "@coremedia/brick-utils": "^1.0.0",
+    "@coremedia/brick-node-decoration-service": "^1.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.0.0"
+  },
+  "scripts": {
+    "prettier": "prettier \"**/*\" --write"
+  },
+  "coremedia": {
+    "type": "brick",
+    "init": "src/js/init.js",
+    "smartImport": ["preview"]
+  }
+}

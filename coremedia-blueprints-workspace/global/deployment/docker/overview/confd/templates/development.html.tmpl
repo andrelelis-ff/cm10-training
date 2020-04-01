@@ -1,0 +1,21 @@
+<div>
+<h2>Repository IORs</h2>
+<ul>
+    <li><a href="http://{{ getv "/environment/fqdn" }}:40180/ior" target="_blank" data-cm-test="">Content Management Server IOR</a> <code>http://{{ getv "/environment/fqdn" }}:40180/ior</code></li>
+    <li><a href="http://{{ getv "/environment/fqdn" }}:40280/ior" target="_blank" data-cm-test="">Master Live Server IOR</a> <code>http://{{ getv "/environment/fqdn" }}:40280/ior</code></li>
+    <li><a href="http://{{ getv "/environment/fqdn" }}:40380/ior" target="_blank" data-cm-test="">Workflow Server IOR</a> <code>http://{{ getv "/environment/fqdn" }}:40380/ior</code></li>
+</ul>
+
+<h2>Databases</h2>
+<ul>
+    <li>MongoDB - <code>docker.localhost:3306</code></li>
+    <li>Content Management Server - <code>jdbc:mysql://{{ getv "/environment/fqdn" }}:3306/cm_management</code></li>
+    <li>Master Live Server - <code>jdbc:mysql://{{ getv "/environment/fqdn" }}:3306/cm_master</code></li>
+</ul>
+
+<h2>Headless Server</h2>
+<ul>
+  <li><a href="https://headless-server-preview.docker.localhost/graphiql" target="_blank" data-cm-test="">GraphiQL</a></li>
+  <li><a href="https://headless-server-preview.docker.localhost/swagger-ui.html" target="_blank" data-cm-test="">Swagger UI</a></li>
+</ul>
+</div>

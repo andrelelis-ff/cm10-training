@@ -1,0 +1,38 @@
+//
+// Search
+// --------------------------------------------------
+
+
+.#{$cm-search-prefix} {
+
+  /* -- search form --- */
+  &__form {
+    &-input {
+      font-size: $cm-font-size-normal; // same as language chooser
+
+      &:focus {
+        color: $cm-text-color;
+      }
+    }
+  }
+
+  &__filter {
+    &-title {
+      // better position of chevron icons
+      &-icon {
+        margin-top: 3px;
+      }
+      &--list-collapsed &-icon {
+        margin-top: 1px;
+      }
+    }
+  }
+
+  &__warning {
+    text-transform: none;
+  }
+
+  &__loading {
+    height: 42px; //same height as button to avoid jumping of page
+  }
+}

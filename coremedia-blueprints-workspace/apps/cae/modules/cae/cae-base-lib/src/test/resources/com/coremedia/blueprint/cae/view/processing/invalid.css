@@ -1,0 +1,8 @@
+/*this file contains invalid CSS (!) */
+.my    class {
+  color: #000000;
+}
+
+#my-custom-id
+  background: #ffffff;
+}

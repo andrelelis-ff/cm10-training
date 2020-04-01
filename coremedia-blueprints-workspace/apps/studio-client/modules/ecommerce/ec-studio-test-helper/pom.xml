@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>studio-client.ecommerce</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>ec-studio-test-helper</artifactId>
+  <packaging>swc</packaging>
+  <description>Internally reused test helpers for commerce-studio</description>
+
+  <properties>
+    <selenium.host>localhost</selenium.host>
+    <jooUnitSeleniumBrowserStartCommand>*firefox</jooUnitSeleniumBrowserStartCommand>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>editor-components</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>client-core-test-helper</artifactId>
+      <type>swc</type>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>net.jangaroo</groupId>
+        <artifactId>jangaroo-maven-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <verbose>true</verbose>
+          <jooUnitSeleniumBrowserStartCommand>${jooUnitSeleniumBrowserStartCommand}</jooUnitSeleniumBrowserStartCommand>
+          <jooUnitSeleniumRCHost>${selenium.host}</jooUnitSeleniumRCHost>
+          <jooUnitTestExecutionTimeout>30000</jooUnitTestExecutionTimeout>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content" name="Kitchen Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Teaser%20Styles/Dark.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Options/Settings/Teaser%20Styles/Dark"/>
+<IntProperty Name="positionX">-47</IntProperty>
+<IntProperty Name="positionY">-3</IntProperty>
+<IntProperty Name="width">46</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center">Growing my business</p><p class="align--center">Find out more about kitchen products</p></div></teaserText>
+<pictures>
+<link href="Homepage/Corporate%20Image/Chef%20Corp%20Foundf14a982c.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Homepage/Corporate%20Image/Chef%20Corp%20Founder%20Portrait%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+</target>
+<targets>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="links">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMLinkable" xlink:href="coremedia:///cap/resources/../../Augmentation/B2B_Kitchen_Products/Kitchen%20Products.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Augmentation/B2B_Kitchen_Products/Kitchen%20Products"/>
+<BooleanProperty Name="callToActionEnabled">true</BooleanProperty>
+<StringProperty Name="callToActionCustomText"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</targets>
+</CMTeaser>

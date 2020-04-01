@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/United States/English/Pictures/Product Pictures/Men/Suits" name="Albini European Cut Chintz Wool Suit" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=491;y=290;width=2133;height=3306</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=302;y=278;width=2489;height=3319</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=240;width=3174;height=3174</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=252;width=3174;height=2380</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=278;width=3174;height=1785</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=278;width=3174;height=1270</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=290;width=3174;height=793</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.09523809523809523;y1=0.0694006309148265;x2=0.879409169761182;y2=0.8990536277602523</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.05993690851735015;x2=1;y2=0.8534369085173501</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.06309148264984227;x2=1;y2=0.6582164826498422</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.0694006309148265;x2=1;y2=0.5157443809148264</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.0694006309148265;x2=1;y2=0.3868006309148265</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.0725552050473186;x2=1;y2=0.2709302050473186</StringProperty>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.15476190476190477;y1=0.0725552050473186;x2=0.8267528169825148;y2=0.8990536277602523</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="originReferences">
+</StringListProperty>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/MCL008_0809</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Albini European Cut Chintz Wool Suit</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>Viorel Sima/shutterstock_421658776</copyright>
+<dataUrl></dataUrl>
+<width>3175</width>
+<height>4000</height>
+<data md5="c557876968e24dba952d029f57f5dae0" size="543948" href="../../../../../../../../__blob/c557876968e24dba952d029f57f5dae0.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

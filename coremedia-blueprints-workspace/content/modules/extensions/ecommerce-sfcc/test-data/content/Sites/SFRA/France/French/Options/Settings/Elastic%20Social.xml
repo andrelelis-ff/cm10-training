@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/SFRA/France/French/Options/Settings" name="Elastic Social" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Options/Settings/Elastic%20Social.xml" path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/Elastic%20Social"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="elasticSocial">
+<Struct>
+<StringListProperty Name="commentDocumentTypes">
+<String>CMArticle</String>
+</StringListProperty>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<StringProperty Name="commentType">ANONYMOUS</StringProperty>
+<StringProperty Name="commentModerationType">PRE_MODERATION</StringProperty>
+<StringProperty Name="tenant">sfra-en-gb</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

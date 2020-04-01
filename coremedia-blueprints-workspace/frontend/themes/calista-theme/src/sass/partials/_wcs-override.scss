@@ -1,0 +1,751 @@
+// mixins
+// transform text
+@mixin cm-label-capitalize {
+  font-size: $cm-font-size-base;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+// button small
+@mixin cm-button-small {
+  box-sizing: border-box;
+  width: $wcs-control-width;
+  height: $wcs-control-height;
+  font-family: $cm-font-family-sans-serif;
+  font-size: $cm-font-size-base;
+  border-radius: $cm-border-radius-default;
+  line-height: 22px;
+  border-color: $cm-btn-secondary-border;
+}
+
+// input fields
+@mixin cm-input {
+  outline: none;
+  border: 1px solid $cm-btn-secondary-border;
+  border-radius: $cm-border-radius-default;
+  height: 24px;
+  padding-left: 3px;
+  font-family: $cm-font-family-sans-serif;
+  font-size: $cm-font-size-base;
+  color: $cm-text-color;
+}
+
+// legacy font override
+@mixin cm-price-font {
+  color: $cm-text-color;
+  font-family: inherit !important;
+}
+
+// states for form elements
+@mixin cm-dark-background-focus-state {
+  outline: none;
+  box-shadow: inset 0 0 0 1px $cm-btn-secondary-border,
+              inset 0 0 0 2px #FFFFFF;
+}
+@mixin cm-light-background-focus-state {
+  outline: none;
+  box-shadow: inset 0 0 0 1px #FFFFFF,
+              inset 0 0 0 2px $cm-btn-primary-bg;
+}
+
+// WCS page wrapper
+#page {
+  background-color: #FFFFFF;
+
+  // input fields
+  input {
+    @include cm-input;
+    &:focus {
+      @include cm-light-background-focus-state;
+    }
+  }
+
+  .cm-placement--header {
+    @include cm-grid-header();
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // input fields...
+  .cm-search__form-label + .cm-search__form-input,
+  .cm-search__form-label + .search_input {
+    @extend .cm-search__form-input;
+  }
+
+  // header fix
+  #headerWrapper {
+    position: relative;
+    z-index: 3;
+  }
+
+  // login header wrapper
+  #headerWidget {
+    background-color: #FFFFFF;
+  }
+
+  // content
+  #contentWrapper,
+  .content_wrapper {
+    @include cm-grid-container();
+
+    box-sizing: border-box;
+    margin: $wcs-content-margin-top/2 auto 0;
+    padding-left: $cm-standard-spacing;
+    padding-right: $cm-standard-spacing;
+    font-family: $cm-font-family-serif;
+
+    .caption {
+      opacity: 1;
+      background: none;
+    }
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      margin-top: $wcs-content-margin-top;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    // specials for login
+    input[id^="WC_AccountDisplay_FormInput_rememberMe_In_Logon_"] {
+      margin: -6px 6px 0 0;
+    }
+    .sign_in_registration {
+      color: $cm-text-color;
+      .title > h1 {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 1.6;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .align {
+        padding: 0;
+        border: none;
+      }
+      .myaccount_header {
+        background-color: transparent;
+        border-color: $cm-border-color-default $wcs-border-color-grey-01 $wcs-border-color-grey-01;
+        border: none;
+        padding: 0;
+        > .registration_header {
+          color: $cm-text-color;
+          font-size: $cm-font-size-large;
+          font-weight: 500;
+          line-height: 1.6;
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+      }
+      .myaccount_link {
+        color: $cm-text-color;
+      }
+    }
+  }
+
+  // breadcrumb widget & category page container
+  // wrapper
+  .rowContainer {
+    padding-top: 10px;
+     > .row.margin-true {
+       > div {
+         #widget_breadcrumb {
+           display: none;
+           margin-top: 7px;
+           margin-bottom: 7px;
+           margin-left: 0;
+           padding-left: 0;
+         }
+       }
+    }
+  }
+
+  // fonts
+  #widget_breadcrumb > ul li {
+    color: $cm-text-color;
+    a {
+      color: $cm-text-color;
+    }
+    .divider {
+      color: $cm-text-color;
+      margin: 0 2px 0 4px;
+    }
+    &.current {
+      color: $cm-text-color;
+      text-decoration: underline;
+    }
+  }
+
+  // filter panel and navigation panel
+  #content {
+    .collapsible {
+      background-color: transparent;
+      padding-left: 0;
+      > h3 {
+        font-size: $cm-font-size-h1;
+        text-transform: uppercase;
+        outline: none;
+        &:before {
+          top: -23px
+        }
+      }
+      .content {
+        .widget_left_nav {
+          .section_list {
+            // override deep nested rules
+            background-color: transparent !important;
+            a {
+              color: $cm-text-color !important;
+            }
+          }
+          .facetSelect li {
+            border-bottom: none;
+          }
+        }
+      }
+      &.categoryNavWidget {
+        margin-left: 0;
+      }
+    }
+  }
+
+  // options container on left
+  .optionContainer {
+    > .title {
+      background: transparent;
+      font-size: $cm-font-size-large;
+      font-weight: normal;
+      color: $cm-text-color;
+      border-top: none;
+      border-bottom-color: $cm-border-color-default;
+      outline: none;
+    }
+    .facetSelect li {
+      border-bottom: none;
+      input {
+        &.range_input {
+          @include cm-input;
+        }
+      }
+    }
+  }
+
+  // product listing widget
+  .productListingWidget {
+    border: none;
+    > .header_bar {
+      padding: 0 5px;
+      border-bottom: none;
+      > .title {
+        padding: 10px 0 8px 0;
+        @include cm-label-capitalize;
+      }
+      .sorting_controls {
+        > span {
+          vertical-align: middle;
+          padding-top: 3px;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          > label {
+            @include cm-label-capitalize;
+          }
+        }
+      }
+      .paging_controls {
+        > * {
+          vertical-align: top;
+        }
+        > .right_arrow,
+        > .left_arrow {
+          > img {
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  // footer
+  #footerWrapper,
+  .footer_wrapper_position {
+    .cm-placement-footer-navigation {
+      padding-bottom: 10px;
+      float: none;
+    }
+  }
+
+  // select field
+  .selectWrapper {
+    padding-top: 0;
+    background-color: transparent;
+    height: $wcs-control-height;
+    border-radius: $cm-border-radius-default;
+    border-color: $cm-btn-secondary-border;
+    .dijitSelect {
+      border-radius: $cm-border-radius-default;
+      font-family: $cm-font-family-sans-serif;
+      font-size: $cm-font-size-base;
+      color: $cm-text-color;
+      padding: 0;
+      .dijitButtonText {
+        > span {
+          padding-bottom: 3px !important; // WCS uses !important also
+        }
+      }
+    }
+  }
+
+  // legacy input select fields in forms
+  .inputField {
+    &.dijitSelect {
+      background-color: transparent;
+      height: $wcs-control-height;
+      border-radius: $cm-border-radius-default;
+      border-color: $cm-btn-secondary-border;
+      font-family: $cm-font-family-sans-serif;
+      color: $cm-text-color;
+      .dijitButtonContents {
+        > .dijitButtonText {
+          padding-left: 6px;
+        }
+      }
+      .dijitArrowButtonContainer {
+        position: relative;
+        width: 15px;
+        &:before {
+          margin-top: -2px;
+          right: 2px;
+        }
+      }
+    }
+  }
+
+  // page control button
+  .pageControl {
+    &.number {
+      height: $wcs-control-height;
+      line-height: 20px;
+      > a {
+        @include cm-button-small;
+      }
+    }
+  }
+
+  // grid, list view and control button
+  .grid_icon,
+  .list_icon,
+  .pageControlButton {
+    @include cm-button-small;
+  }
+
+  // view selector icons
+  .grid_icon:before,
+  .list_icon:before {
+    position: absolute;
+    top: -18px;
+  }
+  a.grid_icon:before {
+    left: -39px;
+  }
+  div.grid_icon:before,
+  a.grid_icon:hover:before {
+    left: -58px;
+  }
+  a.list_icon:before {
+    left: -78px;
+  }
+  div.list_icon:before,
+  a.list_icon:hover:before {
+    left: -99px;
+  }
+
+  // product price
+  .product_info {
+    margin-top: 24px;
+    > .product_name {
+      > a {
+        color: $cm-text-color;
+        text-align: center;
+      }
+    }
+    > .product_price {
+      color: $cm-text-color;
+      font-family: $cm-font-family-serif;
+      font-weight: normal;
+      text-align: center;
+      > .price,
+      > .old_price {
+        @include cm-price-font;
+      }
+      > .price {
+        font-size: $cm-font-size-large;
+      }
+    }
+  }
+
+  // product compare
+  .compare_target {
+    width: 100%;
+    text-align: center;
+    > label {
+      color: $cm-text-color;
+      font-size: $cm-font-size-base;
+      font-weight: normal;
+    }
+    > input[type="checkbox"] {
+      margin-top: 0;
+    }
+  }
+
+  // single price container
+  .namePartPriceContainer {
+    border-bottom-color: transparent;
+    > div {
+      > span {
+        &.price,
+        &.old_price {
+          @include cm-price-font;
+        }
+        &.old_price {
+          font-size: $cm-font-size-base;
+        }
+      }
+      > h1 {
+        &.main_header {
+          font-size: $cm-font-size-h1;
+        }
+      }
+    }
+    > span {
+      &.sku {
+        font-size: $cm-font-size-base;
+        color: $cm-text-color;
+      }
+    }
+  }
+
+  // global product description container
+  .product_text,
+  .available {
+    border-bottom-color: transparent;
+    > p,
+    > .subHeading,
+    > .check_stores {
+      padding-left: 0;
+      margin-left: 0;
+      color: $cm-text-color;
+      font-family: $cm-font-family-serif;
+    }
+
+  }
+
+  // text transform in attribute section of products in detail page .availabilityBorder
+  .definingAttributes,
+  .quantity_section {
+    .heading,
+    .header {
+      text-transform: uppercase;
+    }
+  }
+
+  // availability border
+  div[id^="InventoryStatus_Availability_Section_"] {
+    &.available {
+      > .availabilityBorder {
+        margin-left: 0;
+        border-color: $cm-border-color-default;
+      }
+    }
+  }
+
+  // inventory status text
+  div[id^="InventoryStatus_ShowLink_Section_"] {
+    &.available {
+      > span {
+        padding-left: 0;
+      }
+    }
+  }
+
+  // quantity input of detail page
+  .quantity_input {
+    margin-left: 6px;
+    @include cm-input;
+  }
+
+  // shopping buttons
+  .button {
+    &.primary,
+    &.secondary {
+      height: $wcs-shopping-button-height;
+      background: none;
+      background-color: $cm-btn-primary-bg;
+      font-family: $cm-font-family-sans-serif;
+      color: $cm-btn-primary-color;
+      font-size: $cm-font-size-large;
+      border-radius: $cm-border-radius-default;
+      line-height: $wcs-shopping-button-height;
+      border-color: $cm-btn-secondary-border;
+      text-decoration: none;
+      &:hover {
+        background-color: $wcs-primary-button-hover-background-color;
+        border-color: $wcs-primary-button-hover-background-color;
+      }
+      &:active, &:focus {
+        @include cm-dark-background-focus-state;
+      }
+    }
+  }
+
+  // shopping select button
+  .shopperActions {
+    .dropdown_primary {
+      background: none;
+      background-color: $cm-btn-secondary-bg;
+      border-color: $cm-btn-secondary-border;
+      border-radius: $cm-border-radius-default;
+      &:hover {
+        background-color: $wcs-primary-button-select-hover-background-color;
+      }
+      > a {
+        font-family: $cm-font-family-sans-serif;
+        color: $cm-text-color;
+        font-size: $cm-font-size-large;
+        &:focus {
+          @include cm-light-background-focus-state;
+        }
+      }
+      > .drop {
+        border-left-color: transparent;
+        div {
+          &:before {
+            top: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  // tabs
+  .tabButtonContainer {
+    > .tab_header {
+      > .active_tab,
+      > .inactive_tab {
+        background-image: none;
+        color: $cm-text-color;
+        font-size: $cm-font-size-large;
+        font-weight: normal;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid transparent;
+        .contentRecommendationWidget {
+          border: none !important;
+        }
+      }
+      > .active_tab {
+        border-bottom-color: $cm-border-color-default;
+      }
+    }
+  }
+  .tab {
+    border-color: transparent;
+  }
+
+  // hide product container border
+  .catEntryGrid_border {
+    border-bottom-color: transparent;
+  }
+
+  // category spots
+  .catPos {
+    background-color: transparent;
+    border: none;
+    > .container {
+      background-color: transparent;
+    }
+  }
+}
+
+// global menus
+// table
+#orderBy_dropdown > #orderBy_menu,
+.orderBySelectMenu,
+#orderByContent_dropdown > #orderByContent_menu,
+#pageSize_dropdown > #pageSize_menu,
+.pageSizeSelectMenu,
+div[id^="attrValue_"] > table[id^="attrValue_"],
+div[id^="attrName_"] > table[id^="attrName_"] {
+  border-color: $cm-border-color-default;
+}
+
+// all rows
+#orderBy_dropdown > #orderBy_menu > tbody tr.dijitMenuItemSelected,
+.orderBySelectMenu > tbody tr.dijitMenuItemSelected,
+#orderByContent_dropdown > #orderByContent_menu > tbody tr.dijitMenuItemSelected,
+#pageSize_dropdown > #pageSize_menu > tbody tr.dijitMenuItemSelected,
+.pageSizeSelectMenu > tbody tr.dijitMenuItemSelected,
+div[id^="attrValue_"] > table[id^="attrValue_"] > tbody tr.dijitMenuItemSelected,
+div[id^="attrName_"] > table[id^="attrName_"] > tbody tr.dijitMenuItemSelected {
+  background-color: $cm-btn-primary-bg;
+}
+
+// all cells
+#orderBy_dropdown > #orderBy_menu > tbody tr td,
+.orderBySelectMenu > tbody tr td,
+#orderByContent_dropdown > #orderByContent_menu > tbody tr td,
+#pageSize_dropdown > #pageSize_menu > tbody tr td,
+.pageSizeSelectMenu > tbody tr td,
+div[id^="attrValue_"] > table[id^="attrValue_"] > tbody tr td,
+div[id^="attrName_"] > table[id^="attrName_"] > tbody tr td {
+  color: $cm-text-color;
+  border-bottom-color: $cm-border-color-default;
+}
+
+// buttons login/registration
+.basicButton,
+#WC_UnregisteredCheckout_div_16 .button_primary,
+#WC_UnregisteredCheckout_div_16 .button_secondary,
+#box.shopping_cart_box .button_primary,
+.button_primary > .button_text,
+.sign_in_registration a[role="button"] {
+  background: none;
+  background-color: $cm-btn-primary-bg;
+  font-family: $cm-font-family-sans-serif;
+  color: $cm-btn-primary-color !important;
+  border: 1px solid $cm-btn-secondary-border;
+  border-radius: $cm-border-radius-default;
+  &:hover {
+    background: none;
+    background-color: $wcs-primary-button-hover-background-color;
+    border-color: $wcs-primary-button-hover-background-color;
+    text-decoration: none;
+  }
+  &:active, &:focus {
+    text-decoration: none;
+    @include cm-dark-background-focus-state;
+  }
+  > .button_text {
+    border: none;
+    padding: 9px 18px;
+    text-transform: uppercase;
+    font-size: $cm-font-size-large;
+  }
+}
+
+#WC_UnregisteredCheckout_div_16 .button_secondary,
+#continueShoppingButton > a,
+.sign_in_registration a[role="button"].button_secondary {
+  background-color: $cm-btn-secondary-bg;
+  &:hover {
+    background-color: $wcs-primary-button-select-hover-background-color;
+  }
+  &:active, &:focus {
+    @include cm-light-background-focus-state;
+  }
+  > .button_text {
+    color: $cm-text-color;
+  }
+}
+
+//shopping cart overlay
+#cartDropdown {
+  border-top-width: 1px;
+  border-color: $cm-border-color-default;
+  border-radius: 0;
+  .footer .basicButton span {
+    border: none;
+  }
+}
+
+// responsive breakpoints cart overlay
+div {
+  &#MiniShopCartProductAdded {
+    top: 67px !important;
+    $_base-padding: 30px;
+    $_padding_lg: $_base-padding + 12px;
+    $_padding_md: $_base-padding + 5px;
+
+    > .dijitDialogPaneContent {
+      width: inherit !important;
+      position: initial !important;
+    }
+    // override wcs styles for different media query width
+    @media screen and (max-width: 600px) {
+      width: 100% !important;
+      #cartDropdown {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+    }
+    @include breakpoint("sm") {
+      left: auto !important;
+    }
+    @include breakpoint("sm", "landscape") {
+      right: calc((100vw - #{1025px - $_padding_md})/2) !important;
+    }
+    @include breakpoint("lg") {
+      right: calc((100vw - #{$cm-screen-lg-min - $_padding_lg})/2) !important;
+    }
+  }
+}
+
+// shopping cart pages
+#breadcrumb .on {
+  color: $cm-text-color;
+}
+
+#box.shopping_cart_box {
+  font-family: $cm-font-family-serif !important;
+
+  .dropdown_primary > .button > .content,
+  #total_breakdown .promotion_input input {
+    height: $wcs-control-height;
+  }
+}
+
+#continueShoppingButton > a {
+  display: none;
+}
+
+.myaccount_header {
+  border-color: $wcs-border-color-grey-01;
+  border-top-width: 1px;
+  padding: 12px;
+
+  #purchase_options {
+    legend {
+      display: none;
+    }
+
+    input {
+      display: inline-block;
+      margin-right: 6px;
+    }
+  }
+}
+
+// fix slot12 on pdp
+.product_pageDesign_pageGroup.margin-true > .row {
+  float: none;
+
+  > .col12 {
+    margin-top: 30px;
+    width: calc(100% - 10px);
+
+    @media (min-width: 1281px) {
+      width: calc(100% - 20px);
+    }
+  }
+}
+
+@include breakpoint(xs) {
+
+  .row.margin-true > .slot4 > .cm-product-assets {
+    margin-right: 5px;
+  }
+
+  .row.margin-true > .slot4 > .cm-product-assets > .cm-product-assets__downloads {
+    margin-left: 5px;
+  }
+}

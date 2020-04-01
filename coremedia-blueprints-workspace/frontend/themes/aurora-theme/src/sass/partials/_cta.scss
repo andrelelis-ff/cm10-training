@@ -1,0 +1,22 @@
+.cm-cta-button {
+  background: #5192C3 none;
+  border: 1px solid #5791C7;
+  color: #ffffff !important;
+  border-radius: 0;
+  font-size: 14px;
+  line-height: 29px;
+  min-height: 29px;
+  text-decoration: none; // firefox has a different default than chrome
+  text-align: center;
+  padding: 0 21px;
+  // quick-fix for CMS-9915
+  // but we really should not share class names with aurora esite...
+  pointer-events: auto;
+
+  &:hover {
+    background: #50a3e1 none;
+  }
+  &:active, &:focus {
+    background: #5791C7;
+  }
+}

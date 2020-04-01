@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>studio-client.lc-p13n</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>lc-p13n-studio</artifactId>
+  <packaging>swc</packaging>
+
+  <properties>
+    <coremedia.project.extension.for>studio</coremedia.project.extension.for>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.coremedia.personalization</groupId>
+      <artifactId>cap-personalization-ui</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>p13n-studio</artifactId>
+      <version>${project.version}</version>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>lc-studio</artifactId>
+      <version>${project.version}</version>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>ec-studio-test-helper</artifactId>
+      <version>${project.version}</version>
+      <type>swc</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>client-core-test-helper</artifactId>
+      <type>swc</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.jangaroo</groupId>
+      <artifactId>joounit</artifactId>
+      <type>swc</type>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>net.jangaroo</groupId>
+        <artifactId>jangaroo-maven-plugin</artifactId>
+        <version>${jangaroo.version}</version> <!-- explicit version for IDEA! -->
+        <extensions>true</extensions>
+        <configuration>
+          <skip>false</skip>
+          <testSuite>com.coremedia.livecontext.p13n.studio.TestSuite</testSuite>
+          <jooUnitTestExecutionTimeout>120000</jooUnitTestExecutionTimeout>
+          <namespaces>
+            <namespace>
+              <uri>exml:com.coremedia.livecontext.p13n.studio.config</uri>
+            </namespace>
+          </namespaces>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

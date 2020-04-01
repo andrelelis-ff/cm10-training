@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMQueryList folder="/Sites/Hybris Apparel/Germany/German/Editorial/Best Picture Contest" name="Best Picture Contest Query List" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Editorial/Best%20Picture%20Contest/Best%20Picture%20Contest%20Query%20List.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Best%20Picture%20Contest/Best%20Picture%20Contest%20Query%20List"/>
+</master>
+<viewtype>
+<link href="../../Options/Viewtypes/CMChannel/landscape.xml" path="/Sites/Hybris%20Apparel/Germany/German/Options/Viewtypes/CMChannel/landscape"/>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<IntProperty Name="limit">8</IntProperty>
+<StructProperty Name="fq">
+<Struct>
+<StringProperty Name="documenttype">CMPicture</StringProperty>
+<LinkListProperty Name="subjecttaxonomy" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+<Link xlink:href="coremedia:///cap/resources/../../../../../../Settings/Taxonomies/Subject/Snow%20Action.xml" cmexport:path="/Settings/Taxonomies/Subject/Snow%20Action"/>
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="order">creationdate desc</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+</CMQueryList>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Calista/United States/English/Editorial/Content/Site Wide/Footer Navigation" name="Accessories" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Accessories</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../../../Augmentation/Apparel/Women/Women%20Accessories/Women%20Accessories.xml" path="/Sites/Calista/United%20States/English/Augmentation/Apparel/Women/Women%20Accessories/Women%20Accessories"/>
+<link href="../../../../Augmentation/Apparel/Men/Men%20Accessories/Men%20Accessories.xml" path="/Sites/Calista/United%20States/English/Augmentation/Apparel/Men/Men%20Accessories/Men%20Accessories"/>
+<link href="../../../../Augmentation/Apparel/Women/Women%20Handbags/Women%20Handbags.xml" path="/Sites/Calista/United%20States/English/Augmentation/Apparel/Women/Women%20Handbags/Women%20Handbags"/>
+</items>
+</CMCollection>

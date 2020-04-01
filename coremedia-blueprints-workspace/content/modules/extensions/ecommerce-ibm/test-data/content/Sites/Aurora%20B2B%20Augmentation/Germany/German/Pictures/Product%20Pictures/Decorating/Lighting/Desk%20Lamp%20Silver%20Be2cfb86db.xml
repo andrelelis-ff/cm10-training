@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Pictures/Product Pictures/Decorating/Lighting" name="Desk Lamp Silver Bendable Neck Picture 1" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Pictures/Product%20Pictures/Decorating/Lighting/Desk%20Lamp%20Si550b220c.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Decorating/Lighting/Desk%20Lamp%20Silver%20Bendable%20Neck%20Picture%201"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=495;y=421;width=898;height=1394</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=484;y=553;width=921;height=1233</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=403;y=720;width=1048;height=1048</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=173;y=726;width=1388;height=1043</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=726;width=1866;height=1048</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=979;width=1866;height=749</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=1077;width=1866;height=467</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2654320987654321;y1=0.16820276497695852;x2=0.7469135802469136;y2=0.7258064516129032</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.25925925925925924;y1=0.22119815668202766;x2=0.7530864197530864;y2=0.7142857142857143</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.21604938271604937;y1=0.2880184331797235;x2=0.7777777777777778;y2=0.7073732718894009</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.09259259259259259;y1=0.2903225806451613;x2=0.8364197530864198;y2=0.7073732718894009</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.2903225806451613;x2=1;y2=0.7096774193548387</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.391705069124424;x2=1;y2=0.6912442396313364</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.4308755760368664;x2=1;y2=0.6175115207373272</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_HLG028_280115</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Desk Lamp Silver Bendable Neck</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Desk Lamp Silver Bendable Neck</alt>
+<copyright>PodPad / Shutterstock 111506168</copyright>
+<dataUrl></dataUrl>
+<width>1866</width>
+<height>2500</height>
+<data md5="64443ab9e05fcb03c3acc85eab9c6517" size="197846" href="../../../../../../../../__blob/64443ab9e05fcb03c3acc85eab9c6517.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

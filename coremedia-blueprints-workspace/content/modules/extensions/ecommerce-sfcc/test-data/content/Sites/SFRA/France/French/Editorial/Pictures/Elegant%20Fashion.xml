@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/France/French/Editorial/Pictures" name="Elegant Fashion" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Editorial/Pictures/Elegant%20Fashion.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Pictures/Elegant%20Fashion"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="uploadDone">true</BooleanProperty>
+<BooleanProperty Name="inherit">true</BooleanProperty>
+<StringListProperty Name="originReferences">
+</StringListProperty>
+<StringListProperty Name="references">
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.3376494023904382</StringProperty>
+<StringProperty Name="y">0.2539432176656151</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=542;y=0;width=1630;height=2527</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=96;y=0;width=2527;height=2527</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=0;width=4000;height=1702</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=3369;height=2527</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=410;y=0;width=1895;height=2527</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=4000;height=2250</StringProperty>
+<StringProperty Name="quickview_ratio5x6">b;a=0;c=1/crop;x=307;y=0;width=2106;height=2527</StringProperty>
+<StringProperty Name="portrait_ratio5x6">b;a=0;c=1/crop;x=307;y=0;width=2106;height=2527</StringProperty>
+<StringProperty Name="thumbnail">b;a=0;c=1/crop;x=410;y=0;width=1895;height=2527</StringProperty>
+<StringProperty Name="landscape_ratio7x2">b;a=0;c=1/crop;x=0;y=72;width=4000;height=1143</StringProperty>
+<StringProperty Name="landscape_ratio5x3">b;a=0;c=1/crop;x=0;y=0;width=4000;height=2400</StringProperty>
+<StringProperty Name="portrait_ratio3x5">b;a=0;c=1/crop;x=602;y=0;width=1516;height=2527</StringProperty>
+<StringProperty Name="portrait_ratio1x2">b;a=0;c=1/crop;x=701;y=0;width=1264;height=2527</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=143;width=4000;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=0;width=4000;height=1500</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x2">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x2">position;x1=0.1752988047808765;y1=0;x2=0.4911738047808765;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Mode élégante</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Mode élégante</alt>
+<copyright>shutterstock_285640730</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2527</height>
+<data md5="3a5d84da02b54c79bb7b803c87f46e8c" size="1054974" href="../../../../../../__blob/3a5d84da02b54c79bb7b803c87f46e8c.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

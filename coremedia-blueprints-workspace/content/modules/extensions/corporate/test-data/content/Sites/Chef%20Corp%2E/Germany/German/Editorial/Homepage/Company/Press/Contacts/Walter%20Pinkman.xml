@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalLink folder="/Sites/Chef Corp./Germany/German/Editorial/Homepage/Company/Press/Contacts" name="Walter Pinkman" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../United%20States/English/Editorial/Homepage/Company/Press/Contacts/Walter%20Pinkman.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Company/Press/Contacts/Walter%20Pinkman"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Schreiben Sie mir</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Walter Pinkman</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Leiter Öffentlichkeitsarbeit </p> <p> Tel. + 1-877-445-5341 </p> </div></teaserText>
+<pictures>
+<link href="../../../../Assets/Pictures/Employees/Employee%2021132593518%20-%20Walter%20Pinkman.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Employees/Employee%2021132593518%20-%20Walter%20Pinkman"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<url>mailto:walter.pinkman@chef-corp.com</url>
+</CMExternalLink>

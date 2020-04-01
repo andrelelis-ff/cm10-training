@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Hybris Apparel/Germany/German/Editorial/Content/Snow/Action Goggle Microsite Content" name="Latest Uploads" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Editorial/Content/Snow/Action%20Goggle%20Microsite%20Content/Latest%20Uploads.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Action%20Goggle%20Microsite%20Content/Latest%20Uploads"/>
+</master>
+<viewtype>
+<link href="../../../../Options/Viewtypes/CMChannel/landscape.xml" path="/Sites/Hybris%20Apparel/Germany/German/Options/Viewtypes/CMChannel/landscape"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Neueste Uploads</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../../../Pictures/Fun%20in%20the%20Mountain.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Fun%20in%20the%20Mountain"/>
+<link href="../../../../Pictures/On%20the%20Top.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/On%20the%20Top"/>
+<link href="../../../../Pictures/Panorama%20View.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Panorama%20View"/>
+<link href="../../../../Pictures/Ski%20Mountains.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Ski%20Mountains"/>
+<link href="../../../../Pictures/Ski%20Gliding.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Ski%20Gliding"/>
+<link href="../../../../Pictures/Going%20Downhill.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Going%20Downhill"/>
+<link href="../../../../Pictures/Skiing%20in%20the%20Mountains.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Skiing%20in%20the%20Mountains"/>
+<link href="../../../../Pictures/Pictures%20in%20the%20Snow.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Pictures%20in%20the%20Snow"/>
+</items>
+</CMCollection>

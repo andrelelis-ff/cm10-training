@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<am:AMAssetForm xmlns:fx="http://ns.adobe.com/mxml/2009"
+                xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                xmlns="exml:ext.config"
+                xmlns:ui="exml:com.coremedia.ui.config"
+                xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                xmlns:am="exml:com.coremedia.blueprint.assets.studio.config"
+                originalIconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'type_asset_video')}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.assets.studio.AMStudioPlugin')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.assets.studio.AssetConstants;
+
+    public static const xtype:String = "com.coremedia.blueprint.assets.studio.config.amVideoAssetForm";
+
+    private var config:AMVideoAssetForm;
+
+    public native function AMVideoAssetForm(config:AMVideoAssetForm = null);
+    ]]></fx:Script>
+
+  <am:renditions>
+    <editor:PropertyFieldGroup itemId="web"
+                               title="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'PropertyGroup_web_label')}"
+                               expandOnValues="{AssetConstants.PROPERTY_ASSET_WEB}"
+                               collapsed="true">
+      <editor:items>
+        <am:AssetDetailsBlobPropertyField propertyName="{AssetConstants.PROPERTY_ASSET_WEB}"
+                                          hideLabel="true"
+                                          visiblePropertyName="metadata.renditions.web.show"/>
+        <Component height="20px"/>
+        <editor:ReferrerListPanel propertyName="asset"
+                                  showThumbnail="true"
+                                  contentType="CMVideo"
+                                  title="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'PropertyGroup_web_referrers_label')}"
+                                  displayToolbarWhenEmpty="{true}">
+          <editor:plugins exml:mode="append">
+            <ui:NestedRulesPlugin>
+              <ui:rules>
+                <Toolbar>
+                  <plugins>
+                    <ui:AddItemsPlugin>
+                      <ui:items>
+                        <TbSeparator/>
+                        <ui:IconButton itemId="createVideo">
+                          <ui:baseAction>
+                            <am:CreateVideoFromVideoAssetAction contentValueExpression="{config.bindTo}"/>
+                          </ui:baseAction>
+                        </ui:IconButton>
+                      </ui:items>
+                      <ui:after>
+                        <Component itemId="copyToClipboard"/>
+                      </ui:after>
+                    </ui:AddItemsPlugin>
+                  </plugins>
+                </Toolbar>
+              </ui:rules>
+            </ui:NestedRulesPlugin>
+          </editor:plugins>
+        </editor:ReferrerListPanel>
+      </editor:items>
+    </editor:PropertyFieldGroup>
+  </am:renditions>
+
+</am:AMAssetForm>

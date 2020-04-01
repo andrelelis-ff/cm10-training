@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Personalization/Contract-Specific Call-To-Action" name="Interior Architects Contact Person Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Personalization/Contract-Specific%20Call-To-Action/Int7cfbca94.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Personalization/Contract-Specific%20Call-To-Action/Interior%20Architects%20Contact%20Person%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=496;y=0;width=484;height=750</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=486;y=0;width=514;height=685</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=224;y=0;width=751;height=750</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=1000;height=750</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=96;width=1000;height=561</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=176;width=1000;height=400</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=252;width=1000;height=249</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.49622166246851385;y1=0;x2=0.9798488664987406;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.48614609571788414;y1=0;x2=1;y2=0.912751677852349</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.22418136020151133;y1=0;x2=0.9748110831234257;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.12751677852348994;x2=1;y2=0.8758389261744967</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2348993288590604;x2=1;y2=0.7684563758389261</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.33557046979865773;x2=1;y2=0.6677852348993288</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Interior Contact Person Image</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Interior Contact Person Image</alt>
+<copyright>stockyimages/Shutterstock 195259274</copyright>
+<dataUrl></dataUrl>
+<width>1000</width>
+<height>750</height>
+<data md5="1afdd7470c5dbf3ce384c1220dba203b" size="2272804" href="../../../../../../../__blob/1afdd7470c5dbf3ce384c1220dba203b.blob" mimetype="image/png"/>
+<asset>
+</asset>
+</CMPicture>

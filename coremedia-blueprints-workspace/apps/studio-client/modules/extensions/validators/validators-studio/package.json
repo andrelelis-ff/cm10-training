@@ -1,0 +1,8 @@
+{
+  "studioPlugins": [
+    {
+      "mainClass": "com.coremedia.blueprint.validators.studio.ValidatorsStudioPlugin",
+      "name": "Validators Studio Plugin"
+    }
+  ]
+}

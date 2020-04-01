@@ -1,0 +1,5 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StringProperty Name="str">overridededehamburg</StringProperty>
+  <StringProperty Name="strdedehamburg">strdedehamburg</StringProperty>
+  <StringProperty Name="byOrder">right</StringProperty>
+</Struct>

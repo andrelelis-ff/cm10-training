@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpforms:DefaultExtraDataForm
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+    [Deprecated(since="1804.1", replacement="com.coremedia.blueprint.studio.forms.components.DefaultExtraDataForm")]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.cmArticleMetaDataTab";
+
+    //noinspection JSUnusedLocalSymbols
+    private var config:CMArticleMetaDataTab;
+
+    public native function CMArticleMetaDataTab(config:CMArticleMetaDataTab = null);
+    ]]></fx:Script>
+
+</bpforms:DefaultExtraDataForm>

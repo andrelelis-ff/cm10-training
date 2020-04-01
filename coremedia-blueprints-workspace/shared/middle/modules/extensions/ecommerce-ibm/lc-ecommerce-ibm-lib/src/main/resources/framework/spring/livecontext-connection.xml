@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <import resource="classpath:/framework/spring/livecontext-services.xml"/>
+
+  <bean name="commerce:wcs1" class="com.coremedia.livecontext.ecommerce.ibm.common.CommerceConnectionImpl" scope="prototype">
+    <property name="storeContextProvider" ref="storeContextProvider"/>
+    <property name="userContextProvider" ref="userContextProvider"/>
+    <property name="catalogService" ref="catalogService"/>
+    <property name="segmentService" ref="segmentService"/>
+    <property name="cartService" ref="cartService"/>
+    <property name="availabilityService" ref="availabilityService"/>
+    <property name="searchService" ref="searchService"/>
+    <property name="workspaceService" ref="workspaceService"/>
+    <property name="linkService" ref="linkService"/>
+    <property name="previewUrlService" ref="previewUrlService"/>
+    <property name="idProvider" ref="ibmCommerceIdProvider"/>
+    <property name="contractService" ref="contractService"/>
+    <property name="commerceBeanFactory" ref="commerceBeanFactory"/>
+    <property name="userService" ref="commerceUserService"/>
+    <property name="vendorUrl" value="${livecontext.managementtool.web.url}"/>
+    <property name="vendorVersion" value="${livecontext.ibm.wcs.version}"/>
+    <property name="vendorName" value="IBM"/>
+    <property name="invalidationService" ref="invalidationService"/>
+  </bean>
+
+</beans>

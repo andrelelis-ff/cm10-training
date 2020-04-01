@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/SiteGenesis Global/France/French/Options/Settings/CMChannel" name="Vanity URLs" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Options/Settings/CMChannel/Vanity%20URLs.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Settings/CMChannel/Vanity%20URLs"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="vanityUrlDefinition">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMArticle" xlink:href="coremedia:///cap/resources/../../../Editorial/Content/About%20Us%20Article.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/About%20Us%20Article"/>
+<StringProperty Name="id">we/love/you</StringProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:AddItemsPlugin xmlns:fx="http://ns.adobe.com/mxml/2009"
+                   xmlns="exml:ext.config"
+                   xmlns:ui="exml:com.coremedia.ui.config"
+                   xmlns:livecontext="exml:com.coremedia.livecontext.ibm.studio.config">
+<fx:Script><![CDATA[
+  import com.coremedia.cms.editor.sdk.desktop.reusability.WorkAreaTabProxiesContextMenu;
+
+  private var config:AddCatalogActionsToWorkAreaTabContextMenuPlugin;
+  private var componentConfig:WorkAreaTabProxiesContextMenu;
+
+  // called by generated constructor code
+  private function __initialize__(config:AddCatalogActionsToWorkAreaTabContextMenuPlugin):void {
+    componentConfig = WorkAreaTabProxiesContextMenu(config.cmp.initialConfig);
+  }
+
+  public native function AddCatalogActionsToWorkAreaTabContextMenuPlugin(config:AddCatalogActionsToWorkAreaTabContextMenuPlugin = null);
+  ]]></fx:Script>
+  <ui:items>
+    <MenuSeparator/>
+    <MenuItem itemId="{EcommerceIbmStudioPlugin.OPEN_IN_MCENTER_MENU_ITEM_ID}">
+      <baseAction>
+        <livecontext:OpenInManagementCenterAction
+                catalogObjectExpression="{componentConfig.tabEntityExpression}"/>
+      </baseAction>
+    </MenuItem>
+  </ui:items>
+</ui:AddItemsPlugin>

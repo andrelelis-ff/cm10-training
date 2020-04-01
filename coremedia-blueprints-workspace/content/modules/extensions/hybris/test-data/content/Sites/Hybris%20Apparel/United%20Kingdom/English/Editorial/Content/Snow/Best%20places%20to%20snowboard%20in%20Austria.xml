@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Snow" name="Best places to snowboard in Austria" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Best places to snowboard in Austria</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snowboard.xml" path="/Settings/Taxonomies/Subject/Snowboard"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Inspiration.xml" path="/Settings/Taxonomies/Subject/Inspiration"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Locations.xml" path="/Settings/Taxonomies/Subject/Locations"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Ski.xml" path="/Settings/Taxonomies/Subject/Ski"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Location/Austria.xml" path="/Settings/Taxonomies/Location/Austria"/>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Find out more about the top 3 best places to visit.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>We believe that these are the top 3 best places to go skiing/snowboarding in Austria.<br/></p><p class="p--heading-1">1. St Anton</p><blockquote><p>“ By far the best freeriders resort in Austria and backed up by a world class village. It all comes at quite a price and the British invasian is leaving it less Austrian every ...”<br/></p></blockquote><p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Pictures/St%20Anton.xml#data" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/St%20Anton"/><br/></p><p class="p--heading-1">2. Ischgl</p><blockquote><p>“ Ischgl has plenty of good wide intermediate slopes, and hidden off-piste stashes. A super fast lift system, a season that lasts until May, great terrain park, and the most full on apres in the Alps, completes the ...”<br/></p></blockquote><p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Pictures/Ischgl.xml#data" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Ischgl"/><br/></p><p class="p--heading-1">3. Solden</p><blockquote><p>“ Solden is one of Austria's best all round resorts, with some great intermediate terrain, and the craziest apres ski in the ...”<br/></p></blockquote><p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Pictures/Solden.xml#data" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Solden"/><br/></p><p><br/></p></div></detailText>
+<pictures>
+<link href="../../../Pictures/Ischgl.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Ischgl"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../Authors/Charlotte%20May%20Person.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Authors/Charlotte%20May%20Person"/>
+</authors>
+</CMArticle>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<media:MetaDataViewBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                        xmlns="exml:ext.config"
+                        xmlns:ui="exml:com.coremedia.ui.config"
+                        xmlns:media="com.coremedia.blueprint.studio.forms.media.*">
+
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.skins.DisplayFieldSkin;
+
+    import mx.resources.ResourceManager;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.components.metaDataView";
+
+    private var config:MetaDataView;
+
+    public native function MetaDataView(config:MetaDataView = null);
+
+    [Bindable]
+    public var metaDataSection:MetaDataSection;
+    ]]></fx:Script>
+
+  <media:items>
+    <DisplayField ui="{DisplayFieldSkin.BOLD.getSkin()}"
+                  value="{config.metaDataSection.getMetaDataType()}"/>
+    <DataView itemId="metaDataList"
+              itemSelector="{PROPERTIES_BLOCK.getCSSSelector()}"
+              singleSelect="true"
+              multiSelect="false"
+              emptyText="{ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.BlueprintStudio', 'DataView_empty_text')}"
+              deferEmptyText="true"
+              tpl="{getXTemplate()}">
+      <plugins>
+        <ui:BindListPlugin bindTo="{getMetaDataExpression(config.metaDataSection)}">
+          <ui:fields>
+            <ui:DataField name="property"/>
+            <ui:DataField name="value"/>
+            <ui:DataField name="formattedValue"/>
+          </ui:fields>
+        </ui:BindListPlugin>
+      </plugins>
+    </DataView>
+  </media:items>
+
+</media:MetaDataViewBase>

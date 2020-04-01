@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <import resource="classpath:/framework/spring/livecontext-storeconfig.xml"/>
+
+  <bean class="com.coremedia.blueprint.base.livecontext.ecommerce.common.BaseCommerceServicesAutoConfiguration"/>
+
+  <context:annotation-config/>
+  <context:component-scan base-package="com.coremedia.livecontext.ecommerce.ibm.event"/>
+
+  <bean id="restConnector" class="com.coremedia.livecontext.ecommerce.ibm.common.WcRestConnector">
+    <property name="serviceEndpoint" value="${livecontext.ibm.wcs.rest.url}"/>
+    <property name="searchServiceEndpoint" value="${livecontext.ibm.wcs.rest.search.url}"/>
+    <property name="serviceSslEndpoint" value="${livecontext.ibm.wcs.rest.secureUrl}"/>
+    <property name="searchServiceSslEndpoint" value="${livecontext.ibm.wcs.rest.search.secureUrl}"/>
+    <property name="trustAllSslCertificates" value="true"/>
+    <property name="loginService" ref="userLoginService"/>
+    <property name="previewTokenService" ref="previewTokenService"/>
+    <property name="connectionPoolSize" value="${livecontext.rest.connector.connectionPoolSize}"/>
+    <property name="connectionTimeout" value="${livecontext.rest.connector.connectionTimeout}"/>
+    <property name="socketTimeout" value="${livecontext.rest.connector.socketTimeout}"/>
+    <property name="contractPreviewUserName" value="${livecontext.ibm.contract.preview.credentials.username}"/>
+    <property name="contractPreviewUserPassword" value="${livecontext.ibm.contract.preview.credentials.password}"/>
+    <property name="serviceUser" value="${livecontext.service.credentials.username}"/>
+    <property name="servicePassword" value="${livecontext.service.credentials.password}"/>
+    <property name="commerceCache" ref="commerceCache"/>
+    <property name="authHeaderName" value="${livecontext.rest.connector.authHeaderName:}"/>
+    <property name="authHeaderValue" value="${livecontext.rest.connector.authHeaderValue:}"/>
+  </bean>
+
+  <bean id="storeFrontConnector" class="com.coremedia.blueprint.base.livecontext.service.StoreFrontConnector">
+    <property name="connectionPoolSize" value="${livecontext.storefront.connector.connectionPoolSize}"/>
+    <property name="connectionTimeout" value="${livecontext.storefront.connector.connectionTimeout}"/>
+    <property name="socketTimeout" value="${livecontext.storefront.connector.socketTimeout}"/>
+  </bean>
+
+  <bean id="abstractWcWrapperService" abstract="true"
+        class="com.coremedia.livecontext.ecommerce.ibm.common.AbstractWcWrapperService">
+    <property name="restConnector" ref="restConnector"/>
+    <property name="catalogAliasTranslationService" ref="catalogAliasTranslationService"/>
+  </bean>
+
+  <bean id="languageMappingService"
+        class="com.coremedia.livecontext.ecommerce.ibm.common.WcLanguageMappingService"/>
+
+  <bean id="catalogWrapperService"
+        class="com.coremedia.livecontext.ecommerce.ibm.catalog.WcCatalogWrapperService"
+        parent="abstractWcWrapperService"/>
+
+  <bean id="contractWrapperService"
+        class="com.coremedia.livecontext.ecommerce.ibm.contract.WcContractWrapperService"
+        parent="abstractWcWrapperService"/>
+
+  <bean id="availabilityWrapperService"
+        class="com.coremedia.livecontext.ecommerce.ibm.inventory.WcAvailabilityWrapperService"
+        parent="abstractWcWrapperService"/>
+
+  <bean id="cartWrapperService"
+        class="com.coremedia.livecontext.ecommerce.ibm.order.WcCartWrapperService"
+        parent="abstractWcWrapperService"/>
+
+  <bean id="loginWrapperService"
+        class="com.coremedia.livecontext.ecommerce.ibm.login.WcLoginWrapperService"
+        parent="abstractWcWrapperService"/>
+
+  <bean id="previewTokenWrapperService"
+        class="com.coremedia.livecontext.ecommerce.ibm.link.WcPreviewTokenWrapperService"
+        parent="abstractWcWrapperService"/>
+
+  <bean id="personWrapperService"
+        class="com.coremedia.livecontext.ecommerce.ibm.user.WcPersonWrapperService"
+        parent="abstractWcWrapperService"/>
+
+  <bean id="searchWrapperService"
+        class="com.coremedia.livecontext.ecommerce.ibm.search.WcSearchWrapperService"
+        parent="abstractWcWrapperService"/>
+
+  <bean id="segmentWrapperService"
+        class="com.coremedia.livecontext.ecommerce.ibm.p13n.WcSegmentWrapperService"
+        parent="abstractWcWrapperService"/>
+
+  <bean id="workspaceWrapperService"
+        class="com.coremedia.livecontext.ecommerce.ibm.workspace.WcWorkspaceWrapperService"
+        parent="abstractWcWrapperService"/>
+
+  <bean id="catalogService" class="com.coremedia.livecontext.ecommerce.ibm.catalog.CatalogServiceImpl">
+    <property name="catalogWrapperService" ref="catalogWrapperService"/>
+    <property name="storeInfoService" ref="storeInfoService"/>
+    <property name="commerceBeanFactory" ref="commerceBeanFactory"/>
+    <property name="commerceCache" ref="commerceCache"/>
+    <property name="wcsAssetsUrl" value="${livecontext.ibm.wcs.assets.url}"/>
+    <property name="catalogAliasTranslationService" ref="catalogAliasTranslationService"/>
+  </bean>
+
+  <bean id="availabilityService" class="com.coremedia.livecontext.ecommerce.ibm.inventory.AvailabilityServiceImpl">
+    <property name="availabilityWrapperService" ref="availabilityWrapperService"/>
+    <property name="commerceBeanFactory" ref="commerceBeanFactory"/>
+    <property name="commerceCache" ref="commerceCache"/>
+  </bean>
+
+  <bean id="contractService" class="com.coremedia.livecontext.ecommerce.ibm.contract.ContractServiceImpl">
+    <property name="contractWrapperService" ref="contractWrapperService"/>
+    <property name="commerceBeanFactory" ref="commerceBeanFactory"/>
+    <property name="commerceCache" ref="commerceCache"/>
+    <property name="contractPreviewServiceUserName" value="${livecontext.ibm.contract.preview.credentials.username}"/>
+  </bean>
+
+  <bean id="cartService" class="com.coremedia.livecontext.ecommerce.ibm.order.CartServiceImpl">
+    <property name="cartWrapperService" ref="cartWrapperService"/>
+    <property name="commerceBeanFactory" ref="commerceBeanFactory"/>
+  </bean>
+
+  <bean id="userLoginService" class="com.coremedia.livecontext.ecommerce.ibm.login.LoginServiceImpl">
+    <property name="servicePassword" value="${livecontext.service.credentials.password}"/>
+    <property name="serviceUser" value="${livecontext.service.credentials.username}"/>
+    <property name="loginWrapperService" ref="loginWrapperService"/>
+    <property name="commerceCache" ref="commerceCache"/>
+  </bean>
+
+  <bean id="searchService" class="com.coremedia.livecontext.ecommerce.ibm.search.SearchServiceImpl">
+    <property name="searchWrapperService" ref="searchWrapperService"/>
+  </bean>
+
+  <bean id="segmentService" class="com.coremedia.livecontext.ecommerce.ibm.p13n.SegmentServiceImpl">
+    <property name="segmentWrapperService" ref="segmentWrapperService"/>
+    <property name="commerceBeanFactory" ref="commerceBeanFactory"/>
+    <property name="commerceCache" ref="commerceCache"/>
+  </bean>
+
+  <bean id="workspaceService" class="com.coremedia.livecontext.ecommerce.ibm.workspace.WorkspaceServiceImpl">
+    <property name="commerceBeanFactory" ref="commerceBeanFactory"/>
+    <property name="commerceCache" ref="commerceCache"/>
+    <property name="workspaceWrapperService" ref="workspaceWrapperService"/>
+  </bean>
+
+  <bean id="commerceUserService" class="com.coremedia.livecontext.ecommerce.ibm.user.UserServiceImpl">
+    <property name="personWrapperService" ref="personWrapperService"/>
+    <property name="commerceBeanFactory" ref="commerceBeanFactory"/>
+    <property name="commerceCache" ref="commerceCache"/>
+  </bean>
+
+  <bean id="userContextProvider" class="com.coremedia.livecontext.ecommerce.ibm.user.UserContextProviderImpl"/>
+
+  <bean id="ibmCommerceIdProvider" class="com.coremedia.livecontext.ecommerce.ibm.common.IbmCommerceIdProvider"/>
+
+  <bean id="storeContextProvider" class="com.coremedia.livecontext.ecommerce.ibm.common.IbmStoreContextProvider">
+    <constructor-arg index="0" name="commerceConnectionFinder" ref="defaultCommerceConnectionFinder"/>
+    <property name="sitesService" ref="sitesService"/>
+    <property name="settingsService" ref="settingsService"/>
+    <property name="storeConfigurations" ref="ibmStoreConfigurations"/>
+    <property name="storeInfoService" ref="storeInfoService"/>
+    <property name="cache" ref="cache"/>
+  </bean>
+
+  <bean id="linkService" class="com.coremedia.livecontext.ecommerce.ibm.link.LinkServiceImpl">
+    <property name="commercePreviewUrl" value="${livecontext.apache.preview.wcs.url}"/>
+    <property name="commerceProductionUrl" value="${livecontext.apache.wcs.url}"/>
+    <property name="catalogPathPrefix" value="${livecontext.ibm.wcs.store.catalog.asset.path}"/>
+  </bean>
+
+  <bean id="previewUrlService" class="com.coremedia.livecontext.ecommerce.ibm.link.PreviewUrlServiceImpl">
+    <constructor-arg index="0" name="previewTokenService" ref="previewTokenService"/>
+    <constructor-arg index="1" name="wcsUrlProvider" ref="wcsUrlProvider"/>
+  </bean>
+
+  <bean id="wcsUrlProvider" class="com.coremedia.livecontext.ecommerce.ibm.link.WcsUrlProvider">
+    <property name="defaultStoreFrontUrl" value="${livecontext.ibm.wcs.storefront.url}"/>
+    <property name="previewStoreFrontUrl" value="${livecontext.ibm.wcs.storefront.preview.url}"/>
+    <property name="shoppingFlowUrlForContractPreview" value="${livecontext.ibm.contract.preview.url}"/>
+    <property name="shoppingFlowUrlForContractPreviewWcs9" value="${livecontext.wcs9.contract.preview.url}"/>
+    <property name="productNonSeoUrl" value="${livecontext.ibm.product.non-seo.url}"/>
+    <property name="categoryNonSeoUrl" value="${livecontext.ibm.category.non-seo.url}"/>
+    <property name="urlPattern" value="{language}/{storeName}/{seoSegment}"/>
+  </bean>
+
+  <bean id="previewTokenService" class="com.coremedia.livecontext.ecommerce.ibm.link.PreviewTokenService">
+    <property name="commerceCache" ref="commerceCache"/>
+    <property name="previewTokenWrapperService" ref="previewTokenWrapperService"/>
+  </bean>
+
+  <bean id="storeInfoService" class="com.coremedia.livecontext.ecommerce.ibm.storeinfo.StoreInfoService"/>
+
+  <bean id="storeInfoWrapperService" class="com.coremedia.livecontext.ecommerce.ibm.storeinfo.WcStoreInfoWrapperService"
+        parent="abstractWcWrapperService"/>
+
+  <bean id="commerceBeanFactory" class="com.coremedia.blueprint.base.livecontext.ecommerce.common.SpringCommerceBeanFactory">
+    <property name="storeContextProvider" ref="storeContextProvider"/>
+  </bean>
+
+</beans>

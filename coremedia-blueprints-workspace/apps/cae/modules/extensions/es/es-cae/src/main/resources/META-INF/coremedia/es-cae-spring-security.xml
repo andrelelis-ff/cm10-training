@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/security
+                           https://www.springframework.org/schema/security/spring-security.xsd">
+
+  <bean id="logoutRedirectStrategy" class="com.coremedia.blueprint.base.elastic.social.flows.SimpleRedirectStrategy"/>
+
+  <bean id="logoutSuccessHandler" class="org.springframework.security.web.authentication.logout.SimpleUrlLogoutSuccessHandler">
+    <property name="targetUrlParameter" value="spring-security-redirect"/>
+    <property name="redirectStrategy" ref="logoutRedirectStrategy"/>
+  </bean>
+
+  <security:http use-expressions="false" authentication-manager-ref="authenticationManager">
+    <!-- the built-in form-login is unused, but spring-security requires at least one authentication entry point -->
+    <security:form-login/>
+    <security:logout success-handler-ref="logoutSuccessHandler"/>
+
+    <security:csrf disabled="true"/><!-- using csrf protection from coremedia-security -->
+    <!--
+      Do not tamper with the response headers in extensions, otherwise the
+      application loses control.  S. SecurityHeadersFilter for header handling.
+    -->
+    <security:headers defaults-disabled="true">
+      <security:cache-control />
+    </security:headers>
+  </security:http>
+
+  <bean id="authenticationProvider" class="com.coremedia.elastic.social.springsecurity.UserAuthenticationProvider"/>
+
+  <bean class="com.coremedia.elastic.social.springsecurity.UpdateLastLoginListener"/>
+
+  <bean id="securityContextLogoutHandler" class="org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler"/>
+
+  <security:authentication-manager id="authenticationManager">
+    <security:authentication-provider ref="authenticationProvider"/>
+  </security:authentication-manager>
+
+</beans>

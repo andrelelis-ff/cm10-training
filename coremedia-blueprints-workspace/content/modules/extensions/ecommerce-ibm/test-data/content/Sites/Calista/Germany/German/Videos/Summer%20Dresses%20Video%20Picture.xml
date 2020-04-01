@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/Germany/German/Videos" name="Summer Dresses Video Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20States/English/Videos/Summer%20Dresses%20Video%20Picture.xml" path="/Sites/Calista/United%20States/English/Videos/Summer%20Dresses%20Video%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0.020050125313283207</StringProperty>
+<StringProperty Name="y1">0.12053571428571429</StringProperty>
+<StringProperty Name="x2">0.8446115288220551</StringProperty>
+<StringProperty Name="y2">0.8660714285714286</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=382;y=87;width=346;height=537</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=353;y=87;width=401;height=537</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=286;y=87;width=536;height=537</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=196;y=87;width=715;height=537</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=77;y=87;width=953;height=537</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=87;y=87;width=1059;height=424</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=55;y=113;width=1055;height=264</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2982456140350877;y1=0.12053571428571429;x2=0.568922305764411;y2=0.8660714285714286</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2756892230576441;y1=0.12053571428571429;x2=0.5889724310776943;y2=0.8660714285714286</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.22305764411027568;y1=0.12053571428571429;x2=0.6416040100250626;y2=0.8660714285714286</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.15288220551378445;y1=0.12053571428571429;x2=0.7117794486215538;y2=0.8660714285714286</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.06015037593984962;y1=0.12053571428571429;x2=0.8045112781954887;y2=0.8660714285714286</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0.06766917293233082;y1=0.12053571428571429;x2=0.8947368421052632;y2=0.7098214285714286</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0.042606516290726815;y1=0.15625;x2=0.8671679197994987;y2=0.5223214285714286</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Sommerkleider Shoppable Videobild</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Sommerkleider Shoppable Videobild</alt>
+<copyright>basierend auf Ionut Popescu - Happy Freitag / Vimeo 102817632 CC-BY 3.0</copyright>
+<dataUrl></dataUrl>
+<width>1280</width>
+<height>720</height>
+<data md5="38e7f0b2a20094209fe45a4531e464de" size="67218" href="../../../../../__blob/38e7f0b2a20094209fe45a4531e464de.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

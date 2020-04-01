@@ -1,0 +1,93 @@
+/**
+ * Generates basic styles for a teaser.
+ */
+@mixin cm-default-teaser(
+  $block-class: $cm-teasable-prefix,
+  $wrapper-enable: $cm-teasable-wrapper-enable,
+  $media-background-color: $cm-teasable-picture-background-color,
+  $media-aspect-ratio-by-breakpoint: $cm-teasable-media-aspect-ratio-by-breakpoint,
+  $dimmer-enable: $cm-teasable-dimmer-enable,
+  $dimmer-opacity: $cm-teasable-dimmer-opacity,
+  $caption-padding: $cm-teasable-caption-padding,
+  $headline-color: $cm-teasable-headline-color
+) {
+  .#{$block-class} {
+    margin: 0;
+
+    @if $wrapper-enable {
+      &__wrapper {
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+    } @else {
+      position: relative;
+    }
+
+    &__media {
+      position: relative;
+    }
+
+    &__picture-box {
+      background-color: $media-background-color;
+      @include aspect-ratio-box-by-breakpoint($media-aspect-ratio-by-breakpoint);
+
+      @if $dimmer-enable {
+        &:after {
+          content: "";
+          @include dimmer($dimmer-opacity);
+        }
+      }
+    }
+
+    &__empty-picture-box {
+      &:after {
+        background: transparent;
+      }
+    }
+
+    &__picture {
+      @include stretch-absolute();
+      // Videos set a "max-width=100%, max-height=100%" in combination with an "object-fit" polyfill;
+      // this produces rendering issues with IE11; fixed with this
+      max-width: none;
+      max-height: none;
+    }
+
+    &__caption {
+      @include center-absolute(true, false);
+      box-sizing: border-box;
+      width: 100%;
+      padding: $caption-padding;
+      text-align: center;
+    }
+
+    &__video-wrapper {
+      position: relative;
+    }
+
+    &__text,
+    &__headline,
+    &__additional {
+      color: $headline-color;
+      margin: 0;
+    }
+    &--video &__text {
+      // no space for the text with play-button
+      display: none;
+    }
+
+    &__popup-opener {
+      display: block;
+      position: static;
+    }
+
+    &__play {
+      @include center-absolute();
+    }
+  }
+}
+
+@if ($cm-teasable-prefix != null) {
+  @include cm-default-teaser();
+}

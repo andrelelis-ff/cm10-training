@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Homepage" name="Gardening Essentials Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1783;y=0;width=892;height=1372</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=1723;y=0;width=1024;height=1372</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=1349;y=0;width=1373;height=1372</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=1325;y=0;width=1602;height=1204</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=1313;y=48;width=2072;height=1167</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=1253;y=144;width=2530;height=1011</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=193;width=4000;height=999</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.4457831325301205;y1=0;x2=0.6686746987951807;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.4307228915662651;y1=0;x2=0.6867469879518072;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.3373493975903614;y1=0;x2=0.6807228915662651;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.3313253012048193;y1=0;x2=0.7319277108433735;y2=0.8771929824561403</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.32831325301204817;y1=0.03508771929824561;x2=0.8463855421686747;y2=0.8859649122807017</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0.3132530120481928;y1=0.10526315789473684;x2=0.9457831325301205;y2=0.8421052631578947</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.14035087719298245;x2=1;y2=0.868421052631579</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Gardening Essentials</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Gardening Essentials</alt>
+<copyright>Africa Studio / Shutterstock 164682248</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>1372</height>
+<data md5="673019f39b824b8d7faa85fe69b13f7e" size="192547" href="../../../../../../../__blob/673019f39b824b8d7faa85fe69b13f7e.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

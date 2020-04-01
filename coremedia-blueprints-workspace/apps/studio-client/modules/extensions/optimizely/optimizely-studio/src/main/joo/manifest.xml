@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.studio.OpenOptimizelyServiceUrlAction"/>
+  <component class="com.coremedia.blueprint.studio.OptimizelyStudioPlugin"/>
+</componentPackage>

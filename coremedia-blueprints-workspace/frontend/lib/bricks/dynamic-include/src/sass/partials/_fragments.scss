@@ -1,0 +1,21 @@
+/* --- fragment ----------------------------------------------------------------------------------------------------- */
+.cm-fragment {
+  display: none;
+
+  &--loading {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      opacity: 0.5;
+      transition: background-color 0.5s ease;
+    }
+  }
+
+}

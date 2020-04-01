@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+    [ResourceBundle('com.coremedia.blueprint.assets.studio.AMStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.assets.studio.AMStudioPluginBase;
+
+    public static const xtype:String = "com.coremedia.blueprint.assets.studio.config.amTaxonomyForm";
+
+    public static const AM_TAXONOMY_THUMBNAIL_FORM_ITEM_ID:String = "amTaxonomyThumbnailFormItemId";
+
+    private var config:AMTaxonomyForm;
+
+    public native function AMTaxonomyForm(config:AMTaxonomyForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <!--Do not rename itemId, because the TaxonomyExplorerPanel uses it to highlight the value field-->
+    <editor:DocumentForm
+            itemId="AMTaxonomy"
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}">
+      <editor:items>
+        <editor:PropertyFieldGroup itemId="taxonomy"
+                                   title="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMDocumentTypes', 'AMTaxonomy_value_text')}"
+                                   propertyNames="value">
+          <editor:items>
+            <editor:StringPropertyField bindTo="{config.bindTo}"
+                                        hideLabel="true"
+                                        propertyName="value"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <!-- Asset preview -->
+        <!-- quick create uses AMPictureAsset and not AMDocumentAsset for now -->
+        <bpforms:SinglePictureDocumentForm itemId="{AM_TAXONOMY_THUMBNAIL_FORM_ITEM_ID}"
+                                           title="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMDocumentTypes', 'AMTaxonomy_assetThumbnail_label')}"
+                                           contentType="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMDocumentTypes', 'AMPictureAsset_doctype')}"
+                                           picturePropertyName="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMDocumentTypes', 'AMTaxonomy_assetThumbnail_name')}"
+                                           openCollectionViewHandler="{AMStudioPluginBase.openAssetSearch}"/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:MetaDataInformationForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

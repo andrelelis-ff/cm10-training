@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuItem xmlns:fx="http://ns.adobe.com/mxml/2009"
+          xmlns:exml="http://www.jangaroo.net/exml/0.8"
+          xmlns="exml:ext.config"
+          xmlns:livecontext="exml:com.coremedia.livecontext.studio.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.quickcreate.processing.ProcessingData;
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.openCreateExternalPageMenuItem";
+
+    /**
+     * The itemId of the 'augment shop page' menu item.
+     */
+    public static const AUGMENT_SHOP_PAGE_MENU_ITEM_ID:String = "augmentShopPage";
+
+    private var config:OpenCreateExternalPageMenuItem;
+
+    [Bindable]
+    public var metadataValueExpression:ValueExpression;
+
+    public native function OpenCreateExternalPageMenuItem(config:OpenCreateExternalPageMenuItem = null);
+    ]]></fx:Script>
+
+  <baseAction>
+    <livecontext:MetadataToEntitiesActionAdapter
+            metadataValueExpression="{config.metadataValueExpression}"
+            itemId="{AUGMENT_SHOP_PAGE_MENU_ITEM_ID}"
+            hideOnDisable="true"
+            useParentNode="true"
+            setEntities="setData"
+            text="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Action_augmentShopPage_text')}">
+      <livecontext:backingAction>
+        <livecontext:OpenCreateExternalPageDialogAction contentType="CMExternalPage"
+                                                        inheritEditors="false"
+                                                        defaultProperties="{ProcessingData.NAME_PROPERTY + ','
+                            + ProcessingData.FOLDER_PROPERTY}"/>
+      </livecontext:backingAction>
+    </livecontext:MetadataToEntitiesActionAdapter>
+  </baseAction>
+
+</MenuItem>

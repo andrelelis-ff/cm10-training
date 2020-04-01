@@ -1,0 +1,8 @@
+/*this file contains valid CSS*/
+.my-custom-class {
+  color: #000000;
+}
+
+#my-custom-id {
+  background: #ffffff;
+}

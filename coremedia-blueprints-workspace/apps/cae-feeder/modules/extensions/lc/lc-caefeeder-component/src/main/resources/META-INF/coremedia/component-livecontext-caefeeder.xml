@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/framework/spring/blueprint-contentbeans.xml"/>
+  <!-- import bean "feedablePopulators" -->
+  <import resource="classpath:/framework/spring/caefeeder/caefeeder-triggers.xml"/>
+
+  <bean name="contentBeanFactory:CMExternalChannel" parent="contentBeanFactory:CMChannel"/>
+
+  <bean name="contentBeanFactory:CMMarketingSpot" parent="contentBeanFactory:CMCollection"/>
+
+  <bean name="contentBeanFactory:CMProductTeaser" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMTeasableImpl"/>
+
+  <bean name="contentBeanFactory:CMExternalProduct" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.cae.contentbeans.CMTeasableImpl"/>
+
+  <customize:append id="addLiveContextFeedablePopulators" bean="feedablePopulators">
+    <list>
+      <bean class="com.coremedia.livecontext.feeder.CommerceItemsPopulator"/>
+    </list>
+  </customize:append>
+
+</beans>
+

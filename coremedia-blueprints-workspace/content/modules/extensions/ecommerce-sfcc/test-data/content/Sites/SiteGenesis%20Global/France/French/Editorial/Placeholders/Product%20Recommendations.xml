@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPlaceholder folder="/Sites/SiteGenesis Global/France/French/Editorial/Placeholders" name="Product Recommendations" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Editorial/Placeholders/Product%20Recommendations.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Placeholders/Product%20Recommendations"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Recommandations de produit</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<id>%%RECOMMENDED_PRODUCTS%%</id>
+</CMPlaceholder>

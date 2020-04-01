@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSymbol folder="/Sites/SiteGenesis Global/France/French/Options/Settings/Templates/CMChannel/Landing Page" name="Descriptor_de" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../../United%20Kingdom/English/Options/Settings/Templates/CMChannel/Landing%20Page/Descriptor_de.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Settings/Templates/CMChannel/Landing%20Page/Descriptor_de"/>
+</master>
+<description>Page de destination</description>
+<icon href="Descriptor_de.icon.png" mimetype="image/png"/>
+</CMSymbol>

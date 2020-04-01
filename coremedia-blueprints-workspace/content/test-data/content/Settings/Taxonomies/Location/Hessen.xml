@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMLocTaxonomy folder="/Settings/Taxonomies/Location" name="Hessen" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Hessen</value>
+<children>
+<link href="Wiesbaden.xml" path="/Settings/Taxonomies/Location/Wiesbaden"/>
+<link href="Frankfurt%20am%20Main.xml" path="/Settings/Taxonomies/Location/Frankfurt%20am%20Main"/>
+</children>
+<externalReference></externalReference>
+<postcode></postcode>
+<latitudeLongitude>50.666872,8.591309</latitudeLongitude>
+</CMLocTaxonomy>

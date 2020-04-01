@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Chef Corp./United States/English/Navigation/Professionals/Enjoy your Passion" name="Enjoy your Passion (Senior Chefs) Page" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Teaser%20Styles/Light"/>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<IntProperty Name="positionX">-50</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>enjoy-your-passion</segment>
+<title>Enjoy your Passion</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Kitchen.xml" path="/Settings/Taxonomies/Subject/Kitchen"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center">Enjoy your Passion</p><p class="align--center">Get the perfect kitchen for the perfect cooking experience</p></div></teaserText>
+<pictures>
+<link href="../../../Editorial/Assets/Pictures/Kitchen%20Dreams/Chef%20loving%20Precision%20Picture.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Kitchen%20Dreams/Chef%20loving%20Precision%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Layouts/Multislot%20Layout.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Pagegrid/Layouts/Multislot%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../../Editorial/Homepage/Kitchen%20Dreams/Senior%20Chef%27s%20Cooking%20Passion%20Video.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Kitchen%20Dreams/Senior%20Chef%27s%20Cooking%20Passion%20Video"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../../Options/Viewtypes/CMChannel/hero.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Viewtypes/CMChannel/hero"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/hero.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Pagegrid/Placements/hero"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

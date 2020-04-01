@@ -1,0 +1,104 @@
+/* new comment */
+
+.cm-new-comment {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+
+  .cm-toolbar {
+    border: 1px solid transparent; /* buttons should be inline with textarea */
+  }
+
+  .cm-button-group {
+    text-align: right;
+  }
+
+  .cm-field {
+    margin-bottom: 15px;
+  }
+}
+
+/* widget */
+
+.cm-comments {
+
+  > .cm-toolbar {
+    text-align: left;
+
+    .cm-button {
+      cursor: pointer;
+    }
+  }
+}
+
+/* list */
+.cm-collection--comments {
+  margin: 0;
+  padding: 21px 0 0;
+  list-style: none;
+
+  /* each level adds 25px indent */
+  & .cm-collection--comments {
+    margin-left: 25px;
+  }
+
+   .cm-collection__item + .cm-collection__item {
+    margin-top: 20px;
+  }
+}
+
+/* comment */
+
+.cm-comment {
+
+  &__toolbar {
+      margin-top: 5px;
+  }
+
+  &__header,
+  &__deleted {
+    border-top: 1px solid #919191;
+  }
+
+  &__header {
+    font-size: 1.2rem;
+  }
+
+  &__date {
+    font-size: 1rem;
+    color: #787878;
+  }
+
+  &__text {
+    text-align: justify;
+    word-wrap: break-word; /* legacy */
+    overflow-wrap: break-word;
+    line-height: 1.25;
+  }
+
+  &__deleted {
+    font-style: italic;
+    color: gray;
+  }
+
+  .cm-button {
+    cursor: pointer;
+
+    &__icon {
+      display: none;
+    }
+
+    & + .cm-button {
+      margin-left: 5px;
+    }
+  }
+}
+
+.cm-quote {
+  padding: 10px 20px;
+  margin: 0;
+  border-left: 5px solid #eeeeee;
+  color: #595959;
+}

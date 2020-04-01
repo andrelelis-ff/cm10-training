@@ -1,0 +1,61 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<!--
+
+  Layout:
+   _______
+  | |_____|          wnnn
+  |_|_|   |    or    wmee
+  |___|___|          ssee
+
+-->
+  <IntProperty Name="colCount">4</IntProperty>
+  <IntProperty Name="rowCount">3</IntProperty>
+  <StringProperty Name="cssClassName">Test-Setting</StringProperty>
+  <StructListProperty Name="items">
+    <Struct>  <!-- north -->
+      <LinkProperty Name="section" xlink:href="coremedia:///cap/content/212" LinkType="coremedia:///cap/contenttype/CMSymbol"/>
+      <IntProperty Name="row">1</IntProperty>
+      <IntProperty Name="col">2</IntProperty>
+      <IntProperty Name="rowspan">1</IntProperty>
+      <IntProperty Name="colspan">3</IntProperty>
+      <IntProperty Name="height">33</IntProperty>
+      <IntProperty Name="width">75</IntProperty>
+    </Struct>
+    <Struct>  <!-- east -->
+      <LinkProperty Name="section" xlink:href="coremedia:///cap/content/214" LinkType="coremedia:///cap/contenttype/CMSymbol"/>
+      <IntProperty Name="row">2</IntProperty>
+      <IntProperty Name="col">3</IntProperty>
+      <IntProperty Name="rowspan">2</IntProperty>
+      <IntProperty Name="colspan">2</IntProperty>
+      <IntProperty Name="height">67</IntProperty>
+      <IntProperty Name="width">50</IntProperty>
+    </Struct>
+    <Struct>  <!-- south -->
+      <LinkProperty Name="section" xlink:href="coremedia:///cap/content/216" LinkType="coremedia:///cap/contenttype/CMSymbol"/>
+      <IntProperty Name="row">3</IntProperty>
+      <IntProperty Name="col">1</IntProperty>
+      <IntProperty Name="rowspan">1</IntProperty>
+      <IntProperty Name="colspan">2</IntProperty>
+      <IntProperty Name="height">33</IntProperty>
+      <IntProperty Name="width">50</IntProperty>
+    </Struct>
+    <Struct>  <!-- west -->
+      <LinkProperty Name="section" xlink:href="coremedia:///cap/content/218" LinkType="coremedia:///cap/contenttype/CMSymbol"/>
+      <IntProperty Name="row">1</IntProperty>
+      <IntProperty Name="col">1</IntProperty>
+      <IntProperty Name="rowspan">2</IntProperty>
+      <IntProperty Name="colspan">1</IntProperty>
+      <IntProperty Name="height">33</IntProperty>
+      <IntProperty Name="width">25</IntProperty>
+    </Struct>
+    <Struct>  <!-- main -->
+      <LinkProperty Name="section" xlink:href="coremedia:///cap/content/220" LinkType="coremedia:///cap/contenttype/CMSymbol"/>
+      <IntProperty Name="row">2</IntProperty>
+      <IntProperty Name="col">2</IntProperty>
+      <IntProperty Name="rowspan">1</IntProperty>
+      <IntProperty Name="colspan">1</IntProperty>
+      <IntProperty Name="height">33</IntProperty>
+      <IntProperty Name="width">25</IntProperty>
+    </Struct>
+  </StructListProperty>
+</Struct>

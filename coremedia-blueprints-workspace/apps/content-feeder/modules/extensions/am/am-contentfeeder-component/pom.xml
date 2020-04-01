@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>content-feeder.am</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>am-contentfeeder-component</artifactId>
+
+  <properties>
+    <coremedia.project.extension.for>contentfeeder</coremedia.project.extension.for>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>cap-feeder-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>cap-unified-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>cap-asset-management</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>cap-content-feeder</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.blueprint.base</groupId>
+      <artifactId>bpbase-contentfeeder</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.blueprint.base</groupId>
+      <artifactId>bpbase-navigation-api</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+</project>

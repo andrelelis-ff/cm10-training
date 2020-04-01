@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Chef Corp./United States/English/Navigation/Company/Investor Relations" name="Investor Relations Page" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>investor-relations</segment>
+<title>Investor Relations</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription>Find all Chef Corp. Investor Relations news, updates and events.</htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Investors.xml" path="/Settings/Taxonomies/Subject/Investors"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>All the latest investor updates and upcoming events.</p></div></teaserText>
+<pictures>
+<link href="../../../Editorial/Assets/Pictures/Company/Investor%20Relations%20Picture.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Company/Investor%20Relations%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+<link href="News/IR%20News%20Page.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Navigation/Company/Investor%20Relations/News/IR%20News%20Page"/>
+<link href="Events/IR%20Events%20Page.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Navigation/Company/Investor%20Relations/Events/IR%20Events%20Page"/>
+<link href="Contacts/IR%20Contacts%20Page.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Navigation/Company/Investor%20Relations/Contacts/IR%20Contacts%20Page"/>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Layouts/PagegridNavigation.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Pagegrid/Layouts/PagegridNavigation"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/News/IR%20News%20Page.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Navigation/Company/Investor%20Relations/News/IR%20News%20Page"/>
+<Link xlink:href="coremedia:///cap/resources/../../../Editorial/Homepage/Company/Investor%20Relations/IR%20News%20Three%20Item%20Qu7e42b175.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Company/Investor%20Relations/IR%20News%20Three%20Item%20Query%20List"/>
+<Link xlink:href="coremedia:///cap/resources/Events/IR%20Events%20Page.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Navigation/Company/Investor%20Relations/Events/IR%20Events%20Page"/>
+<Link xlink:href="coremedia:///cap/resources/../../../Editorial/Homepage/Company/Investor%20Relations/IR%20Events%20Four%20Item%20Q8ac863aa.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Company/Investor%20Relations/IR%20Events%20Four%20Item%20Query%20List"/>
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

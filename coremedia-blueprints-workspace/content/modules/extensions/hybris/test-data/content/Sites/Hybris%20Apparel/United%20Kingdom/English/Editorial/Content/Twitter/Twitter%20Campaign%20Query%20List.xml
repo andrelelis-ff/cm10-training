@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMQueryList folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Twitter" name="Twitter Campaign Query List" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMChannel/landscape.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Viewtypes/CMChannel/landscape"/>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<IntProperty Name="limit">10</IntProperty>
+<StructProperty Name="fq">
+<Struct>
+<LinkListProperty Name="subjecttaxonomy" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Twitter.xml" cmexport:path="/Settings/Taxonomies/Subject/Twitter"/>
+</LinkListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+</CMQueryList>

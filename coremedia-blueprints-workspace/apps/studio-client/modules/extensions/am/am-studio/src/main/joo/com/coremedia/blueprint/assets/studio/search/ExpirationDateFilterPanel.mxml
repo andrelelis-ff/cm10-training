@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:ExpirationDateFilterPanelBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.assets.studio.search.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:am="exml:com.coremedia.blueprint.assets.studio.config"
+        itemId="{FILTER_ID}"
+        title="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'Filter_ExpirationDate_text')}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.assets.studio.AMStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpressionFactory;
+
+    public static const xtype:String = "com.coremedia.blueprint.assets.studio.config.expirationDateFilterPanel";
+
+    /**
+     * The filter ID for this filter. It is used as itemId and identifier in saved searches.
+     */
+    public static const FILTER_ID:String = "expirationDate";
+
+    private var config:ExpirationDateFilterPanel;
+
+    public native function ExpirationDateFilterPanel(config:ExpirationDateFilterPanel = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <Container>
+      <items>
+        <am:ExpirationDateSelector selectedKeyValueExpression="{ValueExpressionFactory.create(KEY, getStateBean())}"
+                                   selectedDateValueExpression="{ValueExpressionFactory.create(DATE, getStateBean())}"/>
+      </items>
+    </Container>
+  </local:items>
+
+</local:ExpirationDateFilterPanelBase>

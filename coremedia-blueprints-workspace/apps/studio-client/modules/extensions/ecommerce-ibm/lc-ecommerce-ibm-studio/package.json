@@ -1,0 +1,8 @@
+{
+  "studioPlugins": [
+    {
+      "mainClass": "com.coremedia.livecontext.ibm.studio.EcommerceIbmStudioPlugin",
+      "name": "ecommerce-ibm extension"
+    }
+  ]
+}

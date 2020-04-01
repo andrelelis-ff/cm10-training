@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/United States/English/Editorial/Content/Campaigns/Fashion Trends" name="Yellow Sandals Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=-180;y=0;width=2361;height=1328;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=-669;width=2000;height=2667;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=0;y=-836;width=2000;height=3001;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=-86;width=2000;height=1501;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=-336;width=2000;height=2001;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=-771;y=0;width=3542;height=1328;bg=FFFFFFFF</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.4580712788259958</StringProperty>
+<StringProperty Name="y">0.5</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="enlarge">
+<Struct>
+<BooleanProperty Name="landscape_ratio16x9">true</BooleanProperty>
+<BooleanProperty Name="portrait_ratio3x4">true</BooleanProperty>
+<BooleanProperty Name="portrait_ratio2x3">true</BooleanProperty>
+<BooleanProperty Name="landscape_ratio4x3">true</BooleanProperty>
+<BooleanProperty Name="portrait_ratio1x1">true</BooleanProperty>
+<BooleanProperty Name="landscape_ratio8x3">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/WSH005_0502</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Yellow Sandals Picture</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Yellow Sandals Picture</alt>
+<copyright>shutterstock_308393345</copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1328</height>
+<data md5="3036ec84da78f03395a13f60c5721559" size="427455" href="../../../../../../../../__blob/3036ec84da78f03395a13f60c5721559.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

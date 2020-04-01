@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/United Kingdom/English/Editorial/Pictures" name="Trendy Summer Colors" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.36526315789473685</StringProperty>
+<StringProperty Name="y">0.18769716088328076</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=1997;height=1124</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=232;y=0;width=1001;height=1334</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=289;y=0;width=889;height=1334</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=1779;height=1334</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=66;y=0;width=1334;height=1334</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=0;width=1997;height=749</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Trendy Summer Colors</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Trendy Summer Colors</alt>
+<copyright>shutterstock_374363584</copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1334</height>
+<data md5="eeb5bd5d99df533ca92db96b975f6f53" size="710218" href="../../../../../../__blob/eeb5bd5d99df533ca92db96b975f6f53.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

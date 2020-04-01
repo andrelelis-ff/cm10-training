@@ -1,0 +1,16 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StructProperty  Name="focusArea">
+    <Struct>
+      <StringProperty Name="x1">0.2</StringProperty>
+      <StringProperty Name="y1">0.3</StringProperty>
+      <StringProperty Name="x2">0.4</StringProperty>
+      <StringProperty Name="y2">0.6</StringProperty>
+    </Struct>
+  </StructProperty>
+  <StructProperty  Name="focusPoint">
+    <Struct>
+      <StringProperty Name="x">0.6</StringProperty>
+      <StringProperty Name="y">0.3</StringProperty>
+    </Struct>
+  </StructProperty>
+</Struct>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+  <description>
+    Search specific bean definitions
+  </description>
+
+  <context:property-placeholder location="classpath:/framework/spring/search/solr-search-defaults.properties"
+                                ignore-unresolvable="true" local-override="false"/>
+
+  <!-- import bean "contentRepository" -->
+  <import resource="classpath:/com/coremedia/cae/uapi-services.xml"/>
+  <!-- import bean "solrClient" -->
+  <bean class="com.coremedia.search.solr.client.SolrClientConfiguration"/>
+
+  <bean class="org.springframework.beans.factory.config.ListFactoryBean" id="solrSearchFilters">
+    <property name="sourceList">
+      <list/>
+    </property>
+  </bean>
+
+  <bean id="solrSearchQueryBuilder" class="com.coremedia.blueprint.cae.search.solr.SolrSearchQueryBuilder">
+    <property name="preview" value="${cae.is.preview}"/>
+    <property name="searchFilterProviders" ref="solrSearchFilters"/>
+  </bean>
+
+  <bean id="resultFactory" class="com.coremedia.blueprint.cae.search.solr.SolrSearchResultFactory">
+    <property name="contentRepository" ref="contentRepository"/>
+    <property name="solrClient" ref="solrClient"/>
+    <property name="collection" value="${solr.collection.cae}"/>
+    <property name="queryBuilder" ref="solrSearchQueryBuilder"/>
+    <property name="representationMapper" ref="representationMapper"/>
+    <property name="facetFieldLabelFunctions" ref="facetFieldLabelFunctions"/>
+  </bean>
+
+  <util:map id="facetFieldLabelFunctions" key-type="java.lang.String" value-type="java.util.function.Function">
+    <description>
+      A map from Solr index field name to Function beans that compute different labels to display instead of
+      the facet values returned from Solr when performing faceted search on these fields. One use case for such
+      a function is to compute a display name for numeric content IDs stored in a Solr field.
+      Functions may return 'null' for invalid values, for example non-existing contents, which will be omitted
+      from the facet result then.
+      Functions my return an empty string if no label could be computed for a valid value. In such a case,
+      frontend code can still localize the facet value based on FacetValue#getFacet and FacetValue#getValue.
+    </description>
+    <!-- document types are localized in the frontend, set empty label -->
+    <entry key="documenttype" value="#{T(com.google.common.base.Functions).constant('')}"/>
+  </util:map>
+
+  <bean id="representationMapper" class="com.coremedia.blueprint.id.ContentRepresentationMapper">
+    <property name="idProvider" ref="idProvider"/>
+  </bean>
+
+  <bean id="segmentResolver" class="com.coremedia.blueprint.cae.search.solr.SolrSegmentResolver">
+    <property name="searchResultFactory" ref="resultFactory"/>
+    <property name="cacheForSeconds" value="10"/>
+  </bean>
+
+  <bean id="solrCacheCapacityConfigurer" class="com.coremedia.cache.CacheCapacityConfigurer" init-method="init">
+    <property name="cache" ref="cache"/>
+    <property name="capacities">
+      <map>
+        <!--
+          every CacheKey implementation must return a String constant in #cacheclass. ("java.lang.Object" is the default
+           if #cacheclass is not overwritten)
+
+          This constant *must* be configured with a capacity, otherwise the CacheKey will not be cached (!)
+        -->
+        <entry key="com.coremedia.blueprint.cae.search.solr.SolrQueryCacheKey" value="100"/>
+      </map>
+    </property>
+  </bean>
+
+</beans>

@@ -1,0 +1,8 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.coremedia.blueprint.boot.autoconfigure.DefaultPropertiesConfiguration,\
+  com.coremedia.blueprint.boot.autoconfigure.DevPropertiesConfiguration,\
+  com.coremedia.blueprint.boot.autoconfigure.HealthIndicatorAutoConfiguration,\
+  com.coremedia.blueprint.boot.autoconfigure.DevelopmentResourcesConfiguration,\
+  com.coremedia.blueprint.boot.autoconfigure.Http2ProtocolConfiguration,\
+  com.coremedia.blueprint.boot.autoconfigure.LegacyCookieProcessorConfiguration,\
+  com.coremedia.blueprint.boot.autoconfigure.DevelopmentStartupConfiguration

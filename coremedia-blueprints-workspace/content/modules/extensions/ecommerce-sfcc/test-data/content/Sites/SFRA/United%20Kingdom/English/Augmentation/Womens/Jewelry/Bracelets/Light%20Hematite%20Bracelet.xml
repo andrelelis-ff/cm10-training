@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalProduct folder="/Sites/SFRA/United Kingdom/English/Augmentation/Womens/Jewelry/Bracelets" name="Light Hematite Bracelet" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Light Hematite Bracelet</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>sfcc:///catalog/product/25448070M</externalId>
+<pdpPagegrid>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Pagegrid/Layouts/Fragment%20PDP.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/Pagegrid/Layouts/Fragment%20PDP"/>
+<StructListProperty Name="placements">
+<Struct>
+</Struct>
+</StructListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</pdpPagegrid>
+</CMExternalProduct>

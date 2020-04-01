@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/Germany/German/Pictures/Blog" name="Gusso Sleeveless Sequined Dress (shutterstock_41709253)" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Pictures/Blog/Gusso%20Sleeveless%20Sequined%20Dress%20%28shutterstock_41709253%29.xml" path="/Sites/Calista/United%20States/English/Pictures/Blog/Gusso%20Sleeveless%20Sequined%20Dress%20%28shutterstock_41709253%29"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=18;y=0;width=1164;height=1800</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=0;width=1200;height=1601</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=12;width=1200;height=1199</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=1200;height=900</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=45;width=1200;height=675</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=24;width=1200;height=601</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=36;width=1200;height=480</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=28;width=1200;height=450</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=63;width=1200;height=299</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=38;y=0;width=1125;height=1800</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=17;width=1200;height=511</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.015113350125944584;y1=0;x2=0.9848866498740554;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0;x2=1;y2=0.889261744966443</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.006711409395973154;x2=1;y2=0.6728187919463087</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0;x2=1;y2=0.5</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.02494802494802495;x2=1;y2=0.39994802494802495</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.013422818791946308;x2=1;y2=0.34731543624161076</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.020134228187919462;x2=1;y2=0.28691275167785235</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.015772870662460567;x2=1;y2=0.2657728706624606</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.03523489932885906;x2=1;y2=0.20134228187919462</StringProperty>
+<StringProperty Name="landscape_ratio235x100">position;x1=0;y1=0.00946372239747634;x2=1;y2=0.29315166565988765</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="landscape_ratio235x100">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Gusso Sleeveless Sequined Kleid (shutterstock_41709253)</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Eveningwear.xml" path="/Settings/Taxonomies/Subject/Eveningwear"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Gusso Sleeveless Sequined Kleid (shutterstock_41709253)</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1200</width>
+<height>1800</height>
+<data md5="29628ed7105c4d354d4e4700c80bfde6" size="438984" href="../../../../../../__blob/29628ed7105c4d354d4e4700c80bfde6.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

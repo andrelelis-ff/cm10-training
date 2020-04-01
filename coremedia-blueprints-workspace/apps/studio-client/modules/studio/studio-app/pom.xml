@@ -1,0 +1,68 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>studio-client.studio</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>studio-app</artifactId>
+  <packaging>jangaroo-app-overlay</packaging>
+
+  <properties>
+    <!-- Proxy spec when running mvn jangaroo:run-->
+    <jooProxyPathSpec>/rest/*</jooProxyPathSpec>
+    <!-- Proxy all rest request to a locally started studio-server-app-->
+    <jooProxyTargetUri>http://localhost:41080</jooProxyTargetUri>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>studio-base-app</artifactId>
+      <version>${project.version}</version>
+      <type>jar</type>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>studio-client-dynamic-extension-dependencies</artifactId>
+      <version>${project.version}</version>
+      <type>pom</type>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>net.jangaroo</groupId>
+        <artifactId>jangaroo-maven-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <jooProxyPathSpec>${jooProxyPathSpec}</jooProxyPathSpec>
+          <jooProxyTargetUri>${jooProxyTargetUri}</jooProxyTargetUri>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>remote-studio-server</id>
+      <!--
+       | This profile will be activated if you set -Dinstallation.host=<FQDN> on your command-line. The jangaroo-plugin
+       | proxy servlet will then route all REST calls to the defined remote studio rest service
+       -->
+      <activation>
+        <property>
+          <name>installation.host</name>
+        </property>
+      </activation>
+      <properties>
+        <jooProxyTargetUri>https://studio.${installation.host}</jooProxyTargetUri>
+      </properties>
+    </profile>
+  </profiles>
+</project>

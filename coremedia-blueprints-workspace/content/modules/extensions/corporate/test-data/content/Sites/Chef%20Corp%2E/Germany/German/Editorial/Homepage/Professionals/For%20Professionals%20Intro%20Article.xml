@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./Germany/German/Editorial/Homepage/Professionals" name="For Professionals Intro Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Homepage/Professionals/For%20Professionals%20Intro%20Article.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Professionals/For%20Professionals%20Intro%20Article"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Servieren Gastgewerbe</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p dir="ltr"> 1999 gegründet, hat Chef Corp. werden der führende Anbieter für lieferungen für restaurants. Von Großgeräten bis zum Experten Küche Design und Lieferung bis hin zu Services wie Finanzierung - sind wir für die Bereitstellung Expertenlösungen mit der persönliche Aufmerksamkeit, die Sie verdienen verpflichtet. </p> </div></detailText>
+<pictures>
+<link href="../../Assets/Pictures/Company/About%20Us%20-%20Chefs%20in%20the%20kitchen%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Company/About%20Us%20-%20Chefs%20in%20the%20kitchen%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

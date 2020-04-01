@@ -1,0 +1,77 @@
+# OS generated files #
+######################
+.DS_Store
+Icon?
+nohup.out
+ehthumbs.db
+Thumbs.db
+
+# EDITORS #
+###########
+\#*
+.#*
+*~
+*.sw[a-z]
+*.bak
+REVISION
+TAGS*
+tmtags
+*_flymake.*
+*_flymake
+*.tmproj
+.project
+.settings
+mkmf.log
+*.iml
+.idea/*
+*.ipr
+
+# Testing #
+###########
+.rspec
+spec/*
+spec/fixtures/*
+test/*
+features/*
+examples/*
+Guardfile
+Procfile
+build
+
+# SCM #
+#######
+.git
+*/.git
+.gitignore
+.gitmodules
+.gitconfig
+.gitattributes
+.svn
+*/.bzr/*
+*/.hg/*
+*/.svn/*
+
+# Berkshelf #
+#############
+Berksfile
+Berksfile.lock
+
+# Cookbooks #
+#############
+CONTRIBUTING*
+CHANGELOG*
+TESTING*
+
+# Travis #
+##########
+.travis.yml
+
+# Bundler #
+###########
+Gemfile
+Gemfile.lock
+
+# RAKE #
+########
+Rakefile
+.rakeTasks

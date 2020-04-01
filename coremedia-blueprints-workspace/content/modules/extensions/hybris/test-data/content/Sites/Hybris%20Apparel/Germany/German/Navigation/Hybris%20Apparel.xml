@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalPage folder="/Sites/Hybris Apparel/Germany/German/Navigation" name="Hybris Apparel" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Navigation/Hybris%20Apparel%20UK.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Navigation/Hybris%20Apparel%20UK"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="shopNow">disabled</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+<link href="../Options/Settings/CAEConfig.xml" path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/CAEConfig"/>
+<link href="../Options/Settings/Content%20Creation.xml" path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Content%20Creation"/>
+<link href="../Options/Settings/Elastic%20Social.xml" path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Elastic%20Social"/>
+<link href="../Options/Settings/LiveContext.xml" path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/LiveContext"/>
+<link href="../Options/Settings/Preview.xml" path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Preview"/>
+<link href="../Options/Settings/SiteSettings.xml" path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/SiteSettings"/>
+<link href="../Options/Settings/Authors.xml" path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Authors"/>
+<link href="../Options/Settings/CMChannel/Vanity%20URLs.xml" path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/CMChannel/Vanity%20URLs"/>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>apparelhomepage-de-de</segment>
+<title>Home</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Zurück zu unserer Homepage </p> </div></teaserText>
+<pictures>
+<link href="../Pictures/Group%20of%20Snowboarders.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Group%20of%20Snowboarders"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+<link href="../Augmentation/Categories%20-%20categories/Snowwear%20men%20-%20190000/Snowwear%20Men.xml" path="/Sites/Hybris%20Apparel/Germany/German/Augmentation/Categories%20-%20categories/Snowwear%20men%20-%20190000/Snowwear%20Men"/>
+<link href="../Augmentation/Categories%20-%20categories/Snowwear%20women%20-%20200000/Snowwear%20Women.xml" path="/Sites/Hybris%20Apparel/Germany/German/Augmentation/Categories%20-%20categories/Snowwear%20women%20-%20200000/Snowwear%20Women"/>
+<link href="Action%20Goggles%20Microsite/Action%20Goggles%20Microsite.xml" path="/Sites/Hybris%20Apparel/Germany/German/Navigation/Action%20Goggles%20Microsite/Action%20Goggles%20Microsite"/>
+<link href="Blog/Editorial%20Blog.xml" path="/Sites/Hybris%20Apparel/Germany/German/Navigation/Blog/Editorial%20Blog"/>
+<link href="Video%20Blog/Video%20Blog.xml" path="/Sites/Hybris%20Apparel/Germany/German/Navigation/Video%20Blog/Video%20Blog"/>
+<link href="Twitter%20Hashtag%20Campaign/Twitter%20Hashtag%20Campaign.xml" path="/Sites/Hybris%20Apparel/Germany/German/Navigation/Twitter%20Hashtag%20Campaign/Twitter%20Hashtag%20Campaign"/>
+<link href="Best%20Picture%20Contest/Best%20Picture%20Contest.xml" path="/Sites/Hybris%20Apparel/Germany/German/Navigation/Best%20Picture%20Contest/Best%20Picture%20Contest"/>
+<link href="FAQ/FAQ.xml" path="/Sites/Hybris%20Apparel/Germany/German/Navigation/FAQ/FAQ"/>
+<link href="Microsite%20Dummy/Microsite%20Dummy.xml" path="/Sites/Hybris%20Apparel/Germany/German/Navigation/Microsite%20Dummy/Microsite%20Dummy"/>
+<link href="Snowboard%20Newsletter/Snowboard%20Newsletter.xml" path="/Sites/Hybris%20Apparel/Germany/German/Navigation/Snowboard%20Newsletter/Snowboard%20Newsletter"/>
+<link href="../Options/Settings/Templates/CMChannel/Page%20Templates.xml" path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Templates/CMChannel/Page%20Templates"/>
+<link href="Topic%20Pages/Topicpage.xml" path="/Sites/Hybris%20Apparel/Germany/German/Navigation/Topic%20Pages/Topicpage"/>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+<link href="../../../../../Themes/hybris/Hybris%20Theme.xml" path="/Themes/hybris/Hybris%20Theme"/>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Layouts/Multi%20Slot%20Layout.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Layouts/Multi%20Slot%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Augmentation/Categories%20-%20categories/Snowwear%20women%20-%20200000/Snowwear%20Women.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Augmentation/Categories%20-%20categories/Snowwear%20women%20-%20200000/Snowwear%20Women"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Augmentation/Categories%20-%20categories/Snowwear%20men%20-%20190000/Snowwear%20Men.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Augmentation/Categories%20-%20categories/Snowwear%20men%20-%20190000/Snowwear%20Men"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../Options/Viewtypes/CMChannel/square.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Viewtypes/CMChannel/square"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/placement1.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/placement1"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Videos/Shoppable%20Video.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Videos/Shoppable%20Video"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Editorial/Content/Snow/Top%20Products%20Collection.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Snow/Top%20Products%20Collection"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/AddThis%20Social%20Sharing%20HTML%20Fragment.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Navigation/AddThis%20Social%20Sharing%20HTML%20Fragment"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/placement2.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/placement2"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Video%20Blog/Video%20Blog.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Navigation/Video%20Blog/Video%20Blog"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Blog/Editorial%20Blog.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Navigation/Blog/Editorial%20Blog"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Best%20Picture%20Contest/Best%20Picture%20Contest.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Navigation/Best%20Picture%20Contest/Best%20Picture%20Contest"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Twitter%20Hashtag%20Campaign/Twitter%20Hashtag%20Campaign.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Navigation/Twitter%20Hashtag%20Campaign/Twitter%20Hashtag%20Campaign"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../Options/Viewtypes/CMChannel/left-right.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Viewtypes/CMChannel/left-right"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/placement3.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/placement3"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+</StructListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/footer.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/footer"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Editorial/Content/Perso/Personalized%20Banner.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Perso/Personalized%20Banner"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Editorial/Content/Snow/Speed%20Riding%20Challenge%20in%20Chamonix.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Snow/Speed%20Riding%20Challenge%20in%20Chamonix"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Videos/Snowboarding%20in%20Action.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Videos/Snowboarding%20in%20Action"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Editorial/Content/Men%20and%20Women%20Teaser.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Men%20and%20Women%20Teaser"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../Options/Viewtypes/CMChannel/hero.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Viewtypes/CMChannel/hero"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/hero.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/hero"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+<externalUriPath></externalUriPath>
+<externalId></externalId>
+</CMExternalPage>

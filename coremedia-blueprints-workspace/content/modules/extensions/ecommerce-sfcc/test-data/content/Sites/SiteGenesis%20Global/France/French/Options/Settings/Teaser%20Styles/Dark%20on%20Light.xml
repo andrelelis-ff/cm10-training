@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/SiteGenesis Global/France/French/Options/Settings/Teaser Styles" name="Dark on Light" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Options/Settings/Teaser%20Styles/Dark%20on%20Light.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Settings/Teaser%20Styles/Dark%20on%20Light"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="title">Dark on Light</StringProperty>
+<StringProperty Name="description">Dark Text on Light Background</StringProperty>
+<StructProperty Name="style">
+<Struct>
+<StringProperty Name="backgroundColor">rgba(255,255,255,0.65)</StringProperty>
+<StringProperty Name="color">#333333</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

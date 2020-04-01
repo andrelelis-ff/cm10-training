@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/SiteGenesis Global/France/French/Options/Viewtypes/CMExternalProduct" name="carousel" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Options/Viewtypes/CMExternalProduct/carousel.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Viewtypes/CMExternalProduct/carousel"/>
+</master>
+<description>Affiche le contenu dans une vue carrousel affichant plusieurs bannières à la fois.</description>
+<icon href="carousel.icon.svg%2Bxml" mimetype="image/svg+xml"/>
+<layout>carousel</layout>
+</CMViewtype>

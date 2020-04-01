@@ -1,0 +1,7 @@
+// Own variable imports
+@import "variables/variables";
+@import "variables/wcs-override";
+@import "variables/elastic-social";
+
+// Dependency variables
+@import "?smart-import-variables";

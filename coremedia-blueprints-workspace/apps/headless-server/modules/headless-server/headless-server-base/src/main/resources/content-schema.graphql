@@ -1,0 +1,496 @@
+schema {
+  query: Query
+}
+
+directive @fetch(
+  from : String!
+) on FIELD_DEFINITION
+
+directive @inherit(
+  from: [String!]!
+) on OBJECT | INTERFACE
+
+#Built-in map of scalar type
+scalar MapOfString
+
+#Built-in rich text as tree type
+scalar RichTextTree
+
+type Query {
+  content: ContentRoot
+}
+
+type ContentRoot {
+  content(id: String!, type: String): Content_ @fetch(from: "getContent(#id,#type)")
+  article(id: String!): CMArticle @fetch(from: "getContent(#id, 'CMArticle')")
+  picture(id: String!): CMPicture @fetch(from: "getContent(#id, 'CMPicture')")
+  page(id: String!): CMChannel
+  queryList(id: String!): CMQueryList
+  site(id: String!): Site
+  sites: [Site]!
+  search(query: String!, offset: Int, limit: Int, docTypes: [String], sortFields: [SortFieldWithOrder], siteId: String): SearchResult
+    @fetch(from: "@searchServiceAdapter.to().search(#query, #offset, #limit, #docTypes, #sortFields, #siteId)")
+}
+
+type Site {
+  id: String!
+  name: String!
+  locale: String!
+  crops: [Crop] @fetch(from: "@imageVariantsAdapter.to(#root).crops")
+  root: CMNavigation @fetch(from: "siteRootDocument")
+}
+
+type SearchResult {
+  numFound: Int!
+  result: [Content_]
+}
+
+enum SortFieldWithOrder {
+  EXTERNALLY_DISPPLAYED_DATE_ASC
+  EXTERNALLY_DISPPLAYED_DATE_DESC
+  CREATION_DATE_ASC
+  CREATION_DATE_DESC
+  MODIFICATION_DATE_ASC
+  MODIFICATION_DATE_DESC
+}
+
+interface Content_ {
+  creationDate: String!
+  modificationDate: String!
+  name: String!
+  type: String!
+}
+
+interface CMArticle @inherit(from: ["CMTeasable"]) {
+}
+
+interface CMChannel @inherit(from: ["CMNavigation"]) {
+  header: [CMLinkable]
+  footer: [CMLinkable]
+}
+
+interface CMCollection @inherit(from: ["CMTeasable"]) {
+  items: [CollectionItem]
+  teasableItems: [CMTeasable]
+  bannerItems: [Banner]
+  detailItems: [Detail]
+}
+
+interface CMDownload @inherit(from: ["CMTeasable"]) {
+  data: Blob
+  filename: String
+}
+
+interface CMSpinner @inherit(from: ["CMVisual"]) {
+  sequence: [CMPicture]
+}
+
+interface CMDynamicList @inherit(from: ["CMCollection"]) {
+}
+
+interface CMImage @inherit(from: ["CMLocalized"]) {
+  data: Blob
+}
+
+interface CMImageMap @inherit(from: ["CMTeaser"]) {
+  displayPicture: Boolean
+  displayShortText: Boolean
+  displayTitle: Boolean
+  hotZones: [Hotzone]
+  transformedHotZones: [TransformedHotZone]
+}
+
+interface CMLinkable @inherit(from: ["CMLocalized", "CollectionItem"]) {
+  link: Link
+  navigationPath: [CMLinkable]
+  segment: String
+  title: String
+  validFrom: String
+  validTo: String
+  viewtype: String
+}
+
+interface CMLocalized @inherit(from: ["CMObject"]) {
+  ignoreUpdates: Int
+  languageId: String
+}
+
+interface CMMedia @inherit(from: ["CMTeasable"]) {
+  alt: String
+  caption(view: String): String
+  copyright: String
+  data: Blob
+}
+
+interface CMNavigation @inherit(from: ["CMTeasable", "HasPageGrid"]) {
+  children: [CMLinkable]
+  grid: PageGrid
+  hidden: Boolean
+  hiddenInSitemap: Boolean
+}
+
+interface CMObject @inherit(from: ["Content_"]) {
+}
+
+interface CMPicture @inherit(from: ["CMVisual"]) {
+  base64Images(cropNames: [String!]): [Base64Image]!
+  crops: [Crop!]!
+  uriTemplate: String
+}
+
+interface CMProduct @inherit(from: ["CMTeasable"]) {
+  downloads: [CMDownload]
+  price: Float
+  productCode: String
+  productName: String
+}
+
+interface CMQueryList @inherit(from: ["CMDynamicList"]) {
+  pagedItems(offset: Int): [CMTeasable]
+}
+
+interface CMResourceBundle @inherit(from: ["CMLocalized"]) {
+  localizations: MapOfString
+}
+
+interface CMSite @inherit(from: ["CMLocalized"]) {
+  id: String
+  root: CMNavigation
+}
+
+interface CMTeasable @inherit(from: ["CMLinkable", "Detail", "Banner"]) {
+  authors: [CMTeasable]
+  context: CMNavigation
+  related: [CMTeasable]
+  teaserOverlaySettings: TeaserOverlaySettings
+  teaserTarget: CMLinkable
+  teaserTargets: [ExtendedTeaserTarget]
+  video: CMVideo
+  videos: [CMVideo]
+  spinner: CMSpinner
+}
+
+interface CMTeaser @inherit(from: ["CMTeasable"]) {
+}
+
+interface CMVideo @inherit(from: ["CMVisual"]) {
+  timeLine: TimeLine
+}
+
+interface CMVisual @inherit(from: ["CMMedia"]) {
+  dataUrl: String
+  height: Int
+  width: Int
+}
+
+type CMArticleImpl implements CMArticle @inherit(from: ["CMTeasableImpl"]) {
+}
+
+type CMChannelImpl implements CMChannel @inherit(from: ["CMNavigationImpl"]) {
+  header: [CMLinkable]
+  footer: [CMLinkable]
+
+  picture: CMPicture @fetch(from: "@channelMediaLinkListAdapter.to(#this, 'CMPicture').first()")
+  pictures: [CMPicture] @fetch(from: "@channelMediaLinkListAdapter.to(#this, 'CMPicture').list()")
+
+  video: CMVideo @fetch(from: "@channelMediaLinkListAdapter.to(#this, 'CMVideo').first()")
+  videos: [CMVideo] @fetch(from: "@channelMediaLinkListAdapter.to(#this, 'CMVideo').list()")
+}
+
+type CMCollectionImpl implements CMCollection @inherit(from: ["CMTeasableImpl"]) {
+  items: [CollectionItem]
+  teaserTargets: [ExtendedTeaserTarget] @fetch(from: "{{target: #root, callToActionEnabled: !@settingsAdapter.to(#root).get('callToActionDisabled', false), callToActionCustomText: @settingsAdapter.to(#root).get('callToActionCustomText', '')}}")
+  teasableItems: [CMTeasable] @fetch(from: "#this.items")
+  bannerItems: [Banner] @fetch(from: "#this.items")
+  detailItems: [Detail] @fetch(from: "#this.items")
+}
+
+type CMSpinnerImpl implements CMSpinner @inherit(from: ["CMVisualImpl"]) {
+  sequence: [CMPicture]
+}
+
+type CMDownloadImpl implements CMDownload @inherit(from: ["CMTeasableImpl"]) {
+  data: Blob @fetch(from: "@contentBlobAdapter.to(#root, 'data')")
+  filename: String
+}
+
+type CMDynamicListImpl implements CMDynamicList @inherit(from: ["CMCollectionImpl"]) {
+}
+
+type CMImageImpl implements CMImage @inherit(from: ["CMLocalizedImpl"]) {
+  data: Blob @fetch(from: "@contentBlobAdapter.to(#root, 'data')")
+  description: String
+}
+
+type CMImageMapImpl implements CMImageMap @inherit(from: ["CMTeaserImpl"]) {
+  detailText(view: String): String @fetch(from: "detailText.view(#view?:'default')")
+  displayPicture: Boolean @fetch(from: "localSettings?.overlay?.get('displayPicture')")
+  displayShortText: Boolean @fetch(from: "localSettings?.overlay?.get('displayShortText')")
+  displayTitle: Boolean @fetch(from: "localSettings?.overlay?.get('displayTitle')")
+  hotZones: [Hotzone] @fetch(from: "localSettings?.get('image-map')")
+  related: [CMTeasable]
+  transformedHotZones: [TransformedHotZone] @fetch(from: "@hotZonesAdapter.to(#root).transformedHotZones.?[linkedContent != null]")
+}
+
+type CMLinkableImpl implements CMLinkable @inherit(from: ["CMLocalizedImpl"]) {
+  context: CMNavigation @fetch(from: "@navigationAdapter.to(#root).context")
+  extDisplayedDate: String
+  link: Link @fetch(from: "@graphQlLinkComposer.apply(#root)")
+  navigationPath: [CMLinkable] @fetch(from: "@navigationAdapter.to(#root).pathToRoot")
+  segment: String
+  title: String
+  validFrom: String
+  validTo: String
+  viewtype: String @fetch(from: "getLink('viewtype')?.layout")
+  remoteLink(siteId:String, context:String): String!
+}
+
+type CMLocalizedImpl implements CMLocalized @inherit(from: ["CMObjectImpl"]) {
+  ignoreUpdates: Int
+  languageId: String
+}
+
+type CMMediaImpl implements CMMedia @inherit(from: ["CMTeasableImpl"]) {
+  alt: String
+  authors: [CMTeasable]
+  caption(view: String): String
+  context: CMNavigation
+  copyright: String
+  data: Blob @fetch(from: "@contentBlobAdapter.to(#root, 'data')")
+}
+
+type CMNavigationImpl implements CMNavigation @inherit(from: ["CMTeasableImpl"]) {
+  children: [CMLinkable] @fetch(from: "@navigationAdapter.to(#root).children")
+  grid: PageGrid @fetch(from: "@pageGridAdapter.to(#root,'placement')")
+  hidden: Boolean
+  hiddenInSitemap: Boolean
+}
+
+type CMObjectImpl implements CMObject @inherit(from: ["Content_Impl"]) {
+}
+
+type CMPictureImpl implements CMPicture @inherit(from: ["CMVisualImpl"]) {
+  base64Images(cropNames: [String!]): [Base64Image]!  @fetch(from: "@responsiveMediaAdapter.to(#root, 'data').base64Images(#cropNames)")
+  caption(view: String): String
+  crops: [Crop!]!  @fetch(from:"@responsiveMediaAdapter.to(#root, 'data').crops" )
+  picture: CMPicture @fetch(from: "#root")
+  pictures: [CMPicture] @fetch(from: "{#root}")
+  uriTemplate: String! @fetch(from: "@uriLinkComposer.apply(@responsiveMediaAdapter.to(#root, 'data'))")
+}
+
+type CMProductImpl implements CMProduct @inherit(from: ["CMTeasableImpl"]) {
+  authors: [CMTeasable]
+  downloads: [CMDownload]
+  price: Float @fetch(from: "localSettings?.price")
+  productCode: String
+  productName: String
+}
+
+type CMQueryListImpl implements CMQueryList @inherit(from: ["CMDynamicListImpl"]) {
+  items: [CollectionItem] @fetch(from: "@queryListAdapter.to(#root, null).getItems()")
+  pagedItems(offset: Int): [CMTeasable] @fetch(from: "@queryListAdapter.to(#root, #offset).getItems()")
+  teasableItems: [CMTeasable] @fetch(from: "@queryListAdapter.to(#root, null).getItems()")
+  bannerItems: [Banner]  @fetch(from: "@queryListAdapter.to(#root, null).getItems()")
+  detailItems: [Detail]  @fetch(from: "@queryListAdapter.to(#root, null).getItems()")
+}
+
+type CMResourceBundleImpl implements CMResourceBundle @inherit(from: ["CMLocalizedImpl"]) {
+  localizations: MapOfString
+}
+
+type CMSiteImpl implements CMSite @inherit(from: ["CMLocalizedImpl"]) {
+  id: String
+  root: CMNavigation
+}
+
+type CMTeasableImpl @inherit(from: ["CMLinkableImpl"]) {
+  authors: [CMTeasable]
+  context: CMNavigation
+  detailText(view: String): String @fetch(from: "detailText?.view(#view?:'default')")
+  detailTextAsTree(view: String): RichTextTree @fetch(from: "detailText?.view(#view?:'default')")
+  related: [CMTeasable]
+  teaserOverlaySettings: TeaserOverlaySettings @fetch(from: "localSettings?.teaserOverlay?:{enabled: false}")
+  teaserTarget: CMLinkable @fetch(from: "#root")
+  teaserTargets: [ExtendedTeaserTarget]  @fetch(from: "{{target: #root, callToActionEnabled: !@settingsAdapter.to(#root).get('callToActionDisabled', false), callToActionCustomText: @settingsAdapter.to(#root).get('callToActionCustomText', '')}}")
+  teaserText(view: String): String  @fetch(from: "(teaserText?.nullIfEmpty()?:(localSettings?.teaserOverlay?.enabled == true) ? null : detailText)?.view(#view?:'simplified')")
+  teaserTitle: String @fetch(from:"teaserTitle?:title")
+
+  media: [CMMedia] @fetch(from: "@mediaLinkListAdapter.to(#root).list()")
+
+  picture: CMPicture @fetch(from: "@mediaLinkListAdapter.to(#root, 'CMPicture').first()")
+  pictures: [CMPicture] @fetch(from: "@mediaLinkListAdapter.to(#root, 'CMPicture').list()")
+
+  video: CMVideo @fetch(from: "@mediaLinkListAdapter.to(#root, 'CMVideo').first()")
+  videos: [CMVideo] @fetch(from: "@mediaLinkListAdapter.to(#root, 'CMVideo').list()")
+
+  spinner: CMSpinner @fetch(from: "@mediaLinkListAdapter.to(#root, 'CMSpinner').first()")
+  spinners: [CMSpinner] @fetch(from: "@mediaLinkListAdapter.to(#root, 'CMSpinner').list()")
+}
+
+type CMTeaserImpl implements CMTeaser @inherit(from: ["CMTeasableImpl"]) {
+  target: CMLinkable @fetch(from: "#first(targets?.links?:target)")
+  teaserTarget: CMLinkable @fetch(from: "@teaserTargetsAdapter.to(#root).target")
+  teaserTargets: [ExtendedTeaserTarget]  @fetch(from: "@teaserTargetsAdapter.to(#root).extendedTargets")
+
+  media: [CMMedia] @fetch(from: "@teaserMediaLinkListAdapter.to(#root).list()")
+
+  picture: CMPicture @fetch(from: "@teaserMediaLinkListAdapter.to(#root, 'CMPicture').first()")
+  pictures: [CMPicture] @fetch(from: "@teaserMediaLinkListAdapter.to(#root, 'CMPicture').list()")
+
+  video: CMVideo @fetch(from: "@teaserMediaLinkListAdapter.to(#root, 'CMVideo').first()")
+  videos: [CMVideo] @fetch(from: "@teaserMediaLinkListAdapter.to(#root, 'CMVideo').list()")
+
+  spinner: CMSpinner @fetch(from: "@teaserMediaLinkListAdapter.to(#root, 'CMSpinner').first()")
+  spinners: [CMSpinner] @fetch(from: "@teaserMediaLinkListAdapter.to(#root, 'CMSpinner').list()")
+}
+
+type CMVideoImpl implements CMVideo @inherit(from: ["CMVisualImpl"]) {
+  timeLine: TimeLine @fetch(from: "getLink('viewtype')?.layout == 'shoppable'? timeLine : null")
+  video: CMVideo @fetch(from: "#root")
+  videos: [CMVideo] @fetch(from: "{#root}")
+}
+
+type CMVisualImpl implements CMVisual @inherit(from: ["CMMediaImpl"]) {
+  dataUrl: String
+  height: Int
+  width: Int
+}
+
+type Blob {
+  contentType: String!
+  size: Int!
+  eTag: String!
+  uri: String @fetch(from: "@uriLinkComposer.apply(#root)")
+}
+
+type Content_Impl implements Content_ {
+  creationDate: String!
+  modificationDate: String!
+  name: String!
+  type: String!
+}
+
+type Crop {
+  aspectRatio: Dimension!
+  name: String!
+  minWidth: Int!
+  minHeight: Int!
+  sizes: [Dimension]!
+}
+
+type Dimension {
+  height: Float!
+  width: Float!
+}
+
+type ExtendedTeaserTarget {
+  callToActionEnabled: Boolean @fetch(from: "getOrDefault('callToActionEnabled',false)")
+  callToActionText: String @fetch(from: "getOrDefault('callToActionCustomText','')")
+  target: CMLinkable
+}
+
+type Hotzone {
+  alt: String
+  coords: String!
+  displayAsInlineOverlay: Boolean
+  inlineOverlayTheme: String
+  linkedContent: CMLinkable
+  shape: String!
+  target: String
+}
+
+type ImageMapCrop {
+  name: String! @fetch(from:"key")
+  coords: [Point]! @fetch(from:"value")
+}
+
+type Link {
+  id: ID
+  type: String
+}
+
+type PageGrid {
+  cssClassName: String
+  rows: [PageGridRow]
+
+  # retrieves the page grid placements as a flat list, optionally filtered by name
+  placements(names: [String]) :[PageGridPlacement]  @fetch(from: "getPlacements(#names)")
+}
+
+type PageGridRow {
+  placements: [PageGridPlacement]
+}
+
+type PageGridPlacement {
+  name: String!
+  column: Int!
+  colspan: Int!
+  width: Int!
+  viewtype: String
+  items: [CMLinkable]!
+}
+
+type Point {
+  x: Float
+  y: Float
+}
+
+type TeaserOverlaySettings {
+  enabled: Boolean @fetch(from: "enabled?:false")
+  positionX: Int @fetch(from: "positionX?:0")
+  positionY: Int @fetch(from: "positionY?:0")
+  style: MapOfString @fetch(from: "style?.settings?.style?:{:}")
+  width: Int @fetch(from: "width?:50")
+}
+
+type TimeLine {
+  defaultTarget: CMTeasable
+  sequences: [TimeLineEntry]  @fetch(from: "sequences.?[link != null]")
+}
+
+type TimeLineEntry {
+  position: Int
+  startTimeMillis: Int
+  target: CMTeasable
+}
+
+type TransformedHotZone {
+  alt: String
+  crops: [ImageMapCrop] @fetch(from: "coords.entrySet()")
+  displayAsInlineOverlay: Boolean
+  inlineOverlayTheme: String
+  linkedContent: CMLinkable
+  points: [Point]
+  shape: String
+  target: String
+}
+
+type Base64Image {
+  cropName: String!
+  base64: String
+}
+
+interface Detail {
+  detailText(view: String): String
+  detailTextAsTree(view: String): RichTextTree
+}
+
+interface CollectionItem {
+  remoteLink(siteId:String, context:String): String!
+}
+
+interface Banner {
+  teaserTitle: String
+  teaserText(view: String): String
+  media: [CMMedia]
+  picture: CMPicture
+  pictures: [CMPicture]
+}
+
+interface HasPageGrid {
+  grid: PageGrid
+}
+
+
+
+

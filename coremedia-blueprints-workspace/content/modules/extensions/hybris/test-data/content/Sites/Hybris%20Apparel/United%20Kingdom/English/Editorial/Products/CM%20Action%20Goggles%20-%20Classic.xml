@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Products" name="CM Action Goggles - Classic" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Snow%20Action.xml" path="/Settings/Taxonomies/Subject/Snow%20Action"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>CM Action Goggles</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></teaserText>
+<pictures>
+<link href="../../Pictures/CM%20Action%20Goggles%2001.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/CM%20Action%20Goggles%2001"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>hybris:///catalog/product/96502</externalId>
+</CMProductTeaser>

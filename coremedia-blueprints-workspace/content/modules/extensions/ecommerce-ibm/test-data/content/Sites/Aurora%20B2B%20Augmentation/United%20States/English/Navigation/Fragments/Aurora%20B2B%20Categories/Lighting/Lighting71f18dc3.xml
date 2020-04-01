@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora B2B Augmentation/United States/English/Navigation/Fragments/Aurora B2B Categories/Lighting" name="Lighting Augmented Page Sidebar Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../../../Editorial/Products/Aurora%20B2B/Lighting/Compact%20Fluorescent%28c216b1d.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Compact%20Fluorescent%20Bulb%20%20Product%20Teaser"/>
+<link href="../../../../Editorial/Content/Microsites/The%20Guide%20To%20Perfect%20Lightida7577b9.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/The%20Guide%20To%20Perfect%20Lighting/The%20Art%20of%20Perfect%20Lighting%20Article"/>
+<link href="../../../../Videos/Architectural%20Lighting%20Local%20Video.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Videos/Architectural%20Lighting%20Local%20Video"/>
+<link href="../../../../Videos/Ciglio%20LED%20Lights%20Local%20Video.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Videos/Ciglio%20LED%20Lights%20Local%20Video"/>
+</items>
+</CMCollection>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMHTML folder="/Sites/Chef Corp./Germany/German/Editorial/Site-Wide/Integration/External Embedding" name="Pinterest Basic JS  HTML Fragment" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Site-Wide/Integration/External%20Embedding/Pinterest%20Basic%20JS%217e914b5.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Site-Wide/Integration/External%20Embedding/Pinterest%20Basic%20JS%20%20HTML%20Fragment"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Unsere Lieblingsrezepte aus Pinterest </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Unsere Lieblingsrezepte aus Pinterest </p> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<description></description>
+<data grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>&lt;!-- Please call pinit.js only once per page --&gt;<br/>&lt;script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"&gt;&lt;/script&gt;</p> </div></data>
+</CMHTML>

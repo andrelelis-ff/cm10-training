@@ -1,0 +1,3 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StringProperty Name="flow.id">com/coremedia/blueprint/elastic/social/cae/flows/Login</StringProperty>
+</Struct>

@@ -1,0 +1,13 @@
+// Flex Grid for Left Right Banner
+.cm-left-right-banner-grid {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    margin-bottom: 48px;
+
+    @include breakpoint("sm-and-up") {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/United States/English/Editorial/Content/Fashion" name="Red Satin Evening Gown Video Teaser Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=34;y=0;width=154;height=240</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=32;y=0;width=180;height=240</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=0;width=240;height=240</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=34;width=259;height=195</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=1;width=426;height=239</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=35;width=426;height=170</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=68;width=426;height=106</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.07971014492753623;y1=0;x2=0.4420289855072464;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.0748792270531401;y1=0;x2=0.4975845410628019;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0;x2=0.5628019323671497;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.14163090128755365;x2=0.6086956521739131;y2=0.9527896995708155</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.004464285714285714;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.14732142857142858;x2=1;y2=0.8571428571428571</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.28125;x2=1;y2=0.7232142857142857</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Red Satin Evening Gown Video Teaser Picture</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Red Satin Evening Gown Video Teaser Picture</alt>
+<copyright>Pressmaster/Shutterstock</copyright>
+<dataUrl></dataUrl>
+<width>426</width>
+<height>240</height>
+<data md5="f0f7b7f24c0cddda1cff655eedcecc52" size="15522" href="../../../../../../../__blob/f0f7b7f24c0cddda1cff655eedcecc52.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

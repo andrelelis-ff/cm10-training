@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Chef Corp./Germany/German/Options/Settings" name="Elastic Social" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Options/Settings/Elastic%20Social.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Elastic%20Social"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="elasticSocial">
+<Struct>
+<StringListProperty Name="reviewDocumentTypes">
+<String>CMProduct</String>
+</StringListProperty>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<StringProperty Name="tenant">corporate</StringProperty>
+<IntProperty Name="userImageHeight">100</IntProperty>
+<IntProperty Name="userImageWidth">100</IntProperty>
+<IntProperty Name="userImageThumbnailHeight">60</IntProperty>
+<IntProperty Name="userImageThumbnailWidth">60</IntProperty>
+<IntProperty Name="maxImageFileSize">5242880</IntProperty>
+<StringProperty Name="commentType">DISABLED</StringProperty>
+<StringProperty Name="likeType">DISABLED</StringProperty>
+<StringProperty Name="ratingType">DISABLED</StringProperty>
+<StringProperty Name="reviewType">ANONYMOUS</StringProperty>
+<BooleanProperty Name="recaptchaForRegistrationRequired">true</BooleanProperty>
+<BooleanProperty Name="recaptchaForReviewRequired">true</BooleanProperty>
+<StringProperty Name="userModerationType">POST_MODERATION</StringProperty>
+<StringProperty Name="commentModerationType">PRE_MODERATION</StringProperty>
+<StringProperty Name="reviewModerationType">PRE_MODERATION</StringProperty>
+</Struct>
+</StructProperty>
+<LinkProperty Name="action.userDetailsView" LinkType="coremedia:///cap/contenttype/CMAction" xlink:href="coremedia:///cap/resources/Actions/UserDetails.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Actions/UserDetails"/>
+<LinkProperty Name="action.registrationActivationView" LinkType="coremedia:///cap/contenttype/CMAction" xlink:href="coremedia:///cap/resources/Actions/ActivateRegistration.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Actions/ActivateRegistration"/>
+<LinkProperty Name="action.confirmPasswordResetView" LinkType="coremedia:///cap/contenttype/CMAction" xlink:href="coremedia:///cap/resources/Actions/ConfirmPasswordReset.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Actions/ConfirmPasswordReset"/>
+<LinkProperty Name="flow.registration" LinkType="coremedia:///cap/contenttype/CMAction" xlink:href="coremedia:///cap/resources/Actions/Registration.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Actions/Registration"/>
+<LinkProperty Name="flow.passwordExpired" LinkType="coremedia:///cap/contenttype/CMAction" xlink:href="coremedia:///cap/resources/Actions/PasswordExpired.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Actions/PasswordExpired"/>
+<LinkProperty Name="flow.passwordReset" LinkType="coremedia:///cap/contenttype/CMAction" xlink:href="coremedia:///cap/resources/Actions/PasswordReset.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Actions/PasswordReset"/>
+<LinkProperty Name="flow.login" LinkType="coremedia:///cap/contenttype/CMAction" xlink:href="coremedia:///cap/resources/Actions/Login.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Actions/Login"/>
+<LinkProperty Name="flow.logout" LinkType="coremedia:///cap/contenttype/CMAction" xlink:href="coremedia:///cap/resources/Actions/Logout.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Actions/Logout"/>
+<LinkProperty Name="flow.userDetails" LinkType="coremedia:///cap/contenttype/CMAction" xlink:href="coremedia:///cap/resources/Actions/UserDetails.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Actions/UserDetails"/>
+<LinkProperty Name="linkTermsOfUse" LinkType="coremedia:///cap/contenttype/CMArticle" xlink:href="coremedia:///cap/resources/../../Editorial/Site-Wide/Footer/Terms%20of%20Use.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Site-Wide/Footer/Terms%20of%20Use"/>
+<LinkProperty Name="linkPrivacyPolicy" LinkType="coremedia:///cap/contenttype/CMArticle" xlink:href="coremedia:///cap/resources/../../Editorial/Site-Wide/Footer/Privacy%20Policy.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Site-Wide/Footer/Privacy%20Policy"/>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

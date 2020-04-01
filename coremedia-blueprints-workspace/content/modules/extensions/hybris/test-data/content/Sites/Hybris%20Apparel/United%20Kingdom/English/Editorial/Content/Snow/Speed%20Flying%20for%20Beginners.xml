@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Snow" name="Speed Flying for Beginners" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Speed Flying for Beginners</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Speed%20Riding.xml" path="/Settings/Taxonomies/Subject/Speed%20Riding"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Speed%20Flying.xml" path="/Settings/Taxonomies/Subject/Speed%20Flying"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Speed-Flying is an extreme sport that involves a combination of paragliding and skiing skills. It is a relatively new sport that is growing rapidly and gaining lots of attention. As one of the web's premier Speed-Flying resources, we feel it is our responsibility to point out some important safety concerns.</p><p class="p--heading-2">Speed-Flying May Feel Safer Than It Is</p><p>The danger in Speed-Flying, as with any extreme sport, lies in the fact that it may feel safer than it really is. While you are flying a few feet above the ground, at high speed, the adrenaline rush is intense. </p><p>The idea behind the winter sport is that, while skiing, you can take to the air when conditions get rough and then land again when you so choose (the beauty is that you can choose yourself how much flying vs skiing you'd like to do). Speed-Flying is an exciting and versatile sport that is attracting many paragliders and skiers alike. </p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Freestyle%20Snow%20Board%20110839.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Freestyle%20Snow%20Board%20110839">Freestyle Snow Board 110839</a><br/></p><p>Problems arise when inexperienced Speed-Flyers are unaware of the number of things that can go wrong at any time - during take off, while in the air, on the ground, and during landing. Because you typically are flying at high speeds at a very low altitude, there exists the possibility of serious injury or death. In 2009 there were 9 deaths, of these ALL were highly experienced pilots. </p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../Embeds/Twitter%20Post.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Embeds/Twitter%20Post">Twitter Post</a><br/></p><p>The summer side of the sport, also know as Ground Launching is where you foot launch the glider and fly low level to your chosen landing zone with no ground contact - the dangers increase even further. To compare sports - Speed-Flying is to Paragliding as BASE jumping is to Skydiving.</p><p class="p--heading-2">Speed-Flying Requirements</p><p>For this reason, we urge that only experienced athletes partake in this sport. It is NOT a sport suitable for everyone. Speed-Flying involves both paragliding and skiing skills, but at the same time is unique from both, and therefore involves a new skill that should be learned gradually. <br/></p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../Embeds/Twitter%20Feed.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Embeds/Twitter%20Feed">Twitter Feed</a><br/></p><p>As with any extreme sport, take your time and don't rush things. At a minimum, you should have both excellent paragliding as well as skiing experience. That experience should involve awareness of mountain, climate, and equipment conditions. </p><p>There is no Guarantee every launch will allow you to complete your flight and you may not be able to relaunch to continue your flight, Off-piste skiing and mountaineering skills are required to get you off the mountain safely. Speed-Flying is banned on all marked or prepared piste's.</p></div></detailText>
+<pictures>
+<link href="In%20the%20Sky%20Speed%20Gliding.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/In%20the%20Sky%20Speed%20Gliding"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../Authors/Elle%20Quinn%20Person.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Authors/Elle%20Quinn%20Person"/>
+</authors>
+</CMArticle>

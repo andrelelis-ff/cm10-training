@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMFolderProperties folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Best Picture Contest" name="_folderProperties" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<contexts>
+<link href="../../Navigation/Best%20Picture%20Contest/Best%20Picture%20Contest.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Navigation/Best%20Picture%20Contest/Best%20Picture%20Contest"/>
+</contexts>
+</CMFolderProperties>

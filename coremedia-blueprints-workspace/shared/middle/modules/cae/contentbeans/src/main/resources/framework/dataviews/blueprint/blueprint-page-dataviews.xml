@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<dataviews xmlns="http://www.coremedia.com/2004/objectserver/dataviewfactory">
+
+  <cachesize class="com.coremedia.blueprint.common.contentbeans.Page" size="5000"/>
+  <cachesize class="com.coremedia.blueprint.cae.layout.PageGridImpl" size="500"/>
+  <cachesize class="com.coremedia.blueprint.cae.layout.ContentBeanBackedPageGridPlacement" size="800"/>
+  <cachesize class="com.coremedia.cae.aspect.Aspect" size="1000"/>
+
+  <autocomplete>
+    <class name="com.coremedia.blueprint.common.contentbeans.Page"/>
+    <class name="com.coremedia.blueprint.common.layout.PageGridPlacement"/>
+  </autocomplete>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.PageImpl">
+    <property name="content" associationType="static"/>
+    <property name="navigation" associationType="static"/>
+    <property name="aspectByName" associationType="composition"/>
+    <property name="pageGrid" associationType="static"/>
+    <property name="locale"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.layout.PageGridImpl">
+    <!--dynamic properties only, because #getContentBackedPageGrid may use dynamic commerce tree relation-->
+    <property name="rows" associationType="dynamic"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.layout.PageGridRowImpl">
+    <property name="placements" associationType="static"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.layout.ContentBeanBackedPageGridPlacement">
+    <property name="itemsUnfiltered" associationType="static"/>
+  </dataview>
+
+</dataviews>

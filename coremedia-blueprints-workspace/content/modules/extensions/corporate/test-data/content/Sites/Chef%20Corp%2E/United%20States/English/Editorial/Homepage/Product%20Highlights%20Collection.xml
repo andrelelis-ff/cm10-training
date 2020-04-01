@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Chef Corp./United States/English/Editorial/Homepage" name="Product Highlights Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../Products/ChefWave/ChefWave%20HD%20-%20Large%20Product.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/ChefWave/ChefWave%20HD%20-%20Large%20Product"/>
+<link href="../../Products/Ranges%20and%20Ovens/Chef%20Range%20CR1020%20Premium%20Product.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Ranges%20and%20Ovens/Chef%20Range%20CR1020%20Premium%20Product"/>
+<link href="../../Products/Blenders%20and%20Food%20Processors/Kitchenette%20KNC30%20Mixer%20Product.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Blenders%20and%20Food%20Processors/Kitchenette%20KNC30%20Mixer%20Product"/>
+</items>
+</CMCollection>

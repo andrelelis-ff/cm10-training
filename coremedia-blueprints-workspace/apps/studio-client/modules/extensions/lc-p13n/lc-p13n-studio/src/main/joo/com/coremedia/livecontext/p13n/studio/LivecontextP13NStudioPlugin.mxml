@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- Extend the standard Studio and Blueprint components for Live Context P13N-->
+<local:LivecontextP13NStudioPluginBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.livecontext.p13n.studio.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:lc-p13n="exml:com.coremedia.livecontext.p13n.studio.config"
+        xmlns:perso="exml:com.coremedia.personalization.ui.config"
+        xmlns:p13n="exml:com.coremedia.blueprint.personalization.editorplugin.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.ecommerce.studio.ECommerceStudioPlugin')]
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.personalization.ui.persona.popup.PersonaPopupOverviewPanel;
+
+    import ext.container.Container;
+    import ext.panel.Panel;
+
+    import mx.resources.ResourceManager;
+
+    public static const xtype:String = "com.coremedia.livecontext.p13n.studio.config.livecontextP13NStudioPlugin";
+
+    private var config:LivecontextP13NStudioPlugin;
+
+    public native function LivecontextP13NStudioPlugin(config:LivecontextP13NStudioPlugin = null);
+    ]]></fx:Script>
+
+  <local:rules>
+    <perso:SelectionRulesField>
+      <perso:plugins>
+        <local:AddCommerceSegmentConditionPlugin/>
+      </perso:plugins>
+    </perso:SelectionRulesField>
+
+    <perso:ConditionsField>
+      <perso:plugins>
+        <local:AddCommerceSegmentConditionPlugin/>
+      </perso:plugins>
+    </perso:ConditionsField>
+
+    <p13n:CMPersonaForm>
+      <p13n:plugins>
+        <ui:AddItemsPlugin recursive="true">
+          <ui:items>
+            <!--GroupContainer: Commerce-->
+            <lc-p13n:CommerceGroupContainer/>
+          </ui:items>
+          <ui:after>
+            <Component itemId="{CMPersonaForm.PERSONA_IMAGE_ITEM_ID}"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </p13n:plugins>
+    </p13n:CMPersonaForm>
+
+    <!-- Add Commerce Segments to persona Popup-->
+    <perso:PersonaPopupOverviewPanel>
+      <perso:plugins>
+        <ui:AddItemsPlugin index="0"
+                           applyTo="{function(panel:Panel):Container {
+              return panel.queryById(PersonaPopupOverviewPanel.PERSONA_PANEL_ITEM_ID) as Container;
+            }}">
+          <ui:items>
+            <lc-p13n:CommerceObjectsDisplayField
+                    fieldLabel="{ResourceManager.getInstance().getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'p13n_commerce_user_segments_label')}"
+                    invalidMessage="{ResourceManager.getInstance().getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'p13n_commerce_user_segment_invalid')}"
+                    emptyMessage="{ResourceManager.getInstance().getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'p13n_persona_commerce_segments_empty')}"
+                    catalogObjectIdListName="{USER_SEGMENTS}"/>
+            <lc-p13n:CommerceObjectsDisplayField
+                    fieldLabel="{ResourceManager.getInstance().getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'p13n_commerce_user_contracts_label')}"
+                    invalidMessage="{ResourceManager.getInstance().getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'p13n_commerce_user_contract_invalid')}"
+                    emptyMessage="{ResourceManager.getInstance().getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'p13n_persona_commerce_contracts_empty')}"
+                    catalogObjectIdListName="{USER_CONTRACTS}"/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </perso:plugins>
+    </perso:PersonaPopupOverviewPanel>
+  </local:rules>
+
+  <local:configuration>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.ecommerce.studio.ECommerceStudioPlugin')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.livecontext.studio.LivecontextStudioPlugin')}"/>
+  </local:configuration>
+
+</local:LivecontextP13NStudioPluginBase>

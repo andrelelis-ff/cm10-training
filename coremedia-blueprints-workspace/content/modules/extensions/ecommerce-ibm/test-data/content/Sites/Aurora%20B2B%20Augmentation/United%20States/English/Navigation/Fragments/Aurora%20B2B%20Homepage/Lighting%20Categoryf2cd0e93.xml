@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Aurora B2B Augmentation/United States/English/Navigation/Fragments/Aurora B2B Homepage" name="Lighting Category Promotion Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>New Arrivals in Lighting</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>20% off</p></div></teaserText>
+<pictures>
+<link href="../../../Pictures/Product%20Category%20Pictures/Lighting/A%20Perfect%20Pa74b0d444.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Product%20Category%20Pictures/Lighting/A%20Perfect%20Pair%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../Augmentation/Hardware%20Lighting/Hardware%20Lighting.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Augmentation/Hardware%20Lighting/Hardware%20Lighting"/>
+</target>
+</CMTeaser>

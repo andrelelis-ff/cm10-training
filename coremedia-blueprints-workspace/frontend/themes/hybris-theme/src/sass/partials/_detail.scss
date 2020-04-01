@@ -1,0 +1,71 @@
+.#{$cm-details-prefix} {
+  &__headline {
+    text-align: center;
+  }
+
+  &__media-box {
+    margin-bottom: 2rem;
+
+    @include breakpoint("lg-and-up") {
+      @include aspect-ratio-box(5, 2);
+    }
+  }
+
+  &__text > * {
+    margin-bottom: 2rem;
+  }
+
+  //embedded stuff
+  .cm-richtext-embedded--teasable {
+    @include breakpoint("sm-and-up") {
+      max-width: 50%;
+    }
+    @include breakpoint("lg") {
+      max-width: 75%;
+    }
+  }
+
+  // person detail page
+  &__picture-person {
+    margin-bottom: 15px;
+  }
+
+  &__introduction {
+    margin: 15px auto 20px auto;
+    width: 70%;
+  }
+
+  // authors container
+  .cm-authors {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    width: 70%;
+    margin: 0 auto;
+
+    &__picture-box {
+      margin-right: 12px;
+      width: 32px;
+      height: 32px;
+
+      @include breakpoint("lg") {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    &__headline {
+      margin-top: 0;
+    }
+
+    &__short-text {
+      font-size: 17px;
+    }
+  }
+
+  // display date
+  &__date {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+}

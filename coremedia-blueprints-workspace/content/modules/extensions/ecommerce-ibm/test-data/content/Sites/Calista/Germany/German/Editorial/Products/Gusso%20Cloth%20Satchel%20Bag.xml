@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/Calista/Germany/German/Editorial/Products" name="Gusso Cloth Satchel Bag" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Editorial/Products/Gusso%20Cloth%20Satchel%20Bag.xml" path="/Sites/Calista/United%20States/English/Editorial/Products/Gusso%20Cloth%20Satchel%20Bag"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../Pictures/Blog/Gusso%20Cloth%20Satchel%20Bag%20%28shutterstock_111120167%29.xml" path="/Sites/Calista/Germany/German/Pictures/Blog/Gusso%20Cloth%20Satchel%20Bag%20%28shutterstock_111120167%29"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>ibm:///catalog/sku/WBG006_061201</externalId>
+</CMProductTeaser>

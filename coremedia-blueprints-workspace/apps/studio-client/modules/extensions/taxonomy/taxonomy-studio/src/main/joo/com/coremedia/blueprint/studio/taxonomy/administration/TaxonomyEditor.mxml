@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:TaxonomyEditorBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                          xmlns:local="com.coremedia.blueprint.studio.taxonomy.administration.*"
+                          xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                          xmlns="exml:ext.config"
+                          xmlns:taxonomy="exml:com.coremedia.blueprint.studio.config.taxonomy"
+                          title="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyEditor_title')}"
+                          id_="taxonomyEditor"
+                          iconCls="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyEditor_icon')}"
+                          layout="fit"
+                          itemId="taxonomyEditor">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.taxonomy.taxonomyEditor";
+
+    private var config:TaxonomyEditor;
+
+    public native function TaxonomyEditor(config:TaxonomyEditor = null);
+    ]]></fx:Script>
+  <local:items>
+    <taxonomy:TaxonomyExplorerPanel id_="taxonomyExplorerPanel"
+                                    searchResultExpression="{getSearchResultExpression()}"
+                                    siteSelectionExpression="{getSiteSelectionExpression()}"/>
+  </local:items>
+
+</local:TaxonomyEditorBase>

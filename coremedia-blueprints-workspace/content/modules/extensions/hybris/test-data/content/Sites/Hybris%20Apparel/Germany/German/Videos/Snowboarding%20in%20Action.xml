@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Hybris Apparel/Germany/German/Videos" name="Snowboarding in Action" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Videos/Snowboarding%20in%20Action.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Videos/Snowboarding%20in%20Action"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Snowboarding in Aktion</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Achten Sie auf die besten Snowboard-Erfahrungen aus je - Holen Sie sich hier die beste Ausrüstung </p> </div></detailText>
+<pictures>
+<link href="../Pictures/CM%20Action%20Goggles%2006.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/CM%20Action%20Goggles%2006"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="00e77b6702152596a142720549a1a6e5" size="13327775" href="../../../../../__blob/00e77b6702152596a142720549a1a6e5.blob" mimetype="video/x-m4v"/>
+<asset>
+</asset>
+</CMVideo>

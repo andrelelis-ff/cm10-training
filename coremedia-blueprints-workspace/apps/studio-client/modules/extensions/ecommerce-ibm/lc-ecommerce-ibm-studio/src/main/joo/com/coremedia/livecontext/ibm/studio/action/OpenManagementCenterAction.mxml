@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:OpenManagementCenterActionBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.livecontext.ibm.studio.action.*">
+  <fx:Script><![CDATA[
+    private var config:OpenManagementCenterAction;
+
+    public native function OpenManagementCenterAction(config:OpenManagementCenterAction = null);
+    ]]></fx:Script>
+
+</local:OpenManagementCenterActionBase>

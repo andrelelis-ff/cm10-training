@@ -1,0 +1,5 @@
+<rules version="1.0" xmlns="http://www.coremedia.com/2010/selectionrules">
+  select content:20 if keyword["Formula 1"]&gt;0.5 or subjectTaxonomies.content:18&gt;0.5 or explicit.content:18&gt;0.5;
+  select content:22 if myContext.default=true;
+  select content:30 if segment.content:34=true;
+</rules>

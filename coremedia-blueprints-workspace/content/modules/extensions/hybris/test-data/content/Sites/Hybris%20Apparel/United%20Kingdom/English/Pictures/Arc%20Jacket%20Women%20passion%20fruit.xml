@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/United Kingdom/English/Pictures" name="Arc Jacket Women passion fruit" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0.28743961352657005</StringProperty>
+<StringProperty Name="y1">0.28502415458937197</StringProperty>
+<StringProperty Name="x2">0.7053140096618358</StringProperty>
+<StringProperty Name="y2">0.7270531400966184</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=355;y=285;width=285;height=442</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=331;y=285;width=331;height=442</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=285;y=280;width=432;height=432</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=287;y=350;width=418;height=314</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=167;y=312;width=674;height=379</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=123;y=312;width=787;height=394</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=14;y=319;width=949;height=379</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=329;width=1000;height=374</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=355;width=1000;height=251</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.35507246376811596;y1=0.28502415458937197;x2=0.6400966183574879;y2=0.7270531400966184</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.3309178743961353;y1=0.28502415458937197;x2=0.6618357487922706;y2=0.7270531400966184</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.28502415458937197;y1=0.28019323671497587;x2=0.717391304347826;y2=0.7125603864734299</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.28743961352657005;y1=0.3502415458937198;x2=0.7053140096618358;y2=0.6642512077294686</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.16666666666666666;y1=0.3115942028985507;x2=0.8405797101449275;y2=0.6908212560386473</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0.12318840579710146;y1=0.3115942028985507;x2=0.9106280193236715;y2=0.7053140096618358</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0.014492753623188406;y1=0.3188405797101449;x2=0.9637681159420289;y2=0.6980676328502415</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.3285024154589372;x2=1;y2=0.7028985507246377</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.35507246376811596;x2=1;y2=0.606280193236715</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>hybris:///catalog/product/99146_passion_fruit</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Arc Jacket Women - Passion Fruit</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Arc Jacket Women - Passion Fruit</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1000</width>
+<height>1000</height>
+<data md5="7013ffc1cb4948e595c64e0b2b2cbb95" size="14570" href="../../../../../__blob/7013ffc1cb4948e595c64e0b2b2cbb95.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

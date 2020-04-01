@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AMTaxonomy folder="/Settings/Taxonomies/Asset Download Portal" name="Product" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Products</value>
+<children>
+<link href="Blender.xml" path="/Settings/Taxonomies/Asset%20Download%20Portal/Blender"/>
+<link href="Food%20Processor.xml" path="/Settings/Taxonomies/Asset%20Download%20Portal/Food%20Processor"/>
+<link href="Fryer.xml" path="/Settings/Taxonomies/Asset%20Download%20Portal/Fryer"/>
+<link href="Lighting.xml" path="/Settings/Taxonomies/Asset%20Download%20Portal/Lighting"/>
+</children>
+<externalReference></externalReference>
+<assetThumbnail>
+<link href="../../../Assets/Products/Blenders%20and%20Food%20Processors/Browne%20BL400%20Blender%20Frontshot.xml" path="/Assets/Products/Blenders%20and%20Food%20Processors/Browne%20BL400%20Blender%20Frontshot"/>
+</assetThumbnail>
+</AMTaxonomy>

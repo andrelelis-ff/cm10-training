@@ -1,0 +1,13 @@
+{
+  "name": "cmcc-delivery-proxy",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The role for the delivery proxy node",
+  "run_list": [
+    "role[base]",
+    "recipe[blueprint-proxy::delivery]",
+    "recipe[blueprint-proxy::headless-server-live]",
+    "recipe[blueprint-cmcc::delivery-proxy]",
+    "recipe[blueprint-cmcc::shop-proxy]"
+  ]
+}

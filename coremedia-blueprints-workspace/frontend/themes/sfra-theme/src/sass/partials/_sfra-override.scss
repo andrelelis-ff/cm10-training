@@ -1,0 +1,42 @@
+// Makes sure that styling rules of SFRA do not affect our rendering.
+
+// SFRA will override the text color of all "a" with the following selector:
+// header~.container a:not(.btn-primary):not(.btn-outline-primary)
+header ~ .container {
+  // Revert color of CTA button
+  .cm-cta a.cm-cta-button {
+    color: #FFFFFF;
+  }
+
+  // Revert color of banner titles
+  .cm-portrait-banner a.cm-portrait-banner__title,
+  .cm-landscape-banner a.cm-landscape-banner__title,
+  .cm-hero-banner a.cm-hero-banner__title,
+  .cm-carousel-banner a.cm-carousel-banner__title,
+  .cm-left-right-banner a.cm-left-right-banner__title,
+  .cm-square-banner a.cm-square-banner__title {
+    color: #333;
+  }
+}
+
+/* Fix z-indexes */
+.zoomContainer {
+  z-index: 51;
+}
+
+.container .row > .cm-placement--banner {
+  margin: 0 15px 48px 15px;
+  width: 100%;
+}
+
+.product-detail .description-and-detail .description > .cm-placement--additional {
+  margin: 2em 15px 0 15px;
+  width: 100%;
+}
+
+// Adjust sfra mobile navigation to our needs
+.menu-toggleable-left.navbar-toggleable-sm.in {
+  min-width: 100%;
+  left: 0;
+  overflow-y: auto;
+}

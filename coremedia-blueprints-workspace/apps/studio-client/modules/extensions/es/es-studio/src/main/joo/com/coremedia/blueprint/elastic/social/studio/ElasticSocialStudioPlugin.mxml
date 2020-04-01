@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:ElasticSocialStudioPluginBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:es="exml:com.coremedia.blueprint.elastic.social.studio.config"
+        xmlns:elastic="exml:com.coremedia.elastic.social.studio.config"
+        xmlns:quickcreate="com.coremedia.cms.editor.sdk.quickcreate.*"
+        xmlns:local="com.coremedia.blueprint.elastic.social.studio.*">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin')]
+    [ResourceBundle('com.coremedia.cms.editor.ContentTypes')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.elastic.social.studio.curated.CuratedUtil;
+    import com.coremedia.ui.skins.ButtonSkin;
+    import com.coremedia.ui.skins.ContainerSkin;
+    import com.coremedia.ui.skins.PanelSkin;
+
+    import mx.resources.ResourceManager;
+
+    public static const xtype:String = "com.coremedia.blueprint.elastic.social.studio.config.elasticSocialStudioPlugin";
+
+    /**
+     * The itemId of the first curatedTransferExtensionPoint button group separator.
+     */
+    public static const CURATED_TRANSFER_EXTENSION_POINT_SEP_FIRST_ITEM_ID:String = "curatedTransferExtensionPointSepFirst";
+
+    /**
+     * The itemId of the second curatedTransferExtensionPoint button group separator.
+     */
+    public static const CURATED_TRANSFER_EXTENSION_POINT_SEP_SECOND_ITEM_ID:String = "curatedTransferExtensionPointSepSecond";
+
+    /**
+     * The itemId of the third curatedTransferExtensionPoint button group separator.
+     */
+    public static const CURATED_TRANSFER_EXTENSION_POINT_SEP_THIRD_ITEM_ID:String = "curatedTransferExtensionPointSepThird";
+
+    private var config:ElasticSocialStudioPlugin;
+
+    public native function ElasticSocialStudioPlugin(config:ElasticSocialStudioPlugin = null);
+    ]]></fx:Script>
+
+  <local:rules>
+    <editor:DocumentFormDispatcher>
+      <editor:plugins>
+        <ui:AddArrayItemsPlugin arrayProperty="lazyItems">
+          <ui:items>
+            <es:CMMailForm itemId="CMMail"/>
+            <es:ESDynamicListForm itemId="ESDynamicList"/>
+          </ui:items>
+        </ui:AddArrayItemsPlugin>
+      </editor:plugins>
+    </editor:DocumentFormDispatcher>
+
+    <editor:TabbedDocumentFormDispatcher>
+      <editor:plugins>
+        <editor:AddTabbedDocumentFormsPlugin>
+          <editor:documentTabPanels>
+            <es:CMMailForm itemId="CMMail"/>
+            <es:ESDynamicListForm itemId="ESDynamicList"/>
+          </editor:documentTabPanels>
+        </editor:AddTabbedDocumentFormsPlugin>
+      </editor:plugins>
+    </editor:TabbedDocumentFormDispatcher>
+
+    <elastic:CommentExtensionTabPanel>
+      <elastic:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <!--
+            This is an example of how you can add custom components to the comment extension container
+            inside the moderation-tab and access the REST resource.
+            -->
+            <!--<Panel ui="{PanelSkin.COLLAPSIBLE_200}" title="customStuff">
+              <items>
+                <es:ElasticPluginLabel fieldLabel="Note"
+                                            expression="activeContributionAdministration.displayed.note"/>
+              </items>
+            </Panel>  -->
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </elastic:plugins>
+    </elastic:CommentExtensionTabPanel>
+
+    <elastic:UserProfileExtensionTabPanel>
+      <elastic:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <!--
+            This is an example of how you can add custom components to the user profile extension container
+            inside the moderation-tab and access the REST resource.
+            -->
+            <!-- <Panel ui="{PanelSkin.COLLAPSIBLE_200}" title="customProfileStuff">
+              <items>
+                <es:ElasticPluginLabel fieldLabel="Note"
+                                            expression="activeContributionAdministration.displayed.note"/>
+              </items>
+            </Panel>-->
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </elastic:plugins>
+    </elastic:UserProfileExtensionTabPanel>
+
+    <elastic:CustomUserInformationContainer>
+      <elastic:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <!--
+            This is an example of how you can add custom components to the user management window
+            and access the REST resource.
+            -->
+            <!--<Container>
+              <items>
+                <es:ElasticPluginLabel fieldLabel="Note"
+                                            expression="userAdministration.edited.note"/>
+              </items>
+            </Container>-->
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </elastic:plugins>
+    </elastic:CustomUserInformationContainer>
+
+    <elastic:CuratedTransferExtensionPoint>
+      <elastic:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <TbSeparator itemId="{CURATED_TRANSFER_EXTENSION_POINT_SEP_FIRST_ITEM_ID}"/>
+            <ui:IconButton itemId="createArticleBtn"
+                           scale="medium"
+                           ui="{ButtonSkin.WORKAREA.getSkin()}"
+                           tooltip="{ResourceManager.getInstance().getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'curated_content_create_article_button_tooltip')}"
+                           text="{ResourceManager.getInstance().getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'curated_content_create_article_button_tooltip')}"
+                           iconCls="{ResourceManager.getInstance().getString('com.coremedia.icons.CoreIcons', 'create_type_article')}">
+              <ui:baseAction>
+                <quickcreate:OpenQuickCreateAction contentType="CMArticle"
+                                                   skipInitializers="true"
+                                                   onSuccess="{CuratedUtil.postCreateArticleFromComments}"/>
+              </ui:baseAction>
+            </ui:IconButton>
+            <TbSeparator itemId="{CURATED_TRANSFER_EXTENSION_POINT_SEP_SECOND_ITEM_ID}"/>
+            <ui:IconButton itemId="createPictureBtn"
+                           scale="medium"
+                           ui="{ButtonSkin.WORKAREA.getSkin()}"
+                           tooltip="{ResourceManager.getInstance().getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'curated_content_create_gallery_button_tooltip')}"
+                           text="{ResourceManager.getInstance().getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'curated_content_create_gallery_button_tooltip')}"
+                           iconCls="{ResourceManager.getInstance().getString('com.coremedia.icons.CoreIcons', 'create_type_image_gallery')}">
+              <ui:baseAction>
+                <quickcreate:OpenQuickCreateAction contentType="CMGallery"
+                                                   skipInitializers="true"
+                                                   onSuccess="{CuratedUtil.postCreateGalleryFromComments}"/>
+              </ui:baseAction>
+            </ui:IconButton>
+            <TbSeparator itemId="{CURATED_TRANSFER_EXTENSION_POINT_SEP_THIRD_ITEM_ID}"/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </elastic:plugins>
+    </elastic:CuratedTransferExtensionPoint>
+  </local:rules>
+
+  <local:configuration>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.ContentTypes')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin')}"/>
+  </local:configuration>
+
+</local:ElasticSocialStudioPluginBase>

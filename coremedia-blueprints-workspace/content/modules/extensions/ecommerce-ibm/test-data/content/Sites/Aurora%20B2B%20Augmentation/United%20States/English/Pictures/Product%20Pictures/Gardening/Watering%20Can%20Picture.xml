@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Gardening" name="Watering Can Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="originProducts">
+<String>ibm:///catalog/product/GARDENING_IRRIGATION_0491</String>
+</StringListProperty>
+<StringListProperty Name="products">
+<String>ibm:///catalog/product/GARDENING_IRRIGATION_0491</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=268;y=0;width=967;height=1500</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=424;y=149;width=801;height=1070</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=0;width=1500;height=1500</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=189;width=1500;height=1126</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=329;width=1500;height=843</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=450;width=1500;height=601</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=563;width=1500;height=374</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.17884130982367757;y1=0;x2=0.8236775818639799;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.28286852589641437;y1=0.099601593625498;x2=0.8167330677290837;y2=0.8127490039840638</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.12594458438287154;x2=1;y2=0.8765743073047859</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.21914357682619648;x2=1;y2=0.7808564231738035</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.29974811083123426;x2=1;y2=0.7002518891687658</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.37531486146095716;x2=1;y2=0.6246851385390428</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Watering Can</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Watering Can</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1500</width>
+<height>1500</height>
+<data md5="a38ccdc4a4f04b0d019bc9e5e213aee0" size="70549" href="../../../../../../../__blob/a38ccdc4a4f04b0d019bc9e5e213aee0.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

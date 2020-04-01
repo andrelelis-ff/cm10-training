@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/France/French/Pictures" name="Elegant young handsome man" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Pictures/Elegant%20young%20handsome%20man.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Pictures/Elegant%20young%20handsome%20man"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0;x2=1;y2=0.9478672985781991</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0;x2=1;y2=0.7109004739336494</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0;x2=1;y2=0.631911532385466</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0;x2=1;y2=0.5055292259083729</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0;x2=1;y2=0.47393364928909953</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.11392405063291139;x2=1;y2=0.4298798168256444</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0;x2=0.79125;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.08521303258145363;y1=0;x2=0.5956969035491956;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.05764411027568922;y1=0;x2=0.6510816102756891;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=3000;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=81;width=3000;height=1688</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=0;width=4000;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=0;width=4000;height=1600</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=362;width=3000;height=1125</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=361;width=4000;height=1000</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=298;y=0;width=2699;height=2699</StringProperty>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=341;y=0;width=2042;height=3165</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=942;y=0;width=2024;height=2699</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=1057;y=0;width=1799;height=2699</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.6491477272727273</StringProperty>
+<StringProperty Name="y">0.3391167192429022</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Élégant jeune homme beau</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Fashion.xml" path="/Settings/Taxonomies/Subject/Fashion"/>
+<link href="../../../../../Settings/Taxonomies/Subject/Men%281%29.xml" path="/Settings/Taxonomies/Subject/Men%281%29"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Élégant jeune homme beau</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>3000</width>
+<height>2699</height>
+<data md5="7594b368965de46d601c0d7d75ec4004" size="5684528" href="../../../../../__blob/7594b368965de46d601c0d7d75ec4004.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

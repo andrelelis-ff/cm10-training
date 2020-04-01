@@ -1,0 +1,8 @@
+.cm-left-right-banner {
+  .cm-placement > & + & {
+    @include breakpoint("sm-and-up") {
+      // no margin top grid override
+      margin-top: 0;
+    }
+  }
+}

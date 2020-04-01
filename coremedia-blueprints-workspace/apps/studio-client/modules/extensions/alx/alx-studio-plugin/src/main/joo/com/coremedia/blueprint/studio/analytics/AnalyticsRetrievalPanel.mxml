@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PropertyFieldGroup
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:alx="exml:com.coremedia.blueprint.studio.config.analytics"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.analytics.AnalyticsStudioPlugin', 'Retrieval_title')}"
+        itemId="analyticsRetrievalPanel"
+        bindTo="{config.bindTo}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.analytics.AnalyticsStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.analytics.analyticsRetrievalPanel";
+
+    private var config:AnalyticsRetrievalPanel;
+
+    public native function AnalyticsRetrievalPanel(config:AnalyticsRetrievalPanel = null);
+    ]]></fx:Script>
+
+  <!-- extend this one with retrieval options -->
+  <editor:items>
+    <alx:AnalyticsProviderComboBox propertyName="localSettings.analyticsProvider"/>
+  </editor:items>
+</editor:PropertyFieldGroup>

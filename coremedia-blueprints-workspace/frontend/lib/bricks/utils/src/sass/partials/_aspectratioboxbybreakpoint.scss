@@ -1,0 +1,46 @@
+//
+// Generates an aspect ratio box per breakpoint taking into account orientation as well if provided.
+// Elements within the aspect ratio box need to be positioned absolute otherwise they will extend the box.
+//
+// @param: {$aspect-ratio-by-breakpoint} A map where the breakpoint is the key and the aspect-ratio is the value.
+//                                       The key can either be a string containing the name of the breakpoint or a list
+//                                       containing the name of the breakpoint as the first item and the orientation
+//                                       (portrait or landscape) as the second item.
+//
+// @example:
+//
+// @include aspect-ratio-box-by-breakpoint(("xs", "portrait") (4, 3), ("xs", "landscape") (1, 1), "sm-and-up" (16, 9))
+//
+
+@mixin aspect-ratio-box-by-breakpoint($aspect-ratio-by-breakpoint) {
+  position: relative;
+  overflow: hidden;
+
+  @each $breakpoint, $aspectRatio in $aspect-ratio-by-breakpoint {
+    $aspectRatioWidth: nth($aspectRatio, 1);
+    $aspectRatioHeight: nth($aspectRatio, 2);
+
+    @if type-of($breakpoint) == list {
+      $name: nth($breakpoint, 1);
+      $orientation: nth($breakpoint, 2);
+      @include breakpoint($name, $orientation) {
+        @include aspect-ratio-box(
+            $x: $aspectRatioWidth,
+            $y: $aspectRatioHeight,
+            $overflow: null,
+            $position: null
+        );
+      };
+
+    } @else {
+      @include breakpoint($breakpoint) {
+        @include aspect-ratio-box(
+          $x: $aspectRatioWidth,
+          $y: $aspectRatioHeight,
+          $overflow: null,
+          $position: null
+        );
+      };
+    }
+  }
+}

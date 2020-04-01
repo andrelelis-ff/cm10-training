@@ -1,0 +1,105 @@
+<VirtualHost *:80 >
+  ServerName <%= @server_name %>
+  <% unless @server_aliases.nil? || @server_aliases.empty? -%>
+    ServerAlias <%= @server_aliases.join " " %>
+  <% end -%>
+  ServerAlias <%= @time_travel_alias %>
+  #####################
+  ###    Rewrite    ###
+  #####################
+  RewriteEngine On
+
+  RewriteCond %{HTTPS} off
+  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+  LogLevel <%= @apache_log_level.nil? ? 'warn' : @apache_log_level %> rewrite:<%= @rewrite_log_level.nil? ? 'trace1' : @rewrite_log_level %>
+  ErrorLog /var/log/httpd/<%= @application_name %>-error.log
+  CustomLog /var/log/httpd/<%= @application_name %>-access.log combined
+</Virtualhost>
+
+<VirtualHost *:443 >
+  ServerName <%= @server_name %>
+  <% unless @server_aliases.nil? || @server_aliases.empty? -%>
+  ServerAlias <%= @server_aliases.join " " %>
+  <% end -%>
+  ServerAlias <%= @time_travel_alias %>
+  SSLEngine  On
+
+  <%- unless @custom_conf.nil? || @custom_conf.empty? -%>
+    <%- @custom_conf.each do |custom| %>
+  <%= custom %>
+    <%- end -%>
+  <%- end -%>
+
+  #####################
+  ###    Rewrite    ###
+  #####################
+  RewriteEngine On
+  RequestHeader set X-FragmentHost preview
+  Header unset X-Frame-Options
+
+  RewriteCond %{HTTP_HOST} ^<%= @time_travel_alias.gsub('.', '\.') %>$
+  RewriteCond %{REQUEST_URI} ^/wcs/shop/(.*)$
+  RewriteRule ^/(.*)$ /webapp/remote/preview/%1 [R=302,L]
+
+  RewriteRule ^/lobtools/(.*) /lobtools/$1 [PT,L]
+
+  <%- ([@server_name] + @server_aliases).each do |alias_name| -%>
+  RewriteCond %{HTTP_HOST} ^<%= alias_name.gsub('.', '\.') %>$
+  RewriteRule ^/$ /wcs/shop/en/auroraesite [R=302,L]
+  <%- end %>
+
+  #####################
+  ###    Proxy      ###
+  #####################
+
+  SSLProxyEngine On
+  <%- unless @ssl_proxy_verify -%>
+  SSLProxyVerify none
+  SSLProxyCheckPeerCN off
+  SSLProxyCheckPeerName off
+  <%- end -%>
+  ProxyPreserveHost On
+
+  <%- if @headers -%>
+  # during development it may be convenient to add headers to share remote WCS systems more efficiently
+    <%- @headers.sort.each do |header| -%>
+  <%= header %>
+    <%- end -%>
+  <%- end -%>
+
+  # CAE proxy
+
+  ProxyPass /dynamic https://<%= @site_server_name %>/dynamic timeout=60
+  ProxyPassReverse /dynamic https://<%= @site_server_name %>/dynamic
+
+  ProxyPass /service https://<%= @site_server_name %>/service timeout=60
+  ProxyPassReverse /service https://<%= @site_server_name %>/service
+
+  # WCS stores & search pass through WCS IHS(apache)
+
+  ProxyPass /wcs https://<%= @wcs_host %>:8443/wcs timeout=600
+  ProxyPassReverse /wcs https://<%= @wcs_host %>:8443/wcs
+
+  ProxyPass /wcsstore https://<%= @wcs_host %>:8443/wcsstore timeout=600
+  ProxyPassReverse /wcsstore https://<%= @wcs_host %>:8443/wcsstore
+
+  ProxyPass /webapp https://<%= @wcs_host %>:8443/webapp timeout=600
+  ProxyPassReverse /webapp https://<%= @wcs_host %>:8443/webapp
+
+  # WCS tools pass through WCS IHS(apache)
+  ProxyPass /lobtools https://<%= @wcs_host %>/lobtools timeout=600
+  ProxyPassReverse /lobtools https://<%= @wcs_host %>/lobtools
+  ProxyPass /orgadminconsole https://<%= @wcs_host %>/orgadminconsole timeout=600
+  ProxyPassReverse /orgadminconsole https://<%= @wcs_host %>/orgadminconsole
+
+  ProxyPass / https://<%= @wcs_host %>/ timeout=600
+  ProxyPassReverse / https://<%= @wcs_host %>/
+
+  #####################
+  ###    Logging    ###
+  #####################
+  LogLevel <%= @apache_log_level.nil? ? 'warn' : @apache_log_level %> rewrite:<%= @rewrite_log_level.nil? ? 'trace1' : @rewrite_log_level %>
+  ErrorLog /var/log/httpd/<%= @application_name %>-ssl-error.log
+  CustomLog /var/log/httpd/<%= @application_name %>-ssl-access.log combined
+
+</VirtualHost>

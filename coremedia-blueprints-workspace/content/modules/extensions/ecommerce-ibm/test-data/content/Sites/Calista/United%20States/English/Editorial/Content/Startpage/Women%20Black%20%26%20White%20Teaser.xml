@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Calista/United States/English/Editorial/Content/Startpage" name="Women Black &amp; White Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/Calista/United%20States/English/Options/Settings/Teaser%20Styles/Light"/>
+<IntProperty Name="positionY">0</IntProperty>
+<IntProperty Name="positionX">-50</IntProperty>
+<IntProperty Name="width">56</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>The New Elegant</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center">Simple is the New Elegant</p><p class="align--center">The new look for this year</p></div></teaserText>
+<pictures>
+<link href="Black-and-white%20portrait%20of%20a%20stunning%20fashion52a8999b.xml" path="/Sites/Calista/United%20States/English/Editorial/Content/Startpage/Black-and-white%20portrait%20of%20a%20stunning%20fashionable%20model%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../Augmentation/Apparel/Women/Women.xml" path="/Sites/Calista/United%20States/English/Augmentation/Apparel/Women/Women"/>
+</target>
+</CMTeaser>

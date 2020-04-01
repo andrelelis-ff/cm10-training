@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/France/French/Editorial/Pictures" name="Bracelet - 1" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Editorial/Pictures/Bracelet%20-%201.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Pictures/Bracelet%20-%201"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=770;y=0;width=1054;height=1405</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=458;y=0;width=1405;height=1405</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=98;y=0;width=1873;height=1405</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=122;width=2069;height=1164</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=329;width=2069;height=776</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=445;width=2069;height=517</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.3720430107526882;y1=0;x2=0.8813470223524948;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.221505376344086;y1=0;x2=0.9005773918104949;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.23417721518987342;x2=1;y2=0.7864014144781297</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>sfcc:///catalog/product/25448070M</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Bracelet - 1</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Bracelet - 1</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2069</width>
+<height>1405</height>
+<data md5="3fed599cbb343bf1c593fb4489f39fc0" size="1258256" href="../../../../../../__blob/3fed599cbb343bf1c593fb4489f39fc0.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Snow" name="Is Speed Riding Dangerous?" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Is Speed Riding Dangerous?</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Speed%20Riding.xml" path="/Settings/Taxonomies/Subject/Speed%20Riding"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Para Skiing (Speed riding) is quite dangerous because of the proximity to the ground and the high speed. </p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Para Skiing (Speed riding) is quite dangerous because of the proximity to the ground and the high speed. </p><p>Comparing to proximity Wingsuit Flying you have more control of your speed and height, on the other hand, if you don’t try to pass over rocky segments at low altitude and do your low flybys over snow then even if you misjudge your speed or altitude, you can always hit the snow and ski yourself away until you gain enough speed to get airborn again. </p><p>This is a luxury that proximity Wingsuit Flying and Speed hanggliding don’t have. <br/></p><p><br/></p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Freestyle%20Snow%20Board%20110839.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Freestyle%20Snow%20Board%20110839">Freestyle Snow Board 110839</a><br/></p><p>With all of that said Speed riding is still a dangerous extreme sport even if you are a pro. There are severe injuries and death is a possibility more frequently as a result of hitting some object in flight then from bad landings.</p><p>Like in any other extreme sport, it all comes down to you and how you choose to manage your safety margins. You may keep them very wide, but then you stop getting the adrenaline trip and get bored. Or you can leave them very narrow and always “be on the edge”, but then the risks will be too high and you probably won’t survive long.</p><p>So in the end, it’s all about the balance between self-control and temptation to get higher rush.</p></div></detailText>
+<pictures>
+<link href="../../../Pictures/Snowboard%20Orange%20Jacket.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Snowboard%20Orange%20Jacket"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../Authors/David%20Fuller%20Person.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Authors/David%20Fuller%20Person"/>
+</authors>
+</CMArticle>

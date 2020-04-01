@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+
+ A column object that displays the name of a content.
+ This column expects that a corresponding <code>name</code> field is defined.
+ If a <code>nameClass</code> field is defined, it is added as CSS class to the td element of the grid cell.
+
+-->
+
+<!-- annoying miscalculate width bug in ExtJS -->
+<GridColumn xmlns:fx="http://ns.adobe.com/mxml/2009"
+            xmlns:exml="http://www.jangaroo.net/exml/0.8"
+            xmlns="exml:ext.config"
+            header="{resourceManager.getString('com.coremedia.catalog.studio.CatalogStudioPlugin', 'catalog_lists_product_code_column')}"
+            stateId="productCode"
+            dataIndex="{DATA_INDEX}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.catalog.studio.CatalogStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const DATA_INDEX:String = "productCode";
+
+    private var config:ProductCodeColumn;
+
+    public native function ProductCodeColumn(config:ProductCodeColumn = null);
+    ]]></fx:Script>
+
+</GridColumn>

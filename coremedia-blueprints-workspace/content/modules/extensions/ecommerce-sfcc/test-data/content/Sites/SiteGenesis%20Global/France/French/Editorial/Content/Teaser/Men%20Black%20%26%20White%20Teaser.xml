@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/SiteGenesis Global/France/French/Editorial/Content/Teaser" name="Men Black &amp; White Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Teaser/Men%20Black%20%26%20White%20Teaser.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Teaser/Men%20Black%20%26%20White%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Teaser%20Styles/Light"/>
+<IntProperty Name="positionX">50</IntProperty>
+<IntProperty Name="width">54</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Men Black &amp; White Teaser</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center"> Collection Monochrome </p> <p class="align--center"> Simple est la nouvelle élégante </p> <p class="align--center"><br/></p> </div></teaserText>
+<pictures>
+<link href="../../../Pictures/Men%20Black%20%26%20White.xml" path="/Sites/SiteGenesis%20Global/France/French/Pictures/Men%20Black%20%26%20White"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+</target>
+<targets>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="links">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMLinkable" xlink:href="coremedia:///cap/resources/../../../Augmentation/Mens/Men.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Augmentation/Mens/Men"/>
+<BooleanProperty Name="callToActionEnabled">true</BooleanProperty>
+<StringProperty Name="callToActionCustomText"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</targets>
+</CMTeaser>

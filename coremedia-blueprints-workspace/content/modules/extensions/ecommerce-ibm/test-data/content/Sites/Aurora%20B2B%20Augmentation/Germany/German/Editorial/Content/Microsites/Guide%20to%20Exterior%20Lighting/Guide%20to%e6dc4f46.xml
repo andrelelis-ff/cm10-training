@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content/Microsites/Guide to Exterior Lighting" name="Guide to Exterior Lighting Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Content/Microsites/Guide%20to%20Exterior%20Lighting/Gu5243a0f5.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/Guide%20to%20Exterior%20Lighting/Guide%20to%20Exterior%20Lighting%20Article"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Leitfaden für die Außenbeleuchtung</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Die architektonische Lichtgestaltung ist ein Designbereich, der sich auf Beleuchtungssysteme spezialisiert hat. </p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p><strong>Architektonisches Lichtdesign </strong>ist ein Designbereich, der sich auf Beleuchtungssysteme spezialisiert hat, die natürliches Licht, Kunstlicht oder beides integrieren, um den spezifischen menschlichen Bedürfnissen gerecht zu werden, für die eine bestimmte Struktur konzipiert wurde.  Sie fällt in die Disziplinen Architektur, Innenarchitektur und Elektrotechnik.</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Products/Aurora%20B2B/Lighting/Linear%20Fluorescent%20Bulb%20Pr1c6006c2.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Lighting/Linear%20Fluorescent%20Bulb%20Product%20Teaser">Linear Fluorescent Bulb</a></p><p>In der Vergangenheit hat die Architektur fortschrittliche Beleuchtungskonzepte integriert, die sich auf die Ausrichtung auf die Sonne und/oder Sterne konzentrieren.  Ein viel diskutiertes Beispiel dafür ist Stonehenge; Experten studieren und hypothetisieren weiterhin über die ursprünglich beabsichtigten Verwendungszwecke und ihre astronomische Bedeutung.</p><p>Heute wird diese Disziplin verwendet, um Merkmale des Innen- und Außenbereichs von Gebäuden hervorzuheben, und kann markante Effekte hervorrufen, wenn sie an den Außenfassaden eines Gebäudes eingesetzt wird.  Die Beleuchtung kann konstant, langsam oder im Rahmen einer Lichtshow schnell variieren.  Ein spannendes, modernes Beispiel für diese Technologie ist das Empire State Building in New York City.  Die neue Beleuchtungsanlage wurde 2012 vorgestellt.  Es ist computergesteuert und kann 16.000.000.000 verschiedene Farben erzeugen!</p><p>Ein Beispiel für eine statische Beleuchtung, die fast ebenso ikonisch ist, ist nur wenige Blocks entfernt auf dem Chrysler Building zu sehen.  Das Art-Deco-Design des Chrysler Buildings gilt am 20. Mai 1930 als eines der besten in New York City, und die Zeitlosigkeit der Beleuchtung wird auch heute noch geschätzt.</p><p>Schöne Außenbeleuchtung kann auf einer Reihe von Wolkenkratzern der Welt besichtigt werden, wie z.B.:</p><ul><li>Burj Khalifa (Dubai)</li><li>The Shard (London)</li><li>Die Weltraumnadel (Seattle)</li><li>Aspire Tower (Katar)</li></ul><p>Wie Sie sehen können, ist die Außenbeleuchtung beliebter denn je!</p></div></detailText>
+<pictures>
+<link href="../../../../Pictures/Microsites/Guide%20to%20Exterior%20Lighting/ESB%20Fireworks%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Pictures/Microsites/Guide%20to%20Exterior%20Lighting/ESB%20Fireworks%20Picture"/>
+<link href="../../../../Pictures/Microsites/Guide%20to%20Exterior%20Lighting/ESB%20Red-Green%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Pictures/Microsites/Guide%20to%20Exterior%20Lighting/ESB%20Red-Green%20Picture"/>
+<link href="../../../../Pictures/Microsites/Guide%20to%20Exterior%20Lighting/Chrysler%20and%20Mer26d77954.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Pictures/Microsites/Guide%20to%20Exterior%20Lighting/Chrysler%20and%20Mercury%20Picture"/>
+<link href="../../../../Pictures/Microsites/Guide%20to%20Exterior%20Lighting/ESB%20and%20River%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Pictures/Microsites/Guide%20to%20Exterior%20Lighting/ESB%20and%20River%20Picture"/>
+</pictures>
+<related>
+<link href="../../../../Navigation/Fragments/Aurora%20B2B%20Homepage/Lighting%20Category%20Promote6b30a4b.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Navigation/Fragments/Aurora%20B2B%20Homepage/Lighting%20Category%20Promotion%20Teaser"/>
+<link href="../../../Products/Aurora%20B2B/Lighting/Linear%20Fluorescent%20Bulb%20Pr1c6006c2.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Lighting/Linear%20Fluorescent%20Bulb%20Product%20Teaser"/>
+<link href="../../../../Navigation/Fragments/Aurora%20B2B%20Categories/Lighting/The%20Guide%20To%bc6c5f53.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Navigation/Fragments/Aurora%20B2B%20Categories/Lighting/The%20Guide%20To%20Perfect%20Lighting%20Teaser"/>
+<link href="../../../Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED%20Strip%220277a2.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED%20Strip%20Product%20Teaser"/>
+</related>
+<authors>
+<link href="../../../Authors/David%20Fuller%20Person.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Authors/David%20Fuller%20Person"/>
+</authors>
+</CMArticle>

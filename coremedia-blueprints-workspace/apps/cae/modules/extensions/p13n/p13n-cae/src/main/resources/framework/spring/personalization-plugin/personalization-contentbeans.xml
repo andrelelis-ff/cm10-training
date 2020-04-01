@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       default-init-method="validateConfig">
+
+  <description>
+    Configures all content beans introduced by CoreMedia Personalization.
+  </description>
+
+  <import resource="classpath:/framework/spring/blueprint-contentbeans.xml"/>
+  <import resource="classpath:/com/coremedia/cae/dataview-services.xml"/>
+
+  <import resource="classpath:/framework/spring/personalization-plugin/personalization-collection.xml"/>
+  <import resource="classpath:/framework/spring/personalization-plugin/personalization-search.xml"/>
+
+  <bean name="contentBeanFactory:CMSegment" parent="abstractLocalized-blueprint-doctypes"
+        class="com.coremedia.blueprint.personalization.contentbeans.CMSegmentImpl" scope="prototype">
+    <description>
+      This bean definition's purpose is to prevent errors if someone requests a content bean
+      for a CMSegment content object.
+    </description>
+  </bean>
+
+  <bean name="contentBeanFactory:CMSelectionRules" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.personalization.contentbeans.CMSelectionRulesImpl" scope="prototype">
+    <description>
+      A list of teasers collected by applying rules to the current user's profile.
+    </description>
+    <property name="contentIdScheme" ref="contentIdScheme"/>
+    <property name="contextCollection" ref="contextCollection"/>
+  </bean>
+
+  <bean name="contentBeanFactory:CMUserProfile" parent="abstractLocalized-blueprint-doctypes"
+        class="com.coremedia.blueprint.personalization.contentbeans.CMUserProfileImpl" scope="prototype">
+  </bean>
+
+  <bean id="solrContextualSearchChecker" class="com.coremedia.blueprint.personalization.search.SolrContextualSearchChecker">
+    <property name="searchPreprocessor" ref="searchFunctionPreprocessor"/>
+    <property name="contextCollection" ref="contextCollection" />
+  </bean>
+
+  <bean name="contentBeanFactory:CMP13NSearch" parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.personalization.contentbeans.CMP13NSearchImpl" scope="prototype">
+    <property name="solrContextualSearchChecker" ref="solrContextualSearchChecker" />
+  </bean>
+</beans>

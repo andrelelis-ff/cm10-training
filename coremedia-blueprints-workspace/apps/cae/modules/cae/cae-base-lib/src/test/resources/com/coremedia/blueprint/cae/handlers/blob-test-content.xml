@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+  <content>
+    <folder id="1" name="">
+      <folder id="11" name="Sites">
+        <folder id="111" name="Media">
+          <document id="504" name="MediaSite" type="CMSite">
+            <version number="1">
+              <linkProperty name="root">
+                <link id="4"/>
+              </linkProperty>
+              <stringProperty name="locale" value="en-US"/>
+              <stringProperty name="id" value="site1"/>
+              <stringProperty name="name" value="site1"/>
+            </version>
+          </document>
+          <folder id="1111" name="Navigation">
+            <document id="4" name="Root" type="CMChannel">
+              <version number="1">
+                <stringProperty name="segment" value="root"/>
+              </version>
+            </document>
+            <document id="16" type="CMPicture" name="nä me.jpg">
+              <version number="1">
+                <blobProperty name="data" url="16data.jpg" type="image/jpeg"/>
+              </version>
+            </document>
+            <document id="18" type="CMPicture" name="pic18">
+              <version number="1"/>
+            </document>
+            <document id="20" type="CMPicture" name="試験画像.jpg">
+              <version number="1">
+                <blobProperty name="data" url="24data.jpg" type="image/jpeg"/>
+              </version>
+            </document>
+            <document id="22" type="CMImage" name="name">
+              <version number="1">
+                <blobProperty name="data" url="24data.jpg" type="image/jpeg"/>
+              </version>
+            </document>
+            <document id="24" type="CMDownload" name="a-file%20?a&amp;b n.a;m=e.xyz">
+              <version number="1">
+                <blobProperty name="data" url="24data.pdf" type="application/pdf"/>
+                <linkProperty name="contexts">
+                  <link id="4"/>
+                </linkProperty>
+                <stringProperty name="filename" value="a-file%20?a&amp;b n.a;m=e.xyz"/>
+                <markupProperty name="localSettings" url="24localSettings.xml" grammar="coremedia-struct-2008"/>
+              </version>
+            </document>
+            <document id="26" type="CMDownload" name="26">
+              <version number="1">
+                <linkProperty name="contexts">
+                  <link id="4"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="28" type="CMDownload" name="a-file%20?a&amp;b n.a;m=e.xyz">
+              <version number="1">
+                <blobProperty name="data" url="24data.pdf" type="application/pdf"/>
+                <linkProperty name="contexts">
+                  <link id="4"/>
+                </linkProperty>
+              </version>
+            </document>
+          </folder>
+        </folder>
+      </folder>
+    </folder>
+    <folder name="Home" id="3">
+      <folder name="Dave" id="33">
+        <folder name="temp" id="333">
+          <folder name="Sites" id="3333">
+            <folder name="Media" id="33333">
+              <folder name="Navigation" id="333333">
+                <document id="316" type="CMPicture" name="nä me.jpg">
+                  <version number="1">
+                    <blobProperty name="data" url="16data.jpg" type="image/jpeg"/>
+                  </version>
+                </document>
+              </folder>
+            </folder>
+          </folder>
+        </folder>
+      </folder>
+    </folder>
+  </content>
+  <rules>
+    <rule resourceId="1" group="0" doctype="Folder_">
+      <right value="ALL"/>
+    </rule>
+    <rule resourceId="1" group="0" doctype="Document_">
+      <right value="ALL"/>
+    </rule>
+  </rules>
+</contentRepository>

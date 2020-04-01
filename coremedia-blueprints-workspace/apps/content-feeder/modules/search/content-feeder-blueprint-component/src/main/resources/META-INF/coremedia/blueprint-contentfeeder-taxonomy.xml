@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+  <!-- import beans "contentRepository", "index", "contentFeederRepositoryListeners", "contentFeederOperations",
+                    "contentFeederBackgroundFeeds" -->
+  <import resource="classpath:/framework/spring/feeder/feeder.xml"/>
+  <!-- import beans "taxonomyTreeRelation", "locationTaxonomyTreeRelation" -->
+  <import resource="classpath:/com/coremedia/blueprint/base/tree/bpbase-treerelation-services.xml"/>
+  <!-- import bean "mbeanRegistry" -->
+  <import resource="classpath:/com/coremedia/jmx/mbean-services.xml"/>
+
+  <customize:append id="addTaxonomyIdsFeedablePopulators" bean="index" property="feedablePopulators">
+    <list>
+      <ref bean="subjectTaxonomyIdsFeedablePopulator"/>
+      <ref bean="locationTaxonomyIdsFeedablePopulator"/>
+    </list>
+  </customize:append>
+
+  <customize:append id="addPartialUpdateTaxonomyIdsFeedablePopulators" bean="index"
+                    property="partialUpdateFeedablePopulators">
+    <list>
+      <ref bean="subjectTaxonomyIdsFeedablePopulator"/>
+      <ref bean="locationTaxonomyIdsFeedablePopulator"/>
+    </list>
+  </customize:append>
+
+  <customize:append id="addTaxonomyIdsContentFeederRepositoryListeners" bean="contentFeederRepositoryListeners">
+    <list>
+      <ref bean="subjectTaxonomyIdsBackgroundFeed"/>
+      <ref bean="locationTaxonomyIdsBackgroundFeed"/>
+    </list>
+  </customize:append>
+
+  <customize:append id="addTaxonomyIdsBackgroundFeeds" bean="contentFeederBackgroundFeeds">
+    <list>
+      <ref bean="subjectTaxonomyIdsBackgroundFeed"/>
+      <ref bean="locationTaxonomyIdsBackgroundFeed"/>
+    </list>
+  </customize:append>
+
+  <bean id="contentFeederTaxonomyIdsBackgroundFeedMBeanRegistrator" class="com.coremedia.jmx.MBeanRegistrator">
+    <property name="mbeans">
+      <map>
+        <entry key="type=SubjectTaxonomyIdsBackgroundFeed">
+          <bean factory-bean="subjectTaxonomyIdsBackgroundFeed" factory-method="getManager"/>
+        </entry>
+        <entry key="type=LocationTaxonomyIdsBackgroundFeed">
+          <bean factory-bean="locationTaxonomyIdsBackgroundFeed" factory-method="getManager"/>
+        </entry>
+      </map>
+    </property>
+    <property name="registry" ref="mbeanRegistry"/>
+  </bean>
+
+  <!-- subject taxonomy -->
+
+  <util:constant id="subjectTaxonomyAspect"
+                 static-field="com.coremedia.blueprint.feeder.populate.TaxonomyFeedableAspect.SUBJECT_TAXONOMY_IDS"/>
+
+  <util:map id="subjectTaxonomyProperties">
+    <entry key="CMLinkable" value="subjectTaxonomy"/>
+  </util:map>
+
+  <bean id="subjectTaxonomyTreeContextRelation"
+        class="com.coremedia.blueprint.base.contentfeeder.tree.TreeRelationLinkedTreeContextRelation">
+    <constructor-arg index="0" name="treeRelation" ref="taxonomyTreeRelation"/>
+    <constructor-arg index="1" name="contextProperties" ref="subjectTaxonomyProperties"/>
+  </bean>
+
+  <bean id="subjectTaxonomyIdsBackgroundFeed"
+        class="com.coremedia.blueprint.base.contentfeeder.tree.TreeContextBackgroundFeed">
+    <constructor-arg index="0" name="id" value="SUBJECT_TAXONOMY_IDS"/>
+    <constructor-arg index="1" name="feederOperations" ref="contentFeederOperations"/>
+    <constructor-arg index="2" name="contentRepository" ref="contentRepository"/>
+    <constructor-arg index="3" name="treeContextRelation" ref="subjectTaxonomyTreeContextRelation"/>
+    <constructor-arg index="4" name="feedableAspect" ref="subjectTaxonomyAspect"/>
+    <constructor-arg index="5" name="treeContentType" value="CMTaxonomy"/>
+    <constructor-arg index="6" name="treeChildrenProperty" value="children"/>
+  </bean>
+
+  <bean id="subjectTaxonomyIdsFeedablePopulator"
+        class="com.coremedia.blueprint.base.contentfeeder.taxonomy.TaxonomyIdsFeedablePopulator">
+    <constructor-arg index="0" name="taxonomyTreeRelation" ref="taxonomyTreeRelation"/>
+    <constructor-arg index="1" name="taxonomyProperties" ref="subjectTaxonomyProperties"/>
+    <constructor-arg index="2" name="indexField" value="subjecttaxonomy"/>
+    <constructor-arg index="3" name="feedableAspect" ref="subjectTaxonomyAspect"/>
+  </bean>
+
+  <!-- location taxonomy -->
+
+  <util:constant id="locationTaxonomyAspect"
+          static-field="com.coremedia.blueprint.feeder.populate.TaxonomyFeedableAspect.LOCATION_TAXONOMY_IDS"/>
+
+  <util:map id="locationTaxonomyProperties">
+    <entry key="CMLinkable" value="locationTaxonomy"/>
+  </util:map>
+
+  <bean id="locationTaxonomyTreeContextRelation"
+        class="com.coremedia.blueprint.base.contentfeeder.tree.TreeRelationLinkedTreeContextRelation">
+    <constructor-arg index="0" name="treeRelation" ref="locationTaxonomyTreeRelation"/>
+    <constructor-arg index="1" name="contextProperties" ref="locationTaxonomyProperties"/>
+  </bean>
+
+  <bean id="locationTaxonomyIdsBackgroundFeed"
+        class="com.coremedia.blueprint.base.contentfeeder.tree.TreeContextBackgroundFeed">
+    <constructor-arg index="0" name="id" value="LOCATION_TAXONOMY_IDS"/>
+    <constructor-arg index="1" name="feederOperations" ref="contentFeederOperations"/>
+    <constructor-arg index="2" name="contentRepository" ref="contentRepository"/>
+    <constructor-arg index="3" name="treeContextRelation" ref="locationTaxonomyTreeContextRelation"/>
+    <constructor-arg index="4" name="feedableAspect" ref="locationTaxonomyAspect"/>
+    <constructor-arg index="5" name="treeContentType" value="CMLocTaxonomy"/>
+    <constructor-arg index="6" name="treeChildrenProperty" value="children"/>
+  </bean>
+
+  <bean id="locationTaxonomyIdsFeedablePopulator"
+        class="com.coremedia.blueprint.base.contentfeeder.taxonomy.TaxonomyIdsFeedablePopulator">
+    <constructor-arg index="0" name="taxonomyTreeRelation" ref="locationTaxonomyTreeRelation"/>
+    <constructor-arg index="1" name="taxonomyProperties" ref="locationTaxonomyProperties"/>
+    <constructor-arg index="2" name="indexField" value="locationtaxonomy"/>
+    <constructor-arg index="3" name="feedableAspect" ref="locationTaxonomyAspect"/>
+  </bean>
+
+</beans>

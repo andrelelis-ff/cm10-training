@@ -1,0 +1,19 @@
+@if $cm-include-view-type-selector-form {
+  .cm-view-type-selector-default-value {
+    &::-webkit-input-placeholder {
+      color: $cm-font-color;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      color: $cm-font-color;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+      color: $cm-font-color;
+    }
+
+    &:-ms-input-placeholder {
+      color: $cm-font-color;
+    }
+  }
+}

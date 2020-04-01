@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMHTML folder="/Sites/Chef Corp./United States/English/Editorial/Site-Wide/Integration/External Embedding" name="Pinterest USA  HTML Fragment" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Our favorite Recipes from Pinterest</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Our favorite recipes from Pinterest</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Our favorite recipes from Pinterest</p></div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<description></description>
+<data grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>&lt;div class="cm-container cm-container--default" style="text-align: center;"&gt;&lt;a data-pin-do="embedBoard" href="http://www.pinterest.com/perfectchefus/favorite-recipes-from-pinterest/" data-pin-scale-width="80" data-pin-scale-height="400" data-pin-board-width="320"&gt;Follow Perfect Chef USA's board Favorite Recipes from Pinterest on Pinterest.&lt;/a&gt;&lt;/div&gt;</p></div></data>
+</CMHTML>

@@ -1,0 +1,67 @@
+$cm-ci-color: #000000 !default
+$cm-text-color: #000000 !default;
+
+$cm-font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+$cm-font-family-sans-serif:  "Trebuchet MS", "Lucida Grande", Helvetica, sans-serif !default;
+$cm-font-family-base: $cm-font-family-sans-serif !default;
+
+$cm-font-size-base: 14px !default;
+$cm-font-size-large: 16px !default;
+$cm-font-size-normal: 12px !default;
+$cm-font-size-small: 10px !default;
+
+$cm-font-size-h1: 24px !default;
+$cm-font-size-h2: 20px !default;
+$cm-font-size-h3: $cm-font-size-large !default;
+$cm-font-size-h4: $cm-font-size-base !default;
+$cm-font-size-h5: $cm-font-size-base !default;
+$cm-font-size-h6: $cm-font-size-small !default;
+
+$cm-line-height-base: 1.428571429 !default;
+$cm-headings-line-height: 1.6 !default;
+
+// spacing
+$cm-standard-spacing: 15px !default;
+
+// devices
+$cm-screen-max: 1200px !default;
+$cm-screen-sm-min: 768px !default;
+$cm-screen-lg-min: $cm-screen-max !default;
+
+$cm-grid-gutter-width: 10px !default;
+
+// colors
+$cm-border-color-default: #000000 !default;
+$cm-border-radius-default: 2px !default;
+$cm-standard-component-background-color: #FFFFFF !default;
+$cm-media-loading-background-color: #efefed !default;
+$cm-media-missing-background-color: #efefed !default;
+
+// Vars
+$cm-mobile-nav-dropdown-bg: rgba(255, 255, 255, 0.2) !default;
+
+// Search
+$cm-search-result-highlight-color: $cm-text-color !default;
+$cm-search-link-color: $cm-text-color !default;
+$cm-search-link-color-hover: $cm-text-color !default;
+$cm-search-link-decoration: underline !default;
+$cm-search-link-decoration-hover: none !default;
+
+// Elastic Social
+$cm-reviews-padding-base-vertical: 0 !default;
+
+// Buttons
+$cm-btn-color: #000000 !default;
+$cm-btn-bg: #FFFFFF !default;
+
+$cm-btn-primary-color: #FFFFFF !default;
+$cm-btn-primary-bg: #000000 !default;
+$cm-btn-primary-border: #000000 !default;
+
+$cm-btn-secondary-color: #000000 !default;
+$cm-btn-secondary-bg: #FFFFFF !default;
+$cm-btn-secondary-border: #000000 !default;
+
+$cm-cta-button-color: #000000 !default;
+$cm-cta-button-bg: #FFFFFF !default;
+$cm-cta-button-border: #000000 !default;

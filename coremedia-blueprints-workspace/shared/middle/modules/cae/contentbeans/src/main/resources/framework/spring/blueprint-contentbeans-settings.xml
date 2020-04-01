@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util.xsd">
+  <import resource="classpath:/com/coremedia/cae/contentbean-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/dataview-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/settings/impl/bpbase-settings-services.xml"/>
+
+  <bean id="dataViewCollections" class="com.coremedia.objectserver.dataviews.DataViewCollections">
+    <constructor-arg ref="dataViewFactory"/>
+  </bean>
+
+  <bean id="contentBeanSettingsFinder" class="com.coremedia.blueprint.cae.settings.ContentBeanSettingsFinder">
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="dataViewCollections" ref="dataViewCollections"/>
+  </bean>
+
+  <bean id="pageSettingsFinder" class="com.coremedia.blueprint.cae.settings.PageSettingsFinder"/>
+
+  <util:list id="imageMapAreaFilters" value-type="com.coremedia.blueprint.common.imagemap.ImageMapAreaFilterable"/>
+
+  <bean id="validityImageMapAreaFilter" class="com.coremedia.blueprint.common.imagemap.ValidityImageMapAreaFilter">
+    <property name="validationService" ref="validationService" />
+  </bean>
+
+  <customize:append id="imageMapAreaFiltersAppender" bean="imageMapAreaFilters">
+    <list>
+      <ref bean="validityImageMapAreaFilter"/>
+    </list>
+  </customize:append>
+
+  <customize:append id="contentBeanSettingsFinders" bean="settingsFinders">
+    <description>
+      Registers some SettingsFinders which work on the contentbean layer.
+      These finders delegate to the UAPI layer and thus work only if additional
+      according SettingsFinders are configured. (S. settings-services.xml)
+    </description>
+    <map>
+      <entry key="com.coremedia.objectserver.beans.ContentBean" value-ref="contentBeanSettingsFinder"/>
+      <entry key="com.coremedia.blueprint.common.contentbeans.Page" value-ref="pageSettingsFinder"/>
+    </map>
+  </customize:append>
+
+</beans>

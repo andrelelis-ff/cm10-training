@@ -1,0 +1,9 @@
+Hallo ${name},
+
+danke, dass Du Dich angemeldet hast. Bitte klicke auf den folgenden Link, um die Registrierung abzuschließen:
+
+${baseUrl}${token}
+
+Falls ein Klick auf den obigen Link nicht funktioniert, kopiere bitte den Link und füge ihn in die Adresszeile eines neuen Browserfensters ein.
+
+Dies ist eine automatisch generierte E-Mail. Antworten auf diese E-Mail werden nicht überwacht oder beantwortet.

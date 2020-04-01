@@ -1,0 +1,57 @@
+{
+  "name": "coremedia_maven",
+  "description": "Installs a maven artifact from a given maven repository to a specified location",
+  "long_description": "# Description\n\nThis is a library cookbook. It provides a custom resource to download and optionally extract a Maven artifacts transparently either\nfrom a remote repository via HTTP or from file system. It handles authentication, and knows about the standard maven repo layout.\n\nIt differs from the community maven cookbook in the way it downloads the artifacts. The community cookbook installs Maven\nand uses the dependency plugin to download the artifact. This has the major drawback, that:\n\n* you need java on the system\n\n* you need to install maven\n\n* you download transitively a lot of unnecessary dependencies\n\n\n# Requirements\n\n\n## Chef Client:\n\n* chef (>= 12.5) ()\n\n## Platform:\n\n* redhat\n* centos\n* ubuntu\n* debian\n* windows\n\n## Cookbooks:\n\n*No dependencies defined*\n\n# Attributes\n\n*No attributes defined*\n\n# Recipes\n\n*No recipes defined*\n\n# Resources\n\n* [coremedia_maven](#coremedia_maven) - Downloads a Maven artifact from a local or remote Maven repository.\n\n## coremedia_maven\n\n\nDownloads a Maven artifact from a local or remote Maven repository.\n\nIf attribute `nexus_url` and `nexus_repo` is set, the artifact will be retrieved using the rest API of nexus and the version\nof the artifact may be set to `RELEASE`, `LATEST` or `X-SNAPSHOT` and the versions will be resolved accordingly.\n\n### Actions\n\n- install: Install an artifact Default action.\n\n### Attribute Parameters\n\n- path: The path to download the artifact to. Defaults to the name of the resource.\n- group_id: Maven groupId.\n- artifact_id: Maven artifactId.\n- version: Maven version.\n- packaging: Maven packaging type, defaults to the file extension of the path attribute. Defaults to <code>lazy { ... }</code>.\n- classifier: Maven classifier, defaults to not set. Defaults to <code>nil</code>.\n- checksum: The SHA-256 checksum of the artifact Defaults to <code>nil</code>.\n- repository_url: The Url of the maven repository, supports all protocols of the remote_file resource. Defaults to Maven Central. Defaults to <code>\"http://repo1.maven.org/maven2/\"</code>.\n- username: The username for the Maven repository, defaults to not set. Defaults to <code>nil</code>.\n- password: The password for the Maven repository, defaults to not set. Defaults to <code>nil</code>.\n- owner: User ownership (linux only), defaults to \"root\". Defaults to <code>\"root\"</code>.\n- group: Group membership (linux only), defaults to \"root\". Defaults to <code>\"root\"</code>.\n- mode: File permissions, defaults to \"00755\". Defaults to <code>493</code>.\n- extract_to: Extract to folder path if downloaded artifact has changed. Extraction is skipped if no folder path is set. Defaults to <code>nil</code>.\n- extract_force_clean: Set this to true to force deletion of target folder upfront. Defaults to <code>false</code>.\n- backup: Number of version to backup in the Chef cache. This works only with non file:// urls. Set to false to disable backup. Defaults to <code>false</code>.\n- nexus_url: Set this to the base url of your nexus to use the REST API for artifact resolution. If set this method has precedence to the repository_url attribute.\n- nexus_repo: The repo name from which to resolve artifacts. Defaults to <code>\"releases\"</code>.\n\n### Examples\n\n```ruby\ncoremedia_maven '/var/tmp/solr.war' do\n  group_id 'org.apache.solr'\n  artifact_id 'solr'\n  version '4.5.0'\n  owner 'coremedia'\n  group 'coremedia'\n  mode 0644\n  extract_to '/usr/local/tomcat/webapps/solr'\n  notify :restart, 'tomcat[solr]', :immediately\nend\n```\n\n# Author\n\nAuthor:: Felix Simmendinger (<felix.simmendinger@coremedia.com>)\n",
+  "maintainer": "Felix Simmendinger",
+  "maintainer_email": "felix.simmendinger@coremedia.com",
+  "license": "Copyright (C) 2014-2017, CoreMedia AG proprietary License, all rights reserved.",
+  "platforms": {
+    "redhat": ">= 0.0.0",
+    "centos": ">= 0.0.0",
+    "ubuntu": ">= 0.0.0",
+    "debian": ">= 0.0.0",
+    "windows": ">= 0.0.0"
+  },
+  "dependencies": {
+
+  },
+  "recommendations": {
+
+  },
+  "suggestions": {
+
+  },
+  "conflicting": {
+
+  },
+  "providing": {
+
+  },
+  "replacing": {
+
+  },
+  "attributes": {
+
+  },
+  "groupings": {
+
+  },
+  "recipes": {
+
+  },
+  "version": "3.0.2",
+  "source_url": "",
+  "issues_url": "",
+  "privacy": false,
+  "chef_versions": [
+    [
+      ">= 12.5"
+    ]
+  ],
+  "ohai_versions": [
+
+  ],
+  "gems": [
+
+  ]
+}

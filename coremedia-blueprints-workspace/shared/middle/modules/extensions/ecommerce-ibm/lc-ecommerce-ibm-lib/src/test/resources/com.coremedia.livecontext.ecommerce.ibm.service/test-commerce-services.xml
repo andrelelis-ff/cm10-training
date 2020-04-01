@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+  <context:annotation-config/>
+
+  <import resource="classpath:/framework/spring/livecontext-commercebeans.xml"/>
+
+  <context:property-placeholder
+          ignore-unresolvable="true"
+          location="classpath:/com.coremedia.livecontext.ecommerce.ibm.service/test-commerce-services.properties"
+          system-properties-mode="OVERRIDE"/>
+
+  <bean id="siteModel" class="com.coremedia.blueprint.base.multisite.BlueprintSiteModel">
+    <property name="siteIndicatorDocumentType" value="CMSite"/>
+    <property name="siteIndicatorDepth" value="0"/>
+    <property name="idProperty" value="id"/>
+    <property name="localeProperty" value="locale"/>
+    <property name="masterProperty" value="master"/>
+    <property name="masterVersionProperty" value="masterVersion"/>
+    <property name="ignoreUpdatesProperty" value="ignoreUpdates"/>
+    <property name="rootProperty" value="root"/>
+    <property name="uriSegmentProperty" value="segment"/>
+    <property name="siteManagerGroupProperty" value="siteManagerGroup"/>
+    <property name="translationManagerRole" value="translation-manager-role"/>
+    <property name="uriSegmentPattern" value="{0}-{4}"/>
+    <property name="siteManagerGroupPattern" value="manager-{4}"/>
+    <property name="rootFolderPathPattern" value="/Sites/{0}/{6}/{5}"/>
+    <property name="variantPrefix" value="_"/>
+    <property name="rootFolderPathDefaultCountry" value="NO_COUNTRY"/>
+    <property name="nameProperty" value="name"/>
+    <property name="translationWorkflowRobotUser" value="translation-workflow-robot"/>
+  </bean>
+
+  <bean id="renameSiteIndicatorPostProcessor" class="com.coremedia.cap.multisite.RenameSiteIndicatorPostProcessor">
+    <property name="siteIndicatorNamePattern" value="{0} [Site]"/>
+  </bean>
+
+  <bean id="renameRootChannelPostProcessor" class="com.coremedia.blueprint.base.multisite.BlueprintRenameRootChannelPostProcessor">
+    <property name="siteRootDocumentNamePattern" value="{0}"/>
+    <property name="rootProperty" value="root"/>
+    <property name="uriSegmentProperty" value="${sitemodel.uriSegmentProperty}"/>
+  </bean>
+
+  <bean id="testConfig" class="com.coremedia.livecontext.ecommerce.ibm.common.IbmTestConfig"/>
+
+  <util:map id="aliasMapping">
+    <entry key="catalog" value="67890"/>
+  </util:map>
+
+  <bean id="testStoreContextProvider" class="com.coremedia.livecontext.ecommerce.ibm.common.IbmStoreContextProvider">
+    <constructor-arg index="0" name="commerceConnectionFinder" ref="defaultCommerceConnectionFinder"/>
+    <property name="sitesService" ref="sitesService"/>
+    <property name="settingsService" ref="settingsService"/>
+    <property name="storeConfigurations" ref="testStoreConfigurations"/>
+    <property name="cache" ref="cache"/>
+  </bean>
+
+  <util:map id="anAlternativeStoreConfig">
+    <entry key="store.id" value="12345"/>
+    <entry key="store.name" value="springsite"/>
+    <entry key="catalog.id" value="67890"/>
+    <entry key="currency" value="EUR"/>
+    <entry key="workspace.id" value="0815"/>
+    <entry key="livecontext.ibm.wcs.host" value="host-from-spring"/>
+    <entry key="spring.only.setting" value="spring.only.setting"/>
+    <entry key="connection.id" value="wcs1"/>
+  </util:map>
+
+  <util:map id="testStoreConfigurations">
+    <description>
+      List of store configurations. Add your own configs via customizers.
+    </description>
+    <entry key="anAlternativeStoreConfig" value-ref="anAlternativeStoreConfig"/>
+  </util:map>
+</beans>

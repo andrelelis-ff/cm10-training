@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Viewport xmlns:fx="http://ns.adobe.com/mxml/2009"
+          xmlns:exml="http://www.jangaroo.net/exml/0.8"
+          xmlns="exml:ext.config"
+          xmlns:asset="exml:com.coremedia.livecontext.asset.studio.config"
+          xmlns:editor="exml:com.coremedia.cms.editor.sdk.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.livecontext.asset.studio.config.inheritReferencesTestView";
+
+    public static const TEST_VIEW_ID:String = "viewport";
+
+    private var config:InheritReferencesTestView;
+
+    public var bindTo:ValueExpression;
+    public var forceReadOnlyValueExpression:ValueExpression;
+
+    public native function InheritReferencesTestView(config:InheritReferencesTestView = null);
+    ]]></fx:Script>
+
+  <defaults>
+    <editor:PropertyField bindTo="{config.bindTo}"
+                          forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+  </defaults>
+  <items>
+    <asset:CommerceReferencesForm>
+      <asset:additionalToolbarItems>
+        <asset:InheritReferencesButton bindTo="{config.bindTo}"
+                                       forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+      </asset:additionalToolbarItems>
+    </asset:CommerceReferencesForm>
+  </items>
+
+</Viewport>

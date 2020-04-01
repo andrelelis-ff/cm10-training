@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:ui="exml:com.coremedia.ui.config" xmlns:quickcreate="com.coremedia.cms.editor.sdk.quickcreate.*"
+        itemId="ESDynamicList">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.elastic.social.studio.config.esDynamicListForm";
+
+    /**
+     * The itemId of the extended link list toolbar separator.
+     */
+    public static const EXTENDED_LINK_LIST_PROPERTY_SEP_ITEM_ID:String = "extendedLinkListPropertyFieldSeparator";
+
+    private var config:ESDynamicListForm;
+
+    public native function ESDynamicListForm(config:ESDynamicListForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <bpforms:TeaserDocumentForm/>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Configuration_label')}"
+                itemId="esDynamicListConfigForm">
+          <editor:items>
+            <ui:LocalComboBox name="{'properties.aggregationType'}"
+                              fieldLabel="{resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'ESDynamicList_aggregationType_text')}"
+                              anchor="100%"
+                              store="{[
+                                            ['TOP_RATED', resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'TOP_RATED')],
+                                            ['MOST_REVIEWED', resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'MOST_REVIEWED')],
+                                            ['TOP_REVIEWED', resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'TOP_REVIEWED')],
+                                            ['MOST_COMMENTED', resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'MOST_COMMENTED')],
+                                            ['MOST_RATED', resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'MOST_RATED')],
+                                            ['MOST_LIKED', resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'MOST_LIKED')],
+                                            ['MOST_SHARED', resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'MOST_SHARED')]
+                                          ]}"
+                              triggerAction="all"
+                              encodeItems="true">
+              <ui:plugins exml:mode="append">
+                <editor:BindDisablePlugin forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                          bindTo="{config.bindTo}"/>
+                <ui:BindPropertyPlugin componentEvent="change"
+                                       bindTo="{config.bindTo.extendBy('properties').extendBy('aggregationType')}"
+                                       bidirectional="true"/>
+              </ui:plugins>
+            </ui:LocalComboBox>
+            <ui:LocalComboBox name="{'properties.interval'}"
+                              fieldLabel="{resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'ESDynamicList_interval_text')}"
+                              anchor="100%"
+                              store="{[
+                                            ['INFINITY', resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'INFINITY')],
+                                            ['LAST_YEAR', resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'LAST_YEAR')],
+                                            ['LAST_MONTH', resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'LAST_MONTH')],
+                                            ['LAST_WEEK', resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'LAST_WEEK')],
+                                            ['LAST_DAY', resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'LAST_DAY')]
+                                          ]}"
+                              triggerAction="all"
+                              encodeItems="true">
+              <ui:plugins exml:mode="append">
+                <editor:BindDisablePlugin forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                          bindTo="{config.bindTo}"/>
+                <ui:BindPropertyPlugin componentEvent="change"
+                                       bindTo="{config.bindTo.extendBy('properties').extendBy('interval')}"
+                                       bidirectional="true"/>
+              </ui:plugins>
+            </ui:LocalComboBox>
+            <editor:LinkListPropertyField propertyName="channel">
+              <editor:additionalToolbarItems>
+                <TbSeparator itemId="{EXTENDED_LINK_LIST_PROPERTY_SEP_ITEM_ID}"/>
+                <quickcreate:QuickCreateToolbarButton bindTo="{config.bindTo}"
+                                                      contentType="CMChannel"
+                                                      propertyName="channel"/>
+              </editor:additionalToolbarItems>
+            </editor:LinkListPropertyField>
+            <editor:SpinnerPropertyField propertyName="maxLength"
+                                         minValue="1"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <bpforms:ContainerViewTypeSelectorForm collapsed="false"/>
+        <bpforms:ValidityDocumentForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:DefaultExtraDataForm/>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataWithoutSettingsForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

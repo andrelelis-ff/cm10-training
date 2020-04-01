@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PropertyFieldGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+                           xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                           xmlns="exml:ext.config"
+                           xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                           title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Details_label')}"
+                           itemId="personDetailsDocumentForm"
+                           propertyNames="{['firstName','lastName','displayName','organization','jobTitle','email','detailText','teaserText']}"
+                           expandOnValues="firstName,lastName,displayName,organization,jobTitle,email,detailText,teaserText"
+                           manageHeight="{false}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.personDetailsDocumentForm";
+
+    private var config:PersonDetailsDocumentForm;
+
+    public native function PersonDetailsDocumentForm(config:PersonDetailsDocumentForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:StringPropertyField propertyName="firstName"/>
+    <editor:StringPropertyField propertyName="lastName"/>
+    <editor:StringPropertyField bindTo="{config.bindTo}" propertyName="displayName">
+      <editor:plugins exml:mode="append">
+        <editor:StringPropertyFieldMultipleDelegatePlugin delegatePropertyNames="{['firstName','lastName']}"/>
+      </editor:plugins>
+    </editor:StringPropertyField>
+    <editor:StringPropertyField propertyName="organization"/>
+    <editor:StringPropertyField propertyName="jobTitle"/>
+    <editor:StringPropertyField propertyName="eMail"/>
+
+    <editor:RichTextPropertyField bindTo="{config.bindTo}"
+                                  propertyName="detailText"
+                                  initialHeight="200"/>
+
+    <editor:CollapsiblePanel title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMPerson_teaserText_text')}"
+                             ariaLabel="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMPerson_teaserText_text')}">
+      <editor:items>
+        <editor:TextAreaPropertyField bindTo="{config.bindTo}"
+                                      hideLabel="true"
+                                      propertyName="teaserText"
+                                      changeBuffer="1000"
+                                      forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}">
+          <editor:plugins exml:mode="append">
+            <editor:TextAreaPropertyFieldDelegatePlugin delegatePropertyName="detailText"/>
+          </editor:plugins>
+        </editor:TextAreaPropertyField>
+      </editor:items>
+    </editor:CollapsiblePanel>
+  </editor:items>
+</editor:PropertyFieldGroup>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./United States/English/Editorial/Homepage/Company/About" name="Management Board Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Meet the Board</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Management Board</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Leading Chef Corp. to Excellence</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>The Management Board is responsible for managing the company and works closely together with the Shareholders’ Committee and the Supervisory Board for the good of the company.</p><p><br/></p><p class="p--heading-3">Christian Margolis – CEO</p><p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Assets/Pictures/Management%20Board/Portraits/Christian%20Margolis%245eb6a75.xml#data" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Management%20Board/Portraits/Christian%20Margolis%20%28CEO%29%20Picture"/> Born in 1971 in Ottawa, Canada, Christian Margolis became a member of our Management Board on April 1, 2008. He has been with Chef Corp. since 2002, when he was the head of the engineering department.</p><p>Mr. Margolis has studied business at Yale University. From 1999 - 2002 he was a product manager at Giganto Corp.</p><p class="p--heading-3">Jack Beneke – CFO</p><p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Assets/Pictures/Management%20Board/Portraits/Jack%20Beneke%20%28CFO1f8a7087.xml#data" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Management%20Board/Portraits/Jack%20Beneke%20%28CFO%29%20Picture"/>Born in 1960 in Albuquerque, New Mexico, Jack Beneke joined the Management Board on July 1, 2009. Mr. Beneke came to Chef Corp. from Wells Fargo, where he was state manager.</p><p>Mr. Margolis has studied business at Princeton University.</p><p class="p--heading-3">Gretchen Cantillo – VP Marketing</p><p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Assets/Pictures/Management%20Board/Portraits/Gretchen%20Cantillo%207de3eb9f.xml#data" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Management%20Board/Portraits/Gretchen%20Cantillo%20%28VP%20Marketing%29%20Picture"/>Born in 1981 in Chicago, Illinois, Gretchen Cantillo became a member of our Management Board on January 1, 2014 as the youngest member in the Chef Corp. history. She has been with Chef Corp. since 2012, when she was a team lead in the marketing department.</p><p>Ms. Cantillo has studied Marketing at Columbia University where she was discovered and hired by our human resources department.</p><p class="p--heading-3">Sonya Schwartz – VP Human Resources</p><p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Assets/Pictures/Management%20Board/Portraits/Sonya%20Schwartz%20%2849841c74.xml#data" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Management%20Board/Portraits/Sonya%20Schwartz%20%28VP%20HR%29%20Picture"/>Born in 1973 in Sacramento, Californoa, Sonya Schwartz became a member of our Management Board on November 1, 2011. Ms. Schwartz joined the company from Yum! Brands, where she was a regional human resources manager.</p><p>Ms. Cantillo has studied Psychology at Dartmouth University.</p></div></detailText>
+<pictures>
+<link href="../../../Assets/Pictures/Management%20Board/Group%20Shots/Management%20Boardffe0a78e.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Management%20Board/Group%20Shots/Management%20Board%20Close-Up%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

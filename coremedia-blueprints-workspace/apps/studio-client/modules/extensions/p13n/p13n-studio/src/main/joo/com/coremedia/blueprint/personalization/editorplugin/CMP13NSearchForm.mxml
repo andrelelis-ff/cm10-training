@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:perso="exml:com.coremedia.personalization.ui.config"
+        xmlns:plugin="exml:com.coremedia.blueprint.personalization.editorplugin.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:ui="exml:com.coremedia.ui.config" xmlns:quickcreate="com.coremedia.cms.editor.sdk.quickcreate.*">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.personalization.editorplugin.PersonalizationDocTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.personalization.editorplugin.config.cmP13NSearchForm";
+
+    private var config:CMP13NSearchForm;
+
+    public native function CMP13NSearchForm(config:CMP13NSearchForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm itemId="personalization"
+                         title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}">
+      <editor:items>
+        <bpforms:TeaserDocumentForm/>
+        <editor:PropertyFieldGroup itemId="cmP13nDefaultContentForm"
+                                   title="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationDocTypes', 'CMSelectionRules_defaultContent_text')}">
+          <editor:items>
+            <editor:LinkListPropertyField linkType="CMTeasable" hideLabel="true"
+                                          showThumbnails="true"
+                                          propertyName="defaultContent"
+                                          bindTo="{config.bindTo}">
+              <editor:additionalToolbarItems>
+                <TbSeparator/>
+                <quickcreate:QuickCreateLinklistMenu bindTo="{config.bindTo}"
+                                                     propertyName="defaultContent"/>
+              </editor:additionalToolbarItems>
+              <editor:fields>
+                <ui:DataField name="{ValidityColumn.STATUS_ID}"
+                              ifUnreadable=""
+                              mapping=""
+                              convert_="{ValidityColumn.convert}"/>
+              </editor:fields>
+              <editor:columns>
+                <editor:ThumbnailColumn/>
+                <editor:TypeIconColumn/>
+                <editor:NameColumn flex="1"/>
+                <bpforms:ValidityColumn/>
+                <editor:StatusColumn/>
+              </editor:columns>
+            </editor:LinkListPropertyField>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Expression')}"
+                itemId="cmP13nSearchForm">
+          <editor:items>
+            <plugin:SearchQueryPropertyField propertyName="searchQuery"
+                                             forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}">
+              <plugin:plugins exml:mode="append">
+                <editor:ShowIssuesPlugin propertyName="searchQuery" bindTo="{config.bindTo}"/>
+              </plugin:plugins>
+            </plugin:SearchQueryPropertyField>
+            <perso:SearchQueryHelper/>
+            <editor:ContentTypeStringPropertyField bindTo="{config.bindTo}"
+                                                   propertyName="documentType"
+                                                   linkType="CMTeasable"
+                                                   forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+            <editor:LinkListPropertyField propertyName="searchContext"
+                                          bindTo="{config.bindTo}"
+                                          forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+            <editor:SpinnerPropertyField propertyName="maxLength"
+                                         minValue="1"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <bpforms:ContainerViewTypeSelectorForm collapsed="false"/>
+        <bpforms:ValidityDocumentForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:DefaultExtraDataForm/>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataWithoutSettingsForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

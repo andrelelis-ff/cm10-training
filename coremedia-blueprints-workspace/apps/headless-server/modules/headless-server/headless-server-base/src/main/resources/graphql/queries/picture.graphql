@@ -1,0 +1,27 @@
+query PictureQuery($id: String!) {
+
+  content {
+    picture(id: $id) {
+      ... Reference
+      alt
+      uriTemplate
+      crops {
+        name
+        aspectRatio {
+          width
+          height
+        }
+        sizes {
+          width
+          height
+        }
+      }
+      base64Images {
+        cropName
+        base64
+      }
+    }
+  }
+}
+
+#import "./referenceFragments.graphql"

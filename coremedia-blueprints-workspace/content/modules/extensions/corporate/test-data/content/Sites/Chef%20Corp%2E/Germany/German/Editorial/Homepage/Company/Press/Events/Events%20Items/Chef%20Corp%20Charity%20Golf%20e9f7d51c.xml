@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./Germany/German/Editorial/Homepage/Company/Press/Events/Events Items" name="Chef Corp Charity Golf Tournament Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../../United%20States/English/Editorial/Homepage/Company/Press/Events/Events%20Items/Chef%20Corp%20Charity%5e7192ff.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Company/Press/Events/Events%20Items/Chef%20Corp%20Charity%20Golf%20Tournament%20Article"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<extDisplayedDate format="dd.MM.yyyy HH:mm:ss Z">26.06.2019 00:00:00 +0100</extDisplayedDate>
+<segment></segment>
+<title>Chef Corp Charity Golf Turnier</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Events.xml" path="/Settings/Taxonomies/Subject/Events"/>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Press.xml" path="/Settings/Taxonomies/Subject/Press"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Besuchen Sie uns auf unserer jährlichen Golf-Turnier am 25. Juli. </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Im vergangenen Jahr haben Essen und Golf-Enthusiasten über $ 300.000 für den Chefkoch, ein Colorado Wohltätigkeitsorganisation von Stan Marsh gegründet, das hilft entgleisten Linie Köche wieder auf die Füße mit niedrigem Verantwortung Jobs und Tochtergesellschaften erhöht. "In diesem Jahr wollen wir die Messlatte noch weiter zu erhöhen. Es gibt Hunderte, wenn nicht Tausende von professionellen Köchen, die auf harte Zeiten gefallen sind, finanziell und persönlich, der die Hilfe unserer Branche brauchen", sagt Marsh. </p> <p> Chef Corp. hat die Top-Profis unseres Geschäfts sowie eine Reihe von Persönlichkeiten des öffentlichen Verständnis für unsere Sache eingeladen. Wie im vergangenen Jahr erwarten wir eine Wahlbeteiligung von etwa 200 günstige Gönner. Die Veranstaltung findet am 8. August an der Indian Hill Club in Winnetka, IL zu nehmen. Bringen Sie Ihre eigene Golfclubs! </p> </div></detailText>
+<pictures>
+<link href="../../../../../Assets/Pictures/Events/Chef%20Corp%20Charity%20Golf%20Tournament%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Events/Chef%20Corp%20Charity%20Golf%20Tournament%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../../../../Authors/David%20Fuller%20Person.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Authors/David%20Fuller%20Person"/>
+</authors>
+</CMArticle>

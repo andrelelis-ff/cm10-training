@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/SFRA/United Kingdom/English/Editorial/Content/Articles" name="Fashion Trends this Summer" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/Teaser%20Styles/Light"/>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<IntProperty Name="positionY">0</IntProperty>
+<IntProperty Name="positionX">33</IntProperty>
+<IntProperty Name="width">44</IntProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="callToActionCustomText">Explore</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Summer Fashion Trends</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Fashion%20Week.xml" path="/Settings/Taxonomies/Subject/Fashion%20Week"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Luxury.xml" path="/Settings/Taxonomies/Subject/Luxury"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Young.xml" path="/Settings/Taxonomies/Subject/Young"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Womens.xml" path="/Settings/Taxonomies/Subject/Womens"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Style.xml" path="/Settings/Taxonomies/Subject/Style"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Casual.xml" path="/Settings/Taxonomies/Subject/Casual"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Summer.xml" path="/Settings/Taxonomies/Subject/Summer"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Fashion Trends</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center">Fashion Trends this Summer</p><p class="align--center">Be stylish. Be trendy. Be iconic.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>I want to thank all the women who have worn my clothes, the famous and the unknown, who have been so faithful to me and given me so much joy. Instead of buying six things, one thing that you really like. Don't keep buying just for the sake of it. You have a more interesting life if you wear impressive clothes. I think there is something about luxury - it's not something people need, but it's what they want. It really pulls at their heart. You cannot be creative with people around you.</p><p>I love you if you love me. If you wear clothes that don't suit you, you're a fashion victim. You have to wear clothes that make you look better. I didn't like the '80s at all; it was a vulgar moment of fashion. Confidence. If you have it, you can make anything look good. People said making clothes inside out was not proper. I disagreed, because clothes that are inside out are as beautiful as a cathedral.</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Platinum%20V%20Neck%20Suit%20Dress.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Editorial/Products/Platinum%20V%20Neck%20Suit%20Dress">Platinum V Neck Suit Dress</a></p><p>Comfort is very important to me. I think people live better in big houses and in big clothes. The key to my collections is sensuality. Design is a series of creative choices - it's a collaborative effort, an evolutionary process. You choose your fabrics depending upon what you want to say, then you work with mills to get those fabrics. Through the process, you realize what you want it to be. I didn't consider myself a fashion designer at all at the time of punk. I was just using fashion as a way to express my resistance and to be rebellious. I came from the country, and by the time I got to London, I considered myself to be very stupid. It was my ambition to understand the world I live in. I think I'd go mad if I didn't have a place to escape to.</p><p>Online media is increasingly influential in fashion. I'm an accomplice to helping women get what they want. I want to thank all the women who have worn my clothes, the famous and the unknown, who have been so faithful to me and given me so much joy. Sometimes the simplest things are the most profound. My customers are successful workingwomen.</p><p>You can hide so much behind theatrics, and I don't need to do that any more. I always loved aesthetics. Not particularly fashion, but an idea of beauty. Doing collections, doing fashion is like a non-stop dialogue. I think God is the most fantastic designer. My relationships with producers or photographers - these are relationships that took years.</p><p>Sometimes the simplest things are the most profound. I believe in comfort. If you don't feel comfortable in your clothes, it's hard to think of anything else. I love the 2000s because everyone started to love haute couture. Fashion is made to become unfashionable. I think there is something about luxury - it's not something people need, but it's what they want. It really pulls at their heart.</p></div></detailText>
+<pictures>
+<link href="../../Pictures/Elegant%20Fashion.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Pictures/Elegant%20Fashion"/>
+</pictures>
+<related>
+<link href="Fashion%20should%20be%20Fun.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Articles/Fashion%20should%20be%20Fun"/>
+<link href="The%20Difference%20between%20Style%20and%20Fashion.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Articles/The%20Difference%20between%20Style%20and%20Fashion"/>
+<link href="Fashions%20fade%2C%20style%20is%20eternal.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Articles/Fashions%20fade%2C%20style%20is%20eternal"/>
+</related>
+<authors>
+<link href="../../Authors/Charlotte%20May%20Person.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Authors/Charlotte%20May%20Person"/>
+</authors>
+</CMArticle>

@@ -1,0 +1,5 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StructListProperty Name="items">
+    <Struct/>
+  </StructListProperty>
+</Struct>

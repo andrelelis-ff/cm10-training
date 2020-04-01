@@ -1,0 +1,10 @@
+@if $cm-include-viewtype-renderer {
+  $_block: "cm-viewtype-thumb";
+  .#{$_block} {
+    display: block;
+    // if selected use inverted icon color
+    .#{$prefix}grid-item-selected & {
+      filter: invert(100%);
+    }
+  }
+}

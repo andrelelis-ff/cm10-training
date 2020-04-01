@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.cmSitemapForm";
+
+    //noinspection JSUnusedLocalSymbols
+    private var config:CMSitemapForm;
+
+    public native function CMSitemapForm(config:CMSitemapForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMSitemap_text')}"
+                itemId="cmSitemapTitleForm">
+          <editor:items>
+            <editor:StringPropertyField propertyName="title"/>
+            <editor:LinkListPropertyField propertyName="root"/>
+            <editor:IntegerPropertyField propertyName="localSettings.sitemap_depth"
+                                         itemId="cmSitemapDepthForm"
+                                         fieldLabel="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMSitemap_localSettings_sitemap_depth_text')}"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <bpforms:CollapsibleStringPropertyForm
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMTeasable_teaserText_text')}"
+                propertyName="teaserTitle"/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:DefaultExtraDataForm/>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataInformationForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

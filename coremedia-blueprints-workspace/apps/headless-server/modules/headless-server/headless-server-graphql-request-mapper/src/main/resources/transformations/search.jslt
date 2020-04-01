@@ -1,0 +1,8 @@
+import "transformations/errors.jslt" as errors
+{
+ "numFound": .data.content.search.numFound,
+ "result" : [for (.data.content.search.result)
+      {* : .}
+   ],
+  "errors" :  errors:errors()
+}

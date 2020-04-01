@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint.boot</groupId>
+    <artifactId>elastic-worker.spring-boot</artifactId>
+    <version>1-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>elastic-worker-app</artifactId>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.coremedia.blueprint.boot</groupId>
+      <artifactId>blueprint-spring-boot-autoconfigure</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.blueprint.boot</groupId>
+      <artifactId>coremedia-transform-spring-boot-autoconfigure</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>${blueprint.groupId}</groupId>
+      <artifactId>elastic-worker-blueprint-component</artifactId>
+      <version>${blueprint.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-actuator</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-tomcat</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-jasper</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>elastic-worker</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <mainClass>com.coremedia.blueprint.boot.elasticworker.ElasticWorkerApp</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

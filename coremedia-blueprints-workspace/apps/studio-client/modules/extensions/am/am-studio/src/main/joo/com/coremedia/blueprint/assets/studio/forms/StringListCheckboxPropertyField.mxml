@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ A property field rendering checkboxes for a list of strings binding to a StringListProperty inside a Struct.
+-->
+<local:StringListCheckboxPropertyFieldBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.assets.studio.forms.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        labelSeparator=""
+        labelAlign="top"
+        defaultField="{createComponentSelector().itemId(CHECKBOX_GROUP_ITEM_ID).build()}">
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+    import com.coremedia.ui.util.createComponentSelector;
+
+    public static const xtype:String = "com.coremedia.blueprint.assets.studio.config.stringListCheckboxPropertyField";
+
+    public static const CHECKBOX_GROUP_ITEM_ID:String = "checkboxGroup";
+
+    private var config:StringListCheckboxPropertyField;
+
+    public native function StringListCheckboxPropertyField(config:StringListCheckboxPropertyField = null);
+
+    [Bindable]
+    public var forceReadOnlyValueExpression:ValueExpression;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!---
+     The name of the struct property.
+    -->
+    <fx:String id="structName"/>
+
+    <!---
+     The name of the property inside the struct.
+    -->
+    <fx:String id="propertyName"/>
+
+    <fx:Boolean id="hideIssues"/>
+  </fx:Declarations>
+
+  <local:plugins>
+    <editor:PropertyFieldPlugin propertyName="{config.structName + '.' + config.propertyName}"/>
+    <editor:SetPropertyLabelPlugin bindTo="{config.bindTo}"
+                                   propertyName="{config.structName + '.' + config.propertyName}"/>
+  </local:plugins>
+
+  <local:items>
+    <ui:StatefulCheckboxGroup itemId="{CHECKBOX_GROUP_ITEM_ID}">
+      <ui:layout>
+        <layout_VBox/>
+      </ui:layout>
+      <ui:plugins exml:mode="append">
+        <editor:PropertyFieldPlugin propertyName="{config.propertyName}"/>
+        <ui:BindPropertyPlugin
+                bindTo="{config.bindTo.extendBy('properties').extendBy(config.structName).extendBy(config.propertyName)}"
+                bidirectional="{true}"
+                transformer="{transformer}"
+                reverseTransformer="{reverseTransformer}"/>
+        <ui:BindItemsPlugin valueExpression="{ValueExpressionFactory.createFromFunction(computeCheckboxConfigs)}"/>
+        <editor:ShowIssuesPlugin bindTo="{config.bindTo}"
+                                 propertyName="{config.structName + '.' + config.propertyName}"/>
+        <editor:BindDisablePlugin forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                  bindTo="{config.bindTo}"/>
+      </ui:plugins>
+    </ui:StatefulCheckboxGroup>
+  </local:items>
+  <local:layout>
+    <layout_VBox/>
+  </local:layout>
+</local:StringListCheckboxPropertyFieldBase>

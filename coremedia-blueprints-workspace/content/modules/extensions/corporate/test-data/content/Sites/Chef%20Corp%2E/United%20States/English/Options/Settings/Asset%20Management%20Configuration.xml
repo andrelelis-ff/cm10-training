@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Chef Corp./United States/English/Options/Settings" name="Asset Management Configuration" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="asset-management">
+<Struct>
+<StructProperty Name="download-portal">
+<Struct>
+<LinkProperty Name="root-page" LinkType="coremedia:///cap/contenttype/CMChannel" xlink:href="coremedia:///cap/resources/../../Navigation/Company/Asset%20Download%20Portal/Asset%20Download%20Portal%20Root%20Page.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Navigation/Company/Asset%20Download%20Portal/Asset%20Download%20Portal%20Root%20Page"/>
+<IntProperty Name="assets-per-page">12</IntProperty>
+<StringListProperty Name="metadata-properties">
+<String>copyright</String>
+<String>expirationDate</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

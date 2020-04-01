@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>content-server.server</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>contentserver-blueprint-component</artifactId>
+
+  <dependencies>
+    <!-- RUNTIME SCOPE -->
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>content-server-component</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>doctypes</artifactId>
+      <version>${project.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>content-server-extension-dependencies</artifactId>
+      <version>${project.version}</version>
+      <type>pom</type>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.blueprint</groupId>
+      <artifactId>logging-config</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.blueprint</groupId>
+      <artifactId>database-drivers</artifactId>
+      <type>pom</type>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>base-component</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>management-component</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>content-server-solr-component</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.blueprint.base</groupId>
+      <artifactId>bpbase-multisite</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>cap-multisite</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+
+</project>
+

@@ -1,0 +1,22 @@
+@if $cm-include-taxonomy-explorer-panel {
+  $_block: "cm-taxonomy-explorer-panel";
+  .#{$_block} {
+
+    &__root {
+      background-color: $cm-grey-1;
+    }
+
+    &__root,
+    &__non-root {
+      border-right: 1px solid $cm-spot-grey-2;
+
+      > .#{$prefix}panel-bodyWrap > .#{$prefix}grid-body {
+        border: none;
+      }
+    }
+
+    &__form {
+      background-color: $cm-grey-0;
+    }
+  }
+}

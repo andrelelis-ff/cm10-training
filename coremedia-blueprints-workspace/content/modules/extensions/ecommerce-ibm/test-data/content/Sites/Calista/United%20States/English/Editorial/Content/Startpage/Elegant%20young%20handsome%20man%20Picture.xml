@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/United States/English/Editorial/Content/Startpage" name="Elegant young handsome man Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=331;y=0;width=2042;height=3165</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=933;y=0;width=2024;height=2699</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=298;y=0;width=2699;height=2699</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=3000;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=30;width=3000;height=1688</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=0;width=4000;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=0;width=4000;height=1600</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=311;width=3000;height=1125</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=381;width=4000;height=1000</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=1011;y=0;width=1978;height=3165</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=0;width=4000;height=1702</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=1048;y=0;width=1799;height=2699</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="landscape_ratio235x100">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.08270676691729323;y1=0;x2=0.5931906378850351;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.015037593984962405;y1=0;x2=0.6084750939849624;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0;x2=0.79125;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0;x2=1;y2=0.9478672985781991</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0;x2=1;y2=0.7109004739336494</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0;x2=1;y2=0.631911532385466</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0;x2=1;y2=0.5055292259083729</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0;x2=1;y2=0.47393364928909953</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.12025316455696203;x2=1;y2=0.436208930749695</StringProperty>
+<StringProperty Name="landscape_ratio235x100">position;x1=0;y1=0;x2=1;y2=0.5377970488386945</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.6463068181818182</StringProperty>
+<StringProperty Name="y">0.32018927444794953</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Elegant young handsome man. Studio fashion portrait.</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Elegant young handsome man. Studio fashion portrait.</alt>
+<copyright>InnervisionArt/Shutterstock 113729065</copyright>
+<dataUrl></dataUrl>
+<width>3000</width>
+<height>2699</height>
+<data md5="7594b368965de46d601c0d7d75ec4004" size="5684528" href="../../../../../../../__blob/7594b368965de46d601c0d7d75ec4004.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

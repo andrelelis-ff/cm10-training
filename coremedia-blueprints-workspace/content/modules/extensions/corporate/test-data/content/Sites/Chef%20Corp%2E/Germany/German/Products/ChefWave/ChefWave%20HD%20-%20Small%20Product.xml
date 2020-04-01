@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProduct folder="/Sites/Chef Corp./Germany/German/Products/ChefWave" name="ChefWave HD - Small Product" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Products/ChefWave/ChefWave%20HD%20-%20Small%20Product.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/ChefWave/ChefWave%20HD%20-%20Small%20Product"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">More Product Information</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>chefwave-hd-small</segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+<link href="ChefWave.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/ChefWave/ChefWave"/>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Die bahnbrechende ChefWave ™ HD ist das weltweit erste Hochdruck-Mikrowellen-Fritteuse. </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-3"> Beschreibung </p> <p> ChefWave ™ HD ist das weltweit erste Hochdruck-Fritteuse, die Mikrowellen als Wärmequelle nutzt. Dieses einzigartige Stück Gerät vereint mehrere ertragreiche Kochtechnologien, die in einer völlig neuen Art und Weise, um die Viskosität sehr heißem Öl, die Verbesserung der physikalischen Eigenschaften von hohem Druck und die tief eindringende Strahlen von Mikrowellen nutzen zu interagieren. Weltneuheit, dass senkt die erforderliche Zeit, um Geflügel um zwei Drittel zu braten! Das ist 1 Minute anstelle von drei für eine ganze Charge von Chicken Wings. Die reduzierte Exposition gegenüber Öl senkt den Fettgehalt der frittierten Ware durch eine Größenordnung, während die herzhaften Güte lebendig. </p> <p class="p--heading-3"> Hauptmerkmale </p> <p> • Bahnbrechende Technologie <br/> • Erweiterte Sicherheit durch sehr langlebig Druckdichtung <br/> • Automatische Ölfilterüberwachung <br/> • Leicht zu reinigen, auch in der Rück <br/> • 3 Jahre Garantie </p> <p class="p--heading-3"> Technische Spezifikationen </p> <p/> <p/> <table dir="ltr"><tbody><tr><td> Farbe </td><td> Edelstahl </td></tr><tr><td> Formfaktor </td><td> Klein </td></tr><tr><td> Breite </td><td> 600 mm </td></tr><tr><td> Tiefe </td><td> 600 mm </td></tr><tr><td> Höhe </td><td> 935 mm </td></tr><tr><td> Gewicht </td><td> 331 £ </td></tr><tr><td> Total Power Bewertungen </td><td> 2,2 kW </td></tr><tr><td> Kapazität </td><td> 3 Liter </td></tr><tr><td> B x T x H </td><td> 600 × 600 × 935 mm </td></tr></tbody></table> <p><br/></p> </div></detailText>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Products/ChefWave/ChefWave%20HD%20Small%20Fryer%201%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Products/ChefWave/ChefWave%20HD%20Small%20Fryer%201%20Picture"/>
+<link href="../../Editorial/Assets/Pictures/Products/ChefWave/ChefWave%20HD%20Small%20Fryer%202%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Products/ChefWave/ChefWave%20HD%20Small%20Fryer%202%20Picture"/>
+</pictures>
+<related>
+<link href="ChefWave%20HD%20-%20Large%20Product.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/ChefWave/ChefWave%20HD%20-%20Large%20Product"/>
+</related>
+<authors>
+</authors>
+<downloads>
+<link href="../../Editorial/Assets/Downloads/Products/ChefWave/ChefWave%20HD%20%28small%29%20Datasheet%24503cae9.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Downloads/Products/ChefWave/ChefWave%20HD%20%28small%29%20Datasheet%20PDF%20Download"/>
+<link href="../../Editorial/Assets/Downloads/Products/ChefWave/ChefWave%20HD%20%28small%29%20EU%20Compli5fff5d2d.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Downloads/Products/ChefWave/ChefWave%20HD%20%28small%29%20EU%20Compliance%20PDF%20Download"/>
+</downloads>
+<productCode>CC-WAV-002</productCode>
+<productName>ChefWave™ HD Microwave Deep Fryer (Small)</productName>
+</CMProduct>

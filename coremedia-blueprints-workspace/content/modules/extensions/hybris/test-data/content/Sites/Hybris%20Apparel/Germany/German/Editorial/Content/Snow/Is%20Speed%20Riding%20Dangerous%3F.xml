@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/Germany/German/Editorial/Content/Snow" name="Is Speed Riding Dangerous?" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Snow/Is%20Speed%20Riding%20Dangerous%3F.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Is%20Speed%20Riding%20Dangerous%3F"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Ist Speed ​​Riding gefährlich?</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Speed%20Riding.xml" path="/Settings/Taxonomies/Subject/Speed%20Riding"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Para-Skifahren (Speed ​​Reiten) ist sehr gefährlich wegen der Nähe zum Boden und die hohe Geschwindigkeit. </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Para-Skifahren (Speed ​​Reiten) ist sehr gefährlich wegen der Nähe zum Boden und die hohe Geschwindigkeit. </p> <p> Vergleicht man Wingsuit Sie haben mehr Kontrolle über die Geschwindigkeit und Höhe, auf der anderen Seite auf die Nähe, wenn Sie nicht versuchen, über felsigen Segmente gelangen in geringer Höhe und machen Sie Ihre niedrigen flybys über Schnee dann, auch wenn Sie Ihre Geschwindigkeit oder Höhen verkennen Sie können immer den Schnee schlagen und Ski sich weg, bis Sie wieder genug Geschwindigkeit zu bekommen airborn gewinnen. </p> <p> Das ist ein Luxus, Nähe Wingsuit und Geschwindigkeit hanggliding nicht haben. <br/></p> <p><br/></p> <p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Freestyle%20Snow%20Board%20110839.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Products/Freestyle%20Snow%20Board%20110839">Freestyle Snow Board 110839</a><br/></p> <p> Mit allen, dass die Geschwindigkeit Reiten ist immer noch ein gefährlicher Extremsport, auch wenn Sie ein Profi sind. Es gibt schwere Verletzungen und Tod ist eine Möglichkeit, häufiger als Folge eines Objekts im Flug dann von schlechten Landungen zu schlagen. </p> <p> Wie in jedem anderen Extremsport, es kommt zu Ihnen nach unten und wie wählen Sie Ihre Sicherheitsmargen zu verwalten. Sie können sie sehr breit halten, aber dann stoppen Sie den Adrenalin-Reise bekommen und langweilig. Oder Sie können sie sehr schmal verlassen und immer "sein am Rande", aber dann werden die Risiken zu hoch und Sie werden wahrscheinlich nicht lange überleben. </p> <p> Also am Ende, es geht um die Balance zwischen Selbstkontrolle und der Versuchung zu höheren Andrang zu bekommen. </p> </div></detailText>
+<pictures>
+<link href="../../../Pictures/Snowboard%20Orange%20Jacket.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Snowboard%20Orange%20Jacket"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../Authors/David%20Fuller%20Person.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Authors/David%20Fuller%20Person"/>
+</authors>
+</CMArticle>

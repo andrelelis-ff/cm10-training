@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.livecontext.studio.components.link.CatalogLinkPropertyFieldTestView"/>
+</componentPackage>

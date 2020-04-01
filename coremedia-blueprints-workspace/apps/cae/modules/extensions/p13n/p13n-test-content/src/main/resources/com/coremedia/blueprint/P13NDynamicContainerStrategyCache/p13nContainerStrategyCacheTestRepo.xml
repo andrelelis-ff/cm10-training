@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+  <content>
+    <folder id="1" name="">
+      <!--DynamizableContainer test content-->
+      <document id="26" name="visitedArticle1" type="CMArticle" checkedOut="true">
+        <version number="1">
+          <linkProperty name="items">
+            <link id="36"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="36" name="personalizedContent" type="CMSelectionRules">
+        <version number="1">
+          <markupProperty name="rules" url="../personalization/personalizedcontentrules.xml" grammar="coremedia-selectionrules-1.0"/>
+        </version>
+      </document>
+
+      <!--ContentBeanBackedPageGridPlacement test content-->
+      <!-- the channel -->
+      <document id="222" type="CMChannel" name="PagegriddedChannel" checkedOut="true">
+        <version number="1">
+          <markupProperty name="placement" url="222placement.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <!-- the layout settings document -->
+      <document id="224" type="CMSettings" name="LayoutSettings">
+        <version number="1">
+          <markupProperty name="settings" url="224settings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <!-- section symbols -->
+      <document id="212" type="CMSymbol" name="north">
+        <version number="1">
+          <stringProperty name="description" value="north"/>
+        </version>
+      </document>
+
+      <!-- asset for placement -->
+      <document id="412" type="CMArticle" name="articleNorth">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="articleNorth"/>
+          <markupProperty name="detailText"/>
+        </version>
+      </document>
+    </folder>
+  </content>
+  <rules/>
+</contentRepository>

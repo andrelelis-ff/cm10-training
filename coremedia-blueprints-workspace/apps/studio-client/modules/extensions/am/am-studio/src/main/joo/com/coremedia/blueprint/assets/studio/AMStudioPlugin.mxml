@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:AMStudioPluginBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.assets.studio.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:collab="exml:com.coremedia.cms.editor.controlroom.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:taxonomy="exml:com.coremedia.blueprint.studio.config.taxonomy"
+        xmlns:am="exml:com.coremedia.blueprint.assets.studio.config"
+        xmlns:u="exml:untyped">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.assets.studio.AMDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.assets.studio.AMStudioPlugin')]
+    [ResourceBundle('com.coremedia.blueprint.assets.studio.AMTaxonomyStudioPlugin')]
+    [ResourceBundle('com.coremedia.blueprint.assets.studio.AMValidators')]
+    [ResourceBundle('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin')]
+    [ResourceBundle('com.coremedia.cms.editor.ContentTypes')]
+    [ResourceBundle('com.coremedia.cms.editor.sdk.desktop.LicenseNames')]
+    [ResourceBundle('com.coremedia.cms.editor.sdk.validation.Validators')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.studio.BlueprintFormsStudioPluginBase;
+    import com.coremedia.blueprint.studio.forms.CMPictureForm;
+    import com.coremedia.blueprint.studio.forms.CMVideoForm;
+    import com.coremedia.cms.editor.sdk.collectionview.search.TranslationStatusFilterPanel;
+    import com.coremedia.cms.editor.sdk.collectionview.search.TranslationStatusFilterPanel;
+    import com.coremedia.cms.editor.sdk.editorContext;
+
+    import mx.resources.ResourceManager;
+
+    public static const xtype:String = "com.coremedia.blueprint.assets.studio.config.amStudioPlugin";
+
+    private var config:AMStudioPlugin;
+
+    public native function AMStudioPlugin(config:AMStudioPlugin = null);
+    ]]></fx:Script>
+
+  <local:rules>
+    <editor:Startup>
+      <editor:plugins>
+        <editor:ConfigureListViewPlugin instanceName="{AssetCollectionViewExtension.INSTANCE_NAME}">
+          <editor:listViewDataFields>
+            <ui:DataField name="{AssetConstants.PROPERTY_ASSET_METADATA_EXPIRATIONDATE}"
+                          mapping="{'properties.' + AssetConstants.PROPERTY_ASSET_METADATA + '.' + AssetConstants.PROPERTY_ASSET_METADATA_EXPIRATIONDATE + '.date'}"/>
+          </editor:listViewDataFields>
+
+          <editor:repositoryListViewColumns>
+            <editor:ListViewTypeIconColumn width="75"
+                                           showTypeName="true"
+                                           sortable="true"
+                                           u:sortField="type"
+                                           u:extendOrderBy="{BlueprintFormsStudioPluginBase.extendOrderByName}"/>
+            <editor:ListViewNameColumn sortable="true"
+                                       u:defaultSortColumn="true"
+                                       u:defaultSortDirection="asc"/>
+            <am:ExpirationDateColumn/>
+            <editor:ListViewCreationDateColumn width="120"
+                                               sortable="true"
+                                               u:extendOrderBy="{BlueprintFormsStudioPluginBase.extendOrderByName}"/>
+            <editor:FreshnessColumn sortable="true"
+                                    hidden="true"/>
+            <editor:ListViewStatusColumn width="46"
+                                         sortable="true"
+                                         u:extendOrderBy="{BlueprintFormsStudioPluginBase.extendOrderByName}"/>
+          </editor:repositoryListViewColumns>
+
+          <editor:searchListViewColumns>
+            <editor:ListViewTypeIconColumn width="120"
+                                           showTypeName="true"
+                                           u:sortField="type"
+                                           sortable="true"
+                                           u:extendOrderBy="{BlueprintFormsStudioPluginBase.extendOrderByName}"/>
+            <editor:ListViewNameColumn sortable="true"/>
+            <am:ExpirationDateColumn/>
+            <editor:ListViewCreationDateColumn sortable="true"
+                                               width="120"
+                                               u:extendOrderBy="{BlueprintFormsStudioPluginBase.extendOrderByName}"/>
+            <editor:FreshnessColumn sortable="true"
+                                    hidden="true"
+                                    u:defaultSortColumn="true"
+                                    u:defaultSortDirection="desc"/>
+            <editor:ListViewStatusColumn width="46"
+                                         sortable="true"
+                                         u:extendOrderBy="{BlueprintFormsStudioPluginBase.extendOrderByName}"/>
+          </editor:searchListViewColumns>
+        </editor:ConfigureListViewPlugin>
+      </editor:plugins>
+    </editor:Startup>
+
+    <collab:EditedContentToolsMenu>
+      <collab:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <am:ShowAssetsInEditedContentsCheckbox itemId="includeAssetsItemId"/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </collab:plugins>
+    </collab:EditedContentToolsMenu>
+
+    <editor:TabbedDocumentFormDispatcher>
+      <editor:plugins>
+        <editor:AddTabbedDocumentFormsPlugin>
+          <editor:documentTabPanels>
+            <am:AMAssetForm itemId="{AssetConstants.DOCTYPE_ASSET}"/>
+            <am:AMPictureAssetForm itemId="{AssetConstants.DOCTYPE_PICTURE_ASSET}"/>
+            <am:AMVideoAssetForm itemId="{AssetConstants.DOCTYPE_VIDEO_ASSET}"/>
+            <am:AMDocumentAssetForm itemId="{AssetConstants.DOCTYPE_DOCUMENT_ASSET}"/>
+            <am:AMTaxonomyForm itemId="{AssetConstants.DOCTYPE_ASSET_TAXONOMY}"/>
+          </editor:documentTabPanels>
+        </editor:AddTabbedDocumentFormsPlugin>
+      </editor:plugins>
+    </editor:TabbedDocumentFormDispatcher>
+
+    <bpforms:CMPictureForm>
+      <bpforms:plugins>
+        <am:AddAssetLinkPlugin tabItemId="{CMPictureForm.EXTRAS_TAB_ITEM_ID}"
+                               title="{ResourceManager.getInstance().getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'PropertyGroup_asset_label')}"/>
+      </bpforms:plugins>
+    </bpforms:CMPictureForm>
+
+    <bpforms:CMVideoForm>
+      <bpforms:plugins>
+        <am:AddAssetLinkPlugin tabItemId="{CMVideoForm.EXTRAS_TAB_ITEM_ID}"
+                               title="{ResourceManager.getInstance().getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'PropertyGroup_asset_label')}"/>
+      </bpforms:plugins>
+    </bpforms:CMVideoForm>
+
+    <editor:CollectionView>
+      <editor:plugins>
+        <am:AMCollectionViewPlugin/>
+      </editor:plugins>
+    </editor:CollectionView>
+
+    <editor:SearchFilters>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <!--Lower case used for the property name here, since the name must match
+            the SOLR field name that is complete lower case. The editor converts to lowercase to be sure too. -->
+            <taxonomy:TaxonomyFilterPanel itemId="assetDownloadPortal"
+                                          filterId="{AssetConstants.ASSET_TAXONOMY_ID}"
+                                          taxonomyId="{AssetConstants.ASSET_TAXONOMY_ID}"
+                                          propertyName="{AssetConstants.PROPERTY_ASSET_ASSETTAXONOMY_SEARCH}"/>
+          </ui:items>
+          <ui:after>
+            <Component itemId="Subject"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <am:StringListCheckboxFilterPanel filterId="rightsChannels"
+                                              propertyName="{AssetConstants.PROPERTY_ASSET_METADATA_CHANNELS}"
+                                              title="{ResourceManager.getInstance().getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'Filter_RightsChannels_text')}"
+                                              availableValuesValueExpression="{AssetManagementConfigurationUtil.getConfiguredRightsChannelsValueExpression()}"/>
+            <am:StringListCheckboxFilterPanel filterId="rightsRegions"
+                                              propertyName="{AssetConstants.PROPERTY_ASSET_METADATA_REGIONS}"
+                                              title="{ResourceManager.getInstance().getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'Filter_RightsRegions_text')}"
+                                              availableValuesValueExpression="{AssetManagementConfigurationUtil.getConfiguredRightsRegionsValueExpression()}"/>
+            <am:ExpirationDateFilterPanel/>
+          </ui:items>
+          <ui:after>
+            <Component itemId="{TranslationStatusFilterPanel.FILTER_ID}"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:SearchFilters>
+
+    <editor:PreviewPanel>
+      <editor:plugins exml:mode="append">
+        <ui:BindPlugin bindTo="{editorContext.getSitesService().getPreferredSiteIdExpression()}"
+                       boundValueChanged="{reloadAssetPreview}"/>
+      </editor:plugins>
+    </editor:PreviewPanel>
+  </local:rules>
+
+  <local:configuration>
+    <editor:ConfigureDocumentTypes names="{AssetConstants.DOCTYPE_ASSET}"
+                                   includeSubtypes="true"
+                                   mayCreate="{mayCreate}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.sdk.desktop.LicenseNames')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.assets.studio.AMStudioPlugin')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.ContentTypes')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.assets.studio.AMDocumentTypes')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.assets.studio.AMTaxonomyStudioPlugin')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.sdk.validation.Validators')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.assets.studio.AMValidators')}"/>
+
+    <!-- there is no preview available for these DocTypes -->
+    <editor:ConfigureDocumentTypes names="{AssetConstants.DOCTYPE_ASSET_TAXONOMY}"
+                                   preview="false"/>
+
+    <editor:ConfigureDocumentTypes names="{AssetConstants.DOCTYPE_ASSET}">
+      <editor:previewUrlTransformers>
+        <editor:AddParameterPreviewUrlTransformer name="view"
+                                                  value="fragmentPreview"/>
+        <editor:AddDependingParameterPreviewUrlTransformer name="studioPreferredSite"
+                                                           valueExpression="{editorContext.getSitesService().getPreferredSiteIdExpression()}"/>
+      </editor:previewUrlTransformers>
+    </editor:ConfigureDocumentTypes>
+  </local:configuration>
+
+
+</local:AMStudioPluginBase>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Decorating/Lighting" name="Chandelier Style Pendant Light Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=694;y=424;width=1142;height=1775</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=687;y=525;width=1204;height=1605</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=594;y=648;width=1327;height=1327</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=378;y=602;width=1752;height=1312</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=255;y=694;width=2022;height=1134</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=748;width=2500;height=1003</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=1111;width=2500;height=625</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2777777777777778;y1=0.1697530864197531;x2=0.7345679012345679;y2=0.8796296296296297</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.27469135802469136;y1=0.20987654320987653;x2=0.7561728395061729;y2=0.8518518518518519</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.23765432098765432;y1=0.25925925925925924;x2=0.7685185185185185;y2=0.7901234567901234</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.15123456790123457;y1=0.24074074074074073;x2=0.8518518518518519;y2=0.7654320987654321</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.10185185185185185;y1=0.2777777777777778;x2=0.9104938271604939;y2=0.7314814814814815</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2993827160493827;x2=1;y2=0.7006172839506173</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.4444444444444444;x2=1;y2=0.6944444444444444</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_HLG028_280105</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Chandelier Style Pendant Light</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Chandelier Style Pendant Light</alt>
+<copyright>Hard Ligth / Shutterstock 375089782</copyright>
+<dataUrl></dataUrl>
+<width>2500</width>
+<height>2500</height>
+<data md5="da8a47ce38584c09915bb3c310522db6" size="543839" href="../../../../../../../../__blob/da8a47ce38584c09915bb3c310522db6.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

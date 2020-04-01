@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMImageMap folder="/Sites/SiteGenesis Global/France/French/Editorial/Content/ImageMaps" name="Glamorous Women Image Map" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/ImageMaps/Glamorous%20Women%20Image%20Map.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/ImageMaps/Glamorous%20Women%20Image%20Map"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="overlay">
+<Struct>
+<BooleanProperty Name="displayTitle">true</BooleanProperty>
+<BooleanProperty Name="displayDefaultPrice">true</BooleanProperty>
+<BooleanProperty Name="displayShortText">true</BooleanProperty>
+<BooleanProperty Name="displayPicture">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="image-map">
+<Struct>
+<StringProperty Name="id">map-area-0</StringProperty>
+<StringProperty Name="coords">961,554,1306,733</StringProperty>
+<StringProperty Name="alt"/>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">false</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">dark-on-light</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Products/Turquoise%20and%20Gold%20Bracelet.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Editorial/Products/Turquoise%20and%20Gold%20Bracelet"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../../Pictures/Enjoy%20a%20Glamorous%20Party%20Picture.xml" path="/Sites/SiteGenesis%20Global/France/French/Pictures/Enjoy%20a%20Glamorous%20Party%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../Augmentation/Womens/Clothing/Dresses/Dresses.xml" path="/Sites/SiteGenesis%20Global/France/French/Augmentation/Womens/Clothing/Dresses/Dresses"/>
+</target>
+</CMImageMap>

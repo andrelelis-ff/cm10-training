@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Container xmlns:fx="http://ns.adobe.com/mxml/2009"
+           xmlns:exml="http://www.jangaroo.net/exml/0.8"
+           xmlns="exml:ext.config"
+           xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+           xmlns:ec="exml:com.coremedia.ecommerce.studio.config" xmlns:ui="exml:com.coremedia.ui.config"
+           itemId="{CATALOG_REPOSITORY_TOOLBAR_ITEM_ID}">
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.skins.ToolbarSkin;
+
+    public static const xtype:String = "com.coremedia.ecommerce.studio.config.catalogRepositoryToolbarContainer";
+
+    /**
+     * Used for the extension
+     */
+    public static const CATALOG_REPOSITORY_TOOLBAR_ITEM_ID:String = "catalogRepositoryToolbar";
+
+    private var config:CatalogRepositoryToolbarContainer;
+
+    public native function CatalogRepositoryToolbarContainer(config:CatalogRepositoryToolbarContainer = null);
+
+    /**
+     * value expression for the selected folder in the library tree
+     */
+    [Bindable]
+    public var selectedFolderValueExpression:ValueExpression;
+
+    /**
+     * value expression that acts as a model for informing a view of a newly created content object.
+     */
+    [Bindable]
+    public var createdContentValueExpression:ValueExpression;
+
+    /**
+     * value expression for the selected items, either in the list view, or - if the selection there is empty - the
+     * selected folder in the tree view.
+     */
+    [Bindable]
+    public var selectedItemsValueExpression:ValueExpression;
+    ]]></fx:Script>
+
+  <items>
+    <ec:CatalogRepositoryToolbar createdContentValueExpression="{config.createdContentValueExpression}"
+                                 selectedFolderValueExpression="{config.selectedFolderValueExpression}"
+                                 selectedItemsValueExpression="{config.selectedItemsValueExpression}"/>
+    <Toolbar itemId="switchViewButtonsToolbar"
+             ariaLabel="{resourceManager.getString('com.coremedia.cms.editor.Editor', 'CollectionView_switchView_toolbar_label')}"
+             ui="{ToolbarSkin.LIGHT.getSkin()}">
+      <items>
+        <editor:SwitchViewButtonsContainer scope="{this}"/>
+      </items>
+    </Toolbar>
+  </items>
+  <layout>
+    <layout_HBox/>
+  </layout>
+
+</Container>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:taxonomy="exml:com.coremedia.blueprint.studio.config.taxonomy"
+        xmlns:dcqe="exml:com.coremedia.blueprint.base.queryeditor.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:ui="exml:com.coremedia.ui.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.base.queryeditor.QueryEditor')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.bem.SpacingBEMEntities;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.taxonomy.cmQueryListForm";
+
+    private var config:CMQueryListForm;
+
+    public native function CMQueryListForm(config:CMQueryListForm = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!---
+     The content type to fill the tree with.
+    -->
+    <fx:String id="contentType"/>
+
+    <!---
+     The comma separated folder values to read the content from.
+    -->
+    <fx:String id="folders"/>
+  </fx:Declarations>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.base.queryeditor.QueryEditor', 'DCQE_label_conditions')}"
+            itemId="contentQueryDocumentForm">
+      <editor:items>
+        <dcqe:ContentQueryForm bindTo="{config.bindTo}"
+                               itemId="contentQueryForm"
+                               forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                               queryPropertyName="localSettings"
+                               documentTypesPropertyName="documenttype"
+                               sortingPropertyName="order">
+          <dcqe:plugins>
+            <ui:VerticalSpacingPlugin modifier="{SpacingBEMEntities.VERTICAL_SPACING_MODIFIER_200}"/>
+          </dcqe:plugins>
+          <dcqe:conditions>
+            <dcqe:ModificationDateConditionEditor bindTo="{config.bindTo}"
+                                                  propertyName="freshness"
+                                                  group="attributes"
+                                                  documentTypes="{['CMArticle', 'CMVideo', 'CMPicture','CMGallery','CMChannel']}"
+                                                  forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                                  sortable="true">
+              <dcqe:timeSlots>
+                <fx:Object name="sameDay"
+                           text="{resourceManager.getString('com.coremedia.blueprint.base.queryeditor.QueryEditor', 'DCQE_text_modification_date_same_day')}"
+                           expression="TODAY"/>
+                <fx:Object name="sevenDays"
+                           text="{resourceManager.getString('com.coremedia.blueprint.base.queryeditor.QueryEditor', 'DCQE_text_modification_date_seven_days')}"
+                           expression="7 DAYS TO NOW"/>
+                <fx:Object name="thirtyDays"
+                           text="{resourceManager.getString('com.coremedia.blueprint.base.queryeditor.QueryEditor', 'DCQE_text_modification_date_thirty_days')}"
+                           expression="30 DAYS TO NOW"/>
+              </dcqe:timeSlots>
+            </dcqe:ModificationDateConditionEditor>
+            <dcqe:LinkListConditionEditor bindTo="{config.bindTo}"
+                                          propertyName="documents"
+                                          itemId="contextConditionEditor"
+                                          group="attributes"
+                                          contentType="CMChannel"
+                                          documentTypes="{['CMArticle', 'CMVideo', 'CMPicture','CMGallery','CMChannel']}"
+                                          forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+            <dcqe:LinkListConditionEditor bindTo="{config.bindTo}"
+                                          propertyName="authors"
+                                          itemId="authorConditionEditor"
+                                          group="attributes"
+                                          contentType="CMPerson"
+                                          documentTypes="{['CMArticle', 'CMVideo', 'CMPicture','CMGallery','CMChannel']}"
+                                          forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+            <taxonomy:TaxonomyConditionEditor bindTo="{config.bindTo}"
+                                              propertyName="subjecttaxonomy"
+                                              itemId="subjectTaxonomyConditionEditor"
+                                              group="attributes"
+                                              contentType="CMTaxonomy"
+                                              documentTypes="{['CMArticle', 'CMVideo', 'CMPicture','CMGallery','CMChannel']}"
+                                              forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+            <taxonomy:LocationTaxonomyConditionEditor bindTo="{config.bindTo}"
+                                                      propertyName="locationtaxonomy"
+                                                      itemId="locationTaxonomyConditionEditor"
+                                                      group="attributes"
+                                                      contentType="CMLocTaxonomy"
+                                                      documentTypes="{['CMArticle', 'CMVideo', 'CMPicture','CMGallery','CMChannel']}"
+                                                      forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+            <dcqe:LinkingTaxonomyConditionEditor bindTo="{config.bindTo}"
+                                                 group="attributes"
+                                                 propertyName="contextTaxonomies"
+                                                 itemId="linkingTaxonomyConditionEditor"
+                                                 documentTypes="{['CMArticle', 'CMVideo', 'CMPicture','CMGallery','CMChannel']}"
+                                                 forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+          </dcqe:conditions>
+        </dcqe:ContentQueryForm>
+      </editor:items>
+    </editor:DocumentForm>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <bpforms:TeaserDocumentForm/>
+        <bpforms:FixedIndexItemsForm/>
+        <bpforms:ContainerViewTypeSelectorForm collapsed="false"/>
+        <bpforms:ValidityDocumentForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:DefaultExtraDataForm/>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataWithoutSearchableForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

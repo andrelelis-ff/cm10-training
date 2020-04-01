@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/framework/spring/blueprint-contentbeans.xml"/>
+  <import resource="classpath:/framework/spring/bpbase-ec-cms-services.xml"/>
+  <import resource="classpath:/framework/spring/bpbase-ec-cms-commercebeans.xml"/>
+
+  <bean name="contentBeanFactory:CMCategory"
+        scope="prototype"
+        parent="abstractChannel-blueprint-doctypes"
+        class="com.coremedia.blueprint.ecommerce.contentbeans.impl.CMCategoryImpl">
+    <property name="catalogService" ref="cmsCatalogService"/>
+  </bean>
+
+  <bean name="contentBeanFactory:CMProduct"
+        scope="prototype"
+        parent="abstractTeasable-blueprint-doctypes"
+        class="com.coremedia.blueprint.ecommerce.contentbeans.impl.CMProductImpl">
+    <property name="catalogService" ref="cmsCatalogService"/>
+  </bean>
+
+  <bean id="cmsCommerceLinkedBeanContextFinder"
+        class="com.coremedia.blueprint.common.navigation.context.finder.DelegateStrategyBeanContextFinder">
+    <property name="delegate" ref="cmsCommerceContextStrategy"/>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+  </bean>
+
+  <customize:append id="appendCmsCommerceContextFinder" bean="linkableBeanContextFinderMap">
+    <map>
+      <entry key="com.coremedia.blueprint.ecommerce.contentbeans.CMProduct" value-ref="cmsCommerceLinkedBeanContextFinder"/>
+    </map>
+  </customize:append>
+
+</beans>
+

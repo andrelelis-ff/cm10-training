@@ -1,0 +1,97 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/framework/spring/blueprint-handlers.xml"/>
+  <!-- make sure that localeSettingsInterceptor is known -->
+  <import resource="classpath:/framework/spring/blueprint-i18n.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/settings/impl/bpbase-settings-services.xml"/>
+  <import resource="classpath:/com/coremedia/cap/common/uapi-services.xml"/>
+  <context:component-scan base-package="com.coremedia.blueprint.elastic.social"/>
+
+  <import resource="classpath:/framework/spring/blueprint-i18n.xml"/>
+
+  <customize:prepend id="esLicenseInterceptorsCustomizer" bean="handlerInterceptors" order="1000">
+    <list>
+      <ref bean="elasticLicenseInterceptor"/>
+    </list>
+  </customize:prepend>
+
+  <bean id="authenticationHandler" class="com.coremedia.blueprint.elastic.social.cae.action.AuthenticationHandler"
+        parent="pageHandlerBase">
+    <description>
+      Handler responsible for subsitution of a CMAction with an AuthenticationState, rendering links on that
+      object and handling requests / webflows for those links.
+    </description>
+    <property name="settingsService" ref="settingsService"/>
+    <property name="flowRunner" ref="flowRunner"/>
+    <property name="resourceBundleInterceptor" ref="pageResourceBundlesInterceptor"/>
+    <property name="permittedLinkParameterNames" ref="permittedLinkParameterNames" />
+    <property name="passwordExpiryPolicy">
+      <bean class="com.coremedia.blueprint.elastic.social.cae.user.PasswordNeverExpiresPolicy"/>
+    </property>
+    <property name="linkFormatter" ref="linkFormatter"/>
+  </bean>
+
+  <util:list id="permittedLinkParameterNames" value-type="java.lang.String" list-class="java.util.ArrayList">
+    <value>next</value>
+    <value>nextUrl</value>
+    <value>externalRedirect</value>
+    <value>userName</value>
+    <value>targetView</value>
+    <value>fragmentConnector</value>
+  </util:list>
+
+  <util:list id="esPermittedLinkParameterNames" value-type="java.lang.String" list-class="java.util.ArrayList">
+    <value>targetView</value>
+  </util:list>
+
+  <bean id="commentsResultHandler"
+        class="com.coremedia.blueprint.elastic.social.cae.controller.CommentsResultHandler"
+        parent="handlerBase">
+    <property name="permittedLinkParameterNames" ref="esPermittedLinkParameterNames"/>
+  </bean>
+
+  <bean id="reviewsResultHandler"
+        class="com.coremedia.blueprint.elastic.social.cae.controller.ReviewsResultHandler"
+        parent="handlerBase">
+    <property name="permittedLinkParameterNames" ref="esPermittedLinkParameterNames"/>
+  </bean>
+
+  <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+    <property name="customEditors">
+      <map>
+        <entry key="com.coremedia.blueprint.elastic.social.cae.controller.BlobRef"
+               value="com.coremedia.blueprint.elastic.social.cae.controller.BlobRefPropertyEditor"/>
+      </map>
+    </property>
+  </bean>
+
+  <customize:append id="addElasticSocialViewBeans" bean="pageHandlerViewToBean">
+    <map>
+      <entry key="commentPreview" value="com.coremedia.blueprint.elastic.social.cae.ElasticSocialActions"/>
+    </map>
+  </customize:append>
+
+  <customize:append id="addDynamicSocialPredicates" bean="dynamicIncludePredicates">
+    <list>
+      <bean id="reviewsIncludePredicate"
+            class="com.coremedia.blueprint.elastic.social.cae.controller.ElasticSocialPredicate"/>
+    </list>
+  </customize:append>
+
+  <bean id="setGuidCookieHandler" class="com.coremedia.blueprint.elastic.social.cae.guid.GuidCookieHandler">
+    <property name="settingsService" ref="settingsService"/>
+    <property name="contentBeanIdConverter" ref="contentBeanIdConverter"/>
+  </bean>
+
+  <bean id="contentBeanIdConverter" class="com.coremedia.objectserver.beans.ContentBeanIdConverter"/>
+</beans>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/Germany/German/Editorial/Content/Startpage" name="Women Shoes" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Startpage/Women%20Shoes.xml" path="/Sites/Calista/United%20States/English/Editorial/Content/Startpage/Women%20Shoes"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=958;y=0;width=1720;height=2666</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=1168;y=0;width=1666;height=2666</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=482;width=4000;height=1702</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=59;y=0;width=3555;height=2666</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=836;y=0;width=1999;height=2666</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=114;width=4000;height=2250</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=504;y=0;width=2666;height=2666</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=945;y=0;width=1777;height=2666</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=492;width=4000;height=1500</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.17016806722689076;y1=0.17981072555205047;x2=0.7168242186464491;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2394957983193277;y1=0;x2=0.6694957983193277;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.4569327731092437</StringProperty>
+<StringProperty Name="y">0.46214511041009465</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Damenschuhe</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Damenschuhe</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2666</height>
+<data md5="d118975fcc762d1c568611b747fa2bd9" size="419829" href="../../../../../../../__blob/d118975fcc762d1c568611b747fa2bd9.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

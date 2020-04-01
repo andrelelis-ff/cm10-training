@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/SFRA/United Kingdom/English/Options/Settings/Teaser Styles" name="Light" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="title">Light</StringProperty>
+<StringProperty Name="description">Light text on transparent background</StringProperty>
+<StructProperty Name="style">
+<Struct>
+<StringProperty Name="cls">cm-teaser-overlay--light</StringProperty>
+<StringProperty Name="color">#FFFFFF</StringProperty>
+<StringProperty Name="textCls">cm-richtext--light-shadow</StringProperty>
+<StringProperty Name="ctaCls">cm-button--white</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

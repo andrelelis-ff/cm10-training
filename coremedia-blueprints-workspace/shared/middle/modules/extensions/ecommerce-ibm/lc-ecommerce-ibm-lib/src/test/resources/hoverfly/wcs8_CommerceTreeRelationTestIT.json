@@ -1,0 +1,301 @@
+{
+  "data" : {
+    "pairs" : [ {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/coremedia/storeinfo"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : { },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"serverTimezoneId\":\"Europe\\/Paris\",\"wcsVersion\":\"8.0\",\"stores\":{\"AuroraB2BESite\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store B2B Direct\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838085\",\"defaultCatalogId\":\"3074457345616676718\"},\"CalistaESite\":{\"defaultCatalog\":\"Calista Spring Fashions\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838086\",\"defaultCatalogId\":\"3074457345616676768\"},\"AuroraB2BStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838034\",\"defaultCatalogId\":\"3074457345616676668\"},\"AuroraStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715837984\",\"defaultCatalogId\":\"3074457345616676668\"},\"Extended Sites Hub\":{\"defaultCatalog\":\"\",\"catalogs\":{},\"storeId\":\"715837884\",\"defaultCatalogId\":null},\"Extended Sites Catalog Asset Store\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715837934\",\"defaultCatalogId\":\"3074457345616676668\"},\"AuroraESite\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store Consumer Direct\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838084\",\"defaultCatalogId\":\"3074457345616676719\"},\"CMStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838584\",\"defaultCatalogId\":\"3074457345616676668\"}}}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "3042" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Fri, 15 Feb 2019 16:07:11 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000JZZmlFRbA_JKR50Wd3hd9MZ:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/search/resources/store/715838084/categoryview/pc-on-the-table"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com:3737"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "locale" : [ {
+            "matcher" : "exact",
+            "value" : "en_US"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "CoreMedia_findCategoryBySeoSegment"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":1,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/categoryview\\/pc-on-the-table?profileName=CoreMedia_findCategoryBySeoSegment&locale=en_US\",\"recordSetCount\":1,\"recordSetComplete\":\"true\",\"recordSetStartNumber\":0,\"resourceName\":\"categoryview\",\"catalogGroupView\":[{\"parentCatalogGroupID\":[\"3074457345616676668_-1\",\"3074457345616676719_-1\"],\"uniqueID\":\"3074457345616676768\",\"fullImage\":\"http:\\/\\/[cmsHost]\\/catalogimage\\/category\\/[storeId]\\/en_US\\/full\\/PC_OnTheTable.jpg\",\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/categoryview\\/byId\\/3074457345616676768\",\"thumbnail\":\"http:\\/\\/[cmsHost]\\/catalogimage\\/category\\/[storeId]\\/en_US\\/thumbnail\\/PC_OnTheTable.jpg\",\"seo_token_ntk\":\"pc-on-the-table\",\"shortDescription\":\"On The Table\",\"name\":\"On The Table\",\"longDescription\":\"Find everything to make your table special and unforgettable.\",\"childCatalogGroupID\":[\"3074457345616676668_3074457345616676772\",\"3074457345616676668_3074457345616676773\",\"3074457345616676668_3074457345616676774\",\"3074457345616676668_3074457345616676775\",\"3074457345616676668_3074457345616676776\",\"3074457345616676719_3074457345616676772\",\"3074457345616676719_3074457345616676773\",\"3074457345616676719_3074457345616676774\",\"3074457345616676719_3074457345616676775\",\"3074457345616676719_3074457345616676776\"],\"storeID\":\"715837934\",\"cm_seo_token_ntk\":\"715837934_pc-on-the-table\",\"identifier\":\"PC_OnTheTable\"}]}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "1501" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Fri, 15 Feb 2019 16:07:12 GMT" ],
+          "Expires" : [ "Fri, 15 Feb 2019 17:07:12 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838084/catalog"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : { },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":4,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:80\\/wcs\\/resources\\/store\\/715838084\\/catalog\",\"recordSetCount\":4,\"recordSetComplete\":true,\"recordSetStartNumber\":0,\"resultList\":[{\"catalogIdentifier\":\"Extended Sites Catalog Asset Store\",\"description\":[{\"name\":\"Extended Sites Catalog Asset Store\"}],\"primary\":true,\"catalogId\":\"3074457345616676668\"},{\"catalogIdentifier\":\"Extended Sites Catalog Asset Store B2B Direct\",\"description\":[{\"shortDescription\":\"Aurora B2B direct sample data\",\"name\":\"Aurora B2B direct sample data\"}],\"primary\":false,\"catalogId\":\"3074457345616676718\"},{\"default\":true,\"catalogIdentifier\":\"Extended Sites Catalog Asset Store Consumer Direct\",\"description\":[{\"shortDescription\":\"Aurora Consumer Direct sample data\",\"name\":\"Aurora consumer direct sample data\"}],\"primary\":false,\"catalogId\":\"3074457345616676719\"},{\"catalogIdentifier\":\"Calista Spring Fashions\",\"description\":[{\"shortDescription\":\"Spring Fashions\",\"name\":\"Spring Fashions\"}],\"primary\":false,\"catalogId\":\"3074457345616676768\"}],\"resourceName\":\"catalog\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "1066" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Fri, 15 Feb 2019 16:07:12 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000UilDnw3RjpEyrJOifZ4y05E:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/coremedia/languagemap"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : { },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"ro\":\"-21\",\"zh\":\"-8\",\"pt_BR\":\"-6\",\"pl_PL\":\"-22\",\"en_US\":\"-1\",\"ja_JP\":\"-10\",\"ru_RU\":\"-20\",\"zh_CN\":\"-7\",\"ro_RO\":\"-21\",\"de\":\"-3\",\"zh_TW\":\"-8\",\"fr\":\"-2\",\"es_ES\":\"-5\",\"it\":\"-4\",\"ko_KR\":\"-9\",\"ko\":\"-9\",\"it_IT\":\"-4\",\"de_DE\":\"-3\",\"ar\":\"-23\",\"ar_EG\":\"-23\",\"fr_FR\":\"-2\",\"pl\":\"-22\",\"pt\":\"-6\",\"en\":\"-1\",\"ru\":\"-20\",\"es\":\"-5\",\"ja\":\"-10\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "323" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Fri, 15 Feb 2019 16:07:12 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=00002FspxpVDZosuDBNKxrVVfX0:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/search/resources/store/715838084/categoryview/byParentCategory/3074457345616676768"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com:3737"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "catalogId" : [ {
+            "matcher" : "exact",
+            "value" : "3074457345616676719"
+          } ],
+          "depthAndLimit" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "CoreMedia_findSubCategories"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":5,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/categoryview\\/byParentCategory\\/3074457345616676768?profileName=CoreMedia_findSubCategories&catalogId=3074457345616676719&depthAndLimit=-1&langId=-1\",\"recordSetCount\":5,\"recordSetComplete\":\"true\",\"recordSetStartNumber\":0,\"resourceName\":\"categoryview\",\"catalogGroupView\":[{\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/categoryview\\/byId\\/3074457345616676768\",\"thumbnail\":\"http:\\/\\/[cmsHost]\\/catalogimage\\/category\\/[storeId]\\/en_US\\/thumbnail\\/PC_OnTheTable.jpg\",\"shortDescription\":\"On The Table\",\"sequence\":[\"3074457345616676668_-1_1.10000\",\"3074457345616676719_-1_.10000\"],\"parentCatalogGroupID\":[\"3074457345616676668_-1\",\"3074457345616676719_-1\"],\"name\":\"On The Table\",\"uniqueID\":\"3074457345616676768\",\"childCatalogGroupID\":[\"3074457345616676668_3074457345616676772\",\"3074457345616676668_3074457345616676773\",\"3074457345616676668_3074457345616676774\",\"3074457345616676668_3074457345616676775\",\"3074457345616676668_3074457345616676776\",\"3074457345616676719_3074457345616676772\",\"3074457345616676719_3074457345616676773\",\"3074457345616676719_3074457345616676774\",\"3074457345616676719_3074457345616676775\",\"3074457345616676719_3074457345616676776\"],\"storeID\":\"715837934\",\"identifier\":\"PC_OnTheTable\",\"catalogGroupView\":[{\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/categoryview\\/byId\\/3074457345616676772\",\"thumbnail\":\"http:\\/\\/[cmsHost]\\/catalogimage\\/category\\/[storeId]\\/en_US\\/thumbnail\\/PC_Glasses.jpg\",\"shortDescription\":\"Glasses\",\"parentCatalogGroupID\":[\"3074457345616676668_3074457345616676768\",\"3074457345616676719_3074457345616676768\"],\"name\":\"Glasses\",\"longDescription\":\"Find glasses that compliment your stylish table.\",\"uniqueID\":\"3074457345616676772\",\"storeID\":\"715837934\",\"identifier\":\"PC_Glasses\",\"fullImage\":\"http:\\/\\/[cmsHost]\\/catalogimage\\/category\\/[storeId]\\/en_US\\/full\\/PC_Glasses.jpg\"},{\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/categoryview\\/byId\\/3074457345616676774\",\"thumbnail\":\"http:\\/\\/[cmsHost]\\/catalogimage\\/category\\/[storeId]\\/en_US\\/thumbnail\\/PC_Tableware.jpg\",\"shortDescription\":\"Plates and Tableware\",\"parentCatalogGroupID\":[\"3074457345616676668_3074457345616676768\",\"3074457345616676719_3074457345616676768\"],\"name\":\"Tableware\",\"longDescription\":\"Find plates from renowned designers.\",\"uniqueID\":\"3074457345616676774\",\"storeID\":\"715837934\",\"identifier\":\"PC_Tableware\",\"fullImage\":\"http:\\/\\/[cmsHost]\\/catalogimage\\/category\\/[storeId]\\/en_US\\/full\\/PC_Tableware.jpg\"},{\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/categoryview\\/byId\\/3074457345616676775\",\"thumbnail\":\"http:\\/\\/[cmsHost]\\/catalogimage\\/category\\/[storeId]\\/en_US\\/thumbnail\\/PC_Decoration.jpg\",\"shortDescription\":\"Decoration and Trinkets\",\"parentCatalogGroupID\":[\"3074457345616676668_3074457345616676768\",\"3074457345616676719_3074457345616676768\"],\"name\":\"Decoration\",\"longDescription\":\"Find special decoration pieces to make your table perfect.\",\"uniqueID\":\"3074457345616676775\",\"storeID\":\"715837934\",\"identifier\":\"PC_Decoration\",\"fullImage\":\"http:\\/\\/[cmsHost]\\/catalogimage\\/category\\/[storeId]\\/en_US\\/full\\/PC_Decoration.jpg\"},{\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/categoryview\\/byId\\/3074457345616676776\",\"thumbnail\":\"http:\\/\\/[cmsHost]\\/catalogimage\\/category\\/[storeId]\\/en_US\\/thumbnail\\/PC_Outdoor.jpg\",\"shortDescription\":\"Outdoor Dining\",\"parentCatalogGroupID\":[\"3074457345616676668_3074457345616676768\",\"3074457345616676719_3074457345616676768\"],\"name\":\"Outdoor Dining\",\"longDescription\":\"Find accessories for picknicks and outdoor dining.\",\"uniqueID\":\"3074457345616676776\",\"storeID\":\"715837934\",\"identifier\":\"PC_Outdoor\",\"fullImage\":\"http:\\/\\/[cmsHost]\\/catalogimage\\/category\\/[storeId]\\/en_US\\/full\\/PC_Outdoor.jpg\"}]}]}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "4043" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Fri, 15 Feb 2019 16:07:12 GMT" ],
+          "Expires" : [ "Fri, 15 Feb 2019 17:07:12 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/search/resources/store/715838084/categoryview/byId/3074457345616676768"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com:3737"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "catalogId" : [ {
+            "matcher" : "exact",
+            "value" : "3074457345616676719"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "CoreMedia_findCategoryByUniqueIds"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":1,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/categoryview\\/byId\\/3074457345616676768?profileName=CoreMedia_findCategoryByUniqueIds&catalogId=3074457345616676719&langId=-1\",\"recordSetCount\":1,\"recordSetComplete\":\"true\",\"recordSetStartNumber\":0,\"resourceName\":\"categoryview\",\"catalogGroupView\":[{\"parentCatalogGroupID\":[\"3074457345616676668_-1\",\"3074457345616676719_-1\"],\"uniqueID\":\"3074457345616676768\",\"fullImage\":\"http:\\/\\/[cmsHost]\\/catalogimage\\/category\\/[storeId]\\/en_US\\/full\\/PC_OnTheTable.jpg\",\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/categoryview\\/byId\\/3074457345616676768\",\"thumbnail\":\"http:\\/\\/[cmsHost]\\/catalogimage\\/category\\/[storeId]\\/en_US\\/thumbnail\\/PC_OnTheTable.jpg\",\"seo_token_ntk\":\"pc-on-the-table\",\"shortDescription\":\"On The Table\",\"name\":\"On The Table\",\"longDescription\":\"Find everything to make your table special and unforgettable.\",\"childCatalogGroupID\":[\"3074457345616676668_3074457345616676772\",\"3074457345616676668_3074457345616676773\",\"3074457345616676668_3074457345616676774\",\"3074457345616676668_3074457345616676775\",\"3074457345616676668_3074457345616676776\",\"3074457345616676719_3074457345616676772\",\"3074457345616676719_3074457345616676773\",\"3074457345616676719_3074457345616676774\",\"3074457345616676719_3074457345616676775\",\"3074457345616676719_3074457345616676776\"],\"storeID\":\"715837934\",\"cm_seo_token_ntk\":\"715837934_pc-on-the-table\",\"identifier\":\"PC_OnTheTable\"}]}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "1537" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Fri, 15 Feb 2019 16:07:13 GMT" ],
+          "Expires" : [ "Fri, 15 Feb 2019 17:07:13 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    } ],
+    "globalActions" : {
+      "delays" : [ ]
+    }
+  },
+  "meta" : {
+    "schemaVersion" : "v5",
+    "hoverflyVersion" : "v0.17.7",
+    "timeExported" : "2019-02-15T17:07:13+01:00"
+  }
+}

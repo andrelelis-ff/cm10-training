@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Hybris Apparel/Germany/German/Editorial/Content" name="Men and Women Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Editorial/Content/Men%20and%20Women%20Teaser.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Men%20and%20Women%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Die neue Winterkollektion</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Finden Sie Ihren persönlichen Stil </p></div></teaserText>
+<pictures>
+<link href="../../Pictures/Social%20Media%20in%20the%20Snow.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Social%20Media%20in%20the%20Snow"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+</target>
+<targets>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="links">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Augmentation/Categories%20-%20categories/Snowwear%20men%20-%20190000/Snowwear%20Men.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Augmentation/Categories%20-%20categories/Snowwear%20men%20-%20190000/Snowwear%20Men"/>
+<BooleanProperty Name="callToActionEnabled">true</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Snowwear Men</StringProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Augmentation/Categories%20-%20categories/Snowwear%20women%20-%20200000/Snowwear%20Women.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Augmentation/Categories%20-%20categories/Snowwear%20women%20-%20200000/Snowwear%20Women"/>
+<BooleanProperty Name="callToActionEnabled">true</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Snowwear Women</StringProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</targets>
+</CMTeaser>

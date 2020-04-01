@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+
+  <!--
+    Test content for the LinkEmbedFilterTest
+  -->
+  <content>
+    <folder id="1" name="">
+
+      <document id="240" type="CMArticle" name="a1">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="BlockIntoOpenP"/>
+          <markupProperty name="detailText" url="240detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+
+      <document id="242" type="CMArticle" name="a2">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="blockTarget"/>
+          <markupProperty name="detailText" url="242detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+
+      <document id="244" type="CMArticle" name="a3">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="BlockIntoOpenSpan"/>
+          <markupProperty name="detailText" url="244detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+
+      <document id="246" type="CMArticle" name="a4">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="BlockIntoDelayedP"/>
+          <markupProperty name="detailText" url="246detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+
+      <document id="248" type="CMArticle" name="a5">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="BlockIntoDiv"/>
+          <markupProperty name="detailText" url="248detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+
+      <document id="250" type="CMPicture" name="p1">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="flowTarget"/>
+        </version>
+      </document>
+
+      <document id="252" type="CMArticle" name="a6">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="FlowIntoDiv"/>
+          <markupProperty name="detailText" url="252detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+
+      <document id="254" type="CMArticle" name="a7">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="FlowIntoOpenP"/>
+          <markupProperty name="detailText" url="254detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+
+      <document id="256" type="CMArticle" name="a8">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="FlowIntoDelayedP"/>
+          <markupProperty name="detailText" url="256detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+
+      <document id="258" type="CMArticle" name="a9">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="BlockIntoOtherwiseEmptyP"/>
+          <markupProperty name="detailText" url="258detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+
+      <document id="260" type="CMArticle" name="a10">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="unconcernedEmptyP"/>
+          <markupProperty name="detailText" url="260detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+
+      <document id="262" type="CMArticle" name="a11">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="regression-CMS-343"/>
+          <markupProperty name="detailText" url="262detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+
+      <document id="264" type="CMArticle" name="a11">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="BlockIntoEndOfP"/>
+          <markupProperty name="detailText" url="264detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+
+      <document id="266" type="CMArticle" name="a11">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="BlockIntoEmptyP"/>
+          <markupProperty name="detailText" url="266detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+
+      <document id="268" type="CMArticle" name="a11">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="RegressionCMS-1673"/>
+          <markupProperty name="detailText" url="268detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+    </folder>
+  </content>
+</contentRepository>

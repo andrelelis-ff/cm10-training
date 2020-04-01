@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMLocTaxonomy folder="/Settings/Taxonomies/Location" name="Denmark" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Denmark</value>
+<children>
+<link href="Copenhagen.xml" path="/Settings/Taxonomies/Location/Copenhagen"/>
+</children>
+<externalReference>http://d.opencalais.com/genericHasher-1/738d99b4-3efc-3311-b796-408f8f66daf4</externalReference>
+<postcode></postcode>
+<latitudeLongitude>55.74624811256023,9.91516893749997</latitudeLongitude>
+</CMLocTaxonomy>

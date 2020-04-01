@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/framework/spring/blueprint-handlers.xml"/>
+  <import resource="classpath:/META-INF/coremedia/livecontext-handler-interceptors.xml"/>
+
+  <bean id="p13nPlacementHandler" class="com.coremedia.livecontext.p13n.include.P13NPlacementHandler" parent="pageHandlerBase" >
+    <property name="validationService" ref="validationService"/>
+    <property name="permittedLinkParameterNames">
+      <list>
+        <value>targetView</value>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="p13nNavigationHandler" class="com.coremedia.livecontext.p13n.include.P13NNavigationHandler" parent="pageHandlerBase" >
+    <property name="permittedLinkParameterNames">
+      <list>
+        <value>targetView</value>
+      </list>
+    </property>
+  </bean>
+
+  <customize:append id="appendFragmentCommerceInterceptorIncludePatternsCustomizer" bean="fragmentCommerceInterceptorIncludePatterns">
+    <list>
+      <util:constant static-field="com.coremedia.livecontext.p13n.include.P13NPlacementHandler.DYNAMIC_PLACEMENT_URI_PATTERN"/>
+      <util:constant static-field="com.coremedia.blueprint.personalization.include.P13NContainerHandler.DYNAMIC_CONTAINER_URI_PATTERN"/>
+      <util:constant static-field="com.coremedia.livecontext.p13n.include.P13NNavigationHandler.DYNAMIC_NAVIGATION_URI_PATTERN"/>
+    </list>
+  </customize:append>
+
+</beans>

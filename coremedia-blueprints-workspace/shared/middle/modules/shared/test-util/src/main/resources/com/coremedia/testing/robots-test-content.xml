@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+  <!-- we need this folder tree:
+  3: /Navigation
+  5: /Navigation/Africa
+  7: /Navigation/Lifestyle
+  9: /Navigation/Sports
+  11: /Editorial
+  13: /Editorial/Sports
+  15: /Editorial/Travel
+  17: /Options
+
+  with these documents:
+  2: /Navigation/[Media]
+  4: /Navigation/[MediaSite]
+  6: /Navigation/[_folderProperties]
+  8: /Navigation/Africa/[Africa]
+  10: /Navigation/Lifestyle/[Lifestyle]
+  12: /Navigation/Sports/[Sports]
+  28: /Editorial/[_folderProperties]
+  14: /Editorial/Sports/[BeachSoccer]
+  24: /Editorial/Sports/[_folderProperties]
+  16: /Editorial/Travel/[SanFrancisco]
+  26: /Editorial/Travel/[_folderProperties]
+  18: /Options/[Robots]
+  20: /Navigation/[Corporation]
+  22: /Navigation/[CorporationSite]
+  -->
+  <content>
+    <folder id="1" name="" placeApproved="true" published="true" modificationDate="2013-05-14T20:59:42.000+01:00">
+      <folder id="111" name="Sites">
+        <folder id="113" name="Media">
+          <folder id="3" name="Navigation">
+            <document id="2" type="CMChannel" name="Media">
+              <version number="1">
+                <!-- <markupProperty name="localSettings" url="10settings.xml" grammar="coremedia-struct-2008"/> -->
+                <linkProperty name="linkedSettings">
+                  <link id="18"/>
+                </linkProperty>
+                <linkProperty name="children">
+                  <link id="8"/>
+                  <link id="10"/>
+                  <link id="12"/>
+                </linkProperty>
+                <stringProperty name="segment" value="media"/>
+                <stringProperty name="title" value="Media Title"/>
+                <stringProperty name="keywords" value="key,word,media"/>
+                <blobProperty name="favicon" url="16data.jpg" type="image/jpeg"/>
+                <!-- <markupProperty name="placement" url="10placement.xml" grammar="coremedia-struct-2008"/> -->
+              </version>
+            </document>
+            <document id="4" type="CMSite" name="MediaSite">
+              <version number="1">
+                <linkProperty name="root">
+                  <link id="2"/>
+                </linkProperty>
+                <stringProperty name="locale" value="en-US"/>
+                <stringProperty name="id" value="site-id"/>
+                <stringProperty name="name" value="the-site-name"/>
+              </version>
+            </document>
+            <document id="6" type="CMFolderProperties" name="_folderProperties">
+              <version number="1">
+                <linkProperty name="contexts">
+                  <link id="2"/>
+                </linkProperty>
+              </version>
+            </document>
+            <folder id="5" name="Africa">
+              <document id="8" type="CMChannel" name="Africa">
+                <version number="1">
+                  <stringProperty name="segment" value="africa"/>
+                  <stringProperty name="title" value="Africa Title"/>
+                  <stringProperty name="keywords" value="africa,keyword"/>
+                  <blobProperty name="favicon" url="16data.jpg" type="image/jpeg"/>
+                </version>
+              </document>
+            </folder>
+            <folder id="7" name="Lifestyle">
+              <document id="10" type="CMChannel" name="Lifestyle">
+                <version number="1">
+                  <stringProperty name="segment" value="lifestyle"/>
+                  <stringProperty name="title" value="Lifestyle Title"/>
+                  <stringProperty name="keywords" value="lifestyle,keyword"/>
+                  <blobProperty name="favicon" url="16data.jpg" type="image/jpeg"/>
+                </version>
+              </document>
+            </folder>
+            <folder id="9" name="Sports">
+              <document id="12" type="CMChannel" name="Sports">
+                <version number="1">
+                  <stringProperty name="segment" value="sports"/>
+                  <stringProperty name="title" value="Sports Title"/>
+                  <stringProperty name="keywords" value="sports,keyword"/>
+                  <blobProperty name="favicon" url="16data.jpg" type="image/jpeg"/>
+                </version>
+              </document>
+            </folder>
+          </folder>
+          <folder id="11" name="Editorial">
+            <document id="28" type="CMFolderProperties" name="_folderProperties">
+              <version number="1">
+                <linkProperty name="contexts">
+                  <link id="2"/>
+                </linkProperty>
+              </version>
+            </document>
+            <folder id="13" name="Sports">
+              <document id="24" type="CMFolderProperties" name="_folderProperties">
+                <version number="1">
+                  <linkProperty name="contexts">
+                    <link id="12"/>
+                  </linkProperty>
+                </version>
+              </document>
+              <document id="14" type="CMArticle" name="BeachSoccer">
+                <version number="1">
+                  <stringProperty name="teaserTitle" value="teaserTitle BeachSoccer"/>
+                  <stringProperty name="title" value="title BeachSoccer"/>
+                  <stringProperty name="locale" value="en"/>
+                </version>
+              </document>
+            </folder>
+            <folder id="15" name="Travel">
+              <document id="26" type="CMFolderProperties" name="_folderProperties">
+                <version number="1">
+                  <linkProperty name="contexts">
+                    <link id="8"/>
+                  </linkProperty>
+                </version>
+              </document>
+              <document id="16" type="CMArticle" name="SanFrancisco">
+                <version number="1">
+                  <stringProperty name="teaserTitle" value="teaserTitle SanFrancisco"/>
+                  <stringProperty name="title" value="title SanFrancisco"/>
+                  <stringProperty name="locale" value="en"/>
+                </version>
+              </document>
+            </folder>
+          </folder>
+        </folder>
+      </folder>
+
+      <folder id="17" name="Options">
+        <document id="18" type="CMSettings" name="Robots">
+          <version number="1">
+            <markupProperty name="settings" url="18-robots-settings.xml" grammar="coremedia-struct-2008"/>
+          </version>
+        </document>
+      </folder>
+    </folder>
+  </content>
+  <rules>
+    <rule resourceId="1" group="0" doctype="Folder_">
+      <right value="ALL"/>
+    </rule>
+    <rule resourceId="1" group="0" doctype="Document_">
+      <right value="ALL"/>
+    </rule>
+  </rules>
+</contentRepository>

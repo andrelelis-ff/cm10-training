@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Aurora Augmentation/Germany/German/Navigation/Fragments/Search Landing Pages" name="Spring Summer Dresses Hidden Landing Page" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Navigation/Fragments/Search%20Landing%20Pages/Spring%20Summer%20Dresse48133204.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Search%20Landing%20Pages/Spring%20Summer%20Dresses%20Hidden%20Landing%20Page"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>spring-dresses-landingpage</segment>
+<title>Luftige Sommerkleider</title>
+<htmlTitle></htmlTitle>
+<keywords>Sommerkleider</keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Finde alle schönen Sommerkleider aus diesem Video auf unserer Sommerkleider Landing Page. </p> </div></teaserText>
+<pictures>
+<link href="../../../Editorial/Content/Fashion/Photo%20Shooting%20in%20Rome%20-%20With%20my%20new%20fad6adb3.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/Photo%20Shooting%20in%20Rome%20-%20With%20my%20new%20Sun%20Glasses"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<hidden>1</hidden>
+<hiddenInSitemap>1</hiddenInSitemap>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../../Editorial/Content/Fashion/Fashions%20fade%2C%20style%20is%20eternal.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/Fashions%20fade%2C%20style%20is%20eternal"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../../Editorial/Content/Fashion/The%20difference%20between%20style%20and%20fashion.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/The%20difference%20between%20style%20and%20fashion"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../../Options/Viewtypes/CMChannel/landscape.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Viewtypes/CMChannel/landscape"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

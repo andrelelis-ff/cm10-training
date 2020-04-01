@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalChannel folder="/Sites/Aurora B2B Augmentation/Germany/German/Augmentation/B2B_Decorating" name="Decorating" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Augmentation/B2B_Decorating/Decorating.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Augmentation/B2B_Decorating/Decorating"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Settings/Teaser%20Styles/Light"/>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>b2b-decorating</segment>
+<title>Dekoration</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1">Dekoration</p><p>Finden Sie hier die neusten Trends im Bereich Dekoration</p></div></teaserText>
+<pictures>
+<link href="../../Pictures/Product%20Category%20Pictures/Decorating/Decorating%20Catorgory%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Pictures/Product%20Category%20Pictures/Decorating/Decorating%20Catorgory%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Layouts/PagegridNavigation.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Settings/Pagegrid/Layouts/PagegridNavigation"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../../Editorial/Content/Decorating/Decorating%20Category%20Collection.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Decorating/Decorating%20Category%20Collection"/>
+<Link xlink:href="coremedia:///cap/resources/../../Editorial/Content/Decorating/Decorating%20Products%20Category%20Secondary273da161.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Decorating/Decorating%20Products%20Category%20Secondary%20Promotion%20Collection"/>
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+<pdpPagegrid>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Layouts/Fragment%20PDP.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Settings/Pagegrid/Layouts/Fragment%20PDP"/>
+</Struct>
+</StructProperty>
+</Struct>
+</pdpPagegrid>
+<externalId>ibm:///catalog/category/B2B_Decorating</externalId>
+</CMExternalChannel>

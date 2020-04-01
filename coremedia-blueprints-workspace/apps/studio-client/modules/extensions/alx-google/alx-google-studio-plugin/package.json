@@ -1,0 +1,8 @@
+{
+  "studioPlugins": [
+    {
+      "mainClass": "com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsStudioPlugin",
+      "name": "GoogleAnalytics"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+
+  <!--
+    Test content for the PageRssHandlerTest
+  -->
+  <content>
+    <folder id="1" name="">
+      <folder id="11" name="Sites">
+        <folder id="111" name="Media">
+
+          <document id="100" name="SiteA" type="CMSite">
+            <version number="1">
+              <linkProperty name="root">
+                <link id="124"/>
+              </linkProperty>
+              <stringProperty name="id" value="siteA"/>
+              <stringProperty name="locale" value="en"/>
+              <stringProperty name="name" value="A"/>
+              <linkProperty name="master"/>
+            </version>
+          </document>
+
+          <folder id="1111" name="Navigation">
+            <document id="124" name="Media" type="CMChannel">
+              <version number="1">
+                <stringProperty name="segment" value="media"/>
+                <linkProperty name="children">
+                  <link id="4280"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="4280" name="Topic" type="CMChannel">
+              <!--
+                The Topicpage Channel of the Media site.
+                Must be hidden in navigation and sitemap, because it has
+                no inherent main content.
+              -->
+              <version number="1">
+                <stringProperty name="segment" value="topic"/>
+                <intProperty name="hidden" value="1"/>
+                <intProperty name="hiddenInSitemap" value="1"/>
+              </version>
+            </document>
+          </folder>
+          <folder id="1115" name="Editorial">
+            <document id="666" name="NotAFeedSource" type="CMArticle">
+              <version number="1">
+                <stringProperty name="segment" value="london"/>
+              </version>
+            </document>
+          </folder>
+          <folder id="1113" name="Options">
+            <folder id="11133" name="Settings">
+              <document id="4248" name="TopicPages" type="CMSettings">
+                <!--
+                  The Settings document which denotes the Topicpage Channel
+                  for this (wrt. folder hierarchy) site.
+                  The location of this document is injected by Spring via
+                  TopicpageContextFinder#setTopicpageConfigurationPath.
+                -->
+                <version number="1">
+                  <markupProperty name="settings" url="4248settings.xml" grammar="coremedia-struct-2008"/>
+                </version>
+              </document>
+            </folder>
+            <folder id="11131" name="Taxonomies">
+              <folder id="111311" name="TopicPages">
+                <document id="4250" name="Hamburg" type="CMTaxonomy">
+                  <!--
+                    A Site local taxonomy
+                  -->
+                  <version number="1">
+                    <stringProperty name="value" value="hamburg"/>
+                  </version>
+                </document>
+              </folder>
+            </folder>
+
+          </folder>
+
+        </folder>
+      </folder>
+    </folder>
+  </content>
+  <rules>
+    <rule resourceId="1" group="0" doctype="Folder_">
+      <right value="ALL"/>
+    </rule>
+    <rule resourceId="1" group="0" doctype="Document_">
+      <right value="ALL"/>
+    </rule>
+  </rules>
+</contentRepository>

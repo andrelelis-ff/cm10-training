@@ -1,0 +1,14 @@
+//
+// @deprecated use {@link #caption} instead
+//
+// Create a banderole with absolute position from bottom
+// @param: {string} distance to bottom, default is 10%
+//
+// @example:
+// .wrapper {
+//   @include banderole();
+// }
+//
+@mixin banderole($bottom: 10%) {
+  @include caption($bottom);
+}

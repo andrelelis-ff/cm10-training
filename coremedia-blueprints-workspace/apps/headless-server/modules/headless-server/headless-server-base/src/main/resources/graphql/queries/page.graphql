@@ -1,0 +1,43 @@
+query PageQuery($id: String!) {
+  content {
+    page(id: $id) {
+      __typename
+      ... Reference
+      title
+      teaserTitle
+      teaserText
+      grid {
+        cssClassName
+        rows {
+          placements {
+            name
+            viewtype
+            items {
+              __typename
+              ... Teasable
+              ... ImageMap
+              ... on CMCollection {
+                viewtype
+                items {
+                  __typename
+                  ... Teasable
+                }
+              }
+            }
+          }
+        }
+      }
+      context {
+        ... Reference
+      }
+      navigationPath {
+        ... Reference
+      }
+    }
+  }
+}
+
+#import "./referenceFragments.graphql"
+#import "./teasableFragments.graphql"
+#import "./imageMapFragments.graphql"
+#import "./quickInfoFragments.graphql"

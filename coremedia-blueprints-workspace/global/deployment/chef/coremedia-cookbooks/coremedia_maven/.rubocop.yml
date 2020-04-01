@@ -1,0 +1,28 @@
+AllCops:
+  Include:
+    - '**/*.rb'
+  Exclude:
+    - 'bin/*.rb'
+    - 'build/**/*'
+    - '.kitchen/**/*'
+AlignParameters:
+  Enabled: false
+CyclomaticComplexity:
+  Max: 10
+Encoding:
+  Enabled: false
+HashSyntax:
+  Enabled: false
+LineLength:
+  Enabled: false
+MethodLength:
+  Max: 40
+Style/MethodName:
+  Enabled: false
+Style/FileName:
+  Enabled: false
+# otherwise knife-cookbook-doc style complains
+Style/LeadingCommentSpace:
+  Enabled: false
+SingleSpaceBeforeFirstArg:
+  Enabled: false

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-cae-services.xml"/>
+
+  <bean class="com.coremedia.blueprint.base.livecontext.ecommerce.common.BaseCommerceServicesAutoConfiguration"/>
+
+  <bean id="lcStaticTestUrlsController" class="com.coremedia.livecontext.ecommerce.ibm.cae.handler.StaticTestUrlsHandler">
+    <property name="siteResolver" ref="siteResolver"/>
+    <property name="urlPathFormattingHelper" ref="urlPathFormattingHelper"/>
+    <property name="commerceConnectionInitializer" ref="commerceConnectionInitializer"/>
+    <property name="testUrlsMap">
+      <map>
+        <entry key="aurora">
+          <list>
+            <value>/blueprint/servlet/service/fragment/{storeId}/{locale}/params;view=externalHead;pageId=auroraesite</value>
+            <value>/blueprint/servlet/service/fragment/{storeId}/{locale}/params;placement=header;view=asDefaultFragment;pageId=auroraesite</value>
+            <value>/blueprint/servlet/service/fragment/{storeId}/{locale}/params;placement=hero;pageId=auroraesite</value>
+            <value>/blueprint/servlet/service/fragment/{storeId}/{locale}/params;placement=placement1;pageId=auroraesite</value>
+            <value>/blueprint/servlet/service/fragment/{storeId}/{locale}/params;placement=placement2;pageId=auroraesite</value>
+            <value>/blueprint/servlet/service/fragment/{storeId}/{locale}/params;placement=placement3;pageId=auroraesite</value>
+            <value>/blueprint/servlet/service/fragment/{storeId}/{locale}/params;placement=footer;view=asDefaultFragment;pageId=auroraesite</value>
+          </list>
+        </entry>
+      </map>
+    </property>
+  </bean>
+
+</beans>

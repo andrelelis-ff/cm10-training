@@ -1,0 +1,17 @@
+/** IMPORTANT: This file is just for IDE syntax completion, DO NOT IMPORT! */
+
+/**
+ * Encodes the given $string using base64.
+ *
+ * @param $string [Sass::Script::Value::String] the string to encode
+ * @return [Sass::Script::Value::String] The result string.
+ */
+@function encodeBase64($string) { /* stub */ }
+
+/**
+ * Encodes the given $string to be used as an URI component (using JavaScript function encodeURIComponent)
+ *
+ * @param $string [Sass::Script::Value::String] the string to encode
+ * @return [Sass::Script::Value::String] The result string.
+ */
+@function encodeURIComponent($string) { /* stub */ }

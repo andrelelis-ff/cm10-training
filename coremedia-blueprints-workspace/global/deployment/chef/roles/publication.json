@@ -1,0 +1,13 @@
+{
+  "name": "publication",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The role for the publication node",
+  "run_list": [
+    "role[base]",
+    "recipe[blueprint-spring-boot::master-live-server]",
+    "recipe[blueprint-tools::master-live-server-tools]",
+    "recipe[blueprint-spring-boot::caefeeder-live]",
+    "recipe[blueprint-tools::caefeeder-live-tools]"
+  ]
+}

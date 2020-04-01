@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/United Kingdom/English/Downloads" name="Women holding a Snowboard" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.6506172839506172</StringProperty>
+<StringProperty Name="y">0.42407407407407405</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=2;y=8;width=3610;height=2031</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=1451;y=0;width=1808;height=2411</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=1553;y=0;width=1607;height=2411</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=397;y=0;width=3215;height=2411</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=1150;y=0;width=2411;height=2411</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=2;y=346;width=3610;height=1354</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>hybris:///catalog/category/200300</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Women holding a Snowboard</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Women holding a Snowboard</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>3616</width>
+<height>2411</height>
+<data md5="2fed0cd466cd7c89be55f22738f1e660" size="4312816" href="../../../../../__blob/2fed0cd466cd7c89be55f22738f1e660.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

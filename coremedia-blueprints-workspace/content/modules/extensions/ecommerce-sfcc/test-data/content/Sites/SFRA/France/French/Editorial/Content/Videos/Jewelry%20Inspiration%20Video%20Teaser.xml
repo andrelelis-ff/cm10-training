@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/SFRA/France/French/Editorial/Content/Videos" name="Jewelry Inspiration Video Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Videos/Jewelry%20Inspiration%20Video%20Teaser.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Videos/Jewelry%20Inspiration%20Video%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Inspiration de bijoux</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="Jewelry%20Inspiration%20Video.xml" path="/Sites/SFRA/France/French/Editorial/Content/Videos/Jewelry%20Inspiration%20Video"/>
+</target>
+</CMTeaser>

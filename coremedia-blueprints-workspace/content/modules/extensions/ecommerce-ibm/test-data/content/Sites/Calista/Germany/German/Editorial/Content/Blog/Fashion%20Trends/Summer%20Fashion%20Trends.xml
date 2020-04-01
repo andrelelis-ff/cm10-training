@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Calista/Germany/German/Editorial/Content/Blog/Fashion Trends" name="Summer Fashion Trends" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Content/Blog/Fashion%20Trends/Summer%20Fashion%20Trends.xml" path="/Sites/Calista/United%20States/English/Editorial/Content/Blog/Fashion%20Trends/Summer%20Fashion%20Trends"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/Calista/Germany/German/Options/Settings/Teaser%20Styles/Light"/>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<IntProperty Name="positionX">41</IntProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="callToActionCustomText">Explore</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Sommermodetrends</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center"> Modetrends diesen Sommer </p> <p class="align--center"> Sei stilvoll. Seien Sie trendy. Sei ikonisch. </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Ich möchte allen Frauen danken, die meine Kleider getragen haben, dem berühmten und dem unbekannten, die mir so treu waren und mir so viel Freude gemacht haben. Anstatt sechs Dinge zu kaufen, eine Sache, die Sie wirklich mögen. Kaufen Sie nicht weiter, nur um der Sache willen. Sie haben ein interessanteres Leben, wenn Sie beeindruckende Kleidung tragen. Ich denke, es gibt etwas mit Luxus - es ist nicht etwas, was die Menschen brauchen, aber es ist das, was sie wollen. Es zieht wirklich an ihrem Herzen. Sie können nicht kreativ mit Menschen um Sie herum sein. </p> <p> Ich liebe dich, wenn du mich liebst. Wenn Sie Kleidung tragen, die nicht zu Ihnen passt, sind Sie ein Modeopfer. Sie müssen Kleidung tragen, die Sie besser aussehen lässt. Ich mag die Achtzigerjahre überhaupt nicht. Es war ein vulgärer modischer Moment. Vertrauen. Wenn Sie es haben, können Sie alles gut aussehen lassen. Die Leute sagten, dass das Herstellen von Kleidern von innen her nicht richtig sei. Ich stimmte nicht zu, weil Kleidung, die von innen nach außen ist, so schön wie eine Kathedrale ist. </p> <p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Products/Hermitage%20Catty%20Sunglasses.xml" cmexport:path="/Sites/Calista/Germany/German/Editorial/Products/Hermitage%20Catty%20Sunglasses">Hermitage Catty Sunglasses</a></p> <p> Komfort ist mir sehr wichtig. Ich glaube, die Menschen leben besser in großen Häusern und in großen Kleidern. Der Schlüssel zu meinen Kollektionen ist Sinnlichkeit. Design ist eine Reihe kreativer Entscheidungen - es ist eine Zusammenarbeit, ein Entwicklungsprozess. Sie wählen Ihre Stoffe je nachdem, was Sie sagen möchten, und arbeiten dann mit Mühlen zusammen, um diese Stoffe zu erhalten. Durch den Prozess erkennen Sie, was Sie wollen. Ich habe mich zum Zeitpunkt des Punks überhaupt nicht als Modedesignerin betrachtet. Ich benutzte nur Mode als eine Möglichkeit, meinen Widerstand auszudrücken und rebellisch zu sein. Ich kam aus dem Land und als ich nach London kam, hielt ich mich für sehr dumm. Es war mein Ziel, die Welt, in der ich lebe, zu verstehen. Ich glaube, ich würde verrückt werden, wenn ich keinen Ort hätte, an den ich flüchten könnte. </p> <p> Online-Medien sind in der Mode immer einflussreicher. Ich bin ein Komplize, um Frauen dabei zu helfen, das zu bekommen, was sie wollen. Ich möchte allen Frauen danken, die meine Kleider getragen haben, dem berühmten und dem unbekannten, die mir so treu waren und mir so viel Freude gemacht haben. Manchmal sind die einfachsten Dinge am tiefsten. Meine Kunden sind erfolgreiche Arbeiterinnen. </p> <p> Man kann sich hinter den Theatrics so viel verstecken, und das muss ich nicht mehr tun. Ich habe die Ästhetik immer geliebt. Nicht besonders Mode, sondern eine Vorstellung von Schönheit. Kollektionen zu machen, Mode zu machen ist wie ein Dialog ohne Unterbrechung. Ich denke, Gott ist der fantastischste Designer. Meine Beziehungen zu Produzenten oder Fotografen - diese Beziehungen dauerten Jahre. </p> <p> Manchmal sind die einfachsten Dinge am tiefsten. Ich glaube an Trost. Wenn Sie sich in Ihrer Kleidung nicht wohl fühlen, fällt es Ihnen schwer, an etwas anderes zu denken. Ich liebe die 2000er Jahre, weil alle die Haute Couture lieben. Mode wird unmodern. Ich denke, es gibt etwas mit Luxus - es ist nicht etwas, was die Menschen brauchen, aber es ist das, was sie wollen. Es zieht wirklich an ihrem Herzen. </p> </div></detailText>
+<pictures>
+<link href="../../../../Pictures/Blog/Elegant%20Fashion.xml" path="/Sites/Calista/Germany/German/Pictures/Blog/Elegant%20Fashion"/>
+</pictures>
+<related>
+<link href="Fashions%20fade%2C%20style%20is%20eternal.xml" path="/Sites/Calista/Germany/German/Editorial/Content/Blog/Fashion%20Trends/Fashions%20fade%2C%20style%20is%20eternal"/>
+<link href="The%20difference%20between%20style%20and%20fashion.xml" path="/Sites/Calista/Germany/German/Editorial/Content/Blog/Fashion%20Trends/The%20difference%20between%20style%20and%20fashion"/>
+</related>
+<authors>
+<link href="../../../Authors/Michelle%20Villegas%20Person.xml" path="/Sites/Calista/Germany/German/Editorial/Authors/Michelle%20Villegas%20Person"/>
+</authors>
+</CMArticle>

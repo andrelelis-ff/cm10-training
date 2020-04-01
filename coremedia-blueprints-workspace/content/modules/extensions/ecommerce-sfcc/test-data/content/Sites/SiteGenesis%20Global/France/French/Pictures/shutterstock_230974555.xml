@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/France/French/Pictures" name="shutterstock_230974555" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Pictures/shutterstock_230974555.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Pictures/shutterstock_230974555"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=82;width=1377;height=1836</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=76;width=1377;height=1377</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=82;width=1377;height=1033</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=82;width=1377;height=775</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=101;width=1377;height=516</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.04113924050632911;x2=1;y2=0.9591392405063291</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.0379746835443038;x2=1;y2=0.7264746835443038</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.04113924050632911;x2=1;y2=0.5575142405063291</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.04113924050632911;x2=1;y2=0.42842049050632913</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.05063291139240506;x2=1;y2=0.30882041139240507</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Shutterstock_230974555</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Shutterstock_230974555</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1377</width>
+<height>2000</height>
+<data md5="6a929bdf126852347785cef147edc088" size="412380" href="../../../../../__blob/6a929bdf126852347785cef147edc088.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,38 @@
+.cm-product-assets {
+  &__slideshow {
+    .cm-teasable {
+      padding: 0 0 2px 0;
+    }
+  }
+
+  &__carousel {
+    .slick-slide {
+      padding: 2px;
+
+      &--active {
+        background-color: $cm-hybris-orange;
+      }
+    }
+
+    .cm-teasable {
+      padding: 0;
+    }
+  }
+
+  &-downloads {
+    &__title {
+      font-size: inherit;
+      font-weight: bold;
+      color: $cm-hybris-text !important;
+      text-transform: uppercase;
+    }
+
+    &__item {
+      font-size: inherit;
+    }
+
+    &__list {
+      padding-left: 18px;
+    }
+  }
+}

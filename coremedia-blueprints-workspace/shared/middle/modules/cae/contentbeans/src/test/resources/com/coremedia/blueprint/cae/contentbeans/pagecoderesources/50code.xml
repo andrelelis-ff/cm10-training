@@ -1,0 +1,6 @@
+<div xmlns="http://www.coremedia.com/2003/richtext-1.0">
+  <p>﻿$(document).ready(function() {</p>
+  <p>/* code50 */</p>
+  <p>$(".subcolumns").each(function(){$(this).find(".box").equalHeights()});</p>
+  <p>});</p>
+</div>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StructProperty Name="renditions">
+    <Struct>
+      <StructProperty Name="thumbnail">
+        <Struct>
+          <BooleanProperty Name="show">true</BooleanProperty>
+        </Struct>
+      </StructProperty>
+      <StructProperty Name="web">
+        <Struct>
+          <BooleanProperty Name="show">false</BooleanProperty>
+        </Struct>
+      </StructProperty>
+      <StructProperty Name="print">
+        <Struct>
+        </Struct>
+      </StructProperty>
+    </Struct>
+  </StructProperty>
+</Struct>

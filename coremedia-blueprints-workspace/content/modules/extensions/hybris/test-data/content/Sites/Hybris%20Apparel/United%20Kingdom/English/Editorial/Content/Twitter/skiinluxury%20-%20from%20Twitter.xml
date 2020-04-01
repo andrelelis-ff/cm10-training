@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Twitter" name="skiinluxury - from Twitter" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Follow on Twitter</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>skiinluxury</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Twitter.xml" path="/Settings/Taxonomies/Subject/Twitter"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>skiinluxury</teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Parapenting...would you give it a try? https://t.co/Qow4K7W1wY #fly #extreme https://t.co/S5Aoj2qqPu</p></div></detailText>
+<pictures>
+<link href="skiinluxury%20-%20Picture.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Twitter/skiinluxury%20-%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="skiinluxury%20External%20Link.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Twitter/skiinluxury%20External%20Link"/>
+</target>
+</CMTeaser>

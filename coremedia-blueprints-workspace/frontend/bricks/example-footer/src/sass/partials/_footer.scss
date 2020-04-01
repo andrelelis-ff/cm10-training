@@ -1,0 +1,166 @@
+// footer
+.#{$cm-footer-prefix} {
+  background-color: $cm-footer-background-color;
+  color: $cm-footer-color;
+  margin: $cm-footer-margin;
+  padding: $cm-footer-padding;
+  text-align: center;
+
+  @include breakpoints(("sm", landscape) "lg-and-up") {
+    text-align: left;
+    padding: $cm-footer-padding-lg 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    flex-direction: column;
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      flex-direction: row;
+    }
+  }
+
+  &__copyright {
+    margin-bottom: $cm-footer-link-margin;
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      display: inline-block;
+      width: percentage(2 / 12);
+      white-space: nowrap;
+      margin-right: $cm-footer-link-margin;
+      margin-bottom: 0;
+    }
+  }
+
+  &__links {
+    padding: 0;
+    margin: 0 0 $cm-footer-link-margin 0;
+    list-style: none;
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      display: inline-block;
+      width: percentage(8 / 12);
+      margin-bottom: 0;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    border-right: 1px solid $cm-footer-color;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+
+  &__link {
+    color: $cm-footer-color;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 $cm-footer-link-margin/2;
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      margin: 0 $cm-footer-link-margin;
+    }
+
+    &:hover {
+      color: $cm-footer-color;
+      text-decoration: underline;
+    }
+  }
+
+  &__social-icons {
+    line-height: 1;
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      width: percentage(2 / 12);
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .social-icon {
+      height: 24px;
+      width: 32px;
+      display: inline-block;
+      background: no-repeat center center;
+
+      &.facebook {
+        background-image: url("../../img/facebook.svg");
+      }
+      &.linkedin {
+        background-image: url("../../img/linkedin.svg");
+      }
+      &.twitter {
+        background-image: url("../../img/twitter.svg");
+      }
+      &.youtube {
+        background-image: url("../../img/youtube.svg");
+      }
+    }
+  }
+}
+
+// outer footer-navigation (full width)
+.cm-placement--footer-navigation {
+  background-color: $cm-footer-navigation-background-color;
+}
+
+// inner footer-navigation (fixed centered width)
+.#{$cm-footer-navigation-prefix} {
+  margin-left: auto;
+  margin-right: auto;
+
+  &__columns {
+    // use flex box early otherwise margin collapse will remove margin to the top on mobile
+    display: flex;
+    flex-direction: column;
+    padding-bottom: $cm-footer-navigation-padding-bottom;
+
+    @include breakpoint(sm-and-up) {
+      flex-direction: row;
+    }
+  }
+
+  &__column {
+    flex: 1 1 auto; // use full flex definition because of different defaults in IE11
+  }
+
+  &-column {
+    list-style: none;
+    padding: 0;
+    margin: $cm-footer-navigation-column-item-spacing 0 0 0;
+
+    @include breakpoint(sm-and-up) {
+      margin-top: $cm-footer-navigation-headline-margin-top;
+    }
+
+    &__title {
+      text-transform: uppercase;
+      margin-top: $cm-footer-navigation-headline-margin-top;
+      margin-bottom: 0;
+      padding-left: $cm-footer-navigation-headline-padding-left;
+      border-left: 4px solid $cm-footer-navigation-headline-block-color;
+    }
+
+    &__item {
+      margin-top: $cm-footer-navigation-column-item-spacing;
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
+
+    &__link {
+      color: $cm-footer-navigation-column-link-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+Hello ${name},
+
+thank you for signing up. Please click on the link below to complete the registration:
+
+${baseUrl}${token}
+
+If clicking the link above doesn't work, please copy the link and paste it into a new browser window.
+
+This e-mail is generated automatically. Replies to this message are not monitored or answered.

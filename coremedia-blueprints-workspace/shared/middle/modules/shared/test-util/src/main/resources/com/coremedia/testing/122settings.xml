@@ -1,0 +1,38 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <IntProperty  Name="colCount">3</IntProperty>
+  <IntProperty  Name="rowCount">2</IntProperty>
+  <StructListProperty  Name="items">
+    <Struct>
+      <LinkProperty Name="section" xlink:href="coremedia:///cap/content/30" LinkType="coremedia:///cap/contenttype/CMSymbol"/>
+      <IntProperty Name="row">1</IntProperty>
+      <IntProperty Name="col">1</IntProperty>
+      <IntProperty Name="colspan">3</IntProperty>
+      <IntProperty Name="height">25</IntProperty>
+      <IntProperty Name="width">100</IntProperty>
+    </Struct>
+    <Struct>
+      <LinkProperty Name="section" xlink:href="coremedia:///cap/content/32" LinkType="coremedia:///cap/contenttype/CMSymbol"/>
+      <IntProperty Name="row">2</IntProperty>
+      <IntProperty Name="col">1</IntProperty>
+      <IntProperty Name="colspan">1</IntProperty>
+      <IntProperty Name="height">75</IntProperty>
+      <IntProperty Name="width">20</IntProperty>
+    </Struct>
+    <Struct>
+      <LinkProperty Name="section" xlink:href="coremedia:///cap/content/34" LinkType="coremedia:///cap/contenttype/CMSymbol"/>
+      <IntProperty Name="row">2</IntProperty>
+      <IntProperty Name="col">2</IntProperty>
+      <IntProperty Name="colspan">1</IntProperty>
+      <IntProperty Name="height">75</IntProperty>
+      <IntProperty Name="width">50</IntProperty>
+    </Struct>
+    <Struct>
+      <LinkProperty Name="section" xlink:href="coremedia:///cap/content/36" LinkType="coremedia:///cap/contenttype/CMSymbol"/>
+      <IntProperty Name="row">2</IntProperty>
+      <IntProperty Name="col">3</IntProperty>
+      <IntProperty Name="colspan">1</IntProperty>
+      <IntProperty Name="height">75</IntProperty>
+      <IntProperty Name="width">30</IntProperty>
+    </Struct>
+  </StructListProperty>
+</Struct>

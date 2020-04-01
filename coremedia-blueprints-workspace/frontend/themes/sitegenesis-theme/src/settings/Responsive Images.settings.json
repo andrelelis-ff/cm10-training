@@ -1,0 +1,100 @@
+{
+  "enableRetinaImages": false,
+  "responsiveImageSettings": {
+    "portrait_ratio2x3": {
+      "widthRatio": 2,
+      "heightRatio": 3,
+      "minWidth": 400,
+      "minHeight": 600,
+      "previewWidth": 400,
+      "0": {
+        "width": 200,
+        "height": 300
+      },
+      "1": {
+        "width": 400,
+        "height": 600
+      },
+      "2": {
+        "width": 768,
+        "height": 1152
+      }
+    },
+    "portrait_ratio1x1": {
+      "widthRatio": 1,
+      "heightRatio": 1,
+      "minWidth": 400,
+      "minHeight": 400,
+      "previewWidth": 400,
+      "0": {
+        "width": 200,
+        "height": 200
+      },
+      "1": {
+        "width": 400,
+        "height": 400
+      },
+      "2": {
+        "width": 768,
+        "height": 768
+      }
+    },
+    "landscape_ratio4x3": {
+      "widthRatio": 4,
+      "heightRatio": 3,
+      "minWidth": 400,
+      "minHeight": 300,
+      "previewWidth": 400,
+      "0": {
+        "width": 200,
+        "height": 150
+      },
+      "1": {
+        "width": 400,
+        "height": 300
+      },
+      "2": {
+        "width": 768,
+        "height": 576
+      }
+    },
+    "landscape_ratio16x9": {
+      "widthRatio": 16,
+      "heightRatio": 9,
+      "minWidth": 400,
+      "minHeight": 225,
+      "previewWidth": 400,
+      "0": {
+        "width": 208,
+        "height": 117
+      },
+      "1": {
+        "width": 400,
+        "height": 225
+      },
+      "2": {
+        "width": 944,
+        "height": 531
+      }
+    },
+    "landscape_ratio8x3": {
+      "widthRatio": 8,
+      "heightRatio": 3,
+      "minWidth": 768,
+      "minHeight": 288,
+      "previewWidth": 400,
+      "0": {
+        "width": 400,
+        "height": 150
+      },
+      "1": {
+        "width": 768,
+        "height": 288
+      },
+      "2": {
+        "width": 1144,
+        "height": 429
+      }
+    }
+  }
+}

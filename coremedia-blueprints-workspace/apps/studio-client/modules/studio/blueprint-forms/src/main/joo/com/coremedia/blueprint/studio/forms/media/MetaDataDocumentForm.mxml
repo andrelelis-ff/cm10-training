@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<media:MetaDataDocumentFormBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                                xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                                xmlns:ui="exml:com.coremedia.ui.config"
+                                xmlns="exml:ext.config"
+                                xmlns:media="com.coremedia.blueprint.studio.forms.media.*"
+                                itemId="metaSections"
+                                collapsed="true"
+                                title="{config.label}"
+                                hidden="true">
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.components.metaDataDocumentForm";
+
+    private var config:MetaDataDocumentForm;
+
+    public native function MetaDataDocumentForm(config:MetaDataDocumentForm = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <fx:String id="propertyName"/>
+
+    <fx:String id="metadataSectionName">id3</fx:String>
+
+    <fx:String id="label"/>
+  </fx:Declarations>
+
+  <media:plugins exml:mode="append">
+    <ui:BindComponentsPlugin configBeanParameterName="metaDataSection"
+                             clearBeforeUpdate="true"
+                             reuseComponents="false"
+                             valueExpression="{getMetaDataExpression()}"
+                             getKey="{getTemplateKey}">
+      <ui:template>
+        <media:MetaDataView/>
+      </ui:template>
+    </ui:BindComponentsPlugin>
+  </media:plugins>
+
+</media:MetaDataDocumentFormBase>

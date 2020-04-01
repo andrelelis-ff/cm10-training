@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/Calista/United States/English/Options/Viewtypes/CMVideo" name="shoppable" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<description>For shoppable Videos</description>
+<layout>shoppable</layout>
+</CMViewtype>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>studio-client.modules</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <packaging>pom</packaging>
+  <artifactId>studio-client.studio</artifactId>
+
+  <modules>
+    <module>blueprint-forms</module>
+    <module>blueprint-studio-theme</module>
+    <module>controlroom-studio-plugin</module>
+  </modules>
+
+  <!-- Use -DwithoutJangarooApp=true to exclude jangaroo apps. -->
+  <profiles>
+    <profile>
+      <id>with-jangaroo-app</id>
+      <activation>
+        <property>
+          <name>!withoutJangarooApp</name>
+          <value>!true</value>
+        </property>
+      </activation>
+      <modules>
+        <module>studio-app</module>
+        <module>studio-base-app</module>
+        <module>studio-resources</module>
+      </modules>
+    </profile>
+  </profiles>
+
+</project>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <import resource="classpath:framework/spring/livecontext-services.xml"/>
+
+  <bean name="abstractCommerceBean" scope="prototype" abstract="true"
+        class="com.coremedia.livecontext.ecommerce.ibm.common.AbstractIbmCommerceBean">
+    <property name="commerceBeanFactory" ref="commerceBeanFactory"/>
+    <property name="catalogService" ref="catalogService"/>
+    <property name="commerceCache" ref="commerceCache"/>
+    <property name="linkService" ref="linkService"/>
+    <property name="previewUrlService" ref="previewUrlService"/>
+    <property name="commerceIdProvider" ref="ibmCommerceIdProvider"/>
+    <property name="defaultLocale" value="${livecontext.ibm.default.locale}"/>
+  </bean>
+
+  <bean name="commerceBeanFactory:product" parent="abstractCommerceBean"
+        class="com.coremedia.livecontext.ecommerce.ibm.catalog.ProductImpl" scope="prototype">
+    <property name="availabilityService" ref="availabilityService"/>
+    <property name="catalogWrapperService" ref="catalogWrapperService"/>
+    <property name="wcsUrlProvider" ref="wcsUrlProvider"/>
+  </bean>
+  <bean name="commerceBeanFactory:user" parent="abstractCommerceBean"
+        class="com.coremedia.livecontext.ecommerce.ibm.user.UserImpl" scope="prototype"/>
+  <bean name="commerceBeanFactory:workspace" parent="abstractCommerceBean"
+        class="com.coremedia.livecontext.ecommerce.ibm.workspace.WorkspaceImpl" scope="prototype"/>
+  <bean name="commerceBeanFactory:segment" parent="abstractCommerceBean"
+        class="com.coremedia.livecontext.ecommerce.ibm.p13n.SegmentImpl" scope="prototype">
+    <property name="segmentWrapperService" ref="segmentWrapperService"/>
+  </bean>
+  <bean name="commerceBeanFactory:contract" parent="abstractCommerceBean"
+        class="com.coremedia.livecontext.ecommerce.ibm.contract.ContractImpl" scope="prototype">
+    <property name="contractWrapperService" ref="contractWrapperService"/>
+  </bean>
+  <bean name="commerceBeanFactory:sku" parent="abstractCommerceBean"
+        class="com.coremedia.livecontext.ecommerce.ibm.catalog.ProductVariantImpl" scope="prototype">
+    <property name="catalogWrapperService" ref="catalogWrapperService"/>
+    <property name="wcsUrlProvider" ref="wcsUrlProvider"/>
+  </bean>
+  <bean name="commerceBeanFactory:category" parent="abstractCommerceBean"
+        class="com.coremedia.livecontext.ecommerce.ibm.catalog.CategoryImpl" scope="prototype">
+    <property name="catalogWrapperService" ref="catalogWrapperService"/>
+    <property name="wcsUrlProvider" ref="wcsUrlProvider"/>
+  </bean>
+  <bean name="commerceBeanFactory:cart" parent="abstractCommerceBean"
+          class="com.coremedia.livecontext.ecommerce.ibm.order.CartImpl" scope="prototype"/>
+  <bean name="commerceBeanFactory:catalog" parent="abstractCommerceBean"
+        class="com.coremedia.livecontext.ecommerce.ibm.catalog.CatalogImpl" scope="prototype">
+  </bean>
+</beans>

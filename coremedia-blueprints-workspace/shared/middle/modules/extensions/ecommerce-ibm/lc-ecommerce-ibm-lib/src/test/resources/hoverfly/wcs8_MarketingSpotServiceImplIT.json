@@ -1,0 +1,823 @@
+{
+  "data" : {
+    "pairs" : [ {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/coremedia/storeinfo"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : { },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"serverTimezoneId\":\"Europe\\/Paris\",\"wcsVersion\":\"8.0\",\"stores\":{\"AuroraB2BESite\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store B2B Direct\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838085\",\"defaultCatalogId\":\"3074457345616676718\"},\"CalistaESite\":{\"defaultCatalog\":\"Calista Spring Fashions\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838086\",\"defaultCatalogId\":\"3074457345616676768\"},\"AuroraB2BStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838034\",\"defaultCatalogId\":\"3074457345616676668\"},\"AuroraStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715837984\",\"defaultCatalogId\":\"3074457345616676668\"},\"Extended Sites Hub\":{\"defaultCatalog\":\"\",\"catalogs\":{},\"storeId\":\"715837884\",\"defaultCatalogId\":null},\"Extended Sites Catalog Asset Store\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715837934\",\"defaultCatalogId\":\"3074457345616676668\"},\"AuroraESite\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store Consumer Direct\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838084\",\"defaultCatalogId\":\"3074457345616676719\"},\"CMStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838584\",\"defaultCatalogId\":\"3074457345616676668\"}}}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "3042" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 12:15:12 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000T-5YQJHshlNk0_v7O8K0piC:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/coremedia/languagemap"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : { },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"ro\":\"-21\",\"zh\":\"-8\",\"pt_BR\":\"-6\",\"pl_PL\":\"-22\",\"en_US\":\"-1\",\"ja_JP\":\"-10\",\"ru_RU\":\"-20\",\"zh_CN\":\"-7\",\"ro_RO\":\"-21\",\"de\":\"-3\",\"zh_TW\":\"-8\",\"fr\":\"-2\",\"es_ES\":\"-5\",\"it\":\"-4\",\"ko_KR\":\"-9\",\"ko\":\"-9\",\"it_IT\":\"-4\",\"de_DE\":\"-3\",\"ar\":\"-23\",\"ar_EG\":\"-23\",\"fr_FR\":\"-2\",\"pl\":\"-22\",\"pt\":\"-6\",\"en\":\"-1\",\"ru\":\"-20\",\"es\":\"-5\",\"ja\":\"-10\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "323" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 12:15:12 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=00007r_JprXdbxxXKwGQS_QqEuR:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838084/espot/ApparelRow1_Content"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:80\\/wcs\\/resources\\/store\\/715838084\\/espot\\/ApparelRow1_Content?currency=USD&langId=-1\",\"MarketingSpotData\":[{\"marketingSpotIdentifier\":\"715839021\",\"eSpotName\":\"ApparelRow1_Content\",\"behavior\":\"0\",\"nextTimeLimit\":\"-1\",\"baseMarketingSpotActivityData\":[{\"activityIdentifierID\":\"0\",\"MarketingContentDescription\":[{}],\"marketingContentDescription\":[{\"marketingText\":\"<link rel=\\\"stylesheet\\\" href=\\\"[imagePath]rwdWebAssets\\/deptMainESpot\\/styles.css\\\" \\/> <div id=\\\"deptMainESpot\\\" class=\\\"container\\\">    <div id=\\\"deptMainESpot-bkgrd\\\">       <div id=\\\"deptMainESpot-bkgrd-couple\\\">          <div><\\/div>       <\\/div>       <div id=\\\"deptMainESpot-container\\\" class=\\\"espotCont\\\">          <div id=\\\"deptMainESpot-girl2\\\">    <!--[if IE 8]>       <img src=\\\"[imagePath]rwdWebAssets\\/deptMainESpot\\/female.png\\\"\\/>    <![endif]-->    <!--[if gte IE 9]><!-->          <div><\\/div>    <!--<![endif]-->          <\\/div>          <div id=\\\"deptMainESpot-titleCont\\\">             <div class=\\\"title\\\">Fashionable <\\/div>             <div class=\\\"title2\\\">Evening Wear<\\/div>             <div class=\\\"title4\\\">Save on women's dresses <br\\/>and men's suits<\\/div>          <\\/div>          <div id=\\\"deptMainESpot-multiImgCont\\\">             <div id=\\\"deptMainESpot-couple\\\">                <!--[if IE 8]>      <img src=\\\"[imagePath]rwdWebAssets\\/deptMainESpot\\/couple.png\\\"\\/>     <![endif]-->     <!--[if gte IE 9]><!-->           <div><\\/div>     <!--<![endif]-->             <\\/div>             <div id=\\\"deptMainESpot-male\\\">                <div><\\/div>             <\\/div>          <\\/div>       <\\/div>    <\\/div> <\\/div>\",\"language\":\"-1\"}],\"baseMarketingSpotActivityID\":\"715838022\",\"contentFormatId\":\"2\",\"properties\":[{\"baseMarketingKey\":\"mktActivityDescription\"},{\"baseMarketingValue\":\"1.0\",\"baseMarketingKey\":\"displaySequence\"}],\"contentName\":\"ApparelHeroImage\",\"baseMarketingSpotDataType\":\"MarketingContent\",\"contentId\":\"715838022\",\"contentFormatName\":\"Text\",\"activityPriority\":\"1\",\"contentStoreId\":\"715837984\",\"baseMarketingSpotActivityName\":\"ApparelHeroImage\",\"contentClickAction\":\"None\"}],\"defaultContentDisplaySequence\":[{\"displaySequence\":\"1.0\",\"resultFormat\":\"MarketingContent\",\"resultId\":\"715838022\"}]}],\"resourceName\":\"espot\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600, no-cache=set-cookie" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "2294" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 12:15:12 GMT" ],
+          "Expires" : [ "Mon, 18 Feb 2019 13:15:12 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=00005wQ3M2f2WrKFAhx6QqBUmA2:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838084/espot/BoysRow4_CatEntries"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:80\\/wcs\\/resources\\/store\\/715838084\\/espot\\/BoysRow4_CatEntries?currency=USD&langId=-1\",\"MarketingSpotData\":[{\"marketingSpotIdentifier\":\"715839048\",\"eSpotName\":\"BoysRow4_CatEntries\",\"behavior\":\"0\",\"marketingSpotDataTitle\":[{\"contentFormatName\":\"Text\",\"contentStoreId\":\"715837984\",\"MarketingContentDescription\":[{}],\"marketingContentDescription\":[{\"marketingText\":\"On Sale Now\",\"language\":\"-1\"}],\"contentFormatId\":\"2\",\"marketingSpotDataTitleName\":\"ApparelESpotDefaultTitle\",\"contentName\":\"ApparelESpotDefaultTitle\",\"marketingSpotDataTitleDataType\":\"MarketingContent\",\"contentClickAction\":\"None\",\"marketingSpotDataTitleActivityID\":\"0\",\"contentId\":\"715838028\",\"marketingSpotDataTitleId\":\"715838028\"}],\"nextTimeLimit\":\"-1\",\"baseMarketingSpotActivityData\":[{\"activityIdentifierID\":\"715838420\",\"activityFormat\":\"web\",\"ownerID\":\"7333333333333333435\",\"catalogEntryTypeCode\":\"ProductBean\",\"listPriceCurrency\":\"USD\",\"baseMarketingSpotActivityID\":\"3074457345616679184\",\"standardPriceCurrency\":\"USD\",\"productPartNumber\":\"BCL014_1402\",\"properties\":[{\"baseMarketingValue\":\"Product Recommendation for Boys\",\"baseMarketingKey\":\"mktActivityDescription\"}],\"baseMarketingSpotDataType\":\"CatalogEntry\",\"contractPrice\":[{\"ownerID\":\"7333333333333333585\",\"majorVersionNumber\":\"1\",\"minimumQuantity\":\"1.0\",\"name\":\"AuroraESite - AuroraESite\",\"origin\":\"6\",\"minorVersionNumber\":\"0\",\"contractID\":\"4000000000000000005\",\"contractPrice\":\"50.00\",\"currency\":\"USD\"}],\"productId\":\"3074457345616679184\",\"activityIdentifierName\":\"BoysRow4_CatEntries\",\"activityPriority\":\"1\",\"baseMarketingSpotActivityName\":\"Gusso Green Khaki Shirt\",\"standardPrice\":\"50.00\",\"listPrice\":\"50.00\",\"description\":[{\"thumbnail\":\"images\\/catalog\\/apparel\\/boys\\/bcl014_tops\\/200x310\\/bcl014_1402.jpg\",\"shortDescription\":\"Green khaki shirt with front pockets\",\"longDescription\":\"This khakhi green shirt has front pockets and hemmed sleeves. In true sportsman style, this shirt has a brown shoulder panel with same brown repeated in a patch over the left pocket with gold stars embossed. Made of thin cotton blend, this shirt is suitable for the summer season.\",\"language\":\"-1\",\"productName\":\"Gusso Green Khaki Shirt\",\"fullImage\":\"images\\/catalog\\/apparel\\/boys\\/bcl014_tops\\/646x1000\\/bcl014_1402.jpg\"}],\"attributes\":[{\"name\":\"rootDirectory\",\"stringValue\":\"ExtendedSitesCatalogAssetStore\"},{\"name\":\"displayTemplate\",\"stringValue\":\"ShoppingArea\\/CatalogSection\\/CatalogEntrySubsection\\/ProductDisplay\"}]},{\"activityIdentifierID\":\"715838420\",\"activityFormat\":\"web\",\"ownerID\":\"7333333333333333435\",\"catalogEntryTypeCode\":\"ProductBean\",\"listPriceCurrency\":\"USD\",\"baseMarketingSpotActivityID\":\"3074457345616679190\",\"standardPriceCurrency\":\"USD\",\"productPartNumber\":\"BCL014_1403\",\"properties\":[{\"baseMarketingValue\":\"Product Recommendation for Boys\",\"baseMarketingKey\":\"mktActivityDescription\"}],\"baseMarketingSpotDataType\":\"CatalogEntry\",\"contractPrice\":[{\"ownerID\":\"7333333333333333585\",\"majorVersionNumber\":\"1\",\"minimumQuantity\":\"1.0\",\"name\":\"AuroraESite - AuroraESite\",\"origin\":\"6\",\"minorVersionNumber\":\"0\",\"contractID\":\"4000000000000000005\",\"contractPrice\":\"50.00\",\"currency\":\"USD\"}],\"productId\":\"3074457345616679190\",\"activityIdentifierName\":\"BoysRow4_CatEntries\",\"activityPriority\":\"1\",\"baseMarketingSpotActivityName\":\"Borsati Dual-Toned T-Shirt\",\"standardPrice\":\"50.00\",\"listPrice\":\"50.00\",\"description\":[{\"thumbnail\":\"images\\/catalog\\/apparel\\/boys\\/bcl014_tops\\/200x310\\/bcl014_1403.jpg\",\"shortDescription\":\"Dual-toned t-shirt with purple shoulders\",\"longDescription\":\"This vibrant red and purple t-shirt displays a contrast in colours for a cool and spunky look. It has a ribbed collar and a two-button placket. The ribbed armbands at the short sleeves, which sets off the color contrasts, is eye-catching.  \",\"language\":\"-1\",\"productName\":\"Borsati Dual-Toned T-Shirt\",\"fullImage\":\"images\\/catalog\\/apparel\\/boys\\/bcl014_tops\\/646x1000\\/bcl014_1403.jpg\"}],\"attributes\":[{\"name\":\"rootDirectory\",\"stringValue\":\"ExtendedSitesCatalogAssetStore\"},{\"name\":\"displayTemplate\",\"stringValue\":\"ShoppingArea\\/CatalogSection\\/CatalogEntrySubsection\\/ProductDisplay\"}]},{\"activityIdentifierID\":\"715838420\",\"activityFormat\":\"web\",\"ownerID\":\"7333333333333333435\",\"catalogEntryTypeCode\":\"ProductBean\",\"listPriceCurrency\":\"USD\",\"baseMarketingSpotActivityID\":\"3074457345616679228\",\"standardPriceCurrency\":\"USD\",\"productPartNumber\":\"BCL014_1408\",\"properties\":[{\"baseMarketingValue\":\"Product Recommendation for Boys\",\"baseMarketingKey\":\"mktActivityDescription\"}],\"baseMarketingSpotDataType\":\"CatalogEntry\",\"contractPrice\":[{\"ownerID\":\"7333333333333333585\",\"majorVersionNumber\":\"1\",\"minimumQuantity\":\"1.0\",\"name\":\"AuroraESite - AuroraESite\",\"origin\":\"6\",\"minorVersionNumber\":\"0\",\"contractID\":\"4000000000000000005\",\"contractPrice\":\"30.00\",\"currency\":\"USD\"}],\"productId\":\"3074457345616679228\",\"activityIdentifierName\":\"BoysRow4_CatEntries\",\"activityPriority\":\"1\",\"baseMarketingSpotActivityName\":\"Gusso Woollen Baby Vest\",\"standardPrice\":\"30.00\",\"listPrice\":\"30.00\",\"description\":[{\"thumbnail\":\"images\\/catalog\\/apparel\\/boys\\/bcl014_tops\\/200x310\\/bcl014_1408.jpg\",\"shortDescription\":\"Woollen baby vest in navy blue\",\"longDescription\":\"This cutesy woollen baby vest in navy blue is an adorable top for toddler boys. This vest is cable knit and follows the styling similar to adult vests. Team it with a shirt, jeans and tie and your baby will steal the limelight.  \",\"language\":\"-1\",\"productName\":\"Gusso Woollen Baby Vest\",\"fullImage\":\"images\\/catalog\\/apparel\\/boys\\/bcl014_tops\\/646x1000\\/bcl014_1408.jpg\"}],\"attributes\":[{\"name\":\"rootDirectory\",\"stringValue\":\"ExtendedSitesCatalogAssetStore\"},{\"name\":\"displayTemplate\",\"stringValue\":\"ShoppingArea\\/CatalogSection\\/CatalogEntrySubsection\\/ProductDisplay\"}]},{\"activityIdentifierID\":\"715838420\",\"activityFormat\":\"web\",\"ownerID\":\"7333333333333333435\",\"catalogEntryTypeCode\":\"ProductBean\",\"listPriceCurrency\":\"USD\",\"baseMarketingSpotActivityID\":\"3074457345616679276\",\"standardPriceCurrency\":\"USD\",\"productPartNumber\":\"BCL014_1415\",\"properties\":[{\"baseMarketingValue\":\"Product Recommendation for Boys\",\"baseMarketingKey\":\"mktActivityDescription\"}],\"baseMarketingSpotDataType\":\"CatalogEntry\",\"contractPrice\":[{\"ownerID\":\"7333333333333333585\",\"majorVersionNumber\":\"1\",\"minimumQuantity\":\"1.0\",\"name\":\"AuroraESite - AuroraESite\",\"origin\":\"6\",\"minorVersionNumber\":\"0\",\"contractID\":\"4000000000000000005\",\"contractPrice\":\"36.00\",\"currency\":\"USD\"}],\"productId\":\"3074457345616679276\",\"activityIdentifierName\":\"BoysRow4_CatEntries\",\"activityPriority\":\"1\",\"baseMarketingSpotActivityName\":\"Borsati Classic Checkered Shirt\",\"standardPrice\":\"36.00\",\"listPrice\":\"40.00\",\"description\":[{\"thumbnail\":\"images\\/catalog\\/apparel\\/boys\\/bcl014_tops\\/200x310\\/bcl014_1415.jpg\",\"shortDescription\":\"Classic checkered fitting shirt\",\"longDescription\":\"Chic and classy, this elegant shirt in small checks makes your young man look stylish. This pocketless shirt has a bias button panel. Shirttail hem and barrel cuffs further adorn the shirt.\",\"language\":\"-1\",\"productName\":\"Borsati Classic Checkered Shirt\",\"fullImage\":\"images\\/catalog\\/apparel\\/boys\\/bcl014_tops\\/646x1000\\/bcl014_1415.jpg\"}],\"attributes\":[{\"name\":\"rootDirectory\",\"stringValue\":\"ExtendedSitesCatalogAssetStore\"},{\"name\":\"displayTemplate\",\"stringValue\":\"ShoppingArea\\/CatalogSection\\/CatalogEntrySubsection\\/ProductDisplay\"}]}]}],\"resourceName\":\"espot\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600, no-cache=set-cookie" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "7417" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 12:15:13 GMT" ],
+          "Expires" : [ "Mon, 18 Feb 2019 13:15:13 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000NpJxaJ6gS0P8-A72h6f3qU1:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838084/catalog"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : { },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":4,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:80\\/wcs\\/resources\\/store\\/715838084\\/catalog\",\"recordSetCount\":4,\"recordSetComplete\":true,\"recordSetStartNumber\":0,\"resultList\":[{\"catalogIdentifier\":\"Extended Sites Catalog Asset Store\",\"description\":[{\"name\":\"Extended Sites Catalog Asset Store\"}],\"primary\":true,\"catalogId\":\"3074457345616676668\"},{\"catalogIdentifier\":\"Extended Sites Catalog Asset Store B2B Direct\",\"description\":[{\"shortDescription\":\"Aurora B2B direct sample data\",\"name\":\"Aurora B2B direct sample data\"}],\"primary\":false,\"catalogId\":\"3074457345616676718\"},{\"default\":true,\"catalogIdentifier\":\"Extended Sites Catalog Asset Store Consumer Direct\",\"description\":[{\"shortDescription\":\"Aurora Consumer Direct sample data\",\"name\":\"Aurora consumer direct sample data\"}],\"primary\":false,\"catalogId\":\"3074457345616676719\"},{\"catalogIdentifier\":\"Calista Spring Fashions\",\"description\":[{\"shortDescription\":\"Spring Fashions\",\"name\":\"Spring Fashions\"}],\"primary\":false,\"catalogId\":\"3074457345616676768\"}],\"resourceName\":\"catalog\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "1066" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 12:15:13 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=000048vmUL-YVfTWp0c40l_Dllx:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/search/resources/store/715838084/productview/byId/3074457345616679184"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com:3737"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "catalogId" : [ {
+            "matcher" : "exact",
+            "value" : "3074457345616676719"
+          } ],
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "CoreMedia_findProductByIds_Details"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":1,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679184?profileName=CoreMedia_findProductByIds_Details&catalogId=3074457345616676719&currency=USD&langId=-1\",\"recordSetCount\":1,\"catalogEntryView\":[{\"hasSingleSKU\":false,\"catalogEntryTypeCode\":\"ProductBean\",\"disallowRecurringOrder\":\"1\",\"parentCatalogGroupID\":[\"3074457345616676668_3074457345616676692\",\"3074457345616676719_3074457345616676692\",\"3074457345616676768_3074457345616676692\"],\"price_USD\":\"50.0\",\"uniqueID\":\"3074457345616679184\",\"sKUs\":[{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679185\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Gusso Green Khaki Shirt\",\"uniqueID\":\"3074457345616679185\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140201\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679186\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Gusso Green Khaki Shirt\",\"uniqueID\":\"3074457345616679186\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140202\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679187\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Gusso Green Khaki Shirt\",\"uniqueID\":\"3074457345616679187\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140203\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679188\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Gusso Green Khaki Shirt\",\"uniqueID\":\"3074457345616679188\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140204\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679189\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Gusso Green Khaki Shirt\",\"uniqueID\":\"3074457345616679189\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140205\"}],\"fullImage\":\"\\/wcsstore\\/ExtendedSitesCatalogAssetStore\\/images\\/catalog\\/apparel\\/boys\\/bcl014_tops\\/646x1000\\/bcl014_1402.jpg\",\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679184\",\"price\":[{\"description\":\"L\",\"value\":\"50.0\",\"usage\":\"Display\",\"currency\":\"USD\"},{\"description\":\"O\",\"value\":\"\",\"usage\":\"Offer\",\"currency\":\"USD\"}],\"thumbnail\":\"\\/wcsstore\\/ExtendedSitesCatalogAssetStore\\/images\\/catalog\\/apparel\\/boys\\/bcl014_tops\\/200x310\\/bcl014_1402.jpg\",\"seo_token_ntk\":\"gusso-green-khaki-shirt\",\"shortDescription\":\"Green khaki shirt with front pockets\",\"manufacturer\":\"Gusso\",\"name\":\"Gusso Green Khaki Shirt\",\"subscriptionTypeCode\":\"NONE\",\"buyable\":\"true\",\"longDescription\":\"This khakhi green shirt has front pockets and hemmed sleeves. In true sportsman style, this shirt has a brown shoulder panel with same brown repeated in a patch over the left pocket with gold stars embossed. Made of thin cotton blend, this shirt is suitable for the summer season.\",\"attributes\":[{\"storeDisplay\":false,\"values\":[{\"sequence\":\"2.00000\",\"value\":\"Shirt\",\"uniqueID\":\"7741124012283334842\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"BCL014_1402\"}],\"sequence\":\".00000\",\"associatedKeyword\":\"-\",\"name\":\"Style\",\"uniqueID\":\"7741124012283333344\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"Style\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[],\"sequence\":\".00000\",\"associatedKeyword\":\"-\",\"name\":\"Size\",\"uniqueID\":\"7741124012283333398\",\"usage\":\"Defining\",\"comparable\":true,\"displayable\":true,\"identifier\":\"BoysTopsSize\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"2.00000\",\"value\":\"Cotton\",\"uniqueID\":\"7741124012283334828\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"BCL014_1402\"}],\"sequence\":\"1.00000\",\"associatedKeyword\":\"-\",\"name\":\"Material\",\"uniqueID\":\"7741124012283333343\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"Material\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[],\"sequence\":\"1.00000\",\"associatedKeyword\":\"-\",\"name\":\"Color\",\"uniqueID\":\"7741124012283333399\",\"usage\":\"Defining\",\"comparable\":true,\"displayable\":true,\"identifier\":\"BoysTopsColor\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"2.00000\",\"value\":\"Half sleeve\",\"uniqueID\":\"7741124012283334794\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"BCL014_1402\"}],\"sequence\":\"3.00000\",\"associatedKeyword\":\"-\",\"name\":\"Sleeve Length\",\"uniqueID\":\"7741124012283333363\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"Sleeve Length\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"1.00000\",\"value\":\"8-16\",\"uniqueID\":\"7741124012283334809\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"BCL014_1402\"}],\"sequence\":\"4.00000\",\"associatedKeyword\":\"-\",\"name\":\"Age\",\"uniqueID\":\"7741124012283333387\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"Age\",\"facetable\":false,\"searchable\":false}],\"storeID\":\"715837934\",\"cm_seo_token_ntk\":\"715837934_gusso-green-khaki-shirt\",\"numberOfSKUs\":5,\"partNumber\":\"BCL014_1402\"}],\"recordSetComplete\":\"true\",\"recordSetStartNumber\":0,\"recordSetTotalMatches\":1,\"metaData\":{\"price\":\"2\"},\"resourceName\":\"productview\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "5493" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 12:15:13 GMT" ],
+          "Expires" : [ "Mon, 18 Feb 2019 13:15:13 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/search/resources/store/715838084/productview/byId/3074457345616679190"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com:3737"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "catalogId" : [ {
+            "matcher" : "exact",
+            "value" : "3074457345616676719"
+          } ],
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "CoreMedia_findProductByIds_Details"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":1,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679190?profileName=CoreMedia_findProductByIds_Details&catalogId=3074457345616676719&currency=USD&langId=-1\",\"recordSetCount\":1,\"catalogEntryView\":[{\"hasSingleSKU\":false,\"catalogEntryTypeCode\":\"ProductBean\",\"disallowRecurringOrder\":\"1\",\"parentCatalogGroupID\":[\"3074457345616676668_3074457345616676692\",\"3074457345616676719_3074457345616676692\",\"3074457345616676768_3074457345616676692\"],\"price_USD\":\"50.0\",\"uniqueID\":\"3074457345616679190\",\"sKUs\":[{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679191\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Borsati Dual-Toned T-Shirt\",\"uniqueID\":\"3074457345616679191\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140301\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679192\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Borsati Dual-Toned T-Shirt\",\"uniqueID\":\"3074457345616679192\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140302\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679193\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Borsati Dual-Toned T-Shirt\",\"uniqueID\":\"3074457345616679193\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140303\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679194\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Borsati Dual-Toned T-Shirt\",\"uniqueID\":\"3074457345616679194\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140304\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679195\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Borsati Dual-Toned T-Shirt\",\"uniqueID\":\"3074457345616679195\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140305\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679196\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Borsati Dual-Toned T-Shirt\",\"uniqueID\":\"3074457345616679196\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140306\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679197\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Borsati Dual-Toned T-Shirt\",\"uniqueID\":\"3074457345616679197\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140307\"}],\"fullImage\":\"\\/wcsstore\\/ExtendedSitesCatalogAssetStore\\/images\\/catalog\\/apparel\\/boys\\/bcl014_tops\\/646x1000\\/bcl014_1403.jpg\",\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679190\",\"price\":[{\"description\":\"L\",\"value\":\"50.0\",\"usage\":\"Display\",\"currency\":\"USD\"},{\"description\":\"O\",\"value\":\"\",\"usage\":\"Offer\",\"currency\":\"USD\"}],\"thumbnail\":\"\\/wcsstore\\/ExtendedSitesCatalogAssetStore\\/images\\/catalog\\/apparel\\/boys\\/bcl014_tops\\/200x310\\/bcl014_1403.jpg\",\"seo_token_ntk\":\"borsati-dual-toned-t-shirt\",\"shortDescription\":\"Dual-toned t-shirt with purple shoulders\",\"manufacturer\":\"Borsati\",\"name\":\"Borsati Dual-Toned T-Shirt\",\"subscriptionTypeCode\":\"NONE\",\"buyable\":\"true\",\"longDescription\":\"This vibrant red and purple t-shirt displays a contrast in colours for a cool and spunky look. It has a ribbed collar and a two-button placket. The ribbed armbands at the short sleeves, which sets off the color contrasts, is eye-catching.\",\"attributes\":[{\"storeDisplay\":false,\"values\":[{\"sequence\":\"3.00000\",\"value\":\"T-shirt\",\"uniqueID\":\"7741124012283334846\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"BCL014_1403\"}],\"sequence\":\".00000\",\"associatedKeyword\":\"-\",\"name\":\"Style\",\"uniqueID\":\"7741124012283333344\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"Style\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[],\"sequence\":\".00000\",\"associatedKeyword\":\"-\",\"name\":\"Size\",\"uniqueID\":\"7741124012283333398\",\"usage\":\"Defining\",\"comparable\":true,\"displayable\":true,\"identifier\":\"BoysTopsSize\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"2.00000\",\"value\":\"Cotton\",\"uniqueID\":\"7741124012283334829\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"BCL014_1403\"}],\"sequence\":\"1.00000\",\"associatedKeyword\":\"-\",\"name\":\"Material\",\"uniqueID\":\"7741124012283333343\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"Material\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[],\"sequence\":\"1.00000\",\"associatedKeyword\":\"-\",\"name\":\"Color\",\"uniqueID\":\"7741124012283333399\",\"usage\":\"Defining\",\"comparable\":true,\"displayable\":true,\"identifier\":\"BoysTopsColor\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"2.00000\",\"value\":\"Half sleeve\",\"uniqueID\":\"7741124012283334795\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"BCL014_1403\"}],\"sequence\":\"3.00000\",\"associatedKeyword\":\"-\",\"name\":\"Sleeve Length\",\"uniqueID\":\"7741124012283333363\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"Sleeve Length\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"1.00000\",\"value\":\"8-16\",\"uniqueID\":\"7741124012283334810\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"BCL014_1403\"}],\"sequence\":\"4.00000\",\"associatedKeyword\":\"-\",\"name\":\"Age\",\"uniqueID\":\"7741124012283333387\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"Age\",\"facetable\":false,\"searchable\":false}],\"storeID\":\"715837934\",\"cm_seo_token_ntk\":\"715837934_borsati-dual-toned-t-shirt\",\"numberOfSKUs\":7,\"partNumber\":\"BCL014_1403\"}],\"recordSetComplete\":\"true\",\"recordSetStartNumber\":0,\"recordSetTotalMatches\":1,\"metaData\":{\"price\":\"2\"},\"resourceName\":\"productview\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "6115" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 12:15:13 GMT" ],
+          "Expires" : [ "Mon, 18 Feb 2019 13:15:13 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/search/resources/store/715838084/productview/byId/3074457345616679228"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com:3737"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "catalogId" : [ {
+            "matcher" : "exact",
+            "value" : "3074457345616676719"
+          } ],
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "CoreMedia_findProductByIds_Details"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":1,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679228?profileName=CoreMedia_findProductByIds_Details&catalogId=3074457345616676719&currency=USD&langId=-1\",\"recordSetCount\":1,\"catalogEntryView\":[{\"hasSingleSKU\":false,\"catalogEntryTypeCode\":\"ProductBean\",\"disallowRecurringOrder\":\"1\",\"parentCatalogGroupID\":[\"3074457345616676668_3074457345616676692\",\"3074457345616676719_3074457345616676692\",\"3074457345616676768_3074457345616676692\"],\"price_USD\":\"30.0\",\"uniqueID\":\"3074457345616679228\",\"sKUs\":[{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679229\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Gusso Woollen Baby Vest\",\"uniqueID\":\"3074457345616679229\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140801\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679230\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Gusso Woollen Baby Vest\",\"uniqueID\":\"3074457345616679230\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140802\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679231\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Gusso Woollen Baby Vest\",\"uniqueID\":\"3074457345616679231\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140803\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679232\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Gusso Woollen Baby Vest\",\"uniqueID\":\"3074457345616679232\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140804\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679233\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Gusso Woollen Baby Vest\",\"uniqueID\":\"3074457345616679233\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_140805\"}],\"fullImage\":\"\\/wcsstore\\/ExtendedSitesCatalogAssetStore\\/images\\/catalog\\/apparel\\/boys\\/bcl014_tops\\/646x1000\\/bcl014_1408.jpg\",\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679228\",\"price\":[{\"description\":\"L\",\"value\":\"30.0\",\"usage\":\"Display\",\"currency\":\"USD\"},{\"description\":\"O\",\"value\":\"\",\"usage\":\"Offer\",\"currency\":\"USD\"}],\"thumbnail\":\"\\/wcsstore\\/ExtendedSitesCatalogAssetStore\\/images\\/catalog\\/apparel\\/boys\\/bcl014_tops\\/200x310\\/bcl014_1408.jpg\",\"seo_token_ntk\":\"gusso-woollen-baby-vest\",\"shortDescription\":\"Woollen baby vest in navy blue\",\"manufacturer\":\"Gusso\",\"name\":\"Gusso Woollen Baby Vest\",\"subscriptionTypeCode\":\"NONE\",\"buyable\":\"true\",\"longDescription\":\"This cutesy woollen baby vest in navy blue is an adorable top for toddler boys. This vest is cable knit and follows the styling similar to adult vests. Team it with a shirt, jeans and tie and your baby will steal the limelight.\",\"attributes\":[{\"storeDisplay\":false,\"values\":[{\"sequence\":\"5.00000\",\"value\":\"Vest\",\"uniqueID\":\"7741124012283334855\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"BCL014_1408\"}],\"sequence\":\".00000\",\"associatedKeyword\":\"-\",\"name\":\"Style\",\"uniqueID\":\"7741124012283333344\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"Style\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[],\"sequence\":\".00000\",\"associatedKeyword\":\"-\",\"name\":\"Size\",\"uniqueID\":\"7741124012283333398\",\"usage\":\"Defining\",\"comparable\":true,\"displayable\":true,\"identifier\":\"BoysTopsSize\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"1.00000\",\"value\":\"Wool\",\"uniqueID\":\"7741124012283334826\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"BCL014_1408\"}],\"sequence\":\"1.00000\",\"associatedKeyword\":\"-\",\"name\":\"Material\",\"uniqueID\":\"7741124012283333343\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"Material\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[],\"sequence\":\"1.00000\",\"associatedKeyword\":\"-\",\"name\":\"Color\",\"uniqueID\":\"7741124012283333399\",\"usage\":\"Defining\",\"comparable\":true,\"displayable\":true,\"identifier\":\"BoysTopsColor\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"5.00000\",\"value\":\"Sleeveless\",\"uniqueID\":\"7741124012283334799\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"BCL014_1408\"}],\"sequence\":\"3.00000\",\"associatedKeyword\":\"-\",\"name\":\"Sleeve Length\",\"uniqueID\":\"7741124012283333363\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"Sleeve Length\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"2.00000\",\"value\":\"0-2\",\"uniqueID\":\"7741124012283334813\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"BCL014_1408\"}],\"sequence\":\"4.00000\",\"associatedKeyword\":\"-\",\"name\":\"Age\",\"uniqueID\":\"7741124012283333387\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"Age\",\"facetable\":false,\"searchable\":false}],\"storeID\":\"715837934\",\"cm_seo_token_ntk\":\"715837934_gusso-woollen-baby-vest\",\"numberOfSKUs\":5,\"partNumber\":\"BCL014_1408\"}],\"recordSetComplete\":\"true\",\"recordSetStartNumber\":0,\"recordSetTotalMatches\":1,\"metaData\":{\"price\":\"2\"},\"resourceName\":\"productview\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "5429" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 12:15:13 GMT" ],
+          "Expires" : [ "Mon, 18 Feb 2019 13:15:13 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/search/resources/store/715838084/productview/byId/3074457345616679276"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com:3737"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "catalogId" : [ {
+            "matcher" : "exact",
+            "value" : "3074457345616676719"
+          } ],
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "CoreMedia_findProductByIds_Details"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":1,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679276?profileName=CoreMedia_findProductByIds_Details&catalogId=3074457345616676719&currency=USD&langId=-1\",\"recordSetCount\":1,\"catalogEntryView\":[{\"hasSingleSKU\":false,\"catalogEntryTypeCode\":\"ProductBean\",\"disallowRecurringOrder\":\"1\",\"parentCatalogGroupID\":[\"3074457345616676668_3074457345616676692\",\"3074457345616676719_3074457345616676692\",\"3074457345616676768_3074457345616676692\"],\"price_USD\":\"36.0\",\"uniqueID\":\"3074457345616679276\",\"sKUs\":[{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679277\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Borsati Classic Checkered Shirt\",\"uniqueID\":\"3074457345616679277\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_141501\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679278\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Borsati Classic Checkered Shirt\",\"uniqueID\":\"3074457345616679278\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_141502\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679279\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Borsati Classic Checkered Shirt\",\"uniqueID\":\"3074457345616679279\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_141503\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679280\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Borsati Classic Checkered Shirt\",\"uniqueID\":\"3074457345616679280\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_141504\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679281\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Borsati Classic Checkered Shirt\",\"uniqueID\":\"3074457345616679281\",\"storeID\":\"715837934\",\"partNumber\":\"BCL014_141505\"}],\"fullImage\":\"\\/wcsstore\\/ExtendedSitesCatalogAssetStore\\/images\\/catalog\\/apparel\\/boys\\/bcl014_tops\\/646x1000\\/bcl014_1415.jpg\",\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679276\",\"price\":[{\"description\":\"L\",\"value\":\"40.0\",\"usage\":\"Display\",\"currency\":\"USD\"},{\"description\":\"O\",\"value\":\"\",\"usage\":\"Offer\",\"currency\":\"USD\"}],\"thumbnail\":\"\\/wcsstore\\/ExtendedSitesCatalogAssetStore\\/images\\/catalog\\/apparel\\/boys\\/bcl014_tops\\/200x310\\/bcl014_1415.jpg\",\"seo_token_ntk\":\"borsati-classic-checkered-shirt\",\"shortDescription\":\"Classic checkered fitting shirt\",\"manufacturer\":\"Borsati\",\"name\":\"Borsati Classic Checkered Shirt\",\"subscriptionTypeCode\":\"NONE\",\"buyable\":\"true\",\"longDescription\":\"Chic and classy, this elegant shirt in small checks makes your young man look stylish. This pocketless shirt has a bias button panel. Shirttail hem and barrel cuffs further adorn the shirt.\",\"attributes\":[{\"storeDisplay\":false,\"values\":[{\"sequence\":\"2.00000\",\"value\":\"Shirt\",\"uniqueID\":\"7741124012283334845\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"BCL014_1415\"}],\"sequence\":\".00000\",\"associatedKeyword\":\"-\",\"name\":\"Style\",\"uniqueID\":\"7741124012283333344\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"Style\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[],\"sequence\":\".00000\",\"associatedKeyword\":\"-\",\"name\":\"Size\",\"uniqueID\":\"7741124012283333398\",\"usage\":\"Defining\",\"comparable\":true,\"displayable\":true,\"identifier\":\"BoysTopsSize\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"2.00000\",\"value\":\"Cotton\",\"uniqueID\":\"7741124012283334838\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"BCL014_1415\"}],\"sequence\":\"1.00000\",\"associatedKeyword\":\"-\",\"name\":\"Material\",\"uniqueID\":\"7741124012283333343\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"Material\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[],\"sequence\":\"1.00000\",\"associatedKeyword\":\"-\",\"name\":\"Color\",\"uniqueID\":\"7741124012283333399\",\"usage\":\"Defining\",\"comparable\":true,\"displayable\":true,\"identifier\":\"BoysTopsColor\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"6.00000\",\"value\":\"Full sleeves\",\"uniqueID\":\"7741124012283334806\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"BCL014_1415\"}],\"sequence\":\"3.00000\",\"associatedKeyword\":\"-\",\"name\":\"Sleeve Length\",\"uniqueID\":\"7741124012283333363\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"Sleeve Length\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"4.00000\",\"value\":\"8-16\",\"uniqueID\":\"7741124012283334823\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"BCL014_1415\"}],\"sequence\":\"4.00000\",\"associatedKeyword\":\"-\",\"name\":\"Age\",\"uniqueID\":\"7741124012283333387\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"Age\",\"facetable\":false,\"searchable\":false}],\"storeID\":\"715837934\",\"cm_seo_token_ntk\":\"715837934_borsati-classic-checkered-shirt\",\"numberOfSKUs\":5,\"partNumber\":\"BCL014_1415\"}],\"recordSetComplete\":\"true\",\"recordSetStartNumber\":0,\"recordSetTotalMatches\":1,\"metaData\":{\"price\":\"2\"},\"resourceName\":\"productview\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "5464" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 12:15:13 GMT" ],
+          "Expires" : [ "Mon, 18 Feb 2019 13:15:13 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838084/espot/PC_Homepage_Offer"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:80\\/wcs\\/resources\\/store\\/715838084\\/espot\\/PC_Homepage_Offer?currency=USD&langId=-1\",\"MarketingSpotData\":[{\"marketingSpotIdentifier\":\"715839634\",\"eSpotName\":\"PC_Homepage_Offer\",\"behavior\":\"1\",\"nextTimeLimit\":\"-1\",\"baseMarketingSpotActivityData\":[{\"activityIdentifierID\":\"715838834\",\"activityFormat\":\"web\",\"MarketingContentDescription\":[{}],\"marketingContentDescription\":[{\"marketingText\":\"Sign up today for 10% off your first order!\",\"language\":\"-1\"}],\"baseMarketingSpotActivityID\":\"715838640\",\"contentFormatId\":\"2\",\"properties\":[{\"baseMarketingValue\":\"Recommend content to a customer that satisfies the chosen target conditions.\",\"baseMarketingKey\":\"mktActivityDescription\"}],\"contentName\":\"PC_Offer_NotRegistered\",\"baseMarketingSpotDataType\":\"MarketingContent\",\"contentId\":\"715838640\",\"activityIdentifierName\":\"PC_Homepage_Offer_Activity\",\"contentFormatName\":\"Text\",\"activityPriority\":\"0\",\"contentStoreId\":\"715837984\",\"baseMarketingSpotActivityName\":\"PC_Offer_NotRegistered\",\"contentClickAction\":\"None\"},{\"activityIdentifierID\":\"715838834\",\"activityFormat\":\"web\",\"MarketingContentDescription\":[{}],\"marketingContentDescription\":[{\"marketingText\":\"Free Shipping for most Orders over $100\",\"language\":\"-1\"}],\"baseMarketingSpotActivityID\":\"715838637\",\"contentFormatId\":\"2\",\"properties\":[{\"baseMarketingValue\":\"Recommend content to a customer that satisfies the chosen target conditions.\",\"baseMarketingKey\":\"mktActivityDescription\"}],\"contentName\":\"PC_Offer2\",\"baseMarketingSpotDataType\":\"MarketingContent\",\"contentId\":\"715838637\",\"activityIdentifierName\":\"PC_Homepage_Offer_Activity\",\"contentFormatName\":\"Text\",\"activityPriority\":\"0\",\"contentStoreId\":\"715837984\",\"baseMarketingSpotActivityName\":\"PC_Offer2\",\"contentClickAction\":\"None\"},{\"activityIdentifierID\":\"715838834\",\"activityFormat\":\"web\",\"MarketingContentDescription\":[{}],\"marketingContentDescription\":[{\"marketingText\":\"20% off Women's & Men's Evening Attire\",\"language\":\"-1\"}],\"baseMarketingSpotActivityID\":\"715838638\",\"contentFormatId\":\"2\",\"properties\":[{\"baseMarketingValue\":\"Recommend content to a customer that satisfies the chosen target conditions.\",\"baseMarketingKey\":\"mktActivityDescription\"}],\"contentName\":\"PC_Offer3\",\"baseMarketingSpotDataType\":\"MarketingContent\",\"contentId\":\"715838638\",\"activityIdentifierName\":\"PC_Homepage_Offer_Activity\",\"contentFormatName\":\"Text\",\"activityPriority\":\"0\",\"contentStoreId\":\"715837984\",\"baseMarketingSpotActivityName\":\"PC_Offer3\",\"contentClickAction\":\"None\"}]}],\"resourceName\":\"espot\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600, no-cache=set-cookie" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "2550" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 12:15:13 GMT" ],
+          "Expires" : [ "Mon, 18 Feb 2019 13:15:14 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=00002CrDIzzGqZIyUCwDX7e3dBy:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838084/spot"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "https"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "q" : [ {
+            "matcher" : "exact",
+            "value" : "byTypeAndName"
+          } ],
+          "qName" : [ {
+            "matcher" : "exact",
+            "value" : "Shirts"
+          } ],
+          "qType" : [ {
+            "matcher" : "exact",
+            "value" : "MARKETING"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":4,\"resourceId\":\"https:\\/\\/shop-ref.ecommerce.coremedia.com:443\\/wcs\\/resources\\/store\\/715838084\\/spot?q=byTypeAndName&qType=MARKETING&qName=Shirts&currency=USD&langId=-1\",\"recordSetCount\":4,\"recordSetComplete\":true,\"recordSetStartNumber\":0,\"MarketingSpot\":[{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Shirts for Men\",\"spotName\":\"MenShirtsProductRight_CatEntries\",\"spotId\":\"715839038\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Shirts category page\",\"spotName\":\"MenShirtsRow2_Content\",\"spotId\":\"715839092\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Shirts and Blouses for Women\",\"spotName\":\"WomenShirtsBlousesProductRight_CatEntries\",\"spotId\":\"715839027\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Shirts and Blouses category page\",\"spotName\":\"WomenShirtsBlousesRow2_Content\",\"spotId\":\"715839100\",\"type\":\"MARKETING\"}],\"resourceName\":\"spot\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Connection" : [ "Keep-Alive" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 12:15:14 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Keep-Alive" : [ "timeout=10, max=100" ],
+          "Set-Cookie" : [ "JSESSIONID=00006Eov7FFbuhEA22r2pkLecPR:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Transfer-Encoding" : [ "chunked" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838084/spot"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "https"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "q" : [ {
+            "matcher" : "exact",
+            "value" : "byType"
+          } ],
+          "qType" : [ {
+            "matcher" : "exact",
+            "value" : "MARKETING"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":189,\"resourceId\":\"https:\\/\\/shop-ref.ecommerce.coremedia.com:443\\/wcs\\/resources\\/store\\/715838084\\/spot?q=byType&qType=MARKETING&currency=USD&langId=-1\",\"recordSetCount\":189,\"recordSetComplete\":true,\"recordSetStartNumber\":0,\"MarketingSpot\":[{\"uiDisplayable\":1,\"description\":\"Display the main ad on About Dress Designer page\",\"spotName\":\"AboutDressDesignerPageMainAd\",\"spotId\":\"715839022\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on Apparel department page\",\"spotName\":\"ApparelRow1_Content\",\"spotId\":\"715839021\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Apparel department page\",\"spotName\":\"ApparelRow2_Content_Left\",\"spotId\":\"715839025\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Apparel department page\",\"spotName\":\"ApparelRow2_Content_Right\",\"spotId\":\"715839026\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display category recommendations on Apparel department page.\",\"spotName\":\"ApparelRow3_Categories\",\"spotId\":\"715839109\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display catalog entry recommendations on Apparel department page. If more than four catalog entries are displayed, this e-Marketing Spot will have pagination.\",\"spotName\":\"ApparelRow4_CatEntries\",\"spotId\":\"715839111\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Appliances\",\"spotName\":\"AppliancesProductRight_CatEntries\",\"spotId\":\"715839057\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Appliances category page\",\"spotName\":\"AppliancesRow2_Content\",\"spotId\":\"715839114\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on Style Guide page\",\"spotName\":\"AuroraStyleGuidePageMainAd\",\"spotId\":\"715839024\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display category recommendations on the home page. If more than four entries are displayed, this e-Marketing Spot will scroll.\",\"spotName\":\"B2BHomePageFeaturedCategories\",\"spotId\":\"715838990\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the bestsellers on B2B home page\",\"spotName\":\"B2BHomePageFeaturedProducts\",\"spotId\":\"715838991\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in BathAccessories\",\"spotName\":\"BathAccessoriesProductRight_CatEntries\",\"spotId\":\"715839061\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Bath Accessories category page\",\"spotName\":\"BathAccessoriesRow2_Content\",\"spotId\":\"715839115\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display a list of the best selling catalog entries for a category. This e-Marketing Spot can also display other types of catalog entry recommendations, just like any e-Marketing Spot with a name that ends with _CatEntries\",\"spotName\":\"BestSellers_CatEntries\",\"spotId\":\"715837891\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display recommendations on Bolts product pages for Fasteners\",\"spotName\":\"BoltsProductRec_CatEntries\",\"spotId\":\"715839159\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Bolts\",\"spotName\":\"BoltsProductRight_CatEntries\",\"spotId\":\"715839075\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on Bolts category page\",\"spotName\":\"BoltsRow2_Content\",\"spotId\":\"715839148\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Pants for Boys\",\"spotName\":\"BoysPantsProductRight_CatEntries\",\"spotId\":\"715839044\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Pants category page\",\"spotName\":\"BoysPantsRow2_Content\",\"spotId\":\"715839078\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on Boys category page\",\"spotName\":\"BoysRow1_Content\",\"spotId\":\"715839081\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"BoysCategoryRecommendationForStores\",\"spotName\":\"BoysRow3_Categories\",\"spotId\":\"715839082\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation for Boys\",\"spotName\":\"BoysRow4_CatEntries\",\"spotId\":\"715839048\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Shoes for Boys\",\"spotName\":\"BoysShoesProductRight_CatEntries\",\"spotId\":\"715839046\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Shoes category page\",\"spotName\":\"BoysShoesRow2_Content\",\"spotId\":\"715839079\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Tops for Boys\",\"spotName\":\"BoysTopsProductRight_CatEntries\",\"spotId\":\"715839045\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Tops category page\",\"spotName\":\"BoysTopsRow2_Content\",\"spotId\":\"715839080\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display a page-wide banner ad below the header on catalog browsing pages\",\"spotName\":\"CatalogBanner_Content\",\"spotId\":\"715839002\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display a page-wide banner ad below the header on catalog browsing pages\",\"spotName\":\"CatalogBanner_Content_Left\",\"spotId\":\"715839003\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display a page-wide banner ad below the header on catalog browsing pages\",\"spotName\":\"CatalogBanner_Content_Right\",\"spotId\":\"715839004\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display catalog entry recommendations from Coremetrics Intelligent Offer on all category pages.\",\"spotName\":\"Category_ProductRec\",\"spotId\":\"715837885\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Computer Accessories\",\"spotName\":\"ComputersAccessoriesProductRight_CatEntries\",\"spotId\":\"715839053\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Accessories category page\",\"spotName\":\"ComputersAccessoriesRow2_Content\",\"spotId\":\"715839113\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Computer Components\",\"spotName\":\"ComputersComponentsProductRight_CatEntries\",\"spotId\":\"715839054\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Components category page\",\"spotName\":\"ComputersComponentsRow2_Content\",\"spotId\":\"715839116\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Computer Desktops\",\"spotName\":\"ComputersDesktopsProductRight_CatEntries\",\"spotId\":\"715839050\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Desktops category page\",\"spotName\":\"ComputersDesktopsRow2_Content\",\"spotId\":\"715839117\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Computer Laptops\",\"spotName\":\"ComputersLaptopsProductRight_CatEntries\",\"spotId\":\"715839051\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Laptops category page\",\"spotName\":\"ComputersLaptopsRow2_Content\",\"spotId\":\"715839130\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Computer Tablets\",\"spotName\":\"ComputersTabletsProductRight_CatEntries\",\"spotId\":\"715839052\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Tablets category page\",\"spotName\":\"ComputersTabletsRow2_Content\",\"spotId\":\"715839138\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display content in the Contact Us page.\",\"spotName\":\"ContactUsPageCenter_Content\",\"spotId\":\"715837912\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display content in the Corporate Info - Contact Us page.\",\"spotName\":\"CorporateContactUsPageCenter_Content\",\"spotId\":\"715837916\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display content in the Corporate Info - About Us page.\",\"spotName\":\"CorporateInfoPageCenter_Content\",\"spotId\":\"715837915\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Dairy\",\"spotName\":\"DairyProductRight_CatEntries\",\"spotId\":\"715839066\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Dairy category page\",\"spotName\":\"DairyRow2_Content\",\"spotId\":\"715839118\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display catalog entry recommendations on the right side of all product details pages for Dresses category\",\"spotName\":\"DressesProductRight_CatEntries\",\"spotId\":\"715839005\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display responsive hero image on Dresses category page.\",\"spotName\":\"DressesRow2_Content\",\"spotId\":\"715839008\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display product recommendations on Dresses category page\",\"spotName\":\"DressesRow4_CatEntries\",\"spotId\":\"715839009\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on Electronics department page\",\"spotName\":\"ElectronicsRow1_Content\",\"spotId\":\"715839119\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Electronics department page\",\"spotName\":\"ElectronicsRow2_Content\",\"spotId\":\"715839120\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"ElectronicsCategoryRecommendationForStores\",\"spotName\":\"ElectronicsRow3_Categories\",\"spotId\":\"715839142\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Electronics\",\"spotName\":\"ElectronicsRow4_CatEntries\",\"spotId\":\"715839069\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display content in the account activation e-mail message.\",\"spotName\":\"EmailAccountActivation_Content\",\"spotId\":\"715837920\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display your store logo as a page-wide banner in all store marketing e-mail messages.\",\"spotName\":\"EmailBanner_Content\",\"spotId\":\"715837895\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display an ad at the bottom of all store marketing e-mail messages.\",\"spotName\":\"EmailBottom_Content\",\"spotId\":\"715837896\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display content in the footer of all store marketing e-mail messages.\",\"spotName\":\"EmailFooter_Content\",\"spotId\":\"715837918\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display content in the header of all store marketing e-mail messages.\",\"spotName\":\"EmailHeader_Content\",\"spotId\":\"715837917\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display content in the order cancellation e-mail message.\",\"spotName\":\"EmailOrderCancel_Content\",\"spotId\":\"715837921\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display content in the order ship e-mail message.\",\"spotName\":\"EmailOrderShip_Content\",\"spotId\":\"715837922\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display content in the forgot password e-mail message.\",\"spotName\":\"EmailPasswordReset_AdminContent\",\"spotId\":\"715837923\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display content in the forgot password e-mail message.\",\"spotName\":\"EmailPasswordReset_Content\",\"spotId\":\"715837909\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display content in the wish list created e-mail message.\",\"spotName\":\"EmailWishlist_Content\",\"spotId\":\"715837910\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on Evening Sparkle Dress page\",\"spotName\":\"EveningSparkleDressPageMainAd\",\"spotId\":\"715839023\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the hero image on the fasteners page\",\"spotName\":\"FastenersRow1_Content\",\"spotId\":\"715839018\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on the left side of the fasteners page.\",\"spotName\":\"FastenersRow2_Content_Left\",\"spotId\":\"715839019\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on the right side of the fasteners page.\",\"spotName\":\"FastenersRow2_Content_Right\",\"spotId\":\"715839020\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"FastenersCategoryRecommendationForStores\",\"spotName\":\"FastenersRow3_Categories\",\"spotId\":\"715839016\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Fasteners\",\"spotName\":\"FastenersRow4_CatEntries\",\"spotId\":\"715839017\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Fruit\",\"spotName\":\"FruitProductRight_CatEntries\",\"spotId\":\"715839063\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Fruits category page\",\"spotName\":\"FruitRow2_Content\",\"spotId\":\"715839121\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Furniture\",\"spotName\":\"FurnitureProductRight_CatEntries\",\"spotId\":\"715839062\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Furniture category page\",\"spotName\":\"FurnitureRow2_Content\",\"spotId\":\"715839122\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Dresses and Skirts for Girls\",\"spotName\":\"GirlsDressesSkirtsProductRight_CatEntries\",\"spotId\":\"715839042\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Dresses and Skirts category page\",\"spotName\":\"GirlsDressesSkirtsRow2_Content\",\"spotId\":\"715839083\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Pants for Girls\",\"spotName\":\"GirlsPantsProductRight_CatEntries\",\"spotId\":\"715839041\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Pants category page\",\"spotName\":\"GirlsPantsRow2_Content\",\"spotId\":\"715839084\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on Girls category page\",\"spotName\":\"GirlsRow1_Content\",\"spotId\":\"715839087\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"GirlsCategoryRecommendationForStores\",\"spotName\":\"GirlsRow3_Categories\",\"spotId\":\"715839088\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation for Girls\",\"spotName\":\"GirlsRow4_CatEntries\",\"spotId\":\"715839049\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Shoes for Girls\",\"spotName\":\"GirlsShoesProductRight_CatEntries\",\"spotId\":\"715839040\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Shoes category page\",\"spotName\":\"GirlsShoesRow2_Content\",\"spotId\":\"715839085\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Tops for Girls\",\"spotName\":\"GirlsTopsProductRight_CatEntries\",\"spotId\":\"715839043\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Tops category page\",\"spotName\":\"GirlsTopsRow2_Content\",\"spotId\":\"715839086\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on Grocery department page\",\"spotName\":\"GroceryRow1_Content\",\"spotId\":\"715839123\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Grocery department page\",\"spotName\":\"GroceryRow2_Content\",\"spotId\":\"715839124\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"GroceryCategoryRecommendationForStores\",\"spotName\":\"GroceryRow3_Categories\",\"spotId\":\"715839143\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation for Grocery\",\"spotName\":\"GroceryRow4_CatEntries\",\"spotId\":\"715839072\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Hardware Lighting\",\"spotName\":\"HardwareLightingProductRight_CatEntries\",\"spotId\":\"715839074\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on Hardware Lighting category page\",\"spotName\":\"HardwareLightingRow2_Content\",\"spotId\":\"715839147\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on Hardware department page\",\"spotName\":\"HardwareRow1_Content\",\"spotId\":\"715839151\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the left ad on Hardware department page\",\"spotName\":\"HardwareRow2_Content_Left\",\"spotId\":\"715839152\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the right ad on Hardware department page\",\"spotName\":\"HardwareRow2_Content_Right\",\"spotId\":\"715839153\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the categories on Hardware department page\",\"spotName\":\"HardwareRow3_Categories\",\"spotId\":\"715839154\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the best sellers on Hardware department page\",\"spotName\":\"HardwareRow4_CatEntries\",\"spotId\":\"715839155\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display text content in the header banner.\",\"spotName\":\"HeaderBannerHardwareLeft_Content\",\"spotId\":\"715839010\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display text content in the header banner.\",\"spotName\":\"HeaderBannerHardwareRight_Content\",\"spotId\":\"715839011\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display text content in the header banner.\",\"spotName\":\"HeaderBanner_Content_Left\",\"spotId\":\"715839006\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display text content in the header banner.\",\"spotName\":\"HeaderBanner_Content_Right\",\"spotId\":\"715839007\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display your store logo in the top-left corner of every store page\",\"spotName\":\"HeaderStoreLogo_Content\",\"spotId\":\"715837894\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on Health department page\",\"spotName\":\"HealthRow1_Content\",\"spotId\":\"715839125\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Health department page\",\"spotName\":\"HealthRow2_Content\",\"spotId\":\"715839126\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Health Category Recommendation For Stores\",\"spotName\":\"HealthRow3_Categories\",\"spotId\":\"715839144\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation for Health\",\"spotName\":\"HealthRow4_CatEntries\",\"spotId\":\"715839073\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display content in the Help page.\",\"spotName\":\"HelpPageCenter_Content\",\"spotId\":\"715837911\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the hero image on B2B home page\",\"spotName\":\"HeroHardware_Content\",\"spotId\":\"715839012\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on Home And Furnishings department page\",\"spotName\":\"HomeFurnishingsRow1_Content\",\"spotId\":\"715839127\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Home And Furnishings department page\",\"spotName\":\"HomeFurnishingsRow2_Content\",\"spotId\":\"715839128\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"HomeAndFurnishingsCategoryRecommendationForStores\",\"spotName\":\"HomeFurnishingsRow3_Categories\",\"spotId\":\"715839145\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Home and  Furnishings\",\"spotName\":\"HomeFurnishingsRow4_CatEntries\",\"spotId\":\"715839071\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display category recommendations on the home page. If more than four entries are displayed, this e-Marketing Spot will scroll.\",\"spotName\":\"HomeRow2_Categories\",\"spotId\":\"715838989\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display catalog entry recommendations from Coremetrics Intelligent Offer on the home page.\",\"spotName\":\"Home_ProductRec\",\"spotId\":\"715837888\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Kitchenware\",\"spotName\":\"KitchenwareProductRight_CatEntries\",\"spotId\":\"715839060\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Kitchenware category page\",\"spotName\":\"KitchenwareRow2_Content\",\"spotId\":\"715839129\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Lighting\",\"spotName\":\"LightingProductRight_CatEntries\",\"spotId\":\"715839058\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Lighting category page\",\"spotName\":\"LightingRow2_Content\",\"spotId\":\"715839131\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Magazines\",\"spotName\":\"MagazinesProductRight_CatEntries\",\"spotId\":\"715839056\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Magazines category page\",\"spotName\":\"MagazinesRow2_Content\",\"spotId\":\"715839132\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Meat\",\"spotName\":\"MeatProductRight_CatEntries\",\"spotId\":\"715839065\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Meat category page\",\"spotName\":\"MeatRow2_Content\",\"spotId\":\"715839133\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Medicine\",\"spotName\":\"MedicineProductRight_CatEntries\",\"spotId\":\"715839067\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Medicines category page\",\"spotName\":\"MedicineRow2_Content\",\"spotId\":\"715839134\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Accessories for Men\",\"spotName\":\"MenAccessoriesProductRight_CatEntries\",\"spotId\":\"715839034\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Accessories category page\",\"spotName\":\"MenAccessoriesRow2_Content\",\"spotId\":\"715839089\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Jackets for Men\",\"spotName\":\"MenJacketsProductRight_CatEntries\",\"spotId\":\"715839039\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Jackets category page\",\"spotName\":\"MenJacketsRow2_Content\",\"spotId\":\"715839090\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Pants for Men\",\"spotName\":\"MenPantsProductRight_CatEntries\",\"spotId\":\"715839036\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Pants category page\",\"spotName\":\"MenPantsRow2_Content\",\"spotId\":\"715839091\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on Men category page\",\"spotName\":\"MenRow1_Content\",\"spotId\":\"715839095\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"MenCategoryRecommendationForStores\",\"spotName\":\"MenRow3_Categories\",\"spotId\":\"715839096\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation for Men\",\"spotName\":\"MenRow4_CatEntries\",\"spotId\":\"715839047\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Shirts for Men\",\"spotName\":\"MenShirtsProductRight_CatEntries\",\"spotId\":\"715839038\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Shirts category page\",\"spotName\":\"MenShirtsRow2_Content\",\"spotId\":\"715839092\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Shoes for Men\",\"spotName\":\"MenShoesProductRight_CatEntries\",\"spotId\":\"715839035\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Shoes category page\",\"spotName\":\"MenShoesRow2_Content\",\"spotId\":\"715839093\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Suits for Men\",\"spotName\":\"MenSuitsProductRight_CatEntries\",\"spotId\":\"715839037\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Suits category page\",\"spotName\":\"MenSuitsRow2_Content\",\"spotId\":\"715839094\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on News letters And Magazines department page\",\"spotName\":\"NewslettersAndMagazinesRow1_Content\",\"spotId\":\"715839135\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Newsletters And Magazines department page\",\"spotName\":\"NewslettersAndMagazinesRow2_Content\",\"spotId\":\"715839136\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"NewslettersAndMagazinesCategoryRecommendationForStores\",\"spotName\":\"NewslettersAndMagazinesRow3_Categories\",\"spotId\":\"715839146\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Magazines and Newsletters\",\"spotName\":\"NewslettersAndMagazinesRow4_CatEntries\",\"spotId\":\"715839070\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Newsletters\",\"spotName\":\"NewslettersProductRight_CatEntries\",\"spotId\":\"715839055\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Newsletters category page\",\"spotName\":\"NewslettersRow2_Content\",\"spotId\":\"715839137\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display recommendations on Nuts product pages for Fasteners\",\"spotName\":\"NutsProductRec_CatEntries\",\"spotId\":\"715839158\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Nuts\",\"spotName\":\"NutsProductRight_CatEntries\",\"spotId\":\"715839076\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on Nuts category page\",\"spotName\":\"NutsRow2_Content\",\"spotId\":\"715839150\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display catalog entry recommendations from Coremetrics Intelligent Offer on the order confirmation page.\",\"spotName\":\"OrderConf_ProductRec\",\"spotId\":\"715837887\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Homepage Text banner for Offers\",\"spotName\":\"PC_Homepage_Offer\",\"spotId\":\"715839634\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"PerfectChef widget for Order Confirmation page with contextual content based on purchase\",\"spotName\":\"PC_RelatedBox_OrderConfirmation\",\"spotId\":\"715839635\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"PerfectChef widget for Check-Out Thank you page with contextual content based on cart\",\"spotName\":\"PC_RelatedBox_Recently_Viewed\",\"spotId\":\"715839636\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"PerfectChef related box with automated list of Top Sellers\",\"spotName\":\"PC_RelatedBox_TopSellers\",\"spotId\":\"715839637\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"PerfectChef Sidebar that shows various activities based on login status, activity, cart content and applicable promotions (e.g. Women's dress sale targeted at women)\",\"spotName\":\"PC_Sidebar_Personalized\",\"spotId\":\"715839638\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Email change password notification\",\"spotName\":\"PasswordChangeNotifyCenter_Content\",\"spotId\":\"715837919\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display content in the Privacy Policy page.\",\"spotName\":\"PrivacyPolicyPageCenter_Content\",\"spotId\":\"715837914\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display catalog entry recommendations from Coremetrics Intelligent Offer on the product details page.\",\"spotName\":\"Product_ProductRec\",\"spotId\":\"715837884\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display a list of the catalog entries that the customer has recently viewed. This e-Marketing Spot can also display other types of catalog entry recommendations, just like any e-Marketing Spot with a name that ends with _CatEntries\",\"spotName\":\"RecViewed_CatEntries\",\"spotId\":\"715837893\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display content in the Return Policy page.\",\"spotName\":\"ReturnPolicyPageCenter_Content\",\"spotId\":\"715837913\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display recommendations on Screws product pages for Fasteners\",\"spotName\":\"ScrewsProductRec_CatEntries\",\"spotId\":\"715839157\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Screws\",\"spotName\":\"ScrewsProductRight_CatEntries\",\"spotId\":\"715839077\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on Screws category page\",\"spotName\":\"ScrewsRow2_Content\",\"spotId\":\"715839149\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"SeachLandingClearance\",\"spotName\":\"SeachLandingClearance\",\"spotId\":\"715838998\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display catalog entry recommendations on Search Results page\",\"spotName\":\"SearchResults_CatEntries\",\"spotId\":\"715837890\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Search Results page\",\"spotName\":\"SearchResults_Content\",\"spotId\":\"715837889\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display catalog entry recommendations on the right side of the shopping cart page\",\"spotName\":\"ShoppingCartRight_CatEntries\",\"spotId\":\"715838985\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display catalog entry recommendations from Coremetrics Intelligent Offer on the shopping cart page.\",\"spotName\":\"ShoppingCart_ProductRec\",\"spotId\":\"715837886\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Tableware\",\"spotName\":\"TablewareProductRight_CatEntries\",\"spotId\":\"715839059\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Tableware category page\",\"spotName\":\"TablewareRow2_Content\",\"spotId\":\"715839139\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display a list of the top browsed catalog entries for a category. This e-Marketing Spot can also display other types of catalog entry recommendations, just like any e-Marketing Spot with a name that ends with _CatEntries\",\"spotName\":\"TopBrowsed_CatEntries\",\"spotId\":\"715837892\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Vegetables\",\"spotName\":\"VegetablesProductRight_CatEntries\",\"spotId\":\"715839064\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Vegetables category page\",\"spotName\":\"VegetablesRow2_Content\",\"spotId\":\"715839140\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Vitamins\",\"spotName\":\"VitaminsProductRight_CatEntries\",\"spotId\":\"715839068\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Vitamins category page\",\"spotName\":\"VitaminsRow2_Content\",\"spotId\":\"715839141\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display suggestive sellings in the wish list page.\",\"spotName\":\"WishListCenter_CatEntries\",\"spotId\":\"715838984\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Accessories for Women\",\"spotName\":\"WomenAccessoriesProductRight_CatEntries\",\"spotId\":\"715839033\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Accessories category page\",\"spotName\":\"WomenAccessoriesRow2_Content\",\"spotId\":\"715839097\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Handbags for Women\",\"spotName\":\"WomenHandbagsProductRight_CatEntries\",\"spotId\":\"715839032\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Handbags category page\",\"spotName\":\"WomenHandbagsRow2_Content\",\"spotId\":\"715839098\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Pants for Women\",\"spotName\":\"WomenPantsProductRight_CatEntries\",\"spotId\":\"715839030\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Pants category page\",\"spotName\":\"WomenPantsRow2_Content\",\"spotId\":\"715839099\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display the main ad on Women category page\",\"spotName\":\"WomenRow1_Content\",\"spotId\":\"715839108\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display category recommendations on Women category page\",\"spotName\":\"WomenRow3_Categories\",\"spotId\":\"715839110\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display catalog entry recommendations on Women category page. If more than four catalog entries are displayed, this e-Marketing Spot will have pagination.\",\"spotName\":\"WomenRow4_CatEntries\",\"spotId\":\"715839112\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Shirts and Blouses for Women\",\"spotName\":\"WomenShirtsBlousesProductRight_CatEntries\",\"spotId\":\"715839027\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Shirts and Blouses category page\",\"spotName\":\"WomenShirtsBlousesRow2_Content\",\"spotId\":\"715839100\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Shoes for Women\",\"spotName\":\"WomenShoesProductRight_CatEntries\",\"spotId\":\"715839031\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Shoes category page\",\"spotName\":\"WomenShoesRow2_Content\",\"spotId\":\"715839101\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Skirts for Women\",\"spotName\":\"WomenSkirtsProductRight_CatEntries\",\"spotId\":\"715839029\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Skirts category page\",\"spotName\":\"WomenSkirtsRow2_Content\",\"spotId\":\"715839102\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Product Recommendation in Sweaters for Women \",\"spotName\":\"WomenSweatersProductRight_CatEntries\",\"spotId\":\"715839028\",\"type\":\"MARKETING\"},{\"uiDisplayable\":1,\"description\":\"Display ads on Sweaters category page\",\"spotName\":\"WomenSweatersRow2_Content\",\"spotId\":\"715839103\",\"type\":\"MARKETING\"}],\"resourceName\":\"spot\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Connection" : [ "Keep-Alive" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 12:15:14 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Keep-Alive" : [ "timeout=10, max=99" ],
+          "Set-Cookie" : [ "JSESSIONID=0000gbsqN0oYYajtbJGiS5hOK5S:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Transfer-Encoding" : [ "chunked" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838084/spot"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "https"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "q" : [ {
+            "matcher" : "exact",
+            "value" : "byTypeAndName"
+          } ],
+          "qName" : [ {
+            "matcher" : "exact",
+            "value" : "ApparelRow1_Content"
+          } ],
+          "qType" : [ {
+            "matcher" : "exact",
+            "value" : "MARKETING"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":1,\"resourceId\":\"https:\\/\\/shop-ref.ecommerce.coremedia.com:443\\/wcs\\/resources\\/store\\/715838084\\/spot?q=byTypeAndName&qType=MARKETING&qName=ApparelRow1_Content&currency=USD&langId=-1\",\"recordSetCount\":1,\"recordSetComplete\":true,\"recordSetStartNumber\":0,\"MarketingSpot\":[{\"uiDisplayable\":1,\"description\":\"Display the main ad on Apparel department page\",\"spotName\":\"ApparelRow1_Content\",\"spotId\":\"715839021\",\"type\":\"MARKETING\"}],\"resourceName\":\"spot\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Connection" : [ "Keep-Alive" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 12:15:14 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Keep-Alive" : [ "timeout=10, max=98" ],
+          "Set-Cookie" : [ "JSESSIONID=0000FCFgafv1_sir0IeUF4IL0vI:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Transfer-Encoding" : [ "chunked" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838084/espot/PC_Homepage_Offer"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "forUser" : [ {
+            "matcher" : "exact",
+            "value" : "gstevens"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:80\\/wcs\\/resources\\/store\\/715838084\\/espot\\/PC_Homepage_Offer?currency=USD&forUser=gstevens&langId=-1\",\"MarketingSpotData\":[{\"marketingSpotIdentifier\":\"715839634\",\"eSpotName\":\"PC_Homepage_Offer\",\"behavior\":\"1\",\"nextTimeLimit\":\"-1\",\"baseMarketingSpotActivityData\":[{\"activityIdentifierID\":\"715838834\",\"activityFormat\":\"web\",\"MarketingContentDescription\":[{}],\"marketingContentDescription\":[{\"marketingText\":\"Check out our Sale on Men's Summer Wear\",\"language\":\"-1\"}],\"baseMarketingSpotActivityID\":\"715838639\",\"contentFormatId\":\"2\",\"properties\":[{\"baseMarketingValue\":\"Recommend content to a customer that satisfies the chosen target conditions.\",\"baseMarketingKey\":\"mktActivityDescription\"}],\"contentName\":\"PC_Offer_Registered_Male\",\"baseMarketingSpotDataType\":\"MarketingContent\",\"contentId\":\"715838639\",\"activityIdentifierName\":\"PC_Homepage_Offer_Activity\",\"contentFormatName\":\"Text\",\"activityPriority\":\"0\",\"contentStoreId\":\"715837984\",\"baseMarketingSpotActivityName\":\"PC_Offer_Registered_Male\",\"contentClickAction\":\"None\"},{\"activityIdentifierID\":\"715838834\",\"activityFormat\":\"web\",\"MarketingContentDescription\":[{}],\"marketingContentDescription\":[{\"marketingText\":\"Free Shipping for most Orders over $100\",\"language\":\"-1\"}],\"baseMarketingSpotActivityID\":\"715838637\",\"contentFormatId\":\"2\",\"properties\":[{\"baseMarketingValue\":\"Recommend content to a customer that satisfies the chosen target conditions.\",\"baseMarketingKey\":\"mktActivityDescription\"}],\"contentName\":\"PC_Offer2\",\"baseMarketingSpotDataType\":\"MarketingContent\",\"contentId\":\"715838637\",\"activityIdentifierName\":\"PC_Homepage_Offer_Activity\",\"contentFormatName\":\"Text\",\"activityPriority\":\"0\",\"contentStoreId\":\"715837984\",\"baseMarketingSpotActivityName\":\"PC_Offer2\",\"contentClickAction\":\"None\"},{\"activityIdentifierID\":\"715838834\",\"activityFormat\":\"web\",\"MarketingContentDescription\":[{}],\"marketingContentDescription\":[{\"marketingText\":\"20% off Women's & Men's Evening Attire\",\"language\":\"-1\"}],\"baseMarketingSpotActivityID\":\"715838638\",\"contentFormatId\":\"2\",\"properties\":[{\"baseMarketingValue\":\"Recommend content to a customer that satisfies the chosen target conditions.\",\"baseMarketingKey\":\"mktActivityDescription\"}],\"contentName\":\"PC_Offer3\",\"baseMarketingSpotDataType\":\"MarketingContent\",\"contentId\":\"715838638\",\"activityIdentifierName\":\"PC_Homepage_Offer_Activity\",\"contentFormatName\":\"Text\",\"activityPriority\":\"0\",\"contentStoreId\":\"715837984\",\"baseMarketingSpotActivityName\":\"PC_Offer3\",\"contentClickAction\":\"None\"}]}],\"resourceName\":\"espot\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600, no-cache=set-cookie" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "2567" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 12:15:15 GMT" ],
+          "Expires" : [ "Mon, 18 Feb 2019 13:15:15 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000h5NC-s5ikE4I_AKJO64ZjFd:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838084/spot/715839021"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "https"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":1,\"resourceId\":\"https:\\/\\/shop-ref.ecommerce.coremedia.com:443\\/wcs\\/resources\\/store\\/715838084\\/spot\\/715839021?currency=USD&langId=-1\",\"recordSetCount\":1,\"recordSetComplete\":true,\"recordSetStartNumber\":0,\"MarketingSpot\":[{\"uiDisplayable\":1,\"description\":\"Display the main ad on Apparel department page\",\"spotName\":\"ApparelRow1_Content\",\"spotId\":\"715839021\",\"type\":\"MARKETING\"}],\"resourceName\":\"spot\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Connection" : [ "Keep-Alive" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 12:15:15 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Keep-Alive" : [ "timeout=10, max=97" ],
+          "Set-Cookie" : [ "JSESSIONID=0000PytyKYLO01oboRzazve9OO_:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Transfer-Encoding" : [ "chunked" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    } ],
+    "globalActions" : {
+      "delays" : [ ]
+    }
+  },
+  "meta" : {
+    "schemaVersion" : "v5",
+    "hoverflyVersion" : "v0.17.7",
+    "timeExported" : "2019-02-18T13:15:15+01:00"
+  }
+}

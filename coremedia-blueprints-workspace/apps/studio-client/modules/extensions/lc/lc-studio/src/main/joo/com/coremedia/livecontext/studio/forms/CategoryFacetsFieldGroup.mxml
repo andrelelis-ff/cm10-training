@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CategoryFacetsFieldGroupBase
+        xmlns="exml:ext.config"
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:local="com.coremedia.livecontext.studio.forms.*" xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+>
+    <fx:Script><![CDATA[
+
+        public static const xtype:String = "com.coremedia.livecontext.studio.config.categoryFacetsFieldGroup";
+
+        private var config:CategoryFacetsFieldGroup;
+
+        [Bindable]
+        public var facetNamePropertyName:String;
+
+        [Bindable]
+        public var facetValuePropertyName:String;
+
+        [Bindable]
+        public var externalIdPropertyName:String;
+
+        public native function CategoryFacetsFieldGroup(config:CategoryFacetsFieldGroup = null);
+        ]]></fx:Script>
+    <fx:Metadata>
+        [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+    </fx:Metadata>
+    <local:items>
+        <ui:LocalComboBox itemId="facetCombo"
+                          fieldLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin','CMProductList_localSettings.productList.facet.text')}"
+                          emptyText="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin','CMProductList_localSettings.productList.facet.emptyText')}"
+                          displayField="value"
+                          valueField="id">
+            <ui:plugins  exml:mode="append">
+                <ui:BindListPlugin bindTo="{getFacetNamesExpression()}">
+                    <ui:fields>
+                        <ui:DataField name="id"/>
+                        <ui:DataField name="value"
+                                      convert_="{function(value:String):String { return (resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Facet_Dropdown_' + value)) || value; }}"/>
+                    </ui:fields>
+                </ui:BindListPlugin>
+                <editor:BindReadOnlyPlugin bindTo="{config.bindTo}"
+                                           forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+
+            </ui:plugins>
+        </ui:LocalComboBox>
+        <ui:LocalComboBox itemId="facetValueCombo"
+                          fieldLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin','CMProductList_localSettings.productList.facetValue.text')}"
+                          emptyText="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin','CMProductList_localSettings.productList.facetValue.emptyText')}"
+                          displayField="value"
+                          valueField="id">
+            <ui:plugins  exml:mode="append">
+                <ui:BindListPlugin bindTo="{getFacetValuesExpression()}">
+                    <ui:fields>
+                        <ui:DataField name="id"/>
+                        <ui:DataField name="value" encode="false"/>
+                    </ui:fields>
+                </ui:BindListPlugin>
+                <editor:BindReadOnlyPlugin bindTo="{config.bindTo}"
+                                           forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+            </ui:plugins>
+        </ui:LocalComboBox>
+    </local:items>
+</local:CategoryFacetsFieldGroupBase>

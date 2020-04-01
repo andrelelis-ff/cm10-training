@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalChannel folder="/Sites/SiteGenesis Global/United Kingdom/English/Augmentation/Womens/Accessories" name="Women Accessories" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>accessories</segment>
+<title>Accessories</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></teaserText>
+<pictures>
+<link href="../../../Editorial/Slots/Categories/Women/Accessories/shutterstock_420284560.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Slots/Categories/Women/Accessories/shutterstock_420284560"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<header>
+</header>
+<footer>
+</footer>
+<externalId>sfcc:///catalog/category/womens-accessories</externalId>
+</CMExternalChannel>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:TaxonomySelectionWindowBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.taxonomy.chooser.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns:taxonomy="exml:com.coremedia.blueprint.studio.config.taxonomy"
+        xmlns="exml:ext.config" xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="com.coremedia.cms.editor.sdk.util.*"
+        id_="taxonomySelectionDialog"
+        stateId="taxonomySelectionWindowState"
+        stateful="true"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'taxonomy_selection_dialog_title')}"
+        width="510"
+        height="450"
+        modal="true"
+        constrainHeader="true"
+        ui="{WindowSkin.GRID_200.getSkin()}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin')]
+    [ResourceBundle('com.coremedia.cms.editor.Editor')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.bem.SpacingBEMEntities;
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.skins.ButtonSkin;
+    import com.coremedia.ui.skins.WindowSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.taxonomy.taxonomySelectionWindow";
+
+    private var config:TaxonomySelectionWindow;
+
+    public native function TaxonomySelectionWindow(config:TaxonomySelectionWindow = null);
+
+    /**
+     * the property expression to bind in this field
+     */
+    [Bindable]
+    public var propertyValueExpression:ValueExpression;
+
+    [Bindable]
+    public var bindTo:ValueExpression;
+
+    /**
+     * An optional ValueExpression which makes the component read-only if it is evaluated to true.
+     */
+    [Bindable]
+    public var forceReadOnlyValueExpression:ValueExpression;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!--- Defines the taxonomy type to choose from. -->
+    <fx:String id="taxonomyId"/>
+
+    <!--- If true, only one item can be selected from the list. -->
+    <fx:String id="singleSelection"/>
+  </fx:Declarations>
+
+  <local:layout>
+    <layout_VBox align="stretch"/>
+  </local:layout>
+  <local:items>
+    <FieldContainer labelAlign="top"
+                    labelSeparator=""
+                    fieldLabel="{resolveSelectionTitle(config.singleSelection)}"
+                    height="128">
+      <layout>
+        <layout_Fit/>
+      </layout>
+      <items>
+        <taxonomy:TaxonomyLinkListGridPanel id_="selectedTaxonomies"
+                                            scrollable="true"
+                                            bindTo="{config.bindTo}"
+                                            taxonomyId="{config.taxonomyId}"
+                                            emptyText="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyLinkList_empty_chooser_text')}">
+          <taxonomy:linkListWrapper>
+            <editor:MemoryLinkListWrapper linksVE="{getSelectionExpression()}"
+                                          linkTypeName="CMTaxonomy"/>
+          </taxonomy:linkListWrapper>
+        </taxonomy:TaxonomyLinkListGridPanel>
+      </items>
+    </FieldContainer>
+    <FieldContainer labelAlign="top"
+                    labelSeparator=""
+                    fieldLabel="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyChooser_selection_text')}"
+                    flex="1">
+      <layout>
+        <layout_Fit/>
+      </layout>
+      <items>
+        <taxonomy:TaxonomySelector selectionExpression="{getSelectionExpression()}"
+                                   singleSelection="{config.singleSelection}"
+                                   taxonomyId="{config.taxonomyId}"
+                                   forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+      </items>
+    </FieldContainer>
+  </local:items>
+  <local:plugins>
+    <ui:VerticalSpacingPlugin modifier="{SpacingBEMEntities.VERTICAL_SPACING_MODIFIER_200}"/>
+  </local:plugins>
+  <local:fbar>
+    <Toolbar>
+      <items>
+        <Button ui="{ButtonSkin.FOOTER_PRIMARY.getSkin()}"
+                scale="small"
+                text="{resourceManager.getString('com.coremedia.cms.editor.Editor', 'btn_ok')}"
+                handler="{okPressed}"/>
+        <Button ui="{ButtonSkin.FOOTER_SECONDARY.getSkin()}"
+                scale="small"
+                text="{resourceManager.getString('com.coremedia.cms.editor.Editor', 'dialog_defaultCancelButton_text')}"
+                handler="{ function():void { cancelPressed(); }}"/>
+      </items>
+    </Toolbar>
+  </local:fbar>
+</local:TaxonomySelectionWindowBase>

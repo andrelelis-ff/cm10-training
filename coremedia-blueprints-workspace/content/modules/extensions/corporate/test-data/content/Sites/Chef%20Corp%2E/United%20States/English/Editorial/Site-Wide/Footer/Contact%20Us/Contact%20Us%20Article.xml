@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./United States/English/Editorial/Site-Wide/Footer/Contact Us" name="Contact Us Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>contact-us</segment>
+<title>Contact Us</title>
+<htmlTitle></htmlTitle>
+<keywords>CoreMedia contact</keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Contact Us</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2">Which innovation do you use to conquer the market?</p><p>Consult our technology experts. We will be pleased to help you.<br/>Contact us. Call the CoreMedia infoline at <a xlink:href="http://tel:+49-40-325587-587" xlink:show="replace" xlink:type="simple">+49-40-325 587-587</a></p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2">Which innovation do you use to conquer the market?</p><p>We are happy to hear from you and to discuss how our exciting digital experience solutions can help to accelerate your business.<br/></p><p class="p--heading-3">Contact us. Call the CoreMedia infoline at<br/><strong><a xlink:href="http://tel:+49-40-325587-587" xlink:show="replace" xlink:type="simple">+49-40-325 587-587</a></strong></p><p/><p/></div></detailText>
+<pictures>
+<link href="../../../Assets/Pictures/Careers/Hands%20placed%20on%20top%20of%20each%20oth55ea3ec8.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Careers/Hands%20placed%20on%20top%20of%20each%20other%20Picture"/>
+</pictures>
+<notSearchable>1</notSearchable>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

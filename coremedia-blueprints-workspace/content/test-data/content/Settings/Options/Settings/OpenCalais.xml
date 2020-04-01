@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Settings/Options/Settings" name="OpenCalais" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="openCalais">
+<Struct>
+<StringProperty Name="apiKey">secret.external.account</StringProperty>
+<StringProperty Name="apiUrl">https://api.thomsonreuters.com/permid/calais</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

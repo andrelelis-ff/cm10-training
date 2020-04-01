@@ -1,0 +1,694 @@
+/* --- forms -------------------------------------------------------------------------------------------------------- */
+
+.cm-field--radio {
+  min-height: 0;
+  line-height: 1rem;
+}
+
+/* --- ratings ------------------------------------------------------------------------------------------------------ */
+.cm-rating-indicator {
+  position: relative;
+}
+
+// mobile
+@include breakpoint(xs) {
+
+  // -- toolbars --
+  .cm-toolbar {
+    &--comments {
+      border-top: 1px solid transparent;
+      line-height: 2.4rem;
+    }
+
+    .cm-button {
+      & + .cm-button {
+        margin-left: 5px;
+      }
+
+      &__icon {
+        font-size: 2rem;
+      }
+
+      &__text {
+        padding: 0 10px;
+      }
+
+      /* hide button text following an icon */
+      &--with-icon .cm-button {
+        &__text {
+          display: none;
+        }
+        &__icon {
+          position: static;
+          top: 0;
+          left: 0;
+          transform: none;
+          display: block;
+        }
+      }
+    }
+  }
+
+  // -- comments --
+  /* widget */
+  .cm-comments {
+    padding: 20px 0;
+
+    &__title,
+    &__notification,
+    &__toolbar,
+    &__new-comment {
+      margin: 16px 12px;
+    }
+
+    & > .cm-collection {
+      margin-top: 10px;
+    }
+  }
+
+  /* list */
+  .cm-collection--comments {
+    background-color: #919191;
+    /* level indicator will be placed absolute */
+    position: relative;
+    padding: 0;
+    /* every level adds 5px indent */
+    .cm-collection--comments {
+      /* only apply relative to root element */
+      position: static;
+      margin-left: 5px;
+      /* level indicator for mobile/tablet */
+      .cm-collection__item:before {
+        content: "";
+        display: block;
+        position: absolute;
+        margin-top: 1px;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: url("../../img/comments-dot.png") repeat-x;
+      }
+    }
+    .cm-toolbar--comments > .cm-button {
+      background-color: transparent;
+      border-color: transparent;
+      color: #373737;
+      vertical-align: middle;
+      line-height: 1;
+    }
+  }
+
+  /* comment */
+  .cm-comment {
+    position: relative;
+    background-color: #ffffff;
+
+    &__header {
+      background-color: #F5F5F5;
+      line-height: 2.4rem;
+      padding: 0 100px 0 10px; /* keep space for absolute toolbar */
+      font-size: 1rem;
+    }
+
+    &__deleted {
+      padding: 10px;
+    }
+
+    &__date {
+      font-size: 0.8rem;
+      @include breakpoint(xs, portrait) {
+        display: none;
+      }
+    }
+
+    &__text {
+      padding: 10px;
+    }
+
+    &__toolbar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 5px;
+      margin-top: 0;
+    }
+
+    &__notification {
+      margin: 10px;
+    }
+
+    & > .cm-new-comment {
+      margin-left: 5px;
+    }
+  }
+
+  // -- reviews --
+  .cm-ratings {
+    &-average {
+      &__header {
+        background-color: #f5f5f5;
+        font-size: 1rem;
+        padding: 4px 10px;
+      }
+
+      &__rating {
+        vertical-align: middle;
+      }
+
+      &__text,
+      &__votes,
+      &__details {
+        margin: 10px;
+      }
+
+      &__text,
+      &__votes {
+        padding: 5px;
+      }
+
+      &--active &__details {
+        display: block;
+      }
+    }
+  }
+
+  /* widget */
+  .cm-reviews {
+    padding: 20px 0;
+
+    &__headline,
+    &__info {
+      padding: 0 10px;
+    }
+
+    &__title,
+    &__notification,
+    &__toolbar,
+    &__new-review {
+      margin: 16px 12px;
+    }
+
+    & > .cm-collection {
+      margin-top: 10px;
+    }
+  }
+
+  /* list */
+  .cm-collection--reviews {
+    .cm-collection__item {
+      border-bottom: 0;
+    }
+  }
+
+  /* review */
+  .cm-review {
+    &__header {
+      background-color: #f5f5f5;
+      padding: 4px 10px;
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+
+    &__title {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    &__title,
+    &__text {
+      padding: 10px;
+    }
+
+    &__notification {
+      margin: 10px;
+    }
+  }
+}
+
+// mobile portrait
+@include breakpoint(xs, portrait) {
+
+  /* average rating */
+  .cm-ratings-average__votes {
+    display: none;
+  }
+}
+
+// tablet
+@include breakpoint(sm) {
+
+  /* -- toolbars ---------------------------------------------------------------------------------------------------- */
+
+  .cm-toolbar {
+    .cm-button {
+      & + .cm-button {
+        margin-left: 10px;
+      }
+
+      &__text {
+        padding: 0 10px;
+      }
+
+      &--with-icon &__text {
+        display: none; /* hide button text following an icon */
+      }
+
+      &--with-icon &__icon {
+        position: static;
+      }
+    }
+
+    &--comments {
+      border-top: 1px solid transparent;
+      line-height: 3rem;
+    }
+  }
+
+  /* -- comments ---------------------------------------------------------------------------------------------------- */
+
+  /* widget */
+  .cm-comments {
+    padding: 20px 0;
+
+    &__title,
+    &__notification,
+    &__toolbar,
+    &__new-comment {
+      margin: 14px 16px;
+    }
+
+    & > .cm-collection {
+      margin-top: 10px;
+    }
+  }
+
+  /* list */
+
+  .cm-collection--comments {
+    /* level indicator will be placed absolute */
+    position: relative;
+    background-color: #919191;
+    padding: 0;
+
+    /* every level adds 5px indent */
+    .cm-collection--comments {
+      /* only apply relative to root element */
+      position: static;
+      margin-left: 5px;
+
+      /* level indicator for mobile/tablet */
+      .cm-collection__item:before {
+        content: "";
+        display: block;
+        position: absolute;
+        margin-top: 1px;
+        left: 0;
+        right: 0;
+        height: 5px;
+        background: url("../../img/comments-dot.png") repeat-x;
+      }
+    }
+
+    .cm-toolbar--comments > .cm-button {
+      background-color: transparent;
+      border-color: transparent;
+      color: #373737;
+      vertical-align: middle;
+      line-height: 1;
+    }
+  }
+
+  /* comment */
+  .cm-comment {
+    position: relative;
+    background-color: #ffffff;
+
+    &__header {
+      background-color: #f5f5f5;
+      line-height: 3rem;
+      padding: 0 105px 0 10px; /* keep space for absolute toolbar */
+    }
+
+    &__deleted {
+      padding: 10px;
+    }
+
+    &__text {
+      padding: 10px;
+    }
+
+    &__toolbar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-right: 10px;
+    }
+
+    &__notification {
+      margin: 10px;
+    }
+
+    & > .cm-new-comment {
+      margin-left: 5px;
+    }
+  }
+
+  /* -- reviews ----------------------------------------------------------------------------------------------------- */
+
+  .cm-ratings {
+    &-average {
+      &__header {
+        background-color: #f5f5f5;
+        font-size: 1rem;
+        padding: 4px 10px;
+      }
+
+      &__rating {
+        vertical-align: middle;
+      }
+
+      &__text,
+      &__votes,
+      &__details {
+        margin: 10px;
+      }
+
+      &--active &__details {
+        display: block;
+      }
+    }
+  }
+
+  /* widget */
+  .cm-reviews {
+    padding: 20px 0;
+
+    &__headline {
+      padding: 0 10px;
+    }
+
+    &__title,
+    &__notification,
+    &__toolbar,
+    &__new-review {
+      margin: 14px 16px;
+    }
+
+    & > .cm-collection {
+      margin-top: 10px;
+    }
+  }
+
+  /* list */
+  .cm-collection--reviews {
+    .cm-collection__item {
+      border-bottom: 0;
+    }
+  }
+
+  /* review */
+  .cm-review {
+    &__header {
+      background-color: #f5f5f5;
+      padding: 4px 10px;
+    }
+
+    &__title {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    &__title,
+    &__text {
+      padding: 10px;
+    }
+
+    &__notification {
+      margin: 10px;
+    }
+  }
+}
+
+// desktop
+@include breakpoint("lg-and-up") {
+
+  /* --- toolbars --------------------------------------------------------------------------------------------------- */
+  .cm-toolbar .cm-button + .cm-button {
+    margin-left: 10px;
+  }
+
+  /* -- comments ---------------------------------------------------------------------------------------------------- */
+  .cm-comments {
+    padding: 10px 0;
+
+    &__title,
+    &__notification,
+    &__toolbar,
+    &__new-comment,
+    &__list {
+      margin: 23px 16px 13px;
+    }
+
+    & .cm-button--with-text {
+
+      .cm-button {
+        &__icon {
+          display: none; /* hide icons on buttons */
+        }
+
+        &__text {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+
+  /* comment */
+  .cm-comment {
+    &__header {
+      line-height: 1.62rem;
+    }
+
+    &__deleted {
+      padding-top: 10px;
+    }
+
+    &__date {
+      float: right;
+    }
+
+    &__text {
+      padding: 5px 0;
+    }
+
+    &__notification {
+      margin: 10px 0;
+    }
+
+    /* reply form */
+    & > .cm-new-comment {
+      margin-top: 20px;
+      margin-left: 25px;
+    }
+  }
+
+  /* -- reviews ----------------------------------------------------------------------------------------------------- */
+  .cm-ratings-average {
+    &__rating,
+    &__text,
+    &__votes {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 10px 0;
+    }
+
+    &__text,
+    &__votes,
+    &__details {
+      font-size: 0.933rem;
+    }
+
+    &__text {
+      margin-left: 15px;
+    }
+
+    &__votes {
+      margin-left: 5px;
+    }
+  }
+
+  .cm-reviews {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    /* widget */
+    &__title,
+    &__average-rating,
+    &__notification,
+    &__toolbar,
+    &__new-review,
+    &__list {
+      margin: 23px 0 13px;
+    }
+
+    & .cm-button--with-text .cm-button {
+      &__icon {
+
+        display: none; /* hide icons on buttons */
+      }
+
+      &__text {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    /* place notification inline with write a review button (only applies if there is a message indicating that
+       user cannot create another review */
+    &__toolbar:not(.cm-toolbar--inactive),
+    &__toolbar:not(.cm-toolbar--inactive) + .cm-reviews__notification {
+      display: inline-block;
+    }
+  }
+
+  /* review */
+  .cm-review {
+    &__title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    &__title,
+    &__notification,
+    &__text {
+      margin: 10px 0;
+    }
+  }
+
+  /* --- form ------------------------------------------------------------------------------------------------------- */
+  .cm-form-facebook,
+  .cm-form-twitter {
+    text-align: right;
+  }
+
+  .cm-field-group {
+    font-size: 0;
+    &__item {
+      font-size: 1rem;
+      display: inline-block;
+      width: calc(50% - 5px);
+
+      &:nth-child(2n) {
+        margin-left: 5px;
+      }
+
+      &:nth-child(2n + 1) {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.cm-form__notification {
+  margin-top: 13px;
+  @include breakpoint(sm, portrait) {
+    margin-top: 8px;
+  }
+}
+
+.cm-form__notification,
+.cm-fieldset__item,
+.cm-field__notification {
+  margin-bottom: 13px;
+  @include breakpoint(sm, portrait) {
+    margin-bottom: 8px;
+  }
+}
+
+// if review widget is rendered in slot 8 of pdp page, add margins
+.product_pageDesign_pageGroup [data-slot-id="8"] .cm-reviews {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.cm-comments__title,
+.cm-like__title,
+.cm-ratings__title {
+  font-weight: normal;
+  display: block;
+  font-size: 1rem;
+
+  @include breakpoint("sm-and-up") {
+    font-size: 1.125rem;
+  }
+
+  @include breakpoint("lg-and-up") {
+    font-size: 1.25rem;
+  }
+}
+
+.cm-reviews {
+  .cm-comments__title,
+  .cm-like__title,
+  .cm-ratings__title {
+    color: #767676;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  // buttons in aurora style
+  .cm-button {
+    display: inline-block;
+    background-image: linear-gradient(#FBBB0B, #EE9505);
+    border-radius: 4px;
+    min-width: 200px;
+    max-width: 100%;
+    line-height: 29px;
+    min-height: 29px;
+    text-align: center;
+    border: 1px solid #BFBFBF;
+    color: #333333;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:hover {
+      background-image: linear-gradient(#FED60C, #F8AF06);
+    }
+
+    &--secondary {
+      background-image: linear-gradient(#ffffff, #e5e8e9);
+
+      &:hover {
+        background-image: linear-gradient(#ffffff, #eceff0);
+      }
+    }
+
+    &--disabled {
+      background: #919191 none;
+      color: #dbdbdb;
+      cursor: default;
+
+      &:hover {
+        background: #919191 none;
+
+        .cm-button__text {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &-group .btn.cm-button {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.cm-reviews__headline {
+  margin-bottom: 10px;
+}
+
+.cm-rating-statistic__column {
+  padding-bottom: 5px;
+}

@@ -1,0 +1,28 @@
+
+fragment ImageMap on CMImageMap {
+  displayTitle
+  displayShortText
+  displayPicture
+  transformedHotZones {
+    crops {
+      name
+      coords {
+        x
+        y
+      }
+    }
+    points {
+      x
+      y
+    }
+    alt
+    shape
+    target
+    displayAsInlineOverlay
+    inlineOverlayTheme
+    linkedContent {
+      ... Reference
+      ... QuickInfo
+    }
+  }
+}

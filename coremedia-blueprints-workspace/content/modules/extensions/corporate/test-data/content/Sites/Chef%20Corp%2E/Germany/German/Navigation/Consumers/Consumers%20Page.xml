@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Chef Corp./Germany/German/Navigation/Consumers" name="Consumers Page" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Navigation/Consumers/Consumers%20Page.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Navigation/Consumers/Consumers%20Page"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>for-consumers</segment>
+<title>Für Verbraucher</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription>Verbraucher können wie die Profis zu Hause mit Chef Corp Geräte kochen.</htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Consumers.xml" path="/Settings/Taxonomies/Subject/Consumers"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Für Verbraucher</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></teaserText>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Homepage/Engaging%20Platforms%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Homepage/Engaging%20Platforms%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+<link href="Aurora%20B2C/Aurora%20B2C%20Page.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Consumers/Aurora%20B2C/Aurora%20B2C%20Page"/>
+<link href="../../Products/Blenders%20and%20Food%20Processors/Browne%20BL700%20Blender%20Product.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/Blenders%20and%20Food%20Processors/Browne%20BL700%20Blender%20Product"/>
+<link href="../../Products/Blenders%20and%20Food%20Processors/Browne%20BL300%20Blender%20Product.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/Blenders%20and%20Food%20Processors/Browne%20BL300%20Blender%20Product"/>
+<link href="../../Products/Blenders%20and%20Food%20Processors/Kitchenette%20KNC30%20Mixer%20Product.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/Blenders%20and%20Food%20Processors/Kitchenette%20KNC30%20Mixer%20Product"/>
+<link href="../../Products/Blenders%20and%20Food%20Processors/Browne%20BL1300%20Blender%20Product.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/Blenders%20and%20Food%20Processors/Browne%20BL1300%20Blender%20Product"/>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Layouts/Multislot%20Layout.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Pagegrid/Layouts/Multislot%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Homepage/Claim%202%20-%20Commerce%20and%20Retail%20Teaser.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Homepage/Claim%202%20-%20Commerce%20and%20Retail%20Teaser"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../Options/Viewtypes/CMChannel/hero.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Viewtypes/CMChannel/hero"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/hero.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Pagegrid/Placements/hero"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Products/Blenders%20and%20Food%20Processors/Kitchenette%20KNC30%20Mixer%20Product.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Products/Blenders%20and%20Food%20Processors/Kitchenette%20KNC30%20Mixer%20Product"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Products/Blenders%20and%20Food%20Processors/Browne%20BL300%20Blender%20Product.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Products/Blenders%20and%20Food%20Processors/Browne%20BL300%20Blender%20Product"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Products/Blenders%20and%20Food%20Processors/Browne%20BL1300%20Blender%20Product.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Products/Blenders%20and%20Food%20Processors/Browne%20BL1300%20Blender%20Product"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../Options/Viewtypes/CMChannel/landscape.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Viewtypes/CMChannel/landscape"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/placement1.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Pagegrid/Placements/placement1"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Products/Blenders%20and%20Food%20Processors/Blenders%20and%20Food%20Processors.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Products/Blenders%20and%20Food%20Processors/Blenders%20and%20Food%20Processors"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Professionals/Feel%20the%20Passion/Feel%20the%20Passion%20%28Female%20Chefs628123a6.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Professionals/Feel%20the%20Passion/Feel%20the%20Passion%20%28Female%20Chefs%29%20Page"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/placement2.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Pagegrid/Placements/placement2"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Homepage/Consumers/Latest%20Consumer%20Articles%20Query%20List.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Homepage/Consumers/Latest%20Consumer%20Articles%20Query%20List"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/placement3.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Pagegrid/Placements/placement3"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

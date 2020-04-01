@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSite folder="/Sites/SFRA/United Kingdom/English" name="SFRA [Site]">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<id>sfra-en-gb</id>
+<name>SFRA</name>
+<root>
+<link href="Navigation/Homepage%20UK.xml" path="/Sites/SFRA/United%20Kingdom/English/Navigation/Homepage%20UK"/>
+</root>
+<siteManagerGroup>manager-sfra-en-GB</siteManagerGroup>
+<linkedSettings>
+<link href="Options/Settings/SiteSettings.xml" path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/SiteSettings"/>
+</linkedSettings>
+</CMSite>

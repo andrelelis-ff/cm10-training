@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/United Kingdom/English/Editorial/Pictures" name="Red Top" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="uploadDone">true</BooleanProperty>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="originReferences">
+</StringListProperty>
+<StringListProperty Name="references">
+<String>sfcc:///catalog/product/25565139M</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.5514705882352942</StringProperty>
+<StringProperty Name="y">0.5725552050473186</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=676;y=0;width=860;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=441;y=0;width=1333;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=343;width=2000;height=851</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=218;y=0;width=1777;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=607;y=0;width=1000;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=204;width=2000;height=1125</StringProperty>
+<StringProperty Name="quickview_ratio5x6">b;a=0;c=1/crop;x=553;y=0;width=1111;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio5x6">b;a=0;c=1/crop;x=553;y=0;width=1111;height=1333</StringProperty>
+<StringProperty Name="thumbnail">b;a=0;c=1/crop;x=607;y=0;width=1000;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio7x2">b;a=0;c=1/crop;x=0;y=481;width=2000;height=571</StringProperty>
+<StringProperty Name="landscape_ratio5x3">b;a=0;c=1/crop;x=0;y=133;width=2000;height=1200</StringProperty>
+<StringProperty Name="portrait_ratio3x5">b;a=0;c=1/crop;x=708;y=0;width=800;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio1x2">b;a=0;c=1/crop;x=777;y=0;width=667;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=393;width=2000;height=750</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="enlarge">
+<Struct>
+<BooleanProperty Name="portrait_ratio20x31">false</BooleanProperty>
+<BooleanProperty Name="portrait_ratio1x1">false</BooleanProperty>
+<BooleanProperty Name="landscape_ratio235x100">false</BooleanProperty>
+<BooleanProperty Name="landscape_ratio4x3">false</BooleanProperty>
+<BooleanProperty Name="portrait_ratio3x4">false</BooleanProperty>
+<BooleanProperty Name="landscape_ratio16x9">false</BooleanProperty>
+<BooleanProperty Name="quickview_ratio5x6">false</BooleanProperty>
+<BooleanProperty Name="portrait_ratio5x6">false</BooleanProperty>
+<BooleanProperty Name="thumbnail">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x2">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x2">position;x1=0.38865546218487396;y1=0;x2=0.721905462184874;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Red Top</title>
+<htmlTitle></htmlTitle>
+<keywords>accessory;bag;beautiful;beauty;body;business</keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Portrait sexy pretty beautiful woman fashion style clothes model perfect face white room wall wear red blouse hair glamour dress code businesswoman accessory bag catalog beauty salon hair style.</p><p> Date created: 20180409</p></div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Red Top</alt>
+<copyright>shutterstock-091093539</copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1333</height>
+<data md5="1ca65b22cf7358538e9af3dfb1d668bc" size="487136" href="../../../../../../__blob/1ca65b22cf7358538e9af3dfb1d668bc.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

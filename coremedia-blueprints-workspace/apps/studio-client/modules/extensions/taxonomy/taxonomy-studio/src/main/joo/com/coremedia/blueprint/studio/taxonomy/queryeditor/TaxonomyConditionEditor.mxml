@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:TaxonomyConditionEditorBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.taxonomy.queryeditor.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:taxonomy="exml:com.coremedia.blueprint.studio.config.taxonomy"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config">
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.taxonomy.taxonomyConditionEditor";
+
+    private var config:TaxonomyConditionEditor;
+
+    /**
+     * the id of the taxonomy whose tree is used to add items from.
+     */
+    [Bindable]
+    public var taxonomyId:String;
+
+    public native function TaxonomyConditionEditor(config:TaxonomyConditionEditor = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <!-- Although the base class initializes the struct (and so the linkType could also be determined by the struct)
+     make sure only the specified content type may be added to the link list. This also makes it not necessary
+     to create the empty struct before the LinkListPropertyField's constructor is called. -->
+    <taxonomy:TaxonomyLinkListPropertyField bindTo="{config.bindTo}"
+                                            linkType="{config.contentType}"
+                                            itemId="taxonomyLinkList"
+                                            taxonomyId="{config.taxonomyId || 'Subject'}"
+                                            forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                            labelSeparator=":"
+                                            anchor="100%"
+                                            propertyName="{'localSettings.fq.' + config.propertyName}">
+      <taxonomy:plugins exml:mode="append">
+        <editor:BindDisablePlugin bindTo="{config.bindTo}"
+                                  forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+      </taxonomy:plugins>
+    </taxonomy:TaxonomyLinkListPropertyField>
+  </local:items>
+  <local:layout>
+    <layout_Anchor/>
+  </local:layout>
+
+</local:TaxonomyConditionEditorBase>

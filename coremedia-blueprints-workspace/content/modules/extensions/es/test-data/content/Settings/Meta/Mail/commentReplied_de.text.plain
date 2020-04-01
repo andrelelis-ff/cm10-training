@@ -1,0 +1,14 @@
+Hallo ${name},
+
+Dein folgender Kommentar vom ${commentDate} wurde kommentiert:
+
+"${commentText}"
+
+Der Kommentar von ${replyAuthorName} vom ${replyDate} auf deinen Kommentar lautet:
+
+"${replyText}"
+
+${commentUrl}
+
+Mit freundlichen Grüßen,
+die Redaktion

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CMProductListFormBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.livecontext.studio.forms.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:ec="exml:com.coremedia.ecommerce.studio.config"
+        xmlns:bpb-components="exml:com.coremedia.blueprint.base.components.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:lc-components="com.coremedia.livecontext.studio.components.*">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ecommerce.studio.CatalogModel;
+    import com.coremedia.ecommerce.studio.helper.CatalogHelper;
+    import com.coremedia.ui.skins.LabelableSkin;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.cmProductListForm";
+
+    public static const ITEMS_PROPERTY_NAME:String = "items";
+
+    private var config:CMProductListForm;
+
+    public native function CMProductListForm(config:CMProductListForm = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.base.queryeditor.QueryEditor', 'DCQE_label_conditions')}"
+            itemId="conditionsTab">
+      <editor:items>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMProductList_category_text')}"
+                itemId="cmProductListCategoryFieldGroup">
+          <editor:items>
+            <ec:CatalogLinkPropertyField propertyName="externalId"
+                                         maxCardinality="1"
+                                         replaceOnDrop="true"
+                                         linkTypeNames="{[CatalogModel.TYPE_CATEGORY]}"
+                                         dropAreaHandler="{CatalogHelper.getInstance().openCatalog}"
+                                         dropAreaText="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Category_Link_empty_text')}"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <local:CategoryFacetsFieldGroup
+                title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMProductList_facets_text')}"
+                itemId="cmProductListFacetsFieldGroup"
+                facetNamePropertyName="localSettings.productList.selectedFacet"
+                facetValuePropertyName="localSettings.productList.selectedFacetValue"
+                externalIdPropertyName="externalId"
+        />
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMProductList_searchRefinement_text')}"
+                itemId="cmProductListSearchRefinementFieldGroup"
+                manageHeight="{false}">
+          <editor:items>
+            <editor:ComboBoxStringPropertyField itemId="{'cmProductListOrderByField'}"
+                                      ui="{LabelableSkin.PLAIN_LABEL.getSkin()}"
+                                      propertyName="localSettings.productList.orderBy"
+                                      fieldWidth="200"
+                                      fieldLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMProductList_localSettings.productList.orderBy_text')}"
+                                      emptyText="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMProductList_localSettings.productList.orderBy_emptyText')}"
+                                      valueField="id"
+                                      displayField="value"
+                                      reverseTransformer="{function(value:*):* {return value === null ? '' : value;}}">
+            <editor:store>
+                <store_Json
+                        fields="{['id', 'value']}"
+                        data="{[
+                       {id: 'ORDER_BY_TYPE_PRICE_ASC', value: resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMProductList_localSettings.productList.orderBy.ORDER_BY_TYPE_PRICE_ASC_text')},
+                       {id: 'ORDER_BY_TYPE_PRICE_DSC', value: resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMProductList_localSettings.productList.orderBy.ORDER_BY_TYPE_PRICE_DSC_text')}
+                     ]}"/>
+              </editor:store>
+            </editor:ComboBoxStringPropertyField>
+            <editor:SpinnerPropertyField propertyName="localSettings.productList.offset"
+                                         itemId="cmProductListSearchRefinementOffset"
+                                         fieldWidth="200"
+                                         minValue="1"
+                                         ui="{LabelableSkin.PLAIN_LABEL.getSkin()}"/>
+            <editor:SpinnerPropertyField propertyName="localSettings.productList.maxLength"
+                                         itemId="cmProductListSearchRefinementMaxLength"
+                                         fieldWidth="200"
+                                         minValue="1"
+                                         maxValue="500"
+                                         ui="{LabelableSkin.PLAIN_LABEL.getSkin()}"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+      </editor:items>
+    </editor:DocumentForm>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <bpforms:TeaserDocumentForm/>
+        <bpforms:FixedIndexItemsForm/>
+        <bpforms:ContainerViewTypeSelectorForm collapsed="false"/>
+        <bpforms:ValidityDocumentForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataWithoutSearchableForm/>
+  </local:items>
+</local:CMProductListFormBase>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Site-Wide" name="About Us - Chefs in the kitchen Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=312;y=0;width=880;height=1365</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=259;y=0;width=1028;height=1365</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=490;y=0;width=1367;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=227;y=0;width=1821;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=219;y=135;width=1829;height=1027</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=311;y=92;width=1697;height=677</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=199;y=155;width=1849;height=462</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.15221579961464354;y1=0;x2=0.581888246628131;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.1264591439688716;y1=0;x2=0.6284046692607004;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.23929961089494164;y1=0;x2=0.9066147859922179;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.11089494163424124;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.10700389105058365;y1=0.09912536443148688;x2=1;y2=0.8513119533527697</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0.1517509727626459;y1=0.06705539358600583;x2=0.980544747081712;y2=0.5626822157434402</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0.09727626459143969;y1=0.11370262390670553;x2=1;y2=0.4518950437317784</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>About Us</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>About Us</alt>
+<copyright>Tyler Olson/Shutterstock 131996393</copyright>
+<dataUrl></dataUrl>
+<data md5="4743576419b0100c6a4f2564c6e6e3c7" size="541157" href="../../../../../../__blob/4743576419b0100c6a4f2564c6e6e3c7.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

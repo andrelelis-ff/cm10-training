@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Aurora Augmentation/United States/English/Editorial/Content/Startpage" name="Men's Category" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Teaser%20Styles/Light"/>
+<IntProperty Name="positionX">0</IntProperty>
+<IntProperty Name="positionY">41</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Men's Apparel</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1">Shop Men</p><p>Explore the new trends</p></div></teaserText>
+<pictures>
+<link href="Elegant%20young%20handsome%20man%20Picture.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Startpage/Elegant%20young%20handsome%20man%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../Augmentation/Apparel/Men/Men.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Augmentation/Apparel/Men/Men"/>
+</target>
+</CMTeaser>

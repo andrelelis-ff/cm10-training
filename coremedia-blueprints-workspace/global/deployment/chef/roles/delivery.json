@@ -1,0 +1,10 @@
+{
+  "name": "delivery",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The role for the delivery node",
+  "run_list": [
+    "role[base]",
+    "recipe[blueprint-spring-boot::cae-live]"
+  ]
+}

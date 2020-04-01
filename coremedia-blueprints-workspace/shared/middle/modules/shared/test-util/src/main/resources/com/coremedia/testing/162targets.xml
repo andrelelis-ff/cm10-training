@@ -1,0 +1,13 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <StructListProperty  Name="links">
+    <Struct>
+      <LinkProperty Name="target" LinkType="CMLinkable" xlink:href="coremedia:///cap/content/4"/>
+      <BooleanProperty Name="callToActionEnabled">false</BooleanProperty>
+    </Struct>
+    <Struct>
+      <LinkProperty Name="target" LinkType="CMLinkable" xlink:href="coremedia:///cap/content/6"/>
+      <BooleanProperty Name="callToActionEnabled">true</BooleanProperty>
+      <StringProperty Name="callToActionCustomText">This is a CTA custom text</StringProperty>
+    </Struct>
+  </StructListProperty>
+</Struct>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ESDynamicList folder="/Sites/SiteGenesis Global/France/French/Editorial/Content" name="Most Commented" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Editorial/Content/Most%20Commented.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Most%20Commented"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>le plus commenté</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<maxLength>3</maxLength>
+<channel>
+<link href="../../Navigation/SiteGenesis.xml" path="/Sites/SiteGenesis%20Global/France/French/Navigation/SiteGenesis"/>
+</channel>
+<type></type>
+<interval>LAST_YEAR</interval>
+<aggregationType>MOST_COMMENTED</aggregationType>
+</ESDynamicList>

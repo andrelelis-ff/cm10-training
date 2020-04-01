@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSpinner folder="/Sites/Calista/United States/English/Pictures/Product 360 Pictures/Pink Jacket" name="Pink-Jacket Spinview" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="references">
+<String>ibm:///catalog/sku/WCL001_010703</String>
+<String>ibm:///catalog/product/WCL001_0107</String>
+</StringListProperty>
+<StringListProperty Name="originReferences">
+<String>ibm:///catalog/sku/WCL001_010703</String>
+<String>ibm:///catalog/product/WCL001_0107</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Pink Jacket Spinview</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Pink Jacket Spinview</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></teaserText>
+<pictures>
+<link href="Pink-Jacket%20Frontshot.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket%20Frontshot"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>360 degree view of a pink women's jacket</alt>
+<copyright>CoreMedia AG and PackShotCreator</copyright>
+<dataUrl></dataUrl>
+<sequence>
+<link href="Pink-Jacket-01.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-01"/>
+<link href="Pink-Jacket-02.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-02"/>
+<link href="Pink-Jacket-03.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-03"/>
+<link href="Pink-Jacket-04.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-04"/>
+<link href="Pink-Jacket-05.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-05"/>
+<link href="Pink-Jacket-06.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-06"/>
+<link href="Pink-Jacket-07.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-07"/>
+<link href="Pink-Jacket-08.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-08"/>
+<link href="Pink-Jacket-09.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-09"/>
+<link href="Pink-Jacket-10.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-10"/>
+<link href="Pink-Jacket-11.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-11"/>
+<link href="Pink-Jacket-12.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-12"/>
+<link href="Pink-Jacket-13.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-13"/>
+<link href="Pink-Jacket-14.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-14"/>
+<link href="Pink-Jacket-15.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-15"/>
+<link href="Pink-Jacket-16.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-16"/>
+<link href="Pink-Jacket-17.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-17"/>
+<link href="Pink-Jacket-18.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-18"/>
+<link href="Pink-Jacket-19.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-19"/>
+<link href="Pink-Jacket-20.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-20"/>
+<link href="Pink-Jacket-21.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-21"/>
+<link href="Pink-Jacket-22.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-22"/>
+<link href="Pink-Jacket-23.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-23"/>
+<link href="Pink-Jacket-24.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Pink%20Jacket/Pink-Jacket-24"/>
+</sequence>
+</CMSpinner>

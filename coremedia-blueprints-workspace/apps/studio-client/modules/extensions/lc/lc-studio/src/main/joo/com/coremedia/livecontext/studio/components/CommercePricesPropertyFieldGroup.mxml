@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PropertyFieldGroup
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Product_PropertyGroup_prices_title')}">
+  <fx:Script><![CDATA[
+    import com.coremedia.ecommerce.studio.helper.CatalogHelper;
+    import com.coremedia.ecommerce.studio.model.Product;
+    import com.coremedia.ecommerce.studio.model.ProductPropertyNames;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.commercePricesPropertyFieldGroup";
+
+    private var config:CommercePricesPropertyFieldGroup;
+
+    private function isPriceEnabled():Boolean {
+      var product:Product = bindTo.getValue() as Product;
+      return product && product.getListPrice();
+    }
+
+
+    public native function CommercePricesPropertyFieldGroup(config:CommercePricesPropertyFieldGroup = null);
+    ]]></fx:Script>
+
+  <editor:plugins exml:mode="append">
+    <ui:BindVisibilityPlugin bindTo="{ValueExpressionFactory.createFromFunction(isPriceEnabled)}"/>
+  </editor:plugins>
+  <editor:items>
+    <DisplayField
+            itemId="listPrice"
+            labelAlign="left"
+            labelSeparator=":"
+            fieldLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Product_listPrice_label')}">
+      <plugins>
+        <ui:BindPropertyPlugin componentProperty="value"
+                               bindTo="{CatalogHelper.getInstance().getPriceWithCurrencyExpression(config.bindTo, ProductPropertyNames.LIST_PRICE)}"
+                               ifUndefined="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Product_listPrice_emptyText')}"/>
+      </plugins>
+    </DisplayField>
+    <DisplayField
+            itemId="offerPrice"
+            labelAlign="left"
+            labelSeparator=":"
+            fieldLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Product_offerPrice_label')}">
+      <plugins>
+        <ui:BindPropertyPlugin componentProperty="value"
+                               bindTo="{CatalogHelper.getInstance().getPriceWithCurrencyExpression(config.bindTo, ProductPropertyNames.OFFER_PRICE)}"
+                               ifUndefined="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Product_offerPrice_emptyText')}"/>
+      </plugins>
+    </DisplayField>
+  </editor:items>
+
+</editor:PropertyFieldGroup>

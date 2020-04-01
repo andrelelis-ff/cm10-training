@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/com/coremedia/cae/view-error-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/view-development-services.xml"/>
+
+  <customize:append id="addCustomExceptionDecoratorAcceptBeanClasses" bean="exceptionDecoratorAcceptBeanClasses">
+    <list value-type="java.lang.Class">
+      <value>java.lang.Object</value>
+    </list>
+  </customize:append>
+
+  <customize:append id="addCustomExceptionDecoratorRejectBeanClasses" bean="exceptionDecoratorRejectBeanClasses">
+    <list value-type="java.lang.Class">
+      <value>com.coremedia.cap.common.Blob</value>
+      <value>com.coremedia.blueprint.common.contentbeans.CMAbstractCode</value>
+    </list>
+  </customize:append>
+
+  <customize:append id="addCustomExceptionDecoratorAcceptViews" bean="exceptionDecoratorAcceptViews">
+    <list value-type="java.util.regex.Pattern">
+      <value>(.*)</value>
+    </list>
+  </customize:append>
+
+  <customize:append id="addCustomDebugDecoratorAcceptBeanClasses" bean="debugDecoratorAcceptBeanClasses">
+    <list value-type="java.lang.Class">
+      <value>java.lang.Object</value>
+    </list>
+  </customize:append>
+
+  <customize:append id="addCustomDebugDecoratorAcceptViews" bean="debugDecoratorAcceptViews">
+    <list value-type="java.util.regex.Pattern">
+      <value>(.*)</value>
+    </list>
+  </customize:append>
+
+  <customize:append id="addCustomDebugDecoratorRejectBeanClasses" bean="debugDecoratorRejectBeanClasses">
+    <list value-type="java.lang.Class">
+      <value>com.coremedia.xml.Markup</value>
+      <value>com.coremedia.blueprint.common.contentbeans.Page</value>
+      <value>com.coremedia.blueprint.common.contentbeans.CMAbstractCode</value>
+      <value>com.coremedia.cap.common.Blob</value>
+    </list>
+  </customize:append>
+
+  <customize:append id="addCustomDebugDecoratorRejectViews" bean="debugDecoratorRejectViews">
+    <list value-type="java.util.regex.Pattern">
+      <value>(.*fragmentPreview.*)</value>
+    </list>
+  </customize:append>
+
+
+  <import resource="classpath:/com/coremedia/cae/uapi-services.xml"/>
+
+  <customize:replace id="errorExceptionResolver" bean="viewingHandlerExceptionResolver"
+                     custom-ref="errorAndExceptionMappingResolver" order="100000"/>
+
+  <bean id="errorAndExceptionMappingResolver"
+        autowire="constructor"
+        class="com.coremedia.blueprint.cae.exception.resolver.ErrorAndExceptionMappingResolver">
+    <property name="exceptionMappings">
+      <props>
+        <prop key="com.coremedia.blueprint.cae.exception.InvalidContentException">notValidContent</prop>
+        <prop key="com.coremedia.cache.EvaluationException">asError</prop>
+      </props>
+    </property>
+    <property name="defaultErrorView" value="asError"/>
+  </bean>
+
+  <bean id="cyclicDependencyExceptionHandler"
+        class="com.coremedia.blueprint.cae.exception.handler.CyclicDependencyExceptionHandler"/>
+
+  <bean id="illegalArgumentExceptionHandler"
+        class="com.coremedia.blueprint.cae.exception.handler.SimpleExceptionHandler">
+    <property name="exceptionType" value="#{T(java.lang.IllegalArgumentException)}"/>
+    <property name="statusCode" value="404"/>
+  </bean>
+
+  <bean id="illegalStateExceptionHandler"
+        class="com.coremedia.blueprint.cae.exception.handler.SimpleExceptionHandler">
+    <property name="exceptionType" value="#{T(java.lang.IllegalStateException)}"/>
+    <property name="statusCode" value="400"/>
+  </bean>
+
+  <bean id="missingServletRequestParameterExceptionHandler"
+        class="com.coremedia.blueprint.cae.exception.handler.SimpleExceptionHandler">
+    <property name="exceptionType" value="#{T(org.springframework.web.bind.MissingServletRequestParameterException)}"/>
+    <property name="statusCode" value="400"/>
+  </bean>
+
+  <bean id="invalidContentException"
+        class="com.coremedia.blueprint.cae.exception.handler.InvalidContentExceptionHandler"/>
+
+  <bean id="conversionFailedExceptionHandler"
+        class="com.coremedia.blueprint.cae.exception.handler.ConversionFailedExceptionHandler">
+    <description>
+      Handles path variable value and request parameter conversion errors, turing them into NOT_FOUND (404)
+      responses.
+    </description>
+  </bean>
+
+  <bean id="accessDeniedExceptionHandler"
+        class="com.coremedia.blueprint.cae.exception.handler.SimpleExceptionHandler">
+    <description>
+      Handles org.springframework.security.access.AccessDeniedException by responding with FORBIDDEN (403).
+    </description>
+    <property name="exceptionType" value="#{T(org.springframework.security.access.AccessDeniedException)}"/>
+    <property name="statusCode" value="403"/>
+  </bean>
+
+  <bean id="repositoryNotAvailableExceptionHandler"
+        class="com.coremedia.blueprint.cae.exception.handler.SimpleExceptionHandler">
+    <property name="exceptionType" value="#{T(com.coremedia.cap.common.RepositoryNotAvailableException)}"/>
+    <property name="statusCode" value="503"/>
+  </bean>
+
+  <bean id="capObjectDestroyedExceptionHandler"
+        class="com.coremedia.blueprint.cae.exception.handler.SimpleExceptionHandler">
+    <property name="exceptionType" value="#{T(com.coremedia.cap.common.CapObjectDestroyedException)}"/>
+    <property name="statusCode" value="410"/>
+  </bean>
+
+</beans>

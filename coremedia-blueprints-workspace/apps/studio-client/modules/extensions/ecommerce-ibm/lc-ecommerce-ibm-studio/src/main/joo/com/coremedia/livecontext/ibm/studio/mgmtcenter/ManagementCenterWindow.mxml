@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ A window containing the Management Center of the IBM WebSphere Commerce Server.
+-->
+<Window xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:mgmt="exml:com.coremedia.livecontext.ibm.studio.config"
+        title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Window_ManagementCenter_title')}"
+        layout="fit"
+        id_="{MANAGEMENT_CENTER_WINDOW_ID}"
+        closeAction="hide"
+        resizable="true"
+        constrainHeader="true"
+        stateful="true"
+        stateId="{MANAGEMENT_CENTER_WINDOW_ID}"
+        stateEvents="{['hide', 'show', 'resize', 'move']}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.livecontext.ibm.studio.config.managementCenterWindow";
+
+    /**
+     * The id of the management center window
+     */
+    public static const MANAGEMENT_CENTER_WINDOW_ID:String = "managementCenterWindow";
+
+    /**
+     * The id of the management center frame
+     */
+    public static const MANAGEMENT_CENTER_FRAME_ID:String = "managementCenterFrame";
+
+    private var config:ManagementCenterWindow;
+
+    public native function ManagementCenterWindow(config:ManagementCenterWindow = null);
+    ]]></fx:Script>
+
+  <defaults>
+    <fx:Object stateful="true"
+               stateEvents="{['collapse', 'expand', 'resize', 'move']}"
+               getState="{function():Object {return {visible: this.visible, collapsed: this.collapsed, height : this.getHeight(), width : this.getWidth(), x : this.x, y : this.y}}}"/>
+  </defaults>
+  <items>
+    <mgmt:ManagementCenterFrame id_="{MANAGEMENT_CENTER_FRAME_ID}"
+                                stateful="false"/>
+  </items>
+
+</Window>

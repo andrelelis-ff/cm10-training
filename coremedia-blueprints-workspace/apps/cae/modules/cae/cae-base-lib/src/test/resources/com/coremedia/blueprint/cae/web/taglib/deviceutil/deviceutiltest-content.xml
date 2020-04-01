@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+
+  <!--
+    Test content for the MergedCodeHandlerTest
+  -->
+  <content>
+    <folder id="1" name="">
+      <folder id="11" name="Sites">
+        <folder id="111" name="Media">
+          <folder id="1111" name="Navigation">
+            <document id="4" name="Media" type="CMChannel">
+              <!--
+                The Root Channel of the Media site.
+                Contains some dummy js and css.
+              -->
+              <version number="1">
+                <stringProperty name="segment" value="media"/>
+                <linkProperty name="css">
+                  <link id="30"/>
+                </linkProperty>
+                <linkProperty name="javaScript">
+                  <link id="40"/>
+                </linkProperty>
+                <markupProperty name="localSettings" url="4settings.xml" grammar="coremedia-struct-2008"/>
+              </version>
+            </document>
+          </folder>
+        </folder>
+      </folder>
+
+      <!--
+        Dummy js and css to test
+      -->
+      <folder id="15" name="Themes">
+        <folder id="153" name="js">
+          <document id="40" type="CMJavaScript" name="respond.min.js">
+            <version number="1">
+              <!-- currently not used for testing -->
+              <!--<markupProperty name="code" url="mergedcodehandlertest-40code.xml" grammar="coremedia-richtext-1.0"/>-->
+              <stringProperty name="description" value="dummy JavaScript"/>
+            </version>
+          </document>
+        </folder>
+      </folder>
+    </folder>
+  </content>
+</contentRepository>

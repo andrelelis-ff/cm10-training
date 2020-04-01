@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/United States/English/Pictures/Product 360 Pictures/Sunglasses" name="Sunglasses-28" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">true</BooleanProperty>
+<StringListProperty Name="originReferences">
+<String>ibm:///catalog/sku/PC_HERMITAGE_CATTY_SUNGLASSES_SKU</String>
+<String>ibm:///catalog/product/PC_HERMITAGE_CATTY_SUNGLASSES</String>
+</StringListProperty>
+<StringListProperty Name="references">
+<String>ibm:///catalog/sku/PC_HERMITAGE_CATTY_SUNGLASSES_SKU</String>
+<String>ibm:///catalog/product/PC_HERMITAGE_CATTY_SUNGLASSES</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Sunglasses-28</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Sunglasses-28</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1600</width>
+<height>1600</height>
+<data md5="4d8328f54a9aa4a57174c7cea0b42f40" size="58831" href="../../../../../../../__blob/4d8328f54a9aa4a57174c7cea0b42f40.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

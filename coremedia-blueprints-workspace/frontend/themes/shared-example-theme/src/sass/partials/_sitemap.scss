@@ -1,0 +1,9 @@
+// Sitemap
+.cm-sitemap {
+
+  &__item {
+    > a {
+      color: inherit;
+    }
+  }
+}

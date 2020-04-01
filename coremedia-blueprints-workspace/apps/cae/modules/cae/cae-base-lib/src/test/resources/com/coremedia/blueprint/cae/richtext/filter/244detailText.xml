@@ -1,0 +1,3 @@
+<div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+<p class="orig">bla <span class="spanclass"> before <a xlink:show="embed" xlink:href="coremedia:///cap/content/242" xlink:type="simple">link</a> behind</span> blub</p>
+</div>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Microsites/Guide to Exterior Lighting" name="Chrysler Wide Night Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=200;y=0;width=826;height=1280</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=356;y=0;width=963;height=1280</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=225;y=0;width=1282;height=1280</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=163;y=125;width=1320;height=987</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=100;width=1920;height=1080</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=256;width=1920;height=768</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=337;width=1920;height=481</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.10423452768729642;y1=0;x2=0.5342019543973942;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.18566775244299674;y1=0;x2=0.6872964169381107;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.11726384364820847;y1=0;x2=0.7850162866449512;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.08469055374592833;y1=0.0975609756097561;x2=0.7719869706840391;y2=0.8682926829268293</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.07804878048780488;x2=1;y2=0.9219512195121952</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2;x2=1;y2=0.8</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.2634146341463415;x2=1;y2=0.6390243902439025</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Chrysler Wide Night Image</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Picture of the Chrysler building at night</alt>
+<copyright>Pigprox/Shutterstock 190842725</copyright>
+<dataUrl></dataUrl>
+<width>1920</width>
+<height>1280</height>
+<data md5="138d163bd0e493427aab7730e6a358f3" size="1298098" href="../../../../../../../__blob/138d163bd0e493427aab7730e6a358f3.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Settings/Options/Settings/Content Hub/Connections" name="RSS" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="connections">
+<Struct>
+<StringProperty Name="connectionId">techcrunch</StringProperty>
+<StringProperty Name="factoryId">rss</StringProperty>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<StructProperty Name="settings">
+<Struct>
+<StringProperty Name="displayName">TechCrunch</StringProperty>
+<StringProperty Name="url">http://feeds.feedburner.com/techcrunch</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+<Struct>
+<StringProperty Name="connectionId">nyt</StringProperty>
+<StringProperty Name="factoryId">rss</StringProperty>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<StructProperty Name="settings">
+<Struct>
+<StringProperty Name="displayName">New York Times</StringProperty>
+<StringProperty Name="url">https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

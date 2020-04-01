@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:TaxonomySelectorBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.taxonomy.chooser.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns:taxonomy="exml:com.coremedia.blueprint.studio.config.taxonomy"
+        xmlns="exml:ext.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.skins.ContainerSkin;
+    import com.coremedia.ui.skins.ToolbarSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.taxonomy.taxonomySelector";
+
+    private var config:TaxonomySelector;
+
+    public native function TaxonomySelector(config:TaxonomySelector = null);
+
+    /**
+     * The value expression that contains the active selected site by this combo.
+     */
+    [Bindable]
+    public var selectionExpression:ValueExpression;
+
+    /**
+     * An optional ValueExpression which makes the component read-only if it is evaluated to true.
+     */
+    [Bindable]
+    public var forceReadOnlyValueExpression:ValueExpression;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!---
+     The taxonomy identifier configured on the server side.
+    -->
+    <fx:String id="taxonomyId"/>
+
+    <!--- If true, only one item can be selected from the list. -->
+    <fx:String id="singleSelection"/>
+  </fx:Declarations>
+
+  <local:layout>
+    <layout_VBox align="stretch"/>
+  </local:layout>
+  <local:items>
+    <!--Selected tag path-->
+    <Toolbar itemId="levelSelector" ui="{ToolbarSkin.FIELD}">
+      <layout>
+        <layout_HBox overflowHandler="scroller"/>
+      </layout>
+    </Toolbar>
+    <!--Alphabetically sorted tag list-->
+    <Container flex="1" cls="cm-taxonomy-selector">
+      <layout>
+        <layout_VBox align="stretch"/>
+      </layout>
+      <items>
+        <!-- Column Grid-->
+        <taxonomy:LetterListPanel activeLetters="{getActiveLettersExpression()}"
+                                  selectedLetter="{getSelectedLetterExpression()}"
+                                  selectedNodeList="{getSelectedNodeListValueExpression()}"
+                                  selectionExpression="{config.selectionExpression}"
+                                  singleSelection="{config.singleSelection}"
+                                  selectedNodeId="{getSelectedNodeIdValueExpression()}"
+                                  taxonomyId="{config.taxonomyId}"
+                                  itemId="letterpanel"
+                                  flex="1"
+                                  forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+        <!--Selectable Letter List-->
+        <Container itemId="alphabetPanel">
+          <layout>
+            <layout_HBox align="stretch"/>
+          </layout>
+          <items>
+            <!--Letters will be dynamically added here.-->
+          </items>
+        </Container>
+      </items>
+    </Container>
+  </local:items>
+
+</local:TaxonomySelectorBase>

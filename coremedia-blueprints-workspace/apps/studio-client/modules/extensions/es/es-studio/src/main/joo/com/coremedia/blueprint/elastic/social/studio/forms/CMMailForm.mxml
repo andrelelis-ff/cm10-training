@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:es="exml:com.coremedia.blueprint.elastic.social.studio.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        itemId="CMMail">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.skins.ButtonSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.elastic.social.studio.config.cmMailForm";
+
+    private var config:CMMailForm;
+
+    public native function CMMailForm(config:CMMailForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <bpforms:CollapsibleStringPropertyForm
+                title="{resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'CMMail_from_text')}"
+                expandOnValues="from"
+                propertyName="from"/>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'CMMail_text')}"
+                itemId="cmMailTextForm">
+          <editor:items>
+            <editor:StringPropertyField propertyName="subject"/>
+            <editor:TextBlobPropertyField propertyName="text"
+                                          height="300"/>
+            <Container layout="hbox">
+              <items>
+                <Container flex="1"/>
+                <Button itemId="cmmail-help-button"
+                        ui="{ButtonSkin.SIMPLE.getSkin()}"
+                        iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'help')}"
+                        text="{resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'cmmail_help_text')}">
+                  <baseAction>
+                    <editor:OpenReferenceWindowAction>
+                      <editor:dialog>
+                        <es:CMMailHelpWindow/>
+                      </editor:dialog>
+                    </editor:OpenReferenceWindowAction>
+                  </baseAction>
+                </Button>
+              </items>
+            </Container>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <bpforms:CollapsibleStringPropertyForm collapsed="true"
+                                               expandOnValues="contentType"
+                                               title="{resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'CMMail_contentType_text')}"
+                                               propertyName="contentType"/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataWithoutSettingsForm bindTo="{config.bindTo}"/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

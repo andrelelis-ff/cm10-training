@@ -1,0 +1,64 @@
+//
+// A mixin to generate whole media queries from the aliases
+// @param: {list} $name - The screen names which is defined in the breakpoint class.
+// @param: (optional ){string} $orientation - Additional info for orientation like portrait or landscape.
+//
+// @example:
+// ```
+// @include breakpoint(mobile, portrait) {
+//   background-color: red;
+// }
+// @include breakpoint(tablet_and_up) {
+//   background-color: green;
+// }
+// @include breakpoint(desktop) {
+//   background-color: blue;
+// }
+// ```
+//
+@mixin breakpoint($name, $orientation:"") {
+  @if variable-exists(breakpoints) {
+    $breakpoint-found: map_has_key($breakpoints, $name);
+    @if $breakpoint-found {
+      $breakpoint: map_get($breakpoints, $name);
+      @if str-length($orientation) > 0 {
+        $breakpoint: $breakpoint + " and (orientation: "+$orientation+")";
+      }
+      @media #{$breakpoint} {
+        @content;
+      }
+    } @else {
+      // If the user specifies a non-exitent alias, send them a warning.
+      @warn "Breakpoint '#{$name}' is not defined. Media Query is ignored.";
+    }
+  } @else {
+    @warn "No Breakpoints defined. Media Queries are ignored.";
+  }
+}
+
+//
+// Shorthand to apply the same styling to multiple breakpoints
+//
+// @example:
+// ```
+// @include breakpoints(
+//   (mobile, portrait)
+//   (tablet, portrait)
+// ) {
+//   background-color: red;
+// }
+// @include breakpoints(
+//   (tablet, landscape)
+//   desktop
+// ) {
+//   background-color: green;
+// }
+// ```
+//
+@mixin breakpoints($list) {
+  @each $item in $list {
+    @include breakpoint($item...) {
+      @content;
+    }
+  }
+}

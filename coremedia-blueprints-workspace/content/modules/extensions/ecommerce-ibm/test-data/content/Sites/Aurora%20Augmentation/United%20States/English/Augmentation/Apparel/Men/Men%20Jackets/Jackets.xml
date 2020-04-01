@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalChannel folder="/Sites/Aurora Augmentation/United States/English/Augmentation/Apparel/Men/Men Jackets" name="Jackets" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>men-jackets</segment>
+<title>Jackets</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../../../Pictures/Categories/back%20view%20of%20a%20young%20fashion%20man%20in%e55255ca.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Categories/back%20view%20of%20a%20young%20fashion%20man%20in%20leather%20jacket%20looking%20at%20the%20camera"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Pagegrid/Layouts/Two%20Column%20Layout.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Layouts/Two%20Column%20Layout"/>
+<StructListProperty Name="placements">
+<Struct>
+</Struct>
+</StructListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+<pdpPagegrid>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Pagegrid/Layouts/Fragment%20PDP.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Layouts/Fragment%20PDP"/>
+<StructListProperty Name="placements">
+<Struct>
+</Struct>
+</StructListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</pdpPagegrid>
+<externalId>ibm:///catalog/category/Men Jackets</externalId>
+</CMExternalChannel>

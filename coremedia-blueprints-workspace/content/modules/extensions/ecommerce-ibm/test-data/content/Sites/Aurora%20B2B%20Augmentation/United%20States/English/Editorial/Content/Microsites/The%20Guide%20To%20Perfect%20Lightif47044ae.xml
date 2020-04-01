@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Microsites/The Guide To Perfect Lighting" name="The Guide to Perfect Lighting Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>The Guide to Perfect Lighting</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Style%281%29.xml" path="/Settings/Taxonomies/Subject/Style%281%29"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Design%20Tag.xml" path="/Settings/Taxonomies/Subject/Design%20Tag"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Lighting%20Tag.xml" path="/Settings/Taxonomies/Subject/Lighting%20Tag"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Guide To Perfect Lighting</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>LED’s can even be made to change colors.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/><p>First came fire, then oil lights and candles. Electricity provided convenient lighting.</p><p>The first iteration of the “energy saving lightbulbs” and tubes provided soft white light as no filament is shining inside the matte tubes.</p><p>Usually in offices and public locations. Low wattage means lower operational cost, but the electronics used to power the gas are sensible to permanent switching.</p><p>LEDs are the newest lighting technology. They are energy efficient and due to their small size, lighting fixtures can come in all shapes and sizes.</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Modern%20Tripod%20Spotlight.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Modern%20Tripod%20Spotlight">Modern Tripod Spotlight</a><br/></p><p>Colored lighting strips are available that can be remote controlled to change colors based on mood – e.g. providing a soothing or refreshing lightscape in your bathroom.</p><p>Home-automation capable systems - including the Philips Hue – can be connected to smart phone controls and even linked to other systems, such as your TV set to provide adaptive colored ambient lighting that matches the picture on the screen.</p><p>LEDs are useful for indirect lighting like in a kitchen or in the bedroom under the bed.</p><p>Legacy-replacement bulbs and spots using LED technology are available for retrofitting existing installations.</p><p>Even though various initiatives drove customers away from incandescent lighting, there is still need to provide specific mood based lighting e.g. in Restaurants and special filament bulbs are produced.</p><p><br/></p></div></detailText>
+<pictures>
+<link href="../../../Pictures/Microsites/Guide%20to%20Perfect%20Lighting/A%20Hip%20Ho15850ebe.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/A%20Hip%20Hotel%20Room%20Picture"/>
+</pictures>
+<related>
+<link href="History%20of%20Interior%20Design/Hi6e3832a6.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/History%20of%20Interior%20Design/History%20of%20Interior%20Design%20Article"/>
+<link href="Guide%20to%20Exterior%20Lighting/Gu5243a0f5.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/Guide%20to%20Exterior%20Lighting/Guide%20to%20Exterior%20Lighting%20Article"/>
+</related>
+<authors>
+<link href="../../Authors/Michelle%20Villegas%20Person.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Authors/Michelle%20Villegas%20Person"/>
+</authors>
+</CMArticle>

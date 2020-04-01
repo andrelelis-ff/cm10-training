@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.studio.analytics.AnalyticsDeepLinkButtonContainer"/>
+  <component class="com.coremedia.blueprint.studio.analytics.AnalyticsMiscPanel"/>
+  <component class="com.coremedia.blueprint.studio.analytics.AnalyticsProvider"/>
+  <component class="com.coremedia.blueprint.studio.analytics.AnalyticsProviderComboBox"/>
+  <component class="com.coremedia.blueprint.studio.analytics.AnalyticsRetrievalPanel"/>
+  <component class="com.coremedia.blueprint.studio.analytics.AnalyticsStudioPlugin"/>
+  <component class="com.coremedia.blueprint.studio.analytics.AnalyticsTrackingPanel"/>
+  <component class="com.coremedia.blueprint.studio.analytics.CMALXEventListForm"/>
+  <component class="com.coremedia.blueprint.studio.analytics.CMALXPageListForm"/>
+  <component class="com.coremedia.blueprint.studio.analytics.CMChannelAnalyticsTab"/>
+  <component class="com.coremedia.blueprint.studio.analytics.FilteringContentTypeStringPropertyField"/>
+  <component class="com.coremedia.blueprint.studio.analytics.OpenAnalyticsDeepLinkUrlButton"/>
+  <component class="com.coremedia.blueprint.studio.analytics.OpenAnalyticsHomeUrlButton"/>
+</componentPackage>

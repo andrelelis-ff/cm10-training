@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/**
+  * coremedia blueprint modules external-preview
+  */
+
+body {
+  background-color: #F1F1F1;
+}
+.preview-toolbar {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 10%;
+  width: 100%;
+  background-color: #006CAE;
+}
+.preview-name {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 10px;
+  width: 20%;
+  color: #FFF;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.preview-name label {
+  line-height: 22px;
+}
+.preview-url {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-right: -26px;
+  margin-left: -20%;
+  padding-right: 26px;
+  padding-left: 20%;
+  width: 100%;
+}
+.preview-url input {
+  padding: 2px 3px;
+  width: 100%;
+  height: 16px;
+  border: 1px solid #006CAE;
+  border-right: none;
+  -webkit-border-radius: 2px 0 0 2px;
+  -moz-border-radius: 2px 0 0 2px;
+  border-radius: 2px 0 0 2px;
+  color: #000;
+  vertical-align: top;
+  font-size: 12px;
+}
+.preview-button {
+  float: left;
+  width: 26px;
+  height: 20px;
+}
+.preview-button button {
+  outline: none;
+  position: absolute;
+  width: 26px;
+  height: 22px;
+  border: 1px solid #006CAE;
+  -webkit-border-radius: 0 2px 2px 0;
+  -moz-border-radius: 0 2px 2px 0;
+  border-radius: 0 2px 2px 0;
+  border-left: none;
+  background: #FFFFFF url(../images/url-reload-trigger-btn.png) no-repeat right 2px;
+  cursor: pointer;
+}
+.preview-button button:active {
+  background: #FFFFFF url(../images/url-reload-trigger-btn.png) no-repeat right 3px;
+}
+.preview-button button span {
+  display: none;
+}
+.preview-frame {
+  width: 100%;
+  height: 100%;
+}
+.preview-frame iframe {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 32px 0 0 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/**
+  * hide preview-name on smaller devices
+  */
+@media screen and (max-width:650px) {
+  .preview-name {
+    display: none;
+  }
+  .preview-url {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}

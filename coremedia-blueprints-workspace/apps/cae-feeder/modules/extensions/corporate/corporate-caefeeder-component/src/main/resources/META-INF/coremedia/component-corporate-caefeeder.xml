@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <!-- import content bean definitions -->
+  <import resource="classpath:/com/coremedia/blueprint/ecommerce/contentbeans/impl/ecommerce-contentbeans.xml"/>
+  <!-- import beans for site-specific feeding -->
+  <import resource="classpath:/com/coremedia/blueprint/base/caefeeder/bpbase-caefeeder-multisite.xml"/>
+  <!-- import bean "abstractPageGridPlacementsPersistentCacheKeyFactory"
+          and bean "abstractPageGridInlineContentPredicate" -->
+  <import resource="classpath:/com/coremedia/blueprint/base/caefeeder/bpbase-caefeeder-pagegrid.xml"/>
+
+  <context:property-placeholder ignore-unresolvable="true"
+                                location="classpath:/META-INF/coremedia/corporate-caefeeder.properties"/>
+
+  <!-- Index the productCode property of CMProducts into a separate index field -->
+  <bean id="cmProductBeanFeedableMapping" class="com.coremedia.cap.feeder.bean.BeanFeedableMapping">
+    <property name="beanClass" value="com.coremedia.blueprint.ecommerce.contentbeans.CMProduct"/>
+    <property name="beanPropertyMappings">
+      <list>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="productCode"/>
+          <property name="feedableElement" value="productCode"/>
+          <property name="textBody" value="false"/>
+        </bean>
+      </list>
+    </property>
+  </bean>
+
+  <customize:append id="addCmProductBeanFeedableMapping" bean="caeFeederBeanMappings">
+    <list>
+      <ref bean="cmProductBeanFeedableMapping"/>
+    </list>
+  </customize:append>
+
+  <!--
+    Configure Site-specific feeding for documents with indexed page grid (i.e. channel documents) and for documents
+    that could be inline content in such a page grid (i.e. article documents).
+
+    Use FeedablePopulators 'corporatePageGridFeedablePopulator' and 'corporatePageGridInlineContentFeedablePopulator'
+    if the site has the setting "caefeederSiteConfiguration=corporate".
+  -->
+  <customize:append id="addCorporateSiteSpecificFeedablePopulator" bean="siteSpecificFeedablePopulatorMap">
+    <map key-type="java.lang.String" value-type="com.coremedia.cap.feeder.populate.FeedablePopulator">
+      <entry key="corporate">
+        <bean class="com.coremedia.cap.feeder.populate.CompositeFeedablePopulator">
+          <constructor-arg index="0" name="populators">
+            <list>
+              <ref bean="corporatePageGridFeedablePopulator"/>
+              <ref bean="corporatePageGridInlineContentFeedablePopulator"/>
+            </list>
+          </constructor-arg>
+        </bean>
+      </entry>
+    </map>
+  </customize:append>
+
+  <customize:append id="addCorporateSiteSpecificFeedablePopulatorPredicate"
+                    bean="siteSpecificFeedablePopulatorPredicates">
+    <list value-type="com.coremedia.common.util.Predicate">
+      <ref bean="corporateContentWithPageGridPredicate"/>
+      <ref bean="corporatePageGridInlineContentTypePredicate"/>
+    </list>
+  </customize:append>
+
+  <bean id="corporateContentWithPageGridPredicate"
+        class="com.coremedia.blueprint.base.caefeeder.ContentByTypePredicate">
+    <description>Predicate that includes documents with indexed page grid.</description>
+    <property name="includedTypesAsArray" value="${corporate.search.pageGrid.contentType}"/>
+    <property name="includeSubtypes" value="true"/>
+  </bean>
+
+  <bean id="corporatePageGridInlineContentTypePredicate"
+        class="com.coremedia.blueprint.base.caefeeder.ContentByTypePredicate">
+    <description>Predicate that includes documents that could be inline content in a page grid.</description>
+    <property name="includedTypesAsArray" value="${corporate.search.pageGrid.inlineContentTypes}"/>
+    <property name="includeSubtypes" value="true"/>
+  </bean>
+
+  <!--
+    A FeedablePopulator to index properties of documents linked in a page grid in the textbody field of the document
+    that contains the page grid.
+  -->
+  <bean id="corporatePageGridFeedablePopulator"
+        class="com.coremedia.blueprint.base.caefeeder.pagegrid.PageGridFeedablePopulator">
+    <constructor-arg index="0" name="keyFactory" ref="corporatePageGridPlacementsPersistentCacheKeyFactory"/>
+    <property name="predicate" ref="corporateContentWithPageGridPredicate"/>
+    <property name="itemPredicate" ref="corporatePageGridFeedablePopulatorItemPredicate"/>
+    <property name="inheritableViewTypePredicate" ref="corporatePageGridInheritableViewTypePredicate"/>
+    <property name="textPropertiesAsString" value="${corporate.search.pageGrid.itemTextProperties}"/>
+    <property name="textPropertiesByViewTypeAsStringValuedMap">
+      <map key-type="java.lang.String" value-type="java.lang.String">
+        <entry key="${corporate.search.pageGrid.inlineContentViewType}"
+               value="${corporate.search.pageGrid.inlineContentTextProperties}"/>
+      </map>
+    </property>
+    <property name="recursiveItemsPropertiesAsString"
+              value="${corporate.search.pageGrid.collectionContentType}=${corporate.search.pageGrid.collectionItemsProperty}"/>
+    <property name="viewTypeLinkProperty" value="${corporate.search.pageGrid.collectionViewTypeProperty}"/>
+  </bean>
+
+  <bean id="corporatePageGridPlacementsPersistentCacheKeyFactory"
+        parent="abstractPageGridPlacementsPersistentCacheKeyFactory">
+    <constructor-arg index="0" name="configId" value="${corporate.search.pageGrid.configId}"/>
+    <property name="pageGridName" value="${corporate.search.pageGrid.name}"/>
+    <property name="sectionPredicate" ref="corporatePageGridSectionPredicate"/>
+    <property name="itemPredicate" ref="corporatePageGridFeedablePopulatorItemPredicate"/>
+  </bean>
+
+  <bean id="corporatePageGridFeedablePopulatorItemPredicate"
+        class="com.coremedia.common.util.Predicates" factory-method="and">
+    <constructor-arg index="0">
+      <bean class="com.coremedia.blueprint.base.caefeeder.ContentByTypePredicate">
+        <property name="includedTypesAsArray" value="${corporate.search.pageGrid.itemContentTypes}"/>
+        <property name="includeSubtypes" value="true"/>
+      </bean>
+    </constructor-arg>
+    <constructor-arg index="1" ref="corporateValidContentPredicate"/>
+  </bean>
+
+  <bean id="corporatePageGridInheritableViewTypePredicate"
+        class="com.coremedia.common.util.Predicates" factory-method="not">
+    <constructor-arg index="0">
+      <bean class="com.coremedia.common.util.Predicates" factory-method="in">
+        <constructor-arg index="0" value="${corporate.search.pageGrid.inlineContentViewType}"/>
+      </bean>
+    </constructor-arg>
+  </bean>
+
+  <bean id="corporateValidContentPredicate" class="com.coremedia.blueprint.base.caefeeder.ValidContentPredicate">
+    <property name="validFromDateProperty" value="${corporate.search.pageGrid.itemValidFromProperty}"/>
+    <property name="validToDateProperty" value="${corporate.search.pageGrid.itemValidToProperty}"/>
+  </bean>
+
+  <bean id="corporatePageGridSectionPredicate" class="com.coremedia.common.util.Predicates" factory-method="not">
+    <constructor-arg index="0">
+      <bean class="com.coremedia.common.util.Predicates" factory-method="in">
+        <constructor-arg index="0"
+                         value="#{T(java.util.Arrays).asList('${corporate.search.pageGrid.excludedSections}')}"/>
+      </bean>
+    </constructor-arg>
+  </bean>
+
+  <customize:append id="addPageGridPlacementsPersistentCacheKeyFactory"
+                    bean="fragmentPersistentCacheKeyFactory"
+                    property="keyFactories">
+    <list>
+      <ref bean="corporatePageGridPlacementsPersistentCacheKeyFactory"/>
+    </list>
+  </customize:append>
+
+  <bean id="corporatePageGridInlineContentFeedablePopulator"
+        class="com.coremedia.blueprint.base.caefeeder.pagegrid.PageGridInlineContentFeedablePopulator">
+    <constructor-arg index="0" name="predicate" ref="corporatePageGridInlineContentPredicate"/>
+    <constructor-arg index="1" name="feedableElement" value="notsearchable"/>
+  </bean>
+
+  <bean id="corporatePageGridInlineContentPredicate"
+        class="com.coremedia.common.util.Predicates" factory-method="and">
+    <constructor-arg index="0" ref="corporatePageGridInlineContentTypePredicate"/>
+    <constructor-arg index="1">
+      <bean parent="abstractPageGridInlineContentPredicate">
+        <property name="sectionPredicate" ref="corporatePageGridSectionPredicate"/>
+        <property name="pageGridContentType" value="${corporate.search.pageGrid.contentType}"/>
+        <property name="pageGridProperty" value="${corporate.search.pageGrid.name}"/>
+        <property name="collectionContentType" value="${corporate.search.pageGrid.collectionContentType}"/>
+        <property name="collectionItemsProperty" value="${corporate.search.pageGrid.collectionItemsProperty}"/>
+        <property name="collectionViewTypeProperty" value="${corporate.search.pageGrid.collectionViewTypeProperty}"/>
+        <property name="inlineContentViewType" value="${corporate.search.pageGrid.inlineContentViewType}"/>
+      </bean>
+    </constructor-arg>
+  </bean>
+
+</beans>
+

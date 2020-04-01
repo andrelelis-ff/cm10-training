@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/SFRA/France/French/Editorial/Content/Videos" name="Summer Dresses Shoppable Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Videos/Summer%20Dresses%20Shoppable%20Video.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Videos/Summer%20Dresses%20Shoppable%20Video"/>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMVideo/shoppable.xml" path="/Sites/SFRA/France/French/Options/Viewtypes/CMVideo/shoppable"/>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Robes d'été Shoppable Video</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Dresses.xml" path="/Settings/Taxonomies/Subject/Dresses"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Summer.xml" path="/Settings/Taxonomies/Subject/Summer"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Explorez cette fantastique vidéo de robes d'été </p> </div></detailText>
+<pictures>
+<link href="../../Pictures/Stylish%20Women%20in%20Blue.xml" path="/Sites/SFRA/France/French/Editorial/Pictures/Stylish%20Women%20in%20Blue"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="72abe0d12c5b05f97a7a3047074a156c" size="17213599" href="../../../../../../../__blob/72abe0d12c5b05f97a7a3047074a156c.blob" mimetype="video/mp4"/>
+<timeLine>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<LinkProperty Name="defaultTarget" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Products/Belted%20Shirt%20Dress.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Products/Belted%20Shirt%20Dress"/>
+<StructListProperty Name="sequences">
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Products/Sleeveless%20Sheath%20Dress.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Products/Sleeveless%20Sheath%20Dress"/>
+<IntProperty Name="startTimeMillis">3000</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Products/Cowl%20Drape%20Sarong%20Dress.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Products/Cowl%20Drape%20Sarong%20Dress"/>
+<IntProperty Name="startTimeMillis">6000</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Products/Platinum%20V%20Neck%20Suit%20Dress.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Products/Platinum%20V%20Neck%20Suit%20Dress"/>
+<IntProperty Name="startTimeMillis">9000</IntProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</timeLine>
+<asset>
+</asset>
+</CMVideo>

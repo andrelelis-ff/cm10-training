@@ -1,0 +1,27 @@
+.cm-landscape-banner,
+.cm-portrait-banner,
+.cm-square-banner {
+  &__headline {
+    font-size: 2em;
+  }
+
+  &__text {
+    font-size: 1.2em;
+  }
+
+  &__cta {
+    margin: 0 auto 1.5em;
+  }
+}
+
+.cm-portrait-banner-grid--50-50 {
+  .cm-portrait-banner-grid__item {
+    width: 50%;
+  }
+}
+
+.cm-landscape-banner-grid--50-50 {
+  .cm-landscape-banner-grid__item {
+    width: 50%;
+  }
+}

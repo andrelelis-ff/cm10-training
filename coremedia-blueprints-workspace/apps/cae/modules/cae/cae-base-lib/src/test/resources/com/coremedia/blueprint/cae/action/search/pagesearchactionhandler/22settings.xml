@@ -1,0 +1,4 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+    <IntProperty Name="searchResultHitsPerPage">5</IntProperty>
+</Struct>

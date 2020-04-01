@@ -1,0 +1,11 @@
+//
+// Popup Styling
+// --------------------------------------------------
+
+.cm-popup {
+  .cm-button--primary {
+    @include red-cta-button;
+    display: block;
+    text-decoration: none;
+  }
+}

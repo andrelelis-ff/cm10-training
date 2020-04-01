@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMHTML folder="/Sites/Hybris Apparel/Germany/German/Editorial/Content/Embeds" name="Twitter Feed" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Embeds/Twitter%20Feed.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Embeds/Twitter%20Feed"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Stiefel Twitter Timeline</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<description>Stiefel Twitter Timeline</description>
+<data grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>&lt;a class="twitter-timeline" href="<a xlink:href="https://twitter.com/scottbeckeruk" xlink:type="simple">https://twitter.com/scottbeckeruk</a>" data-tweet-limit="3"</p> <p>&gt;Tweets by Scott Becker&lt;/a&gt; &lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;</p> </div></data>
+</CMHTML>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+  <content>
+    <folder id="1" name="">
+      <document id="2" name="World" type="CMLocTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="World"/>
+          <stringProperty name="postcode" value="20459"/>
+          <stringProperty name="latitudeLongitude" value="53.523982,10.003052"/>
+          <linkProperty name="children">
+            <link id="4"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="38" name="Europe" type="CMLocTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="Europe"/>
+          <linkProperty name="children">
+            <link id="40"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="40" name="Germany" type="CMLocTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="Germany"/>
+        </version>
+      </document>
+      <document id="4" name="United States" type="CMLocTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="United States"/>
+          <stringProperty name="postcode" value="20459"/>
+          <stringProperty name="latitudeLongitude" value="53.523982,10.003052"/>
+          <linkProperty name="children">
+            <link id="6"/>
+            <link id="8"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="6" name="California" type="CMLocTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="California"/>
+          <stringProperty name="postcode" value="94105"/>
+          <stringProperty name="latitudeLongitude" value="53.523982,10.003052"/>
+          <linkProperty name="children">
+            <link id="10"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="8" name="Michigan" type="CMLocTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="Michigan"/>
+          <stringProperty name="postcode" value="20459"/>
+          <stringProperty name="latitudeLongitude" value="53.523982,10.003052"/>
+          <linkProperty name="children">
+            <link id="12"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="10" name="San Francisco" type="CMLocTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="San Francisco"/>
+          <stringProperty name="postcode" value="20459"/>
+          <stringProperty name="latitudeLongitude" value="53.523982,10.003052"/>
+        </version>
+      </document>
+      <document id="12" name="Las Vegas" type="CMLocTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="Las Vegas"/>
+          <stringProperty name="postcode" value="20459"/>
+          <stringProperty name="latitudeLongitude" value="53.523982,10.003052"/>
+        </version>
+      </document>
+      <document id="14" name="Sport" type="CMTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="Sport"/>
+          <linkProperty name="children">
+            <link id="16"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="16" name="Motorsport" type="CMTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="Motorsport"/>
+          <linkProperty name="children">
+            <link id="18"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="18" name="Formula 1" type="CMTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="Formula 1"/>
+          <linkProperty name="children"/>
+        </version>
+      </document>
+      <document id="20" name="anArticle" type="CMArticle">
+        <version number="1">
+          <linkProperty name="locationTaxonomy">
+            <link id="40"/>
+            <link id="6"/>
+            <link id="10"/>
+          </linkProperty>
+          <linkProperty name="subjectTaxonomy">
+            <link id="18"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="22" name="anotherArticle" type="CMArticle">
+      <version number="1">
+          <linkProperty name="locationTaxonomy">
+            <link id="40"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="24" name="Context" type="CMChannel">
+        <version number="1">
+        </version>
+      </document>
+      <document id="26" name="visitedArticle1" type="CMArticle">
+        <version number="1">
+        </version>
+      </document>
+      <document id="28" name="visitedArticle2" type="CMArticle">
+        <version number="1">
+        </version>
+      </document>
+      <document id="30" name="visitedArticle3" type="CMArticle">
+        <version number="1">
+        </version>
+      </document>
+      <document id="32" name="taxonomyTestSegment" type="CMSegment">
+        <version number="1">
+          <markupProperty name="conditions" url="taxonomyselectionconditions.xml"
+                          grammar="coremedia-selectionrules-1.0"/>
+        </version>
+      </document>
+      <document id="34" name="keywordTestSegment" type="CMSegment">
+        <version number="1">
+          <markupProperty name="conditions" url="keywordselectionconditions.xml"
+                          grammar="coremedia-selectionrules-1.0"/>
+        </version>
+      </document>
+      <document id="36" name="personalizedContent" type="CMSelectionRules">
+        <version number="1">
+          <markupProperty name="rules" url="personalizedcontentrules.xml" grammar="coremedia-selectionrules-1.0"/>
+        </version>
+      </document>
+      <document id="360" name="personalizedContent_2" type="CMSelectionRules">
+        <version number="1">
+          <markupProperty name="rules" url="personalizedcontentrules.xml" grammar="coremedia-selectionrules-1.0"/>
+          <linkProperty name="defaultContent">
+            <link id="26"/>
+            <link id="28"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="42" name="testUser" type="CMUserProfile">
+        <version number="1">
+          <blobProperty name="profileSettings" url="profilesettings.txt"/>
+          <markupProperty name="profileExtensions" url="profileextensions.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="44" name="explicitInterestsSettingsMock" type="CMArticle">
+        <version number="1">
+          <markupProperty name="localSettings" url="44settings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+    </folder>
+  </content>
+  <rules/>
+</contentRepository>

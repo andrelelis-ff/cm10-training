@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductList folder="/Sites/Calista/United States/English/Navigation/Fragments/Aurora Categories/Apparel" name="Elegant Men List" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="productList">
+<Struct>
+<IntProperty Name="offset">1</IntProperty>
+<IntProperty Name="maxLength">5</IntProperty>
+<StringProperty Name="orderBy">ORDER_BY_TYPE_PRICE_DSC</StringProperty>
+</Struct>
+</StructProperty>
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+<StructProperty Name="teaserSettings">
+<Struct>
+<BooleanProperty Name="renderLinkToDetailPage">false</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Men</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<externalId>ibm:///catalog/category/Men</externalId>
+</CMProductList>

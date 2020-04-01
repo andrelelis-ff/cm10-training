@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Products/Aurora B2B/Lighting" name="Medium-base Chandelier Bulb Product Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Medium-base%20Chandelie5042562d.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Medium-base%20Chandelier%20Bulb%20Product%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Classy &amp; Romantic</teaserTitle>
+<pictures>
+<link href="../../../../Pictures/Product%20Pictures/Lighting/la042_4202%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Pictures/Product%20Pictures/Lighting/la042_4202%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>ibm:///catalog/product/LA042_4202</externalId>
+</CMProductTeaser>

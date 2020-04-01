@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Startpage" name="High young stylish two model in fashion dress posing in the studio Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Startpage/High%20young%20stylish%20two%20model%20in%41449de1.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Startpage/High%20young%20stylish%20two%20model%20in%20fashion%20dress%20posing%20in%20the%20studio%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=0;y=0;width=2581;height=4000</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=126;width=2661;height=1497</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=164;width=2661;height=665</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=151;width=2661;height=2661</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=151;width=2661;height=1996</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=126;width=2661;height=1064</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=126;width=2661;height=3548</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.46208530805687204</StringProperty>
+<StringProperty Name="y">0.21608832807570977</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.031545741324921134;x2=1;y2=0.9185457413249212</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.03785488958990536;x2=1;y2=0.7031048895899054</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.03785488958990536;x2=1;y2=0.5367923895899054</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.031545741324921134;x2=1;y2=0.29764574132492116</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.04100946372239748;x2=1;y2=0.20732196372239747</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>hohes junges stilvolles Kleid mit zwei Modellen in Mode im Studio aufwerfend</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>hohes junges stilvolles Kleid mit zwei Modellen in Mode im Studio aufwerfend</alt>
+<copyright>crystalfoto / Shutterstock 367175996</copyright>
+<dataUrl></dataUrl>
+<width>2662</width>
+<height>4000</height>
+<data md5="03f88edac7fa941121710d2978892151" size="862762" href="../../../../../../../__blob/03f88edac7fa941121710d2978892151.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

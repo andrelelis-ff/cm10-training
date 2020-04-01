@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/Germany/German/Pictures/Product Pictures/Men/Suits" name="Albini Black Wool Suit" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Pictures/Product%20Pictures/Men/Suits/Albini%20Black%20Wool%20Suit.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20Pictures/Men/Suits/Albini%20Black%20Wool%20Suit"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="landscape_ratio235x100">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.022082018927444793;x2=1;y2=0.7140820189274447</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.025236593059936908;x2=1;y2=0.5442365930599369</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.022082018927444793;x2=1;y2=0.41133201892744475</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.028391167192429023;x2=1;y2=0.305191167192429</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.0914826498422713;x2=1;y2=0.26448264984227127</StringProperty>
+<StringProperty Name="landscape_ratio235x100">position;x1=0;y1=0.012618296529968454;x2=1;y2=0.3070863816363514</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=94;y=0;width=2581;height=4000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=155;width=2768;height=3691</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=88;width=2768;height=2768</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=101;width=2768;height=2076</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=88;width=2768;height=1557</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=114;width=2768;height=1107</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=366;width=2768;height=692</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=134;y=0;width=2500;height=4000</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=50;width=2768;height=1178</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=101;y=0;width=2667;height=4000</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=511;width=2768;height=1038</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/MCL008_0804</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.5730593607305936</StringProperty>
+<StringProperty Name="y">0.25709779179810727</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Albini Schwarzer Wollanzug</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>Viorel Sima / shutterstock_220282267</copyright>
+<dataUrl></dataUrl>
+<width>2769</width>
+<height>4000</height>
+<data md5="d695ba129838ff83005b5f0b96440748" size="493904" href="../../../../../../../../__blob/d695ba129838ff83005b5f0b96440748.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

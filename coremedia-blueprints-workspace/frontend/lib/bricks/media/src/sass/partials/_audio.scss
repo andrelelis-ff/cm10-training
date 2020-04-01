@@ -1,0 +1,13 @@
+// audio
+.#{$cm-audio-prefix} {
+  width: 100%;
+
+  // show black box if audio is missing
+  &--missing {
+    border: 1px solid #000000;
+    padding: 20px;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+  }
+}

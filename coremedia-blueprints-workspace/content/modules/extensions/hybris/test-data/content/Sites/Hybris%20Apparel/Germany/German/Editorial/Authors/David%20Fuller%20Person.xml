@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPerson folder="/Sites/Hybris Apparel/Germany/German/Editorial/Authors" name="David Fuller Person" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Editorial/Authors/David%20Fuller%20Person.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Authors/David%20Fuller%20Person"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Gamma CEO, freelance vlogger, photographer, motorcycle traveler.</p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>David is a classically trained tailor who knows everything there is to know about fashion and the craft behind it. He has worked with them all: Lagerfeld, Tom Ford, Jimmy Choo, to name a few.</p> <p>After spending two years in Italy, he put all his experience and knowledge into his own trends blog "Gamma".</p> </div></detailText>
+<pictures>
+<link href="../../Pictures/Authors/David%20Fuller%20Picture.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Authors/David%20Fuller%20Picture"/>
+</pictures>
+<related>
+<link href="David%27s%20Articles%20Query%20List.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Authors/David%27s%20Articles%20Query%20List"/>
+</related>
+<authors>
+</authors>
+<firstName>David</firstName>
+<lastName>Fuller</lastName>
+<displayName></displayName>
+<eMail>info@coremedia.com</eMail>
+<organization>Apparel</organization>
+<jobTitle>Trending Sports Editor</jobTitle>
+<misc>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="twitter">https://twitter.com/coremedia</StringProperty>
+</Struct>
+</misc>
+</CMPerson>

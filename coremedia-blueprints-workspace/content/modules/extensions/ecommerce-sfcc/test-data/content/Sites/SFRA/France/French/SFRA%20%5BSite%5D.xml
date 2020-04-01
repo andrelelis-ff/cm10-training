@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSite folder="/Sites/SFRA/France/French" name="SFRA [Site]" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../United%20Kingdom/English/SFRA%20%5BSite%5D.xml" path="/Sites/SFRA/United%20Kingdom/English/SFRA%20%5BSite%5D"/>
+</master>
+<id>c353163a2d275cc48b6f6f678eefb6ba</id>
+<name>SFRA</name>
+<root>
+<link href="Navigation/SFRA.xml" path="/Sites/SFRA/France/French/Navigation/SFRA"/>
+</root>
+<siteManagerGroup>manager-sfra-fr-FR</siteManagerGroup>
+<linkedSettings>
+<link href="Options/Settings/SiteSettings.xml" path="/Sites/SFRA/France/French/Options/Settings/SiteSettings"/>
+</linkedSettings>
+</CMSite>

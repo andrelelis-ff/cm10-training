@@ -1,0 +1,134 @@
+//ratings
+.cm-ratings {
+  &-average {
+    &__header {
+      margin-bottom: 0.5rem;
+    }
+
+    &__text,
+    &__votes {
+      display: inline-block;
+      margin: 0 5px;
+      vertical-align: top;
+      line-height: 1;
+    }
+
+    &__rating {
+      display: inline-block;
+      position: relative;
+      height: 18px;
+      width: 90px; // 5x 18px
+      margin-right: 5px;
+
+      @include breakpoint(sm) {
+        display: block;
+      }
+    }
+
+    &__stars--back,
+    &__stars--front {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: repeat-x top left url("../../img/star-red-inactive.param.svg?&fillColor=#{encodeColor($cm-rating-star-fill-color-inactive)}") transparent;
+    }
+
+    &__stars--front {
+      background-image: url("../../img/star-red-active.svg");
+    }
+
+    &__count,
+    &__target {
+      @include visually-hidden();
+    }
+  }
+}
+
+//rating
+.cm-rating {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+
+  &-bar {
+    border: 1px solid $cm-rating-statistics-border-color;
+    background-color: $cm-rating-statistics-background-color;
+    text-align: left;
+    height: 19px;
+
+    &__filled {
+      height: 100%;
+      background-color: $cm-rating-statistics-color;
+    }
+  }
+
+  &-statistics {
+    display: table;
+    border: none;
+    width: 100%;
+    margin-bottom: 15px;
+
+    @include breakpoint("sm-and-up") {
+      max-width: 50%;
+    }
+  }
+
+  &-statistic {
+    display: table-row;
+
+    &__column {
+      display: table-cell;
+      vertical-align: middle;
+      white-space: nowrap;
+
+      &--rating-bar {
+        width: 100%;
+        padding: 0 10px;
+      }
+    }
+  }
+
+  &-indicator {
+    font-size: 0;
+    float: right;
+    vertical-align: middle;
+
+    &:before {
+      vertical-align: middle;
+      content: ""; /* has to be set */
+      display: block;
+      width: 18px;
+      height: 18px;
+      background-image: url("../../img/star-red-inactive.param.svg?&fillColor=#{encodeColor($cm-rating-star-fill-color-inactive)}");
+      background-repeat: no-repeat;
+    }
+
+    &--active:before,
+    .cm-rating &--active ~ &:before {
+      content: ""; /* has to be set */
+      background-image: url("../../img/star-red-active.svg");
+      background-repeat: no-repeat;
+    }
+
+    .cm-field input[name="rating"]:checked ~ &:before,
+    .cm-field input[name="rating"] ~ &:hover:before,
+    .cm-field input[name="rating"] + &:hover ~ &:before {
+      content: ""; /* has to be set */
+      background-image: url("../../img/star-red-active.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__votes {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2px;
+    line-height: 1;
+  }
+
+  .cm-ratings-average__rating {
+    @include breakpoint(sm) {
+      display: inline-block;
+    }
+  }
+}

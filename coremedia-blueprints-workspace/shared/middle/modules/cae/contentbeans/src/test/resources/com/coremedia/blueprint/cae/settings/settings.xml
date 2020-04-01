@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+
+  <!--
+    Test content for SettingsService
+  -->
+  <content>
+    <folder id="1" name="">
+      <folder id="11" name="Sites">
+        <folder id="111" name="Helios">
+          <folder id="1113" name="Editorial">
+            <document id="124" type="CMArticle" name="WithSettings">
+              <version number="1">
+                <linkProperty name="linkedSettings">
+                  <link id="130"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="130" type="CMSettings" name="settingsDocument">
+              <version number="1">
+                <markupProperty name="settings" url="130settings.xml" grammar="coremedia-struct-2008"/>
+              </version>
+            </document>
+          </folder>
+        </folder>
+      </folder>
+      <document id="2" type="CMArticle" name="Article">
+        <version number="1">
+          <markupProperty name="localSettings" url="2settings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="4" type="CMArticle" name="Article4">
+        <version number="1">
+        </version>
+      </document>
+      <document id="6" type="CMArticle" name="Article6">
+        <version number="1">
+        </version>
+      </document>
+      <document id="8" type="CMArticle" name="Article8">
+        <version number="1">
+        </version>
+      </document>
+      <document id="10" type="CMArticle" name="Article10">
+        <version number="1">
+        </version>
+      </document>
+      <document id="12" type="CMArticle" name="Article12">
+        <version number="1">
+        </version>
+      </document>
+      <document id="14" type="CMArticle" name="Article14">
+        <version number="1">
+        </version>
+      </document>
+      <document id="16" type="CMArticle" name="Article16">
+        <version number="1">
+        </version>
+      </document>
+      <document id="18" type="CMArticle" name="Article18">
+        <version number="1">
+        </version>
+      </document>
+      <document id="20" type="CMArticle" name="Article20">
+        <version number="1">
+        </version>
+      </document>
+
+    </folder>
+  </content>
+</contentRepository>

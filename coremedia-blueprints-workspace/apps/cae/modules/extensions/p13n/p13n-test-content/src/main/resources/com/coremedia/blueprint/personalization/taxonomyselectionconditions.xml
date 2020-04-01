@@ -1,0 +1,4 @@
+<rules version="1.0" xmlns="http://www.coremedia.com/2010/selectionrules" xmlns:xlink="http://www.w3.org/1999/xlink">
+  subjectTaxonomies.<content xlink:href="coremedia:///cap/content/14"/>&gt;0.05 or
+  subjectTaxonomies.<content xlink:href="coremedia:///cap/content/16"/>&gt;0.05
+</rules>

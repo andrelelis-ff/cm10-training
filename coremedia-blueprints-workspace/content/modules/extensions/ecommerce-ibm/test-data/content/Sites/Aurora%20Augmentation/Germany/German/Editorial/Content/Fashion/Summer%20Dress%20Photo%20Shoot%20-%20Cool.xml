@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Fashion" name="Summer Dress Photo Shoot - Cool" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Fashion/Summer%20Dress%20Photo%20Shoot%20-%20Cool.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Summer%20Dress%20Photo%20Shoot%20-%20Cool"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=76;y=0;width=2452;height=3800</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=216;width=2528;height=3374</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=210;width=2528;height=2527</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=223;width=2528;height=1897</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=248;width=2528;height=1419</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=414;width=2528;height=1012</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=522;width=2528;height=630</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.030226700251889168;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.05695142378559464;x2=1;y2=0.9447236180904522</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.05527638190954774;x2=1;y2=0.7202680067001676</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.05862646566164154;x2=1;y2=0.5577889447236181</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.06532663316582915;x2=1;y2=0.4388609715242881</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.10887772194304858;x2=1;y2=0.37520938023450584</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.1373534338358459;x2=1;y2=0.30318257956448913</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Sommer-Kleid-Photo Shoot - Cool</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Sommer-Kleid-Photo Shoot - Cool</alt>
+<copyright>paultarasenko / Shutterstock</copyright>
+<dataUrl></dataUrl>
+<width>2528</width>
+<height>3800</height>
+<data md5="9a1d8f6a4e8714a83a769464aa1ac69f" size="4800336" href="../../../../../../../__blob/9a1d8f6a4e8714a83a769464aa1ac69f.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

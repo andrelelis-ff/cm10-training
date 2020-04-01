@@ -1,0 +1,7 @@
+[template]
+src   = "capclient.properties.tmpl"
+dest  = "/coremedia/tools/properties/corem/capclient.properties"
+keys  = [
+        "/cap/client/server/ior/url",
+        "/cap/client/timezone/default"
+]

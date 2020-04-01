@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:ShowAssetsInEditedContentsCheckboxBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.assets.studio.forms.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        boxLabel="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'EditedContents_showAssets_label')}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.assets.studio.AMStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.assets.studio.config.showAssetsInEditedContentsCheckbox";
+
+    private var config:ShowAssetsInEditedContentsCheckbox;
+
+    public native function ShowAssetsInEditedContentsCheckbox(config:ShowAssetsInEditedContentsCheckbox = null);
+    ]]></fx:Script>
+
+  <local:plugins>
+    <ui:BindPropertyPlugin bindTo="{getCheckedValueExpression()}"
+                           componentProperty="value"
+                           bidirectional="true"/>
+  </local:plugins>
+
+</local:ShowAssetsInEditedContentsCheckboxBase>

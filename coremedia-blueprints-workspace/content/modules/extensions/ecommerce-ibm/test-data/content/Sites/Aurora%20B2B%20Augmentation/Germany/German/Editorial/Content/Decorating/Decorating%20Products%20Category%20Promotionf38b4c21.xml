@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content/Decorating" name="Decorating Products Category Promotion Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Decorating/Decorating%20Products%20Category%20eaa7dc7e.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Decorating/Decorating%20Products%20Category%20Promotion%20Collection"/>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMChannel/square.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Viewtypes/CMChannel/square"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../Products/Aurora%20B2B/Decorating/Orange%20Vase%20Product%20Teaser.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Orange%20Vase%20Product%20Teaser"/>
+<link href="../../Products/Aurora%20B2B/Decorating/Table%20Runner%20white%20Produ7dd67c02.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Table%20Runner%20white%20Product%20Teaser"/>
+<link href="../../Products/Aurora%20B2B/Decorating/White%20Vase%20Product%20Teaser.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/White%20Vase%20Product%20Teaser"/>
+</items>
+</CMCollection>

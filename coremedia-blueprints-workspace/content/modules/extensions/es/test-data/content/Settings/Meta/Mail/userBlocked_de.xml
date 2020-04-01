@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMMail folder="/Settings/Meta/Mail" name="userBlocked_de" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<locale>de-DE</locale>
+<master>
+<link href="userBlocked.xml" path="/Settings/Meta/Mail/userBlocked"/>
+</master>
+<masterVersion>1</masterVersion>
+<keywords></keywords>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<segment></segment>
+<title></title>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<subject>Nutzer blockiert</subject>
+<from>no-reply@coremedia.com</from>
+<text href="userBlocked_de.text.plain" mimetype="text/plain"/>
+<contentType></contentType>
+</CMMail>

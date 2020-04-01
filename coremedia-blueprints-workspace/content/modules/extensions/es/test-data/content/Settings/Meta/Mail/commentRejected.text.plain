@@ -1,0 +1,10 @@
+Hello ${name},
+
+your contribution below from ${commentDate} has not been published:
+
+"${commentText}"
+
+Please comply to our community policy when writing contributions.
+
+Kind regards,
+the editors

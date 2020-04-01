@@ -1,0 +1,8 @@
+[template]
+src   = "candy-sites.html.tmpl"
+dest  = "/usr/share/nginx/html/assets/candy-sites.html"
+keys  = [
+         "/commerce/sfcc/enabled",
+         "/commerce/hybris/enabled",
+         "/commerce/wcs/enabled"
+]

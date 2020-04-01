@@ -1,0 +1,14 @@
+{
+  "name": "@coremedia-examples/brick-fragment-scenario",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "prettier": "^1.0.0"
+  },
+  "scripts": {
+    "prettier": "prettier \"**/*\" --write"
+  },
+  "coremedia": {
+    "type": "brick"
+  }
+}

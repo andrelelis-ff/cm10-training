@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Aurora B2B Augmentation/Germany/German/Navigation/Fragments/Aurora B2B Categories/Lighting" name="Get Inspired Gallery Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Navigation/Fragments/Aurora%20B2B%20Categories/Lighting/Get%20In340095ff.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Navigation/Fragments/Aurora%20B2B%20Categories/Lighting/Get%20Inspired%20Gallery%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Lighting Inspiration from Around The World</teaserTitle>
+<pictures>
+<link href="../../../../Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Lighting%20Inspiratiof9413549.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Lighting%20Inspiration%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../../Editorial/Content/Microsites/The%20Guide%20To%20Perfect%20Lighting/Perfecc05f5f4a.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Microsites/The%20Guide%20To%20Perfect%20Lighting/Perfect%20Lighting%20Gallery"/>
+</target>
+</CMTeaser>

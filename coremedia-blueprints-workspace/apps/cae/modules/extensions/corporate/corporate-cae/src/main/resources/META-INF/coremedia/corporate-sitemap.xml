@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/com/coremedia/cae/link-services.xml"/>
+  <import resource="classpath:/com/coremedia/cap/common/uapi-services.xml"/>
+  <import resource="classpath:/com/coremedia/cap/multisite/multisite-services.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-sitemap.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/navigation/context/bpbase-default-contextstrategy.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-services.xml"/>
+
+  <bean id="corporateSitemapDoctypePredicate" class="com.coremedia.blueprint.cae.sitemap.SitemapDoctypePredicate">
+    <property name="capConnection" ref="connection"/>
+    <property name="includes">
+      <list>
+        <value>CMTeasable</value>
+        <value>CMAudio</value>
+        <value>CMVideo</value>
+      </list>
+    </property>
+    <property name="excludes">
+      <list>
+        <value>CMHTML</value>
+        <value>CMVisual</value>
+        <value>CMExternalLink</value>
+        <value>CMAction</value>
+        <value>CMPlaceholder</value>
+        <value>CMDynamicList</value>
+        <value>CMTeaser</value>
+        <value>CMCollection</value>
+        <value>CMTaxonomy</value>
+        <value>CMLocTaxonomy</value>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="corporateSitemapExcludeFromSearchPredicate" class="com.coremedia.blueprint.cae.sitemap.ExcludeFromSearchSitemapPredicate">
+    <property name="doctypeName" value="CMTeasable"/>
+    <property name="notSearchablePropertyName" value="notSearchable"/>
+  </bean>
+
+  <bean id="corporateSitemapValidityPredicate" class="com.coremedia.blueprint.cae.common.predicates.ValidContentPredicate">
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+  </bean>
+
+  <bean id="corporateSitemapContentUrlGenerator" class="com.coremedia.blueprint.cae.sitemap.ContentUrlGenerator" parent="abstractContentUrlGenerator">
+    <property name="exclusionPaths">
+      <list>
+        <value>Options</value>
+      </list>
+    </property>
+    <property name="predicates">
+      <list>
+        <ref bean="corporateSitemapValidityPredicate"/>
+        <ref bean="corporateSitemapDoctypePredicate"/>
+        <ref bean="corporateSitemapExcludeFromSearchPredicate"/>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="corporateSitemapConfiguration" class="com.coremedia.blueprint.cae.sitemap.SitemapSetup">
+    <property name="protocol" value="${blueprint.sitemap.protocol}"/>
+    <property name="sitemapRendererFactory" ref="sitemapIndexRendererFactory"/>
+    <property name="urlGenerators">
+      <list>
+        <ref bean="corporateSitemapContentUrlGenerator"/>
+      </list>
+    </property>
+  </bean>
+
+  <customize:append id="appendCorporateSitemapConfiguration" bean="sitemapConfigurations">
+    <map>
+      <entry key="corporate" value-ref="corporateSitemapConfiguration"/>
+    </map>
+  </customize:append>
+</beans>

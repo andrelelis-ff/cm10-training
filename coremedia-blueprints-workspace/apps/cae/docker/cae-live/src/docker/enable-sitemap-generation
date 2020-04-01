@@ -1,0 +1,10 @@
+#!/bin/sh
+# set this to true to enable sitemap generation
+if [ "${GENERATE_SITEMAP}" = "true" ]; then
+  if [ -n "${SPRING_PROFILES}" ]; then
+    export SPRING_PROFILES="sitemap,${SPRING_PROFILES}"
+  else
+    export SPRING_PROFILES=sitemap
+  fi
+fi
+exec ./$@

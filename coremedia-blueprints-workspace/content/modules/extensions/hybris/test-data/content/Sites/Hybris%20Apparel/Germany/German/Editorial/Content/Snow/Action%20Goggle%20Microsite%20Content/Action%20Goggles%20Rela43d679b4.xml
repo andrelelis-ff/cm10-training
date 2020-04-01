@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Hybris Apparel/Germany/German/Editorial/Content/Snow/Action Goggle Microsite Content" name="Action Goggles Related Products" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Editorial/Content/Snow/Action%20Goggle%20Microsite%20Content/Action%20Gogge7389b45.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Action%20Goggle%20Microsite%20Content/Action%20Goggles%20Related%20Products"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Meine Empfehlungen</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../../Products/Bandana%20300515779.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Products/Bandana%20300515779"/>
+<link href="../../../Products/Freestyle%20Snowboard%20108295.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Products/Freestyle%20Snowboard%20108295"/>
+</items>
+</CMCollection>

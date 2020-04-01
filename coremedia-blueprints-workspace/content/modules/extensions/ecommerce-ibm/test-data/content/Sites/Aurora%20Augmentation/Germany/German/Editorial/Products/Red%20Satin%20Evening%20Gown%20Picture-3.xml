@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Products" name="Red Satin Evening Gown Picture-3" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Editorial/Products/Red%20Satin%20Evening%20Gown%20Picture-3.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Red%20Satin%20Evening%20Gown%20Picture-3"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="originReferences">
+<String>ibm:///catalog/sku/PC_EVENING_DRESS-RED-M</String>
+</StringListProperty>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/AuroraWMDRS-19</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=177;y=0;width=645;height=1000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=125;y=0;width=750;height=1000</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=125;width=1000;height=750</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=219;width=1000;height=563</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=300;width=1000;height=400</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=375;width=1000;height=250</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Rotes Satin Abendkleid Bild-3</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Rotes Satin Abendkleid Bild-3</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1000</width>
+<height>1000</height>
+<data md5="27d798503ca02741839a83e7ed6a56b6" size="69577" href="../../../../../../__blob/27d798503ca02741839a83e7ed6a56b6.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

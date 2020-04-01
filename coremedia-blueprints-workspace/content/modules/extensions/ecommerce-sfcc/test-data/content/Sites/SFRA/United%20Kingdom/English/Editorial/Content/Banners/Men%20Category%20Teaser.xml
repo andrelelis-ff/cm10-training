@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/SFRA/United Kingdom/English/Editorial/Content/Banners" name="Men Category Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/Teaser%20Styles/Light"/>
+<IntProperty Name="positionY">12</IntProperty>
+<IntProperty Name="positionX">50</IntProperty>
+<IntProperty Name="width">55</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>The New Elegant</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center">Simple is the New Elegant</p><p class="align--center">The new look for this year</p></div></teaserText>
+<pictures>
+<link href="../../Pictures/Relax%20at%20the%20Sea.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Pictures/Relax%20at%20the%20Sea"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+</target>
+<targets>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="links">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Augmentation/Mens/Mens.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Augmentation/Mens/Mens"/>
+<BooleanProperty Name="callToActionEnabled">true</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Shop Now</StringProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</targets>
+</CMTeaser>

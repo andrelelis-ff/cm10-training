@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- Extend the standard Studio and Blueprint components for Live Context -->
+<local:LivecontextStudioPluginBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.livecontext.studio.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:livecontext="exml:com.coremedia.livecontext.studio.config"
+        xmlns:bpb-components="exml:com.coremedia.blueprint.base.components.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.cms.editor.sdk.quickcreate.QuickCreate')]
+    [ResourceBundle('com.coremedia.cms.editor.ContentTypes')]
+    [ResourceBundle('com.coremedia.cms.editor.sdk.actions.Actions')]
+    [ResourceBundle('com.coremedia.cms.editor.sdk.validation.Validators')]
+    [ResourceBundle('com.coremedia.ecommerce.studio.ECommerceStudioPlugin')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+    [ResourceBundle('com.coremedia.livecontext.studio.ExternalPageQuickCreate')]
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+    [ResourceBundle('com.coremedia.livecontext.studio.LiveContextStudioPluginValidator')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.studio.forms.CMImageMapForm;
+    import com.coremedia.cms.editor.sdk.desktop.ActionsToolbar;
+    import com.coremedia.cms.editor.sdk.desktop.HeaderToolbarUserMenu;
+    import com.coremedia.ecommerce.studio.helper.CatalogHelper;
+    import com.coremedia.ecommerce.studio.library.EcCatalogTreeFilter;
+    import com.coremedia.ecommerce.studio.model.Category;
+    import com.coremedia.ecommerce.studio.model.Product;
+
+    import ext.container.Container;
+
+    import mx.resources.ResourceManager;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.livecontextStudioPlugin";
+
+    public static const CONTENT_TYPE_MARKETING_SPOT:String = "CMMarketingSpot";
+
+    public static const CONTENT_TYPE_EXTERNAL_CHANNEL:String = "CMExternalChannel";
+
+    public static const CONTENT_TYPE_EXTERNAL_PAGE:String = "CMExternalPage";
+
+    public static const CONTENT_TYPE_IMAGE_MAP:String = "CMImageMap";
+
+    public static const CONTENT_TYPE_PRODUCT_TEASER:String = "CMProductTeaser";
+
+    public static const CONTENT_TYPE_EXTERNAL_PRODUCT:String = "CMExternalProduct";
+
+    public static const CONTENT_TYPE_PRODUCT_LIST:String = "CMProductList";
+
+    public static const EXTERNAL_ID_PROPERTY:String = "externalId";
+
+    /**
+     * The itemId of the open in library menu item.
+     */
+    public static const SHOW_CONTENT_OF_ACTIVE_TAB_IN_LIBRARY_MENU_ITEM_ID:String = "showInLibraryMenuItem";
+
+    /**
+     * The itemId of the search product variants menu item.
+     */
+    public static const SEARCH_PRODUCT_VARIANTS_MENU_ITEM_ID:String = "searchProductVariants";
+
+    /**
+     * The itemId of the create product teaser  menu item.
+     */
+    public static const CREATE_PRODUCT_TEASER_MENU_ITEM_ID:String = "createProductTeaser";
+
+    /**
+     * The itemId of the create e-marketing spot  menu item.
+     */
+    public static const CREATE_MARKETING_SPOT_MENU_ITEM_ID:String = "createMarketingSpot";
+
+    /**
+     * The itemId of the create augmented category menu item.
+     */
+    public static const AUGMENT_CATEGORY_MENU_ITEM_ID:String = "augmentCategory";
+
+    /**
+     * The itemId of the create augmented product menu item.
+     */
+    public static const AUGMENT_PRODUCT_MENU_ITEM_ID:String = "augmentProduct";
+
+    /**
+     * The itemId of the search product variants button item.
+     */
+    public static const SEARCH_PRODUCT_VARIANTS_BUTTON_ITEM_ID:String = "searchProductVariants";
+
+    /**
+     * The itemId of the create augmented category button
+     */
+    public static const AUGMENT_CATEGORY_BUTTON_ITEM_ID:String = "augmentCategory";
+
+    /**
+     * The itemId of the create augmented product button
+     */
+    public static const AUGMENT_PRODUCT_BUTTON_ITEM_ID:String = "augmentProduct";
+
+    /**
+     * The itemId of the create product teaser button
+     */
+    public static const CREATE_PRODUCT_TEASER_BUTTON_ITEM_ID:String = "createProductTeaser";
+
+    /**
+     * The itemId of the create marketing spot button
+     */
+    public static const CREATE_MARKETING_SPOT_BUTTON_ITEM_ID:String = "createMarketingSpot";
+
+    private var config:LivecontextStudioPlugin;
+
+    public native function LivecontextStudioPlugin(config:LivecontextStudioPlugin = null);
+    ]]></fx:Script>
+
+  <local:rules>
+    <bpforms:CMTeaserForm>
+      <bpforms:plugins>
+        <ui:AddItemsPlugin applyTo="{function(cont:Container):Container {
+                                        return cont.queryById('validTo').ownerCt;
+                                        }}">
+          <ui:items>
+            <editor:BooleanPropertyField propertyName="localSettings.useTeaserTargetValidity"
+                                         dontTransformToInteger="true"/>
+          </ui:items>
+          <ui:after>
+            <Component itemId="validTo"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </bpforms:plugins>
+    </bpforms:CMTeaserForm>
+    <bpforms:CMChannelForm>
+      <bpforms:plugins>
+        <ui:AddItemsPlugin index="2"
+                           applyTo="{function(cont:Container):Container {
+                                        return Container(cont.queryById('system')).queryById('linkedSettings') as Container;
+                                        }}">
+          <ui:items>
+            <livecontext:ViewSettingsRadioGroup propertyName="localSettings.shopNow"
+                                                inheritLabel="{ResourceManager.getInstance().getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMChannel_settings_inherit')}"/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </bpforms:plugins>
+    </bpforms:CMChannelForm>
+    <bpforms:CMImageMapForm>
+      <bpforms:plugins>
+        <ui:AddItemsPlugin applyTo="{function(cont:Container):Container {
+                                        return cont.queryById(CMImageMapForm.OVERLAY_CONFIG_ITEMID) as Container;
+                                        }}">
+          <ui:items>
+            <editor:BooleanPropertyField propertyName="localSettings.overlay.displayDefaultPrice"
+                                         hideLabel="true"
+                                         dontTransformToInteger="true"/>
+            <editor:BooleanPropertyField propertyName="localSettings.overlay.displayDiscountedPrice"
+                                         hideLabel="true"
+                                         dontTransformToInteger="true"/>
+            <editor:BooleanPropertyField propertyName="localSettings.overlay.displayOutOfStockLink"
+                                         hideLabel="true"
+                                         dontTransformToInteger="true"/>
+            <editor:BooleanPropertyField propertyName="localSettings.overlay.hideOutOfStockProducts"
+                                         hideLabel="true"
+                                         dontTransformToInteger="true"/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </bpforms:plugins>
+    </bpforms:CMImageMapForm>
+    <bpforms:CMVideoForm>
+      <bpforms:plugins>
+        <ui:AddItemsPlugin applyTo="{function(cont:Container):Container {
+                                        return Container(cont.getComponent(CMVideoForm.CONTENT_TAB_ITEM_ID));
+                                        }}">
+          <ui:after>
+            <bpforms:DataDocumentForm/>
+          </ui:after>
+          <ui:items>
+            <livecontext:ProductAssignmentField itemId="videoTimeLineForm"/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </bpforms:plugins>
+    </bpforms:CMVideoForm>
+    <editor:TabbedDocumentFormDispatcher>
+      <editor:plugins>
+        <editor:AddTabbedDocumentFormsPlugin>
+          <editor:documentTabPanels>
+            <livecontext:CMMarketingSpotForm itemId="{CONTENT_TYPE_MARKETING_SPOT}"/>
+            <livecontext:CMExternalChannelForm itemId="{CONTENT_TYPE_EXTERNAL_CHANNEL}"/>
+            <livecontext:CMExternalPageForm itemId="{CONTENT_TYPE_EXTERNAL_PAGE}"/>
+            <livecontext:CMProductTeaserForm itemId="{CONTENT_TYPE_PRODUCT_TEASER}"/>
+            <livecontext:CMExternalProductForm itemId="{CONTENT_TYPE_EXTERNAL_PRODUCT}"/>
+            <livecontext:CMProductListForm itemId="{CONTENT_TYPE_PRODUCT_LIST}"/>
+          </editor:documentTabPanels>
+        </editor:AddTabbedDocumentFormsPlugin>
+      </editor:plugins>
+    </editor:TabbedDocumentFormDispatcher>
+
+    <!--Show the commerce store and the workspace selector for the preferred site-->
+    <editor:HeaderToolbarUserMenu>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <livecontext:CommerceWorkspaceSelector>
+              <livecontext:mixins>
+                <ui:BEMMixin bemElement="{HeaderToolbarUserMenu.ELEMENT_FIELD}"/>
+              </livecontext:mixins>
+            </livecontext:CommerceWorkspaceSelector>
+          </ui:items>
+          <ui:after>
+            <Component itemId="{HeaderToolbarUserMenu.SITE_SELECTOR_ITEM_ID}"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:HeaderToolbarUserMenu>
+    <!--Reload frame when changing the workspace-->
+    <editor:PreviewPanel>
+      <editor:plugins exml:mode="append">
+        <ui:BindPlugin bindTo="{CatalogHelper.getInstance().getCommerceWorkspaceExpression()}"
+                       boundValueChanged="{reloadPreview}"/>
+      </editor:plugins>
+    </editor:PreviewPanel>
+    <!-- Register product view for the workArea-->
+    <editor:WorkArea>
+      <editor:plugins>
+        <editor:WorkAreaTabTypesPlugin>
+          <editor:tabTypes>
+            <editor:ComponentBasedEntityWorkAreaTabType ddGroup="ContentDD"
+                                                        entityProperty="object"
+                                                        entityType="{Product}">
+              <editor:tabComponent>
+                <livecontext:CommerceProductWorkAreaTab closable="true"/>
+              </editor:tabComponent>
+            </editor:ComponentBasedEntityWorkAreaTabType>
+            <editor:ComponentBasedEntityWorkAreaTabType ddGroup="ContentDD"
+                                                        entityProperty="object"
+                                                        entityType="{Category}">
+              <editor:tabComponent>
+                <livecontext:CommerceCategoryWorkAreaTab closable="true"/>
+              </editor:tabComponent>
+            </editor:ComponentBasedEntityWorkAreaTabType>
+          </editor:tabTypes>
+        </editor:WorkAreaTabTypesPlugin>
+      </editor:plugins>
+    </editor:WorkArea>
+
+    <editor:WorkAreaTabProxiesContextMenu>
+      <editor:plugins>
+        <livecontext:AddCatalogObjectActionsToWorkAreaTabProxiesContextMenu/>
+      </editor:plugins>
+    </editor:WorkAreaTabProxiesContextMenu>
+    <bpb-components:PreviewDateSelector>
+      <bpb-components:plugins>
+        <livecontext:AddTimeZoneValidationPlugin/>
+        <ui:AddItemsPlugin>
+          <ui:after>
+            <Button itemId="reset"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </bpb-components:plugins>
+    </bpb-components:PreviewDateSelector>
+    <editor:ActionsToolbar>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <ui:IconButton itemId="{AUGMENT_CATEGORY_BUTTON_ITEM_ID}"
+                           disabled="true">
+              <ui:baseAction>
+                <livecontext:AugmentCategoryAction catalogObjectExpression="{WorkArea.ACTIVE_ENTITY_VALUE_EXPRESSION}"/>
+              </ui:baseAction>
+            </ui:IconButton>
+            <ui:IconButton itemId="{AUGMENT_PRODUCT_BUTTON_ITEM_ID}"
+                           disabled="true">
+              <ui:baseAction>
+                <livecontext:AugmentProductAction catalogObjectExpression="{WorkArea.ACTIVE_ENTITY_VALUE_EXPRESSION}"/>
+              </ui:baseAction>
+            </ui:IconButton>
+          </ui:items>
+          <ui:before>
+            <Component itemId="{ActionsToolbar.WITHDRAW_BUTTON_ITEM_ID}"/>
+          </ui:before>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:ActionsToolbar>
+    <editor:PreviewContextMenu>
+      <editor:plugins exml:mode="append">
+        <livecontext:AddCatalogObjectActionsToPreviewContextMenu/>
+      </editor:plugins>
+    </editor:PreviewContextMenu>
+    <editor:BreadcrumbElement>
+      <editor:plugins exml:mode="append">
+        <livecontext:DisableStoreNodePlugin/>
+      </editor:plugins>
+    </editor:BreadcrumbElement>
+  </local:rules>
+
+  <local:configuration>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.sdk.actions.Actions')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.livecontext.studio.LivecontextStudioPlugin')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.ContentTypes')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.livecontext.studio.LivecontextStudioPlugin')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.sdk.quickcreate.QuickCreateSettings')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.livecontext.studio.ExternalPageQuickCreate')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.ecommerce.studio.ECommerceStudioPlugin')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.livecontext.studio.LivecontextStudioPlugin')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.sdk.validation.Validators')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.livecontext.studio.LiveContextStudioPluginValidator')}"/>
+    <livecontext:LivecontextCollectionViewActionsPlugin/>
+    <!-- exclude Augmented Category and Product from the create new documents menu
+    it will created from a selected augmented category directly-->
+    <editor:ConfigureDocumentTypes names="{CONTENT_TYPE_EXTERNAL_CHANNEL}"
+                                   exclude="true"/>
+    <editor:ConfigureDocumentTypes names="{CONTENT_TYPE_EXTERNAL_PRODUCT}"
+                                   exclude="true"/>
+    <editor:ConfigureDocumentTypes names="{CONTENT_TYPE_PRODUCT_LIST}"
+                                   includeSubtypes="true"
+                                   mayCreate="{mayCreateProductList}"/>
+    <editor:ConfigureDocumentTypes names="{CONTENT_TYPE_PRODUCT_TEASER}"
+                                   includeSubtypes="true"
+                                   mayCreate="{mayCreateProductTeaser}"/>
+    <editor:ConfigureDocumentTypes names="{CONTENT_TYPE_MARKETING_SPOT}"
+                                   includeSubtypes="true"
+                                   mayCreate="{mayCreateESpot}"/>
+    <editor:RegisterLibraryTreeFilter filter="{new EcCatalogTreeFilter('Augmentation')}"/>
+    <editor:ConfigureDocumentTypes names="CMMarketingSpot"
+                                   preview="false"/>
+  </local:configuration>
+
+
+</local:LivecontextStudioPluginBase>

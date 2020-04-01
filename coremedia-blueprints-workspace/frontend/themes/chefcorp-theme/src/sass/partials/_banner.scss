@@ -1,0 +1,35 @@
+//
+// Banner Variants
+// --------------------------------------------------
+
+.cm-hero-banner {
+  font-family: $cm-font-family-sans-serif;
+
+  &__headline,
+  &__text {
+    text-shadow: 0 0 10px #000000;
+  }
+
+  .cm-cta-button {
+    @include red-cta-button;
+  }
+}
+
+// Banner in richtext overwrites
+.cm-details__text {
+  .cm-left-right-banner {
+    a {
+      text-decoration: none;
+    }
+
+    .cm-left-right-banner__author {
+      border: none;
+      text-decoration: underline;
+    }
+
+    &__headline {
+      font-family: Raleway, Helvetica, Arial, sans-serif;
+      margin: 0 0 15px;
+    }
+  }
+}

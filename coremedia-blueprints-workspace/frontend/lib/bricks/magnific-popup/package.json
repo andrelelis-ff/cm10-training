@@ -1,0 +1,19 @@
+{
+  "name": "@coremedia/brick-magnific-popup",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "magnific-popup": "1.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.0.0"
+  },
+  "scripts": {
+    "prettier": "prettier \"**/*\" --write"
+  },
+  "main": "src/js/index.js",
+  "coremedia": {
+    "type": "brick"
+  }
+}

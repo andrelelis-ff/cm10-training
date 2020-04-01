@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/United States/English/Pictures/Sitewide Pictures" name="About Us" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=698;y=0;width=1054;height=1633</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=551;y=0;width=1225;height=1633</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=409;y=0;width=1633;height=1633</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=136;y=0;width=2177;height=1633</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=127;width=2450;height=1378</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=129;width=2450;height=980</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=139;width=2450;height=613</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.22478991596638653;y1=0;x2=0.7246878751500601;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.07886435331230283;x2=1;y2=0.6789868272865832</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.08517350157728706;x2=1;y2=0.46025004781121237</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>About Us</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>About Us</alt>
+<copyright>Rohappy/Shutterstock 410560285</copyright>
+<dataUrl></dataUrl>
+<width>2450</width>
+<height>1633</height>
+<data md5="c7e3de0b7837c1af46b47a4d6d0530eb" size="2728680" href="../../../../../../__blob/c7e3de0b7837c1af46b47a4d6d0530eb.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

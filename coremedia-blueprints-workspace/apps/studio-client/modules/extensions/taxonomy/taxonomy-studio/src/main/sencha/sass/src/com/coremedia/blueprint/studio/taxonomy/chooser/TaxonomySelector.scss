@@ -1,0 +1,11 @@
+@if $cm-include-taxonomy-selector {
+
+  $_block: "cm-taxonomy-selector";
+  .#{$_block} {
+    border-radius: 2px;
+    color: $cm-spot-grey-2;
+    border-style: solid;
+    border-color: $cm-spot-grey-2;
+    border-width: 4px 2px;
+  }
+}

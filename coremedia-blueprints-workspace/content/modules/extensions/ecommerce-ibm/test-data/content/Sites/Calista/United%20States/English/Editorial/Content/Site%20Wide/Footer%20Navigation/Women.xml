@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Calista/United States/English/Editorial/Content/Site Wide/Footer Navigation" name="Women" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Women</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../../../Augmentation/Apparel/Women/Women%20Shoes/Women%20Shoes.xml" path="/Sites/Calista/United%20States/English/Augmentation/Apparel/Women/Women%20Shoes/Women%20Shoes"/>
+<link href="../../../../Augmentation/Apparel/Women/Dresses/Dresses.xml" path="/Sites/Calista/United%20States/English/Augmentation/Apparel/Women/Dresses/Dresses"/>
+<link href="../../../../Augmentation/Apparel/Women/Women%20Shirts%20Blouses/Women%20Shirts%20Blouses.xml" path="/Sites/Calista/United%20States/English/Augmentation/Apparel/Women/Women%20Shirts%20Blouses/Women%20Shirts%20Blouses"/>
+<link href="../../../../Augmentation/Apparel/Women/Women%20Pants/Women%20Pants.xml" path="/Sites/Calista/United%20States/English/Augmentation/Apparel/Women/Women%20Pants/Women%20Pants"/>
+<link href="../../../../Augmentation/Apparel/Women/Women%20Skirts/Women%20Skirts.xml" path="/Sites/Calista/United%20States/English/Augmentation/Apparel/Women/Women%20Skirts/Women%20Skirts"/>
+</items>
+</CMCollection>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Hybris Apparel/Germany/German/Videos" name="Session 5 Recap : High Cascade Snowboard Camp 2016" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Videos/Session%205%20Recap%20%3A%20High%20Cascade%20Snowboard%20Camp%202016.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Videos/Session%205%20Recap%20%3A%20High%20Cascade%20Snowboard%20Camp%202016"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Hohe Cascade Snowboard Camp 2016</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p><br/></p> </div></detailText>
+<pictures>
+<link href="../Pictures/CM%20Action%20Goggles%2005.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/CM%20Action%20Goggles%2005"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl>https://www.youtube-nocookie.com/embed/RV5c9Eva8XQ</dataUrl>
+<asset>
+</asset>
+</CMVideo>

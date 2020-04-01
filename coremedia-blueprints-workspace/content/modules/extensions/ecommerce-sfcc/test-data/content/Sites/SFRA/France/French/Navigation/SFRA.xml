@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalPage folder="/Sites/SFRA/France/French/Navigation" name="SFRA" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Navigation/Homepage%20UK.xml" path="/Sites/SFRA/United%20Kingdom/English/Navigation/Homepage%20UK"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="tenantId">salesforcecaas</StringProperty>
+<StringProperty Name="siteId">sfra</StringProperty>
+<StringProperty Name="shopNow">disabled</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+<link href="../Options/Settings/CAEConfig.xml" path="/Sites/SFRA/France/French/Options/Settings/CAEConfig"/>
+<link href="../../../../../Settings/Options/Settings/AnalyticsSettings.xml" path="/Settings/Options/Settings/AnalyticsSettings"/>
+<link href="../Options/Settings/Google%20Analytics%20Settings.xml" path="/Sites/SFRA/France/French/Options/Settings/Google%20Analytics%20Settings"/>
+<link href="../Options/Settings/Elastic%20Social.xml" path="/Sites/SFRA/France/French/Options/Settings/Elastic%20Social"/>
+<link href="../Options/Settings/Preview.xml" path="/Sites/SFRA/France/French/Options/Settings/Preview"/>
+<link href="../Options/Settings/CMChannel/Vanity%20URLs.xml" path="/Sites/SFRA/France/French/Options/Settings/CMChannel/Vanity%20URLs"/>
+<link href="../Options/Settings/LiveContext.xml" path="/Sites/SFRA/France/French/Options/Settings/LiveContext"/>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>sfra-en-gb-fr-fr</segment>
+<title>Architecture de référence de la vitrine</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+<link href="New%20Arrivals/New%20Arrivals%20Navigation%20Container.xml" path="/Sites/SFRA/France/French/Navigation/New%20Arrivals/New%20Arrivals%20Navigation%20Container"/>
+<link href="../Augmentation/Womens/Womens.xml" path="/Sites/SFRA/France/French/Augmentation/Womens/Womens"/>
+<link href="../Augmentation/Mens/Mens.xml" path="/Sites/SFRA/France/French/Augmentation/Mens/Mens"/>
+<link href="../Augmentation/Top%20Sellers/Top%20Sellers.xml" path="/Sites/SFRA/France/French/Augmentation/Top%20Sellers/Top%20Sellers"/>
+<link href="Microsites/Editorial%20Blog/Editorial%20Blog.xml" path="/Sites/SFRA/France/French/Navigation/Microsites/Editorial%20Blog/Editorial%20Blog"/>
+<link href="../Augmentation/Storefront%20Catalog%20-%20EN.xml" path="/Sites/SFRA/France/French/Augmentation/Storefront%20Catalog%20-%20EN"/>
+<link href="Microsites/Microsite%20Root%20Page.xml" path="/Sites/SFRA/France/French/Navigation/Microsites/Microsite%20Root%20Page"/>
+<link href="Fragments/Fragments%20Hidden%20Page.xml" path="/Sites/SFRA/France/French/Navigation/Fragments/Fragments%20Hidden%20Page"/>
+<link href="../Options/Settings/Templates/CMChannel/Templates.xml" path="/Sites/SFRA/France/French/Options/Settings/Templates/CMChannel/Templates"/>
+<link href="Fashion%20Newsletter/Fashion%20Newsletter.xml" path="/Sites/SFRA/France/French/Navigation/Fashion%20Newsletter/Fashion%20Newsletter"/>
+<link href="../Editorial/Content/Homepage/Locale%20Chooser.xml" path="/Sites/SFRA/France/French/Editorial/Content/Homepage/Locale%20Chooser"/>
+<link href="../Editorial/Content/Homepage/Account%20Header.xml" path="/Sites/SFRA/France/French/Editorial/Content/Homepage/Account%20Header"/>
+<link href="Topic%20Pages/Topicpage.xml" path="/Sites/SFRA/France/French/Navigation/Topic%20Pages/Topicpage"/>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+<link href="../../../../../Themes/sfra/Sfra%20Theme.xml" path="/Themes/sfra/Sfra%20Theme"/>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Layouts/HomepageLayout.xml" cmexport:path="/Sites/SFRA/France/French/Options/Settings/Pagegrid/Layouts/HomepageLayout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Editorial/Content/Slots/Header/Free%202-Day%20Shipping%20Promo.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Slots/Header/Free%202-Day%20Shipping%20Promo"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/header.xml" cmexport:path="/Sites/SFRA/France/French/Options/Settings/Pagegrid/Placements/header"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Editorial/Content/Personalization/Gender%20Specific%20Teaser.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Personalization/Gender%20Specific%20Teaser"/>
+<DateProperty Name="visibleFrom"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../Options/Viewtypes/CMChannel/hero.xml" cmexport:path="/Sites/SFRA/France/French/Options/Viewtypes/CMChannel/hero"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/SFRA/France/French/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Augmentation/Womens/Clothing/Dresses/Dresses.xml" cmexport:path="/Sites/SFRA/France/French/Augmentation/Womens/Clothing/Dresses/Dresses"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Augmentation/Mens/Clothing/Jackets%20%26%20Coats/Jackets%20%26%20Coats.xml" cmexport:path="/Sites/SFRA/France/French/Augmentation/Mens/Clothing/Jackets%20%26%20Coats/Jackets%20%26%20Coats"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../Options/Viewtypes/CMChannel/square.xml" cmexport:path="/Sites/SFRA/France/French/Options/Viewtypes/CMChannel/square"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/placement1.xml" cmexport:path="/Sites/SFRA/France/French/Options/Settings/Pagegrid/Placements/placement1"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Augmentation/Womens/Clothing/Feeling%20Red/Feeling%20Red.xml" cmexport:path="/Sites/SFRA/France/French/Augmentation/Womens/Clothing/Feeling%20Red/Feeling%20Red"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/Microsites/Editorial%20Blog/Editorial%20Blog.xml" cmexport:path="/Sites/SFRA/France/French/Navigation/Microsites/Editorial%20Blog/Editorial%20Blog"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Augmentation/Womens/Jewelry/Jewelry.xml" cmexport:path="/Sites/SFRA/France/French/Augmentation/Womens/Jewelry/Jewelry"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../Options/Viewtypes/CMChannel/square.xml" cmexport:path="/Sites/SFRA/France/French/Options/Viewtypes/CMChannel/square"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/placement2.xml" cmexport:path="/Sites/SFRA/France/French/Options/Settings/Pagegrid/Placements/placement2"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Red%20Top.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Red%20Top"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Editorial/Products/Light%20Hematite%20Bracelet%20-%20Augmented.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Products/Light%20Hematite%20Bracelet%20-%20Augmented"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Jeans%20Dress.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Jeans%20Dress"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Flower%20Dress.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Flower%20Dress"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Jeans%20Hot%20Pants.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Jeans%20Hot%20Pants"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Striped%20Dress.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Striped%20Dress"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../Options/Viewtypes/CMChannel/carousel.xml" cmexport:path="/Sites/SFRA/France/French/Options/Viewtypes/CMChannel/carousel"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/placement3.xml" cmexport:path="/Sites/SFRA/France/French/Options/Settings/Pagegrid/Placements/placement3"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+<externalUriPath></externalUriPath>
+<externalId></externalId>
+</CMExternalPage>

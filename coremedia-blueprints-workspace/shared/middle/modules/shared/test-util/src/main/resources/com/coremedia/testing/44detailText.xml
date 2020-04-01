@@ -1,0 +1,24 @@
+<div xmlns="http://www.coremedia.com/2003/richtext-1.0"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <p>
+    Text
+    <a xlink:href="coremedia:///cap/content/16"
+       xlink:show="embed"
+       xlink:actuate="onRequest">
+      Londonbus
+    </a>
+    Text
+    <p>
+      <a xlink:href="coremedia:///cap/content/20"
+         xlink:show="embed"
+         xlink:actuate="onRequest">
+        SomeLink
+      </a>
+    </p>
+    <a xlink:href="http://en.wikipedia.org/wiki/London"
+       xlink:show="new"
+       xlink:actuate="onRequest">
+      Wikipedia article "London"
+    </a>
+  </p>
+</div>

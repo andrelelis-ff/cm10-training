@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./United States/English/Editorial/Homepage/Professionals/Aurora B2B" name="Aurora B2B Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Find Out More</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Aurora B2B Shop - Spare Parts for Kitchen Equipment and Small Items for Your Restaurant</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Aurora B2B Shop - Spare Parts and Small Items</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Get spare parts for your kitchen appliances or find out more about decoration and lighting for your kitchen and your restaurant.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Since 1999, our more than 125,000 customers have come to know and trust <em>Chef Corp.</em> as their premier provider to find virtually anything needed for the restaurant supply industry. We are committed to delivering expert solutions with the personal attention you deserve.</p><p>We at Chef Corp. launched our first Internet presence in 2001 in the form of a Corporate Website describing our company and services as well as some of our products and services like kitchen planning - which can only be purchased offline in-person through an account manager.</p><p>In 2009, we opened our B2B Area on the Aurora Internet Shopping Mall, selling spare parts for our kitchen appliances as well as smaller items, such as lighting supplies for your restaurant, that can be easily shipped.</p><p>Since 2014, we have been using the <a xlink:show="new" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Site-Wide/External%20Links/CoreMedia%20Content%20Experience%20Platf1bd02259.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Site-Wide/External%20Links/CoreMedia%20Content%20Experience%20Platform%20External%20Link">CoreMedia Content Experience Platform</a> to enhance our B2B shopping experience by adding valuable content, such as shopping guides, product data sheets, engaging product images, and inspirational galleries, as well as articles relating to interior design for restaurants.</p><p>Since our efforts for the B2B site content maintenance were reduced drastically by using the CoreMedia Studio, we have been able to add more and better content as we went along, using the same number of editors.</p><p>We have seen both the conversion rates as well as our total sales numbers increase significantly after we enriched our store experience with our value-added content.</p></div></detailText>
+<pictures>
+<link href="../../../Assets/Pictures/Products/LED%20Color%20Lightstrip%20Picture.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Products/LED%20Color%20Lightstrip%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

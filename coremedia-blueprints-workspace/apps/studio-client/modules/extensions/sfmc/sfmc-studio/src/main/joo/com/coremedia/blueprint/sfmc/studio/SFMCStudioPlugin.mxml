@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Extend the standard Studio and Blueprint components for SFMC-->
+<editor:StudioPlugin
+        xmlns="exml:ext.config"
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:collab="exml:com.coremedia.cms.editor.controlroom.config"
+        xmlns:sfmc="exml:com.coremedia.blueprint.base.sfmc.studio.config"
+        xmlns:local="com.coremedia.blueprint.sfmc.studio.*">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.desktop.WorkArea;
+
+    public static const xtype:String = "com.coremedia.blueprint.sfmc.studio.config.sFMCStudioPlugin";
+
+    private var config:SFMCStudioPlugin;
+
+    public native function SFMCStudioPlugin(config:SFMCStudioPlugin = null);
+    ]]></fx:Script>
+
+  <editor:rules>
+    <editor:ActionsToolbar>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <TbSeparator height="1"/>
+            <sfmc:PushSFMCContentButton contentValueExpression="{WorkArea.ACTIVE_CONTENT_VALUE_EXPRESSION}"></sfmc:PushSFMCContentButton>
+          </ui:items>
+          <ui:after>
+            <Component itemId="{ActionsToolbar.WITHDRAW_BUTTON_ITEM_ID}"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:ActionsToolbar>
+
+    <editor:CollectionView>
+      <editor:plugins>
+        <sfmc:SFMCCollectionViewPlugin/>
+      </editor:plugins>
+    </editor:CollectionView>
+
+    <collab:ProjectContentToolbar>
+      <collab:plugins>
+        <local:AddSFMCButtonPlugin/>
+      </collab:plugins>
+    </collab:ProjectContentToolbar>
+
+  </editor:rules>
+
+</editor:StudioPlugin>

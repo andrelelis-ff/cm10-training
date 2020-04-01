@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCSS folder="/Sites/Aurora B2B Augmentation/United States/English/Options/Settings" name="aurorab2b-common1_1.css" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<description></description>
+<ieExpression></ieExpression>
+<include>
+</include>
+<dataUrl>//{aurorab2b.host}/wcsstore/AuroraB2BStorefrontAssetStore/css/common1_1.css</dataUrl>
+<media></media>
+</CMCSS>

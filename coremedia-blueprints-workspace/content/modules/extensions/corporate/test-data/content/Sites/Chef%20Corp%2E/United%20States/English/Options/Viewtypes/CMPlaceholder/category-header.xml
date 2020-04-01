@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/Chef Corp./United States/English/Options/Viewtypes/CMPlaceholder" name="category-header" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<description>Displays a header of a category</description>
+<icon md5="c333592f67671dd655e2d8fe8b2bb056" size="34147" href="../../../../../../../__blob/c333592f67671dd655e2d8fe8b2bb056.blob" mimetype="image/png"/>
+<layout>category-header</layout>
+</CMViewtype>

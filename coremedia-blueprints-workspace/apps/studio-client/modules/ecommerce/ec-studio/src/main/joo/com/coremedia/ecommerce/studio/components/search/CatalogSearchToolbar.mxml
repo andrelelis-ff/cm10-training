@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Toolbar xmlns:fx="http://ns.adobe.com/mxml/2009"
+         xmlns:exml="http://www.jangaroo.net/exml/0.8"
+         xmlns="exml:ext.config"
+         xmlns:ui="exml:com.coremedia.ui.config"
+         xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+         xmlns:u="exml:untyped"
+         enableOverflow="true"
+         itemId="commerceToolbar"
+         ui="{ToolbarSkin.LIGHT.getSkin()}"
+         ariaLabel="{resourceManager.getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'CollectionView_catalogSearchToolbar_label')}"
+         flex="1">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.collectionview.CollectionView;
+    import com.coremedia.ecommerce.studio.ECommerceStudioPlugin;
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.skins.ToolbarSkin;
+
+    [Bindable]
+    public var selectedSearchItemsValueExpression:ValueExpression;
+
+    public static const xtype:String = "com.coremedia.ecommerce.studio.config.catalogSearchToolbar";
+
+    private var config:CatalogSearchToolbar;
+
+    public native function CatalogSearchToolbar(config:CatalogSearchToolbar = null);
+    ]]></fx:Script>
+
+  <plugins>
+    <ui:HideObsoleteSeparatorsPlugin/>
+  </plugins>
+  <items>
+    <ui:IconButton itemId="copyToClipboard">
+      <ui:baseAction>
+        <editor:CopyToClipboardAction contentValueExpression="{config.selectedSearchItemsValueExpression}"/>
+      </ui:baseAction>
+    </ui:IconButton>
+
+    <TbSeparator/>
+
+    <ui:IconButton itemId="{ECommerceStudioPlugin.OPEN_IN_TAB_BUTTON_ITEM_ID}">
+      <ui:baseAction>
+        <editor:OpenEntitiesInTabsAction entitiesValueExpression="{config.selectedSearchItemsValueExpression}"/>
+      </ui:baseAction>
+    </ui:IconButton>
+  </items>
+  <layout>
+    <layout_HBox u:triggerWidth="26"/>
+  </layout>
+
+</Toolbar>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMLocTaxonomy folder="/Settings/Taxonomies/Location" name="Germany" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Germany</value>
+<children>
+<link href="Baden-W%C3%BCrttemberg.xml" path="/Settings/Taxonomies/Location/Baden-W%C3%BCrttemberg"/>
+<link href="Bavaria.xml" path="/Settings/Taxonomies/Location/Bavaria"/>
+<link href="Berlin.xml" path="/Settings/Taxonomies/Location/Berlin"/>
+<link href="Brandenburg.xml" path="/Settings/Taxonomies/Location/Brandenburg"/>
+<link href="Bremen.xml" path="/Settings/Taxonomies/Location/Bremen"/>
+<link href="Hamburg.xml" path="/Settings/Taxonomies/Location/Hamburg"/>
+<link href="Hessen.xml" path="/Settings/Taxonomies/Location/Hessen"/>
+<link href="Mecklenburg-Vorpommern.xml" path="/Settings/Taxonomies/Location/Mecklenburg-Vorpommern"/>
+<link href="Lower%20Saxony.xml" path="/Settings/Taxonomies/Location/Lower%20Saxony"/>
+<link href="North%20Rhine-Westphalia.xml" path="/Settings/Taxonomies/Location/North%20Rhine-Westphalia"/>
+<link href="Rhineland-Palatinate.xml" path="/Settings/Taxonomies/Location/Rhineland-Palatinate"/>
+<link href="Saarland.xml" path="/Settings/Taxonomies/Location/Saarland"/>
+<link href="Saxony.xml" path="/Settings/Taxonomies/Location/Saxony"/>
+<link href="Saxony-Anhalt.xml" path="/Settings/Taxonomies/Location/Saxony-Anhalt"/>
+<link href="Schleswig-Holstein.xml" path="/Settings/Taxonomies/Location/Schleswig-Holstein"/>
+<link href="Thuringia.xml" path="/Settings/Taxonomies/Location/Thuringia"/>
+</children>
+<externalReference>http://d.opencalais.com/genericHasher-1/398f0f7f-7b2f-3363-bda4-f09b836ed062</externalReference>
+<postcode></postcode>
+<latitudeLongitude>51.165,10.455278</latitudeLongitude>
+</CMLocTaxonomy>

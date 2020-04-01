@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Kitchen/Cooling" name="Polar Bear on Ice Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=864;y=0;width=875;height=1353</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=697;y=0;width=1014;height=1353</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=404;y=0;width=1355;height=1353</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=103;y=0;width=1806;height=1353</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=63;width=2048;height=1151</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=380;width=2048;height=819</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=380;width=2048;height=510</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.42166344294003866;y1=0;x2=0.8491295938104448;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.3404255319148936;y1=0;x2=0.8355899419729207;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.19729206963249515;y1=0;x2=0.8588007736943907;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.05029013539651837;y1=0;x2=0.9323017408123792;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.04678362573099415;x2=1;y2=0.8976608187134503</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2807017543859649;x2=1;y2=0.8859649122807017</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.2807017543859649;x2=1;y2=0.6578947368421053</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_CHEF_COOLING_CCS95</String>
+<String>ibm:///catalog/product/B2B_CHEF_COOLING_CCS80</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Polar Bear on Ice</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Symbolic picture of a white Polar Bear walking on ice</alt>
+<copyright>Andrey Yurlov/Shutterstock 246812647</copyright>
+<dataUrl></dataUrl>
+<width>2048</width>
+<height>1353</height>
+<data md5="d9a11f5ad776a630884c490b7c3466a3" size="436708" href="../../../../../../../../__blob/d9a11f5ad776a630884c490b7c3466a3.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

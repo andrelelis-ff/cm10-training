@@ -1,0 +1,36 @@
+@mixin cm-grid-container() {
+  width: calc(100% - #{2 * $cm-standard-spacing});
+  //width: 100%;
+  @include breakpoint("sm-and-up") {
+    width: 690px;
+  }
+  @include breakpoint("sm-and-up", landscape) {
+    width: calc(100% - #{2 * $cm-standard-spacing});
+    max-width: 920px;
+  }
+  @include breakpoint("lg-and-up") {
+    width: 1140px;
+    max-width: 100%;
+  }
+}
+
+@mixin cm-grid-header() {
+  width: 100%;
+  @include breakpoint("sm-and-up", landscape) {
+    width: calc(100% - #{2 * $cm-standard-spacing});
+    max-width: 920px;
+  }
+  @include breakpoint("lg-and-up") {
+    width: 1140px;
+    max-width: 100%;
+  }
+}
+
+@mixin icon() {
+  vertical-align: text-top;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

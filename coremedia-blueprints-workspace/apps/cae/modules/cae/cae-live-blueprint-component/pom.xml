@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>cae.cae</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>cae-live-blueprint-component</artifactId>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>cae-base-component</artifactId>
+      <version>${project.version}</version>
+      <type>jar</type>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>base-component</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>cap-client-component</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>management-component</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+
+  <profiles>
+    <profile>
+      <id>turbojpeg</id>
+      <dependencies>
+        <dependency>
+          <groupId>com.coremedia.com.sun.media.imageio</groupId>
+          <artifactId>jai-imageio</artifactId>
+          <version>1.1</version>
+          <scope>runtime</scope>
+        </dependency>
+        <dependency>
+          <groupId>com.coremedia.org.libjpegturbo</groupId>
+          <artifactId>turbojpeg-wrapper</artifactId>
+          <version>1.2.1.1</version>
+          <scope>runtime</scope>
+        </dependency>
+        <dependency>
+          <groupId>com.coremedia.it.geosolutions.imageio-ext</groupId>
+          <artifactId>imageio-ext-turbojpeg</artifactId>
+          <version>1.1.12</version>
+          <scope>runtime</scope>
+        </dependency>
+      </dependencies>
+    </profile>
+  </profiles>
+
+</project>

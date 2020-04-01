@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Aurora B2B Augmentation/United States/English/Options/Settings" name="Elastic Social No Comments But Reviews" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="elasticSocial">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<StringProperty Name="commentType">DISABLED</StringProperty>
+<StringProperty Name="reviewType">ANONYMOUS</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

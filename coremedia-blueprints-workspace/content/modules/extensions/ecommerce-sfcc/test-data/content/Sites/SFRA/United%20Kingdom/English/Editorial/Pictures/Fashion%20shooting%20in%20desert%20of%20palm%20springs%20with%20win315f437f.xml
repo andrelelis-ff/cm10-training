@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/United Kingdom/English/Editorial/Pictures" name="Fashion shooting in desert of palm springs with wind generators" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=573;y=0;width=852;height=1136</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=431;y=0;width=1136;height=1136</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=242;y=0;width=1515;height=1136</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=5;width=2000;height=1125</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=23;width=2000;height=750</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=317;width=2000;height=500</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.02040816326530612;x2=1;y2=0.68061943087094</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>sfcc:///catalog/product/25493635M</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Fashion shooting in desert of palm springs with wind generators</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>shutterstock_344145521</copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1136</height>
+<data md5="61aa76ee1887c70b41ecf9c6f345b2a3" size="476317" href="../../../../../../__blob/61aa76ee1887c70b41ecf9c6f345b2a3.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

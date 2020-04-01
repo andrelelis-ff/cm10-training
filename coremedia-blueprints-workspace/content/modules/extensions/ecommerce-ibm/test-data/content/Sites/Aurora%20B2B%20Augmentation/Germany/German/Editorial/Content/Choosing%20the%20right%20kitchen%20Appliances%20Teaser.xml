@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content" name="Choosing the right kitchen Appliances Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Editorial/Content/Choosing%20the%20right%20kitchen%20Appliances%20Teaser.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Choosing%20the%20right%20kitchen%20Appliances%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Settings/Teaser%20Styles/Light"/>
+<IntProperty Name="width">74</IntProperty>
+<IntProperty Name="positionY">18</IntProperty>
+<IntProperty Name="positionX">0</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Die Wahl der richtigen Küchengeräte</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1">Die Wahl der richtigen Küchengeräte</p></div></teaserText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="Kitchen%20Products/Choosing%20the%20Right%20Kitchen%20Equipment.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Kitchen%20Products/Choosing%20the%20Right%20Kitchen%20Equipment"/>
+</target>
+</CMTeaser>

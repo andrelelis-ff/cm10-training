@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Calista/United States/English/Options/Settings" name="Search Configuration" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<LinkProperty Name="searchChannel" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Site%20Wide/SearchResultPage.xml" cmexport:path="/Sites/Calista/United%20States/English/Editorial/Content/Site%20Wide/SearchResultPage"/>
+<LinkProperty Name="searchAction" LinkType="coremedia:///cap/contenttype/CMAction" xlink:href="coremedia:///cap/resources/Actions/SearchAction.xml" cmexport:path="/Sites/Calista/United%20States/English/Options/Settings/Actions/SearchAction"/>
+<LinkProperty Name="shopSearchAction" LinkType="coremedia:///cap/contenttype/CMAction" xlink:href="coremedia:///cap/resources/Actions/ShopSearchAction.xml" cmexport:path="/Sites/Calista/United%20States/English/Options/Settings/Actions/ShopSearchAction"/>
+<IntProperty Name="searchResultHitsPerPage">10</IntProperty>
+<BooleanProperty Name="searchDisableSpellingSuggestions">false</BooleanProperty>
+<LinkListProperty Name="searchChannelSelect" LinkType="coremedia:///cap/contenttype/CMChannel">
+<Link xlink:href="coremedia:///cap/resources/../../Navigation/Blog/Blog%20Page.xml" cmexport:path="/Sites/Calista/United%20States/English/Navigation/Blog/Blog%20Page"/>
+<Link xlink:href="coremedia:///cap/resources/../../Navigation/Blog/Fashion%20Trends/Fashion%20Trends%20Blog%20Category.xml" cmexport:path="/Sites/Calista/United%20States/English/Navigation/Blog/Fashion%20Trends/Fashion%20Trends%20Blog%20Category"/>
+</LinkListProperty>
+<StringListProperty Name="searchDoctypeSelect">
+<String>CMArticle</String>
+<String>CMCategory</String>
+<String>CMChannel</String>
+<String>CMDownload</String>
+<String>CMGallery</String>
+<String>CMVideo</String>
+</StringListProperty>
+<StructProperty Name="searchFacets">
+<Struct>
+<StringProperty Name="subject">subjecttaxonomy</StringProperty>
+<StringProperty Name="type">documenttype</StringProperty>
+</Struct>
+</StructProperty>
+<IntProperty Name="searchFacetLimit">5</IntProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

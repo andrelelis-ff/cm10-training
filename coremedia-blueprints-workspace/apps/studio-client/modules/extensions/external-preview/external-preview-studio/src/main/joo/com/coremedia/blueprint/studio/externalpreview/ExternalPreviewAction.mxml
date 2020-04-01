@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:ExternalPreviewActionBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.externalpreview.*">
+  <fx:Script><![CDATA[
+    private var config:ExternalPreviewAction;
+
+    public native function ExternalPreviewAction(config:ExternalPreviewAction = null);
+    ]]></fx:Script>
+
+</local:ExternalPreviewActionBase>

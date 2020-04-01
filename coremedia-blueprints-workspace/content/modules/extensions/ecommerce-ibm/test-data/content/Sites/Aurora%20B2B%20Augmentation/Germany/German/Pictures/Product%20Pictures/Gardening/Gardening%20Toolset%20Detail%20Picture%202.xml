@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Pictures/Product Pictures/Gardening" name="Gardening Toolset Detail Picture 2" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Pictures/Product%20Pictures/Gardening/Gardening%20Toolset%20Deta30d2282d.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Gardening/Gardening%20Toolset%20Detail%20Picture%202"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=914;y=1140;width=1113;height=1729</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=824;y=1167;width=1258;height=1674</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=607;y=1140;width=1729;height=1729</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=290;y=1122;width=2254;height=1692</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=1176;width=2933;height=1647</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=1113;width=2933;height=1176</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=1176;width=2933;height=733</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.3117283950617284;y1=0.2850678733031674;x2=0.691358024691358;y2=0.7171945701357466</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2808641975308642;y1=0.2918552036199095;x2=0.7098765432098766;y2=0.7104072398190046</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.20679012345679013;y1=0.2850678733031674;x2=0.7962962962962963;y2=0.7171945701357466</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.09876543209876543;y1=0.28054298642533937;x2=0.8672839506172839;y2=0.7036199095022625</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.29411764705882354;x2=1;y2=0.7058823529411765</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.27828054298642535;x2=1;y2=0.5723981900452488</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.29411764705882354;x2=1;y2=0.47737556561085975</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Gardening Tool</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Gardening Tool</alt>
+<copyright>Yanas / Shutterstock 53653834</copyright>
+<dataUrl></dataUrl>
+<width>2934</width>
+<height>4000</height>
+<data md5="0a0e2616172b229694419e35214e7be0" size="179670" href="../../../../../../../__blob/0a0e2616172b229694419e35214e7be0.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

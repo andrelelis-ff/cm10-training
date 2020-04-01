@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/com/coremedia/cap/common/uapi-services.xml"/>
+  <import resource="classpath:/framework/spring/personalization-plugin/personalization-collection.xml" />
+
+  <bean id="exposeSegmentInfoInterceptor"
+        class="com.coremedia.blueprint.analytics.personalization.P13nAlxInterceptor">
+    <description>
+      An interceptor to expose Segment info for tracking.
+    </description>
+    <property name="contextCollection" ref="contextCollection"/>
+    <property name="contentRepository" ref="contentRepository"/>
+    <property name="segmentContextName" value="segment"/>
+  </bean>
+
+  <!-- ===============================================================
+
+    Interceptor Registration
+
+  ================================================================ -->
+
+  <customize:append id="appendPersoAlxInterceptors" bean="handlerInterceptors" order="599">
+    <description>
+      Expose segment info for ALX JSPs. This interceptor must be registered before the other p13n
+      interceptors so that it is guaranteed that its postHandle method runs after SegmentSource#postHandle.
+    </description>
+    <list>
+      <ref bean="exposeSegmentInfoInterceptor"/>
+    </list>
+  </customize:append>
+
+</beans>

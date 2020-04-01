@@ -1,0 +1,6 @@
+{
+  "name": "staging",
+  "description": "This is the staging environment.",
+  "chef_type": "environment",
+  "json_class": "Chef::Environment"
+}

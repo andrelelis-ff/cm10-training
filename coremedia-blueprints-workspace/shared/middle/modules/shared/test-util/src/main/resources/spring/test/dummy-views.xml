@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+  <!--This is a dummy bean definition file to be able to use blueprint-views.xml context inside tests-->
+
+  <import resource="classpath:/com/coremedia/id/id-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/link-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/contentbean-services.xml"/>
+
+  <bean id="richtextMarkupView" class="com.coremedia.objectserver.view.XmlMarkupView">
+    <description>
+      Dummy definition to inject blueprint-views for tests
+    </description>
+    <property name="xmlFilterFactory" ref="filterFactory"/>
+  </bean>
+
+  <bean id="filterFactory" class="com.coremedia.objectserver.view.RichtextToHtmlFilterFactory">
+    <property name="idProvider" ref="idProvider"/>
+    <property name="linkFormatter" ref="linkFormatter"/>
+  </bean>
+
+  <bean id="mergedCodeResourcesViewBase" abstract="true">
+    <description>
+      Abstract super bean of merged code views.
+    </description>
+    <property name="xmlFilterFactory" ref="filterFactory"/>
+    <property name="cache" ref="cache"/>
+  </bean>
+
+  <bean id="mergedCssResourcesView" class="com.coremedia.blueprint.cae.view.MergeableResourcesView" parent="mergedCodeResourcesViewBase">
+    <description>
+      A view for merging the CSS of a page into one file.
+    </description>
+    <property name="minifier" ref="cssMinifier"/>
+    <property name="contentType" value="text/css"/>
+  </bean>
+
+  <bean id="cssMinifier" class="com.coremedia.blueprint.cae.view.processing.CssMinifier">
+    <property name="linebreak" value="-1"/>
+  </bean>
+
+  <bean id="blobView" class="com.coremedia.objectserver.view.MultiRangeBlobView">
+    <description>
+      Dummy definition to inject blueprint-views for tests
+    </description>
+  </bean>
+
+  <util:map id="programmedViews">
+    <description>
+      Dummy
+    </description>
+  </util:map>
+
+  <util:list id="templateLocationPatterns">
+    <description>
+      Dummy
+    </description>
+  </util:list>
+
+  <bean id="errorView" class="com.coremedia.objectserver.view.ErrorView">
+    <description>
+      Simple programmed view to render exception beans as simple HTML.
+      This programmed view is not registered to view repository here.
+    </description>
+    <property name="development" value="false"/>
+    <property name="responseCode" value="500"/>
+  </bean>
+
+</beans>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util.xsd">
+
+  <import resource="classpath:/com/coremedia/cae/uapi-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/settings/impl/bpbase-settings-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/contentbean-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/dataview-services.xml"/>
+  <import resource="classpath:/com/coremedia/cap/multisite/multisite-services.xml"/>
+  <import resource="classpath:/com/coremedia/cache/cache-services.xml"/>
+  <import resource="livecontext-resolver.xml"/>
+  <import resource="livecontext-handlers.xml"/>
+  <import resource="classpath:META-INF/coremedia/context-services.xml"/>
+  <import resource="classpath:META-INF/coremedia/livecontext-contentbeans.xml"/>
+
+  <bean class="com.coremedia.blueprint.base.livecontext.ecommerce.common.BaseCommerceServicesAutoConfiguration"/>
+
+  <bean id="fragmentPageHandler" class="com.coremedia.livecontext.fragment.FragmentPageHandler"
+        parent="pageHandlerBase">
+    <property name="fragmentHandlers" ref="fragmentHandlers"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+    <property name="preview" value="${cae.is.preview}"/>
+    <property name="catalogAliasTranslationService" ref="catalogAliasTranslationService"/>
+  </bean>
+
+  <bean id="fragmentHandler" class="com.coremedia.livecontext.fragment.FragmentHandler" abstract="true"
+        parent="pageHandlerBase">
+    <property name="pageGridPlacementResolver" ref="pageGridPlacementResolver" />
+    <property name="validationService" ref="validationService"/>
+  </bean>
+
+  <bean id="externalPageFragmentHandler" class="com.coremedia.livecontext.fragment.ExternalPageFragmentHandler"
+        parent="fragmentHandler">
+    <property name="contextStrategy" ref="externalPageContextStrategy"/>
+    <property name="settingsService" ref="settingsService"/>
+    <property name="navigationViewName" value="asNavigation"/>
+  </bean>
+
+
+  <bean id="cmSearchFragmentHandler" class="com.coremedia.livecontext.fragment.CMSearchFragmentHandler"
+        parent="fragmentHandler">
+    <property name="settingsService" ref="settingsService"/>
+    <property name="searchService" ref="searchActionService"/>
+    <property name="minimalSearchQueryLength" value="3"/>
+  </bean>
+
+  <bean id="productFragmentHandler" class="com.coremedia.livecontext.fragment.ProductFragmentHandler"
+        parent="fragmentHandler">
+    <property name="contextStrategy" ref="resolveLivecontextContextStrategy"/>
+    <property name="pageGridPlacementResolver" ref="pdpPageGridPlacementResolver" />
+  </bean>
+
+  <bean id="productAssetsHandler" class="com.coremedia.livecontext.asset.ProductAssetsHandler" parent="pageHandlerBase">
+  </bean>
+
+  <bean id="categoryFragmentHandler" class="com.coremedia.livecontext.fragment.CategoryFragmentHandler"
+        parent="fragmentHandler">
+    <property name="contextStrategy" ref="resolveLivecontextContextStrategy"/>
+  </bean>
+
+  <bean id="externalRefFragmentHandler" class="com.coremedia.livecontext.fragment.ExternalRefFragmentHandler"
+        parent="fragmentHandler">
+    <property name="externalReferenceResolvers" ref="fragmentExternalRefResolvers" />
+  </bean>
+
+  <util:list id="fragmentHandlers" value-type="com.coremedia.livecontext.fragment.FragmentHandler">
+    <description>This list contains all handlers that are used for fragment calls.</description>
+    <ref bean="cmSearchFragmentHandler" />
+    <ref bean="externalRefFragmentHandler" />
+    <ref bean="externalPageFragmentHandler" />
+    <ref bean="productFragmentHandler" />
+    <ref bean="categoryFragmentHandler" />
+  </util:list>
+
+  <util:list id="fragmentExternalRefResolvers" value-type="com.coremedia.livecontext.fragment.resolver.ExternalReferenceResolver">
+    <description>
+      This list of predicates will be traversed by the dynamicIncludeRenderDecorator/Provider in order to decide
+      whether a DynamicInclude should be used for a given Bean/View combination.
+    </description>
+    <ref bean="contentCapIdExternalReferenceResolver"/>
+    <ref bean="contentPathExternalReferenceResolver"/>
+    <ref bean="contentNumericIdExternalReferenceResolver"/>
+    <ref bean="contentNumericIdWithChannelIdExternalReferenceResolver"/>
+    <ref bean="contentSeoSegmentExternalReferenceResolver"/>
+    <ref bean="seoSegmentExternalReferenceResolver"/>
+    <ref bean="searchTermExternalReferenceResolver" />
+    <ref bean="segmentPathResolver"/>
+    <ref bean="breadcrumbExternalReferenceResolver"/>
+  </util:list>
+
+  <bean id="searchTermExternalReferenceResolverCacheCapacityConfigurer" class="com.coremedia.cache.CacheCapacityConfigurer" init-method="init">
+    <property name="cache" ref="cache"/>
+    <property name="capacities">
+      <map>
+        <entry value="${searchTermExternalReferenceResolver.cacheCapacity:10000}">
+          <key><util:constant static-field="com.coremedia.livecontext.fragment.resolver.SearchTermExternalReferenceResolver.CACHE_CLASS"/></key>
+        </entry>
+      </map>
+    </property>
+  </bean>
+
+  <bean id="defaultPageGridPlacementResolver" class="com.coremedia.livecontext.fragment.pagegrid.DefaultPageGridPlacementResolver"/>
+  <bean id="pdpPageGridPlacementResolver" class="com.coremedia.livecontext.fragment.pagegrid.PdpPageGridPlacementResolver"/>
+
+  <bean id="pageGridPlacementResolver" class="com.coremedia.livecontext.fragment.pagegrid.CompositePageGridPlacementResolver">
+    <property name="resolvers">
+      <list>
+        <ref bean="defaultPageGridPlacementResolver"/>
+      </list>
+    </property>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+  </bean>
+
+  <customize:append id="liveContextCaeCorsConfiguration" bean="caeCorsConfiguration" property="allowedOrigins"
+                    custom-value="${livecontext.crossdomain.whitelist}"/>
+
+  <bean id="externalPageContextStrategy" class="com.coremedia.livecontext.fragment.ExternalPageContextStrategy">
+    <property name="cache" ref="cache"/>
+    <property name="sitesService" ref="sitesService"/>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="treeRelation" ref="childrenTreeRelation"/>
+  </bean>
+
+</beans>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Calista/Germany/German/Navigation/Fragments/Aurora Categories/Apparel/Men" name="Men Suits Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../United%20States/English/Navigation/Fragments/Aurora%20Categories/Apparel/Men/Men%20Suits%20Teaser.xml" path="/Sites/Calista/United%20States/English/Navigation/Fragments/Aurora%20Categories/Apparel/Men/Men%20Suits%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../../../Options/Settings/Teaser%20Styles/Dark%20on%20Light.xml" cmexport:path="/Sites/Calista/Germany/German/Options/Settings/Teaser%20Styles/Dark%20on%20Light"/>
+<IntProperty Name="positionY">40</IntProperty>
+<IntProperty Name="positionX">0</IntProperty>
+</Struct>
+</StructProperty>
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="align--center p--heading-1"> Exklusiv </p> <p class="align--center"> Finde deinen Geschäftsstil </p> </div></teaserText>
+<pictures>
+<link href="../../../../../Pictures/Product%20Pictures/PC_BLUE_SUIT%20Sideshot.xml" path="/Sites/Calista/Germany/German/Pictures/Product%20Pictures/PC_BLUE_SUIT%20Sideshot"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../../../Augmentation/Apparel/Men/Men%20Suits/Men%20Suits.xml" path="/Sites/Calista/Germany/German/Augmentation/Apparel/Men/Men%20Suits/Men%20Suits"/>
+</target>
+</CMTeaser>

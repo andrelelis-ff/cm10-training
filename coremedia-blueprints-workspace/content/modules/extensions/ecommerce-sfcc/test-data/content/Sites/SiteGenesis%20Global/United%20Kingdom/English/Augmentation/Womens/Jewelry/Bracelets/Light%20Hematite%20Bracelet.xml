@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalProduct folder="/Sites/SiteGenesis Global/United Kingdom/English/Augmentation/Womens/Jewelry/Bracelets" name="Light Hematite Bracelet" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Light Hematite Bracelet</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>sfcc:///catalog/product/25448070</externalId>
+<pdpPagegrid>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Pagegrid/Layouts/Fragment%20PDP.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Settings/Pagegrid/Layouts/Fragment%20PDP"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../../../../Editorial/Content/Articles/Fashion%20should%20be%20Fun.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Articles/Fashion%20should%20be%20Fun"/>
+</LinkListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../../../Options/Viewtypes/CMChannel/hero.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Viewtypes/CMChannel/hero"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Pagegrid/Placements/additional.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/additional"/>
+</Struct>
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../../../../Editorial/Slots/Header/Free%202-Day%20Shipping%20Promo.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Slots/Header/Free%202-Day%20Shipping%20Promo"/>
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Pagegrid/Placements/header.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/header"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</pdpPagegrid>
+</CMExternalProduct>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Pictures/Microsites/Guide to Exterior Lighting" name="Chrysler and Mercury Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Pictures/Microsites/Guide%20to%20Exterior%20Lighting/Chrysler%20c337bb22.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Microsites/Guide%20to%20Exterior%20Lighting/Chrysler%20and%20Mercury%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=994;y=0;width=826;height=1277</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=963;y=0;width=957;height=1277</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=713;y=0;width=1207;height=1208</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=75;y=0;width=1701;height=1277</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=194;width=1920;height=1083</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=94;width=1920;height=770</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=401;width=1920;height=482</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.5179153094462541;y1=0;x2=0.9478827361563518;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.501628664495114;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.3713355048859935;y1=0;x2=1;y2=0.946078431372549</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.03908794788273615;y1=0;x2=0.9250814332247557;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.15196078431372548;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.07352941176470588;x2=1;y2=0.6764705882352942</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3137254901960784;x2=1;y2=0.6911764705882353</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Chrysler and Mercury Image</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Picture of the Chrysler building and Mercury</alt>
+<copyright>Robert Crum/Shutterstock 46521514</copyright>
+<dataUrl></dataUrl>
+<width>1920</width>
+<height>1277</height>
+<data md5="c1b436d73f2f196af0dba33f577a1dd9" size="448507" href="../../../../../../../__blob/c1b436d73f2f196af0dba33f577a1dd9.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

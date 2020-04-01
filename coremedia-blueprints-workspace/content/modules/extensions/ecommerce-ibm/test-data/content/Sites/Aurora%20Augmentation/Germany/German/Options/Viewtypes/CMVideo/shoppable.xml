@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/Aurora Augmentation/Germany/German/Options/Viewtypes/CMVideo" name="shoppable" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Options/Viewtypes/CMVideo/shoppable.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Viewtypes/CMVideo/shoppable"/>
+</master>
+<description>Für shoppable Videos</description>
+<icon md5="3416f63ad20753add11666354819b26c" size="1698" href="../../../../../../../__blob/3416f63ad20753add11666354819b26c.blob" mimetype="image/png"/>
+<layout>shoppable</layout>
+</CMViewtype>

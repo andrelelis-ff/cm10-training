@@ -1,0 +1,26 @@
+{
+  "author": {
+    "name": "CoreMedia",
+    "url": "http://www.coremedia.com"
+  },
+  "name": "@coremedia/theme-importer",
+  "private": true,
+  "version": "1.0.1",
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "@coremedia/cm-logger": "^1.0.0",
+    "@coremedia/tool-utils": "^1.0.0",
+    "@coremedia/zipper": "^1.0.0",
+    "amazon-cognito-identity-js": "1.23.0",
+    "request": "2.88.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.0.0"
+  },
+  "scripts": {
+    "prettier": "prettier \"**/*\" --write"
+  },
+  "main": "src/index.js"
+}

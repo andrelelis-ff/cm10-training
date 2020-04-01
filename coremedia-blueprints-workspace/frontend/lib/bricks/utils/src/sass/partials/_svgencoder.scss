@@ -1,0 +1,26 @@
+// creates an url for an inline-svg
+// @deprecated just use 'url(my.svg)' as webpack will automatically inline small images
+@function svg-url($svg) {
+  // Add missing namespace
+  @if not str-index($svg, " xmlns=") {
+    $startTag: '<svg ';
+    // for some reason the first index is 1, adjust the index...
+    $startTagIndex: str-index($svg, $startTag) - 1;
+    @if $startTagIndex > -1 {
+      $svg: str-insert($svg, ' xmlns="http://www.w3.org/2000/svg"', $startTagIndex + str-length($startTag));
+    }
+  }
+  $encoded: encodeBase64($svg);
+  @return url("data:image/svg+xml;base64,#{$encoded}");
+}
+
+// creates an inline-svg as background-image
+// @deprecated just use an 'background-image: url(my.svg)' as webpack will automatically inline small images
+@mixin background-svg($svg) {
+  background-image: svg-url($svg);
+}
+
+// encodes a given color as uri component
+@function encodeColor($color) {
+  @return encodeURIComponent(inspect($color));
+}

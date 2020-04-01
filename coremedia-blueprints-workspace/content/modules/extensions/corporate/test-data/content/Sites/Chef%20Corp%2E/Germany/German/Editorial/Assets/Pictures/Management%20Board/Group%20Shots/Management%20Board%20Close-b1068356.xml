@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./Germany/German/Editorial/Assets/Pictures/Management Board/Group Shots" name="Management Board Close-Up Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../United%20States/English/Editorial/Assets/Pictures/Management%20Board/Group%20Shots/Management%20Boardffe0a78e.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Management%20Board/Group%20Shots/Management%20Board%20Close-Up%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=574;y=0;width=1368;height=1366</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=166;y=0;width=1821;height=1366</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=173;width=2048;height=1153</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=621;y=0;width=911;height=1366</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=368;width=2048;height=768</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.28013029315960913;y1=0;x2=0.9478827361563518;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.05609284332688588;y1=0;x2=0.9458413926499033;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.12682926829268293;x2=1;y2=0.9707317073170731</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.5231578947368422</StringProperty>
+<StringProperty Name="y">0.5473186119873817</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Vorstand Nahaufnahme</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Close-up Foto von der Gruppe Chef Corp. Vorstand</alt>
+<copyright>Andrey_Popov / Shutterstock 125861522</copyright>
+<dataUrl></dataUrl>
+<width>2048</width>
+<height>1366</height>
+<data md5="ba474ec2df0c435677149f148a0cb373" size="277832" href="../../../../../../../../../__blob/ba474ec2df0c435677149f148a0cb373.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

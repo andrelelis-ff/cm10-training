@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora B2B Augmentation/Germany/German/Navigation/Fragments/Aurora B2B Categories/Lighting" name="Lighting Products Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Navigation/Fragments/Aurora%20B2B%20Categories/Lighting/Lighting695bbfda.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Navigation/Fragments/Aurora%20B2B%20Categories/Lighting/Lighting%20Products%20Collection"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../../../Editorial/Personalization/Contract-Based%20Personalized%20Category%20Prome93c68b0.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Personalization/Contract-Based%20Personalized%20Category%20Promotion%20Teaser"/>
+<link href="../../../../Editorial/Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED%20Strip%220277a2.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED%20Strip%20Product%20Teaser"/>
+<link href="../../../../Editorial/Personalization/Contract-Based%20Personalized%20Product%20Promofa11fcbf.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Personalization/Contract-Based%20Personalized%20Product%20Promotion%20Teaser"/>
+<link href="../../../../Editorial/Products/Aurora%20B2B/Lighting/Neon%20Indicator%20Bulb%20Produce9655b5f.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Lighting/Neon%20Indicator%20Bulb%20Product%20Teaser"/>
+<link href="../../../../Editorial/Products/Aurora%20B2B/Lighting/Screw-in%20LED%20Bulb%20Product%20Teaser.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Lighting/Screw-in%20LED%20Bulb%20Product%20Teaser"/>
+</items>
+</CMCollection>

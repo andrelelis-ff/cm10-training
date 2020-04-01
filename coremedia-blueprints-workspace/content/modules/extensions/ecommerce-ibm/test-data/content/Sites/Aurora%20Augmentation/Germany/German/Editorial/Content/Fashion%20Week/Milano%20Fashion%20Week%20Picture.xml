@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Fashion Week" name="Milano Fashion Week Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Fashion%20Week/Milano%20Fashion%20Week%20Picture.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion%20Week/Milano%20Fashion%20Week%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=570;y=0;width=860;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=500;y=0;width=1000;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=334;y=0;width=1333;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=111;y=0;width=1777;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=104;width=2000;height=1125</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=267;width=2000;height=800</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=417;width=2000;height=500</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Milano Fashion Week 2016</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Milano Fashion Week 2016</alt>
+<copyright>shutterstock_265360139</copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1333</height>
+<data md5="a27fdc4aaa9d1db4814257b534053ef9" size="580524" href="../../../../../../../__blob/a27fdc4aaa9d1db4814257b534053ef9.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,15 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StringProperty Name="livecontext.connectionId">wcs1</StringProperty>
+  <StructProperty Name="livecontext.store.config">
+    <Struct>
+      <!--catalog configuration-->
+      <StringProperty Name="config.id">b2bconfig</StringProperty>
+      <StringProperty Name="store.id">715838085</StringProperty>
+      <StringProperty Name="store.name">AuroraB2BESite</StringProperty>
+      <StringProperty Name="catalog.id">3074457345616676718</StringProperty>
+      <StringProperty Name="currency">USD</StringProperty>
+      <StringProperty Name="livecontext.ibm.wcs.host">shop-ref.ecommerce.coremedia.com</StringProperty>
+      <StringProperty Name="livecontext.apache.wcs.host">shop-helios.blueprint-box.vagrant</StringProperty>
+    </Struct>
+  </StructProperty>
+</Struct>

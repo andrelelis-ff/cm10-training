@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <import resource="classpath:/com/coremedia/cae/uapi-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-services.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-services.xml"/>
+
+  <bean id="validContentPredicate" class="com.coremedia.blueprint.cae.common.predicates.ValidContentPredicate">
+    <property name="contentBeanFactory" ref="contentBeanFactory" />
+  </bean>
+  <bean id="testUrlsDoctypePredicate" class="com.coremedia.blueprint.cae.sitemap.TestUrlsDoctypePredicate">
+    <property name="capConnection" ref="connection"/>
+    <property name="includedDoctypes">
+      <list>
+        <value>CMArticle</value>
+        <value>CMChannel</value>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="urlListRendererFactory" class="com.coremedia.blueprint.cae.sitemap.PlainSitemapRendererFactory"/>
+
+  <bean id="testContentUrlGenerator" class="com.coremedia.blueprint.cae.sitemap.ContentUrlGenerator">
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="linkFormatter" ref="linkFormatter"/>
+    <property name="validationService" ref="validationService"/>
+    <property name="predicates">
+      <list>
+        <ref bean="validContentPredicate" />
+        <ref bean="testUrlsDoctypePredicate"/>
+      </list>
+    </property>
+    <property name="exclusionPaths">
+      <list>
+        <value>/Settings</value>
+        <value>/Themes</value>
+        <value>/System</value>
+        <value>/Home</value>
+        <value>/Sites/Aurora Augmentation/United States/English/Navigation/Fragments</value>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="testUrlsConfig" class="com.coremedia.blueprint.cae.sitemap.SitemapSetup">
+    <property name="sitemapRendererFactory" ref="urlListRendererFactory"/>
+    <property name="urlGenerators">
+      <list>
+        <ref bean="testContentUrlGenerator"/>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="testUrlsController" class="com.coremedia.blueprint.cae.sitemap.TestUrlsGenerationHandler">
+    <property name="siteResolver" ref="siteResolver"/>
+    <property name="sitemapSetupFactory" ref="testSitemapSetupFactory"/>
+  </bean>
+
+  <bean id="testSitemapSetupFactory" class="com.coremedia.blueprint.cae.sitemap.SpringBasedSitemapSetupFactory">
+    <property name="sitemapSetup" ref="testUrlsConfig"/>
+  </bean>
+
+</beans>

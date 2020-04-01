@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMP13NSearch folder="/Sites/Hybris Apparel/Germany/German/Editorial" name="Content Recommendations" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Editorial/Content%20Recommendations.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content%20Recommendations"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Recommendations for You</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<maxLength>3</maxLength>
+<documentType>CMArticle</documentType>
+<searchContext>
+<link href="../Navigation/Hybris%20Apparel.xml" path="/Sites/Hybris%20Apparel/Germany/German/Navigation/Hybris%20Apparel"/>
+</searchContext>
+<searchQuery href="Content%20Recommendations.searchQuery.plain" mimetype="text/plain"/>
+<defaultContent>
+<link href="Content/Snow/Speed%20Riding%20Challenge%20in%20Chamonix.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Snow/Speed%20Riding%20Challenge%20in%20Chamonix"/>
+<link href="Content/Snow/The%20Power%20of%20Speed%20Riding.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Snow/The%20Power%20of%20Speed%20Riding"/>
+</defaultContent>
+</CMP13NSearch>

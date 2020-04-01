@@ -1,0 +1,25 @@
+{
+  "name": "chefcorp",
+  "description": "The ChefCorp Theme demonstrates CoreMedia's frontend capabilities with a simple brand website design.",
+  "thumbnail": "theme.jpg",
+
+  "scripts": [
+    {
+      "type": "webpack",
+      "src": "src/js/chefcorp.js"
+    }
+  ],
+  "styles": [
+    {
+      "type": "webpack",
+      "src": "src/sass/chefcorp.scss"
+    }
+  ],
+  "l10n": {
+    "bundleNames": [
+      "Chefcorp",
+      "SharedExample",
+      "Bricks"
+    ]
+  }
+}

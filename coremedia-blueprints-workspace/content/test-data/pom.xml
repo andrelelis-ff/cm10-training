@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>content.blueprint-parent</artifactId>
+    <version>1-SNAPSHOT</version>
+    <relativePath>../blueprint-parent/pom.xml</relativePath>
+  </parent>
+
+  <artifactId>test-data</artifactId>
+  <packaging>pom</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>content-extension-dependencies</artifactId>
+      <version>${project.version}</version>
+      <type>pom</type>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <!-- copy content to target folder -->
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <executions>
+          <!-- copy default content -->
+          <execution>
+            <id>basic-copy-content-resources</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/target/content</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>content</directory>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+          <!-- copy default users -->
+          <execution>
+            <id>basic-copy-users-resources</id>
+            <phase>process-resources</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/target/users</outputDirectory>
+              <resources>
+                <resource>
+                  <directory>users</directory>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <!-- copy content zips of extensions to target folder -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>copy-content</id>
+            <goals>
+              <goal>unpack-dependencies</goal>
+            </goals>
+            <phase>package</phase>
+            <configuration>
+              <includeClassifiers>content</includeClassifiers>
+              <includeTypes>zip</includeTypes>
+              <outputDirectory>${project.build.directory}</outputDirectory>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <!-- create a single zip of all contents for import -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>collect-test-data</id>
+            <goals>
+              <goal>run</goal>
+            </goals>
+            <phase>package</phase>
+            <configuration>
+              <target>
+                <zip destfile="${project.build.directory}/content-users.zip" whenempty="fail" duplicate="preserve" keepcompression="false" compress="false">
+                  <fileset dir="${project.build.directory}" includes="content/**,users/**" />
+                </zip>
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>install-test-data</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>attach-artifacts</id>
+                <phase>package</phase>
+                <goals>
+                  <goal>attach-artifact</goal>
+                </goals>
+                <configuration>
+                  <artifacts>
+                    <artifact>
+                      <file>${project.build.directory}/content-users.zip</file>
+                      <type>zip</type>
+                    </artifact>
+                  </artifacts>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
+</project>

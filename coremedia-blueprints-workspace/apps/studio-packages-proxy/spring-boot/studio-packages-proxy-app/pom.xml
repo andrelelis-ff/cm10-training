@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint.boot</groupId>
+    <artifactId>studio-packages-proxy.spring-boot</artifactId>
+    <version>1-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>studio-packages-proxy-app</artifactId>
+
+  <properties>
+    <studio.rest.url>http://localhost:41080</studio.rest.url>
+    <studio.dynamicpackages.rest.url>${studio.rest.url}/api/dynamicpackages/remote</studio.dynamicpackages.rest.url>
+    <studio.dynamicpackages.remote.urls.whitelist>*//localhost:*,*.coremedia.vm*,*.coremedia.com*
+    </studio.dynamicpackages.remote.urls.whitelist>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.coremedia.ui</groupId>
+      <artifactId>dynamic-packages</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpcore</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.blueprint.boot</groupId>
+      <artifactId>blueprint-spring-boot-autoconfigure</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-core</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-jasper</artifactId>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>jcl-over-slf4j</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-tomcat</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+      <scope>runtime</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.validation</groupId>
+          <artifactId>validation-api</artifactId>
+        </exclusion>
+        <exclusion>
+          <groupId>org.hibernate.validator</groupId>
+          <artifactId>hibernate-validator</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.mitre.dsmiley.httpproxy</groupId>
+      <artifactId>smiley-http-proxy-servlet</artifactId>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>studio-packages-proxy</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <mainClass>com.coremedia.blueprint.boot.studio.packagesproxy.StudioPackagesProxyApp</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.livecontext.studio.action.TestPreviewContextMenu"/>
+  <component class="com.coremedia.livecontext.studio.forms.ProductTeaserDocumentFormTestView"/>
+  <component class="com.coremedia.livecontext.studio.forms.ProductTeaserSettingsFormTestView"/>
+</componentPackage>

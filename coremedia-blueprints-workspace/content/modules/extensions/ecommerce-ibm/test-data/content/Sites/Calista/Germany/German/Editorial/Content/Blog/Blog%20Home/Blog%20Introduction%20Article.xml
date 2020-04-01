@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Calista/Germany/German/Editorial/Content/Blog/Blog Home" name="Blog Introduction Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Content/Blog/Blog%20Home/Blog%20Introduction%20Article.xml" path="/Sites/Calista/United%20States/English/Editorial/Content/Blog/Blog%20Home/Blog%20Introduction%20Article"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../../../../../../Settings/Options/Settings/Teaser%20Styles/Default.xml" cmexport:path="/Settings/Options/Settings/Teaser%20Styles/Default"/>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+<StructProperty Name="teaserSettings">
+<Struct>
+<BooleanProperty Name="renderLinkToDetailPage">false</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Calista Fashion Blog</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="align--center">Im Calista-Blog feiern wir, was wir an Mode, Schönheit, Reisen und Essen lieben. Du wirst nichts Negatives lesen, weil wir nur über das schreiben, was wir wirklich lieben.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="align--center">Im Calista-Blog feiern wir, was wir an Mode, Schönheit, Reisen und Essen lieben. Du wirst nichts Negatives lesen, weil wir nur über das schreiben, was wir wirklich lieben.</p></div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

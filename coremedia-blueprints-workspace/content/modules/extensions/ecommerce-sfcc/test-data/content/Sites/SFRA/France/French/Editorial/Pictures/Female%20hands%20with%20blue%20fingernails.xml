@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/France/French/Editorial/Pictures" name="Female hands with blue fingernails" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Editorial/Pictures/Female%20hands%20with%20blue%20fingernails.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Pictures/Female%20hands%20with%20blue%20fingernails"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="uploadDone">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=227;y=0;width=2250;height=3000</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=0;width=3000;height=3000</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=1509;width=4000;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=748;width=4000;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=1259;width=4000;height=1500</StringProperty>
+<StringProperty Name="quickview_ratio5x6">b;a=0;c=1/crop;x=100;y=0;width=2500;height=3000</StringProperty>
+<StringProperty Name="portrait_ratio5x6">b;a=0;c=1/crop;x=100;y=0;width=2500;height=3000</StringProperty>
+<StringProperty Name="thumbnail">b;a=0;c=1/crop;x=227;y=0;width=2250;height=3000</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.3353080568720379</StringProperty>
+<StringProperty Name="y">0.667192429022082</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Mains féminines aux ongles bleus</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>shutterstock_348887087</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>3000</height>
+<data md5="fa99025160881aff6e6f7b3ad88cdae3" size="1416232" href="../../../../../../__blob/fa99025160881aff6e6f7b3ad88cdae3.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

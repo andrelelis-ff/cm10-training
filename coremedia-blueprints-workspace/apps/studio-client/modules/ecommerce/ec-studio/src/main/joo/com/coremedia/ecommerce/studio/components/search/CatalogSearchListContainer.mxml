@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CatalogSearchListContainerBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.ecommerce.studio.components.search.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ec="exml:com.coremedia.ecommerce.studio.config"
+        itemId="{VIEW_CONTAINER_ITEM_ID}"
+        activeItemValueExpression="{getActiveItemExpression()}">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.collectionview.CollectionViewConstants;
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.ecommerce.studio.config.catalogSearchListContainer";
+
+    public static const VIEW_CONTAINER_ITEM_ID:String = "catalogSearchListContainer";
+
+    private var config:CatalogSearchListContainer;
+
+    public native function CatalogSearchListContainer(config:CatalogSearchListContainer = null);
+
+    [Bindable]
+    public var searchResultHitsValueExpression:ValueExpression;
+
+    [Bindable]
+    public var selectedItemsValueExpression:ValueExpression;
+    ]]></fx:Script>
+
+  <local:items>
+    <ec:CatalogSearchList itemId="{CollectionViewConstants.LIST_VIEW}"
+                          searchResultHitsValueExpression="{config.searchResultHitsValueExpression}"
+                          selectedItemsValueExpression="{config.selectedItemsValueExpression}"/>
+    <ec:CatalogSearchThumbnails itemId="{CollectionViewConstants.THUMBNAILS_VIEW}"
+                                searchResultHitsValueExpression="{config.searchResultHitsValueExpression}"
+                                selectedItemsValueExpression="{config.selectedItemsValueExpression}"/>
+  </local:items>
+
+</local:CatalogSearchListContainerBase>

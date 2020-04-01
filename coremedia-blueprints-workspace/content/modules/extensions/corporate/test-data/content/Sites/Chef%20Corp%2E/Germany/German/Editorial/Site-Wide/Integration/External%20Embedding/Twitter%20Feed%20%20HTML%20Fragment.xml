@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMHTML folder="/Sites/Chef Corp./Germany/German/Editorial/Site-Wide/Integration/External Embedding" name="Twitter Feed  HTML Fragment" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Site-Wide/Integration/External%20Embedding/Twitter%20Feed%20%20HTMLa9b80493.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Site-Wide/Integration/External%20Embedding/Twitter%20Feed%20%20HTML%20Fragment"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Chef Corp. auf Twitter</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Unsere Lieblingsrezepte aus Pinterest </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Unsere Lieblingsrezepte aus Pinterest </p> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<description></description>
+<data grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>&lt;div class="cm-container cm-container--default" style="text-align: center;"&gt;</p> <p>&lt;a class="twitter-timeline" data-dnt="true"  height="480" data-chrome="noheader nofooter noborders" href="https://twitter.com/ReframedUSA" data-widget-id="538728651366621186"&gt;Tweets by @ReframedUSA&lt;/a&gt;</p> <p>&lt;script&gt;!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");&lt;/script</p> <p> &lt;/ div&gt; </p> </div></data>
+</CMHTML>

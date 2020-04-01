@@ -1,0 +1,18 @@
+//
+// Footer
+// --------------------------------------------------
+
+
+.#{$cm-footer-prefix} {
+  &__item {
+    border-right: none;
+  }
+
+  &__copyright {
+    font-size: $cm-font-size-small;
+  }
+
+  &__link {
+    font-size: $cm-font-size-small;
+  }
+}

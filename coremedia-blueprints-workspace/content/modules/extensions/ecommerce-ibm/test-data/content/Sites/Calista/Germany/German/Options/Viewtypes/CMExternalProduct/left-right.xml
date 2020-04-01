@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/Calista/Germany/German/Options/Viewtypes/CMExternalProduct" name="left-right" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Options/Viewtypes/CMExternalProduct/left-right.xml" path="/Sites/Calista/United%20States/English/Options/Viewtypes/CMExternalProduct/left-right"/>
+</master>
+<description>Zeigt die Inhalte abwechselnd links und rechts an.</description>
+<icon href="left-right.icon.svg%2Bxml" mimetype="image/svg+xml"/>
+<layout>left-right</layout>
+</CMViewtype>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMP13NSearch folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content" name="Content Recommendations" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Recommendations for You</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<maxLength>3</maxLength>
+<documentType>CMArticle</documentType>
+<searchContext>
+<link href="../../Navigation/Fragments/Aurora%20B2B%20Homepage/Aurora%20B2B%20Home%20Page.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Navigation/Fragments/Aurora%20B2B%20Homepage/Aurora%20B2B%20Home%20Page"/>
+</searchContext>
+<searchQuery href="Content%20Recommendations.searchQuery.plain" mimetype="text/plain"/>
+<defaultContent>
+<link href="Microsites/The%20Guide%20To%20Perfect%20Lightida7577b9.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/The%20Guide%20To%20Perfect%20Lighting/The%20Art%20of%20Perfect%20Lighting%20Article"/>
+<link href="Microsites/The%20Guide%20To%20Perfect%20Lightif47044ae.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/The%20Guide%20To%20Perfect%20Lighting/The%20Guide%20to%20Perfect%20Lighting%20Article"/>
+</defaultContent>
+</CMP13NSearch>

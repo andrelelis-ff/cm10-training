@@ -1,0 +1,4 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+  <StringProperty  Name="callToActionCustomText">This is some custom cta text.</StringProperty>
+</Struct>

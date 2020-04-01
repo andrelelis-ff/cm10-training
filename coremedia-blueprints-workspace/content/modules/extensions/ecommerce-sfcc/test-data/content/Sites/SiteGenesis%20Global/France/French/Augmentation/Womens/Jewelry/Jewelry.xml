@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalChannel folder="/Sites/SiteGenesis Global/France/French/Augmentation/Womens/Jewelry" name="Jewelry" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Augmentation/Womens/Jewelry/Jewelry.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Augmentation/Womens/Jewelry/Jewelry"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>jewelry</segment>
+<title>Bijoux</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../../Editorial/Slots/Categories/Women/Jewelery/woman%27s%20hands%20with%20jewelry%20rings.xml" path="/Sites/SiteGenesis%20Global/France/French/Editorial/Slots/Categories/Women/Jewelery/woman%27s%20hands%20with%20jewelry%20rings"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<header>
+</header>
+<footer>
+</footer>
+<pdpPagegrid>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Layouts/Fragment%20PDP.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Layouts/Fragment%20PDP"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+</StructListProperty>
+</Struct>
+</pdpPagegrid>
+<externalId>sfcc:///catalog/category/womens-jewelry</externalId>
+</CMExternalChannel>

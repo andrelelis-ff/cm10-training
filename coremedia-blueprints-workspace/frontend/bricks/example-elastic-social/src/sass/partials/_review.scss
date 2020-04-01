@@ -1,0 +1,109 @@
+//default variables
+$cm-reviews-prefix: "cm-reviews" !default;
+$cm-reviews-margin-bottom: 10px !default;
+
+// reviews widget
+.#{$cm-reviews-prefix} {
+
+
+  &__toolbar,
+  &__notification {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  // review form
+  &__new-review {
+    display: none;
+
+    &.cm-new-review--active {
+      display: block;
+      margin-bottom: $cm-reviews-margin-bottom;
+    }
+
+    .cm-field {
+      padding: 0;
+      margin-bottom: 15px;
+    }
+
+    .cm-button-group {
+      text-align: right;
+    }
+
+    legend {
+      display: none;
+    }
+
+    input[name="rating"] {
+      display: none;
+    }
+
+    .cm-rating-indicator {
+      display: block;
+      cursor: pointer;
+    }
+
+  }
+}
+
+// list of reviews
+.cm-collection--reviews {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .cm-collection__item {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #919191;
+    margin-bottom: 15px;
+
+    &:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// a single review
+.cm-review {
+  &__header {
+    vertical-align: middle;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-weight: bold;
+    vertical-align: middle;
+  }
+
+  &__author-date {
+    font-size: 0.89em;
+  }
+
+  &__author {
+    font-style: italic;
+  }
+
+  &__user-image {
+    border-radius: 50%;
+    float: left;
+    height: 40px;
+    margin: 6px 10px 0 0;
+
+    &--default {
+      background-image: url("../../img/default-user.svg");
+      width: 40px;
+    }
+  }
+
+  &__text {
+    word-wrap: break-word; /* legacy */
+    overflow-wrap: break-word;
+    line-height: 1.25;
+  }
+
+  &__target {
+    @include visually-hidden();
+  }
+}

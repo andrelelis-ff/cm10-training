@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/Germany/German/Editorial/Content/Snow" name="Best places to snowboard in Austria" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Snow/Best%20places%20to%20snowboard%20in%20Austria.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Best%20places%20to%20snowboard%20in%20Austria"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Die besten Plätze zum Snowboard in Österreich</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snowboard.xml" path="/Settings/Taxonomies/Subject/Snowboard"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Inspiration.xml" path="/Settings/Taxonomies/Subject/Inspiration"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Locations.xml" path="/Settings/Taxonomies/Subject/Locations"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Ski.xml" path="/Settings/Taxonomies/Subject/Ski"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Location/Austria.xml" path="/Settings/Taxonomies/Location/Austria"/>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Erfahren Sie mehr über die Top-3 besten Plätze zu besuchen. </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Wir glauben, dass diese zu den Top 3 besten Plätze Skifahren / Snowboarden in Österreich zu gehen. <br/></p> <p class="p--heading-1"> 1. St. Anton </p> <blockquote><p> "Bei weitem die besten Freerider greifen in Österreich und von einem Weltklasse-Dorf auf. Es kommt alles zu einem ganz Preis und die britische INVASIAN verlässt er weniger jeder Österreicher ... " <br/></p></blockquote> <p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Pictures/St%20Anton.xml#data" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Pictures/St%20Anton"/><br/></p> <p class="p--heading-1"> 2. Ischgl </p> <blockquote><p> "Ischgl hat viele gute breite mittelschwere Pisten und versteckt abseits der Piste stashes. Ein superschnellen Lift-System, eine Saison, die bis zum Mai, große Terrain Park und die meisten voll auf apres in den Alpen dauert, schließt der ... " <br/></p></blockquote> <p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Pictures/Ischgl.xml#data" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Ischgl"/><br/></p> <p class="p--heading-1"> 3. Sölden </p> <blockquote><p> "Sölden ist einer von Österreich am besten Allround Resorts, mit einigen großen Zwischen Gelände, und die verrücktesten Après-Ski in der ..." <br/></p></blockquote> <p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Pictures/Solden.xml#data" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Solden"/><br/></p> <p><br/></p> </div></detailText>
+<pictures>
+<link href="../../../Pictures/Ischgl.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Ischgl"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../Authors/Charlotte%20May%20Person.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Authors/Charlotte%20May%20Person"/>
+</authors>
+</CMArticle>

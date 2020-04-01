@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./Germany/German/Editorial/Assets/Videos/Restaurant Videos/Jacob's Recipe - A short documentary Pictures" name="Jacobs Recipe 15 Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Assets/Videos/Restaurant%20Videos/Jacob%27s%20Recipe%20-%20A%20shor757394da.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Videos/Restaurant%20Videos/Jacob%27s%20Recipe%20-%20A%20short%20documentary%20Pictures/Jacobs%20Recipe%2015%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=455;y=0;width=1080;height=1080</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=240;y=0;width=1439;height=1080</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=1920;height=1080</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.23699421965317918;y1=0;x2=0.7996146435452793;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.1252408477842004;y1=0;x2=0.8747591522157996;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0;x2=1;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Jakobs Küche im Restaurant</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Bild von Bocca di Lupo Restaurant Küche wie von Chef Corp. entwickelt</alt>
+<copyright>Ginger Studio / Vimeo CC-BY-SA 3.0</copyright>
+<dataUrl></dataUrl>
+<data md5="1989e79343a2e67ad36b4a6355f32905" size="228529" href="../../../../../../../../__blob/1989e79343a2e67ad36b4a6355f32905.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

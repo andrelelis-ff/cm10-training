@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTaxonomy folder="/Settings/Taxonomies/Subject" name="Blog" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Blog</value>
+<children>
+<link href="Cooking.xml" path="/Settings/Taxonomies/Subject/Cooking"/>
+<link href="Culture.xml" path="/Settings/Taxonomies/Subject/Culture"/>
+<link href="Gadget.xml" path="/Settings/Taxonomies/Subject/Gadget"/>
+<link href="Beauty.xml" path="/Settings/Taxonomies/Subject/Beauty"/>
+<link href="Fashion%20Trends.xml" path="/Settings/Taxonomies/Subject/Fashion%20Trends"/>
+<link href="Eveningwear%281%29.xml" path="/Settings/Taxonomies/Subject/Eveningwear%281%29"/>
+<link href="Lighting%20Tag.xml" path="/Settings/Taxonomies/Subject/Lighting%20Tag"/>
+<link href="Speed%20Riding%20Tag.xml" path="/Settings/Taxonomies/Subject/Speed%20Riding%20Tag"/>
+<link href="Kitchen%20Tag.xml" path="/Settings/Taxonomies/Subject/Kitchen%20Tag"/>
+<link href="Fashion%20Tag.xml" path="/Settings/Taxonomies/Subject/Fashion%20Tag"/>
+<link href="Design%20Tag.xml" path="/Settings/Taxonomies/Subject/Design%20Tag"/>
+</children>
+<externalReference></externalReference>
+</CMTaxonomy>

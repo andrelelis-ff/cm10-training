@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Decorating/Lighting" name="Desk Lamp Silver Bendable Neck Picture 3" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0.17901234567901234</StringProperty>
+<StringProperty Name="y1">0.2066115702479339</StringProperty>
+<StringProperty Name="x2">0.7839506172839507</StringProperty>
+<StringProperty Name="y2">0.7417355371900827</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=603;y=826;width=1380;height=2140</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=487;y=826;width=1603;height=2140</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=479;y=1091;width=1619;height=1620</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=132;y=1248;width=2107;height=1579</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=1388;width=2322;height=1306</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=1579;width=2677;height=1074</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=479;y=1694;width=1619;height=405</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.22530864197530864;y1=0.2066115702479339;x2=0.7407407407407407;y2=0.7417355371900827</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.18209876543209877;y1=0.2066115702479339;x2=0.7808641975308642;y2=0.7417355371900827</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.17901234567901234;y1=0.2727272727272727;x2=0.7839506172839507;y2=0.6776859504132231</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.04938271604938271;y1=0.3119834710743802;x2=0.8364197530864198;y2=0.7066115702479339</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.34710743801652894;x2=0.8672839506172839;y2=0.6735537190082644</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.39462809917355374;x2=1;y2=0.6632231404958677</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0.17901234567901234;y1=0.42355371900826444;x2=0.7839506172839507;y2=0.5247933884297521</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_HLG028_280115</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Desk Lamp Silver Bendable Neck</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Desk Lamp Silver Bendable Neck</alt>
+<copyright>PodPad / Shutterstock 162589310</copyright>
+<dataUrl></dataUrl>
+<width>2678</width>
+<height>4000</height>
+<data md5="08f3a91491ac280ce1d2a5d61b72d853" size="168399" href="../../../../../../../../__blob/08f3a91491ac280ce1d2a5d61b72d853.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

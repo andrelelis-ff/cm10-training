@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Snow" name="Snowboard boots: everything you ever needed to know" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Snowboard boots: everything you ever needed to know</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snowboard.xml" path="/Settings/Taxonomies/Subject/Snowboard"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Equipment.xml" path="/Settings/Taxonomies/Subject/Equipment"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Tips%20and%20Tricks.xml" path="/Settings/Taxonomies/Subject/Tips%20and%20Tricks"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>From buying tips to FAQs to explanations of technical terms, here's our complete guide to snowboard boots. </p><p/></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>From buying tips to FAQs to explanations of technical terms, here's our complete guide to snowboard boots. If you're ready to buy, check out this season's must-have snowboard boots.</p><p class="p--heading-1">Snowboard boot FAQs</p><p class="p--heading-2">Why would I need a professional boot fitter?</p><p>When it comes to getting the right boots, there are many factors to consider, such as how experienced you are, whether you prefer park, powder or piste, your weight and your goals. A professional boot fitter will assess your foot shape and discuss your requirements to find boots with the right fit, flex and performance to suit your riding style and skills.</p><p class="p--heading-2">Should I get my liners heat moulded?</p><p>The benefit of having mouldable liners is that they can be heated and then shaped to your feet by a boot fitter to give a custom fit. Moulding also helps to speed up the breaking-in process.</p><p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Pictures/Snowboard%20Boots%2002.xml#data" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Snowboard%20Boots%2002"/><br/></p><p class="p--heading-2">Do I need specialist footbeds/insoles? </p><p>Some boots come with customisable footbeds or insoles, or they can be added to your boots. While this can increase the cost, they’re designed to provide extra support, reduce fatigue, increase impact absorption and improve posture, making turning easier, so are worth the extra outlay. They’re particularly important for those who suffer from specific problems such as flat feet. </p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Freestyle%20Snow%20Board%20110839.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Freestyle%20Snow%20Board%20110839">Freestyle Snow Board 110839</a><br/></p><p class="p--heading-2">Are Boa and one-pull lacing systems better than normal laces?</p><p>These will save you time when doing up your boots but essentially all lacing systems do the same thing, secure your feet in the boots. So don’t think of it as a deal breaker, but instead give priority to getting the boots that fit best. Then, if you get the lacing you fancy as well, it’ll be the icing on the cake. </p><p class="p--heading-2">What’s the difference between freeride and freestyle boots? </p><p>Designed for more aggressive snowboarding, freeride boots tend to be stiffer and more supportive. Freestyle boots are generally softer, particularly from side to side, making it easier to tweak out tricks. </p></div></detailText>
+<pictures>
+<link href="../../../Pictures/Snowboard%20Boots%20Detail%20Image.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Snowboard%20Boots%20Detail%20Image"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../Authors/Elle%20Quinn%20Person.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Authors/Elle%20Quinn%20Person"/>
+</authors>
+</CMArticle>

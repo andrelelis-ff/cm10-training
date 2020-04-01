@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./Germany/German/Editorial/Homepage/Company/Press/Events/Events Items" name="Chef Corp BBQ Cookout Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../../United%20States/English/Editorial/Homepage/Company/Press/Events/Events%20Items/Chef%20Corp%20BBQ%20Coba3c93c5.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Company/Press/Events/Events%20Items/Chef%20Corp%20BBQ%20Cookout%20Article"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Chef Corp. Grill-Wettbewerb</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Events.xml" path="/Settings/Taxonomies/Subject/Events"/>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Press.xml" path="/Settings/Taxonomies/Subject/Press"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Der Mai steht vor der Tür und es ist Zeit für eine American Barbecue Grill-Party mit einem Wettbewerb. </p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Der Mai steht vor der Tür und es ist höchste Zeit für eine gute American Barbecue Grill-Party mit einem Wettbewerb. Chef Corp. erhöht den Einsatz dieses Jahr, denn es dürfen nun auch Profi-Köche in einer eigenen Kategorie teilnehmen. Als Hauptgewinn stellen wir ein Jahr unseres erweiterten Service- und Wartungsplan für Profi-Küchen zur Verfügung. Besuchen Sie uns am ersten Mai-Wochenende im Waveland Park in Chicago, Illinois und bewerten die gegrillten Rippchen!</p></div></detailText>
+<pictures>
+<link href="../../../../../Assets/Pictures/Events/Chef%20Corp%20BBQ%20Cookout%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Events/Chef%20Corp%20BBQ%20Cookout%20Picture"/>
+</pictures>
+<related>
+<link href="../../../Investor%20Relations/Events/Event%20Items/Interim%20Report%6e17d8e7.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Homepage/Company/Investor%20Relations/Events/Event%20Items/Interim%20Report%20on%20the%20third%20quarter%20of%202019"/>
+<link href="../../../../Kitchen%20Dreams/Learn%20how%20Jacob%20made%20his%20dream%20come%20true.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Homepage/Kitchen%20Dreams/Learn%20how%20Jacob%20made%20his%20dream%20come%20true"/>
+</related>
+<authors>
+<link href="../../../../../Authors/David%20Fuller%20Person.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Authors/David%20Fuller%20Person"/>
+</authors>
+</CMArticle>

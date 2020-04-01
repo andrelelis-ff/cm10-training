@@ -1,0 +1,27 @@
+{
+  "name": "@coremedia-examples/brick-popup",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "prettier": "prettier \"**/*\" --write"
+  },
+  "devDependencies": {
+    "prettier": "^1.0.0"
+  },
+  "dependencies": {
+    "@coremedia/brick-utils": "^1.0.0",
+    "@coremedia/brick-node-decoration-service": "^1.0.0",
+    "@coremedia/brick-magnific-popup": "^1.0.0",
+    "@coremedia/brick-default-teaser": "^1.0.0",
+    "@coremedia/brick-media": "^1.0.0",
+    "@coremedia/brick-image-maps": "^1.0.0",
+    "@coremedia/brick-mediaelement": "^1.0.0",
+    "jquery": "^3.0.0",
+    "magnific-popup": "1.1.0"
+  },
+  "main": "src/js/index.js",
+  "coremedia": {
+    "type": "brick",
+    "init": "src/js/init.js"
+  }
+}

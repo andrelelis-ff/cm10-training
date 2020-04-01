@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+  <content>
+    <folder id="1" name="">
+      <folder id="3" name="Sites">
+        <folder id="5" name="Media">
+          <document id="4000" name="Site-Indicator" type="CMSite">
+            <version number="1">
+              <linkProperty name="root">
+                <link id="4002"/>
+              </linkProperty>
+              <stringProperty name="id" value="theSiteId"/>
+            </version>
+          </document>
+
+          <folder id="4001" name="Navigation">
+            <document id="4002" type="CMChannel" name="rootchannel">
+              <version number="1">
+                <stringProperty name="segment" value="theSiteSegment"/>
+              </version>
+            </document>
+          </folder>
+
+          <document id="2" name="docInMedia1" type="CMArticle">
+            <version number="1"></version>
+          </document>
+          <document id="4" name="docInMedia2" type="CMArticle">
+            <version number="1"></version>
+          </document>
+          <document id="6" name="docInMedia3" type="CMArticle">
+            <version number="1"></version>
+          </document>
+          <!-- invalid content -->
+          <document id="26" name="docInMedia4" type="CMArticle">
+            <version number="1">
+              <dateProperty name="validFrom" value="2010-01-01T06:00:00+01:00"/>
+              <dateProperty name="validTo" value="2011-01-01T06:00:00+01:00"/>
+            </version>
+          </document>
+          <folder id="7" name="About">
+            <document id="8" name="docInMediaAbout1" type="CMArticle">
+              <version number="1"></version>
+            </document>
+            <document id="10" name="docInMediaAbout2" type="CMArticle">
+              <version number="1"></version>
+            </document>
+            <folder id="9" name="Contact">
+              <document id="12" name="docInMediaAboutContact" type="CMArticle">
+                <version number="1"></version>
+              </document>
+            </folder>
+          </folder>
+        </folder>
+        <folder id="11" name="TestSite">
+          <document id="14" name="docInTestSite" type="CMArticle">
+            <version number="1"></version>
+          </document>
+          <folder id="13" name="trends">
+            <document id="16" name="docInTestSiteTrends1" type="CMArticle">
+              <version number="1"></version>
+            </document>
+            <document id="18" name="docInTestSiteTrends2" type="CMPicture">
+              <version number="1"></version>
+            </document>
+            <document id="22" name="docInTestSiteTrends3" type="CMChannel">
+              <version number="1"></version>
+            </document>
+          </folder>
+          <folder id="15" name="Contact">
+            <document id="24" name="docInTestSiteAboutContact" type="CMArticle">
+              <version number="1"></version>
+            </document>
+          </folder>
+        </folder>
+      </folder>
+    </folder>
+
+  </content>
+
+  <xi:include href="classpath:com/coremedia/cap/common/xml/rules-default.xml"/>
+
+</contentRepository>

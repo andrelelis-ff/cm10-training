@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalChannel folder="/Sites/Aurora Augmentation/Germany/German/Augmentation/Apparel/Men/Men Shirts" name="Shirts" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Augmentation/Apparel/Men/Men%20Shirts/Shirts.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Augmentation/Apparel/Men/Men%20Shirts/Shirts"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>men-shirts</segment>
+<title>Hemden</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../../../Pictures/Categories/Handsome%20man%20in%20shirt%20and%20sports%20pants.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Pictures/Categories/Handsome%20man%20in%20shirt%20and%20sports%20pants"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Pagegrid/Layouts/Two%20Column%20Layout.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Layouts/Two%20Column%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../../../Editorial/Content/Fashion/The%20difference%20between%20style%20and%20fashion.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/The%20difference%20between%20style%20and%20fashion"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Pagegrid/Placements/sidebar.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/sidebar"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+<pdpPagegrid>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Pagegrid/Layouts/Fragment%20PDP.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Layouts/Fragment%20PDP"/>
+<StructListProperty Name="placements">
+<Struct>
+</Struct>
+</StructListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</pdpPagegrid>
+<externalId>ibm:///catalog/category/Men Shirts</externalId>
+</CMExternalChannel>

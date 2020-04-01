@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <import resource="classpath:/com/coremedia/cap/common/uapi-services.xml"/>
+  <import resource="classpath:/com/coremedia/cache/cache-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-services.xml"/>
+
+  <bean id="resolveLivecontextContextStrategy" class="com.coremedia.livecontext.context.LiveContextResolveContextStrategy">
+    <property name="cache" ref="cache"/>
+    <property name="liveContextNavigationFactory" ref="liveContextNavigationFactory"/>
+  </bean>
+
+</beans>

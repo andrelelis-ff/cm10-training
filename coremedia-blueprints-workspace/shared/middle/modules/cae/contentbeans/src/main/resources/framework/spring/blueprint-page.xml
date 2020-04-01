@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+  <import resource="classpath:/com/coremedia/cap/multisite/multisite-services.xml"/>
+  <import resource="classpath:/com/coremedia/cache/cache-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/contentbean-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/dataview-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/tree/bpbase-treerelation-services.xml"/>
+
+  <bean name="cmPage" scope="prototype" class="com.coremedia.blueprint.cae.contentbeans.PageImpl">
+    <constructor-arg index="0" name="developerMode" value="${cae.developer.mode:false}"/>
+    <constructor-arg index="1" name="sitesService" ref="sitesService"/>
+    <constructor-arg index="2" name="cache" ref="cache"/>
+    <constructor-arg index="3" name="contentTreeRelation" ref="navigationTreeRelation"/>
+    <constructor-arg index="4" name="contentBeanFactory" ref="contentBeanFactory"/>
+    <constructor-arg index="5" name="dataViewFactory" ref="dataViewFactory"/>
+    <property name="mergeCodeResources" value="${cae.mergeCodeResources:false}"/>
+  </bean>
+</beans>

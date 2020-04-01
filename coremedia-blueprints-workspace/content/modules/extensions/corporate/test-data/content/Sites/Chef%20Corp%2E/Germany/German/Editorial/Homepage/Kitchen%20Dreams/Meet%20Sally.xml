@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./Germany/German/Editorial/Homepage/Kitchen Dreams" name="Meet Sally" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Homepage/Kitchen%20Dreams/Meet%20Sally.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Kitchen%20Dreams/Meet%20Sally"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="authors">
+<Struct>
+<StringProperty Name="name">Helena Block</StringProperty>
+<StringProperty Name="facebook_profile">https://www.facebook.com/helena.block</StringProperty>
+</Struct>
+<Struct>
+<StringProperty Name="name">Paul Pencil</StringProperty>
+</Struct>
+<Struct>
+<StringProperty Name="name">Gustav Schreiber</StringProperty>
+<StringProperty Name="facebook_profile">https://www.facebook.com/gustav.schreiber</StringProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Lernen Sie Sally kennen - sie betreibt ein Café in Florenz.</title>
+<htmlTitle></htmlTitle>
+<keywords>Café, Florenz</keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Kitchen.xml" path="/Settings/Taxonomies/Subject/Kitchen"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Lernen Sie Sally kennen - sie betreibt ein Café in Florenz.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Produktivitäts- und Erfahrungssteigerungen werden durch Chef Corp. ermöglicht. Integrierte Technologie für ein nahtloses Gästeerlebnis. Dieses vernetzte System aus Handheld-Bestell- und Bezahlgeräten sowie Anzeige- und Abfragegeräten ermöglicht es Ihrem Küchenpersonal, bereits während der Auftragserteilung zur Arbeit zu gehen.</p><p>In hochklassigen Restaurants sind die Kellner stolz darauf, sich Ihre Bestellung und sogar Ihre speziellen Wünsche auswendig zu merken. Wenn Ihr Personal auf dieser Ebene ist, lesen Sie nicht weiter. Die meisten Kellner verlassen sich jedoch auf Stift und Papier, die auch heute noch zu den Grundnahrungsmitteln der Restaurantwelt gehören. Daran ist nichts auszusetzen, da dies oft noch immer das effektivste Mittel ist, um den Auftrag in die Küche zu bekommen und alles zu organisieren, bis die Rechnung erstellt werden muss.</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Assets/Pictures/Company/Chef%20with%20Birthday%20Cake%20Picture.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Company/Chef%20with%20Birthday%20Cake%20Picture">Mischer und Küchenmaschinen</a></p><p>Die neue Technologie ermöglicht jedoch noch viel mehr. Eine Küche, die die Ordnung des ersten Gastes in der Pfanne hat, während der zweite noch bestellt, ist kein wahnhafter Tagtraum mehr. Ebenso wenig ist eine perfekte Rechnung, die der Kellner sofort ausdrucken kann, wenn er gefragt wird. Eine noch bessere, schnellere und bequemere Bezahlung am Tisch ist ganz in Ihrer Nähe.</p><p>Linienköche können sogar die Bestellung abfangen und Anfragen an den Kellner weiterleiten, der dann den Gast fragen kann. So lassen sich Verwirrung und Rücksendeaufträge auf ein Minimum reduzieren und die Gäste mit Ihrer Liebe zum Detail begeistern. Alle Geräte verfügen über eine einfach zu bedienende Touch-Oberfläche und berichten an eine zentrale Management-Konsole, die Ihrem Management einzigartige und aggregierte Einblicke in das Tagesgeschäft ermöglicht.</p><p>Die Verbindung von Geräten zu einem nahtlosen System scheint eine naheliegende Idee zu sein. Dennoch ist es nicht zu unterschätzen, wie revolutionär dieses Produkt im täglichen Einsatz ist. Mike Howard von den Hungry Mike's in Chicago, Illinois, war einer der ersten Restaurantbesitzer, der sich für einen technologisch verbesserten Service einsetzte: "Wir haben die Chef Corp. Integrierte Technologie für ein nahtloses Gästeerlebnis im letzten Jahr. Es ist erstaunlich, die Servicequalität hat sich erheblich verbessert. Und unsere Mitarbeiter lieben es auch! Sie sind hoch motiviert, an der Spitze der Bewertungslisten zu stehen, die das Management Dashboard für die Mitarbeiter erstellt. Faulheit und Unfreundlichkeit gehen in den Zahlen und Statistiken zurück, was uns wirklich hilft, die schwarzen Schafe auszusortieren. Nur die Busjungen werden nicht verfolgt, aber wir arbeiten daran."</p><p>Rufen Sie unsere Vertriebsmitarbeiter an und fragen Sie sie, wie Chef Corp. Integrierte Technologie für ein Seamless Guest Experience kann Ihr Restaurant-Erlebnis noch angenehmer machen.</p></div></detailText>
+<pictures>
+<link href="../../Assets/Pictures/Kitchen%20Dreams/Woman%20at%20Coffee%20Machine%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Kitchen%20Dreams/Woman%20at%20Coffee%20Machine%20Picture"/>
+</pictures>
+<related>
+<link href="../../../Products/ChefWave/ChefWave%20HD%20-%20Large%20Product.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/ChefWave/ChefWave%20HD%20-%20Large%20Product"/>
+<link href="../../../Products/Ranges%20and%20Ovens/Chef%20Range%20CR1020%20Premium%20Product.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/Ranges%20and%20Ovens/Chef%20Range%20CR1020%20Premium%20Product"/>
+<link href="../../../Products/Blenders%20and%20Food%20Processors/Kitchenette%20KNC30%20Mixer%20Product.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/Blenders%20and%20Food%20Processors/Kitchenette%20KNC30%20Mixer%20Product"/>
+</related>
+<authors>
+<link href="../../Authors/Charlotte%20May%20Person.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Authors/Charlotte%20May%20Person"/>
+</authors>
+</CMArticle>

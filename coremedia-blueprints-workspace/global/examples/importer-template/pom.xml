@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>examples.blueprint-parent</artifactId>
+    <version>1-SNAPSHOT</version>
+    <relativePath>../blueprint-parent/pom.xml</relativePath>
+  </parent>
+
+  <artifactId>importer-template</artifactId>
+  <packaging>pom</packaging>
+
+  <description>
+    This template shows how to wire an application based on the generic
+    CoreMedia XML Importer.  It is not usable OOTB, but needs specific
+    configuration, at least the inbox in cm-xmlimport.properties.
+    Moreover, it is recommended to rename cm-xmlimport.jpif and
+    cm-xmlimport.properties to a name that reflects the purpose of your
+    particular importer application.
+  </description>
+
+  <modules>
+    <module>importer-config</module>
+    <module>importer</module>
+  </modules>
+</project>
+

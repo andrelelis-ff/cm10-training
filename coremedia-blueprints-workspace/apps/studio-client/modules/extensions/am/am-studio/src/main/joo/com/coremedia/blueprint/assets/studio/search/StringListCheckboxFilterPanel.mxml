@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:StringListCheckboxFilterPanelBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.assets.studio.search.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        itemId="{config.filterId}">
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpressionFactory;
+
+    public static const xtype:String = "com.coremedia.blueprint.assets.studio.config.stringListCheckboxFilterPanel";
+
+    private var config:StringListCheckboxFilterPanel;
+
+    public native function StringListCheckboxFilterPanel(config:StringListCheckboxFilterPanel = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!---
+     The filter ID for this filter. It is used as itemId and identifier in saved searches.
+    -->
+    <fx:String id="filterId"/>
+
+    <!---
+     The solr field to pose the query against. If not set the filterId is used.
+    -->
+    <fx:String id="solrField"/>
+
+    <!---
+     The property in the metadata struct of the Asset. If not set the filterId is used.
+    -->
+    <fx:String id="propertyName"/>
+  </fx:Declarations>
+
+  <local:items>
+    <Container itemId="checkboxContainer">
+      <defaults>
+        <CheckboxGroup columns="1">
+          <plugins>
+            <ui:BindPropertyPlugin bindTo="{ValueExpressionFactory.create(config.filterId, getStateBean())}"
+                                   bidirectional="{true}"
+                                   transformer="{transformer}"
+                                   reverseTransformer="{reverseTransformer}"/>
+          </plugins>
+        </CheckboxGroup>
+      </defaults>
+    </Container>
+  </local:items>
+
+
+</local:StringListCheckboxFilterPanelBase>

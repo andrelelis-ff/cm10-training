@@ -1,0 +1,31 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <StringProperty Name="string">testString</StringProperty>
+  <LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/content/4"/>
+  <LinkListProperty Name="linkList" LinkType="coremedia:///cap/contenttype/CMTeasable">
+    <Link xlink:href="coremedia:///cap/content/6"/>
+    <Link xlink:href="coremedia:///cap/content/8"/>
+  </LinkListProperty>
+  <StructProperty Name="struct">
+    <Struct>
+      <StringProperty Name="string">testString1</StringProperty>
+      <LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/content/10"/>
+      <LinkListProperty Name="linkList" LinkType="coremedia:///cap/contenttype/CMTeasable">
+        <Link xlink:href="coremedia:///cap/content/12"/>
+        <Link xlink:href="coremedia:///cap/content/14"/>
+      </LinkListProperty>
+    </Struct>
+  </StructProperty>
+  <StructListProperty Name="structList">
+    <Struct>
+      <StringProperty Name="string">testString2</StringProperty>
+      <LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/content/16"/>
+    </Struct>
+    <Struct>
+      <StringProperty Name="string">testString3</StringProperty>
+      <LinkListProperty Name="linkList" LinkType="coremedia:///cap/contenttype/CMTeasable">
+        <Link xlink:href="coremedia:///cap/content/18"/>
+        <Link xlink:href="coremedia:///cap/content/20"/>
+      </LinkListProperty>
+    </Struct>
+  </StructListProperty>
+</Struct>

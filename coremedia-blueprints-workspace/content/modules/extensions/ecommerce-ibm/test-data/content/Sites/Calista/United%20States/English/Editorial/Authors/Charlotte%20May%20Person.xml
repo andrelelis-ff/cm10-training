@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPerson folder="/Sites/Calista/United States/English/Editorial/Authors" name="Charlotte May Person" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Digital Story Teller. Cat Mom. Podcast host. Author (“More for me”). TED Talk addict.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Born in 1987, Charlotte has a distinct interest in digital story telling and social media. She has published multiple works, among them the seminal "More for me", a book that has laid the foundation for the new millennial spirit. Other work has been published in the New Yorker, the Huffington Post, and VICE magazine.</p></div></detailText>
+<pictures>
+<link href="Charlotte%20May%20Picture.xml" path="/Sites/Calista/United%20States/English/Editorial/Authors/Charlotte%20May%20Picture"/>
+</pictures>
+<related>
+<link href="Charlotte%27s%20Articles%20Query%20List.xml" path="/Sites/Calista/United%20States/English/Editorial/Authors/Charlotte%27s%20Articles%20Query%20List"/>
+</related>
+<authors>
+</authors>
+<firstName>Charlotte</firstName>
+<lastName>May</lastName>
+<displayName></displayName>
+<eMail>info@coremedia.com</eMail>
+<organization>Calista</organization>
+<jobTitle>Senior Social Media Manager</jobTitle>
+<misc>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="twitter">https://twitter.com/coremedia</StringProperty>
+</Struct>
+</misc>
+</CMPerson>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:TaxonomyExplorerColumnBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                                  xmlns:local="com.coremedia.blueprint.studio.taxonomy.administration.*"
+                                  xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                                  xmlns="exml:ext.config"
+                                  xmlns:taxonomy="exml:com.coremedia.blueprint.studio.config.taxonomy"
+                                  xmlns:ui="exml:com.coremedia.ui.config"
+                                  hideHeaders="true"
+                                  forceFit="true">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.studio.taxonomy.TaxonomyNode;
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.skins.TableViewSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.taxonomy.taxonomyExplorerColumn";
+
+    private var config:TaxonomyExplorerColumn;
+
+    public native function TaxonomyExplorerColumn(config:TaxonomyExplorerColumn = null);
+
+    /**
+     * Contains the active selected site, selected by site chooser component.
+     */
+    [Bindable]
+    public var siteSelectionExpression:ValueExpression;
+
+    /**
+     * The clipboard for cut and paste
+     */
+    [Bindable]
+    public var clipboardValueExpression:ValueExpression;
+
+    /**
+     * Contains the active selected node.
+     */
+    [Bindable]
+    public var selectedNodeExpression:ValueExpression;
+
+    /**
+     * Contains the parent node.
+     */
+    [Bindable]
+    public var parentNode:TaxonomyNode;
+    ]]></fx:Script>
+
+  <local:plugins>
+    <ui:BindListPlugin bindTo="{getEntriesValueExpression()}">
+      <ui:fields>
+        <ui:DataField name="name"/>
+        <ui:DataField name="siteId"/>
+        <ui:DataField name="type"/>
+        <ui:DataField name="ref"/>
+        <ui:DataField name="level"/>
+        <ui:DataField name="root"/>
+        <ui:DataField name="leaf"/>
+        <ui:DataField name="taxonomyId"/>
+        <ui:DataField name="selectable"/>
+        <ui:DataField name="extendable"/>
+      </ui:fields>
+    </ui:BindListPlugin>
+    <ui:ContextMenuPlugin disableDoubleClick="true">
+      <ui:contextMenu>
+        <Menu>
+          <items>
+            <MenuItem itemId="cutNode"
+                      iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'cut')}">
+              <baseAction>
+                <taxonomy:CutKeywordAction clipboardValueExpression="{config.clipboardValueExpression}"
+                                           selectionExpression="{config.selectedNodeExpression}"/>
+              </baseAction>
+            </MenuItem>
+            <MenuItem itemId="pasteNode"
+                      iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'paste')}">
+              <baseAction>
+                <taxonomy:PasteKeywordAction clipboardValueExpression="{config.clipboardValueExpression}"
+                                             selectionExpression="{config.selectedNodeExpression}"/>
+              </baseAction>
+            </MenuItem>
+            <MenuSeparator />
+            <MenuItem itemId="deleteNode"
+                      iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'remove')}">
+              <baseAction>
+                <taxonomy:DeleteKeywordAction selectionExpression="{config.selectedNodeExpression}" />
+              </baseAction>
+            </MenuItem>
+          </items>
+        </Menu>
+      </ui:contextMenu>
+    </ui:ContextMenuPlugin>
+  </local:plugins>
+  <local:columns>
+    <GridColumn stateId="name"
+                flex="1"
+                sortable="false"
+                fixed="true"
+                dataIndex="name"
+                renderer="{nameColRenderer}"/>
+    <GridColumn stateId="leaf"
+                width="21"
+                sortable="false"
+                fixed="true"
+                dataIndex="leaf"
+                renderer="{pointerColRenderer}"/>
+  </local:columns>
+  <local:selModel>
+    <selection_RowModel mode="MULTI" />
+  </local:selModel>
+  <local:view>
+    <GridView deferEmptyText="false"
+              emptyText="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyExplorerColumn_emptyText_loading')}"
+              ui="{TableViewSkin.LIGHT.getSkin()}">
+      <plugins>
+        <plugin_GridViewDragDrop ddGroup="taxonomies"
+                                 enableDrag="{config.parentNode !== undefined}"
+                                 enableDrop="{config.parentNode !== undefined}"
+                                 pluginId="{DRAG_DROP_PLUGIN_ID}"/>
+      </plugins>
+    </GridView>
+  </local:view>
+
+</local:TaxonomyExplorerColumnBase>

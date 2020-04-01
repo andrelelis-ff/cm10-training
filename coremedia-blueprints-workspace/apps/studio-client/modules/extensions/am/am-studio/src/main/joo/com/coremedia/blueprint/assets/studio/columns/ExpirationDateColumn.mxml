@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DateColumn xmlns:fx="http://ns.adobe.com/mxml/2009"
+            xmlns:exml="http://www.jangaroo.net/exml/0.8"
+            xmlns:u="exml:untyped"
+            xmlns="exml:ext.config"
+            header="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'Column_ExpirationDate_text')}"
+            width="126"
+            stateId="{AssetConstants.PROPERTY_ASSET_METADATA_EXPIRATIONDATE}"
+            format="{resourceManager.getString('com.coremedia.cms.editor.Editor', 'dateFormat')}"
+            dataIndex="{AssetConstants.PROPERTY_ASSET_METADATA_EXPIRATIONDATE}"
+            u:sortField="{AssetConstants.PROPERTY_ASSET_METADATA_EXPIRATIONDATE}"
+            sortable="true">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.assets.studio.AMStudioPlugin')]
+    [ResourceBundle('com.coremedia.cms.editor.Editor')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.assets.studio.AssetConstants;
+
+    private var config:ExpirationDateColumn;
+
+    public native function ExpirationDateColumn(config:ExpirationDateColumn = null);
+    ]]></fx:Script>
+
+</DateColumn>

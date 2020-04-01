@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/United Kingdom/English/Pictures" name="High fashion portrait of young elegant woman" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0;x2=0.9999999999999999;y2=0.843644544431946</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.00949367088607595;x2=0.9999999999999999;y2=0.7593999326033614</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.00949367088607595;x2=0.9999999999999999;y2=0.6094186802599042</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.006329113924050633;x2=0.9999999999999999;y2=0.5687588102120147</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.006329113924050633;x2=0.9999999999999999;y2=0.3812822447826933</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.19198312236286919;y1=0;x2=0.8587331223628691;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.390295358649789;y1=0;x2=0.8204566489723696;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.31856540084388185;y1=0;x2=0.8186279008438818;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=446;y=0;width=3554;height=2665</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=4000;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=25;width=4000;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=25;width=4000;height=1600</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=0;width=4000;height=1500</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=17;width=4000;height=1000</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=1187;y=0;width=2667;height=2667</StringProperty>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1561;y=0;width=1721;height=2667</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=1520;y=0;width=2000;height=2667</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=1634;y=0;width=1778;height=2667</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.628421052631579</StringProperty>
+<StringProperty Name="y">0.20662460567823343</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>High fashion portrait of young elegant woman</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Fashion.xml" path="/Settings/Taxonomies/Subject/Fashion"/>
+<link href="../../../../../Settings/Taxonomies/Subject/Women%282%29.xml" path="/Settings/Taxonomies/Subject/Women%282%29"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>High fashion portrait of young elegant woman</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2667</height>
+<data md5="8b3776b2911ff30d71c098308c78705b" size="778947" href="../../../../../__blob/8b3776b2911ff30d71c098308c78705b.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

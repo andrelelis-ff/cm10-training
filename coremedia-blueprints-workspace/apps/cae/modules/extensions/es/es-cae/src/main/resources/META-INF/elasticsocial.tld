@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?><!--
+
+  Tag Library Definition for the CoreMedia Elastic Social Plugin
+
+ --><taglib xmlns="http://java.sun.com/xml/ns/javaee"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+            version="2.1">
+
+  <description>CoreMedia Elastic Social Plugin Tag Library</description>
+  <tlib-version>1.0</tlib-version>
+  <short-name>social</short-name>
+  <uri>http://www.coremedia.com/elastic/social</uri>
+
+  <function>
+    <description>
+      Returns true if the current user, anonymous or logged in, has complained about the given comment.
+    </description>
+    <name>hasComplaintForCurrentUser</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.tags.ElasticSocialFunctions</function-class>
+    <function-signature>java.lang.Boolean hasComplaintForCurrentUser(java.lang.String, java.lang.String)</function-signature>
+  </function>
+
+  <function>
+    <description>
+      Returns the like status for the given user, either anonymous or not
+    </description>
+    <name>isAnonymous</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.tags.ElasticSocialFunctions</function-class>
+    <function-signature>java.lang.Boolean isAnonymous(com.coremedia.elastic.social.api.users.CommunityUser)</function-signature>
+  </function>
+
+  <function>
+    <description>
+      Returns the like status for the given user, either activated or not
+    </description>
+    <name>isActivated</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.tags.ElasticSocialFunctions</function-class>
+    <function-signature>java.lang.Boolean isActivated(com.coremedia.elastic.social.api.users.CommunityUser)</function-signature>
+  </function>
+
+  <function>
+    <description>
+      Returns the like status for the current user, either anonymous or logged in.
+    </description>
+    <name>hasLikeForCurrentUser</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.tags.ElasticSocialFunctions</function-class>
+    <function-signature>java.lang.Boolean hasLikeForCurrentUser(com.coremedia.blueprint.common.contentbeans.CMTeasable)</function-signature>
+  </function>
+
+  <function>
+    <description>
+      Returns the rating status for the current user, either anonymous or logged in.
+    </description>
+    <name>getRatingForCurrentUser</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.tags.ElasticSocialFunctions</function-class>
+    <function-signature>java.lang.Integer getRatingForCurrentUser(com.coremedia.blueprint.common.contentbeans.CMTeasable)</function-signature>
+  </function>
+
+  <function>
+    <description>
+      Returns the average rating.
+    </description>
+    <name>getAverageRating</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.tags.ElasticSocialFunctions</function-class>
+    <function-signature>double getAverageRating(com.coremedia.blueprint.common.contentbeans.CMTeasable)</function-signature>
+  </function>
+
+  <function>
+    <description>
+      Returns true if the current user is anonymous and not logged in.
+    </description>
+    <name>isAnonymousUser</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.tags.ElasticSocialFunctions</function-class>
+    <function-signature>java.lang.Boolean isAnonymousUser()</function-signature>
+  </function>
+
+  <function>
+    <description>
+      Returns true if the current user is not the given author.
+    </description>
+    <name>isNotAuthor</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.tags.ElasticSocialFunctions</function-class>
+    <function-signature>java.lang.Boolean isNotAuthor(com.coremedia.elastic.social.api.users.CommunityUser)</function-signature>
+  </function>
+
+  <function>
+    <description>
+      Returns the GUID for the current request.
+    </description>
+    <name>getCurrentGuid</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.guid.GuidCookieHandler</function-class>
+    <function-signature>java.lang.String getCurrentGuid()</function-signature>
+  </function>
+
+  <!-- Blueprint -->
+
+  <function>
+    <description>
+      Returns anonymous or current user
+    </description>
+    <name>user</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.tags.ElasticSocialFunctions</function-class>
+    <function-signature>com.coremedia.elastic.social.api.users.CommunityUser getCurrentOrAnonymousUser()</function-signature>
+  </function>
+
+  <function>
+    <description>
+      Returns the number of given ratings for a teasable
+    </description>
+    <name>getNumberOfRatings</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.tags.ElasticSocialFunctions</function-class>
+    <function-signature>long getNumberOfRatings(com.coremedia.blueprint.common.contentbeans.CMTeasable)</function-signature>
+  </function>
+
+   <function>
+    <description>
+      Returns the number of given likes for a teasable
+    </description>
+    <name>getNumberOfLikes</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.tags.ElasticSocialFunctions</function-class>
+    <function-signature>long getNumberOfLikes(com.coremedia.blueprint.common.contentbeans.CMTeasable)</function-signature>
+  </function>
+
+  <function>
+    <description>
+     Returns the number of given comments for a teasable
+    </description>
+    <name>getNumberOfComments</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.tags.ElasticSocialFunctions</function-class>
+    <function-signature>long getNumberOfComments(com.coremedia.blueprint.common.contentbeans.CMTeasable)</function-signature>
+  </function>
+
+  <function>
+    <description>
+      Returns the text without linefeeds.
+    </description>
+    <name>escapeJavaScript</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.tags.ElasticSocialFunctions</function-class>
+    <function-signature>java.lang.String escapeJavaScript(java.lang.String)</function-signature>
+  </function>
+
+  <function>
+    <description>
+      Returns true if the current content is valid.
+    </description>
+    <name>isValid</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.tags.ElasticSocialFunctions</function-class>
+    <function-signature>java.lang.Boolean isValid(com.coremedia.blueprint.common.contentbeans.CMTeasable, javax.servlet.http.HttpServletRequest)</function-signature>
+  </function>
+
+  <function>
+    <description>
+      Returns true if content is instance of CMAction with id Login
+    </description>
+    <name>isLoginAction</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.tags.ElasticSocialFunctions</function-class>
+    <function-signature>java.lang.Boolean isLoginAction(java.lang.Object)</function-signature>
+  </function>
+
+  <function>
+    <name>getElasticSocialConfiguration</name>
+    <function-class>com.coremedia.blueprint.elastic.social.cae.tags.ElasticSocialFunctions</function-class>
+    <function-signature>com.coremedia.blueprint.elastic.social.configuration.ElasticSocialConfiguration getElasticSocialConfiguration(com.coremedia.blueprint.common.contentbeans.Page)</function-signature>
+  </function>
+
+  <tag-file>
+    <name>likeRating</name>
+    <path>/META-INF/tags/likeRating.tag</path>
+  </tag-file>
+
+  <tag-file>
+    <name>complaining</name>
+    <path>/META-INF/tags/complaining.tag</path>
+  </tag-file>
+</taglib>

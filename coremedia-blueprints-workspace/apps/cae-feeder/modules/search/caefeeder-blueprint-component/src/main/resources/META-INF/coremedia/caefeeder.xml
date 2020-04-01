@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="caefeeder-services.xml"/>
+  <!-- import bean "persistentDependencyCache" -->
+  <import resource="classpath:/framework/spring/persistentcache/persistentcache-dependency.xml"/>
+  <!-- import bean "navigationPathKeyFactory" -->
+  <import resource="classpath:/com/coremedia/blueprint/base/caefeeder/bpbase-caefeeder-navigation.xml"/>
+  <import resource="classpath:/framework/spring/caefeeder-taxonomy.xml"/>
+
+  <customize:append id="caeFeederBeanPropertiesByClassCustomizer" bean="caeFeederBeanPropertiesByClass">
+    <description>
+      Mapping from bean classes to comma-separated list of indexed properties.
+      When populating a Feedable for a bean of one of the given classes, the given bean properties are mapped to
+      Feedable elements with the same names. The content of the given properties is also indexed in field 'textbody'.
+      For a more flexible mapping of bean properties to feedable elements, you can configure BeanFeedableMappings in
+      list 'caeFeederBeanMappings', which are merged with the configuration from this map.
+      Beans and their properties are only indexed if the corresponding content type is configured for feeding
+      See properties 'feeder.contentSelector.contentTypes' and 'feeder.contentSelector.includeSubTypes'.
+    </description>
+    <map>
+      <entry key="com.coremedia.blueprint.common.contentbeans.CMLinkable" value="keywords,title"/>
+      <entry key="com.coremedia.blueprint.common.contentbeans.CMTeasable"
+             value="teaserTitle,teaserText,detailText,htmlDescription"/>
+      <entry key="com.coremedia.blueprint.common.contentbeans.CMMedia" value="caption,alt"/>
+      <entry key="com.coremedia.blueprint.common.contentbeans.CMTaxonomy" value="value"/>
+      <entry key="com.coremedia.blueprint.common.contentbeans.CMDownload" value="data"/>
+      <entry key="com.coremedia.blueprint.common.contentbeans.CMPerson" value="displayName"/>
+    </map>
+  </customize:append>
+
+  <bean id="defaultBeanFeedableMapping" class="com.coremedia.cap.feeder.bean.BeanFeedableMapping">
+    <property name="beanClass" value="com.coremedia.objectserver.beans.ContentBean"/>
+    <property name="beanPropertyMappings">
+      <list>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="content.type.name"/>
+          <property name="feedableElement" value="documenttype"/>
+          <property name="textBody" value="false"/>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="content.modificationDate"/>
+          <property name="feedableElement" value="freshness"/>
+          <property name="textBody" value="false"/>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="content.creationDate"/>
+          <property name="feedableElement" value="creationdate"/>
+          <property name="textBody" value="false"/>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="content.deleted"/>
+          <property name="feedableElement" value="isdeleted"/>
+          <property name="textBody" value="false"/>
+        </bean>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="cmLocalizedPathFeedableMapping" class="com.coremedia.cap.feeder.bean.BeanFeedableMapping">
+    <property name="beanClass" value="com.coremedia.blueprint.common.contentbeans.CMLocalized"/>
+    <property name="beanPropertyMappings">
+      <list>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="lang"/>
+          <property name="feedableElement" value="language"/>
+          <property name="textBody" value="false"/>
+          <property name="propertyConverter">
+            <!-- Replace empty string with null to avoid feeding the language if it's not known.
+                 (An empty language field would cause language detection warnings in Solr.) -->
+            <bean class="com.coremedia.cap.feeder.bean.ReplacePropertyConverter">
+              <constructor-arg index="0" name="replacements">
+                <map><entry key=""><null/></entry></map>
+              </constructor-arg>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="navigationPathFeedableMapping" class="com.coremedia.cap.feeder.bean.BeanFeedableMapping">
+    <property name="beanClass" value="com.coremedia.blueprint.common.contentbeans.CMLinkable"/>
+    <property name="beanPropertyMappings">
+      <list>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="contexts"/>
+          <property name="feedableElement" value="navigationpaths"/>
+          <property name="textBody" value="false"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.blueprint.caefeeder.NavigationPathPropertyConverter">
+              <property name="navigationPathKeyFactory" ref="navigationPathKeyFactory"/>
+            </bean>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="contexts"/>
+          <property name="feedableElement" value="contexts"/>
+          <property name="textBody" value="false"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.cap.feeder.bean.CollectionPropertyConverter">
+              <property name="elementProperty" value="contentId"/>
+            </bean>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="segment"/>
+          <property name="feedableElement" value="segment"/>
+          <property name="textBody" value="false"/>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="validFrom"/>
+          <property name="feedableElement" value="validfrom"/>
+          <property name="textBody" value="false"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.blueprint.caefeeder.ValidFromPropertyConverter"/>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="validTo"/>
+          <property name="feedableElement" value="validto"/>
+          <property name="textBody" value="false"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.blueprint.caefeeder.ValidToPropertyConverter"/>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="externallyDisplayedDate"/>
+          <property name="feedableElement" value="externallydisplayeddate"/>
+          <property name="textBody" value="false"/>
+        </bean>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="cmTeasableFeedableMapping" class="com.coremedia.cap.feeder.bean.BeanFeedableMapping">
+    <property name="beanClass" value="com.coremedia.blueprint.common.contentbeans.CMTeasable"/>
+    <property name="beanPropertyMappings">
+      <list>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="subjectTaxonomy"/>
+          <property name="feedableElement" value="subjecttaxonomy"/>
+          <property name="textBody" value="false"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.blueprint.caefeeder.TaxonomyIdsPropertyConverter">
+              <property name="taxonomyPathKeyFactory" ref="subjectTaxonomyPathKeyFactory"/>
+            </bean>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="subjectTaxonomy"/>
+          <property name="feedableElement" value="subjecttaxonomyNames"/>
+          <property name="textBody" value="true"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.blueprint.caefeeder.TaxonomyNamesPropertyConverter">
+              <property name="taxonomyPathKeyFactory" ref="subjectTaxonomyPathKeyFactory"/>
+            </bean>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="locationTaxonomy"/>
+          <property name="feedableElement" value="locationtaxonomy"/>
+          <property name="textBody" value="false"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.blueprint.caefeeder.TaxonomyIdsPropertyConverter">
+              <property name="taxonomyPathKeyFactory" ref="locationTaxonomyPathKeyFactory"/>
+            </bean>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="locationTaxonomy"/>
+          <property name="feedableElement" value="locationtaxonomyNames"/>
+          <property name="textBody" value="true"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.blueprint.caefeeder.TaxonomyNamesPropertyConverter">
+              <property name="taxonomyPathKeyFactory" ref="locationTaxonomyPathKeyFactory"/>
+            </bean>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="notSearchable"/>
+          <property name="feedableElement" value="notsearchable"/>
+          <property name="textBody" value="false"/>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="authors"/>
+          <property name="feedableElement" value="authors"/>
+          <property name="textBody" value="false"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.cap.feeder.bean.CollectionPropertyConverter">
+              <property name="elementProperty" value="contentId"/>
+            </bean>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="authors"/>
+          <property name="feedableElement" value="authorNames"/>
+          <property name="textBody" value="true"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.cap.feeder.bean.CollectionPropertyConverter">
+              <property name="elementProperty" value="displayName"/>
+            </bean>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+
+  <customize:append id="feedablePopulatorsCustomizer" bean="feedablePopulators">
+    <description>
+      List of com.coremedia.cap.feeder.populate.FeedablePopulator beans to be used by the CAE Feeder.
+      By default, this list contains the feedablePopulator bean
+      (a com.coremedia.cap.feeder.bean.BeanMappingFeedablePopulator).
+    </description>
+    <list>
+      <ref bean="typeFeedablePopulator"/>
+    </list>
+  </customize:append>
+
+  <bean id="typeFeedablePopulator" class="com.coremedia.cap.feeder.populate.TypeFeedablePopulator">
+    <description>
+      FeedablePopulator that sets the type of an object in element 'type' and its type hierarchy in element 'types'.
+    </description>
+    <property name="typeElement" value="type"/>
+    <property name="typesElement" value="types"/>
+  </bean>
+
+  <customize:append id="caeFeederBeanMappingsCustomizer" bean="caeFeederBeanMappings">
+    <description>
+      List of bean mappings (com.coremedia.cap.feeder.bean.BeanFeedableMapping) which map beans to
+      com.coremedia.cap.feeder.Feedable objects.
+    </description>
+    <list>
+      <!-- a default mapping for all content beans -->
+      <ref bean="defaultBeanFeedableMapping"/>
+      <ref bean="cmLocalizedPathFeedableMapping"/>
+      <!-- CMLinkable Navigation Paths -->
+      <ref bean="navigationPathFeedableMapping"/>
+      <!-- add more beans here -->
+      <ref bean="cmTeasableFeedableMapping"/>
+    </list>
+  </customize:append>
+
+  <!--
+  <customize:append id="contentTypeNamesCustomizer" bean="contentTypeNames">
+    <description>
+      In this list, you can extend the configuration property 'feeder.contentSelector.contentTypes'
+      with additional content type names.
+    </description>
+    <list>
+      &lt;!&ndash;
+      Example:
+      <value>CMArticle</value>
+      &ndash;&gt;
+    </list>
+  </customize:append>
+  -->
+
+  <!--
+  <customize:append id="basePathListCustomizer" bean="basePathList">
+    <description>
+      In this list, you can extend the configuration property 'feeder.contentSelector.basePath'
+      with additional base paths.
+    </description>
+    <list>
+      &lt;!&ndash;
+      Example:
+      <value>/Products</value>
+      &ndash;&gt;
+    </list>
+  </customize:append>
+  -->
+
+</beans>

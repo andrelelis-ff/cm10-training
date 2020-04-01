@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Decorating/Lighting" name="Compact Size Table Lamp with Black Shade Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=511;y=757;width=618;height=961</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=491;y=803;width=664;height=890</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=409;y=833;width=802;height=803</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=225;y=752;width=1191;height=895</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=138;y=787;width=1370;height=772</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=920;width=1656;height=665</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=1130;width=1656;height=414</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.30864197530864196;y1=0.30265848670756645;x2=0.6820987654320988;y2=0.6871165644171779</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2962962962962963;y1=0.3210633946830266;x2=0.6975308641975309;y2=0.6768916155419223</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.24691358024691357;y1=0.3333333333333333;x2=0.7314814814814815;y2=0.65439672801636</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.13580246913580246;y1=0.3006134969325153;x2=0.8549382716049383;y2=0.6584867075664622</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.08333333333333333;y1=0.3149284253578732;x2=0.9104938271604939;y2=0.623721881390593</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.36809815950920244;x2=1;y2=0.6339468302658486</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.45194274028629855;x2=1;y2=0.6175869120654397</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_HLG028_280109</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Compact Size Table Lamp with Black Shade</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Compact Size Table Lamp with Black Shade</alt>
+<copyright>Everything / Shutterstock 192021449</copyright>
+<dataUrl></dataUrl>
+<width>1656</width>
+<height>2500</height>
+<data md5="8e0309f672f171385eff89226738619a" size="179467" href="../../../../../../../../__blob/8e0309f672f171385eff89226738619a.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

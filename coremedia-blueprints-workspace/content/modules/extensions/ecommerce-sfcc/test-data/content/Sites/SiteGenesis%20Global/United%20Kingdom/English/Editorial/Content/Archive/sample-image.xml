@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/United Kingdom/English/Editorial/Content/Archive" name="sample-image" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=83;y=0;width=1338;height=1004</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=83;width=1500;height=842</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=128;width=1500;height=752</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=203;width=1500;height=602</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=222;width=1500;height=564</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=316;width=1500;height=376</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=248;y=0;width=1004;height=1004</StringProperty>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=429;y=0;width=647;height=1004</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=376;y=0;width=752;height=1004</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2857142857142857;y1=0;x2=0.7167919799498746;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2506265664160401;y1=0;x2=0.7518796992481203;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.16541353383458646;y1=0;x2=0.8345864661654135;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.05513784461152882;y1=0;x2=0.9473684210526315;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.08239700374531835;x2=1;y2=0.9213483146067416</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.12734082397003746;x2=1;y2=0.8764044943820225</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.20224719101123595;x2=1;y2=0.8014981273408239</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.2209737827715356;x2=1;y2=0.7827715355805244</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3146067415730337;x2=1;y2=0.6891385767790262</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio2x1">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio8x3">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>sample-image</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>sample-image</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1500</width>
+<height>1004</height>
+<data md5="17b7f0a28f3b772a637a7a34235ed5a3" size="378295" href="../../../../../../../__blob/17b7f0a28f3b772a637a7a34235ed5a3.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

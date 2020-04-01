@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMP13NSearch folder="/Sites/SiteGenesis Global/United Kingdom/English/Editorial/Content" name="Content Recommendations" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Content Recommendations For You</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<maxLength>3</maxLength>
+<documentType>CMArticle</documentType>
+<searchContext>
+<link href="../../Navigation/SiteGenesis%20UK.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Navigation/SiteGenesis%20UK"/>
+</searchContext>
+<searchQuery href="Content%20Recommendations.searchQuery.plain" mimetype="text/plain"/>
+<defaultContent>
+<link href="Articles/The%20Difference%20between%20Style%20and%20Fashion.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Articles/The%20Difference%20between%20Style%20and%20Fashion"/>
+<link href="Articles/Fashion%20should%20be%20Fun.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Articles/Fashion%20should%20be%20Fun"/>
+</defaultContent>
+</CMP13NSearch>

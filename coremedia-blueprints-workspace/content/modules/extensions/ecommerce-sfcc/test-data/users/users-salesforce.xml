@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository xmlns="http://www.coremedia.com/2005/contentserver/userrepository">
+  <group id="staff" name="staff" contentgroup="true" livegroup="false" administrative="false">
+    <!-- Global group, no corporate specific rules here! -->
+    <members>
+      <group id="global-manager" name="global-manager" contentgroup="true" livegroup="false" administrative="false">
+        <!-- Global group, no corporate specific rules here! -->
+        <members>
+          <group id="global-site-manager-sf" name="global-site-manager-sf" contentgroup="true" livegroup="false" administrative="false">
+            <rule content="/Sites/SiteGenesis Global" type="CMObject" rights="RMDAPS"/>
+            <rule content="/Sites/SiteGenesis Global" type="Folder_" rights="RMDAPS"/>
+            <!-- in order to define topic pages, global site managers need write access to taxonomies. -->
+            <rule content="/Settings/Taxonomies" type="CMTaxonomy" rights="RMDAP"/>
+            <members>
+              <user id="sally" name="Sally" home="/Home/Sally"/>
+            </members>
+          </group>
+        </members>
+      </group> <!-- global-manager -->
+      <group id="local-manager" name="local-manager" contentgroup="true" livegroup="false" administrative="false">
+        <!-- Global group, no corporate specific rules here! -->
+        <members>
+          <group id="local-site-manager-sf" name="local-site-manager-sf" contentgroup="true" livegroup="false" administrative="false">
+            <!-- all local site managers can read the global master site. -->
+            <rule content="/Sites/SiteGenesis Global/United Kingdom/English" type="CMObject" rights="R"/>
+            <rule content="/Sites/SiteGenesis Global/United Kingdom/English" type="Folder_" rights="R"/>
+            <!-- in order to define topic pages, local site managers need write access to taxonomies. -->
+            <rule content="/Settings/Taxonomies" type="CMTaxonomy" rights="RMDAP"/>
+            <members>
+              <group name="manager-sf-en-GB" contentgroup="true" livegroup="false" administrative="false">
+                <rule content="/Sites/SiteGenesis Global/United Kingdom/English" type="CMObject" rights="RMDAP"/>
+                <rule content="/Sites/SiteGenesis Global/United Kingdom/English" type="Folder_" rights="RMDAP"/>
+                <members>
+                  <user id="petersf" name="Peter SF" home="/Home/Peter SF"/>
+                  <!-- Sally must be member of the master site group as translation workflow role. -->
+                  <userref id="sally"/>
+                </members>
+              </group>
+              <group name="manager-sf-fr-FR" contentgroup="true" livegroup="false" administrative="false">
+                <rule content="/Sites/SiteGenesis Global/France/French" type="CMObject" rights="RMDAP"/>
+                <rule content="/Sites/SiteGenesis Global/France/French" type="Folder_" rights="RMDAP"/>
+                <!-- add rules after cloning sites. -->
+                <members>
+                  <user id="pierresf" name="Pierre SF" home="/Home/Pierre SF"/>
+                </members>
+              </group>
+              <group name="manager-sf-it-IT" contentgroup="true" livegroup="false" administrative="false">
+                <rule content="/Sites/SiteGenesis Global/Italy/Italian" type="CMObject" rights="RMDAP"/>
+                <rule content="/Sites/SiteGenesis Global/Italy/Italian" type="Folder_" rights="RMDAP"/>
+                <!-- add rules after cloning sites. -->
+                <members>
+                  <user id="pietrosf" name="Pietro SF" home="/Home/Pietro SF"/>
+                </members>
+              </group>
+              <group name="manager-sf-ja-JP" contentgroup="true" livegroup="false" administrative="false">
+
+                <rule content="/Sites/SiteGenesis Global/Japan/Japanese" type="CMObject" rights="RMDAP"/>
+                <rule content="/Sites/SiteGenesis Global/Japan/Japanese" type="Folder_" rights="RMDAP"/>
+                <!-- add rules after cloning sites. -->
+                <members>
+                  <user id="yoshisf" name="Yoshi SF" home="/Home/Yoshi SF"/>
+                </members>
+              </group>
+              <group name="manager-sf-zh-CN" contentgroup="true" livegroup="false" administrative="false">
+
+                <rule content="/Sites/SiteGenesis Global/China/Chinese" type="CMObject" rights="RMDAP"/>
+                <rule content="/Sites/SiteGenesis Global/China/Chinese" type="Folder_" rights="RMDAP"/>
+                <!-- add rules after cloning sites. -->
+                <members>
+                  <user id="yangsf" name="Yang SF" home="/Home/Yang SF"/>
+                </members>
+              </group>
+            </members>
+          </group> <!-- local-site-manager-sf -->
+        </members>
+      </group> <!-- local-manager -->
+      <group name="online-editor" contentgroup="true" livegroup="false" administrative="false">
+        <!-- Global group, no corporate specific rules here! -->
+        <members>
+          <group name="online-editor-sf-en-US" contentgroup="true" livegroup="false" administrative="false">
+            <rule content="/Sites/SiteGenesis Global/United Kingdom/English" type="CMObject" rights="R"/>
+            <rule content="/Sites/SiteGenesis Global/United Kingdom/English" type="Folder_" rights="R"/>
+            <rule content="/Sites/SiteGenesis Global/United Kingdom/English/Editorial/Content" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/SiteGenesis Global/United Kingdom/English/Editorial/Content" type="Folder_" rights="RMD"/>
+            <members>
+              <user id="georgesf" name="George SF" home="/Home/George SF"/>
+            </members>
+          </group> <!-- online-editor-sf-en-US -->
+        </members>
+      </group> <!-- online-editor -->
+      <group name="media-editor" contentgroup="true" livegroup="false" administrative="false">
+        <!-- Global group, no corporate specific rules here! -->
+        <members>
+          <group name="media-editor-sf-en-US" contentgroup="true" livegroup="false" administrative="false">
+            <members>
+              <user id="marksf" name="Mark SF" home="/Home/Mark SF"/>
+              <user id="amy" name="Amy" home="/Home/Amy"/>
+            </members>
+          </group> <!-- media-editor-sf-en-US -->
+        </members>
+      </group> <!-- media-editor -->
+    </members>
+  </group> <!-- staff -->
+</repository>

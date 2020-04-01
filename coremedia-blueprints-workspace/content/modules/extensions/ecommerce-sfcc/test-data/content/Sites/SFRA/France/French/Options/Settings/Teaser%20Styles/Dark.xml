@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/SFRA/France/French/Options/Settings/Teaser Styles" name="Dark" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Options/Settings/Teaser%20Styles/Dark.xml" path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/Teaser%20Styles/Dark"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="title">Dark</StringProperty>
+<StringProperty Name="description">Dark text on transparent background</StringProperty>
+<StructProperty Name="style">
+<Struct>
+<StringProperty Name="cls">cm-teaser-overlay--dark</StringProperty>
+<StringProperty Name="color">#222222</StringProperty>
+<StringProperty Name="textCls">cm-richtext--dark-shadow</StringProperty>
+<StringProperty Name="ctaCls">cm-button--black</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

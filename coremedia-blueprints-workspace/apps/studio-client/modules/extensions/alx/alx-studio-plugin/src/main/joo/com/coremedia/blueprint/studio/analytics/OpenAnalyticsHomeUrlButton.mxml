@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ Button to open a new browser window with the analytics home url for the configured service provider.
+-->
+<local:OpenAnalyticsUrlButtonBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.analytics.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'analytics')}"
+        disabled="true">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.analytics.openAnalyticsHomeUrlButton";
+
+    private var config:OpenAnalyticsHomeUrlButton;
+
+    public native function OpenAnalyticsHomeUrlButton(config:OpenAnalyticsHomeUrlButton = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!--- The name of the window to open. -->
+    <fx:String id="windowName"/>
+
+    <!--- The name of the service that this button is bound to -->
+    <fx:String id="serviceName"/>
+  </fx:Declarations>
+
+</local:OpenAnalyticsUrlButtonBase>

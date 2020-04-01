@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.coremedia.blueprint</groupId>
+  <artifactId>extensions-tool-config</artifactId>
+  <version>1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>coremedia.external.releases</id>
+      <url>https://repository.coremedia.com/nexus/content/groups/cms/</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>com.coremedia.maven</groupId>
+          <artifactId>extensions-maven-plugin</artifactId>
+          <version>4.0.2</version>
+          <configuration>
+            <projectRoot>../..</projectRoot>
+            <extensionsPath>modules/extensions</extensionsPath>
+            <extensionPointsPath>modules/extension-config</extensionPointsPath>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:EsAnalyticsChartWidgetEditorBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.esanalytics.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:u="exml:untyped"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        u:labelAlign="left"
+        properties="content">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.esanalytics.EsAnalyticsStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cap.content.ContentTypeNames;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.esanalytics.esAnalyticsChartWidgetEditor";
+
+    public static const CONTENT_TYPE_SELECTOR_ITEM_ID:String = "contentTypeSelector";
+
+    public static const SEARCH_TEXT_ITEM_ID:String = "searchField";
+
+    public static const ROOT_CHANNEL_ITEM_ID:String = "rootChannelItemId";
+
+    private var config:EsAnalyticsChartWidgetEditor;
+
+    public native function EsAnalyticsChartWidgetEditor(config:EsAnalyticsChartWidgetEditor = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <ui:LocalComboBox
+            fieldLabel="{resourceManager.getString('com.coremedia.blueprint.studio.esanalytics.EsAnalyticsStudioPlugin', 'widget_combo_root_channel_label')}"
+            itemId="{ROOT_CHANNEL_ITEM_ID}"
+            displayField="value"
+            valueField="id"
+            encodeItems="true">
+      <ui:plugins exml:mode="append">
+        <ui:BindListPlugin bindTo="{getRootChannelValueExpression()}"
+                           sortField="value">
+          <ui:fields>
+            <data_AutoField name="id"/>
+            <ui:DataField name="value"
+                          mapping="name"
+                          encode="false"/>
+          </ui:fields>
+        </ui:BindListPlugin>
+        <ui:BindPropertyPlugin bidirectional="true"
+                               componentEvent="select"
+                               ifUndefined=""
+                               bindTo="{getSelectedSiteExpression()}"
+                               reverseTransformer="{getContentFromId}"
+                               transformer="{getIdFromContent}">
+        </ui:BindPropertyPlugin>
+      </ui:plugins>
+    </ui:LocalComboBox>
+  </local:items>
+  <local:layout>
+    <layout_VBox align="stretch"/>
+  </local:layout>
+  <local:propertyDefaults>
+    <fx:Object contentType="{ContentTypeNames.DOCUMENT}"/>
+  </local:propertyDefaults>
+
+</local:EsAnalyticsChartWidgetEditorBase>

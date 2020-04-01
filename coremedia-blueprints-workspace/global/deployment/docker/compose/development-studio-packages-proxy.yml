@@ -1,0 +1,26 @@
+version: "3.4"
+
+# default environment variables for all spring-boot services
+x-development-boot-envs:
+  &development-boot-envs
+  JAVA_DEBUG: "${JAVA_DEBUG:-false}"
+  DEVELOPMENT_SETUP: "true"
+  # enable entrypoint debugging i.e. set -x
+  DEBUG_ENTRYPOINT: "${DEBUG_ENTRYPOINT:-}"
+
+services:
+  studio-packages-proxy:
+    ports:
+      - 43080:8080
+      - 43081:8081
+      - 43005:5005
+    environment:
+      <<: *development-boot-envs
+    labels:
+      # only in a dev system
+      traefik.frontend.headers.SSLRedirect: "false"
+      traefik.actuator.port: '8081'
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/studio-packages-proxy;AddPrefix:/actuator
+  overview:
+    environment:
+      STUDIO_PACKAGES_PROXY_ENABLED: "true"

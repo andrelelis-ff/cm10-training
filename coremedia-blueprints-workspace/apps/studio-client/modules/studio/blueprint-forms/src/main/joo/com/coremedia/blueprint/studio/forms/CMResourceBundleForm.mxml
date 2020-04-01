@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config">
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.cmResourceBundleForm";
+
+    private var config:CMResourceBundleForm;
+
+    public native function CMResourceBundleForm(config:CMResourceBundleForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMResourceBundle_localizations_text')}"
+                itemId="cmSettingsSettingsForm">
+          <editor:items>
+            <editor:StructPropertyField hideLabel="true"
+                                        propertyName="localizations"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataWithoutSettingsForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

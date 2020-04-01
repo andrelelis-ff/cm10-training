@@ -1,0 +1,111 @@
+.cm-hero-banner,
+.cm-landscape-banner,
+.cm-portrait-banner,
+.cm-square-banner,
+.cm-left-right-banner,
+.cm-carousel-banner,
+.cm-shoppable-teaser {
+  &__shop-now-button {
+    box-sizing: border-box;
+    padding: 14px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-decoration: none;
+    color: $cm-btn-color;
+    background-color: transparentize($cm-btn-bg, .25);
+    transition: all 0.1s ease;
+    text-align: center;
+
+    &:hover {
+      background-color: $cm-btn-bg;
+    }
+
+    &:active,
+    &:focus {
+      background-color: $cm-btn-bg;
+      box-shadow: inset 0 0 0 1px $cm-btn-bg, inset 0 0 0 2px $cm-btn-color;
+    }
+  }
+}
+
+.cm-hero-banner,
+ .cm-square-banner {
+   &__cta .cm-cta__button,
+   .cm-cta .cm-cta__button {
+     border: none;
+   }
+ }
+
+.cm-landscape-banner,
+.cm-portrait-banner,
+.cm-square-banner,
+.cm-left-right-banner,
+.cm-carousel-banner {
+  &-container {
+    &__headline {
+      font-family: $cm-font-family-sans-serif;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: $cm-font-size-h2;
+      font-weight: 500;
+      line-height: $cm-headings-line-height;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.cm-hero-banner {
+  .cm-product-info {
+    width: 100%;
+    padding-bottom: 24px;
+
+    &__title {
+      display: none;
+    }
+
+    &__pricing {
+      display: inline-block;
+
+      .cm-price {
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+// Left-right banner embedded in richtext
+.cm-details__text {
+  .cm-left-right-banner {
+
+    &__caption {
+      padding: 0 5%;
+    }
+
+    &__title {
+      text-decoration: none;
+
+      h2, h3 {
+        font-weight: normal;
+        margin-top: 0;
+      }
+    }
+
+    &__additional {
+      padding: 5px 0 10px;
+      font-weight: bold;
+    }
+
+    &__cta {
+      padding: 0;
+      margin: 0 auto;
+      // TODO: avoid @extend
+      @extend .cm-button--primary;
+      > .cm-cta-button {
+        background-color: inherit;
+        text-decoration: inherit;
+      }
+    }
+  }
+}
+

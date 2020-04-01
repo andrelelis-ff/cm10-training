@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMImageMap folder="/Sites/Aurora Augmentation/United States/English/Editorial/Content/Fashion Week" name="Black is the new Black" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="overlay">
+<Struct>
+<BooleanProperty Name="displayTitle">true</BooleanProperty>
+<BooleanProperty Name="displayDefaultPrice">true</BooleanProperty>
+<BooleanProperty Name="displayPicture">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="image-map">
+<Struct>
+<StringProperty Name="id">map-area-1</StringProperty>
+<StringProperty Name="coords">297,306,1100,1263</StringProperty>
+<StringProperty Name="alt"/>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">false</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">dark-on-light</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Products/Hermitage%20Pencil%20Cocktail%20Dress.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Hermitage%20Pencil%20Cocktail%20Dress"/>
+</Struct>
+<Struct>
+<StringProperty Name="id">map-area-0</StringProperty>
+<StringProperty Name="coords">369,67,695,273</StringProperty>
+<StringProperty Name="alt"/>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">false</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">dark-on-light</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Products/Hermitage%20Black%20Hat.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Hermitage%20Black%20Hat"/>
+</Struct>
+</StructListProperty>
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Teaser%20Styles/Light"/>
+<IntProperty Name="positionY">0</IntProperty>
+<IntProperty Name="positionX">44</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Black is the new Black</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Black.xml" path="/Settings/Taxonomies/Subject/Black"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Coal%20black%20color.xml" path="/Settings/Taxonomies/Subject/Coal%20black%20color"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Dresses.xml" path="/Settings/Taxonomies/Subject/Dresses"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1">Black is the new Black</p><p>Discover the new Trend</p></div></teaserText>
+<pictures>
+<link href="Black%20Dress%20Inspiration.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion%20Week/Black%20Dress%20Inspiration"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+</target>
+</CMImageMap>

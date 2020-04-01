@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/France/French/Pictures" name="Hermitage Pencil Dress" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Pictures/Hermitage%20Pencil%20Dress.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Pictures/Hermitage%20Pencil%20Dress"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">true</BooleanProperty>
+<StringListProperty Name="originReferences">
+<String>sfcc:///catalog/product/25593727</String>
+</StringListProperty>
+<StringListProperty Name="references">
+<String>sfcc:///catalog/product/25593727</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.01892744479495268;x2=1;y2=0.9083104353452583</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.031545741324921134;x2=1;y2=0.6985829842376504</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.03470031545741325;x2=1;y2=0.5349782476419602</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.028391167192429023;x2=1;y2=0.40359961633083924</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.0473186119873817;x2=1;y2=0.29745757807965517</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=34;width=1200;height=1600</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=57;width=1200;height=1200</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=62;width=1200;height=900</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=51;width=1200;height=675</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=85;width=1200;height=450</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Robe à cravate Hermitage</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Robe à cravate Hermitage</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1200</width>
+<height>1799</height>
+<data md5="d6165c4b35b9b7a93507e217e3c1eae6" size="351620" href="../../../../../__blob/d6165c4b35b9b7a93507e217e3c1eae6.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

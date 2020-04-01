@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/framework/spring/am-contentbeans.xml"/>
+  <import resource="classpath:/framework/spring/caefeeder-taxonomy.xml"/>
+
+  <customize:append id="assetBasePathListCustomizer" bean="basePathList">
+    <description>
+      In this list, you can extend the configuration property 'feeder.contentSelector.basePath'
+      with additional base paths.
+    </description>
+    <list>
+      <value>/Assets</value>
+    </list>
+  </customize:append>
+
+
+  <customize:append id="assetContentTypeNamesCustomizer" bean="contentTypeNames">
+    <description>
+      In this list, you can extend the configuration property 'feeder.contentSelector.contentTypes'
+      with additional content type names.
+    </description>
+    <list>
+      <value>AMAsset</value>
+    </list>
+  </customize:append>
+
+  <customize:append id="assetCaeFeederBeanPropertiesByClassCustomizer" bean="caeFeederBeanPropertiesByClass">
+    <map>
+      <entry key="com.coremedia.blueprint.assets.contentbeans.AMAsset" value="title,keywords"/>
+    </map>
+  </customize:append>
+
+  <bean id="assetTaxonomyTreeRelation" class="com.coremedia.blueprint.base.tree.ChildrenLinkListContentTreeRelation"
+        parent="childrenTreeRelation">
+    <property name="contentTypeName" value="AMTaxonomy"/>
+  </bean>
+
+  <bean id="assetTaxonomyPathKeyFactory" class="com.coremedia.blueprint.base.caefeeder.TreePathKeyFactory">
+    <description>The PersistentCacheKeyFactory for asset taxonomy paths.</description>
+    <constructor-arg index="0" name="keyPrefix" value="taxonomypath.asset:"/>
+    <constructor-arg index="1" name="persistentCache" ref="persistentDependencyCache"/>
+    <constructor-arg index="2" name="contentRepository" ref="contentRepository"/>
+    <constructor-arg index="3" name="treeRelation" ref="assetTaxonomyTreeRelation"/>
+    <constructor-arg index="4" name="segmentTransformer">
+      <bean class="com.coremedia.blueprint.caefeeder.NamedTaxonomyFactory"/>
+    </constructor-arg>
+  </bean>
+
+  <customize:append id="addAssetTaxonomyPathPersistentCacheKeyFactory"
+                    bean="fragmentPersistentCacheKeyFactory"
+                    property="keyFactories">
+    <description>
+      Registers the PersistentCacheKeyFactory for asset taxonomy path fragment keys with the PersistentDependencyCache.
+    </description>
+    <list>
+      <ref bean="assetTaxonomyPathKeyFactory"/>
+    </list>
+  </customize:append>
+
+  <!-- Index the assetTaxonomy property of AMAsset into a separate index field -->
+  <bean id="assetTaxonomyBeanFeedableMapping" class="com.coremedia.cap.feeder.bean.BeanFeedableMapping">
+    <property name="beanClass" value="com.coremedia.blueprint.assets.contentbeans.AMAsset"/>
+    <property name="beanPropertyMappings">
+      <list>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="assetCategories"/>
+          <property name="feedableElement" value="assettaxonomy"/>
+          <property name="textBody" value="false"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.blueprint.caefeeder.TaxonomyIdsPropertyConverter">
+              <property name="ignoreParents" value="true"/>
+            </bean>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="assetCategories"/>
+          <property name="feedableElement" value="assethierarchy"/>
+          <property name="textBody" value="false"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.blueprint.caefeeder.PrefixedPathHierarchyConverter">
+              <property name="pathKeyFactory" ref="assetTaxonomyPathKeyFactory"/>
+            </bean>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="assetCategories"/>
+          <property name="feedableElement" value="assettaxonomyNames"/>
+          <property name="textBody" value="true"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.blueprint.caefeeder.TaxonomyNamesPropertyConverter">
+              <property name="taxonomyPathKeyFactory" ref="assetTaxonomyPathKeyFactory"/>
+            </bean>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="subjectTaxonomy"/>
+          <property name="feedableElement" value="subjecttaxonomy"/>
+          <property name="textBody" value="false"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.blueprint.caefeeder.TaxonomyIdsPropertyConverter">
+              <property name="taxonomyPathKeyFactory" ref="subjectTaxonomyPathKeyFactory"/>
+            </bean>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="subjectTaxonomy"/>
+          <property name="feedableElement" value="subjecttaxonomyNames"/>
+          <property name="textBody" value="true"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.blueprint.caefeeder.TaxonomyNamesPropertyConverter">
+              <property name="taxonomyPathKeyFactory" ref="subjectTaxonomyPathKeyFactory"/>
+            </bean>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="locationTaxonomy"/>
+          <property name="feedableElement" value="locationtaxonomy"/>
+          <property name="textBody" value="false"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.blueprint.caefeeder.TaxonomyIdsPropertyConverter">
+              <property name="taxonomyPathKeyFactory" ref="locationTaxonomyPathKeyFactory"/>
+            </bean>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="locationTaxonomy"/>
+          <property name="feedableElement" value="locationtaxonomyNames"/>
+          <property name="textBody" value="true"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.blueprint.caefeeder.TaxonomyNamesPropertyConverter">
+              <property name="taxonomyPathKeyFactory" ref="locationTaxonomyPathKeyFactory"/>
+            </bean>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="validFrom"/>
+          <property name="feedableElement" value="validfrom"/>
+          <property name="textBody" value="false"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.blueprint.caefeeder.ValidFromPropertyConverter"/>
+          </property>
+        </bean>
+        <bean class="com.coremedia.cap.feeder.bean.BeanPropertyFeedableElementMapping">
+          <property name="beanProperty" value="validTo"/>
+          <property name="feedableElement" value="validto"/>
+          <property name="textBody" value="false"/>
+          <property name="propertyConverter">
+            <bean class="com.coremedia.blueprint.caefeeder.ValidToPropertyConverter"/>
+          </property>
+        </bean>
+      </list>
+    </property>
+  </bean>
+
+  <customize:append id="addAssetTaxonomyBeanFeedableMapping" bean="caeFeederBeanMappings">
+    <list>
+      <ref bean="assetTaxonomyBeanFeedableMapping"/>
+    </list>
+  </customize:append>
+
+  <bean id="notSearchableFeedablePopulator"
+        class="com.coremedia.blueprint.feeder.cae.assets.AssetNotSearchableFeedablePopulator">
+    <description>
+      FeedablePopulator that sets the notsearchable index field.
+    </description>
+  </bean>
+
+  <bean id="renditionFeedablePopulator"
+        class="com.coremedia.blueprint.feeder.cae.assets.AssetDocumentBlobFeedablePopulator">
+    <description>
+      FeedablePopulator that sets the the blob field.
+    </description>
+  </bean>
+
+  <customize:append id="amFeedablePopulatorsCustomizer" bean="feedablePopulators">
+    <list>
+      <ref bean="notSearchableFeedablePopulator"/>
+      <ref bean="renditionFeedablePopulator"/>
+    </list>
+  </customize:append>
+</beans>
+

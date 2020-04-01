@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/SiteGenesis Global/France/French/Options/Settings/Pagegrid/Layouts" name="HomepageLayout" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Options/Settings/Pagegrid/Layouts/HomepageLayout.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Settings/Pagegrid/Layouts/HomepageLayout"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<IntProperty Name="colCount">12</IntProperty>
+<IntProperty Name="rowCount">6</IntProperty>
+<StringProperty Name="cssClassName">lc-homepage</StringProperty>
+<StructListProperty Name="items">
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/header.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/header"/>
+<IntProperty Name="row">1</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">10</IntProperty>
+<IntProperty Name="width">100</IntProperty>
+<IntProperty Name="colspan">12</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/main.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/main"/>
+<IntProperty Name="row">2</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">25</IntProperty>
+<IntProperty Name="width">100</IntProperty>
+<IntProperty Name="colspan">12</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/placement1.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/placement1"/>
+<IntProperty Name="row">3</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">15</IntProperty>
+<IntProperty Name="width">100</IntProperty>
+<IntProperty Name="colspan">12</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/placement2.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/placement2"/>
+<IntProperty Name="row">4</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">15</IntProperty>
+<IntProperty Name="width">100</IntProperty>
+<IntProperty Name="colspan">12</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/placement3.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/placement3"/>
+<IntProperty Name="row">5</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">15</IntProperty>
+<IntProperty Name="width">100</IntProperty>
+<IntProperty Name="colspan">12</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/footer.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/footer"/>
+<IntProperty Name="row">6</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">10</IntProperty>
+<IntProperty Name="width">100</IntProperty>
+<IntProperty Name="colspan">12</IntProperty>
+</Struct>
+</StructListProperty>
+<StringProperty Name="name">SiteGenesis Homepage Layout</StringProperty>
+<StringProperty Name="description">Layout used on the SiteGenesis homepage.</StringProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

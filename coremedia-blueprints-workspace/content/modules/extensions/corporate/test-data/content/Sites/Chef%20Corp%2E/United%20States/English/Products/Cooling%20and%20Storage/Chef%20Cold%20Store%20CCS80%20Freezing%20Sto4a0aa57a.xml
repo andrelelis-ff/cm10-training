@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProduct folder="/Sites/Chef Corp./United States/English/Products/Cooling and Storage" name="Chef Cold Store CCS80 Freezing Storage Unit Convenience Product" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="callToActionCustomText">More Product Information</StringProperty>
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>chef-cold-store-ccs80-freezing-storage</segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+<link href="Cooling%20and%20Storage.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Cooling%20and%20Storage/Cooling%20and%20Storage"/>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Chef Cold Store CCS80 Comfort solutions combine cooling power with efficiency and environmental sustainability.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-3">Description</p><p>Chef Cold Store CCS80 Comfort solutions combine cooling power with efficiency and environmental sustainability.<br/>All Chef Cold Store units are walkable; full space units are fitted into a pre-existing room using our flexible expanding insulation technology. A freezing Chef Cold Store is the right choice for large operations. Depending on the size and cooling aggregate, these freezing units can go as deep as 25°F (-4°C). Chef Cold Stores are outfitted with the flexible Heavy Duty Chef Storage Shelf System (HDCSSS).</p><p/><p class="p--heading-3">Key Features</p><p>• Stainless steel exterior and interior walls<br/>• Heavy Duty Chef Storage Shelf System<br/>• High-powered cooling unit down to 25°F (-4°C)<br/>• 6 year warranty</p><p/><p class="p--heading-3">Technical Specification</p><p/><table dir="ltr"><tbody><tr><td>Width</td><td>2000 mm - 4500 mm</td></tr><tr><td>Depth</td><td>2000 mm - 4500 mm</td></tr><tr><td>Height</td><td>1800 mm - 2800 mm</td></tr><tr><td>Max. Energy Consumption</td><td>1.8 kWh / 24h</td></tr></tbody></table><p/></div></detailText>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Products/Cooling%20and%20Storage/Refrigerator%20Roo645c8288.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Products/Cooling%20and%20Storage/Refrigerator%20Room%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<downloads>
+</downloads>
+<productCode>CC-CCS-80</productCode>
+<productName>Chef Cold Store CCS80 Freezing Storage Unit Convenience</productName>
+</CMProduct>

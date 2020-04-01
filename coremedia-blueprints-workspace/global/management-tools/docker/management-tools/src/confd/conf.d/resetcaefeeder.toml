@@ -1,0 +1,9 @@
+[template]
+src   = "resetcaefeeder.properties.tmpl"
+dest  = "/coremedia/tools/properties/corem/resetcaefeeder.properties"
+keys  = [
+        "/jdbc/driver",
+        "/jdbc/url",
+        "/jdbc/user",
+        "/jdbc/password"
+]

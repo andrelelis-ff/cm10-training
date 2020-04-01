@@ -1,0 +1,24 @@
+# This is a template script to start an xml importer. 
+# Copy this file to my-xmlimport.jpif where 'my' stands for the
+# name of your xml importer. For every my-xmlimport.jpif file
+# there must be a my-xmlimport.properties file in the properties/corem
+# directory, which must be a copy of the cm-xmlimport.properties 
+# template file.
+
+# arguments to pass to Java virtual machine:
+JAVA_VM_ARGS="$JAVA_VM_ARGS"
+
+# Logger configuration
+JAVA_VM_ARGS="$JAVA_VM_ARGS -Dlogback.configurationFile=file://localhost/$INSTALL_DIR${FS}properties${FS}corem${FS}tools-logback.xml"
+
+# Java main class to call: 
+JAVA_MAIN_CLASS=com.coremedia.publisher.importer.Main
+
+# Java main class argument, 
+# the name of the xml import properties file without '.properties'
+JAVA_MAIN_ARGS=$PROGNAME
+
+# leave empty for no redirection (output will then usually be
+# sent to a console window), 'null' for no output, or
+# 'log' to send to a file $INSTALL_DIR/var/logs/$PROGNAME.out
+OUTPUT_REDIRECT=

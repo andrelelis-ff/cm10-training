@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/France/French/Editorial/Pictures" name="Women Black &amp; White" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Editorial/Pictures/Women%20Black%20%26%20White.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Pictures/Women%20Black%20%26%20White"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.09915611814345991;y1=0;x2=0.9888227848101265;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.06329113924050633;x2=0.9999999999999999;y2=0.9063035034218476</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.06645569620253164;x2=0.9999999999999999;y2=0.8158000199192794</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.09177215189873418;x2=0.9999999999999999;y2=0.6912476108721325</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.08860759493670886;x2=0.9999999999999999;y2=0.6506158377242698</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.08860759493670886;x2=0.9999999999999999;y2=0.4632797567950827</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.30379746835443033;y1=0;x2=0.9710474683544303;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.4430379746835443;y1=0;x2=0.8735218456512862;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.38396624472573837;y1=0;x2=0.8844037447257383;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=397;y=0;width=3559;height=2669</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=169;width=4000;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=177;width=4000;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=245;width=4000;height=1600</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=236;width=4000;height=1500</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=236;width=4000;height=1000</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=1215;y=0;width=2669;height=2669</StringProperty>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1772;y=0;width=1722;height=2669</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=1536;y=0;width=2002;height=2669</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Femmes Noir et Blanc</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Women%282%29.xml" path="/Settings/Taxonomies/Subject/Women%282%29"/>
+<link href="../../../../../../Settings/Taxonomies/Subject/Fashion.xml" path="/Settings/Taxonomies/Subject/Fashion"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Femmes Noir et Blanc</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2669</height>
+<data md5="7b5048883f61a682b181358a11668572" size="784608" href="../../../../../../__blob/7b5048883f61a682b181358a11668572.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

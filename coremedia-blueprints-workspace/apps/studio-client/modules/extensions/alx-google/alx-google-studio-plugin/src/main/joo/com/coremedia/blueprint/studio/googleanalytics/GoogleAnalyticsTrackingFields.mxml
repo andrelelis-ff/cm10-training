@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PropertyFieldGroup
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+        itemId="googleAnalyticsTrackingForm"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsStudioPlugin', 'SpacerTitle_googleanalytics')}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import ext.container.Container;
+    import ext.form.field.TextField;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.googleanalytics.googleAnalyticsTrackingFields";
+
+    private var config:GoogleAnalyticsTrackingFields;
+
+    public native function GoogleAnalyticsTrackingFields(config:GoogleAnalyticsTrackingFields = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:BooleanPropertyField dontTransformToInteger="true"
+                                 propertyName="localSettings.googleAnalytics.disabled"/>
+    <editor:StringPropertyField propertyName="localSettings.googleAnalytics.webPropertyId">
+      <editor:listeners>
+        <fx:Object
+                afterrender="{function(c:Container):void {TextField(c.down('textfield')).vtype = GoogleAnalyticsWebPropertyIdValidator.WEB_PROPERTY_ID_KEY;}}"/>
+      </editor:listeners>
+    </editor:StringPropertyField>
+    <editor:StringPropertyField propertyName="localSettings.googleAnalytics.domainName"/>
+    <editor:BooleanPropertyField dontTransformToInteger="true"
+                                 propertyName="localSettings.googleAnalytics.disableAdvertisingFeaturesPlugin"/>
+  </editor:items>
+
+</editor:PropertyFieldGroup>

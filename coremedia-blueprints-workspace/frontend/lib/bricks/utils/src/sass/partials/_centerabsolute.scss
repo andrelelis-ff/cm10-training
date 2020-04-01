@@ -1,0 +1,29 @@
+//
+// Applies styles to center using position absolute.
+//
+// @param: {boolean} vertically centered? default: true
+// @param: {boolean} horizontally centered? default: true
+//
+// @example:
+// .popup {
+//   @include center-absolute();
+// }
+//
+@mixin center-absolute($vertical: true, $horizontal: true) {
+  position: absolute;
+  @if $vertical {
+    bottom: 50%;
+  }
+  @if $horizontal {
+    right: 50%;
+  }
+  @if $vertical and not $horizontal {
+    transform: translateY(50%);
+  }
+  @if not $vertical and $horizontal {
+    transform: translateX(50%);
+  }
+  @if $vertical and $horizontal {
+    transform: translate(50%, 50%);
+  }
+}

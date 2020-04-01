@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CommerceObjectsDisplayFieldBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.livecontext.p13n.studio.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.cap.content.Content;
+
+    public static const xtype:String = "com.coremedia.livecontext.p13n.studio.config.commerceObjectsLabel";
+
+    private var config:CommerceObjectsDisplayField;
+
+    public native function CommerceObjectsDisplayField(config:CommerceObjectsDisplayField = null);
+
+    /**
+     * The content (document) of the persona
+     */
+    [Bindable]
+    public var personaContent:Content;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <fx:String id="catalogObjectIdListName"/>
+
+    <fx:String id="invalidMessage"/>
+
+    <fx:String id="emptyMessage"/>
+  </fx:Declarations>
+
+  <local:plugins>
+    <ui:BindPropertyPlugin componentProperty="value"
+                           bindTo="{getCommerceObjectsExpression()}"/>
+  </local:plugins>
+
+</local:CommerceObjectsDisplayFieldBase>

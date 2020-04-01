@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./Germany/German/Editorial/Assets/Pictures/Management Board/Portraits" name="Jack Beneke (CFO) Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../United%20States/English/Editorial/Assets/Pictures/Management%20Board/Portraits/Jack%20Beneke%20%28CFO1f8a7087.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Management%20Board/Portraits/Jack%20Beneke%20%28CFO%29%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0.027079303675048357</StringProperty>
+<StringProperty Name="y1">0.005802707930367505</StringProperty>
+<StringProperty Name="x2">0.97678916827853</StringProperty>
+<StringProperty Name="y2">0.9845261121856866</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=22;y=17;width=760;height=760</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=22;y=90;width=760;height=569</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=20;y=227;width=760;height=427</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.027079303675048357;y1=0.02127659574468085;x2=0.97678916827853;y2=0.9709864603481625</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.027079303675048357;y1=0.11218568665377177;x2=0.97678916827853;y2=0.8239845261121856</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.025145067698259187;y1=0.28433268858800775;x2=0.9748549323017408;y2=0.8181818181818182</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Jack Beneke (CFO)</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Portrait Foto von Jack Beneke (CFO)</alt>
+<copyright>Andrey_Popov / Shutterstock 211325935</copyright>
+<dataUrl></dataUrl>
+<width>800</width>
+<height>800</height>
+<data md5="fbe33fa811b821460ff63e0cbebb8bca" size="444822" href="../../../../../../../../../__blob/fbe33fa811b821460ff63e0cbebb8bca.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

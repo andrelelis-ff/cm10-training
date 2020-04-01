@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMUserProfile folder="/Sites/SiteGenesis Global/United Kingdom/English/Options/Personalization/Profiles" name="Sarah Veith Persona" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<profileSettings href="Sarah%20Veith%20Persona.p981747c.plain" mimetype="text/plain"/>
+<profileExtensions>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="properties">
+<Struct>
+<LinkListProperty Name="explicit" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Female.xml" cmexport:path="/Settings/Taxonomies/Subject/Female"/>
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Casual.xml" cmexport:path="/Settings/Taxonomies/Subject/Casual"/>
+</LinkListProperty>
+<LinkListProperty Name="subjectTaxonomies" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Female.xml" cmexport:path="/Settings/Taxonomies/Subject/Female"/>
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Casual.xml" cmexport:path="/Settings/Taxonomies/Subject/Casual"/>
+</LinkListProperty>
+<LinkListProperty Name="profileImage" LinkType="coremedia:///cap/contenttype/CMPicture">
+<Link xlink:href="coremedia:///cap/resources/Female%20Casual.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Personalization/Profiles/Female%20Casual"/>
+</LinkListProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="usersegments">
+<String>sfcc:///catalog/segment/Women</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</profileExtensions>
+</CMUserProfile>

@@ -1,0 +1,5 @@
+import "transformations/errors.jslt" as errors
+{
+  "article" : .data.content.article,
+  "errors" :  errors:errors()
+}

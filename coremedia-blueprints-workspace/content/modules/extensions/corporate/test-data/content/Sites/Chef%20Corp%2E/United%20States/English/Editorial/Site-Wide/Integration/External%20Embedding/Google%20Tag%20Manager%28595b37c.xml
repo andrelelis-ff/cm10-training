@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMHTML folder="/Sites/Chef Corp./United States/English/Editorial/Site-Wide/Integration/External Embedding" name="Google Tag Manager - Chef Corp. USA HTML Fragment" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<notSearchable>1</notSearchable>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<description></description>
+<data grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>&lt;!-- Google Tag Manager --&gt;<br/>&lt;noscript&gt;&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-53QTR6"<br/>height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;&lt;/noscript&gt;<br/>&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':<br/>new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],<br/>j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=<br/>'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);<br/>})(window,document,'script','dataLayer','GTM-53QTR6');&lt;/script&gt;<br/>&lt;!-- End Google Tag Manager --&gt;</p></div></data>
+</CMHTML>

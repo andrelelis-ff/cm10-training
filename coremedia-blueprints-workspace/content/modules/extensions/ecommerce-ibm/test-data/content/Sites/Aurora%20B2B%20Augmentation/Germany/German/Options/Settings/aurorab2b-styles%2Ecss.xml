@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCSS folder="/Sites/Aurora B2B Augmentation/Germany/German/Options/Settings" name="aurorab2b-styles.css" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Options/Settings/aurorab2b-styles%2Ecss.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Options/Settings/aurorab2b-styles%2Ecss"/>
+</master>
+<description></description>
+<ieExpression></ieExpression>
+<include>
+</include>
+<dataUrl>//{aurorab2b.host}/wcsstore/AuroraB2BStorefrontAssetStore/css/styles.css</dataUrl>
+<media></media>
+</CMCSS>

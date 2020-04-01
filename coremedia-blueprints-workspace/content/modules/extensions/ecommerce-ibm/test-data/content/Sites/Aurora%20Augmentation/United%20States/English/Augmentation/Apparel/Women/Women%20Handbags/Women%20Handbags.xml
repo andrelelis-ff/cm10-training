@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalChannel folder="/Sites/Aurora Augmentation/United States/English/Augmentation/Apparel/Women/Women Handbags" name="Women Handbags" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>women-handbags</segment>
+<title>Handbags</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../../../Pictures/Categories/Fashionable%20beautiful%20big%20red%20handbag.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Categories/Fashionable%20beautiful%20big%20red%20handbag"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<header>
+</header>
+<footer>
+</footer>
+<externalId>ibm:///catalog/category/Women Handbags</externalId>
+</CMExternalChannel>

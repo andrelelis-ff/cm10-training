@@ -1,0 +1,163 @@
+/*
+Detail page
+========================================================================================================================
+
+Contains styling definitions for detail pages (articles, products, persons etc.).
+- cm-details
+- cm-details--person
+- cm-details--product
+*/
+
+/* --- detail page --- */
+.#{$cm-details-prefix} {
+  max-width: 1200px;
+  margin: 0 auto $cm-details-margin auto;
+
+  @include breakpoint("sm-and-up") {
+    padding-bottom: 0;
+  }
+
+  &__headline {
+    margin-top: 0;
+    margin-bottom: $cm-details-padding-large-vertical;
+    padding: 0 $cm-details-padding-base-vertical;
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      padding: 0;
+    }
+  }
+
+  // images and videos
+  &__medias {
+    margin-bottom: $cm-details-padding-large-vertical;
+
+    // spinner
+    .cm-spinner__canvas {
+      border: 1px solid $cm-details-text-color;
+      padding: $cm-details-padding-base-vertical (((($cm-details-padding-base-vertical*2))*16/9)-2)/2; //to keep the aspect ratio
+      box-shadow: inset 0 0 $cm-details-padding-base-vertical $cm-details-text-color;
+      background-color: #FFFFFF;
+      margin: 0;
+
+      @include breakpoints(("sm", landscape) "lg-and-up") {
+        padding: $cm-details-padding-base-vertical (((($cm-details-padding-base-vertical*2)+2)*5/2)-2)/2; //to keep the aspect ratio
+      }
+    }
+  }
+
+  &__media-box {
+    @include aspect-ratio-box(16, 9);
+  }
+
+  &__media,
+  &__media-box .cm-mediaelementwrapper iframe {
+    @include stretch-absolute();
+  }
+
+  // copyright box below the video on detail pages
+  &__copyright {
+    display: block;
+    text-align: right;
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+
+  &__caption {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    text-shadow: none;
+    text-align: left;
+
+    .cm-caption__title {
+      color: $cm-details-text-color;
+      padding-top: 7px;
+    }
+
+    .cm-caption__text {
+      color: $cm-details-text-color;
+    }
+  }
+
+  &__text,
+  &__code {
+    padding: 0;
+  }
+
+  &__date {
+    margin-top: $cm-details-padding-base-vertical;
+    text-align: right;
+    color: $cm-details-text-color;
+    padding: 0;
+  }
+
+  &__authors,
+  &__tags,
+  &__downloads,
+  &__related {
+    margin-top: $cm-details-margin;
+  }
+}
+
+/* --- product detail page --- */
+.#{$cm-details-prefix} {
+  &--product {
+    .cm-details__caption {
+      visibility: hidden;
+    }
+  }
+}
+
+/* --- person detail page --- */
+.#{$cm-details-prefix} {
+  &__introduction {
+    display: flex;
+    padding: 0;
+    margin-bottom: $cm-details-padding-base-vertical;
+  }
+
+  &__picture-person {
+    min-width: $cm-author-picture-min;
+    width: 25%;
+    max-width: $cm-author-picture-max;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-right: $cm-details-padding-base-vertical;
+
+    @include breakpoint("sm-and-up") {
+      margin-right: $cm-details-padding-large-vertical;
+    }
+  }
+
+  &__email {
+    > a {
+      color: initial;
+    }
+  }
+
+  &__picture-box {
+    @include aspect-ratio-box(1, 1);
+    @if $cm-author-picture-round {
+      border-radius: 50%;
+    }
+  }
+
+  &__picture {
+    @include stretch-absolute();
+  }
+
+  &__misc {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &-item {
+      display: inline-block;
+      > a {
+        color: initial;
+      }
+    }
+  }
+}

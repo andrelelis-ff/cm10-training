@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/United States/English/Editorial/Content/Fashion Week" name="Black Dress Inspiration" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.1255924170616114;y1=0;x2=0.5555924170616113;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.09453781512605042;y1=0;x2=0.5944128151260504;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.07142857142857142;y1=0;x2=0.7379285714285714;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.05338078291814946;x2=1;y2=0.8973417731657116</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.03470031545741325;x2=1;y2=0.6348503529667907</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.050473186119873815;x2=1;y2=0.4255669595632347</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=251;y=0;width=860;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=189;y=0;width=1000;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=143;y=0;width=1333;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=1777;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=71;width=2000;height=1125</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=46;width=2000;height=800</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=67;width=2000;height=500</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.235781990521327</StringProperty>
+<StringProperty Name="y">0.29359430604982206</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Black Dress Inspiration</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Black Dress Inspiration</alt>
+<copyright>shutterstock_203136487</copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1333</height>
+<data md5="fe4690e0b52abc5fd92b450bcf656ab0" size="208983" href="../../../../../../../__blob/fe4690e0b52abc5fd92b450bcf656ab0.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

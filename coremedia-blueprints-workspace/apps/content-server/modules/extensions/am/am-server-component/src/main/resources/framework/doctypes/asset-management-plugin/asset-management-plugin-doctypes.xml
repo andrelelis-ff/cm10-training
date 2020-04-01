@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+  Asset Management Document Types
+  (c) CoreMedia AG, 2015
+-->
+<DocumentTypeModel xmlns="http://www.coremedia.com/2008/documenttypes"
+                   xmlns:extensions="http://www.coremedia.com/2013/documenttypes-extensions"
+                   Name="asset-management-doctypes"
+                   Title="Asset Management Document Types">
+
+  <ImportGrammar Name="coremedia-struct-2008"/>
+
+  <ImportDocType Name="CMTaxonomy" From="blueprint-doctypes"/>
+  <ImportDocType Name="CMLocTaxonomy" From="blueprint-doctypes"/>
+
+  <!--
+      A document type used for storing arbitrary assets.
+      Each asset belong to a subtype appropriate for a specific asset category like images.
+      The main asset is stored in the property original.
+      It is often provided in a proprietary, but full-featured format.
+      Individual renditions in an easily processable format are stored
+      in separate blob properties in subtypes of this type.
+      The thumbnail rendition is used as the preferred visualization
+      in Studio. Where applicable, assets should define a thumbnail.
+  -->
+  <DocType Name="AMAsset" Abstract="true">
+    <BlobProperty Name="original" MimeType="*/*"/>
+    <BlobProperty Name="thumbnail" MimeType="image/*"/>
+    <XmlProperty Name="state" Grammar="coremedia-struct-2008"/>
+    <XmlProperty Name="metadata" Grammar="coremedia-struct-2008"/>
+    <!--
+  Taxonomies
+    -->
+    <StringProperty Name="keywords" Length="1024" extensions:translatable="true"/>
+    <LinkListProperty Name="subjectTaxonomy" LinkType="CMTaxonomy" extensions:weakLink="true"/>
+    <LinkListProperty Name="locationTaxonomy" LinkType="CMLocTaxonomy" extensions:weakLink="true"/>
+    <LinkListProperty Name="assetTaxonomy" LinkType="AMTaxonomy" extensions:weakLink="true"/>
+  </DocType>
+
+  <!--
+      A document type used for storing picture assets.
+      This type also stores renditions for delivery via web and print channels.
+  -->
+  <DocType Name="AMPictureAsset" Parent="AMAsset">
+    <BlobProperty Name="web" MimeType="image/*"/>
+    <BlobProperty Name="print" MimeType="image/*"/>
+  </DocType>
+
+   <!--
+      A document type used for storing video assets.
+      This type also stores renditions for delivery via web channels.
+  -->
+  <DocType Name="AMVideoAsset" Parent="AMAsset">
+    <BlobProperty Name="web" MimeType="video/*"/>
+  </DocType>
+
+  <!--
+    A document type used for storing document assets.
+    This type also stores a rendition for downloads.
+-->
+  <DocType Name="AMDocumentAsset" Parent="AMAsset">
+    <BlobProperty Name="download" MimeType="*/*"/>
+  </DocType>
+  <!--
+    A specialized asset category to simplify search, to distinguish between tag and category form, etc.
+  -->
+  <DocType Name="AMTaxonomy" Parent="CMTaxonomy">
+    <LinkListProperty Name="master" Max="1" LinkType="AMTaxonomy" Override="true" extensions:weakLink="true"/>
+    <LinkListProperty Name="assetThumbnail" LinkType="AMAsset" extensions:weakLink="true" Max="1"/>
+  </DocType>
+
+  <!--
+      The picture document type gets an optional backlink to the asset
+      from which it was created.
+   -->
+  <ImportDocType Name="CMPicture"/>
+  <DocTypeAspect TargetType="CMPicture">
+    <LinkListProperty Name="asset" LinkType="AMAsset" extensions:weakLink="true" Max="1"/>
+  </DocTypeAspect>
+
+  <!--
+    The video document type gets an optional backlink to the asset
+    from which it was created.
+ -->
+  <ImportDocType Name="CMVideo"/>
+  <DocTypeAspect TargetType="CMVideo">
+    <LinkListProperty Name="asset" LinkType="AMAsset" extensions:weakLink="true" Max="1"/>
+  </DocTypeAspect>
+</DocumentTypeModel>

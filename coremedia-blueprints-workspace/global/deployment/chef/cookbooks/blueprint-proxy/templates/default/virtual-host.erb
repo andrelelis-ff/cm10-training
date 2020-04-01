@@ -1,0 +1,37 @@
+<VirtualHost *:443 >
+  ServerName <%= @server_name %>
+  <% unless @server_aliases.nil? || @server_aliases.empty? -%>
+  ServerAlias <%= @server_aliases.join " " %>
+  <% end -%>
+
+  <%- unless @custom_conf.nil? || @custom_conf.empty? -%>
+  <%- @custom_conf.each do |custom| %>
+  <%= custom %>
+  <%- end -%>
+  <%- end -%>
+
+  <%- unless @rewrite_template.nil? -%>
+  #####################
+  ###    Rewrite    ###
+  #####################
+  RewriteEngine On
+  <%= render @rewrite_template, :cookbook => @rewrite_template_cookbook -%>
+  <%- end -%>
+
+  <%- unless @proxy_template.nil? %>
+  #####################
+  ###    Proxy      ###
+  #####################
+  <%= render @proxy_template, :cookbook => @proxy_template_cookbook -%>
+  <%- end %>
+
+  #####################
+  ###    Logging    ###
+  #####################
+  LogLevel <%= @apache_log_level.nil? ? 'warn' : @apache_log_level %> rewrite:<%= @rewrite_log_level.nil? ? 'trace1' : @rewrite_log_level %>
+  ErrorLog /var/log/httpd/<%= @application_name %>-error.log
+  CustomLog /var/log/httpd/<%= @application_name %>-access.log combined
+
+  SSLEngine  On
+
+</VirtualHost>

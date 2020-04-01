@@ -1,0 +1,50 @@
+@import "variables";
+
+img {
+  filter: grayscale(100%)
+}
+
+#footer, #headerRow1, #headerRow2, .departmentMenu, body {
+  background: #000
+}
+
+#headerRow2, .cm-breadcrumb__item a {
+  color: #fff
+}
+
+.#{$cm-teaser-overlay-prefix} {
+  background-color: inherit !important;
+
+
+  &__text {
+    margin-top: 0;
+    color: #fff;
+    text-shadow: 0 0 30px #000
+  }
+}
+
+#searchBox {
+  background-color: #000
+}
+
+#searchBox > .submitButton {
+  border: 8px solid #000
+}
+
+#searchBox [placeholder], #searchBox input[placeholder] {
+  color: #fff !important
+}
+
+#content {
+  overflow: inherit
+}
+
+.cm-price--special {
+  color: #000
+}
+
+@media screen and (min-width: 1025px) {
+  .cm-navigation {
+    background-color: transparent;
+  }
+}

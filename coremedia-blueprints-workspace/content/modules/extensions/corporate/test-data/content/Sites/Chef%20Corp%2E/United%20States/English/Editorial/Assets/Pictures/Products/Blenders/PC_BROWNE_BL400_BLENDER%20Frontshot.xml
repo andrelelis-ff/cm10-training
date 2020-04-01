@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Pictures/Products/Blenders" name="PC_BROWNE_BL400_BLENDER Frontshot" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=130;y=0;width=1720;height=1722</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=47;y=138;width=1969;height=1477</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=229;width=2048;height=1153</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=429;y=0;width=1148;height=1722</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=239;width=2048;height=768</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=356;y=0;width=1292;height=1722</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.06358381502890173;y1=0;x2=0.9036608863198459;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.023121387283236993;y1=0.08027522935779817;x2=0.9845857418111753;y2=0.9380733944954128</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.13302752293577982;x2=1;y2=0.8027522935779816</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.48673740053050396</StringProperty>
+<StringProperty Name="y">0.3580441640378549</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Browne BL300 Blender</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Picture of the Browne BL300 Blender</alt>
+<copyright>John Kasawa/Shutterstock 74244943</copyright>
+<dataUrl></dataUrl>
+<data md5="557372186108f8eb050457d69b55ec5d" size="358937" href="../../../../../../../../../__blob/557372186108f8eb050457d69b55ec5d.blob" mimetype="image/jpeg"/>
+<asset>
+<link href="../../../../../../../../../Assets/Products/Blenders%20and%20Food%20Processors/Browne%20BL400%20Blender%20Frontshot.xml" path="/Assets/Products/Blenders%20and%20Food%20Processors/Browne%20BL400%20Blender%20Frontshot"/>
+</asset>
+</CMPicture>

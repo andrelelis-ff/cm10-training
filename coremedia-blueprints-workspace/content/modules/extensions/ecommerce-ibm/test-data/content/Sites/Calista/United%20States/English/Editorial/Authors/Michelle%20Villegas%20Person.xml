@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPerson folder="/Sites/Calista/United States/English/Editorial/Authors" name="Michelle Villegas Person" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>I believe in great hair and wearing color. I report on fashion. Wine.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Michelle is from Maryland, originally, and went to Parsons, the New School for Design in New York. She has written on fashion and design for several leading outlets in North America and Europe.</p><p>She organizes the annual "Empire State" Fashion show in New York.</p></div></detailText>
+<pictures>
+<link href="Michelle%20Villegas%20Picture.xml" path="/Sites/Calista/United%20States/English/Editorial/Authors/Michelle%20Villegas%20Picture"/>
+</pictures>
+<related>
+<link href="Michelle%27s%20Articles%20Query%20List.xml" path="/Sites/Calista/United%20States/English/Editorial/Authors/Michelle%27s%20Articles%20Query%20List"/>
+</related>
+<authors>
+</authors>
+<firstName>Michelle</firstName>
+<lastName>Villegas</lastName>
+<displayName></displayName>
+<eMail>info@coremedia.com</eMail>
+<organization>Calista</organization>
+<jobTitle>Chief Fashion Editor</jobTitle>
+<misc>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="instagram">https://instagram.com/coremediacloud/</StringProperty>
+<StringProperty Name="twitter">https://twitter.com/coremedia</StringProperty>
+</Struct>
+</misc>
+</CMPerson>

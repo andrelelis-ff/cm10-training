@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util-3.0.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <context:component-scan base-package="com.coremedia.livecontext.ecommerce.ibm.configuration" />
+
+  <util:map id="ibmStoreConfigurations">
+    <description>
+      List of store configurations. Add your own configs via customizers.
+    </description>
+    <!--empty by default-->
+  </util:map>
+
+  <util:map id="auroraStoreConfig">
+    <entry key="store.name" value="${livecontext.ibm.wcs.store.name.aurora}"/>
+    <entry key="currency" value="${livecontext.ibm.wcs.currency.aurora}"/>
+    <entry key="catalog.asset.store" value="${livecontext.ibm.wcs.catalog.asset.store.aurora}"/>
+    <entry key="wcs.version" value="${livecontext.ibm.wcs.version}"/>
+  </util:map>
+
+  <util:map id="aurorab2bStoreConfig">
+    <entry key="store.name" value="${livecontext.ibm.wcs.store.name.aurorab2b}"/>
+    <entry key="store.id" value="${livecontext.ibm.wcs.store.id.aurorab2b}"/>
+    <entry key="catalog.id" value="${livecontext.ibm.wcs.catalog.id.aurorab2b}"/>
+    <entry key="currency" value="${livecontext.ibm.wcs.currency.aurorab2b}"/>
+    <entry key="catalog.asset.store" value="${livecontext.ibm.wcs.catalog.asset.store.aurorab2b}"/>
+    <entry key="wcs.version" value="${livecontext.ibm.wcs.version}"/>
+  </util:map>
+
+  <customize:append id="ibmStoreConfigurationsCustomizer" bean="ibmStoreConfigurations">
+    <map>
+      <entry key="aurora" value-ref="auroraStoreConfig"/>
+      <entry key="aurorab2b" value-ref="aurorab2bStoreConfig"/>
+    </map>
+  </customize:append>
+
+</beans>

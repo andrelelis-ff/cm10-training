@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMLocTaxonomy folder="/Settings/Taxonomies/Location" name="Asia" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Asia</value>
+<children>
+<link href="India.xml" path="/Settings/Taxonomies/Location/India"/>
+<link href="China.xml" path="/Settings/Taxonomies/Location/China"/>
+<link href="Japan.xml" path="/Settings/Taxonomies/Location/Japan"/>
+<link href="Vietnam.xml" path="/Settings/Taxonomies/Location/Vietnam"/>
+<link href="South%20Korea.xml" path="/Settings/Taxonomies/Location/South%20Korea"/>
+<link href="Mongolia.xml" path="/Settings/Taxonomies/Location/Mongolia"/>
+<link href="Nepal.xml" path="/Settings/Taxonomies/Location/Nepal"/>
+<link href="North%20Korea.xml" path="/Settings/Taxonomies/Location/North%20Korea"/>
+</children>
+<externalReference></externalReference>
+<postcode></postcode>
+<latitudeLongitude>14.033333,107.9</latitudeLongitude>
+</CMLocTaxonomy>

@@ -1,0 +1,5 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StringProperty Name="str">otherde</StringProperty>
+  <StringProperty Name="byOrder">wrong</StringProperty>
+  <StringProperty Name="languageOverMaster">right</StringProperty>
+</Struct>

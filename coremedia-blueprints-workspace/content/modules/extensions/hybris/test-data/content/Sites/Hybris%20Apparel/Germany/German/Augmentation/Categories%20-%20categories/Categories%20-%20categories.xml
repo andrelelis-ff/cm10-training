@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalChannel folder="/Sites/Hybris Apparel/Germany/German/Augmentation/Categories - categories" name="Categories - categories" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Augmentation/Categories%20-%20categories/Categories%20-%20categories.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Augmentation/Categories%20-%20categories/Categories%20-%20categories"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Kategorien</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../../Editorial/Content/Snow/Snowboarders%20Group%20Image%20Map.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Snow/Snowboarders%20Group%20Image%20Map"/>
+<Link xlink:href="coremedia:///cap/resources/../../Editorial/Content/Snow/Speed%20Riding%20Challenge%20in%20Chamonix.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Snow/Speed%20Riding%20Challenge%20in%20Chamonix"/>
+<Link xlink:href="coremedia:///cap/resources/../../Videos/Snowboarding%20in%20Action.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Videos/Snowboarding%20in%20Action"/>
+</LinkListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../Options/Viewtypes/CMChannel/hero.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Viewtypes/CMChannel/hero"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+<externalId>hybris:///catalog/category/categories</externalId>
+</CMExternalChannel>

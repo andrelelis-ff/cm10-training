@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content/Homepage/Corporate Image" name="Chef Corp World Leader Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Content/Homepage/Corporate%20Image/Chef%20Corp%20World5f57cac7.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Homepage/Corporate%20Image/Chef%20Corp%20World%20Leader%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Unsere Mission Seit 1999 sind wir bestrebt, kompetente Lösungen mit der persönlichen Aufmerksamkeit zu liefern, die Sie verdienen. (Renaud Bozinsky, Gründer) </p></div></teaserText>
+<pictures>
+<link href="Chef%20Corp%20Founder%20Port92e37975.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Homepage/Corporate%20Image/Chef%20Corp%20Founder%20Portrait%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+</target>
+</CMTeaser>

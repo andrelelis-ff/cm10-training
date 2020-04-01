@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSpinner folder="/Sites/Aurora Augmentation/United States/English/Pictures/Product 360 Pictures/Leather Bag" name="Leather-Bag Spin View" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="references">
+<String>ibm:///catalog/sku/WBG006_061201</String>
+</StringListProperty>
+<StringListProperty Name="originReferences">
+<String>ibm:///catalog/sku/PC_HERMITAGE_LEATHER_BAG_SKU</String>
+<String>ibm:///catalog/product/PC_HERMITAGE_LEATHER_BAG</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Leather Bag 360 View</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Leather Bag 360 View</teaserTitle>
+<pictures>
+<link href="Leather-Bag%20Front%20Shot.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag%20Front%20Shot"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<sequence>
+<link href="Leather-Bag-01.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-01"/>
+<link href="Leather-Bag-02.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-02"/>
+<link href="Leather-Bag-03.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-03"/>
+<link href="Leather-Bag-04.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-04"/>
+<link href="Leather-Bag-05.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-05"/>
+<link href="Leather-Bag-06.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-06"/>
+<link href="Leather-Bag-07.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-07"/>
+<link href="Leather-Bag-08.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-08"/>
+<link href="Leather-Bag-09.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-09"/>
+<link href="Leather-Bag-10.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-10"/>
+<link href="Leather-Bag-11.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-11"/>
+<link href="Leather-Bag-12.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-12"/>
+<link href="Leather-Bag-13.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-13"/>
+<link href="Leather-Bag-14.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-14"/>
+<link href="Leather-Bag-15.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-15"/>
+<link href="Leather-Bag-16.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-16"/>
+<link href="Leather-Bag-17.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-17"/>
+<link href="Leather-Bag-18.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-18"/>
+<link href="Leather-Bag-19.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-19"/>
+<link href="Leather-Bag-20.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-20"/>
+</sequence>
+</CMSpinner>

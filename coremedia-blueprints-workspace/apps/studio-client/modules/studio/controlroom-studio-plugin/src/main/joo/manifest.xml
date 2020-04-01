@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.studio.BookmarkProjectContentViewPlugin"/>
+  <component class="com.coremedia.blueprint.studio.ControlRoomStudioPlugin"/>
+  <component class="com.coremedia.blueprint.studio.ProjectQuickCreateLinklistMenu"/>
+</componentPackage>

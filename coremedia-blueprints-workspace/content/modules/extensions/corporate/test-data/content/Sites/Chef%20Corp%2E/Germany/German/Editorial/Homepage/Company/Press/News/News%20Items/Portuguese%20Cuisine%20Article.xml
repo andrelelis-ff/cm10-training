@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./Germany/German/Editorial/Homepage/Company/Press/News/News Items" name="Portuguese Cuisine Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../../United%20States/English/Editorial/Homepage/Company/Press/News/News%20Items/Portuguese%20Cuisine%20Article.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Company/Press/News/News%20Items/Portuguese%20Cuisine%20Article"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Portugiesische Küche - The Uncharted Land Delicious</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Press%20Release.xml" path="/Settings/Taxonomies/Subject/Press%20Release"/>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Press.xml" path="/Settings/Taxonomies/Subject/Press"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Portugiesische Küche</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Während Italienisch, Französisch, und orientalische Restaurants sind ein alltäglicher Anblick in Westeuropa haben Portuguese Chefs bisher unter dem Radar geblieben. Dies kann mit den relativ geringen Zahl von portugiesischen Expats zu tun - die Küche, kann jedoch nicht verantwortlich gemacht werden. </p> <p> Trotz der relativ zu einem atlantischen Nahrung beschränkt, hat portugiesische Küche vielen mediterranen Einflüssen. Der Einfluss der ehemaligen Kolonialbesitz Portugals ist auch bemerkenswert, vor allem in der Vielfalt der Gewürze verwendet. Diese Gewürze sind Piri-Piri (kleine, feurige Chilischoten) und schwarzem Pfeffer sowie Zimt, Vanille und Safran. Olivenöl ist eine der Grundlagen der portugiesischen Küche sowohl zum Kochen und Aroma Mahlzeiten. Knoblauch ist weit verbreitet, ebenso wie Kräuter wie Koriander und Petersilie. </p> <p> Portugal früher hatte ein großes Reich und die Küche hat sich in beide Richtungen beeinflusst. Eine portugiesische Einfluss ist stark zeigt sich in brasilianischen Küche, die ihre eigenen Versionen der portugiesischen Gerichte wie Feijoada und caldeirada (Fischeintopf) verfügt. Andere portugiesische Einflüsse können in der indischen Provinz Goa, wo Goan Küche Gerichte wie vindaloo zeigen die Paarung von Essig und Knoblauch, und auch Macanese Küche verkostet werden. </p> <p/> <p> Chef Corp. ist froh, dass in den letzten 5 Jahren über 200 portugiesischen Standorten haben uns mit dem Herzen ihres Unternehmens, ihrer Küche vertraut zu verkünden. </p> <p/> <p> Mit Material von http://en.wikipedia.org/wiki/Portuguese_cuisine </p> </div></detailText>
+<pictures>
+<link href="../../../../../Assets/Pictures/Kitchen%20Dreams/A%20Chef%27s%20Perfection%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Kitchen%20Dreams/A%20Chef%27s%20Perfection%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../../../../Authors/David%20Fuller%20Person.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Authors/David%20Fuller%20Person"/>
+</authors>
+</CMArticle>

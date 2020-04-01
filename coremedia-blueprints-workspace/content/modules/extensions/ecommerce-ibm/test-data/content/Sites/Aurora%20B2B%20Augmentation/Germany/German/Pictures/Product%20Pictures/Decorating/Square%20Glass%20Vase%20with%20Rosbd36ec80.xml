@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Pictures/Product Pictures/Decorating" name="Square Glass Vase with Rose Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Pictures/Product%20Pictures/Decorating/Square%20Glass%20Vase%20w93e609f0.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Decorating/Square%20Glass%20Vase%20with%20Rose%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=324;y=0;width=1076;height=1666</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=309;y=0;width=1250;height=1666</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=274;y=219;width=1449;height=1447</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=274;y=224;width=1793;height=1343</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=71;width=2500;height=1406</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=408;width=2500;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=522;width=2500;height=627</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=278;y=0;width=1111;height=1666</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=307;width=2500;height=938</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.1294820717131474;y1=0;x2=0.5597609561752988;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.12350597609561753;y1=0;x2=0.6235059760956175;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.10956175298804781;y1=0.13134328358208955;x2=0.6892430278884463;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.10956175298804781;y1=0.13432835820895522;x2=0.8266932270916335;y2=0.9402985074626866</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.08059701492537313;x2=1;y2=0.9223880597014925</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.24477611940298508;x2=1;y2=0.844776119402985</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.31343283582089554;x2=1;y2=0.6895522388059702</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_VASE_5</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.33088235294117646</StringProperty>
+<StringProperty Name="y">0.46214511041009465</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Square Glass Vase with Rose</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Sqare Glass Vase with Rose</alt>
+<copyright>Smith1972 / Shutterstock 315963779</copyright>
+<dataUrl></dataUrl>
+<width>2500</width>
+<height>1666</height>
+<data md5="232b36d5276e614d5645f1fb9ee99a8e" size="851506" href="../../../../../../../__blob/232b36d5276e614d5645f1fb9ee99a8e.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

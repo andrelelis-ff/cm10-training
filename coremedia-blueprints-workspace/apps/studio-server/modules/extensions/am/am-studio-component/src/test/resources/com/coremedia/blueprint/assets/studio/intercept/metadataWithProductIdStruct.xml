@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StringListProperty Name="productIds">
+    <String>Hurz</String>
+  </StringListProperty>
+  <StringProperty Name="Lorem">Ipsum</StringProperty>
+</Struct>

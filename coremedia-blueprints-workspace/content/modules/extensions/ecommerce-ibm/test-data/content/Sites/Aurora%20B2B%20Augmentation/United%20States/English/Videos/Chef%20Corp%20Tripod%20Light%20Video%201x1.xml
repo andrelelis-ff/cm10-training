@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Aurora B2B Augmentation/United States/English/Videos" name="Chef Corp Tripod Light Video 1x1" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_CHEF_CORP_TRIPOD_LIGHT</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Chef Corp Tripod Light 1x1 Video</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="Chef%20Corp%20Tripod%20Light%20Video%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Videos/Chef%20Corp%20Tripod%20Light%20Video%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="f2d1ae0cf2bfaaa3d0ca9ac202d03b9d" size="11645404" href="../../../../../__blob/f2d1ae0cf2bfaaa3d0ca9ac202d03b9d.blob" mimetype="video/mp4"/>
+<asset>
+</asset>
+</CMVideo>

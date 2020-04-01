@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMLocTaxonomy folder="/Settings/Taxonomies/Location" name="Hamburg" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Hamburg</value>
+<children>
+<link href="Hamburg-Mitte.xml" path="/Settings/Taxonomies/Location/Hamburg-Mitte"/>
+<link href="Altona.xml" path="/Settings/Taxonomies/Location/Altona"/>
+<link href="Eimsb%C3%BCttel.xml" path="/Settings/Taxonomies/Location/Eimsb%C3%BCttel"/>
+<link href="Hamburg-Nord.xml" path="/Settings/Taxonomies/Location/Hamburg-Nord"/>
+<link href="Wandsbek.xml" path="/Settings/Taxonomies/Location/Wandsbek"/>
+<link href="Bergedorf.xml" path="/Settings/Taxonomies/Location/Bergedorf"/>
+<link href="Harburg.xml" path="/Settings/Taxonomies/Location/Harburg"/>
+<link href="Barmbek.xml" path="/Settings/Taxonomies/Location/Barmbek"/>
+<link href="Eppendorf.xml" path="/Settings/Taxonomies/Location/Eppendorf"/>
+<link href="Neustadt.xml" path="/Settings/Taxonomies/Location/Neustadt"/>
+</children>
+<externalReference></externalReference>
+<postcode></postcode>
+<latitudeLongitude>53.550556,9.993333</latitudeLongitude>
+</CMLocTaxonomy>

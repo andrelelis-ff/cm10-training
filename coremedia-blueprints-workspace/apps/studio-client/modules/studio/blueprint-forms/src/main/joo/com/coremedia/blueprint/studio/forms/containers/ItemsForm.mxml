@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PropertyFieldGroup
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config" xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:quickcreate="com.coremedia.cms.editor.sdk.quickcreate.*"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMCollection_items_text')}"
+        itemId="itemsForm">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.itemsForm";
+
+    /**
+     * A constant for the linklist property name
+     */
+    public static const ITEMS_PROPERTY_NAME:String = "items";
+
+    private var config:ItemsForm;
+
+    public native function ItemsForm(config:ItemsForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:LinkListPropertyField propertyName="{ITEMS_PROPERTY_NAME}"
+                                  showThumbnails="true"
+                                  hideLabel="true"
+                                  bindTo="{config.bindTo}">
+      <editor:additionalToolbarItems>
+        <TbSeparator/>
+        <quickcreate:QuickCreateLinklistMenu bindTo="{config.bindTo}"
+                                             propertyName="{ITEMS_PROPERTY_NAME}"/>
+      </editor:additionalToolbarItems>
+      <editor:fields>
+        <ui:DataField name="{ValidityColumn.STATUS_ID}"
+                      ifUnreadable=""
+                      mapping=""
+                      convert_="{ValidityColumn.convert}"/>
+      </editor:fields>
+      <editor:columns>
+        <editor:ThumbnailColumn/>
+        <editor:TypeIconColumn/>
+        <editor:NameColumn flex="1"/>
+        <bpforms:ValidityColumn/>
+        <editor:StatusColumn/>
+      </editor:columns>
+    </editor:LinkListPropertyField>
+  </editor:items>
+
+</editor:PropertyFieldGroup>

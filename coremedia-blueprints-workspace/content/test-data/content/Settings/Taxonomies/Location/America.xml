@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMLocTaxonomy folder="/Settings/Taxonomies/Location" name="America" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>America</value>
+<children>
+<link href="Canada.xml" path="/Settings/Taxonomies/Location/Canada"/>
+<link href="United%20States%20of%20America.xml" path="/Settings/Taxonomies/Location/United%20States%20of%20America"/>
+</children>
+<externalReference></externalReference>
+<postcode></postcode>
+<latitudeLongitude>9.008381985360481,-79.66813749999926</latitudeLongitude>
+</CMLocTaxonomy>

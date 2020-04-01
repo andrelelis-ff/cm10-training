@@ -1,0 +1,17 @@
+{
+  "name": "mysql",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The role for a mysql node",
+  "run_list": [
+    "role[base]",
+    "recipe[blueprint-mysql::server]"
+  ],
+  "env_run_lists": {
+    "development": [
+      "role[base]",
+      "recipe[blueprint-mysql::server]",
+      "recipe[blueprint-dev-tooling::databases]"
+    ]
+  }
+}

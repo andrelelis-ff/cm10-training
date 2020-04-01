@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentForm xmlns:fx="http://ns.adobe.com/mxml/2009"
+                     xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                     xmlns="exml:ext.config"
+                     xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                     xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+                     title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_system_title')}"
+                     itemId="system"
+                     autoHide="true">
+
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.channelMetaDataInformationForm";
+
+    private var config:ChannelMetaDataInformationForm;
+
+    public native function ChannelMetaDataInformationForm(config:ChannelMetaDataInformationForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentInfo/>
+    <editor:VersionHistory/>
+    <editor:ReferrerListPanel/>
+    <editor:DocumentMetaDataFormDispatcher bindTo="{config.bindTo}"/>
+    <bpforms:LinkedSettingsForm bindTo="{config.bindTo}"
+                                collapsed="true"/>
+    <bpforms:LocalSettingsForm bindTo="{config.bindTo}"
+                               collapsed="true"/>
+    <editor:PropertyFieldGroup
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMNavigation_theme_text')}"
+            itemId="channelMetaDataThemeForm"
+            collapsed="true">
+      <editor:items>
+        <bpforms:ThemeSelectorForm propertyName="theme"/>
+      </editor:items>
+    </editor:PropertyFieldGroup>
+    <editor:PropertyFieldGroup
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMNavigation_javaScript_text')}"
+            itemId="channelMetaDataJavaScriptForm"
+            collapsed="true">
+      <editor:items>
+        <editor:LinkListPropertyField bindTo="{config.bindTo}"
+                                      hideLabel="true"
+                                      propertyName="javaScript"/>
+      </editor:items>
+    </editor:PropertyFieldGroup>
+    <editor:PropertyFieldGroup
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMNavigation_css_text')}"
+            itemId="channelMetaDataCssForm"
+            collapsed="true">
+      <editor:items>
+        <editor:LinkListPropertyField bindTo="{config.bindTo}"
+                                      hideLabel="true"
+                                      propertyName="css"/>
+      </editor:items>
+    </editor:PropertyFieldGroup>
+  </editor:items>
+
+</editor:DocumentForm>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./Germany/German/Editorial/Site-Wide/Footer/Contact Us" name="Contact Us Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Site-Wide/Footer/Contact%20Us/Contact%20Us%20Article.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Site-Wide/Footer/Contact%20Us/Contact%20Us%20Article"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>contact-us</segment>
+<title>Kontaktieren Sie uns</title>
+<htmlTitle></htmlTitle>
+<keywords>Coremedia Kontakt</keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Kontaktieren Sie uns</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2"> Welche Innovationen haben Sie, um den Markt zu erobern benutzen? </p> <p> Schauen Sie sich unsere Technik-Experten. Wir freuen uns, Ihnen zu helfen. <br/> Kontaktieren Sie uns. Rufen Sie die Infoline bei Coremedia <a xlink:href="http://tel:+49-40-325587-587" xlink:show="replace" xlink:type="simple">+49-40-325 587-587</a> </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2"> Welche Innovationen haben Sie, um den Markt zu erobern benutzen? </p> <p> Wir freuen uns, von Ihnen zu hören und zu diskutieren, wie unsere aufregende digitale Erlebnisse Lösungen können helfen, Ihr Unternehmen zu beschleunigen. <br/></p> <p class="p--heading-3"> Kontaktieren Sie uns. Rufen Sie die Coremedia Infoline an <br/> <a xlink:href="http://tel:+49-40-325587-587" xlink:show="replace" xlink:type="simple"><strong>+ 49-40-325 587-587</strong></a> </p> <p/> <p/> </div></detailText>
+<pictures>
+<link href="../../../Assets/Pictures/Careers/Hands%20placed%20on%20top%20of%20each%20other%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Careers/Hands%20placed%20on%20top%20of%20each%20other%20Picture"/>
+</pictures>
+<notSearchable>1</notSearchable>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

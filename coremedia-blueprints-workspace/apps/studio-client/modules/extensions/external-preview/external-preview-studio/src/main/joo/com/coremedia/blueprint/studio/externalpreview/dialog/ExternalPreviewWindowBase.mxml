@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:ExternalPreviewWindowBaseBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.externalpreview.dialog.*">
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.externalpreview.config.externalPreviewWindowBase";
+
+    private var config:ExternalPreviewWindowBase;
+
+    public native function ExternalPreviewWindowBase(config:ExternalPreviewWindowBase = null);
+    ]]></fx:Script>
+
+</local:ExternalPreviewWindowBaseBase>

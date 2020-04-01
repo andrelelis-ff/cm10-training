@@ -1,0 +1,107 @@
+.cm-navigation {
+  @include breakpoints(("sm", landscape) "lg-and-up") {
+    position: static;
+    background-color: transparent;
+    text-align: center;
+  }
+
+  &-item {
+    color: #444;
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      color: #fff;
+    }
+
+    &__title {
+      color: inherit;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &__toggle {
+      color: inherit;
+
+      &::before {
+        border-color: inherit;
+      }
+    }
+
+    &--depth-1 {
+      > .cm-navigation-item__title {
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: none;
+
+        @include breakpoints(("sm", landscape) "lg-and-up") {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+
+      > .cm-navigation-item__menu {
+        border-top: none;
+        border-color: #444;
+
+        .cm-navigation-item__menu-label {
+          .cm-navigation-item__title {
+            font-size: 20px;
+            font-weight: 500;
+            color: #444;
+            text-transform: none;
+          }
+        }
+      }
+
+      @include breakpoints(("sm", landscape) "lg-and-up") {
+        &:hover {
+          background-color: #fff;
+          border-bottom-color: transparent;
+
+          > .cm-navigation-item__title,
+          > .cm-navigation-item__toggle {
+            color: #444;
+          }
+        }
+      }
+    }
+
+    &--depth-2 > .cm-navigation-item__title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #444;
+        text-transform: none;
+    }
+
+    &--depth-3 > .cm-navigation-item__title {
+      font-size: 14px;
+      color: #444;
+    }
+  }
+}
+
+.cm-hamburger-icon {
+  padding: 35px 40px;
+
+  @include breakpoints(("sm", landscape) "lg-and-up") {
+    display: none;
+  }
+}
+
+.cm-navigation-root {
+  margin: 0 auto;
+  padding-left: 0;
+  position: relative;
+  list-style: none;
+  width: 100%;
+
+  @include breakpoint("sm-and-up", landscape) {
+    width: 920px;
+    max-width: none;
+  }
+  @include breakpoint("lg-and-up") {
+    width: 1110px;
+    max-width: none;
+  }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Aurora Augmentation/United States/English/Options/Settings" name="Content Creation" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="paths">
+<Struct>
+<LinkProperty Name="CMAudio" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/"/>
+<LinkProperty Name="CMArticle" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/"/>
+<LinkProperty Name="CMChannel" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Navigation/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/"/>
+<LinkProperty Name="CMCollection" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/"/>
+<LinkProperty Name="CMDownload" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Downloads/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Downloads/"/>
+<LinkProperty Name="CMExternalChannel" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Navigation/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/"/>
+<LinkProperty Name="CMGallery" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/"/>
+<LinkProperty Name="CMImageMap" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Pictures/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/"/>
+<LinkProperty Name="CMMarketingSpot" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Navigation/e-Marketing%20Spots/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/e-Marketing%20Spots/"/>
+<LinkProperty Name="CMP13NSearch" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/"/>
+<LinkProperty Name="CMPerson" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Authors/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Authors/"/>
+<LinkProperty Name="CMPicture" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Pictures/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/"/>
+<LinkProperty Name="CMProductList" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Products/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/"/>
+<LinkProperty Name="CMProductTeaser" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Products/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/"/>
+<LinkProperty Name="CMQueryList" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/"/>
+<LinkProperty Name="CMSelectionRules" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/"/>
+<LinkProperty Name="CMSite" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Navigation/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/"/>
+<LinkProperty Name="CMSpinner" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Pictures/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/"/>
+<LinkProperty Name="CMTeaser" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/"/>
+<LinkProperty Name="CMUserProfile" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Personalization/Profiles/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Personalization/Profiles/"/>
+<LinkProperty Name="CMVideo" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Videos/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Videos/"/>
+<LinkProperty Name="editorial" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/"/>
+<LinkProperty Name="navigation" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Navigation/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/"/>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

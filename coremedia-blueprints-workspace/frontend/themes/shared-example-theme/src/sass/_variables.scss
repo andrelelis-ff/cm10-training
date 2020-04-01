@@ -1,0 +1,9 @@
+@import "variables/variables";
+@import "variables/breakpoints";
+@import "variables/flex-grid";
+@import "variables/popup";
+@import "variables/video";
+@import "variables/details";
+
+// Dependency variables
+@import "?smart-import-variables";

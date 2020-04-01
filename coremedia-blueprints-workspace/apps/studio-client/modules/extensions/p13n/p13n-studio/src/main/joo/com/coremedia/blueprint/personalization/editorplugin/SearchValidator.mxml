@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:SearchValidatorBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.personalization.editorplugin.*">
+  <fx:Script><![CDATA[
+    private var config:SearchValidator;
+
+    public native function SearchValidator(config:SearchValidator = null);
+    ]]></fx:Script>
+
+</local:SearchValidatorBase>

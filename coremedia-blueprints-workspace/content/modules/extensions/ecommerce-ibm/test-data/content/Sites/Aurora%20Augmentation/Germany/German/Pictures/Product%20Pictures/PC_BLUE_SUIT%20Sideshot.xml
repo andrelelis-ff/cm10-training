@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/Germany/German/Pictures/Product Pictures" name="PC_BLUE_SUIT Sideshot" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Pictures/Product%20Pictures/PC_BLUE_SUIT%20Sideshot.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20Pictures/PC_BLUE_SUIT%20Sideshot"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=155;y=563;width=1620;height=2514</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=5;y=496;width=1935;height=2581</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=578;width=2048;height=2050</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=542;width=2048;height=1539</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=547;width=2048;height=1151</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=542;width=2048;height=821</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=903;width=2048;height=513</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.07556675062972293;y1=0.18288590604026847;x2=0.8664987405541562;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.0025188916876574307;y1=0.1610738255033557;x2=0.947103274559194;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.18791946308724833;x2=1;y2=0.8540268456375839</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.1761744966442953;x2=1;y2=0.6761744966442953</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.17785234899328858;x2=1;y2=0.552013422818792</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.1761744966442953;x2=1;y2=0.4429530201342282</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.29333333333333333;x2=1;y2=0.46</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/PC_BLUE_SUIT</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Blauer Anzug</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Blauer Anzug</alt>
+<copyright>Alexander Bild / Shutterstock 168901412</copyright>
+<dataUrl></dataUrl>
+<data md5="63e99fc2914610a05360d87dfe3da473" size="1008153" href="../../../../../../__blob/63e99fc2914610a05360d87dfe3da473.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

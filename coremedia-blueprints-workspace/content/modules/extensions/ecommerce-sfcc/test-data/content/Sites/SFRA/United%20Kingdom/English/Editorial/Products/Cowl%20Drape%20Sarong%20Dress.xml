@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/SFRA/United Kingdom/English/Editorial/Products" name="Cowl Drape Sarong Dress" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../Pictures/Portrait%20of%20a%20styled%20professional%20model.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Pictures/Portrait%20of%20a%20styled%20professional%20model"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>sfcc:///catalog/product/25503585M</externalId>
+</CMProductTeaser>

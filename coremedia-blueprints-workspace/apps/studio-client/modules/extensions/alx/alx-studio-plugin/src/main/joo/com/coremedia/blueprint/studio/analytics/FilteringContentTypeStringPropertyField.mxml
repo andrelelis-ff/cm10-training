@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ A contentTypeStringPropertyField instance that restricts the list of available content types to those matching 'filterFunction'
+-->
+<editor:ContentTypeStringPropertyField
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.cap.common.SESSION;
+    import com.coremedia.cap.content.ContentType;
+
+    import ext.data.Model;
+    import ext.data.Store;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.analytics.filteringContentTypeStringPropertyField";
+
+    private var config:FilteringContentTypeStringPropertyField;
+    private var contentType:ContentType;
+    private var filterFunction:Function;
+    private var storeFilterer:Function;
+
+    // called by generated constructor code
+    private function __initialize__(config:FilteringContentTypeStringPropertyField):void {
+      contentType = SESSION.getConnection().getContentRepository().getContentType(config.baseType);
+      filterFunction = function (record:Model):* {
+        return SESSION.getConnection().getContentRepository().getContentType(String(record.get('name'))).isSubtypeOf(contentType)
+      };
+      storeFilterer = function ():void {
+        var store:Store = Store(getStore());
+        store.suspendEvents(false);
+        store.filterBy(filterFunction);
+        store.resumeEvents()
+      };
+    }
+
+    public native function FilteringContentTypeStringPropertyField(config:FilteringContentTypeStringPropertyField = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!---
+     The name of the base content type to restrict the combo box to
+    -->
+    <fx:String id="baseType">_Document</fx:String>
+  </fx:Declarations>
+
+  <editor:listeners>
+    <fx:Object afterRender="{function():void{
+                     getStore().addListener('datachanged', storeFilterer);
+                     storeFilterer();}
+                    }"/>
+  </editor:listeners>
+
+</editor:ContentTypeStringPropertyField>

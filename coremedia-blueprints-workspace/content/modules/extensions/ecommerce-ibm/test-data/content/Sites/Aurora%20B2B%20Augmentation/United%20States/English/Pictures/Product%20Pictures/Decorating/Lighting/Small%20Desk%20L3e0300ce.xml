@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Decorating/Lighting" name="Small Desk Lamp Yellow Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=546;y=799;width=587;height=912</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=551;y=871;width=577;height=773</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=495;y=954;width=690;height=691</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=422;y=1015;width=819;height=613</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=335;y=1026;width=1020;height=572</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=180;y=1052;width=1365;height=546</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=1134;width=1669;height=418</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.3271604938271605;y1=0.31958762886597936;x2=0.6790123456790124;y2=0.6845360824742268</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.33024691358024694;y1=0.34845360824742266;x2=0.6759259259259259;y2=0.6577319587628866</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.2962962962962963;y1=0.38144329896907214;x2=0.7098765432098766;y2=0.6577319587628866</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.25308641975308643;y1=0.4061855670103093;x2=0.7438271604938271;y2=0.6515463917525773</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.2006172839506173;y1=0.41030927835051545;x2=0.8117283950617284;y2=0.6391752577319587</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0.10802469135802469;y1=0.42061855670103093;x2=0.9259259259259259;y2=0.6391752577319587</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.4536082474226804;x2=1;y2=0.6206185567010309</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_HLG028_280111</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Small Desk Lamp Yellow</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Small Desk Lamp Yellow</alt>
+<copyright>Kiattipong / Shutterstock 321928109</copyright>
+<dataUrl></dataUrl>
+<width>1669</width>
+<height>2500</height>
+<data md5="bc9e7527851f0bd8bf0737509005fa8b" size="171349" href="../../../../../../../../__blob/bc9e7527851f0bd8bf0737509005fa8b.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

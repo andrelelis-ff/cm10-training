@@ -1,0 +1,23 @@
+@mixin extra-small-device {
+  @media only screen and (max-width: $am-breakpoint-extra-small-device-max) {
+    @content;
+  }
+}
+
+@mixin small-device {
+  @media only screen and (min-width: $am-breakpoint-small-device-min) and (max-width: $am-breakpoint-small-device-max) {
+    @content;
+  }
+}
+
+@mixin medium-device {
+  @media only screen and (min-width: $am-breakpoint-medium-device-min) and (max-width: $am-breakpoint-medium-device-max) {
+    @content;
+  }
+}
+
+@mixin large-device {
+  @media only screen and (min-width: $am-breakpoint-large-device-min) {
+    @content;
+  }
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CatalogRepositoryThumbnailsBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                                       xmlns:local="com.coremedia.ecommerce.studio.components.repository.*"
+                                       xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                                       xmlns="exml:ext.config"
+                                       xmlns:ui="exml:com.coremedia.ui.config"
+                                       xmlns:ec="exml:com.coremedia.ecommerce.studio.config"
+                                       layout="border">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.ecommerce.studio.ECommerceStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.skins.PanelSkin;
+
+    public static const xtype:String = "com.coremedia.ecommerce.studio.config.catalogRepositoryThumbnails";
+
+    public static const THUMB_DATA_VIEW_ITEM_ID:String = "thumbdataview";
+
+    /**
+     * The itemId of the thumb data view panel.
+     */
+    public static const THUMB_DATA_VIEW_PANEL_ITEM_ID:String = "thumbdataviewscroller";
+
+    private var config:CatalogRepositoryThumbnails;
+
+    /**
+     * value expression that acts as a model for informing a view of a newly created content object.
+     */
+    [Bindable]
+    public var createdContentValueExpression:ValueExpression;
+
+    /**
+     * Value expression that indicates if a new content can be created based on the current selection in the collection view.
+     */
+    [Bindable]
+    public var newContentDisabledValueExpression:ValueExpression;
+
+    public native function CatalogRepositoryThumbnails(config:CatalogRepositoryThumbnails = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <Panel itemId="{THUMB_DATA_VIEW_PANEL_ITEM_ID}"
+           bodyBorder="false"
+           scrollable="true"
+           region="center"
+           ui="{PanelSkin.EMBEDDED.getSkin()}"
+           layout="anchor">
+      <listeners>
+        <fx:Object afterrender="{disableBrowserContextMenu}"/>
+      </listeners>
+      <header>
+        <Header height="24px"/>
+      </header>
+      <items>
+        <ec:CatalogThumbDataView itemId="{THUMB_DATA_VIEW_ITEM_ID}"
+                                 bindTo="{getCatalogItemsValueExpression()}"
+                                 emptyText="{resourceManager.getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'CatalogView_empty_text')}"
+                                 selectedItemsValueExpression="{config.selectedItemsValueExpression}"
+                                 initialViewLimit="50"
+                                 viewLimitIncrement="100">
+          <ec:plugins exml:mode="append">
+            <ui:ContextMenuPlugin>
+              <ui:contextMenu>
+                <ec:CatalogRepositoryContextMenu selectedItemsValueExpression="{config.selectedItemsValueExpression}"
+                                                 selectedFolderValueExpression="{config.selectedFolderValueExpression}"
+                                                 newContentDisabledValueExpression="{config.newContentDisabledValueExpression}"
+                                                 createdContentValueExpression="{config.createdContentValueExpression}"/>
+              </ui:contextMenu>
+            </ui:ContextMenuPlugin>
+          </ec:plugins>
+        </ec:CatalogThumbDataView>
+      </items>
+    </Panel>
+  </local:items>
+
+</local:CatalogRepositoryThumbnailsBase>

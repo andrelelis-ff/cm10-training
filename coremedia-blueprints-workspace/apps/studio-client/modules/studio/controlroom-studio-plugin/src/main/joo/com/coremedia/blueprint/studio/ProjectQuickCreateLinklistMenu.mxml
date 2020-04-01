@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:ProjectQuickCreateLinklistMenuBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        text="{resourceManager.getString('com.coremedia.blueprint.studio.ProjectStudioPlugin', 'Project_create_content_tooltip')}"
+        tooltip="{resourceManager.getString('com.coremedia.blueprint.studio.ProjectStudioPlugin', 'Project_create_content_tooltip')}"
+        iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'create_content')}"
+        onSuccess="{updateProject}"
+        contentTypes="{resourceManager.getString('com.coremedia.blueprint.studio.ProjectStudioPluginSettings', 'default_project_content_quickcreate_contentTypes')}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.ProjectStudioPlugin')]
+    [ResourceBundle('com.coremedia.blueprint.studio.ProjectStudioPluginSettings')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.controlroom.projectQuickCreateLinklistMenu";
+
+    private var config:ProjectQuickCreateLinklistMenu;
+
+    public native function ProjectQuickCreateLinklistMenu(config:ProjectQuickCreateLinklistMenu = null);
+    ]]></fx:Script>
+
+  <local:menu>
+    <Menu>
+      <items>
+        <!--Menu Items will be added here.-->
+      </items>
+    </Menu>
+  </local:menu>
+
+</local:ProjectQuickCreateLinklistMenuBase>

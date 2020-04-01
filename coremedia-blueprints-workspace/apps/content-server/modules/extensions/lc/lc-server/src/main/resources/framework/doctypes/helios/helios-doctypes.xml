@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DocumentTypeModel xmlns="http://www.coremedia.com/2008/documenttypes"
+                   xmlns:extensions="http://www.coremedia.com/2013/documenttypes-extensions"
+                   Name="helios-doctypes">
+
+  <!--- well known grammars -->
+  <ImportGrammar Name="coremedia-struct-2008"/>
+
+  <ImportDocType Name="CMDynamicList"/>
+  <ImportDocType Name="CMQueryList"/>
+  <ImportDocType Name="CMTeasable"/>
+  <ImportDocType Name="CMChannel"/>
+  <ImportDocType Name="CMAbstractCategory"/>
+
+  <!-- Marketing Spot containing an external id -->
+  <DocType Name="CMMarketingSpot" Parent="CMDynamicList">
+    <LinkListProperty Name="master" Max="1" LinkType="CMMarketingSpot" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="externalId" Length="256" Index="true"/>
+  </DocType>
+
+  <!-- Teaser to a Product using the external product id/code -->
+  <DocType Name="CMProductTeaser" Parent="CMTeasable">
+    <LinkListProperty Name="master" Max="1" LinkType="CMProductTeaser" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="externalId" Length="256" Index="true"/>
+  </DocType>
+
+  <DocType Name="CMExternalChannel" Parent="CMAbstractCategory">
+    <LinkListProperty Name="master" Max="1" LinkType="CMExternalChannel" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="externalId" Length="256" Index="true" extensions:observe="true"/>
+  </DocType>
+
+  <DocType Name="CMExternalProduct" Parent="CMTeasable">
+    <LinkListProperty Name="master" Max="1" LinkType="CMExternalProduct" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="externalId" Length="256" Index="true" extensions:observe="true"/>
+    <XmlProperty Name="pdpPagegrid" Grammar="coremedia-struct-2008"/>
+  </DocType>
+
+  <DocType Name="CMExternalPage" Parent="CMChannel">
+    <LinkListProperty Name="master" Max="1" LinkType="CMExternalPage" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="externalUriPath" Length="256" Index="true"/>
+    <StringProperty Name="externalId" Length="256" Index="true" extensions:observe="true"/>
+  </DocType>
+
+  <DocType Name="CMProductList" Parent="CMQueryList">
+    <LinkListProperty Name="master" Max="1" LinkType="CMProductList" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="externalId" Length="256" Index="true"/>
+  </DocType>
+
+</DocumentTypeModel>

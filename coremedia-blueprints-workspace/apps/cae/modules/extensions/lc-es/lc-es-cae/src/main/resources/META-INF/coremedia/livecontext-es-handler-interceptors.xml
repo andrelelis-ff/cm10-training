@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+       http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/META-INF/coremedia/livecontext-handler-interceptors.xml"/>
+  <import resource="livecontext-es-handlers.xml"/>
+
+  <bean class="org.springframework.web.servlet.handler.MappedInterceptor" id="mappedSessionSynchronizationInterceptor">
+    <constructor-arg index="0">
+      <array value-type="java.lang.String">
+        <util:constant static-field="com.coremedia.blueprint.links.BlueprintUriConstants.Patterns.DYNAMIC_URI_PATTERN"/>
+      </array>
+    </constructor-arg>
+    <constructor-arg index="1" ref="sessionSynchronizationInterceptor"/>
+  </bean>
+
+  <bean id="liveContextUserService" class="com.coremedia.livecontext.elastic.social.cae.services.impl.LiveContextUserSessionSynchronizerImpl">
+    <property name="communityUserService" ref="communityUserService"/>
+  </bean>
+
+  <bean id="sessionSynchronizationInterceptor" class="com.coremedia.livecontext.handler.SessionSynchronizationInterceptor">
+    <property name="sessionSynchronizer" ref="liveContextUserService"/>
+  </bean>
+
+  <customize:append id="appendSessionSynchronizationInterceptor" bean="handlerInterceptors">
+    <list>
+      <ref bean="mappedSessionSynchronizationInterceptor"/>
+    </list>
+  </customize:append>
+
+</beans>

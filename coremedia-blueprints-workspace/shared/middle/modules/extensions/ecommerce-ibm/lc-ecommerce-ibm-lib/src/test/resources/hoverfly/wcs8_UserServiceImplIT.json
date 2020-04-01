@@ -1,0 +1,150 @@
+{
+  "data" : {
+    "pairs" : [ {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/coremedia/storeinfo"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : { },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"serverTimezoneId\":\"Europe\\/Paris\",\"wcsVersion\":\"8.0\",\"stores\":{\"AuroraB2BESite\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store B2B Direct\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838085\",\"defaultCatalogId\":\"3074457345616676718\"},\"CalistaESite\":{\"defaultCatalog\":\"Calista Spring Fashions\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838086\",\"defaultCatalogId\":\"3074457345616676768\"},\"AuroraB2BStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838034\",\"defaultCatalogId\":\"3074457345616676668\"},\"AuroraStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715837984\",\"defaultCatalogId\":\"3074457345616676668\"},\"Extended Sites Hub\":{\"defaultCatalog\":\"\",\"catalogs\":{},\"storeId\":\"715837884\",\"defaultCatalogId\":null},\"Extended Sites Catalog Asset Store\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715837934\",\"defaultCatalogId\":\"3074457345616676668\"},\"AuroraESite\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store Consumer Direct\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838084\",\"defaultCatalogId\":\"3074457345616676719\"},\"CMStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838584\",\"defaultCatalogId\":\"3074457345616676668\"}}}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "3042" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 11 Mar 2019 15:29:24 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000FJGJ0BHRs-VJ1erLPkokHYo:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-haseluenne-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/coremedia/languagemap"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : { },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"ro\":\"-21\",\"zh\":\"-8\",\"pt_BR\":\"-6\",\"pl_PL\":\"-22\",\"en_US\":\"-1\",\"ja_JP\":\"-10\",\"ru_RU\":\"-20\",\"zh_CN\":\"-7\",\"ro_RO\":\"-21\",\"de\":\"-3\",\"zh_TW\":\"-8\",\"fr\":\"-2\",\"es_ES\":\"-5\",\"it\":\"-4\",\"ko_KR\":\"-9\",\"ko\":\"-9\",\"it_IT\":\"-4\",\"de_DE\":\"-3\",\"ar\":\"-23\",\"ar_EG\":\"-23\",\"fr_FR\":\"-2\",\"pl\":\"-22\",\"pt\":\"-6\",\"en\":\"-1\",\"ru\":\"-20\",\"es\":\"-5\",\"ja\":\"-10\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "323" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 11 Mar 2019 15:29:24 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000U2Un84IW33hosUFo3dA5_t2:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-haseluenne-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838084/person/@self"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "https"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"organizationDistinguishedName\":\"o=root organization\",\"registrationStatus\":\"RegisteredPerson\",\"state\":\"D\",\"receiveSMSNotification\":\"false\",\"addressId\":\"3074457346826526827\",\"city\":\"Hamburg\",\"addressLine\":[\"Unknown\",\"\",\"\"],\"resourceId\":\"https:\\/\\/shop-ref.ecommerce.coremedia.com:443\\/wcs\\/resources\\/store\\/715838084\\/person\\/@self?currency=USD&langId=-1\",\"orgizationId\":\"-2001\",\"nickName\":\"cmadmin\",\"description\":\"CoreMedia Admin User\",\"accountStatus\":\"Enabled\",\"userId\":\"2\",\"primary\":\"true\",\"zipCode\":\"20459\",\"gender\":\"Unspecified\",\"firstName\":\"Cm\",\"distinguishedName\":\"uid=cmadmin,o=root organization\",\"resourceName\":\"person\",\"lastName\":\"Admin\",\"passwordExpired\":\"false\",\"addressType\":\"ShippingAndBilling\",\"email1\":\"testcustomer-cmadmin@coremedia.com\",\"country\":\"D\",\"bestCallingTime\":\"Daytime\",\"profileType\":\"Business\",\"registrationApprovalStatus\":\"Approved\",\"personTitle\":\"Mr.\",\"numberOfChildren\":\"0\",\"displayName\":\"cmadmin\",\"logonId\":\"cmadmin\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Connection" : [ "Keep-Alive" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 11 Mar 2019 15:29:24 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Keep-Alive" : [ "timeout=10, max=100" ],
+          "Set-Cookie" : [ "JSESSIONID=0000t137Lei0PPqh5c0MnJDiZi2:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-haseluenne-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Transfer-Encoding" : [ "chunked" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    } ],
+    "globalActions" : {
+      "delays" : [ ]
+    }
+  },
+  "meta" : {
+    "schemaVersion" : "v5",
+    "hoverflyVersion" : "v0.17.7",
+    "timeExported" : "2019-03-11T16:29:24+01:00"
+  }
+}

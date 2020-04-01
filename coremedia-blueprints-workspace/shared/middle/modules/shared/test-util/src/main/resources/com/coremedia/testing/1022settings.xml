@@ -1,0 +1,8 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StringProperty Name="site.format">mobile</StringProperty>
+  <StructProperty Name="elasticSocial">
+    <Struct>
+      <StringProperty Name="tenant">testTenant</StringProperty>
+    </Struct>
+  </StructProperty>
+</Struct>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+               http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/com/coremedia/cae/uapi-services.xml"/>
+  <import resource="personalization-context.xml"/>
+
+  <bean id="contextCollectorInterceptor"
+        class="com.coremedia.personalization.context.collector.PersonalizationHandlerInterceptor">
+    <description>
+      An interceptor to trigger the context collector.
+    </description>
+    <property name="contextCollector" ref="contextCollector"/>
+  </bean>
+
+  <bean id="keywordInterceptor" class="com.coremedia.personalization.tracking.KeywordInterceptor">
+    <description>
+      The keyword interceptor extract keywords from a property of the content that is about to be rendered and
+      increments a counter for each of the keywords in the user's profile.
+
+      This interceptor is configured for the Page bean, which provides access to keywords via
+      its "keywords" property. The counters for the keywords are stored as properties with keys equal to the
+      keywords.
+    </description>
+    <property name="contextCollection" ref="contextCollection"/>
+    <property name="keywordPropertyName" value="keywords"/>
+    <property name="contextName" value="keyword"/>
+  </bean>
+
+  <bean id="taxonomyInterceptor"
+        class="com.coremedia.blueprint.personalization.tracking.TaxonomyInterceptor">
+    <description>
+      The taxonomy interceptor extract taxonomies from a property of the content that is about to be rendered and
+      increments a counter for each of the taxonomy in the user's profile.
+    </description>
+    <property name="contextCollection" ref="contextCollection"/>
+    <property name="propertyToContextMap">
+      <map>
+        <entry key="subjectTaxonomy" value="subjectTaxonomies"/>
+        <entry key="locationTaxonomy" value="locationTaxonomies"/>
+      </map>
+    </property>
+  </bean>
+
+  <bean id="lastVisitedInterceptor"
+        class="com.coremedia.blueprint.personalization.interceptors.LastVisitedInterceptor">
+    <description>
+      This interceptor memorizes the pages the user has visited so far - up to the configured value "listSize"
+    </description>
+    <property name="contextCollection" ref="contextCollection"/>
+    <property name="contextName" value="last_visited"/>
+    <property name="listSize" value="10"/>
+  </bean>
+
+  <!-- ===============================================================
+
+    Interceptor Registration
+
+  ================================================================ -->
+
+  <customize:append id="appendPersoInterceptors" bean="handlerInterceptors" order="600">
+    <description>
+      Registers the P13n interceptors with the global interceptor list which is used
+      for all default controllers of the CAE.
+
+      Make sure that the personalization interceptors are added AFTER any interceptors that perform user
+      authentication. Otherwise, context sources might not be able to recognize the user.
+    </description>
+    <list>
+      <ref bean="contextCollectorInterceptor"/>
+      <ref bean="lastVisitedInterceptor"/>
+      <ref bean="keywordInterceptor"/>
+      <ref bean="taxonomyInterceptor"/>
+    </list>
+  </customize:append>
+
+</beans>

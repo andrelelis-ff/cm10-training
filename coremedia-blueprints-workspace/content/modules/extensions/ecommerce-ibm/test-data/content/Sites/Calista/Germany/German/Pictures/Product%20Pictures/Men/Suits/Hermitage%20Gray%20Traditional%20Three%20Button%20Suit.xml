@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/Germany/German/Pictures/Product Pictures/Men/Suits" name="Hermitage Gray Traditional Three Button Suit" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Pictures/Product%20Pictures/Men/Suits/Hermitage%20Gray%20Traditional%20Three%20Button%20Suit.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20Pictures/Men/Suits/Hermitage%20Gray%20Traditional%20Three%20Button%20Suit"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/MCL008_0816</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=43;y=0;width=2581;height=4000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=0;width=2667;height=3556</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=0;width=2667;height=2667</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=2667;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=2667;height=1500</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=252;width=2667;height=1067</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=227;width=2667;height=667</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=83;y=0;width=2500;height=4000</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=0;width=2667;height=1135</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=0;y=0;width=2667;height=4000</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=227;width=2667;height=1000</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="landscape_ratio235x100">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0;x2=1;y2=0.889</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0;x2=1;y2=0.66675</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0;x2=1;y2=0.5000625</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0;x2=1;y2=0.375046875</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.06309148264984227;x2=1;y2=0.32979148264984226</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.056782334384858045;x2=1;y2=0.22346983438485804</StringProperty>
+<StringProperty Name="landscape_ratio235x100">position;x1=0;y1=0;x2=1;y2=0.2837234042553191</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.4194312796208531</StringProperty>
+<StringProperty Name="y">0.17823343848580442</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Hermitage Grey Traditional Drei-Knopf-Anzug</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>AS Inc / shutterstock_231075268</copyright>
+<dataUrl></dataUrl>
+<width>2667</width>
+<height>4000</height>
+<data md5="6974bdbf9cd59f6a0aa140eead5c23c6" size="3778877" href="../../../../../../../../__blob/6974bdbf9cd59f6a0aa140eead5c23c6.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

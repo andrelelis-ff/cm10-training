@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<dataviews xmlns="http://www.coremedia.com/2004/objectserver/dataviewfactory">
+  <dataview appliesTo="com.coremedia.livecontext.contentbeans.LiveContextExternalChannelImpl">
+    <property name="site"/>
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="footerUnfiltered" associationType="static"/>
+    <property name="headerUnfiltered" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+    <property name="locationTaxonomy" associationType="static"/>
+    <property name="subjectTaxonomy" associationType="static"/>
+    <property name="placement"/>
+    <property name="pdpPagegridStruct"/>
+
+    <!--the following methods must be dynamic since they make use of the external catalog hierarchy,
+    which may depend on workspaces and therfore can be volatile and request dependent.-->
+    <property name="childrenUnfiltered" associationType="dynamic"/>
+    <property name="css" associationType="dynamic"/>
+    <property name="javaScript" associationType="dynamic"/>
+    <property name="rootNavigation" associationType="dynamic"/>
+    <property name="parentNavigation" associationType="dynamic"/>
+    <property name="navigationPathList" associationType="dynamic"/>
+    <property name="vanityUrlMapper" associationType="dynamic"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.livecontext.contentbeans.CMExternalPageImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="childrenUnfiltered" associationType="static"/>
+    <property name="localSettings"/>
+    <property name="css" associationType="static"/>
+    <property name="footerUnfiltered" associationType="static"/>
+    <property name="headerUnfiltered" associationType="static"/>
+    <property name="javaScript" associationType="static"/>
+    <property name="rootNavigation" associationType="static"/>
+    <property name="parentNavigation" associationType="static"/>
+    <property name="root"/>
+    <property name="viewtype" associationType="aggregation"/>
+    <property name="navigationPathList" associationType="static"/>
+    <property name="locationTaxonomy" associationType="static"/>
+    <property name="subjectTaxonomy" associationType="static"/>
+    <property name="vanityUrlMapper" associationType="static"/>
+    <property name="placement"/>
+    <!--property name="itemsFlattened" associationType="static"/--> <!-- Performs better w/o DV -->
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.livecontext.contentbeans.LiveContextExternalProductImpl">
+    <property name="site"/>
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="viewtype" associationType="aggregation"/>
+    <property name="pagegridStruct"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.livecontext.contentbeans.CMProductTeaserImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="picturesUnfiltered" associationType="static"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.livecontext.contentbeans.CMMarketingSpotImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="picturesUnfiltered" associationType="static"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.livecontext.contentbeans.CMProductListImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="productListSettings"/>
+    <property name="itemsUnfiltered" associationType="static"/>
+    <property name="picturesUnfiltered" associationType="static"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+</dataviews>

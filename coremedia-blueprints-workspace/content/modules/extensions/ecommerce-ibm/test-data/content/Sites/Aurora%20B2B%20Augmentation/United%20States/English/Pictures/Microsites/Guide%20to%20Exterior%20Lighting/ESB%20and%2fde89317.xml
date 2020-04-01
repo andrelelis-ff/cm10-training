@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Microsites/Guide to Exterior Lighting" name="ESB and River Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=550;y=0;width=826;height=1280</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=482;y=0;width=963;height=1280</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=319;y=0;width=1282;height=1280</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=625;y=0;width=1195;height=893</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=81;width=1920;height=1080</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=0;width=1920;height=768</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=400;width=1920;height=481</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.28664495114006516;y1=0;x2=0.7166123778501629;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.250814332247557;y1=0;x2=0.752442996742671;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.16612377850162866;y1=0;x2=0.8338762214983714;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.3257328990228013;y1=0;x2=0.9478827361563518;y2=0.697560975609756</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.06341463414634146;x2=1;y2=0.9073170731707317</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0;x2=1;y2=0.6</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3121951219512195;x2=1;y2=0.6878048780487804</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>ESB and River Image</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Picture of the Empire State Building and Hudson River</alt>
+<copyright>Black Russian Studio/Shutterstock 107514920</copyright>
+<dataUrl></dataUrl>
+<width>1920</width>
+<height>1280</height>
+<data md5="8744d8610be1f35037a66cab5addefd6" size="610261" href="../../../../../../../__blob/8744d8610be1f35037a66cab5addefd6.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

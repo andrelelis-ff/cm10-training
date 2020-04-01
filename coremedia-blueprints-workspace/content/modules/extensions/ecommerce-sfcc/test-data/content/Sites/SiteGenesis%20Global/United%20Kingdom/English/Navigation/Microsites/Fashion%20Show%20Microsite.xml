@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/SiteGenesis Global/United Kingdom/English/Navigation/Microsites" name="Fashion Show Microsite" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>fashion-show</segment>
+<title>Fashion Show</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Watch the best moments from the 2018 fashion show.</p></div></teaserText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Layouts/HomepageLayout.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Settings/Pagegrid/Layouts/HomepageLayout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Microsites/Fashion%20Show/Fashion%20Show%20Teaser.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Microsites/Fashion%20Show/Fashion%20Show%20Teaser"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../Options/Viewtypes/CMChannel/hero.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Viewtypes/CMChannel/hero"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Articles/The%20Difference%20between%20Style%20and%20Fashion.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Articles/The%20Difference%20between%20Style%20and%20Fashion"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Articles/Fashion%20should%20be%20Fun.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Articles/Fashion%20should%20be%20Fun"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../Options/Viewtypes/CMChannel/square.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Viewtypes/CMChannel/square"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/placement1.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/placement1"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Microsites/Fashion%20Show/Product%20Teaser%2001.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Microsites/Fashion%20Show/Product%20Teaser%2001"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Microsites/Fashion%20Show/Product%20Teaser%2002.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Microsites/Fashion%20Show/Product%20Teaser%2002"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Microsites/Fashion%20Show/Product%20Teaser%2003.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Microsites/Fashion%20Show/Product%20Teaser%2003"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Microsites/Fashion%20Show/Product%20Teaser%2004.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Microsites/Fashion%20Show/Product%20Teaser%2004"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../Options/Viewtypes/CMChannel/square.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Viewtypes/CMChannel/square"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/placement2.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/placement2"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+</StructListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/placement3.xml" cmexport:path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/placement3"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

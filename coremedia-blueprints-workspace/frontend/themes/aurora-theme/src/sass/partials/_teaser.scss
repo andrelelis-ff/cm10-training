@@ -1,0 +1,41 @@
+// Teaser
+// =====================================================================================================================
+
+.cm-square-banner {
+  // ibm will set 1.4 to the body which does not look good
+  line-height: 1.2;
+}
+
+.cm-carousel-banner,
+.cm-landscape-banner,
+.cm-portrait-banner,
+.cm-square-banner {
+  &__headline {
+    font-size: 16px;
+  }
+}
+
+.cm-hero-banner {
+  &__headline {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    line-height: 24px;
+    font-size: 14px;
+  }
+}
+
+.cm-portrait-banner-grid--50-50 {
+  .cm-portrait-banner-grid__item {
+    width: 50%;
+  }
+}
+
+.cm-landscape-banner-grid--50-50 {
+  .cm-landscape-banner-grid__item {
+    width: 50%;
+  }
+}

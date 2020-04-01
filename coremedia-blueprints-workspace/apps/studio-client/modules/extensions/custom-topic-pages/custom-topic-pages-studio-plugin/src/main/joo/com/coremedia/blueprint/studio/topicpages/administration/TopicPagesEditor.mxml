@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:TopicPagesEditorBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.topicpages.administration.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:topicpages="exml:com.coremedia.blueprint.studio.topicpages.config"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.topicpages.TopicPages', 'TopicPages_administration_title')}"
+        closable="true"
+        id_="{TopicPagesEditorBase.TOPIC_PAGES_EDITOR_ID}"
+        iconCls="{resourceManager.getString('com.coremedia.blueprint.studio.topicpages.TopicPages', 'TopicPages_icon')}"
+        ui="{PanelSkin.FRAME.getSkin()}"
+        constrainHeader="true"
+        layout="fit">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.topicpages.TopicPages')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.skins.PanelSkin;
+    import com.coremedia.ui.skins.SplitterSkin;
+    import com.coremedia.ui.skins.ToolbarSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.topicpages.config.topicPagesEditor";
+
+    private var config:TopicPagesEditor;
+
+    public native function TopicPagesEditor(config:TopicPagesEditor = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <Panel>
+      <items>
+        <topicpages:TopicsPanel id_="topicsPanel"
+                                selectionExpression="{getSelectionExpression()}"
+                                width="550"/>
+        <Splitter width="4px"
+                  ui="{SplitterSkin.DARK.getSkin()}"/>
+        <topicpages:TopicPreviewPanel selectionExpression="{getSelectionExpression()}"
+                                      id_="topicPreviewPanel"
+                                      flex="1"/>
+      </items>
+      <layout>
+        <layout_HBox align="stretch"/>
+      </layout>
+    </Panel>
+  </local:items>
+  <local:tbar>
+    <Toolbar height="40"
+             ui="{ToolbarSkin.WORKAREA.getSkin()}"/>
+  </local:tbar>
+
+</local:TopicPagesEditorBase>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Hybris Apparel/Germany/German/Options/Settings" name="Content Creation" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Options/Settings/Content%20Creation.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Content%20Creation"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="paths">
+<Struct>
+<LinkProperty Name="CMAudio" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/"/>
+<LinkProperty Name="CMArticle" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/"/>
+<LinkProperty Name="CMChannel" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Navigation/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Navigation/"/>
+<LinkProperty Name="CMCollection" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/"/>
+<LinkProperty Name="CMDownload" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Downloads/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Downloads/"/>
+<LinkProperty Name="CMExternalChannel" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Navigation/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Navigation/"/>
+<LinkProperty Name="CMGallery" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Pictures/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Pictures/"/>
+<LinkProperty Name="CMImageMap" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Pictures/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Pictures/"/>
+<LinkProperty Name="CMMarketingSpot" LinkType="coremedia:///cap/contenttype/Content_"/>
+<LinkProperty Name="CMP13NSearch" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/"/>
+<LinkProperty Name="CMPerson" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Authors/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Authors/"/>
+<LinkProperty Name="CMPicture" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Pictures/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Pictures/"/>
+<LinkProperty Name="CMProduct" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Products/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Products/"/>
+<LinkProperty Name="CMProductList" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Products/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Products/"/>
+<LinkProperty Name="CMProductTeaser" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Products/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Products/"/>
+<LinkProperty Name="CMQueryList" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/"/>
+<LinkProperty Name="CMSelectionRules" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/"/>
+<LinkProperty Name="CMSite" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Navigation/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Navigation/"/>
+<LinkProperty Name="CMSpinner" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Pictures/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Pictures/"/>
+<LinkProperty Name="CMTeaser" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/"/>
+<LinkProperty Name="CMUserProfile" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Personalization/Profiles/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Personalization/Profiles/"/>
+<LinkProperty Name="CMVideo" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Videos/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Videos/"/>
+<LinkProperty Name="editorial" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/"/>
+<LinkProperty Name="navigation" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Navigation/" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Navigation/"/>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

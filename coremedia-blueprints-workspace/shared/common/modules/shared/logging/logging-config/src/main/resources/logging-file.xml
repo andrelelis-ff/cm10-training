@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ |  This appender can be used as a replacement for logging-common.xml.
+ |
+ -->
+
+<included>
+
+  <if condition='!isDefined("log.pattern")'>
+    <then>
+      <property name="log.pattern" value="%d{yyyy-MM-dd HH:mm:ss} %-7([%level]) %logger [%X{tenant}] - %message \\(%thread\\)%n" />
+    </then>
+  </if>
+
+  <if condition='!isDefined("log.file")'>
+    <then>
+      <property name="log.file" value="${log.dir}/${application.name}.log" />
+    </then>
+  </if>
+
+  <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>${log.file}</file>
+    <encoder>
+      <pattern>${log.pattern}</pattern>
+    </encoder>
+    <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+      <maxIndex>10</maxIndex>
+      <FileNamePattern>${log.file}.%i</FileNamePattern>
+    </rollingPolicy>
+    <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+      <MaxFileSize>4MB</MaxFileSize>
+    </triggeringPolicy>
+  </appender>
+
+</included>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Snow" name="3 Snowboard design trends" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>3 Killer Snowboard Design Trends to Watch this Season</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Inspiration.xml" path="/Settings/Taxonomies/Subject/Inspiration"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Trends.xml" path="/Settings/Taxonomies/Subject/Trends"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Where sports go, graphic design is not far behind.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Where sports go, graphic design is not far behind. From big scale branding of major pro teams to the design of your local little league logo, there is someone behind the scenes, utilizing imagery to delineate teams. And that goes double — nay, infinitely multiplied – for products available to consumers of sporting goods.</p><p>But where you may not associate a specific style with many sports, there are certain standouts that have distinguished aesthetics all their own. Like, let’s say, snowboarding. A sibling to other aesthetically dominated past-times like skateboarding and surfing, with snowboarding we see an entire style built around an industry.<br/></p><p>From bright colors and dominant graphics covering everything from the board to the clothes to the gear to the stickers affixed to those previously mentioned boards, clothes, gear and everything else in between, you can’t deny that this particular sport has created for itself a serious dedication to design.</p><p>And while many consumers may focus on the functionality of the gear they purchase, the creators cannot overlook design as an important selling point. And a lot of decision goes into these patterns.</p><p><br/></p><p><br/></p><p>Take for example, this quote from Niche Snowboard’s creative director Ana Van Pelt for <a xlink:href="http://www.outsideonline.com/1920441/art-snowboarding" xlink:type="simple">Outside Online</a>, on how she helps her brand craft top-notch boards:</p><blockquote><p>“Each season, I spend a solid month creating a style guide that provides direction for each graphic individually, and how the line will come together as a whole. It gives details about color pattern, palette, themes, and emotions; I’ll create a mood board of imagery that encompasses all those things. I typically have an idea in my mind of what I want the line to look like overall, as well as very specific graphic ideas.”<br/></p></blockquote><p class="p--heading-3">1. Tearing</p><p>Or should we say, (paper) shredding? Collaging isn’t an unfamiliar practice in this design medium, with creator taking inspiration from different sources and patching it together on the bottom of their boards.</p><p>But we like the physicality of this rendition of the snowboard design trend, with frayed edges and hints of pop culture or color, a hark back to the more analog days where snowboarding has its roots.</p><p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Pictures/Snowboad%20Tear.xml#data" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Snowboad%20Tear"/><br/></p><p><br/></p><p class="p--heading-3">2. Totems</p><p>The snowboard is a very strange and specific shape on which designers need to fit their concept. And over the years with the thousands of boards that have come out, people have found a ton of ways to use the space. But right now the trend of a long, unified graphic down the middle of a fairly simple board has caught our eye — whether it’s literally totemic or just reminiscent of that figure.<br/></p><p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Pictures/Snowboad%20Totem.xml#data" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Snowboad%20Totem"/><br/></p><p class="p--heading-3">3. Outer space</p><p>Space as a way to capture the spirit of boarding — a sport searching for a thrill and freedom, with players always in search of a new frontier. And where bigger and better to go than the coldest and most undiscovered place of them all? Who knows what kind of mountains await our track on planets far away?<br/></p><p><img alt="" xlink:actuate="onLoad" xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Pictures/Snowboad%20Space.xml#data" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Snowboad%20Space"/>​​​​​​​<br/></p></div></detailText>
+<pictures>
+<link href="../../../Pictures/Snowboard%20Orange%20Jacket.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Snowboard%20Orange%20Jacket"/>
+</pictures>
+<related>
+<link href="Best%20places%20to%20snowboard%20in%20Austria.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Best%20places%20to%20snowboard%20in%20Austria"/>
+<link href="../../Products/Freestyle%20Snow%20Board%20110839.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Freestyle%20Snow%20Board%20110839"/>
+<link href="../../Products/Freestyle%20Snowboard%20108295.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Freestyle%20Snowboard%20108295"/>
+</related>
+<authors>
+<link href="../../Authors/Charlotte%20May%20Person.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Authors/Charlotte%20May%20Person"/>
+</authors>
+</CMArticle>

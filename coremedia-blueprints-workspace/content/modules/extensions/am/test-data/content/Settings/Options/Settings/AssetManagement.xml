@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Settings/Options/Settings" name="AssetManagement" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<locale></locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringListProperty Name="channels">
+<String>print</String>
+<String>mobile</String>
+<String>web</String>
+<String>social</String>
+</StringListProperty>
+<StringListProperty Name="regions">
+<String>USA</String>
+<String>Europe</String>
+</StringListProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

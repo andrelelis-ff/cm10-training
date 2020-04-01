@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CatalogLinkPropertyFieldBase
+  xmlns="exml:ext.config"
+  xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+  xmlns:exml="http://www.jangaroo.net/exml/0.8"
+  xmlns:fx="http://ns.adobe.com/mxml/2009"
+  xmlns:local="com.coremedia.ecommerce.studio.components.link.*"
+  xmlns:ec="exml:com.coremedia.ecommerce.studio.config"
+  xmlns:ui="exml:com.coremedia.ui.config"
+  readOnlyValueExpression="{getReadOnlyVE(config)}"
+  dropAreaHandler="{CatalogHelper.getInstance().openCatalog}"
+  htmlFeedback="{CatalogDragDropVisualFeedback.getHtmlFeedback}"
+  selectedPositionsExpression="{getSelectedPositionsVE()}"
+  selectedValuesExpression="{getSelectedVE()}"
+  linkListWrapper="{getLinkListWrapper(config)}"
+>
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.ecommerce.studio.ECommerceStudioPlugin')]
+  </fx:Metadata>
+  <fx:Declarations>
+    <fx:Array id="additionalToolbarItems"/>
+    <fx:Boolean id="hideOpenInTab"/>
+    <fx:Boolean id="hideRemove"/>
+    <fx:Boolean id="hideCatalog"/>
+  </fx:Declarations>
+  <fx:Script><![CDATA[
+    import com.coremedia.ecommerce.studio.dragdrop.CatalogDragDropVisualFeedback;
+    import com.coremedia.ecommerce.studio.helper.CatalogHelper;
+
+    import mx.resources.ResourceManager;
+
+    public static const xtype:String = "com.coremedia.ecommerce.studio.config.catalogLinkPropertyField";
+
+    private var config:CatalogLinkPropertyField;
+
+    public native function CatalogLinkPropertyField(config:CatalogLinkPropertyField = null);
+    ]]></fx:Script>
+
+  <local:actionList>
+    <editor:LinkListRemoveAction text="{ResourceManager.getInstance().getString('com.coremedia.cms.editor.sdk.actions.Actions', 'Action_deleteSelectedLinks_text')}"
+                                 tooltip="{ResourceManager.getInstance().getString('com.coremedia.cms.editor.sdk.actions.Actions', 'Action_deleteSelectedLinks_tooltip')}"
+                                 linkListWrapper="{getLinkListWrapper(config)}"
+                                 selectedValuesExpression="{getSelectedVE()}"
+                                 selectedPositionsExpression="{getSelectedPositionsVE()}"/>
+    <editor:OpenEntitiesInTabsAction entitiesValueExpression="{getSelectedVE()}"/>
+  </local:actionList>
+
+  <local:fields>
+    <ui:DataField name="type"
+                  mapping=""
+                  convert_="{convertTypeLabel}"/>
+    <ui:DataField name="typeCls"
+                  mapping=""
+                  convert_="{convertTypeCls}"/>
+    <ui:DataField name="id"
+                  mapping=""
+                  convert_="{convertIdLabel}"/>
+    <ui:DataField name="catalog"
+                  mapping="catalog.name"/>
+    <ui:DataField name="multiCatalog"
+                  mapping="store.multiCatalog"/>
+    <ui:DataField name="name"
+                  mapping=""
+                  convert_="{convertNameLabel}"/>
+    <ui:DataField name="status"
+                  mapping=""
+                  convert_="{convertLifecycleStatus}"/>
+    <ui:DataField name="thumbnailImage"
+                  mapping=""
+                  ifUnreadable=""
+                  convert_="{convertThumbnail}" />
+  </local:fields>
+
+  <local:columns>
+    <editor:ThumbnailColumn hidden="{config.showThumbnails === false}" />
+    <local:CatalogLinkListColumn catalogObjectIdDataIndex="id"
+                                 catalogObjectNameDataIndex="name"
+                                 catalogNameDataIndex="catalog"
+                                 multiCatalogDataIndex="multiCatalog"
+                                 hideCatalog="{config.hideCatalog}"
+                                 flex="1"/>
+    <editor:StatusColumn/>
+  </local:columns>
+
+  <local:tbar>
+    <ec:CatalogLinkToolbar linkListWrapper="{getLinkListWrapper(config)}"
+                           additionalToolbarItems="{config.additionalToolbarItems}"
+                           bindTo="{config.bindTo}"
+                           hideOpenInTab="{config.hideOpenInTab}"
+                           hideRemove="{config.hideRemove}"/>
+  </local:tbar>
+
+  <local:plugins exml:mode="append">
+    <ui:ContextMenuPlugin>
+      <ui:contextMenu>
+        <ec:CatalogLinkContextMenu linkListWrapper="{getLinkListWrapper(config)}"
+                                   hideOpenInTab="{config.hideOpenInTab}"
+                                   hideRemove="{config.hideRemove}"/>
+      </ui:contextMenu>
+    </ui:ContextMenuPlugin>
+  </local:plugins>
+</local:CatalogLinkPropertyFieldBase>

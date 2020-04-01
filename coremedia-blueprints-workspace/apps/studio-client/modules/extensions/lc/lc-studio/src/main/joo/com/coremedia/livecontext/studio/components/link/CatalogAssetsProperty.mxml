@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CatalogAssetsPropertyBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.livecontext.studio.components.link.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config" xmlns:ui="exml:com.coremedia.ui.config"
+        activeItemValueExpression="{getActiveCatalogAssetPropertyValueExpression(config)}">
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+    import com.coremedia.ui.skins.ToolbarSkin;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.catalogAssetsProperty";
+
+    private var config:CatalogAssetsProperty;
+
+    public native function CatalogAssetsProperty(config:CatalogAssetsProperty = null);
+
+    /**
+     * A property path expression leading to the Bean whose property is edited.
+     * This property editor assumes that this bean has a property 'properties'.
+     */
+    [Bindable]
+    public var bindTo:ValueExpression;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!---
+     The name of the sting property of the Bean to bind in this field.
+     The string property holds the id of the catalog product
+    -->
+    <fx:String id="propertyName"/>
+
+    <fx:Array id="assetContentTypes"/>
+
+    <fx:Number id="maxCardinality"/>
+
+    <!---
+     Text shown when the property is empty
+    -->
+    <fx:String id="emptyText"/>
+  </fx:Declarations>
+
+  <local:items>
+    <editor:LinkListGridPanel itemId="{CATALOG_ASSET_PROPERTY_ITEM_ID}"
+                              enableColumnMove="false"
+                              showThumbnails="true"
+                              selectedValuesExpression="{getSelectedExpression()}"
+                              hideDropArea="true"
+                              readOnlyValueExpression="{getReadOnlyVE()}">
+      <editor:linkListWrapper>
+        <local:CatalogAssetsLinkListWrapper bindTo="{config.bindTo}"
+                                            linksVE="{config.bindTo.extendBy(config.propertyName)}"
+                                            assetContentTypes="{config.assetContentTypes}"
+                                            maxCardinality="{config.maxCardinality}"
+                                            readOnlyVE="{getReadOnlyVE()}"/>
+      </editor:linkListWrapper>
+      <editor:tbar>
+        <Toolbar itemId="catalogAssetsToolbar" ui="{ToolbarSkin.FIELD.getSkin()}">
+          <items>
+            <ui:IconButton itemId="openInTab">
+              <ui:baseAction>
+                <editor:OpenInTabAction contentValueExpression="{getSelectedExpression()}"/>
+              </ui:baseAction>
+            </ui:IconButton>
+            <ui:IconButton itemId="open">
+              <ui:baseAction>
+                <editor:ShowInRepositoryAction contentValueExpression="{getSelectedExpression()}"/>
+              </ui:baseAction>
+            </ui:IconButton>
+            <TbSeparator itemId="openActionsSeparator"/>
+            <ui:IconButton itemId="copyToClipboard">
+              <ui:baseAction>
+                <editor:CopyToClipboardAction contentValueExpression="{getSelectedExpression()}"/>
+              </ui:baseAction>
+            </ui:IconButton>
+          </items>
+        </Toolbar>
+      </editor:tbar>
+      <editor:plugins exml:mode="append">
+        <ui:ContextMenuPlugin>
+          <ui:contextMenu>
+            <editor:PropertyFieldContextMenu selectedItemsVE="{getSelectedExpression()}"/>
+          </ui:contextMenu>
+        </ui:ContextMenuPlugin>
+      </editor:plugins>
+    </editor:LinkListGridPanel>
+
+    <DisplayField itemId="{CATALOG_EMPTY_LABEL_ITEM_ID}"
+                  value="{config.emptyText}"/>
+  </local:items>
+
+</local:CatalogAssetsPropertyBase>

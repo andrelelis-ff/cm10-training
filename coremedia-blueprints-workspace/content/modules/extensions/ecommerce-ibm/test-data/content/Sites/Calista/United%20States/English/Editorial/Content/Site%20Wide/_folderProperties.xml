@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMFolderProperties folder="/Sites/Calista/United States/English/Editorial/Content/Site Wide" name="_folderProperties" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<contexts>
+<link href="../../../Navigation/Microsites/Microsite%20Root%20Page.xml" path="/Sites/Calista/United%20States/English/Navigation/Microsites/Microsite%20Root%20Page"/>
+</contexts>
+</CMFolderProperties>

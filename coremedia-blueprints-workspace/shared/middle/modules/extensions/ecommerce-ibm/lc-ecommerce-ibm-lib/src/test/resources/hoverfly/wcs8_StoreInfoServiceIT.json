@@ -1,0 +1,55 @@
+{
+  "data" : {
+    "pairs" : [ {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/coremedia/storeinfo"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : { },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"serverTimezoneId\":\"Europe\\/Paris\",\"wcsVersion\":\"8.0\",\"stores\":{\"AuroraB2BESite\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store B2B Direct\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838085\",\"defaultCatalogId\":\"3074457345616676718\"},\"CalistaESite\":{\"defaultCatalog\":\"Calista Spring Fashions\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838086\",\"defaultCatalogId\":\"3074457345616676768\"},\"AuroraB2BStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838034\",\"defaultCatalogId\":\"3074457345616676668\"},\"AuroraStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715837984\",\"defaultCatalogId\":\"3074457345616676668\"},\"Extended Sites Hub\":{\"defaultCatalog\":\"\",\"catalogs\":{},\"storeId\":\"715837884\",\"defaultCatalogId\":null},\"Extended Sites Catalog Asset Store\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715837934\",\"defaultCatalogId\":\"3074457345616676668\"},\"AuroraESite\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store Consumer Direct\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838084\",\"defaultCatalogId\":\"3074457345616676719\"},\"CMStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838584\",\"defaultCatalogId\":\"3074457345616676668\"}}}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "3042" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 07:45:22 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=00008Ho590-Kft4PeUfWz7tMBgO:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    } ],
+    "globalActions" : {
+      "delays" : [ ]
+    }
+  },
+  "meta" : {
+    "schemaVersion" : "v5",
+    "hoverflyVersion" : "v0.17.7",
+    "timeExported" : "2019-02-18T08:45:23+01:00"
+  }
+}

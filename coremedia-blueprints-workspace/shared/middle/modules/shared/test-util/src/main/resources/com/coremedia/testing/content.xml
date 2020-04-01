@@ -1,0 +1,990 @@
+<content>
+  <folder id="1" name="" placeApproved="true" published="true" modificationDate="2009-06-01T20:59:42.000+01:00">
+    <folder id="3" name="Content Test">
+      <document id="2" type="CMArticle" name="notSearchable" modificationDate="2009-06-01T20:59:42.000+01:00">
+        <version number="1">
+          <intProperty name="notSearchable" value="1"/>
+          <stringProperty name="teaserTitle" value="teaserTitle"/>
+          <stringProperty name="title" value="title"/>
+          <markupProperty name="teaserText" url="2teaserText.xml" grammar="coremedia-richtext-1.0"/>
+          <stringProperty name="locale" value="en"/>
+          <stringProperty name="htmlDescription" value="My HTML Description"/>
+          <stringProperty name="htmlTitle" value="My HTML Title"/>
+          <markupProperty name="detailText" url="2detailText.xml" grammar="coremedia-richtext-1.0"/>
+          <linkProperty name="subjectTaxonomy">
+            <link id="76"/>
+            <link id="78"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="4" type="CMArticle" name="isSearchable" modificationDate="2004-01-01T06:00:00+01:00"
+                published="true" placeApproved="true" creator="0">
+        <version number="1">
+          <intProperty name="notSearchable" value="0"/>
+          <markupProperty name="localSettings" url="4settings.xml" grammar="coremedia-struct-2008"/>
+          <stringProperty name="title" value="title"/>
+          <markupProperty name="detailText" url="4detailText.xml" grammar="coremedia-richtext-1.0"/>
+          <stringProperty name="locale" value="de"/>
+          <linkProperty name="master">
+            <link id="2"/>
+          </linkProperty>
+          <linkProperty name="contexts">
+            <link id="14"/>
+          </linkProperty>
+          <dateProperty name="extDisplayedDate" value="2010-01-01T06:00:00+01:00"/>
+          <dateProperty name="validFrom" value="2010-01-01T06:00:00+01:00"/>
+          <dateProperty name="validTo" value="2011-01-01T06:00:00+01:00"/>
+          <stringProperty name="keywords" value="articlekey,articleword"/>
+          <linkProperty name="pictures">
+            <link id="16"/>
+            <link id="18"/>
+          </linkProperty>
+          <linkProperty name="related">
+            <link id="2"/>
+          </linkProperty>
+          <linkProperty name="subjectTaxonomy">
+            <link id="76"/>
+            <link id="78"/>
+          </linkProperty>
+          <linkProperty name="locationTaxonomy">
+            <link id="72"/>
+            <link id="74"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="6" type="CMArticle" name="searchableNotSet">
+        <version number="1">
+          <markupProperty name="localSettings" url="6settings.xml" grammar="coremedia-struct-2008"/>
+          <linkProperty name="linkedSettings">
+            <link id="800"/>
+            <link id="8"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="8" type="CMSettings" name="anotherSettingsDocument">
+        <version number="1">
+          <markupProperty name="settings" url="8settings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="800" type="CMSettings" name="emptySettingsDocument">
+        <version number="1"/>
+      </document>
+      <document id="54" name="Site-Indicator" type="CMSite"> <!-- Not a site, wrong folder depth! -->
+        <version number="1">
+          <linkProperty name="root">
+            <link id="10"/>
+          </linkProperty>
+          <stringProperty name="id" value="theSiteId"/>
+          <stringProperty name="locale" value="en"/>
+          <stringProperty name="name" value="theSiteName"/>
+          <linkProperty name="master"/>
+        </version>
+      </document>
+      <document id="10" type="CMChannel" name="grandfather">
+        <version number="1">
+          <markupProperty name="localSettings" url="10settings.xml" grammar="coremedia-struct-2008"/>
+          <linkProperty name="linkedSettings">
+            <link id="800"/>
+            <link id="124"/>
+          </linkProperty>
+          <linkProperty name="children">
+            <link id="12"/>
+          </linkProperty>
+          <linkProperty name="viewtype">
+            <link id="46"/>
+          </linkProperty>
+          <linkProperty name="css">
+            <link id="48"/>
+          </linkProperty>
+          <linkProperty name="javaScript">
+            <link id="50"/>
+          </linkProperty>
+          <linkProperty name="header">
+            <link id="4"/>
+            <link id="6"/>
+          </linkProperty>
+          <linkProperty name="footer">
+            <link id="4"/>
+            <link id="6"/>
+          </linkProperty>
+          <dateProperty name="validFrom" value="2000-01-01T06:00:00+01:00"/>
+          <dateProperty name="validTo" value="2005-12-31T06:00:00+01:00"/>
+          <stringProperty name="segment" value="rootChannel"/>
+          <stringProperty name="title" value="title"/>
+          <stringProperty name="keywords" value="key,word"/>
+          <blobProperty name="favicon" url="16data.jpg" type="image/jpeg"/>
+          <markupProperty name="placement" url="10placement.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="12" type="CMChannel" name="father">
+        <version number="1">
+          <markupProperty name="localSettings" url="12settings.xml" grammar="coremedia-struct-2008"/>
+          <linkProperty name="children">
+            <link id="14"/>
+          </linkProperty>
+          <markupProperty name="placement" url="12placement.xml" grammar="coremedia-struct-2008"/>
+          <linkProperty name="viewtype">
+            <link id="46"/>
+          </linkProperty>
+          <linkProperty name="javaScript">
+            <link id="52"/>
+          </linkProperty>
+          <dateProperty name="validFrom" value="2001-01-01T06:00:00+01:00"/>
+          <dateProperty name="validTo" value="2006-12-31T06:00:00+01:00"/>
+          <intProperty name="hidden" value="1"/>
+        </version>
+      </document>
+      <document id="14" type="CMChannel" name="kid">
+        <version number="1">
+          <markupProperty name="localSettings" url="14settings.xml" grammar="coremedia-struct-2008"/>
+          <dateProperty name="validFrom" value="2002-01-01T06:00:00+01:00"/>
+          <dateProperty name="validTo" value="2007-12-31T06:00:00+01:00"/>
+          <intProperty name="hiddenInSitemap" value="1"/>
+        </version>
+      </document>
+      <document id="16" type="CMPicture" name="multiResPicture">
+        <version number="1">
+          <blobProperty name="data" url="16data.jpg" type="image/jpeg"/>
+          <stringProperty name="dataUrl" value="http://coremedia.com/"/>
+          <intProperty name="width" value="800"/>
+          <intProperty name="height" value="600"/>
+          <markupProperty name="localSettings" url="16localSettings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="18" type="CMPicture" name="GIF">
+        <version number="1">
+          <blobProperty name="data" url="18data.gif" type="image/gif"/>
+          <dateProperty name="validFrom" value="2004-01-01T06:00:00+01:00"/>
+          <dateProperty name="validTo" value="2009-12-31T06:00:00+01:00"/>
+        </version>
+      </document>
+      <document id="20" type="CMPicture" name="JPG">
+        <version number="1">
+          <blobProperty name="data" url="20data.jpg" type="image/jpeg"/>
+        </version>
+      </document>
+      <document id="22" type="CMPicture" name="PNG">
+        <version number="1">
+          <blobProperty name="data" url="22data.png" type="image/png"/>
+        </version>
+      </document>
+      <document id="24" type="CMPicture" name="multiResPictureWithoutCropping">
+        <version number="1">
+          <blobProperty name="data" url="24data.jpg" type="image/jpeg"/>
+          <dateProperty name="validFrom" value="2003-01-01T06:00:00+01:00"/>
+          <dateProperty name="validTo" value="2008-12-31T06:00:00+01:00"/>
+          <stringProperty name="dataUrl" value="http://coremedia.com/"/>
+          <intProperty name="width" value="800"/>
+          <intProperty name="height" value="600"/>
+          <markupProperty name="localSettings" url="24localSettings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="28" type="CMSymbol" name="main">
+        <version number="1">
+          <stringProperty name="description" value="The Main area of the page"/>
+        </version>
+      </document>
+      <document id="30" type="CMSymbol" name="sidebar">
+        <version number="1">
+          <stringProperty name="description" value="The Sidebar of the page"/>
+        </version>
+      </document>
+      <document id="32" type="CMSymbol" name="column1">
+        <version number="1">
+          <stringProperty name="description" value="Column1"/>
+        </version>
+      </document>
+      <document id="34" type="CMSymbol" name="column2">
+        <version number="1">
+          <stringProperty name="description" value="Column2"/>
+        </version>
+      </document>
+      <document id="36" type="CMSymbol" name="column3">
+        <version number="1">
+          <stringProperty name="description" value="Column3"/>
+        </version>
+      </document>
+      <document id="38" type="CMSymbol" name="column4">
+        <version number="1">
+          <stringProperty name="description" value="Column4"/>
+        </version>
+      </document>
+      <document id="40" type="CMArticle" name="article1">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="article1"/>
+          <markupProperty name="detailText" url="40detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+      <document id="42" type="CMArticle" name="article2">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="article2"/>
+          <markupProperty name="detailText" url="42detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+      <document id="44" type="CMArticle" name="article3">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="article3"/>
+          <markupProperty name="detailText" url="44detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+      <document id="46" type="CMViewtype" name="viewtype">
+        <version number="1">
+          <stringProperty name="description" value="viewtype"/>
+        </version>
+      </document>
+      <document id="48" type="CMCSS" name="viewtype">
+        <version number="1">
+          <markupProperty name="code" url="48code.xml" grammar="coremedia-richtext-1.0"/>
+          <stringProperty name="media" value="media"/>
+          <stringProperty name="dataUrl" value="http://coremedia.com/"/>
+          <linkProperty name="include">
+            <link id="118"/>
+          </linkProperty>
+          <stringProperty name="description" value="description"/>
+        </version>
+      </document>
+      <document id="50" type="CMJavaScript" name="viewtype">
+        <version number="1">
+          <markupProperty name="code" url="50code.xml" grammar="coremedia-richtext-1.0"/>
+          <stringProperty name="dataUrl" value="http://coremedia.com/"/>
+          <linkProperty name="include">
+            <link id="120"/>
+          </linkProperty>
+          <stringProperty name="description" value="description"/>
+          <stringProperty name="ieExpression" value="ieExpression"/>
+          <intProperty name="ieRevealed" value="1"/>
+          <markupProperty name="htmlAttributes" url="50htmlAttributes.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="52" type="CMJavaScript" name="viewtype">
+        <version number="1">
+          <markupProperty name="code" url="50code.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+      <document id="56" type="CMTeaser" name="teaser">
+        <version number="1">
+          <markupProperty name="localSettings" url="56settings.xml" grammar="coremedia-struct-2008"/>
+          <linkProperty name="target">
+            <link id="6"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="58" type="CMGallery" name="gallery">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="teaserTitle"/>
+          <linkProperty name="items">
+            <link id="16"/>
+            <link id="18"/>
+            <link id="20"/>
+            <link id="22"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="60" type="CMCollection" name="collection">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="teaserTitle"/>
+          <linkProperty name="items">
+            <link id="16"/>
+            <link id="18"/>
+            <link id="20"/>
+            <link id="22"/>
+          </linkProperty>
+        </version>
+      </document>
+
+
+      <!-- Cyclic Location taxonomy Test-->
+      <document id="762" name="CyclicWorld" type="CMLocTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="World"/>
+          <stringProperty name="externalReference" value="World"/>
+          <stringProperty name="postcode" value="20459"/>
+          <stringProperty name="latitudeLongitude" value="53.523982,10.003052"/>
+          <linkProperty name="children">
+            <link id="782"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="782" name="Europe" type="CMLocTaxonomy">
+        <version number="1">
+          <linkProperty name="children">
+            <link id="766"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="766" name="Cycle" type="CMLocTaxonomy">
+        <version number="1">
+          <linkProperty name="children">
+            <link id="762"/>
+          </linkProperty>
+        </version>
+      </document>
+
+      <!-- Location Taxonomy tests -->
+      <document id="62" name="World" type="CMLocTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="World"/>
+          <stringProperty name="externalReference" value="World"/>
+          <stringProperty name="postcode" value="20459"/>
+          <stringProperty name="latitudeLongitude" value="53.523982,10.003052"/>
+          <linkProperty name="children">
+            <link id="64"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="82" name="Europe" type="CMLocTaxonomy">
+        <version number="1">
+          <linkProperty name="children">
+            <link id="66"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="66" name="Germany" type="CMLocTaxonomy">
+        <version number="1">
+        </version>
+      </document>
+      <document id="64" name="United States" type="CMLocTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="United States"/>
+          <stringProperty name="postcode" value="20459"/>
+          <stringProperty name="latitudeLongitude" value="53.523982,10.003052"/>
+          <linkProperty name="children">
+            <link id="68"/>
+            <link id="70"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="68" name="California" type="CMLocTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="California"/>
+          <stringProperty name="postcode" value="94105"/>
+          <stringProperty name="latitudeLongitude" value="53.523982,10.003052"/>
+          <linkProperty name="children">
+            <link id="72"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="70" name="Michigan" type="CMLocTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="Michigan"/>
+          <stringProperty name="postcode" value="20459"/>
+          <stringProperty name="latitudeLongitude" value="53.523982,10.003052"/>
+          <linkProperty name="children">
+            <link id="74"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="72" name="San Francisco" type="CMLocTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="San Francisco"/>
+          <stringProperty name="postcode" value="20459"/>
+          <stringProperty name="latitudeLongitude" value="53.523982,10.003052"/>
+        </version>
+      </document>
+      <document id="74" name="Las Vegas" type="CMLocTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="Las Vegas"/>
+          <stringProperty name="postcode" value="20459"/>
+          <stringProperty name="latitudeLongitude" value="53.523982,10.003052"/>
+        </version>
+      </document>
+
+      <!-- Subject Taxonomy Test-->
+      <document id="76" name="Sport" type="CMTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="Sport"/>
+          <linkProperty name="children">
+            <link id="78"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="78" name="Motorsport" type="CMTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="Motorsport"/>
+          <linkProperty name="children">
+            <link id="80"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="80" name="Formula 1" type="CMTaxonomy">
+        <version number="1">
+          <stringProperty name="value" value="Formula 1"/>
+          <linkProperty name="children"/>
+        </version>
+      </document>
+      <document id="84" name="Sitemap" type="CMSitemap">
+        <version number="1">
+          <linkProperty name="root">
+            <link id="10"/>
+          </linkProperty>
+          <markupProperty name="localSettings" url="152settings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="86" name="Sitemap" type="CMSitemap">
+        <version number="1">
+          <linkProperty name="root">
+            <link id="10"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="88" name="Download" type="CMDownload">
+        <version number="1">
+          <blobProperty name="data" url="88data.jpg" type="image/jpeg"/>
+          <stringProperty name="filename" value="a-filename"/>
+        </version>
+      </document>
+      <document id="90" name="Action" type="CMAction">
+        <version number="1">
+          <stringProperty name="id" value="com.coremedia.blueprint.es.webflow.Login"/>
+          <stringProperty name="type" value="webflow"/>
+        </version>
+      </document>
+      <document id="92" name="ExternalLink" type="CMExternalLink">
+        <version number="1">
+          <stringProperty name="url" value="http://www.coremedia.com/"/>
+        </version>
+      </document>
+      <document id="94" type="CMImage" name="image">
+        <version number="1">
+          <blobProperty name="data" url="94data.jpg" type="image/jpeg"/>
+          <stringProperty name="description" value="description"/>
+        </version>
+      </document>
+      <document id="96" type="CMImageMap" name="imageMap">
+        <version number="1">
+          <stringProperty name="description" value="description"/>
+          <linkProperty name="pictures">
+            <link id="20"/>
+          </linkProperty>
+          <linkProperty name="target">
+            <link id="2"/>
+          </linkProperty>
+          <markupProperty name="localSettings" url="96settings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="98" type="CMInteractive" name="interactive">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="teaserTitle"/>
+          <blobProperty name="data" url="98data.swf" type="application/x-shockwave-flash"/>
+          <stringProperty name="dataUrl" value="http://www.coremedia.com/"/>
+        </version>
+      </document>
+      <document id="104" type="CMAudio" name="audio">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="teaserTitle"/>
+          <blobProperty name="data" url="100data.mp3" type="audio/mp3"/>
+          <stringProperty name="dataUrl" value="http://www.coremedia.com/"/>
+        </version>
+      </document>
+      <document id="106" type="CMVideo" name="video">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="teaserTitle"/>
+          <stringProperty name="dataUrl" value="http://www.coremedia.com/"/>
+        </version>
+      </document>
+      <document id="108" type="CMQueryList" name="queryList">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="teaserTitle"/>
+          <linkProperty name="items">
+            <link id="2"/>
+          </linkProperty>
+          <markupProperty name="localSettings" url="108settings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="150" type="CMQueryList" name="queryList">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="teaserTitle"/>
+          <markupProperty name="localSettings" url="150settings.xml" grammar="coremedia-struct-2008"/>
+          <markupProperty name="extendedItems" url="150extendedItems.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="110" type="CMHTML" name="html">
+        <version number="1">
+          <stringProperty name="description" value="description"/>
+          <markupProperty name="data" url="110data.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+      <document id="112" type="CMSettings" name="PagegridNavigation">
+        <version number="1">
+          <markupProperty name="settings" url="112settings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="114" name="_folderProperties" type="CMFolderProperties">
+        <version number="1">
+          <linkProperty name="contexts">
+            <link id="10"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="118" type="CMCSS" name="empty">
+        <version number="1">
+        </version>
+      </document>
+
+      <document id="120" type="CMJavaScript" name="empty">
+        <version number="1">
+        </version>
+      </document>
+      <document name="PagegridNavigation" id="122" type="CMSettings">
+        <version number="1">
+          <markupProperty name="settings" url="122settings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document name="aChannelsLinkedSetting" id="124" type="CMSettings">
+        <version number="1">
+          <markupProperty name="settings" url="124settings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document name="Login" id="136" type="CMAction">
+        <version number="1">
+          <stringProperty name="title" value="Login"/>
+          <stringProperty name="segment" value="login"/>
+          <markupProperty name="localSettings" url="136settings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="138" name="ActionWithLegacyProperties" type="CMAction">
+        <version number="1">
+          <markupProperty name="localSettings" url="138settings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+
+      <document id="140" name="ActionWithLegacyProperties" type="CMAction">
+        <version number="1">
+          <linkProperty name="viewtype">
+            <link id="142"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="142" type="CMViewtype" name="viewtypeForAction">
+        <version number="1">
+          <stringProperty name="description" value="viewtype"/>
+        </version>
+      </document>
+      <document id="144" type="CMTeaser" name="CMS-2361-teaser">
+        <version number="1">
+          <markupProperty name="localSettings" url="56settings.xml" grammar="coremedia-struct-2008"/>
+          <linkProperty name="target">
+            <link id="144"/>
+          </linkProperty>
+          <linkProperty name="pictures">
+            <link id="16"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="146" type="CMTeaser" name="CMS-2361-teaser2">
+        <version number="1">
+          <markupProperty name="localSettings" url="56settings.xml" grammar="coremedia-struct-2008"/>
+          <linkProperty name="target">
+            <link id="144"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="148" type="CMTeaser" name="CMS-2361-teaser3">
+        <version number="1">
+          <markupProperty name="localSettings" url="56settings.xml" grammar="coremedia-struct-2008"/>
+          <linkProperty name="target">
+            <link id="144"/>
+          </linkProperty>
+          <linkProperty name="pictures">
+            <link id="20"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="160" type="CMTeaser" name="CMS-7649-teaser1">
+        <version number="1">
+          <linkProperty name="target">
+            <link id="4"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="162" type="CMTeaser" name="CMS-7649-teaser2">
+        <version number="1">
+          <markupProperty name="localSettings" url="56settings.xml" grammar="coremedia-struct-2008"/>
+          <markupProperty name="targets" url="162targets.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="164" type="CMTeaser" name="CMS-7649-teaser1">
+        <version number="1">
+          <markupProperty name="localSettings" url="164settings.xml" grammar="coremedia-struct-2008"/>
+          <linkProperty name="target">
+            <link id="144"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="166" type="CMTeaser" name="CMS-7649-teaser1">
+        <version number="1">
+          <markupProperty name="localSettings" url="166settings.xml" grammar="coremedia-struct-2008"/>
+          <linkProperty name="target">
+            <link id="144"/>
+          </linkProperty>
+        </version>
+      </document>
+      <document id="168" type="CMTeaser" name="CMS-7649-teaser3">
+        <version number="1">
+          <markupProperty name="localSettings" url="56settings.xml" grammar="coremedia-struct-2008"/>
+          <markupProperty name="targets" url="168targets.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="170" type="CMPicture" name="pictureWithMovedFocusArea">
+        <version number="1">
+          <markupProperty name="localSettings" url="170localSettings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="172" type="CMPicture" name="pictureWithMovedFocusAreaAndFocusPoint">
+        <version number="1">
+          <markupProperty name="localSettings" url="172localSettings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="174" type="CMQueryList" name="queryList">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="teaserTitle"/>
+          <markupProperty name="localSettings" url="150settings.xml" grammar="coremedia-struct-2008"/>
+          <markupProperty name="extendedItems" url="174extendedItems.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+    </folder>
+
+
+    <!-- contextstrategy tests -->
+    <folder id="11" name="contextTests">
+
+      <folder id="111" name="navigation">
+
+        <!-- 2 sites with channel hierarchy
+          SiteA + ChannnelA
+                +++ ChannelA1
+                +++++ ChannelA11
+                +++ ChannelA2
+                +++++ ChannelA21
+          SiteB + ChannelB
+                +++ ChannelB1
+                +++++ ChannelB11
+          SiteC + ChannelMobile
+        -->
+        <document id="100" name="SiteA" type="CMSite">
+          <version number="1">
+            <linkProperty name="root">
+              <link id="1002"/>
+            </linkProperty>
+            <stringProperty name="id" value="siteA"/>
+            <stringProperty name="locale" value="en"/>
+            <stringProperty name="name" value="A"/>
+            <linkProperty name="master"/>
+          </version>
+        </document>
+        <document id="1002" name="ChannelA" type="CMChannel">
+          <version number="1">
+            <stringProperty name="segment" value="ChannelA"/>
+            <linkProperty name="children">
+              <link id="10022"/>
+              <link id="10024"/>
+            </linkProperty>
+          </version>
+        </document>
+        <document id="10022" name="ChannelA1" type="CMChannel">
+          <version number="1">
+            <stringProperty name="segment" value="ChannelA1"/>
+            <linkProperty name="children">
+              <link id="100222"/>
+            </linkProperty>
+          </version>
+        </document>
+        <document id="10024" name="ChannelA2" type="CMChannel">
+          <version number="1">
+            <stringProperty name="segment" value="ChannelB2"/>
+          </version>
+        </document>
+        <document id="100222" name="ChannelA11" type="CMChannel">
+          <version number="1">
+            <stringProperty name="segment" value="ChannelA11"/>
+          </version>
+        </document>
+
+        <document id="1010" name="SiteB" type="CMSite">
+          <version number="1">
+            <linkProperty name="root">
+              <link id="1012"/>
+            </linkProperty>
+            <stringProperty name="id" value="siteB"/>
+            <stringProperty name="locale" value="en"/>
+            <stringProperty name="name" value="B"/>
+            <linkProperty name="master"/>
+          </version>
+        </document>
+        <document id="1012" name="ChannelB" type="CMChannel">
+          <version number="1">
+            <stringProperty name="segment" value="ChannelB"/>
+            <linkProperty name="children">
+              <link id="10122"/>
+              <link id="10124"/>
+            </linkProperty>
+          </version>
+        </document>
+        <document id="10122" name="ChannelB1" type="CMChannel">
+          <version number="1">
+            <stringProperty name="segment" value="ChannelB1"/>
+            <linkProperty name="children">
+              <link id="101222"/>
+            </linkProperty>
+          </version>
+        </document>
+        <document id="10124" name="ChannelB2" type="CMChannel">
+          <version number="1">
+            <stringProperty name="segment" value="ChannelB2"/>
+          </version>
+        </document>
+        <document id="101222" name="ChannelB11" type="CMChannel">
+          <version number="1">
+            <stringProperty name="segment" value="ChannelB11"/>
+          </version>
+        </document>
+
+        <document id="102" name="SiteC" type="CMSite">
+          <version number="1">
+            <linkProperty name="root">
+              <link id="1022"/>
+            </linkProperty>
+            <stringProperty name="id" value="siteC"/>
+            <stringProperty name="locale" value="en"/>
+            <stringProperty name="name" value="C"/>
+            <linkProperty name="master"/>
+          </version>
+        </document>
+        <document id="1022" name="ChannelC" type="CMChannel">
+          <version number="1">
+            <stringProperty name="segment" value="ChannelC"/>
+            <markupProperty name="localSettings" url="1022settings.xml" grammar="coremedia-struct-2008"/>
+          </version>
+        </document>
+
+      </folder>
+
+      <folder id="113" name="editorial">
+        <folder id="1131" name="content">
+          <folder id="11311" name="forChannelA1">
+            <document id="113110" name="docInContextA1" type="CMArticle">
+              <version number="1">
+                <linkProperty name="contexts">
+                  <link id="10022"/>
+                </linkProperty>
+              </version>
+            </document>
+            <folder id="11313" name="forChannelA11">
+              <document id="1131110" name="docInContextA11" type="CMArticle">
+                <version number="1">
+                  <linkProperty name="contexts">
+                    <link id="100222"/>
+                    <link id="10124"/>
+                    <!--<link id="1022"/>-->
+                  </linkProperty>
+                </version>
+              </document>
+            </folder>
+          </folder>
+          <folder id="11315" name="forChannelB">
+            <document id="113150" name="_folderProperties" type="CMFolderProperties">
+              <version number="1">
+                <linkProperty name="contexts">
+                  <link id="1012"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="113152" name="docInContextB" type="CMArticle">
+              <version number="1"/>
+            </document>
+            <folder id="113151" name="bla">
+              <document id="1131510" name="_folderProperties" type="CMFolderProperties">
+                <version number="1">
+                  <linkProperty name="contexts">
+                    <link id="1002"/>
+                    <link id="101222"/>
+                  </linkProperty>
+                </version>
+              </document>
+              <folder id="1131511" name="bla">
+                <folder id="11315111" name="bla">
+                  <document id="113151110" name="docInContextAandContextB11" type="CMArticle">
+                    <version number="1"/>
+                  </document>
+                </folder>
+              </folder>
+            </folder>
+
+
+          </folder>
+
+        </folder>
+      </folder>
+
+    </folder>
+
+    <!--Taxonomy testing-->
+    <folder id="201" name="Taxonomies">
+      <folder id="203" name="subject">
+        <document id="202" name="Sport" type="CMTaxonomy">
+          <version number="1">
+            <stringProperty name="value" value="Sport"/>
+            <linkProperty name="children">
+              <link id="204"/>
+            </linkProperty>
+          </version>
+        </document>
+        <document id="204" name="Volleyball" type="CMTaxonomy">
+          <version number="1">
+            <stringProperty name="value" value="Volleyball"/>
+            <linkProperty name="children"/>
+          </version>
+        </document>
+      </folder>
+      <document id="206" type="CMArticle" name="nameMatchingTest">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="Sport"/>
+          <stringProperty name="title" value="Volleyball"/>
+          <stringProperty name="locale" value="en"/>
+        </version>
+      </document>
+    </folder>
+
+    <!--Referrer testing-->
+    <folder id="301" name="referrers">
+
+      <document id="302" name="Referrer" type="CMChannel">
+        <version number="1">
+        </version>
+      </document>
+      <document id="304" name="Child" type="CMChannel">
+        <version number="1">
+        </version>
+      </document>
+    </folder>
+
+    <!--ContextInfo testing-->
+    <folder id="401" name="Settings">
+      <folder id="403" name="Options">
+        <folder id="405" name="MobileDevices">
+          <document id="404" name="Device" type="CMSymbol">
+            <version number="1">
+              <stringProperty name="description" value="mobile;800x600"/>
+            </version>
+          </document>
+        </folder>
+      </folder>
+    </folder>
+
+    <!--Weak link / destroyed content testing-->
+    <folder id="1001" name="Weak Links">
+      <document id="1020" name="Master Missing" type="CMChannel">
+        <version number="1">
+          <linkProperty name="master">
+            <link id="1018"/>
+          </linkProperty>
+        </version>
+      </document>
+    </folder>
+
+    <!-- Mobile Site-->
+    <folder id="999" name="Sites">
+      <folder id="997" name="Site B">
+        <folder id="995" name="Mobile">
+          <folder id="993" name="Tablet">
+            <document id="888" name="ChannelB1 Mobile" type="CMChannel">
+              <version number="1">
+                <stringProperty name="segment" value="ChannelB1 Mobile"/>
+                <markupProperty name="localSettings" url="1022settings.xml" grammar="coremedia-struct-2008"/>
+                <linkProperty name="children">
+                  <link id="101222"/>
+                </linkProperty>
+              </version>
+            </document>
+          </folder>
+        </folder>
+        <document id="886" type="CMArticle" name="mobileArticle">
+          <version number="1">
+            <stringProperty name="segment" value="foo"/>
+          </version>
+        </document>
+      </folder>
+    </folder>
+
+    <folder name="Settings" id="701">
+      <folder name="Options" id="703">
+        <folder name="Settings" id="705">
+        </folder>
+      </folder>
+    </folder>
+
+    <!-- ES-ALX Test Site -->
+    <folder name="AnalyticsRetrievalTestFolder" id="12345">
+
+      <document id="12344" name="SiteAlx" type="CMSite">
+        <version number="1">
+          <linkProperty name="root">
+            <link id="12346"/>
+          </linkProperty>
+          <stringProperty name="id" value="siteAlx"/>
+          <stringProperty name="locale" value="en"/>
+          <stringProperty name="name" value="alx"/>
+          <linkProperty name="master"/>
+        </version>
+      </document>
+
+      <folder name="Navigations" id="123457">
+        <document id="12346" type="CMChannel" name="analyticsRetrievalRootChannel">
+          <version number="1">
+            <markupProperty name="localSettings" url="12345settings.xml" grammar="coremedia-struct-2008"/>
+            <stringProperty name="segment" value="analyticsRetrievalRootChannel"/>
+          </version>
+        </document>
+      </folder>
+      <document id="1234" name="alx1" type="CMArticle" published="true" publicationDate="2013-06-06T21:59:33.000+01:00">
+        <version number="1"/>
+        <version number="2"/>
+        <version number="3"/>
+      </document>
+      <document id="12348" type="CMALXPageList" name="pageList">
+        <version number="1">
+          <intProperty name="maxLength" value="4"/>
+        </version>
+      </document>
+      <folder name="AnalyticsRetrievalTestSubFolder" id="54321">
+        <document id="3328" name="alx2" type="CMArticle" published="true"
+                  publicationDate="2013-06-06T20:59:00.000+01:00">
+          <version number="1"/>
+          <version number="2"/>
+          <version number="3"/>
+          <version number="4"/>
+          <version number="5"/>
+          <version number="6"/>
+          <version number="7"/>
+          <version number="8"/>
+        </document>
+      </folder>
+    </folder>
+
+    <!-- end of root folder -->
+  </folder>
+  <!-- this folder is not below root folder! -->
+  <folder name="cyclicNavigation" id="5">
+    <document id="126" name="A" type="CMChannel">
+      <version number="1">
+        <linkProperty name="children">
+          <link id="128"/>
+        </linkProperty>
+      </version>
+    </document>
+    <document id="128" name="B" type="CMChannel">
+      <version number="1">
+        <linkProperty name="children">
+          <link id="130"/>
+        </linkProperty>
+      </version>
+    </document>
+    <document id="130" name="C" type="CMChannel">
+      <version number="1">
+        <linkProperty name="children">
+          <link id="126"/>
+        </linkProperty>
+      </version>
+    </document>
+  </folder>
+</content>

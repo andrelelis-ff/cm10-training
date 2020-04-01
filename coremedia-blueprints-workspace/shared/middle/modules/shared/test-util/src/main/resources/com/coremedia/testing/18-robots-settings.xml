@@ -1,0 +1,28 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <StructListProperty Name="Robots.txt">
+    <Struct>
+      <StringProperty Name="User-agent">*</StringProperty>
+      <LinkListProperty Name="Disallow" LinkType="coremedia:///cap/contenttype/CMLinkable">
+        <Link xlink:href="coremedia:///cap/content/10"/>
+        <Link xlink:href="coremedia:///cap/content/12"/>
+      </LinkListProperty>
+      <LinkListProperty Name="Allow" LinkType="coremedia:///cap/contenttype/CMLinkable">
+	<Link xlink:href="coremedia:///cap/content/14"/>
+      </LinkListProperty>
+      <StringListProperty Name="custom-entries">
+        <String>Crawl-delay: 10</String>
+        <String>Disallow: /*.asp$</String>
+      </StringListProperty>
+    </Struct>
+    <Struct>
+      <StringProperty Name="User-agent">Googlebot</StringProperty>
+      <LinkListProperty Name="Disallow" LinkType="coremedia:///cap/contenttype/CMLinkable">
+        <Link xlink:href="coremedia:///cap/content/8"/>
+         <Link xlink:href="coremedia:///cap/content/16"/>
+      </LinkListProperty>
+    </Struct>
+    <Struct>
+      <StringProperty Name="Sitemap">sitemap_index.xml</StringProperty>
+    </Struct>
+  </StructListProperty> 
+</Struct>

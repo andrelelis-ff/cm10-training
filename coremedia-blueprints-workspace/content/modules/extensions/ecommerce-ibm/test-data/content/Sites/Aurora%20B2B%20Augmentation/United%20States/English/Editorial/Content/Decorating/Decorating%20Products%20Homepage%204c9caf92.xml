@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Decorating" name="Decorating Products Homepage Promo Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMChannel/portrait.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Options/Viewtypes/CMChannel/portrait"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../Products/Aurora%20B2B/Decorating/Lighting/Modern%20Hou9ec79307.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Modern%20Houseware%20Vintage%20Floor%20Lamp%20Product%20Teaser"/>
+<link href="../../Products/Aurora%20B2B/Decorating/Table%20Runner%20whit3e7c2c02.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Decorating/Table%20Runner%20white%20Product%20Teaser"/>
+<link href="Female%20Interior%20Designer%20at%2a11f7204.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Decorating/Female%20Interior%20Designer%20at%20Desk%20Picture"/>
+</items>
+</CMCollection>

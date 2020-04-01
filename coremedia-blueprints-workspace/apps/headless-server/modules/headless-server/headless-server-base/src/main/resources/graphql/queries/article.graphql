@@ -1,0 +1,35 @@
+query ArticleQuery($id: String!, $base64Crops: [String!]) {
+
+  content {
+    article(id: $id) {
+
+      ... Reference
+      title
+      detailText
+      teaserTitle
+      teaserText
+      pictures {
+        ... ContentInfo
+        title
+        alt
+        link {
+          id
+          type
+        }
+        uriTemplate
+        base64Images(cropNames: $base64Crops) {
+          cropName
+          base64
+        }
+      }
+      context {
+        ... Reference
+      }
+      navigationPath {
+        ... Reference
+      }
+    }
+  }
+}
+
+#import "./referenceFragments.graphql"

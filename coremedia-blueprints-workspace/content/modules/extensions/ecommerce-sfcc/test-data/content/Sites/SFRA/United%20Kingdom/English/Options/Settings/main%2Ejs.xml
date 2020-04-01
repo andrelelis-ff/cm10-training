@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMJavaScript folder="/Sites/SFRA/United Kingdom/English/Options/Settings" name="main.js" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<description></description>
+<ieExpression></ieExpression>
+<include>
+</include>
+<dataUrl>https://{sfra.host}/on/demandware.static/Sites-RefArchGlobal-Site/-/en_GB/v1540893809579/js/main.js</dataUrl>
+</CMJavaScript>

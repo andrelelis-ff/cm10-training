@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/United Kingdom/English/Editorial/Slots/Categories/Women/Jewelery" name="woman's hands with jewelry rings" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=432;width=2600;height=3467</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=469;width=2600;height=2600</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=1419;width=2600;height=1950</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=1765;width=2600;height=1463</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=2098;width=2600;height=975</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.11075949367088607;x2=1;y2=0.999648382559775</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.12025316455696203;x2=1;y2=0.7869198312236286</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.3639240506329114;x2=1;y2=0.8639240506329113</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.4525316455696202;x2=1;y2=0.8275316455696202</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.5379746835443038;x2=1;y2=0.7879746835443038</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>woman's hands with jewelry rings.</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>shutterstock_529310494</copyright>
+<dataUrl></dataUrl>
+<width>2600</width>
+<height>3900</height>
+<data md5="31f19ae7d120dd73ee4fd4f0c27b8863" size="5544289" href="../../../../../../../../../__blob/31f19ae7d120dd73ee4fd4f0c27b8863.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Hybris Apparel/Germany/German/Editorial/Content/Snow" name="Snow Hero Collection 2col" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Snow/Snow%20Hero%20Collection%202col.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Snow%20Hero%20Collection%202col"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Neuer Inhalt</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="3%20Snowboard%20design%20trends.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Snow/3%20Snowboard%20design%20trends"/>
+<link href="../../Products/BT%20Airhole%20Helgasons%20Facemask.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Products/BT%20Airhole%20Helgasons%20Facemask"/>
+</items>
+</CMCollection>

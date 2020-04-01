@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpforms:CMChannelForm
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:bppm="exml:com.coremedia.blueprint.base.pagegrid.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+    [ResourceBundle('com.coremedia.catalog.studio.CatalogStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.studio.util.ViewtypeRenderer;
+    import com.coremedia.catalog.studio.CatalogStudioPluginBase;
+    import com.coremedia.catalog.studio.library.CatalogTreeRelation;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.catalog.cmCategoryForm";
+
+    public static const PAGE_GRID_TAB_ITEM_ID:String = "pageGridTab";
+
+    private var config:CMCategoryForm;
+
+    public native function CMCategoryForm(config:CMCategoryForm = null);
+    ]]></fx:Script>
+
+  <bpforms:items>
+    <editor:DocumentForm itemId="{PAGE_GRID_TAB_ITEM_ID}"
+                         title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}">
+      <editor:items>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Details_label')}"
+                itemId="categoryDetailsForm">
+          <editor:items>
+            <editor:StringPropertyField propertyName="title"/>
+            <editor:RichTextPropertyField bindTo="{config.bindTo}"
+                                          propertyName="detailText"
+                                          initialHeight="200"/>
+            <editor:PropertyFieldGroup
+                    title="{resourceManager.getString('com.coremedia.catalog.studio.CatalogStudioPlugin', 'CMCategory_teaserText_text')}"
+                    itemId="categoryTeaserTextForm">
+              <editor:items>
+                <editor:TextAreaPropertyField propertyName="teaserText"
+                                              hideLabel="true">
+                  <editor:plugins exml:mode="append">
+                    <editor:TextAreaPropertyFieldDelegatePlugin delegatePropertyName="detailText"/>
+                  </editor:plugins>
+                </editor:TextAreaPropertyField>
+              </editor:items>
+            </editor:PropertyFieldGroup>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <bpforms:SinglePictureDocumentForm/>
+        <editor:PropertyFieldGroup itemId="cmChannelPageGridForm"
+                                   title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Placements_label')}">
+          <editor:items>
+            <bppm:PageGridPropertyField propertyName="placement"
+                                        hideLabel="true">
+              <bppm:fields>
+                <ui:DataField name="{ValidityColumn.STATUS_ID}"
+                              ifUnreadable=""
+                              mapping=""
+                              convert_="{ValidityColumn.convert}"/>
+                <ui:DataField name="viewtypeStatus"
+                              ifUnreadable=""
+                              mapping=""
+                              convert_="{ViewtypeRenderer.convert}"/>
+              </bppm:fields>
+              <bppm:columns>
+                <editor:ThumbnailColumn/>
+                <editor:TypeIconColumn/>
+                <editor:NameColumn/>
+                <bpforms:ValidityColumn/>
+                <GridColumn stateId="viewTypeUrl"
+                            width="40"
+                            sortable="false"
+                            dataIndex="viewtypeStatus"
+                            fixed="true"
+                            renderer="{ViewtypeRenderer.renderer}"/>
+                <editor:StatusColumn/>
+              </bppm:columns>
+              <bppm:placementRowWidgetItems>
+                <bpforms:VisibilityConfigurationForm/>
+              </bppm:placementRowWidgetItems>
+            </bppm:PageGridPropertyField>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <bpforms:TeaserSettingsPropertyFieldGroup/>
+        <bpforms:ValidityDocumentForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.catalog.studio.CatalogStudioPlugin', 'Tab_catalog_structure_title')}"
+            itemId="navigationTab">
+      <editor:items>
+        <editor:ReferrerListPanel contentType="{CatalogTreeRelation.CONTENT_TYPE_CATEGORY}"
+                                  showThumbnail="true"
+                                  propertyName="children"
+                                  hideHeaders="true"
+                                  itemId="parentCategoryReferrer"
+                                  addBorder="true"
+                                  emptyText="{resourceManager.getString('com.coremedia.catalog.studio.CatalogStudioPlugin', 'CMCategory_no_parent')}"
+                                  title="{resourceManager.getString('com.coremedia.catalog.studio.CatalogStudioPlugin', 'CMCategory_parentChannel_text')}"
+                                  hideDeletedItemsCheckbox="true"/>
+        <editor:PropertyFieldGroup itemId="cmChannelChildrenForm"
+                                   title="{resourceManager.getString('com.coremedia.catalog.studio.CatalogStudioPlugin', 'PropertyGroup_SubCategories_label')}">
+          <editor:items>
+            <editor:LinkListPropertyField bindTo="{config.bindTo}"
+                                          hideLabel="true"
+                                          showThumbnails="true"
+                                          itemId="categoryChildrenLinkList"
+                                          openCollectionViewHandler="{CatalogStudioPluginBase.openCatalogSearch}"
+                                          propertyName="children"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <editor:ReferrerListPanel contentType="{CatalogTreeRelation.CONTENT_TYPE_PRODUCT}"
+                                  showThumbnail="true"
+                                  propertyName="contexts"
+                                  hideHeaders="true"
+                                  itemId="productsReferrer"
+                                  addBorder="true"
+                                  emptyText="{resourceManager.getString('com.coremedia.catalog.studio.CatalogStudioPlugin', 'CMCategory_no_products')}"
+                                  title="{resourceManager.getString('com.coremedia.catalog.studio.CatalogStudioPlugin', 'CMCategory_products_text')}"
+                                  hideDeletedItemsCheckbox="true"/>
+      </editor:items>
+    </editor:DocumentForm>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_extras_title')}"
+            itemId="metadata">
+      <editor:items>
+        <bpforms:CategoryDocumentForm bindTo="{config.bindTo}"/>
+        <bpforms:SEOForm bindTo="{config.bindTo}"/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:ChannelMetaDataInformationForm/>
+  </bpforms:items>
+
+</bpforms:CMChannelForm>

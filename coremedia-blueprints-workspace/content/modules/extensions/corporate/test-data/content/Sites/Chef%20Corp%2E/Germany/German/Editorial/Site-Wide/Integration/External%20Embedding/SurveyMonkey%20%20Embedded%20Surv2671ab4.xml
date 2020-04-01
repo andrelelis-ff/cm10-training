@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMHTML folder="/Sites/Chef Corp./Germany/German/Editorial/Site-Wide/Integration/External Embedding" name="SurveyMonkey  Embedded Survey  HTML Fragment" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Site-Wide/Integration/External%20Embedding/SurveyMonkey%20%20Embeddadf4e90a.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Site-Wide/Integration/External%20Embedding/SurveyMonkey%20%20Embedded%20Survey%20%20HTML%20Fragment"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<description></description>
+<data grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>&lt;div class="cm-container cm-container--default" align="center"&gt;</p> <p>&lt;div id="surveyMonkeyInfo"&gt;&lt;div&gt;&lt;script src="https://de.surveymonkey.com/jsEmbed.aspx?sm=K_2bMyGpedPjGPVXpSKgoigQ_3d_3d"&gt; &lt;/script&gt;&lt;/div&gt;Create your free online surveys with &lt;a href="https://de.surveymonkey.com"&gt;SurveyMonkey&lt;/a&gt; , the world's leading questionnaire tool.&lt;/div&gt;</p> <p> &lt;/ div&gt; </p> </div></data>
+</CMHTML>

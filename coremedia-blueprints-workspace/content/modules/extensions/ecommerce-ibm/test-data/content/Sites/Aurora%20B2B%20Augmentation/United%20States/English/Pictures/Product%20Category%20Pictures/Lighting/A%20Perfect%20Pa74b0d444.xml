@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Category Pictures/Lighting" name="A Perfect Pair Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=240;y=0;width=881;height=1365</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=377;y=0;width=1027;height=1365</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=217;y=0;width=1367;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=113;y=0;width=1821;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=108;width=2048;height=1149</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=108;width=2048;height=819</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=258;width=2048;height=510</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.11726384364820847;y1=0;x2=0.5472312703583062;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.18387909319899245;y1=0;x2=0.6851385390428212;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.10579345088161209;y1=0;x2=0.7732997481108312;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.055415617128463476;y1=0;x2=0.9445843828715366;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.07924528301886792;x2=1;y2=0.9207547169811321</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.07924528301886792;x2=1;y2=0.6792452830188679</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.18867924528301888;x2=1;y2=0.5622641509433962</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>A Perfect Pair</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>A Perfect Pair</alt>
+<copyright>KPG_Payless/Shutterstock 199158962</copyright>
+<dataUrl></dataUrl>
+<width>2048</width>
+<height>1365</height>
+<data md5="30b69f90966af9c3de372c819d0f5043" size="158715" href="../../../../../../../__blob/30b69f90966af9c3de372c819d0f5043.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

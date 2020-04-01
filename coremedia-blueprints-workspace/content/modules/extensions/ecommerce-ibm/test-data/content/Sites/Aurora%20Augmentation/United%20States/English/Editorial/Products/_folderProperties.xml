@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMFolderProperties folder="/Sites/Aurora Augmentation/United States/English/Editorial/Products" name="_folderProperties" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<contexts>
+<link href="../../Augmentation/Aurora%20B2C%20Catalog%20Root.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Augmentation/Aurora%20B2C%20Catalog%20Root"/>
+</contexts>
+</CMFolderProperties>

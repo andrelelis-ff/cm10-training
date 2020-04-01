@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable Summer Video/Products" name="Handbag" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../../United%20Kingdom/English/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Handbag.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Handbag"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../../Settings/Taxonomies/Subject/Summer.xml" path="/Settings/Taxonomies/Subject/Summer"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Sac à main</teaserTitle>
+<pictures>
+<link href="../../../../Pictures/Handbag.xml" path="/Sites/SFRA/France/French/Editorial/Pictures/Handbag"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>sfcc:///catalog/product/25778945M</externalId>
+</CMProductTeaser>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora Augmentation/United States/English/Navigation/Fragments/Aurora Categories/Apparel/Men" name="Men Casual or Exclusive Teaser Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Casual or Exclusive</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="Men%20Casual%20Teaser.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Aurora%20Categories/Apparel/Men/Men%20Casual%20Teaser"/>
+<link href="Blue%20Suit%20Image%20Map.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Aurora%20Categories/Apparel/Men/Blue%20Suit%20Image%20Map"/>
+</items>
+</CMCollection>

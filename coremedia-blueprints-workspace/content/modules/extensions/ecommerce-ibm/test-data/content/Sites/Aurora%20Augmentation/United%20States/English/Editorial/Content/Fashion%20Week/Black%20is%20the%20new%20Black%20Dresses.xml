@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductList folder="/Sites/Aurora Augmentation/United States/English/Editorial/Content/Fashion Week" name="Black is the new Black Dresses" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="productList">
+<Struct>
+<IntProperty Name="offset">1</IntProperty>
+<IntProperty Name="maxLength">6</IntProperty>
+<StringProperty Name="selectedFacet">ManufacturerName</StringProperty>
+<StringProperty Name="selectedFacetValue">mfName_ntk_cs%3A%22Hermitage+Collection%22</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<extendedItems>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="links">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Fashion/The%20difference%20between%20style%20and%20fashion.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/The%20difference%20between%20style%20and%20fashion"/>
+<IntProperty Name="index">3</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Fashion/Editorial%20Blog%20Teaser.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Editorial%20Blog%20Teaser"/>
+<IntProperty Name="index">4</IntProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</extendedItems>
+<externalId>ibm:///catalog/category/Dresses</externalId>
+</CMProductList>

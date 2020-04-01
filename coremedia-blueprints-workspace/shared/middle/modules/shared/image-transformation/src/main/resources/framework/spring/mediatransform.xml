@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                                  http://www.springframework.org/schema/beans/spring-beans.xsd
+                                  http://www.springframework.org/schema/context
+                                  http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <import resource="classpath:/com/coremedia/cap/transform/transform-services.xml"/>
+
+  <bean id="imageTransformationConfiguration" class="com.coremedia.blueprint.image.transformation.ImageTransformationConfiguration"/>
+
+
+  <bean class="com.coremedia.cap.transform.Transformation">
+    <property name="name" value="landscape_ratio4x3"/>
+    <property name="widthRatio" value="4"/>
+    <property name="heightRatio" value="3"/>
+    <property name="minWidth" value="640"/>
+    <property name="minHeight" value="480"/>
+    <property name="previewWidth" value="400" />
+  </bean>
+  <bean class="com.coremedia.cap.transform.Transformation">
+    <property name="name" value="landscape_ratio16x9"/>
+    <property name="widthRatio" value="16"/>
+    <property name="heightRatio" value="9"/>
+    <property name="minWidth" value="160"/>
+    <property name="minHeight" value="90"/>
+    <property name="previewWidth" value="400" />
+  </bean>
+  <bean class="com.coremedia.cap.transform.Transformation">
+    <property name="name" value="portrait_ratio1x1"/>
+    <property name="widthRatio" value="1"/>
+    <property name="heightRatio" value="1"/>
+    <property name="previewHeight" value="400" />
+    <property name="minWidth" value="100"/>
+    <property name="minHeight" value="100"/>
+  </bean>
+  <bean class="com.coremedia.cap.transform.Transformation">
+    <property name="name" value="portrait_ratio3x4"/>
+    <property name="widthRatio" value="3"/>
+    <property name="heightRatio" value="4"/>
+    <property name="previewHeight" value="400" />
+    <property name="minWidth" value="300"/>
+    <property name="minHeight" value="400"/>
+  </bean>
+  <bean class="com.coremedia.cap.transform.Transformation">
+    <property name="name" value="uncropped"/>
+    <property name="widthRatio" value="-1"/>
+    <property name="heightRatio" value="-1"/>
+    <property name="previewHeight" value="400" />
+  </bean>
+
+</beans>

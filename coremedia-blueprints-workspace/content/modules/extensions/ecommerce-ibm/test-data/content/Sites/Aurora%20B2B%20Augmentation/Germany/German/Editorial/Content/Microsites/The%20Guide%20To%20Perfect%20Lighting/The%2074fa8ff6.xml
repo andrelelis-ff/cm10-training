@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content/Microsites/The Guide To Perfect Lighting" name="The Guide to Perfect Lighting Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Content/Microsites/The%20Guide%20To%20Perfect%20Lightif47044ae.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/The%20Guide%20To%20Perfect%20Lighting/The%20Guide%20to%20Perfect%20Lighting%20Article"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Der Leitfaden für eine perfekte Beleuchtung</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Style%281%29.xml" path="/Settings/Taxonomies/Subject/Style%281%29"/>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Design%20Tag.xml" path="/Settings/Taxonomies/Subject/Design%20Tag"/>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Lighting%20Tag.xml" path="/Settings/Taxonomies/Subject/Lighting%20Tag"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Der Leitfaden für eine perfekte Beleuchtung</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>LED's können sogar zum Farbwechsel verwendet werden. </p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p><br/>LED's können sogar zum Ändern verwendet werden. Zuerst kam Feuer, dann Öllichter und Kerzen.</p><p>Der Strom sorgte für eine komfortable Beleuchtung.</p><p>Die erste Iteration der "Energiesparlampen" und Röhren sorgte für weiches weißes Licht, da in den matten Röhren kein Glühfaden leuchtet. In der Regel in Büros und öffentlichen Räumen.</p><p>LEDs sind die neueste Lichttechnologie. Sie sind energieeffizient und aufgrund ihrer geringen Größe können Leuchten in allen Formen und Größen geliefert werden.</p><p>Moderner Stativstrahler</p><p>Es sind farbige Lichtleisten erhältlich, die fernbedient werden können, um die Farben je nach Stimmung zu ändern - z.B. für eine beruhigende oder erfrischende Lichtlandschaft in Ihrem Bad.</p><p>Heimautomationsfähige Systeme - einschließlich des Philips Hue - können an die Steuerung von Smartphones angeschlossen und sogar mit anderen Systemen, wie beispielsweise Ihrem Fernseher, verbunden werden, um eine adaptive farbige Umgebungsbeleuchtung zu gewährleisten, die dem Bild auf dem Bildschirm entspricht.</p><p>LEDs sind für die indirekte Beleuchtung wie in der Küche oder im Schlafzimmer unter dem Bett geeignet.</p><p>Für die Nachrüstung bestehender Anlagen stehen Legacy-Ersatzglühlampen und -spots in LED-Technik zur Verfügung.</p><p>Für die Nachrüstung bestehender Anlagen stehen Legacy-Ersatzglühlampen und -spots in LED-Technik zur Verfügung.</p><p>Übersetzt mit www.DeepL.com/Translator</p></div></detailText>
+<pictures>
+<link href="../../../../Pictures/Microsites/Guide%20to%20Perfect%20Lighting/A%20Hip%20Hotel%20Roo645c8288.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/A%20Hip%20Hotel%20Room%20Picture"/>
+</pictures>
+<related>
+<link href="../History%20of%20Interior%20Design/History%20odefe40e7.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Microsites/History%20of%20Interior%20Design/History%20of%20Interior%20Design%20Article"/>
+<link href="../Guide%20to%20Exterior%20Lighting/Guide%20to%e6dc4f46.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Microsites/Guide%20to%20Exterior%20Lighting/Guide%20to%20Exterior%20Lighting%20Article"/>
+</related>
+<authors>
+<link href="../../../Authors/Michelle%20Villegas%20Person.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Authors/Michelle%20Villegas%20Person"/>
+</authors>
+</CMArticle>

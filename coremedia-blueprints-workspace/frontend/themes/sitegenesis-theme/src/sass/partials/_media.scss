@@ -1,0 +1,6 @@
+.#{$cm-media-prefix} {
+  /* alternative image */
+  &--missing {
+    background: url("../../img/logo.svg") no-repeat center center;
+  }
+}

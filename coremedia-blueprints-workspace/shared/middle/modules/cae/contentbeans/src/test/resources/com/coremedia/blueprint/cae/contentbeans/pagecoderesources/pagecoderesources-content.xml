@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+  <content>
+    <folder id="1" name="">
+      <folder id="11" name="Sites">
+        <folder id="111" name="Media">
+          <folder id="1111" name="German">
+
+            <document id="2" type="CMArticle" name="Article">
+              <version number="1">
+                <stringProperty name="title" value="Irrelevant Dummy Article"/>
+              </version>
+            </document>
+
+            <document id="2000" name="MediaSite" type="CMSite">
+              <!--
+                The Site Indicator for the site, references the Root Channel.
+                Needed to resolve the first URL segment ("root")
+              -->
+              <version number="1">
+                <linkProperty name="root">
+                  <link id="10"/>
+                </linkProperty>
+                <stringProperty name="locale" value="de"/>
+                <stringProperty name="id" value="the-site-id"/>
+              </version>
+            </document>
+
+            <document id="10" type="CMChannel" name="ParentChannel">
+              <version number="1">
+                <linkProperty name="children">
+                  <link id="20"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="20" type="CMChannel" name="ChildChannel">
+              <version number="1">
+                <linkProperty name="javaScript">
+                  <link id="50"/>
+                  <link id="52"/>
+                  <link id="54"/>
+                  <link id="56"/>
+                  <link id="58"/>
+                </linkProperty>
+                <linkProperty name="children">
+                  <link id="22"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="22" type="CMChannel" name="grandchild">
+              <version number="1">
+              </version>
+            </document>
+          </folder>
+        </folder>
+      </folder>
+      <folder id="15" name="Themes">
+        <folder id="165" name="code">
+          <folder id="155" name="js">
+            <document id="50" type="CMJavaScript" name="head.js">
+              <version number="1">
+                <markupProperty name="code" url="50code.xml" grammar="coremedia-richtext-1.0"/>
+                <intProperty name="inHead" value="1"/>
+              </version>
+            </document>
+            <document id="52" type="CMJavaScript" name="body.js">
+              <version number="1">
+                <markupProperty name="code" url="52code.xml" grammar="coremedia-richtext-1.0"/>
+              </version>
+            </document>
+            <document id="54" type="CMJavaScript" name="morebody.js">
+              <version number="1">
+                <markupProperty name="code" url="54code.xml" grammar="coremedia-richtext-1.0"/>
+              </version>
+            </document>
+            <document id="56" type="CMJavaScript" name="ie.js">
+              <version number="1">
+                <markupProperty name="code" url="56code.xml" grammar="coremedia-richtext-1.0"/>
+                <stringProperty name="ieExpression" value="gt ie10"/>
+              </version>
+            </document>
+            <document id="58" type="CMJavaScript" name="external.js">
+              <version number="1">
+                <stringProperty name="dataUrl" value="http://example.org/some.js"/>
+              </version>
+            </document>
+          </folder>
+          <folder id="157" name="css">
+            <document id="60" type="CMCSS" name="css.css">
+              <!--
+                Since the test covers only JS, this document must not occur in
+                any result list.
+              -->
+              <version number="1">
+                <markupProperty name="code" url="60code.xml" grammar="coremedia-richtext-1.0"/>
+              </version>
+            </document>
+          </folder>
+        </folder>
+      </folder>
+    </folder>
+  </content>
+  <rules>
+    <rule resourceId="11" group="0" doctype="Folder_">
+      <right value="ALL"/>
+    </rule>
+    <rule resourceId="11" group="0" doctype="Document_">
+      <right value="ALL"/>
+    </rule>
+  </rules>
+</contentRepository>

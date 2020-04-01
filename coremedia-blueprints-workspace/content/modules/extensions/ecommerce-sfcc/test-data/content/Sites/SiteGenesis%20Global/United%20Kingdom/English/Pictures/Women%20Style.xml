@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/United Kingdom/English/Pictures" name="Women Style" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio8x3">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.022082018927444793;x2=1;y2=0.9240820189274448</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.01892744479495268;x2=1;y2=0.6954274447949527</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.015772870662460567;x2=1;y2=0.5231478706624606</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.022082018927444793;x2=1;y2=0.40261326892744476</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.031545741324921134;x2=1;y2=0.2852332413249211</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=521;y=0;width=1688;height=2250</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=241;y=0;width=2250;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=3000;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=0;width=4000;height=1500</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=613;y=0;width=1500;height=2250</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="originReferences">
+</StringListProperty>
+<StringListProperty Name="references">
+<String>sfcc:///catalog/category/womens</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.3395390070921986</StringProperty>
+<StringProperty Name="y">0.32018927444794953</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Women Style</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Women Style</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2250</height>
+<data md5="ae4d018f2a403135a73d8962fb1c1463" size="643712" href="../../../../../__blob/ae4d018f2a403135a73d8962fb1c1463.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

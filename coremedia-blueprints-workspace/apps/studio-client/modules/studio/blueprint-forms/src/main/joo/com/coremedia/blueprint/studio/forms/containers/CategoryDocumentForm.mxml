@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PropertyFieldGroup
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_tags_label')}"
+        expandOnValues="subjectTaxonomy,locationTaxonomy,keywords"
+        itemId="subjectTaxonomyDocumentForm"
+        collapsed="{config.collapsed === undefined || config.collapsed === true}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.categoryDocumentForm";
+
+    private var config:CategoryDocumentForm;
+
+    public native function CategoryDocumentForm(config:CategoryDocumentForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <!-- Taxonomy Editors will be added here-->
+  </editor:items>
+  <editor:layout>
+    <layout_VBox align="stretch"/>
+  </editor:layout>
+</editor:PropertyFieldGroup>

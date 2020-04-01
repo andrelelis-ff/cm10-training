@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./United States/English/Editorial/Homepage/Dynamic Content" name="Time travel" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master/>
+<viewtype/>
+<linkedSettings/>
+<resourceBundles2/>
+<validFrom format="dd.MM.yyyy HH:mm:ss Z">31.12.2099 00:00:00 +0100</validFrom>
+<segment></segment>
+<title>Time travel</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy/>
+<locationTaxonomy/>
+<contexts/>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Time travel is the concept of movement between certain points in time, analogous to movement between different points in space by an object or a person, typically using a hypothetical device known as a time machine. Time travel is a widely-recognized concept in philosophy and fiction. The idea of a time machine was popularized by H. G. Wells' 1895 novel <em>The Time Machine</em>.</p><p>It is uncertain if time travel to the past is physically possible. However, using CMCC Time Travel a is a promising approach.</p></div></detailText>
+<pictures/>
+<related/>
+<authors/>
+</CMArticle>

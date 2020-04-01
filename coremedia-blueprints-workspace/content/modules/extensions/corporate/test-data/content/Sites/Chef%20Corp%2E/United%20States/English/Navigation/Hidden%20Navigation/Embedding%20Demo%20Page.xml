@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Chef Corp./United States/English/Navigation/Hidden Navigation" name="Embedding Demo Page" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>embedding-test</segment>
+<title>Embedding</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription>Explore the HTML embed feature of the CoreMedia Corporate Blueprint.</htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<hidden>1</hidden>
+<hiddenInSitemap>1</hiddenInSitemap>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Layouts/PagegridNavigation.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Pagegrid/Layouts/PagegridNavigation"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMTeasable">
+<Link xlink:href="coremedia:///cap/resources/../../Editorial/Site-Wide/Integration/External%20Embedding/Google%20Calendar%20HTMLa9b80493.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Site-Wide/Integration/External%20Embedding/Google%20Calendar%20HTML%20Fragment"/>
+<Link xlink:href="coremedia:///cap/resources/../../Editorial/Site-Wide/Integration/External%20Embedding/Google%20Forms%20HTML%20Fragment.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Site-Wide/Integration/External%20Embedding/Google%20Forms%20HTML%20Fragment"/>
+<Link xlink:href="coremedia:///cap/resources/../../Editorial/Site-Wide/Integration/External%20Embedding/SurveyMonkey%20%20Embeddadf4e90a.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Site-Wide/Integration/External%20Embedding/SurveyMonkey%20%20Embedded%20Survey%20%20HTML%20Fragment"/>
+<Link xlink:href="coremedia:///cap/resources/../../Editorial/Site-Wide/Integration/External%20Embedding/Pinterest%20Basic%20JS%217e914b5.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Site-Wide/Integration/External%20Embedding/Pinterest%20Basic%20JS%20%20HTML%20Fragment"/>
+<Link xlink:href="coremedia:///cap/resources/../../Editorial/Site-Wide/Integration/External%20Embedding/Pinterest%20USA%20%20HTMf2751cc7.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Site-Wide/Integration/External%20Embedding/Pinterest%20USA%20%20HTML%20Fragment"/>
+<Link xlink:href="coremedia:///cap/resources/../../Editorial/Site-Wide/Integration/External%20Embedding/Twitter%20Feed%20%20HTMLa9b80493.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Site-Wide/Integration/External%20Embedding/Twitter%20Feed%20%20HTML%20Fragment"/>
+</LinkListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

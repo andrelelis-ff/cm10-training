@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:ExpirationDateSelectorBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.assets.studio.search.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.assets.studio.AMStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.assets.studio.config.expirationDateSelector";
+
+    private var config:ExpirationDateSelector;
+
+    public native function ExpirationDateSelector(config:ExpirationDateSelector = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!---
+     The list of keys selectable in the combobox.
+     The display values can be localized in the file AMStudioPlugin.properties using the following pattern:
+     'Filter_ExpirationDate_[key]_text'
+    -->
+    <fx:Array id="availableKeys">{['any', 'inOneDay', 'inOneWeek', 'inTwoWeeks', 'inOneMonth', 'byDate']}</fx:Array>
+
+    <!---
+     The key that triggers the datefield visibility.
+    -->
+    <fx:String id="dateKey">byDate</fx:String>
+  </fx:Declarations>
+
+  <local:items>
+    <editor:ComboBoxAutoWidth valueField="id"
+                              displayField="name"
+                              encodeItems="true"
+                              hideLabel="true">
+      <editor:store>
+        <store_Json data="{comboboxEntryTransformer(config.availableKeys)}">
+          <fields>
+            <ui:DataField name="id"
+                          encode="false"/>
+            <ui:DataField name="name"
+                          encode="false"/>
+          </fields>
+        </store_Json>
+      </editor:store>
+      <editor:plugins exml:mode="append">
+        <ui:BindPropertyPlugin bindTo="{config.selectedKeyValueExpression}"
+                               bidirectional="true"/>
+      </editor:plugins>
+    </editor:ComboBoxAutoWidth>
+    <Component height="6px">
+      <plugins>
+        <ui:BindVisibilityPlugin bindTo="{config.selectedKeyValueExpression}"
+                                 transformer="{datefieldVisibilityTransformer}"/>
+      </plugins>
+    </Component>
+    <ui:StatefulDateField
+            ariaLabel="{resourceManager.getString('com.coremedia.cms.editor.Editor', 'Date_property_field')}"
+            format="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'ExpirationDate_dateFormat')}"
+            formatText=""
+            hideLabel="true"
+            width="100%">
+      <ui:plugins>
+        <ui:BindVisibilityPlugin bindTo="{config.selectedKeyValueExpression}"
+                                 transformer="{datefieldVisibilityTransformer}"/>
+        <ui:BindPropertyPlugin bindTo="{config.selectedDateValueExpression}"
+                               bidirectional="true"/>
+      </ui:plugins>
+    </ui:StatefulDateField>
+  </local:items>
+  <local:layout>
+    <layout_VBox align="stretch"/>
+  </local:layout>
+</local:ExpirationDateSelectorBase>

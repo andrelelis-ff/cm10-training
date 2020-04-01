@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:RepositoryToolbar xmlns:fx="http://ns.adobe.com/mxml/2009"
+                          xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                          xmlns="exml:ext.config"
+                          xmlns:ui="exml:com.coremedia.ui.config"
+                          xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                          ariaLabel="{resourceManager.getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'CollectionView_catalogRepositoryToolbar_label')}"
+                          itemId="commerceToolbar">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.collectionview.CollectionView;
+    import com.coremedia.cms.editor.sdk.collectionview.RepositoryToolbar;
+    import com.coremedia.ecommerce.studio.ECommerceStudioPlugin;
+
+    public static const xtype:String = "com.coremedia.ecommerce.studio.config.catalogRepositoryToolbar";
+
+    private var config:CatalogRepositoryToolbar;
+
+    public native function CatalogRepositoryToolbar(config:CatalogRepositoryToolbar = null);
+    ]]></fx:Script>
+
+  <editor:plugins exml:mode="append">
+    <ui:AddItemsPlugin>
+      <ui:items>
+        <ui:IconButton itemId="{ECommerceStudioPlugin.OPEN_IN_TAB_BUTTON_ITEM_ID}">
+          <ui:baseAction>
+            <editor:OpenEntitiesInTabsAction entitiesValueExpression="{config.selectedItemsValueExpression}"/>
+          </ui:baseAction>
+        </ui:IconButton>
+      </ui:items>
+      <ui:before>
+        <Component itemId="{RepositoryToolbar.REPOSITORY_TOOLBAR_SPACER_THIRD_ITEM_ID}"/>
+      </ui:before>
+    </ui:AddItemsPlugin>
+    <ui:RemoveItemsPlugin>
+      <ui:items>
+        <Component itemId="{RepositoryToolbar.OPEN_BUTTON_ITEM_ID}"/>
+        <Component itemId="{RepositoryToolbar.CUT_BUTTON_ITEM_ID}"/>
+        <Component itemId="{RepositoryToolbar.PASTE_BUTTON_ITEM_ID}"/>
+      </ui:items>
+    </ui:RemoveItemsPlugin>
+  </editor:plugins>
+
+</editor:RepositoryToolbar>

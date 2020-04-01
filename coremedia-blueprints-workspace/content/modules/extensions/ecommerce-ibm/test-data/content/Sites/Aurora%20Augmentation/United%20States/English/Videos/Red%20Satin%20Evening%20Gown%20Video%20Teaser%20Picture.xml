@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/United States/English/Videos" name="Red Satin Evening Gown Video Teaser Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.04938271604938272;y1=0;x2=0.41285386552689296;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.03909465020576132;y1=0;x2=0.461629861473367;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.051440329218107;y1=0;x2=0.6148206109082479;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.03292181069958848;y1=0;x2=0.7840955196197762;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0;x2=1;y2=0.9984375</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.06569343065693431;x2=1;y2=0.7756934306569343</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.2116788321167883;x2=1;y2=0.6554288321167883</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=21;y=0;width=155;height=240</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=17;y=0;width=180;height=240</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=22;y=0;width=240;height=240</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=14;y=0;width=320;height=240</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=426;height=240</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=16;width=426;height=170</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=51;width=426;height=107</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Red Satin Evening Gown Video Teaser Picture</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Red Satin Evening Gown Video Teaser Picture</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>426</width>
+<height>240</height>
+<data md5="f0f7b7f24c0cddda1cff655eedcecc52" size="15522" href="../../../../../__blob/f0f7b7f24c0cddda1cff655eedcecc52.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

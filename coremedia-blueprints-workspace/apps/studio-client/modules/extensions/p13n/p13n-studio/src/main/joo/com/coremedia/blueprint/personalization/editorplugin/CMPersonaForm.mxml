@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+HOW TO STRUCTURE:
+<perso:personaMainContainer>                -> define the valueExpression
+      <perso:personaUiContainer>            -> visible when properties are VALID
+          <editor:collapsibleFormPanel>     -> nested propertyFields are grouped with grey background
+              <perso:*propertiefield/>
+              <perso:*propertiefield/>
+              <perso:*propertiefield/>
+              ...
+          </editor:collapsibleFormPanel>
+
+         <editor:collapsibleFormPanel>       -> nested propertyFields are grouped with grey background
+              <perso:*propertiefield/>
+              <perso:*propertiefield/>
+              <perso:*propertiefield/>
+              ...
+          </editor:collapsibleFormPanel>
+      </perso:personaUiContainer>
+
+      <perso:personaErrorScreen/>            -> visible when properties are INVALID
+</perso:personaMainContainer>
+-->
+<local:CMPersonaFormBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.personalization.editorplugin.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:perso="exml:com.coremedia.personalization.ui.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:p13n="exml:com.coremedia.blueprint.personalization.editorplugin.config"
+        xmlns:taxonomy="exml:com.coremedia.blueprint.studio.config.taxonomy"
+        xmlns:ui="exml:com.coremedia.ui.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext')]
+    [ResourceBundle('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.bem.SpacingBEMEntities;
+
+    public static const xtype:String = "com.coremedia.blueprint.personalization.editorplugin.config.cmPersonaForm";
+
+    public static const PERSONA_IMAGE_ITEM_ID:String = "persona_image";
+
+    private var config:CMPersonaForm;
+
+    public native function CMPersonaForm(config:CMPersonaForm = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_standard_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <perso:PersonaMainContainer profileSettingsExpression="{config.bindTo.extendBy('properties.profileSettings')}">
+          <perso:items>
+            <!--Persona Image-->
+            <editor:PropertyFieldGroup itemId="{PERSONA_IMAGE_ITEM_ID}"
+                                       title="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_testuser_profile_image')}">
+              <editor:items>
+                <editor:LinkListPropertyField linkType="CMPicture"
+                                              showThumbnails="true"
+                                              propertyName="{'profileExtensions.properties.'+ PROFILE_IMAGE_NAME}"
+                                              hideLabel="true"
+                                              maxCardinality="1"
+                                              bindTo="{config.bindTo}"/>
+              </editor:items>
+            </editor:PropertyFieldGroup>
+            <!--GroupContainer: Elastic Social-->
+            <editor:PropertyFieldGroup itemId="elasticSocial"
+                                       title="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_testuser_profile_socialsoftware')}">
+              <editor:plugins exml:mode="append">
+                <editor:BindDisablePlugin bindTo="{config.bindTo}" forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+              </editor:plugins>
+              <editor:items>
+                <perso:PersonaStringPropertyField
+                        fieldLabel="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_testuser_profile_givenname')}"
+                        propertyName="givenname"
+                        propertyContext="personal"
+                        emptyText="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_testuser_profile_givenname_emptyText')}">
+                </perso:PersonaStringPropertyField>
+                <perso:PersonaStringPropertyField
+                        fieldLabel="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_testuser_profile_name')}"
+                        propertyName="familyname"
+                        propertyContext="personal"
+                        emptyText="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_testuser_profile_name_emptyText')}"/>
+                <perso:PersonaDatePropertyField
+                        fieldLabel="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_testuser_profile_birthday')}"
+                        propertyName="dateofbirth"
+                        propertyContext="personal"/>
+                <perso:PersonaStringPropertyField
+                        fieldLabel="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_testuser_profile_email')}"
+                        propertyName="emailaddress"
+                        propertyContext="personal"/>
+                <perso:PersonaStringPropertyField
+                        fieldLabel="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'con_number_of_comments')}"
+                        propertyName="numberOfComments"
+                        propertyContext="es_check"/>
+                <perso:PersonaStringPropertyField
+                        fieldLabel="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'con_number_of_ratings')}"
+                        propertyName="numberOfRatings"
+                        propertyContext="es_check"/>
+                <perso:PersonaStringPropertyField
+                        fieldLabel="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'con_number_of_likes')}"
+                        propertyName="numberOfLikes"
+                        propertyContext="es_check"/>
+                <perso:PersonaStringPropertyField
+                        fieldLabel="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'con_number_of_explicit_interests')}"
+                        propertyName="numberOfExplicitInterests"
+                        propertyContext="explicit"/>
+                <p13n:CMPersonaFormComboBoxField
+                        fieldLabel="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_gender')}"
+                        propertyName="gender"
+                        propertyContext="socialuser"
+                        values="{[
+                                                            ['male', resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'con_gender_male')],
+                                                            ['female', resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'con_gender_female')]]}"/>
+                <p13n:CMPersonaFormCheckboxField
+                        fieldLabel="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'con_social_background_login')}"
+                        propertyName="userLoggedIn"
+                        propertyContext="es_check"/>
+              </editor:items>
+            </editor:PropertyFieldGroup>
+            <!--GroupContainer: Geolocation-->
+            <editor:PropertyFieldGroup itemId="geoLocation"
+                                       title="Geolocation">
+              <editor:plugins exml:mode="append">
+                <editor:BindDisablePlugin bindTo="{config.bindTo}" forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+              </editor:plugins>
+              <editor:items>
+                <p13n:CMPersonaFormComboBoxField
+                        fieldLabel="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_location_city')}"
+                        propertyName="city"
+                        propertyContext="location"
+                        values="{[
+                                                            ['&quot;Hamburg&quot;', 'Hamburg'],
+                                                            ['&quot;SanFrancisco&quot;', 'San Francisco'],
+                                                            ['&quot;London&quot;', 'London'],
+                                                            ['&quot;Singapore&quot;', 'Singapore']]}"/>
+              </editor:items>
+            </editor:PropertyFieldGroup>
+            <!--GroupContainer: Search Engine-->
+            <editor:PropertyFieldGroup itemId="search"
+                                       title="Search">
+              <editor:plugins exml:mode="append">
+                <editor:BindDisablePlugin bindTo="{config.bindTo}" forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+              </editor:plugins>
+              <editor:items>
+                <perso:PersonaStringPropertyField
+                        fieldLabel="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_referrer')}"
+                        propertyName="url"
+                        propertyContext="referrer"
+                        emptyText="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_referrer_emptyText')}"/>
+                <p13n:CMPersonaFormComboBoxField
+                        fieldLabel="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_referrer_searchengine')}"
+                        propertyName="searchengine"
+                        propertyContext="referrer"
+                        values="{[
+                                                            ['', ' '],
+                                                            ['bing', 'Bing'],
+                                                            ['google', 'Google'],
+                                                            ['yahoo', 'Yahoo!']
+                                                            ]}"/>
+              </editor:items>
+            </editor:PropertyFieldGroup>
+            <!--GroupContainer: Date and Time-->
+            <editor:PropertyFieldGroup itemId="dateAndTime"
+                                       title="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_testuser_profile_systemproperties')}">
+              <editor:plugins exml:mode="append">
+                <editor:BindDisablePlugin bindTo="{config.bindTo}" forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+              </editor:plugins>
+              <editor:items>
+                <perso:PersonaDateTimeProperty
+                        fieldLabel="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_testuser_profile_date_and_time')}"
+                        propertyName="dateTime"
+                        propertyContext="system"/>
+              </editor:items>
+            </editor:PropertyFieldGroup>
+            <!--Explicit Taxonomy Container -->
+            <editor:PropertyFieldGroup itemId="explictTaxonomy"
+                                       title="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'p13n_context_taxonomy_explicit_interests_label')}">
+              <editor:items>
+                <taxonomy:TaxonomyLinkListPropertyField bindTo="{config.bindTo}"
+                                                        taxonomyId="Subject"
+                                                        propertyName="{'profileExtensions.properties.' + TAXONOMY_PROPERTY_NAME_EXPLICIT}"
+                                                        hideLabel="true"
+                                                        forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+              </editor:items>
+            </editor:PropertyFieldGroup>
+            <!--Implicit Taxonomy Container -->
+            <editor:PropertyFieldGroup itemId="implicitTaxonomy"
+                                       title="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'p13n_context_taxonomy_implicit_interests_label')}">
+              <editor:items>
+                <taxonomy:TaxonomyLinkListPropertyField bindTo="{config.bindTo}"
+                                                        taxonomyId="Subject"
+                                                        propertyName="{'profileExtensions.properties.' + TAXONOMY_PROPERTY_NAME_IMPLICIT}"
+                                                        hideLabel="true"
+                                                        forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+              </editor:items>
+            </editor:PropertyFieldGroup>
+            <perso:PersonaErrorScreen bindTo="{config.bindTo}"/>
+          </perso:items>
+        </perso:PersonaMainContainer>
+      </editor:items>
+    </editor:DocumentForm>
+
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataWithoutSettingsForm bindTo="{config.bindTo}">
+      <bpforms:plugins exml:mode="append">
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <editor:PropertyFieldGroup
+                    title="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'Tab_test_user_profile_raw_title')}"
+                    itemId="cmPersonaProfileSettingsForm"
+                    collapsed="true">
+              <editor:items>
+                <editor:TextBlobPropertyField propertyName="profileSettings"
+                                              height="550"/>
+              </editor:items>
+            </editor:PropertyFieldGroup>
+            <editor:PropertyFieldGroup
+                    title="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'Tab_test_user_profile_struct_title')}"
+                    itemId="cmPersonaProfileExtensionsForm"
+                    collapsed="true">
+              <editor:items>
+                <editor:StructPropertyField propertyName="profileExtensions"
+                                            hideLabel="true"/>
+              </editor:items>
+            </editor:PropertyFieldGroup>
+          </ui:items>
+        </ui:AddItemsPlugin>
+        <ui:VerticalSpacingPlugin modifier="{SpacingBEMEntities.VERTICAL_SPACING_MODIFIER_200}"/>
+      </bpforms:plugins>
+
+    </bpforms:MetaDataWithoutSettingsForm>
+
+  </local:items>
+
+</local:CMPersonaFormBase>

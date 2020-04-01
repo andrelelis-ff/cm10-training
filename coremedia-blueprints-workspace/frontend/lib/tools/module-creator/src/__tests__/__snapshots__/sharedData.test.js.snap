@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`initPrettierrc() returns data for .prettierrc 1`] = `
+"{
+  \\"trailingComma\\": \\"es5\\"
+}
+"
+`;

@@ -1,0 +1,4 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StringProperty Name="str">overridefr</StringProperty>
+  <StringProperty Name="strfr">strfr</StringProperty>
+</Struct>

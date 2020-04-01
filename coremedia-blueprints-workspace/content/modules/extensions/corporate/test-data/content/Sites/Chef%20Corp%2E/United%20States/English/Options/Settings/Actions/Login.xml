@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMAction folder="/Sites/Chef Corp./United States/English/Options/Settings/Actions" name="Login" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+<link href="../Elastic%20Social.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Elastic%20Social"/>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>login</segment>
+<title>Sign In</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Please register by creating a new account on Chef Corp.</p></div></detailText>
+<pictures>
+</pictures>
+<notSearchable>0</notSearchable>
+<related>
+</related>
+<authors>
+</authors>
+<id>com.coremedia.blueprint.es.webflow.Login</id>
+<type>webflow</type>
+</CMAction>

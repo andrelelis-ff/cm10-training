@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.studio.TaxonomyStudioPlugin"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.action.AddKeywordAction"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.action.CutKeywordAction"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.action.DeleteKeywordAction"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.action.EditTaxonomyAction"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.action.OpenTaxonomyChooserAction"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.action.OpenTaxonomyEditorAction"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.action.PasteKeywordAction"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.action.RemoveTaxonomyAction"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.forms.CMQueryListForm"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.forms.TaxonomyChangePlugin"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.administration.TaxonomyEditor"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.administration.TaxonomyExplorerColumn"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.administration.TaxonomyExplorerPanel"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.administration.TaxonomyStandAloneDocumentView"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.chooser.LetterListPanel"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.chooser.LetterListItemPanel"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.chooser.TaxonomySelectionWindow"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.chooser.TaxonomySelector"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.chooser.TextLinkButton"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.filter.TaxonomyFilterPanel"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.preferences.AddTaggingStrategyPlugin"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.preferences.TaxonomyPreferenceWindowPlugin"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.preferences.TaxonomyPreferences"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.queryeditor.LocationTaxonomyConditionEditor"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.queryeditor.TaxonomyConditionEditor"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.selection.TaxonomyLinkListPropertyField"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.selection.TaxonomyLinkListGridPanel"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.selection.TaxonomyPropertyField"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.selection.TaxonomySearchField"/>
+  <component class="com.coremedia.blueprint.studio.taxonomy.selection.TaxonomySuggestionsLinkListPanel"/>
+</componentPackage>

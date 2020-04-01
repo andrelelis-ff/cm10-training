@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>cae.ecommerce-ibm</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>lc-ecommerce-ibm-cae-component</artifactId>
+  <description>IBM Commerce integration</description>
+
+  <properties>
+    <coremedia.project.extension.for>cae</coremedia.project.extension.for>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>lc-ecommerce-ibm-cae</artifactId>
+      <version>${project.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.blueprint</groupId>
+      <artifactId>lc-ecommerce-ibm-component</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>lc-cae</artifactId>
+      <version>${project.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+
+</project>

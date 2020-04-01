@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository xmlns="http://www.coremedia.com/2005/contentserver/userrepository">
+  <group id="staff" name="staff" contentgroup="true" livegroup="false" administrative="false">
+    <!-- Global group, no b2b specific rules here! -->
+    <members>
+      <group id="global-manager" name="global-manager" contentgroup="true" livegroup="false" administrative="false">
+        <!-- Global group, no b2b specific rules here! -->
+        <members>
+          <group id="global-site-manager-h-b2c" name="global-site-manager-h-b2c" contentgroup="true" livegroup="false" administrative="false">
+            <rule content="/Sites/Hybris Apparel" type="CMObject" rights="RMDAPS"/>
+            <rule content="/Sites/Hybris Apparel" type="Folder_" rights="RMDAPS"/>
+            <!-- in order to define topic pages, global site managers need write access to taxonomies. -->
+            <rule content="/Settings/Taxonomies" type="CMTaxonomy" rights="RMDAP"/>
+            <members>
+              <user id="rickh" name="Rick H" home="/Home/Rick H"/>
+              <user id="harry" name="Harry" home="/Home/Harry"/>
+            </members>
+          </group>
+        </members>
+      </group> <!-- global-manager -->
+      <group id="local-manager" name="local-manager" contentgroup="true" livegroup="false" administrative="false">
+        <!-- Global group, no b2b specific rules here! -->
+        <members>
+          <group id="local-site-manager-h-b2c" name="local-site-manager-h-b2c" contentgroup="true" livegroup="false" administrative="false">
+            <!-- all local site managers can read the global master site. -->
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English" type="CMObject" rights="R"/>
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English" type="Folder_" rights="R"/>
+            <!-- in order to define topic pages, local site managers need write access to taxonomies. -->
+            <rule content="/Settings/Taxonomies" type="CMTaxonomy" rights="RMDAP"/>
+            <members>
+              <group name="manager-h-b2c-en-GB" contentgroup="true" livegroup="false" administrative="false">
+                <rule content="/Sites/Hybris Apparel/United Kingdom/English" type="CMObject" rights="RMDAP"/>
+                <rule content="/Sites/Hybris Apparel/United Kingdom/English" type="Folder_" rights="RMDAP"/>
+                <members>
+                  <user id="peterh" name="Peter H" home="/Home/Peter H"/>
+                  <!-- Rick must be member of the master site group as translation workflow role. -->
+                  <userref id="rickh"/>
+                  <userref id="harry"/>
+                </members>
+              </group>
+              <group name="manager-h-b2c-de-DE" contentgroup="true" livegroup="false" administrative="false">
+                <rule content="/Sites/Hybris Apparel/Germany/German" type="CMObject" rights="RMDAP"/>
+                <rule content="/Sites/Hybris Apparel/Germany/German" type="Folder_" rights="RMDAP"/>
+                <members>
+                  <user id="pieth" name="Piet H" home="/Home/Piet H"/>
+                </members>
+              </group>
+              <group name="manager-h-b2c-fr-FR" contentgroup="true" livegroup="false" administrative="false">
+                <!-- add rules after cloning sites. -->
+                <members>
+                  <user id="pierreh" name="Pierre H" home="/Home/Pierre H"/>
+                </members>
+              </group>
+              <group name="manager-h-b2c-es-ES" contentgroup="true" livegroup="false" administrative="false">
+                <!-- add rules after cloning sites. -->
+                <members>
+                  <user id="pedroh" name="Pedro H" home="/Home/Pedro H"/>
+                </members>
+              </group>
+              <group name="manager-h-b2c-ja-JP" contentgroup="true" livegroup="false" administrative="false">
+                <!-- add rules after cloning sites. -->
+                <members>
+                  <user id="yoshih" name="Yoshi H" home="/Home/Yoshi H"/>
+                </members>
+              </group>
+            </members>
+          </group> <!-- local-site-manager-h-b2c -->
+        </members>
+      </group> <!-- local-manager -->
+      <group name="online-editor" contentgroup="true" livegroup="false" administrative="false">
+        <!-- Global group, no b2b specific rules here! -->
+        <members>
+          <group name="online-editor-h-b2c-en-GB" contentgroup="true" livegroup="false" administrative="false">
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English" type="CMObject" rights="R"/>
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English" type="Folder_" rights="R"/>
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content" type="Folder_" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Products" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Products" type="Folder_" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English/Pictures" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English/Pictures" type="Folder_" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English/Videos" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English/Videos" type="Folder_" rights="RMD"/>
+            <members>
+              <user id="georgeh" name="George H" home="/Home/George H"/>
+            </members>
+          </group> <!-- online-editor-h-b2c-en-GB -->
+          <group name="online-editor-h-b2c-de-DE" contentgroup="true" livegroup="false" administrative="false">
+            <rule content="/Sites/Hybris Apparel/Germany/German" type="CMObject" rights="R"/>
+            <rule content="/Sites/Hybris Apparel/Germany/German" type="Folder_" rights="R"/>
+            <rule content="/Sites/Hybris Apparel/Germany/German/Editorial/Content" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/Germany/German/Editorial/Content" type="Folder_" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/Germany/German/Editorial/Products" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/Germany/German/Editorial/Products" type="Folder_" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/Germany/German/Pictures" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/Germany/German/Pictures" type="Folder_" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/Germany/German/Videos" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/Germany/German/Videos" type="Folder_" rights="RMD"/>
+            <members>
+              <user id="georgh" name="Georg H" home="/Home/Georg H"/>
+            </members>
+          </group> <!-- online-editor-h-b2c-de-DE -->
+        </members>
+      </group> <!-- online-editor -->
+      <group name="media-editor" contentgroup="true" livegroup="false" administrative="false">
+        <!-- Global group, no b2b specific rules here! -->
+        <members>
+          <group name="media-editor-h-b2c-en-GB" contentgroup="true" livegroup="false" administrative="false">
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English" type="CMObject" rights="R"/>
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English" type="Folder_" rights="R"/>
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English/Pictures" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English/Pictures" type="Folder_" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English/Videos" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/United Kingdom/English/Videos" type="Folder_" rights="RMD"/>
+            <members>
+              <user id="markh" name="Mark H" home="/Home/Mark H"/>
+              <user id="amy" name="Amy" home="/Home/Amy"/>
+            </members>
+          </group> <!-- media-editor-h-b2c-en-GB -->
+          <group name="media-editor-h-b2c-de-DE" contentgroup="true" livegroup="false" administrative="false">
+            <rule content="/Sites/Hybris Apparel/Germany/German" type="CMObject" rights="R"/>
+            <rule content="/Sites/Hybris Apparel/Germany/German" type="Folder_" rights="R"/>
+            <rule content="/Sites/Hybris Apparel/Germany/German/Pictures" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/Germany/German/Pictures" type="Folder_" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/Germany/German/Videos" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/Hybris Apparel/Germany/German/Videos" type="Folder_" rights="RMD"/>
+            <members>
+              <user id="markush" name="Markus H" home="/Home/Markus H"/>
+              <userref id="amy"/>
+            </members>
+          </group> <!-- media-editor-h-b2c-de-DE -->
+        </members>
+      </group> <!-- media-editor -->
+    </members>
+  </group> <!-- staff -->
+</repository>

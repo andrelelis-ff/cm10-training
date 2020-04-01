@@ -1,0 +1,772 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!--
+      You will need to change the groupId in all modules
+      A global search&replace will do the job !
+  -->
+  <groupId>com.coremedia.blueprint</groupId>
+  <artifactId>content-server.blueprint-parent</artifactId>
+  <version>1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <organization>
+    <name>Blueprint</name>
+  </organization>
+
+  <properties>
+    <buildNumber />
+    <failOnWarning>true</failOnWarning>
+    <coremedia.enforcer.fail>true</coremedia.enforcer.fail>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.compiler.release>11</maven.compiler.release>
+    <sonar.java.source>${maven.compiler.release}</sonar.java.source>
+    <spring-boot-maven-plugin.layout>JAR</spring-boot-maven-plugin.layout>
+
+    <google.api.services.analytics.version>v3-rev99-1.19.0</google.api.services.analytics.version>
+    <google.api.services.youtube.version>v3-rev152-1.19.0</google.api.services.youtube.version>
+    <google.api.client.version>1.19.0</google.api.client.version>
+
+    <customer>Blueprint</customer>
+
+    <cm.content-server.core.version>2001.2</cm.content-server.core.version>
+
+    <spring.boot.version>2.2.5.RELEASE</spring.boot.version>
+    <application-plugin.version>2.8.3</application-plugin.version>
+
+    <!--
+    | the following *.host properties are defined here for convenience, so that they can be overridden
+    | via a profile in the settings.xml.
+    | If you want to develop applications against services started either in a shared deployment on a remote machine
+    | or against services running in your development VMs you need to add a profile that overrides these properties.
+    | if all services are running on one box you can use installation
+    -->
+    <installation.host>localhost</installation.host>
+    <solr.host>${installation.host}</solr.host>
+    <content-management-server.host>${installation.host}</content-management-server.host>
+    <workflow-server.host>${installation.host}</workflow-server.host>
+    <master-live-server.host>${installation.host}</master-live-server.host>
+    <replication-live-server.host>${installation.host}</replication-live-server.host>
+    <studio.host>${installation.host}</studio.host>
+    <cae-preview.host>${installation.host}</cae-preview.host>
+    <cae-live.host>${installation.host}</cae-live.host>
+    <db.host>${installation.host}</db.host>
+    <mongoDb.host>${installation.host}</mongoDb.host>
+    <wcs.host>commerce-wcs-host</wcs.host>
+    <proxy.host>${installation.host}</proxy.host>
+
+    <!-- logback appender for maven tomcat plugin start -->
+    <!-- possible values: console, file, logstash-tcp, logstash-file -->
+    <log.appender>file</log.appender>
+
+    <caplist>com.coremedia.cotopaxi.list.elastic.mongodb.MongoCapListConnectorFactory</caplist>
+
+    <!--
+     | The base directory to persist transformed blobs, when starting CAE or Studio during development using the tomcat7-maven-plugin.
+     | The path defined here will be suffixed with the artifactId of the module starting the tomcat plugin to prevent cache conflicts
+     | between two processes when this property is set to a common value for all modules. With the default set to
+     | project.build.directory, the transformed blobs will be available until the next mvn clean is called.
+     | Set this property to a path outside the workspace to keep the transformed blobs permanently.
+     -->
+    <development.blobCache.basePath>${project.build.directory}/blobcache</development.blobCache.basePath>
+
+    <skip-unit-tests>${skipTests}</skip-unit-tests>
+    <skip-sfcc-tests>true</skip-sfcc-tests>
+    <skip-ibm-tests>true</skip-ibm-tests>
+    <skip-hybris-tests>true</skip-hybris-tests>
+
+    <!-- Version for Spring Boot Apps embedded Tomcat. Tomcat 9 is supported -->
+    <tomcat.embed.version>9.0.31</tomcat.embed.version>
+    <blueprint.groupId>com.coremedia.blueprint</blueprint.groupId>
+    <!-- keep this version in sync with this poms parent version -->
+    <blueprint.version>${project.version}</blueprint.version>
+    <cm.content-server.core.version>2001.2</cm.content-server.core.version>
+    <cm.common.core.version>2001.2</cm.common.core.version>
+    <cm.common.bp.version>1-SNAPSHOT</cm.common.bp.version>
+    <maven-surefire-plugin.version>3.0.0-M3</maven-surefire-plugin.version>
+
+    <showDeprecation>true</showDeprecation>
+    <showWarnings>true</showWarnings>
+  </properties>
+
+  <profiles>
+    <profile>
+      <id>skip-unit-tests</id>
+      <properties>
+        <skip-unit-tests>true</skip-unit-tests>
+      </properties>
+    </profile>
+    <profile>
+      <id>skip-sfcc-tests</id>
+      <activation>
+        <property>
+          <name>sfcc.tests.enabled</name>
+        </property>
+      </activation>
+      <properties>
+        <skip-sfcc-tests>false</skip-sfcc-tests>
+      </properties>
+    </profile>
+    <profile>
+      <id>skip-ibm-tests</id>
+      <activation>
+        <property>
+          <name>wcs.tests.enabled</name>
+        </property>
+      </activation>
+      <properties>
+        <skip-ibm-tests>false</skip-ibm-tests>
+      </properties>
+    </profile>
+    <profile>
+      <id>skip-hybris-tests</id>
+      <activation>
+        <property>
+          <name>hybris.tests.enabled</name>
+        </property>
+      </activation>
+      <properties>
+        <skip-hybris-tests>false</skip-hybris-tests>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>cm-enforcer</id>
+      <activation>
+        <property>
+          <name>!skipCmEnforcer</name>
+          <value>!true</value>
+        </property>
+      </activation>
+      <properties>
+        <bannedDependenciesIncludes/>
+        <bannedDependenciesExcludes/>
+      </properties>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-enforcer-plugin</artifactId>
+            <dependencies>
+              <dependency>
+                <groupId>com.coremedia.maven</groupId>
+                <artifactId>coremedia-enforcer-rules</artifactId>
+                <version>1.1.16</version>
+              </dependency>
+              <dependency>
+                <groupId>com.coremedia.cms</groupId>
+                <artifactId>common-banned-dependencies</artifactId>
+                <version>${cm.common.core.version}</version>
+              </dependency>
+            </dependencies>
+            <executions>
+              <execution>
+                <id>enforce-onerepo-rules</id>
+                <configuration>
+                  <rules>
+                    <myCustomRule implementation="com.coremedia.maven.enforcer.OneRepoEnforcerRule" />
+                    <myCustomRule implementation="com.coremedia.maven.enforcer.ModularOneRepoEnforcerRule" />
+                    <myCustomRule implementation="com.coremedia.maven.enforcer.BannedDependenciesRule">
+                      <configurationFile>/com/coremedia/cms/maven/enforcer/bannedDependencies.xml</configurationFile>
+                      <excludes>${bannedDependenciesExcludes}</excludes>
+                      <includes>${bannedDependenciesIncludes}</includes>
+                    </myCustomRule>
+                  </rules>
+                  <fail>${coremedia.enforcer.fail}</fail>
+                </configuration>
+                <goals>
+                  <goal>enforce</goal>
+                </goals>
+                <phase>validate</phase>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+
+    <profile>
+      <!--
+        Profile to let the build fail if personal data escapes its intended scope in non-test Java code.
+
+        This profile enables an annotation processor based on the Checker Framework that analyzes the data flow
+        of Java types annotated with com.coremedia.common.personaldata.PersonalData. The check will run for all
+        modules with a (transitive) dependency to com.coremedia.cms:coremedia-personal-data.
+
+        To verify that the checker actually runs, search for "Checking @PersonalData usage" in the Maven output.
+      -->
+      <id>checkPersonalData</id>
+      <dependencies>
+        <dependency>
+          <groupId>org.checkerframework</groupId>
+          <artifactId>checker</artifactId>
+          <scope>provided</scope>
+        </dependency>
+      </dependencies>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>default-compile</id>
+                <phase>compile</phase>
+                <goals>
+                  <goal>compile</goal>
+                </goals>
+                <configuration>
+                  <compilerArgs>
+                    <!-- Add <arg>-Awarns</arg> to not let the build fail but just show warnings -->
+                    <arg>-AcheckPersonalData=true</arg>
+                    <arg>-ArequirePrefixInWarningSuppressions</arg>
+                    <arg>-Anocheckjdk</arg>
+                  </compilerArgs>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <configuration>
+              <ignoredUsedUndeclaredDependencies combine.children="append">
+                <!-- The Checker Framework possibly adds annotations from checker-qual.jar to compiled classes
+                     (e.g. @Pure, @SideEffectFree). The dependency analyzer warns about an "used undeclared dependency"
+                     then, even though no annotations from checker-qual.jar are used in source files.
+                     Details: https://groups.google.com/forum/#!msg/checker-framework-discuss/v0K0f05Uk50/U7quKT1dAwAJ
+                -->
+                <ignoredUsedUndeclaredDependency>org.checkerframework:checker-qual</ignoredUsedUndeclaredDependency>
+                <!-- The Checker Framework adds the default annotation @NonPersonalData
+                     to compiled classes, even if no annotations have been added explicitly in the module.
+                  -->
+                <ignoredUsedUndeclaredDependency>com.coremedia.cms:coremedia-personal-data</ignoredUsedUndeclaredDependency>
+              </ignoredUsedUndeclaredDependencies>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
+  <scm>
+    <connection>scm:git:git@github.com:CoreMedia/cms.git</connection>
+    <developerConnection>scm:git:git@github.com:CoreMedia/cms.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>localfs</id>
+      <url>file://${project.basedir}/target</url>
+    </snapshotRepository>
+    <repository>
+      <id>coremedia.external.releases</id>
+      <url>https://repository.coremedia.com/nexus/service/local/staging/deploy/maven2</url>
+    </repository>
+    <site>
+      <id>localsite</id>
+      <url>file://${project.basedir}/target/site-deploy</url>
+    </site>
+  </distributionManagement>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.coremedia.cms</groupId>
+        <artifactId>content-server-core-bom</artifactId>
+        <version>${cm.content-server.core.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.coremedia.cms</groupId>
+        <artifactId>content-server-thirdparty-bom</artifactId>
+        <version>${cm.content-server.core.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+
+      <dependency>
+        <groupId>com.google.apis</groupId>
+        <artifactId>google-api-services-youtube</artifactId>
+        <version>${google.api.services.youtube.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava-jdk5</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.api-client</groupId>
+        <artifactId>google-api-client</artifactId>
+        <version>${google.api.client.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava-jdk5</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.http-client</groupId>
+        <artifactId>google-http-client-jackson2</artifactId>
+        <version>${google.api.client.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.http-client</groupId>
+        <artifactId>google-http-client</artifactId>
+        <version>${google.api.client.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.oauth-client</groupId>
+        <artifactId>google-oauth-client</artifactId>
+        <version>${google.api.client.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+
+      <dependency>
+        <groupId>org.skyscreamer</groupId>
+        <artifactId>jsonassert</artifactId>
+        <version>1.2.1</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.codehaus.groovy</groupId>
+        <artifactId>groovy-all</artifactId>
+        <version>2.4.16</version>
+        <classifier>indy</classifier>
+      </dependency>
+
+      <!-- for spring boot -->
+      <dependency>
+        <groupId>org.apache.tomcat.embed</groupId>
+        <artifactId>tomcat-embed-core</artifactId>
+        <version>${tomcat.embed.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.tomcat.embed</groupId>
+        <artifactId>tomcat-embed-el</artifactId>
+        <version>${tomcat.embed.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.tomcat.embed</groupId>
+        <artifactId>tomcat-embed-websocket</artifactId>
+        <version>${tomcat.embed.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.tomcat.embed</groupId>
+        <artifactId>tomcat-embed-jasper</artifactId>
+        <version>${tomcat.embed.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-actuator</artifactId>
+        <version>${spring.boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-actuator-autoconfigure</artifactId>
+        <version>${spring.boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.coremedia.cms</groupId>
+        <artifactId>common-core-bom</artifactId>
+        <version>${cm.common.core.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.coremedia.blueprint</groupId>
+        <artifactId>common-blueprint-bom</artifactId>
+        <version>${cm.common.bp.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-antrun-plugin</artifactId>
+          <version>1.8</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-assembly-plugin</artifactId>
+          <version>3.1.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.1.0</version>
+          <configuration>
+            <filesets>
+              <fileset>
+                <directory>overlays</directory>
+                <includes>
+                  <include>**/*.*</include>
+                </includes>
+                <followSymlinks>false</followSymlinks>
+              </fileset>
+            </filesets>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.0</version>
+          <configuration>
+            <showDeprecation>${showDeprecation}</showDeprecation>
+            <showWarnings>${showWarnings}</showWarnings>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>3.1.1</version>
+          <!-- TODO-java11 workaround MDEP-613 for CMS-13789 -->
+          <dependencies>
+            <dependency>
+              <groupId>org.apache.maven.shared</groupId>
+              <artifactId>maven-dependency-analyzer</artifactId>
+              <version>1.11.1</version>
+              <exclusions>
+                <exclusion>
+                  <artifactId>maven-project</artifactId>
+                  <groupId>org.apache.maven</groupId>
+                </exclusion>
+              </exclusions>
+            </dependency>
+          </dependencies>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>3.0.0-M1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-enforcer-plugin</artifactId>
+          <version>3.0.0-M2</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-failsafe-plugin</artifactId>
+          <version>${maven-surefire-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>3.0.0-M1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.1.0</version>
+          <configuration>
+            <archive>
+              <addMavenDescriptor>true</addMavenDescriptor>
+              <forced>false</forced>
+              <manifestEntries>
+                <Built-By>${customer}</Built-By>
+                <Build-Jdk>${java.version}</Build-Jdk>
+                <Implementation-Build>revision: ${buildNumber} - ${maven.build.timestamp}</Implementation-Build>
+                <Implementation-Title>${project.artifactId}</Implementation-Title>
+                <Implementation-Vendor>${customer}</Implementation-Vendor>
+                <Implementation-Version>${project.version}</Implementation-Version>
+                <X-Compile-Source-JDK>${maven.compiler.release}</X-Compile-Source-JDK>
+                <X-Compile-Target-JDK>${maven.compiler.release}</X-Compile-Target-JDK>
+              </manifestEntries>
+            </archive>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jarsigner-plugin</artifactId>
+          <version>1.4</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>3.1.1</version>
+          <configuration>
+            <doclint>none</doclint>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.1.0</version>
+          <configuration>
+            <includeEmptyDirs>true</includeEmptyDirs>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.4</version>
+          <!-- TODO: <version>3.7.1</version>-->
+          <configuration>
+            <!--
+             | ===== BE CAREFULL ======
+             | with 3.5 skip implies skipDeploy. Therfore, we cannot upgrade the site plugin without reworking the
+             | whole site creation process
+             -->
+            <skip>true</skip>
+            <skipDeploy>true</skipDeploy>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>3.0.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>${maven-surefire-plugin.version}</version>
+          <configuration>
+            <redirectTestOutputToFile>true</redirectTestOutputToFile>
+            <systemPropertyVariables>
+              <java.io.tmpdir>${project.build.directory}</java.io.tmpdir>
+            </systemPropertyVariables>
+            <skipTests>${skip-unit-tests}</skipTests>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-report-plugin</artifactId>
+          <version>${maven-surefire-plugin.version}</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.2.2</version>
+          <configuration>
+            <archive>
+              <addMavenDescriptor>false</addMavenDescriptor>
+              <forced>false</forced>
+              <manifestEntries>
+                <Built-By>${customer}</Built-By>
+                <Build-Jdk>${java.version}</Build-Jdk>
+                <Implementation-Build>revision: ${buildNumber} - ${maven.build.timestamp}</Implementation-Build>
+                <Implementation-Title>${project.artifactId}</Implementation-Title>
+                <Implementation-Vendor>${customer}</Implementation-Vendor>
+                <Implementation-Version>${project.version}</Implementation-Version>
+                <X-Compile-Source-JDK>${maven.compiler.release}</X-Compile-Source-JDK>
+                <X-Compile-Target-JDK>${maven.compiler.release}</X-Compile-Target-JDK>
+                <!-- Configure WebSphere to not scan ASM jars in the WAR, because they contain Java 9 module-info.class
+                     files and cause exceptions in WebSphere. See CMS-12354 -->
+                <Ignore-Scanning-Archives>asm-analysis-7.3.jar,asm-7.3.jar,asm-commons-7.3.jar,asm-tree-7.3.jar</Ignore-Scanning-Archives>
+              </manifestEntries>
+            </archive>
+            <failOnMissingWebXml>false</failOnMissingWebXml>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>properties-maven-plugin</artifactId>
+          <version>1.0.0</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <version>1.6.0</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.codehaus.gmaven</groupId>
+          <artifactId>groovy-maven-plugin</artifactId>
+          <version>2.1</version>
+        </plugin>
+
+        <plugin>
+          <groupId>com.coremedia.maven</groupId>
+          <artifactId>coremedia-application-maven-plugin</artifactId>
+          <version>${application-plugin.version}</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>build-helper-maven-plugin</artifactId>
+          <version>3.0.0</version>
+        </plugin>
+        <plugin>
+          <groupId>com.lazerycode.jmeter</groupId>
+          <artifactId>jmeter-maven-plugin</artifactId>
+          <version>2.7.0</version>
+        </plugin>
+        <plugin>
+          <groupId>com.lazerycode.jmeter</groupId>
+          <artifactId>jmeter-analysis-maven-plugin</artifactId>
+          <version>1.0.6</version>
+        </plugin>
+
+
+        <!-- see http://code.google.com/p/sortpom/ -->
+        <!-- To start: mvn com.google.code.sortpom:maven-sortpom-plugin:sort -->
+        <!-- or with configured pluginGroups: mvn sortpom:sort -->
+        <plugin>
+          <groupId>com.google.code.sortpom</groupId>
+          <artifactId>maven-sortpom-plugin</artifactId>
+          <version>2.3.1</version>
+          <configuration>
+            <!-- POM Code Convention - http://maven.apache.org/developers/conventions/code.html#POM_Code_Convention -->
+            <sortOrderFile>recommended_2008_06.xml</sortOrderFile>
+            <createBackupFile>false</createBackupFile>
+            <expandEmptyElements>false</expandEmptyElements>
+            <keepBlankLines>true</keepBlankLines>
+            <verifyFail>Warn</verifyFail>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>com.google.code.maven-replacer-plugin</groupId>
+          <artifactId>replacer</artifactId>
+          <version>1.5.3</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.primefaces.extensions</groupId>
+          <artifactId>resources-optimizer-maven-plugin</artifactId>
+          <version>2.3.2</version>
+        </plugin>
+      </plugins>
+
+    </pluginManagement>
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>analyze-duplicate</goal>
+            </goals>
+            <phase>validate</phase>
+          </execution>
+          <execution>
+            <id>default-cli</id>
+            <goals>
+              <goal>analyze-only</goal>
+            </goals>
+            <phase>process-test-classes</phase>
+            <configuration>
+              <failOnWarning>${failOnWarning}</failOnWarning>
+              <ignoreNonCompile>true</ignoreNonCompile>
+              <outputXML>true</outputXML>
+              <ignoredUnusedDeclaredDependencies>
+                <!--process configuration properties classes-->
+                <ignoredUnusedDeclaredDependency>org.springframework.boot:spring-boot-configuration-processor</ignoredUnusedDeclaredDependency>
+              </ignoredUnusedDeclaredDependencies>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>enforce-no-web-fragments</id>
+            <!-- web-fragments have been converted to java (spring) config -->
+            <configuration>
+              <rules>
+                <requireFilesDontExist>
+                  <files>
+                    <file>${project.basedir}/src/main/resources/META-INF/web-fragment.xml</file>
+                  </files>
+                </requireFilesDontExist>
+              </rules>
+            </configuration>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <phase>validate</phase>
+          </execution>
+          <execution>
+            <id>enforce-versions</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>enforce</goal>
+            </goals>
+            <configuration>
+              <rules>
+                <requireJavaVersion>
+                  <version>[11,)</version>
+                </requireJavaVersion>
+                <requireMavenVersion>
+                  <version>3.3</version>
+                </requireMavenVersion>
+                <DependencyConvergence />
+              </rules>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>com.coremedia.maven</groupId>
+        <artifactId>coremedia-application-maven-plugin</artifactId>
+        <version>${application-plugin.version}</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <reporting>
+    <excludeDefaults>true</excludeDefaults>
+  </reporting>
+
+  <repositories>
+    <repository>
+      <id>coremedia.external.releases</id>
+      <name>CoreMedia CMS</name>
+      <url>https://repository.coremedia.com/nexus/content/groups/cms/</url>
+      <layout>default</layout>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>coremedia.external.releases</id>
+      <name>CoreMedia CMS</name>
+      <url>https://repository.coremedia.com/nexus/content/groups/cms/</url>
+      <layout>default</layout>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+
+</project>

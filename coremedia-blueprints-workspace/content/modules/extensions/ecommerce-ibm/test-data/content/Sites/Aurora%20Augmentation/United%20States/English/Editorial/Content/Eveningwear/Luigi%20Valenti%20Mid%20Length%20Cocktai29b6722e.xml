@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/United States/English/Editorial/Content/Eveningwear" name="Luigi Valenti Mid Length Cocktail Dress (shutterstock_55370716)" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=195;y=0;width=970;height=1500</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=177;y=0;width=1124;height=1500</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=0;width=1500;height=1500</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=1800;height=1350</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=136;width=1800;height=1011</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=140;width=1800;height=902</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=140;width=1800;height=721</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=150;width=1800;height=675</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=150;width=1800;height=449</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=81;y=0;width=1000;height=1500</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.10831234256926953;y1=0;x2=0.6473551637279596;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.0982367758186398;y1=0;x2=0.7229219143576826;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.08312342569269521;y1=0;x2=0.9168765743073047;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.0513595166163142;x2=1;y2=0.9516616314199395</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.09063444108761329;x2=1;y2=0.7643504531722054</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.09365558912386707;x2=1;y2=0.6948640483383686</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.09365558912386707;x2=1;y2=0.5740181268882175</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.09969788519637462;x2=1;y2=0.5498489425981873</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.09969788519637462;x2=1;y2=0.3987915407854985</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.31973684210526315</StringProperty>
+<StringProperty Name="y">0.2854889589905363</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Luigi Valenti Mid Length Cocktail Dress (shutterstock_55370716)</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Luigi Valenti Mid Length Cocktail Dress (shutterstock_55370716)</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1800</width>
+<height>1500</height>
+<data md5="8230c3383f974485cf44676b4a350a4a" size="704725" href="../../../../../../../__blob/8230c3383f974485cf44676b4a350a4a.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

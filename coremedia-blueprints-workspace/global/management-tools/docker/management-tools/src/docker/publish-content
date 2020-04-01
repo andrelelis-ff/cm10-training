@@ -1,0 +1,34 @@
+#!/bin/sh
+
+echo "[DOCKER ENTRYPOINT] - entering $0"
+set -e
+
+if [ "${DEBUG_ENTRYPOINT}" = "true" ]; then
+  echo "[DOCKER ENTRYPOINT] - DEBUG_ENTRYPOINT detected, all commands will be printed"
+  set -x
+fi
+
+if [ "${SKIP_PUBLISH}" = "true" ]; then
+  echo "[DOCKER ENTRYPOINT] - skipping content publish chain $@"
+else
+
+  # do not remove '< /dev/null 2> /dev/null | grep -v groovy\:' - this ensures groovysh exit and only value printing
+  PUBLISHED=$(./tools/bin/cm groovysh /coremedia/getSystemTableProperty.groovy -q -Dcoremedia.content.server.url=${DEV_MASTER_CAP_CLIENT_SERVER_IOR_URL} -DpropKey=content-published < /dev/null 2> /dev/null | grep -v groovy\:)
+
+  echo "[DOCKER ENTRYPOINT] - publishing all content, when import has finished"
+  if [ "${PUBLISHED}" != "true"  ]; then
+    # if content has never been published, we can speed up things
+    ./tools/bin/cm bulkpublish -u ${TOOLS_USER} -p ${TOOLS_PASSWORD} -c # check in first
+    ./tools/bin/cm publishall -a -t 4  ${DEV_MANAGEMENT_CAP_CLIENT_SERVER_IOR_URL} ${TOOLS_USER} ${TOOLS_PASSWORD} ${DEV_MASTER_CAP_CLIENT_SERVER_IOR_URL} ${TOOLS_USER} ${TOOLS_PASSWORD}
+    ./tools/bin/cm groovysh /coremedia/setSystemTableProperty.groovy -q -Dcoremedia.content.server.url=${DEV_MASTER_CAP_CLIENT_SERVER_IOR_URL} -DpropKey=content-published -DpropVal=true < /dev/null 2> /dev/null
+  else
+    if [ "${FORCE_REIMPORT_CONTENT}" = "true" ]; then
+    ./tools/bin/cm bulkpublish -u ${TOOLS_USER} -p ${TOOLS_PASSWORD} -a -b -c 2> /dev/null
+    ./tools/bin/cm groovysh /coremedia/setSystemTableProperty.groovy -q -Dcoremedia.content.server.url=${DEV_MASTER_CAP_CLIENT_SERVER_IOR_URL} -DpropKey=content-published -DpropVal=true < /dev/null 2> /dev/null
+    else
+      echo "[DOCKER ENTRYPOINT] - content already published, skipping ..."
+    fi
+  fi
+fi
+
+test $# -gt 0 && exec ./$@ || echo "[DOCKER ENTRYPOINT] - entrypoint chain finished"

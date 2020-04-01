@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Decorating/Lighting" name="Chef Corp Tripod Light Placeholder Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=554;y=504;width=867;height=1342</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=558;y=617;width=892;height=1192</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=429;y=575;width=1242;height=1242</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=175;y=592;width=1604;height=1204</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=708;width=1779;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=896;width=1779;height=712</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=1029;width=1779;height=446</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.3114754098360656;y1=0.20166666666666666;x2=0.7985948477751756;y2=0.7383333333333333</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.31381733021077285;y1=0.24666666666666667;x2=0.8149882903981265;y2=0.7233333333333334</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.24121779859484777;y1=0.23;x2=0.9391100702576113;y2=0.7266666666666667</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.09836065573770492;y1=0.23666666666666666;x2=1;y2=0.7183333333333334</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.2833333333333333;x2=1;y2=0.6833333333333333</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.35833333333333334;x2=1;y2=0.6433333333333333</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.4116666666666667;x2=1;y2=0.59</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_CHEF_CORP_TRIPOD_LIGHT</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Chef Corp Tripod Light Placeholder Picture</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Chef Corp Tripod Light Placeholder Picture</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1779</width>
+<height>2500</height>
+<data md5="588c411311f8723c807efa555eaac8ef" size="241421" href="../../../../../../../../__blob/588c411311f8723c807efa555eaac8ef.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Fashion" name="The difference between style and fashion" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Fashion/The%20difference%20between%20style%20and%20fashion.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/The%20difference%20between%20style%20and%20fashion"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Finde deinen persönlichen Stil</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Apparel.xml" path="/Settings/Taxonomies/Subject/Apparel"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Geld kauft keine Eleganz. </p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Ich wollte die Frau anziehen, die lebt und arbeitet, nicht die Frau in einem Gemälde. Ich erinnere mich, eines Tages den Hund zu gehen, ich sah ein Auto voller Teenager-Mädchen, und einer von ihnen rollte das Fenster herunter und schrie: "Marc Jacobs!" In einem französischen Akzent. Ich habe immer gedacht, was du darunter getragen hast, war so wichtig wie das, was du oben trägst. Der Unterschied zwischen Stil und Mode ist Qualität. Geld kauft keine Eleganz. Sie können eine preiswerte Hülle nehmen, fügen Sie einen schönen Schal, graue Schuhe und eine wunderbare Tasche, und es wird immer elegant sein.<br/><br/>Ich glaube nie, dass ich für eine bestimmte Person entwerfe. Ich entwerfe für die Frau, die ich sein wollte, die Frau, die ich früher war, und - bis zu einem gewissen Grad - die Frau, die ich noch ein kleines Stück bin. Eitelkeit ist die gesündeste Sache im Leben. Eitelkeit ist die gesündeste Sache im Leben. Ich konnte keine Frau lieben, die mich dazu inspirierte, völlig uneigennützig zu sein. Wenn ich mich in eine künstlerische Vernunft verliebe oder aus meiner Sicht nach meiner Arbeit, so glaube ich, würde es ihr etwas berauben. Ich liebe Dinge, die gut alt sind - Dinge, die nicht datieren, das steht der Test der Zeit und das werden lebendige Beispiele für das absolute Beste.<br/><br/>Löschen Sie das Negativ; Akzentuiere das positive! Wir müssen unsere Ethik und unser Finanzsystem und unsere ganze Art des Verständnisses der Welt verändern. Es muss eine Welt sein, in der die Menschen leben, anstatt zu sterben; Eine nachhaltige Welt. Es könnte großartig sein Ich entwerfe vom Instinkt. Es ist die einzige Art, wie ich weiß, wie man lebt. Was fühlt sich gut an Was fühlt sich richtig an. Was wird benötigt. Gib mir ein Problem und ich werde es kreativ ansprechen, von meinem Darm. Kümmern Sie sich nicht um zu töten, um zu überleben. Ich bin ein Komplize, um Frauen zu helfen, was sie wollen.<br/><br/>Alles, was ich tue, ist eine Frage des Herzens, des Körpers und der Seele. Moden verblassen, Stil ist ewig. Frauen sind Frauen und Hurra dafür. Mode wird gemacht, um unmodern zu werden. Ich mag keine Trends. Sie neigen dazu, alle gleich auszusehen.<br/><br/>Ich wollte nicht ein Modedesigner sein, und für eine gute Hälfte meiner Karriere habe ich es nicht gemocht. Ich wollte schon immer andere Sachen machen. Der Unterschied zwischen Stil und Mode ist Qualität. Ich glaube wirklich, dass Philanthropie und Handel zusammenarbeiten können. Der Krieg hat mich gelehrt, dass nicht alles glamourös ist. In einer fleischfressenden Welt, mit Leder für Schuhe und Kleidung und sogar Handtaschen, ist die Diskussion über Pelz kindisch.<br/><br/>Ich war die erste Person, die eine Punk-Rock-Frisur hatte. Luxus wird immer da sein, egal was in der Welt passiert. Mode ist, dein Auge zu gefallen Formen und Proportionen sind für Ihren Intellekt. Du kannst nicht kreativ sein mit Menschen um dich herum. Design ist eine Reihe von kreativen Entscheidungen - es ist eine gemeinsame Anstrengung, ein evolutionärer Prozess. Sie wählen Ihre Stoffe je nachdem, was Sie sagen wollen, dann arbeiten Sie mit Mühlen, um diese Stoffe zu bekommen. Durch den Prozess erkennen Sie, was Sie wollen.</p></div></detailText>
+<pictures>
+<link href="Photo%20Shooting%20in%20Prague%20-%20Teasing.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/Photo%20Shooting%20in%20Prague%20-%20Teasing"/>
+<link href="Photo%20Shooting%20in%20Prague%20with%20Bike.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/Photo%20Shooting%20in%20Prague%20with%20Bike"/>
+</pictures>
+<related>
+<link href="Fashions%20fade%2C%20style%20is%20eternal.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/Fashions%20fade%2C%20style%20is%20eternal"/>
+<link href="Fashion%20should%20be%20fun.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/Fashion%20should%20be%20fun"/>
+</related>
+<authors>
+<link href="../../Authors/Elle%20Quinn%20Person.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Authors/Elle%20Quinn%20Person"/>
+</authors>
+</CMArticle>

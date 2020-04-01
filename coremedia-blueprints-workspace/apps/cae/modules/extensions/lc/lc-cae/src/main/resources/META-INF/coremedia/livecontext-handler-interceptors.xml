@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="
+               http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+               http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd
+               http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+  <import resource="classpath:/com/coremedia/blueprint/base/links/bpbase-links-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-services.xml"/>
+  <import resource="classpath:/com/coremedia/cap/common/uapi-services.xml"/>
+  <import resource="classpath:/META-INF/coremedia/livecontext-site-services.xml"/>
+  <import resource="classpath:/META-INF/coremedia/livecontext-handlers.xml"/>
+  <import resource="classpath:/com/coremedia/cae/view-substitution-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/ecommerce/cae/ec-cae-lib.xml"/>
+
+  <customize:append id="CCIPatternsAppender" bean="webCommerceContextInterceptorPatterns">
+    <list>
+    <util:constant static-field="com.coremedia.livecontext.handler.ExternalNavigationHandler.URI_PATTERN"/>
+    <util:constant static-field="com.coremedia.livecontext.product.ProductPageHandler.URI_PATTERN"/>
+    <util:constant static-field="com.coremedia.livecontext.asset.ProductAssetsHandler.DYNAMIC_URI_PATTERN"/>
+    </list>
+  </customize:append>
+
+  <bean class="com.coremedia.livecontext.handler.RestCommerceContextInterceptor" id="restStoreContextProviderInterceptor" parent="storeContextInterceptor">
+    <property name="initUserContext" value="true"/>
+  </bean>
+
+  <bean class="com.coremedia.objectserver.web.MappedInterceptor" id="mappedRestStoreContextProviderInterceptor">
+    <property name="interceptor" ref="restStoreContextProviderInterceptor"/>
+    <property name="includePatterns">
+      <list>
+        <util:constant static-field="com.coremedia.livecontext.handler.ExternalNavigationHandler.REST_URI_PATTERN"/>
+        <util:constant static-field="com.coremedia.livecontext.product.ProductPageHandler.REST_URI_PATTERN"/>
+      </list>
+    </property>
+  </bean>
+
+  <bean class="com.coremedia.livecontext.handler.FragmentCommerceContextInterceptor" id="fragmentCommerceContextInterceptor" parent="storeContextInterceptor">
+    <property name="initUserContext" value="true" />
+    <property name="catalogAliasTranslationService" ref="catalogAliasTranslationService"/>
+    <property name="fragmentContextAccessor" ref="liveContextContextAccessor"/>
+    <property name="liveContextSiteResolver" ref="liveContextSiteResolver"/>
+    <property name="contractsProcessingEnabled" value="${lc.contracts.processing.enabled}"/>
+  </bean>
+
+  <bean class="com.coremedia.livecontext.fragment.links.context.accessors.LiveContextContextAccessor" id="liveContextContextAccessor" />
+
+  <bean class="com.coremedia.objectserver.web.MappedInterceptor" id="mappedFragmentCommerceContextInterceptor">
+    <property name="pathMatcher" ref="handlerPathMatcher"/>
+    <property name="interceptor" ref="fragmentCommerceContextInterceptor"/>
+    <property name="includePatterns" ref="fragmentCommerceInterceptorIncludePatterns"/>
+  </bean>
+
+  <bean id="fragmentCommerceInterceptorIncludePatterns" class="org.springframework.beans.factory.config.ListFactoryBean">
+    <description>
+      List of fragmentCommerceInterceptor include patterns. Can be extended by other paths.
+    </description>
+    <property name="sourceList">
+      <list>
+        <util:constant static-field="com.coremedia.livecontext.fragment.FragmentPageHandler.FRAGMENT_INTERCEPTOR_PATTERN"/>
+      </list>
+    </property>
+  </bean>
+
+  <!-- add commerce context interceptors to the beginning, at least it must be run before the WebCommerceContextInterceptor -->
+  <customize:prepend id="appendLivecontextCommerceInterceptors" bean="handlerInterceptors" order="10000100">
+    <list>
+      <ref bean="mappedRestStoreContextProviderInterceptor"/>
+      <ref bean="mappedFragmentCommerceContextInterceptor"/>
+    </list>
+  </customize:prepend>
+
+</beans>

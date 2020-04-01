@@ -1,0 +1,76 @@
+<VirtualHost *:80 >
+  ServerName <%= @server_name %>
+  <%- unless @server_aliases.nil? || @server_aliases.empty? -%>
+  ServerAlias <%= @server_aliases.join " " %>
+  <%- end -%>
+  #####################
+  ###    Rewrite    ###
+  #####################
+  RewriteEngine On
+
+  RewriteCond %{HTTPS} off
+  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+  LogLevel <%= @apache_log_level.nil? ? 'warn' : @apache_log_level %> rewrite:<%= @rewrite_log_level.nil? ? 'trace1' : @rewrite_log_level %>
+  ErrorLog /var/log/httpd/<%= @application_name %>-error.log
+  CustomLog /var/log/httpd/<%= @application_name %>-access.log combined
+</Virtualhost>
+
+<VirtualHost *:443 >
+  ServerName <%= @server_name %>
+  <%- unless @server_aliases.nil? || @server_aliases.empty? -%>
+  ServerAlias <%= @server_aliases.join " " %>
+  <%- end -%>
+  SSLEngine  On
+
+  <%- unless @custom_conf.nil? || @custom_conf.empty? -%>
+  <%- @custom_conf.each do |custom| %>
+  <%= custom %>
+  <%- end -%>
+  <%- end -%>
+
+  #####################
+  ###    Proxy      ###
+  #####################
+  ProxyPreserveHost On
+  RequestHeader set X-Forwarded-Proto "https"
+
+  <%- if @server_cluster.size > 1 -%>
+  # the trailing "e" is no typo
+  Header add Set-Cookie "ROUTEID=.%{BALANCER_WORKER_ROUTE}e; path=/" env=BALANCER_ROUTE_CHANGED
+  <%- rest_servlet_url = "balancer://studio-server-cluster" -%>
+  <Proxy <%= rest_servlet_url %>>
+  <%- @server_cluster.keys.sort.each do |member| -%>
+  BalancerMember http://<%= @server_cluster[member]['host'] %>:<%= @server_cluster[member]['port'].to_s %> route=<%= member %><%- if @server_cluster[member]['params'] -%><%- @server_cluster[member]['params'].keys.sort.each do |k| -%> <%= "#{k}=#{@server_cluster[member]['params'][k]}" %> <%- end -%><%- end -%>
+  <%- end -%>
+  ProxySet stickysession=ROUTEID
+  </Proxy>
+  <%- else -%>
+    <%- rest_cluster_member = @server_cluster.keys.first -%>
+    <%- rest_proxy_params = @server_cluster[rest_cluster_member]['params'] ? @server_cluster[rest_cluster_member]['params'].sort.map{ |k, v| "#{k}=#{v}" }.join(' ') : '' -%>
+    <%- rest_servlet_url = "http://#{@server_cluster[rest_cluster_member]['host']}:#{@server_cluster[rest_cluster_member]['port']}" -%>
+  <%- end -%>
+
+  # the trailing "e" is no typo
+  Header add Set-Cookie "ROUTEID=.%{BALANCER_WORKER_ROUTE}e; path=/" env=BALANCER_ROUTE_CHANGED
+
+  ProxyPass /api <%= rest_servlet_url %>/api <%= rest_proxy_params || '' %>
+  ProxyPassReverse /api <%= rest_servlet_url %>/api
+
+  ProxyPass /login <%= rest_servlet_url %>/login <%= rest_proxy_params || '' %>
+  ProxyPass /logout <%= rest_servlet_url %>/logout <%= rest_proxy_params || '' %>
+
+  DocumentRoot <%= @client_dir %>
+  <Directory <%= @client_dir %>>
+    Require all granted
+    Options FollowSymLinks
+    AllowOverride None
+  </Directory>
+
+  #####################
+  ###    Logging    ###
+  #####################
+  LogLevel <%= @apache_log_level.nil? ? 'warn' : @apache_log_level %> rewrite:<%= @rewrite_log_level.nil? ? 'trace1' : @rewrite_log_level %>
+  ErrorLog /var/log/httpd/<%= @application_name %>-ssl-error.log
+  CustomLog /var/log/httpd/<%= @application_name %>-ssl-access.log combined
+
+</VirtualHost>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Calista/Germany/German/Navigation/Fragments/Aurora Categories/Apparel/Women" name="Women Main Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../United%20States/English/Navigation/Fragments/Aurora%20Categories/Apparel/Women/Women%20Main%20Collection.xml" path="/Sites/Calista/United%20States/English/Navigation/Fragments/Aurora%20Categories/Apparel/Women/Women%20Main%20Collection"/>
+</master>
+<viewtype>
+<link href="../../../../../Options/Viewtypes/CMChannel/hero.xml" path="/Sites/Calista/Germany/German/Options/Viewtypes/CMChannel/hero"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Women Hauptkollektion</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../../../../Videos/Summer%20Dresses%20Video.xml" path="/Sites/Calista/Germany/German/Videos/Summer%20Dresses%20Video"/>
+<link href="../../../../../Editorial/Content/Blog/Fashion%20Trends/Women%27s%20Dresses%20Teaser.xml" path="/Sites/Calista/Germany/German/Editorial/Content/Blog/Fashion%20Trends/Women%27s%20Dresses%20Teaser"/>
+</items>
+</CMCollection>

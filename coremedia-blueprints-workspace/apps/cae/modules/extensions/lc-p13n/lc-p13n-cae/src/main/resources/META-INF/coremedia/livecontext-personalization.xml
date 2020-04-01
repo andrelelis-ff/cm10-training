@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/framework/spring/personalization-plugin/personalization-context.xml"/>
+
+  <bean id="commerceSegmentSource" class="com.coremedia.livecontext.p13n.CommerceSegmentSource">
+    <property name="contextName" value="commerce"/>
+  </bean>
+
+  <customize:append id="addCommerceSegmentSource" bean="contextSources" order="20000">
+    <list>
+      <ref bean="commerceSegmentSource"/>
+    </list>
+  </customize:append>
+
+</beans>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:AnalyticsStudioPluginBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.analytics.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:alx="exml:com.coremedia.blueprint.studio.config.analytics">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.cms.editor.ContentTypes')]
+    [ResourceBundle('com.coremedia.cms.editor.Editor')]
+    [ResourceBundle('com.coremedia.blueprint.studio.analytics.AnalyticsStudioPlugin')]
+    [ResourceBundle('com.coremedia.blueprint.studio.analytics.AnalyticsStudioPluginDocTypes')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import mx.resources.ResourceManager;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.analytics.analyticsStudioPlugin";
+
+    /**
+     * The itemId of the analytics deep link button separator.
+     */
+    public static const ANALYTICS_DEEP_LINK_SEP_ITEM_ID:String = "analyticsDeepLinkSeparator";
+
+    private var config:AnalyticsStudioPlugin;
+
+    public native function AnalyticsStudioPlugin(config:AnalyticsStudioPlugin = null);
+    ]]></fx:Script>
+
+  <local:rules>
+    <!-- add forms for page/event lists -->
+    <editor:TabbedDocumentFormDispatcher>
+      <editor:plugins>
+        <editor:AddTabbedDocumentFormsPlugin>
+          <editor:documentTabPanels>
+            <alx:CMALXPageListForm itemId="CMALXPageList"/>
+            <alx:CMALXEventListForm itemId="CMALXEventList"/>
+          </editor:documentTabPanels>
+        </editor:AddTabbedDocumentFormsPlugin>
+      </editor:plugins>
+    </editor:TabbedDocumentFormDispatcher>
+
+    <!-- This tab has been disabled while cleaning document forms.
+         It is recommend to configure ALX using the struct editor and reduce
+         the amount for forms visible for the user. -->
+    <!-- add analytics tab to channel form -->
+    <!--
+    <bpforms:CMChannelForm>
+      <bpforms:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <local:CMChannelAnalyticsTab itemId="analytics"/>
+          </ui:items>
+          <ui:after>
+            <editor:DocumentForm itemId="locale"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </bpforms:plugins>
+    </bpforms:CMChannelForm>
+    -->
+
+    <editor:PreviewPanelToolbar>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <TbSeparator hidden="true" itemId="{ANALYTICS_DEEP_LINK_SEP_ITEM_ID}"/>
+            <alx:AnalyticsDeepLinkButtonContainer itemId="alxDeepLinkButtonContainer"/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:PreviewPanelToolbar>
+  </local:rules>
+
+  <local:configuration>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.ContentTypes')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.studio.analytics.AnalyticsStudioPluginDocTypes')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.Editor')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.studio.analytics.AnalyticsStudioPlugin')}"/>
+  </local:configuration>
+
+</local:AnalyticsStudioPluginBase>

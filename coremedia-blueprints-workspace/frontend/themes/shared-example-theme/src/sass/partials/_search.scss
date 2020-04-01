@@ -1,0 +1,380 @@
+.#{$cm-search-prefix} {
+  color: $cm-text-color;
+  font-size: $cm-font-size-base;
+  line-height: $cm-line-height-base;
+
+  /* -- search form --- */
+  &--form {
+    position: relative;
+
+    & form {
+      @include breakpoint("xs") {
+        position: relative;
+      }
+    }
+
+    &-result-page .#{$cm-search-prefix}__form-input {
+      display: block;
+    }
+  }
+
+  &__form-fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    min-width: 0;
+  }
+
+  &__form {
+
+    &-close {
+      z-index: 1;
+
+      @include breakpoints(("sm", landscape) "lg-and-up") {
+        display: none;
+      }
+    }
+
+    &-input {
+      display: none;
+      padding: 6px 12px;
+      color: #555555;
+      border: 1px solid $cm-border-color-default;
+      border-radius: 2px;
+      -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+      width: 100%;
+      font-size: $cm-font-size-base;
+      line-height: $cm-line-height-base;
+
+      /* clears the 'X' from Internet Explorer */
+      &::-ms-clear,
+      &::-ms-reveal {
+        display: none;
+        width: 0;
+        height: 0;
+      }
+
+      /* clears the 'X' from Chrome */
+      &::-webkit-search-decoration,
+      &::-webkit-search-cancel-button,
+      &::-webkit-search-results-button,
+      &::-webkit-search-results-decoration {
+        display: none;
+      }
+
+      &:focus {
+        border-color: $cm-text-color;
+        outline: none;
+        box-shadow: inset 0 0 0 1px #fff, inset 0 0 0 2px $cm-text-color;
+      }
+
+      @include breakpoint("sm-and-up") {
+        width: 250px;
+      }
+
+      @include breakpoints(("sm", landscape) "lg-and-up") {
+        display: inline-block;
+      }
+    }
+
+    &-label {
+      display: none;
+    }
+
+    &-button {
+      position: absolute;
+      border: none;
+      top: 0;
+      right: 0;
+      width: 34px;
+      height: 34px;
+      background: url("../../img/magnifier.svg") no-repeat center center transparent;
+
+      background-size: 32px;
+
+      @include breakpoints(("sm", landscape) "lg-and-up") {
+        top: 3px;
+        right: 3px;
+        width: 28px;
+        height: 28px;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  @include breakpoints(("sm", landscape) "lg-and-up") {
+    padding-left: 0;
+  }
+
+  /* --- enhanced search brick --- */
+  &__headline {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  &__status {
+    @include breakpoint("sm-and-up") {
+      height: 20px;
+    }
+  }
+
+  &--results {
+    display: block;
+    min-height: 50vh;
+    margin-bottom: 96px;
+
+    @include breakpoint("sm-and-up") {
+      padding: 0;
+    }
+  }
+
+  &-result {
+    &__title {
+      margin-bottom: 10px;
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    &__image {
+      display: block; // do not hide image on mobile
+    }
+
+    &__picture-box {
+      @include aspect-ratio-box(2, 3);
+
+      @include breakpoint("sm-and-up") {
+        @include aspect-ratio-box(1, 1);
+      }
+    }
+
+    &__picture {
+      @include stretch-absolute();
+    }
+
+    &__download-icon:before {
+      @include icon;
+      background-image: url("../../img/download-icon.svg");
+      content: "";
+    }
+  }
+
+  &__more {
+    @extend .cm-cta-button;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__sort {
+      height: 74px;
+  }
+
+  &__sort-label {
+    font-weight: 700;
+  }
+
+  &__sort--dropdown {
+    height: 34px;
+    border: 1px solid #000;
+    border-radius: 2px;
+  }
+
+  &__filter {
+
+    &-title {
+      margin-bottom: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      text-transform: uppercase;
+
+      .#{$cm-search-prefix} &-icon {
+        @include icon;
+        background-image: url("../../img/chevron.svg");
+        transform: rotate(180deg);
+        transition: all 0.2s ease;
+
+        &:before {
+          display: none;
+        }
+      }
+
+      .#{$cm-search-prefix} &--list-collapsed &-icon {
+        background-image: url("../../img/chevron.svg");
+        transform: rotate(0deg);
+        transition: all 0.2s ease;
+      }
+    }
+
+    &-list {
+      &-item {
+        line-height: 1.714;
+      }
+
+      &-link {
+        font-weight: normal;
+        margin: 0;
+
+        &--checked {
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      &-checkbox {
+        display: none;
+
+        &-icon {
+          @include icon;
+          background-image: url("../../img/unchecked.svg");
+
+          &#{&}--checked {
+            background-image: url("../../img/checked.svg");
+          }
+        }
+      }
+    }
+
+    &-switch {
+      &-button {
+        @extend .cm-cta-button;
+      }
+
+      &-icon {
+        @include icon;
+        background-image: url("../../img/filter.svg");
+        float: right;
+        margin: 3px 0 0 5px;
+      }
+    }
+
+    .#{$cm-search-prefix} &-all-icon {
+      @include icon;
+      background-image: url("../../img/arrow-back.svg");
+      &:before {
+        display: none;
+      }
+    }
+
+    &-popup {
+      &-heading {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+      &-close {
+        border: none;
+        background: $cm-standard-component-background-color;
+
+        i {
+          @include icon;
+          background-image: url("../../img/close.svg");
+        }
+
+        span {
+          display: none;
+        }
+      }
+
+      &--active {
+        @include breakpoint("xs") {
+          padding-top: 50px;
+          position: fixed;
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  /* pagination */
+  &__pagination {
+
+    &-first,
+    &-prev,
+    &-next,
+    &-last {
+      @extend .cm-button;
+      @extend .cm-cta-button;
+    }
+
+    &-index {
+      border: 1px solid #FFFFFF;
+    }
+  }
+}
+
+// initially hide mobile search in header
+.cm-header {
+
+  &__mobile-search-button {
+    display: block;
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      display: none;
+    }
+  }
+
+  .#{$cm-search-prefix} {
+
+    &__form-input {
+      background-color: #FFFFFF;
+
+      @include breakpoints("xs" ("sm", portrait)) {
+        display: inline-block;
+        box-sizing: border-box;
+        height: 48px;
+        width: 100%;
+        padding-right: 44px;
+        border: none;
+        font-size: 20px;
+        color: $cm-text-color;
+        background-color: transparent;
+        box-shadow: none;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .cm-search--form {
+      flex-grow: 1;
+
+      @include breakpoints(("sm", landscape) "lg-and-up") {
+        flex-grow: 0;
+      }
+    }
+
+    @include breakpoints("xs" ("sm", portrait)) {
+      display: none;
+    }
+
+    // ... and show it if magnifier icon if clicked
+    &.open {
+
+      @include breakpoints("xs" ("sm", portrait)) {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        // make sure that search bar is not overlapped by other items in the header
+        z-index: 1;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #fff;
+      }
+    }
+  }
+}

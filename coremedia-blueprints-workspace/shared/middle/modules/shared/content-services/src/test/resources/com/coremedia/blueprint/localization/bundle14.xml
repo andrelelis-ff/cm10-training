@@ -1,0 +1,5 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StringProperty Name="str">overrideen</StringProperty>
+  <StringProperty Name="stren">stren</StringProperty>
+  <StringProperty Name="languageOverMaster">wrong</StringProperty>
+</Struct>

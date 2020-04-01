@@ -1,0 +1,4 @@
+// make sure to import variables sass files in _variables.scss
+@import "variables/popup";
+// the smart-import ensures, that all sass variables from depending bricks are loaded
+@import "?smart-import-variables";

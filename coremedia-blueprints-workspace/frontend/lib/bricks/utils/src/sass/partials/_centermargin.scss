@@ -1,0 +1,28 @@
+//
+// Centers element using margin auto.
+//
+// @param: {string} xy (default) all margin are set
+// @param: {string} x  margin-right and margin-left are set
+// @param: {string} y  margin-top and margin-bottom are set
+//
+// @example:
+// .wrapper {
+//   @include center-margin(x);
+// }
+//
+@mixin center-margin($xy:'xy') {
+  @if $xy == 'x' {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @if $xy == 'y' {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  @if $xy == 'xy' {
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+  }
+}

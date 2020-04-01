@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMAction folder="/Sites/Chef Corp./United States/English/Options/Settings/Actions" name="Registration" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<LinkProperty Name="flow.next" LinkType="coremedia:///cap/contenttype/CMAction" xlink:href="coremedia:///cap/resources/ActivateRegistration.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Actions/ActivateRegistration"/>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>registration</segment>
+<title>Registration</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<notSearchable>0</notSearchable>
+<related>
+</related>
+<authors>
+</authors>
+<id>com.coremedia.blueprint.es.webflow.Registration</id>
+<type>webflow</type>
+</CMAction>

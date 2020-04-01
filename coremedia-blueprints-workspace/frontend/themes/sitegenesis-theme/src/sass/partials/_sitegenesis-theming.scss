@@ -1,0 +1,98 @@
+.top-banner,
+.footer-container,
+div#main {
+  max-width: $cm-screen-max;
+  margin: 0 auto;
+}
+
+.primary-logo a img {
+  background: url("../../img/logo.png");
+  width: 0;
+  height: 0;
+  padding: 45px 185px 0 0;
+  background-size: 100%;
+
+  @include breakpoint(sm) {
+    padding: 38px 160px 0 0;
+  }
+  @include breakpoint(xs) {
+    padding: 35px 145px 0 0;
+  }
+}
+
+@include breakpoint(lg) {
+  #wrapper {
+    width: 100%;
+  }
+
+  .primary-content {
+    // why 1.25 1200 (new width) / 960 (old width)
+    width: calc(787px * 1.25);
+  }
+
+  #secondary {
+    width: calc(172px * 1.25);
+  }
+
+  .primary-image {
+    width: 100%;
+  }
+
+  #wrapper.pt_storefront, #wrapper.pt_order-confirmation {
+    div#main {
+      max-width: inherit;
+    }
+  }
+}
+
+.pdp-main {
+  .product-primary-image, .product-thumbnails {
+    display: none;
+  }
+}
+
+ul {
+  -webkit-padding-start: 0;
+}
+
+#wrapper.pt_storefront div#main, #wrapper.pt_order-confirmation div#main {
+  max-width: 1200px
+}
+
+@media screen and (min-width: 768px) {
+  .country-selector {
+    top: -35px;
+  }
+}
+
+/* SiteGenesis header banner */
+.cm-header-promotion {
+  background: linear-gradient(to right, #a6cf38, #4189dd 100%);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Fix z-indexes */
+@media screen and (min-width: 768px) {
+  .level-2 {
+    z-index: 1000;
+  }
+}
+
+/* Make embedded teaser smaller */
+@media screen and (min-width: 768px) {
+  .cm-richtext-embedded--teasable {
+    width: 50%;
+  }
+}
+
+footer,
+.content-asset .copyright,
+.content-asset .postscript {
+  background: linear-gradient(to right, #a6cf38, #4189dd 100%);
+}
+
+.content-asset .postscript {
+  padding-bottom: 1rem;
+}

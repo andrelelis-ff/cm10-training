@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="livecontext-fragments">
+  <Struct>
+    <StructProperty Name="prefetchedViews">
+      <Struct>
+        <StringListProperty Name="defaults">
+          <String>metadata</String>
+          <String>externalHead</String>
+          <String>externalFooter</String>
+        </StringListProperty>
+        <StructListProperty Name="contentTypes">
+          <Struct>
+            <StringProperty Name="type">CMLinkable</StringProperty>
+            <StringListProperty Name="prefetchedViews">
+              <String>metadata</String>
+              <String>externalHead</String>
+              <String>externalFooter</String>
+              <String>DEFAULT</String>
+              <String>asBreadcrumb</String>
+            </StringListProperty>
+          </Struct>
+          <Struct>
+            <StringProperty Name="type">CMChannel</StringProperty>
+            <StringListProperty Name="prefetchedViews">
+              <String>channelView</String>
+            </StringListProperty>
+          </Struct>
+        </StructListProperty>
+        <StructListProperty Name="layouts">
+          <Struct>
+            <LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/CMSettings"  xlink:href="coremedia:///cap/content/202"/>
+            <StringListProperty Name="prefetchedViews">
+              <String>metadata</String>
+              <String>asBreadcrumb</String>
+              <String>externalHead</String>
+              <String>externalFooter</String>
+            </StringListProperty>
+          </Struct>
+        </StructListProperty>
+      </Struct>
+    </StructProperty>
+    <StructProperty Name="placementViews">
+      <Struct>
+        <StructListProperty Name="defaults">
+          <Struct>
+            <LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/content/212"/>
+            <StringProperty Name="view">asDefaultFragment</StringProperty>
+          </Struct>
+        </StructListProperty>
+        <StructListProperty Name="layouts">
+          <Struct>
+            <LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/CMSettings" xlink:href="coremedia:///cap/content/202" />
+            <StructListProperty Name="placementViews">
+              <Struct>
+                <StringProperty Name="view">asSpecialLayoutView</StringProperty>
+                <LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/content/212"/>
+              </Struct>
+            </StructListProperty>
+          </Struct>
+        </StructListProperty>
+      </Struct>
+    </StructProperty>
+  </Struct>
+</StructProperty>
+</Struct>

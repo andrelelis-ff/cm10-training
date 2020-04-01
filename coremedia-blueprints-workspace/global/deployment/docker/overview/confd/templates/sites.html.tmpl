@@ -1,0 +1,136 @@
+<div>
+<h2>Demo Sites</h2>
+<table class="sites">
+  <thead>
+  <tr>
+    <th></th>
+    <th>Preview</th>
+    <th>Live</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Chef Corp.</td>
+    <td>
+      <a href="https://preview.docker.localhost/corporate" target="_blank" data-cm-test="cae">English</a> ·
+      <a href="https://preview.docker.localhost/corporate-de-de" target="_blank" data-cm-test="cae">German</a>
+    </td>
+    <td>
+      <a href="https://corporate.docker.localhost" target="_blank" data-cm-test="cae">English</a> ·
+      <a href="https://corporate-de.docker.localhost" target="_blank" data-cm-test="cae">German</a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+{{ if eq (getv "/commerce/wcs/enabled" "true") "true" }}
+<h3>HCL Commerce</h3>
+<table class="sites">
+  <thead>
+  <tr>
+    <th></th>
+    <th>Preview</th>
+    <th>Live</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Aurora</td>
+    <td>
+      <a href="https://shop-preview-production-ibm.docker.localhost/wcs/shop/en/auroraesite" target="_blank" data-cm-test="cae">English</a> ·
+      <a href="https://shop-preview-production-ibm.docker.localhost/wcs/shop/de/auroraesite" target="_blank" data-cm-test="cae">German</a>
+    </td>
+    <td>
+      <a href="https://shop-ibm.docker.localhost/wcs/shop/en/auroraesite" target="_blank" data-cm-test="cae">English</a> ·
+      <a href="https://shop-ibm.docker.localhost/wcs/shop/de/auroraesite" target="_blank" data-cm-test="cae">German</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Aurora B2B</td>
+    <td>
+      <a href="https://shop-preview-production-ibm.docker.localhost/wcs/shop/en/aurorab2besite" target="_blank" data-cm-test="cae">English</a> ·
+      <a href="https://shop-preview-production-ibm.docker.localhost/wcs/shop/de/aurorab2besite" target="_blank" data-cm-test="cae">German</a>
+    </td>
+    <td>
+      <a href="https://shop-ibm.docker.localhost/wcs/shop/en/aurorab2besite" target="_blank" data-cm-test="cae">English</a> ·
+      <a href="https://shop-ibm.docker.localhost/wcs/shop/de/aurorab2besite" target="_blank" data-cm-test="cae">German</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Calista</td>
+    <td>
+      <a href="https://preview.docker.localhost/calista" target="_blank" data-cm-test="cae">English</a> ·
+      <a href="https://preview.docker.localhost/calista-de-de" target="_blank" data-cm-test="cae">German</a>
+    </td>
+    <td>
+      <a href="https://calista.docker.localhost/calista" target="_blank" data-cm-test="cae">English</a> ·
+      <a href="https://calista.docker.localhost/calista-de-de" target="_blank" data-cm-test="cae">German</a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+{{ end }}
+
+{{ if eq (getv "/commerce/hybris/enabled" "true") "true" }}
+<h3>SAP Commerce Cloud</h3>
+<table class="sites">
+  <thead>
+  <tr>
+    <th></th>
+    <th>Preview</th>
+    <th>Live</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Apparel</td>
+    <td>
+      <a href="https://shop-preview-hybris.docker.localhost/yacceleratorstorefront/?site=apparel-uk&clear=true" target="_blank" data-cm-test="cae">English</a> ·
+      <a href="https://shop-preview-hybris.docker.localhost/yacceleratorstorefront/?site=apparel-de&clear=true" target="_blank" data-cm-test="cae">German</a>
+    </td>
+    <td>
+      <a href="https://shop-hybris.docker.localhost/yacceleratorstorefront/?site=apparel-uk&clear=true" target="_blank" data-cm-test="cae">English</a> ·
+      <a href="https://shop-hybris.docker.localhost/yacceleratorstorefront/?site=apparel-de&clear=true" target="_blank" data-cm-test="cae">German</a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+{{ end }}
+
+{{ if eq (getv "/commerce/sfcc/enabled" "true") "true" }}
+<h3>Salesforce Commerce Cloud</h3>
+<table class="sites">
+  <thead>
+  <tr>
+    <th></th>
+    <th>Preview</th>
+    <th>Live</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Storefront Reference Architecture</td>
+    <td>
+      <a href="https://shop-preview-sfcc.docker.localhost/s/RefArchGlobal/home?preview=true" target="_blank" data-cm-test="cae">English</a> ·
+      <a href="https://shop-preview-sfcc.docker.localhost/s/RefArchGlobal/home?preview=true&lang=fr_FR" target="_blank" data-cm-test="cae">French</a>
+    </td>
+    <td>
+      <a href="https://shop-sfcc.docker.localhost/s/RefArchGlobal/home" target="_blank" data-cm-test="cae">English</a> ·
+      <a href="https://shop-sfcc.docker.localhost/s/RefArchGlobal/home?lang=fr_FR" target="_blank" data-cm-test="cae">French</a>
+    </td>
+  </tr>
+  <tr>
+    <td>SiteGenesis</td>
+    <td>
+      <a href="https://shop-preview-sfcc.docker.localhost/s/SiteGenesisGlobal/home?preview=true" target="_blank" data-cm-test="cae">English</a> ·
+      <a href="https://shop-preview-sfcc.docker.localhost/s/SiteGenesisGlobal/home?preview=true&lang=fr_FR" target="_blank" data-cm-test="cae">French</a>
+    </td>
+    <td>
+      <a href="https://shop-sfcc.docker.localhost/s/SiteGenesisGlobal/home" target="_blank" data-cm-test="cae">English</a> ·
+      <a href="https://shop-sfcc.docker.localhost/s/SiteGenesisGlobal/home?lang=fr_FR" target="_blank" data-cm-test="cae">French</a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+{{ end }}
+</div>

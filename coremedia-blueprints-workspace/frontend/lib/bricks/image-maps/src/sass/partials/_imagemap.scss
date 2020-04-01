@@ -1,0 +1,79 @@
+.#{$cm-imagemap-prefix} {
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__picture {
+    user-select: none;
+  }
+
+  &__area {
+    &--disabled {
+      display: none;
+    }
+  }
+
+  //hotzone will center the icon or text. top and left will be calculated by JS
+  &__hotzone {
+    position: absolute;
+    z-index: 2;
+    border: 0;
+    padding: 0;
+    display: block;
+    transform: translate(-50%, -50%);
+
+    &--icon {
+      width: $cm-imagemap-hotzone-icon-size;
+      height: $cm-imagemap-hotzone-icon-size;
+      background: transparent url("../../img/imagemap-icon.svg") no-repeat center center;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    &:hover.#{$cm-imagemap-prefix}__hotzone--icon,
+    &--hover.#{$cm-imagemap-prefix}__hotzone--icon {
+      background-image: url("../../img/imagemap-icon-hover.svg");
+    }
+
+    &--active.#{$cm-imagemap-prefix}__hotzone--icon {
+      background-image: url("../../img/imagemap-icon-hover.svg");
+    }
+
+    &--loading,
+    &--disabled {
+      display: none;
+    }
+  }
+}
+
+// Text-Overlay (part of ImageMap feature)
+.#{$cm-imagemap-overlay-prefix} {
+  &--theme-dark &__link {
+    color: $cm-imagemap-overlay-color-dark;
+    background-color: transparent;
+    padding: $cm-imagemap-overlay-padding;
+    display: block;
+  }
+
+  &--theme-light &__link {
+    color: $cm-imagemap-overlay-color-light;
+    background-color: transparent;
+    padding: $cm-imagemap-overlay-padding;
+    display: block;
+  }
+
+  &--theme-light-on-dark &__link {
+    color: $cm-imagemap-overlay-color-light;
+    background-color: black;
+    padding: $cm-imagemap-overlay-padding;
+    display: block;
+  }
+
+  &--theme-dark-on-light &__link {
+    color: $cm-imagemap-overlay-color-dark;
+    background-color: white;
+    padding: $cm-imagemap-overlay-padding;
+    display: block;
+  }
+}

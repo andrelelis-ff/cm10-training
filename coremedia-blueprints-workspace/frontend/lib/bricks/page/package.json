@@ -1,0 +1,11 @@
+{
+  "name": "@coremedia/brick-page",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@coremedia/brick-utils": "^1.0.0"
+  },
+  "coremedia": {
+    "type": "brick"
+  }
+}

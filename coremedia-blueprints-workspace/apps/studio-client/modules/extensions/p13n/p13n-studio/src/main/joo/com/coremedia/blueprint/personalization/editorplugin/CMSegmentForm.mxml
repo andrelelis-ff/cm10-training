@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:perso="exml:com.coremedia.personalization.ui.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext')]
+    [ResourceBundle('com.coremedia.blueprint.personalization.editorplugin.PersonalizationDocTypes')]
+    [ResourceBundle('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.personalization.editorplugin.config.cmSegmentForm";
+
+    private var config:CMSegmentForm;
+
+    public native function CMSegmentForm(config:CMSegmentForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationDocTypes', 'CMSegment_description_text')}"
+                collapsible="false"
+                itemId="cmSegmentsDescriptionForm">
+          <editor:items>
+            <editor:RichTextPropertyField propertyName="description"
+                                          hideLabel="true"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationDocTypes', 'CMSegment_conditions_text')}"
+                itemId="cmSegmentConditionsForm">
+          <editor:items>
+            <!-- workaround for rulesField-layout-bug (full-width-bug): use custom margin style -->
+            <perso:ConditionsField propertyName="conditions" forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}">
+              <perso:conditionItems>
+                <perso:TimeCondition
+                        conditionName="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_system_timeOfDay')}"
+                        propertyName="system.timeOfDay"/>
+                <perso:DateCondition
+                        conditionName="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_system_date')}"
+                        propertyName="system.date"/>
+                <perso:DateTimeCondition
+                        conditionName="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_system_dateTime')}"
+                        propertyName="system.dateTime"/>
+                <perso:EnumCondition
+                        conditionName="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_system_dayOfWeek')}"
+                        propertyName="system.dayOfWeek"
+                        operators="{['lt', 'eq', 'gt']}"
+                        operatorNames="{{
+                                                  lt: resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'con_day_week_lt'),
+                                                  eq: resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'con_day_week_eq'),
+                                                  gt: resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'con_day_week_gt')
+                                                  }}"
+                        value="{[
+                                            [1, resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_system_dayOfWeek_1')],
+                                            [2, resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_system_dayOfWeek_2')],
+                                            [3, resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_system_dayOfWeek_3')],
+                                            [4, resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_system_dayOfWeek_4')],
+                                            [5, resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_system_dayOfWeek_5')],
+                                            [6, resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_system_dayOfWeek_6')],
+                                            [7, resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_system_dayOfWeek_7')]
+                                           ]}"/>
+                <perso:StringCondition
+                        conditionName="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_referrer')}"
+                        propertyName="referrer.url"
+                        valueEmptyText="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_referrer_emptyText')}"/>
+                <perso:StringCondition
+                        conditionName="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_referrer_query')}"
+                        propertyName="referrer.query"
+                        operators="{['ct']}"/>
+                <perso:EnumCondition
+                        conditionName="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_referrer_searchengine')}"
+                        propertyName="referrer.searchengine"
+                        operators="{['eq', 'ne']}"
+                        value="{[['bing', 'Bing'],
+                                            ['google', 'Google'],
+                                            ['yahoo', 'Yahoo!']
+                                           ]}"/>
+                <perso:PercentageKeywordCondition
+                        conditionName="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationContext', 'p13n_context_keyword')}"
+                        propertyPrefix="keyword"
+                        isDefault="true"/>
+                <perso:IntegerCondition
+                        conditionName="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'con_number_of_comments')}"
+                        propertyName="es_check.numberOfComments"
+                        operator="greater than"/>
+                <perso:IntegerCondition
+                        conditionName="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'con_number_of_ratings')}"
+                        propertyName="es_check.numberOfRatings"
+                        operator="greater than"/>
+                <perso:IntegerCondition
+                        conditionName="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'con_number_of_likes')}"
+                        propertyName="es_check.numberOfLikes"
+                        operator="greater than"/>
+                <perso:IntegerCondition
+                        conditionName="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'con_number_of_explicit_interests')}"
+                        propertyName="explicit.numberOfExplicitInterests"
+                        operator="greater than"/>
+                <perso:BooleanCondition
+                        conditionName="{resourceManager.getString('com.coremedia.blueprint.personalization.editorplugin.PersonalizationPlugIn', 'con_social_background_login')}"
+                        propertyName="es_check.userLoggedIn"
+                        checkedByDefault="true"/>
+              </perso:conditionItems>
+            </perso:ConditionsField>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataWithoutSettingsForm bindTo="{config.bindTo}"/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

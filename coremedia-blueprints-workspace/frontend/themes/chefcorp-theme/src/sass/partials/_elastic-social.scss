@@ -1,0 +1,113 @@
+//
+// Elastic Social
+// --------------------------------------------------
+
+
+// forms
+.cm-form {
+  border: none;
+  box-shadow: none;
+  left: 0;
+  background-color: transparent;
+
+  & label {
+    font-weight: normal;
+  }
+
+  & .cm-button {
+    @extend .cm-cta-button;
+  }
+
+  @include breakpoint("sm-and-up") {
+    &--userdetails,
+    &--userdetailsform,
+    &--login,
+    &--registration,
+    &--reset,
+    &--resetpassword {
+      width: 600px;
+      margin: 0 auto;
+    }
+  }
+}
+
+// comments
+.cm-comments {
+  margin-bottom: 24px;
+
+  @include breakpoint("sm-and-up") {
+    padding: 0 10%;
+  }
+}
+
+.cm-reviews__toolbar,
+.cm-comment__toolbar,
+.cm-comments__toolbar {
+  & .cm-button {
+    @extend .cm-cta-button;
+  }
+}
+
+.cm-comment__toolbar {
+  & .cm-button {
+    margin-left: 4px;
+  }
+}
+
+.cm-comment__toolbar,
+.cm-comments__toolbar,
+.cm-button-group {
+  & .cm-button {
+    margin-bottom: 10px;
+  }
+}
+
+// reviews
+.cm-review {
+  &__toolbar {
+    margin-bottom: 24px;
+  }
+
+  &__header {
+    min-height: 40px;
+  }
+
+  &__user-image {
+    margin-top: 0;
+  }
+
+  &s__new-review .cm-button-group {
+    margin-top: 15px;
+
+    @include breakpoint("sm-and-up") {
+      margin-top: 0;
+    }
+  }
+}
+
+// notifications for reviews
+.#{$cm-notification} {
+
+  &--info,
+  &--success,
+  &--warning,
+  &--error {
+    margin: 15px 0;
+    padding: 15px;
+    text-align: center;
+  }
+
+  &--info,
+  &--success {
+    background-color: $cm-standard-component-background-color;
+    border: 1px solid $cm-notification-color-info-success;
+    color: $cm-notification-color-info-success;
+  }
+
+  &--warning,
+  &--error {
+    background-color: $cm-standard-component-background-color;
+    border: 1px solid $cm-notification-color-warning-error;
+    color: $cm-notification-color-warning-error;
+  }
+}

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/United States/English/Pictures/Blog" name="Blue Strapless Dress (shutterstock_109609103)" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=48;y=0;width=907;height=1406</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=36;width=1000;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=86;width=1000;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=86;width=1000;height=751</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=101;width=1000;height=562</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=113;width=1000;height=501</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=139;width=1000;height=401</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=111;width=1000;height=375</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=139;width=1000;height=249</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=61;y=0;width=879;height=1406</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=71;width=1000;height=426</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=31;y=0;width=937;height=1406</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.04785894206549118;y1=0;x2=0.9546599496221663;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.025089605734767026;x2=1;y2=0.974910394265233</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.06093189964157706;x2=1;y2=0.7724014336917563</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.06093189964157706;x2=1;y2=0.5949820788530465</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.07168458781362007;x2=1;y2=0.471326164874552</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.08064516129032258;x2=1;y2=0.43727598566308246</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.0985663082437276;x2=1;y2=0.3835125448028674</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.07886435331230283;x2=1;y2=0.345578435815859</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.0985663082437276;x2=1;y2=0.27598566308243727</StringProperty>
+<StringProperty Name="landscape_ratio235x100">position;x1=0;y1=0.050473186119873815;x2=1;y2=0.3531274641380936</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="landscape_ratio235x100">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/AuroraWMDRS-13</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Blue Strapless Dress (shutterstock_109609103)</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Eveningwear.xml" path="/Settings/Taxonomies/Subject/Eveningwear"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Blue Strapless Dress (shutterstock_109609103)</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1000</width>
+<height>1406</height>
+<data md5="b88bdb884ef29b89d02e605d6b68173c" size="342269" href="../../../../../../__blob/b88bdb884ef29b89d02e605d6b68173c.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

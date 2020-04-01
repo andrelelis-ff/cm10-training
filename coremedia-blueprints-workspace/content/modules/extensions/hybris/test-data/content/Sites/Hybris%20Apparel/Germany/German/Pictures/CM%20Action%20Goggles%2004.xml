@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/Germany/German/Pictures" name="CM Action Goggles 04" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Pictures/CM%20Action%20Goggles%2004.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/CM%20Action%20Goggles%2004"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">true</BooleanProperty>
+<StringListProperty Name="originReferences">
+<String>hybris:///catalog/product/300020294</String>
+</StringListProperty>
+<StringListProperty Name="references">
+<String>hybris:///catalog/product/300020294</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=298;y=0;width=405;height=627</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=265;y=0;width=470;height=627</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=187;y=0;width=627;height=627</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=82;y=0;width=836;height=627</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=32;width=1000;height=563</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=65;width=1000;height=499</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=113;width=1000;height=400</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=128;width=1000;height=374</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=189;width=1000;height=250</StringProperty>
+<StringProperty Name="landscape_ratio3x1">b;a=0;c=1/crop;x=0;y=147;width=1000;height=333</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2971014492753623;y1=0;x2=0.7028985507246377;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.26570048309178745;y1=0;x2=0.7367149758454107;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.1859903381642512;y1=0;x2=0.8140096618357487;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.0821256038647343;y1=0;x2=0.9202898550724637;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.05384615384615385;x2=1;y2=0.95</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.10384615384615385;x2=1;y2=0.9</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.18076923076923077;x2=1;y2=0.8192307692307692</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.20384615384615384;x2=1;y2=0.8</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3;x2=1;y2=0.7</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio2x1">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio8x3">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>CM Action-Goggles</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>CM Action-Goggles</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1000</width>
+<height>627</height>
+<data md5="57a03543c8fe1b70599be7d20e97f416" size="402499" href="../../../../../__blob/57a03543c8fe1b70599be7d20e97f416.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

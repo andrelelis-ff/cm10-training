@@ -1,0 +1,24 @@
+{
+  "name": "shared-example",
+  "description": "This theme serves as the foundation for other themes like ChefCorp or Calista to demonstrate CoreMedia's theme inheritance functionality.",
+  "thumbnail": "theme.jpg",
+
+  "scripts": [
+    {
+      "type": "webpack",
+      "src": "src/js/shared-example.js"
+    }
+  ],
+  "styles": [
+    {
+      "type": "webpack",
+      "src": "src/sass/shared-example.scss"
+    }
+  ],
+  "l10n": {
+    "bundleNames": [
+      "SharedExample",
+      "Bricks"
+    ]
+  }
+}

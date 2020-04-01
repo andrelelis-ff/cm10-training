@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Snow" name="Speed Riding Challenge in Chamonix" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Learn more</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Speed Riding in Chamonix</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Speed%20Riding.xml" path="/Settings/Taxonomies/Subject/Speed%20Riding"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snowboard.xml" path="/Settings/Taxonomies/Subject/Snowboard"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>The new sensation of Speed Riding - a blend of paragliding and skiing for riding at incredible speeds.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>When winter approaches, time comes to start thinking about speed riding and plan your rides in Chamonix. Skiing fast and flying close to the ground, as one with those maneuverable and fun little wings, speed flying is bound to become your new winter passion.</p><p>The numerous ski resorts throughout the Chamonix valley are perfectly suited for it. Taking advantage of the years of knowledge as a high mountain guide, you will be able to ride in a sublime environment of perfect snow and breathtaking vistas.</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Goggles/CM%20Action%20Goggles%20-%20Augmented.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Goggles/CM%20Action%20Goggles%20-%20Augmented">CM Action Goggles 2.0</a><br/></p><p>Far from the daredevil clichés so common in extreme sports videos, speed riding in Chamonix is a playful and accessible sport. You would like to know more and start riding yourself?</p><p>We strive to offer you the best and will always welcome you with warmth, kindness and personalized attentions, you will love it.</p></div></detailText>
+<pictures>
+<link href="Speed%20Gliding%20Check%20it%20out.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Speed%20Gliding%20Check%20it%20out"/>
+</pictures>
+<related>
+<link href="Speed%20Flying%20for%20Beginners.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Speed%20Flying%20for%20Beginners"/>
+<link href="3%20Snowboard%20design%20trends.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/3%20Snowboard%20design%20trends"/>
+</related>
+<authors>
+<link href="../../Authors/Michelle%20Villegas%20Person.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Authors/Michelle%20Villegas%20Person"/>
+</authors>
+</CMArticle>

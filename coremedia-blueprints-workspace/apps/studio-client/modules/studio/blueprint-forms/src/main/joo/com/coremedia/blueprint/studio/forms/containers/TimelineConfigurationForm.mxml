@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ This is a form panel which combines several form elements to an editor for local settings to configure
+ the fixed index behaviour. A combination of integer field and reset button.
+-->
+<local:TimelineConfigurationFormBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.forms.containers.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        itemId="timelineConfigurationForm"
+        header="{false}"
+        hideSingleComponentLabel="false"
+        propertyNames="{[]}"
+        collapsed="{config.collapsed || true}"
+        settingsVE="{config.bindTo.extendBy(ContentPropertyNames.PROPERTIES, config.propertyName)}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cap.content.ContentPropertyNames;
+    import com.coremedia.ui.bem.SpacingBEMEntities;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.timelineConfigurationForm";
+
+    private var config:TimelineConfigurationForm;
+
+    public native function TimelineConfigurationForm(config:TimelineConfigurationForm = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!--- the property of the Bean to bind in this field -->
+    <fx:String id="propertyName"/>
+  </fx:Declarations>
+
+  <local:plugins exml:mode="append">
+    <ui:Binding source="{'timelineSettings.' + TimelineSettings.TIMELINE_PROPERTY_NAME}"
+                destination="{'timelineViewModel.' + TimelineViewModel.TIMELINE_PROPERTY_NAME}"
+                twoWay="true"/>
+  </local:plugins>
+  <local:items>
+    <Panel>
+      <plugins>
+        <ui:HorizontalSpacingPlugin modifier="{SpacingBEMEntities.HORIZONTAL_SPACING_MODIFIER_200}"/>
+      </plugins>
+      <items>
+        <Label text="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMVideo_sequence_starttime')}"/>
+        <ui:StatefulNumberField allowDecimals="false"
+                                width="50"
+                                minValue="0"
+                                allowBlank="false"
+                                itemId="startTimeNumberField">
+          <ui:plugins>
+            <ui:BlockEnterPlugin/>
+            <ui:BindPropertyPlugin
+                    bindTo="{ValueExpressionFactory.create(TimelineViewModel.TIMELINE_PROPERTY_NAME, timelineViewModel)}"
+                    bidirectional="true"
+                    reverseTransformer="{function(v:Number):Number {return v*1000;}}"
+                    transformer="{function(v:Number):Number {return v/1000;}}"/>
+          </ui:plugins>
+        </ui:StatefulNumberField>
+        <Label text="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMVideo_sequence_units')}"/>
+      </items>
+      <layout>
+        <layout_HBox/>
+      </layout>
+    </Panel>
+  </local:items>
+</local:TimelineConfigurationFormBase>

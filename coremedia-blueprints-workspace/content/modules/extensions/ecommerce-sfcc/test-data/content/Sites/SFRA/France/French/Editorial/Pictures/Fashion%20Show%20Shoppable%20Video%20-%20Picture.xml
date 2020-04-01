@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/France/French/Editorial/Pictures" name="Fashion Show Shoppable Video - Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Editorial/Pictures/Fashion%20Show%20Shoppable%20Video%20-%20Picture.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Pictures/Fashion%20Show%20Shoppable%20Video%20-%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=442;y=0;width=910;height=512</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=705;y=0;width=384;height=512</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=725;y=0;width=341;height=512</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=555;y=0;width=683;height=512</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=640;y=0;width=512;height=512</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=213;y=0;width=1365;height=512</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="2f72c570af6b520e8e3691ea8bfcb2d6" size="90253" href="../../../../../../__blob/2f72c570af6b520e8e3691ea8bfcb2d6.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

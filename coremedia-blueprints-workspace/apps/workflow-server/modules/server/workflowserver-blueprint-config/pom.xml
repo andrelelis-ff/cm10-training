@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>workflow-server.server</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>workflowserver-blueprint-config</artifactId>
+  <packaging>coremedia-application</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>workflow-server-config</artifactId>
+      <type>coremedia-application</type>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>workflowserver-blueprint-config</finalName>
+    <plugins>
+      <plugin>
+        <groupId>com.coremedia.maven</groupId>
+        <artifactId>coremedia-application-maven-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <skinnyApplication>true</skinnyApplication>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

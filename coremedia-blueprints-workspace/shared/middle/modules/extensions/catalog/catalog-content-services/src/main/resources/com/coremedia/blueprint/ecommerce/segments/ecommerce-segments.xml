@@ -1,0 +1,24 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <description>
+    Segment calculation strategies
+  </description>
+
+  <import resource="classpath:/com/coremedia/blueprint/base/links/bpbase-urlpathformatting.xml"/>
+
+  <bean id="cmproductSegmentStrategy" class="com.coremedia.blueprint.ecommerce.segments.CMProductSegmentStrategy"/>
+
+  <customize:append id="ecommerceContentSegmentStrategies" bean="contentSegmentStrategyMap">
+    <map>
+      <entry key="CMProduct" value-ref="cmproductSegmentStrategy"/>
+    </map>
+  </customize:append>
+
+</beans>

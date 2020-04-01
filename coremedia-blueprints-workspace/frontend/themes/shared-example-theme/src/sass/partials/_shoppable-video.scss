@@ -1,0 +1,18 @@
+// shoppable videos
+.#{$cm-shoppable-prefix} {
+
+  &-teaser {
+    &__caption {
+      text-align: center;
+    }
+
+    &__headline {
+      margin-top: 0;
+      padding-bottom: 0;
+    }
+
+    &__additional {
+      margin: 10px 0;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Videos/Hero Videos" name="Delicious Burgers" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Delicious Burgers</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>A delicious gourmet meal is being given the finishing touches by the chef in a restaurant or hotel kitchen, ready for service to the customer.</p></div></detailText>
+<pictures>
+<link href="Delicious%20Burgers%20Video%20Still.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Videos/Hero%20Videos/Delicious%20Burgers%20Video%20Still"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>Hotelfoxtrot/Shutterstock 4450061</copyright>
+<dataUrl></dataUrl>
+<data md5="361ed6922614e603d2e960117400f900" size="1802143" href="../../../../../../../../__blob/361ed6922614e603d2e960117400f900.blob" mimetype="video/x-m4v"/>
+<asset>
+</asset>
+</CMVideo>

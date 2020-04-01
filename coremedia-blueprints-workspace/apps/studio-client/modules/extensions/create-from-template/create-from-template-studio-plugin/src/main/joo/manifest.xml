@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.studio.template.CreateFromTemplateDialog"/>
+  <component class="com.coremedia.blueprint.studio.template.CreateFromTemplateMenuItem"/>
+  <component class="com.coremedia.blueprint.studio.template.CreateFromTemplateStudioPlugin"/>
+  <component class="com.coremedia.blueprint.studio.template.TemplateBeanListChooser"/>
+</componentPackage>

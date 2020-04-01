@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Aurora Augmentation/United States/English/Options/Settings/CMChannel" name="Vanity URLs" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="vanityUrlDefinition">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMArticle"/>
+<StringProperty Name="id"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

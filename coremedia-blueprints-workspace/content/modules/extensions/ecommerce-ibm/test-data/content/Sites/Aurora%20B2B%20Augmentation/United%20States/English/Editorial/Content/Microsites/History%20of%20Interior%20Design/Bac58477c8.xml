@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Microsites/History of Interior Design" name="Balliol College Dining Hall Oxford Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=573;y=0;width=908;height=1409</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=495;y=0;width=1058;height=1409</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=320;y=0;width=1408;height=1409</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=88;y=0;width=1878;height=1409</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=129;width=2048;height=1151</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=294;width=2048;height=821</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=449;width=2048;height=511</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2795969773299748;y1=0;x2=0.7229219143576826;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.24181360201511334;y1=0;x2=0.7581863979848866;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.1561712846347607;y1=0;x2=0.8438287153652393;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.042821158690176324;y1=0;x2=0.9596977329974811;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.09157509157509157;x2=1;y2=0.9084249084249084</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2087912087912088;x2=1;y2=0.7912087912087912</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.31868131868131866;x2=1;y2=0.6813186813186813</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Balliol College Dining Hall, Oxford</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Balliol College Dining Hall, Oxford</alt>
+<copyright>DAVID ILIFF/WikiMedia Commons. CC-BY-SA 3.0</copyright>
+<dataUrl></dataUrl>
+<width>2048</width>
+<height>1409</height>
+<data md5="64d53b443ae51daff96877b414fd65a2" size="2347314" href="../../../../../../../../__blob/64d53b443ae51daff96877b414fd65a2.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CatalogRepositoryListBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.ecommerce.studio.components.repository.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:u="exml:untyped"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:ec="exml:com.coremedia.ecommerce.studio.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config" xmlns:plugins="com.coremedia.ui.plugins.*"
+        emptyText="{resourceManager.getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'CatalogView_empty_text')}"
+        header="{false}"
+        ddGroup="ContentDD">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.cms.editor.sdk.columns.grid.GridColumns')]
+    [ResourceBundle('com.coremedia.ecommerce.studio.ECommerceStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.util.RichTextPlainTextTransformer;
+    import com.coremedia.ecommerce.studio.helper.AugmentationUtil;
+    import com.coremedia.ecommerce.studio.helper.CatalogHelper;
+    import com.coremedia.ecommerce.studio.model.CatalogObject;
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.ecommerce.studio.config.catalogRepositoryList";
+
+    /**
+     * The itemId of the copy to system clipboard menu item.
+     */
+    public static const COPY_COLUMN_CONTENT_TO_SYSTEM_CLIPBOARD:String = "copyCellContentToSystemClipboard";
+
+    /**
+     * value expression for the selected items, either in the list view, or - if the selection there is empty - the
+     * selected folder in the tree view.
+     */
+    [Bindable]
+    public var mySelectedItemsValueExpression:ValueExpression;
+
+    private var catalogHelper:CatalogHelper;
+
+/**
+     * value expression that acts as a model for informing a view of a newly created content object.
+     */
+    [Bindable]
+    public var createdContentValueExpression:ValueExpression;
+
+    /**
+     * Value expression that indicates if a new content can be created based on the current selection in the collection view.
+     */
+    [Bindable]
+    public var newContentDisabledValueExpression:ValueExpression;
+
+    // called by generated constructor code
+    //noinspection JSUnusedLocalSymbols
+    private function __initialize__():void {
+      catalogHelper = CatalogHelper.getInstance();
+    }
+
+    private var config:CatalogRepositoryList;
+
+    public native function CatalogRepositoryList(config:CatalogRepositoryList = null);
+    ]]></fx:Script>
+
+  <local:plugins exml:mode="prepend">
+    <ui:BindListPlugin bindTo="{getCatalogItemsValueExpression()}" lazy="true">
+      <ui:fields>
+        <ui:DataField name="type"
+                      mapping=""
+                      convert_="{AugmentationUtil.getTypeLabel}"/>
+        <ui:DataField name="typeCls"
+                      mapping=""
+                      convert_="{AugmentationUtil.getTypeCls}"/>
+        <ui:DataField name="id"
+                      mapping="externalId"/>
+        <ui:DataField name="name"
+                      mapping=""
+                      convert_="{catalogHelper.getDecoratedName}"/>
+        <ui:DataField name="description"
+                      mapping="shortDescription"
+                      convert_="{function(v:String, catalogObject:CatalogObject):String {
+                          return RichTextPlainTextTransformer.convertToPlainText(catalogObject.getShortDescription());}}"/>
+      </ui:fields>
+    </ui:BindListPlugin>
+    <ui:ContextMenuPlugin lastClickedCellVE="{getLastClickedCellVE()}">
+      <ui:contextMenu>
+        <ec:CatalogRepositoryContextMenu selectedItemsValueExpression="{config.mySelectedItemsValueExpression}"
+                                         selectedFolderValueExpression="{config.selectedNodeValueExpression}"
+                                         newContentDisabledValueExpression="{config.newContentDisabledValueExpression}"
+                                         createdContentValueExpression="{config.createdContentValueExpression}">
+          <ec:plugins exml:mode="append">
+            <plugins:AddItemsPlugin>
+              <plugins:items>
+                <MenuItem itemId="{COPY_COLUMN_CONTENT_TO_SYSTEM_CLIPBOARD}">
+                  <baseAction>
+                    <editor:CopyCellContentToSystemClipboardAction lastClickedCellVE="{getLastClickedCellVE()}" selectedItemsValueExpression="{config.mySelectedItemsValueExpression}"/>
+                  </baseAction>
+                </MenuItem>
+              </plugins:items>
+            </plugins:AddItemsPlugin>
+          </ec:plugins>
+        </ec:CatalogRepositoryContextMenu>
+      </ui:contextMenu>
+    </ui:ContextMenuPlugin>
+  </local:plugins>
+  <local:columns>
+    <editor:TypeIconColumn showTypeName="true"
+                           sortable="true"
+                           u:sortField="type"
+                           width="125"/>
+    <GridColumn
+            header="{resourceManager.getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'id_header')}"
+            stateId="id"
+            dataIndex="id"
+            sortable="true"
+            hideable="false"
+            menuDisabled="true"
+            width="125"/>
+    <GridColumn
+            header="{resourceManager.getString('com.coremedia.cms.editor.sdk.columns.grid.GridColumns', 'name_header')}"
+            stateId="name"
+            dataIndex="name"
+            sortable="true"
+            hideable="false"
+            menuDisabled="true"
+            width="200"/>
+    <GridColumn
+            header="{resourceManager.getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'description_header')}"
+            stateId="description"
+            dataIndex="description"
+            hideable="false"
+            menuDisabled="true"
+            flex="1"/>
+  </local:columns>
+
+</local:CatalogRepositoryListBase>

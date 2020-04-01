@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PropertyFieldGroup
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        title="{config.title}"
+        itemId="{config.propertyName + 'Form'}">
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.collapsibleStringPropertyForm";
+
+    private var config:CollapsibleStringPropertyForm;
+
+    public native function CollapsibleStringPropertyForm(config:CollapsibleStringPropertyForm = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!--- The name to bind the string property editor to. -->
+    <fx:String id="propertyName"/>
+
+    <!--- The title to apply. -->
+    <fx:String id="title"/>
+  </fx:Declarations>
+
+  <editor:items>
+    <editor:StringPropertyField bindTo="{config.bindTo}"
+                                hideLabel="true"
+                                propertyName="{config.propertyName}"/>
+  </editor:items>
+
+</editor:PropertyFieldGroup>

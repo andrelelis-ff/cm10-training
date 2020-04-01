@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/United States/English/Pictures/Shoppable Video Pictures" name="Dress 1 Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=21;y=0;width=1324;height=2048</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=62;y=0;width=1238;height=1653</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=21;width=1365;height=1364</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=131;width=1365;height=1024</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=179;width=1365;height=766</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=175;width=1365;height=546</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=357;width=1365;height=340</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.015113350125944584;y1=0;x2=0.9848866498740554;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.04534005037783375;y1=0;x2=0.9521410579345088;y2=0.8070469798657718</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.010067114093959731;x2=1;y2=0.6761744966442953</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.06375838926174497;x2=1;y2=0.5637583892617449</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.087248322147651;x2=1;y2=0.46140939597315433</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.08557046979865772;x2=1;y2=0.3523489932885906</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.174496644295302;x2=1;y2=0.34060402684563756</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/AuroraWMDRS-36</String>
+<String>ibm:///catalog/sku/AuroraWMDRS-609</String>
+<String>ibm:///catalog/sku/AuroraWMDRS-610</String>
+<String>ibm:///catalog/sku/AuroraWMDRS-611</String>
+<String>ibm:///catalog/sku/AuroraWMDRS-612</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Dress 1 Picture</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Dress 1 Picture</alt>
+<copyright>paffy/Shutterstock 106983197</copyright>
+<dataUrl></dataUrl>
+<width>1365</width>
+<height>2048</height>
+<data md5="09bb4ac01825d268dd9c80685cebb3be" size="95297" href="../../../../../../__blob/09bb4ac01825d268dd9c80685cebb3be.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

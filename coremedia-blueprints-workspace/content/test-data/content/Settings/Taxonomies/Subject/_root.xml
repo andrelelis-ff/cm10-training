@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Settings/Taxonomies/Subject" name="_root" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<LinkListProperty Name="roots" LinkType="coremedia:///cap/contenttype/Content_">
+<Link xlink:href="coremedia:///cap/resources/Blog.xml" cmexport:path="/Settings/Taxonomies/Subject/Blog"/>
+<Link xlink:href="coremedia:///cap/resources/Corporate.xml" cmexport:path="/Settings/Taxonomies/Subject/Corporate"/>
+<Link xlink:href="coremedia:///cap/resources/Article%20Type.xml" cmexport:path="/Settings/Taxonomies/Subject/Article%20Type"/>
+<Link xlink:href="coremedia:///cap/resources/Fashion.xml" cmexport:path="/Settings/Taxonomies/Subject/Fashion"/>
+<Link xlink:href="coremedia:///cap/resources/Social%20Media.xml" cmexport:path="/Settings/Taxonomies/Subject/Social%20Media"/>
+<Link xlink:href="coremedia:///cap/resources/Commerce.xml" cmexport:path="/Settings/Taxonomies/Subject/Commerce"/>
+</LinkListProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

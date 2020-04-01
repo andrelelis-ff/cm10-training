@@ -1,0 +1,9 @@
+.cm-carousel-banner-container {
+  box-sizing: border-box;
+  width: 100%;
+  @include breakpoint("sm-and-up") {
+    // outer arrows should still be inside the container
+    padding: 0 25px;
+    overflow: hidden;
+  }
+}

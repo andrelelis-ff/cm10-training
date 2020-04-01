@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"
+       default-init-method="validateConfig">
+
+  <import resource="classpath:/com/coremedia/cap/common/uapi-services.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-contentbeans.xml"/>
+
+  <bean id="testContextSource" class="com.coremedia.personalization.preview.TestContextSource">
+    <description>
+      Configures a context source that reads test-contexts from the CMS repository.
+    </description>
+    <property name="capConnection" ref="connection"/>
+    <property name="contextExtractors" ref="testContextExtractors"/>
+  </bean>
+
+  <util:list id="testContextExtractors">
+    <bean class="com.coremedia.personalization.preview.PropertiesTestContextExtractor"/>
+    <bean class="com.coremedia.blueprint.personalization.preview.TaxonomyExtractor">
+      <property name="contentBeanFactory" ref="contentBeanFactory"/>
+      <property name="propertyToContextMap">
+        <map>
+          <entry key="[properties][subjectTaxonomies]" value="subjectTaxonomies"/>
+          <entry key="[properties][locationTaxonomies]" value="locationTaxonomies"/>
+          <entry key="[properties][explicit]" value="explicit"/>
+        </map>
+      </property>
+    </bean>
+  </util:list>
+
+  <bean id="testDateTimeSource" class="com.coremedia.blueprint.personalization.preview.DateTimeTestContextSource">
+    <description>
+      Configures a context source that overrides current date and time through timetravel or persona selected values
+    </description>
+    <property name="contextName" value="system"/>
+  </bean>
+
+  <bean id="testContextCollectorInterceptor"
+        class="com.coremedia.personalization.preview.PreviewPersonalizationHandlerInterceptor">
+    <property name="withoutTestContext">
+      <bean class="com.coremedia.personalization.context.collector.PersonalizationHandlerInterceptor">
+        <property name="contextCollector" ref="contextCollector"/>
+      </bean>
+    </property>
+    <property name="withTestContext">
+      <bean class="com.coremedia.personalization.context.collector.PersonalizationHandlerInterceptor">
+        <property name="contextCollector">
+          <bean parent="contextCollector">
+            <property name="contextSources">
+              <list>
+                <ref bean="testContextSource"/>
+                <ref bean="testDateTimeSource"/>
+                <!--
+                 the segment source must be registered after all sources that provide properties used to
+                 determine segment membership
+                -->
+                <ref bean="segmentSource"/>
+              </list>
+            </property>
+          </bean>
+        </property>
+      </bean>
+    </property>
+  </bean>
+
+  <customize:replace id="testContextCollectorInterceptorCustomizer" bean="contextCollectorInterceptor"
+                     custom-ref="testContextCollectorInterceptor">
+    <description>
+      Replaces the contextCollectorInterceptor with a preview version.
+    </description>
+  </customize:replace>
+
+</beans>

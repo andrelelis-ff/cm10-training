@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalChannel folder="/Sites/Aurora Augmentation/United States/English/Augmentation/Apparel/Women" name="Women" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="selectChildren">true</BooleanProperty>
+<StringListProperty Name="children">
+<String>ibm:///catalog/category/Dresses</String>
+<String>ibm:///catalog/category/Women Shirts Blouses</String>
+<String>ibm:///catalog/category/Women Skirts</String>
+<String>ibm:///catalog/category/Women Handbags</String>
+<String>ibm:///catalog/category/Women Accessories</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>womens-apparel</segment>
+<title>Women</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Women.xml" path="/Settings/Taxonomies/Subject/Women"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Layouts/Two%20Column%20Layout.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Layouts/Two%20Column%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../../Editorial/Content/Startpage/Personalized%20Recommendation.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Startpage/Personalized%20Recommendation"/>
+</Struct>
+</StructListProperty>
+<BooleanProperty Name="locked">false</BooleanProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/sidebar.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/sidebar"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../../Navigation/Fragments/Aurora%20Categories/Apparel/Women/Women%20Main%20f078abe.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Aurora%20Categories/Apparel/Women/Women%20Main%20Collection"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Navigation/e-Marketing%20Spots/PC_Homepage_Offer.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/e-Marketing%20Spots/PC_Homepage_Offer"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../../Editorial/Content/Fashion/Summer%20Dresses%20Collection.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Summer%20Dresses%20Collection"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../../Videos/Shoppable/Summer%20Dresses%20Shoppable%20Video.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Videos/Shoppable/Summer%20Dresses%20Shoppable%20Video"/>
+</Struct>
+</StructListProperty>
+<BooleanProperty Name="locked">false</BooleanProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+<pdpPagegrid>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Pagegrid/Layouts/Fragment%20PDP.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Layouts/Fragment%20PDP"/>
+</Struct>
+</StructProperty>
+</Struct>
+</pdpPagegrid>
+<externalId>ibm:///catalog/category/Women</externalId>
+</CMExternalChannel>

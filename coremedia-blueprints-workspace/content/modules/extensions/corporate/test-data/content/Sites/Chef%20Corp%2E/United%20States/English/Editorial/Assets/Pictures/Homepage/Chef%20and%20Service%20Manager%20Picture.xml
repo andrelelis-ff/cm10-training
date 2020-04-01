@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Pictures/Homepage" name="Chef and Service Manager Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/flip;d=h/crop;x=641;y=0;width=1365;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/flip;d=h/crop;x=140;y=0;width=1821;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/flip;d=h/crop;x=0;y=30;width=2048;height=1152</StringProperty>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/flip;d=h/crop;x=882;y=0;width=881;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/flip;d=h/crop;x=0;y=0;width=2048;height=871</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/flip;d=h/crop;x=811;y=0;width=1024;height=1365</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.16624685138539042;y1=0;x2=0.8337531486146096;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.0684039087947883;y1=0;x2=0.9576547231270358;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.022082018927444793;x2=1;y2=0.8660380628834887</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">true</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.6439075630252101</StringProperty>
+<StringProperty Name="y">0.30757097791798105</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Chef and Service Manager</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Picture of Chef and a Chef Corp. Service Manager discussing a new kitchen design</alt>
+<copyright>wavebreakmedia/Shutterstock 139385570</copyright>
+<dataUrl></dataUrl>
+<width>2048</width>
+<height>1365</height>
+<data md5="7ab97da3226426f5bc7de6acdaa3146c" size="323489" href="../../../../../../../../__blob/7ab97da3226426f5bc7de6acdaa3146c.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,95 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>studio-client.osm</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>osm-studio</artifactId>
+  <packaging>swc</packaging>
+
+  <description>OSM Studio Plugin for the CoreMedia Studio</description>
+
+  <properties>
+    <coremedia.project.extension.for>studio</coremedia.project.extension.for>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>blueprint-forms</artifactId>
+      <version>${project.version}</version>
+      <type>swc</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>ui-components</artifactId>
+      <type>swc</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>editor-components</artifactId>
+      <type>swc</type>
+    </dependency>
+
+    <dependency>
+      <groupId>net.jangaroo</groupId>
+      <artifactId>ext-as</artifactId>
+      <type>swc</type>
+    </dependency>
+   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>net.jangaroo</groupId>
+        <artifactId>jangaroo-maven-plugin</artifactId>
+        <version>${jangaroo.version}</version>
+        <extensions>true</extensions>
+        <configuration>
+            <additionalCssNonBundle>
+              <value>resources/css/osm-ui.css</value>
+            </additionalCssNonBundle>
+            <additionalJsNonBundle>
+              <value>resources/osm/OpenLayers.js</value>
+              <value>resources/osm/OpenStreetMap.js</value>
+            </additionalJsNonBundle>
+          <namespaces>
+            <namespace>
+              <uri>exml:com.coremedia.blueprint.studio.osm.config</uri>
+            </namespace>
+          </namespaces>
+        </configuration>
+      </plugin>
+      <!-- this converts absolute (http://) URLs in the OSM libraries to schema-less ones -->
+      <plugin>
+        <groupId>com.google.code.maven-replacer-plugin</groupId>
+        <artifactId>replacer</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>replace</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <basedir>${project.build.directory}</basedir>
+          <includes>
+            <include>**/OpenLayers.js</include>
+            <include>**/OpenStreetMap.js</include>
+          </includes>
+          <replacements>
+            <replacement>
+              <token>http:\/\/([a-c])\.tile</token>
+              <value>//$1.tile</value>
+            </replacement>
+          </replacements>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

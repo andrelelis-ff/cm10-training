@@ -1,0 +1,245 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+  <StructProperty Name="ProductInfo">
+    <Struct>
+      <StringProperty Name="Name" Length="32">HT 1000</StringProperty>
+      <StringProperty Name="Product End Of Live" Length="32"> 41393</StringProperty>
+      <StringProperty Name="Manufacturer" Length="32">HelPac</StringProperty>
+      <StringProperty Name="Model" Length="32">HT-87EW76</StringProperty>
+      <StringProperty Name="SKU" Length="32">1000</StringProperty>
+      <StringProperty Name="Price" Length="32">699</StringProperty>
+      <StringProperty Name="Series" Length="32">HT-Series</StringProperty>
+      <StringProperty Name="Currency" Length="32">USD</StringProperty>
+      <StringProperty Name="Product Launch Date" Length="32">40662</StringProperty>
+      <StringProperty Name="Categories" Length="32">Notebook</StringProperty>
+      <StructProperty Name="TechnicalDetails">
+        <Struct>
+          <StructProperty Name="Dimensions">
+            <Struct>
+              <StructProperty Name="Height">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">600</StringProperty>
+                  <StringProperty Name="Unit" Length="16">mm</StringProperty>
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Width">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">400</StringProperty>
+                  <StringProperty Name="Unit" Length="16">mm</StringProperty>
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Depth">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">12.9</StringProperty>
+                  <StringProperty Name="Unit" Length="16">mm</StringProperty>
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Weight">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">1200</StringProperty>
+                  <StringProperty Name="Unit" Length="16">grams</StringProperty>
+                </Struct>
+              </StructProperty>
+            </Struct>
+          </StructProperty>
+          <StructProperty Name="General">
+            <Struct>
+              <StructProperty Name="CDMA">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">CDMA 800 /1900 LTE 700, Rx diversity in all bands</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+            </Struct>
+          </StructProperty>
+          <StructProperty Name="Platform">
+            <Struct>
+              <StructProperty Name="Platform">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">Android 3.0 (Honeycomb)</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+            </Struct>
+          </StructProperty>
+          <StructProperty Name="Camera">
+            <Struct>
+              <StructProperty Name="Camera">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">5</StringProperty>
+                  <StringProperty Name="Unit" Length="16">MP</StringProperty>
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="WebCam">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">2</StringProperty>
+                  <StringProperty Name="Unit" Length="16">MP</StringProperty>
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Digital Zoom">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">yes</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Flash">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">Dual-LED flash</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Focus">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">Automatic</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+            </Struct>
+          </StructProperty>
+          <StructProperty Name="Music&amp;Video">
+            <Struct>
+              <StructProperty Name="Music Player">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">Android&#8482; Music Player</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Video Capable">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">720pvideo playback</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Video Capture">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">720p video capture</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Playable Formats">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">AAC, H.263, H.264, MP3, MPEG-4, ACC+ Enhanced, OGG, MIDI, AMR NB, AAC+</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Streaming Video">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">Audio, Video, Internet Radio</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+            </Struct>
+          </StructProperty>
+          <StructProperty Name="Power">
+            <Struct>
+              <StructProperty Name="Battery Type">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">24 W-hr</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Browsing over 3G">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">up to approx. 9 hrs.</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Browsing over WIFI">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">up to approx. 10 hrs</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="MP3 playback">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">up to approx. 3.3 days</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Standby time">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">up to approx. 14 days</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Video Playback Time">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">up to approx. 10 hrs.</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+            </Struct>
+          </StructProperty>
+          <StructProperty Name="Technology">
+            <Struct>
+              <StructProperty Name="Memory (up to)">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">32</StringProperty>
+                  <StringProperty Name="Unit" Length="16">GB</StringProperty>
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="CPU">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">1GHz Dual Core</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Accelormeter">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">yes</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Networks">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">Proximity, ambient light, barometer, gyroscope</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+            </Struct>
+          </StructProperty>
+          <StructProperty Name="Connectivity">
+            <Struct>
+              <StructProperty Name="Bluetooth Technology">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">Stereo Bluetooth&#174; technology 2.1+EDR+HID</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Web Browser">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">Android HTML Webkit, Tabbed browsing, Chrome bookmark sync, Incognito mode, Form auto-fill</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Synchronization">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">Corporate Sync, GOTA</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="WiFi">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">802.11 a,b,g,n</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Connector Type">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">Micro USB; HDMI out</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+              <StructProperty Name="Data Transition Rate">
+                <Struct>
+                  <StringProperty Name="Value" Length="256">USB 2.0 (High Speed)</StringProperty>
+                  <StringProperty Name="Unit" Length="16" />
+                </Struct>
+              </StructProperty>
+            </Struct>
+          </StructProperty>
+        </Struct>
+      </StructProperty>
+    </Struct>
+  </StructProperty>
+</Struct>

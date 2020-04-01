@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content/Lighting" name="Broken Light Bulb Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Lighting/Broken%20Light%20Bulb%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Lighting/Broken%20Light%20Bulb%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=985;y=0;width=1030;height=1601</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=903;y=0;width=1201;height=1601</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=705;y=0;width=1599;height=1601</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=434;y=0;width=2132;height=1601</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=81;y=0;width=2845;height=1601</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=769;width=2078;height=832</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=425;width=2999;height=751</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.32831325301204817;y1=0;x2=0.6716867469879518;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.30120481927710846;y1=0;x2=0.7018072289156626;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.23493975903614459;y1=0;x2=0.7680722891566265;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.14457831325301204;y1=0;x2=0.8554216867469879;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.02710843373493976;y1=0;x2=0.9759036144578314;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.480225988700565;x2=0.6927710843373494;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.2655367231638418;x2=1;y2=0.7344632768361582</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Broken Light Bulb</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Broken Light Bulb</alt>
+<copyright>Peter Gudella / Shutterstock 18732913</copyright>
+<dataUrl></dataUrl>
+<width>2999</width>
+<height>1601</height>
+<data md5="3c1da3f9fb58df56be7f485f36cf1cec" size="252711" href="../../../../../../../__blob/3c1da3f9fb58df56be7f485f36cf1cec.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

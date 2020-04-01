@@ -1,0 +1,26 @@
+#!/bin/sh
+
+echo "[DOCKER ENTRYPOINT] - entering $0"
+set -eu
+
+if [ "${DEBUG_ENTRYPOINT}" = "true" ]; then
+  echo "[DOCKER ENTRYPOINT] - DEBUG_ENTRYPOINT detected, all commands will be printed"
+  set -x
+fi
+
+# do not remove '< /dev/null 2> /dev/null | grep -v groovy\:' - this ensures groovysh exit and only value printing
+IMPORTED=$(./tools/bin/cm groovysh /coremedia/getSystemTableProperty.groovy -q -DpropKey=users-imported < /dev/null 2> /dev/null | grep -v groovy\:)
+
+if [ -d ${IMPORT_USERS_DIR} ]; then
+  echo "[DOCKER ENTRYPOINT] - importing user files from ${IMPORT_USERS_DIR}:"
+  for user_file in ${IMPORT_USERS_DIR}/*.xml; do
+    echo "[DOCKER ENTRYPOINT] - * importing ${user_file}"
+    if [ "${IMPORTED}" != "true"  ] || [ "${FORCE_REIMPORT_CONTENT}" = "true" ] ; then
+      ./tools/bin/cm restoreusers -u ${TOOLS_USER} -p ${TOOLS_PASSWORD} -f ${user_file} 2> /dev/null
+      ./tools/bin/cm groovysh /coremedia/setSystemTableProperty.groovy -q -DpropKey=users-imported -DpropVal=true < /dev/null 2> /dev/null
+    else
+      echo "[DOCKER ENTRYPOINT] - user file already imported, skipping ..."
+    fi
+  done
+fi
+test $# -gt 0 && exec ./$@ || echo "[DOCKER ENTRYPOINT] - entrypoint chain finished"

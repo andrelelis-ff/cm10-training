@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Microsites/Guide to Exterior Lighting" name="ESB Red-Green Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=488;y=0;width=1038;height=1606</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=413;y=0;width=1207;height=1606</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=156;y=0;width=1607;height=1606</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=250;y=0;width=1670;height=1250</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=262;width=1920;height=1081</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=250;width=1920;height=769</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=562;width=1920;height=481</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.254071661237785;y1=0;x2=0.7947882736156352;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.21498371335504887;y1=0;x2=0.8436482084690554;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.08143322475570032;y1=0;x2=0.9185667752442996;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.13029315960912052;y1=0;x2=1;y2=0.7782101167315175</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.16342412451361868;x2=1;y2=0.8365758754863813</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.1556420233463035;x2=1;y2=0.6342412451361867</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.35019455252918286;x2=1;y2=0.6498054474708171</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>ESB Red-Green Image</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Picture of the Empire State Building in red and green light</alt>
+<copyright>Stuart Monk/Shutterstock 43740046</copyright>
+<dataUrl></dataUrl>
+<width>1920</width>
+<height>1606</height>
+<data md5="95cbf6b41a58250d6bdee4586013af30" size="644320" href="../../../../../../../__blob/95cbf6b41a58250d6bdee4586013af30.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

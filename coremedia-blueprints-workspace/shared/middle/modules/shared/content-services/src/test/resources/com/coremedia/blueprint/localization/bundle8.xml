@@ -1,0 +1,6 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StringProperty Name="str">overridede</StringProperty>
+  <StringProperty Name="strde">strde</StringProperty>
+  <StringProperty Name="byOrder">right</StringProperty>
+  <StringProperty Name="localeOverOrder">wrong</StringProperty>
+</Struct>

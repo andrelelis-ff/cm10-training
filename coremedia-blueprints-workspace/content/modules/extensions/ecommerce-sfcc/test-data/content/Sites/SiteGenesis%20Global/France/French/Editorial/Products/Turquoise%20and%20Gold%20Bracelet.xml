@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/SiteGenesis Global/France/French/Editorial/Products" name="Turquoise and Gold Bracelet" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Editorial/Products/Turquoise%20and%20Gold%20Bracelet.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Products/Turquoise%20and%20Gold%20Bracelet"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Collier Turquoise et Or</teaserTitle>
+<pictures>
+<link href="../../Pictures/Necklace.xml" path="/Sites/SiteGenesis%20Global/France/French/Pictures/Necklace"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>sfcc:///catalog/product/25720037</externalId>
+</CMProductTeaser>

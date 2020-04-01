@@ -1,0 +1,12 @@
+// Slick Carousel
+.#{$cm-slick-carousel-prefix} {
+  &--inner-arrows {
+    .slick-arrow {
+      width: 5%;
+
+      @include breakpoint("xs") {
+        width: 10%;
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userRepository xmlns="http://www.coremedia.com/2010/user">
+  <group id="0" name="administratoren" domain="" distinguishedName="" ttl="180" administrative="true" live="false"
+         content="true">
+  </group>
+  <user id="0" name="admin" domain="" distinguishedName="" ttl="180" active="true"
+        homeFolder="coremedia:///cap/content/1">
+    <group id="0"/>
+  </user>
+</userRepository>

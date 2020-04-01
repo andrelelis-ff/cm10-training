@@ -1,0 +1,50 @@
+// Theme special styles
+.#{$cm-footer-prefix},
+.#{$cm-footer-navigation-prefix} {
+  font-family: $cm-font-family-base;
+  font-size: $cm-font-size-base;
+  line-height: $cm-line-height-base;
+  clear: left;
+
+  &__link {
+    font-size: $cm-font-size-normal;
+    &:focus {
+      color: $cm-footer-color;
+    }
+  }
+}
+
+.#{$cm-footer-navigation-prefix},
+.#{$cm-footer-prefix}__wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: $cm-screen-max - 30px;
+  @include breakpoint("xs") {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.#{$cm-footer-navigation-prefix}-column {
+  font-size: $cm-font-size-normal;
+
+  &__title {
+    font-size: $cm-font-size-large;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  // special styling because there is a CMHTML document that does not know about our css classes...
+  a {
+    color: $cm-footer-navigation-column-link-color;
+    text-decoration: none;
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    margin: 0 0 10px;
+  }
+}

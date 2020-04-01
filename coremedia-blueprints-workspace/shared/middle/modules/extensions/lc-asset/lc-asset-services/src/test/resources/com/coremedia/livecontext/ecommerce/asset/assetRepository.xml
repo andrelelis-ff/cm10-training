@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+
+  <!--
+    Test content for the AssetHelperTest
+  -->
+  <content>
+    <folder id="1" name="">
+      <document id="2" name="testPicture" type="CMPicture">
+        <version number="1">
+          <markupProperty name="localSettings" url="exampleStruct.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+      <document id="4" name="testPicture2" type="CMPicture">
+        <version number="1"/>
+      </document>
+    </folder>
+  </content>
+</contentRepository>

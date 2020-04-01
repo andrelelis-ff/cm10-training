@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Pictures/Employees" name="Employee 21132593518 - Walter Pinkman" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0.015113350125944584</StringProperty>
+<StringProperty Name="y1">0.020151133501259445</StringProperty>
+<StringProperty Name="x2">0.982367758186398</StringProperty>
+<StringProperty Name="y2">0.9899244332493703</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=12;y=18;width=774;height=774</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=12;y=115;width=774;height=580</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=6;y=222;width=782;height=439</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.015113350125944584;y1=0.022670025188916875;x2=0.982367758186398;y2=0.9899244332493703</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.015113350125944584;y1=0.14357682619647355;x2=0.982367758186398;y2=0.8690176322418136</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.007556675062972292;y1=0.2770780856423174;x2=0.9848866498740554;y2=0.8261964735516373</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Walter Pinkman</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Portrait of Walter Pinkman</alt>
+<copyright>Andrey_Popov/Shutterstock 211325935</copyright>
+<dataUrl></dataUrl>
+<width>800</width>
+<height>800</height>
+<data md5="1982c3d67fef54c273bc581bafb657b4" size="360445" href="../../../../../../../../__blob/1982c3d67fef54c273bc581bafb657b4.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

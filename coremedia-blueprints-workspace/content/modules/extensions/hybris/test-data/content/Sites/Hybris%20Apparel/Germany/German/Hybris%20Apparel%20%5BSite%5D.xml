@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSite folder="/Sites/Hybris Apparel/Germany/German" name="Hybris Apparel [Site]" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../United%20Kingdom/English/Hybris%20Apparel%20%5BSite%5D.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Hybris%20Apparel%20%5BSite%5D"/>
+</master>
+<id>fdc1fd9712c6177f4d046d71b3a8acbb</id>
+<name>Hybris Apparel</name>
+<root>
+<link href="Navigation/Hybris%20Apparel.xml" path="/Sites/Hybris%20Apparel/Germany/German/Navigation/Hybris%20Apparel"/>
+</root>
+<siteManagerGroup>manager-h-b2c-de-DE</siteManagerGroup>
+<linkedSettings>
+</linkedSettings>
+</CMSite>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Chef Corp./Germany/German/Editorial/Homepage/Kitchen Dreams" name="Female Chef Cooking Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Homepage/Kitchen%20Dreams/Female%20Chef%20Cooking%20Video.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Kitchen%20Dreams/Female%20Chef%20Cooking%20Video"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Spüren Sie die Leidenschaft</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Cooking.xml" path="/Settings/Taxonomies/Subject/Cooking"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Kitchen.xml" path="/Settings/Taxonomies/Subject/Kitchen"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Dream.xml" path="/Settings/Taxonomies/Subject/Dream"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Machen Sie Ihre Träume wahr werden - und nutzen Sie die perfekte Küche für die perfekte Kocherlebnis </p> </div></detailText>
+<pictures>
+<link href="../../Assets/Pictures/Kitchen%20Dreams/Female%20Chef%20Cooking%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Kitchen%20Dreams/Female%20Chef%20Cooking%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="361ed6922614e603d2e960117400f900" size="1802143" href="../../../../../../../__blob/361ed6922614e603d2e960117400f900.blob" mimetype="video/x-m4v"/>
+<asset>
+</asset>
+</CMVideo>

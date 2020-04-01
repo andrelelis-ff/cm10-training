@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMLocTaxonomy folder="/Settings/Taxonomies/Location" name="Europe" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Europe</value>
+<children>
+<link href="Germany.xml" path="/Settings/Taxonomies/Location/Germany"/>
+<link href="Austria.xml" path="/Settings/Taxonomies/Location/Austria"/>
+<link href="Belgium.xml" path="/Settings/Taxonomies/Location/Belgium"/>
+<link href="Bulgaria.xml" path="/Settings/Taxonomies/Location/Bulgaria"/>
+<link href="Cyprus.xml" path="/Settings/Taxonomies/Location/Cyprus"/>
+<link href="Czech%20Republic.xml" path="/Settings/Taxonomies/Location/Czech%20Republic"/>
+<link href="Denmark.xml" path="/Settings/Taxonomies/Location/Denmark"/>
+<link href="Estonia.xml" path="/Settings/Taxonomies/Location/Estonia"/>
+<link href="Finland.xml" path="/Settings/Taxonomies/Location/Finland"/>
+<link href="France.xml" path="/Settings/Taxonomies/Location/France"/>
+<link href="Greece.xml" path="/Settings/Taxonomies/Location/Greece"/>
+<link href="Hungary.xml" path="/Settings/Taxonomies/Location/Hungary"/>
+<link href="Ireland.xml" path="/Settings/Taxonomies/Location/Ireland"/>
+<link href="Italy.xml" path="/Settings/Taxonomies/Location/Italy"/>
+<link href="Latvia.xml" path="/Settings/Taxonomies/Location/Latvia"/>
+<link href="Lithuania.xml" path="/Settings/Taxonomies/Location/Lithuania"/>
+<link href="Luxembourg.xml" path="/Settings/Taxonomies/Location/Luxembourg"/>
+<link href="Malta.xml" path="/Settings/Taxonomies/Location/Malta"/>
+<link href="Netherlands.xml" path="/Settings/Taxonomies/Location/Netherlands"/>
+<link href="Poland.xml" path="/Settings/Taxonomies/Location/Poland"/>
+<link href="Portugal.xml" path="/Settings/Taxonomies/Location/Portugal"/>
+<link href="Romania.xml" path="/Settings/Taxonomies/Location/Romania"/>
+<link href="Slovakia.xml" path="/Settings/Taxonomies/Location/Slovakia"/>
+<link href="Slovenia.xml" path="/Settings/Taxonomies/Location/Slovenia"/>
+<link href="Spain.xml" path="/Settings/Taxonomies/Location/Spain"/>
+<link href="Sweden.xml" path="/Settings/Taxonomies/Location/Sweden"/>
+<link href="United%20Kingdom.xml" path="/Settings/Taxonomies/Location/United%20Kingdom"/>
+</children>
+<externalReference>http://d.opencalais.com/genericHasher-1/53dd2373-24eb-3e4c-bb66-970374d283be</externalReference>
+<postcode></postcode>
+<latitudeLongitude>51.151786,10.415039</latitudeLongitude>
+</CMLocTaxonomy>

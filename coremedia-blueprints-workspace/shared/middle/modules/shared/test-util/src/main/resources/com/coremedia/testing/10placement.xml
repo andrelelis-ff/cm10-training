@@ -1,0 +1,30 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <StructProperty Name="placements_2">
+    <Struct>
+      <LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/CMSettings"/>
+      <StructProperty Name="placements">
+        <Struct>
+          <StructProperty Name="30">
+            <Struct>
+              <BooleanProperty Name="locked">false</BooleanProperty>
+              <LinkProperty Name="section" xlink:href="coremedia:///cap/content/30" LinkType="coremedia:///cap/contenttype/CMSymbol"/>
+              <LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMLinkable">
+                <Link xlink:href="coremedia:///cap/content/40"/>
+              </LinkListProperty>
+            </Struct>
+          </StructProperty>
+          <StructProperty Name="28">
+            <Struct>
+              <BooleanProperty Name="locked">true</BooleanProperty>
+              <LinkProperty Name="section" xlink:href="coremedia:///cap/content/28" LinkType="coremedia:///cap/contenttype/CMSymbol"/>
+              <LinkListProperty Name="items" LinkType="coremedia:///cap/contenttype/CMLinkable">
+                <Link xlink:href="coremedia:///cap/content/42"/>
+                <Link xlink:href="coremedia:///cap/content/44"/>
+              </LinkListProperty>
+            </Struct>
+          </StructProperty>
+        </Struct>
+      </StructProperty>
+    </Struct>
+  </StructProperty>
+</Struct>

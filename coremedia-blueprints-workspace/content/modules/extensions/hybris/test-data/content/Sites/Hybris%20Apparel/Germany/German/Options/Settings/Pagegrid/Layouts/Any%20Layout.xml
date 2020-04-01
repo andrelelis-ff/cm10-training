@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Hybris Apparel/Germany/German/Options/Settings/Pagegrid/Layouts" name="Any Layout" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Options/Settings/Pagegrid/Layouts/Any%20Layout.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Pagegrid/Layouts/Any%20Layout"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<IntProperty Name="colCount">12</IntProperty>
+<IntProperty Name="rowCount">3</IntProperty>
+<StringProperty Name="cssClassName">lc-single-column</StringProperty>
+<StructListProperty Name="items">
+<Struct>
+<BooleanProperty Name="editable">true</BooleanProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/header.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/header"/>
+<IntProperty Name="row">1</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">20</IntProperty>
+<IntProperty Name="width">100</IntProperty>
+<IntProperty Name="colspan">12</IntProperty>
+</Struct>
+<Struct>
+<BooleanProperty Name="editable">false</BooleanProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/main.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/main"/>
+<IntProperty Name="row">2</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">60</IntProperty>
+<IntProperty Name="width">100</IntProperty>
+<IntProperty Name="colspan">12</IntProperty>
+</Struct>
+<Struct>
+<BooleanProperty Name="editable">true</BooleanProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/footer.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/footer"/>
+<IntProperty Name="row">3</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">20</IntProperty>
+<IntProperty Name="width">100</IntProperty>
+<IntProperty Name="colspan">12</IntProperty>
+</Struct>
+</StructListProperty>
+<StringProperty Name="name">Any Layout</StringProperty>
+<StringProperty Name="description">Any page layout that can only be extended with a header and footer banner.</StringProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

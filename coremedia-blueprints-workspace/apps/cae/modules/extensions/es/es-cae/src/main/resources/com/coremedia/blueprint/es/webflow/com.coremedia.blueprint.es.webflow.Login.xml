@@ -1,0 +1,33 @@
+<flow xmlns="http://www.springframework.org/schema/webflow"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/webflow
+                          http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+
+  <var name="bpLoginForm" class="com.coremedia.blueprint.elastic.social.cae.flows.LoginForm"/>
+  <input name="next"/>
+
+  <on-start>
+    <!-- When CSRF prevention is enabled, this will force the creation of a CSRF user token,
+         in order to prevent Login-CSRF. Login POST requests must include this token in their form submit to succeed. -->
+    <evaluate expression="csrfTokenManagement.forceToken(flowRequestContext.externalContext.nativeRequest)"/>
+    <set name="flowScope.nextUrl" value="webflowUrlHelper.getNextUrl(next, flowRequestContext, true)"/>
+  </on-start>
+
+  <decision-state id="isLoggedIn">
+    <if test="loginHelper.isLoggedIn()" then="loggedIn" else="login"/>
+  </decision-state>
+
+  <view-state id="login" model="bpLoginForm">
+    <transition on="submit" to="success">
+      <evaluate expression="loginHelper.login(bpLoginForm, flowRequestContext)"/>
+    </transition>
+  </view-state>
+
+  <view-state id="loggedIn" view="success" >
+    <transition on="submit" to="logout"/>
+  </view-state>
+
+  <end-state id="logout" view="externalRedirect:contextRelative:/logout?spring-security-redirect=#{nextUrl}" />
+  <end-state id="success" view="externalRedirect:#{nextUrl}" />
+
+</flow>

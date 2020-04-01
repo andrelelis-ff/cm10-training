@@ -1,0 +1,8 @@
+{
+  "studioPlugins": [
+    {
+      "mainClass": "com.coremedia.blueprint.assets.studio.AMStudioPlugin",
+      "name": "Asset Management Extensions"
+    }
+  ]
+}

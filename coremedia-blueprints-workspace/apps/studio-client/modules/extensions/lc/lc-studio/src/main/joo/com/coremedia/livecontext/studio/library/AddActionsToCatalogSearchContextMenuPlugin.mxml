@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:AddItemsPlugin xmlns:fx="http://ns.adobe.com/mxml/2009"
+                   xmlns="exml:ext.config"
+                   xmlns:ui="exml:com.coremedia.ui.config"
+                   xmlns:livecontext="exml:com.coremedia.livecontext.studio.config">
+<fx:Script><![CDATA[
+  import com.coremedia.ecommerce.studio.ECommerceStudioPlugin;
+  import com.coremedia.ecommerce.studio.components.search.CatalogSearchContextMenu;
+  import com.coremedia.livecontext.studio.LivecontextStudioPlugin;
+
+  private var config:AddActionsToCatalogSearchContextMenuPlugin;
+  private var componentConfig:CatalogSearchContextMenu;
+
+  // called by generated constructor code
+  private function __initialize__(config:AddActionsToCatalogSearchContextMenuPlugin):void {
+    componentConfig = CatalogSearchContextMenu(config.cmp.initialConfig);
+  }
+
+  public native function AddActionsToCatalogSearchContextMenuPlugin(config:AddActionsToCatalogSearchContextMenuPlugin = null);
+  ]]></fx:Script>
+  <ui:items>
+    <MenuItem itemId="{LivecontextStudioPlugin.SEARCH_PRODUCT_VARIANTS_MENU_ITEM_ID}">
+      <baseAction>
+        <livecontext:SearchProductVariantsAction
+                catalogObjectExpression="{componentConfig.selectedSearchItemsValueExpression}"/>
+      </baseAction>
+    </MenuItem>
+    <MenuSeparator/>
+    <MenuItem itemId="{LivecontextStudioPlugin.AUGMENT_PRODUCT_MENU_ITEM_ID}">
+      <baseAction>
+        <livecontext:AugmentProductAction
+                catalogObjectExpression="{componentConfig.selectedSearchItemsValueExpression}"/>
+      </baseAction>
+    </MenuItem>
+    <MenuItem itemId="{LivecontextStudioPlugin.CREATE_PRODUCT_TEASER_MENU_ITEM_ID}">
+      <baseAction>
+        <livecontext:CreateProductTeaserAction
+                catalogObjectExpression="{componentConfig.selectedSearchItemsValueExpression}"/>
+      </baseAction>
+    </MenuItem>
+    <MenuItem itemId="{LivecontextStudioPlugin.AUGMENT_CATEGORY_MENU_ITEM_ID}">
+      <baseAction>
+        <livecontext:AugmentCategoryAction
+                catalogObjectExpression="{componentConfig.selectedSearchItemsValueExpression}"/>
+      </baseAction>
+    </MenuItem>
+    <MenuItem itemId="{LivecontextStudioPlugin.CREATE_MARKETING_SPOT_MENU_ITEM_ID}">
+      <baseAction>
+        <livecontext:CreateMarketingSpotAction
+                catalogObjectExpression="{componentConfig.selectedSearchItemsValueExpression}"/>
+      </baseAction>
+    </MenuItem>
+  </ui:items>
+  <ui:after>
+    <Component itemId="{ECommerceStudioPlugin.OPEN_IN_TAB_MENU_ITEM_ID}"/>
+  </ui:after>
+</ui:AddItemsPlugin>

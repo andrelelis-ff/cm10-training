@@ -1,0 +1,12 @@
+{
+  "name": "base",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The base role for all nodes.",
+  "run_list": [
+    "recipe[blueprint::default]",
+    "recipe[blueprint-base::reporting]",
+    "recipe[blueprint-base::default]",
+    "recipe[blueprint-yum::default]"
+  ]
+}

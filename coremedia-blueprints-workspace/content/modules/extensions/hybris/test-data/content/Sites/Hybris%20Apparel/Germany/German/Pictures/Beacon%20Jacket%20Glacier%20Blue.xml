@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/Germany/German/Pictures" name="Beacon Jacket Glacier Blue" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Pictures/Beacon%20Jacket%20Glacier%20Blue.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Beacon%20Jacket%20Glacier%20Blue"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0.21497584541062803</StringProperty>
+<StringProperty Name="y1">0.26570048309178745</StringProperty>
+<StringProperty Name="x2">0.7801932367149759</StringProperty>
+<StringProperty Name="y2">0.7922705314009661</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=329;y=266;width=341;height=527</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=302;y=266;width=394;height=527</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=234;y=266;width=527;height=527</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=215;y=316;width=565;height=425</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=121;y=302;width=761;height=428</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=36;y=290;width=942;height=471</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=2;y=314;width=998;height=399</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=326;width=1000;height=374</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=357;width=1000;height=251</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.3285024154589372;y1=0.26570048309178745;x2=0.6690821256038647;y2=0.7922705314009661</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.30193236714975846;y1=0.26570048309178745;x2=0.6956521739130435;y2=0.7922705314009661</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.23429951690821257;y1=0.26570048309178745;x2=0.7608695652173914;y2=0.7922705314009661</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.21497584541062803;y1=0.3164251207729469;x2=0.7801932367149759;y2=0.7415458937198067</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.12077294685990338;y1=0.30193236714975846;x2=0.8816425120772947;y2=0.7294685990338164</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0.036231884057971016;y1=0.2898550724637681;x2=0.9782608695652174;y2=0.7608695652173914</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0.0024154589371980675;y1=0.3140096618357488;x2=1;y2=0.7125603864734299</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.32608695652173914;x2=1;y2=0.7004830917874396</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.357487922705314;x2=1;y2=0.6086956521739131</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>hybris:///catalog/product/100191_glacier</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Beacon Jacket - Glacier Blue</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Beacon Jacket - Glacier Blue</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1000</width>
+<height>1000</height>
+<data md5="c1a38f4f969978b07c7d43bfbb7e4947" size="15914" href="../../../../../__blob/c1a38f4f969978b07c7d43bfbb7e4947.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

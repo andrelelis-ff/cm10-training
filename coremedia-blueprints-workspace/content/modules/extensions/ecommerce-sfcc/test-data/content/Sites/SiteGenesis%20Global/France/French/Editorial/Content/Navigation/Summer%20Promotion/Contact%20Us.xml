@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/SiteGenesis Global/France/French/Editorial/Content/Navigation/Summer Promotion" name="Contact Us" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Editorial/Content/Navigation/Summer%20Promotion/Contact%20Us.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Navigation/Summer%20Promotion/Contact%20Us"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Entrer en contact</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> L'élégance n'est pas uniquement définie par ce que vous portez. C'est comment vous vous portez, comment vous parlez, ce que vous lisez. Nous devons changer notre éthique et notre système financier et notre façon de comprendre le monde entier. Ce doit être un monde dans lequel les gens vivent plutôt que de mourir; un monde durable. Ça pourrait être génial. </p> </div></teaserText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+</target>
+</CMTeaser>

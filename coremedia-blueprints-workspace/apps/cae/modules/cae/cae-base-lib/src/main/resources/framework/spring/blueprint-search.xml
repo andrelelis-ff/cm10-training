@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <description>
+    Search specific bean definitions
+  </description>
+
+  <import resource="classpath:/framework/spring/search/solr-search.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/settings/impl/bpbase-settings-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/contentbean-services.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-services.xml"/>
+
+  <!-- The search service -->
+  <bean id="searchActionService" class="com.coremedia.blueprint.cae.action.search.SearchService">
+    <property name="resultFactory" ref="resultFactory"/>
+    <property name="highlightingEnabled" value="true"/>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="contentRepository" ref="contentRepository"/>
+    <property name="settingsService" ref="settingsService"/>
+  </bean>
+
+  <customize:append id="addTaxonomyFacetFieldLabelFunction" bean="facetFieldLabelFunctions">
+    <map key-type="java.lang.String" value-type="java.util.function.Function">
+      <!-- for taxonomy index fields, make faceted search return taxonomy values as labels instead of content ids -->
+      <entry key="subjecttaxonomy" value-ref="taxonomyFacetFieldLabelFunction"/>
+      <entry key="locationtaxonomy" value-ref="taxonomyFacetFieldLabelFunction"/>
+    </map>
+  </customize:append>
+
+  <bean id="taxonomyFacetFieldLabelFunction"
+        class="com.coremedia.blueprint.cae.action.search.TaxonomyFacetFieldLabelFunction">
+    <constructor-arg index="0" name="idProvider" ref="idProvider"/>
+    <constructor-arg index="1" name="validationService" ref="validationService"/>
+  </bean>
+
+</beans>

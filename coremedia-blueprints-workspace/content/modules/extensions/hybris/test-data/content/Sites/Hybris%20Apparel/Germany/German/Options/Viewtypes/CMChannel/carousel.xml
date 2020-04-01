@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/Hybris Apparel/Germany/German/Options/Viewtypes/CMChannel" name="carousel" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Options/Viewtypes/CMChannel/carousel.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Viewtypes/CMChannel/carousel"/>
+</master>
+<description>Zeigt Inhalt in einer Karussellansicht an, die mehrere Banner gleichzeitig anzeigt.</description>
+<icon href="carousel.icon.svg%2Bxml" mimetype="image/svg+xml"/>
+<layout>carousel</layout>
+</CMViewtype>

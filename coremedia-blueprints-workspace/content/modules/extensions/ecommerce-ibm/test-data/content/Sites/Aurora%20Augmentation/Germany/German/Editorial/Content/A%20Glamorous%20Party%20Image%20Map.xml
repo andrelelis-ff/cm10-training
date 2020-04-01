@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMImageMap folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content" name="A Glamorous Party Image Map" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Editorial/Content/A%20Glamorous%20Party%20Image%20Map.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/A%20Glamorous%20Party%20Image%20Map"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="overlay">
+<Struct>
+<BooleanProperty Name="displayTitle">true</BooleanProperty>
+<BooleanProperty Name="displayDefaultPrice">true</BooleanProperty>
+<BooleanProperty Name="displayShortText">true</BooleanProperty>
+<BooleanProperty Name="displayPicture">true</BooleanProperty>
+<BooleanProperty Name="displayDiscountedPrice">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="image-map">
+<Struct>
+<StringProperty Name="id">map-area-2</StringProperty>
+<StringProperty Name="coords">1121,455,1603,572</StringProperty>
+<StringProperty Name="alt"/>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">true</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">dark-on-light</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Products/Luigi%20Valenti%20Strapless%20Cocktail%20Dress.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Products/Luigi%20Valenti%20Strapless%20Cocktail%20Dress"/>
+</Struct>
+<Struct>
+<StringProperty Name="id">map-area-1</StringProperty>
+<StringProperty Name="coords">1012,592,1611,1008</StringProperty>
+<StringProperty Name="alt"/>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">false</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">dark-on-light</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Products/Luigi%20Valenti%20Strapless%20Cocktail%20Dress.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Products/Luigi%20Valenti%20Strapless%20Cocktail%20Dress"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Eine glamouröse Party-Image-Map</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Eine glamouröse Party-Image-Map</teaserTitle>
+<pictures>
+<link href="../../Pictures/Enjoy%20a%20Glamorous%20Party%20Picture.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Pictures/Enjoy%20a%20Glamorous%20Party%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../Augmentation/Apparel/Women/Dresses/Dresses.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Augmentation/Apparel/Women/Dresses/Dresses"/>
+</target>
+</CMImageMap>

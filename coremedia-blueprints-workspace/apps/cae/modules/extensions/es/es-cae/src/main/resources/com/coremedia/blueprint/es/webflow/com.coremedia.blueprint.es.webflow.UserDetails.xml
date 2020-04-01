@@ -1,0 +1,44 @@
+<flow xmlns="http://www.springframework.org/schema/webflow"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/webflow
+                          http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+
+  <var name="bpUserDetails" class="com.coremedia.blueprint.elastic.social.cae.flows.UserDetails"/>
+
+  <on-start>
+    <evaluate expression="bpUserDetails.setPasswordPolicy(passwordPolicy)"/>
+    <set name="flowScope.nextUrl" value="webflowUrlHelper.getNextUrl(null, flowRequestContext)"/>
+    <evaluate expression="userDetailsHelper.getCommentAuthorName(flowRequestContext)" result="flowScope.authorName"/>
+    <evaluate expression="userDetailsHelper.redirectOnLogout(flowRequestContext, authorName)"
+              result="flowScope.userDetails"/>
+    <set name="flowScope.locales" value="userDetailsHelper.getLocales(flowRequestContext)"/>
+    <set name="flowScope.timeZones" value="userDetailsHelper.getTimeZones()"/>
+  </on-start>
+
+  <view-state id="bpUserDetails" model="bpUserDetails">
+    <on-render>
+      <evaluate expression="userDetailsHelper.getUserDetails(flowRequestContext, passwordPolicy, authorName)"
+                result="flowScope.userDetails"/>
+    </on-render>
+    <transition on="editUser" to="userDetailsForm">
+      <evaluate expression="userDetailsHelper.getUserDetails(flowRequestContext, passwordPolicy)" result="flowScope.userDetails"/>
+    </transition>
+  </view-state>
+
+  <view-state id="userDetailsForm" model="bpUserDetails">
+    <transition on="saveUser" to="bpUserDetails" validate="false">
+      <evaluate expression="userDetailsHelper.save(bpUserDetails, flowRequestContext, requestParameters.imageFile)"/>
+      <evaluate expression="userDetailsHelper.getUserDetails(flowRequestContext, passwordPolicy)" result="flowScope.userDetails"/>
+    </transition>
+    <transition on="deleteUser" to="logout" validate="false">
+      <evaluate expression="userDetailsHelper.deleteUser()"/>
+    </transition>
+    <transition on="cancel" to="bpUserDetails" validate="false">
+      <evaluate expression="userDetailsHelper.getUserDetails(flowRequestContext, passwordPolicy)" result="flowScope.userDetails"/>
+    </transition>
+  </view-state>
+
+  <end-state id="logout"
+             view="externalRedirect:contextRelative:/logout?spring-security-redirect=#{nextUrl}"/>
+
+</flow>

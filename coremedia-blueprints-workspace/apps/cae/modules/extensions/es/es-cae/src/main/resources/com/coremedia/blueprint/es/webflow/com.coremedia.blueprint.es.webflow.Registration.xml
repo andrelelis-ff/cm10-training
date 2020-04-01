@@ -1,0 +1,22 @@
+<flow xmlns="http://www.springframework.org/schema/webflow"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/webflow
+                          http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+
+  <var name="bpRegistration" class="com.coremedia.blueprint.elastic.social.cae.flows.Registration"/>
+
+  <on-start>
+    <set name="flowScope.nextUrl" value="webflowUrlHelper.getRootPageUrl(flowRequestContext)"/>
+    <evaluate expression="bpRegistration.setPasswordPolicy(passwordPolicy)"/>
+    <evaluate expression="registrationHelper.redirectLoggedInUserToHomePage(flowRequestContext)"/>
+  </on-start>
+
+  <view-state id="bpRegistration" model="bpRegistration">
+    <transition on="submit" to="bpRegistrationSuccess">
+      <set name="requestScope.emailAddress" value="bpRegistration.emailAddress"/>
+      <evaluate expression="registrationHelper.register(bpRegistration, flowRequestContext, requestParameters.imageFile)"/>
+    </transition>
+  </view-state>
+
+  <end-state id="bpRegistrationSuccess" view="success"/>
+</flow>

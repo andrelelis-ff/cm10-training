@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentForm
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Tab_system_title')}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ecommerce.studio.model.CatalogObjectPropertyNames;
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.commerceSystemForm";
+
+    private var config:CommerceSystemForm;
+
+    private var catalogNameExpression:ValueExpression;
+
+    // called by generated constructor code
+    private function __initialize__(config:CommerceSystemForm):void {
+      catalogNameExpression = config.bindTo.extendBy(CatalogObjectPropertyNames.CATALOG + '.name');
+    }
+
+    public native function CommerceSystemForm(config:CommerceSystemForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:PropertyFieldGroup
+            title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_PropertyGroup_filing_title')}"
+            itemId="filing">
+      <editor:items>
+        <DisplayField itemId="store"
+                      fieldLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_store_label')}"
+                      labelAlign="left"
+                      labelSeparator=":">
+          <plugins>
+            <ui:BindPropertyPlugin bindTo="{config.bindTo.extendBy(CatalogObjectPropertyNames.STORE + '.name')}"/>
+          </plugins>
+        </DisplayField>
+        <DisplayField itemId="catalog"
+                      fieldLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_catalog_label')}"
+                      labelAlign="left"
+                      labelSeparator=":">
+          <plugins>
+            <ui:BindPropertyPlugin bindTo="{catalogNameExpression}"/>
+            <ui:BindVisibilityPlugin bindTo="{catalogNameExpression}"/>
+          </plugins>
+        </DisplayField>
+        <DisplayField itemId="id"
+                      labelAlign="left"
+                      fieldLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_id_label')}"
+                      labelSeparator=":">
+          <plugins>
+            <ui:BindPropertyPlugin bindTo="{config.bindTo.extendBy(CatalogObjectPropertyNames.ID)}"/>
+          </plugins>
+        </DisplayField>
+        <DisplayField itemId="externalId"
+                      labelAlign="left"
+                      fieldLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_externalId_label')}"
+                      labelSeparator=":">
+          <plugins>
+            <ui:BindPropertyPlugin bindTo="{config.bindTo.extendBy(CatalogObjectPropertyNames.EXTERNAL_ID)}"/>
+          </plugins>
+        </DisplayField>
+        <DisplayField itemId="externalTechId"
+                      labelAlign="left"
+                      fieldLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_externalTechId_label')}"
+                      labelSeparator=":">
+          <plugins>
+            <ui:BindPropertyPlugin bindTo="{config.bindTo.extendBy(CatalogObjectPropertyNames.EXTERNAL_TECH_ID)}"/>
+          </plugins>
+        </DisplayField>
+      </editor:items>
+    </editor:PropertyFieldGroup>
+  </editor:items>
+
+</editor:DocumentForm>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+         http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <context:annotation-config/>
+
+  <import resource="classpath:/com/coremedia/blueprint/base/tree/bpbase-treerelation-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-services.xml"/>
+  <import resource="blueprint-contentfeeder-taxonomy.xml"/>
+
+  <!-- === Customize feeding === -->
+
+<!--
+  <customize:append id="feederContentPropertyIncludesCustomizer" bean="feederContentPropertyIncludes">
+    <description>
+      Mapping from content types to comma-separated list of indexed properties. Properties are only indexed if
+      content type and property type are configured for indexing as well. See configuration in feeder.properties
+      (properties starting with 'feeder.content.').
+      Note that for a certain content type you can either configure included properties in this map or excluded
+      properties in map 'feederContentPropertyExcludes' but not in both. Mappings for more specific types override
+      rules for less specific types. Property lists from different entries will not be merged.
+      The default is to include all properties.
+    </description>
+    <map>
+      &lt;!&ndash;
+      Example:
+      <entry key="Text" value="Text,Label"/>
+      &ndash;&gt;
+    </map>
+  </customize:append>-->
+
+  <customize:append id="feederContentPropertyExcludesCustomizer" bean="feederContentPropertyExcludes">
+    <description>
+      Mapping from content types to comma-separated list of properties excluded from indexing. Properties are only
+      indexed if content type and property type are configured for indexing as well. See configuration in
+      feeder.properties (properties starting with 'feeder.content.').
+      Note that for a certain content type you can either configure excluded properties in this map or included
+      properties in map 'feederContentPropertyIncludes' but not in both. Mappings for more specific types override
+      rules for less specific types. Property lists from different entries will not be merged.
+      The default is to include all properties.
+    </description>
+    <map>
+      <!-- exclude locale from textbody, a LanguageFeedablePopulator feeds the language to field 'language' -->
+      <entry key="CMLocalized" value="locale"/>
+    </map>
+  </customize:append>
+
+<!--
+  <customize:append id="feederContentBlobMaxSizePerMimeTypeCustomizer" bean="feederContentBlobMaxSizePerMimeType">
+    <description>
+      Mapping from MIME-type to maximum blob size in bytes.
+      In this map, you can override the configuration property 'feeder.content.propertyType.blobMaxSize' from
+      feeder.properties for given MIME-types. Only entries whose MIME-types are included with regard to the
+      configuration in properties 'feeder.content.propertyType.blobMimeType.includes' and
+      'feeder.content.propertyType.blobMimeType.excludes' are taken in account.
+      Values must be greater than 0. If you want to exclude a MIME-type from feeding, use property
+      'feeder.content.propertyType.blobMimeType.excludes' instead.
+      Rules for more specific types override rules for less specific types.
+    </description>
+    <map>
+      &lt;!&ndash;
+        Example:
+        <entry key="text/plain" value="10485760"/>
+      &ndash;&gt;
+    </map>
+  </customize:append>
+-->
+
+  <customize:append id="addCustomPropertyFields" bean="contentConfiguration" property="propertyFields">
+    <description>
+      Configures feeding of content properties into special index fields.
+    </description>
+    <list>
+
+      <bean class="com.coremedia.cms.feeder.content.PropertyField">
+        <description>
+          Set index field 'keywords' to the value of property 'keywords' of content type 'CMLinkable'
+          and append the keywords to the index field 'textbody'.
+        </description>
+        <property name="name" value="keywords"/>
+        <property name="doctype" value="CMLinkable"/>
+        <property name="property" value="keywords"/>
+        <property name="textBody" value="true"/>
+      </bean>
+
+      <!--
+        Add custom PropertyField definitions here.
+      -->
+
+    </list>
+  </customize:append>
+
+  <customize:append id="addFeedablePopulators" bean="index" property="feedablePopulators">
+    <description>
+      Configures FeedablePopulator implementations that run when adding or replacing index documents
+      (full update) and all elements are set in the Feedable.
+
+      The method FeedablePopulator#populate will be called with a com.coremedia.cap.content.Content object,
+      that is the type parameter T of FeedablePopulator implementations must be Content or a super type of Content.
+    </description>
+    <list>
+      <!--
+        The following FeedablePopulator sets an additional field 'tabletext' with text that
+        appears in tables of the richtext property 'Text' of contents of type 'Text'.
+      -->
+      <!--
+      <bean class="com.coremedia.cap.feeder.populate.XPathFeedablePopulator">
+        <property name="element" value="tabletext"/>
+        <property name="contentType" value="Text"/>
+        <property name="property" value="Text"/>
+        <property name="textBody" value="false"/>
+        <property name="XPath" value="/r:div/r:table"/>
+        <property name="namespaces">
+          <map>
+            <entry key="r" value="http://www.coremedia.com/2003/richtext-1.0"/>
+          </map>
+        </property>
+      </bean>
+      -->
+
+      <!--
+        The following FeedablePopulator feeds content of struct-properties to textbody field.
+      -->
+      <bean class="com.coremedia.blueprint.feeder.populate.StructFeedablePopulator">
+        <property name="solrFieldName" value="textbody"/>
+        <property name="propertyNames">
+          <list>
+            <value>settings</value>
+            <value>localSettings</value>
+          </list>
+        </property>
+      </bean>
+
+      <ref bean="contentFeederLanguageFeedablePopulator"/>
+    </list>
+  </customize:append>
+
+  <bean id="contentFeederLanguageFeedablePopulator"
+        class="com.coremedia.blueprint.feeder.populate.LanguageFeedablePopulator">
+    <property name="sitesService" ref="sitesService"/>
+  </bean>
+
+</beans>

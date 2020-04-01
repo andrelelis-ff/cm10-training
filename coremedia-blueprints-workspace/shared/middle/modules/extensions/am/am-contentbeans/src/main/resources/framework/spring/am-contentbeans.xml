@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <import resource="classpath:/framework/spring/blueprint-contentbeans.xml"/>
+
+  <!-- register content beans -->
+  <bean name="contentBeanFactory:AMAsset"
+        class="com.coremedia.blueprint.assets.contentbeans.AMAssetImpl"
+        scope="prototype"/>
+  <bean name="contentBeanFactory:AMPictureAsset"
+        class="com.coremedia.blueprint.assets.contentbeans.AMPictureAssetImpl"
+        scope="prototype"/>
+  <bean name="contentBeanFactory:AMVideoAsset"
+        class="com.coremedia.blueprint.assets.contentbeans.AMVideoAssetImpl"
+        scope="prototype"/>
+  <bean name="contentBeanFactory:AMDocumentAsset"
+        class="com.coremedia.blueprint.assets.contentbeans.AMDocumentAssetImpl"
+        scope="prototype"/>
+  <bean name="contentBeanFactory:AMTaxonomy"
+        class="com.coremedia.blueprint.assets.contentbeans.AMTaxonomyImpl"
+        parent="abstractTaxonomyBean-blueprint-doctypes"
+        scope="prototype"/>
+
+  <bean name="hasPublishedRenditionsValidator"
+        class="com.coremedia.blueprint.assets.validation.HasPublishedRenditionsValidator"/>
+
+</beans>

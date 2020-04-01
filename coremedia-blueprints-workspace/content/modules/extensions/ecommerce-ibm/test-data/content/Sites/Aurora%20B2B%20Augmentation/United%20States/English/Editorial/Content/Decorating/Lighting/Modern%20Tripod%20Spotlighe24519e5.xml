@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMDownload folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Decorating/Lighting" name="Modern Tripod Spotlight Setup Documentation" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_CHEF_CORP_TRIPOD_LIGHT</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Modern Tripod Spotlight Setup Documentation</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../../../Pictures/Product%20Pictures/Decorating/Lighting/Chef%20Corp%20Tr1412a0ce.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Decorating/Lighting/Chef%20Corp%20Tripod%20Light%20Detail%20Picture%201"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<data md5="bd4782b98d49927a28dc6e67c626e31d" size="305878" href="../../../../../../../../__blob/bd4782b98d49927a28dc6e67c626e31d.blob" mimetype="application/pdf"/>
+<filename></filename>
+</CMDownload>

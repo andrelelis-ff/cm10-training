@@ -1,0 +1,59 @@
+@if $cm-include-template-bean-list-chooser {
+  // component
+  $_block: "cm-template-bean-list-chooser";
+  // item
+  $_item-block: "cm-template-bean-list-chooser-item";
+
+  $_preview-box-width: $cm-template-bean-list-chooser-preview-width
+                                  + left($cm-template-bean-list-chooser-preview-padding)
+                                  + right($cm-template-bean-list-chooser-preview-padding);
+  $_preview-box-height: $cm-template-bean-list-chooser-preview-height
+                                   + top($cm-template-bean-list-chooser-preview-padding)
+                                   + bottom($cm-template-bean-list-chooser-preview-padding);
+  $_text-box-width: $cm-template-bean-list-chooser-text-line-height
+                               + left($cm-template-bean-list-chooser-text-padding)
+                               + right($cm-template-bean-list-chooser-text-padding);
+  $_text-box-height: $cm-template-bean-list-chooser-text-line-height
+                                + top($cm-template-bean-list-chooser-text-padding)
+                                + bottom($cm-template-bean-list-chooser-text-padding)
+                                - 1px;  // fix for mac os to prevent the third row in the text-box from being displayed
+
+  .#{$_block} {
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+      margin: $cm-template-bean-list-chooser-margin;
+    }
+  }
+  .#{$_item-block} {
+    width: max($_preview-box-width, $_text-box-width);
+    height: $_preview-box-height + $_text-box-height;
+    line-height: 1;
+    text-align: center;
+    border-radius: $cm-border-radius;
+    border: 1px solid $cm-grey-3;
+    z-index: 1;
+    position: relative;
+
+    &__text {
+      margin: 0;
+      padding: $cm-template-bean-list-chooser-text-padding;
+      color: $cm-template-bean-list-chooser-text-font-color;
+      font-style: italic;
+      text-align: center;
+      overflow: hidden;
+      font-size: $cm-template-bean-list-chooser-text-font-size;
+      line-height: $cm-template-bean-list-chooser-text-line-height;
+      height: $_text-box-height;
+      word-wrap: break-word;
+    }
+
+    &.#{$prefix}item-selected {
+      background-color: $cm-template-bean-list-chooser-item-selected-background-color;
+      border-color: $cm-template-bean-list-chooser-item-selected-border-color
+      .#{$_item-block}__text {
+        color: $cm-template-bean-list-chooser-text-font-color-selected;
+      }
+    }
+  }
+}

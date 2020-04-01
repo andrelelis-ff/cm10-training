@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMHTML folder="/Sites/SiteGenesis Global/France/French/Editorial/Slots/Header" name="Electronics Header Banner Promo HTML" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Slots/Header/Electronics%20Header%20Banner%20Promo%20HTML.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Slots/Header/Electronics%20Header%20Banner%20Promo%20HTML"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<description></description>
+<data grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> &lt;div class = "html-slot-container"&gt; </p> <p> &lt;div class = "cm-header-promotion"&gt; </p> <p> &lt;strong&gt; Promotion spéciale pour l'électronique &lt;/ strong&gt; livraison gratuite pour les commandes de plus de 50 $ </p> <p> &lt;/ div&gt; </p> <p> &lt;/ Div&gt; </p> </div></data>
+</CMHTML>

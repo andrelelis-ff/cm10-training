@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content/Homepage/Corporate Image" name="Chef Corp Promotion Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Content/Homepage/Corporate%20Image/Chef%20Corp%20Promo8c7998d.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Homepage/Corporate%20Image/Chef%20Corp%20Promotion%20Collection"/>
+</master>
+<viewtype>
+<link href="../../../../Options/Viewtypes/CMChannel/portrait.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Viewtypes/CMChannel/portrait"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../../Products/Aurora%20B2B/Kitchen/Hoods/Chef%20Extractor%20Hood%20HD900.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Kitchen/Hoods/Chef%20Extractor%20Hood%20HD900"/>
+<link href="Success%20Story%20-%20Sally%caf49ce1.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Homepage/Corporate%20Image/Success%20Story%20-%20Sally%27s%20Restaurant%20Teaser"/>
+<link href="../../Microsites/History%20of%20Interior%20Design/History%20o216cec4c.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Microsites/History%20of%20Interior%20Design/History%20of%20Interior%20Design%20Article%20Teaser"/>
+</items>
+</CMCollection>

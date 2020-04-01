@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+  <content>
+    <folder id="1" name="" placeApproved="true" published="true" modificationDate="2009-06-01T20:59:42.000+01:00">
+      <folder id="3" name="Sites">
+        <folder id="5" name="MySite">
+          <document id="2" type="CMChannel" name="SiteRootChannel">
+            <version number="1">
+              <linkProperty name="linkedSettings">
+                <link id="8"/>
+              </linkProperty>
+              <linkProperty name="children">
+                <link id="10"/>
+              </linkProperty>
+              <stringProperty name="segment" value="mysite"/>
+              <stringProperty name="title" value="Site Title"/>
+              <stringProperty name="keywords" value="key,word,mysite"/>
+            </version>
+          </document>
+          <document id="4" type="CMSite" name="My SiteName">
+            <version number="1">
+              <linkProperty name="root">
+                <link id="2"/>
+              </linkProperty>
+              <stringProperty name="locale" value="en-US"/>
+              <stringProperty name="id" value="site-id"/>
+              <stringProperty name="name" value="the-site-name"/>
+            </version>
+          </document>
+          <document id="6" type="CMFolderProperties" name="_folderProperties">
+            <version number="1">
+              <linkProperty name="contexts">
+                <link id="2"/>
+              </linkProperty>
+            </version>
+          </document>
+          <document id="8" type="CMSettings" name="SitesLinkedSettings">
+            <version number="1">
+              <markupProperty name="settings" url="8linkedsettings.xml" grammar="coremedia-struct-2008"/>
+            </version>
+          </document>
+
+          <document id="10" type="CMChannel" name="Page1">
+            <version number="1">
+              <!-- <markupProperty name="localSettings" url="10settings.xml" grammar="coremedia-struct-2008"/> -->
+              <linkProperty name="children">
+                <link id="100"/>
+              </linkProperty>
+              <stringProperty name="segment" value="page1"/>
+              <stringProperty name="title" value="Page 1"/>
+              <stringProperty name="keywords" value="key,word,page1"/>
+              <!-- <markupProperty name="placement" url="10placement.xml" grammar="coremedia-struct-2008"/> -->
+            </version>
+          </document>
+
+          <document id="100" type="CMExternalChannel" name="AugmentedCategory11">
+            <version number="1">
+              <markupProperty name="localSettings" url="100localsettings.xml" grammar="coremedia-struct-2008"/>
+              <linkProperty name="children">
+              </linkProperty>
+              <stringProperty name="segment" value="augmentedcategory11"/>
+              <stringProperty name="title" value="Augmented Category 1.1"/>
+              <stringProperty name="keywords" value="key,word,augmentedcategory11"/>
+              <!-- <markupProperty name="placement" url="10placement.xml" grammar="coremedia-struct-2008"/> -->
+            </version>
+          </document>
+        </folder>
+      </folder>
+    </folder>
+  </content>
+  <rules>
+    <rule resourceId="1" group="0" doctype="Folder_">
+      <right value="ALL"/>
+    </rule>
+    <rule resourceId="1" group="0" doctype="Document_">
+      <right value="ALL"/>
+    </rule>
+  </rules>
+</contentRepository>

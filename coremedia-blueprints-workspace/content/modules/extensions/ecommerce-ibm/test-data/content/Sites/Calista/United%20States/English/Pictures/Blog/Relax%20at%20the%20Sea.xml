@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/United States/English/Pictures/Blog" name="Relax at the Sea" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.40900383141762453</StringProperty>
+<StringProperty Name="y">0.23186119873817035</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=2000;height=1125</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=366;y=0;width=911;height=1214</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=418;y=0;width=809;height=1214</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=13;y=0;width=1619;height=1214</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=215;y=0;width=1214;height=1214</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=0;width=2000;height=750</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Relax at the Sea</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Relax at the Sea</alt>
+<copyright>shutterstock_387823966</copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1214</height>
+<data md5="b4a42720a36e9b4041e0b1c01fd00719" size="599269" href="../../../../../../__blob/b4a42720a36e9b4041e0b1c01fd00719.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

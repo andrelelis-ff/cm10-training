@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content/Kitchen Products" name="Kitchen Goods Promotion Teaser Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Kitchen%20Products/Kitchen%20Goods%20Promotion3fc631ae.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Kitchen%20Products/Kitchen%20Goods%20Promotion%20Teaser%20Collection"/>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMChannel/portrait.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Viewtypes/CMChannel/portrait"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../Products/Aurora%20B2B/Kitchen/Chef%20Wave/Chef%20Wave%20Heavy%2b0b71b35.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Kitchen/Chef%20Wave/Chef%20Wave%20Heavy%20Duty%20Fryer%20Large"/>
+<link href="../../Products/Aurora%20B2B/Kitchen/Blenders/Kitchenette%20KN30%20Blender.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Kitchen/Blenders/Kitchenette%20KN30%20Blender"/>
+<link href="../../Products/Aurora%20B2B/Kitchen/Ranges/Chef%20Ranges%20CR990%20Pr1c6006c2.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Kitchen/Ranges/Chef%20Ranges%20CR990%20Product%20Teaser"/>
+</items>
+</CMCollection>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/Calista/Germany/German/Options/Viewtypes/CMChannel" name="full-details" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Options/Viewtypes/CMChannel/full-details.xml" path="/Sites/Calista/United%20States/English/Options/Viewtypes/CMChannel/full-details"/>
+</master>
+<description>Zeigt Inhalte mit vollem Detail, z.B. einen Artikel mit seinem Volltext, statt nur einem Banner.</description>
+<icon href="full-details.icon.svg%2Bxml" mimetype="image/svg+xml"/>
+<layout>full-details</layout>
+</CMViewtype>

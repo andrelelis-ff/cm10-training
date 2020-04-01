@@ -1,0 +1,21 @@
+@if $cm-include-es-cm-mail-help-window {
+
+  .es-cm-mail-help-window table {
+    border-collapse: collapse;
+    margin-top: $cm-grid-200;
+  }
+
+  .es-cm-mail-help-window table,
+  .es-cm-mail-help-window th,
+  .es-cm-mail-help-window td {
+    border: 1px solid $cm-black;
+  }
+  .es-cm-mail-help-window th,
+  .es-cm-mail-help-window td {
+    text-align: left;
+    padding: 3px 5px;
+  }
+  .es-cm-mail-help-window th {
+    font-weight: $cm-font-weight-bold;
+  }
+}

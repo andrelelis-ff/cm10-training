@@ -1,0 +1,20 @@
+<flow xmlns="http://www.springframework.org/schema/webflow"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/webflow
+                          http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+
+  <on-start>
+    <set name="flowScope.nextUrl" value="webflowUrlHelper.getLogoutUrl(flowRequestContext)"/>
+  </on-start>
+
+  <!-- check if user is logged in -->
+  <decision-state id="isLoggedIn">
+    <if test="loginHelper.isLoggedIn()" then="bpSuccess" else="invalid"/>
+  </decision-state>
+
+  <!-- if not, redirect to nextUrl -->
+  <end-state id="invalid" view="externalRedirect:#{nextUrl}"/>
+  <!-- if yes, logout and afterwards redirect to nextUrl -->
+  <end-state id="bpSuccess" view="externalRedirect:contextRelative:/logout?spring-security-redirect=#{nextUrl}" />
+
+</flow>

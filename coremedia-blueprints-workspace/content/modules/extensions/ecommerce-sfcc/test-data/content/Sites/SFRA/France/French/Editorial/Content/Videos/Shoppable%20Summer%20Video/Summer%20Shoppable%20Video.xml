@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable Summer Video" name="Summer Shoppable Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Editorial/Content/Videos/Shoppable%20Summer%20Video/Summer%20Shoppable%20Video.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Videos/Shoppable%20Summer%20Video/Summer%20Shoppable%20Video"/>
+</master>
+<viewtype>
+<link href="../../../../Options/Viewtypes/CMVideo/shoppable.xml" path="/Sites/SFRA/France/French/Options/Viewtypes/CMVideo/shoppable"/>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="playerSettings">
+<Struct>
+<BooleanProperty Name="autoplay">true</BooleanProperty>
+<BooleanProperty Name="hideControls">true</BooleanProperty>
+<BooleanProperty Name="muted">true</BooleanProperty>
+<BooleanProperty Name="loop">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="teaserOverlay">
+<Struct>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/SFRA/France/French/Options/Settings/Teaser%20Styles/Light"/>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<IntProperty Name="positionY">50</IntProperty>
+<IntProperty Name="width">83</IntProperty>
+</Struct>
+</StructProperty>
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Défilé de mode Black Trend Video</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Summer.xml" path="/Settings/Taxonomies/Subject/Summer"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>La nouvelle collection d'été</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center"> La nouvelle collection d'été </p> <p class="align--center"> Obtenez votre look frais pour cette saison </p> </div></teaserText>
+<pictures>
+<link href="../../../Pictures/Fashion%20Show%20Shoppable%20Video%20-%20Picture.xml" path="/Sites/SFRA/France/French/Editorial/Pictures/Fashion%20Show%20Shoppable%20Video%20-%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="fdac885691dfc8d802c8c647eb49f107" size="15077323" href="../../../../../../../../__blob/fdac885691dfc8d802c8c647eb49f107.blob" mimetype="video/mp4"/>
+<timeLine>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<LinkProperty Name="defaultTarget" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Personalization/Gender%20Specific%20Teaser.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Personalization/Gender%20Specific%20Teaser"/>
+<StructListProperty Name="sequences">
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Products/Summer%20Hat.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Summer%20Hat"/>
+<IntProperty Name="startTimeMillis">1000</IntProperty>
+<IntProperty Name="position">1</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Products/Red%20Top.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Red%20Top"/>
+<IntProperty Name="startTimeMillis">6000</IntProperty>
+<IntProperty Name="position">2</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Products/Sandal.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Sandal"/>
+<IntProperty Name="startTimeMillis">7000</IntProperty>
+<IntProperty Name="position">3</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Products/Jeans%20Dress.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Jeans%20Dress"/>
+<IntProperty Name="startTimeMillis">9000</IntProperty>
+<IntProperty Name="position">4</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Products/Summer%20Hat.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Summer%20Hat"/>
+<IntProperty Name="startTimeMillis">10000</IntProperty>
+<IntProperty Name="position">5</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Products/Flower%20Dress.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Flower%20Dress"/>
+<IntProperty Name="startTimeMillis">12000</IntProperty>
+<IntProperty Name="position">6</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Products/Handbag.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Handbag"/>
+<IntProperty Name="startTimeMillis">13000</IntProperty>
+<IntProperty Name="position">7</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Products/White%20Blouse.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/White%20Blouse"/>
+<IntProperty Name="startTimeMillis">19000</IntProperty>
+<IntProperty Name="position">9</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Products/Jeans%20Hot%20Pants.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Jeans%20Hot%20Pants"/>
+<IntProperty Name="startTimeMillis">20000</IntProperty>
+<IntProperty Name="position">8</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Products/Versatil%20Sunglasses.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Versatil%20Sunglasses"/>
+<IntProperty Name="startTimeMillis">25000</IntProperty>
+<IntProperty Name="position">10</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Products/Summer%20Sunglasses.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Summer%20Sunglasses"/>
+<IntProperty Name="startTimeMillis">26000</IntProperty>
+<IntProperty Name="position">11</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Products/Striped%20Dress.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Striped%20Dress"/>
+<IntProperty Name="startTimeMillis">30000</IntProperty>
+<IntProperty Name="position">13</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Products/Jeans%20Dress.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Jeans%20Dress"/>
+<IntProperty Name="startTimeMillis">31000</IntProperty>
+<IntProperty Name="position">12</IntProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</timeLine>
+<asset>
+</asset>
+</CMVideo>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:GoogleAnalyticsRetrievalFieldsBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.googleanalytics.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsStudioPlugin', 'SpacerTitle_googleanalytics')}"
+        itemId="googleAnalyticsRetrievalForm">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.googleanalytics.googleAnalyticsRetrievalFields";
+
+    private var config:GoogleAnalyticsRetrievalFields;
+
+    public native function GoogleAnalyticsRetrievalFields(config:GoogleAnalyticsRetrievalFields = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <editor:StringPropertyField propertyName="localSettings.googleAnalytics.applicationName"/>
+    <editor:StringPropertyField propertyName="localSettings.googleAnalytics.serviceAccountEmail"/>
+    <editor:SingleLinkEditor linkContentType="CMDownload"
+                             bindTo="{getP12FileVE()}"
+                             parentContentValueExpression="{config.bindTo}"
+                             linkListLabel="{resourceManager.getString('com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsStudioPlugin', 'googleanalytics_p12file')}"/>
+    <editor:IntegerPropertyField propertyName="localSettings.googleAnalytics.pid"/>
+    <editor:IntegerPropertyField propertyName="localSettings.googleAnalytics.limit"/>
+    <editor:IntegerPropertyField propertyName="localSettings.googleAnalytics.interval"/>
+  </local:items>
+
+</local:GoogleAnalyticsRetrievalFieldsBase>

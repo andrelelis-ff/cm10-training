@@ -1,0 +1,69 @@
+/* --- imagemap ----------------------------------------------------------------------------------------------------- */
+.cm-imagemap {
+  position: relative;
+
+  &__button-group {
+    display: none;
+  }
+
+  &__hotzone--icon {
+    border-radius: 12px;
+    font-size: 24px;
+    height: 24px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+
+  &__hotzone--hover.cm-imagemap__hotzone--icon {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  &__hotzone--active.cm-imagemap__hotzone--icon {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  &__hotzone--icon > i {
+    display: block;
+  }
+}
+
+/*---OVERLAYs--*/
+
+.cm-overlay {
+  text-align: right;
+  font-style: normal;
+  font-size: 1.2rem;
+
+  &--theme-dark {
+    color: $cm-text-color;
+  }
+
+  &--theme-light {
+    color: #fff;
+  }
+
+  &--theme-light-on-dark {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+
+  &--theme-dark-on-light {
+    color: $cm-text-color;
+    background-color: rgba(255, 255, 255, 0.65);
+  }
+
+  & a {
+    display: block;
+    color: inherit;
+    padding: 2px 10px;
+  }
+
+  & a:hover {
+    text-decoration: none;
+  }
+
+  &:hover .cm-overlay__item--title {
+    text-decoration: underline;
+  }
+}

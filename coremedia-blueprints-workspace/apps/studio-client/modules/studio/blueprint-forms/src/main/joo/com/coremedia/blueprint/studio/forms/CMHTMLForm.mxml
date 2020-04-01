@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.cmhtmlForm";
+
+    //noinspection JSUnusedLocalSymbols
+    private var config:CMHTMLForm;
+
+    public native function CMHTMLForm(config:CMHTMLForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Details_label')}"
+                itemId="detailsDocumentForm"
+                propertyNames="{['teaserTitle','description']}">
+          <editor:items>
+            <editor:StringPropertyField propertyName="teaserTitle"/>
+            <editor:StringPropertyField propertyName="description"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMHTML_data_text')}"
+                itemId="cmHtmlDataForm">
+          <editor:items>
+            <editor:RichTextPropertyField itemId="data"
+                                          hideLabel="true"
+                                          propertyName="data">
+              <editor:plugins exml:mode="append">
+                <editor:HideRichTextToolbarPlugin/>
+              </editor:plugins>
+            </editor:RichTextPropertyField>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:DefaultExtraDataForm/>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataInformationForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

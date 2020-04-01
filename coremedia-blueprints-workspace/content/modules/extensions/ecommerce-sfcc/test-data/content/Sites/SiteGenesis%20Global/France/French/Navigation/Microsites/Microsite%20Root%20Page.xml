@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/SiteGenesis Global/France/French/Navigation/Microsites" name="Microsite Root Page" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Navigation/Microsites/Microsite%20Root%20Page.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Navigation/Microsites/Microsite%20Root%20Page"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>micrositeroot-page</segment>
+<title>Microsites</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<notSearchable>0</notSearchable>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+<link href="Fashion%20Show%20Microsite.xml" path="/Sites/SiteGenesis%20Global/France/French/Navigation/Microsites/Fashion%20Show%20Microsite"/>
+</children>
+<hidden>1</hidden>
+<hiddenInSitemap>1</hiddenInSitemap>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

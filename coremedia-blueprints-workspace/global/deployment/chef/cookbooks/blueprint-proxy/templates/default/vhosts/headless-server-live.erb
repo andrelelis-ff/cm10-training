@@ -1,0 +1,48 @@
+<VirtualHost *:80 >
+  ServerName <%= @server_name %>
+  <%- unless @server_aliases.nil? || @server_aliases.empty? -%>
+    ServerAlias <%= @server_aliases.join " " %>
+  <%- end -%>
+  #####################
+  ###    Rewrite    ###
+  #####################
+  RewriteEngine On
+
+  RewriteCond %{HTTPS} off
+  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+  LogLevel <%= @apache_log_level.nil? ? 'warn' : @apache_log_level %> rewrite:<%= @rewrite_log_level.nil? ? 'trace1' : @rewrite_log_level %>
+  ErrorLog /var/log/httpd/<%= @application_name %>-error.log
+  CustomLog /var/log/httpd/<%= @application_name %>-access.log combined
+</Virtualhost>
+
+<VirtualHost *:443 >
+  ServerName <%= @server_name %>
+  <%- unless @server_aliases.nil? || @server_aliases.empty? -%>
+    ServerAlias <%= @server_aliases.join " " %>
+  <%- end -%>
+  SSLEngine  On
+
+  #####################
+  ###    Proxy      ###
+  #####################
+  ProxyPreserveHost On
+  RequestHeader set X-Forwarded-Proto "https"
+
+  <%- proxy_url = "http://#{@proxy_host}:#{@proxy_port}" -%>
+
+  # the trailing "e" is no typo
+  Header add Set-Cookie "ROUTEID=.%{BALANCER_WORKER_ROUTE}e; path=/" env=BALANCER_ROUTE_CHANGED
+
+  # we forward all incoming traffic/requests from port 80 to internal port 41180
+  # in case we need some restrictions to some paths, we deny those explicitly FIRST! like this ...
+  # ProxyPass /restrictedPath !
+  ProxyPass / <%= proxy_url %>/
+
+  #####################
+  ###    Logging    ###
+  #####################
+  LogLevel <%= @apache_log_level.nil? ? 'warn' : @apache_log_level %> rewrite:<%= @rewrite_log_level.nil? ? 'trace1' : @rewrite_log_level %>
+  ErrorLog /var/log/httpd/<%= @application_name %>-ssl-error.log
+  CustomLog /var/log/httpd/<%= @application_name %>-ssl-access.log combined
+
+</VirtualHost>

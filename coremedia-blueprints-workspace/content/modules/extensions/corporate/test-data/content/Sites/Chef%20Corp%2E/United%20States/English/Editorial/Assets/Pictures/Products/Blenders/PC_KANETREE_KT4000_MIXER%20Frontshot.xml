@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Pictures/Products/Blenders" name="PC_KANETREE_KT4000_MIXER Frontshot" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=607;y=0;width=1367;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=227;y=0;width=1747;height=1307</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=1974;height=1109</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=729;y=0;width=910;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=209;width=2048;height=768</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.2963709677419355;y1=0;x2=0.9637096774193549;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.11088709677419355;y1=0;x2=0.9637096774193549;y2=0.9577039274924471</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0;x2=0.9637096774193549;y2=0.8126888217522659</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.5766806722689075</StringProperty>
+<StringProperty Name="y">0.4305993690851735</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Kanetree KT4000 Mixer</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Picture of the Kanetree KT4000 Mixer</alt>
+<copyright>armari/Shutterstock 145724678</copyright>
+<dataUrl></dataUrl>
+<data md5="09488ddafe826995e517910e15071ef3" size="392977" href="../../../../../../../../../__blob/09488ddafe826995e517910e15071ef3.blob" mimetype="image/jpeg"/>
+<asset>
+<link href="../../../../../../../../../Assets/Products/Blenders%20and%20Food%20Processors/Kanetree%20KT4000%20Mixer%20Frontshot.xml" path="/Assets/Products/Blenders%20and%20Food%20Processors/Kanetree%20KT4000%20Mixer%20Frontshot"/>
+</asset>
+</CMPicture>

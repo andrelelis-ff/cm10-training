@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:PlayerSettingsPropertyGroupBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:local="com.coremedia.blueprint.studio.forms.containers.*">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cap.content.ContentPropertyNames;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.playersettingspropertygroup";
+
+    /**
+     * The columns of the CheckboxGroup. Defaults to 1.
+     */
+    public var columns:Number;
+
+    /**
+     * Defines if the Autoplay Checkbox should be hidden. Defaults to false.
+     */
+    public var hideAutoplayCheckbox:Boolean = false;
+
+    /**
+     * Defines if the Mute Checkbox should be hidden. Defaults to false.
+     */
+    public var hideMuteCheckbox:Boolean = false;
+
+    /**
+     * Defines if the Loop Checkbox should be hidden. Defaults to false.
+     */
+    public var hideLoopCheckbox:Boolean = false;
+
+    /**
+     * Defines if the Hide Controls Checkbox should be hidden. Defaults to false.
+     */
+    public var hideHideControlsCheckbox:Boolean = false;
+
+    private static const LOCAL_SETTINGS:String = "localSettings";
+
+    private static const PLAYER_SETTINGS:String = "playerSettings";
+
+    private const CHECKBOXGROUP_ITEM_ID:String = "playerSettingsCheckBoxGroup";
+
+    private var config:PlayerSettingsPropertyGroup;
+
+    private static const PLAYER_SETTINGS_PROPERTY:String = LOCAL_SETTINGS + '.' + PLAYER_SETTINGS;
+    private static const AUTOPLAY_PROPERTY_NAME:String = PLAYER_SETTINGS_PROPERTY + '.autoplay';
+    private static const MUTE_PROPERTY_NAME:String = PLAYER_SETTINGS_PROPERTY + '.muted';
+    private static const LOOP_PROPERTY_NAME:String = PLAYER_SETTINGS_PROPERTY + '.loop';
+    private static const HIDE_CONTROLS_PROPERTY_NAME:String = PLAYER_SETTINGS_PROPERTY + '.hideControls';
+
+    public native function PlayerSettingsPropertyGroup(config:PlayerSettingsPropertyGroup = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <ui:StatefulCheckboxGroup itemId="{CHECKBOXGROUP_ITEM_ID}"
+                              columns="{config.columns || 1}">
+      <ui:items>
+        <ui:StatefulCheckbox itemId="Autoplay"
+                             hidden="{config.hideAutoplayCheckbox}">
+          <ui:plugins>
+            <editor:SetPropertyLabelPlugin bindTo="{config.bindTo}"
+                                           propertyName="{AUTOPLAY_PROPERTY_NAME}"
+                                           labelProperty="boxLabel"/>
+            <ui:BindPropertyPlugin bidirectional="true"
+                                   bindTo="{config.bindTo.extendBy(ContentPropertyNames.PROPERTIES, AUTOPLAY_PROPERTY_NAME)}"
+                                   ifUndefined="{false}"/>
+            <editor:ShowIssuesPlugin bindTo="{config.bindTo}"
+                                     hideIssues="false"
+                                     ifUndefined="false"
+                                     propertyName="{AUTOPLAY_PROPERTY_NAME}"/>
+            <editor:BindDisablePlugin forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                      bindTo="{config.bindTo}"/>
+            <editor:PropertyFieldPlugin propertyName="{AUTOPLAY_PROPERTY_NAME}"/>
+          </ui:plugins>
+        </ui:StatefulCheckbox>
+        <ui:StatefulCheckbox itemId="Mute"
+                             hidden="{config.hideMuteCheckbox}">
+          <ui:plugins>
+            <editor:SetPropertyLabelPlugin bindTo="{config.bindTo}"
+                                           propertyName="{MUTE_PROPERTY_NAME}"
+                                           labelProperty="boxLabel"/>
+            <ui:BindPropertyPlugin bidirectional="true"
+                                   ifUndefined="{false}"
+                                   bindTo="{config.bindTo.extendBy(ContentPropertyNames.PROPERTIES, MUTE_PROPERTY_NAME)}"/>
+            <editor:ShowIssuesPlugin bindTo="{config.bindTo}"
+                                     ifUndefined="false"
+                                     hideIssues="false"
+                                     propertyName="{MUTE_PROPERTY_NAME}"/>
+            <editor:BindDisablePlugin forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                      bindTo="{config.bindTo}"/>
+            <editor:PropertyFieldPlugin propertyName="{MUTE_PROPERTY_NAME}"/>
+          </ui:plugins>
+        </ui:StatefulCheckbox>
+        <ui:StatefulCheckbox itemId="Loop"
+                             hidden="{config.hideLoopCheckbox}">
+          <ui:plugins>
+            <editor:SetPropertyLabelPlugin bindTo="{config.bindTo}"
+                                           propertyName="{LOOP_PROPERTY_NAME}"
+                                           labelProperty="boxLabel"/>
+            <ui:BindPropertyPlugin bidirectional="true"
+                                   ifUndefined="{false}"
+                                   bindTo="{config.bindTo.extendBy(ContentPropertyNames.PROPERTIES, LOOP_PROPERTY_NAME)}"/>
+            <editor:ShowIssuesPlugin bindTo="{config.bindTo}"
+                                     ifUndefined="false"
+                                     hideIssues="false"
+                                     propertyName="{LOOP_PROPERTY_NAME}"/>
+            <editor:BindDisablePlugin forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                      bindTo="{config.bindTo}"/>
+            <editor:PropertyFieldPlugin propertyName="{LOOP_PROPERTY_NAME}"/>
+          </ui:plugins>
+        </ui:StatefulCheckbox>
+        <ui:StatefulCheckbox itemId="HideControls"
+                             hidden="{config.hideHideControlsCheckbox}">
+          <ui:plugins>
+            <editor:SetPropertyLabelPlugin bindTo="{config.bindTo}"
+                                           propertyName="{HIDE_CONTROLS_PROPERTY_NAME}"
+                                           labelProperty="boxLabel"/>
+            <ui:BindPropertyPlugin bidirectional="true"
+                                   ifUndefined="{false}"
+                                   bindTo="{config.bindTo.extendBy(ContentPropertyNames.PROPERTIES, HIDE_CONTROLS_PROPERTY_NAME)}"/>
+            <editor:ShowIssuesPlugin bindTo="{config.bindTo}"
+                                     hideIssues="false"
+                                     ifUndefined="false"
+                                     propertyName="{HIDE_CONTROLS_PROPERTY_NAME}"/>
+            <editor:BindDisablePlugin forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                      bindTo="{config.bindTo}"/>
+            <editor:PropertyFieldPlugin propertyName="{HIDE_CONTROLS_PROPERTY_NAME}"/>
+          </ui:plugins>
+        </ui:StatefulCheckbox>
+      </ui:items>
+      <ui:defaults>
+        <ui:StatefulCheckbox hideLabel="true"/>
+      </ui:defaults>
+    </ui:StatefulCheckboxGroup>
+  </local:items>
+</local:PlayerSettingsPropertyGroupBase>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/United States/English/Editorial/Content/Startpage" name="Elegant young handsome man Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1148;y=0;width=1741;height=2699</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=1014;y=0;width=1986;height=2648</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=300;y=0;width=2699;height=2699</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=3000;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=29;width=3000;height=1688</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=94;width=3000;height=1200</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=498;width=3000;height=750</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.671875</StringProperty>
+<StringProperty Name="y">0.32334384858044163</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.03470031545741325;x2=1;y2=0.47930942994426023</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.33793103448275863;y1=0;x2=1;y2=0.9812063216261451</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Elegant young handsome man. Studio fashion portrait.</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Elegant young handsome man. Studio fashion portrait.</alt>
+<copyright>InnervisionArt/Shutterstock 103550033</copyright>
+<dataUrl></dataUrl>
+<width>3000</width>
+<height>2699</height>
+<data md5="7594b368965de46d601c0d7d75ec4004" size="5684528" href="../../../../../../../__blob/7594b368965de46d601c0d7d75ec4004.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

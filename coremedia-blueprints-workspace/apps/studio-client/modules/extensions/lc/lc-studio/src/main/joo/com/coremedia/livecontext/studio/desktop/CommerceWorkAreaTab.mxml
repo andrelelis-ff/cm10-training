@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CommerceWorkAreaTabBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                               xmlns:local="com.coremedia.livecontext.studio.desktop.*"
+                               xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                               xmlns="exml:ext.config"
+                               xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                               xmlns:livecontext="exml:com.coremedia.livecontext.studio.config"
+                               xmlns:ui="exml:com.coremedia.ui.config">
+
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.skins.SplitterSkin;
+    import com.coremedia.ui.skins.TabBarSkin;
+    import com.coremedia.ui.skins.ToolbarSkin;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.commerceWorkAreaTab";
+
+    private var config:CommerceWorkAreaTab;
+
+    public native function CommerceWorkAreaTab(config:CommerceWorkAreaTab = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <fx:Array id="subTabs"/>
+
+    <fx:Object id="object"/>
+  </fx:Declarations>
+
+  <local:layout>
+    <layout_HBox align="stretch"/>
+  </local:layout>
+
+  <local:items>
+    <Container itemId="{DOCUMENT_CONTAINER_ITEM_ID}"
+               layout="vbox"
+               flex="1"
+               height="100%"
+               minWidth="470">
+      <items>
+        <livecontext:CommerceFormToolbar bindTo="{getEntityExpression()}"
+                                         width="100%"
+                                         ui="{ToolbarSkin.WORKAREA.getSkin()}"
+                                         collapseHandler="{function():void {collapsePanel(DOCUMENT_CONTAINER_ITEM_ID);}}"/>
+        <TabPanel collapsible="false"
+                  scrollable="true"
+                  activeItem="0"
+                  flex="1"
+                  itemId="tabs"
+                  height="100%"
+                  width="100%"
+                  items="{config.subTabs}">
+          <plugins>
+            <editor:TabExpandPlugin/>
+          </plugins>
+          <defaults>
+            <editor:DocumentForm bindTo="{getEntityExpression()}"/>
+          </defaults>
+          <tabBar>
+            <TabBar ui="{TabBarSkin.WORKAREA_PANEL.getSkin()}"/>
+          </tabBar>
+        </TabPanel>
+      </items>
+    </Container>
+    <!-- SEPARATOR-->
+    <ui:MultiItemSplitter itemId="{PREVIEW_SPLIT_BAR_ITEM_ID}"
+                          stateId="premular-splitter"
+                          ui="{SplitterSkin.PREMULAR.getSkin()}"
+                          width="4px"
+                          collapseOnDblClick="false"/>
+    <editor:PreviewPanel itemId="{PREVIEW_PANEL_ITEM_ID}"
+                         flex="1"
+                         height="100%"
+                         minWidth="300"
+                         collapsible="true"
+                         collapseHandler="{function():void {collapsePanel(PREVIEW_PANEL_ITEM_ID);}}"
+                         bindTo="{getEntityExpression()}"
+                         reloadAfterChangesDelay="1000"/>
+  </local:items>
+  <local:layout>
+    <layout_HBox/>
+  </local:layout>
+
+</local:CommerceWorkAreaTabBase>

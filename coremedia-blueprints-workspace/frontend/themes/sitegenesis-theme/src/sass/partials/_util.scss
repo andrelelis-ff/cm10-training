@@ -1,0 +1,26 @@
+@mixin transparent-button($color, $hover, $button-border: 2px, $isTextLink: false) {
+  color: $color;
+  background-color: transparent;
+
+  @if $isTextLink == true {
+    border: none;
+  } @else {
+    border: $button-border solid $color;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $hover;
+
+    @if $isTextLink == true {
+      background-color: transparent;
+    } @else {
+      background-color: $color;
+      border-color: $color;
+    }
+  }
+  &:active {
+    background-image: none;
+  }
+}

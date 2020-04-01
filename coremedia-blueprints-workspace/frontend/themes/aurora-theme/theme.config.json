@@ -1,0 +1,30 @@
+{
+  "name": "aurora",
+  "description": "The Aurora Theme showcases the fragment-based integration approach with HCL Commerce and the Aurora B2C and B2B store examples.",
+  "thumbnail": "theme.jpg",
+
+  "scripts": [
+    {
+      "type": "webpack",
+      "src": "src/js/aurora.js",
+      "inHead": true
+    }
+  ],
+  "styles": [
+    {
+      "type": "webpack",
+      "src": "src/sass/aurora.scss"
+    },
+    {
+      "type": "webpack",
+      "src": "src/sass/black.scss",
+      "include": false
+    }
+  ],
+  "l10n": {
+    "bundleNames": [
+      "Aurora",
+      "Bricks"
+    ]
+  }
+}

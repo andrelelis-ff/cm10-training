@@ -1,0 +1,19 @@
+{
+  "name": "cmcc-config",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The role for the CMCC config",
+  "run_list": [
+    "recipe[blueprint-cmcc::cae-preview-config]",
+    "recipe[blueprint-cmcc::cae-live-config]",
+    "recipe[blueprint-cmcc::studio-config]"
+  ],
+  "env_run_lists": {
+    "development": [
+      "recipe[blueprint-cmcc::cae-preview-config]",
+      "recipe[blueprint-cmcc::cae-live-config]",
+      "recipe[blueprint-cmcc::studio-config]",
+      "recipe[blueprint-cmcc::test-data-config]"
+    ]
+  }
+}

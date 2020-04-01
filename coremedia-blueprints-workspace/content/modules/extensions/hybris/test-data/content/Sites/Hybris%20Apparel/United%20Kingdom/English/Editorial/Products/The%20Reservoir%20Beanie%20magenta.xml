@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Products" name="The Reservoir Beanie magenta" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../Pictures/The%20Reservoir%20Beanie.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/The%20Reservoir%20Beanie"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>hybris:///catalog/sku/104668_magenta</externalId>
+</CMProductTeaser>

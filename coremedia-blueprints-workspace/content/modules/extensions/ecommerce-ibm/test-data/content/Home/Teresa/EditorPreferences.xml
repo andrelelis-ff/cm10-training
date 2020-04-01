@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EditorPreferences folder="/Home/Teresa" name="EditorPreferences" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<data>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="collection">
+<Struct>
+<StructListProperty Name="savedSearches">
+<Struct>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">Document_</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">list</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">me</StringProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Last edited</StringProperty>
+</Struct>
+<Struct>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">CMArticle</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">thumbnails</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<StringProperty Name="orderByRepo">name asc</StringProperty>
+<StringProperty Name="null">freshness desc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">anyone</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Subject">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Asset Download Portal">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Location">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="site">
+<Struct>
+<StringProperty Name="site">PREFERRED</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="datefilter-panel-modificationdate">
+<Struct>
+<IntProperty Name="modificationdate">-1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="datefilter-panel-publicationdate">
+<Struct>
+<IntProperty Name="publicationdate">-1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="translationStatus">
+<Struct>
+<LinkProperty Name="site" LinkType="coremedia:///cap/contenttype/Content_"/>
+<BooleanProperty Name="up-to-date">true</BooleanProperty>
+<BooleanProperty Name="in-translation">false</BooleanProperty>
+<BooleanProperty Name="not-localized-yet">false</BooleanProperty>
+<BooleanProperty Name="new-in-master">false</BooleanProperty>
+<BooleanProperty Name="not-up-to-date">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rightsChannels">
+<Struct>
+</Struct>
+</StructProperty>
+<StructProperty Name="rightsRegions">
+<Struct>
+</Struct>
+</StructProperty>
+<StructProperty Name="expirationDate">
+<Struct>
+<StringProperty Name="key">any</StringProperty>
+<LinkProperty Name="date" LinkType="coremedia:///cap/contenttype/Content_"/>
+</Struct>
+</StructProperty>
+<StructProperty Name="lostandfoundfilterid">
+<Struct>
+<BooleanProperty Name="lostAndFoundCheckboxSelected">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Stories</StringProperty>
+</Struct>
+<Struct>
+<StructProperty Name="data$1">
+<Struct>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">CMPicture</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">thumbnails</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="site">
+<Struct>
+<StringProperty Name="site">PREFERRED</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">anyone</StringProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Pictures</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">CMPicture</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">thumbnails</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="site">
+<Struct>
+<StringProperty Name="site">PREFERRED</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">anyone</StringProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Pictures</StringProperty>
+</Struct>
+<Struct>
+<StructProperty Name="data$1">
+<Struct>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">CMChannel</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">list</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="site">
+<Struct>
+<StringProperty Name="site">PREFERRED</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">anyone</StringProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Pages</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">CMChannel</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">list</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="site">
+<Struct>
+<StringProperty Name="site">PREFERRED</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">anyone</StringProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Pages</StringProperty>
+</Struct>
+<Struct>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">CMProductTeaser</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">thumbnails</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<StringProperty Name="orderByRepo">name asc</StringProperty>
+<StringProperty Name="null">freshness desc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">anyone</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Subject">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Asset Download Portal">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Location">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="site">
+<Struct>
+<StringProperty Name="site">PREFERRED</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="datefilter-panel-modificationdate">
+<Struct>
+<IntProperty Name="modificationdate">-1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="datefilter-panel-publicationdate">
+<Struct>
+<IntProperty Name="publicationdate">-1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="translationStatus">
+<Struct>
+<LinkProperty Name="site" LinkType="coremedia:///cap/contenttype/Content_"/>
+<BooleanProperty Name="up-to-date">true</BooleanProperty>
+<BooleanProperty Name="in-translation">false</BooleanProperty>
+<BooleanProperty Name="not-localized-yet">false</BooleanProperty>
+<BooleanProperty Name="new-in-master">false</BooleanProperty>
+<BooleanProperty Name="not-up-to-date">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rightsChannels">
+<Struct>
+</Struct>
+</StructProperty>
+<StructProperty Name="rightsRegions">
+<Struct>
+</Struct>
+</StructProperty>
+<StructProperty Name="expirationDate">
+<Struct>
+<StringProperty Name="key">any</StringProperty>
+<LinkProperty Name="date" LinkType="coremedia:///cap/contenttype/Content_"/>
+</Struct>
+</StructProperty>
+<StructProperty Name="lostandfoundfilterid">
+<Struct>
+<BooleanProperty Name="lostAndFoundCheckboxSelected">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Products</StringProperty>
+</Struct>
+<Struct>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">CMTeaser</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">thumbnails</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<StringProperty Name="orderByRepo">name asc</StringProperty>
+<StringProperty Name="null">freshness desc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">anyone</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Subject">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Asset Download Portal">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Location">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="site">
+<Struct>
+<StringProperty Name="site">PREFERRED</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="datefilter-panel-modificationdate">
+<Struct>
+<IntProperty Name="modificationdate">-1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="datefilter-panel-publicationdate">
+<Struct>
+<IntProperty Name="publicationdate">-1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="translationStatus">
+<Struct>
+<LinkProperty Name="site" LinkType="coremedia:///cap/contenttype/Content_"/>
+<BooleanProperty Name="up-to-date">true</BooleanProperty>
+<BooleanProperty Name="in-translation">false</BooleanProperty>
+<BooleanProperty Name="not-localized-yet">false</BooleanProperty>
+<BooleanProperty Name="new-in-master">false</BooleanProperty>
+<BooleanProperty Name="not-up-to-date">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rightsChannels">
+<Struct>
+</Struct>
+</StructProperty>
+<StructProperty Name="rightsRegions">
+<Struct>
+</Struct>
+</StructProperty>
+<StructProperty Name="expirationDate">
+<Struct>
+<StringProperty Name="key">any</StringProperty>
+<LinkProperty Name="date" LinkType="coremedia:///cap/contenttype/Content_"/>
+</Struct>
+</StructProperty>
+<StructProperty Name="lostandfoundfilterid">
+<Struct>
+<BooleanProperty Name="lostAndFoundCheckboxSelected">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Teasers</StringProperty>
+</Struct>
+<Struct>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">CMVideo</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">thumbnails</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<StringProperty Name="orderByRepo">name asc</StringProperty>
+<StringProperty Name="null">freshness desc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">anyone</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Subject">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Asset Download Portal">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Location">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="site">
+<Struct>
+<StringProperty Name="site">PREFERRED</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="datefilter-panel-modificationdate">
+<Struct>
+<IntProperty Name="modificationdate">-1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="datefilter-panel-publicationdate">
+<Struct>
+<IntProperty Name="publicationdate">-1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="translationStatus">
+<Struct>
+<LinkProperty Name="site" LinkType="coremedia:///cap/contenttype/Content_"/>
+<BooleanProperty Name="up-to-date">true</BooleanProperty>
+<BooleanProperty Name="in-translation">false</BooleanProperty>
+<BooleanProperty Name="not-localized-yet">false</BooleanProperty>
+<BooleanProperty Name="new-in-master">false</BooleanProperty>
+<BooleanProperty Name="not-up-to-date">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rightsChannels">
+<Struct>
+</Struct>
+</StructProperty>
+<StructProperty Name="rightsRegions">
+<Struct>
+</Struct>
+</StructProperty>
+<StructProperty Name="expirationDate">
+<Struct>
+<StringProperty Name="key">any</StringProperty>
+<LinkProperty Name="date" LinkType="coremedia:///cap/contenttype/Content_"/>
+</Struct>
+</StructProperty>
+<StructProperty Name="lostandfoundfilterid">
+<Struct>
+<BooleanProperty Name="lostAndFoundCheckboxSelected">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Videos</StringProperty>
+</Struct>
+<Struct>
+<StructProperty Name="_main">
+<Struct>
+<StringProperty Name="searchText"/>
+<StringProperty Name="contentType">CMDownload</StringProperty>
+<StringProperty Name="mode">search</StringProperty>
+<StringProperty Name="view">thumbnails</StringProperty>
+<LinkProperty Name="folder" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../.." cmexport:path="/"/>
+<StringProperty Name="orderBy">freshness desc</StringProperty>
+<StringProperty Name="orderByRepo">name asc</StringProperty>
+<StringProperty Name="null">freshness desc</StringProperty>
+<IntProperty Name="limit">50</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="status">
+<Struct>
+<BooleanProperty Name="inProduction">true</BooleanProperty>
+<BooleanProperty Name="editedByMe">true</BooleanProperty>
+<BooleanProperty Name="editedByOthers">true</BooleanProperty>
+<BooleanProperty Name="notEdited">true</BooleanProperty>
+<BooleanProperty Name="approved">true</BooleanProperty>
+<BooleanProperty Name="published">true</BooleanProperty>
+<BooleanProperty Name="deleted">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="lastEdited">
+<Struct>
+<StringProperty Name="lastEditedBy">anyone</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Subject">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Asset Download Portal">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="Location">
+<Struct>
+<LinkListProperty Name="taxonomies" LinkType="coremedia:///cap/contenttype/Content_">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="site">
+<Struct>
+<StringProperty Name="site">PREFERRED</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="datefilter-panel-modificationdate">
+<Struct>
+<IntProperty Name="modificationdate">-1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="datefilter-panel-publicationdate">
+<Struct>
+<IntProperty Name="publicationdate">-1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="translationStatus">
+<Struct>
+<LinkProperty Name="site" LinkType="coremedia:///cap/contenttype/Content_"/>
+<BooleanProperty Name="up-to-date">true</BooleanProperty>
+<BooleanProperty Name="in-translation">false</BooleanProperty>
+<BooleanProperty Name="not-localized-yet">false</BooleanProperty>
+<BooleanProperty Name="new-in-master">false</BooleanProperty>
+<BooleanProperty Name="not-up-to-date">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rightsChannels">
+<Struct>
+</Struct>
+</StructProperty>
+<StructProperty Name="rightsRegions">
+<Struct>
+</Struct>
+</StructProperty>
+<StructProperty Name="expirationDate">
+<Struct>
+<StringProperty Name="key">any</StringProperty>
+<LinkProperty Name="date" LinkType="coremedia:///cap/contenttype/Content_"/>
+</Struct>
+</StructProperty>
+<StructProperty Name="lostandfoundfilterid">
+<Struct>
+<BooleanProperty Name="lostAndFoundCheckboxSelected">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="_name">Downloads</StringProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="semanticSettings">nameMatching</StringProperty>
+<StringProperty Name="preferredSite">99c8ef576f385bc322564d5694df6fc2</StringProperty>
+<StringProperty Name="locale">en</StringProperty>
+<StructProperty Name="dashboard">
+<Struct>
+<StructListProperty Name="widgets">
+<Struct>
+<StringProperty Name="xclass">com.coremedia.cms.editor.sdk.dashboard.WidgetState</StringProperty>
+<StringProperty Name="widgetTypeId">com.coremedia.cms.editor.controlroom.config.projectsTodosWidget</StringProperty>
+<IntProperty Name="rowspan">1</IntProperty>
+<BooleanProperty Name="assignedToUser">true</BooleanProperty>
+<IntProperty Name="column">0</IntProperty>
+</Struct>
+<Struct>
+<StringProperty Name="xclass">com.coremedia.cms.editor.sdk.dashboard.WidgetState</StringProperty>
+<StringProperty Name="widgetTypeId">com.coremedia.cms.editor.sdk.config.simpleSearchWidget</StringProperty>
+<IntProperty Name="rowspan">1</IntProperty>
+<StringProperty Name="contentType">CMChannel</StringProperty>
+<IntProperty Name="column">0</IntProperty>
+</Struct>
+<Struct>
+<StringProperty Name="xclass">com.coremedia.cms.editor.sdk.dashboard.WidgetState</StringProperty>
+<StringProperty Name="widgetTypeId">com.coremedia.cms.editor.sdk.config.simpleSearchWidget</StringProperty>
+<IntProperty Name="rowspan">1</IntProperty>
+<StringProperty Name="contentType">CMArticle</StringProperty>
+<IntProperty Name="column">0</IntProperty>
+</Struct>
+<Struct>
+<StringProperty Name="xclass">com.coremedia.cms.editor.sdk.dashboard.WidgetState</StringProperty>
+<StringProperty Name="widgetTypeId">com.coremedia.cms.editor.sdk.config.simpleSearchWidget</StringProperty>
+<IntProperty Name="rowspan">1</IntProperty>
+<StringProperty Name="contentType">CMPicture</StringProperty>
+<IntProperty Name="column">0</IntProperty>
+</Struct>
+<Struct>
+<StringProperty Name="xclass">com.coremedia.cms.editor.sdk.dashboard.WidgetState</StringProperty>
+<StringProperty Name="widgetTypeId">editedByMe</StringProperty>
+<IntProperty Name="rowspan">1</IntProperty>
+<IntProperty Name="column">1</IntProperty>
+</Struct>
+<Struct>
+<StringProperty Name="xclass">com.coremedia.cms.editor.sdk.dashboard.WidgetState</StringProperty>
+<StringProperty Name="widgetTypeId">editedByOthers</StringProperty>
+<IntProperty Name="rowspan">1</IntProperty>
+<IntProperty Name="column">1</IntProperty>
+</Struct>
+<Struct>
+<StringProperty Name="xclass">com.coremedia.cms.editor.sdk.dashboard.WidgetState</StringProperty>
+<StringProperty Name="widgetTypeId">com.coremedia.cms.editor.sdk.config.translationStatusWidget</StringProperty>
+<IntProperty Name="rowspan">1</IntProperty>
+<StringProperty Name="targetSiteId">19e4a986fc7483371eb13790818e6546</StringProperty>
+<StringProperty Name="title">Aurora Augmentation - German (Germany)</StringProperty>
+<IntProperty Name="column">1</IntProperty>
+</Struct>
+<Struct>
+<StringProperty Name="xclass">com.coremedia.cms.editor.sdk.dashboard.WidgetState</StringProperty>
+<StringProperty Name="widgetTypeId">com.coremedia.blueprint.studio.config.esanalytics.esAnalyticsChartWidget</StringProperty>
+<IntProperty Name="rowspan">3</IntProperty>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Aurora%20Augmentation/United%20States/English/Navigation/Aurora%20Augmentation.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Aurora%20Augmentation"/>
+<IntProperty Name="column">2</IntProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="forms">
+<Struct>
+<StructProperty Name="CMExternalPage">
+<Struct>
+<BooleanProperty Name="content-4306">false</BooleanProperty>
+<BooleanProperty Name="content-1500">false</BooleanProperty>
+<BooleanProperty Name="content-1498">false</BooleanProperty>
+<BooleanProperty Name="content-1492">false</BooleanProperty>
+<BooleanProperty Name="content-1496">false</BooleanProperty>
+<BooleanProperty Name="content-16194">false</BooleanProperty>
+<BooleanProperty Name="teaserDocumentForm">true</BooleanProperty>
+<BooleanProperty Name="content-1598">false</BooleanProperty>
+<BooleanProperty Name="content-1602">false</BooleanProperty>
+<BooleanProperty Name="content-1604">true</BooleanProperty>
+<BooleanProperty Name="content-1606">true</BooleanProperty>
+<BooleanProperty Name="content-1608">true</BooleanProperty>
+<BooleanProperty Name="linkedSettings">true</BooleanProperty>
+<BooleanProperty Name="referrerListPanel">true</BooleanProperty>
+<BooleanProperty Name="cmVersionHistory">true</BooleanProperty>
+<BooleanProperty Name="content-1202">false</BooleanProperty>
+<BooleanProperty Name="teaserSettings">false</BooleanProperty>
+<BooleanProperty Name="channelMetaDataJavaScriptForm">true</BooleanProperty>
+<BooleanProperty Name="channelMetaDataThemeForm">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="CMChannel">
+<Struct>
+<BooleanProperty Name="content-4306">false</BooleanProperty>
+<BooleanProperty Name="content-4310">false</BooleanProperty>
+<BooleanProperty Name="content-4312">false</BooleanProperty>
+<BooleanProperty Name="content-4314">false</BooleanProperty>
+<BooleanProperty Name="channelMetaDataCssForm">false</BooleanProperty>
+<BooleanProperty Name="content-1202">false</BooleanProperty>
+<BooleanProperty Name="channelMetaDataThemeForm">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="CMImageMap">
+<Struct>
+<BooleanProperty Name="subjectTaxonomyDocumentForm">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="CMProductList">
+<Struct>
+<BooleanProperty Name="fixedIndexItemsForm">false</BooleanProperty>
+<BooleanProperty Name="viewTypeSelectorForm">true</BooleanProperty>
+<BooleanProperty Name="teaserDocumentForm">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="CMArticle">
+<Struct>
+<BooleanProperty Name="teaserDocumentForm">false</BooleanProperty>
+<BooleanProperty Name="teaserSettings">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="CMQueryList">
+<Struct>
+<BooleanProperty Name="fixedIndexItemsForm">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="CMExternalChannel">
+<Struct>
+<BooleanProperty Name="pdpPagegrid">true</BooleanProperty>
+<BooleanProperty Name="placement">false</BooleanProperty>
+<BooleanProperty Name="picture">true</BooleanProperty>
+<BooleanProperty Name="teaserDocumentForm">true</BooleanProperty>
+<BooleanProperty Name="commerceDetails">true</BooleanProperty>
+<BooleanProperty Name="content-1600">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="CMVideo">
+<Struct>
+<BooleanProperty Name="assetLink">false</BooleanProperty>
+<BooleanProperty Name="teaserDocumentForm">true</BooleanProperty>
+<BooleanProperty Name="detailsDocumentForm">true</BooleanProperty>
+<BooleanProperty Name="mediaOptionsPropertyFieldGroup">false</BooleanProperty>
+<BooleanProperty Name="videoTimeLineForm">true</BooleanProperty>
+<BooleanProperty Name="relatedDocumentForm">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="CMCollection">
+<Struct>
+<BooleanProperty Name="viewTypeSelectorForm">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="CMPicture">
+<Struct>
+<BooleanProperty Name="detailsForm">true</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="controlRoom">
+<Struct>
+<BooleanProperty Name="showAssets">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<BooleanProperty Name="publicationWorkflowRemoveEditedContents">true</BooleanProperty>
+<StructProperty Name="ckeditor">
+<Struct>
+<StructProperty Name="internalLinkDialog">
+<Struct>
+<StringProperty Name="targetType">embed</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="userMenu">
+<Struct>
+<BooleanProperty Name="disableSiteName">false</BooleanProperty>
+<BooleanProperty Name="disableSiteLocale">false</BooleanProperty>
+<BooleanProperty Name="disableUserName">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<BooleanProperty Name="disablePreviewHoverFrames">false</BooleanProperty>
+<BooleanProperty Name="enablePreviewScrollbars">false</BooleanProperty>
+<StructProperty Name="view">
+<Struct>
+<BooleanProperty Name="showColoredContent">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StringListProperty Name="preferredTypesForCreation">
+<String>CMArticle</String>
+<String>CMTeaser</String>
+<String>CMCollection</String>
+<String>CMPicture</String>
+</StringListProperty>
+<IntProperty Name="previewReloadDelay">1</IntProperty>
+<StructProperty Name="lastUsedContentCreationFolders">
+<Struct>
+<LinkListProperty Name="CMPicture" LinkType="coremedia:///cap/contenttype/Content_">
+<Link xlink:href="coremedia:///cap/resources/../../Sites/Aurora%20Augmentation/United%20States/English/Pictures/" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/"/>
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="bookmarks">
+<Struct>
+<StringProperty Name="name">Women</StringProperty>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Aurora%20Augmentation/United%20States/English/Augmentation/Apparel/Women/Women.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Augmentation/Apparel/Women/Women"/>
+</Struct>
+<Struct>
+<StringProperty Name="name">Dresses</StringProperty>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Aurora%20Augmentation/United%20States/English/Augmentation/Apparel/Women/Dresses/Dresses.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Augmentation/Apparel/Women/Dresses/Dresses"/>
+</Struct>
+<Struct>
+<StringProperty Name="name">Summer Dresses Collection</StringProperty>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Summer%20Dresses%20Collection.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Summer%20Dresses%20Collection"/>
+</Struct>
+<Struct>
+<StringProperty Name="name">Editorial Blog Teaser</StringProperty>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Editorial%20Blog%20Teaser.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Editorial%20Blog%20Teaser"/>
+</Struct>
+<Struct>
+<StringProperty Name="name">Hermitage Knit Cocktail Dress - Classic</StringProperty>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Aurora/Hermitage%20Knit%20Cocktail%20Dress%20Produce9655b5f.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Aurora/Hermitage%20Knit%20Cocktail%20Dress%20Product%20Teaser"/>
+</Struct>
+<Struct>
+<StringProperty Name="name">Albini Sleeveless Silk Dress - Augmented</StringProperty>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Albini%20Sleeveless%20Silk%20Dress%20-%20Augmented.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Albini%20Sleeveless%20Silk%20Dress%20-%20Augmented"/>
+</Struct>
+<Struct>
+<StringProperty Name="name">Black is the new Black Dresses</StringProperty>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion%20Week/Black%20is%20the%20new%20Black%20Dresses.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion%20Week/Black%20is%20the%20new%20Black%20Dresses"/>
+</Struct>
+<Struct>
+<StringProperty Name="name">Fashion Show Shoppable Video</StringProperty>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion%20Week/Fashion%20Show%20Shoppable%20Video.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion%20Week/Fashion%20Show%20Shoppable%20Video"/>
+</Struct>
+<Struct>
+<StringProperty Name="name">A Glamorous Party Image Map</StringProperty>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/A%20Glamorous%20Party%20Image%20Map.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/A%20Glamorous%20Party%20Image%20Map"/>
+</Struct>
+<Struct>
+<StringProperty Name="name">Most commented</StringProperty>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Lists/Most%20commented.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Lists/Most%20commented"/>
+</Struct>
+<Struct>
+<StringProperty Name="name">Most Viewed</StringProperty>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Lists/Most%20Viewed.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Lists/Most%20Viewed"/>
+</Struct>
+<Struct>
+<StringProperty Name="name">Content Recommendations</StringProperty>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Lists/Content%20Recommendations.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Lists/Content%20Recommendations"/>
+</Struct>
+</StructListProperty>
+<StructProperty Name="workarea">
+<Struct>
+<StructListProperty Name="tabs">
+<Struct>
+<StringProperty Name="typeId">com.coremedia.cms.editor.sdk.config.premular</StringProperty>
+<StructProperty Name="state">
+<Struct>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Aurora%20Augmentation/United%20States/English/Navigation/Aurora%20Augmentation.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Aurora%20Augmentation"/>
+</Struct>
+</StructProperty>
+</Struct>
+</StructListProperty>
+<IntProperty Name="activeTabIndex">0</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</data>
+</EditorPreferences>

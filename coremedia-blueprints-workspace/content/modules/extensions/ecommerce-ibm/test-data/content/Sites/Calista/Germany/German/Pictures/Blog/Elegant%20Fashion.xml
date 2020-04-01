@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/Germany/German/Pictures/Blog" name="Elegant Fashion" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Pictures/Blog/Elegant%20Fashion.xml" path="/Sites/Calista/United%20States/English/Pictures/Blog/Elegant%20Fashion"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=4000;height=2250</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=418;y=0;width=1895;height=2527</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=526;y=0;width=1685;height=2527</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=3369;height=2527</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=104;y=0;width=2527;height=2527</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=0;width=4000;height=1500</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.3396414342629482</StringProperty>
+<StringProperty Name="y">0.25709779179810727</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Elegante Mode</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Elegante Mode</alt>
+<copyright>shutterstock_285640730</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2527</height>
+<data md5="3a5d84da02b54c79bb7b803c87f46e8c" size="1054974" href="../../../../../../__blob/3a5d84da02b54c79bb7b803c87f46e8c.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

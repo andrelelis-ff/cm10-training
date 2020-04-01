@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Hybris Apparel/Germany/German/Options/Settings" name="CAEConfig" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Options/Settings/CAEConfig.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/CAEConfig"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="siteMappings">
+<Struct>
+<StringProperty Name="Hybris-Apparel-UK-Site-ID">//preview-apparel.livecontext.coremedia.com</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Personalization/Contract-Specific Hero" name="Fasteners Category Promotion Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>20% Off On All Fasteners</teaserTitle>
+<pictures>
+<link href="../../../Pictures/Product%20Category%20Pictures/Fasteners/Fasteners%20Cat90ac992f.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Product%20Category%20Pictures/Fasteners/Fasteners%20Category%20Promotion%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../Augmentation/Fasteners/Fasteners.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Augmentation/Fasteners/Fasteners"/>
+</target>
+</CMTeaser>

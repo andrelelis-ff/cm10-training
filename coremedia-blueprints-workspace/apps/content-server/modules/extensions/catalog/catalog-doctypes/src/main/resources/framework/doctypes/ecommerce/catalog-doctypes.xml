@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<DocumentTypeModel xmlns="http://www.coremedia.com/2008/documenttypes"
+                   xmlns:extensions="http://www.coremedia.com/2013/documenttypes-extensions"
+                   Name="catalog-doctypes">
+  <ImportGrammar Name="coremedia-richtext-1.0"/>
+
+  <!--- well known grammars -->
+  <ImportGrammar Name="coremedia-struct-2008"/>
+
+  <ImportDocType Name="CMAbstractCategory"/>
+  <ImportDocType Name="CMTeasable"/>
+  <ImportDocType Name="CMLocalized"/>
+  <ImportDocType Name="CMDownload"/>
+
+  <!--
+    Products.
+    This doctype matches the property mappings in bpbase-ec-cms-content.properties.
+  -->
+  <DocType Name="CMProduct" Parent="CMTeasable">
+    <LinkListProperty Name="master" Max="1" LinkType="CMProduct" Override="true" extensions:weakLink="true"/>
+    <LinkListProperty Name="contexts" LinkType="CMCategory" Override="true"/>
+    <LinkListProperty Name="downloads" LinkType="CMDownload"/>
+    <StringProperty Name="productCode" Length="128" Index="true"/>
+    <StringProperty Name="productName" Length="256" Index="true"/>
+  </DocType>
+
+  <!--
+    Categories.
+    This doctype matches the property mappings in bpbase-ec-cms-content.properties.
+  -->
+  <DocType Name="CMCategory" Parent="CMAbstractCategory">
+    <LinkListProperty Name="master" Max="1" LinkType="CMCategory" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="categoryName" Length="256" Index="true"/>
+    <StringProperty Name="displayName" Length="256" Index="true"/>
+  </DocType>
+
+</DocumentTypeModel>

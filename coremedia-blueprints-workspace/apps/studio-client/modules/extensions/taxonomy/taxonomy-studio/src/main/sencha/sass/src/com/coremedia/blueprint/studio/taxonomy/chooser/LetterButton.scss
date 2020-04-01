@@ -1,0 +1,12 @@
+@if $cm-include-taxonomy-letter-button {
+
+  $_block: "cm-taxonomy-letter-button";
+  .#{$_block} {
+    background-color: $cm-spot-grey-2;
+    padding: $cm-grid-50 0;
+
+    .x-btn-inner {
+      overflow: visible;
+    }
+  }
+}

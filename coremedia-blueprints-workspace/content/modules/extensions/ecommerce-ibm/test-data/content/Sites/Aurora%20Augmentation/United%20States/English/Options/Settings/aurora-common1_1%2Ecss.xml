@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCSS folder="/Sites/Aurora Augmentation/United States/English/Options/Settings" name="aurora-common1_1.css" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<description></description>
+<ieExpression></ieExpression>
+<include>
+</include>
+<dataUrl>//{aurora.host}/wcsstore/AuroraStorefrontAssetStore/css/common1_1.css</dataUrl>
+<media></media>
+</CMCSS>

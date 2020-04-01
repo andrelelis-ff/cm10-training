@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ An action to toggle the inherit state of the placement.
+-->
+<local:InheritReferencesActionBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.livecontext.asset.studio.action.*">
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+
+    private var config:InheritReferencesAction;
+
+    public native function InheritReferencesAction(config:InheritReferencesAction = null);
+
+    /**
+     * Document form content.
+     */
+    [Bindable]
+    public var bindTo:ValueExpression;
+
+    /**
+     * An optional ValueExpression which makes the action read-only if it is evaluated to true.
+     */
+    [Bindable]
+    public var forceReadOnlyValueExpression:ValueExpression;
+
+    /**
+     * An optional ValueExpression for the inherit flag. When specified the action will operate on this expression
+     * instead of on the expression pointing to the inherit struct of the content
+     */
+    [Bindable]
+    public var inheritExpression:ValueExpression;
+
+    /**
+     * An optional ValueExpression for the catalog object references. When specified the action will operate on this expression
+     * instead of on the expression pointing to the catalog object struct list of the content
+     */
+    [Bindable]
+    public var referencesExpression:ValueExpression;
+
+    /**
+     * An optional ValueExpression for the origin catalog object references. When specified the action will operate on this expression
+     * instead of on the expression pointing to the origin catalog object struct list of the content
+     */
+    [Bindable]
+    public var originReferencesExpression:ValueExpression;
+    ]]></fx:Script>
+
+</local:InheritReferencesActionBase>

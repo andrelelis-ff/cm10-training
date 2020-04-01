@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+  <content>
+    <folder id="1" name="">
+      <document id="102" name="LiveContext" type="CMSettings">
+        <version number="1">
+          <markupProperty name="settings" grammar="coremedia-struct-2008" url="livecontext-settings-struct.xml"/>
+        </version>
+      </document>
+      <document id="202" name="FragmentPdpLayout" type="CMSettings">
+        <version number="1">
+        </version>
+      </document>
+
+      <folder id="11" name="Sites">
+        <folder id="111" name="Media">
+          <document id="504" name="MediaSite" type="CMSite">
+            <!--
+              The Site Indicator for the site, references the Root Channel.
+              Needed to resolve the first URL segment ("root")
+            -->
+            <version number="1">
+              <linkProperty name="root">
+                <link id="124"/>
+              </linkProperty>
+              <stringProperty name="locale" value="en-US"/>
+              <stringProperty name="id" value="site1"/>
+              <stringProperty name="name" value="site1"/>
+            </version>
+          </document>
+          <folder id="1111" name="Navigation">
+            <document id="124" name="Root" type="CMChannel">
+              <!-- The Root Channel of the site, referenced by the Site Indicator. -->
+              <version number="1">
+                <stringProperty name="segment" value="root"/>
+                <linkProperty name="children">
+                </linkProperty>
+                <linkProperty name="linkedSettings">
+                  <link id="102"/>
+                </linkProperty>
+              </version>
+            </document>
+
+            <!-- section symbols -->
+            <document id="212" type="CMSymbol" name="header">
+              <version number="1">
+                <stringProperty name="description" value="Page Header"/>
+              </version>
+            </document>
+            <document id="214" type="CMSymbol" name="footer">
+              <version number="1">
+                <stringProperty name="description" value="footer"/>
+              </version>
+            </document>
+
+            <!-- test article -->
+            <document name="article" id="302" type="CMArticle">
+              <version number="1">
+
+              </version>
+            </document>
+          </folder>
+        </folder>
+      </folder>
+    </folder>
+  </content>
+  <rules>
+    <rule resourceId="1" group="0" doctype="Folder_">
+      <right value="ALL"/>
+    </rule>
+    <rule resourceId="1" group="0" doctype="Document_">
+      <right value="ALL"/>
+    </rule>
+  </rules>
+</contentRepository>

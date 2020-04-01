@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./United States/English/Editorial/Homepage/Company/Investor Relations/News/News Items" name="Press Release - Annual General Meeting Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<extDisplayedDate format="dd.MM.yyyy HH:mm:ss Z">15.03.2016 00:00:00 -0400</extDisplayedDate>
+<segment></segment>
+<title>Annual General Meeting</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Press%20Release.xml" path="/Settings/Taxonomies/Subject/Press%20Release"/>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Investors.xml" path="/Settings/Taxonomies/Subject/Investors"/>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Press.xml" path="/Settings/Taxonomies/Subject/Press"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p><strong>Chicago</strong>, March 15th 2016</p><p/><p>Chef Corp. today announces the 23rd annual general meeting for shareholders on June 23rd 2016. The meeting will take place at the Chicago Marriott Downtown Magnificent Mile, 540 North Michigan Avenue, Chicago, Illinois 60611 USA.</p><p/><p>The Chicago Marriott Downtown is, of course, a Chef Corp. customer and will provide all shareholders with delicious breakfast, lunch, and dinner as well as a personal tour through two of the four kitchens. A special delight will be the tour of the fully-equipped rooftop kitchen.</p><p/><p class="p--heading-3">Schedule</p><table><tbody><tr><td>9:00 AM</td><td>Breakfast in the conference lobby</td></tr><tr><td>10:00 AM</td><td>CEO Keynote</td></tr><tr><td>13:00 PM</td><td>Lunch and kitchen tours</td></tr><tr><td>14:00 PM</td><td>CFO Financial Results and shareholder motions</td></tr><tr><td>17:00 PM</td><td>Dinner</td></tr></tbody></table><p/><p>Be sure to book your seat before May 23rd using the link in your official invitation e-mail or by mail using the blank from your official mail invitation. For all other inquiries, please contact our customer representative <a xlink:show="replace" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Contacts/Sally%20White.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Company/Investor%20Relations/Contacts/Sally%20White">Sally White</a>.</p><p/><p class="p--heading-3">About Chef Corp.</p><p>Since 1999, our more than 125,000 customers have come to know <em>Chef Corp</em> as their premier provider to find virtually anything needed for the restaurant supply industry. We are committed to delivering expert solutions with the personal attention you deserve.</p><p>Our services range from commercial kitchen supplies, including our special dedication to kitchen lighting; to our consumer offering, Perfect Chef, an omni-channel shop and customer magazine that delivers seasonal news, ideas, recipes, and handpicked products to inspire cooks and connoisseurs of the good life – in all of its forms.</p></div></detailText>
+<pictures>
+<link href="../../../../../Assets/Pictures/News/Chef%20Corp%2E%20New%20HQ%20in%20Downtown%20Ch43bdfe6f.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/News/Chef%20Corp%2E%20New%20HQ%20in%20Downtown%20Chicago%20%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

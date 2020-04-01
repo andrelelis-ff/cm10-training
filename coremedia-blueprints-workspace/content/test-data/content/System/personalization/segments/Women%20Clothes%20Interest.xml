@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSegment folder="/System/personalization/segments" name="Women Clothes Interest" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<description grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>This is the segment for people interested in women clothes</p></div></description>
+<conditions grammarName="coremedia-selectionrules-1.0"><rules version="1.0" xmlns="http://www.coremedia.com/2010/selectionrules" xmlns:xlink="http://www.w3.org/1999/xlink">subjectTaxonomies.<content xlink:href="coremedia:///cap/resources/../../../Settings/Taxonomies/Subject/Women.xml" cmexport:path="/Settings/Taxonomies/Subject/Women"/>&gt;0.8</rules></conditions>
+</CMSegment>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:NestedRulesPlugin
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:ui="exml:com.coremedia.ui.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.premular.DocumentTabPanel;
+
+    public static const ASSET_LINK_ITEM_ID:String = "assetLink";
+
+    private var config:AddAssetLinkPlugin;
+    private var componentConfig:DocumentTabPanel;
+
+    // called by generated constructor code
+    private function __initialize__(config:AddAssetLinkPlugin):void {
+      componentConfig = DocumentTabPanel(config.cmp.initialConfig);
+    }
+
+    public native function AddAssetLinkPlugin(config:AddAssetLinkPlugin = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <fx:String id="tabItemId"/>
+
+    <fx:String id="title"/>
+  </fx:Declarations>
+
+  <ui:rules>
+    <editor:DocumentForm itemId="{config.tabItemId}">
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <editor:PropertyFieldGroup collapsed="true"
+                                       itemId="{ASSET_LINK_ITEM_ID}"
+                                       title="{config.title}"
+                                       forceReadOnlyValueExpression="{componentConfig.forceReadOnlyValueExpression}">
+              <editor:items>
+                <editor:LinkListPropertyField propertyName="asset"
+                                              showThumbnails="true"
+                                              hideLabel="true"
+                                              openCollectionViewHandler="{AMStudioPluginBase.openAssetSearch}"/>
+              </editor:items>
+            </editor:PropertyFieldGroup>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:DocumentForm>
+  </ui:rules>
+
+</ui:NestedRulesPlugin>

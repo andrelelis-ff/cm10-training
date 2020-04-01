@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loggerFactory() buildPrefix() returns the prefix string corresponding to the given configuration 1`] = `"[18:0:0] [info] "`;
+
+exports[`loggerFactory() buildPrefix() returns the prefix string corresponding to the given configuration with unresolved placeholders 1`] = `"[18:0:0] [warn] ｢LoggerName｣ {{unresolved}} "`;
+
+exports[`loggerFactory() returns a logger object 1`] = `
+Object {
+  "debug": [Function],
+  "error": [Function],
+  "id": "id1234567890",
+  "info": [Function],
+  "success": [Function],
+  "warn": [Function],
+}
+`;

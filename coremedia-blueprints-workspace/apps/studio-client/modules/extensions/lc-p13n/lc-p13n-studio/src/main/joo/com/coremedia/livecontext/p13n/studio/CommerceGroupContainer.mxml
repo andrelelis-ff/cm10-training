@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PropertyFieldGroup
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.livecontext.p13n.studio.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:ec="exml:com.coremedia.ecommerce.studio.config"
+        itemId="commerceGroup"
+        bindTo="{config.contentBindTo}"
+        title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'p13n_commerce_group_label')}"
+        manageHeight="{false}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.livecontext.p13n.studio.config.commerceGroupContainer";
+
+    private var config:CommerceGroupContainer;
+
+    public native function CommerceGroupContainer(config:CommerceGroupContainer = null);
+
+    /**
+     * The bean value expression to hand through to all property fields contained in this group.
+     */
+    [Bindable]
+    public var contentBindTo:ValueExpression;
+    ]]></fx:Script>
+
+  <editor:items>
+    <ec:CommerceCatalogObjectsSelectForm itemId="userSegments"
+                                         bindTo="{config.contentBindTo}"
+                                         fieldLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'p13n_commerce_user_segments_label')}"
+                                         catalogObjectIdListName="{LivecontextP13NStudioPluginBase.USER_SEGMENTS}"
+                                         emptyText="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'p13n_commerce_user_segments_selector_for_persona_emptyText')}"
+                                         invalidMessage="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'p13n_commerce_user_segment_invalid')}"
+                                         removeActionName="removeCommerceSegment"
+                                         getCommerceObjectsFunction="{LivecontextP13NStudioPluginBase.getSegments}"
+                                         noStoreMessage="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'p13n_commerce_no_store_configured')}"/>
+    <ec:CommerceCatalogObjectsSelectForm itemId="userContract"
+                                         bindTo="{config.contentBindTo}"
+                                         fieldLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'p13n_commerce_user_contracts_label')}"
+                                         catalogObjectIdListName="{LivecontextP13NStudioPluginBase.USER_CONTRACTS}"
+                                         emptyText="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'p13n_commerce_user_contracts_selector_for_persona_emptyText')}"
+                                         invalidMessage="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'p13n_commerce_user_contract_invalid')}"
+                                         removeActionName="removeCommerceContract"
+                                         getCommerceObjectsFunction="{LivecontextP13NStudioPluginBase.getContracts}"
+                                         noStoreMessage="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'p13n_commerce_no_store_configured')}"/>
+  </editor:items>
+
+</editor:PropertyFieldGroup>

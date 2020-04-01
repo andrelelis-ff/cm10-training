@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:TaxonomyStudioPluginBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                                xmlns:local="com.coremedia.blueprint.studio.*"
+                                xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                                xmlns="exml:ext.config"
+                                xmlns:ui="exml:com.coremedia.ui.config"
+                                xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                                xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+                                xmlns:taxonomy="exml:com.coremedia.blueprint.studio.config.taxonomy">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+    import com.coremedia.ui.skins.ButtonSkin;
+
+    import mx.resources.ResourceManager;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.taxonomy.taxonomyStudioPlugin";
+    public static const TAXONOMY_EDITOR_BUTTON_ID:String = "btn-taxonomy-editor";
+    public static const NEW_KEYWORD_SELECTOR_ITEM_ID:String = "newKeywordTypeSelector";
+
+    private var config:TaxonomyStudioPlugin;
+
+
+    public static var TAXONOMY_SEMANTIC_CALAIS_KEY:String = "semantic";
+    public static var TAXONOMY_NAME_MATCHING_KEY:String = "nameMatching";
+    public static var DEFAULT_SUGGESTION_KEY:String = TAXONOMY_NAME_MATCHING_KEY;
+
+    public native function TaxonomyStudioPlugin(config:TaxonomyStudioPlugin = null);
+    ]]></fx:Script>
+
+  <local:rules>
+    <editor:ExtensionsMenuToolbar>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <Button id_="{TAXONOMY_EDITOR_BUTTON_ID}"
+                    itemId="{TAXONOMY_EDITOR_BUTTON_ID}"
+                    text="{ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyEditor_title')}"
+                    ui="{ButtonSkin.HIGHLIGHT.getSkin()}"
+                    scale="medium"
+                    iconCls="{ResourceManager.getInstance().getString('com.coremedia.icons.CoreIcons', 'tag')}">
+              <baseAction>
+                <taxonomy:OpenTaxonomyEditorAction/>
+              </baseAction>
+            </Button>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:ExtensionsMenuToolbar>
+
+    <bpforms:CMTaxonomyForm>
+      <bpforms:plugins exml:mode="append">
+        <taxonomy:TaxonomyChangePlugin />
+      </bpforms:plugins>
+    </bpforms:CMTaxonomyForm>
+
+    <bpforms:CMLocTaxonomyForm>
+      <bpforms:plugins exml:mode="append">
+        <taxonomy:TaxonomyChangePlugin />
+      </bpforms:plugins>
+    </bpforms:CMLocTaxonomyForm>
+
+    <bpforms:CategoryDocumentForm>
+      <bpforms:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <editor:PropertyFieldGroup title="{ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Subject_label')}"
+                                       expandOnValues="subjectTaxonomy"
+                                       itemId="subjectTaxonomyItemId">
+              <editor:items>
+                <taxonomy:TaxonomyPropertyField propertyName="subjectTaxonomy"
+                                                hideLabel="true"
+                                                taxonomyId="Subject"/>
+              </editor:items>
+            </editor:PropertyFieldGroup>
+            <editor:PropertyFieldGroup title="{ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Free_Keywords_label')}"
+                                       expandOnValues="keywords"
+                                       itemId="freeKeywordsForm"
+                                       collapsed="true">
+              <editor:items>
+                <editor:InputChipsField propertyName="keywords"
+                                        hideLabel="true"/>
+              </editor:items>
+            </editor:PropertyFieldGroup>
+            <editor:PropertyFieldGroup title="{ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Location_label')}"
+                                       expandOnValues="locationTaxonomy"
+                                       itemId="locationTaxonomyForm"
+                                       collapsed="true">
+              <editor:items>
+                <taxonomy:TaxonomyPropertyField itemId="locTaxonomyItemId"
+                                                hideLabel="true"
+                                                propertyName="locationTaxonomy"
+                                                taxonomyId="Location"/>
+              </editor:items>
+            </editor:PropertyFieldGroup>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </bpforms:plugins>
+    </bpforms:CategoryDocumentForm>
+
+    <editor:PreferenceWindow>
+      <editor:plugins>
+        <taxonomy:TaxonomyPreferenceWindowPlugin/>
+      </editor:plugins>
+    </editor:PreferenceWindow>
+
+    <editor:WorkArea>
+      <editor:plugins>
+        <editor:WorkAreaTabTypesPlugin>
+          <editor:tabTypes>
+            <editor:ComponentBasedWorkAreaTabType>
+              <editor:tabComponent>
+                <taxonomy:TaxonomyEditor closable="true"/>
+              </editor:tabComponent>
+            </editor:ComponentBasedWorkAreaTabType>
+          </editor:tabTypes>
+        </editor:WorkAreaTabTypesPlugin>
+      </editor:plugins>
+    </editor:WorkArea>
+
+    <editor:TabbedDocumentFormDispatcher>
+      <editor:plugins>
+        <editor:AddTabbedDocumentFormsPlugin>
+          <editor:documentTabPanels>
+            <taxonomy:CMQueryListForm itemId="CMQueryList"/>
+          </editor:documentTabPanels>
+        </editor:AddTabbedDocumentFormsPlugin>
+      </editor:plugins>
+    </editor:TabbedDocumentFormDispatcher>
+
+    <editor:SearchFilters>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <!--Lower case used for the property name here, since the name must match
+            the SOLR field name that is complete lower case. The editor converts to lowercase to be sure too. -->
+            <taxonomy:TaxonomyFilterPanel taxonomyId="Subject"
+                                          filterId="Subject"
+                                          propertyName="subjecttaxonomy"/>
+            <taxonomy:TaxonomyFilterPanel taxonomyId="Location"
+                                          filterId="Location"
+                                          propertyName="locationtaxonomy"/>
+          </ui:items>
+          <ui:after>
+            <Component itemId="{SearchFilters.LAST_EDITED_FILTER_ITEM_ID}"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:SearchFilters>
+  </local:rules>
+
+  <local:configuration>
+    <taxonomy:AddTaggingStrategyPlugin serviceId="{TAXONOMY_NAME_MATCHING_KEY}" label="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyPreferences_value_nameMatching_text')}" />
+    <taxonomy:AddTaggingStrategyPlugin serviceId="{TAXONOMY_SEMANTIC_CALAIS_KEY}" label="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyPreferences_value_semantic_opencalais_text')}" />
+  </local:configuration>
+
+</local:TaxonomyStudioPluginBase>

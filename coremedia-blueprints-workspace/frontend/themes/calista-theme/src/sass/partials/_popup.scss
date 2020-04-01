@@ -1,0 +1,23 @@
+.#{$cm-popup-prefix} {
+
+  &__price {
+    margin-top: 24px;
+  }
+
+  &__price {
+    .cm-price {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    .cm-price--special {
+      color: #373737;
+    }
+
+    .cm-price--old {
+      float: left;
+      font-size: 16px;
+      margin-right: 12px;
+    }
+  }
+}

@@ -1,0 +1,4 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StringProperty Name="str">otherdede</StringProperty>
+  <StringProperty Name="localeOverOrder">right</StringProperty>
+</Struct>

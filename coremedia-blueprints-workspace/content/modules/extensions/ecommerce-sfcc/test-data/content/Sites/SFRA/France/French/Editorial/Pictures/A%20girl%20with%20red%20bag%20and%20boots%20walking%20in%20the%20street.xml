@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/France/French/Editorial/Pictures" name="A girl with red bag and boots walking in the street" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Editorial/Pictures/A%20girl%20with%20red%20bag%20and%20boots%20walking%20in%20the%20street.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Pictures/A%20girl%20with%20red%20bag%20and%20boots%20walking%20in%20the%20street"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="uploadDone">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=81;y=0;width=2014;height=2685</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=0;width=2685;height=2685</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=3580;height=2685</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=1157;width=4000;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=432;width=4000;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=1143;width=4000;height=1500</StringProperty>
+<StringProperty Name="quickview_ratio5x6">b;a=0;c=1/crop;x=0;y=0;width=2238;height=2685</StringProperty>
+<StringProperty Name="portrait_ratio5x6">b;a=0;c=1/crop;x=0;y=0;width=2238;height=2685</StringProperty>
+<StringProperty Name="thumbnail">b;a=0;c=1/crop;x=90;y=0;width=2014;height=2685</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.2713270142180095</StringProperty>
+<StringProperty Name="y">0.6130742049469965</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.4258675078864353;x2=1;y2=0.9845267257635304</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Une fille avec un sac rouge et des bottes marchant dans la rue</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Red.xml" path="/Settings/Taxonomies/Subject/Red"/>
+<link href="../../../../../../Settings/Taxonomies/Subject/Bag.xml" path="/Settings/Taxonomies/Subject/Bag"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>shutterstock_374681815</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2685</height>
+<data md5="98e2f05cd152fabbd9792c1fdbc29482" size="736334" href="../../../../../../__blob/98e2f05cd152fabbd9792c1fdbc29482.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

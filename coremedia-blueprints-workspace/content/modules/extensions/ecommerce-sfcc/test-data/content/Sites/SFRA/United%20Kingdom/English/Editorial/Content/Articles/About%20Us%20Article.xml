@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/SFRA/United Kingdom/English/Editorial/Content/Articles" name="About Us Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>About Us</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1">IT ALL STARTED WITH A SERIES OF OBSERVATIONS:</p><p>eCommerce merchandising and marketing innovation is what generates revenue, yet most operations are spending 80% of their budgets simply maintaining current infrastructure.<br/>The pace of eCommerce accelerates daily, yet most operations are scrambling only to stand still.<br/>Merchandisers and marketers are supremely frustrated, spending more time chasing outsourced providers and internal IT organizations than actually merchandising and marketing their own businesses.</p><p><br/>THERE HAD TO BE A BETTER WAY...</p><p>So in 2004, we set out to find it. The vision—then and now—was clear: bring to market an enterprise-class eCommerce solution that would put more power and innovation in the hands of merchandisers and at the same time would remove the technical costs, risks and complexities of running an ecommerce operation. We took what we knew of great eCommerce merchandising (our founders have been in ecommerce since 1994) and applied to it the then-emerging advancements in Software-as-a-Service architectures and dynamic grid computing. Then we just worked hard. We stayed up late. We drank lots of coffee. And ultimately, in late 2005, we delivered the market’s first on-demand enterprise ecommerce platform.</p><p class="p--heading-2">OUR CUSTOMERS COULD NOT BE HAPPIER WITH THE RESULTS.</p><p>With Salesforce Commerce Cloud eCommerce, they're spending more time leading with merchandising and marketing. They're in complete control of their site, making changes and launching new storefronts whenever they like. They're spending more time developing their own proprietary innovations (versus building commodity functionality). They receive new software upgrades from Salesforce Commerce Cloud continuously. And they never ever worry about site uptime, availability and security.</p><p>In short, they're free. Free to merchandise. Free to grow. Free to innovate. Free to change. Isn't that how eCommerce is supposed to be?</p><p>For more information please browse our About Us and Customer Service pages.</p></div></detailText>
+<pictures>
+<link href="../../Pictures/About%20Us.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Pictures/About%20Us"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

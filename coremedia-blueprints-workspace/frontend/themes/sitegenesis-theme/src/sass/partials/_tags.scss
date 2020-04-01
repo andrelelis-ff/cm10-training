@@ -1,0 +1,8 @@
+.#{$cm-tag-prefix} {
+  margin: 10px auto 0 auto;
+  width: 70%;
+
+  @include breakpoint(sm) {
+    padding: 0;
+  }
+}

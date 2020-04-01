@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/Hybris Apparel/Germany/German/Editorial/Products/Goggles" name="CM Action Goggles - Augmented" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Products/Goggles/CM%20Action%20Goggles%20-%20Augmented.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Goggles/CM%20Action%20Goggles%20-%20Augmented"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow%20Action.xml" path="/Settings/Taxonomies/Subject/Snow%20Action"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>CM Action-Goggles</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Omega Spy Goggles </p> </div></teaserText>
+<pictures>
+<link href="../../../Pictures/CM%20Action%20Goggles%2001.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/CM%20Action%20Goggles%2001"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>hybris:///catalog/product/300020294</externalId>
+</CMProductTeaser>

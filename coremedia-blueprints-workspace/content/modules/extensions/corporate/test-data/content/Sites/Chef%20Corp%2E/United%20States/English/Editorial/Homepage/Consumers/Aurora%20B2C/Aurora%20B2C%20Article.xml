@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./United States/English/Editorial/Homepage/Consumers/Aurora B2C" name="Aurora B2C Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Shop With Us</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Aurora B2C</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Consumers.xml" path="/Settings/Taxonomies/Subject/Consumers"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Aurora</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Find great Chef Corp. kitchen products for your home on the Aurora web shop.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>After we opened our B2B Area on the Aurora Internet Shopping Mall to roaring success, we had many passionate hobby cooks ask us whether we could provide them with home versions of our award-winning kitchen appliances.</p><p>Thus in 2014, we launched a line of "PerfectChef"-branded products for consumers on the Aurora B2C Internet Shopping Mall.</p><p>Using the <a xlink:show="new" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Site-Wide/External%20Links/CoreMedia%20Content%20Experience%20Platf1bd02259.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Site-Wide/External%20Links/CoreMedia%20Content%20Experience%20Platform%20External%20Link">CoreMedia Content Experience</a> platform we also enhanced the B2C shopping experience for our products by adding valuable content, such as recipes, articles, product review videos, engaging product images, and inspirational galleries.</p><p>By using CoreMedia Studio, we were able to reduce our efforts for the B2C site content maintenance drastically, and we have been able to add more and better content as we went along, using the same number of editors.</p><p>We have seen both the conversion rates as well as our total sales numbers increase significantly after we enriched our store experience with our value-added content that helps customers decide that our products are right for them.</p></div></detailText>
+<pictures>
+<link href="../../../Assets/Pictures/Consumers/Kitchen%20Mixer%20Picture.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Consumers/Kitchen%20Mixer%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

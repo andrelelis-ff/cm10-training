@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Checkbox
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config" xmlns:plugins="com.coremedia.cms.editor.sdk.premular.fields.plugins.*">
+  <fx:Script><![CDATA[
+    import com.coremedia.personalization.ui.util.PersonaContextHelper;
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.blueprint.personalization.editorplugin.config.cmPersonaFormCheckboxField";
+
+    private var config:CMPersonaFormCheckboxField;
+
+    public native function CMPersonaFormCheckboxField(config:CMPersonaFormCheckboxField = null);
+
+    /**
+     * property path expression leading to the Content to use for the property field
+     */
+    [Bindable]
+    public var bindTo:ValueExpression;
+
+    [Bindable]
+    public var forceReadOnlyValueExpression:ValueExpression;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!--- the context of the Bean-property to bind in this field -->
+    <fx:String id="propertyContext"/>
+
+    <!--- the property of the Bean to bind in this field -->
+    <fx:String id="propertyName"/>
+  </fx:Declarations>
+
+  <plugins>
+    <ui:BindPropertyPlugin
+            bindTo="{config.bindTo.extendBy(config.propertyContext+PersonaContextHelper.CONTEXT_NAME_SEPARATOR+config.propertyName)}"
+            bidirectional="true"/>
+    <plugins:BindDisablePlugin bindTo="{bindTo}" forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+  </plugins>
+
+</Checkbox>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Settings/Options/Settings" name="UploadSettings" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="defaultContentType">CMDownload</StringProperty>
+<StringProperty Name="defaultBlobPropertyName">data</StringProperty>
+<IntProperty Name="timeout">300000</IntProperty>
+<IntProperty Name="previewMaxFileSizeMB">32</IntProperty>
+<BooleanProperty Name="previewDisabled">false</BooleanProperty>
+<BooleanProperty Name="autoCheckin">true</BooleanProperty>
+<StructProperty Name="mimeTypeMappings">
+<Struct>
+<StringProperty Name="application/vnd.openxmlformats-officedocument.wordprocessingml.document">CMArticle</StringProperty>
+<StringProperty Name="application/msword">CMArticle</StringProperty>
+<StringProperty Name="application/x-tika-ooxml">CMArticle</StringProperty>
+<StringProperty Name="image">CMPicture</StringProperty>
+<StringProperty Name="image/tiff">CMDownload</StringProperty>
+<StringProperty Name="image/gif">CMImage</StringProperty>
+<StringProperty Name="image/svg+xml">CMImage</StringProperty>
+<StringProperty Name="application">CMDownload</StringProperty>
+<StringProperty Name="audio">CMAudio</StringProperty>
+<StringProperty Name="video">CMVideo</StringProperty>
+<StringProperty Name="text">CMDownload</StringProperty>
+<StringProperty Name="text/css">CMCSS</StringProperty>
+<StringProperty Name="text/javascript">CMJavaScript</StringProperty>
+<StringProperty Name="text/html">CMHTML</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="mimeTypeToMarkupPropertyMappings">
+<Struct>
+<StringProperty Name="text/css">code</StringProperty>
+<StringProperty Name="text/javascript">code</StringProperty>
+<StringProperty Name="text/html">data</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

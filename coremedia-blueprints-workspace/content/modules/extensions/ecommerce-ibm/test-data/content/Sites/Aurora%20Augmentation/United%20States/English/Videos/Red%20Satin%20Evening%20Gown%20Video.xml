@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Aurora Augmentation/United States/English/Videos" name="Red Satin Evening Gown Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/AuroraWMDRS-19</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Red Satin Evening Gown Video</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="Red%20Satin%20Evening%20Gown%20Video%20Teaser%20Picture.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Videos/Red%20Satin%20Evening%20Gown%20Video%20Teaser%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="0d291ac8abab7a088f9d054c4c19a365" size="392205" href="../../../../../__blob/0d291ac8abab7a088f9d054c4c19a365.blob" mimetype="video/mp4"/>
+<timeLine>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="sequences">
+<Struct>
+<StructProperty Name="0">
+<Struct>
+<IntProperty Name="startTimeMillis">0</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="1">
+<Struct>
+<IntProperty Name="startTimeMillis">0</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="2">
+<Struct>
+<IntProperty Name="startTimeMillis">0</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</timeLine>
+<asset>
+</asset>
+</CMVideo>

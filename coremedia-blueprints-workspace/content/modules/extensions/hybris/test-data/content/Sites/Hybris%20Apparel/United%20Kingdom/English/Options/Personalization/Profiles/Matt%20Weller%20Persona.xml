@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMUserProfile folder="/Sites/Hybris Apparel/United Kingdom/English/Options/Personalization/Profiles" name="Matt Weller Persona" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<profileSettings href="Matt%20Weller%20Persona.profie758a4bc.plain" mimetype="text/plain"/>
+<profileExtensions>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="properties">
+<Struct>
+<LinkListProperty Name="explicit" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Male.xml" cmexport:path="/Settings/Taxonomies/Subject/Male"/>
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Men.xml" cmexport:path="/Settings/Taxonomies/Subject/Men"/>
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Casual.xml" cmexport:path="/Settings/Taxonomies/Subject/Casual"/>
+</LinkListProperty>
+<LinkListProperty Name="subjectTaxonomies" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Men.xml" cmexport:path="/Settings/Taxonomies/Subject/Men"/>
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Casual.xml" cmexport:path="/Settings/Taxonomies/Subject/Casual"/>
+</LinkListProperty>
+<LinkListProperty Name="profileImage" LinkType="coremedia:///cap/contenttype/CMPicture">
+<Link xlink:href="coremedia:///cap/resources/Matt%20Weller%20Picture.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Personalization/Profiles/Matt%20Weller%20Picture"/>
+</LinkListProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="usersegments">
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</profileExtensions>
+</CMUserProfile>

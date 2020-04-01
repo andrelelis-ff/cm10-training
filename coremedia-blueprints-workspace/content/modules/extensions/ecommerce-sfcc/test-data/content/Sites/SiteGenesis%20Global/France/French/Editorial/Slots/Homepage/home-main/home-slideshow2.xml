@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/SiteGenesis Global/France/French/Editorial/Slots/Homepage/home-main" name="home-slideshow2" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Editorial/Slots/Homepage/home-main/home-slideshow2.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Slots/Homepage/home-main/home-slideshow2"/>
+</master>
+<viewtype>
+<link href="../../../../Options/Viewtypes/CMChannel/hero.xml" path="/Sites/SiteGenesis%20Global/France/French/Options/Viewtypes/CMChannel/hero"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../../Content/Teaser/Women%20Black%20%26%20White%20Teaser.xml" path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/Teaser/Women%20Black%20%26%20White%20Teaser"/>
+<link href="../../../Content/ImageMaps/Women%20Image%20Map.xml" path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/ImageMaps/Women%20Image%20Map"/>
+<link href="../../../Content/Articles/The%20Difference%20between%20Style%20and%20Fashion.xml" path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/Articles/The%20Difference%20between%20Style%20and%20Fashion"/>
+<link href="../../../../Navigation/Microsites/Fashion%20Show%20Microsite.xml" path="/Sites/SiteGenesis%20Global/France/French/Navigation/Microsites/Fashion%20Show%20Microsite"/>
+</items>
+</CMCollection>

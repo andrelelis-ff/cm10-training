@@ -1,0 +1,27 @@
+{
+  "title": "JSON schema for CoreMedia types. Details at https://documentation.coremedia.com/cms-9/artifacts/1807/webhelp/frontend-en",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://www.coremedia.com/json-schemas/types.schema.json",
+  "definitions": {
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "nonEmptyStringOrNull": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/nonEmptyString"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "nonEmptyStringList": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/nonEmptyString"
+      }
+    }
+  }
+}

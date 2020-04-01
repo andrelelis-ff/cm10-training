@@ -1,0 +1,5 @@
+import "transformations/errors.jslt" as errors
+{
+  "picture" : .data.content.picture,
+  "errors" :  errors:errors()
+}

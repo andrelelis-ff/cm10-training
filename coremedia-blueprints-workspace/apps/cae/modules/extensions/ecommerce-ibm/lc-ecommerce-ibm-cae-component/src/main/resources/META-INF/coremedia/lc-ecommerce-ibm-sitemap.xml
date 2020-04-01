@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/com/coremedia/cae/link-services.xml"/>
+  <import resource="classpath:/com/coremedia/cap/common/uapi-services.xml"/>
+  <import resource="classpath:/com/coremedia/cap/multisite/multisite-services.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-sitemap.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/navigation/context/bpbase-default-contextstrategy.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-services.xml"/>
+  <import resource="classpath:/META-INF/coremedia/livecontext-site-services.xml"/>
+  <import resource="classpath:/META-INF/coremedia/livecontext-fragment.xml"/>
+
+  <!--
+    sitemap.org sitemap
+  -->
+
+  <bean id="livecontextSitemapDoctypePredicate" class="com.coremedia.blueprint.cae.sitemap.SitemapDoctypePredicate">
+    <property name="capConnection" ref="connection"/>
+    <property name="includes">
+      <list>
+        <value>CMTeasable</value>
+      </list>
+    </property>
+    <property name="excludes">
+      <list>
+        <!--
+          CMExternalChannel, CMExternalPage, CMExternalProduct and CMProductTeaser links are deep links of the
+          shop domain and thus not allowed in the sitemap of the CMS domain.
+        -->
+        <value>CMExternalChannel</value>
+        <value>CMExternalPage</value>
+        <value>CMExternalProduct</value>
+        <value>CMProductTeaser</value>
+        <value>CMMedia</value>
+        <value>CMExternalLink</value>
+        <value>CMAction</value>
+        <value>CMPlaceholder</value>
+        <value>CMDynamicList</value>
+        <value>CMTeaser</value>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="livecontextExcludeFromSearchPredicate" class="com.coremedia.blueprint.cae.sitemap.ExcludeFromSearchSitemapPredicate">
+    <property name="doctypeName" value="CMTeasable"/>
+    <property name="notSearchablePropertyName" value="notSearchable"/>
+  </bean>
+
+  <bean id="livecontextSitemapValidityPredicate" class="com.coremedia.blueprint.cae.common.predicates.ValidContentPredicate">
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+  </bean>
+
+  <bean id="livecontextSitemapContentUrlGenerator" class="com.coremedia.blueprint.cae.sitemap.ContentUrlGenerator" parent="abstractContentUrlGenerator">
+    <property name="exclusionPaths">
+      <list>
+        <value>Options</value>
+      </list>
+    </property>
+    <property name="predicates">
+      <list>
+        <ref bean="livecontextSitemapValidityPredicate"/>
+        <ref bean="livecontextSitemapDoctypePredicate"/>
+        <ref bean="livecontextExcludeFromSearchPredicate"/>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="livecontextSitemapCatalogUrlGenerator" class="com.coremedia.livecontext.ecommerce.ibm.cae.sitemap.CatalogSitemapUrlGenerator">
+    <property name="commerceConnectionInitializer" ref="commerceConnectionInitializer"/>
+    <property name="settingsService" ref="settingsService" />
+    <property name="liveContextNavigationFactory" ref="liveContextNavigationFactory"/>
+    <property name="linkFormatter" ref="linkFormatter"/>
+  </bean>
+
+  <bean id="livecontextSitemapConfiguration" class="com.coremedia.blueprint.cae.sitemap.SitemapSetup">
+    <property name="protocol" value="${blueprint.sitemap.protocol}"/>
+    <property name="sitemapRendererFactory" ref="sitemapIndexRendererFactory"/>
+    <property name="urlGenerators">
+      <list>
+        <ref bean="livecontextSitemapContentUrlGenerator"/>
+        <ref bean="livecontextSitemapCatalogUrlGenerator"/>
+      </list>
+    </property>
+  </bean>
+
+  <customize:append id="appendLivecontextSitemapConfiguration" bean="sitemapConfigurations">
+    <map>
+      <entry key="livecontext" value-ref="livecontextSitemapConfiguration"/>
+    </map>
+  </customize:append>
+
+  <!--
+    Sitemap for CMS content in WCS search index, AAS-Mode
+  -->
+  <bean id="wcsAasCrawlSitemapPredicate" class="com.coremedia.livecontext.ecommerce.ibm.cae.sitemap.WcsAasCrawlSitemapPredicate">
+  </bean>
+
+  <bean id="wcsAasContentUrlGenerator" class="com.coremedia.livecontext.ecommerce.ibm.cae.sitemap.WcsAasContentUrlGenerator" parent="abstractContentUrlGenerator">
+    <property name="predicates">
+      <list>
+        <ref bean="livecontextSitemapValidityPredicate"/>
+        <ref bean="wcsAasCrawlSitemapPredicate"/>
+      </list>
+    </property>
+    <property name="sitesService" ref="sitesService"/>
+    <property name="wcsStorefrontUrl" value="${livecontext.storefront.url}"/>
+    <property name="contextStrategy" ref="contentContextStrategy"/>
+    <property name="urlKeyword" value="${livecontext.url-keyword}"/>
+    <property name="linkFormatter" ref="linkFormatter"/>
+    <property name="externalSeoSegmentBuilder" ref="externalSeoSegmentBuilder"/>
+    <property name="commerceConnectionInitializer" ref="commerceConnectionInitializer"/>
+  </bean>
+
+  <bean id="sitemapWcsAasRendererFactory" class="com.coremedia.livecontext.ecommerce.ibm.cae.sitemap.SitemapWcsAasRendererFactory"/>
+
+  <bean id="sitemapWcsAasConfig" class="com.coremedia.blueprint.cae.sitemap.SitemapSetup">
+    <property name="sitemapRendererFactory" ref="sitemapWcsAasRendererFactory"/>
+    <property name="urlGenerators">
+      <list>
+        <ref bean="wcsAasContentUrlGenerator"/>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="sitemapWcsAasController" class="com.coremedia.livecontext.ecommerce.ibm.cae.sitemap.WcsAasSitemapGenerationHandler">
+    <property name="siteResolver" ref="siteResolver"/>
+    <property name="sitemapSetupFactory" ref="sitemapWcsAasSetupFactory"/>
+  </bean>
+
+  <bean id="sitemapWcsAasSetupFactory" class="com.coremedia.blueprint.cae.sitemap.SpringBasedSitemapSetupFactory">
+    <property name="sitemapSetup" ref="sitemapWcsAasConfig"/>
+  </bean>
+
+  <!--
+    Sitemap for CMS content in WCS search index, Calista-Mode
+  -->
+  <bean id="wcsCalistaSitemapDoctypePredicate" class="com.coremedia.blueprint.cae.sitemap.SitemapDoctypePredicate">
+    <property name="capConnection" ref="connection"/>
+    <property name="includes">
+      <list>
+        <value>CMArticle</value>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="wcsCalistaContentUrlGenerator" class="com.coremedia.livecontext.ecommerce.ibm.cae.sitemap.WcsCalistaContentUrlGenerator" parent="abstractContentUrlGenerator">
+    <property name="predicates">
+      <list>
+        <ref bean="livecontextSitemapValidityPredicate"/>
+        <ref bean="wcsCalistaSitemapDoctypePredicate"/>
+        <ref bean="livecontextExcludeFromSearchPredicate"/>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="sitemapWcsCalistaRendererFactory" class="com.coremedia.livecontext.ecommerce.ibm.cae.sitemap.SitemapWcsCalistaRendererFactory"/>
+
+  <bean id="sitemapWcsCalistaConfig" class="com.coremedia.blueprint.cae.sitemap.SitemapSetup">
+    <property name="sitemapRendererFactory" ref="sitemapWcsCalistaRendererFactory"/>
+    <property name="urlGenerators">
+      <list>
+        <ref bean="wcsCalistaContentUrlGenerator"/>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="sitemapWcsCalistaController" class="com.coremedia.livecontext.ecommerce.ibm.cae.sitemap.WcsCalistaSitemapGenerationHandler">
+    <property name="siteResolver" ref="siteResolver"/>
+    <property name="sitemapSetupFactory" ref="sitemapWcsCalistaSetupFactory"/>
+  </bean>
+
+  <bean id="sitemapWcsCalistaSetupFactory" class="com.coremedia.blueprint.cae.sitemap.SpringBasedSitemapSetupFactory">
+    <property name="sitemapSetup" ref="sitemapWcsCalistaConfig"/>
+  </bean>
+
+</beans>

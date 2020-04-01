@@ -1,0 +1,101 @@
+<VirtualHost *:80 >
+  ServerName <%= @server_name %>
+  <%- unless @server_aliases.nil? || @server_aliases.empty? -%>
+  ServerAlias <%= @server_aliases.join " " %>
+  <%- end -%>
+  #####################
+  ###    Rewrite    ###
+  #####################
+  RewriteEngine On
+
+  RewriteCond %{HTTPS} off
+  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+  LogLevel <%= @apache_log_level.nil? ? 'warn' : @apache_log_level %> rewrite:<%= @rewrite_log_level.nil? ? 'trace1' : @rewrite_log_level %>
+  ErrorLog /var/log/httpd/<%= @application_name %>-error.log
+  CustomLog /var/log/httpd/<%= @application_name %>-access.log combined
+</Virtualhost>
+
+<VirtualHost *:443 >
+  ServerName <%= @server_name %>
+  <%- unless @server_aliases.nil? || @server_aliases.empty? -%>
+  ServerAlias <%= @server_aliases.join " " %>
+  <%- end -%>
+  SSLEngine  On
+  <%- unless @custom_conf.nil? || @custom_conf.empty? -%>
+  <%- @custom_conf.each do |custom| %>
+  <%= custom %>
+  <%- end -%>
+  <%- end -%>
+  #####################
+  ###    Rewrite    ###
+  #####################
+  RewriteEngine On
+
+  <%- if @preview -%>
+  <%- # PREVIEW RULES -%>
+  <%- if @servlet_context != @live_servlet_context -%>
+  RewriteRule ^/<%= @live_servlet_context %>/(.*) /<%= @servlet_context %>/$1 [R=302,NE,L]
+  <%- end -%>
+  # Send empty URL to default site home page
+  RewriteRule ^/$ /<%= @servlet_context %>/servlet/<%= @default_site %> [R=302,L]
+  RewriteRule ^/+internal/preview/previewurl - [PT,L]
+  RewriteRule ^/<%= @servlet_context %>/+servlet/+internal/preview/previewurl - [PT,L]
+  RewriteRule ^/<%= @servlet_context %>/+servlet/+internal/(.*) - [F,PT,L]
+  RewriteRule ^/+internal/(.*) - [F,PT,L]
+
+  <%- else %>
+  <%- # LIVE RULES -%>
+  RewriteCond %{QUERY_STRING} ^.*view=fragmentPreview.*$
+  RewriteRule (.*) $1? [R=301,L]
+
+  # Internal services, served only directly by spring-boot. Deny external invocation. Except index-wcs-aas and index-wcs-calista
+  RewriteCond %{REQUEST_URI} !^/+(blueprint/+servlet/+)?internal/[^/]+/index-wcs-(aas|calista) [NC]
+  RewriteRule ^/<%= @servlet_context %>/+servlet/+internal/(.*) - [F,PT,L]
+  RewriteRule ^/+internal/(.*) - [F,PT,L]
+
+  # Send empty URL to <%= @default_site %> home page
+  RewriteRule ^/$ /<%= @default_site %> [R=302,L]
+  <% if @site_id -%>
+  RewriteRule  ^/sitemap_index.xml  /<%= @servlet_context %>/servlet/service/sitemap/<%= @site_id %>/sitemap_index.xml  [PT,L]
+  RewriteRule  ^/sitemap(.*).xml.gz  /<%= @servlet_context %>/servlet/service/sitemap/<%= @site_id %>/sitemap$1.xml.gz  [PT,L]
+  <%- end -%>
+  <%- end %>
+  <%- # GENERAL RULES -%>
+  # robots.txt
+  RewriteRule ^/robots.txt /<%= @servlet_context %>/servlet/service/robots/<%= @default_site %> [PT,L]
+
+  #####################
+  ###    Proxy      ###
+  #####################
+  <%- protocol =  @protocol.nil? ? 'http' : @protocol -%>
+  ProxyPreserveHost On
+  SSLProxyEngine On
+  RequestHeader set X-Forwarded-Proto "https"
+<%- if @cluster.size > 1 -%>
+  # the trailing "e" is no typo
+  Header add Set-Cookie "ROUTEID=.%{BALANCER_WORKER_ROUTE}e; path=/" env=BALANCER_ROUTE_CHANGED
+  <%- servlet_url = "balancer://cae-cluster" -%>
+  <Proxy <%= servlet_url %>>
+    <%- @cluster.keys.sort.each do |member| -%>
+    BalancerMember <%= protocol %>://<%= @cluster[member]['host'] %>:<%= @cluster[member]['port'].to_s %> route=<%= member %><%- if @cluster[member]['params'] -%><%- @cluster[member]['params'].keys.sort.each do |k| -%> <%= "#{k}=#{@cluster[member]['params'][k]}" %> <%- end -%><%- end -%>
+    <%- end -%>
+    ProxySet stickysession=ROUTEID
+  </Proxy>
+<%- else -%>
+  <%- member = @cluster.keys.first -%>
+  <%- proxy_params = @cluster[member]['params'] ? @cluster[member]['params'].sort.map{ |k, v| "#{k}=#{v}" }.join(' ') : '' -%>
+  <%- servlet_url = "#{protocol}://#{@cluster[member]['host']}:#{@cluster[member]['port']}/#{@servlet_context}" -%>
+<%- end -%>
+  ProxyPass /<%= @servlet_context %>/ <%= servlet_url %>/ <%= proxy_params || '' %>
+  ProxyPassReverse /<%= @servlet_context %>/ <%= servlet_url %>
+  ProxyPassReverseCookiePath /<%= @servlet_context %> /
+  ProxyPass / <%= servlet_url %><%= "/" unless @servlet_context.empty? %>servlet/<%= proxy_params || '' %>
+
+  #####################
+  ###    Logging    ###
+  #####################
+  LogLevel <%= @apache_log_level.nil? ? 'warn' : @apache_log_level %> rewrite:<%= @rewrite_log_level.nil? ? 'trace1' : @rewrite_log_level %>
+  ErrorLog /var/log/httpd/<%= @application_name %>-ssl-error.log
+  CustomLog /var/log/httpd/<%= @application_name %>-ssl-access.log combined
+
+</VirtualHost>

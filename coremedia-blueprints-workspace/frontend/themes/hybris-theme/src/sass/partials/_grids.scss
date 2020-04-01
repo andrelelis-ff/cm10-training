@@ -1,0 +1,43 @@
+.cm-placement {
+  box-sizing: border-box;
+  width: 100%;
+
+  &--main,
+  &--placement1,
+  &--placement2,
+  &--placement3,
+  &--placement4,
+  &--sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: auto;
+
+    // add a margin-top, starting from the second item.
+    > div ~ div {
+      margin-top: 48px;
+    }
+  }
+}
+
+.cm-portrait-banner-container,
+.cm-landscape-banner-container {
+  &__headline {
+    color: $cm-hybris-text;
+    padding: 0;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+
+    @include breakpoint("lg-and-up") {
+      font-size: 3.6rem;
+
+      &::before {
+        top: 1.9rem;
+      }
+    }
+  }
+}

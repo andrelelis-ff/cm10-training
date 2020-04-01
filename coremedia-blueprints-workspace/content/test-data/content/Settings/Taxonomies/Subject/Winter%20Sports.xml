@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTaxonomy folder="/Settings/Taxonomies/Subject" name="Winter Sports" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Winter Sports</value>
+<children>
+<link href="Ski.xml" path="/Settings/Taxonomies/Subject/Ski"/>
+<link href="Snowboard.xml" path="/Settings/Taxonomies/Subject/Snowboard"/>
+<link href="Trends.xml" path="/Settings/Taxonomies/Subject/Trends"/>
+<link href="Equipment.xml" path="/Settings/Taxonomies/Subject/Equipment"/>
+<link href="Inspiration.xml" path="/Settings/Taxonomies/Subject/Inspiration"/>
+<link href="Locations.xml" path="/Settings/Taxonomies/Subject/Locations"/>
+<link href="Competition.xml" path="/Settings/Taxonomies/Subject/Competition"/>
+<link href="Tips%20and%20Tricks.xml" path="/Settings/Taxonomies/Subject/Tips%20and%20Tricks"/>
+<link href="Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+<link href="Speed%20Gliding.xml" path="/Settings/Taxonomies/Subject/Speed%20Gliding"/>
+<link href="Speed%20Riding.xml" path="/Settings/Taxonomies/Subject/Speed%20Riding"/>
+<link href="Speed%20Flying.xml" path="/Settings/Taxonomies/Subject/Speed%20Flying"/>
+<link href="Snow%20Action.xml" path="/Settings/Taxonomies/Subject/Snow%20Action"/>
+</children>
+<externalReference></externalReference>
+</CMTaxonomy>

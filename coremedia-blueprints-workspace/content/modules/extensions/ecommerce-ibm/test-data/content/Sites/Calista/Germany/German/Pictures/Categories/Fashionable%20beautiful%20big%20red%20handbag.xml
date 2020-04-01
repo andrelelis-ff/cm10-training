@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/Germany/German/Pictures/Categories" name="Fashionable beautiful big red handbag" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Pictures/Categories/Fashionable%20beautiful%20big%20red%20handbag.xml" path="/Sites/Calista/United%20States/English/Pictures/Categories/Fashionable%20beautiful%20big%20red%20handbag"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1336;y=0;width=2036;height=3157</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=1320;y=0;width=2366;height=3157</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=1239;y=604;width=2414;height=2416</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=157;width=4000;height=3000</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=902;width=4000;height=2255</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=1144;width=4000;height=2005</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=1417;width=4000;height=1603</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=1546;width=4000;height=1498</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=1973;width=4000;height=999</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=1013;y=0;width=1973;height=3157</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=1454;width=4000;height=1702</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=1179;y=0;width=2105;height=3157</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.33400402414486924;y1=0;x2=0.8430583501006036;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.3299798792756539;y1=0;x2=0.9215291750503019;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.30985915492957744;y1=0.1913265306122449;x2=0.9134808853118712;y2=0.9566326530612245</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.025510204081632654;x2=1;y2=0.9770408163265306</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.2857142857142857;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.3622448979591837;x2=1;y2=0.9974489795918368</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.4489795918367347;x2=1;y2=0.9566326530612245</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.4897959183673469;x2=1;y2=0.9642857142857143</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.625;x2=1;y2=0.9413265306122449</StringProperty>
+<StringProperty Name="landscape_ratio235x100">position;x1=0;y1=0.46056782334384855;x2=1;y2=0.9997276775011079</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="landscape_ratio235x100">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/category/Women Handbags</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.5558292282430214</StringProperty>
+<StringProperty Name="y">0.6559251559251559</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Moderne schöne große rote Handtasche auf dem Arm des Mädchens in einem modernen weißen Kleid, werfend nahe der Wand auf einer warmen Sommernacht auf. Warme Farbe. Nahansicht</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>shutterstock_493824916</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>3158</height>
+<data md5="d06938cd4f2d637dea4f8ac08d059756" size="805181" href="../../../../../../__blob/d06938cd4f2d637dea4f8ac08d059756.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

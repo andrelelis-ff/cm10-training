@@ -1,0 +1,107 @@
+/**
+ * @var {boolean}
+ * Enables styles for the TemplateBeanListChooser.
+ *
+ * @member com.coremedia.blueprint.studio.template.TemplateBeanListChooser
+ */
+$cm-include-template-bean-list-chooser: dynamic(true);
+
+/**
+ * @var {color}
+ *
+ * Sets the border color for the TemplateBeanListChooser selected item.
+ *
+ * @member com.coremedia.blueprint.studio.template.TemplateBeanListChooser
+ */
+$cm-template-bean-list-chooser-item-selected-border-color: dynamic($cm-blue-4);
+
+/**
+ * @var {color}
+ *
+ * Sets the background color for the TemplateBeanListChooser selected item.
+ *
+ * @member com.coremedia.blueprint.studio.template.TemplateBeanListChooser
+ */
+$cm-template-bean-list-chooser-item-selected-background-color: dynamic($cm-blue-4);
+
+/**
+ * @var {number}
+ *
+ * The margin for the TemplateBeanListChooser preview icon.
+ *
+ * @member com.coremedia.blueprint.studio.template.TemplateBeanListChooser
+ */
+$cm-template-bean-list-chooser-margin: dynamic($cm-grid-100);
+
+/**
+ * @var {number}
+ *
+ * The width for the TemplateBeanListChooser preview icon.
+ *
+ * @member com.coremedia.blueprint.studio.template.TemplateBeanListChooser
+ */
+$cm-template-bean-list-chooser-preview-width: dynamic(140px);
+
+/**
+ * @var {number}
+ *
+ * The height for the TemplateBeanListChooser preview icon.
+ *
+ * @member com.coremedia.blueprint.studio.template.TemplateBeanListChooser
+ */
+$cm-template-bean-list-chooser-preview-height: dynamic(140px);
+
+/**
+ * @var {number}
+ *
+ * The padding for the TemplateBeanListChooser preview icon.
+ *
+ * @member com.coremedia.blueprint.studio.template.TemplateBeanListChooser
+ */
+$cm-template-bean-list-chooser-preview-padding: dynamic(10px 10px 0 10px);
+
+/**
+ * @var {number}
+ *
+ * The font-size for the TemplateBeanListChooser text.
+ *
+ * @member com.coremedia.blueprint.studio.template.TemplateBeanListChooser
+ */
+$cm-template-bean-list-chooser-text-font-size: dynamic($cm-font-size);
+
+/**
+ * @var {color}
+ *
+ * The font-color for the TemplateBeanListChooser text.
+ *
+ * @member com.coremedia.blueprint.studio.template.TemplateBeanListChooser
+ */
+$cm-template-bean-list-chooser-text-font-color: dynamic($cm-grey-5);
+
+/**
+ * @var {color}
+ *
+ * The font-color for the TemplateBeanListChooser text if item selected.
+ *
+ * @member com.coremedia.blueprint.studio.template.TemplateBeanListChooser
+ */
+$cm-template-bean-list-chooser-text-font-color-selected: dynamic($cm-font-selected-color);
+
+/**
+ * @var {number}
+ *
+ * The line-height for the TemplateBeanListChooser text.
+ *
+ * @member com.coremedia.blueprint.studio.template.TemplateBeanListChooser
+ */
+$cm-template-bean-list-chooser-text-line-height: dynamic($cm-template-bean-list-chooser-text-font-size + 1px);
+
+/**
+ * @var {number/list}
+ *
+ * The padding for the TemplateBeanListChooser text.
+ *
+ * @member com.coremedia.blueprint.studio.template.TemplateBeanListChooser
+ */
+$cm-template-bean-list-chooser-text-padding: dynamic($cm-grid-100 $cm-grid-100 $cm-grid-25);
+

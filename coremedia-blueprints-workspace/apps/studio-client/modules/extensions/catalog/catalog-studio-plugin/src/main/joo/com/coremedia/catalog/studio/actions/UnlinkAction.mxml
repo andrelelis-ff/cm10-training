@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+
+ A <code>contentAction</code> that unlinkds the configured content from its parent.
+ See <code>contentAction</code> for how to configure the content.
+ @see com.coremedia.cms.editor.sdk.config.contentAction
+
+-->
+<local:UnlinkActionBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.catalog.studio.actions.*">
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+
+    private var config:UnlinkAction;
+
+    public native function UnlinkAction(config:UnlinkAction = null);
+
+    [Bindable]
+    public var folderValueExpression:ValueExpression;
+    ]]></fx:Script>
+
+</local:UnlinkActionBase>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content">
+  <schema>
+    <type name="AMAsset" abstract="true">
+      <property name="original" type="blob" contentType="*/*"/>
+      <property name="thumbnail" type="blob" contentType="image/*"/>
+      <property name="state" type="markup" grammar="coremedia-struct-2008"/>
+      <property name="metadata" type="markup" grammar="coremedia-struct-2008"/>
+    </type>
+    <type name="AMPictureAsset" parent="AMAsset">
+      <property name="web" type="blob" contentType="image/*"/>
+      <property name="print" type="blob" contentType="image/*"/>
+      <property name="title" type="string"/>
+    </type>
+    <type name="CMPicture">
+      <property name="asset" type="link" linkType="AMPictureAsset"/>
+    </type>
+  </schema>
+
+  <content>
+    <folder id="1" name="">
+      <folder id="3" name="Assets"/>
+    </folder>
+  </content>
+
+  <rules>
+    <rule resourceId="1" group="0" doctype="Document_">
+      <right value="ALL"/>
+    </rule>
+    <rule resourceId="1" group="0" doctype="Folder_">
+      <right value="ALL"/>
+    </rule>
+  </rules>
+</contentRepository>

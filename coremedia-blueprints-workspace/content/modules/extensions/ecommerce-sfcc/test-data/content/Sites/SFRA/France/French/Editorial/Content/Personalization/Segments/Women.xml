@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSegment folder="/Sites/SFRA/France/French/Editorial/Content/Personalization/Segments" name="Women" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Editorial/Content/Personalization/Segments/Women.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Personalization/Segments/Women"/>
+</master>
+<conditions grammarName="coremedia-selectionrules-1.0"><rules version="1.0" xmlns="http://www.coremedia.com/2010/selectionrules" xmlns:xlink="http://www.w3.org/1999/xlink">subjectTaxonomies.<content xlink:href="coremedia:///cap/resources/../../../../../../../../Settings/Taxonomies/Subject/Women%282%29.xml" cmexport:path="/Settings/Taxonomies/Subject/Women%282%29"/>&gt;0.05</rules></conditions>
+</CMSegment>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Pictures/Product Pictures/Decorating" name="B2B_TABLERUNNER_WHITEBLUE Frontshot Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Pictures/Product%20Pictures/Decorating/B2B_TABLERUNNER_WHITEBLUEe15a991b.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Decorating/B2B_TABLERUNNER_WHITEBLUE%20Frontshot%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1001;y=0;width=878;height=1360</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=969;y=0;width=1018;height=1360</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=542;y=0;width=1358;height=1360</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=90;y=0;width=1810;height=1360</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=164;width=2048;height=1155</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=288;width=2048;height=822</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=497;width=2048;height=514</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.48897795591182364;y1=0;x2=0.9178356713426854;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.4729458917835671;y1=0;x2=0.969939879759519;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.26452905811623245;y1=0;x2=0.9278557114228457;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.04408817635270541;y1=0;x2=0.9278557114228457;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.12084592145015106;x2=1;y2=0.9697885196374623</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.21148036253776434;x2=1;y2=0.8157099697885196</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.36555891238670696;x2=1;y2=0.743202416918429</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_TABLERUNNER_WHITEBLUE</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Tischläufer weiß und blau</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Tischläufer weiß und blau</alt>
+<copyright>ElenaKor / Shutterstock 81306313</copyright>
+<dataUrl></dataUrl>
+<data md5="f664868823c48cd2fc15ebdc92a8c54e" size="408452" href="../../../../../../../__blob/f664868823c48cd2fc15ebdc92a8c54e.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

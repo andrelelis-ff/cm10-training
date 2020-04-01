@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Chef Corp./Germany/German/Options/Settings" name="Search Configuration" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Options/Settings/Search%20Configuration.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Search%20Configuration"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<LinkProperty Name="searchChannel" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Navigation/Hidden%20Navigation/SearchResultPage.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Hidden%20Navigation/SearchResultPage"/>
+<LinkProperty Name="searchAction" LinkType="coremedia:///cap/contenttype/CMAction" xlink:href="coremedia:///cap/resources/Actions/SearchAction.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Actions/SearchAction"/>
+<IntProperty Name="searchResultHitsPerPage">10</IntProperty>
+<BooleanProperty Name="searchDisableSpellingSuggestions">false</BooleanProperty>
+<LinkListProperty Name="searchChannelSelect" LinkType="coremedia:///cap/contenttype/CMChannel">
+<Link xlink:href="coremedia:///cap/resources/../../Navigation/Consumers/Consumers%20Page.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Consumers/Consumers%20Page"/>
+<Link xlink:href="coremedia:///cap/resources/../../Navigation/Professionals/Professionals%20Page.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Professionals/Professionals%20Page"/>
+<Link xlink:href="coremedia:///cap/resources/../../Navigation/Company/Company%20Page.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Company/Company%20Page"/>
+</LinkListProperty>
+<StringListProperty Name="searchDoctypeSelect">
+<String>CMArticle</String>
+<String>CMCategory</String>
+<String>CMDownload</String>
+<String>CMGallery</String>
+<String>CMChannel</String>
+<String>CMProduct</String>
+<String>CMVideo</String>
+</StringListProperty>
+<StructProperty Name="searchFacets">
+<Struct>
+<StringProperty Name="subject">subjecttaxonomy</StringProperty>
+<StringProperty Name="type">documenttype</StringProperty>
+</Struct>
+</StructProperty>
+<IntProperty Name="searchFacetLimit">5</IntProperty>
+<StringProperty Name="caefeederSiteConfiguration">corporate</StringProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

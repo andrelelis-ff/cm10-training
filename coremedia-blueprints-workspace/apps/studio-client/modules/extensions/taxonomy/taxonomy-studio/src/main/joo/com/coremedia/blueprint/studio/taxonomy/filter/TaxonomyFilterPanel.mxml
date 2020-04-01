@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ A filter for the collection view that allows to select the taxonomy keywords of documents
+ to be included in the search result.
+-->
+<local:TaxonomyFilterPanelBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                               xmlns:local="com.coremedia.blueprint.studio.taxonomy.filter.*"
+                               xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                               xmlns="exml:ext.config"
+                               xmlns:ui="exml:com.coremedia.ui.config"
+                               xmlns:taxonomy="exml:com.coremedia.blueprint.studio.config.taxonomy"
+                               itemId="{config.itemId || config.taxonomyId}"
+                               title="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', config.taxonomyId)}">
+
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import ext.form.field.ComboBox;
+    import ext.tip.ToolTip;
+
+    import com.coremedia.ui.models.bem.BEMBlock;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.taxonomy.taxonomyFilterPanel";
+
+    public static const BLOCK:BEMBlock = new BEMBlock("cm-taxonomy-filter-panel");
+
+    private var config:TaxonomyFilterPanel;
+
+    public native function TaxonomyFilterPanel(config:TaxonomyFilterPanel = null);
+    ]]></fx:Script>
+  <local:items>
+    <Container>
+      <plugins>
+        <ui:HorizontalSpacingPlugin/>
+      </plugins>
+      <items>
+        <taxonomy:TaxonomySearchField searchResultExpression="{getSearchResultExpression()}"
+                                      resetOnBlur="true"
+                                      flex="1"
+                                      itemId="taxonomyFilterSearchField"
+                                      taxonomyId="{config.taxonomyId}">
+          <taxonomy:listeners>
+            <fx:Object afterrender="{function(combo:ComboBox):void {
+                var toolTip:ToolTip = new ToolTip(ToolTip({}));
+                var toolTipText:String = resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomySearch_empty_text');
+                toolTip.setTarget(combo.getEl());
+                toolTip.mon(toolTip, 'afterrender', function ():void {
+                toolTip.update(toolTipText);});
+              }}"/>
+          </taxonomy:listeners>
+        </taxonomy:TaxonomySearchField>
+        <ui:IconButton iconCls="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'Taxonomy_action_icon')}"
+                       text="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'Taxonomy_action_tooltip')}"
+                       tooltip="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'Taxonomy_action_tooltip')}">
+          <ui:baseAction>
+            <taxonomy:OpenTaxonomyChooserAction propertyValueExpression="{getSelectionExpression()}"
+                                                taxonomyId="{config.taxonomyId}"/>
+          </ui:baseAction>
+        </ui:IconButton>
+      </items>
+      <layout>
+        <layout_HBox/>
+      </layout>
+    </Container>
+    <Grid hideHeaders="true"
+          itemId="{TAXONOMY_NODE_GRID_ITEM_ID}">
+      <plugins>
+        <ui:BindListPlugin bindTo="{getSelectionExpression()}">
+          <ui:fields>
+            <ui:DataField name="name"/>
+            <ui:DataField name="html"/>
+          </ui:fields>
+        </ui:BindListPlugin>
+        <ui:BindVisibilityPlugin bindTo="{getSelectionExpression()}"
+                                 transformer="{function(selection:Array):Boolean {return selection.length > 0}}"/>
+      </plugins>
+      <columns>
+        <GridColumn stateId="name"
+                    sortable="false"
+                    dataIndex="name"
+                    renderer="{taxonomyRenderer}"
+                    flex="1"/>
+      </columns>
+      <view>
+        <GridView stripeRows="false"/>
+      </view>
+    </Grid>
+  </local:items>
+  <local:plugins exml:mode="append">
+    <ui:BEMPlugin block="{BLOCK}"/>
+    <ui:VerticalSpacingPlugin/>
+  </local:plugins>
+
+</local:TaxonomyFilterPanelBase>

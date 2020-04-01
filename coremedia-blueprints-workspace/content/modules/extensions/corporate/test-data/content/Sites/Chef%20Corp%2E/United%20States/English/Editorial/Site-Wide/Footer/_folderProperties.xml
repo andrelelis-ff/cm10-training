@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMFolderProperties folder="/Sites/Chef Corp./United States/English/Editorial/Site-Wide/Footer" name="_folderProperties" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<contexts>
+<link href="../../../Navigation/Hidden%20Navigation/Corporate%20Information%20Page.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Navigation/Hidden%20Navigation/Corporate%20Information%20Page"/>
+</contexts>
+</CMFolderProperties>

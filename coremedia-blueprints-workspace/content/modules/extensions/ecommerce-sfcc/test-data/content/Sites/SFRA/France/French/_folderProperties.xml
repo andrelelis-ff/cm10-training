@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMFolderProperties folder="/Sites/SFRA/France/French" name="_folderProperties" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../United%20Kingdom/English/_folderProperties.xml" path="/Sites/SFRA/United%20Kingdom/English/_folderProperties"/>
+</master>
+<contexts>
+<link href="Navigation/SFRA.xml" path="/Sites/SFRA/France/French/Navigation/SFRA"/>
+</contexts>
+</CMFolderProperties>

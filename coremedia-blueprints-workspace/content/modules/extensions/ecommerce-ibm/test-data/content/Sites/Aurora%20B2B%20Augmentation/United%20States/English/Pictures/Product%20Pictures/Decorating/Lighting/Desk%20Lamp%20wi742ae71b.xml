@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Decorating/Lighting" name="Desk Lamp with Yellow Head Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=506;y=751;width=644;height=1002</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=506;y=828;width=639;height=853</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=419;y=843;width=817;height=818</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=199;y=792;width=1251;height=940</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=41;y=813;width=1563;height=879</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=920;width=1655;height=664</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=905;width=1655;height=414</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.3055555555555556;y1=0.3006134969325153;x2=0.6944444444444444;y2=0.7014314928425358</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.3055555555555556;y1=0.3312883435582822;x2=0.691358024691358;y2=0.6728016359918201</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.25308641975308643;y1=0.3374233128834356;x2=0.7469135802469136;y2=0.6646216768916156</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.12037037037037036;y1=0.3169734151329243;x2=0.8765432098765432;y2=0.6932515337423313</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.024691358024691357;y1=0.32515337423312884;x2=0.9691358024691358;y2=0.6768916155419223</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.36809815950920244;x2=1;y2=0.6339468302658486</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3619631901840491;x2=1;y2=0.5276073619631901</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_HLG028_280117</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Desk Lamp with Yellow Head</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Desk Lamp with Yellow Head</alt>
+<copyright>homydesign / Shutterstock 133890044</copyright>
+<dataUrl></dataUrl>
+<width>1655</width>
+<height>2499</height>
+<data md5="1bc4223745a3c288a61c007d1a3cf387" size="176724" href="../../../../../../../../__blob/1bc4223745a3c288a61c007d1a3cf387.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

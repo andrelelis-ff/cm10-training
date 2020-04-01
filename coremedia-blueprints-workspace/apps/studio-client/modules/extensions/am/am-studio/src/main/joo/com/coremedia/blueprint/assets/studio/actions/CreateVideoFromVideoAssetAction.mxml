@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ An action that creates a new video from a given video asset.
+-->
+<am:CreateContentFromAssetAction
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns:am="exml:com.coremedia.blueprint.assets.studio.config"
+        assetContentType="{AssetConstants.DOCTYPE_VIDEO_ASSET}"
+        sourceRenditionProperty="{AssetConstants.PROPERTY_ASSET_WEB}"
+        targetContentType="CMVideo"
+        targetRenditionProperty="data"
+        targetAssetLinkProperty="asset"
+        targetLinkedThumbnailProperty="pictures"
+        targetCopyrightProperty="copyright"
+        targetThumbnailProperty="data"
+        sourceThumbnailProperty="{AssetConstants.PROPERTY_ASSET_THUMBNAIL}"
+        targetThumbnailContentType="CMPicture"
+        targetThumbnailAssetLinkProperty="asset"
+        targetValidToProperty="validTo">
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.assets.studio.AssetConstants;
+
+    private var config:CreateVideoFromVideoAssetAction;
+
+    public native function CreateVideoFromVideoAssetAction(config:CreateVideoFromVideoAssetAction = null);
+    ]]></fx:Script>
+
+</am:CreateContentFromAssetAction>

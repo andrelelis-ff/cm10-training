@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CommerceWorkspaceSelectorBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                                     xmlns:local="com.coremedia.livecontext.studio.components.*"
+                                     xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                                     xmlns="exml:ext.config"
+                                     xmlns:ui="exml:com.coremedia.ui.config"
+                                     emptyText="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'HeaderToolbar_workspaceSelector_empty_text')}"
+                                     valueField="id"
+                                     displayField="name"
+                                     fieldLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'HeaderToolbar_workspaceSelector_label')}"
+                                     labelAlign="top"
+                                     labelSeparator="">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpressionFactory;
+
+    import ext.data.SortTypes;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.commerceWorkspaceSelector";
+
+    private var config:CommerceWorkspaceSelector;
+
+    public native function CommerceWorkspaceSelector(config:CommerceWorkspaceSelector = null);
+    ]]></fx:Script>
+
+  <local:plugins exml:mode="append">
+    <ui:BindVisibilityPlugin bindTo="{ValueExpressionFactory.createFromFunction(getSelectableWorkspaces)}"/>
+    <ui:BindListPlugin bindTo="{ValueExpressionFactory.createFromFunction(getSelectableWorkspaces)}">
+      <ui:fields>
+        <ui:DataField name="id"
+                      encode="false"/>
+        <ui:DataField name="name"
+                      sortType="{SortTypes.asUCString}"/>
+      </ui:fields>
+    </ui:BindListPlugin>
+    <ui:BindPropertyPlugin bindTo="{getWorkspaceIdExpression()}"
+                           bidirectional="true"
+                           componentEvent="select"/>
+  </local:plugins>
+
+</local:CommerceWorkspaceSelectorBase>

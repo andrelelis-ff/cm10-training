@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:StatefulTextArea xmlns:fx="http://ns.adobe.com/mxml/2009"
+                     xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                     xmlns="exml:ext.config"
+                     xmlns:ui="exml:com.coremedia.ui.config"
+                     labelAlign="top"
+                     labelSeparator=""
+                     height="100"
+                     anchor="100%"
+                     readOnly="true">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.util.RichTextPlainTextTransformer;
+    import com.coremedia.ecommerce.studio.helper.CatalogHelper;
+    import com.coremedia.ecommerce.studio.model.ProductPropertyNames;
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.productDescriptionTextArea";
+
+    private var config:ProductDescriptionTextArea;
+
+    public native function ProductDescriptionTextArea(config:ProductDescriptionTextArea = null);
+
+    /**
+     * The bean value expression pointing to a product teaser.
+     */
+    [Bindable]
+    public var bindTo:ValueExpression;
+    ]]></fx:Script>
+
+  <ui:plugins>
+    <ui:BindPropertyPlugin bindTo="{ValueExpressionFactory.createTransformingValueExpression(
+        config.bindTo.extendBy(ProductPropertyNames.SHORT_DESC),
+        RichTextPlainTextTransformer.convertToPlainText)}"/>
+  </ui:plugins>
+
+</ui:StatefulTextArea>

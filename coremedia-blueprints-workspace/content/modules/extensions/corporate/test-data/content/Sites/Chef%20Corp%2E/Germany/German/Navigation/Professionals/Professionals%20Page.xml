@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Chef Corp./Germany/German/Navigation/Professionals" name="Professionals Page" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Navigation/Professionals/Professionals%20Page.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Navigation/Professionals/Professionals%20Page"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>for-professionals</segment>
+<title>Für Professionals</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription>Chef Corp. bietet kompetente Lösungen für Küchenprofis weltweit</htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Für Professionals</teaserTitle>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Company/About%20Us%20-%20Chefs%20in%20the%20kitchen%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Company/About%20Us%20-%20Chefs%20in%20the%20kitchen%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+<link href="Product%20Overview/Products%20Overview%20Page.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Professionals/Product%20Overview/Products%20Overview%20Page"/>
+<link href="Service/Services%20Page.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Professionals/Service/Services%20Page"/>
+<link href="Feel%20the%20Passion/Feel%20the%20Passion%20%28Female%20Chefs628123a6.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Professionals/Feel%20the%20Passion/Feel%20the%20Passion%20%28Female%20Chefs%29%20Page"/>
+<link href="Enjoy%20your%20Passion/Enjoy%20your%20Passion%20%28Senior%20C31d0cdb0.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Professionals/Enjoy%20your%20Passion/Enjoy%20your%20Passion%20%28Senior%20Chefs%29%20Page"/>
+<link href="Aurora%20B2B/Aurora%20B2B%20Page.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Professionals/Aurora%20B2B/Aurora%20B2B%20Page"/>
+</children>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Layouts/Multislot%20Layout.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Pagegrid/Layouts/Multislot%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Homepage/Professionals/For%20Professionals%20Teaser.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Homepage/Professionals/For%20Professionals%20Teaser"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Homepage/Our%20Products.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Homepage/Our%20Products"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../Options/Viewtypes/CMChannel/hero.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Viewtypes/CMChannel/hero"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/hero.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Pagegrid/Placements/hero"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/Enjoy%20your%20Passion/Enjoy%20your%20Passion%20%28Senior%20C31d0cdb0.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Professionals/Enjoy%20your%20Passion/Enjoy%20your%20Passion%20%28Senior%20Chefs%29%20Page"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/Feel%20the%20Passion/Feel%20the%20Passion%20%28Female%20Chefs628123a6.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Professionals/Feel%20the%20Passion/Feel%20the%20Passion%20%28Female%20Chefs%29%20Page"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../Options/Viewtypes/CMChannel/landscape.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Viewtypes/CMChannel/landscape"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/placement1.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Pagegrid/Placements/placement1"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Homepage/Professionals/Latest%20Professional%20Articles%20Query%20List.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Homepage/Professionals/Latest%20Professional%20Articles%20Query%20List"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/placement2.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/Pagegrid/Placements/placement2"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

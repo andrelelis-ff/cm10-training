@@ -1,0 +1,16 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <StructProperty Name="properties">
+    <Struct>
+      <LinkListProperty Name="explicit" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+        <Link xlink:href="coremedia:///cap/content/18" />
+      </LinkListProperty>
+      <LinkListProperty Name="subjectTaxonomies" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+        <Link xlink:href="coremedia:///cap/content/14" />
+        <Link xlink:href="coremedia:///cap/content/16" />
+      </LinkListProperty>
+      <IntListProperty Name="subjectTaxonomies_count">
+        <Int>10</Int>
+        <Int>20</Int>
+      </IntListProperty>
+    </Struct>
+</StructProperty></Struct>

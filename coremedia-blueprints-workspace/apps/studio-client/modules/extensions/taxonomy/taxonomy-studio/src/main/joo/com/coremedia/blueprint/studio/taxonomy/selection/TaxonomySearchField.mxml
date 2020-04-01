@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:TaxonomySearchFieldBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                               xmlns:local="com.coremedia.blueprint.studio.taxonomy.selection.*"
+                               xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                               xmlns="exml:ext.config"
+                               xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                               xmlns:ui="exml:com.coremedia.ui.config"
+                               forceSelection="false"
+                               autoSelect="false"
+                               enableKeyEvents="true"
+                               queryMode="remote"
+                               typeAhead="false"
+                               hideTrigger="true"
+                               triggerAction="all"
+                               minChars="2"
+                               queryDelay="200"
+                               queryParam="text"
+                               matchFieldWidth="false"
+                               pageSize="0"
+                               selectOnFocus="true"
+                               emptyText="{getEmptyTextText(config.bindTo)}"
+                               ariaLabel="{getEmptyTextText(config.bindTo)}"
+                               displayField="{'name'}"
+                               validator="{tagPrefixValidValidator}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.studio.taxonomy.TaxonomyNode;
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.taxonomy.taxonomySearchField";
+
+    private var config:TaxonomySearchField;
+
+    public native function TaxonomySearchField(config:TaxonomySearchField = null);
+
+    /**
+     * Contains a list of hits that match with the current search value.
+     */
+    [Bindable]
+    public var searchResultExpression:ValueExpression;
+
+    /**
+     * Contains the name of the site that should be included.
+     */
+    [Bindable]
+    public var siteSelectionExpression:ValueExpression;
+
+    /**
+     * The value expression that contains the editors content.
+     */
+    [Bindable]
+    public var bindTo:ValueExpression;
+
+    /**
+     * An optional ValueExpression which makes the component read-only if it is evaluated to true.
+     */
+    [Bindable]
+    public var forceReadOnlyValueExpression:ValueExpression;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!---
+     The property name that is edited
+    -->
+    <fx:String id="propertyName"/>
+
+    <!---
+     If true, the path of the selected node is shown as plain string in the textfield, empty string otherwise.
+     Default is true.
+    -->
+    <fx:Boolean id="showSelectionPath"/>
+
+    <!--- the id of the taxonomy that's tree is used to add items from. -->
+    <fx:String id="taxonomyId"/>
+
+    <!--- True, if the search field is used for the taxonomy administration, defaults to false. -->
+    <fx:Boolean id="resetOnBlur"/>
+  </fx:Declarations>
+  <local:plugins>
+    <editor:BindDisablePlugin bindTo="{config.bindTo}"
+                              forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+    <ui:StopEventPropagationPlugin/>
+  </local:plugins>
+  <local:store>
+    <store_Json autoDestroy="true"
+                proxy="{getSearchSuggestionsDataProxy(config.taxonomyId, config.siteSelectionExpression)}"
+                autoLoad="{true}">
+      <fields>
+        <data_AutoField name="{TaxonomyNode.PROPERTY_NAME}"/>
+        <data_AutoField name="{TaxonomyNode.PROPERTY_REF}"/>
+        <data_AutoField name="{TaxonomyNode.PROPERTY_PATH}"/>
+        <data_AutoField name="{TaxonomyNode.PROPERTY_TAXONOMY_ID}"/>
+        <data_AutoField name="{TaxonomyNode.PROPERTY_HTML}"
+                        convert="{renderHTML}"/>
+        <data_NumberField name="{'size'}"/>
+        <data_NumberField name="{SUGGESTION_COUNT}"/>
+      </fields>
+    </store_Json>
+  </local:store>
+  <local:listConfig>
+    <BoundList loadingText="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomySearch_loading_text')}"
+               itemTpl="{autoSuggestResultTpl}"
+               scrollable="vertical"
+               emptyText="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomySearch_no_hit')}"
+               itemSelector="div"/>
+  </local:listConfig>
+</local:TaxonomySearchFieldBase>

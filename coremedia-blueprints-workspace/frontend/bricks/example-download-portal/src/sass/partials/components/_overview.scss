@@ -1,0 +1,63 @@
+@mixin am-category-overview(
+  $block
+) {
+  .#{$block} {
+    display: block;
+
+    &__sub-categories,
+    &__sub-category {
+      margin-top: $am-margin-large;
+    }
+
+    &__sub-categories {
+      display: block;
+      font-size: 0;
+    }
+
+    &__sub-category {
+      display: inline-block;
+      vertical-align: top;
+
+      @include extra-small-device {
+        width: 100%;
+      }
+
+      @include small-device {
+        width: 50%;
+      }
+
+      @include medium-device {
+        width: 33.333%;
+      }
+
+      @include large-device {
+        width: 25%;
+      }
+    }
+
+    &__paginated-assets {
+      margin-top: $am-margin-large;
+    }
+  }
+}
+
+@mixin am-simple-overview(
+  $block
+) {
+  .#{$block} {
+
+    &__paginated-assets {
+      margin-top: $am-margin-large;
+    }
+  }
+}
+
+@include am-category-overview(
+  $block: "am-category-overview"
+);
+@include am-simple-overview(
+  $block: "am-subject-tag-overview"
+);
+@include am-simple-overview(
+  $block: "am-search-overview"
+);

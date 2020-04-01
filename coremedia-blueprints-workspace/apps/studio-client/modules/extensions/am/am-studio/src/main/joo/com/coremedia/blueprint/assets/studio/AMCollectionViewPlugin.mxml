@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:NestedRulesPlugin
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:u="exml:untyped"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:am="exml:com.coremedia.blueprint.assets.studio.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.collectionview.ICollectionView;
+
+    private var config:AMCollectionViewPlugin;
+    private var selectionHolder:ICollectionView;
+
+    // called by generated constructor code
+    private function __initialize__(config:AMCollectionViewPlugin):void {
+      selectionHolder = config.cmp as ICollectionView;
+    }
+
+    public native function AMCollectionViewPlugin(config:AMCollectionViewPlugin = null);
+    ]]></fx:Script>
+
+  <ui:rules>
+    <editor:FolderContentSwitchingContainer>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <am:AssetRepositoryListContainer selectionHolder="{selectionHolder}"
+                                             selectedFolderValueExpression="{selectionHolder.getSelectedFolderValueExpression()}"
+                                             selectedRepositoryItemsValueExpression="{selectionHolder.getSelectedRepositoryItemsValueExpression()}"
+                                             newContentDisabledValueExpression="{selectionHolder.getNewContentActionDisabledExpression()}"
+                                             createdContentValueExpression="{selectionHolder.getCreatedContentValueExpression()}"/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:FolderContentSwitchingContainer>
+
+    <editor:SearchSwitchingContainer>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <am:AssetSearchListContainer searchResultHitsValueExpression="{selectionHolder.getSearchResultHitsValueExpression()}"
+                          selectedItemsValueExpression="{selectionHolder.getSelectedSearchItemsValueExpression()}"/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:SearchSwitchingContainer>
+
+    <editor:CollectionRepositoryContextMenu>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <MenuSeparator/>
+            <MenuItem itemId="createPictureFromAsset">
+              <baseAction>
+                <am:CreatePictureFromPictureAssetAction
+                        contentValueExpression="{selectionHolder.getSelectedRepositoryItemsValueExpression()}"
+                        u:hideForContentProxy="true"/>
+              </baseAction>
+            </MenuItem>
+            <MenuItem itemId="createVideoFromAsset">
+              <baseAction>
+                <am:CreateVideoFromVideoAssetAction
+                        contentValueExpression="{selectionHolder.getSelectedRepositoryItemsValueExpression()}"
+                        u:hideForContentProxy="true"/>
+              </baseAction>
+            </MenuItem>
+          </ui:items>
+          <ui:after>
+            <Component itemId="openInTab"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:CollectionRepositoryContextMenu>
+
+    <editor:CollectionSearchContextMenu>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <MenuSeparator/>
+            <MenuItem itemId="createPictureFromAsset">
+              <baseAction>
+                <am:CreatePictureFromPictureAssetAction
+                        contentValueExpression="{selectionHolder.getSelectedSearchItemsValueExpression()}"
+                        u:hideForContentProxy="true"/>
+              </baseAction>
+            </MenuItem>
+            <MenuItem itemId="createVideoFromAsset">
+              <baseAction>
+                <am:CreateVideoFromVideoAssetAction
+                        contentValueExpression="{selectionHolder.getSelectedSearchItemsValueExpression()}"
+                        u:hideForContentProxy="true"/>
+              </baseAction>
+            </MenuItem>
+            <MenuSeparator/>
+          </ui:items>
+          <ui:after>
+            <Component itemId="showInFolder"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:CollectionSearchContextMenu>
+
+    <editor:RepositoryToolbar>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <ui:IconButton itemId="createPictureFromAsset">
+              <ui:baseAction>
+                <am:CreatePictureFromPictureAssetAction
+                        contentValueExpression="{selectionHolder.getSelectedItemsValueExpression()}"
+                        u:hideForContentProxy="true"/>
+              </ui:baseAction>
+            </ui:IconButton>
+            <ui:IconButton itemId="createVideoFromAsset">
+              <ui:baseAction>
+                <am:CreateVideoFromVideoAssetAction
+                        contentValueExpression="{selectionHolder.getSelectedItemsValueExpression()}"
+                        u:hideForContentProxy="true"/>
+              </ui:baseAction>
+            </ui:IconButton>
+          </ui:items>
+          <ui:after>
+            <Component itemId="createImageMap"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:RepositoryToolbar>
+
+    <editor:SearchToolbar>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <TbSeparator/>
+            <ui:IconButton itemId="createPictureFromAsset">
+              <ui:baseAction>
+                <am:CreatePictureFromPictureAssetAction
+                        contentValueExpression="{selectionHolder.getSelectedSearchItemsValueExpression()}"/>
+              </ui:baseAction>
+            </ui:IconButton>
+            <ui:IconButton itemId="createVideoFromAsset">
+              <ui:baseAction>
+                <am:CreateVideoFromVideoAssetAction
+                        contentValueExpression="{selectionHolder.getSelectedSearchItemsValueExpression()}"/>
+              </ui:baseAction>
+            </ui:IconButton>
+          </ui:items>
+          <ui:after>
+            <Component itemId="createImageMap"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:SearchToolbar>
+  </ui:rules>
+
+</ui:NestedRulesPlugin>

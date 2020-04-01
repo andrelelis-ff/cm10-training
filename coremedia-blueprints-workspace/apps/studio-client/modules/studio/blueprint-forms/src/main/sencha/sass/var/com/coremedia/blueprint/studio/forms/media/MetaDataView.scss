@@ -1,0 +1,16 @@
+/**
+ * @var {number}
+ *
+ * The width of the widest label
+ *
+ * @member com.coremedia.blueprint.studio.forms.media.MetaDataView
+ */
+$cm-meta-data-view-label-width: dynamic(200px);
+
+/**
+ * @var {boolean}
+ * Enables styles for the MetaDataView.
+ *
+ * @member com.coremedia.blueprint.studio.forms.media.MetaDataView
+ */
+$cm-include-meta-data-view: dynamic(true);

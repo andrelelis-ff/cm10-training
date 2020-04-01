@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./United States/English/Editorial/Homepage/Company/Press/News/News Items" name="Portuguese Cuisine Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Portuguese Cuisine – The Uncharted Country of Deliciousness</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Press%20Release.xml" path="/Settings/Taxonomies/Subject/Press%20Release"/>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Press.xml" path="/Settings/Taxonomies/Subject/Press"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Portuguese Cuisine</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>While Italian, French, and Oriental restaurants are a common sight in western Europe, Portuguese chefs have so far stayed under the radar. This may have to do with the relatively low numbers of Portuguese expats – the cuisine, however, can't be blamed.</p><p>Despite being relatively restricted to an Atlantic sustenance, Portuguese cuisine has many Mediterranean influences. The influence of Portugal's former colonial possessions is also notable, especially in the wide variety of spices used. These spices include piri piri (small, fiery chilli peppers) and black pepper, as well as cinnamon, vanilla, and saffron. Olive oil is one of the bases of Portuguese cuisine both for cooking and flavoring meals. Garlic is widely used, as are herbs such as cilantro and parsley.</p><p>Portugal formerly had a large empire and the cuisine has been influenced in both directions. A Portuguese influence is strongly evident in Brazilian cuisine, which features its own versions of Portuguese dishes such as feijoada and caldeirada (fish stew). Other Portuguese influences can be tasted in the Indian province of Goa, where Goan cuisine dishes such as vindaloo show the pairing of vinegar and garlic, and also Macanese cuisine.</p><p/><p>Chef Corp. is glad to announce that in the last 5 years over 200 Portuguese locations have trusted us with the heart of their business, their kitchen.</p><p/><p>With material from http://en.wikipedia.org/wiki/Portuguese_cuisine</p></div></detailText>
+<pictures>
+<link href="../../../../../Assets/Pictures/Kitchen%20Dreams/A%20Chef%27s%20Perfection%20Picture.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Kitchen%20Dreams/A%20Chef%27s%20Perfection%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../../../../Authors/David%20Fuller%20Person.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Authors/David%20Fuller%20Person"/>
+</authors>
+</CMArticle>

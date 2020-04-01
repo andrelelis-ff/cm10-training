@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMP13NSearch folder="/Sites/Calista/United States/English/Editorial/Content/Site Wide/Lists" name="Recommended Content" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Recommended for You</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<maxLength>3</maxLength>
+<documentType>CMArticle</documentType>
+<searchContext>
+<link href="../../../../Navigation/Calista.xml" path="/Sites/Calista/United%20States/English/Navigation/Calista"/>
+</searchContext>
+<searchQuery href="Recommended%20Content.searchQuery.plain" mimetype="text/plain"/>
+<defaultContent>
+<link href="../../Blog/Fashion%20Trends/Fashions%20fade%2C%20style%20is%20eternal.xml" path="/Sites/Calista/United%20States/English/Editorial/Content/Blog/Fashion%20Trends/Fashions%20fade%2C%20style%20is%20eternal"/>
+<link href="../../Blog/Fashion%20Trends/The%20difference%20between%20style%20and%20fashion.xml" path="/Sites/Calista/United%20States/English/Editorial/Content/Blog/Fashion%20Trends/The%20difference%20between%20style%20and%20fashion"/>
+<link href="../../Blog/Fashion%20Trends/Summer%20Fashion%20Trends.xml" path="/Sites/Calista/United%20States/English/Editorial/Content/Blog/Fashion%20Trends/Summer%20Fashion%20Trends"/>
+</defaultContent>
+</CMP13NSearch>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMImageMap folder="/Sites/SiteGenesis Global/France/French/Editorial/Content/Navigation/Subscriber Confirmation Code" name="Voucher Banner Image Map" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Editorial/Content/Navigation/Subscriber%20Confirmation%20Code/Voucher%a8cb22bb.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Navigation/Subscriber%20Confirmation%20Code/Voucher%20Banner%20Image%20Map"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="Voucher%20Banner.xml" path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/Navigation/Subscriber%20Confirmation%20Code/Voucher%20Banner"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+</target>
+</CMImageMap>

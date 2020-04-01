@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Pictures/Management Board/Group Shots" name="Management Board Standing Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=-12;c=1.1/crop;x=683;y=641;width=1729;height=1727</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=-12;c=1.1/crop;x=553;y=890;width=1973;height=1478</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=-12;c=1.1/crop;x=340;y=1021;width=2391;height=1347</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=-12;c=1.1/crop;x=792;y=0;width=1579;height=2368</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=-12;c=1.1/crop;x=0;y=937;width=3072;height=1152</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.22243713733075435;y1=0.2706766917293233;x2=0.7852998065764023;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.17988394584139264;y1=0.37593984962406013;x2=0.8220502901353965;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.11083123425692695;y1=0.43137254901960786;x2=0.889168765743073;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">-12</StringProperty>
+<StringProperty Name="contrast">1.1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.5121654501216545</StringProperty>
+<StringProperty Name="y">0.6356466876971609</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Management Board</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Group Photo of the Chef Corp. Management Board</alt>
+<copyright>Andrey_Popov/Shutterstock 125860469</copyright>
+<dataUrl></dataUrl>
+<width>3072</width>
+<height>2368</height>
+<data md5="0e2c79e3fe655112eec8d3ec078429b5" size="267712" href="../../../../../../../../../__blob/0e2c79e3fe655112eec8d3ec078429b5.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PropertyFieldGroup
+  xmlns:fx="http://ns.adobe.com/mxml/2009"
+  xmlns:exml="http://www.jangaroo.net/exml/0.8"
+  xmlns="exml:ext.config"
+  xmlns:editor="exml:com.coremedia.cms.editor.sdk.config" xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+  title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Teaser_label')}"
+  itemId="productTeaserDocumentForm"
+  expandOnValues="teaserTitle,teaserText.data">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.studio.TeaserOverlayConstants;
+    import com.coremedia.ecommerce.studio.helper.CatalogHelper;
+    import com.coremedia.ecommerce.studio.model.CatalogObjectPropertyNames;
+    import com.coremedia.ecommerce.studio.model.ProductPropertyNames;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.productTeaserDocumentForm";
+
+    private var config:ProductTeaserDocumentForm;
+
+    public native function ProductTeaserDocumentForm(config:ProductTeaserDocumentForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:StringPropertyField propertyName="teaserTitle"
+                                itemId="teaserTitle">
+      <editor:plugins exml:mode="append">
+        <editor:StringPropertyFieldDelegatePlugin delegateExpression="{CatalogHelper.getInstance().getProductPropertyExpression(config.bindTo, CatalogObjectPropertyNames.NAME)}"/>
+      </editor:plugins>
+    </editor:StringPropertyField>
+    <editor:TeaserOverlayPropertyField propertyName="teaserText"
+                                       delegateExpression="{CatalogHelper.getInstance().getProductPropertyExpression(config.bindTo, ProductPropertyNames.SHORT_DESC)}"
+                                       initialHeight="100"
+                                       itemId="teaserText"
+                                       settingsPath="{TeaserOverlayConstants.DEFAULT_SETTINGS_PATH}"
+                                       styleDescriptorFolderPaths="{TeaserOverlayConstants.DEFAULT_STYLE_DESCRIPTOR_FOLDER_PATHS}"/>
+    <bpforms:TeaserSettingsPropertyFieldGroup/>
+  </editor:items>
+
+</editor:PropertyFieldGroup>

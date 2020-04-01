@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Chef Corp./United States/English/Options/Settings/Teaser Styles" name="Dark" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="title">Chef Corp Dark</StringProperty>
+<StringProperty Name="description">Dark Text</StringProperty>
+<StructProperty Name="style">
+<Struct>
+<StringProperty Name="color">#333</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

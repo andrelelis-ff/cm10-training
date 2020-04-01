@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>importer-template</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>importer-config</artifactId>
+  <packaging>coremedia-application</packaging>
+  <description>
+    This module encapsulates the configuration for the importer command line and webapp application.
+  </description>
+
+  <build>
+    <finalName>importer-config</finalName>
+    <plugins>
+      <plugin>
+        <groupId>com.coremedia.maven</groupId>
+        <artifactId>coremedia-application-maven-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <skinnyApplication>true</skinnyApplication>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.studio.esanalytics.EsAnalyticsChart"/>
+  <component class="com.coremedia.blueprint.studio.esanalytics.EsAnalyticsChartPanel"/>
+  <component class="com.coremedia.blueprint.studio.esanalytics.EsAnalyticsChartWidget"/>
+  <component class="com.coremedia.blueprint.studio.esanalytics.EsAnalyticsChartWidgetEditor"/>
+  <component class="com.coremedia.blueprint.studio.esanalytics.EsAnalyticsChartWidgetState"/>
+  <component class="com.coremedia.blueprint.studio.esanalytics.EsAnalyticsChartWidgetType"/>
+  <component class="com.coremedia.blueprint.studio.esanalytics.EsAnalyticsStudioPlugin"/>
+  <component class="com.coremedia.blueprint.studio.esanalytics.EsChart"/>
+</componentPackage>

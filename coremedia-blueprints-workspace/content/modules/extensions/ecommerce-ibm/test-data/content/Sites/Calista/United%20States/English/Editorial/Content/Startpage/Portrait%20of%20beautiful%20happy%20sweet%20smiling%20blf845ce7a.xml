@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/United States/English/Editorial/Content/Startpage" name="Portrait of beautiful happy sweet smiling blonde woman Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=57;y=0;width=1935;height=3000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=0;width=2049;height=2732</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=0;width=2049;height=2049</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=2049;height=1537</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=19;width=2049;height=1153</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=19;width=2049;height=1025</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=28;width=2049;height=820</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=38;width=2049;height=768</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=161;width=2049;height=512</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=87;y=0;width=1875;height=3000</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=0;width=2049;height=872</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="landscape_ratio235x100">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0;x2=1;y2=0.9106666666666667</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0;x2=1;y2=0.683</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0;x2=1;y2=0.5122500000000001</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.006329113924050633;x2=1;y2=0.3905166139240506</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.006329113924050633;x2=1;y2=0.34782911392405064</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.00949367088607595;x2=1;y2=0.28269367088607594</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.012658227848101266;x2=1;y2=0.2687832278481013</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.05379746835443038;x2=1;y2=0.2245474683544304</StringProperty>
+<StringProperty Name="landscape_ratio235x100">position;x1=0;y1=0;x2=1;y2=0.29063829787234047</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>portrait of beautiful happy sweet smiling blonde woman girl in casual hipster warm winter sweater clothes, with yellow handbag in sunglasses</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>portrait of beautiful happy sweet smiling blonde woman</alt>
+<copyright>Shutterstock 353822519</copyright>
+<dataUrl></dataUrl>
+<width>2049</width>
+<height>3000</height>
+<data md5="baae9fc50406472dfeceb416be5fc073" size="2056282" href="../../../../../../../__blob/baae9fc50406472dfeceb416be5fc073.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./Germany/German/Editorial/Assets/Pictures/Employees" name="Employee 21132593573 - Sally White" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Assets/Pictures/Employees/Employee%2021132593573%20-%20Sally%20White.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Employees/Employee%2021132593573%20-%20Sally%20White"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0.010075566750629723</StringProperty>
+<StringProperty Name="y1">0.015113350125944584</StringProperty>
+<StringProperty Name="x2">0.9848866498740554</StringProperty>
+<StringProperty Name="y2">0.9899244332493703</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=8;y=13;width=780;height=780</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=8;y=132;width=781;height=585</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=13;y=195;width=779;height=438</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=74;y=13;width=520;height=780</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=8;y=279;width=781;height=293</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.010075566750629723;y1=0.015113350125944584;x2=0.9848866498740554;y2=0.9899244332493703</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.010075566750629723;y1=0.1385390428211587;x2=0.9848866498740554;y2=0.8690176322418136</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.016286644951140065;y1=0.24429967426710097;x2=0.990228013029316;y2=0.7915309446254072</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.4148264984227129</StringProperty>
+<StringProperty Name="y">0.5283911671924291</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Sally Goodman</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Porträt von Sally Weiß</alt>
+<copyright>Andrey_Popov / Shutterstock 211325935</copyright>
+<dataUrl></dataUrl>
+<width>800</width>
+<height>800</height>
+<data md5="0e09c64a969126dc19e5de1d91e5a5dc" size="389586" href="../../../../../../../../__blob/0e09c64a969126dc19e5de1d91e5a5dc.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

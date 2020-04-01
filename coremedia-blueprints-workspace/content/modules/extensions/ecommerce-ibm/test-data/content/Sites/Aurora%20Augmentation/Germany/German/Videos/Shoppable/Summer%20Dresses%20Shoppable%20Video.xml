@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Aurora Augmentation/Germany/German/Videos/Shoppable" name="Summer Dresses Shoppable Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Videos/Shoppable/Summer%20Dresses%20Shoppable%20Video.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Videos/Shoppable/Summer%20Dresses%20Shoppable%20Video"/>
+</master>
+<viewtype>
+<link href="../../Options/Viewtypes/CMVideo/shoppable.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Options/Viewtypes/CMVideo/shoppable"/>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/WSH005_0502</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Sommerkleider</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="Summer%20Dresses%20Shoppable%20Video%20Picture.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Videos/Shoppable/Summer%20Dresses%20Shoppable%20Video%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>basierend auf Ionut Popescu - Happy Freitag / Vimeo 102817632 CC-BY 3.0</copyright>
+<dataUrl></dataUrl>
+<data md5="72abe0d12c5b05f97a7a3047074a156c" size="17213599" href="../../../../../../__blob/72abe0d12c5b05f97a7a3047074a156c.blob" mimetype="video/mp4"/>
+<timeLine>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<LinkProperty Name="defaultTarget" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Augmentation/Apparel/Women/Dresses/Dresses.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Augmentation/Apparel/Women/Dresses/Dresses"/>
+<StructListProperty Name="sequences">
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Dress%201%20Teaser.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Videos/Shoppable/Dress%201%20Teaser"/>
+<IntProperty Name="startTimeMillis">2000</IntProperty>
+<IntProperty Name="position">0</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Shoes%20Teaser.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Videos/Shoppable/Shoes%20Teaser"/>
+<IntProperty Name="startTimeMillis">13000</IntProperty>
+<IntProperty Name="position">1</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Dress%201%20Teaser.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Videos/Shoppable/Dress%201%20Teaser"/>
+<IntProperty Name="startTimeMillis">30000</IntProperty>
+<IntProperty Name="position">2</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Dress%202%20Teaser.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Videos/Shoppable/Dress%202%20Teaser"/>
+<IntProperty Name="startTimeMillis">45000</IntProperty>
+<IntProperty Name="position">3</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/Dress%203%20Teaser.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Videos/Shoppable/Dress%203%20Teaser"/>
+<IntProperty Name="startTimeMillis">72000</IntProperty>
+<IntProperty Name="position">4</IntProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</timeLine>
+<asset>
+</asset>
+</CMVideo>

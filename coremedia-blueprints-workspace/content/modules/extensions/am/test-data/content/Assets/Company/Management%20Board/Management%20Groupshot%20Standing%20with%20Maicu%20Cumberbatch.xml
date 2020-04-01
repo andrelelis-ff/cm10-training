@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AMPictureAsset folder="/Assets/Company/Management Board" name="Management Groupshot Standing with Maicu Cumberbatch" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<original md5="00bb75f5bf7f63934985e9699a779077" size="509238" href="../../../__blob/00bb75f5bf7f63934985e9699a779077.blob" mimetype="image/tiff"/>
+<thumbnail md5="24231b603cf4dc126562c412ee4bc56d" size="13003" href="../../../__blob/24231b603cf4dc126562c412ee4bc56d.blob" mimetype="image/jpeg"/>
+<state>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="original">
+<Struct>
+<StringProperty Name="modificationDate">1447772053517</StringProperty>
+<StringProperty Name="modifier">Amy</StringProperty>
+<IntProperty Name="version">1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="thumbnail">
+<Struct>
+<StringProperty Name="modificationDate">1447772056649</StringProperty>
+<StringProperty Name="modifier">Amy</StringProperty>
+<IntProperty Name="version">1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="web">
+<Struct>
+<StringProperty Name="modificationDate">1447772059911</StringProperty>
+<StringProperty Name="modifier">Amy</StringProperty>
+<IntProperty Name="version">1</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</state>
+<metadata>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="renditions">
+<Struct>
+<StructProperty Name="original">
+<Struct>
+<BooleanProperty Name="show">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="web">
+<Struct>
+<BooleanProperty Name="show">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="print">
+<Struct>
+<BooleanProperty Name="show">false</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="copyright">Andrey Popov/Shutterstock 132453611</StringProperty>
+<StringListProperty Name="channels">
+<String>print</String>
+<String>mobile</String>
+<String>web</String>
+</StringListProperty>
+<StringListProperty Name="regions">
+<String>USA</String>
+</StringListProperty>
+</Struct>
+</metadata>
+<keywords></keywords>
+<subjectTaxonomy>
+<link href="../../../Settings/Taxonomies/Subject/Press.xml" path="/Settings/Taxonomies/Subject/Press"/>
+<link href="../../../Settings/Taxonomies/Subject/Investors.xml" path="/Settings/Taxonomies/Subject/Investors"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<assetTaxonomy>
+<link href="../../../Settings/Taxonomies/Asset%20Download%20Portal/Management.xml" path="/Settings/Taxonomies/Asset%20Download%20Portal/Management"/>
+</assetTaxonomy>
+<web md5="2ce7795c4a4d6f39073cec8456eec119" size="184569" href="../../../__blob/2ce7795c4a4d6f39073cec8456eec119.blob" mimetype="image/jpeg"/>
+</AMPictureAsset>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/Chef Corp./United States/English/Options/Viewtypes/CMChannel" name="landscape" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<description>Displays content as landscape tiles.</description>
+<icon href="landscape.icon.svg%2Bxml" mimetype="image/svg+xml"/>
+<layout>landscape</layout>
+</CMViewtype>

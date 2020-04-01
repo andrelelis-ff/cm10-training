@@ -1,0 +1,11 @@
+.cm-price {
+  font-size: 1rem;
+
+  &--old {
+    text-decoration: line-through;
+    font-size: 1.2rem;
+    @include breakpoint(xs) {
+      font-size: 1rem;
+    }
+  }
+}

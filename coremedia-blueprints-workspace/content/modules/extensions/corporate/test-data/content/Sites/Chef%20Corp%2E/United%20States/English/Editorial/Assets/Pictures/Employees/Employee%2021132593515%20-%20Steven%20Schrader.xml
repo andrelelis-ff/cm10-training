@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Pictures/Employees" name="Employee 21132593515 - Steven Schrader" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0.007556675062972292</StringProperty>
+<StringProperty Name="y1">0.010075566750629723</StringProperty>
+<StringProperty Name="x2">0.9874055415617129</StringProperty>
+<StringProperty Name="y2">0.9899244332493703</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=5;y=8;width=785;height=785</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=5;y=116;width=784;height=588</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=8;y=197;width=784;height=441</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=124;y=8;width=523;height=785</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=5;y=264;width=781;height=293</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.007556675062972292;y1=0.010075566750629723;x2=0.9874055415617129;y2=0.9899244332493703</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.007556675062972292;y1=0.13350125944584382;x2=0.9874055415617129;y2=0.8690176322418136</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.010075566750629723;y1=0.24685138539042822;x2=0.9899244332493703;y2=0.7984886649874056</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.47791798107255523</StringProperty>
+<StringProperty Name="y">0.5094637223974764</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Steven Schrader</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Portrait of Steven Schrader</alt>
+<copyright>Andrey_Popov/Shutterstock 211325935</copyright>
+<dataUrl></dataUrl>
+<width>800</width>
+<height>800</height>
+<data md5="b21107f2a45afcee3a1cb965dc3b0fa5" size="427251" href="../../../../../../../../__blob/b21107f2a45afcee3a1cb965dc3b0fa5.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

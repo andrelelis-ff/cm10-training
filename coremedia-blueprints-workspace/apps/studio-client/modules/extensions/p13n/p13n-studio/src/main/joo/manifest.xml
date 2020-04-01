@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.personalization.editorplugin.CMP13NSearchForm"/>
+  <component class="com.coremedia.blueprint.personalization.editorplugin.CMPersonaForm"/>
+  <component class="com.coremedia.blueprint.personalization.editorplugin.CMSegmentForm"/>
+  <component class="com.coremedia.blueprint.personalization.editorplugin.CMSelectionRulesForm"/>
+  <component class="com.coremedia.blueprint.personalization.editorplugin.P13NStudioPlugin"/>
+  <component class="com.coremedia.blueprint.personalization.editorplugin.P13NStudioPluginBase"/>
+  <component class="com.coremedia.blueprint.personalization.editorplugin.SearchQueryPropertyField"/>
+  <component class="com.coremedia.blueprint.personalization.editorplugin.SearchValidator"/>
+  <component class="com.coremedia.blueprint.personalization.editorplugin.extensions.AddPersonaSelectorPlugin"/>
+  <component class="com.coremedia.blueprint.personalization.editorplugin.plugin.Addsitespecificpath"/>
+  <component class="com.coremedia.blueprint.personalization.editorplugin.property.CMPersonaFormCheckboxField"/>
+  <component class="com.coremedia.blueprint.personalization.editorplugin.property.CMPersonaFormComboBox"/>
+  <component class="com.coremedia.blueprint.personalization.editorplugin.property.CMPersonaFormComboBoxField"/>
+  <component class="com.coremedia.blueprint.personalization.editorplugin.taxonomy.AbstractTaxonomyCondition"/>
+  <component class="com.coremedia.blueprint.personalization.editorplugin.taxonomy.BooleanTaxonomyCondition"/>
+  <component class="com.coremedia.blueprint.personalization.editorplugin.taxonomy.PercentageTaxonomyCondition"/>
+</componentPackage>

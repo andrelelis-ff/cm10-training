@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Pictures/Product Pictures/Lighting" name="Chef Corp RGB LED Strip Main Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Pictures/Product%20Pictures/Lighting/Chef%20Corp%20RGB%20LED%20S36bd3752.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Lighting/Chef%20Corp%20RGB%20LED%20Strip%20Main%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0.17771084337349397</StringProperty>
+<StringProperty Name="y1">0.2545454545454545</StringProperty>
+<StringProperty Name="x2">0.8132530120481928</StringProperty>
+<StringProperty Name="y2">0.7672727272727272</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=761;y=150;width=971;height=1504</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=791;y=316;width=949;height=1263</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=708;y=444;width=1062;height=1060</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=535;y=436;width=1416;height=1060</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=444;y=526;width=1596;height=895</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=30;y=579;width=2410;height=963</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=744;width=2500;height=624</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.3042168674698795;y1=0.07272727272727272;x2=0.6927710843373494;y2=0.8</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.31626506024096385;y1=0.15272727272727274;x2=0.6957831325301205;y2=0.7636363636363637</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.28313253012048195;y1=0.21454545454545454;x2=0.7078313253012049;y2=0.7272727272727273</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.21385542168674698;y1=0.2109090909090909;x2=0.7801204819277109;y2=0.7236363636363636</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.17771084337349397;y1=0.2545454545454545;x2=0.8162650602409639;y2=0.6872727272727273</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0.012048192771084338;y1=0.28;x2=0.9759036144578314;y2=0.7454545454545455</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.36;x2=1;y2=0.6618181818181819</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/ChefSupply_RGB_LED_Strip</String>
+<String>ibm:///catalog/sku/ChefSupply_RGB_LED_Strip_SKU</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Chef Corp RGB LED Strip</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>NYS / Shutterstock 269990558</copyright>
+<dataUrl></dataUrl>
+<width>2500</width>
+<height>2068</height>
+<data md5="10e1bcaddbe66253812d7525719a295d" size="372870" href="../../../../../../../__blob/10e1bcaddbe66253812d7525719a295d.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

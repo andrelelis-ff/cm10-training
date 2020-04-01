@@ -1,0 +1,24 @@
+// Dependency styles
+@import "?smart-import-partials";
+
+// activate optional detail styling
+@import "~@coremedia-examples/brick-detail/src/sass/partials/detail-optional";
+
+// Own partials
+@import "partials/button";
+@import "partials/banner";
+@import "partials/cta";
+@import "partials/teaser";
+@import "partials/grids";
+@import "partials/detail";
+@import "partials/popup";
+@import "partials/shoppable-video";
+@import "partials/aurora";
+@import "partials/elastic-social";
+@import "partials/sidebar";
+@import "partials/header";
+@import "partials/navigation";
+@import "partials/breadcrumb";
+@import "partials/logo";
+@import "partials/marketing-spots";
+@import "partials/aurora-theming";

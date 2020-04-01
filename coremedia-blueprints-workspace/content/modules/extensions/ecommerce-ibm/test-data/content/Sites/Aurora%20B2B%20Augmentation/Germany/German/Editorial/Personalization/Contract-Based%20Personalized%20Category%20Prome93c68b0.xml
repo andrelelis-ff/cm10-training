@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSelectionRules folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Personalization" name="Contract-Based Personalized Category Promotion Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Editorial/Personalization/Contract-Based%20Personalized%20Catego921882ac.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Personalization/Contract-Based%20Personalized%20Category%20Promotion%20Teaser"/>
+</master>
+<viewtype>
+<link href="../../Options/Viewtypes/CMChannel/hero.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Viewtypes/CMChannel/hero"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<rules grammarName="coremedia-selectionrules-1.0"><rules version="1.0" xmlns="http://www.coremedia.com/2010/selectionrules" xmlns:xlink="http://www.w3.org/1999/xlink">select <content xlink:href="coremedia:///cap/resources/../../Navigation/Fragments/Aurora%20B2B%20Homepage/Lighting%20Category%20Promote6b30a4b.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Navigation/Fragments/Aurora%20B2B%20Homepage/Lighting%20Category%20Promotion%20Teaser"/> if commerce.usersegments#"ibm:///catalog/segment/8500000000000323451"; select <content xlink:href="coremedia:///cap/resources/Contract-Specific%20Hero/Fasteners%20Category%2e315b460.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Personalization/Contract-Specific%20Hero/Fasteners%20Category%20Promotion%20Teaser"/> if commerce.usersegments#"ibm:///catalog/segment/8500000000000323452"</rules></rules>
+<defaultContent>
+<link href="../Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED%20Strip%220277a2.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED%20Strip%20Product%20Teaser"/>
+</defaultContent>
+</CMSelectionRules>

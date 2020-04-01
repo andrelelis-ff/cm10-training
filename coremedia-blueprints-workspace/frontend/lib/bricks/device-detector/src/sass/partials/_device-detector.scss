@@ -1,0 +1,38 @@
+// hidden flags defining screen type and orientation for deviceDetector initialisation
+body:after,
+body:before {
+  position: absolute;
+  visibility: hidden;
+  font-size: 0;
+}
+
+body:after {
+  @include breakpoint($cm-device-detector-mobile-breakpoint) {
+    content: 'mobile';
+  }
+  @include breakpoint($cm-device-detector-tablet-breakpoint) {
+    content: 'tablet';
+  }
+  @include breakpoint($cm-device-detector-desktop-breakpoint) {
+    content: 'desktop';
+  }
+}
+
+body:before {
+  @include breakpoint($cm-device-detector-mobile-breakpoint, landscape) {
+    content: 'landscape';
+  }
+
+  @include breakpoint($cm-device-detector-mobile-breakpoint, portrait) {
+    content: 'portrait';
+
+  }
+
+  @include breakpoint($cm-device-detector-tablet-breakpoint, landscape) {
+    content: 'landscape';
+  }
+
+  @include breakpoint($cm-device-detector-tablet-breakpoint, portrait) {
+    content: 'portrait';
+  }
+}

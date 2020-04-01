@@ -1,0 +1,35 @@
+//
+// Generates an aspect ratio box. Elements within the aspect ratio box need to be positioned absolute otherwise
+// they will extend the box.
+//
+// @param: {x} The x-coordinate for the aspect ratio
+// @param: {y} The y-coordinate for the aspect ratio
+// @param: {overflow} By default overflow is hidden, this can be adjusted if not wanted
+// @example:
+//
+// @include aspect-ratio-box(4, 3) {
+//    background-color: red;
+// }
+//
+
+@function calculatePaddingTop($x, $y, $includeGutter: false) {
+  $percentage: percentage($y/$x);
+
+  @if $includeGutter {
+    $gutter: ceil(($grid-gutter-width / 2));
+    @return calc(#{$percentage} - #{$gutter});
+  } @else {
+    @return calc(#{$percentage});
+  }
+}
+
+@mixin aspect-ratio-box($x, $y, $overflow: hidden, $includeGutter: false, $position: relative) {
+  position: $position;
+  overflow: $overflow;
+
+  &:before {
+    display: block;
+    padding-top: calculatePaddingTop($x, $y, $includeGutter);
+    content: "";
+  }
+}

@@ -1,0 +1,83 @@
+.cm-hamburger-icon {
+  &__bar1,
+  &__bar2,
+  &__bar3 {
+    background-color: $cm-text-color;
+  }
+}
+
+.cm-navigation-item {
+  &__toggle {
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      display: none;
+    }
+  }
+
+
+  &--depth-1 {
+    > .cm-navigation-item__title {
+      padding-top: 17px;
+      padding-bottom: 13px;
+      text-transform: none;
+    }
+
+    .cm-navigation-item__menu-label {
+      > .cm-navigation-item__title {
+        text-transform: none;
+      }
+    }
+
+    .cm-navigation-item__menu {
+      > .cm-navigation-item__menu-label > a.cm-navigation-item__title {
+        &:hover,
+        &:focus {
+          color: $cm-text-color;
+        }
+      }
+
+      @include breakpoints(("sm", landscape) "lg-and-up") {
+        border-color: $cm-main-color-grey-light;
+
+        .cm-navigation-item.cm-navigation-item--active > a {
+          color: $cm-text-color;
+
+          &:hover,
+          &:focus {
+            color: $cm-text-color;
+          }
+        }
+      }
+    }
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+
+      &.cm-navigation-item--active {
+        border-color: $cm-main-color;
+      }
+      &:hover {
+        border-color: $cm-main-color;
+      }
+    }
+  }
+
+  &--depth-2 {
+    > .cm-navigation-item__title {
+      font-weight: bold;
+      text-transform: none;
+    }
+  }
+}
+
+.cm-navigation {
+  &.cm-navigation-item--open {
+    background-color: $cm-mobile-nav-dropdown-bg;
+  }
+
+  @include breakpoints(("sm", landscape) "lg-and-up") {
+    display: flex;
+  }
+}
+
+.cm-hamburger-icon {
+  margin: 3px 0;
+}

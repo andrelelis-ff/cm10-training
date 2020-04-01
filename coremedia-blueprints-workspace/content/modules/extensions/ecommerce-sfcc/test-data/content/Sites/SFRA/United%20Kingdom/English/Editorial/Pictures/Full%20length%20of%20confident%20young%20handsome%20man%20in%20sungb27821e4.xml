@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/United Kingdom/English/Editorial/Pictures" name="Full length of confident young handsome man in sunglasses holding hands in pockets and looking at camera" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="uploadDone">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=303;width=2669;height=3559</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=303;width=2669;height=2669</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=278;width=2669;height=2002</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=290;width=2669;height=667</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=303;width=2669;height=1501</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=341;width=2669;height=1001</StringProperty>
+<StringProperty Name="quickview_ratio5x6">b;a=0;c=1/crop;x=0;y=265;width=2669;height=3203</StringProperty>
+<StringProperty Name="portrait_ratio5x6">b;a=0;c=1/crop;x=0;y=290;width=2669;height=3203</StringProperty>
+<StringProperty Name="thumbnail">b;a=0;c=1/crop;x=0;y=278;width=2669;height=3559</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.49292452830188677</StringProperty>
+<StringProperty Name="y">0.20662460567823343</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="quickview_ratio5x6">false</StringProperty>
+<StringProperty Name="portrait_ratio5x6">false</StringProperty>
+<StringProperty Name="thumbnail">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.07570977917981073;x2=1;y2=0.9653764458464773</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.07570977917981073;x2=1;y2=0.7429597791798107</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.0694006309148265;x2=1;y2=0.5698381309148265</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.0725552050473186;x2=1;y2=0.2393677050473186</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.07570977917981073;x2=1;y2=0.4510379041798108</StringProperty>
+<StringProperty Name="quickview_ratio5x6">position;x1=0;y1=0.06624605678233439;x2=1;y2=0.8669460567823344</StringProperty>
+<StringProperty Name="portrait_ratio5x6">position;x1=0;y1=0.0725552050473186;x2=1;y2=0.8732552050473186</StringProperty>
+<StringProperty Name="thumbnail">position;x1=0;y1=0.0694006309148265;x2=1;y2=0.9590672975814931</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Full length of confident young handsome man in sunglasses holding hands in pockets and looking at camera</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>shutterstock_370353188</copyright>
+<dataUrl></dataUrl>
+<width>2669</width>
+<height>4000</height>
+<data md5="c84323763f41aa10797c6cdb588c656d" size="751477" href="../../../../../../__blob/c84323763f41aa10797c6cdb588c656d.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

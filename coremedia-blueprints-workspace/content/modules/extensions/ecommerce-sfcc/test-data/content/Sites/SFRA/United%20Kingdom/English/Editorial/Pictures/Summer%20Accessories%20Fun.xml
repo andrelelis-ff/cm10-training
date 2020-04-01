@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/United Kingdom/English/Editorial/Pictures" name="Summer Accessories Fun" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="uploadDone">true</BooleanProperty>
+<BooleanProperty Name="inherit">true</BooleanProperty>
+<StringListProperty Name="originReferences">
+</StringListProperty>
+<StringListProperty Name="references">
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.3385608856088561</StringProperty>
+<StringProperty Name="y">0.3557377049180328</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=631;y=0;width=1452;height=2250</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=85;y=0;width=2250;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=0;width=4000;height=1702</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=3000;height=2250</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=461;y=0;width=1688;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1</StringProperty>
+<StringProperty Name="quickview_ratio5x6">b;a=0;c=1/crop;x=312;y=0;width=1875;height=2250</StringProperty>
+<StringProperty Name="portrait_ratio5x6">b;a=0;c=1/crop;x=319;y=0;width=1875;height=2250</StringProperty>
+<StringProperty Name="thumbnail">b;a=0;c=1/crop;x=514;y=0;width=1688;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio7x2">b;a=0;c=1/crop;x=0;y=185;width=4000;height=1143</StringProperty>
+<StringProperty Name="landscape_ratio5x3">b;a=0;c=1/crop;x=0;y=0;width=3750;height=2250</StringProperty>
+<StringProperty Name="portrait_ratio3x5">b;a=0;c=1/crop;x=684;y=0;width=1350;height=2250</StringProperty>
+<StringProperty Name="portrait_ratio1x2">b;a=0;c=1/crop;x=837;y=0;width=1125;height=2250</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=305;width=4000;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=57;width=4000;height=1500</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio7x2">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="quickview_ratio5x6">false</StringProperty>
+<StringProperty Name="portrait_ratio5x6">false</StringProperty>
+<StringProperty Name="portrait_ratio1x2">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio7x2">position;x1=0;y1=0.08214285714285714;x2=1;y2=0.5900793650793651</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.02127659574468085;y1=0;x2=0.5837765957446809;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.11524822695035461;y1=0;x2=0.5371232269503546;y2=1</StringProperty>
+<StringProperty Name="quickview_ratio5x6">position;x1=0.07801418439716312;y1=0;x2=0.5467641843971631;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio5x6">position;x1=0.0797872340425532;y1=0;x2=0.5485372340425533;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x2">position;x1=0.20921985815602837;y1=0;x2=0.4904698581560284;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Summer Accessories</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Sunglasses.xml" path="/Settings/Taxonomies/Subject/Sunglasses"/>
+<link href="../../../../../../Settings/Taxonomies/Subject/Earrings.xml" path="/Settings/Taxonomies/Subject/Earrings"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Summer Accessories</alt>
+<copyright>shutterstock_459775861</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2250</height>
+<data md5="ae4d018f2a403135a73d8962fb1c1463" size="643712" href="../../../../../../__blob/ae4d018f2a403135a73d8962fb1c1463.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

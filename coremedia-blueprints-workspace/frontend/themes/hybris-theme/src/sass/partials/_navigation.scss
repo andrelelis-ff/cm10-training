@@ -1,0 +1,249 @@
+// navigation wrapper
+.cm-header {
+  min-height: 60px;
+  // we have to override the global style in hybris for search input field
+  z-index: 3;
+  position: relative;
+
+  // if mobile reset header
+  @include breakpoint("sm-and-down") {
+    min-height: inherit;
+    position: inherit;
+  }
+
+  &__navigation {
+    margin: 0;
+
+    // hide navigation on mobile (show hamburger icon instead)
+    @include breakpoint("sm-and-down") {
+      display: none;
+      padding: 0;
+      list-style: none;
+
+      .cm-navigation-item--depth-1 {
+        display: block;
+        position: relative;
+      }
+    }
+
+  }
+}
+
+.cm-navigation {
+  background-color: $cm-navigation-background-color;
+
+  @include breakpoint("sm-and-down") {
+    position: relative;
+    text-align: center;
+    > .cm-navigation-item__menu {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  // align header navigation with breadcrumb
+  @include breakpoint("lg-and-up") {
+    text-align: initial;
+    padding-left: $cm-spacing-default;
+  }
+}
+
+.cm-navigation-item {
+
+  @include breakpoint("lg-and-up") {
+    display: inline-block;
+  }
+
+  > .cm-navigation-item__menu {
+    display: block;
+  }
+
+  &__picture-link {
+    padding: 0 15px 0 0;
+  }
+
+  // head navigation
+  &--depth-1 {
+    border-bottom-width: $cm-navigation-border-bottom-width;
+
+    @include breakpoint("sm-and-down") {
+      position: relative;
+    }
+
+    &.cm-navigation-item--over {
+      background-color: $cm-navigation-background-color-hover;
+
+      &.cm-navigation-item-menu--active {
+        > .cm-navigation-item__title {
+          position: relative;
+
+          // triangle on hover for tab
+          &:after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-bottom: 10px solid $cm-navigation-menu-background-color;
+            display: block;
+            bottom: 0;
+            left: 50%;
+            margin: 0 0 0 -10px;
+          }
+        }
+      }
+    }
+
+    @include breakpoint("sm-and-down") {
+
+      &.cm-navigation-item--open {
+
+        .cm-navigation-item__menu {
+          opacity: 1;
+          background-color: $cm-navigation-background-color-hover;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          visibility: visible;
+
+          &:hover {
+            visibility: inherit;
+          }
+
+          .cm-navigation-item__picture-link {
+            display: inline-block;
+          }
+
+        }
+
+        .cm-navigation-item__toggle {
+          &:before {
+            transform: rotate(180deg);
+          }
+        }
+
+      }
+    }
+
+    .cm-navigation-item__toggle {
+      color: $cm-navigation-color;
+      display: block;
+      position: absolute;
+      top: 0;
+      right: $cm-spacing-default;
+      outline: none;
+      padding: 8px $cm-spacing-default;
+
+      // bigger arrow
+      &:before {
+        border: none;
+        border-top: 6px dashed;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+        transform: none;
+      }
+
+      @include breakpoint("lg-and-up") {
+        display: none;
+      }
+    }
+
+    > .cm-navigation-item__title {
+      color: $cm-navigation-color;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: $cm-navigation-title-font-size;
+      width: 100%;
+
+      @include breakpoint("lg-and-up") {
+        width: auto;
+        padding: 20px $cm-spacing-default;
+        line-height: 20px;
+      }
+    }
+
+    .cm-navigation-item__menu {
+      display: none;
+      margin-top: 0;
+
+      @include breakpoint("lg-and-up") {
+        display: flex;
+        padding: $cm-spacing-default $cm-spacing-default 0;
+        background-color: $cm-navigation-menu-background-color;
+        border-bottom: 1px solid $cm-hybris-border-color;
+        border-top: none;
+      }
+    }
+
+    .cm-navigation-item__menu-label {
+      @include breakpoint("sm-and-down") {
+        display: none;
+      }
+
+      > .cm-navigation-item__title {
+        color: $cm-navigation-menu-color;
+        padding: 0;
+        font-size: $cm-navigation-label-font-size;
+        line-height: ($cm-navigation-label-font-size)*2;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  // (depth-2) -> columns of navigation menu with title
+  // (depth-3) -> individual list entries
+  &--depth-2,
+  &--depth-3 {
+    > .cm-navigation-item__title {
+      color: $cm-navigation-color;
+      padding: 0;
+    }
+
+    @include breakpoint("lg-and-up") {
+      > .cm-navigation-item__title {
+        color: $cm-navigation-menu-color;
+      }
+    }
+  }
+
+  &--depth-2 {
+    @include breakpoint("sm-and-down"){
+      width: auto !important; // caused by to many nested rules in navigation brick
+      padding-bottom: 0;
+      text-align: center;
+      font-size: 0;
+    }
+
+    > .cm-navigation-item__title {
+      font-size: $cm-navigation-title-font-size;
+      line-height: ($cm-spacing-default)*2;
+      text-transform: uppercase;
+    }
+
+    @include breakpoint("lg-and-up") {
+      margin-right: $cm-spacing-default;
+      > .cm-navigation-item__title {
+        color: $cm-navigation-menu-color;
+      }
+
+      .cm-navigation-item__menu {
+        background-color: $cm-navigation-menu-background-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        padding: 0;
+      }
+    }
+
+  }
+
+  &--depth-3 {
+    > .cm-navigation-item__title {
+      font-size: $cm-navigation-sub-title-font-size;
+      line-height: ($cm-navigation-sub-title-font-size)*2;
+    }
+  }
+
+}

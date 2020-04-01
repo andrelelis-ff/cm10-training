@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/SFRA/France/French/Navigation/Fashion Newsletter" name="Fashion Newsletter" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Navigation/Fashion%20Newsletter/Fashion%20Newsletter.xml" path="/Sites/SFRA/United%20Kingdom/English/Navigation/Fashion%20Newsletter/Fashion%20Newsletter"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="livecontext.policy.commerce-microsite-links">false</BooleanProperty>
+<BooleanProperty Name="livecontext.policy.commerce-page-links">false</BooleanProperty>
+<StringListProperty Name="legacyUrls">
+<String/>
+</StringListProperty>
+<StructProperty Name="teaserOverlay">
+<Struct>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../../../../Settings/Options/Settings/Teaser%20Styles/Default.xml" cmexport:path="/Settings/Options/Settings/Teaser%20Styles/Default"/>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="sfmc-newsletter-templateId">9495e2a8-eb00-4b14-a66a-300cee3edad1</StringProperty>
+<StringProperty Name="sfmc-newsletter-lastModified">1551798163000</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>fashion-newsletter</segment>
+<title>Newsletter de mode</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Dear <a class="cmplaceholder" xlink:href="#" xlink:role="FIRST_NAME" xlink:type="simple">FIRST_NAME</a></p> <p>be inspired by our latest fashion newsletter.</p> </div></teaserText>
+<pictures>
+<link href="../../Editorial/Pictures/High%20fashion%20portrait%20of%20young%20elegant%20woman.xml" path="/Sites/SFRA/France/French/Editorial/Pictures/High%20fashion%20portrait%20of%20young%20elegant%20woman"/>
+</pictures>
+<notSearchable>1</notSearchable>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<hidden>1</hidden>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Layouts/PagegridNavigation.xml" cmexport:path="/Sites/SFRA/France/French/Options/Settings/Pagegrid/Layouts/PagegridNavigation"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Articles/Fashion%20Trends%20this%20Summer.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Articles/Fashion%20Trends%20this%20Summer"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/White%20Blouse.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/White%20Blouse"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Articles/Fashion%20should%20be%20Fun.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Content/Articles/Fashion%20should%20be%20Fun"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/SFRA/France/French/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

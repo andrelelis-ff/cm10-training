@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/SFRA/France/French/Options/Viewtypes/CMExternalProduct" name="full-details" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Options/Viewtypes/CMExternalProduct/full-details.xml" path="/Sites/SFRA/United%20Kingdom/English/Options/Viewtypes/CMExternalProduct/full-details"/>
+</master>
+<description>Affiche le contenu avec tous les détails.</description>
+<icon href="full-details.icon.svg%2Bxml" mimetype="image/svg+xml"/>
+<layout>full-details</layout>
+</CMViewtype>

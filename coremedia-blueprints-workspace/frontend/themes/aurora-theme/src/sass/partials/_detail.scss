@@ -1,0 +1,82 @@
+// Styles
+.#{$cm-details-prefix} {
+
+  &__headline {
+    margin-top: 15px;
+  }
+
+  &__media-box {
+    @include aspect-ratio-box(5, 2);
+  }
+
+  &__introduction {
+    margin: 0 auto;
+    padding: 15px 0;
+    width: $cm-inline-content-width;
+  }
+
+  &__picture-person {
+    margin-right: 15px;
+
+    @include breakpoint("sm-and-up") {
+      margin-right: $cm-details-padding-large-vertical;
+    }
+  }
+
+  &--person {
+    .#{$cm-details-prefix}__headline {
+      margin-bottom: 15px;
+    }
+  }
+
+  // text container
+  &__text {
+    padding: 0;
+  }
+
+  &__authors {
+    margin-left: auto;
+    margin-right: auto;
+    width: $cm-inline-content-width;
+  }
+
+  // authors container
+  .cm-authors {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    width: $cm-inline-content-width;
+    margin: 0 auto;
+
+    &__picture-box {
+      margin-right: 12px;
+      width: 32px;
+      height: 32px;
+
+      @include breakpoint("lg") {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    &__headline {
+      margin-top: 0;
+    }
+
+    &__short-text {
+      font-size: 17px;
+    }
+  }
+
+  // displayed date
+  &__date {
+    width: $cm-inline-content-width;
+    margin: 0 auto;
+  }
+}
+
+.cm-related,
+.cm-comments {
+  margin-left: auto;
+  margin-right: auto;
+  width: $cm-inline-content-width;
+}

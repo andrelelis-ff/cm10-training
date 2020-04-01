@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/Aurora Augmentation/United States/English/Editorial/Products" name="Luigi Valenti Strapless Cocktail Dress" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Luigi Valenti Cocktail Dress</teaserTitle>
+<pictures>
+<link href="../../Pictures/Product%20Pictures/Women/Dresses/Luigi%20Valenti%20Strapless%fcf5c1c4.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Women/Dresses/Luigi%20Valenti%20Strapless%20Cocktail%20Dress%201"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>ibm:///catalog/product/AuroraWMDRS-6</externalId>
+</CMProductTeaser>

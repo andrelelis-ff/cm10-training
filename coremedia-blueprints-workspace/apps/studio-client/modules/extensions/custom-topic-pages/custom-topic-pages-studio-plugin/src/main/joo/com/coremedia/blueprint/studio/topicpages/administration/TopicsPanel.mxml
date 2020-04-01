@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:TopicsPanelBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                       xmlns:local="com.coremedia.blueprint.studio.topicpages.administration.*"
+                       xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                       xmlns="exml:ext.config"
+                       xmlns:topicpages="exml:com.coremedia.blueprint.studio.topicpages.config"
+                       xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                       xmlns:ui="exml:com.coremedia.ui.config"
+                       xmlns:u="exml:untyped"
+                       layout="border">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.topicpages.TopicPages')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.skins.ContainerSkin;
+    import com.coremedia.ui.skins.DisplayFieldSkin;
+    import com.coremedia.ui.skins.TableViewSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.topicpages.config.topicsPanel";
+
+    private var config:TopicsPanel;
+
+    public native function TopicsPanel(config:TopicsPanel = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <Container region="north"
+               id_="topicPagesFormNorth"
+               ui="{ContainerSkin.LIGHT.getSkin()}">
+      <items>
+        <Container ui="{ContainerSkin.GRID_200.getSkin()}">
+          <items>
+            <FieldContainer flex="2"
+                            fieldLabel="{resourceManager.getString('com.coremedia.blueprint.studio.topicpages.TopicPages', 'TopicPages_search_title')}">
+              <items>
+                <topicpages:FilterPanel filterExpression="{getFilterValueExpression()}"
+                                        id_="topicPagesFilterPanel"
+                                        applyFilterFunction="{reload}"
+                                        emptyText="{resourceManager.getString('com.coremedia.blueprint.studio.topicpages.TopicPages', 'TopicPages_search_emptyText')}"/>
+
+              </items>
+            </FieldContainer>
+            <topicpages:TaxonomyCombo id_="topicPagesTaxonomyCombo"
+                                      flex="1"
+                                      filterExpression="{getFilterValueExpression()}"
+                                      selectionExpression="{getTaxonomySelectionExpression()}"/>
+          </items>
+          <layout>
+            <layout_HBox align="stretch"/>
+          </layout>
+          <defaults>
+            <Labelable labelSeparator=""
+                       labelAlign="top"/>
+          </defaults>
+        </Container>
+        <DisplayField id_="topicPagesFilteredLabel"
+                      ui="{DisplayFieldSkin.BOLD.getSkin()}"
+                      value="{resourceManager.getString('com.coremedia.blueprint.studio.topicpages.TopicPages', 'TopicPages_filtered')}"/>
+
+      </items>
+      <layout>
+        <layout_Anchor/>
+      </layout>
+    </Container>
+    <Container region="center"
+               layout="border">
+      <items>
+        <Grid region="center"
+              id_="topicPagesGrid"
+              itemId="topicsGrid"
+              hideHeaders="false"
+              scrollable="true"
+              forceFit="true">
+          <plugins>
+            <editor:BindDisablePlugin bindTo="{getTopicsExpression()}"
+                                      componentProperty="disableSelection"/>
+            <ui:BindListPlugin bindTo="{getTopicsExpression()}">
+              <ui:fields>
+                <ui:DataField name="name"/>
+                <ui:DataField name="topic"/>
+                <ui:DataField name="enabled"/>
+                <ui:DataField name="page"/>
+              </ui:fields>
+            </ui:BindListPlugin>
+          </plugins>
+          <columns>
+            <GridColumn stateId="name"
+                        header="{resourceManager.getString('com.coremedia.blueprint.studio.topicpages.TopicPages', 'TopicPages_grid_header_name')}"
+                        width="140"
+                        sortable="false"
+                        dataIndex="name"
+                        renderer="{nameRenderer}"
+                        flex="1"/>
+            <GridColumn stateId="page"
+                        header="{resourceManager.getString('com.coremedia.blueprint.studio.topicpages.TopicPages', 'TopicPages_grid_header_page')}"
+                        sortable="false"
+                        width="200"
+                        dataIndex="name"
+                        u:listeners="{{'click': onPageColumnClick}}"
+                        renderer="{pageRenderer}"/>
+          </columns>
+          <selModel>
+            <selection_RowModel mode="SINGLE"/>
+          </selModel>
+          <view>
+            <GridView ui="{TableViewSkin.LIGHT.getSkin()}"
+                      deferEmptyText="false"
+                      emptyText=""
+                      stripeRows="true"/>
+          </view>
+        </Grid>
+      </items>
+    </Container>
+  </local:items>
+
+</local:TopicsPanelBase>

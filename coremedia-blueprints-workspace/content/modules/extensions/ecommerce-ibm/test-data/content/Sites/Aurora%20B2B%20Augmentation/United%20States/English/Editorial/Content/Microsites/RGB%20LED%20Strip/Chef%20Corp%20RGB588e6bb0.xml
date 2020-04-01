@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Microsites/RGB LED Strip" name="Chef Corp RGB LED Strip Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>LED Strip</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>These light strips employ the absolute latest technology</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>The latest LED Strips from Chef Corp. have just arrived in stock! These light strips employ the absolute latest technology to ensure the most dynamic lighting combinations possible.  Their advanced low-power consumption and industry-leading longevity ensure you will get the best value for your money. Use them for decoration around homes, added ambiance in the office, or as an advanced replacement for standard fixtures.</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED5ed0ab2.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED%20Strip%20Product%20Teaser"> ChefSupply RGB LED Strip</a></p><p>There are different variants of the Chef Corp. LED Strips designed for both indoor and outdoor use. This flexible strip can easily be separated at any point between LEDs, which makes them extremely versatile and allows them to be used in a number of installations. Outside of traditional lighting, strip lighting is extensively used in DIY projects or lighted clothing. These strip lights can be powered by a USB device, battery pack, or AC converter, which makes them extremely portable.</p><p> </p><p>These strips can be used in many different and creative ways:</p><ul><li>In the latest clubs and bars to create a welcoming and modern atmosphere</li><li>In industrial lighting situations to replace less enercy-efficient bulbs</li><li>In office situations to update older lighting fixtures to the latest technology, or to add a more employee-friendly ambiance to an existing lighting situation</li><li>At home, either as a replacement for existing lights or to enhance your currently lighting</li><li>On clothing and in many other new and innovative applications</li></ul><p>Take advantage of this promotion and purchase extra strips now at our discounted introductory price!</p><p> </p></div></detailText>
+<pictures>
+<link href="Chef%20Corp%20RGB46f5a1d0.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/RGB%20LED%20Strip/Chef%20Corp%20RGB%20LED%20Strip%20Video%20Picture"/>
+</pictures>
+<related>
+<link href="Chef%20Corp%20RGB39226920.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/RGB%20LED%20Strip/Chef%20Corp%20RGB%20LED%20Sidebar%20Collection"/>
+</related>
+<authors>
+<link href="../../../Authors/Charlotte%20May%20Person.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Authors/Charlotte%20May%20Person"/>
+</authors>
+</CMArticle>

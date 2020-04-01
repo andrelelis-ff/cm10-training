@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSite folder="/Sites/Chef Corp./Germany/German" name="Chef Corp. [Site]" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../United%20States/English/Corporate%20%5BSite%5D.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Corporate%20%5BSite%5D"/>
+</master>
+<id>61e75a956d912104971e03ffc6175869</id>
+<name>Chef Corp.</name>
+<root>
+<link href="Navigation/Chef%20Corp%2E%20DE%20Home%20Page.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Chef%20Corp%2E%20DE%20Home%20Page"/>
+</root>
+<siteManagerGroup>manager-c-de-DE</siteManagerGroup>
+<linkedSettings>
+<link href="Options/Settings/SiteSettings.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Options/Settings/SiteSettings"/>
+</linkedSettings>
+</CMSite>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/United Kingdom/English/Editorial/Content/Navigation/Campaign Fall 2017" name="Voucher Banner" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=416;y=0;width=608;height=810</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=315;y=0;width=810;height=810</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=180;y=0;width=1080;height=810</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=135;width=1440;height=540</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.22163120567375885;y1=0;x2=0.7841312056737588;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1440</width>
+<height>810</height>
+<data md5="e2b0864b491576a3ab2be5f5bd0d80c9" size="63356" href="../../../../../../../../__blob/e2b0864b491576a3ab2be5f5bd0d80c9.blob" mimetype="image/png"/>
+<asset>
+</asset>
+</CMPicture>

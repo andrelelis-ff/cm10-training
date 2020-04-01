@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/Germany/German/Pictures/Sitewide Pictures" name="USA Map Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Pictures/Sitewide%20Pictures/USA%20Map%20Picture.xml" path="/Sites/Calista/United%20States/English/Pictures/Sitewide%20Pictures/USA%20Map%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=573;y=573;width=2182;height=2182</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=547;y=818;width=2240;height=1680</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=367;y=927;width=2601;height=1461</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.172147001934236;y1=0.172147001934236;x2=0.8278529980657641;y2=0.8278529980657641</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.1644100580270793;y1=0.24564796905222436;x2=0.8375241779497099;y2=0.7504835589941973</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.1102514506769826;y1=0.27852998065764023;x2=0.8916827852998066;y2=0.7176015473887815</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>USA Karte</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Symbolbild einer Karte der USA</alt>
+<copyright>Filip Bjorkman / Shutterstock 150472865</copyright>
+<dataUrl></dataUrl>
+<width>3328</width>
+<height>3328</height>
+<data md5="c4eab3828ae7fa78e1c69a120c6e9587" size="109378" href="../../../../../../__blob/c4eab3828ae7fa78e1c69a120c6e9587.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

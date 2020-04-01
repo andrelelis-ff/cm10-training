@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMLocTaxonomy folder="/Settings/Taxonomies/Location" name="Africa" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Africa</value>
+<children>
+<link href="South%20Africa.xml" path="/Settings/Taxonomies/Location/South%20Africa"/>
+<link href="Kenya.xml" path="/Settings/Taxonomies/Location/Kenya"/>
+<link href="Senegal.xml" path="/Settings/Taxonomies/Location/Senegal"/>
+<link href="Egypt.xml" path="/Settings/Taxonomies/Location/Egypt"/>
+</children>
+<externalReference>http://d.opencalais.com/genericHasher-1/19cc1d3f-0865-39b0-b3d6-b3739cf3e66a</externalReference>
+<postcode></postcode>
+<latitudeLongitude>10.48421903370916,22.92708299999959</latitudeLongitude>
+</CMLocTaxonomy>

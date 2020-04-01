@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="
+               http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+               http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd
+               http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-cae-services.xml"/>
+  <import resource="classpath:/com/coremedia/cap/common/uapi-services.xml"/>
+
+  <bean class="com.coremedia.blueprint.base.livecontext.ecommerce.common.BaseCommerceServicesAutoConfiguration"/>
+
+  <util:list id="webCommerceContextInterceptorPatterns">
+    <util:constant static-field="com.coremedia.blueprint.cae.handlers.PageHandler.SEO_FRIENDLY_URI_PATTERN"/>
+    <util:constant static-field="com.coremedia.blueprint.cae.handlers.PageHandler.URI_PATTERN_VANITY"/>
+    <util:constant static-field="com.coremedia.blueprint.cae.handlers.PageActionHandler.URI_PATTERN"/>
+    <util:constant static-field="com.coremedia.blueprint.cae.sitemap.SitemapGenerationHandler.URI_PATTERN"/>
+  </util:list>
+
+  <bean id="storeContextInterceptor" class="com.coremedia.blueprint.ecommerce.cae.AbstractCommerceContextInterceptor" abstract="true">
+    <property name="siteResolver" ref="siteResolver"/>
+    <property name="commerceConnectionInitializer" ref="commerceConnectionInitializer"/>
+  </bean>
+
+  <bean id="webCommerceContextInterceptor" parent="storeContextInterceptor" class="com.coremedia.blueprint.ecommerce.cae.WebCommerceContextInterceptor">
+    <property name="initUserContext" value="true"/>
+  </bean>
+
+  <bean class="com.coremedia.objectserver.web.MappedInterceptor" id="mappedWebCommerceContextInterceptor">
+    <property name="interceptor" ref="webCommerceContextInterceptor"/>
+    <property name="includePatterns" ref="webCommerceContextInterceptorPatterns"/>
+  </bean>
+
+  <!-- add commerce context interceptors to the beginning -->
+  <customize:prepend id="appendCommerceInterceptors" bean="handlerInterceptors" order="9999999">
+    <list>
+      <ref bean="mappedWebCommerceContextInterceptor"/>
+    </list>
+  </customize:prepend>
+</beans>
+

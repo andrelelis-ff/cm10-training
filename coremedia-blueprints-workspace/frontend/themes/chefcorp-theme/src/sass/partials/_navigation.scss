@@ -1,0 +1,40 @@
+//
+// Navigation
+// --------------------------------------------------
+
+
+.cm-navigation {
+  @include breakpoints(("sm", landscape) "lg-and-up") {
+    text-align: left;
+  }
+
+  &__menu {
+    & > .cm-navigation-item {
+      & > .cm-navigation-item__title,
+      & > a {
+        font-size: $cm-font-size-base;
+      }
+    }
+  }
+
+  &-item {
+    &--depth-1 {
+        .cm-navigation-item__menu-label {
+          > .cm-navigation-item__title {
+            font-size: $cm-font-size-h2;
+          }
+        }
+
+      @include breakpoints(("sm", landscape) "lg-and-up") {
+        > .cm-navigation-item__title {
+          font-size: $cm-font-size-base;
+        }
+      }
+    }
+  }
+}
+
+// back to top navigation in footer
+.cm-back-to-top {
+  border: 2px solid $cm-standard-component-background-color;
+}

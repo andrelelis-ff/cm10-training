@@ -1,0 +1,10 @@
+{
+  "name": "delivery-headless",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The role for the headless-server-live node",
+  "run_list": [
+    "role[base]",
+    "recipe[blueprint-spring-boot::headless-server-live]"
+  ]
+}

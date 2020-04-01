@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./United States/English/Editorial/Homepage/Company/Careers" name="Description and Open Positions" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Join the Chef Corp. Family!</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Open Positions</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Help great chefs make great meals using great tools provided by Chef Corp.!</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Everybody likes a good meal. Help great chefs make great meals using great tools provided by Chef Corp.!</p><p>Our company has been expanding constantly over the past few years and we are always looking to extend our team with capable people who know all about the pleasure of food preparation.</p><p>If you find a position you are interested in, please do not hesitate to contact us!</p><p class="p--heading-3">Open Positions</p><table><tbody><tr><td><strong>Position</strong></td><td><strong>Location</strong></td><td><strong>Notes</strong></td></tr><tr><td>Butcher</td><td>Chef Corp. Research Center, Wilmington, Delaware</td><td><br/></td></tr><tr><td>Butcher</td><td>Chef Corp. Research Center, Wilmington, Delaware</td><td><br/></td></tr><tr><td>Senior Butcher</td><td>Chef Corp. Research Center, Wilmington, Delaware</td><td><br/></td></tr><tr><td>Accountant</td><td>Chef Corp. HQ, Chicago, Illinois</td><td><br/></td></tr><tr><td>Security Officer</td><td>Chef Corp. HQ, Chicago, Illinois</td><td>Must provide own uniform.</td></tr><tr><td>Installation and Service Engineer</td><td>Chef Corp. European HQ, Hamburg, Germany</td><td>Must be willing to travel, Hamburg Area</td></tr><tr><td>Receptionist</td><td>Chef Corp. European HQ, Hamburg, Germany</td><td><br/></td></tr></tbody></table><p><br/></p></div></detailText>
+<pictures>
+<link href="../../../Assets/Pictures/Careers/Hands%20placed%20on%20top%20of%20each%20oth55ea3ec8.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Careers/Hands%20placed%20on%20top%20of%20each%20other%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

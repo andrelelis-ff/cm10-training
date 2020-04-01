@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/Germany/German/Downloads" name="Men wearing a Snow Jacket" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Downloads/Men%20wearing%20a%20Snow%20Jacket.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Downloads/Men%20wearing%20a%20Snow%20Jacket"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.28271604938271605</StringProperty>
+<StringProperty Name="y">0.412962962962963</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=2;y=0;width=3993;height=2246</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=124;y=0;width=2000;height=2667</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=237;y=0;width=1778;height=2667</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=2;y=0;width=3556;height=2667</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=2;y=0;width=2667;height=2667</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=2;y=358;width=3993;height=1498</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>hybris:///catalog/category/190100</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Mann mit Schneejacke</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Mann mit Schneejacke</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2667</height>
+<data md5="790938c1cd634f60b7d0e1fcb3df2057" size="734471" href="../../../../../__blob/790938c1cd634f60b7d0e1fcb3df2057.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

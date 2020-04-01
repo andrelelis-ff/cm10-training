@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:NestedRulesPlugin xmlns:fx="http://ns.adobe.com/mxml/2009"
+                                       xmlns:local="com.coremedia.livecontext.studio.plugins.*"
+                                       xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                                       xmlns="exml:ext.config"
+                                       xmlns:ui="exml:com.coremedia.ui.config"
+                                       xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.base.components.previewdate.PreviewDateSelector;
+    import com.coremedia.cms.editor.sdk.premular.fields.DateTimePropertyFieldBase;
+
+    private var config:AddTimeZoneValidationPlugin;
+    private var myPreviewDateSelector:PreviewDateSelector;
+
+    // called by generated constructor code
+    private function __initialize__(config:AddTimeZoneValidationPlugin):void {
+      myPreviewDateSelector = config.cmp as PreviewDateSelector;
+    }
+
+    public native function AddTimeZoneValidationPlugin(config:AddTimeZoneValidationPlugin = null);
+    ]]></fx:Script>
+  <ui:rules>
+    <editor:DateTimePropertyField itemId="{PreviewDateSelector.DATE_TIME_FIELD_ITEM_ID}">
+      <editor:plugins>
+        <ui:NestedRulesPlugin>
+          <ui:rules>
+            <ui:LocalComboBox itemId="{DateTimePropertyFieldBase.TIME_ZONE_ITEM_ID}">
+              <ui:plugins>
+                <local:PreviewPanelTimeZoneValidationPlugin model="{myPreviewDateSelector.getModel()}"
+                                                            previewPanel="{myPreviewDateSelector.previewPanel}"/>
+              </ui:plugins>
+            </ui:LocalComboBox>
+          </ui:rules>
+        </ui:NestedRulesPlugin>
+      </editor:plugins>
+    </editor:DateTimePropertyField>
+  </ui:rules>
+
+</ui:NestedRulesPlugin>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMALXPageList folder="/Sites/Calista/United States/English/Editorial/Content/Site Wide/Lists" name="Most Viewed" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Most Viewed</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<maxLength>5</maxLength>
+<timeRange>30</timeRange>
+<analyticsProvider>googleAnalytics</analyticsProvider>
+<documentType>CMArticle</documentType>
+<baseChannel>
+<link href="../../../../Navigation/Calista.xml" path="/Sites/Calista/United%20States/English/Navigation/Calista"/>
+</baseChannel>
+<defaultContent>
+<link href="../../Blog/Fashion%20Trends/Summer%20Fashion%20Trends.xml" path="/Sites/Calista/United%20States/English/Editorial/Content/Blog/Fashion%20Trends/Summer%20Fashion%20Trends"/>
+<link href="../../Blog/Fashion%20Trends/Fashions%20fade%2C%20style%20is%20eternal.xml" path="/Sites/Calista/United%20States/English/Editorial/Content/Blog/Fashion%20Trends/Fashions%20fade%2C%20style%20is%20eternal"/>
+<link href="../../Blog/Fashion%20Trends/Fashion%20should%20be%20fun.xml" path="/Sites/Calista/United%20States/English/Editorial/Content/Blog/Fashion%20Trends/Fashion%20should%20be%20fun"/>
+</defaultContent>
+</CMALXPageList>

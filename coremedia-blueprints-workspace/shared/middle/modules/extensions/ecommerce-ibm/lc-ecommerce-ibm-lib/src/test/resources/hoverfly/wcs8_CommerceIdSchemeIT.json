@@ -1,0 +1,437 @@
+{
+  "data" : {
+    "pairs" : [ {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/coremedia/storeinfo"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : { },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"serverTimezoneId\":\"Europe\\/Paris\",\"wcsVersion\":\"8.0\",\"stores\":{\"AuroraB2BESite\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store B2B Direct\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838085\",\"defaultCatalogId\":\"3074457345616676718\"},\"CalistaESite\":{\"defaultCatalog\":\"Calista Spring Fashions\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838086\",\"defaultCatalogId\":\"3074457345616676768\"},\"AuroraB2BStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838034\",\"defaultCatalogId\":\"3074457345616676668\"},\"AuroraStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715837984\",\"defaultCatalogId\":\"3074457345616676668\"},\"Extended Sites Hub\":{\"defaultCatalog\":\"\",\"catalogs\":{},\"storeId\":\"715837884\",\"defaultCatalogId\":null},\"Extended Sites Catalog Asset Store\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715837934\",\"defaultCatalogId\":\"3074457345616676668\"},\"AuroraESite\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store Consumer Direct\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838084\",\"defaultCatalogId\":\"3074457345616676719\"},\"CMStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838584\",\"defaultCatalogId\":\"3074457345616676668\"}}}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "3042" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 07:37:34 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000TwRkYmpGd16euccGsYRm8Zi:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838084/catalog"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : { },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":4,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:80\\/wcs\\/resources\\/store\\/715838084\\/catalog\",\"recordSetCount\":4,\"recordSetComplete\":true,\"recordSetStartNumber\":0,\"resultList\":[{\"catalogIdentifier\":\"Extended Sites Catalog Asset Store\",\"description\":[{\"name\":\"Extended Sites Catalog Asset Store\"}],\"primary\":true,\"catalogId\":\"3074457345616676668\"},{\"catalogIdentifier\":\"Extended Sites Catalog Asset Store B2B Direct\",\"description\":[{\"shortDescription\":\"Aurora B2B direct sample data\",\"name\":\"Aurora B2B direct sample data\"}],\"primary\":false,\"catalogId\":\"3074457345616676718\"},{\"default\":true,\"catalogIdentifier\":\"Extended Sites Catalog Asset Store Consumer Direct\",\"description\":[{\"shortDescription\":\"Aurora Consumer Direct sample data\",\"name\":\"Aurora consumer direct sample data\"}],\"primary\":false,\"catalogId\":\"3074457345616676719\"},{\"catalogIdentifier\":\"Calista Spring Fashions\",\"description\":[{\"shortDescription\":\"Spring Fashions\",\"name\":\"Spring Fashions\"}],\"primary\":false,\"catalogId\":\"3074457345616676768\"}],\"resourceName\":\"catalog\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "1066" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 07:37:35 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000PbW_Q3dSHoIzNYqPPjCeTqj:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/coremedia/languagemap"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : { },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"ro\":\"-21\",\"zh\":\"-8\",\"pt_BR\":\"-6\",\"pl_PL\":\"-22\",\"en_US\":\"-1\",\"ja_JP\":\"-10\",\"ru_RU\":\"-20\",\"zh_CN\":\"-7\",\"ro_RO\":\"-21\",\"de\":\"-3\",\"zh_TW\":\"-8\",\"fr\":\"-2\",\"es_ES\":\"-5\",\"it\":\"-4\",\"ko_KR\":\"-9\",\"ko\":\"-9\",\"it_IT\":\"-4\",\"de_DE\":\"-3\",\"ar\":\"-23\",\"ar_EG\":\"-23\",\"fr_FR\":\"-2\",\"pl\":\"-22\",\"pt\":\"-6\",\"en\":\"-1\",\"ru\":\"-20\",\"es\":\"-5\",\"ja\":\"-10\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "323" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 07:37:35 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000lz1AZOYpYWlAW-jhCndVgfx:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/search/resources/store/715838084/productview/%20"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com:3737"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "catalogId" : [ {
+            "matcher" : "exact",
+            "value" : "3074457345616676719"
+          } ],
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "partNumber" : [ {
+            "matcher" : "exact",
+            "value" : "blablub"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "CoreMedia_findProductByPartNumber_Details"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":0,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/%20?partNumber=blablub&profileName=CoreMedia_findProductByPartNumber_Details&catalogId=3074457345616676719&currency=USD&langId=-1\",\"recordSetCount\":0,\"catalogEntryView\":[],\"recordSetComplete\":\"true\",\"recordSetStartNumber\":0,\"recordSetTotalMatches\":0,\"metaData\":{\"price\":\"2\"},\"resourceName\":\"productview\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "436" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 07:37:35 GMT" ],
+          "Expires" : [ "Mon, 18 Feb 2019 08:37:35 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/search/resources/store/715838084/productview/%20"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com:3737"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "catalogId" : [ {
+            "matcher" : "exact",
+            "value" : "3074457345616676719"
+          } ],
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "partNumber" : [ {
+            "matcher" : "exact",
+            "value" : "AuroraWMDRS-1"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "CoreMedia_findProductByPartNumber_Details"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":1,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/%20?partNumber=AuroraWMDRS-1&profileName=CoreMedia_findProductByPartNumber_Details&catalogId=3074457345616676719&currency=USD&langId=-1\",\"recordSetCount\":1,\"catalogEntryView\":[{\"hasSingleSKU\":false,\"catalogEntryTypeCode\":\"ProductBean\",\"disallowRecurringOrder\":\"1\",\"parentCatalogGroupID\":[\"3074457345616676668_3074457345616676673\",\"3074457345616676719_3074457345616676673\",\"3074457345616676768_3074457345616676673\"],\"price_USD\":\"100.0\",\"uniqueID\":\"3074457345616676668\",\"sKUs\":[{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616676707\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Hermitage Fit and Flare Dress\",\"uniqueID\":\"3074457345616676707\",\"storeID\":\"715837934\",\"partNumber\":\"AuroraWMDRS-001\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616676708\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Hermitage Fit and Flare Dress\",\"uniqueID\":\"3074457345616676708\",\"storeID\":\"715837934\",\"partNumber\":\"AuroraWMDRS-002\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616676709\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Hermitage Fit and Flare Dress\",\"uniqueID\":\"3074457345616676709\",\"storeID\":\"715837934\",\"partNumber\":\"AuroraWMDRS-003\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616676710\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Hermitage Fit and Flare Dress\",\"uniqueID\":\"3074457345616676710\",\"storeID\":\"715837934\",\"partNumber\":\"AuroraWMDRS-004\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616676711\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Hermitage Fit and Flare Dress\",\"uniqueID\":\"3074457345616676711\",\"storeID\":\"715837934\",\"partNumber\":\"AuroraWMDRS-005\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616676712\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Hermitage Fit and Flare Dress\",\"uniqueID\":\"3074457345616676712\",\"storeID\":\"715837934\",\"partNumber\":\"AuroraWMDRS-006\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616676713\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Hermitage Fit and Flare Dress\",\"uniqueID\":\"3074457345616676713\",\"storeID\":\"715837934\",\"partNumber\":\"AuroraWMDRS-007\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616676714\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Hermitage Fit and Flare Dress\",\"uniqueID\":\"3074457345616676714\",\"storeID\":\"715837934\",\"partNumber\":\"AuroraWMDRS-008\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616676715\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Hermitage Fit and Flare Dress\",\"uniqueID\":\"3074457345616676715\",\"storeID\":\"715837934\",\"partNumber\":\"AuroraWMDRS-009\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616676716\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Hermitage Fit and Flare Dress\",\"uniqueID\":\"3074457345616676716\",\"storeID\":\"715837934\",\"partNumber\":\"AuroraWMDRS-010\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616676717\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Hermitage Fit and Flare Dress\",\"uniqueID\":\"3074457345616676717\",\"storeID\":\"715837934\",\"partNumber\":\"AuroraWMDRS-011\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616676718\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Hermitage Fit and Flare Dress\",\"uniqueID\":\"3074457345616676718\",\"storeID\":\"715837934\",\"partNumber\":\"AuroraWMDRS-012\"},{\"hasSingleSKU\":false,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616676719\",\"catalogEntryTypeCode\":\"ItemBean\",\"name\":\"Hermitage Fit and Flare Dress\",\"uniqueID\":\"3074457345616676719\",\"storeID\":\"715837934\",\"partNumber\":\"AuroraWMDRS-013\"}],\"fullImage\":\"http:\\/\\/[cmsHost]\\/blueprint\\/servlet\\/catalogimage\\/product\\/[storeId]\\/en_US\\/full\\/AuroraWMDRS-1.jpg\",\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616676668\",\"price\":[{\"description\":\"L\",\"value\":\"250.0\",\"usage\":\"Display\",\"currency\":\"USD\"},{\"description\":\"O\",\"value\":\"\",\"usage\":\"Offer\",\"currency\":\"USD\"}],\"thumbnail\":\"http:\\/\\/[cmsHost]\\/blueprint\\/servlet\\/catalogimage\\/product\\/[storeId]\\/en_US\\/thumbnail\\/AuroraWMDRS-1.jpg\",\"seo_token_ntk\":\"hermitage-fit-and-flare-dress\",\"shortDescription\":\"Jewel-toned cocktail dress with fitted bodice and gently flared skirt\",\"manufacturer\":\"Hermitage Collection\",\"name\":\"Hermitage Fit and Flare Dress\",\"subscriptionTypeCode\":\"NONE\",\"buyable\":\"true\",\"longDescription\":\"Classically tailored, this elegant satin dress features a bateau neckline, soft pleating, and a clasped belt to define the waist.\",\"attachments\":[{\"attachmentAssetPath\":\"ExtendedSitesCatalogAssetStore\\/images\\/catalog\\/apparel\\/women\\/wcl000_dresses\\/patternswatches_28x28\\/wcl000_0028_a_red_s.jpg\",\"catentry_id\":3074457345616676668,\"attachmentAssetID\":3074457345616668050,\"usage\":\"SWATCH_IMAGE\",\"identifier\":\"AuroraWMDRS-1_swatchcolor_Red\",\"mimeType\":\"image\\/jpg\"},{\"attachmentAssetPath\":\"ExtendedSitesCatalogAssetStore\\/images\\/catalog\\/apparel\\/women\\/wcl000_dresses\\/patternswatches_28x28\\/wcl000_0028_a_teal_s.jpg\",\"catentry_id\":3074457345616676668,\"attachmentAssetID\":3074457345616668051,\"usage\":\"SWATCH_IMAGE\",\"identifier\":\"AuroraWMDRS-1_swatchcolor_Teal\",\"mimeType\":\"image\\/jpg\"},{\"attachmentAssetPath\":\"ExtendedSitesCatalogAssetStore\\/images\\/catalog\\/apparel\\/women\\/wcl000_dresses\\/patternswatches_28x28\\/wcl000_0028_a_blue_s.jpg\",\"catentry_id\":3074457345616676668,\"attachmentAssetID\":3074457345616668052,\"usage\":\"SWATCH_IMAGE\",\"identifier\":\"AuroraWMDRS-1_swatchcolor_Blue\",\"mimeType\":\"image\\/jpg\"}],\"attributes\":[{\"storeDisplay\":false,\"values\":[],\"sequence\":\"1.00000\",\"associatedKeyword\":\"-\",\"name\":\"Color\",\"uniqueID\":\"7741124012283333336\",\"usage\":\"Defining\",\"comparable\":true,\"displayable\":true,\"identifier\":\"swatchcolor\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"19.00000\",\"value\":\"Knit\",\"uniqueID\":\"7741124012283333359\",\"unitID\":\"C62\",\"unitOfMeasure\":\"one\",\"identifier\":\"Knit\"}],\"sequence\":\"1.00000\",\"associatedKeyword\":\"-\",\"name\":\"Construction\",\"uniqueID\":\"7741124012283333337\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"construction\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"20.00000\",\"value\":\"Short\",\"uniqueID\":\"7741124012283333361\",\"unitID\":\"C62\",\"unitOfMeasure\":\"one\",\"identifier\":\"Short\"}],\"sequence\":\"1.00000\",\"associatedKeyword\":\"-\",\"name\":\"Length\",\"uniqueID\":\"7741124012283333338\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"length\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"21.00000\",\"value\":\"Synthetic\",\"uniqueID\":\"7741124012283333364\",\"unitID\":\"C62\",\"unitOfMeasure\":\"one\",\"identifier\":\"Synthetic\"}],\"sequence\":\"1.00000\",\"associatedKeyword\":\"-\",\"name\":\"Material\",\"uniqueID\":\"7741124012283333339\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"material\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"25.00000\",\"value\":\"Cocktail & Evening\",\"uniqueID\":\"7741124012283333371\",\"unitID\":\"C62\",\"unitOfMeasure\":\"one\",\"identifier\":\"Cocktail & Evening\"}],\"sequence\":\"1.00000\",\"associatedKeyword\":\"-\",\"name\":\"Occasion\",\"uniqueID\":\"7741124012283333340\",\"usage\":\"Descriptive\",\"comparable\":true,\"displayable\":true,\"identifier\":\"occasion\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[],\"sequence\":\"2.00000\",\"associatedKeyword\":\"-\",\"name\":\"Available Sizes\",\"uniqueID\":\"7741124012283333335\",\"usage\":\"Defining\",\"comparable\":true,\"displayable\":true,\"identifier\":\"swatchSize\",\"facetable\":false,\"searchable\":false}],\"storeID\":\"715837934\",\"cm_seo_token_ntk\":\"715837934_hermitage-fit-and-flare-dress\",\"numberOfSKUs\":13,\"partNumber\":\"AuroraWMDRS-1\"}],\"recordSetComplete\":\"true\",\"recordSetStartNumber\":0,\"recordSetTotalMatches\":1,\"metaData\":{\"price\":\"2\"},\"resourceName\":\"productview\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "9046" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 07:37:36 GMT" ],
+          "Expires" : [ "Mon, 18 Feb 2019 08:37:36 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/search/resources/store/715838084/productview/byId/3074457345616676707"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com:3737"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "catalogId" : [ {
+            "matcher" : "exact",
+            "value" : "3074457345616676719"
+          } ],
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "CoreMedia_findProductByIds_Details"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":1,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616676707?profileName=CoreMedia_findProductByIds_Details&catalogId=3074457345616676719&currency=USD&langId=-1\",\"recordSetCount\":1,\"catalogEntryView\":[{\"hasSingleSKU\":false,\"catalogEntryTypeCode\":\"ItemBean\",\"disallowRecurringOrder\":\"1\",\"parentCatalogGroupID\":[\"3074457345616676668_3074457345616676673\",\"3074457345616676719_3074457345616676673\",\"3074457345616676768_3074457345616676673\"],\"price_USD\":\"100.0\",\"uniqueID\":\"3074457345616676707\",\"fullImage\":\"http:\\/\\/[cmsHost]\\/blueprint\\/servlet\\/catalogimage\\/product\\/[storeId]\\/en_US\\/full\\/AuroraWMDRS-001.jpg\",\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616676707\",\"price\":[{\"description\":\"L\",\"value\":\"250.0\",\"usage\":\"Display\",\"currency\":\"USD\"},{\"description\":\"O\",\"value\":\"\",\"usage\":\"Offer\",\"currency\":\"USD\"}],\"thumbnail\":\"http:\\/\\/[cmsHost]\\/blueprint\\/servlet\\/catalogimage\\/product\\/[storeId]\\/en_US\\/thumbnail\\/AuroraWMDRS-001.jpg\",\"parentCatalogEntryID\":\"3074457345616676668\",\"seo_token_ntk\":\"hermitage-fit-and-flare-dress-aurorawmdrs-001\",\"shortDescription\":\"Jewel-toned cocktail dress with fitted bodice and gently flared skirt\",\"manufacturer\":\"Hermitage Collection\",\"name\":\"Hermitage Fit and Flare Dress\",\"subscriptionTypeCode\":\"NONE\",\"longDescription\":\"Classically tailored, this elegant satin dress features a bateau neckline, soft pleating, and a clasped belt to define the waist.\",\"buyable\":\"true\",\"attributes\":[{\"storeDisplay\":false,\"values\":[{\"image1\":\"images\\/catalog\\/apparel\\/women\\/Swatches\\/swatch_size\\/size_xs_enabled.png\",\"sequence\":\"1.00000\",\"value\":\"XS\",\"image1path\":\"\\/wcsstore\\/ExtendedSitesCatalogAssetStore\\/images\\/catalog\\/apparel\\/women\\/Swatches\\/swatch_size\\/size_xs_enabled.png\",\"uniqueID\":\"7741124012283333338\",\"unitID\":\"C62\",\"unitOfMeasure\":\"one\",\"identifier\":\"XS\"}],\"sequence\":\"1.00000\",\"name\":\"Available Sizes\",\"uniqueID\":\"7741124012283333335\",\"usage\":\"Defining\",\"comparable\":true,\"displayable\":true,\"identifier\":\"swatchSize\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"image1\":\"images\\/catalog\\/apparel\\/women\\/Swatches\\/swatch_red.png\",\"sequence\":\"1.00000\",\"value\":\"Red\",\"image1path\":\"\\/wcsstore\\/ExtendedSitesCatalogAssetStore\\/images\\/catalog\\/apparel\\/women\\/Swatches\\/swatch_red.png\",\"uniqueID\":\"7741124012283333341\",\"unitID\":\"C62\",\"unitOfMeasure\":\"one\",\"identifier\":\"Red\"}],\"sequence\":\"1.00000\",\"name\":\"Color\",\"uniqueID\":\"7741124012283333336\",\"usage\":\"Defining\",\"comparable\":true,\"displayable\":true,\"identifier\":\"swatchcolor\",\"facetable\":false,\"searchable\":false}],\"storeID\":\"715837934\",\"cm_seo_token_ntk\":\"715837934_hermitage-fit-and-flare-dress-aurorawmdrs-001\",\"partNumber\":\"AuroraWMDRS-001\"}],\"recordSetComplete\":\"true\",\"recordSetStartNumber\":0,\"recordSetTotalMatches\":1,\"metaData\":{\"price\":\"2\"},\"resourceName\":\"productview\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "2984" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 07:37:36 GMT" ],
+          "Expires" : [ "Mon, 18 Feb 2019 08:37:36 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/search/resources/store/715838084/categoryview/%20"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com:3737"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "catalogId" : [ {
+            "matcher" : "exact",
+            "value" : "3074457345616676719"
+          } ],
+          "categoryIdentifier" : [ {
+            "matcher" : "exact",
+            "value" : "Women"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "CoreMedia_findCategoryByIdentifier"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":1,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/categoryview\\/%20?categoryIdentifier=Women&profileName=CoreMedia_findCategoryByIdentifier&catalogId=3074457345616676719&langId=-1\",\"recordSetCount\":1,\"recordSetComplete\":\"true\",\"recordSetStartNumber\":0,\"resourceName\":\"categoryview\",\"catalogGroupView\":[{\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/categoryview\\/byId\\/3074457345616676670\",\"thumbnail\":\"\\/wcsstore\\/ExtendedSitesCatalogAssetStore\\/images\\/catalog\\/apparel\\/women\\/category\\/catr_app_women.png\",\"seo_token_ntk\":\"women\",\"shortDescription\":\"Women\",\"parentCatalogGroupID\":[\"3074457345616676668_3074457345616676668\",\"3074457345616676719_3074457345616676668\",\"3074457345616676768_3074457345616676668\"],\"name\":\"Women\",\"uniqueID\":\"3074457345616676670\",\"childCatalogGroupID\":[\"3074457345616676668_3074457345616676673\",\"3074457345616676668_3074457345616676674\",\"3074457345616676668_3074457345616676675\",\"3074457345616676668_3074457345616676676\",\"3074457345616676668_3074457345616676677\",\"3074457345616676668_3074457345616676678\",\"3074457345616676668_3074457345616676679\",\"3074457345616676668_3074457345616676680\",\"3074457345616676719_3074457345616676673\",\"3074457345616676719_3074457345616676674\",\"3074457345616676719_3074457345616676675\",\"3074457345616676719_3074457345616676676\",\"3074457345616676719_3074457345616676677\",\"3074457345616676719_3074457345616676678\",\"3074457345616676719_3074457345616676679\",\"3074457345616676719_3074457345616676680\",\"3074457345616676768_3074457345616676673\",\"3074457345616676768_3074457345616676674\",\"3074457345616676768_3074457345616676675\",\"3074457345616676768_3074457345616676676\",\"3074457345616676768_3074457345616676677\",\"3074457345616676768_3074457345616676678\",\"3074457345616676768_3074457345616676679\",\"3074457345616676768_3074457345616676680\"],\"storeID\":\"715837934\",\"cm_seo_token_ntk\":\"715837934_women\",\"identifier\":\"Women\",\"fullImage\":\"\\/wcsstore\\/ExtendedSitesCatalogAssetStore\\/images\\/catalog\\/apparel\\/women\\/category\\/catr_app_women.png\"}]}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "2116" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 07:37:36 GMT" ],
+          "Expires" : [ "Mon, 18 Feb 2019 08:37:36 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/search/resources/store/715838084/categoryview/%20"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com:3737"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "catalogId" : [ {
+            "matcher" : "exact",
+            "value" : "3074457345616676719"
+          } ],
+          "categoryIdentifier" : [ {
+            "matcher" : "exact",
+            "value" : "blablub"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "CoreMedia_findCategoryByIdentifier"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":0,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/categoryview\\/%20?categoryIdentifier=blablub&profileName=CoreMedia_findCategoryByIdentifier&catalogId=3074457345616676719&langId=-1\",\"recordSetCount\":0,\"recordSetComplete\":\"true\",\"recordSetStartNumber\":0,\"resourceName\":\"categoryview\",\"catalogGroupView\":[]}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "375" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 07:37:37 GMT" ],
+          "Expires" : [ "Mon, 18 Feb 2019 08:37:37 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    } ],
+    "globalActions" : {
+      "delays" : [ ]
+    }
+  },
+  "meta" : {
+    "schemaVersion" : "v5",
+    "hoverflyVersion" : "v0.17.7",
+    "timeExported" : "2019-02-18T08:37:37+01:00"
+  }
+}

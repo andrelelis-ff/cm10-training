@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/France/French/Pictures" name="Stylish Women with Sunglasses" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Pictures/Stylish%20Women%20with%20Sunglasses.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Pictures/Stylish%20Women%20with%20Sunglasses"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0;x2=1;y2=0.49893750000000003</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.00949367088607595;x2=1;y2=0.38369679588607597</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.00949367088607595;x2=1;y2=0.34211867088607595</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.0189873417721519;x2=1;y2=0.2850873417721519</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.02531645569620253;x2=1;y2=0.2747852056962026</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.04746835443037974;x2=1;y2=0.21378085443037975</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0;x2=1;y2=0.66525</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0;x2=1;y2=0.887</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=2661;height=1996</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=38;width=2661;height=1497</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=38;width=2661;height=1331</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=76;width=2661;height=1064</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=101;width=2661;height=998</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=190;width=2661;height=665</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=0;width=2661;height=2661</StringProperty>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=40;y=0;width=2581;height=4000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=0;width=2661;height=3548</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Femmes élégantes avec lunettes de soleil</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Stylish.xml" path="/Settings/Taxonomies/Subject/Stylish"/>
+<link href="../../../../../Settings/Taxonomies/Subject/Women%282%29.xml" path="/Settings/Taxonomies/Subject/Women%282%29"/>
+<link href="../../../../../Settings/Taxonomies/Subject/Fashion.xml" path="/Settings/Taxonomies/Subject/Fashion"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Femmes élégantes avec lunettes de soleil</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2661</width>
+<height>4000</height>
+<data md5="ca75da41d444a027dcba4ce68fba35c1" size="714450" href="../../../../../__blob/ca75da41d444a027dcba4ce68fba35c1.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

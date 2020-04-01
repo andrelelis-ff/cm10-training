@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+  <content>
+    <folder id="1" name="">
+      <folder id="3" name="Sites">
+        <folder id="5" name="Helios">
+          <!-- Site Helios EN with sub channel Helios-a1 -->
+          <document id="100" name="Helios" type="CMSite">
+            <version number="1">
+              <linkProperty name="root">
+                <link id="1000"/>
+              </linkProperty>
+              <stringProperty name="locale" value="en"/>
+              <stringProperty name="id" value="mySiteIndicator"/>
+              <stringProperty name="name" value="Helios"/>
+            </version>
+          </document>
+          <folder id="7" name="Navigation">
+            <document id="1000" name="Helios" type="CMChannel">
+              <version number="1">
+                <stringProperty name="segment" value="helios"/>
+                <stringProperty name="locale" value="en"/>
+                <markupProperty name="localSettings" grammar="coremedia-struct-2008" url="1002settings.xml"/>
+                <linkProperty name="children">
+                  <link id="10002"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="10002" name="Helios-a1" type="CMChannel">
+              <version number="1">
+                <stringProperty name="segment" value="helios-a1"/>
+              </version>
+            </document>
+            <document id="106" name="_folderProperties" type="CMFolderProperties">
+              <version number="1">
+                <linkProperty name="contexts">
+                  <link id="1000"/>
+                </linkProperty>
+              </version>
+            </document>
+          </folder>
+        </folder>
+        <folder id="99" name="B2B">
+          <!-- Site Helios EN with sub channel Helios-a1 -->
+          <document id="150" name="B2BSite" type="CMSite">
+            <version number="1">
+              <linkProperty name="root">
+                <link id="1500"/>
+              </linkProperty>
+              <stringProperty name="locale" value="en"/>
+              <stringProperty name="id" value="myB2BSiteIndicator"/>
+              <stringProperty name="name" value="B2B"/>
+            </version>
+          </document>
+          <folder id="999" name="Navigation">
+            <document id="1500" name="B2BRoot" type="CMChannel">
+              <version number="1">
+                <stringProperty name="segment" value="b2b"/>
+                <stringProperty name="locale" value="en"/>
+                <markupProperty name="localSettings" grammar="coremedia-struct-2008" url="b2bsettings.xml"/>
+              </version>
+            </document>
+          </folder>
+        </folder>
+        <folder id="15" name="Media">
+          <!-- Site Media EN with sub channel Media-a1 -->
+          <document id="1100" name="Media" type="CMSite">
+            <version number="1">
+              <linkProperty name="root">
+                <link id="11000"/>
+              </linkProperty>
+              <stringProperty name="locale" value="en"/>
+              <stringProperty name="id" value="myMediaSiteIndicator"/>
+              <stringProperty name="name" value="Media"/>
+            </version>
+          </document>
+          <folder id="17" name="Navigation">
+            <document id="11000" name="Media" type="CMChannel">
+              <version number="1">
+                <stringProperty name="segment" value="media"/>
+                <stringProperty name="locale" value="en"/>
+                <linkProperty name="children">
+                  <link id="110002"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="110002" name="Media-a1" type="CMChannel">
+              <version number="1">
+                <stringProperty name="segment" value="media-a1"/>
+              </version>
+            </document>
+            <document id="1106" name="_folderProperties" type="CMFolderProperties">
+              <version number="1">
+                <linkProperty name="contexts">
+                  <link id="11000"/>
+                </linkProperty>
+              </version>
+            </document>
+          </folder>
+        </folder>
+        <folder id="25" name="Helios-incomplete">
+          <!-- Site Helios-incomplete EN with sub channel Helios-incomplete-a1 -->
+          <document id="2100" name="Helios-incomplete" type="CMSite">
+            <version number="1">
+              <linkProperty name="root">
+                <link id="21000"/>
+              </linkProperty>
+              <stringProperty name="locale" value="en"/>
+              <stringProperty name="id" value="myHeliosIncompleteSiteIndicator"/>
+              <stringProperty name="name" value="Helios-incomplete"/>
+            </version>
+          </document>
+          <folder id="27" name="Navigation">
+            <document id="21000" name="Helios-incomplete" type="CMChannel">
+              <version number="1">
+                <stringProperty name="segment" value="helios-incomplete"/>
+                <stringProperty name="locale" value="en"/>
+                <markupProperty name="localSettings" grammar="coremedia-struct-2008"
+                                url="helios-incomplete-settings.xml"/>
+                <linkProperty name="children">
+                  <link id="210002"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="210002" name="Helios-incomplete-a1" type="CMChannel">
+              <version number="1">
+                <stringProperty name="segment" value="helios-incomplete-a1"/>
+              </version>
+            </document>
+            <document id="2106" name="_folderProperties" type="CMFolderProperties">
+              <version number="1">
+                <linkProperty name="contexts">
+                  <link id="21000"/>
+                </linkProperty>
+              </version>
+            </document>
+          </folder>
+        </folder>
+        <folder id="11" name="Alternative">
+          <document id="110" name="Alternative" type="CMSite">
+            <version number="1">
+              <linkProperty name="root">
+                <link id="1010"/>
+              </linkProperty>
+              <stringProperty name="locale" value="de"/>
+              <stringProperty name="id" value="mySiteIndicator2"/>
+              <stringProperty name="name" value="Alternative"/>
+            </version>
+          </document>
+          <folder id="13" name="Navigation">
+            <document id="1010" name="Alternative" type="CMChannel">
+              <version number="1">
+                <stringProperty name="segment" value="alternative"/>
+                <stringProperty name="locale" value="de"/>
+                <markupProperty name="localSettings" grammar="coremedia-struct-2008" url="1004settings.xml"/>
+              </version>
+            </document>
+          </folder>
+        </folder>
+        <!-- Insert another site here -->
+      </folder>
+    </folder>
+  </content>
+  <rules>
+    <rule resourceId="1" group="0" doctype="Folder_">
+      <right value="ALL"/>
+    </rule>
+    <rule resourceId="1" group="0" doctype="Document_">
+      <right value="ALL"/>
+    </rule>
+  </rules>
+</contentRepository>

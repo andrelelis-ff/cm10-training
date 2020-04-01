@@ -1,0 +1,8 @@
+{
+  "studioPlugins": [
+    {
+      "mainClass": "com.coremedia.livecontext.studio.LivecontextStudioPlugin",
+      "name": "Livecontext Extensions"
+    }
+  ]
+}

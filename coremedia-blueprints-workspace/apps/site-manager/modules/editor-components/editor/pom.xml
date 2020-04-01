@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>site-manager.editor-components</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>editor</artifactId>
+  <packaging>coremedia-application</packaging>
+
+  <description>The CoreMedia Site Manager Java application's custom configuration</description>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>editor-lib</artifactId>
+      <version>${project.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>swing-editor</artifactId>
+      <type>coremedia-application</type>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.cms</groupId>
+      <artifactId>swing-editor</artifactId>
+      <type>pom</type>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-enforcer-plugin</artifactId>
+        <configuration>
+          <!-- complains about jakarta.servlet:jakarta.servlet-api with runtime scope, but this is necessary for the Editor
+          Remote Control -->
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

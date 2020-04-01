@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/cae/view/resolver/test-doctypes.xml"/>
+  <content>
+  <folder id="1" name="">
+    <folder id="11" name="Themes">
+      <folder id="111" name="corporate">
+        <document id="2" name="theme" type="CMTheme">
+          <version number="1">
+            <linkProperty name="templateSets">
+              <link id="4"/>
+              <link id="6"/>
+            </linkProperty>
+          </version>
+        </document>
+        <document id="4" name="corporate-templates" type="CMTemplateSet">
+          <version number="1">
+            <blobProperty name="archive" type="application/x-java-archive" url="corporate-templates.jar"/>
+          </version>
+        </document>
+        <document id="6" name="bricks-templates" type="CMTemplateSet">
+          <version number="1">
+            <blobProperty name="archive" type="application/x-java-archive" url="bricks-templates.jar"/>
+          </version>
+        </document>
+      </folder>
+    </folder>
+  </folder>
+</content>
+</contentRepository>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.studio.topicpages.TopicPagesStudioPlugin"/>
+  <component class="com.coremedia.blueprint.studio.topicpages.administration.FilterPanel"/>
+  <component class="com.coremedia.blueprint.studio.topicpages.administration.OpenTopicPagesEditorAction"/>
+  <component class="com.coremedia.blueprint.studio.topicpages.administration.TaxonomyCombo"/>
+  <component class="com.coremedia.blueprint.studio.topicpages.administration.TopicPagesEditor"/>
+  <component class="com.coremedia.blueprint.studio.topicpages.administration.TopicPreviewPanel"/>
+  <component class="com.coremedia.blueprint.studio.topicpages.administration.TopicsPanel"/>
+</componentPackage>

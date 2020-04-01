@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Viewport xmlns:fx="http://ns.adobe.com/mxml/2009"
+          xmlns:exml="http://www.jangaroo.net/exml/0.8"
+          xmlns="exml:ext.config"
+          xmlns:ec="exml:com.coremedia.ecommerce.studio.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.collectionview.CollectionViewConstants;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+
+    public static const xtype:String = "com.coremedia.ecommerce.studio.config.catalogRepositoryListTestView";
+
+    private var config:CatalogRepositoryListTestView;
+
+    public native function CatalogRepositoryListTestView(config:CatalogRepositoryListTestView = null);
+    ]]></fx:Script>
+
+  <items>
+    <ec:CatalogRepositoryList itemId="{CollectionViewConstants.LIST_VIEW}"
+                              selectedNodeValueExpression="{ValueExpressionFactory.createFromValue()}"
+                              selectedItemsValueExpression="{ValueExpressionFactory.createFromValue()}"
+                              mySelectedItemsValueExpression="{ValueExpressionFactory.createFromValue()}"/>
+  </items>
+
+</Viewport>

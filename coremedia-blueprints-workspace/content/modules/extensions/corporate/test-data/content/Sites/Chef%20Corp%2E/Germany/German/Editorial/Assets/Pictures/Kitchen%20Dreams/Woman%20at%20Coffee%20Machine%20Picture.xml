@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./Germany/German/Editorial/Assets/Pictures/Kitchen Dreams" name="Woman at Coffee Machine Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Assets/Pictures/Kitchen%20Dreams/Woman%20at%20Coffee%20Machine%20Picture.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Kitchen%20Dreams/Woman%20at%20Coffee%20Machine%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=489;y=0;width=861;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=474;y=0;width=1003;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=202;y=0;width=1333;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=176;y=0;width=1777;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=97;width=2000;height=1125</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=136;width=2000;height=1001</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=126;width=2000;height=800</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=156;width=2000;height=749</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=257;width=2000;height=498</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=258;y=0;width=889;height=1333</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.24433249370277077;y1=0;x2=0.6750629722921915;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2367758186397985;y1=0;x2=0.7380352644836272;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.10084033613445378;y1=0;x2=0.7673403361344537;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.08823529411764705;y1=0;x2=0.9769019607843137;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.0725552050473186;x2=1;y2=0.9165161952948807</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.1018867924528302;x2=1;y2=0.8528301886792453</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.09433962264150944;x2=1;y2=0.6943396226415094</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.1169811320754717;x2=1;y2=0.6792452830188679</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.19245283018867926;x2=1;y2=0.5660377358490566</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.34978991596638653</StringProperty>
+<StringProperty Name="y">0.2949526813880126</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Frau am Kaffee-Maschine</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Kitchen.xml" path="/Settings/Taxonomies/Subject/Kitchen"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Frau am Kaffee-Maschine</alt>
+<copyright>shutterstock 300761216</copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1333</height>
+<data md5="24d8cd6c911603cb6f4b4e7b723a308d" size="614974" href="../../../../../../../../__blob/24d8cd6c911603cb6f4b4e7b723a308d.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

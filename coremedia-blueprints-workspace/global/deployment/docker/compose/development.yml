@@ -1,0 +1,418 @@
+version: "3.4"
+# default logging configuration
+x-logging:
+  &default-logging
+  options:
+    max-size: '12m'
+    max-file: '5'
+  driver: json-file
+
+# default environment variables for all spring-boot services
+x-development-boot-envs:
+  &development-boot-envs
+  JAVA_DEBUG: "${JAVA_DEBUG:-false}"
+  DEVELOPMENT_SETUP: "true"
+  # enable entrypoint debugging i.e. set -x
+  DEBUG_ENTRYPOINT: "${DEBUG_ENTRYPOINT:-false}"
+  # writes heapdumps to /coremedia/heapdumps on oom exceptions. restart the container or mount a volume to
+  # that directory to inspect the heapdumps
+  HEAP_DUMP_ON_OOM: "${HEAP_DUMP_ON_OOM:-true}"
+
+services:
+  mysql:
+    ports:
+      - 3306:3306
+
+  mongodb:
+    ports:
+      - 27017:27017
+
+  solr:
+    ports:
+      - 40080:8983
+
+  content-management-server:
+    ports:
+      - 40180:8080
+      - 40181:8081
+      - 40183:${CMS_ORB_PORT:-40183}
+      - 40105:5005
+    environment:
+      << : *development-boot-envs
+      COM_COREMEDIA_CORBA_SERVER_HOST: ${CMS_ORB_HOST:-content-management-server}
+      # when accessing a remote system it is necessary to have the forwarded port equal to the internal port
+      COM_COREMEDIA_CORBA_SERVER_PORT: ${CMS_ORB_PORT:-40183}
+      PUBLISHER_TARGET_0_IOR_URL: http://master-live-server:8080/ior
+      CAP_SERVER_SEARCH_ENABLE: "true"
+      SOLR_URL: http://solr:8983/solr
+      SOLR_COLLECTION_CONTENT: studio
+      SOLR_REQUEST_HANDLER: /editor
+      SQL_STORE_DRIVER: com.mysql.cj.jdbc.Driver
+      SQL_STORE_URL: jdbc:mysql://mysql:3306/cm_management
+      SQL_STORE_USER: cm_management
+      SQL_STORE_PASSWORD: cm_management
+      HEAP_DUMP_FILENAME: content-management-server-heapdump
+    labels:
+      traefik.enable: "true"
+      traefik.actuator.port: "8081"
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/content-management-server;AddPrefix:/actuator
+    volumes:
+      - heapdumps:/coremedia/heapdumps
+
+  master-live-server:
+    ports:
+      - 40280:8080
+      - 40281:8081
+      - 40283:${MLS_ORB_PORT:-40283}
+      - 40205:5005
+    environment:
+      <<: *development-boot-envs
+      COM_COREMEDIA_CORBA_SERVER_HOST: ${MLS_ORB_HOST:-master-live-server}
+      # when accessing a remote system it is necessary to have the forwarded port equal to the internal port
+      COM_COREMEDIA_CORBA_SERVER_PORT: ${MLS_ORB_PORT:-40283}
+      SQL_STORE_DRIVER: com.mysql.cj.jdbc.Driver
+      SQL_STORE_URL: jdbc:mysql://mysql:3306/cm_master
+      SQL_STORE_USER: cm_master
+      SQL_STORE_PASSWORD: cm_master
+      HEAP_DUMP_FILENAME: master-live-server-heapdump
+    labels:
+      traefik.enable: "true"
+      traefik.actuator.port: "8081"
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/master-live-server;AddPrefix:/actuator
+    volumes:
+      - heapdumps:/coremedia/heapdumps
+
+  workflow-server:
+    ports:
+      - 40380:8080
+      - 40381:8081
+      - 40383:${WFS_ORB_PORT:-40383}
+      - 40305:5005
+    environment:
+      << : *development-boot-envs
+      COM_COREMEDIA_CORBA_SERVER_HOST: ${WFS_ORB_HOST:-workflow-server}
+      # when accessing a remote system it is necessary to have the forwarded port equal to the internal port
+      COM_COREMEDIA_CORBA_SERVER_PORT: ${WFS_ORB_PORT:-40383}
+      CAP_CLIENT_SERVER_IOR_URL: http://content-management-server:8080/ior
+      WORKFLOW_IOR_URL: http://content-management-server:8080/ior
+      MONGODB_PREFIX: blueprint
+      SQL_STORE_DRIVER: com.mysql.cj.jdbc.Driver
+      SQL_STORE_URL: jdbc:mysql://mysql:3306/cm_management
+      SQL_STORE_USER: cm_management
+      SQL_STORE_PASSWORD: cm_management
+      HEAP_DUMP_FILENAME: workflow-server-heapdump
+    labels:
+      traefik.enable: "true"
+      traefik.actuator.port: "8081"
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/workflow-server;AddPrefix:/actuator
+    volumes:
+      - heapdumps:/coremedia/heapdumps
+
+  content-feeder:
+    ports:
+      - 40480:8080
+      - 40481:8081
+      - 40405:5005
+    volumes:
+      # we mount this volume here and not in backend.yml as we can do this only in a local single machine setup
+      - content-feeder-cache:/coremedia/cache
+      - heapdumps:/coremedia/heapdumps
+    environment:
+      <<: *development-boot-envs
+      REPOSITORY_URL: http://content-management-server:8080/ior
+      SOLR_URL: http://solr:8983/solr
+      SOLR_COLLECTION_CONTENT: studio
+      HEAP_DUMP_FILENAME: content-feeder-heapdump
+    labels:
+      traefik.enable: "true"
+      traefik.actuator.port: "8081"
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/content-feeder;AddPrefix:/actuator
+
+  cae-feeder-preview:
+    ports:
+      - 40780:8080
+      - 40781:8081
+      - 40705:5005
+    environment:
+      <<: *development-boot-envs
+      REPOSITORY_URL: http://content-management-server:8080/ior
+      SOLR_URL: http://solr:8983/solr
+      SOLR_COLLECTION_CAE: preview
+      JDBC_DRIVER: com.mysql.cj.jdbc.Driver
+      JDBC_URL: jdbc:mysql://mysql:3306/cm_mcaefeeder
+      JDBC_USER: cm_mcaefeeder
+      JDBC_PASSWORD: cm_mcaefeeder
+      HEAP_DUMP_FILENAME: cae-feeder-preview-heapdump
+    labels:
+      # these traefik labels are only required for the overview page
+      traefik.enable: "true"
+      traefik.actuator.port: "8081"
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/cae-feeder-preview;AddPrefix:/actuator
+    volumes:
+      - heapdumps:/coremedia/heapdumps
+
+  cae-feeder-live:
+    ports:
+      - 40880:8080
+      - 40881:8081
+      - 40805:5005
+    environment:
+      <<: *development-boot-envs
+      # in the dev setup we connect the live feeder to the master as there is no replication-live-server, make sure
+      # this file is listed after the compose/default.yml in the COMPOSE_FILE environment variable
+      REPOSITORY_URL: http://master-live-server:8080/ior
+      SOLR_URL: http://solr:8983/solr
+      SOLR_COLLECTION_CAE: live
+      JDBC_DRIVER: com.mysql.cj.jdbc.Driver
+      JDBC_URL: jdbc:mysql://mysql:3306/cm_caefeeder
+      JDBC_USER: cm_caefeeder
+      JDBC_PASSWORD: cm_caefeeder
+      HEAP_DUMP_FILENAME: cae-feeder-live-heapdump
+    labels:
+      # these traefik labels are only required for the overview page
+      traefik.enable: "true"
+      traefik.actuator.port: "8081"
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/cae-feeder-live;AddPrefix:/actuator
+    command:
+        - wait-for-master-live-server
+        - application
+    volumes:
+      - heapdumps:/coremedia/heapdumps
+
+  user-changes:
+    ports:
+      - 40580:8080
+      - 40581:8081
+      - 40505:5005
+    environment:
+      <<: *development-boot-envs
+      REPOSITORY_URL: http://content-management-server:8080/ior
+      HEAP_DUMP_FILENAME: user-changes-heapdump
+    labels:
+      traefik.enable: "true"
+      traefik.actuator.port: "8081"
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/user-changes;AddPrefix:/actuator
+    volumes:
+      - heapdumps:/coremedia/heapdumps
+
+  elastic-worker:
+    ports:
+      - 40680:8080
+      - 40681:8081
+      - 40605:5005
+    environment:
+      <<: *development-boot-envs
+      REPOSITORY_URL: http://content-management-server:8080/ior
+      ELASTIC_SOLR_URL: http://solr:8983/solr
+      TENANT_DEFAULT: helios
+      HEAP_DUMP_FILENAME: elastic-worker-heapdump
+    labels:
+      traefik.enable: "true"
+      traefik.actuator.port: "8081"
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/elastic-worker;AddPrefix:/actuator
+    volumes:
+      - heapdumps:/coremedia/heapdumps
+
+  studio-server:
+    # we mount this volume here and not in frontend.yml as we can do this only in a local single machine setup
+    volumes:
+      - studio-cache:/coremedia/cache
+      - heapdumps:/coremedia/heapdumps
+    ports:
+      - 41080:8080
+      - 41081:8081
+      - 41005:5005
+    environment:
+      <<: *development-boot-envs
+      HEAP_DUMP_FILENAME: studio-server-heapdump
+    labels:
+      # only in a dev system
+      traefik.frontend.headers.SSLRedirect: "false"
+      traefik.actuator.port: '8081'
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/studio-server;AddPrefix:/actuator
+
+  cae-preview:
+    # we mount this volume here and not in frontend.yml as we can do this only in a local single machine setup
+    volumes:
+      - cae-preview-cache:/coremedia/cache
+      - heapdumps:/coremedia/heapdumps
+    ports:
+      - 40980:8080
+      - 40981:8081
+      - 40905:5005
+    environment:
+      << : *development-boot-envs
+      # this is necessary for the candy sharing setup
+      LIVECONTEXT_CROSSDOMAIN_WHITELIST: "*"
+      HEAP_DUMP_FILENAME: cae-preview-heapdump
+    labels:
+      # only for the dev system
+      traefik.frontend.headers.SSLRedirect: "false"
+      # FIXME: this rule is required in the tests <FQDN>/corporate should work too
+      traefik.preview-test.frontend.rule: Host:preview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefix:/blueprint/servlet
+      # these traefik labels are only required for the overview page
+      traefik.actuator.port: "8081"
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/cae-preview;AddPrefix:/actuator
+
+  replication-live-server:
+    # in the dev setup we simply override the startup
+    entrypoint: /bin/true
+    restart: "no"
+    labels:
+      traefik.actuator.port: "8081"
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/replication-live-server;AddPrefix:/actuator
+
+  cae-live:
+    # we mount this volume here and not in frontend.yml as we can do this only in a local single machine setup
+    volumes:
+      - cae-live-cache:/coremedia/cache
+      - heapdumps:/coremedia/heapdumps
+    ports:
+      - 42180:8080
+      - 42181:8081
+      - 42105:5005
+    environment:
+      << : *development-boot-envs
+      # this is necessary for the candy sharing setup
+      LIVECONTEXT_CROSSDOMAIN_WHITELIST: "*"
+      # enables the sitemap generation
+      GENERATE_SITEMAP: "true"
+      # in the dev setup we connect the cae-live to the master as there is no replication-live-server, make sure
+      # this file is listed after the compose/default.yml in the COMPOSE_FILE environment variable
+      REPOSITORY_URL: http://master-live-server:8080/ior
+      HEAP_DUMP_FILENAME: cae-live-heapdump
+    labels:
+      # only for the dev system
+      traefik.frontend.headers.SSLRedirect: "false"
+      # FIXME: this rule is required in the tests, <FQDN>/corporate should work too
+      traefik.live-test.frontend.rule: Host:corporate.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefix:/blueprint/servlet
+      # these traefik labels are only required for the overview page
+      traefik.actuator.port: "8081"
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/cae-live;AddPrefix:/actuator
+    command:
+      - wait-for-master-live-server
+      - enable-sitemap-generation
+      - application
+
+  management-tools:
+    image: ${REPOSITORY_PREFIX:-coremedia}/management-tools:${MANAGEMENT_TOOLS_TAG:-latest}
+    container_name: management-tools
+    restart: "no"
+    logging: *default-logging
+    networks:
+      - backend
+    environment:
+      # set to true to skip the whole themes & content import process
+      SKIP_CONTENT: "${SKIP_CONTENT:-false}"
+      # set to true to ignore marker files and reimport content
+      FORCE_REIMPORT_CONTENT: "${FORCE_REIMPORT_CONTENT:-false}"
+      # set to true to ignore marker files and reimport themes
+      FORCE_REIMPORT_THEMES: "${FORCE_REIMPORT_THEMES:-false}"
+      # set this to an empty value to disable using remoteblobs on import
+      BLOB_STORAGE_URL: "${BLOB_STORAGE_URL:-}"
+      # URL TO A content-users.zip as produced by the test-data module
+      CONTENT_ARCHIVE_URL: "${CONTENT_ARCHIVE_URL:-}"
+      # enable entrypoint debugging i.e. set -x
+      DEBUG_ENTRYPOINT: "${DEBUG_ENTRYPOINT}"
+      # file path or URL to a frontend.zip
+      THEMES_ARCHIVE_URL: "${THEMES_ARCHIVE_URL:-/coremedia/import/frontend.zip}"
+      # configure the tools against the content-management-server
+      CONFD_PREFIX: "dev/management"
+    command: ["wait-for-content-management-server",
+              "wait-for-workflow-server",
+              "wait-for-master-live-server",
+              "import-themes",
+              "use-remote-content-archive",
+              "import-user",
+              "import-content",
+              "import-default-workflows",
+              "import-custom-workflow",
+              "Translation:/coremedia/tools/properties/corem/workflows/translation.xml",
+              "publish-content"
+    ]
+    volumes:
+      - heapdumps:/coremedia/heapdumps
+
+  headless-server-preview:
+    ports:
+      - 41180:8080
+      - 41181:8081
+      - 41105:5005
+    environment:
+      <<: *development-boot-envs
+      CAAS_CONTEXT_TRACE_ENABLED: "false"
+      CAASSERVER_ENDPOINT: http://${ENVIRONMENT_FQDN:-docker.localhost}:41180/graphql
+      # only used in the test content
+      BLUEPRINT_SITE_MAPPING_CORPORATE: //preview.${ENVIRONMENT_FQDN:-docker.localhost}
+      BLUEPRINT_SITE_MAPPING_APPAREL: //preview.${ENVIRONMENT_FQDN:-docker.localhost}
+      BLUEPRINT_SITE_MAPPING_CALISTA: //preview.${ENVIRONMENT_FQDN:-docker.localhost}
+      BLUEPRINT_SITE_MAPPING_HELIOS: //preview.${ENVIRONMENT_FQDN:-docker.localhost}
+      BLUEPRINT_SITE_MAPPING_SITEGENESIS: //preview.${ENVIRONMENT_FQDN:-docker.localhost}
+      BLUEPRINT_SITE_MAPPING_SFRA: //preview.${ENVIRONMENT_FQDN:-docker.localhost}
+      HEAP_DUMP_FILENAME: headless-server-preview-heapdump
+    labels:
+      traefik.enable: "true"
+      traefik.actuator.port: "8081"
+      traefik.frontend.headers.SSLRedirect: "false"
+      traefik.preview-test.frontend.rule: Host:headless-server-preview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefix:/
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/headless-server-preview;AddPrefix:/actuator
+      # one rule fits all for dev environments (overide of rule in default.yml)
+      traefik.caas.frontend.rule: Host:headless-server-preview.${ENVIRONMENT_FQDN:-docker.localhost}
+    volumes:
+      - heapdumps:/coremedia/heapdumps
+
+  headless-server-live:
+    ports:
+      - 41280:8080
+      - 41281:8081
+      - 41205:5005
+    environment:
+      <<: *development-boot-envs
+      REPOSITORY_URL: http://master-live-server:8080/ior
+      # only used in the test content
+      BLUEPRINT_SITE_MAPPING_CORPORATE: //corporate.${ENVIRONMENT_FQDN:-docker.localhost}
+      BLUEPRINT_SITE_MAPPING_APPAREL: //apparel.${ENVIRONMENT_FQDN:-docker.localhost}
+      BLUEPRINT_SITE_MAPPING_CALISTA: //calista.${ENVIRONMENT_FQDN:-docker.localhost}
+      BLUEPRINT_SITE_MAPPING_HELIOS: //helios.${ENVIRONMENT_FQDN:-docker.localhost}
+      BLUEPRINT_SITE_MAPPING_SITEGENESIS: //sitegenesis.${ENVIRONMENT_FQDN:-docker.localhost}
+      BLUEPRINT_SITE_MAPPING_SFRA: //sfra.${ENVIRONMENT_FQDN:-docker.localhost}
+      HEAP_DUMP_FILENAME: headless-server-live-heapdump
+    labels:
+      traefik.enable: "true"
+      traefik.actuator.port: "8081"
+      traefik.frontend.headers.SSLRedirect: "false"
+      traefik.live-test.frontend.rule: Host:headless-server-live.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefix:/
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/headless-server-live;AddPrefix:/actuator
+      # one rule fits all for dev environments (overide of rule in default.yml)
+      traefik.caas.frontend.rule: Host:headless-server-live.${ENVIRONMENT_FQDN:-docker.localhost}
+    command:
+      - wait-for-master-live-server
+      - application
+    volumes:
+      - heapdumps:/coremedia/heapdumps
+
+  overview:
+    image: ${REPOSITORY_PREFIX:-coremedia}/overview
+    container_name: overview
+    restart: always
+    logging: *default-logging
+    build:
+      context: ../overview
+    # no redirect to https because otherwise clients (JVMs) need to use valid cacerts
+    networks:
+      backend: null
+    environment:
+      ENVIRONMENT_FQDN: ${ENVIRONMENT_FQDN:-docker.localhost}
+    labels:
+      traefik.backend: overview
+      traefik.enable: "true"
+      traefik.port: "80"
+      traefik.frontend.entryPoints: http,https
+      traefik.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost}
+
+volumes:
+  content-feeder-cache: {}
+  cae-preview-cache: {}
+  cae-live-cache: {}
+  studio-cache: {}
+  heapdumps: {}

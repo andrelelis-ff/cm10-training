@@ -1,0 +1,74 @@
+
+version: "3.4"
+
+services:
+  wcs-proxy:
+    image: ${REPOSITORY_PREFIX:-coremedia}/wcs-proxy
+    container_name: wcs-proxy
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "5m"
+        max-file: "3"
+    build:
+      context: ../commerce-proxy
+    networks:
+        - backend
+    environment:
+      COMMERCE_SYSTEM: wcs
+      ENVIRONMENT_FQDN: ${ENVIRONMENT_FQDN:-docker.localhost}
+      WCS_HOST: ${WCS_HOST}
+    labels:
+      traefik.enable: "true"
+      traefik.port: "80"
+      traefik.frontend.entryPoints: http,https
+      # this makes sure the apache sees the virtualhost of the traefik and can find the right handler
+      traefik.frontend.passHostHeader: "true"
+      traefik.frontend.headers.SSLRedirect: "true"
+      traefik.shop-ibm.frontend.rule: Host:shop-ibm.${ENVIRONMENT_FQDN:-docker.localhost}
+      traefik.shop-preview.frontend.rule: Host:shop-preview-ibm.${ENVIRONMENT_FQDN:-docker.localhost}
+      traefik.shop-preview-production.frontend.rule: Host:shop-preview-production-ibm.${ENVIRONMENT_FQDN:-docker.localhost}
+      # candy rulez!!!
+      traefik.candy-shop-preview.frontend.rule: Host:candy-shop-preview-ibm.${ENVIRONMENT_FQDN:-docker.localhost}
+      traefik.candy-shop.frontend.rule: Host:candy-shop-ibm.${ENVIRONMENT_FQDN:-docker.localhost}
+      traefik.candy-shop-preview-production.frontend.rule: Host:candy-shop-preview-production-ibm.${ENVIRONMENT_FQDN:-docker.localhost}
+
+  cae-preview:
+    environment:
+      WCS_HOST: ${WCS_HOST}
+      SPRING_PROFILES: ${SPRING_PROFILES:-dev-wcs}
+    labels:
+      traefik.wcs-servlets.frontend.rule: Host:preview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefix:/assets,/calista,/aurora,/dynamic,/service,/resource,/catalogimage;AddPrefix:/blueprint/servlet
+
+  cae-live:
+    environment:
+      WCS_HOST: ${WCS_HOST}
+      SPRING_PROFILES: ${SPRING_PROFILES:-dev-wcs}
+    labels:
+      # here we only need to add a new landing rule
+      traefik.calista-landing.frontend.rule: Host:calista.${ENVIRONMENT_FQDN:-docker.localhost};Path:/;AddPrefix:/blueprint/servlet/calista
+      # here we need to duplicate all servlets as we are adding new host subdomains
+      traefik.wcs-servlets.frontend.rule: HostRegexp:{subdomain:(calista|helios)}.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefix:/assets,/dynamic,/service,/resource,/calista,/catalogimage;AddPrefix:/blueprint/servlet
+      # FIXME: catalogimage somehow creates an url with blueprint/servlet prefix, this should not be necessary
+      # only required for the coremedia internal dataload job, urls are being imported with "blueprint/servlet" during the dataload and the cae is only replacing the <host> part
+      traefik.wcs-dataload.frontend.rule: Host:helios.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefix:/blueprint/servlet
+      traefik.calista-robots.frontend.rule: HostRegexp:{subdomain:calista}.${ENVIRONMENT_FQDN:-docker.localhost};PathStrip:/robots.txt;AddPrefix:/blueprint/servlet/service/robots/calista
+      traefik.aurora-robots.frontend.rule: HostRegexp:{subdomain:helios}.${ENVIRONMENT_FQDN:-docker.localhost};PathStrip:/robots.txt;AddPrefix:/blueprint/servlet/service/robots/aurora
+
+  studio-server:
+    environment:
+      WCS_HOST: ${WCS_HOST}
+      SPRING_PROFILES: ${SPRING_PROFILES:-dev-wcs}
+
+  commerce-adapter-wcs:
+    labels:
+      traefik.enable: "true"
+      traefik.actuator.port: "8081"
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/commerce-adapter-wcs;AddPrefix:/actuator
+
+  overview:
+    environment:
+      COMMERCE_WCS_ENABLED: "true"
+      COMMERCE_WCS_HOST: ${WCS_HOST}
+      COMMERCE_WCS_VERSION: ${WCS_VERSION}

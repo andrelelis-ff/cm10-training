@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Calista/United States/English/Editorial/Content/Blog" name="Blog Home Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Calista Fashion Blog</teaserTitle>
+<pictures>
+<link href="../../../Pictures/Blog/Photo%20Shooting%20in%20Prague%20-%20Cool.xml" path="/Sites/Calista/United%20States/English/Pictures/Blog/Photo%20Shooting%20in%20Prague%20-%20Cool"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../Navigation/Blog/Blog%20Page.xml" path="/Sites/Calista/United%20States/English/Navigation/Blog/Blog%20Page"/>
+</target>
+</CMTeaser>

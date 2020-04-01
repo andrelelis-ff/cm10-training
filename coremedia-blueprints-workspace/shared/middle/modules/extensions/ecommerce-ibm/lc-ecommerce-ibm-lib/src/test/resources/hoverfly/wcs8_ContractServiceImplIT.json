@@ -1,0 +1,441 @@
+{
+  "data" : {
+    "pairs" : [ {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/coremedia/storeinfo"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : { },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"serverTimezoneId\":\"Europe\\/Paris\",\"wcsVersion\":\"8.0\",\"stores\":{\"AuroraB2BESite\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store B2B Direct\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838085\",\"defaultCatalogId\":\"3074457345616676718\"},\"CalistaESite\":{\"defaultCatalog\":\"Calista Spring Fashions\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838086\",\"defaultCatalogId\":\"3074457345616676768\"},\"AuroraB2BStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838034\",\"defaultCatalogId\":\"3074457345616676668\"},\"AuroraStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715837984\",\"defaultCatalogId\":\"3074457345616676668\"},\"Extended Sites Hub\":{\"defaultCatalog\":\"\",\"catalogs\":{},\"storeId\":\"715837884\",\"defaultCatalogId\":null},\"Extended Sites Catalog Asset Store\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715837934\",\"defaultCatalogId\":\"3074457345616676668\"},\"AuroraESite\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store Consumer Direct\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838084\",\"defaultCatalogId\":\"3074457345616676719\"},\"CMStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838584\",\"defaultCatalogId\":\"3074457345616676668\"}}}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "3042" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 10:43:07 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000W72UuKsxeeEjCBr5vcW51Ss:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/coremedia/languagemap"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : { },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"ro\":\"-21\",\"zh\":\"-8\",\"pt_BR\":\"-6\",\"pl_PL\":\"-22\",\"en_US\":\"-1\",\"ja_JP\":\"-10\",\"ru_RU\":\"-20\",\"zh_CN\":\"-7\",\"ro_RO\":\"-21\",\"de\":\"-3\",\"zh_TW\":\"-8\",\"fr\":\"-2\",\"es_ES\":\"-5\",\"it\":\"-4\",\"ko_KR\":\"-9\",\"ko\":\"-9\",\"it_IT\":\"-4\",\"de_DE\":\"-3\",\"ar\":\"-23\",\"ar_EG\":\"-23\",\"fr_FR\":\"-2\",\"pl\":\"-22\",\"pt\":\"-6\",\"en\":\"-1\",\"ru\":\"-20\",\"es\":\"-5\",\"ja\":\"-10\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "323" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 10:43:07 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000AGwqfp-nrP9Z9pf0TrRdnRC:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838085/contract/xxxx"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "https"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "IBM_Contract_Usage"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 400,
+        "body" : "{\"errors\":[{\"errorMessage\":\"CMN0207E The value of the parameter \\\"contractId\\\" is not correct.\",\"errorParameters\":\"contractId,xxxx\",\"errorCode\":\"CMN0207E\",\"errorKey\":\"_ERR_CMD_INVALID_PARAM\",\"errorLevel\":\"SEVERE\"}]}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 10:43:08 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000-BpAMDXsf7nCufpgQHPor20:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Transfer-Encoding" : [ "chunked" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838085/contract"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "forUser" : [ {
+            "matcher" : "exact",
+            "value" : "gstevens"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "q" : [ {
+            "matcher" : "exact",
+            "value" : "eligible"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"contracts\":{\"4000000000000000009\":\"Default Contract for AuroraB2BESite\"}}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "75" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 10:43:08 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000e5sTm3uWi1d4h8zMBoXTHUI:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838085/contract"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "forUser" : [ {
+            "matcher" : "exact",
+            "value" : "preview"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "q" : [ {
+            "matcher" : "exact",
+            "value" : "eligible"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"contracts\":{\"4000000000000000511\":\"Restaurant Chain Preview (kitchen products 47%, lighting 52%, decorating 28%, others 12% off)\",\"4000000000000000510\":\"Appliances Expert Preview (Lighting products 40%, Nuts and bolts 30%, others 15% off)\",\"4000000000000000509\":\"Interior Designer Preview (lighting products 20%, others 15% off)\"}}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "333" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 10:43:08 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000zWs-fH8GHJI3-ll66D-S3n4:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838085/contract/4000000000000000511"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "https"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "IBM_Contract_Usage"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"resultList\":[{\"referenceNumber\":\"4000000000000000511\",\"name\":\"Contract CoreMedia Preview Restaurant\",\"usage\":1}]}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Connection" : [ "Keep-Alive" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 10:43:08 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Keep-Alive" : [ "timeout=10, max=100" ],
+          "Set-Cookie" : [ "JSESSIONID=00004VVK9yCpQdjc7A-Pc39O3PL:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Transfer-Encoding" : [ "chunked" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838085/contract/4000000000000000510"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "https"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "IBM_Contract_Usage"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"resultList\":[{\"referenceNumber\":\"4000000000000000510\",\"name\":\"Contract for CoreMedia Preview Applicances Expert\",\"usage\":1}]}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Connection" : [ "Keep-Alive" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 10:43:08 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Keep-Alive" : [ "timeout=10, max=98" ],
+          "Set-Cookie" : [ "JSESSIONID=0000SWPKEtGDKbUGqN-uVuR8cnl:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Transfer-Encoding" : [ "chunked" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838085/contract/4000000000000000509"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "https"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "IBM_Contract_Usage"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"resultList\":[{\"referenceNumber\":\"4000000000000000509\",\"name\":\"Contract CoreMedia Preview Interior\",\"usage\":1}]}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Connection" : [ "Keep-Alive" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Mon, 18 Feb 2019 10:43:08 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Keep-Alive" : [ "timeout=10, max=96" ],
+          "Set-Cookie" : [ "JSESSIONID=0000iLjPBxm5kDu1o0LHCXe5Lmv:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Transfer-Encoding" : [ "chunked" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    } ],
+    "globalActions" : {
+      "delays" : [ ]
+    }
+  },
+  "meta" : {
+    "schemaVersion" : "v5",
+    "hoverflyVersion" : "v0.17.7",
+    "timeExported" : "2019-02-18T11:43:08+01:00"
+  }
+}

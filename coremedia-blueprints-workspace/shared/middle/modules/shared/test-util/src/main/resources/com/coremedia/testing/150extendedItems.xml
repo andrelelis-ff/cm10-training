@@ -1,0 +1,20 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <StructListProperty Name="links">
+    <Struct>
+      <LinkProperty Name="target" LinkType="CMLinkable" xlink:href="coremedia:///cap/content/2"/>
+      <IntProperty Name="index">1</IntProperty>
+    </Struct>
+    <Struct>
+      <LinkProperty Name="target" LinkType="CMLinkable" xlink:href="coremedia:///cap/content/6"/>
+      <IntProperty Name="index">3</IntProperty>
+    </Struct>
+    <Struct>
+      <LinkProperty Name="target" LinkType="CMLinkable" xlink:href="coremedia:///cap/content/6"/>
+      <IntProperty Name="index">5</IntProperty>
+    </Struct>
+    <!-- Missing index -->
+    <Struct>
+      <LinkProperty Name="target" LinkType="CMLinkable" xlink:href="coremedia:///cap/content/10"/>
+    </Struct>
+  </StructListProperty>
+</Struct>

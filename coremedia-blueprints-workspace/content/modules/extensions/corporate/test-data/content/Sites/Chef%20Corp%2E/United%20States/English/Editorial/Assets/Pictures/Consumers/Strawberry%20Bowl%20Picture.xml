@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Pictures/Consumers" name="Strawberry Bowl Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/flip;d=h/crop;x=530;y=0;width=1364;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/flip;d=h/crop;x=39;y=0;width=1661;height=1247</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/flip;d=h/crop;x=0;y=91;width=2048;height=1152</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.25879396984924624;y1=0;x2=0.9246231155778895;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.019267822736030782;y1=0;x2=0.8304431599229287;y2=0.9132947976878613</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.06647398843930635;x2=1;y2=0.9104046242774566</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">true</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Fruit Bowl</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Picture of a green melamine Chef-brand fruit bowl with ripe strawberries</alt>
+<copyright>Valentyn Volkov/Shutterstock 77293585</copyright>
+<dataUrl></dataUrl>
+<data md5="bdf1b149ad148cff5ab1b4a5694111e7" size="567826" href="../../../../../../../../__blob/bdf1b149ad148cff5ab1b4a5694111e7.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

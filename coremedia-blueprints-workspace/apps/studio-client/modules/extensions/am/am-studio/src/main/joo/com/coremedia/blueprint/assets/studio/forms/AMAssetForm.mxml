@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:am="exml:com.coremedia.blueprint.assets.studio.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.assets.studio.AMStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.assets.studio.AssetConstants;
+
+    public static const xtype:String = "com.coremedia.blueprint.assets.studio.config.amAssetForm";
+
+    private var config:AMAssetForm;
+    private var localItems:Array;
+
+    public native function AMAssetForm(config:AMAssetForm = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <fx:Array id="localItems">
+      <editor:PropertyFieldGroup itemId="original"
+                                 title="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'PropertyGroup_original_label')}"
+                                 expandOnValues="{AssetConstants.PROPERTY_ASSET_ORIGINAL}">
+        <editor:items>
+          <am:AssetDetailsBlobPropertyField propertyName="{AssetConstants.PROPERTY_ASSET_ORIGINAL}"
+                                            hideLabel="true"
+                                            showImageThumbnail="false"
+                                            blobIconCls="{config.originalIconCls}"
+                                            visiblePropertyName="metadata.renditions.original.show"/>
+        </editor:items>
+      </editor:PropertyFieldGroup>
+
+      <editor:PropertyFieldGroup itemId="thumbnail"
+                                 title="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'PropertyGroup_thumbnail_label')}"
+                                 collapsed="true">
+        <editor:items>
+          <am:AssetDetailsBlobPropertyField propertyName="{AssetConstants.PROPERTY_ASSET_THUMBNAIL}"
+                                            hideLabel="true"
+                                            showImageThumbnail="false"/>
+        </editor:items>
+      </editor:PropertyFieldGroup>
+    </fx:Array>
+
+    <!---
+     The items to be displayed in the 'Renditions' tab below the property editor for the original property.
+    -->
+    <fx:Array id="renditions">{null}</fx:Array>
+
+    <!---
+     An optional class used as iconCls for the original property editor.
+    -->
+    <fx:String id="originalIconCls">content-type-l content-type-AMAsset-icon</fx:String>
+
+    <!---
+     An optional class used as iconCls for the download property editor.
+    -->
+    <fx:String id="downloadIconCls">content-type-l content-type-AMAsset-icon</fx:String>
+  </fx:Declarations>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.assets.studio.AMStudioPlugin', 'Tab_renditions_title')}"
+            items="{localItems.concat(config.renditions || [])}"/>
+    <am:AMAssetMetaDataTab/>
+    <am:AMAssetSystemTab/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

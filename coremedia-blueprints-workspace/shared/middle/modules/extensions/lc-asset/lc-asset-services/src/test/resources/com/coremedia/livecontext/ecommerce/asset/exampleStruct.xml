@@ -1,0 +1,74 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <StructProperty Name="commerce">
+    <Struct>
+      <StringListProperty Name="references">
+        <String>vendor:///catalog/product/PC_SUMMER_DRESS</String>
+      </StringListProperty>
+    </Struct>
+  </StructProperty>
+  <StructProperty Name="focusArea">
+    <Struct>
+      <StringProperty Name="x1">0</StringProperty>
+      <StringProperty Name="y1">0</StringProperty>
+      <StringProperty Name="x2">1</StringProperty>
+      <StringProperty Name="y2">1</StringProperty>
+    </Struct>
+  </StructProperty>
+  <StructProperty Name="transforms">
+    <Struct>
+      <StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=584;y=0;width=881;height=1365</StringProperty>
+      <StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=514;y=0;width=1024;height=1365</StringProperty>
+      <StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=341;y=0;width=1365;height=1365</StringProperty>
+      <StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=114;y=0;width=1820;height=1365</StringProperty>
+      <StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=109;width=2048;height=1152</StringProperty>
+      <StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=173;width=2048;height=1024</StringProperty>
+      <StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=272;width=2048;height=821</StringProperty>
+      <StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=302;width=2048;height=767</StringProperty>
+      <StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=425;width=2048;height=514</StringProperty>
+    </Struct>
+  </StructProperty>
+  <StructProperty Name="relative">
+    <Struct>
+      <StringProperty Name="portrait_ratio20x31">position;x1=0.28502415458937197;y1=0;x2=0.714975845410628;y2=1</StringProperty>
+      <StringProperty Name="portrait_ratio3x4">position;x1=0.25120772946859904;y1=0;x2=0.751207729468599;y2=1</StringProperty>
+      <StringProperty Name="portrait_ratio1x1">position;x1=0.16666666666666666;y1=0;x2=0.8333333333333334;y2=1</StringProperty>
+      <StringProperty Name="landscape_ratio4x3">position;x1=0.05555555555555555;y1=0;x2=0.9444444444444444;y2=1</StringProperty>
+      <StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.07971014492753623;x2=1;y2=0.9239130434782609</StringProperty>
+      <StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.12681159420289856;x2=1;y2=0.8768115942028986</StringProperty>
+      <StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.19927536231884058;x2=1;y2=0.8007246376811594</StringProperty>
+      <StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.2210144927536232;x2=1;y2=0.782608695652174</StringProperty>
+      <StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3115942028985507;x2=1;y2=0.6884057971014492</StringProperty>
+    </Struct>
+  </StructProperty>
+  <StructProperty Name="isDefault">
+    <Struct>
+      <StringProperty Name="portrait_ratio20x31">true</StringProperty>
+      <StringProperty Name="portrait_ratio3x4">true</StringProperty>
+      <StringProperty Name="portrait_ratio1x1">true</StringProperty>
+      <StringProperty Name="landscape_ratio4x3">true</StringProperty>
+      <StringProperty Name="landscape_ratio16x9">true</StringProperty>
+      <StringProperty Name="landscape_ratio2x1">true</StringProperty>
+      <StringProperty Name="landscape_ratio5x2">true</StringProperty>
+      <StringProperty Name="landscape_ratio8x3">true</StringProperty>
+      <StringProperty Name="landscape_ratio4x1">true</StringProperty>
+    </Struct>
+  </StructProperty>
+  <StructProperty Name="reflection">
+    <Struct>
+      <StringProperty Name="h">false</StringProperty>
+      <StringProperty Name="v">false</StringProperty>
+    </Struct>
+  </StructProperty>
+  <StructProperty Name="rotation">
+    <Struct>
+      <StringProperty Name="crude">0</StringProperty>
+      <StringProperty Name="fine">0</StringProperty>
+    </Struct>
+  </StructProperty>
+  <StructProperty Name="coloring">
+    <Struct>
+      <StringProperty Name="brightness">0</StringProperty>
+      <StringProperty Name="contrast">1</StringProperty>
+    </Struct>
+  </StructProperty>
+</Struct>

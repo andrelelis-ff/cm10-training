@@ -1,0 +1,59 @@
+version: "3.4"
+
+# default environment variables for all spring-boot services
+x-development-boot-envs:
+  &development-boot-envs
+  DEVELOPMENT_SETUP: "${DEVELOPMENT_SETUP:-false}"
+  JAVA_DEBUG: "${JAVA_DEBUG:-false}"
+  JAVA_DEBUG_SUSPEND: "${JAVA_DEBUG_SUSPEND:-false}"
+  # enable entrypoint debugging i.e. set -x
+  DEBUG_ENTRYPOINT: "${DEBUG_ENTRYPOINT:-false}"
+  # writes heapdumps to /coremedia/heapdumps on oom exceptions. restart the container or mount a volume to
+  # that directory to inspect the heapdumps
+  HEAP_DUMP_ON_OOM: "${HEAP_DUMP_ON_OOM:-true}"
+
+# default logging configuration
+x-logging:
+  &default-logging
+  options:
+    max-size: '12m'
+    max-file: '5'
+  driver: json-file
+
+services:
+  commerce-adapter-hybris:
+    image: ${COMMERCE_REPOSITORY_PREFIX:-coremedia}/commerce-adapter-hybris:${COMMERCE_ADAPTER_HYBRIS_VERSION:-1.1.12}
+    container_name: commerce-adapter-hybris
+    restart: always
+    logging: *default-logging
+    networks:
+      - backend
+    ports:
+      - 44265:6565
+      - 44281:8081
+      - 44205:5005
+    environment:
+      << : *development-boot-envs
+      HYBRIS_HOST: ${HYBRIS_HOST}
+      HYBRIS_USER: ${HYBRIS_USER}
+      HYBRIS_PASSWORD: ${HYBRIS_PASSWORD}
+      HYBRIS_STOREFRONTHOST: ${HYBRIS_STOREFRONTHOST}
+      HYBRIS_STOREFRONTURL: ${HYBRIS_STOREFRONTURL}
+      HYBRIS_ASSETURL: ${HYBRIS_ASSETURL}
+      MANAGEMENT_HEALTH_STORES_ENABLED: ${MANAGEMENT_HEALTH_STORES_ENABLED:-true}
+
+  studio-server:
+    environment:
+      COMMERCE_HUB_DATA_ENDPOINTS_HYBRIS: ${COMMERCE_HUB_DATA_ENDPOINTS_HYBRIS:-commerce-adapter-hybris:6565}
+  cae-preview:
+    environment:
+      COMMERCE_HUB_DATA_ENDPOINTS_HYBRIS: ${COMMERCE_HUB_DATA_ENDPOINTS_HYBRIS:-commerce-adapter-hybris:6565}
+  cae-live:
+    environment:
+      COMMERCE_HUB_DATA_ENDPOINTS_HYBRIS: ${COMMERCE_HUB_DATA_ENDPOINTS_HYBRIS:-commerce-adapter-hybris:6565}
+  headless-server-preview:
+    environment:
+      COMMERCE_HUB_DATA_ENDPOINTS_HYBRIS: ${COMMERCE_HUB_DATA_ENDPOINTS_HYBRIS:-commerce-adapter-hybris:6565}
+  headless-server-live:
+    environment:
+      COMMERCE_HUB_DATA_ENDPOINTS_HYBRIS: ${COMMERCE_HUB_DATA_ENDPOINTS_HYBRIS:-commerce-adapter-hybris:6565}

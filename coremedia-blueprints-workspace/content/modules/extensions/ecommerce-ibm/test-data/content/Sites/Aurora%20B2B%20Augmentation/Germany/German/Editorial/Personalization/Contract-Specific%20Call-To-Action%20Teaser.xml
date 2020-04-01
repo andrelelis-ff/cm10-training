@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSelectionRules folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Personalization" name="Contract-Specific Call-To-Action Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Editorial/Personalization/Contract-Specific%20Call-To-Action%20Teaser.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Personalization/Contract-Specific%20Call-To-Action%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<rules grammarName="coremedia-selectionrules-1.0"><rules version="1.0" xmlns="http://www.coremedia.com/2010/selectionrules" xmlns:xlink="http://www.w3.org/1999/xlink">select <content xlink:href="coremedia:///cap/resources/Contract-Specific%20Call-To-Action/Anna%20Frank80c98149.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Personalization/Contract-Specific%20Call-To-Action/Anna%20Franklin%20Contact%20Person%20Teaser"/> if commerce.usersegments#"ibm:///catalog/segment/8500000000000323453" or commerce.usersegments#"ibm:///catalog/segment/8500000000000323452"; select <content xlink:href="coremedia:///cap/resources/Contract-Specific%20Call-To-Action/Interior%20Aeaa40417.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Personalization/Contract-Specific%20Call-To-Action/Interior%20Architects%20Contact%20Person%20Teaser"/> if commerce.usersegments#"ibm:///catalog/segment/8500000000000323451"</rules></rules>
+<defaultContent>
+<link href="Contract-Specific%20Call-To-Action/Join%20Us%20fa650052.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Personalization/Contract-Specific%20Call-To-Action/Join%20Us%20Default%20Teaser"/>
+</defaultContent>
+</CMSelectionRules>

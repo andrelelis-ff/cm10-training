@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Settings/Options/Settings/CMChannel" name="Nuggad" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="nuggad.nuggsid.external.account">0</StringProperty>
+<StringProperty Name="nuggad.nuggn.external.account">1601023476</StringProperty>
+<BooleanProperty Name="nuggad.enabled">false</BooleanProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

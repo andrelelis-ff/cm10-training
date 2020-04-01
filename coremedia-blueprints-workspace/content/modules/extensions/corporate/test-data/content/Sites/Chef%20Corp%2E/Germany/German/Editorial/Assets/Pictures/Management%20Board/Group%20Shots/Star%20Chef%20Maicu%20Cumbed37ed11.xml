@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./Germany/German/Editorial/Assets/Pictures/Management Board/Group Shots" name="Star Chef Maicu Cumberbatch joins Chef Corp as Executive Consultant Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../United%20States/English/Editorial/Assets/Pictures/Management%20Board/Group%20Shots/Star%20Chef%20Maic5f1468e1.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Management%20Board/Group%20Shots/Star%20Chef%20Maicu%20Cumberbatch%20joins%20Chef%20Corp%20as%20Executive%20Consultant%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=0;width=1936;height=1936</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=145;width=1936;height=1449</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=38;width=1936;height=1090</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=236;y=0;width=1365;height=2048</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=94;width=1936;height=726</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.027692307692307693;x2=1;y2=0.9723076923076923</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.07076923076923076;x2=1;y2=0.7784615384615384</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.018461538461538463;x2=1;y2=0.5507692307692308</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.4716666666666667</StringProperty>
+<StringProperty Name="y">0.2192429022082019</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Star Chef Maicu Cumberbatch verbindet Chef Corp. als Executive Consultant</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Gruppenfoto der Chef Corp. Vorstand mit Star Chef Maicu Cumberbatch in der Front</alt>
+<copyright>Andrey_Popov / Shutterstock 132453611</copyright>
+<dataUrl></dataUrl>
+<width>1936</width>
+<height>2048</height>
+<data md5="2ce7795c4a4d6f39073cec8456eec119" size="184569" href="../../../../../../../../../__blob/2ce7795c4a4d6f39073cec8456eec119.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

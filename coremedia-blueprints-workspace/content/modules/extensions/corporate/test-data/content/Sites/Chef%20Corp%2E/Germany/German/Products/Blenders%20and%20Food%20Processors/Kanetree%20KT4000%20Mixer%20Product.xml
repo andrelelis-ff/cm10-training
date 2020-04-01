@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProduct folder="/Sites/Chef Corp./Germany/German/Products/Blenders and Food Processors" name="Kanetree KT4000 Mixer Product" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Products/Blenders%20and%20Food%20Processors/Kanetree%20KT4000%20Mixer%20Product.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Blenders%20and%20Food%20Processors/Kanetree%20KT4000%20Mixer%20Product"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">More Product Information</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>kanetree-kt4000-mixer</segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+<link href="Blenders%20and%20Food%20Processors.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/Blenders%20and%20Food%20Processors/Blenders%20and%20Food%20Processors"/>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Seit 1999 haben unsere mehr als 125.000 Kunden kommen, um Chef Supply, Inc als führender Anbieter auf fast alles für das Restaurant Zulieferindustrie benötigt zu finden wissen. Wir sind entschlossen, Expertenlösungen mit der persönliche Aufmerksamkeit, die Sie verdienen verpflichtet. </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Seit 1999 haben unsere mehr als 125.000 Kunden kommen, um <em>Chef Supply, Inc</em> als führender Anbieter auf fast alles für das Restaurant Zulieferindustrie benötigt zu finden wissen. Wir sind entschlossen, Expertenlösungen mit der persönliche Aufmerksamkeit, die Sie verdienen verpflichtet. </p> <p/> <p> Unsere Leistungen reichen von Großküchenbedarf, einschließlich unserer speziellen Einsatz für Küche Beleuchtung; auf unser Konsumentenopfer Perfekt Chef, ein omni-Kanal-Shop und Kundenzeitschrift, die saisonale Nachrichten, Ideen, Rezepte, und handverlesenen Produkte liefert, um Köche und Genießer des guten Lebens begeistern - in all seinen Formen. </p> <p> </p> </div></detailText>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Products/Blenders/PC_KANETREE_KT4000_MIXER%20Frontshot.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Products/Blenders/PC_KANETREE_KT4000_MIXER%20Frontshot"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<downloads>
+</downloads>
+<productCode>CC-KTM-4000</productCode>
+<productName>Kanetree KT4000 Mixer</productName>
+</CMProduct>

@@ -1,0 +1,66 @@
+
+version: "3.4"
+
+services:
+  sfcc-proxy:
+      image: ${REPOSITORY_PREFIX:-coremedia}/sfcc-proxy
+      container_name: sfcc-proxy
+      restart: always
+      build:
+        context: ../commerce-proxy
+      networks:
+        - backend
+      environment:
+        COMMERCE_SYSTEM: sfcc
+        ENVIRONMENT_FQDN: ${ENVIRONMENT_FQDN:-docker.localhost}
+        SFCC_HOST: ${SFCC_HOST}
+        SFCC_SITEID: ${SFCC_SITEID:-SiteGenesisGlobal}
+        CMS_PUBLIC_HOST: ${CMS_PUBLIC_HOST}
+      labels:
+        traefik.enable: "true"
+        traefik.port: "80"
+        traefik.frontend.entryPoints: http,https
+        # this makes sure the apache sees the virtualhost of the traefik and can find the right handler
+        traefik.frontend.passHostHeader: "true"
+        traefik.frontend.headers.SSLRedirect: "true"
+        traefik.shop-sfcc.frontend.rule: Host:shop-sfcc.${ENVIRONMENT_FQDN:-docker.localhost}
+        traefik.shop-preview.frontend.rule: Host:shop-preview-sfcc.${ENVIRONMENT_FQDN:-docker.localhost}
+
+  cae-preview:
+    environment:
+      SFCC_HOST: ${SFCC_HOST}
+      SFCC_CLIENTID: ${SFCC_CLIENTID}
+      SFCC_CLIENTPASSWORD: ${SFCC_CLIENTPASSWORD}
+      LIVECONTEXT_SFCC_STOREFRONT_URL: https://shop-preview-sfcc.${ENVIRONMENT_FQDN:-docker.localhost}/on/demandware.store
+    labels:
+      traefik.sfcc-servlets.frontend.rule: Host:preview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefix:/assets,/dynamic,/service,/resource,/catalogimage,/sitegenesishomepage;AddPrefix:/blueprint/servlet
+
+  cae-live:
+    environment:
+      SFCC_HOST: ${SFCC_HOST}
+      SFCC_CLIENTID: ${SFCC_CLIENTID}
+      SFCC_CLIENTPASSWORD: ${SFCC_CLIENTPASSWORD}
+      LIVECONTEXT_SFCC_STOREFRONT_URL: https://shop-sfcc.${ENVIRONMENT_FQDN:-docker.localhost}/on/demandware.store
+    labels:
+      traefik.sfcc-servlets.frontend.rule: HostRegexp:{subdomain:(sitegenesis|sfra)}.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefix:/assets,/dynamic,/service,/resource,/catalogimage,/sitegenesishomepage;AddPrefix:/blueprint/servlet
+      # sfcc sitegenesis sitemap rules
+      # SFCC-sitegenesis-UK-Site-ID is the sitemap id of the sitegenesis site
+      # to enable sitemap generation set environment variable  GENERATE_SITEMAP to "true"
+      traefik.sitegenesis-sitemap.frontend.rule: Host:corporate.${ENVIRONMENT_FQDN:-docker.localhost};Path:/sitemap_index.xml,/{file:sitemap(.*).xml.gz};AddPrefix:/blueprint/servlet/service/sitemap/SFCC-sitegenesis-UK-Site-ID
+
+  studio-server:
+    environment:
+      SFCC_HOST: ${SFCC_HOST}
+      SFCC_CLIENTID: ${SFCC_CLIENTID}
+      SFCC_CLIENTPASSWORD: ${SFCC_CLIENTPASSWORD}
+
+  commerce-adapter-sfcc:
+    labels:
+      traefik.enable: "true"
+      traefik.actuator.port: "8081"
+      traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/commerce-adapter-sfcc;AddPrefix:/actuator
+
+  overview:
+    environment:
+      COMMERCE_SFCC_ENABLED: "true"
+      COMMERCE_SFCC_HOST: ${SFCC_HOST}

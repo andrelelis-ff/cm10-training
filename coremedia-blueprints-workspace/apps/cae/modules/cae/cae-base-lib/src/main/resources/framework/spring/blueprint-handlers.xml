@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:webflow="http://www.springframework.org/schema/webflow-config"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/webflow-config
+                           http://www.springframework.org/schema/webflow-config/spring-webflow-config.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util.xsd">
+
+  <description>
+    LinkSchemes and Controllers
+  </description>
+
+  <import resource="classpath:/com/coremedia/cae/contentbean-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/dataview-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/uapi-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/handler-services.xml"/>
+  <import resource="classpath:/com/coremedia/mimetype/mimetype-service.xml"/>
+  <import resource="classpath:/com/coremedia/transform/blob-transformer.xml"/>
+  <import resource="classpath:/com/coremedia/id/id-services.xml"/>
+  <import resource="classpath:/com/coremedia/cache/cache-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/webflow/webflow-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/links/bpbase-links-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/links/bpbase-links-postprocessors.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/settings/impl/bpbase-settings-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-services.xml"/>
+  <import resource="classpath:/com/coremedia/cap/transform/transform-services.xml"/>
+  <import resource="classpath:/com/coremedia/cap/multisite/multisite-services.xml"/>
+  <import resource="blueprint-i18n.xml"/>
+  <import resource="blueprint-search.xml"/>
+
+  <context:component-scan base-package="com.coremedia.blueprint.coderesources" />
+
+  <!--
+    "Simple Controllers" (=pre @RequestMapping handlers) are identified by their "name".
+
+    e.g.
+    <bean name="/content" id="contentViewController" class="com.coremedia.objectserver.web.ContentViewController"/>
+    or
+    @Named("/content")
+  -->
+  <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping">
+    <property name="interceptors" ref="handlerInterceptors"/>
+    <!--
+     make sure that these controller's precedence is higher than the (new) RequestMappingHandlerMapping since
+     the Page Handler is responsible for all URLs
+    -->
+    <property name="order" value="42" />
+  </bean>
+
+  <!--
+     ===================== resources (handler/linkscheme) ======================
+  -->
+
+  <bean id="pageHandler" class="com.coremedia.blueprint.cae.handlers.PageHandler" parent="defaultPageHandler"/>
+  <bean id="actionHandler" class="com.coremedia.blueprint.cae.handlers.PageActionHandler" parent="defaultPageActionHandler"/>
+
+  <bean id="handlerBase" class="com.coremedia.blueprint.cae.handlers.HandlerBase" abstract="true">
+    <description>
+      Abstract Handler that all page based handlers should inherit from if they extend PageHandlerBase
+    </description>
+    <property name="mimeTypeService" ref="mimeTypeService"/>
+    <property name="urlPathFormattingHelper" ref="urlPathFormattingHelper"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+    <property name="contentLinkBuilder" ref="contentLinkBuilder"/>
+  </bean>
+
+  <bean id="pageHandlerBase" class="com.coremedia.blueprint.cae.handlers.PageHandlerBase" parent="handlerBase" abstract="true">
+    <description>
+      Abstract Handler that all page based handlers should inherit from if they extend PageHandlerBase
+    </description>
+    <property name="contextHelper" ref="contextHelper"/>
+    <property name="navigationSegmentsUriHelper" ref="navigationSegmentsUriHelper"/>
+    <property name="contentLinkBuilder" ref="contentLinkBuilder"/>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="sitesService" ref="sitesService"/>
+    <property name="cache" ref="cache"/>
+  </bean>
+
+  <bean id="pageHandlerViewToBean" class="org.springframework.beans.factory.config.MapFactoryBean">
+    <description>
+      Maps view names to interfaces, available as settings backed beans named "viewBean"
+      in the templates.  To be populated by customizers.
+    </description>
+    <property name="targetMapClass" value="java.util.HashMap"/>
+    <property name="sourceMap">
+      <map>
+      </map>
+    </property>
+  </bean>
+
+  <bean id="navigationResolver" class="com.coremedia.blueprint.cae.handlers.NavigationResolver">
+    <property name="topicPageContextFinder" ref="uapiTopicpageContextFinder"/>
+    <property name="navigationSegmentsUriHelper" ref="navigationSegmentsUriHelper"/>
+    <property name="contextHelper" ref="contextHelper"/>
+    <property name="urlPathFormattingHelper" ref="urlPathFormattingHelper"/>
+  </bean>
+
+  <bean id="defaultPageHandler" class="com.coremedia.blueprint.cae.handlers.DefaultPageHandler" abstract="true" parent="pageHandlerBase">
+    <description>
+      Handles HTML page resources
+    </description>
+    <property name="permittedLinkParameterNames">
+      <list>
+        <value>index</value>
+      </list>
+    </property>
+    <property name="navigationResolver" ref="navigationResolver"/>
+    <property name="topicPageContextFinder" ref="uapiTopicpageContextFinder"/>
+    <property name="settingsService" ref="settingsService"/>
+    <property name="viewToBean" ref="pageHandlerViewToBean"/>
+  </bean>
+
+  <bean id="pageRssHandler" class="com.coremedia.blueprint.cae.handlers.PageRssHandler" parent="pageHandlerBase">
+    <description>
+      Handles RSS feed resources
+    </description>
+  </bean>
+
+  <bean id="externalLinkHandler" class="com.coremedia.blueprint.cae.handlers.ExternalLinkHandler" parent="handlerBase">
+    <description>
+      Handles External Link resources
+    </description>
+  </bean>
+
+  <bean id="pageSearchActionHandler" class="com.coremedia.blueprint.cae.action.search.PageSearchActionHandler" parent="pageHandlerBase">
+    <description>
+      Handles the Search action.
+    </description>
+    <property name="searchService" ref="searchActionService"/>
+    <property name="settingsService" ref="settingsService"/>
+    <property name="minimalSearchQueryLength" value="3"/>
+    <property name="permittedLinkParameterNames">
+      <list>
+        <value>query</value>
+        <value>pageNum</value>
+        <value>channelId</value>
+        <value>docType</value>
+        <value>key</value>
+        <value>view</value>
+        <value>sortByDate</value>
+        <value>facetFilters</value>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="defaultPageActionHandler" class="com.coremedia.blueprint.cae.handlers.DefaultPageActionHandler" abstract="true" parent="pageHandlerBase">
+    <description>
+      Handles actions
+    </description>
+    <property name="permittedLinkParameterNames">
+      <list>
+        <!-- required by elastic webflows -->
+        <value>next</value>
+        <value>userName</value>
+      </list>
+    </property>
+    <property name="flowRunner" ref="flowRunner"/>
+    <property name="resourceBundleInterceptor" ref="pageResourceBundlesInterceptor"/>
+  </bean>
+
+  <bean id="transformedBlobHandler" class="com.coremedia.blueprint.cae.handlers.TransformedBlobHandler" parent="handlerBase">
+    <description>
+      Handles scaled/transformed images/blobs
+    </description>
+    <property name="validationService" ref="validationService"/>
+    <property name="secureHashCodeGeneratorStrategy" ref="secureHashCodeGeneratorStrategy"/>
+    <property name="transformImageService" ref="transformImageService"/>
+  </bean>
+
+  <bean id="capBlobHandler" class="com.coremedia.blueprint.cae.handlers.CapBlobHandler" parent="handlerBase">
+    <description>
+      Handles standard images/blobs
+    </description>
+    <property name="mimeTypeService" ref="mimeTypeService"/>
+    <property name="validationService" ref="validationService"/>
+    <property name="themeService" ref="themeService"/>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+  </bean>
+
+  <bean id="codeResourceHandler" class="com.coremedia.blueprint.cae.handlers.CodeResourceHandler" parent="handlerBase">
+    <description>
+      Handles CSS and JavaScript resources
+    </description>
+    <property name="developerModeEnabled" value="${cae.developer.mode:false}"/>
+    <property name="capConnection" ref="connection"/>
+    <property name="localResourcesEnabled" value="${cae.use.local.resources:false}"/>
+    <property name="cache" ref="cache"/>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="sitesService" ref="sitesService"/>
+  </bean>
+
+  <bean id="themeHandler" class="com.coremedia.blueprint.cae.handlers.ThemeHandler" parent="handlerBase"/>
+
+  <bean id="staticUrlHandler" class="com.coremedia.blueprint.cae.handlers.StaticUrlHandler" parent="handlerBase">
+    <description>
+      Handles Strings
+    </description>
+    <property name="permittedLinkParameterNames">
+      <list>
+        <value>width</value>
+        <value>height</value>
+        <value>imageId</value>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="robotsHandler" class="com.coremedia.blueprint.cae.handlers.RobotsHandler" parent="handlerBase">
+    <description>
+      Handler that generates a configured robots.txt
+    </description>
+    <property name="navigationSegmentsUriHelper" ref="navigationSegmentsUriHelper"/>
+    <property name="settingsService" ref="settingsService"/>
+    <property name="sitesService" ref="sitesService"/>
+  </bean>
+
+  <bean id="paginationHandler" class="com.coremedia.blueprint.cae.handlers.PaginationHandler" parent="pageHandlerBase">
+    <description>
+      Handler for pagination URLs for Container
+      (Currently supported only by CMQueryListImpl)
+    </description>
+    <property name="permittedLinkParameterNames">
+      <list>
+        <value>view</value>
+        <value>pageNum</value>
+      </list>
+    </property>
+  </bean>
+
+
+  <!--
+     ===================== services ======================
+  -->
+
+  <webflow:flow-registry id="flowRegistry" flow-builder-services="flowBuilderServices">
+    <!--
+      <description>
+        Add this location pattern to flowBuilderServices that are provided by the CAE.
+
+        Custom webflows can be added without customizations to a package
+        "/com/coremedia/blueprint/customername/webflow/".
+
+        Multiple flow-location-pattern may coexist, but only one flow-registry (with the externalId "flowRegistry")
+        is used by the webflow engine.
+
+        If a custom pattern should be registered, it's necessary to "customize:replace" this bean and add
+        both the pattern configured here, and the custom pattern, for example:
+
+        <customize:replace externalId="overwriteFlowRegistry" bean="flowRegistry" custom-ref="myFlowRegistry"/>
+
+        <webflow:flow-registry externalId="myFlowRegistry" flow-builder-services="flowBuilderServices">
+          <webflow:flow-location-pattern value="classpath*:/com/coremedia/blueprint/**/webflow/*.xml"/>
+          <webflow:flow-location-pattern value="classpath*:/my/package/**/*.xml"/>
+        </webflow:flow-registry>
+      </description>
+     -->
+    <webflow:flow-location-pattern value="classpath*:/com/coremedia/blueprint/**/webflow/*.xml"/>
+  </webflow:flow-registry>
+
+  <bean name="blueprintFlowUrlHandler" class="com.coremedia.blueprint.cae.action.webflow.BlueprintFlowUrlHandler">
+    <description>
+      A FlowUrlHandler extending org.springframework.webflow.context.servlet.DefaultFlowUrlHandler
+      will only add context path and servlet path if CAE is configured to do so
+    </description>
+    <property name="prependBaseUri" value="${cae.is.standalone:true}"/>
+  </bean>
+
+  <customize:replace id="adjustFlowUrlHandler" bean="flowHandlerAdapter" property="flowUrlHandler" custom-ref="blueprintFlowUrlHandler">
+    <description>
+      Overwrite pre-configured FlowUrlHandler with custom handler that generates Blueprint-compatible URLs.
+    </description>
+  </customize:replace>
+
+  <customize:append id="registerIdToContentBeanConverter" bean="bindingConverters">
+    <description>
+      Register a converter for converting an numeric id (e.g. "1234") to a generic ContentBean (e.g. CMArticle) and
+      vice versa. This converter will be used for all binding (e.g. in handlers) then.
+    </description>
+    <set>
+      <ref bean="idGenericContentBeanConverter"/>
+    </set>
+  </customize:append>
+
+  <customize:append id="registerHttpMessageConverters" bean="httpMessageConverters">
+    <description>
+      Registers additional HttpMessageConverters
+    </description>
+    <list>
+      <!-- converts request/response bodies from/to XML -->
+      <bean class="org.springframework.http.converter.xml.Jaxb2RootElementHttpMessageConverter"/>
+      <!-- converts request/response bodies from/to JSON -->
+      <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+    </list>
+  </customize:append>
+
+
+  <bean id="navigationSegmentsUriHelper" class="com.coremedia.blueprint.cae.handlers.NavigationSegmentsUriHelper">
+    <description>
+      Generate URI path from a navigation and vice versa.
+    </description>
+    <property name="cache" ref="cache"/>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="sitesService" ref="sitesService"/>
+    <property name="urlPathFormattingHelper" ref="urlPathFormattingHelper"/>
+  </bean>
+
+  <bean id="secureHashCodeGeneratorStrategy"
+        class="com.coremedia.blueprint.cae.util.DefaultSecureHashCodeGeneratorStrategy"/>
+
+  <bean id="contentValidityInterceptor"
+        class="com.coremedia.blueprint.cae.web.ContentValidityInterceptor">
+    <property name="validationService" ref="validationService"/>
+  </bean>
+
+  <bean id="exposeCurrentNavigationInterceptor"
+        class="com.coremedia.blueprint.cae.web.ExposeCurrentNavigationInterceptor"/>
+
+  <customize:append id="blueprintControllerInterceptors" bean="handlerInterceptors" order="9999998">
+    <list>
+      <!-- this interceptor must run as early as possible in #postHandle - that is it must be last in the chain :( -->
+      <ref bean="contentValidityInterceptor"/>
+      <ref bean="exposeCurrentNavigationInterceptor"/>
+    </list>
+  </customize:append>
+
+  <bean class="org.springframework.web.servlet.handler.MappedInterceptor" id="mappedCacheHeaderInterceptor">
+    <description>
+      Register CacheHeaderInterceptor only for patterns that return beans that are
+    </description>
+    <constructor-arg index="0">
+      <bean factory-bean="uriToCacheSecondsMapping" factory-method="keySet"/>
+    </constructor-arg>
+    <constructor-arg index="1" ref="cacheHeaderInterceptor"/>
+  </bean>
+
+  <bean id="cacheHeaderInterceptor" class="com.coremedia.springframework.web.servlet.support.OrderedWebContentInterceptor">
+    <description>
+      This interceptor will write all necessary cache Headers for the given URI Patterns in cacheMappings.
+    </description>
+    <property name="orderedCacheMappings" ref="uriToCacheSecondsMapping"/>
+    <property name="pathMatcher" ref="handlerPathMatcher"/>
+  </bean>
+
+  <util:map id="uriToCacheSecondsMapping" map-class="java.util.LinkedHashMap">
+    <!-- time to cache blobs: "forever", aka 180 days -->
+    <entry key="#{T(com.coremedia.blueprint.cae.handlers.CapBlobHandler).URI_PATTERN}" value="15552000"/>
+    <entry key="#{T(com.coremedia.blueprint.cae.handlers.CapBlobHandler).CODERESOURCEBLOB_URI_PATTERN}" value="15552000"/>
+    <entry key="#{T(com.coremedia.blueprint.cae.handlers.TransformedBlobHandler).URI_PATTERN}" value="15552000"/>
+
+    <!-- Bulk urls contain a hash value, thus they are immutable and may be cached "forever". -->
+    <entry key="#{T(com.coremedia.blueprint.cae.handlers.CodeResourceHandler).CSS_PATTERN_BULK}" value="15552000"/>
+    <entry key="#{T(com.coremedia.blueprint.cae.handlers.CodeResourceHandler).JS_PATTERN_BULK}" value="15552000"/>
+
+    <!--
+      Single code resources are subject to changes.
+      Do not cache them at all (default) in the preview. (Frontend development!)
+      Cache them for a moment, e.g. 180 sec, in the live cae in order to reduce load.
+    -->
+    <entry key="#{T(com.coremedia.blueprint.cae.handlers.CodeResourceHandler).URI_PATTERN_SINGLE}" value="${cae.coderesources.maxAge:0}"/>
+    <entry key="#{T(com.coremedia.blueprint.cae.handlers.CodeResourceHandler).URI_PATTERN_SINGLE_CSS_LINK}" value="${cae.coderesources.maxAge:0}"/>
+
+    <!-- do not cache preview urls and dynamic requests -->
+    <entry key="#{T(com.coremedia.blueprint.links.BlueprintUriConstants.Patterns).DYNAMIC_URI_PATTERN}" value="0"/>
+    <entry key="#{T(com.coremedia.blueprint.cae.handlers.PreviewHandler).URI_PATTERN}" value="0"/>
+  </util:map>
+
+</beans>

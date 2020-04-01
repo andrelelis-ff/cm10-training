@@ -1,0 +1,96 @@
+// Overwrites for Hybris
+.carousel-component {
+  .carousel .item {
+    .item-name {
+      font-weight: 500;
+      text-transform: none;
+
+      &::before {
+        content: '';
+      }
+    }
+
+  }
+
+  @include breakpoint("lg-and-up") {
+    &:first-child {
+      border-bottom: 1px solid $cm-hybris-text;
+      margin: 1rem 0 5rem;
+      padding-bottom: 3rem;
+    }
+  }
+}
+
+// --- hybris 6.5 ---
+
+// Used for "Best Selling Products" on start page
+.container > .row > div > div:first-child .carousel-component {
+  margin-top: 5rem;
+}
+
+// CMS-11543 - fix broken ellipsis "???" with "..."
+.container .carousel .item .item__name::before,
+.container .carousel__component--carousel .item .item__name::before,
+.container .carousel .carousel__item .item__name::before,
+.container .carousel__component--carousel .carousel__item .item__name::before,
+.container .carousel .item .carousel__item--name::before,
+.container .carousel__component--carousel .item .carousel__item--name::before,
+.container .carousel .carousel__item .carousel__item--name::before,
+.container .carousel__component--carousel .carousel__item .carousel__item--name::before {
+  content: "...";
+}
+
+// --- hybris 1905 ---
+
+// Used for "Best Selling Products" on start page
+.main__inner-wrapper > .row > div > div:first-child .carousel-component {
+  margin-top: 5rem;
+}
+
+// CMS-11543 - fix broken ellipsis "???" with "..."
+.main__inner-wrapper .carousel .item .item__name::before,
+.main__inner-wrapper .carousel__component--carousel .item .item__name::before,
+.main__inner-wrapper .carousel .carousel__item .item__name::before,
+.main__inner-wrapper .carousel__component--carousel .carousel__item .item__name::before,
+.main__inner-wrapper .carousel .item .carousel__item--name::before,
+.main__inner-wrapper .carousel__component--carousel .item .carousel__item--name::before,
+.main__inner-wrapper .carousel .carousel__item .carousel__item--name::before,
+.main__inner-wrapper .carousel__component--carousel .carousel__item .carousel__item--name::before {
+  content: "...";
+}
+
+// CMS-16131 - add bootstrap width breakpoints for 1905
+.main__inner-wrapper {
+  @extend .container;
+}
+
+.main__inner-wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 640px) {
+  .main__inner-wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__inner-wrapper {
+    width: 1024px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main__inner-wrapper {
+    width: 1400px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .main__inner-wrapper {
+    width: 100%;
+  }
+}

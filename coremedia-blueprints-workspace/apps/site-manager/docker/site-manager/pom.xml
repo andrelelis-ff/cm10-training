@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint.docker</groupId>
+    <artifactId>site-manager.blueprint-spring-boot-docker</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>site-manager</artifactId>
+  <packaging>pom</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>${blueprint.groupId}</groupId>
+      <artifactId>editor</artifactId>
+      <version>${blueprint.version}</version>
+      <type>zip</type>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>site-manager</finalName>
+    <plugins>
+      <plugin>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>extract-sitemanager</id>
+            <goals>
+              <goal>unpack-dependencies</goal>
+            </goals>
+            <phase>generate-resources</phase>
+            <configuration>
+              <includeArtifactIds>editor</includeArtifactIds>
+              <stripVersion>true</stripVersion>
+              <outputDirectory>target/site-manager</outputDirectory>
+              <excludeTransitive>true</excludeTransitive>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.spotify</groupId>
+        <artifactId>dockerfile-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

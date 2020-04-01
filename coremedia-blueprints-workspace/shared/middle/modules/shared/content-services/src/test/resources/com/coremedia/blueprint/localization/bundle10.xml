@@ -1,0 +1,5 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StringProperty Name="rootonly">fixandfinal</StringProperty>
+  <StringProperty Name="str">override</StringProperty>
+  <StringProperty Name="masterOverOrder">wrong</StringProperty>
+</Struct>

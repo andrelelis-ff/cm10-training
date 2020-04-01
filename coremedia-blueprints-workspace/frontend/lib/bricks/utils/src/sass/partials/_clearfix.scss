@@ -1,0 +1,13 @@
+//
+// Applies styles clear the floating.
+//
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}

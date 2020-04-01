@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMFolderProperties folder="/Sites/Chef Corp./United States/English/Options/Settings/Templates/CMChannel/Detail Page" name="_folderProperties" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<contexts>
+<link href="New%20Detail%20Page.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Settings/Templates/CMChannel/Detail%20Page/New%20Detail%20Page"/>
+</contexts>
+</CMFolderProperties>

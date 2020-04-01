@@ -1,0 +1,12 @@
+.#{$cm-slick-carousel-prefix} {
+
+  &--multiple {
+    .slick-slide {
+      margin: 0 7.5px;
+
+      @include breakpoints(("sm", landscape) "lg-and-up") {
+        margin: 0 15px;
+      }
+    }
+  }
+}

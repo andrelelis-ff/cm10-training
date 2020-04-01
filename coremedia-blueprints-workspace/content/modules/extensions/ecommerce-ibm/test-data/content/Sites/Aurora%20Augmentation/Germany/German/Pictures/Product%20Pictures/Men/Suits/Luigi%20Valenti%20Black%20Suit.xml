@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/Germany/German/Pictures/Product Pictures/Men/Suits" name="Luigi Valenti Black Suit" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Pictures/Product%20Pictures/Men/Suits/Luigi%20Valenti%20Black%20Suit.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Men/Suits/Luigi%20Valenti%20Black%20Suit"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=43;y=0;width=2581;height=4000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=101;width=2666;height=3555</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=114;width=2666;height=2666</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=114;width=2666;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=88;width=2666;height=1500</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=101;width=2666;height=1066</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=151;width=2666;height=667</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.025236593059936908;x2=1;y2=0.9139032597266035</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.028391167192429023;x2=1;y2=0.694891167192429</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.028391167192429023;x2=1;y2=0.528266167192429</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.022082018927444793;x2=1;y2=0.39698826892744477</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.025236593059936908;x2=1;y2=0.2918365930599369</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.03785488958990536;x2=1;y2=0.20447988958990537</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/MCL008_0806</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Luigi Valenti Schwarzer Anzug</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>Viorel Sima / shutterstock_143893750</copyright>
+<dataUrl></dataUrl>
+<width>2667</width>
+<height>4000</height>
+<data md5="e329cc80d593c1af2c350c1fd22dc510" size="352284" href="../../../../../../../../__blob/e329cc80d593c1af2c350c1fd22dc510.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

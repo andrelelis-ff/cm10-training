@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AMPictureAsset folder="/Assets/Products/Blenders and Food Processors" name="Kitchenette KNC30 Sideshot" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<original md5="87063d0624782da45ef984b2d9a841f3" size="4786871" href="../../../__blob/87063d0624782da45ef984b2d9a841f3.blob" mimetype="image/jpeg"/>
+<thumbnail md5="1e4d2511587ab4d8b6e3f16a6f4fd0bb" size="16394" href="../../../__blob/1e4d2511587ab4d8b6e3f16a6f4fd0bb.blob" mimetype="image/jpeg"/>
+<state>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="original">
+<Struct>
+<StringProperty Name="modificationDate">1444309162564</StringProperty>
+<StringProperty Name="modifier">admin</StringProperty>
+<IntProperty Name="version">2</IntProperty>
+<StringProperty Name="fileExtension">jpg</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="web">
+<Struct>
+<StringProperty Name="modificationDate">1444309162927</StringProperty>
+<StringProperty Name="modifier">admin</StringProperty>
+<IntProperty Name="version">2</IntProperty>
+<StringProperty Name="fileExtension">jpg</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="thumbnail">
+<Struct>
+<StringProperty Name="modificationDate">1444309441940</StringProperty>
+<StringProperty Name="modifier">admin</StringProperty>
+<IntProperty Name="version">2</IntProperty>
+<StringProperty Name="fileExtension">jpg</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</state>
+<metadata>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="copyright">Dlabajdesign/Shutterstock 71677765</StringProperty>
+<StringListProperty Name="productIds">
+<String>PC_KITCHENETTE_KNC30</String>
+</StringListProperty>
+<StructProperty Name="renditions">
+<Struct>
+<StructProperty Name="original">
+<Struct>
+<BooleanProperty Name="show">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="web">
+<Struct>
+<BooleanProperty Name="show">true</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StringListProperty Name="channels">
+<String>print</String>
+<String>mobile</String>
+<String>web</String>
+<String>social</String>
+</StringListProperty>
+<StringListProperty Name="regions">
+<String>Europe</String>
+</StringListProperty>
+<DateProperty Name="expirationDate" TimeZone="GMT+01:00">2099-12-31T00:00:00+01:00</DateProperty>
+</Struct>
+</metadata>
+<keywords></keywords>
+<subjectTaxonomy>
+<link href="../../../Settings/Taxonomies/Subject/Consumers.xml" path="/Settings/Taxonomies/Subject/Consumers"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<assetTaxonomy>
+<link href="../../../Settings/Taxonomies/Asset%20Download%20Portal/Food%20Processor.xml" path="/Settings/Taxonomies/Asset%20Download%20Portal/Food%20Processor"/>
+</assetTaxonomy>
+<web md5="89d295c9ade010d2a325020810e8311c" size="377334" href="../../../__blob/89d295c9ade010d2a325020810e8311c.blob" mimetype="image/jpeg"/>
+</AMPictureAsset>

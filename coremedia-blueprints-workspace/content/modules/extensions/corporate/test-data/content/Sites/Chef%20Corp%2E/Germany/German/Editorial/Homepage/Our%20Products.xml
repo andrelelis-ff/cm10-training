@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMImageMap folder="/Sites/Chef Corp./Germany/German/Editorial/Homepage" name="Our Products" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Editorial/Homepage/Our%20Products.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Our%20Products"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="overlay">
+<Struct>
+<BooleanProperty Name="displayTitle">true</BooleanProperty>
+<BooleanProperty Name="displayDefaultPrice">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="image-map">
+<Struct>
+<StringProperty Name="id">map-area-2</StringProperty>
+<StringProperty Name="coords">22,7,673,136</StringProperty>
+<StringProperty Name="alt"/>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">false</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">dark-on-light</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Products/Hoods%20and%20Extractors/Chef%20Extractor%20Hood%20HD800%20Built-In%20Product.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Products/Hoods%20and%20Extractors/Chef%20Extractor%20Hood%20HD800%20Built-In%20Product"/>
+</Struct>
+<Struct>
+<StringProperty Name="id">map-area-0</StringProperty>
+<StringProperty Name="coords">11,176,427,849</StringProperty>
+<StringProperty Name="alt"/>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">false</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">dark-on-light</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Products/ChefWave/ChefWave%20HD%20-%20Large%20Product.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Products/ChefWave/ChefWave%20HD%20-%20Large%20Product"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Unsere Produkte</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Die ChefWave Produkte</teaserTitle>
+<pictures>
+<link href="../Assets/Pictures/Homepage/Chef%20in%20the%20kitchen%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Homepage/Chef%20in%20the%20kitchen%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../Products/ChefWave/ChefWave.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/ChefWave/ChefWave"/>
+</target>
+</CMImageMap>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCSS folder="/Sites/Hybris Apparel/United Kingdom/English/Options/Settings" name="hybris-apparel-style.css" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<description></description>
+<ieExpression></ieExpression>
+<include>
+</include>
+<dataUrl>//{hybris.host}/yacceleratorstorefront/_ui/responsive/theme-alpha/css/style.css</dataUrl>
+<media></media>
+</CMCSS>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository xmlns="http://www.coremedia.com/2005/contentserver/userrepository">
+  <group id="staff" name="staff" contentgroup="true" livegroup="false" administrative="false">
+    <members>
+      <group id="global-manager" name="global-manager" contentgroup="true" livegroup="false" administrative="false">
+        <rule content="/Settings/Meta/Mail" type="CMMail" rights="RMDAP"/>
+      </group>
+    </members>
+  </group>
+</repository>

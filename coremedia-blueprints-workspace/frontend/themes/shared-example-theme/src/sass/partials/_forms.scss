@@ -1,0 +1,12 @@
+input {
+  &.cm-form-control:focus {
+    border-color: $cm-text-color;
+    box-shadow: inset 0 0 0 1px #fff, inset 0 0 0 2px $cm-text-color;
+  }
+}
+
+.cm-form {
+  @include breakpoint("sm-and-up") {
+    padding: 0;
+  }
+}

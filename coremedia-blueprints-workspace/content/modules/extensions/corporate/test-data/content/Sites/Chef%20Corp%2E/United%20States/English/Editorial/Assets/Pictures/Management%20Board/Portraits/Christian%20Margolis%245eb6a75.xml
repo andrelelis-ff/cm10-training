@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./United States/English/Editorial/Assets/Pictures/Management Board/Portraits" name="Christian Margolis (CEO) Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=6;y=11;width=778;height=778</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=11;y=115;width=775;height=582</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=14;y=169;width=771;height=433</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=121;y=0;width=533;height=800</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=207;width=800;height=300</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.007736943907156673;y1=0.013539651837524178;x2=0.9806576402321083;y2=0.9864603481624759</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.013539651837524178;y1=0.14313346228239845;x2=0.9825918762088974;y2=0.8704061895551257</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.017408123791102514;y1=0.21083172147001933;x2=0.9806576402321083;y2=0.7524177949709865</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.4810725552050473</StringProperty>
+<StringProperty Name="y">0.443217665615142</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Christian Margolis (CEO)</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Portrait Photo of Christian Margolis (CEO)</alt>
+<copyright>Andrey_Popov/Shutterstock 211325935</copyright>
+<dataUrl></dataUrl>
+<width>800</width>
+<height>800</height>
+<data md5="f23cc2362bf0ddae49f77c11ba4f1a17" size="329417" href="../../../../../../../../../__blob/f23cc2362bf0ddae49f77c11ba4f1a17.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

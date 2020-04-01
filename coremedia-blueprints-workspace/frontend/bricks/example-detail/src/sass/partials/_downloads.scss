@@ -1,0 +1,21 @@
+/* --- downloads below detail page (optional, used in products) --- */
+.#{$cm-downloads-prefix} {
+  &__items {
+    list-style: none;
+    margin: 0;
+    padding-left: $cm-details-padding-base-vertical;
+  }
+
+  &__item {
+    line-height: 2;
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    span {
+      color: $cm-details-text-color;
+      padding-left: $cm-details-padding-base-vertical;
+    }
+  }
+}

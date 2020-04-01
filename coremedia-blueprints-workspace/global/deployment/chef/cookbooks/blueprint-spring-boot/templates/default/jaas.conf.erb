@@ -1,0 +1,40 @@
+JaasCap {
+
+hox.corem.server.CapLoginModule sufficient
+
+/* System builtin users are not allowed to use the editor service */
+predicate.1.class="hox.corem.login.NameLoginPredicate"
+predicate.1.args="negative=true,editor.regex=(publisher|watchdog|workflow|webserver|importer|feeder|studio|translation-workflow-robot)"
+
+/* only specific system user is allowed for the respective service */
+predicate.2.class="hox.corem.login.NameLoginPredicate"
+predicate.2.args="webserver.regex=webserver,publisher.regex=publisher,replicator.regex=replicator,workflow.regex=workflow,feeder.regex=feeder,studio.regex=studio"
+
+/* if not forbidden by other rules, other services are accessible for all users */
+predicate.3.class="hox.corem.login.NameLoginPredicate"
+predicate.3.args="editor.regex=.*,debug.regex=.*,importer.regex=.*,system.regex=.*"
+
+;
+<%- if @ldap  %>
+hox.corem.login.LdapLoginModule sufficient host="<%= @ldap[:host] %>" port="<%= @ldap[:port] %>" domain="<%= @ldap[:domain] %>"
+
+predicate.1.class="hox.corem.login.NameLoginPredicate"
+predicate.1.args="editor.regex=.*,debug.regex=.*,importer.regex=.*,system.regex=.*"
+
+;
+<%- end  -%>
+
+<%- if @cas  -%>
+hox.corem.login.cas.CASLoginModule sufficient
+// set cas.validator.url to the proxyValidate url of your CAS server. Use the fully qualified name, which also
+// has to be in the certificates CN attribute
+// REMEMBER to include the webserver certificate in the cacerts of the JVM of your contentserver
+cas.validator.url="<%= @cas[:validator_url] %>"
+
+// set cas.cap.service.url to the ior url which is also known to your web applications
+cas.cap.service.url="<%= @cas[:cap_service_url] %>"
+;
+
+<%- end  -%>
+
+};

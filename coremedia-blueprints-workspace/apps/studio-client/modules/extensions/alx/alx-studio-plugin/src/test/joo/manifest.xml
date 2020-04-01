@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.studio.analytics.ContentProvidingTestContainer"/>
+  <component class="com.coremedia.blueprint.studio.analytics.MultipleAnalyticsUrlButtonsTestView"/>
+  <component class="com.coremedia.blueprint.studio.analytics.SingleAnalyticsUrlButtonTestView"/>
+</componentPackage>

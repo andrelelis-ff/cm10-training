@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Pictures/Site-Wide" name="Legal - Chef holding papers Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Pictures/Site-Wide/Legal%20-%20Chef%20holding%20papers%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Site-Wide/Legal%20-%20Chef%20holding%20papers%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1364;y=0;width=1811;height=2810</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=1326;y=0;width=2112;height=2810</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=694;y=0;width=2813;height=2810</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=123;y=0;width=3753;height=2810</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=300;width=4000;height=2248</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=447;width=4000;height=1601</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=716;width=4000;height=1001</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.34104046242774566;y1=0;x2=0.7938342967244701;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.33140655105973027;y1=0;x2=0.859344894026975;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.17341040462427745;y1=0;x2=0.8766859344894027;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.030828516377649325;y1=0;x2=0.9691714836223507;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.10684931506849316;x2=1;y2=0.9068493150684932</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.1589041095890411;x2=1;y2=0.7287671232876712</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.2547945205479452;x2=1;y2=0.6109589041095891</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Koch hält Papiere - Rechts</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Koch hält Papiere - Rechts</alt>
+<copyright>michael / Shutterstock 56418295</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2811</height>
+<data md5="80ae1cd275c191f77a6b035678c90d4b" size="637032" href="../../../../../../__blob/80ae1cd275c191f77a6b035678c90d4b.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

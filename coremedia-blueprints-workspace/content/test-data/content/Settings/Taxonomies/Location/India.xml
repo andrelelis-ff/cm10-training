@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMLocTaxonomy folder="/Settings/Taxonomies/Location" name="India" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>India</value>
+<children>
+<link href="Kerala.xml" path="/Settings/Taxonomies/Location/Kerala"/>
+</children>
+<externalReference>http://d.opencalais.com/genericHasher-1/69b2e356-c1e7-3f3b-bab3-676f21d08e4d</externalReference>
+<postcode></postcode>
+<latitudeLongitude>20.920490043906298,77.7637939453125</latitudeLongitude>
+</CMLocTaxonomy>

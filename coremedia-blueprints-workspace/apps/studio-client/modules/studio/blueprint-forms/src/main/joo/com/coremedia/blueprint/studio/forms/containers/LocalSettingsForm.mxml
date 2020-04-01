@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PropertyFieldGroup
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Settings_label')}"
+        itemId="localSettingsForm">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.localSettingsForm";
+
+    private var config:LocalSettingsForm;
+
+    public native function LocalSettingsForm(config:LocalSettingsForm = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <fx:String id="contentType"/>
+  </fx:Declarations>
+
+  <editor:items>
+    <editor:StructPropertyField propertyName="localSettings"
+                                hideLabel="true"
+                                itemId="localSettings"/>
+  </editor:items>
+
+</editor:PropertyFieldGroup>

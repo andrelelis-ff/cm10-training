@@ -1,0 +1,12 @@
+#!/bin/bash
+
+until [ $(curl -A "Web Check <%= @service_name %>" -sL --connect-timeout 3 -w "%{http_code}\n" "<%= @wait_url %>" -o /dev/null) == "<%= @wait_code %>" ]; do
+  i=`expr $i + 1`
+  if [ $i -ge <%= @wait_timeout / 10 %> ]; then
+    echo "<%= @service_name %> not ready, giving up"
+    exit 1
+  fi
+  echo "Waiting for <%= @service_name %> to be ready"
+  sleep 10
+done
+echo "<%= @service_name %> - OK"

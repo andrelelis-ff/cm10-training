@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <import resource="classpath:/framework/spring/blueprint-contentbeans.xml"/>
+
+  <import resource="classpath:/framework/spring/personalization-plugin/personalization-collection.xml"/>
+  <import resource="classpath:/framework/spring/personalization-plugin/personalization-contentbeans.xml"/>
+  <import resource="classpath:/framework/spring/personalization-plugin/personalization-context.xml"/>
+  <import resource="classpath:/framework/spring/personalization-plugin/personalization-interceptors.xml"/>
+  <import resource="classpath:/framework/spring/personalization-plugin/personalization-search.xml"/>
+  <import resource="classpath:/framework/spring/personalization-plugin/personalization-views.xml"/>
+  <import resource="classpath:/framework/spring/personalization-plugin/personalization-handlers.xml"/>
+</beans>

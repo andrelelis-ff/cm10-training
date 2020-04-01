@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository xmlns="http://www.coremedia.com/2005/contentserver/userrepository">
+  <group id="staff" name="staff" contentgroup="true" livegroup="false" administrative="false">
+    <!-- Global group, no corporate specific rules here! -->
+    <members>
+      <group id="global-manager" name="global-manager" contentgroup="true" livegroup="false" administrative="false">
+        <!-- Global group, no corporate specific rules here! -->
+        <members>
+          <group id="global-site-manager-c" name="global-site-manager-c" contentgroup="true" livegroup="false" administrative="false">
+            <rule content="/Sites/Chef Corp." type="CMObject" rights="RMDAPS"/>
+            <rule content="/Sites/Chef Corp." type="Folder_" rights="RMDAPS"/>
+            <!-- in order to define topic pages, global site managers need write access to taxonomies. -->
+            <rule content="/Settings/Taxonomies" type="CMTaxonomy" rights="RMDAP"/>
+            <members>
+              <user id="rickc" name="Rick C" home="/Home/Rick C"/>
+              <user id="colin" name="Colin" home="/Home/Colin"/>
+            </members>
+          </group>
+        </members>
+      </group> <!-- global-manager -->
+      <group id="local-manager" name="local-manager" contentgroup="true" livegroup="false" administrative="false">
+        <!-- Global group, no corporate specific rules here! -->
+        <members>
+          <group id="local-site-manager-c" name="local-site-manager-c" contentgroup="true" livegroup="false" administrative="false">
+            <!-- all local site managers can read the global master site. -->
+            <rule content="/Sites/Chef Corp./United States/English" type="CMObject" rights="R"/>
+            <rule content="/Sites/Chef Corp./United States/English" type="Folder_" rights="R"/>
+            <!-- in order to define topic pages, local site managers need write access to taxonomies. -->
+            <rule content="/Settings/Taxonomies" type="CMTaxonomy" rights="RMDAP"/>
+            <members>
+              <group name="manager-c-en-US" contentgroup="true" livegroup="false" administrative="false">
+                <rule content="/Sites/Chef Corp./United States/English" type="CMObject" rights="RMDAP"/>
+                <rule content="/Sites/Chef Corp./United States/English" type="Folder_" rights="RMDAP"/>
+                <members>
+                  <user id="peterc" name="Peter C" home="/Home/Peter C"/>
+                  <!-- Rick must be member of the master site group as translation workflow role. -->
+                  <userref id="rickc"/>
+                  <userref id="colin"/>
+                </members>
+              </group>
+              <group name="manager-c-de-DE" contentgroup="true" livegroup="false" administrative="false">
+                <rule content="/Sites/Chef Corp./Germany/German" type="CMObject" rights="RMDAP"/>
+                <rule content="/Sites/Chef Corp./Germany/German" type="Folder_" rights="RMDAP"/>
+                <members>
+                  <user id="pietc" name="Piet C" home="/Home/Piet C"/>
+                </members>
+              </group>
+              <group name="manager-c-fr-FR" contentgroup="true" livegroup="false" administrative="false">
+                <!-- add rules after cloning sites. -->
+                <members>
+                  <user id="pierrec" name="Pierre C" home="/Home/Pierre C"/>
+                </members>
+              </group>
+              <group name="manager-c-es-ES" contentgroup="true" livegroup="false" administrative="false">
+                <!-- add rules after cloning sites. -->
+                <members>
+                  <user id="pedroc" name="Pedro C" home="/Home/Pedro C"/>
+                </members>
+              </group>
+              <group name="manager-c-ja-JP" contentgroup="true" livegroup="false" administrative="false">
+                <!-- add rules after cloning sites. -->
+                <members>
+                  <user id="yoshic" name="Yoshi C" home="/Home/Yoshi C"/>
+                </members>
+              </group>
+            </members>
+          </group> <!-- local-site-manager-c -->
+        </members>
+      </group> <!-- local-manager -->
+      <group name="online-editor" contentgroup="true" livegroup="false" administrative="false">
+        <!-- Global group, no corporate specific rules here! -->
+        <members>
+          <group name="online-editor-c-en-US" contentgroup="true" livegroup="false" administrative="false">
+            <rule content="/Sites/Chef Corp./United States/English" type="CMObject" rights="R"/>
+            <rule content="/Sites/Chef Corp./United States/English" type="Folder_" rights="R"/>
+            <rule content="/Sites/Chef Corp./United States/English/Editorial" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/Chef Corp./United States/English/Editorial" type="Folder_" rights="RMD"/>
+            <members>
+              <user id="georgec" name="George C" home="/Home/George C"/>
+            </members>
+          </group> <!-- online-editor-c-en-US -->
+          <group name="online-editor-c-de-DE" contentgroup="true" livegroup="false" administrative="false">
+            <rule content="/Sites/Chef Corp./Germany/German" type="CMObject" rights="R"/>
+            <rule content="/Sites/Chef Corp./Germany/German" type="Folder_" rights="R"/>
+            <rule content="/Sites/Chef Corp./Germany/German/Editorial" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/Chef Corp./Germany/German/Editorial" type="Folder_" rights="RMD"/>
+            <members>
+              <user id="georgc" name="Georg C" home="/Home/Georg C"/>
+            </members>
+          </group> <!-- online-editor-c-de-DE -->
+        </members>
+      </group> <!-- online-editor -->
+      <group name="media-editor" contentgroup="true" livegroup="false" administrative="false">
+        <!-- Global group, no corporate specific rules here! -->
+        <members>
+          <group name="media-editor-c-en-US" contentgroup="true" livegroup="false" administrative="false">
+            <rule content="/Sites/Chef Corp./United States/English" type="CMObject" rights="R"/>
+            <rule content="/Sites/Chef Corp./United States/English" type="Folder_" rights="R"/>
+            <rule content="/Sites/Chef Corp./United States/English/Editorial/Assets" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/Chef Corp./United States/English/Editorial/Assets" type="Folder_" rights="RMD"/>
+            <members>
+              <user id="markc" name="Mark C" home="/Home/Mark C"/>
+              <user id="amy" name="Amy" home="/Home/Amy"/>
+            </members>
+          </group> <!-- media-editor-c-en-US -->
+          <group name="media-editor-c-de-DE" contentgroup="true" livegroup="false" administrative="false">
+            <rule content="/Sites/Chef Corp./Germany/German" type="CMObject" rights="R"/>
+            <rule content="/Sites/Chef Corp./Germany/German" type="Folder_" rights="R"/>
+            <rule content="/Sites/Chef Corp./Germany/German/Editorial/Assets" type="CMObject" rights="RMD"/>
+            <rule content="/Sites/Chef Corp./Germany/German/Editorial/Assets" type="Folder_" rights="RMD"/>
+            <members>
+              <user id="markusc" name="Markus C" home="/Home/Markus C"/>
+              <userref id="amy"/>
+            </members>
+          </group> <!-- media-editor-c-de-DE -->
+        </members>
+      </group> <!-- media-editor -->
+    </members>
+  </group> <!-- staff -->
+</repository>

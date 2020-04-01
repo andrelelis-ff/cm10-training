@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSelectionRules folder="/Sites/Hybris Apparel/Germany/German/Editorial/Content/Perso" name="Personalized Banner" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Perso/Personalized%20Banner.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Perso/Personalized%20Banner"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<IntProperty Name="limit">1</IntProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<rules grammarName="coremedia-selectionrules-1.0"><rules version="1.0" xmlns="http://www.coremedia.com/2010/selectionrules" xmlns:xlink="http://www.w3.org/1999/xlink">select <content xlink:href="coremedia:///cap/resources/Skier%20Interest%20Collection.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Perso/Skier%20Interest%20Collection"/> if commerce.usersegments#"hybris:///catalog/segment/CMSkiCustomerGroup"; select <content xlink:href="coremedia:///cap/resources/Snowboard%20Interest%20Collection.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Perso/Snowboard%20Interest%20Collection"/> if commerce.usersegments#"hybris:///catalog/segment/CMSnowboardCustomerGroup"</rules></rules>
+<defaultContent>
+<link href="../Default%20Shopping%20Collection.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Default%20Shopping%20Collection"/>
+</defaultContent>
+</CMSelectionRules>

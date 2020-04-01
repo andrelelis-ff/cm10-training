@@ -1,0 +1,10 @@
+{
+  "name": "solr",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The role for the Solr node",
+  "run_list": [
+    "role[base]",
+    "recipe[blueprint-solr::default]"
+  ]
+}

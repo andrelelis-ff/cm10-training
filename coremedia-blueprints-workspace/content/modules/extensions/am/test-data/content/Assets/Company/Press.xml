@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AMPictureAsset folder="/Assets/Company" name="Press" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<thumbnail md5="b9e31c918e7d49c976144f3327840498" size="57633" href="../../__blob/b9e31c918e7d49c976144f3327840498.blob" mimetype="image/jpeg"/>
+<state>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="web">
+<Struct>
+<StringProperty Name="modificationDate">1458663081471</StringProperty>
+<StringProperty Name="modifier">Teresa</StringProperty>
+<IntProperty Name="version">1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="thumbnail">
+<Struct>
+<StringProperty Name="modificationDate">1458663264102</StringProperty>
+<StringProperty Name="modifier">Teresa</StringProperty>
+<IntProperty Name="version">1</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</state>
+<metadata>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="renditions">
+<Struct>
+<StructProperty Name="original">
+<Struct>
+<BooleanProperty Name="show">false</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="web">
+<Struct>
+<BooleanProperty Name="show">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="print">
+<Struct>
+<BooleanProperty Name="show">false</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="copyright">photomak/Shutterstock 63188920</StringProperty>
+<StringListProperty Name="channels">
+<String>mobile</String>
+<String>web</String>
+</StringListProperty>
+<StringListProperty Name="regions">
+<String>USA</String>
+<String>Europe</String>
+</StringListProperty>
+</Struct>
+</metadata>
+<keywords></keywords>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<assetTaxonomy>
+</assetTaxonomy>
+<web md5="d282a4d4aac991333993837e750c7377" size="190371" href="../../__blob/d282a4d4aac991333993837e750c7377.blob" mimetype="image/jpeg"/>
+</AMPictureAsset>

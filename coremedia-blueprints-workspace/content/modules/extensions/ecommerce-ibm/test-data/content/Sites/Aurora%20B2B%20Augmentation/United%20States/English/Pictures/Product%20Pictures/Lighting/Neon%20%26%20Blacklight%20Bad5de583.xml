@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Lighting" name="Neon &amp; Blacklight Bulbs Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=573;y=0;width=1061;height=1650</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=451;y=0;width=1240;height=1650</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=279;y=0;width=1648;height=1650</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=43;y=158;width=1799;height=1349</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=208;width=2200;height=1241</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=423;width=2200;height=882</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=552;width=2200;height=552</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.26058631921824105;y1=0;x2=0.742671009771987;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2051792828685259;y1=0;x2=0.7689243027888446;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.1270358306188925;y1=0;x2=0.8762214983713354;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.019543973941368076;y1=0.09565217391304348;x2=0.8371335504885994;y2=0.9130434782608695</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.12608695652173912;x2=1;y2=0.8782608695652174</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2565217391304348;x2=1;y2=0.7913043478260869</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3347826086956522;x2=1;y2=0.6695652173913044</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Neon &amp; Blacklight Bulbs</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Neon &amp; Blacklight Bulbs</alt>
+<copyright>Augusto Cabral/Shutterstock 114098422</copyright>
+<dataUrl></dataUrl>
+<width>2200</width>
+<height>1650</height>
+<data md5="4fdbf019db0f0f51f805200f817b45dc" size="238172" href="../../../../../../../__blob/4fdbf019db0f0f51f805200f817b45dc.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

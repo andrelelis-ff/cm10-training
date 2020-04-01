@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Hybris Apparel/Germany/German/Options/Settings" name="LiveContext" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Options/Settings/LiveContext.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/LiveContext"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringProperty Name="endpoint">${commerce.hub.data.endpoints.hybris}</StringProperty>
+<StringProperty Name="currency">EUR</StringProperty>
+<StringProperty Name="locale">de-DE</StringProperty>
+<StructProperty Name="storeConfig">
+<Struct>
+<StringProperty Name="name">Apparel-Catalog</StringProperty>
+<StringProperty Name="id">apparel-de</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="catalogConfig">
+<Struct>
+<StringProperty Name="id">apparelProductCatalog</StringProperty>
+<StringProperty Name="alias">catalog</StringProperty>
+<StringProperty Name="name">apparelProductCatalog</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="livecontext-fragments">
+<Struct>
+<StructProperty Name="prefetchedViews">
+<Struct>
+<StringListProperty Name="defaults">
+<String>metadata</String>
+<String>externalHead</String>
+<String>externalFooter</String>
+</StringListProperty>
+<StructListProperty Name="contentTypes">
+<Struct>
+<StringProperty Name="type">CMLinkable</StringProperty>
+<StringListProperty Name="prefetchedViews">
+<String>metadata</String>
+<String>asFragment</String>
+<String>asBreadcrumbFragment</String>
+<String>externalHead</String>
+<String>externalFooter</String>
+</StringListProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="placementViews">
+<Struct>
+<StructListProperty Name="defaults">
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/Pagegrid/Placements/header.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/header"/>
+<StringProperty Name="view">asDefaultFragment</StringProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/Pagegrid/Placements/main.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/main"/>
+<StringProperty Name="view">asDefaultFragment</StringProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/Pagegrid/Placements/banner.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/banner"/>
+<StringProperty Name="view">asDefaultFragment</StringProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/Pagegrid/Placements/footer.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/footer"/>
+<StringProperty Name="view">asDefaultFragment</StringProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/Pagegrid/Placements/hero.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/hero"/>
+<StringProperty Name="view">asDefaultFragment</StringProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/Pagegrid/Placements/placement1.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/placement1"/>
+<StringProperty Name="view">asDefaultFragment</StringProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/Pagegrid/Placements/placement2.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/placement2"/>
+<StringProperty Name="view">asDefaultFragment</StringProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/Pagegrid/Placements/placement3.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/placement3"/>
+<StringProperty Name="view">asDefaultFragment</StringProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/Pagegrid/Placements/product-detail.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/product-detail"/>
+<StringProperty Name="view">asDefaultFragment</StringProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/Pagegrid/Placements/tab.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/tab"/>
+<StringProperty Name="view">asDefaultFragment</StringProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/Pagegrid/Placements/additional.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/additional"/>
+<StringProperty Name="view">asDefaultFragment</StringProperty>
+</Struct>
+</StructListProperty>
+<StructListProperty Name="layouts">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/CMSettings" xlink:href="coremedia:///cap/resources/Pagegrid/Layouts/Fragment%20PDP.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Layouts/Fragment%20PDP"/>
+<StructListProperty Name="placementViews">
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/Pagegrid/Placements/header.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Options/Settings/Pagegrid/Placements/header"/>
+<StringProperty Name="view">asDefaultFragment</StringProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<BooleanProperty Name="livecontext.manageNavigation">true</BooleanProperty>
+<BooleanProperty Name="livecontext.policy.commerce-product-links">true</BooleanProperty>
+<BooleanProperty Name="livecontext.policy.commerce-category-links">true</BooleanProperty>
+<BooleanProperty Name="livecontext.policy.commerce-page-links">true</BooleanProperty>
+<BooleanProperty Name="p13n-dynamic-includes-enabled">true</BooleanProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

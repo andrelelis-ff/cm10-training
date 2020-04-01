@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTaxonomy folder="/Settings/Taxonomies/Subject" name="Corporate" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Corporate</value>
+<children>
+<link href="Target%20Group.xml" path="/Settings/Taxonomies/Subject/Target%20Group"/>
+<link href="Corporate%20Identity.xml" path="/Settings/Taxonomies/Subject/Corporate%20Identity"/>
+<link href="Corporate%20Commmunications.xml" path="/Settings/Taxonomies/Subject/Corporate%20Commmunications"/>
+<link href="Target%20Age.xml" path="/Settings/Taxonomies/Subject/Target%20Age"/>
+<link href="Chef.xml" path="/Settings/Taxonomies/Subject/Chef"/>
+<link href="Dream.xml" path="/Settings/Taxonomies/Subject/Dream"/>
+<link href="Kitchen.xml" path="/Settings/Taxonomies/Subject/Kitchen"/>
+<link href="Restaurant.xml" path="/Settings/Taxonomies/Subject/Restaurant"/>
+</children>
+<externalReference></externalReference>
+</CMTaxonomy>

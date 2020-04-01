@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.sfmc.studio.AddSFMCButtonPlugin"/>
+  <component class="com.coremedia.blueprint.sfmc.studio.SFMCStudioPlugin"/>
+</componentPackage>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Fashion Week" name="Milano Fashion Trends" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Fashion%20Week/Milano%20Fashion%20Trends.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion%20Week/Milano%20Fashion%20Trends"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Teaser%20Styles/Light"/>
+<IntProperty Name="positionY">40</IntProperty>
+<IntProperty Name="width">75</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Mailänder Modetrends</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Fashion.xml" path="/Settings/Taxonomies/Subject/Fashion"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Trends.xml" path="/Settings/Taxonomies/Subject/Trends"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Fashion%20Week.xml" path="/Settings/Taxonomies/Subject/Fashion%20Week"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center"> Mailänder Modetrends </p> <p class="align--center"> Entdecke die Trends </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Einstellung ist alles. Meine Aufgabe ist es, Menschen herauszubringen, was sie nicht selbst wagen würden. Ich bin nie mit mir selbst zufrieden und das hält mich weiter - ich habe keine Nachzufriedenheit. Eleganz definiert sich nicht nur durch das, was Sie tragen. Es ist, wie Sie sich tragen, wie Sie sprechen, was Sie lesen. Es ist schwierig, abstrakt über Mode zu sprechen, ohne einen menschlichen Körper vor meinen Augen, ohne Zeichnungen, ohne Stoffwahl - ohne praktische oder visuelle Realität. </p> <p> Ich denke, es gibt etwas mit Luxus - es ist nicht etwas, was die Menschen brauchen, aber es ist das, was sie wollen. Es zieht wirklich an ihrem Herzen. Manchmal sind die einfachsten Dinge am tiefsten. Man kann sich hinter den Theatrics so viel verstecken, und das muss ich nicht mehr tun. Ich mag die Dinge um mich herum schön und etwas verträumt, mit einem Gefühl von Weltlichkeit. Nostalgie ist für mich ein sehr kompliziertes Thema. Ich bin von Nostalgie angezogen, lehne es aber intellektuell ab. </p> <p> Ich schätze immer noch Individualität. Stil ist viel interessanter als Mode. Die Leute sagten, dass das Herstellen von Kleidern von innen her nicht richtig sei. Ich stimmte nicht zu, weil Kleidung, die von innen nach außen ist, so schön wie eine Kathedrale ist. Der Krieg hat mich gelehrt, dass nicht alles glamourös ist. In der Modebranche geht viel Eigennutz vor. So bin ich nicht. Ich mag nie denken, dass ich für eine bestimmte Person entwerfe. Ich entwerfe für die Frau, die ich sein wollte, die Frau, die ich einmal war, und - zu einem gewissen Grad - die Frau, von der ich immer noch ein kleines Stück bin. </p> <p> Ich wünschte, ich hätte Blue Jeans erfunden. Sie haben Ausdruck, Bescheidenheit, Sexappeal, Einfachheit - alles, was ich in meinen Kleidern hoffe. Kleidung bedeutet nichts, bis jemand in ihnen lebt. Nie in meinen wildesten Träumen hatte ich die Vorstellung, ich würde Modedesignerin werden. Ich konnte keine Frau lieben, die mich dazu inspirierte, völlig desinteressiert zu sein. Wenn ich mich aus künstlerischen Gründen oder aus Sicht meiner Arbeit in eine Frau verliebt hätte, würde sie meiner Meinung nach etwas rauben. Ein Mädchen sollte zwei Dinge sein: edel und fabelhaft. </p> <p> Ich möchte allen Frauen danken, die meine Kleider getragen haben, dem berühmten und dem unbekannten, die mir so treu waren und mir so viel Freude gemacht haben. Ich kann nicht in dieses berühmte Ding hineingezogen werden, weil ich denke, dass es nur krass ist. Ich sage immer: Um gut gekleidet zu sein, muss man gut nackt sein. Ich liebe es, Dinge zu entwerfen, die die Leute tatsächlich kaufen können. Ich bin überrascht, was ein Stiefel heute kostet. Mein Frühstück ist sehr wichtig. </p> <p> Design ist eine ständige Herausforderung, um Komfort mit Luxus, das Praktische mit dem Wünschenswerten in Einklang zu bringen. Schönheit ist perfekt in ihren Unvollkommenheiten, so dass Sie nur mit den Unvollkommenheiten gehen müssen. Mode wird unmodern. Ich habe immer versucht, mich technisch voranzutreiben und mich visuell voranzutreiben. Das war ein Teil der Reise. Ich schätze immer noch Individualität. Stil ist viel interessanter als Mode. </p> <p> Kollektionen zu machen, Mode zu machen ist wie ein Dialog ohne Unterbrechung. In dezenten Farben, raffinierten Schnitten und einem schlichten Understatement wirken wir am besten. Der einzige Weg, etwas in der Tiefe zu tun, ist hart zu arbeiten. Manchmal ist Inkompetenz nützlich. Es hilft dir, aufgeschlossen zu sein. Sie müssen immer gegen das, was Sie zuvor getan haben, und sogar gegen Ihren Geschmack arbeiten. </p> </div></detailText>
+<pictures>
+<link href="Milano%20Fashion%20Week%20Picture.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion%20Week/Milano%20Fashion%20Week%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../Authors/Elle%20Quinn%20Person.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Authors/Elle%20Quinn%20Person"/>
+<link href="../../Authors/Joshua%20Campos%20Person.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Authors/Joshua%20Campos%20Person"/>
+</authors>
+</CMArticle>

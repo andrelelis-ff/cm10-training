@@ -1,0 +1,23 @@
+//Default sass file for all *.teaser.ftl.
+
+//default variables - to override, copy the variable to your sass file and set the value
+
+// the default css class. It needs to match the css class set as a param in your template including the brick's teaser.ftl
+$cm-teasable-prefix: "cm-teasable" !default;
+// specifies if the inner elements of the teaser are wrapped inside a wrapper
+$cm-teasable-wrapper-enable: true;
+// the headline color
+$cm-teasable-headline-color: #000000 !default;
+// The default background color for the image. This color is being displayed until the image has been loaded from the server.
+$cm-teasable-picture-background-color: transparent !default;
+// The default padding for the caption.
+$cm-teasable-caption-padding: 0 !default;
+// The default aspect ratio for all screen sizes
+$cm-teasable-media-aspect-ratio: (1, 1);
+// A map to be passed to helper mixin "aspect-ratio-box-by-breakpoint" when generating styles for the teaser
+// Please check the mixin for additional information about the structure of the map
+$cm-teasable-media-aspect-ratio-by-breakpoint: ("xs-and-up": $cm-teasable-media-aspect-ratio) !default;
+// specifies if a dimmer should be shown over the picture
+$cm-teasable-dimmer-enable: true !default;
+// if enabled, specifies the opacity of the dimmer
+$cm-teasable-dimmer-opacity: 0.33 !default;

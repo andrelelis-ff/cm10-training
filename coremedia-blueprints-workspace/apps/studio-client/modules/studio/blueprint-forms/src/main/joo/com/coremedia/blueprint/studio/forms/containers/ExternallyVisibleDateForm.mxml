@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ This is a form panel which combines several form elements to an editor for one property named
+ externallyDisplayedDate. A combination of a radio group and a date picker field.
+-->
+<local:ExternallyVisibleDateFormBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.forms.containers.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        itemId="externallyVisibleDateForm"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMLinkable_externally_visible_date_text')}"
+        propertyNames="{['extDisplayedDate']}"
+        collapsed="{config.collapsed || true}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.premular.fields.DateTimePropertyFieldBase;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.externallyVisibleDateForm";
+
+    private var config:ExternallyVisibleDateForm;
+
+    public native function ExternallyVisibleDateForm(config:ExternallyVisibleDateForm = null);
+    ]]></fx:Script>
+
+  <local:plugins exml:mode="append">
+    <ui:BindPropertyPlugin bidirectional="true"
+                           bindTo="{config.bindTo.extendBy('properties', 'extDisplayedDate')}"
+                           componentProperty="externallyDisplayedDate"
+                           componentEvent="externallyDisplayedDateChanged"/>
+    <editor:PropertyFieldPlugin propertyName="extDisplayedDate"/>
+
+  </local:plugins>
+  <local:items>
+    <ui:BoundRadioGroup width="auto"
+                        columns="1"
+                        hideLabel="true"
+                        toValue="{toValue}"
+                        defaultValue="publicationDate"
+                        bindTo="{getModelExpression().extendBy('innerUseCustomExternalDisplayedDate')}">
+      <ui:plugins exml:mode="append">
+        <editor:BindDisablePlugin bindTo="{config.bindTo}"
+                                  forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+        <editor:ShowIssuesPlugin propertyName="extDisplayedDate"
+                                 bindTo="{config.bindTo}"
+                                 statefulSubComponentsFunction="{function():Array {
+                                         return [
+                                            queryById('publicationDate'),
+                                            queryById('ownDate')]
+                                       }}"/>
+      </ui:plugins>
+      <ui:items>
+        <ui:StatefulRadio itemId="publicationDate"
+                          inputValue="publicationDate"
+                          boxLabel="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMLinkable_externally_visible_date_use_publication_date_text')}"/>
+        <ui:StatefulRadio itemId="ownDate"
+                          inputValue="ownDate"
+                          boxLabel="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMLinkable_externally_visible_date_use_custom_date_text')}"/>
+      </ui:items>
+    </ui:BoundRadioGroup>
+    <Container>
+      <layout>
+        <layout_HBox/>
+      </layout>
+      <items>
+        <Component width="18"
+                   height="22"/>
+        <editor:DateTimePropertyField bindTo="{getModelExpression()}"
+                                      flex="1"
+                                      hideLabel="true"
+                                      forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                                      itemId="customExternalDisplayDate"
+                                      propertyName="innerExternallyDisplayedDate"
+                                      timeZoneHidden="false">
+          <editor:plugins exml:mode="append">
+            <editor:ShowIssuesPlugin propertyName="extDisplayedDate"
+                                     bindTo="{config.bindTo}"
+                                     statefulSubComponentsFunction="{function():Array {
+                                         return [
+                                            queryById(DateTimePropertyFieldBase.DATE_ITEM_ID),
+                                            queryById(DateTimePropertyFieldBase.TIME_ITEM_ID),
+                                            queryById(DateTimePropertyFieldBase.TIME_ZONE_ITEM_ID)]
+                                       }}"/>
+          </editor:plugins>
+        </editor:DateTimePropertyField>
+      </items>
+    </Container>
+  </local:items>
+
+</local:ExternallyVisibleDateFormBase>

@@ -1,0 +1,94 @@
+/**
+ * Popup
+ * ---------------------------------------------------------------------------------------------------------------------
+ */
+
+// normal popup
+.#{$cm-popup-prefix} {
+  position: relative;
+  background-color: $cm-popup-background-color;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+
+  @include breakpoint("sm-and-up") {
+    flex-direction: row;
+    max-width: $cm-popup-max-width;
+    max-height: $cm-popup-max-height;
+    margin: $cm-popup-margin;
+  }
+
+  &__container {
+    //noinspection CssRedundantUnit IE11 fix (percentage and full definition)
+    flex: 1 1 0%;
+  }
+
+  &__content {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: $cm-popup-content-padding;
+  }
+
+  &__title {
+    font-weight: normal;
+    text-align: left;
+    color: #373737;
+
+    @include breakpoint("sm-and-up") {
+      font-size: 1.2rem;
+      line-height: 2rem;
+    }
+  }
+
+  &__text {
+    //noinspection CssRedundantUnit IE11 fix (percentage and full definition)
+    flex: 1 1 0%;
+  }
+
+  &__picture-box {
+    @include aspect-ratio-box($cm-popup-mobile-image-aspect-ratio-x, $cm-popup-mobile-image-aspect-ratio-y);
+
+    @include breakpoint("sm-and-up") {
+      @include aspect-ratio-box($cm-popup-image-aspect-ratio-x, $cm-popup-image-aspect-ratio-y);
+    }
+  }
+
+  &__picture,
+  &__picture-box .cm-mediaelementwrapper iframe {
+    @include stretch-absolute();
+  }
+
+  &__button {
+    text-align: center;
+    margin: 24px auto auto;
+  }
+
+  // video popup
+  &--video {
+    position: relative;
+    max-width: $cm-popup-video-screen-max;
+    max-height: 90vh;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    @include aspect-ratio-box(16, 9);
+
+   .cm-mediaelementwrapper iframe {
+      @include stretch-absolute();
+    }
+  }
+
+  // avoid flickering
+  &__video {
+    @include stretch-absolute();
+  }
+}
+
+.cm-button--popup-loading {
+  cursor: initial;
+}

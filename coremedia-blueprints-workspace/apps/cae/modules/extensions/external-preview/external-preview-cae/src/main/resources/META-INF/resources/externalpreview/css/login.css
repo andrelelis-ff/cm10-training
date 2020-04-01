@@ -1,0 +1,212 @@
+body {
+  overflow-y: auto;
+  background-image: linear-gradient(180deg, #006CAE 0%, #6FC3B7 100%);
+  background-size: cover;
+  color: #FFFFFF;
+}
+
+/* center content in all directions */
+.cm-external-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.cm-external-preview__icon {
+  width: 90px;
+  height: 90px;
+  background: transparent url(../images/cm-logo.svg) no-repeat center;
+}
+
+.cm-external-preview__form {
+  height: 150px;
+  width: 230px;
+  background-color: transparent;
+  padding: 23px 12px 12px;
+}
+
+.cm-external-preview__title {
+  color: #FFFFFF;
+  margin: 20px auto 60px auto;
+  font: 400 13px/13px 'Roboto', 'Segoe UI', 'Trebuchet MS', 'Lucida Grande', 'Helvetica', sans-serif;
+}
+
+.cm-external-preview__animation-wrapper {
+  position: relative;
+  padding-top: 22px;
+  margin-bottom: 22px;
+}
+
+.cm-external-preview__label {
+  position: absolute;
+  width: 100%;
+  top: 27px;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 2px 0;
+  font: 700 13px 'Roboto', 'Segoe UI', 'Trebuchet MS', 'Lucida Grande', 'Helvetica', sans-serif;
+  transition: 0.25s ease all;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* standard */
+}
+
+.cm-external-preview__label:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  height: 2px;
+  width: 10px;
+  visibility: hidden;
+  background-color: #FFFFFF;
+  transition: 0.25s ease all;
+}
+
+.cm-external-preview__input {
+  outline: none;
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  border-width: 0 0 1px;
+  border-bottom-color: #FFFFFF;
+  color: #FFFFFF;
+  padding: 1px 0;
+  background-color: transparent;
+  font: 400 24px 'Roboto', 'Segoe UI', 'Trebuchet MS', 'Lucida Grande', 'Helvetica', sans-serif;
+  letter-spacing: 42px;
+}
+
+/* show label on focus and if input has value */
+.cm-external-preview__input:focus ~ .cm-external-preview__label,
+.cm-external-preview__input[value]:not([value=""]) ~ .cm-external-preview__label {
+  top: 0;
+  opacity: 1;
+  font-size: 13px;
+}
+
+/* show thick line on focus and if input has value */
+.cm-external-preview__input:focus ~ .cm-external-preview__label:after,
+.cm-external-preview__input[value]:not([value=""]) ~ .cm-external-preview__label:after {
+  visibility: visible;
+  width: 100%;
+  left: 0;
+}
+
+/* removes the "x" (clear textfield) in the textfield for IE */
+.cm-external-preview__input::-ms-clear {
+  display: none;
+}
+
+.cm-external-preview__login-button {
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 2px 12px 2px 12px;
+  background-color: transparent;
+  position: relative !important;
+  float: right;
+  left: inherit !important;
+  top: 0;
+  cursor: pointer;
+  color: #FFFFFF;
+  margin-right: 2px;
+  font: 700 13px/24px 'Roboto', 'Segoe UI', 'Trebuchet MS', 'Lucida Grande', 'Helvetica', sans-serif;
+  min-width: 68px;
+  height: 30px;
+  overflow: visible;
+}
+
+.cm-external-preview__login-button:visited,
+.cm-external-preview__login-button:hover,
+.cm-external-preview__login-button:focus,
+.cm-external-preview__login-button:active,
+.cm-external-preview__login-button:visited:hover {
+  border: 1px solid #FFFFFF;
+}
+
+.cm-external-preview__login-button:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.cm-external-preview__login-button .cm-external-preview__error-text {
+  opacity: 0;
+  width: 220px;
+  background-color: #DD342B;
+  text-align: center;
+  border-radius: 2px;
+  padding: 4px 7px;
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  right: 90%;
+  color: #FFFFFF;
+  font: 400 13px/17px 'Roboto', 'Segoe UI', 'Trebuchet MS', 'Lucida Grande', 'Helvetica', sans-serif;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0 ,0.6);
+  transition: opacity 150ms ease-out;
+  pointer-events: none;
+  cursor: default;
+}
+.cm-external-preview__login-button .cm-external-preview__error-text--visible {
+  opacity: 1;
+  transition: opacity 150ms ease-out;
+}
+
+/* fade in animation */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
+  }
+}
+
+.fade-in {
+  opacity: 0;  /* invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;  /* call our keyframe named fadeIn only one time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;  /* make sure that after animation is done the animation stops */
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+/* responsive design */
+@media screen and (max-width: 480px) {
+  .cm-external-preview__optional-text {
+    display: none;
+  }
+}

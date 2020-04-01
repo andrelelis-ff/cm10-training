@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMFolderProperties folder="/Sites/Calista/Germany/German" name="_folderProperties" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../United%20States/English/_folderProperties.xml" path="/Sites/Calista/United%20States/English/_folderProperties"/>
+</master>
+<contexts>
+<link href="Navigation/Calista.xml" path="/Sites/Calista/Germany/German/Navigation/Calista"/>
+</contexts>
+</CMFolderProperties>

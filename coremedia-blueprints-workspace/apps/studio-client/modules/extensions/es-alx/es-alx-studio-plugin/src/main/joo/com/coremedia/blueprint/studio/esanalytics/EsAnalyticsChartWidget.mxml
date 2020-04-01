@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:EsAnalyticsChartWidgetBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.esanalytics.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns:esalx="exml:com.coremedia.blueprint.studio.config.esanalytics"
+        xmlns="exml:ext.config"
+        layout="anchor"
+        scrollable="true">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.esanalytics.EsAnalyticsStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.esanalytics.esAnalyticsChartWidget";
+
+    public static const ES_ALX_CHART:String = "esAlxChartItemId";
+
+    private var config:EsAnalyticsChartWidget;
+
+    public native function EsAnalyticsChartWidget(config:EsAnalyticsChartWidget = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <esalx:EsAnalyticsChart itemId="{ES_ALX_CHART}"
+                            bindTo="{getAlxData('data')}"
+                            timeRangeValueExpression="{getTimeRangeValueExpression()}"
+                            chartTitle="{resourceManager.getString('com.coremedia.blueprint.studio.esanalytics.EsAnalyticsStudioPlugin', 'chart_title_page_views')}"
+                            timeStampValueExpression="{getAlxData('timeStamp')}"
+                            chartHeight="240"/>
+
+    <esalx:EsChart bindTo="{getPublicationData('data')}"
+                   timeStampValueExpression="{getPublicationData('timeStamp')}"
+                   chartHeight="200"
+                   color="#7ed900"
+                   fieldLabel="{resourceManager.getString('com.coremedia.blueprint.studio.esanalytics.EsAnalyticsStudioPlugin', 'chart_title_publications')}"
+                   labelAlign="top"
+                   chartLabelName="{resourceManager.getString('com.coremedia.blueprint.studio.esanalytics.EsAnalyticsStudioPlugin', 'chart_label_publications')}"/>
+  </local:items>
+
+</local:EsAnalyticsChartWidgetBase>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/France/French/Pictures" name="Photo Shooting in Prague - Cool" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Pictures/Photo%20Shooting%20in%20Prague%20-%20Cool.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Pictures/Photo%20Shooting%20in%20Prague%20-%20Cool"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=465;y=0;width=1677;height=2600</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=279;y=0;width=1950;height=2600</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=449;width=2600;height=1950</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=465;width=2600;height=1460</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=478;width=2600;height=1041</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=642;width=2600;height=648</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=488;y=0;width=1625;height=2600</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=459;width=2600;height=1106</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=390;y=0;width=1733;height=2600</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=568;width=2600;height=975</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.17884130982367757;y1=0;x2=0.8236775818639799;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.12594458438287154;y1=0;x2=0.8765743073047859;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.17255717255717257;x2=1;y2=0.9225571725571726</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.17884130982367757;x2=1;y2=0.7405541561712846</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.18387909319899245;x2=1;y2=0.5843828715365239</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.24685138539042822;x2=1;y2=0.49622166246851385</StringProperty>
+<StringProperty Name="landscape_ratio235x100">position;x1=0;y1=0.17665615141955834;x2=1;y2=0.6021880663131753</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.2182952182952183;x2=1;y2=0.5932952182952183</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="landscape_ratio235x100">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.48336798336798337</StringProperty>
+<StringProperty Name="y">0.3607068607068607</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Shooting photo à Prague - Cool</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Shooting photo à Prague - Cool</alt>
+<copyright>solominviktor / Shutterstock</copyright>
+<dataUrl></dataUrl>
+<width>2600</width>
+<height>2600</height>
+<data md5="cc678f0f53039703230bbf05d61d535c" size="3945402" href="../../../../../__blob/cc678f0f53039703230bbf05d61d535c.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

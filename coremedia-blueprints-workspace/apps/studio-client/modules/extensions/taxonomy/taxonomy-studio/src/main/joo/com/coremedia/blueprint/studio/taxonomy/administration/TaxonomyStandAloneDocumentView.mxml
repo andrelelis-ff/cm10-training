@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:StandAloneDocumentViewBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                                  xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                                  xmlns="exml:ext.config"
+                                  xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                                  xmlns:local="com.coremedia.cms.editor.sdk.premular.*"
+                                  scrollable="true">
+  <fx:Metadata/>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.taxonomy.taxonomyStandAloneDocumentView";
+
+    [Bindable]
+    public var bindTo:ValueExpression;
+
+    [Bindable]
+    public var forceReadOnlyValueExpression:ValueExpression;
+
+    private var config:TaxonomyStandAloneDocumentView;
+
+    public native function TaxonomyStandAloneDocumentView(config:TaxonomyStandAloneDocumentView = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <editor:TabbedDocumentFormDispatcher itemId="documentFormDispatcher"
+                                         focusForwarder="{getFocusForwarder()}"
+                                         propertyFieldRegistry="{getPropertyFieldRegistry()}"
+                                         bindTo="{config.bindTo}"
+                                         forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+  </local:items>
+  <local:layout>
+    <layout_Fit/>
+  </local:layout>
+</local:StandAloneDocumentViewBase>

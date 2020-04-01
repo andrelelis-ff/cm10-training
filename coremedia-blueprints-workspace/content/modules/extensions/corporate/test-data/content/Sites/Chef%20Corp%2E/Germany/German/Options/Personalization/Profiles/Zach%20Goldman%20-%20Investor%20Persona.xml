@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMUserProfile folder="/Sites/Chef Corp./Germany/German/Options/Personalization/Profiles" name="Zach Goldman - Investor Persona" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Options/Personalization/Profiles/Zach%20Goldman%20-%20Investor%20Persona.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Personalization/Profiles/Zach%20Goldman%20-%20Investor%20Persona"/>
+</master>
+<profileSettings href="Zach%20Goldman%20-%20Investor%20Persona.p981747c.plain" mimetype="text/plain"/>
+<profileExtensions>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="properties">
+<Struct>
+<LinkListProperty Name="explicit" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Investors.xml" cmexport:path="/Settings/Taxonomies/Subject/Investors"/>
+</LinkListProperty>
+<LinkListProperty Name="subjectTaxonomies" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Investors.xml" cmexport:path="/Settings/Taxonomies/Subject/Investors"/>
+</LinkListProperty>
+<LinkListProperty Name="profileImage" LinkType="coremedia:///cap/contenttype/CMPicture">
+<Link xlink:href="coremedia:///cap/resources/Zach%20Goldman%20Picture.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Options/Personalization/Profiles/Zach%20Goldman%20Picture"/>
+</LinkListProperty>
+<LinkListProperty Name="authorities" LinkType="coremedia:///cap/contenttype/CMSymbol">
+</LinkListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</profileExtensions>
+</CMUserProfile>

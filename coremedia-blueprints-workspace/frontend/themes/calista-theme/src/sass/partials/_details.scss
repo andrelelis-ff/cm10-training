@@ -1,0 +1,49 @@
+// detail page
+.#{$cm-details-prefix} {
+  font-family: $cm-font-family-serif;
+
+  &__headline {
+    text-align: center;
+  }
+
+  &__text {
+    p {
+      font-size: 17px;
+    }
+
+    @include breakpoints(("sm", landscape) "lg-and-up") {
+      & > *,
+      & > p,
+      & > blockquote,
+      & > .rte--list {
+        margin: 15px auto 20px auto;
+        width: 70%;
+      }
+      & > blockquote {
+        border: none;
+
+        .cm-richtext-embedded--image {
+          width: 100%;
+          margin: 1em 0;
+        }
+      }
+    }
+  }
+}
+
+// tags section
+.#{$cm-tag-prefix} {
+  &__headline {
+    font-family: $cm-font-family-serif;
+  }
+}
+
+// related section
+.#{$cm-related-prefix} {
+  &__headline {
+    font-family: $cm-font-family-serif;
+    font-size: $cm-font-size-large;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

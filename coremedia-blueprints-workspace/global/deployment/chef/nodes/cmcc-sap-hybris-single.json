@@ -1,0 +1,56 @@
+{
+  "blueprint": {
+    "hostname": "CMS_HOST",
+    "loopback_hostname": "localhost",
+    "maven_repository_url": "file://localhost/tmp/maven-repo",
+    "apps":{
+      "content-management-server": {
+        "application.properties": {
+          "cap.server.license": "properties/corem/license.zip"
+        }
+      },
+      "master-live-server": {
+        "application.properties": {
+          "cap.server.license": "properties/corem/license.zip"
+        }
+      },
+      "commerce-adapter-hybris": {
+        "application.properties": {
+          "hybris.host": "HYBRIS_HOST",
+          "hybris.user": "HYBRIS_USER",
+          "hybris.password": "HYBRIS_PASSWORD",
+          "hybris.storeFrontHost": "HYBRIS_STOREFRONTHOST",
+          "hybris.storeFrontUrl": "HYBRIS_STOREFRONTURL",
+          "hybris.assetUrl": "HYBRIS_ASSETURL"
+        }
+      }
+    },
+    "sap-hybris": {
+      "enabled": true,
+      "host": "HYBRIS_HOST"
+    },
+    "dev": {
+      "content": {
+        "content_zip": "file://localhost/tmp/content-users.zip"
+      }
+    }
+  },
+  "run_list": [
+    "role[mysql]",
+    "role[mongodb]",
+    "role[solr]",
+    "role[commerce-adapter]",
+    "role[cmcc-config]",
+    "role[management]",
+    "role[publication]",
+    "role[preview]",
+    "role[preview-headless]",
+    "role[studio]",
+    "role[cmcc-studio-proxy]",
+    "role[delivery]",
+    "role[delivery-headless]",
+    "role[cmcc-delivery-proxy]",
+    "recipe[blueprint-cmcc::overview]",
+    "recipe[blueprint-dev-tooling::content]"
+  ]
+}

@@ -1,0 +1,27 @@
+#!/bin/sh
+
+echo "[DOCKER ENTRYPOINT] - entering $0"
+set -e
+if [ "${DEBUG_ENTRYPOINT}" = "true" ]; then
+  echo "[DOCKER ENTRYPOINT] - DEBUG_ENTRYPOINT detected, all commands will be printed"
+  set -x
+fi
+
+# do not remove '< /dev/null 2> /dev/null | grep -v groovy\:' - this ensures groovysh exit and only value printing
+IMPORTED=$(./tools/bin/cm groovysh /coremedia/getSystemTableProperty.groovy -q -DpropKey=content-imported < /dev/null 2> /dev/null | grep -v groovy\:)
+
+if [ ! -z "${BLOB_STORAGE_URL}" ]; then
+  BLOB_EXTRA_ARGS="-bloburl ${BLOB_STORAGE_URL} --blobreferences --threads 5"
+fi
+
+if [ "$(find ${IMPORT_CONTENT_DIR} -name "*.xml" -print)" != "" ]; then
+  echo "[DOCKER ENTRYPOINT] - importing content from ${IMPORT_CONTENT_DIR}"
+  if [ "${IMPORTED}" != "true"  ] || [ "${FORCE_REIMPORT_CONTENT}" = "true" ]; then
+    ./tools/bin/cm serverimport -u ${TOOLS_USER} -p ${TOOLS_PASSWORD} ${BLOB_EXTRA_ARGS} --no-validate-xml -r ${IMPORT_CONTENT_DIR} 2> /dev/null
+    ./tools/bin/cm groovysh /coremedia/setSystemTableProperty.groovy -q -DpropKey=content-imported -DpropVal=true < /dev/null 2> /dev/null
+  else
+    echo "[DOCKER ENTRYPOINT] - content already imported, skipping ..."
+  fi
+fi
+
+test $# -gt 0 && exec ./$@ || echo "[DOCKER ENTRYPOINT] - entrypoint chain finished"

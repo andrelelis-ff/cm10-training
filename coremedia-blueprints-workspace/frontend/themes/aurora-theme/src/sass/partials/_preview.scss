@@ -1,0 +1,15 @@
+// ### FRAGMENT PREVIEW ###
+
+// layout
+.cm-preview-item__container {
+  display: block;
+  max-width: $cm-screen-max;
+  padding: 15px 20px 40px 20px;
+}
+
+// ### PREVIEW ###
+
+// reset aurora margins
+.row.margin-true > div > .cm-preview-developer-mode {
+  margin: 0;
+}

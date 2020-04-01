@@ -1,0 +1,56 @@
+/* --- wcs search result tabs --- */
+.cm-wcs-tabs {
+  display: flex;
+  // reset "ul" styles
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  font-size: 20px;
+  line-height: 28px;
+  border-bottom: 1px solid $cm-border-color-default;
+
+  @include breakpoint("sm-and-up") {
+    margin-top: $cm-standard-spacing;
+  }
+
+  &__tab {
+
+    & a {
+      display: block;
+      padding: 10px 30px;
+      margin-right: 2px;
+
+      &:hover {
+        border-bottom: 3px solid $cm-border-color-default;
+        text-decoration: none;
+      }
+
+      &:focus {
+        text-decoration: none;
+      }
+    }
+
+    &.active a {
+      border-bottom: 3px solid $cm-border-color-default;
+      cursor: default;
+    }
+  }
+}
+
+// tab-pane in wcs templates
+.tab-content {
+  > .tab-pane {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
+}
+
+.#{$cm-search-prefix} {
+  &__loading {
+    height: 50px; //same height as button to avoid jumping of page
+  }
+}

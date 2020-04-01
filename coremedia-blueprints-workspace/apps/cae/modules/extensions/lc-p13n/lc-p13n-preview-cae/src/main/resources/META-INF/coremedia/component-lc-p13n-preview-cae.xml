@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/com/coremedia/cae/contentbean-services.xml"/>
+  <import resource="classpath:/META-INF/coremedia/p13n-preview-cae-context.xml"/>
+
+  <bean id="commerceSegmentTestContextExtractor" class="com.coremedia.livecontext.p13n.preview.CommerceSegmentTestContextExtractor">
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+  </bean>
+
+  <bean id="commerceContractIdTestContextExtractor" class="com.coremedia.livecontext.p13n.preview.CommerceContractIdTestContextExtractor">
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+  </bean>
+
+  <customize:append id="addTestContextExtractors" bean="testContextExtractors" order="20001">
+    <list>
+      <ref bean="commerceSegmentTestContextExtractor"/>
+      <ref bean="commerceContractIdTestContextExtractor"/>
+    </list>
+  </customize:append>
+
+</beans>

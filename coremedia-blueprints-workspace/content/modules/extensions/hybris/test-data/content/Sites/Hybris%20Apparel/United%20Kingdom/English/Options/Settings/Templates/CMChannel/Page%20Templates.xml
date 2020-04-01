@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/Hybris Apparel/United Kingdom/English/Options/Settings/Templates/CMChannel" name="Page Templates" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Page Templates</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<notSearchable>1</notSearchable>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+<link href="Empty/Empty%20Page.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Templates/CMChannel/Empty/Empty%20Page"/>
+<link href="Landing%20Page/Landing%20Page.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Options/Settings/Templates/CMChannel/Landing%20Page/Landing%20Page"/>
+</children>
+<hidden>1</hidden>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

@@ -1,0 +1,23 @@
+{
+  "name": "@coremedia/brick-slick-carousel",
+  "description": "Provides support for device orientation to slick carousel.",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@coremedia/brick-utils": "^1.0.0",
+    "@coremedia/brick-node-decoration-service": "^1.0.0",
+    "slick-carousel-no-font-no-png": "^1.7.5",
+    "jquery": "^3.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.0.0"
+  },
+  "scripts": {
+    "prettier": "prettier \"**/*\" --write"
+  },
+  "main": "src/js/index.js",
+  "coremedia": {
+    "type": "brick",
+    "init": "src/js/init.js"
+  }
+}

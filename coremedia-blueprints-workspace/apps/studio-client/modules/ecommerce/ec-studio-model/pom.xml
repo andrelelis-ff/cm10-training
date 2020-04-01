@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>studio-client.ecommerce</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>ec-studio-model</artifactId>
+  <packaging>swc</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>cap-rest-client</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>client-core-impl</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>cap-rest-client-impl</artifactId>
+      <scope>test</scope>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>ec-studio-test-helper</artifactId>
+      <version>${project.version}</version>
+      <type>swc</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>client-core-test-helper</artifactId>
+      <type>swc</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>net.jangaroo</groupId>
+      <artifactId>joounit</artifactId>
+      <type>swc</type>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>net.jangaroo</groupId>
+        <artifactId>jangaroo-maven-plugin</artifactId>
+        <version>${jangaroo.version}</version> <!-- explicit version for IDEA! -->
+        <extensions>true</extensions>
+        <configuration>
+          <skip>false</skip>
+          <testSuite>com.coremedia.ecommerce.studio.TestSuite</testSuite>
+          <jooUnitTestExecutionTimeout>120000</jooUnitTestExecutionTimeout>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+
+</project>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Decorating" name="Decorating Products Category Secondary Promotion Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMChannel/portrait.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Options/Viewtypes/CMChannel/portrait"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../Personalization/Contract-Specific%20Call-To-Action%20Teaser.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Personalization/Contract-Specific%20Call-To-Action%20Teaser"/>
+<link href="../../Products/Aurora%20B2B/Decorating/Table%20Runner%20mauv3e7c2c02.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Decorating/Table%20Runner%20mauve%20Product%20Teaser"/>
+<link href="Lighting/Decorating%20Lighting%20Ca1d572e33.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Decorating/Lighting/Decorating%20Lighting%20Category%20Teaser"/>
+</items>
+</CMCollection>

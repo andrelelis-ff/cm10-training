@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/Germany/German/Editorial/Content/Snow/Action Goggle Microsite Content" name="Call To Action Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Editorial/Content/Snow/Action%20Goggle%20Microsite%20Content/Call%20To%20A3227778a.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Action%20Goggle%20Microsite%20Content/Call%20To%20Action%20Article"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Zeigen Sie uns Ihren Style</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Haben Sie Ihre Aktion Brille mit Ihnen zu jeder Zeit? Teilen Sie Ihre neuesten Action-Clips mit anderen. </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Haben Sie Ihre Aktion Brille mit Ihnen zu jeder Zeit? Teilen Sie Ihre neuesten Action-Clips mit anderen. <br/></p> <p> Auf Schnee wird diese neueste Sensation Speed ​​Riding genannt - eine Mischung aus Paragliding und Skifahren, die Sie fahren / fliegen die Pisten in einer unglaublichen Geschwindigkeit lässt. Das Hinzufügen der Flug Manövrierfähigkeit eines Segelflugzeugs an der Wende Skier fügt eine neue Dimension zu kommen den Berg hinunter. Es ist eine aufregende Sportart, die beide Teilnehmer und Zuschauer begeistern und faszinieren. </p> <p> Wie bei jedem Extremsport, nehmen Sie sich Zeit und die Dinge nicht überstürzen. Zumindest sollten Sie sowohl ausgezeichnete Paragliding haben sowie Ski-Erlebnis. Diese Erfahrung sollte das Bewusstsein für Berg, Klima und Ausrüstung Bedingungen beinhalten. </p> <p> Es gibt keine Garantie, ist erlaubt jedem Start Sie Ihren Flug zu beenden, und Sie können nicht in der Lage sein, neu zu beleben Sie Ihren Flug fortsetzen, Off-Piste Skifahren und Bergkenntnisse sind nicht erforderlich Sie den Berg sicher zu bekommen. Speed ​​Flying ist auf alle markierten oder präparierte Piste ist verboten. </p> </div></detailText>
+<pictures>
+<link href="../../../../Pictures/CM%20Action%20Goggles%2001.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/CM%20Action%20Goggles%2001"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../../Authors/Charlotte%20May%20Person.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Authors/Charlotte%20May%20Person"/>
+</authors>
+</CMArticle>

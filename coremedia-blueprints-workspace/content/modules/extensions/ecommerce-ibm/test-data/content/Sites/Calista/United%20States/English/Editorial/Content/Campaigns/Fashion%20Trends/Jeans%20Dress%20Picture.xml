@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/United States/English/Editorial/Content/Campaigns/Fashion Trends" name="Jeans Dress Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=1200;height=675</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=185;y=0;width=599;height=799</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=219;y=0;width=533;height=799</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=1065;height=799</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=86;y=0;width=799;height=799</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=0;width=1200;height=450</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.4023109243697479</StringProperty>
+<StringProperty Name="y">0.23501577287066247</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/AuroraWMDRS-35</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Jeans Dress</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Jeans Dress</alt>
+<copyright>shutterstock_449912104</copyright>
+<dataUrl></dataUrl>
+<width>1200</width>
+<height>799</height>
+<data md5="eabe7c72f825af211cf9f13fd1c66bb3" size="170963" href="../../../../../../../../__blob/eabe7c72f825af211cf9f13fd1c66bb3.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

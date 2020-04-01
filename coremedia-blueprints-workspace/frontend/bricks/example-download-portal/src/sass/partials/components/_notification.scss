@@ -1,0 +1,32 @@
+.am-notification {
+
+  border: 1px solid transparent;
+  padding: 15px;
+  $background-color-lighten-amount: 60%;
+  $border-color-lighten-amount: 5%;
+  font-size: $am-notification-text-size;
+
+  &--success {
+    background-color: $am-notification-success-background-color;
+    border-color: $am-notification-success-border-color;
+    color: $am-notification-success-text-color;
+  }
+
+  &--info {
+    background-color: $am-notification-info-background-color;
+    border-color: $am-notification-info-border-color;
+    color: $am-notification-info-text-color;
+  }
+
+  &--warning {
+    background-color: $am-notification-warning-background-color;
+    border-color: $am-notification-warning-border-color;
+    color: $am-notification-warning-text-color;
+  }
+
+  &--error {
+    background-color: $am-notification-error-background-color;
+    border-color: $am-notification-error-border-color;
+    color: $am-notification-error-text-color;
+  }
+}

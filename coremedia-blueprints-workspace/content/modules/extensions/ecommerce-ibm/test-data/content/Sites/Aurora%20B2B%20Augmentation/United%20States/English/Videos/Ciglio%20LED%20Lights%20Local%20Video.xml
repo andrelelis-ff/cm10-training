@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Aurora B2B Augmentation/United States/English/Videos" name="Ciglio LED Lights Local Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Ciglio LED Lights</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="Ciglio%20LED%20Lights%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Videos/Ciglio%20LED%20Lights%20Picture"/>
+<link href="Ciglio%20LED%20Lights%20Close-Up%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Videos/Ciglio%20LED%20Lights%20Close-Up%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>178663918</alt>
+<copyright>Vimeo 178663918/CC-BY-SA</copyright>
+<dataUrl></dataUrl>
+<data md5="1df436f254cae915eae3b166635d78a9" size="43037794" href="../../../../../__blob/1df436f254cae915eae3b166635d78a9.blob" mimetype="video/mp4"/>
+<asset>
+</asset>
+</CMVideo>

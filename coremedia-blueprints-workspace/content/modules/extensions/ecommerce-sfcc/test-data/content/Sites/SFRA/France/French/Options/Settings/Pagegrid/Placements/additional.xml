@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSymbol folder="/Sites/SFRA/France/French/Options/Settings/Pagegrid/Placements" name="additional" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Options/Settings/Pagegrid/Placements/additional.xml" path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/Pagegrid/Placements/additional"/>
+</master>
+<description>Contenu supplémentaire</description>
+</CMSymbol>

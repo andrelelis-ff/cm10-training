@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:ui="exml:com.coremedia.ui.config" xmlns:quickcreate="com.coremedia.cms.editor.sdk.quickcreate.*">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+    [ResourceBundle('com.coremedia.catalog.studio.CatalogStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.catalog.studio.CatalogStudioPluginBase;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.catalog.cmProductForm";
+
+    private var config:CMProductForm;
+
+    public native function CMProductForm(config:CMProductForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Details_label')}"
+                itemId="productDetailsForm">
+          <editor:items>
+            <editor:StringPropertyField propertyName="productName"/>
+            <editor:StringPropertyField propertyName="productCode"/>
+            <editor:RichTextPropertyField bindTo="{config.bindTo}"
+                                          propertyName="detailText"
+                                          initialHeight="200"/>
+            <editor:PropertyFieldGroup
+                    title="{resourceManager.getString('com.coremedia.catalog.studio.CatalogStudioPlugin', 'CMProduct_shortDescription_text')}"
+                    itemId="productShortDescriptionForm">
+              <editor:items>
+                <editor:TextAreaPropertyField propertyName="teaserText"
+                                              hideLabel="true">
+                  <editor:plugins exml:mode="append">
+                    <editor:TextAreaPropertyFieldDelegatePlugin delegatePropertyName="detailText"/>
+                  </editor:plugins>
+                </editor:TextAreaPropertyField>
+              </editor:items>
+            </editor:PropertyFieldGroup>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+
+        <bpforms:MediaDocumentForm bindTo="{config.bindTo}"/>
+
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.catalog.studio.CatalogStudioPlugin', 'ProductAssets_Downloads_label')}"
+                itemId="productDownloadsForm"
+                collapsed="true">
+          <editor:items>
+            <editor:LinkListPropertyField bindTo="{config.bindTo}"
+                                          hideLabel="true"
+                                          propertyName="downloads">
+              <editor:additionalToolbarItems>
+                <TbSeparator/>
+                <quickcreate:QuickCreateLinklistMenu bindTo="{config.bindTo}"
+                                                     contentTypes="CMDownload"
+                                                     propertyName="downloads"/>
+              </editor:additionalToolbarItems>
+              <editor:fields>
+                <ui:DataField name="{ValidityColumn.STATUS_ID}"
+                              ifUnreadable=""
+                              mapping=""
+                              convert_="{ValidityColumn.convert}"/>
+              </editor:fields>
+              <editor:columns>
+                <editor:ThumbnailColumn/>
+                <editor:TypeIconColumn/>
+                <editor:NameColumn flex="1"/>
+                <bpforms:ValidityColumn/>
+                <editor:StatusColumn/>
+              </editor:columns>
+            </editor:LinkListPropertyField>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+
+        <bpforms:RelatedDocumentForm bindTo="{config.bindTo}"
+                                     title="{resourceManager.getString('com.coremedia.catalog.studio.CatalogStudioPlugin', 'PropertyGroup_RelatedProducts_label')}"/>
+        <bpforms:TeaserSettingsPropertyFieldGroup/>
+        <bpforms:ValidityDocumentForm bindTo="{config.bindTo}"/>
+      </editor:items>
+    </editor:DocumentForm>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.catalog.studio.CatalogStudioPlugin', 'Tab_catalog_structure_title')}"
+            itemId="structureTab">
+      <editor:items>
+        <editor:PropertyFieldGroup itemId="contextsPropertyField"
+                                   title="{resourceManager.getString('com.coremedia.catalog.studio.CatalogStudioPlugin', 'CMProduct_parentChannel_text')}">
+          <editor:items>
+            <editor:LinkListPropertyField propertyName="contexts"
+                                          showThumbnails="true"
+                                          hideLabel="true"
+                                          itemId="contextsPropertyField"
+                                          openCollectionViewHandler="{CatalogStudioPluginBase.openCatalogSearch}"
+                                          bindTo="{config.bindTo}"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+      </editor:items>
+    </editor:DocumentForm>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_extras_title')}"
+            itemId="metadata">
+      <editor:items>
+        <bpforms:CategoryDocumentForm bindTo="{config.bindTo}"/>
+        <bpforms:SEOForm bindTo="{config.bindTo}"
+                         delegatePropertyName="productName"/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataWithoutSearchableForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

@@ -1,0 +1,10 @@
+/*this file contains valid CSS wit imports*/
+@import "imported.css";
+
+.my-custom-class {
+  color: #000000;
+}
+
+#my-custom-id {
+  background: #ffffff;
+}

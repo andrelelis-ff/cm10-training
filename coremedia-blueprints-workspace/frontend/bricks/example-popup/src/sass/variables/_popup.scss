@@ -1,0 +1,16 @@
+// default popup
+$cm-popup-prefix: "cm-popup" !default;
+$cm-popup-background-color: #FFFFFF !default;
+$cm-popup-image-aspect-ratio-x: 4 !default;
+$cm-popup-image-aspect-ratio-y: 3 !default;
+
+$cm-popup-mobile-image-aspect-ratio-x: $cm-popup-image-aspect-ratio-x !default;
+$cm-popup-mobile-image-aspect-ratio-y: $cm-popup-image-aspect-ratio-y !default;
+
+$cm-popup-max-width: 700px !default;
+$cm-popup-max-height: 262px !default;
+$cm-popup-content-padding: 12px !default;
+$cm-popup-margin: 0 auto !default;
+
+// video popup
+$cm-popup-video-screen-max: 1200px !default;

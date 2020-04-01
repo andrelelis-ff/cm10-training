@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/Hybris Apparel/Germany/German/Editorial/Products" name="Beacon Jacket glacier" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Editorial/Products/Beacon%20Jacket%20glacier.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Beacon%20Jacket%20glacier"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+<link href="../../../../../../Settings/Taxonomies/Subject/Snowboard.xml" path="/Settings/Taxonomies/Subject/Snowboard"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../Pictures/Beacon%20Jacket%20Glacier%20Blue.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Beacon%20Jacket%20Glacier%20Blue"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>hybris:///catalog/product/100191</externalId>
+</CMProductTeaser>

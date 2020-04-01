@@ -1,0 +1,13 @@
+# Managed by Chef, do not edit manually
+
+# Installation-dependant settings for all Java programs in $COREM_HOME/bin
+#
+
+# JAVA_HOME is the directory where the JRE is located.
+JAVA_HOME=<%= @java_home %>
+
+# enable assertions
+JAVA_VM_ARGS="$JAVA_VM_ARGS -ea:com.coremedia... -ea:hox... <%= @jvm_args.join(' ') %>"
+
+# verbose output on program startup if set to true:
+VERBOSE=false

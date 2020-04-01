@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Chef Corp./Germany/German/Editorial/Assets/Videos/Hero Videos" name="Smiling Chef in the Kitchen Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Assets/Videos/Hero%20Videos/Smiling%20Chef%20in%20the%20Kitchen%20Video.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Videos/Hero%20Videos/Smiling%20Chef%20in%20the%20Kitchen%20Video"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+<StructProperty Name="teaserSettings">
+<Struct>
+<BooleanProperty Name="renderLinkToDetailPage">false</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Küchen und Geräte für jeden Koch</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Wir bieten Köchen die besten Werkzeuge, um perfekte Mahlzeiten zubereiten zu können.</p></div></detailText>
+<pictures>
+<link href="../../Pictures/Kitchen%20Dreams/Young%20Chef%20Cooking%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Kitchen%20Dreams/Young%20Chef%20Cooking%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>shutterstock_v4416473_1280</alt>
+<copyright>Hotelfoxtrot / Shutterstock 4416473</copyright>
+<dataUrl></dataUrl>
+<data md5="9f50b644202d55b2d155cae23e57fc07" size="1389611" href="../../../../../../../../__blob/9f50b644202d55b2d155cae23e57fc07.blob" mimetype="video/mp4"/>
+<asset>
+</asset>
+</CMVideo>

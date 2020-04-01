@@ -1,0 +1,68 @@
+//
+// Assets Management - Download Portal
+// --------------------------------------------------
+
+
+$am-download-collection: "am-download-collection";
+$am-download-portal: "am-download-portal";
+$am-asset-teaser: "am-asset-teaser";
+$am-overlay: "am-overlay";
+$am-search: "am-search";
+
+.#{$am-download-portal} {
+  margin: 50px 0;
+
+  .#{$am-search} {
+    @extend .cm-search__form-input;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    padding: 1px;
+
+    &__submit {
+      @extend .cm-search__form-button;
+      height: 100%;
+    }
+    &__input {
+      padding-right: 0;
+      margin-right: 0;
+    }
+
+  }
+
+  &__download-collection {
+    & a:hover {
+      text-decoration: none;
+    }
+  }
+
+  & .#{$am-asset-teaser} {
+    & .#{$am-overlay} {
+      &__submit-button {
+        text-transform: uppercase;
+        border: none;
+      }
+      &__checkbox {
+        & label {
+          border-color: $cm-text-color;
+        }
+      }
+    }
+  }
+}
+
+.#{ $am-download-collection} {
+  margin-bottom: 10px;
+
+  &__button {
+    @extend .cm-cta-button;
+    font-weight: normal;
+    text-decoration: none;
+    display: block;
+  }
+  &-overview {
+    &__notification {
+      padding: 0;
+    }
+  }
+}

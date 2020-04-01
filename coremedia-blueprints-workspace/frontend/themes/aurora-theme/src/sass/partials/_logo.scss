@@ -1,0 +1,11 @@
+#logo #contentRecommendationWidget_HeaderStoreLogo_Content .left_espot.centered > a > img {
+  background: transparent url("../../img/aurora_logo.svg") no-repeat;
+  width: 0;
+  height: 0;
+  padding: 60px 150px 0 0;
+  background-size: 100%;
+
+  @include breakpoint(sm-and-up) {
+    margin-left: 15px;
+  }
+}

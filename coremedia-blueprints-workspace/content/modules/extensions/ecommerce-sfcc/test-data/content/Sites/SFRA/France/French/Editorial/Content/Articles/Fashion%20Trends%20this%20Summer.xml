@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/SFRA/France/French/Editorial/Content/Articles" name="Fashion Trends this Summer" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Articles/Fashion%20Trends%20this%20Summer.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Articles/Fashion%20Trends%20this%20Summer"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/SFRA/France/French/Options/Settings/Teaser%20Styles/Light"/>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<IntProperty Name="positionY">0</IntProperty>
+<IntProperty Name="positionX">33</IntProperty>
+<IntProperty Name="width">44</IntProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="callToActionCustomText">Explore</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Tendances de la mode estivale</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Fashion%20Week.xml" path="/Settings/Taxonomies/Subject/Fashion%20Week"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Luxury.xml" path="/Settings/Taxonomies/Subject/Luxury"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Young.xml" path="/Settings/Taxonomies/Subject/Young"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Womens.xml" path="/Settings/Taxonomies/Subject/Womens"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Style.xml" path="/Settings/Taxonomies/Subject/Style"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Casual.xml" path="/Settings/Taxonomies/Subject/Casual"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Summer.xml" path="/Settings/Taxonomies/Subject/Summer"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Tendances de la mode</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center"> Tendances de la mode cet été </p> <p class="align--center"> Soyez élégant. Soyez branché. Être iconique. </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Je tiens à remercier toutes les femmes qui ont porté mes vêtements, les célèbres et les inconnues, qui m'ont été si fidèles et m'ont donné beaucoup de joie. Au lieu d'acheter six choses, une chose que vous aimez vraiment. Ne continuez pas à acheter juste pour le plaisir. Vous avez une vie plus intéressante si vous portez des vêtements impressionnants. Je pense qu'il y a quelque chose dans le luxe - ce n'est pas quelque chose dont les gens ont besoin, mais c'est ce qu'ils veulent. Cela tire vraiment au coeur. Vous ne pouvez pas être créatif avec les gens autour de vous. </p> <p> Je t'aime si tu m'aimes Si vous portez des vêtements qui ne vous conviennent pas, vous êtes une victime de la mode. Vous devez porter des vêtements qui vous rendent mieux. Je n'ai pas du tout aimé les années 80; c'était un moment vulgaire de la mode. Confiance. Si vous en avez, vous pouvez tout faire bien paraître. Les gens ont dit que faire des vêtements à l'intérieur n'était pas approprié. Je n’étais pas d’accord, car les vêtements à l’intérieur sont aussi beaux qu’une cathédrale. </p> <p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Platinum%20V%20Neck%20Suit%20Dress.xml" cmexport:path="/Sites/SFRA/France/French/Editorial/Products/Platinum%20V%20Neck%20Suit%20Dress">Platinum V Neck Suit Dress</a></p> <p> Le confort est très important pour moi. Je pense que les gens vivent mieux dans les grandes maisons et dans les grands vêtements. La clé de mes collections est la sensualité. Le design est une série de choix créatifs - il s’agit d’un effort de collaboration, d’un processus évolutif. Vous choisissez vos tissus en fonction de ce que vous voulez dire, puis vous travaillez avec des usines pour obtenir ces tissus. Tout au long du processus, vous réalisez ce que vous voulez. Je ne me considérais pas du tout comme un créateur de mode à l'époque du punk. J'utilisais simplement la mode comme moyen d'exprimer ma résistance et d'être rebelle. Je venais du pays et, à mon arrivée à Londres, je me considérais très stupide. C'était mon ambition de comprendre le monde dans lequel je vis. Je pense que je deviendrais fou si je n'avais pas d'endroit où m'échapper. </p> <p> Les médias en ligne ont de plus en plus d'influence dans la mode. Je suis complice d'aider les femmes à obtenir ce qu'elles veulent. Je tiens à remercier toutes les femmes qui ont porté mes vêtements, les célèbres et les inconnues, qui m'ont été si fidèles et m'ont donné beaucoup de joie. Parfois, les choses les plus simples sont les plus profondes. Mes clientes sont des travailleuses réussies. </p> <p> Vous pouvez tellement vous cacher derrière la théâtralité, et je n'ai plus besoin de le faire. J'ai toujours aimé l'esthétique. Pas particulièrement la mode, mais une idée de la beauté. Faire des collections, faire de la mode, c'est comme un dialogue non-stop. Je pense que Dieu est le designer le plus fantastique. Mes relations avec les producteurs ou les photographes - ce sont des relations qui ont pris des années. </p> <p> Parfois, les choses les plus simples sont les plus profondes. Je crois au confort. Si vous ne vous sentez pas à l'aise dans vos vêtements, il est difficile de penser à autre chose. J'aime les années 2000 parce que tout le monde a commencé à aimer la haute couture. La mode est faite pour devenir démodé. Je pense qu'il y a quelque chose dans le luxe - ce n'est pas quelque chose dont les gens ont besoin, mais c'est ce qu'ils veulent. Cela tire vraiment au coeur. </p> </div></detailText>
+<pictures>
+<link href="../../Pictures/Elegant%20Fashion.xml" path="/Sites/SFRA/France/French/Editorial/Pictures/Elegant%20Fashion"/>
+</pictures>
+<related>
+<link href="Fashion%20should%20be%20Fun.xml" path="/Sites/SFRA/France/French/Editorial/Content/Articles/Fashion%20should%20be%20Fun"/>
+<link href="The%20Difference%20between%20Style%20and%20Fashion.xml" path="/Sites/SFRA/France/French/Editorial/Content/Articles/The%20Difference%20between%20Style%20and%20Fashion"/>
+<link href="Fashions%20fade%2C%20style%20is%20eternal.xml" path="/Sites/SFRA/France/French/Editorial/Content/Articles/Fashions%20fade%2C%20style%20is%20eternal"/>
+</related>
+<authors>
+<link href="../../Authors/Charlotte%20May%20Person.xml" path="/Sites/SFRA/France/French/Editorial/Authors/Charlotte%20May%20Person"/>
+</authors>
+</CMArticle>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<livecontext:CreateCatalogObjectDocumentAction
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns:livecontext="exml:com.coremedia.livecontext.studio.config"
+        actionName="createProductTeaser"
+        contentType="CMProductTeaser"
+        catalogObjectType="{ProductImpl}">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.quickcreate.QuickCreateDialog;
+    import com.coremedia.cap.common.SESSION;
+    import com.coremedia.cap.content.Content;
+    import com.coremedia.cap.content.ContentRepository;
+    import com.coremedia.cap.content.ContentType;
+    import com.coremedia.cms.editor.sdk.editorContext;
+    import com.coremedia.cms.editor.sdk.quickcreate.processing.ProcessingData;
+    import com.coremedia.cms.editor.sdk.sites.Site;
+    import com.coremedia.cms.editor.sdk.util.ContentCreationUtil;
+    import com.coremedia.ecommerce.studio.model.CatalogObject;
+    import com.coremedia.ecommerce.studio.model.Product;
+    import com.coremedia.ecommerce.studio.model.ProductImpl;
+
+    import ext.ComponentManager;
+    import ext.Ext;
+    import ext.window.Window;
+
+    import joo.localeSupport;
+
+    private var config:CreateProductTeaserAction;
+
+    public native function CreateProductTeaserAction(config:CreateProductTeaserAction = null);
+
+    override protected function isCorrectType(catalogObject:CatalogObject):Boolean {
+      //check the product type so that a product variant is also of a correct type.
+      return catalogObject is Product;
+    }
+
+    override protected function isDisabledFor(catalogObjects:Array):Boolean {
+      var myItems:Array = catalogObjects.filter(isCorrectType);
+      return myItems.length < 1;
+    }
+
+    override protected function myHandler():void {
+      var repo:ContentRepository = SESSION.getConnection().getContentRepository();
+      var myContentType:ContentType = repo.getContentType(getContentType());
+      var myItems:Array = getCatalogObjects().filter(isCorrectType);
+
+      showCreateProductTeaserDialog(myItems, myContentType);
+    }
+
+    private function getLocale(catalogObject:CatalogObject):String {
+      var site:Site = editorContext.getSitesService().getSite(catalogObject.getSiteId());
+      var locale:String;
+      if (site) {
+        locale = site.getLocale().getLanguageTag();
+      } else {
+        locale = localeSupport.getLocale();
+      }
+      return locale;
+    }
+
+    private function showCreateProductTeaserDialog(products:Array, myContentType:ContentType):void {
+      var catalogObject:CatalogObject = products.shift();
+      var locale:String = getLocale(catalogObject);
+      //create the dialog
+      var dialogConfig:QuickCreateDialog = QuickCreateDialog({});
+      dialogConfig.contentType = myContentType.getName();
+      dialogConfig.model = new ProcessingData();
+      dialogConfig.model.set(EXTERNAL_ID_PROPERTY, catalogObject.getId());
+      dialogConfig.model.set(ProcessingData.NAME_PROPERTY, catalogObject.getName());
+      dialogConfig.inheritEditors = inheritEditors;
+      dialogConfig.onSuccess = function (createdTeaser:Content, data:ProcessingData):void {
+        editorContext.getContentTabManager().openDocument(createdTeaser);
+        var productTeaserSelectedPath:Content = createdTeaser.getParent();
+        createRemainingProductTeasers(products, myContentType, productTeaserSelectedPath, locale);
+        trace("[INFO] created ", products.length + 1, " teasers in folder ", productTeaserSelectedPath.getPath());
+      };
+      var dialog:Window = ComponentManager.create(dialogConfig, 'window') as Window;
+      dialog.show();
+    }
+
+    private function createRemainingProductTeasers(products:Array, myContentType:ContentType, folder:Content, locale:String):void {
+      products.forEach(function (catalogObject:CatalogObject):void {
+        var externalId:String = catalogObject.getId();
+        var preferredName:String = catalogObject.getName();
+        var properties:Object = {
+          externalId: externalId,
+          locale: locale
+        };
+        ContentCreationUtil.createContent(folder, false, true, preferredName, myContentType, Ext.emptyFn, Ext.emptyFn, properties);
+      });
+    }
+    ]]></fx:Script>
+
+</livecontext:CreateCatalogObjectDocumentAction>

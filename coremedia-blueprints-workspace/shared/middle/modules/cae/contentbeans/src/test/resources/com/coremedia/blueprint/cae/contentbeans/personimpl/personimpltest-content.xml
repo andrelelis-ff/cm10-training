@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+  <content>
+    <folder id="1" name="">
+      <folder id="11" name="Sites">
+        <folder id="111" name="Media">
+          <document id="2" type="CMPerson" name="Person">
+            <version number="1">
+              <stringProperty name="firstName" value="firstName_Person"/>
+              <stringProperty name="lastName" value="lastName_Person"/>
+              <stringProperty name="displayName" value="displayName_Person"/>
+              <stringProperty name="eMail" value="eMail_Person"/>
+              <stringProperty name="organization" value="organization_Person"/>
+              <stringProperty name="jobTitle" value="jobTitle_Person"/>
+              <markupProperty name="misc" url="2settings.xml" grammar="coremedia-struct-2008"/>
+            </version>
+          </document>
+          <document id="4" type="CMPerson" name="PersonEmptyDisplayName">
+            <version number="1">
+              <stringProperty name="firstName" value="firstName_Person"/>
+              <stringProperty name="lastName" value="lastName_Person"/>
+              <stringProperty name="htmlTitle" value="htmlTitle_Person"/>
+            </version>
+          </document>
+          <document id="6" type="CMPerson" name="PersonEmptyDisplayName">
+            <version number="1">
+              <stringProperty name="firstName" value="firstName_Person"/>
+              <stringProperty name="lastName" value="lastName_Person"/>
+            </version>
+          </document>
+        </folder>
+      </folder>
+    </folder>
+  </content>
+</contentRepository>

@@ -1,0 +1,35 @@
+{
+  "name": "@coremedia/frontend",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "test": "lerna run test",
+    "build": "lerna run build",
+    "build-frontend-zip": "node ./lib/tools/cm-cli/bin/cm-cli.js build-frontend-zip",
+    "deploy": "lerna run deploy",
+    "create-theme": "node ./lib/tools/cm-cli/bin/cm-cli.js create-theme",
+    "create-brick": "node ./lib/tools/cm-cli/bin/cm-cli.js create-brick",
+    "eject": "node ./lib/tools/cm-cli/bin/cm-cli.js eject",
+    "prettier": "lerna run prettier",
+    "lerna": "lerna"
+  },
+  "workspaces": [
+    "lib/bricks/*",
+    "lib/helpers/*",
+    "lib/js/*",
+    "lib/sass/*",
+    "lib/tools/*",
+    "themes/*",
+    "bricks/*"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "lerna": "^3.0.0"
+  },
+  "coremedia": {
+    "type": "workspace",
+    "version": "1-SNAPSHOT"
+  }
+}

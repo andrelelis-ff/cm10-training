@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/United Kingdom/English/Editorial/Pictures" name="White Blouse" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="uploadDone">true</BooleanProperty>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="originReferences">
+</StringListProperty>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/WCL001_0102</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.4653361344537815</StringProperty>
+<StringProperty Name="y">0.4968454258675079</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=504;y=0;width=860;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=269;y=0;width=1333;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=242;width=2000;height=851</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=46;y=0;width=1777;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=435;y=0;width=1000;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=103;width=2000;height=1125</StringProperty>
+<StringProperty Name="quickview_ratio5x6">b;a=0;c=1/crop;x=380;y=0;width=1111;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio5x6">b;a=0;c=1/crop;x=380;y=0;width=1111;height=1333</StringProperty>
+<StringProperty Name="thumbnail">b;a=0;c=1/crop;x=435;y=0;width=1000;height=1333</StringProperty>
+<StringProperty Name="landscape_ratio7x2">b;a=0;c=1/crop;x=0;y=381;width=2000;height=571</StringProperty>
+<StringProperty Name="landscape_ratio5x3">b;a=0;c=1/crop;x=0;y=67;width=2000;height=1200</StringProperty>
+<StringProperty Name="portrait_ratio3x5">b;a=0;c=1/crop;x=536;y=0;width=800;height=1333</StringProperty>
+<StringProperty Name="portrait_ratio1x2">b;a=0;c=1/crop;x=592;y=0;width=667;height=1333</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x2">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x2">position;x1=0.296218487394958;y1=0;x2=0.629468487394958;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>White Blouse</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>White Blouse</alt>
+<copyright>shutterstock_337374824</copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1333</height>
+<data md5="445e0e9fa43f5c3d8b75dcec3bb126de" size="392034" href="../../../../../../__blob/445e0e9fa43f5c3d8b75dcec3bb126de.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

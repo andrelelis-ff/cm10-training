@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+  <content>
+    <folder id="1" name="" placeApproved="true" published="true" modificationDate="2009-06-01T20:59:42.000+01:00">
+      <folder id="3" name="Sites">
+        <folder id="5" name="Content Test">
+          <folder id="7" name="English">
+            <!-- a site with some channels -->
+            <document id="2" name="Site-Indicator" type="CMSite">
+              <version number="1">
+                <linkProperty name="root">
+                  <link id="4"/>
+                </linkProperty>
+                <stringProperty name="id" value="theSiteId"/>
+                <stringProperty name="name" value="theSite"/>
+                <stringProperty name="locale" value="en"/>
+                <linkProperty name="master"/>
+              </version>
+            </document>
+            <document id="4" type="CMChannel" name="root">
+              <version number="1">
+                <stringProperty name="segment" value="root"/>
+                <markupProperty name="localSettings" grammar="coremedia-struct-2008" url="settings.xml"/>
+              </version>
+            </document>
+          </folder>
+        </folder>
+      </folder>
+    </folder>
+  </content>
+  <rules>
+    <rule resourceId="1" group="0" doctype="Folder_">
+      <right value="ALL"/>
+    </rule>
+    <rule resourceId="1" group="0" doctype="Document_">
+      <right value="ALL"/>
+    </rule>
+  </rules>
+</contentRepository>

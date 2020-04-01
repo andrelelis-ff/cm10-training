@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Chef Corp./Germany/German/Editorial/Assets/Pictures/Management Board/Portraits" name="Gretchen Cantillo (VP Marketing) Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../United%20States/English/Editorial/Assets/Pictures/Management%20Board/Portraits/Gretchen%20Cantillo%207de3eb9f.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Management%20Board/Portraits/Gretchen%20Cantillo%20%28VP%20Marketing%29%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0.013539651837524178</StringProperty>
+<StringProperty Name="y1">0.007736943907156673</StringProperty>
+<StringProperty Name="x2">0.9825918762088974</StringProperty>
+<StringProperty Name="y2">0.9864603481624759</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=11;y=11;width=775;height=775</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=14;y=28;width=775;height=582</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=8;y=152;width=775;height=436</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.013539651837524178;y1=0.013539651837524178;x2=0.9825918762088974;y2=0.9825918762088974</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.017408123791102514;y1=0.03481624758220503;x2=0.9864603481624759;y2=0.7620889748549323</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.009671179883945842;y1=0.1895551257253385;x2=0.9787234042553191;y2=0.7350096711798839</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Gretchen Cantillo (VP Marketing)</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Portrait of Gretchen Cantillo (VP Marketing)</alt>
+<copyright>Andrey_Popov / Shutterstock 211325935</copyright>
+<dataUrl></dataUrl>
+<width>800</width>
+<height>800</height>
+<data md5="b37d8733079e0884cd45cbde87dbc3f4" size="311131" href="../../../../../../../../../__blob/b37d8733079e0884cd45cbde87dbc3f4.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

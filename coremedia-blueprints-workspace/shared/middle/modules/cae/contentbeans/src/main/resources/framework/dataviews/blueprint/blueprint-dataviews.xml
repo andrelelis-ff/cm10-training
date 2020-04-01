@@ -1,0 +1,232 @@
+<?xml version="1.0"?>
+<dataviews xmlns="http://www.coremedia.com/2004/objectserver/dataviewfactory">
+
+  <!--
+    When automatically generating a DataView, the DataViewFactory will traverse the Type hierarchy of the
+    Java class (typically a ContentBean or a business object implementing AssumesIdentity) up to "java.lang.Object"
+    trying to match the Type against the list configured here.
+
+    The first match will be used.
+
+    Only configure classes inheriting from / implementing com.coremedia.objectserver.dataviews.AssumesIdentity here.
+
+    "java.lang.Object" also matches CacheKeys and effectively overwrites configuration for a "CacheCapacityConfigurer"
+    (see bpbase-cache-services.xml).
+  -->
+  <cachesize class="com.coremedia.objectserver.dataviews.AssumesIdentity" size="5000"/>
+
+  <autocomplete>
+    <class name="java.util.Map"/>
+    <class name="java.util.List"/>
+    <class name="com.coremedia.blueprint.common.contentbeans.CMObject"/>
+    <class name="com.coremedia.blueprint.common.contentbeans.BelowRootNavigation"/>
+  </autocomplete>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMAudioImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMCSSImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="include" associationType="static"/>
+    <property name="code"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMImageImpl">
+    <property name="aspectByName" associationType="composition"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMInteractiveImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMJavaScriptImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="include" associationType="static"/>
+    <property name="code"/>
+    <property name="dataUrl"/>
+    <property name="ieExpression"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMCollectionImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="picturesUnfiltered" associationType="static"/>
+    <property name="segment"/>
+    <property name="teaserText"/>
+    <property name="teaserTitle"/>
+    <property name="viewtype" associationType="aggregation"/>
+    <property name="itemsUnfiltered" associationType="static"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMPictureImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="alt"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+    <property name="transformMap" />
+    <property name="transformations" />
+    <property name="disableCropping" />
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMImageMapImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="imageMapAreasUnfiltered" associationType="static"/>
+    <property name="imageMapAreas" associationType="dynamic"/>
+    <!--dynamic only, because #getLocalSettings uses the validation service.-->
+    <property name="localSettings" associationType="dynamic"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMSiteImpl">
+    <property name="aspectByName" associationType="composition"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMSymbolImpl">
+    <property name="aspectByName" associationType="composition"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMTeaserImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+    <!--dynamic only, because #getLocalSettings uses the validation service.-->
+    <property name="localSettings" associationType="dynamic"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMVideoImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMViewtypeImpl">
+    <property name="aspectByName" associationType="composition"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMFolderPropertiesImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="contexts" associationType="static"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMHasContextsImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMLocTaxonomyImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="parent" associationType="static"/>
+    <property name="children" associationType="static"/>
+    <property name="postcode"/>
+    <property name="latitudeLongitude"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMSettingsImpl">
+    <property name="aspectByName" associationType="composition"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMTaxonomyImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="taxonomyPathList" associationType="static"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMArticleImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="picturesUnfiltered" associationType="static"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMPersonImpl">
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMSpinnerImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMChannelImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="childrenUnfiltered" associationType="static"/>
+    <property name="localSettings"/>
+    <property name="css" associationType="static"/>
+    <property name="footerUnfiltered" associationType="static"/>
+    <property name="headerUnfiltered" associationType="static"/>
+    <property name="javaScript" associationType="static"/>
+    <property name="rootNavigation" associationType="static"/>
+    <property name="parentNavigation" associationType="static"/>
+    <property name="root"/>
+    <property name="viewtype" associationType="aggregation"/>
+    <property name="navigationPathList" associationType="static"/>
+    <property name="locationTaxonomy" associationType="static"/>
+    <property name="subjectTaxonomy" associationType="static"/>
+    <!--property name="vanityUrlMapper" associationType="static"/--> <!-- Cannot DV, cyclic reference -->
+    <property name="placement"/>
+    <!--property name="itemsFlattened" associationType="static"/--> <!-- Performs better w/o DV -->
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMDownloadImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMExternalLinkImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMHTMLImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMPlaceholderImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMActionImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMSitemapImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+
+  <dataview appliesTo="com.coremedia.blueprint.cae.contentbeans.CMQueryListImpl">
+    <property name="aspectByName" associationType="composition"/>
+    <property name="localSettings"/>
+    <property name="picturesUnfiltered" associationType="static"/>
+    <property name="contexts" associationType="static"/>
+    <property name="viewtype" associationType="aggregation"/>
+  </dataview>
+</dataviews>

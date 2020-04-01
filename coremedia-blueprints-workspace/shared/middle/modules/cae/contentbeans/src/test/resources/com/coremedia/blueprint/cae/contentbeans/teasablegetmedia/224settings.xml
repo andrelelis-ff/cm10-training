@@ -1,0 +1,16 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <IntProperty Name="colCount">1</IntProperty>
+  <IntProperty Name="rowCount">1</IntProperty>
+  <StringProperty Name="cssClass">Test-Setting</StringProperty>
+  <StructListProperty Name="items">
+    <Struct>  <!-- main -->
+      <LinkProperty Name="section" xlink:href="coremedia:///cap/content/220" LinkType="coremedia:///cap/contenttype/CMSymbol"/>
+      <IntProperty Name="row">1</IntProperty>
+      <IntProperty Name="col">1</IntProperty>
+      <IntProperty Name="rowspan">1</IntProperty>
+      <IntProperty Name="colspan">1</IntProperty>
+      <IntProperty Name="height">33</IntProperty>
+      <IntProperty Name="width">25</IntProperty>
+    </Struct>
+  </StructListProperty>
+</Struct>

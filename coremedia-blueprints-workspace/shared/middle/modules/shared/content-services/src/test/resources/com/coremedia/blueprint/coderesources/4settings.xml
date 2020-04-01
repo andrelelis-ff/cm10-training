@@ -1,0 +1,12 @@
+<Struct  xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <StructProperty Name="deviceResourceExcludes">
+    <Struct>
+      <LinkListProperty Name="normalExcludes" LinkType="coremedia:///cap/contenttype/CMAbstractCode">
+        <Link xlink:href="coremedia:///cap/content/38"/>
+      </LinkListProperty>
+
+      <LinkListProperty Name="tabletExcludes" LinkType="coremedia:///cap/contenttype/CMAbstractCode">
+      </LinkListProperty>
+    </Struct>
+  </StructProperty>
+</Struct>

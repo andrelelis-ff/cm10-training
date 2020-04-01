@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Settings/Options/Settings" name="AnalyticsSettings" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="googleAnalytics">
+<Struct>
+<StringProperty Name="homeUrl">http://www.google.com/intl/de/analytics/</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="webtrends">
+<Struct>
+<StringProperty Name="homeUrl">https://analytics.webtrends.com/logon</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

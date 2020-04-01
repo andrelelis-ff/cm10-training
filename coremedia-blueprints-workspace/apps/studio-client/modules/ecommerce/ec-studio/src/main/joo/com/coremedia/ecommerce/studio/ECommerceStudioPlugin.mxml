@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- Extend the standard Studio and Blueprint components for Live Context -->
+<local:ECommerceStudioPluginBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.ecommerce.studio.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:ec="exml:com.coremedia.ecommerce.studio.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.cms.editor.ContentTypes')]
+    [ResourceBundle('com.coremedia.cms.editor.sdk.validation.Validators')]
+    [ResourceBundle('com.coremedia.ecommerce.studio.ECommerceStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.collectionview.CollectionViewModel;
+    import com.coremedia.cms.editor.sdk.desktop.HeaderToolbarUserMenu;
+    import com.coremedia.ecommerce.studio.model.Catalog;
+    import com.coremedia.ecommerce.studio.model.CatalogImpl;
+    import com.coremedia.ecommerce.studio.model.CatalogObject;
+    import com.coremedia.ecommerce.studio.model.Category;
+    import com.coremedia.ecommerce.studio.model.CategoryImpl;
+    import com.coremedia.ecommerce.studio.model.ContractImpl;
+    import com.coremedia.ecommerce.studio.model.ContractsImpl;
+    import com.coremedia.ecommerce.studio.model.FacetsImpl;
+    import com.coremedia.ecommerce.studio.model.MarketingImpl;
+    import com.coremedia.ecommerce.studio.model.MarketingSpotImpl;
+    import com.coremedia.ecommerce.studio.model.ProductImpl;
+    import com.coremedia.ecommerce.studio.model.ProductVariantImpl;
+    import com.coremedia.ecommerce.studio.model.SegmentImpl;
+    import com.coremedia.ecommerce.studio.model.SegmentsImpl;
+    import com.coremedia.ecommerce.studio.model.Store;
+    import com.coremedia.ecommerce.studio.model.StoreImpl;
+    import com.coremedia.ecommerce.studio.model.WorkspaceImpl;
+    import com.coremedia.ecommerce.studio.model.WorkspacesImpl;
+    import com.coremedia.ui.data.Bean;
+
+    import ext.StringUtil;
+
+    import mx.resources.ResourceManager;
+
+    public static const xtype:String = "com.coremedia.ecommerce.studio.config.eCommerceStudioPlugin";
+
+    /**
+     * The itemId of the open in tab button.
+     */
+    public static const OPEN_IN_TAB_BUTTON_ITEM_ID:String = "openInTab";
+
+    /**
+     * The itemId of the create category button.
+     */
+    public static const CREATE_CATEGORY_BUTTON_ITEM_ID:String = "createCategory";
+
+    /**
+     * The itemId of the create product button.
+     */
+    public static const CREATE_PRODUCT_BUTTON_ITEM_ID:String = "createProduct";
+
+    /**
+     * The itemId of the remove button.
+     */
+    public static const REMOVE_LINK_BUTTON_ITEM_ID:String = "removeLinkButton";
+
+    /**
+     * The itemId of the remove link menu item.
+     */
+    public static const REMOVE_LINK_MENU_ITEM_ID:String = "removeLink";
+
+    /**
+     * The itemId of the open menu item.
+     */
+    public static const OPEN_MENU_ITEM_ID:String = "open";
+
+    /**
+     * The itemId of the open in tab menu item.
+     */
+    public static const OPEN_IN_TAB_MENU_ITEM_ID:String = "openInTab";
+
+    /**
+     * The itemId of the copy menu item.
+     */
+    public static const COPY_TO_CLIPBOARD_ITEM_ID:String = "copyToClipboard";
+
+    private var config:ECommerceStudioPlugin;
+
+    public native function ECommerceStudioPlugin(config:ECommerceStudioPlugin = null);
+
+    private static function handleStoreOrCategory(mainStateBean:Bean):String {
+      var searchType:String = mainStateBean.get(CollectionViewModel.CONTENT_TYPE_PROPERTY);
+      if (searchType !== CatalogModel.TYPE_MARKETING_SPOT) {
+        var searchFolder:Object = mainStateBean.get(CollectionViewModel.FOLDER_PROPERTY);
+        var store:Store;
+        var catalog:Catalog;
+        if (searchFolder is Store) {
+          store = searchFolder as Store;
+          catalog = store.getDefaultCatalog();
+        } else if (searchFolder is Category) {
+          var category:Category = searchFolder as Category;
+          store = category.getStore();
+          catalog = category.getCatalog();
+        }
+
+        if (store && store.isMultiCatalog()) {
+          return StringUtil.format(resourceManager.getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'CatalogView_multiCatalog_emptySearch_text'), catalog.getName());
+        }
+      }
+      return null;
+    }
+    ]]></fx:Script>
+
+  <local:rules>
+
+    <editor:CollectionView>
+      <editor:plugins>
+        <ec:ECommerceLibraryPlugin/>
+      </editor:plugins>
+    </editor:CollectionView>
+    <ec:CatalogSearchList>
+      <ec:plugins>
+        <editor:HandleEmptySearchResultPlugin additionalHandler="{handleStoreOrCategory}"/>
+      </ec:plugins>
+    </ec:CatalogSearchList>
+    <ec:CatalogSearchThumbnails>
+      <ec:plugins>
+        <editor:HandleEmptySearchResultPlugin additionalHandler="{handleStoreOrCategory}"/>
+      </ec:plugins>
+    </ec:CatalogSearchThumbnails>
+
+    <!--Show the commerce store for the preferred site-->
+    <editor:HeaderToolbarUserMenu>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <DisplayField
+                    fieldLabel="{ResourceManager.getInstance().getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'HeaderToolbar_commerceStore_label')}"
+                    labelAlign="top"
+                    labelSeparator="">
+              <mixins>
+                <ui:BEMMixin bemElement="{HeaderToolbarUserMenu.ELEMENT_FIELD}"/>
+              </mixins>
+              <plugins>
+                <ui:BindPropertyPlugin bindTo="{getShopExpression()}"/>
+                <ui:BindVisibilityPlugin bindTo="{getShopExpression()}"/>
+              </plugins>
+            </DisplayField>
+          </ui:items>
+          <ui:after>
+            <Component itemId="{HeaderToolbarUserMenu.SITE_SELECTOR_ITEM_ID}"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:HeaderToolbarUserMenu>
+
+    <editor:PreferenceWindow>
+      <editor:plugins>
+        <ec:CatalogPreferenceWindowPlugin/>
+      </editor:plugins>
+    </editor:PreferenceWindow>
+
+  </local:rules>
+
+  <local:configuration>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.ContentTypes')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.ecommerce.studio.ECommerceStudioPlugin')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.sdk.validation.Validators')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.ecommerce.studio.ECommerceStudioPlugin')}"/>
+
+    <editor:RegisterRestResource beanClass="{CategoryImpl}"/>
+    <editor:RegisterRestResource beanClass="{StoreImpl}"/>
+    <editor:RegisterRestResource beanClass="{CatalogImpl}"/>
+    <editor:RegisterRestResource beanClass="{ProductImpl}"/>
+    <editor:RegisterRestResource beanClass="{ProductVariantImpl}"/>
+    <editor:RegisterRestResource beanClass="{SegmentImpl}"/>
+    <editor:RegisterRestResource beanClass="{SegmentsImpl}"/>
+    <editor:RegisterRestResource beanClass="{ContractImpl}"/>
+    <editor:RegisterRestResource beanClass="{ContractsImpl}"/>
+    <editor:RegisterRestResource beanClass="{WorkspaceImpl}"/>
+    <editor:RegisterRestResource beanClass="{WorkspacesImpl}"/>
+    <editor:RegisterRestResource beanClass="{MarketingSpotImpl}"/>
+    <editor:RegisterRestResource beanClass="{MarketingImpl}"/>
+    <editor:RegisterRestResource beanClass="{FacetsImpl}"/>
+  </local:configuration>
+
+
+</local:ECommerceStudioPluginBase>

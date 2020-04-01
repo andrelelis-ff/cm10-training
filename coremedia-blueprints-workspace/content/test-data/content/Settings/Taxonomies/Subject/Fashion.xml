@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTaxonomy folder="/Settings/Taxonomies/Subject" name="Fashion" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Fashion</value>
+<children>
+<link href="Apparel%281%29.xml" path="/Settings/Taxonomies/Subject/Apparel%281%29"/>
+<link href="Men%281%29.xml" path="/Settings/Taxonomies/Subject/Men%281%29"/>
+<link href="Women%282%29.xml" path="/Settings/Taxonomies/Subject/Women%282%29"/>
+<link href="Kids.xml" path="/Settings/Taxonomies/Subject/Kids"/>
+<link href="Style.xml" path="/Settings/Taxonomies/Subject/Style"/>
+<link href="Footwear.xml" path="/Settings/Taxonomies/Subject/Footwear"/>
+</children>
+<externalReference></externalReference>
+</CMTaxonomy>

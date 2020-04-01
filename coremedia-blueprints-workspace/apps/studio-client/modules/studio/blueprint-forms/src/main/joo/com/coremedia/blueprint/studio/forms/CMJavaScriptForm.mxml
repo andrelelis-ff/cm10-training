@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.cmJavaScriptForm";
+
+    private var config:CMJavaScriptForm;
+
+    public native function CMJavaScriptForm(config:CMJavaScriptForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMJavaScript_text')}"
+                itemId="cmJavaScriptDataForm">
+          <editor:items>
+            <editor:StringPropertyField propertyName="dataUrl"/>
+            <editor:RichTextPropertyField propertyName="code"/>
+            <editor:BooleanPropertyField bindTo="{config.bindTo}"
+                                         propertyName="disableCompress"/>
+            <editor:BooleanPropertyField bindTo="{config.bindTo}"
+                                         propertyName="inHead"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMJavaScript_include_text')}"
+                itemId="cmJavaScriptIncludeForm">
+          <editor:items>
+            <editor:LinkListPropertyField propertyName="include"
+                                          hideLabel="true"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <bpforms:CollapsibleStringPropertyForm propertyName="ieExpression"
+                                               collapsed="true"
+                                               title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMAbstractCode_ieExpression_text')}"/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:MetaDataInformationForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

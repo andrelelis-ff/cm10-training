@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:ProductInformationContainerBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.livecontext.elastic.social.studio.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        itemId="com-coremedia-ecommerce-studio-model-ProductImpl"
+        ui="{ContainerSkin.CARD_200}">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.util.RichTextPlainTextTransformer;
+    import com.coremedia.elastic.social.studio.model.ContributionAdministrationPropertyNames;
+    import com.coremedia.elastic.social.studio.model.ContributionPropertyNames;
+    import com.coremedia.elastic.social.studio.model.impl.AbstractContributionAdministration;
+    import com.coremedia.elastic.social.studio.model.utils.ValueExpressionUtil;
+    import com.coremedia.ui.skins.ContainerSkin;
+
+    public static const xtype:String = "com.coremedia.livecontext.elastic.social.studio.config.productInformationContainer";
+
+    private var config:ProductInformationContainer;
+
+    public native function ProductInformationContainer(config:ProductInformationContainer = null);
+
+    [Bindable]
+    public var contributionAdministration:AbstractContributionAdministration;
+    ]]></fx:Script>
+
+  <local:layout>
+    <layout_VBox/>
+  </local:layout>
+  <local:items>
+    <Container>
+      <layout>
+        <layout_HBox align="stretch"/>
+      </layout>
+      <items>
+        <ui:IconDisplayField
+                itemId="{TARGET_BUTTON_ICON_ITEM_ID}"/>
+        <DisplayField itemId="{TARGET_LABEL_ID}">
+          <plugins>
+            <ui:BindPropertyPlugin componentProperty="value">
+              <ui:bindTo>
+                <ui:ValueExpression context="{config.contributionAdministration}"
+                                    expression="{ValueExpressionUtil.createPath([
+                                                ContributionAdministrationPropertyNames.DISPLAYED,
+                                                ContributionPropertyNames.TARGET,
+                                                'name'])}"/>
+              </ui:bindTo>
+            </ui:BindPropertyPlugin>
+          </plugins>
+        </DisplayField>
+      </items>
+    </Container>
+    <DisplayField margin="0 0 0 20px">
+      <plugins>
+        <ui:BindPropertyPlugin componentProperty="value"
+                               transformer="{RichTextPlainTextTransformer.convertToPlainText}"
+                               ifUndefined="">
+          <ui:bindTo>
+            <ui:ValueExpression context="{config.contributionAdministration}"
+                                expression="{ValueExpressionUtil.createPath([
+                                                ContributionAdministrationPropertyNames.DISPLAYED,
+                                                ContributionPropertyNames.TARGET,
+                                                'shortDescription'])}"/>
+          </ui:bindTo>
+        </ui:BindPropertyPlugin>
+      </plugins>
+    </DisplayField>
+  </local:items>
+
+</local:ProductInformationContainerBase>

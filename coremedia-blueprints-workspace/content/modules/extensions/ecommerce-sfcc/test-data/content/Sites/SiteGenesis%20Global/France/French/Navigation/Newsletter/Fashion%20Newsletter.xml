@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMChannel folder="/Sites/SiteGenesis Global/France/French/Navigation/Newsletter" name="Fashion Newsletter" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Navigation/Newsletter/Fashion%20Newsletter.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Navigation/Newsletter/Fashion%20Newsletter"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="pricesInImage">false</BooleanProperty>
+<StringProperty Name="fromName">Aurora</StringProperty>
+<StringProperty Name="fromAddress">testmail@silverpop.com</StringProperty>
+<StringProperty Name="replyTo">testmail@silverpop.com</StringProperty>
+<StringProperty Name="name">Fashion Newsletter</StringProperty>
+<StringProperty Name="mailingId">938180</StringProperty>
+<StringProperty Name="lastModified">07/21/17 08:56 AM</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>fashion-newsletter</segment>
+<title>Newsletter de mode</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Newsletter de mode</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Aller à un endroit où vous ne serez pas stressé, parce qu'une lune de miel elle-même peut être une chose stressante. Je tiens à remercier toutes les femmes qui ont porté mes vêtements, les fameux et les inconnus, qui m'ont été si fidèles et qui m'ont tant donné de joie. </p> </div></teaserText>
+<pictures>
+</pictures>
+<notSearchable>1</notSearchable>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+</children>
+<hidden>1</hidden>
+<hiddenInSitemap>1</hiddenInSitemap>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Layouts/PagegridNavigation.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Layouts/PagegridNavigation"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Articles/Fashion%20should%20be%20Fun.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/Articles/Fashion%20should%20be%20Fun"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Articles/Fashions%20fade%2C%20style%20is%20eternal.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/Articles/Fashions%20fade%2C%20style%20is%20eternal"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Content/Articles/The%20Difference%20between%20Style%20and%20Fashion.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/Articles/The%20Difference%20between%20Style%20and%20Fashion"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Editorial/Products/Sleeveless%20Sheath%20Dress.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Editorial/Products/Sleeveless%20Sheath%20Dress"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../../Options/Viewtypes/CMChannel/left-right.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Viewtypes/CMChannel/left-right"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../../Options/Settings/Pagegrid/Placements/main.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/Pagegrid/Placements/main"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+</CMChannel>

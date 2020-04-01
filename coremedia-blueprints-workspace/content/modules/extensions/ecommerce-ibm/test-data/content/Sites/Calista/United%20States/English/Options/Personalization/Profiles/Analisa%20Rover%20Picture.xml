@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/United States/English/Options/Personalization/Profiles" name="Analisa Rover Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=397;y=0;width=895;height=1384</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=328;y=0;width=1037;height=1384</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=154;y=0;width=1385;height=1384</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=61;width=1689;height=1267</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=219;width=1689;height=951</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=356;width=1689;height=676</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=482;width=1689;height=421</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.23501199040767387;y1=0;x2=0.7649880095923262;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.19424460431654678;y1=0;x2=0.8081534772182254;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.09112709832134293;y1=0;x2=0.9112709832134293;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.043859649122807015;x2=1;y2=0.9590643274853801</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.15789473684210525;x2=1;y2=0.8450292397660819</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2573099415204678;x2=1;y2=0.7456140350877193</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.347953216374269;x2=1;y2=0.652046783625731</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Lidia Rover Profile</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Lidia Rover Profile</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="0fa38bb670b5d3a7cea2714ff6fe675e" size="127990" href="../../../../../../../__blob/0fa38bb670b5d3a7cea2714ff6fe675e.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <context:annotation-config/>
+
+  <import resource="classpath:/com/coremedia/springframework/customizer/customizer-services.xml"/>
+  <import resource="test-commerce-services.xml"/>
+  <context:property-placeholder
+          ignore-unresolvable="true"
+          location="classpath:/com.coremedia.livecontext.ecommerce.ibm.service/test-commerce-services.properties"
+          system-properties-mode="OVERRIDE"/>
+
+
+  <bean id="catalogWrapperServiceBod" class="com.coremedia.livecontext.ecommerce.ibm.catalog.WcCatalogWrapperService">
+    <property name="restConnector" ref="restConnector"/>
+    <property name="useSearchRestHandlerProductIfAvailable" value="false" />
+    <property name="useSearchRestHandlerCategoryIfAvailable" value="false" />
+    <property name="catalogAliasTranslationService" ref="catalogAliasTranslationService"/>
+  </bean>
+
+  <bean id="catalogServiceBod" class="com.coremedia.livecontext.ecommerce.ibm.catalog.CatalogServiceImpl">
+    <property name="catalogWrapperService" ref="catalogWrapperServiceBod"/>
+    <property name="storeInfoService" ref="storeInfoService"/>
+    <property name="commerceBeanFactory" ref="commerceBeanFactory"/>
+    <property name="commerceCache" ref="commerceCache"/>
+    <property name="wcsAssetsUrl" value="${livecontext.ibm.wcs.assets.url}"/>
+    <property name="catalogAliasTranslationService" ref="catalogAliasTranslationService"/>
+  </bean>
+
+  <customize:replace id="wcCatalogWrapperServiceReplacement" bean="catalogWrapperService" custom-ref="catalogWrapperServiceBod"/>
+  <customize:replace id="catalogServiceReplacement" bean="catalogService" custom-ref="catalogServiceBod"/>
+
+</beans>

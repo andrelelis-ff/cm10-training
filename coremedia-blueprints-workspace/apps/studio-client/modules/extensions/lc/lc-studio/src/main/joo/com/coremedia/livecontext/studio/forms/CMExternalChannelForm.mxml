@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel xmlns:fx="http://ns.adobe.com/mxml/2009"
+                         xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                         xmlns="exml:ext.config"
+                         xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                         xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+                         xmlns:ec="exml:com.coremedia.ecommerce.studio.config"
+                         xmlns:livecontext="exml:com.coremedia.livecontext.studio.config"
+                         xmlns:ui="exml:com.coremedia.ui.config">
+
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.premular.VersionHistory;
+    import com.coremedia.ecommerce.studio.CatalogModel;
+    import com.coremedia.ecommerce.studio.helper.AugmentationUtil;
+    import com.coremedia.ecommerce.studio.model.CatalogObjectPropertyNames;
+    import com.coremedia.livecontext.studio.CatalogThumbnailResolver;
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.cmExternalChannelForm";
+
+    public static const CONTENT_TAB_ITEM_ID:String = "contentTab";
+    public static const CATALOG_STRUCTURE_TAB_ITEM_ID:String = "catalogStructureTab";
+    public static const PDP_PAGEGRID_TAB_ITEM_ID:String = "pdpPageGridTab";
+
+    public static const CATALOG_LINK_ITEM_ID:String = "catalogLink";
+
+    public static const EXTERNAL_ID_PROPERTY:String = "externalId";
+
+    private var config:CMExternalChannelForm;
+    private var catalogObjectExpression:ValueExpression;
+
+    // called by generated constructor code
+    private function __initialize__(config:CMExternalChannelForm):void {
+      catalogObjectExpression = AugmentationUtil.getCatalogObjectExpression(config.bindTo);
+    }
+
+    public native function CMExternalChannelForm(config:CMExternalChannelForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            itemId="{CONTENT_TAB_ITEM_ID}"
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}">
+      <editor:items>
+        <bpforms:CollapsibleStringPropertyForm propertyName="title"
+                                               title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMChannel_title_text')}"/>
+        <livecontext:CommerceDetailsForm itemId="commerceDetails"
+                                         bindTo="{catalogObjectExpression}"
+                                         contentBindTo="{config.bindTo}"
+                                         collapsed="true"/>
+        <livecontext:CommerceAugmentedPageGridForm itemId="placement"
+                                                   pageGridPropertyName="placement"/>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_PropertyGroup_thumbnail_title')}"
+                itemId="picture">
+          <editor:items>
+            <ui:Image width="120">
+              <ui:plugins>
+                <ui:BindPropertyPlugin componentProperty="src"
+                                       bindTo="{CatalogThumbnailResolver.imageValueExpression(config.bindTo)}"/>
+              </ui:plugins>
+            </ui:Image>
+          </editor:items>
+          <editor:layout>
+            <layout_VBox/>
+          </editor:layout>
+        </editor:PropertyFieldGroup>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Product_PropertyGroup_richMedia_title')}"
+                itemId="richMedia"
+                bindTo="{catalogObjectExpression}">
+          <editor:items>
+            <livecontext:CatalogAssetsProperty propertyName="{CatalogObjectPropertyNames.VISUALS}"
+                                               assetContentTypes="{['CMPicture', 'CMVideo', 'CMSpinner']}"
+                                               emptyText="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Product_richMedia_emptyText')}"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Product_PropertyGroup_downloads_title')}"
+                itemId="downloads"
+                bindTo="{catalogObjectExpression}">
+          <editor:items>
+            <livecontext:CatalogAssetsProperty propertyName="{CatalogObjectPropertyNames.DOWNLOADS}"
+                                               assetContentTypes="{['CMDownload']}"
+                                               emptyText="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Product_downloads_emptyText')}"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <bpforms:TeaserWithPictureDocumentForm/>
+        <bpforms:ValidityDocumentForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <livecontext:CommerceAugmentedCategoryStructureForm bindTo="{config.bindTo}"
+                                                        itemId="{CATALOG_STRUCTURE_TAB_ITEM_ID}"/>
+    <editor:DocumentForm
+            itemId="{PDP_PAGEGRID_TAB_ITEM_ID}"
+            title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMExternalChannel_tab_PDP_pagegrid_title')}">
+      <editor:items>
+        <livecontext:CommerceAugmentedPageGridForm itemId="pdpPagegrid"
+                                                   pageGridPropertyName="pdpPagegrid"
+                                                   fallbackPageGridPropertyName="placement"/>
+      </editor:items>
+    </editor:DocumentForm>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_extras_title')}"
+            itemId="metadata">
+      <editor:items>
+        <bpforms:CategoryDocumentForm/>
+        <bpforms:SEOForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:ChannelMetaDataInformationForm>
+      <bpforms:plugins exml:mode="append">
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <editor:PropertyFieldGroup
+                    title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMExternalChannel_externalId_text')}"
+                    itemId="externalId">
+              <!-- We show the catalog category link field even for the root category.
+               TODO: But there should be instead a label like 'this is root category.'
+                              <plugins mode="append">
+                                <ui:bindVisibilityPlugin bindTo="{getVisibilityExpression(config.bindTo)}"/>
+                              </plugins>
+              -->
+              <editor:items>
+                <ec:CatalogLinkPropertyField itemId="{CATALOG_LINK_ITEM_ID}"
+                                             maxCardinality="1"
+                                             replaceOnDrop="true"
+                                             propertyName="{EXTERNAL_ID_PROPERTY}"
+                                             linkTypeNames="{[CatalogModel.TYPE_CATEGORY]}"
+                                             dropAreaText="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Category_Link_empty_text')}"
+                                             hideOpenInTab="true"
+                                             readOnlyValueExpression="{ValueExpressionFactory.createFromValue(true)}"/>
+              </editor:items>
+            </editor:PropertyFieldGroup>
+          </ui:items>
+          <ui:after>
+            <Component itemId="{VersionHistory.ITEM_ID_VERSION_HISTORY}"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </bpforms:plugins>
+    </bpforms:ChannelMetaDataInformationForm>
+  </editor:items>
+
+</editor:DocumentTabPanel>

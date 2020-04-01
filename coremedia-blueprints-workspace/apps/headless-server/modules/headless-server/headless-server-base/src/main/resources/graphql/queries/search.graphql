@@ -1,0 +1,15 @@
+query SearchQuery($query: String!, $offset: Int, $limit: Int, $docTypes: [String], $sortFields: [SortFieldWithOrder], $siteId: String) {
+  content {
+    search(query: $query, offset: $offset, limit: $limit, docTypes: $docTypes, sortFields: $sortFields, siteId: $siteId) {
+      numFound
+      result {
+        name
+        type
+        ... Teasable
+      }
+    }
+  }
+}
+
+#import "./referenceFragments.graphql"
+#import "./teasableFragments.graphql"

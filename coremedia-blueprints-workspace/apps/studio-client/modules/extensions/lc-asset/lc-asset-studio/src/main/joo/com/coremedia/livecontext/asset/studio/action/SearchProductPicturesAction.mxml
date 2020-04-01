@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:SearchProductPicturesActionBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.livecontext.asset.studio.action.*">
+  <fx:Script><![CDATA[
+    private var config:SearchProductPicturesAction;
+
+    public native function SearchProductPicturesAction(config:SearchProductPicturesAction = null);
+    ]]></fx:Script>
+
+</local:SearchProductPicturesActionBase>

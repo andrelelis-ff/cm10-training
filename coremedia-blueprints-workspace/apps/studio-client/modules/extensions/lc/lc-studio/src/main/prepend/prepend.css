@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/**
+  * Do not edit. This is an auto-generated file.
+  */
+
+/**
+  * image preload
+  */
+body:after {
+  content:
+  url('../../images/lc-studio-icons-16px.png');
+  display: none;
+}

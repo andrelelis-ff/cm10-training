@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>studio-client.alx</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>alx-studio-plugin</artifactId>
+  <packaging>swc</packaging>
+
+  <description>The Analytics Plugin for the CoreMedia Studio</description>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>core-icons</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>editor-components</artifactId>
+      <type>swc</type>
+    </dependency>
+
+    <!-- PROJECT DEPENDENCIES -->
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>blueprint-forms</artifactId>
+      <type>swc</type>
+      <version>${project.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>net.jangaroo</groupId>
+      <artifactId>joounit</artifactId>
+      <type>swc</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>client-core-impl</artifactId>
+      <type>swc</type>
+      <!--<scope>test</scope> cannot be used here, because it would override the transitive compile dependency -->
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>client-core-test-helper</artifactId>
+      <type>swc</type>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>net.jangaroo</groupId>
+        <artifactId>jangaroo-maven-plugin</artifactId>
+        <version>${jangaroo.version}</version> <!-- explicit version for IDEA! -->
+        <extensions>true</extensions>
+        <configuration>
+          <skip>false</skip>
+          <namespaces>
+            <namespace>
+              <uri>exml:com.coremedia.blueprint.studio.config.analytics</uri>
+            </namespace>
+          </namespaces>
+          <testSuite>com.coremedia.blueprint.studio.analytics.TestSuite</testSuite>
+          <jooUnitTestExecutionTimeout>90000</jooUnitTestExecutionTimeout>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

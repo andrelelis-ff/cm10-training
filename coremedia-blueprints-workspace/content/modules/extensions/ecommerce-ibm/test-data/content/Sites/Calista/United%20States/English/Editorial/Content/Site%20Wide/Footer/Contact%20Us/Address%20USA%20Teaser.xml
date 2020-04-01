@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Calista/United States/English/Editorial/Content/Site Wide/Footer/Contact Us" name="Address USA Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="callToActionCustomText">Send E-Mail</StringProperty>
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>San Francisco, USA</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>CoreMedia Corporation</p><p>114 Sansome Street, Suite 1300</p><p>San Francisco, CA 94104</p><p>USA</p><p/><p>+1.415.371.0400</p></div></teaserText>
+<pictures>
+<link href="../../../../../Pictures/Sitewide%20Pictures/USA%20Map%20Picture.xml" path="/Sites/Calista/United%20States/English/Pictures/Sitewide%20Pictures/USA%20Map%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="Email%20USA%20External%20Link.xml" path="/Sites/Calista/United%20States/English/Editorial/Content/Site%20Wide/Footer/Contact%20Us/Email%20USA%20External%20Link"/>
+</target>
+</CMTeaser>

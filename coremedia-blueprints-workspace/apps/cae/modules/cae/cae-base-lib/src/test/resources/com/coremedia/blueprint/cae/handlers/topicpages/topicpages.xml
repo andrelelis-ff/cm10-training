@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+
+  <!--
+    Test content for the TopicpageHandlerTest
+  -->
+  <content>
+    <folder id="1" name="">
+      <folder id="11" name="Sites">
+        <folder id="111" name="Media">
+          <document id="504" name="MediaSite" type="CMSite">
+            <!--
+              The Site Indicator for the Media site, references the Root Channel.
+              Needed to
+                1. resolve the first URL segment ("media")
+                2. lookup the topicpage channel's site root
+            -->
+            <version number="1">
+              <linkProperty name="root">
+                <link id="124"/>
+              </linkProperty>
+              <stringProperty name="locale" value="en-US"/>
+              <stringProperty name="id" value="site-id"/>
+              <stringProperty name="name" value="site-name"/>
+            </version>
+          </document>
+          <folder id="1111" name="Navigation">
+            <folder id="11111" name="Topic Pages">
+              <document id="600" name="Lifestyle [Topic]" type="CMChannel">
+                <!--
+                  A custom topic page for the Lifestyle CMTaxonomy document
+                -->
+                <version number="1">
+                  <!-- like initialized by Studio, not used for link building  -->
+                  <stringProperty name="segment" value="600-topic"/>
+                </version>
+              </document>
+            </folder>
+            <document id="124" name="Media" type="CMChannel">
+              <!--
+                The Root Channel of the Media site, referenced by the Site Indicator.
+                Contains some dummy js and css to be inherited by the topicpage channel.
+              -->
+              <version number="1">
+                <stringProperty name="segment" value="media"/>
+                <linkProperty name="children">
+                  <link id="4280"/>
+                </linkProperty>
+                <linkProperty name="css">
+                  <link id="584"/>
+                </linkProperty>
+                <linkProperty name="javaScript">
+                  <link id="552"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="4280" name="Topic" type="CMChannel">
+              <!--
+                The Default Topicpage Channel of the Media site.
+                Must be hidden in navigation and sitemap, because it has
+                no inherent main content.
+              -->
+              <version number="1">
+                <stringProperty name="segment" value="topic"/>
+                <intProperty name="hidden" value="1"/>
+                <intProperty name="hiddenInSitemap" value="1"/>
+                <linkProperty name="children">
+                  <!--
+                    Custom topic pages must be linked in the site's default topic page,
+                    because the link builder crawls up the hierarchy to find the site segment.
+                  -->
+                  <link id="600"/>
+                </linkProperty>
+              </version>
+            </document>
+          </folder>
+          <folder id="1113" name="Options">
+            <folder id="11131" name="Taxonomies">
+              <folder id="111311" name="TopicPages">
+                <document id="4250" name="Hamburg" type="CMTaxonomy">
+                  <!--
+                    A Site local taxonomy
+                  -->
+                  <version number="1">
+                    <stringProperty name="value" value="hamburg"/>
+                  </version>
+                </document>
+              </folder>
+            </folder>
+            <folder id="11133" name="Settings">
+              <document id="4248" name="TopicPages" type="CMSettings">
+                <!--
+                  The Settings document which denotes the Topicpage Channel
+                  for this (wrt. folder hierarchy) site.
+                  The location of this document is injected by Spring via
+                  TopicpageContextFinder#setTopicpageConfigurationPath.
+                -->
+                <version number="1">
+                  <markupProperty name="settings" url="4248settings.xml" grammar="coremedia-struct-2008"/>
+                </version>
+              </document>
+            </folder>
+          </folder>
+        </folder>
+      </folder>
+      <folder id="13" name="Settings">
+        <folder id="131" name="Taxonomies">
+          <folder id="1311" name="Subject">
+            <document id="304" name="Holiday" type="CMTaxonomy">
+              <!--
+                A global taxonomy
+              -->
+              <version number="1">
+                <stringProperty name="value" value="holiday"/>
+                <linkProperty name="contexts"/>
+              </version>
+            </document>
+            <document id="306" name="Lifestyle" type="CMTaxonomy">
+              <!--
+                A global taxonomy with a custom topic page
+              -->
+              <version number="1">
+                <stringProperty name="value" value="lifestyle"/>
+                <linkProperty name="contexts">
+                  <link id="600"/>
+                </linkProperty>
+              </version>
+            </document>
+          </folder>
+        </folder>
+      </folder>
+
+      <!--
+        Some dummy js and css to test inheritance from the site's root channel.
+      -->
+      <folder id="15" name="Themes">
+        <folder id="151" name="css">
+          <document id="584" type="CMCSS" name="media.css">
+            <version number="1">
+              <stringProperty name="description" value="empty dummy css"/>
+            </version>
+          </document>
+        </folder>
+        <folder id="153" name="js">
+          <document id="552" type="CMJavaScript" name="respond.min.js">
+            <version number="1">
+              <stringProperty name="description" value="empty dummy js"/>
+            </version>
+          </document>
+        </folder>
+      </folder>
+    </folder>
+  </content>
+  <rules>
+    <rule resourceId="1" group="0" doctype="Folder_">
+      <right value="ALL"/>
+    </rule>
+    <rule resourceId="1" group="0" doctype="Document_">
+      <right value="ALL"/>
+    </rule>
+  </rules>
+</contentRepository>

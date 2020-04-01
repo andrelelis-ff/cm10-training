@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./United States/English/Editorial/Homepage/Company/Press/Events/Events Items" name="Chef Corp Charity Golf Tournament Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<extDisplayedDate format="dd.MM.yyyy HH:mm:ss Z">26.06.2019 00:00:00 +0100</extDisplayedDate>
+<segment></segment>
+<title>Chef Corp Charity Golf Tournament</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Events.xml" path="/Settings/Taxonomies/Subject/Events"/>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Press.xml" path="/Settings/Taxonomies/Subject/Press"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Join us at our annual Golf Tournament on July 25th.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Last year, food and golf enthusiasts have raised over $300,000 for Chef Aid, a Colorado based charity organization founded by Stan Marsh that helps derailed line cooks get back on their feet with low-responsibility jobs and subsidiaries. "This year, we hope to raise the bar even further. There are hundreds, if not thousands of professional cooks who have fallen upon hard times, financially and personally, who need the help of our industry," says Marsh.</p><p>Chef Corp. has invited the top professionals of our business as well as a number of public figures sympathetic to our cause. Like last year, we expect a turnout of about 200 favorable patrons. The event will take place on August 8th at the Indian Hill Club in Winnetka, IL. Bring your own golf clubs!</p></div></detailText>
+<pictures>
+<link href="../../../../../Assets/Pictures/Events/Chef%20Corp%20Charity%20Golf%20Tournament%20Picture.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Events/Chef%20Corp%20Charity%20Golf%20Tournament%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../../../../Authors/David%20Fuller%20Person.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Authors/David%20Fuller%20Person"/>
+</authors>
+</CMArticle>

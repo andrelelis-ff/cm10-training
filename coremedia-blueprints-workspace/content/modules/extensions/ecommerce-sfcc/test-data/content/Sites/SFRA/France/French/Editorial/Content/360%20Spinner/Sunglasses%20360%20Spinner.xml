@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSpinner folder="/Sites/SFRA/France/French/Editorial/Content/360 Spinner" name="Sunglasses 360 Spinner" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/360%20Spinner/Sunglasses%20360%20Spinner.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/360%20Spinner/Sunglasses%20360%20Spinner"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="references">
+<String>sfcc:///catalog/product/25448070</String>
+</StringListProperty>
+<StringListProperty Name="originReferences">
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Guess Bordeaux Lunettes de soleil</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1"><br/></p> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<sequence>
+<link href="Sunglasses-01.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-01"/>
+<link href="Sunglasses-02.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-02"/>
+<link href="Sunglasses-03.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-03"/>
+<link href="Sunglasses-04.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-04"/>
+<link href="Sunglasses-05.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-05"/>
+<link href="Sunglasses-06.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-06"/>
+<link href="Sunglasses-07.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-07"/>
+<link href="Sunglasses-08.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-08"/>
+<link href="Sunglasses-09.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-09"/>
+<link href="Sunglasses-10.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-10"/>
+<link href="Sunglasses-11.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-11"/>
+<link href="Sunglasses-12.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-12"/>
+<link href="Sunglasses-13.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-13"/>
+<link href="Sunglasses-14.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-14"/>
+<link href="Sunglasses-15.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-15"/>
+<link href="Sunglasses-16.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-16"/>
+<link href="Sunglasses-17.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-17"/>
+<link href="Sunglasses-18.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-18"/>
+<link href="Sunglasses-19.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-19"/>
+<link href="Sunglasses-20.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-20"/>
+<link href="Sunglasses-21.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-21"/>
+<link href="Sunglasses-22.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-22"/>
+<link href="Sunglasses-23.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-23"/>
+<link href="Sunglasses-24.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-24"/>
+<link href="Sunglasses-25.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-25"/>
+<link href="Sunglasses-26.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-26"/>
+<link href="Sunglasses-27.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-27"/>
+<link href="Sunglasses-28.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-28"/>
+<link href="Sunglasses-29.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-29"/>
+<link href="Sunglasses-30.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-30"/>
+<link href="Sunglasses-31.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-31"/>
+<link href="Sunglasses-32.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-32"/>
+<link href="Sunglasses-33.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-33"/>
+<link href="Sunglasses-34.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-34"/>
+<link href="Sunglasses-35.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-35"/>
+<link href="Sunglasses-36.xml" path="/Sites/SFRA/France/French/Editorial/Content/360%20Spinner/Sunglasses-36"/>
+</sequence>
+</CMSpinner>

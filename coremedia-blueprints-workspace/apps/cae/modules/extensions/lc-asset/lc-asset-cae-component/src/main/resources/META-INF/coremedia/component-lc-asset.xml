@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <import resource="classpath:com/coremedia/cap/common/uapi-services.xml"/>
+
+  <import resource="lc-asset-handlers.xml"/>
+  <import resource="classpath:/framework/spring/search/solr-search.xml"/>
+  <import resource="classpath:/framework/spring/lc-asset-services.xml"/>
+
+  <bean id="caeAssetSearchService" class="com.coremedia.livecontext.asset.CaeAssetSearchService">
+    <property name="searchResultFactory" ref="resultFactory"/>
+    <property name="cacheForSeconds" value="${livecontext.assetService.searchCacheDurationInSeconds}"/>
+    <property name="resultLimit" value="${livecontext.assetService.resultLimit}"/>
+    <property name="contentRepository" ref="contentRepository"/>
+  </bean>
+
+  <bean id="caeAssetValidationService" class="com.coremedia.livecontext.asset.CaeAssetValidationService">
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="validationService" ref="validationService"/>
+  </bean>
+
+</beans>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCSS folder="/Sites/SFRA/France/French/Options/Settings" name="global.css" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Options/Settings/global%2Ecss.xml" path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/global%2Ecss"/>
+</master>
+<description></description>
+<ieExpression></ieExpression>
+<include>
+</include>
+<dataUrl>https://{sfra.host}/on/demandware.static/Sites-RefArchGlobal-Site/-/en_GB/v1540893809579/css/global.css</dataUrl>
+<media></media>
+</CMCSS>

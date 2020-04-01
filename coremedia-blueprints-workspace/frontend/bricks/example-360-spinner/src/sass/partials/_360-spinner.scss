@@ -1,0 +1,52 @@
+@function spinnericon($circle-background-color: rgba(0,0,0,0.5), $circle-color: '#FFFFFF', $color: '#FFFFFF') {
+  @return url("../../img/spinnericon.param.svg?circleBackgroundColor=#{encodeColor($circle-background-color)}&circleColor=#{encodeColor($circle-color)}&color=#{encodeColor($color)}");
+}
+
+.#{$cm-spinner-prefix} {
+  cursor: ew-resize;
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__images {
+    @include stretch-absolute();
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__image {
+    @include stretch-absolute();
+    display: block;
+    visibility: hidden;
+
+    &.current-image {
+      visibility: visible;
+    }
+  }
+
+  &__picture-box {
+    @include stretch-absolute();
+  }
+
+  &__picture {
+    @include stretch-absolute();
+  }
+
+  &__icon {
+    @include center-absolute();
+  }
+}
+
+.cm-spinner-button {
+  width: $cm-spinner-button-overlay-size;
+  height: $cm-spinner-button-overlay-size;
+  //avoid icon larger than container, e.g. in pdp
+  max-width: 75%;
+  max-height: 75%;
+  background-image: spinnericon();
+}

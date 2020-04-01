@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Container xmlns:fx="http://ns.adobe.com/mxml/2009"
+           xmlns:exml="http://www.jangaroo.net/exml/0.8"
+           xmlns="exml:ext.config" xmlns:ui="com.coremedia.ui.plugins.*"
+           height="26">
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.studio.taxonomy.TaxonomyNode;
+    import com.coremedia.blueprint.studio.taxonomy.TaxonomyNodeList;
+    import com.coremedia.blueprint.studio.taxonomy.TaxonomyUtil;
+    import com.coremedia.cap.content.Content;
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+    import com.coremedia.ui.skins.ButtonSkin;
+    import com.coremedia.ui.skins.DisplayFieldSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.taxonomy.letterListItemPanel";
+
+    private var config:LetterListItemPanel;
+
+    [Bindable]
+    public var content:Content;
+
+    [Bindable]
+    public var selectedNodeList:ValueExpression;
+
+    [Bindable]
+    public var singleSelection:Boolean;
+
+    [Bindable]
+    public var letterListPanel:LetterListPanel;
+
+    private function renderRow():void {
+      var html:String = letterListPanel.taxonomyRenderer(content);
+      (queryById('nodeHtml') as DisplayField).setHtml(html);
+
+      var letter:String = letterListPanel.letterRenderer(content);
+      (queryById('letterHtml') as DisplayField).setValue(letter);
+    }
+
+    private function arrowClicked():void {
+      letterListPanel.nodeClicked(content.getId());
+    }
+
+    private function getArrowVisibilityExpression(selectedNodeList:ValueExpression, content:Content):ValueExpression {
+      var list:TaxonomyNodeList = selectedNodeList.getValue();
+      var node:TaxonomyNode = list.getNode(TaxonomyUtil.getRestIdFromCapId(content.getId()));
+      return ValueExpressionFactory.createFromValue(!node.isLeaf());
+    }
+
+    override protected function afterRender():void {
+      super.afterRender();
+      renderRow();
+
+      el.first().on('mouseover', function ():void {
+        this.addCls('x-grid-item-over');
+      });
+      el.first().on('mouseout', function ():void {
+        this.removeCls('x-grid-item-over');
+      });
+    }
+
+    public native function LetterListItemPanel(config:LetterListItemPanel = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+  </fx:Declarations>
+  <items>
+    <DisplayField itemId="letterHtml" ui="{DisplayFieldSkin.BOLD.getSkin()}" style="padding-left:6px;" width="24"/>
+    <Container flex="1">
+      <items>
+        <DisplayField itemId="nodeHtml"/>
+      </items>
+      <layout>
+        <layout_VBox align="start" pack="center"/>
+      </layout>
+    </Container>
+    <Button ui="{ButtonSkin.SIMPLE.getSkin()}"
+            scale="small"
+            handler="{arrowClicked}"
+            ariaLabel="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyChooser_show_children')}"
+            tooltip="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyChooser_show_children')}"
+            iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'arrow_right')}">
+      <plugins>
+        <ui:BindVisibilityPlugin bindTo="{getArrowVisibilityExpression(config.selectedNodeList, config.content)}"/>
+      </plugins>
+    </Button>
+  </items>
+  <layout>
+    <layout_HBox align="stretch"/>
+  </layout>
+
+</Container>

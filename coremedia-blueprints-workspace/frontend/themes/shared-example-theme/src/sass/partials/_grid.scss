@@ -1,0 +1,93 @@
+//
+// Grids
+// --------------------------------------------------
+
+.cm-placement {
+  box-sizing: border-box;
+  width: 100%;
+
+  &--main,
+  &--hero,
+  &--placement1,
+  &--placement2,
+  &--placement3,
+  &--placement4,
+  &--placement5,
+  &--placement6,
+  &--placement7,
+  &--placement8,
+  &--sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    // add a margin-top, starting from the second item.
+    > div ~ div {
+      margin-top: 30px;
+    }
+  }
+}
+
+.cm-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+
+  .cm-placement {
+    flex-shrink: 0;
+  }
+
+  // general margin between placements
+  .cm-placement + .cm-placement {
+    margin-top: 48px;
+  }
+
+  .cm-placement--header {
+    @include cm-grid-header();
+  }
+
+  // there is no margin between header and following placement
+  .cm-placement--header + .cm-placement {
+    margin-top: 0;
+  }
+
+  //grow placement 3 or placement main
+  .cm-placement--main,
+  .cm-placement--placement3 {
+    flex-grow: 1;
+  }
+
+  .cm-footer-navigation,
+  .cm-footer__wrapper,
+  .cm-placement--main,
+  .cm-placement--hero,
+  .cm-placement--placement1,
+  .cm-placement--placement2,
+  .cm-placement--placement3,
+  .cm-placement--placement4,
+  .cm-placement--placement5,
+  .cm-placement--placement6,
+  .cm-placement--placement7,
+  .cm-placement--placement8 {
+    @include cm-grid-container();
+  }
+
+  // full width for hero and carousel on mobile
+
+  .cm-placement--hero {
+    @include breakpoint("xs") {
+      width: 100%;
+    }
+  }
+
+  // there is no margin between footer-navigation and footer
+  .cm-placement--footer-navigation + .cm-placement--footer {
+    margin-top: 0;
+  }
+
+  //keeping the footer at the bottom
+  .cm-placement--footer {
+    margin-top: 0;
+  }
+}

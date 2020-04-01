@@ -1,0 +1,22 @@
+{
+  "author": {
+    "name": "CoreMedia",
+    "url": "http://www.coremedia.com"
+  },
+  "name": "@coremedia/zipper",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@coremedia/cm-logger": "^1.0.0",
+    "archiver": "2.0.3"
+  },
+  "devDependencies": {
+    "prettier": "^1.0.0"
+  },
+  "scripts": {
+    "prettier": "prettier \"**/*\" --write"
+  },
+  "engines": {
+    "node": ">=10.12"
+  }
+}

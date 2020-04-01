@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Hybris Apparel/Germany/German/Editorial/Microsite Dummy" name="Slideshow" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Editorial/Microsite%20Dummy/Slideshow.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Microsite%20Dummy/Slideshow"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Neue Inhalte Artikel</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../Content/Snow/Ski%20Equipment%20ImageMap.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Snow/Ski%20Equipment%20ImageMap"/>
+<link href="../Content/Snow/3%20Snowboard%20design%20trends.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Snow/3%20Snowboard%20design%20trends"/>
+<link href="../../Videos/Slopes%20Video.xml" path="/Sites/Hybris%20Apparel/Germany/German/Videos/Slopes%20Video"/>
+</items>
+</CMCollection>

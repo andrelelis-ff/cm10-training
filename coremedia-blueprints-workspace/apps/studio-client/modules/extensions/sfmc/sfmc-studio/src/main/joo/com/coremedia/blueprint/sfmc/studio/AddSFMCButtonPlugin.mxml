@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:NestedRulesPlugin
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:collab="exml:com.coremedia.cms.editor.controlroom.config"
+        xmlns:sfmc="exml:com.coremedia.blueprint.base.sfmc.studio.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.controlroom.project.components.ProjectContentToolbar;
+
+    private var config:AddSFMCButtonPlugin;
+    private var toolbarConfig:ProjectContentToolbar;
+
+    public native function AddSFMCButtonPlugin(config:AddSFMCButtonPlugin = null);
+
+    // called by generated constructor code
+    private function __initialize__(config:AddSFMCButtonPlugin):void {
+      toolbarConfig = ProjectContentToolbar(config.cmp.initialConfig);
+    }
+    ]]></fx:Script>
+  <ui:rules>
+    <collab:ProjectContentControlsToolbar>
+      <collab:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <TbSeparator/>
+            <sfmc:PushSFMCContentButton contentValueExpression="{toolbarConfig.selectedItemsVE}"/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </collab:plugins>
+    </collab:ProjectContentControlsToolbar>
+  </ui:rules>
+</ui:NestedRulesPlugin>

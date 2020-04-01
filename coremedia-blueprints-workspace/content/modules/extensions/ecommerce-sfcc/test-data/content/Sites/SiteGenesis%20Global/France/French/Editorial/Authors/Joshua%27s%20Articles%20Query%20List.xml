@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMQueryList folder="/Sites/SiteGenesis Global/France/French/Editorial/Authors" name="Joshua's Articles Query List" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Editorial/Authors/Joshua%27s%20Articles%20Query%20List.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Authors/Joshua%27s%20Articles%20Query%20List"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<IntProperty Name="limit">3</IntProperty>
+<StructProperty Name="fq">
+<Struct>
+<StringProperty Name="documenttype">CMArticle</StringProperty>
+<LinkListProperty Name="authors" LinkType="coremedia:///cap/contenttype/CMPerson">
+<Link xlink:href="coremedia:///cap/resources/Joshua%20Campos%20Person.xml" cmexport:path="/Sites/SiteGenesis%20Global/France/French/Editorial/Authors/Joshua%20Campos%20Person"/>
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="order">externallydisplayeddate asc</StringProperty>
+<BooleanProperty Name="loadMore">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+</CMQueryList>

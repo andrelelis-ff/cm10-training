@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMQueryList folder="/Sites/Calista/United States/English/Editorial/Content/Blog" name="Blog Home Query List" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMChannel/left-right.xml" path="/Sites/Calista/United%20States/English/Options/Viewtypes/CMChannel/left-right"/>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<IntProperty Name="limit">3</IntProperty>
+<StructProperty Name="fq">
+<Struct>
+<StringProperty Name="documenttype">CMArticle</StringProperty>
+<LinkListProperty Name="documents" LinkType="coremedia:///cap/contenttype/CMChannel">
+<Link xlink:href="coremedia:///cap/resources/../../../Navigation/Blog/Blog%20Page.xml" cmexport:path="/Sites/Calista/United%20States/English/Navigation/Blog/Blog%20Page"/>
+</LinkListProperty>
+<LinkListProperty Name="subjecttaxonomy" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Blog.xml" cmexport:path="/Settings/Taxonomies/Subject/Blog"/>
+</LinkListProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="order">externallydisplayeddate desc</StringProperty>
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+<BooleanProperty Name="loadMore">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></teaserText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+</CMQueryList>

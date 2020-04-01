@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:WidgetState
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        widgetTypeId="{EsAnalyticsChartWidget.xtype}">
+  <fx:Script><![CDATA[
+    import com.coremedia.cap.content.Content;
+
+    private var config:EsAnalyticsChartWidgetState;
+
+    public native function EsAnalyticsChartWidgetState(config:EsAnalyticsChartWidgetState = null);
+
+    /**
+     * The content
+     */
+    [Bindable]
+    public var content:Content;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!---
+     The name
+    -->
+    <fx:String id="name"/>
+  </fx:Declarations>
+
+</editor:WidgetState>

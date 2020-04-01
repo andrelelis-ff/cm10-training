@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/Hybris Apparel/United Kingdom/English/Options/Viewtypes/CMExternalProduct" name="square" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<description>Displays content as a square banner.</description>
+<icon href="square.icon.svg%2Bxml" mimetype="image/svg+xml"/>
+<layout>square</layout>
+</CMViewtype>

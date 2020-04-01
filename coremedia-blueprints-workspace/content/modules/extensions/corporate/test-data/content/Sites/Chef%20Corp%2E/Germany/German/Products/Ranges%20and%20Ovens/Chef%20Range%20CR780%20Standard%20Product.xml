@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProduct folder="/Sites/Chef Corp./Germany/German/Products/Ranges and Ovens" name="Chef Range CR780 Standard Product" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Products/Ranges%20and%20Ovens/Chef%20Range%20CR780%20Standard%20Product.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Ranges%20and%20Ovens/Chef%20Range%20CR780%20Standard%20Product"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">More Product Information</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>chef-range-cr780-standard</segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+<link href="Ranges%20and%20Ovens.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/Ranges%20and%20Ovens/Ranges%20and%20Ovens"/>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Der Chef Bereich CR780 Standard-Herd mit Gasbrennern ist ein großer Wert Wahl unter US Köchen wegen seiner professionelle Verarbeitungsqualität und Langlebigkeit. </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> <p class="p--heading-3"> Beschreibung </p> <p> Der Chef Bereich CR780 Standard-Herd mit Gasbrennern ist ein großer Wert Wahl unter US Köchen wegen seiner professionelle Verarbeitungsqualität und Langlebigkeit. Die verbesserten Standard-Features gehören jetzt eine überlegene, glatter Betriebs Roll-out-Grill, mit dem Sie Ihre Lebensmittel sicher drehen und bietet gleichzeitig die gleichen vier variable Höheneinstellungen, Heavy-Duty-Drehknöpfe und Edelstahl-Seitenteile ermöglicht. </p> <p class="p--heading-3"> Hauptmerkmale </p> <p> • Edelstahl-Warmhalteplatte <br/> • Multifunktions-Backofen <br/> • Zweikreisgrill <br/> • Massive Topfträger <br/> • 5 kW Zentralbrenner <br/> • Rollout grill <br/> • Massive Ofenroste <br/> • 3 Jahre Garantie </p> <p class="p--heading-3"> Technische Spezifikationen </p> <p/> <p/> <table dir="ltr"><tbody><tr><td> Breite </td><td> 1090 mm </td></tr><tr><td> Tiefe </td><td> 600 mm </td></tr><tr><td> Höhe </td><td> 913 mm </td></tr><tr><td> Gewicht </td><td> 527 £ </td></tr><tr><td> Kraftstoffarten </td><td> Gas </td></tr><tr><td> Hob-Konfiguration: </td><td> - </td></tr><tr><td> Brenner </td><td> 5 </td></tr><tr><td> Leistungen Hob </td><td> 1x1.4KW, 3x1.85KW, 1x2.3KW </td></tr><tr><td> Total Power Bewertungen </td><td> Gas - 17.9kW (Gas) <br/> Electric - 7,4 kW (elektrisch) </td></tr><tr><td> Ofenkapazität (LH) </td><td> 65 Liter </td></tr><tr><td> Ofenkapazität (RH) </td><td> 78 Liter </td></tr><tr><td> Interne Ofen Abmessungen (LH) </td><td> - </td></tr><tr><td> B x T x H </td><td> 433 x 380 x 380 mm </td></tr><tr><td> Interne Ofen Abmessungen (RH) </td><td> - </td></tr><tr><td> B x T x H </td><td> 433 x 380 x 380 mm </td></tr><tr><td> Zubehör im Lieferumfang enthalten </td><td> Front Sockel und fünf Regalböden, darunter eine tiefe Regal, Wok Ring </td></tr></tbody></table> <p/> </div></detailText>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Products/Ranges%20and%20Ovens/Chef%20Range%20CR780%20Standar285239bf.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Products/Ranges%20and%20Ovens/Chef%20Range%20CR780%20Standard%20Picture"/>
+</pictures>
+<related>
+<link href="Chef%20Range%20CR1020%20Premium%20Product.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/Ranges%20and%20Ovens/Chef%20Range%20CR1020%20Premium%20Product"/>
+<link href="Chef%20Range%20CR990%20Deluxe%20Product.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/Ranges%20and%20Ovens/Chef%20Range%20CR990%20Deluxe%20Product"/>
+</related>
+<authors>
+</authors>
+<downloads>
+</downloads>
+<productCode>CC-CRS-780</productCode>
+<productName>Chef Range CR780 Standard</productName>
+</CMProduct>

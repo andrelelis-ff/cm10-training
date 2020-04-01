@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.livecontext.elastic.social.studio.LcElasticSocialStudioPlugin"/>
+  <component class="com.coremedia.livecontext.elastic.social.studio.ProductInformationContainer"/>
+</componentPackage>

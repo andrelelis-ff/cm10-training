@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Microsites/Guide to Perfect Lighting" name="The Modern Bedroom Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=903;y=0;width=877;height=1363</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=872;y=0;width=1021;height=1363</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=557;y=0;width=1362;height=1363</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=181;y=0;width=1816;height=1363</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=77;width=2048;height=1151</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=330;width=2048;height=821</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=537;width=2048;height=511</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.44080604534005036;y1=0;x2=0.8690176322418136;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.4256926952141058;y1=0;x2=0.924433249370277;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.27204030226700254;y1=0;x2=0.9370277078085643;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.08816120906801007;y1=0;x2=0.9748110831234257;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.056818181818181816;x2=1;y2=0.9015151515151515</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.24242424242424243;x2=1;y2=0.8446969696969697</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3939393939393939;x2=1;y2=0.7689393939393939</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>The Modern Bedroom</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>The Modern Bedroom</alt>
+<copyright>Santiago Cornejo/Shutterstock 151209257</copyright>
+<dataUrl></dataUrl>
+<width>2048</width>
+<height>1363</height>
+<data md5="c54d3f17b4e190d9e342526153ae7500" size="344544" href="../../../../../../../__blob/c54d3f17b4e190d9e342526153ae7500.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

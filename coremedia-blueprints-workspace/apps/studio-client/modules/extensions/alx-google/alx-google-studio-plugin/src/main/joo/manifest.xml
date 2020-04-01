@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.studio.googleanalytics.CMALXBaseListRetrievalTab"/>
+  <component class="com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsCMALXBaseListRetrievalTab"/>
+  <component class="com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsMiscFields"/>
+  <component class="com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsReportPreviewButton"/>
+  <component class="com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsRetrievalFields"/>
+  <component class="com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsStudioPlugin"/>
+  <component class="com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsTrackingFields"/>
+</componentPackage>

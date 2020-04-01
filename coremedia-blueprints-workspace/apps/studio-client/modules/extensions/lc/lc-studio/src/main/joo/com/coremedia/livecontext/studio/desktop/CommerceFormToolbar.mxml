@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CommerceFormToolbarBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.livecontext.studio.desktop.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.cms.editor.Editor')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.mixins.OverflowBehaviour;
+    import com.coremedia.ui.skins.ButtonSkin;
+    import com.coremedia.ui.skins.IconDisplayFieldSkin;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.commerceFormToolbar";
+
+    public static const LOCALE_NAME_ITEM_ID:String = "localeName";
+
+    public static const DOCUMENT_TYPE_ITEM_ID:String = "documentType";
+
+    public static const COLLAPSE_BUTTON_ITEM_ID:String = "collapseButton";
+
+    private var config:CommerceFormToolbar;
+
+    public native function CommerceFormToolbar(config:CommerceFormToolbar = null);
+    ]]></fx:Script>
+
+  <fx:Declarations>
+    <!--- The function that will be called on collapse -->
+    <fx:Function id="collapseHandler"/>
+  </fx:Declarations>
+  <local:items>
+    <TbSpacer width="12"/>
+    <!--Locale name-->
+    <ui:IconDisplayField itemId="{LOCALE_NAME_ITEM_ID}"
+                         tooltipOnValue="true"
+                         overflowBehaviour="{OverflowBehaviour.ELLIPSIS}"
+                         ui="{IconDisplayFieldSkin.WORKAREA.getSkin()}">
+      <ui:plugins>
+        <ui:BindPlugin bindTo="{getLocaleValueExpression()}"
+                       boundValueChanged="{changeLocale}"/>
+      </ui:plugins>
+    </ui:IconDisplayField>
+    <TbFill/>
+    <!--Document type-->
+    <ui:IconDisplayField itemId="{DOCUMENT_TYPE_ITEM_ID}"
+                         tooltipOnValue="true"
+                         overflowBehaviour="{OverflowBehaviour.ELLIPSIS}"
+                         ui="{IconDisplayFieldSkin.WORKAREA.getSkin()}">
+      <ui:plugins>
+        <ui:BindPlugin bindTo="{config.bindTo}"
+                       boundValueChanged="{changeType}"/>
+      </ui:plugins>
+    </ui:IconDisplayField>
+    <TbSpacer width="6"/>
+    <!--Button to collapse document form-->
+    <ui:IconButton itemId="{COLLAPSE_BUTTON_ITEM_ID}"
+                   scale="medium"
+                   ui="{ButtonSkin.WORKAREA.getSkin()}"
+                   tooltip="{resourceManager.getString('com.coremedia.cms.editor.Editor', 'Document_panel_btn_tooltip')}"
+                   text="{resourceManager.getString('com.coremedia.cms.editor.Editor', 'Document_panel_btn_tooltip')}"
+                   iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'collapsing_arrow_left')}"
+                   handler="{config.collapseHandler}"/>
+  </local:items>
+
+</local:CommerceFormToolbarBase>

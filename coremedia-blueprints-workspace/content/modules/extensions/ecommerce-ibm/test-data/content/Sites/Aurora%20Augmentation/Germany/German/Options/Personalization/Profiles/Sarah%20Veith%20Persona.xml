@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMUserProfile folder="/Sites/Aurora Augmentation/Germany/German/Options/Personalization/Profiles" name="Sarah Veith Persona" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Options/Personalization/Profiles/Sarah%20Veith%20Persona.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Personalization/Profiles/Sarah%20Veith%20Persona"/>
+</master>
+<profileSettings href="Sarah%20Veith%20Persona.profileSettings.plain" mimetype="text/plain"/>
+<profileExtensions>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="properties">
+<Struct>
+<LinkListProperty Name="explicit" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Female.xml" cmexport:path="/Settings/Taxonomies/Subject/Female"/>
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Women%20Casual.xml" cmexport:path="/Settings/Taxonomies/Subject/Women%20Casual"/>
+</LinkListProperty>
+<LinkListProperty Name="subjectTaxonomies" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Women%20Casual.xml" cmexport:path="/Settings/Taxonomies/Subject/Women%20Casual"/>
+</LinkListProperty>
+<LinkListProperty Name="profileImage" LinkType="coremedia:///cap/contenttype/CMPicture">
+<Link xlink:href="coremedia:///cap/resources/Female%20Casual.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Personalization/Profiles/Female%20Casual"/>
+</LinkListProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="usersegments">
+<String>ibm:///catalog/segment/8000000000000001006</String>
+<String>ibm:///catalog/segment/8000000000000001005</String>
+<String>ibm:///catalog/segment/8000000000000001001</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</profileExtensions>
+</CMUserProfile>

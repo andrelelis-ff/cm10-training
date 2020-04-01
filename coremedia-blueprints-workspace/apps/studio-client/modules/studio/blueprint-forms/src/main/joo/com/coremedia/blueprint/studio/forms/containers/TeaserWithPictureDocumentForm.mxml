@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PropertyFieldGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+                           xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                           xmlns="exml:ext.config"
+                           xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+                           xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                           xmlns:ui="exml:com.coremedia.ui.config"
+                           xmlns:quickcreate="com.coremedia.cms.editor.sdk.quickcreate.*"
+                           title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Teaser_label')}"
+                           itemId="teaserDocumentForm"
+                           collapsed="true"
+                           propertyNames="{['teaserTitle','teaserText','pictures']}"
+                           expandOnValues="teaserTitle,teaserText.data,pictures">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.studio.TeaserOverlayConstants;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.teaserWithPictureDocumentForm";
+
+    /**
+     * A constant for the linklist property name
+     */
+    public static const PICTURE_PROPERTY_NAME:String = "pictures";
+
+    private var config:TeaserWithPictureDocumentForm;
+
+    public native function TeaserWithPictureDocumentForm(config:TeaserWithPictureDocumentForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:StringPropertyField propertyName="teaserTitle">
+      <editor:plugins exml:mode="append">
+        <editor:StringPropertyFieldDelegatePlugin delegatePropertyName="title"/>
+      </editor:plugins>
+    </editor:StringPropertyField>
+    <editor:TeaserOverlayPropertyField propertyName="teaserText"
+                                       delegatePropertyName="detailText"
+                                       initialHeight="100"
+                                       itemId="teaserText"
+                                       settingsPath="{TeaserOverlayConstants.DEFAULT_SETTINGS_PATH}"
+                                       styleDescriptorFolderPaths="{TeaserOverlayConstants.DEFAULT_STYLE_DESCRIPTOR_FOLDER_PATHS}"/>
+    <bpforms:TeaserSettingsPropertyFieldGroup/>
+    <editor:LinkListPropertyField propertyName="{PICTURE_PROPERTY_NAME}"
+                                  showThumbnails="true">
+      <editor:additionalToolbarItems>
+        <TbSeparator/>
+        <quickcreate:QuickCreateToolbarButton contentType="CMPicture"
+                                              propertyName="{PICTURE_PROPERTY_NAME}"
+                                              bindTo="{config.bindTo}"/>
+      </editor:additionalToolbarItems>
+      <editor:fields>
+        <ui:DataField name="{ValidityColumn.STATUS_ID}"
+                      ifUnreadable=""
+                      mapping=""
+                      convert_="{ValidityColumn.convert}"/>
+      </editor:fields>
+      <editor:columns>
+        <editor:ThumbnailColumn/>
+        <editor:TypeIconColumn/>
+        <editor:NameColumn flex="1"/>
+        <bpforms:ValidityColumn/>
+        <editor:StatusColumn/>
+      </editor:columns>
+    </editor:LinkListPropertyField>
+  </editor:items>
+
+</editor:PropertyFieldGroup>

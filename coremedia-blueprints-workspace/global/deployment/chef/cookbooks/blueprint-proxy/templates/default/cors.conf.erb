@@ -1,0 +1,34 @@
+# ##############################################################################
+# # CROSS-ORIGIN RESOURCE SHARING (CORS)                                       #
+# ##############################################################################
+
+<IfModule mod_headers.c>
+  # ------------------------------------------------------------------------------
+  # | CORS-enabled images                                                        |
+  # ------------------------------------------------------------------------------
+
+  # Send the CORS header for images when browsers request it.
+  # https://developer.mozilla.org/en/CORS_Enabled_Image
+  # http://blog.chromium.org/2011/07/using-cross-domain-images-in-webgl-and.html
+  # http://hacks.mozilla.org/2011/11/using-cors-to-load-webgl-textures-from-cross-domain-images/
+
+  <FilesMatch "\.(gif|ico|jpe?g|png|svgz?|webp)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+  <LocationMatch "\.(gif|ico|jpe?g|png|svgz?|webp)$">
+    Header set Access-Control-Allow-Origin "*"
+  </LocationMatch>
+
+  # ------------------------------------------------------------------------------
+  # | Web fonts access                                                           |
+  # ------------------------------------------------------------------------------
+
+  # Allow access from all domains for web fonts
+
+  <FilesMatch "\.(eot|font.css|otf|ttc|ttf|woff|woff2|svg)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+  <LocationMatch "\.(eot|font.css|otf|ttc|ttf|woff|woff2|svg)$">
+    Header set Access-Control-Allow-Origin "*"
+  </LocationMatch>
+</IfModule>

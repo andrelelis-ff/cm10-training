@@ -1,0 +1,120 @@
+<div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <p>﻿$(document).ready(function() {</p>
+  <p>/* equal height function for boxes within a given subcolumns parent */</p>
+  <p>$(".subcolumns").each(function(){$(this).find(".box").equalHeights()});</p>
+  <p>/* initialize the ui tab elements */</p>
+  <p>$(function() {$( ".tabContainer" ).tabs();});</p>
+  <p>/* initialize the ui tab elements */</p>
+  <p>$(function() {$( ".accordionContainer" ).accordion( {autoHeight: false});});</p>
+  <p>/* scrollableContainer script */</p>
+  <p>// Bewegt Scrollable um ein Element ('scrollable-item') nach links oder rechts (aArg: -1/1)</p>
+  <p>// Javascript-Funktion holt sich alle benötigten Breiten aus dem DOM. Daher reicht es aus,</p>
+  <p>// die jeweiligen Breiten per CSS festzulegen.</p>
+  <p>plan = {};</p>
+  <p>plan.scrollable = {};</p>
+  <p>plan.scrollable.move = function(aArg) {</p>
+  <p>// Breite eines Elementes ('scrollable-item')</p>
+  <p>var itemContentWidth = parseInt($('#scrollable-pane .scrollable-item').eq(0).width());</p>
+  <p>var itemMargins = parseInt($('#scrollable-pane .scrollable-item').eq(0).css('margin-left')) +
+    parseInt($('#scrollable-pane .scrollable-item').eq(0).css('margin-right'));
+  </p>
+  <p>var itemWidth = itemContentWidth + itemMargins;</p>
+  <p>// Wieviele Elemente?</p>
+  <p>var itemCount = parseInt($('#scrollable-pane .scrollable-item').length);</p>
+  <p>// Was ist der maximal erlaubte Offset zum scrollen?</p>
+  <p>var windowWidth = parseInt($('#scrollable-window').width());</p>
+  <p>var maxOffset = (itemCount * itemWidth) - windowWidth;</p>
+  <p>// Aktuelle Position, neue Position berechnen</p>
+  <p>var oldPos = parseInt($('#scrollable-pane').css('left'));</p>
+  <p>var newPos = oldPos - (itemWidth * parseInt(aArg));</p>
+  <p>// Neue Position zu weit links oder rechts? Dann Flag setzen.</p>
+  <p>var isOutOfLimit = false;</p>
+  <p>if (newPos &gt; 0) isOutOfLimit = true;</p>
+  <p>if (newPos &lt; (maxOffset*-1)) isOutOfLimit = true;</p>
+  <p>if (isOutOfLimit == false) {</p>
+  <p>$('#scrollable-pane').animate({</p>
+  <p>left: newPos</p>
+  <p>}, 500);</p>
+  <p>}</p>
+  <p>}</p>
+  <p>$('#scrollable-left SPAN').click(function(ev) {</p>
+  <p>plan.scrollable.move(-1);</p>
+  <p>});</p>
+  <p>$('#scrollable-right SPAN').click(function(ev) {</p>
+  <p>plan.scrollable.move(1);</p>
+  <p>});</p>
+  <p>/* end scrollable script */</p>
+  <p>/* toogle loginNav */</p>
+  <p>$('#nav_content .loginNav H3').click(function(){</p>
+  <p>var isActive = false;</p>
+  <p>if ($(this).parent('.loginNav').hasClass('active')) isActive = true;</p>
+  <p>$('#nav_content &gt; DIV').removeClass('active');</p>
+  <p>if (!isActive) $(this).parents('.loginNav').addClass('active');</p>
+  <p>})</p>
+  <p>/* toogle commentform */</p>
+  <p>$('#commentform-show').click(function(){</p>
+  <p>$('#commentform-wrapper').removeClass('hide');</p>
+  <p>$('#commentform-show').addClass('hide');</p>
+  <p>});</p>
+  <p>$('#commentform-cancel').click(function(){</p>
+  <p>$('#commentform-show').removeClass('hide');</p>
+  <p>$('#commentform-wrapper').addClass('hide');</p>
+  <p>});</p>
+  <p>/* carusel script */</p>
+  <p>// Zur entsprechenden Auszeichnung des HTML-Code siehe ebenda.</p>
+  <p>// - Code reagiert auf Klick innerhalb des A-Elementes der Carousel-Navigation.</p>
+  <p>// - ... schaut nach der wieviele Link ('clickedItem') angeklickt worden ist</p>
+  <p>// - ... schaut nach welche Position ('left'-Koord.) das 'clickedItem' Item innerhalb der 'pane' hat</p>
+  <p>// - ... scrollt ('animate') den 'pane'-Cointainer zu dieser Position.</p>
+  <p>$('#carousel-navigation LI A').click(function(ev) {</p>
+  <p>var $LIwrapper = $(this).parent();</p>
+  <p>if ($LIwrapper.hasClass('selected')) return false // Bereits ausgewählt</p>
+  <p>var clickedItem = $('#carousel-navigation LI').index($LIwrapper);</p>
+  <p>var clickedItemPos = $('#carousel-pane .carousel-item').eq(clickedItem).position().left</p>
+  <p>$('#carousel-navigation LI').removeClass('selected');</p>
+  <p>$('#carousel-navigation LI').eq(clickedItem).addClass('selected');</p>
+  <p>$('#carousel-pane').animate({</p>
+  <p>left: -clickedItemPos</p>
+  <p>}, 500);</p>
+  <p>return false;</p>
+  <p>});</p>
+  <p>/* toogle profileNav */</p>
+  <p>// PROFILENAV</p>
+  <p>// Öffnen und schließen des Containers (Mega-Drop-Down).</p>
+  <p>// TO DO: Abstrahierung. Derzeit ist die Funktionalität mit einige IDs festverdrahtet,</p>
+  <p>// insbesondere was "removeClass", z.B. der LoginNav angeht, die ihr 'active'-Status</p>
+  <p>// beim Öffnen von ProfileNav verlieren muss.</p>
+  <p>$('.profileNav H3').click(function(ev) {</p>
+  <p>var isActive = false;</p>
+  <p>if ($(this).parent('.profileNav').hasClass('active')) isActive = true;</p>
+  <p>$('#nav_content &gt; DIV').removeClass('active');</p>
+  <p>if (!isActive) $(this).parents('.profileNav').addClass('active')</p>
+  <p>});</p>
+  <p>$('.profileNav .action-close').click(function(ev) {</p>
+  <p>$(this).parents('.profileNav').removeClass('active')</p>
+  <p>});</p>
+  <p>/* Verzögert das ausblenden der zweiten Navigationsebene in Media */</p>
+  <p>media = {};</p>
+  <p>media.clearPrimaryNavHover = function(){</p>
+  <p>$('#nav_content .primaryNav .content &gt; UL &gt; LI').removeClass('hover');</p>
+  <p>clearTimeout(media.primaryNavTimer);</p>
+  <p>};</p>
+  <p>$('#nav_content .primaryNav .content &gt; UL &gt; LI').mouseover(function(){</p>
+  <p>media.clearPrimaryNavHover();</p>
+  <p>}).mouseout(function() {</p>
+  <p>$(this).addClass('hover');</p>
+  <p>media.primaryNavTimer = setTimeout('media.clearPrimaryNavHover()', 3000);</p>
+  <p>});</p>
+  <p>});</p>
+  <p>/* Öffnet die profileBox mit einem Link, der die ID openProfile trägt */</p>
+  <p>$(function() {</p>
+  <p>$( "#profile" ).dialog({</p>
+  <p>autoOpen: false,</p>
+  <p>width: 972</p>
+  <p>});</p>
+  <p>$( "#openProfile" ).click(function() {</p>
+  <p>$( "#profile" ).dialog( "open" );</p>
+  <p>return false;</p>
+  <p>});</p>
+  <p>});</p>
+</div>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora B2B Augmentation/Germany/German/Navigation/Fragments/Aurora B2B Homepage" name="Home Page Sidebar Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Navigation/Fragments/Aurora%20B2B%20Homepage/Home%20Page%20Sideb94725790.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Navigation/Fragments/Aurora%20B2B%20Homepage/Home%20Page%20Sidebar%20Collection"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../Aurora%20B2B%20Categories/Lighting/The%20Guide%20To%bc6c5f53.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Navigation/Fragments/Aurora%20B2B%20Categories/Lighting/The%20Guide%20To%20Perfect%20Lighting%20Teaser"/>
+<link href="../Aurora%20B2B%20Categories/Lighting/Get%20Inspired%208a320261.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Navigation/Fragments/Aurora%20B2B%20Categories/Lighting/Get%20Inspired%20Gallery%20Teaser"/>
+<link href="../../../Editorial/Personalization/Contract-Based%20Personalized%20Video%20Teaser.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Personalization/Contract-Based%20Personalized%20Video%20Teaser"/>
+</items>
+</CMCollection>

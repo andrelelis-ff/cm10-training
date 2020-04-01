@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+  <import resource="classpath:/com/coremedia/cae/contentbean-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/dataview-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/multisite/bpbase-multisite-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/navigation/context/selector/bpbase-context-selector-services.xml"/>
+
+  <bean id="linkableExplicitlyLinkedContextFinder"
+        class="com.coremedia.blueprint.common.navigation.context.finder.LinkableBeanContextFinder">
+    <property name="delegate">
+      <bean class="com.coremedia.blueprint.base.navigation.context.finder.impl.ExplicitlyLinkedContextFinder"/>
+    </property>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+  </bean>
+
+  <bean id="linkableNavigationContextFinder"
+        class="com.coremedia.blueprint.common.navigation.context.finder.LinkableBeanContextFinder">
+    <property name="delegate">
+      <bean class="com.coremedia.blueprint.base.navigation.context.finder.impl.NavigationContextFinder"/>
+    </property>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+  </bean>
+
+  <bean id="linkableFolderPropertiesContextFinder"
+        class="com.coremedia.blueprint.common.navigation.context.finder.LinkableBeanContextFinder">
+    <property name="delegate">
+      <bean class="com.coremedia.blueprint.base.navigation.context.finder.impl.FolderPropertiesEvaluatingContextFinder"/>
+    </property>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+  </bean>
+
+  <bean id="linkableTopicpageContextFinder"
+        class="com.coremedia.blueprint.common.navigation.context.finder.LinkableBeanContextFinder">
+    <property name="delegate" ref="uapiTopicpageContextFinder"/>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+  </bean>
+
+  <bean id="uapiTopicpageContextFinder" class="com.coremedia.blueprint.base.navigation.context.finder.TopicpageContextFinder">
+    <property name="contentRepository" ref="contentRepository"/>
+    <property name="topicpageConfigurationPath" value="Options/Settings/TopicPages"/>
+    <property name="sitesService" ref="sitesService"/>
+  </bean>
+
+  <bean id="nearestContextSelector"
+        class="com.coremedia.blueprint.common.navigation.context.selector.LinkableBeanContextSelector">
+    <constructor-arg ref="nearestContentContextSelector"/>
+    <constructor-arg ref="contentBeanFactory"/>
+    <constructor-arg ref="dataViewFactory" />
+  </bean>
+
+  <bean id="contextStrategy" class="com.coremedia.blueprint.base.navigation.context.DefaultContextStrategy">
+    <property name="contextFinderMap" ref="linkableBeanContextFinderMap"/>
+    <property name="contextSelector" ref="nearestContextSelector"/>
+  </bean>
+
+  <util:map id="linkableBeanContextFinderMap" key-type="java.lang.Class" value-type="java.util.List">
+    <entry key="com.coremedia.blueprint.common.contentbeans.CMLinkable" value-ref="linkableBeanContextFinders"/>
+    <entry key="com.coremedia.blueprint.common.contentbeans.CMNavigation" value-ref="navigationContextFinders"/>
+    <entry key="com.coremedia.blueprint.common.contentbeans.CMTaxonomy" value-ref="topicpageContextFinders"/>
+  </util:map>
+
+  <util:list id="linkableBeanContextFinders">
+    <ref bean="linkableExplicitlyLinkedContextFinder"/>
+    <ref bean="linkableFolderPropertiesContextFinder"/>
+  </util:list>
+
+  <util:list id="navigationContextFinders">
+    <ref bean="linkableNavigationContextFinder"/>
+  </util:list>
+
+  <util:list id="topicpageContextFinders">
+    <ref bean="linkableTopicpageContextFinder"/>
+  </util:list>
+</beans>

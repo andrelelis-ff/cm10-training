@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:TaxonomySuggestionsLinkListPanelBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                                            xmlns:local="com.coremedia.blueprint.studio.taxonomy.selection.*"
+                                            xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                                            xmlns="exml:ext.config"
+                                            xmlns:u="exml:untyped"
+                                            xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                                            xmlns:ui="exml:com.coremedia.ui.config"
+                                            hideHeaders="true">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.bem.LinkListBEMEntities;
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.skins.ButtonSkin;
+    import com.coremedia.ui.skins.DisplayFieldSkin;
+    import com.coremedia.ui.skins.TableViewSkin;
+    import com.coremedia.ui.skins.ToolbarSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.taxonomy.taxonomySuggestionsLinkListPanel";
+
+    private var config:TaxonomySuggestionsLinkListPanel;
+
+    public native function TaxonomySuggestionsLinkListPanel(config:TaxonomySuggestionsLinkListPanel = null);
+
+    /**
+     * The content bean value expression.
+     */
+    [Bindable]
+    public var bindTo:ValueExpression;
+
+    /**
+     * An optional ValueExpression which makes the component read-only if it is evaluated to true.
+     */
+    [Bindable]
+    public var forceReadOnlyValueExpression:ValueExpression;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!---
+     The property name of the content that should contains the taxonomy to display.
+    -->
+    <fx:String id="propertyName"/>
+
+    <!---
+     The taxonomy identifier configured on the server side.
+    -->
+    <fx:String id="taxonomyId"/>
+
+    <!---
+     If true, suggestions field is not shown, default is false.
+    -->
+    <fx:Boolean id="disableSuggestions"/>
+  </fx:Declarations>
+
+  <local:plugins>
+    <editor:BindDisablePlugin forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                              bindTo="{config.bindTo}"/>
+    <ui:BindListPlugin bindTo="{getSuggestionsExpression()}">
+      <ui:fields>
+        <ui:DataField name="name"
+                      ifUnreadable="{formatUnreadableName}"
+                      mapping="{(config['contentPropertyPath'] ? config['contentPropertyPath'] + '.' : '') + 'name'}"/>
+        <ui:DataField name="id"/>
+        <ui:DataField name="weight"/>
+      </ui:fields>
+    </ui:BindListPlugin>
+    <ui:BindSelectionPlugin selectedPositions="{getSelectedPositionsExpression()}"
+                            selectedValues="{getSelectedValuesExpression()}"/>
+    <ui:BEMPlugin block="{LinkListBEMEntities.BLOCK}"
+                  bodyElement="{LinkListBEMEntities.ELEMENT_LIST}"
+                  modifier="{LinkListBEMEntities.MODIFIER_NO_TAIL}"/>
+  </local:plugins>
+  <local:dockedItems>
+    <Toolbar dock="top"
+             maskOnDisable="false"
+             ui="{ToolbarSkin.HEADER_GRID_100.getSkin()}">
+      <items>
+        <DisplayField ui="{DisplayFieldSkin.BOLD}"
+                      value="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyLinkList_suggestions_title')}"/>
+        <TbFill/>
+        <Button ui="{ButtonSkin.SIMPLE.getSkin()}"
+                text="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyLinkList_suggestions_add_all')}"
+                handler="{addAllKeywordsHandler}">
+          <plugins>
+            <editor:BindDisablePlugin forceReadOnlyValueExpression="{getAddAllDisabledVE(config.forceReadOnlyValueExpression)}"
+                                      bindTo="{config.bindTo}"/>
+          </plugins>
+        </Button>
+      </items>
+    </Toolbar>
+    <Toolbar dock="bottom"
+             u:focusableContainer="false"
+             maskOnDisable="false"
+             ui="{ToolbarSkin.EMBEDDED_FOOTER.getSkin()}">
+      <items>
+        <Container flex="1"/>
+        <Button ui="{ButtonSkin.SIMPLE.getSkin()}"
+                text="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyLinkList_suggestions_reload')}"
+                handler="{reloadKeywordsHandler}"/>
+      </items>
+    </Toolbar>
+  </local:dockedItems>
+  <local:columns>
+    <GridColumn stateId="name"
+                sortable="false"
+                dataIndex="name"
+                renderer="{taxonomyRenderer}"
+                flex="1"/>
+  </local:columns>
+  <local:selModel>
+    <selection_RowModel mode="MULTI"/>
+  </local:selModel>
+  <local:view>
+    <ui:StatefulTableView ui="{TableViewSkin.DEFAULT.getSkin()}"
+                          deferEmptyText="false"
+                          stripeRows="false"
+                          emptyText="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomySuggestions_empty_text')}">
+      <ui:plugins>
+        <plugin_GridViewDragDrop ddGroup="ContentLinkDD"
+                                 enableDrop="false">
+          <dragZone>
+            <editor:LinkListViewDragZone/>
+          </dragZone>
+        </plugin_GridViewDragDrop>
+        <editor:BindReadOnlyPlugin bindTo="{config.bindTo}"
+                                   forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+      </ui:plugins>
+    </ui:StatefulTableView>
+  </local:view>
+
+</local:TaxonomySuggestionsLinkListPanelBase>

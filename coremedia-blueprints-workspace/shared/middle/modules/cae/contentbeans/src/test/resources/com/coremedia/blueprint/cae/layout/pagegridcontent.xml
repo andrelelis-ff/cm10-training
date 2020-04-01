@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+  <content>
+    <folder name="PagegridTest" id="211">
+
+      <!-- section symbols -->
+      <document id="212" type="CMSymbol" name="north">
+        <version number="1">
+          <stringProperty name="description" value="north"/>
+        </version>
+      </document>
+      <document id="214" type="CMSymbol" name="east">
+        <version number="1">
+          <stringProperty name="description" value="east"/>
+        </version>
+      </document>
+      <document id="216" type="CMSymbol" name="south">
+        <version number="1">
+          <stringProperty name="description" value="south"/>
+        </version>
+      </document>
+      <document id="218" type="CMSymbol" name="west">
+        <version number="1">
+          <stringProperty name="description" value="west"/>
+        </version>
+      </document>
+      <document id="220" type="CMSymbol" name="main">
+        <version number="1">
+          <stringProperty name="description" value="main"/>
+        </version>
+      </document>
+
+      <!-- the channel -->
+      <document id="222" type="CMChannel" name="PagegriddedChannel">
+        <version number="1">
+          <markupProperty name="placement" url="222placement.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+
+      <!-- another channel w/ visibility settings -->
+      <document id="888" type="CMChannel" name="PagegriddedChannel">
+        <version number="1">
+          <markupProperty name="placement" url="888placement.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+
+      <!-- a channel with a broken pagegrid -->
+      <document id="668" type="CMChannel" name="PagegriddedChannel">
+        <version number="1">
+          <markupProperty name="placement" url="668placement.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+
+      <!-- the layout settings document -->
+      <document id="224" type="CMSettings" name="LayoutSettings">
+        <version number="1">
+          <markupProperty name="settings" url="224settings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+
+      <!-- the BROKEN layout settings document -->
+      <document id="666" type="CMSettings" name="LayoutSettings">
+        <version number="1">
+          <markupProperty name="settings" url="666-broken-layout-settings.xml" grammar="coremedia-struct-2008"/>
+        </version>
+      </document>
+
+      <!-- asset for placements -->
+      <document id="40" type="CMArticle" name="article1">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="Article 1"/>
+          <markupProperty name="detailText" url="40detailText.xml" grammar="coremedia-richtext-1.0"/>
+        </version>
+      </document>
+
+      <document id="42" type="CMArticle" name="article2">
+        <version number="1">
+          <stringProperty name="teaserTitle" value="Article 2"/>
+          <markupProperty name="detailText" url="40detailText.xml" grammar="coremedia-richtext-1.0"/>
+          <dateProperty name="validFrom" value="1974-06-09T06:20:00+01:00"/>
+          <dateProperty name="validTo" value="2008-03-22T03:11:00+01:00"/>
+        </version>
+      </document>
+
+    </folder>
+  </content>
+  <rules/>
+</contentRepository>

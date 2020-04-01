@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/United States/English/Pictures/Product 360 Pictures/Leather Bag" name="Leather-Bag-01" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">true</BooleanProperty>
+<StringListProperty Name="originReferences">
+<String>ibm:///catalog/sku/PC_HERMITAGE_LEATHER_BAG_SKU</String>
+<String>ibm:///catalog/product/PC_HERMITAGE_LEATHER_BAG</String>
+</StringListProperty>
+<StringListProperty Name="references">
+<String>ibm:///catalog/sku/PC_HERMITAGE_LEATHER_BAG_SKU</String>
+<String>ibm:///catalog/product/PC_HERMITAGE_LEATHER_BAG</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=755;y=0;width=1291;height=2000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=649;y=0;width=1502;height=2000</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=402;y=0;width=2003;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=63;y=0;width=2673;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=218;width=2800;height=1570</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=444;width=2800;height=1120</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=655;width=2800;height=697</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2695214105793451;y1=0;x2=0.7304785894206549;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.23173803526448364;y1=0;x2=0.7682619647355163;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.14357682619647355;y1=0;x2=0.8589420654911839;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.022670025188916875;y1=0;x2=0.9773299748110831;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.10915492957746478;x2=1;y2=0.8943661971830986</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.22183098591549297;x2=1;y2=0.7816901408450704</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3274647887323944;x2=1;y2=0.676056338028169</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Leather-Bag-01</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Leather-Bag-01</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2800</width>
+<height>2000</height>
+<data md5="27f76b3c4dd991fa68c2eda6d1bbb9e1" size="154260" href="../../../../../../../__blob/27f76b3c4dd991fa68c2eda6d1bbb9e1.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

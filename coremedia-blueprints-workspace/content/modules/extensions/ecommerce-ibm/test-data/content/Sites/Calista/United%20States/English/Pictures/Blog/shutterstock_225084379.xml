@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/United States/English/Pictures/Blog" name="shutterstock_225084379" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=20;y=0;width=1261;height=1950</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=95;width=1300;height=1734</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=160;width=1300;height=1299</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=173;width=1300;height=975</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=177;width=1300;height=730</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=186;width=1300;height=651</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=222;width=1300;height=520</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=275;width=1300;height=488</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=340;width=1300;height=324</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=41;y=0;width=1219;height=1950</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=160;width=1300;height=553</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.015113350125944584;y1=0;x2=0.9848866498740554;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.04865771812080537;x2=1;y2=0.9379194630872483</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.08221476510067115;x2=1;y2=0.7483221476510067</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.08892617449664429;x2=1;y2=0.5889261744966443</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.09060402684563758;x2=1;y2=0.46476510067114096</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.09563758389261745;x2=1;y2=0.42953020134228187</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.11409395973154363;x2=1;y2=0.3808724832214765</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.14093959731543623;x2=1;y2=0.39093959731543626</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.174496644295302;x2=1;y2=0.34060402684563756</StringProperty>
+<StringProperty Name="landscape_ratio235x100">position;x1=0;y1=0.08201892744479496;x2=1;y2=0.36570687070720626</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="landscape_ratio235x100">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>shutterstock_225084379</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>shutterstock_225084379</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1300</width>
+<height>1950</height>
+<data md5="4633ad03bcb87ad28dbaa3c88da612ad" size="551468" href="../../../../../../__blob/4633ad03bcb87ad28dbaa3c88da612ad.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

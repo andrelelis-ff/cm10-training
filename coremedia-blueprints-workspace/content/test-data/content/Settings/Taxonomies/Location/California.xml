@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMLocTaxonomy folder="/Settings/Taxonomies/Location" name="California" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>California</value>
+<children>
+<link href="Yosemite%20National%20Park.xml" path="/Settings/Taxonomies/Location/Yosemite%20National%20Park"/>
+<link href="Mendocino.xml" path="/Settings/Taxonomies/Location/Mendocino"/>
+<link href="San%20Francisco.xml" path="/Settings/Taxonomies/Location/San%20Francisco"/>
+</children>
+<externalReference>http://d.opencalais.com/genericHasher-1/9679b237-33e8-3478-ba13-d9af3c4b943e</externalReference>
+<postcode></postcode>
+<latitudeLongitude>37,-120</latitudeLongitude>
+</CMLocTaxonomy>

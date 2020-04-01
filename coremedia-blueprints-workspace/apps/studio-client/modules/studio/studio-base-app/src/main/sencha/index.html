@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <noscript><meta content="0; URL=nojs.html" http-equiv="refresh"/></noscript>
+    <title>CoreMedia Studio loading...</title>
+    <meta name="apple-mobile-web-app-title" content="CoreMedia Studio">
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="application-name" content="CoreMedia Studio">
+    <meta name="msapplication-config" content="resources/browserconfig.xml">
+    <meta name="theme-color" content="#b3b1b1">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="resources/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="resources/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="resources/manifest.json">
+    <link rel="mask-icon" href="resources/safari-pinned-tab.svg" color="#4189dd">
+    <link rel="shortcut icon" href="resources/favicon.ico">
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .cm-preloader-spinner {
+            position: absolute;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(180deg, #006CAE 0%, #6FC3B7 100%);
+        }
+        #ext-element-1 > .cm-preloader-spinner {
+            display: none;
+        }
+
+        .cm-preloader-spinner div {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+            @license
+            Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
+            This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+            The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+            The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+            Code distributed by Google as part of the polymer project is also
+            subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+         */
+        /**************************/
+        /* STYLES FOR THE SPINNER */
+        /**************************/
+        /*
+         * Constants:
+         *      STROKEWIDTH = 3px
+         *      ARCSIZE     = 270 degrees (amount of circle the arc takes up)
+         *      ARCTIME     = 1333ms (time it takes to expand and contract arc)
+         *      ARCSTARTROT = 216 degrees (how much the start location of the arc
+         *                                should rotate each time, 216 gives us a
+         *                                5 pointed star shape (it's 360/5 * 3).
+         *                                For a 7 pointed star, we might do
+         *                                360/7 * 3 = 154.286)
+         *      CONTAINERWIDTH = 28px
+         *      SHRINK_TIME = 400ms
+         */
+        .cm-preloader-spinner__preloader {
+            display: inline-block;
+            position: relative;
+            width: 56px;
+            height: 56px;
+            /* duration: 360 * ARCTIME / (ARCSTARTROT + (360-ARCSIZE)) */
+            -webkit-animation: cm-preloader-spinner__preloaderRotate 1568ms linear infinite;
+            animation: cm-preloader-spinner__preloaderRotate 1568ms linear infinite;
+        }
+
+        @-webkit-keyframes cm-preloader-spinner__preloaderRotate {
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes cm-preloader-spinner__preloaderRotate {
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        .cm-preloader-spinner__spinner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            border-color: #ffffff;
+            /* durations: 4 * ARCTIME */
+            opacity: 1;
+            -webkit-animation: cm-preloader-spinner__spinnerFillUnfillRotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+            animation: cm-preloader-spinner__spinnerFillUnfillRotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+        }
+
+        @-webkit-keyframes cm-preloader-spinner__spinnerFillUnfillRotate {
+            12.5% {
+                -webkit-transform: rotate(135deg);
+            }
+            /* 0.5 * ARCSIZE */
+            25% {
+                -webkit-transform: rotate(270deg);
+            }
+            /* 1   * ARCSIZE */
+            37.5% {
+                -webkit-transform: rotate(405deg);
+            }
+            /* 1.5 * ARCSIZE */
+            50% {
+                -webkit-transform: rotate(540deg);
+            }
+            /* 2   * ARCSIZE */
+            62.5% {
+                -webkit-transform: rotate(675deg);
+            }
+            /* 2.5 * ARCSIZE */
+            75% {
+                -webkit-transform: rotate(810deg);
+            }
+            /* 3   * ARCSIZE */
+            87.5% {
+                -webkit-transform: rotate(945deg);
+            }
+            /* 3.5 * ARCSIZE */
+            to {
+                -webkit-transform: rotate(1080deg);
+            }
+            /* 4   * ARCSIZE */
+        }
+
+        @keyframes cm-preloader-spinner__spinnerFillUnfillRotate {
+            12.5% {
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+            }
+            /* 0.5 * ARCSIZE */
+            25% {
+                -webkit-transform: rotate(270deg);
+                transform: rotate(270deg);
+            }
+            /* 1   * ARCSIZE */
+            37.5% {
+                -webkit-transform: rotate(405deg);
+                transform: rotate(405deg);
+            }
+            /* 1.5 * ARCSIZE */
+            50% {
+                -webkit-transform: rotate(540deg);
+                transform: rotate(540deg);
+            }
+            /* 2   * ARCSIZE */
+            62.5% {
+                -webkit-transform: rotate(675deg);
+                transform: rotate(675deg);
+            }
+            /* 2.5 * ARCSIZE */
+            75% {
+                -webkit-transform: rotate(810deg);
+                transform: rotate(810deg);
+            }
+            /* 3   * ARCSIZE */
+            87.5% {
+                -webkit-transform: rotate(945deg);
+                transform: rotate(945deg);
+            }
+            /* 3.5 * ARCSIZE */
+            to {
+                -webkit-transform: rotate(1080deg);
+                transform: rotate(1080deg);
+            }
+            /* 4   * ARCSIZE */
+        }
+
+        .cm-preloader-spinner__gap-patch {
+            position: absolute;
+            top: 0;
+            left: 45%;
+            width: 10%;
+            height: 100%;
+            overflow: hidden;
+            border-color: inherit;
+        }
+
+        .cm-preloader-spinner__circle--gap-patch {
+            width: 1000%;
+            left: -450%;
+        }
+
+        .cm-preloader-spinner__circle-clipper {
+            display: inline-block;
+            position: relative;
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+            border-color: inherit;
+        }
+
+        .cm-preloader-spinner__circle--circle-clipper {
+            width: 200%;
+            height: 100%;
+            border-width: 2px;
+            /* STROKEWIDTH */
+            border-style: solid;
+            border-color: inherit;
+            border-bottom-color: transparent !important;
+            border-radius: 50%;
+            -webkit-animation: none;
+            animation: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .cm-preloader-spinner__circle--left {
+            left: 0;
+            border-right-color: transparent !important;
+            -webkit-transform: rotate(129deg);
+            transform: rotate(129deg);
+            /* duration: ARCTIME */
+            -webkit-animation: cm-preloader-spinner__circleLeftSpin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+            animation: cm-preloader-spinner__circleLeftSpin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+        }
+
+        .cm-preloader-spinner__circle--right {
+            left: -100%;
+            border-left-color: transparent !important;
+            -webkit-transform: rotate(-129deg);
+            transform: rotate(-129deg);
+            /* duration: ARCTIME */
+            -webkit-animation: cm-preloader-spinner__circleRightSpin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+            animation: cm-preloader-spinner__circleRightSpin 1333ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
+        }
+
+        @-webkit-keyframes cm-preloader-spinner__circleLeftSpin {
+            from {
+                -webkit-transform: rotate(130deg);
+            }
+            50% {
+                -webkit-transform: rotate(-5deg);
+            }
+            to {
+                -webkit-transform: rotate(130deg);
+            }
+        }
+
+        @keyframes cm-preloader-spinner__circleLeftSpin {
+            from {
+                -webkit-transform: rotate(130deg);
+                transform: rotate(130deg);
+            }
+            50% {
+                -webkit-transform: rotate(-5deg);
+                transform: rotate(-5deg);
+            }
+            to {
+                -webkit-transform: rotate(130deg);
+                transform: rotate(130deg);
+            }
+        }
+
+        @-webkit-keyframes cm-preloader-spinner__circleRightSpin {
+            from {
+                -webkit-transform: rotate(-130deg);
+            }
+            50% {
+                -webkit-transform: rotate(5deg);
+            }
+            to {
+                -webkit-transform: rotate(-130deg);
+            }
+        }
+
+        @keyframes cm-preloader-spinner__circleRightSpin {
+            from {
+                -webkit-transform: rotate(-130deg);
+                transform: rotate(-130deg);
+            }
+            50% {
+                -webkit-transform: rotate(5deg);
+                transform: rotate(5deg);
+            }
+            to {
+                -webkit-transform: rotate(-130deg);
+                transform: rotate(-130deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cm-preloader-spinner">
+        <div class="cm-preloader-spinner__preloader">
+            <div class="cm-preloader-spinner__spinner">
+                <div class="cm-preloader-spinner__circle-clipper">
+                    <div class="cm-preloader-spinner__circle--circle-clipper cm-preloader-spinner__circle--left"></div>
+                </div><div class="cm-preloader-spinner__gap-patch">
+                    <div class="cm-preloader-spinner__circle--gap-patch"></div>
+                </div><div class="cm-preloader-spinner__circle-clipper">
+                    <div class="cm-preloader-spinner__circle--circle-clipper cm-preloader-spinner__circle--right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="resources/config-init.js"></script>
+</body>
+</html>

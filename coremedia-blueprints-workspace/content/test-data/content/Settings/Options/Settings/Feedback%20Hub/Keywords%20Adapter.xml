@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Settings/Options/Settings/Feedback Hub" name="Keywords Adapter">
+  <locale></locale>
+  <master>
+  </master>
+  <settings>
+    <Struct xmlns="http://www.coremedia.com/2008/struct">
+      <StringProperty Name="factoryId">imagga</StringProperty>
+      <StringProperty Name="groupId">imagga</StringProperty>
+      <StringProperty Name="contentType">CMPicture</StringProperty>
+      <BooleanProperty Name="enabled">false</BooleanProperty>
+      <StringProperty Name="targetProperty">keywords</StringProperty>
+      <StructProperty Name="settings">
+        <Struct>
+          <StringProperty Name="sourceBlobProperty">data</StringProperty>
+          <StringProperty Name="basicAuthKey"></StringProperty>
+        </Struct>
+      </StructProperty>
+    </Struct>
+  </settings>
+  <identifier></identifier>
+</CMSettings>

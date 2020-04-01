@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/SiteGenesis Global/France/French/Options/Viewtypes/CMChannel" name="left-right" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Options/Viewtypes/CMChannel/left-right.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Viewtypes/CMChannel/left-right"/>
+</master>
+<description>Affiche le contenu alternativement à gauche et à droite.</description>
+<icon href="left-right.icon.svg%2Bxml" mimetype="image/svg+xml"/>
+<layout>left-right</layout>
+</CMViewtype>

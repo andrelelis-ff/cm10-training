@@ -1,0 +1,45 @@
+
+# ##############################################################################
+# # INTERNET EXPLORER                                                          #
+# ##############################################################################
+
+# ------------------------------------------------------------------------------
+# | Better website experience                                                  |
+# ------------------------------------------------------------------------------
+
+# Force IE to render pages in the highest available mode in the various
+# cases when it may not: http://hsivonen.iki.fi/doctype/ie-mode.pdf.
+
+<IfModule mod_headers.c>
+  Header set X-UA-Compatible "IE=edge"
+  # `mod_headers` can't match based on the content-type, however, we only
+  # want to send this header for HTML pages and not for the other resources
+  # Filesystem
+  <FilesMatch "\.(appcache|crx|css|eot|gif|htc|ico|jpe?g|js|m4a|m4v|manifest|mp4|oex|oga|ogg|ogv|otf|pdf|png|safariextz|svgz?|ttf|vcf|webapp|webm|webp|woff|woff2|xml|xpi)$">
+  Header unset X-UA-Compatible
+  </FilesMatch>
+  # Proxy
+  <LocationMatch "\.(appcache|crx|css|eot|gif|htc|ico|jpe?g|js|m4a|m4v|manifest|mp4|oex|oga|ogg|ogv|otf|pdf|png|safariextz|svgz?|ttf|vcf|webapp|webm|webp|woff|woff2|xml|xpi)$">
+  Header unset X-UA-Compatible
+  </LocationMatch>
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# | Persistent connections                                                     |
+# ------------------------------------------------------------------------------
+
+# Allow multiple requests to be sent over the same TCP connection:
+# http://httpd.apache.org/docs/current/en/mod/core.html#keepalive.
+
+# Enable if you serve a lot of static content but, be aware of the
+# possible disadvantages!
+
+<IfModule mod_headers.c>
+  Header set Connection Keep-Alive
+</IfModule>
+
+# Remove `-gzip` or `-deflate` suffix from incoming ETag values because
+# Apache 2.4 mod_deflate adds this suffix but that breaks Studio Tomcat
+<IfModule mod_headers.c>
+  Header edit ETag -(gzip|deflate)\"$ \"
+</IfModule>

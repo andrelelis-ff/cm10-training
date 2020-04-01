@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MenuItem xmlns:fx="http://ns.adobe.com/mxml/2009"
+          xmlns:exml="http://www.jangaroo.net/exml/0.8"
+          xmlns="exml:ext.config"
+          xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+          xmlns:livecontext="exml:com.coremedia.livecontext.studio.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.preview.PreviewPanelBase;
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.shopPageOpenInBackgroundMenuItem";
+
+    /**
+     * The itemId of the 'open in background tab' menu item.
+     */
+    public static const LC_OPEN_IN_BACKGROUND_TAB_MENU_ITEM_ID:String = "lcOpenInBackgroundTab";
+
+    [Bindable]
+    public var metadataValueExpression:ValueExpression;
+
+    private var config:ShopPageOpenInBackgroundMenuItem;
+
+    public native function ShopPageOpenInBackgroundMenuItem(config:ShopPageOpenInBackgroundMenuItem = null);
+    ]]></fx:Script>
+
+  <baseAction>
+    <livecontext:MetadataToEntitiesActionAdapter
+            metadataValueExpression="{config.metadataValueExpression}"
+            itemId="{LC_OPEN_IN_BACKGROUND_TAB_MENU_ITEM_ID}"
+            hideOnDisable="true"
+            useParentNode="true">
+      <livecontext:backingAction>
+        <!--the content will be set via the MetadataToEntitiesActionAdapter. Just configure a empty value expression-->
+        <editor:OpenInTabAction contentValueExpression="{ValueExpressionFactory.createFromValue()}" background="true"/>
+      </livecontext:backingAction>
+    </livecontext:MetadataToEntitiesActionAdapter>
+  </baseAction>
+
+</MenuItem>

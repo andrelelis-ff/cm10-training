@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`cmLogger getLogger() returns a new logger object providing an explicit id 1`] = `
+Object {
+  "debug": [Function],
+  "error": [Function],
+  "id": "0123456789",
+  "info": [Function],
+  "success": [Function],
+  "warn": [Function],
+}
+`;
+
+exports[`cmLogger getLogger() returns a new logger object with id "newLogger" 1`] = `
+Object {
+  "debug": [Function],
+  "error": [Function],
+  "id": "newLogger",
+  "info": [Function],
+  "success": [Function],
+  "warn": [Function],
+}
+`;

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Fasteners" name="Fasterners Products Promotion Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../Products/Aurora%20B2B/Fasteners/Flex-top%20Hex%20Nut%2bd844d94.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Fasteners/Flex-top%20Hex%20Nut%20Product%20Teaser"/>
+<link href="../../Products/Aurora%20B2B/Fasteners/Heavy%20Hex%20Nut%20Pr1c6006c2.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Fasteners/Heavy%20Hex%20Nut%20Product%20Teaser"/>
+<link href="../../Products/Aurora%20B2B/Fasteners/Socket%20Cap%20Screw%2bd844d94.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Fasteners/Socket%20Cap%20Screw%20Product%20Teaser"/>
+<link href="../../Products/Aurora%20B2B/Fasteners/T-Handle%20Bolt%20Prod207106d.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Fasteners/T-Handle%20Bolt%20Product%20Teaser"/>
+</items>
+</CMCollection>

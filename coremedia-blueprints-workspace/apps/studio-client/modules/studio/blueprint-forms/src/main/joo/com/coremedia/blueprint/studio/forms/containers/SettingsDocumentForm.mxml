@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PropertyFieldGroup
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Settings_label')}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.settingsDocumentForm";
+
+    private var config:SettingsDocumentForm;
+
+    public native function SettingsDocumentForm(config:SettingsDocumentForm = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <fx:String id="folders"/>
+
+    <fx:String id="contentType"/>
+  </fx:Declarations>
+
+  <editor:items>
+    <editor:PropertyFieldGroup bindTo="{config.bindTo}"
+                               itemId="settingsDocumentFieldGroup"
+                               forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"
+                               header="{false}">
+      <editor:items>
+        <editor:LinkListPropertyField propertyName="linkedSettings"/>
+        <editor:StructPropertyField propertyName="localSettings"
+                                    itemId="localSettings"/>
+      </editor:items>
+    </editor:PropertyFieldGroup>
+  </editor:items>
+
+</editor:PropertyFieldGroup>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./Germany/German/Editorial/Site-Wide/Footer" name="Imprint Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Site-Wide/Footer/Imprint%20Article.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Site-Wide/Footer/Imprint%20Article"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>imprint</segment>
+<title>Impressum</title>
+<htmlTitle></htmlTitle>
+<keywords>Coremedia Impressum</keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Impressum</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Dies ist eine Demo-Website für die CoreMedia Content Experience Platform von CoreMedia </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Dies ist eine Demo-Website für die <br/></p> <p class="p--heading-2"><a xlink:show="replace" xlink:type="simple" xlink:href="coremedia:///cap/resources/../External%20Links/CoreMedia%20Content%20Experience%20Platform%20Ext4ccadcf1.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Site-Wide/External%20Links/CoreMedia%20Content%20Experience%20Platform%20External%20Link">CoreMedia Content Experience Platform</a></p> <p> von Coremedia AG. </p> <p><br/></p> <table><tbody><tr valign="top"><td colspan="1" rowspan="1"><p> Hamburg, Deutschland <br/> <strong>CoreMedia AG</strong> </p><p> Ludwig-Erhard-Straße 18 <br/> 20459 Hamburg <br/> Deutschland <br/></p><p> <a xlink:href="http://tel:+49.40.3255.870" xlink:show="replace" xlink:type="simple">+49.40.325.5870</a> <br/> <a xlink:href="mailto:info@coremedia.com" xlink:show="replace" xlink:type="simple">info@coremedia.com</a> </p></td><td colspan="1" rowspan="1"><p> San Francisco, USA <br/> <strong>CoreMedia Corporation</strong> </p><p> 114 Sansome Street, Suite 1300 <br/> San Francisco, CA 94104 <br/> <a xlink:href="http://tel:+1.415.371.0400" xlink:show="replace" xlink:type="simple">+1.415.371.0400</a> <br/> <a xlink:href="mailto:usa-info@coremedia.com" xlink:show="replace" xlink:type="simple">usa-info@coremedia.com</a> </p></td></tr></tbody></table> <p> <strong>Eingetragen im Handelsregister Hamburg unter der Nummer</strong> <br/> HR B 76277 </p> <p> <strong>Vertreter:</strong> Sören Stamer, Dr. Klemens Kleiminger </p> <p> <strong>Umsatzsteuer-Identifikationsnummer</strong> <br/> DE 179 733 607 </p> <p> <strong>Provider nach dem Teledienstegesetz (TDG):</strong> <br/> Coremedia AG, Ludwig-Erhard-Straße 18, 20459 Hamburg </p> <p><br/></p> <p> Alle Bilder sind Coremedia AG unter dem Copyright der lizenzierten <a xlink:href="http://www.shutterstock.com" xlink:show="new" xlink:type="simple"><strong>Shutterstock</strong></a> sofern nicht anders angegeben. <br/> Keine Umverteilung der Bilder ist ohne separate Lizenzierung erlaubt. <br/></p> <p>Any <strong><a xlink:show="replace" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Navigation/Hidden%20Navigation/Embedding%20Demo%20Page.xml" cmexport:path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Hidden%20Navigation/Embedding%20Demo%20Page">embedded 3rd party services</a></strong> may have to be licensed separately.<br/></p> <p><br/></p> <p><br/></p> </div></detailText>
+<pictures>
+<link href="../../Assets/Pictures/Kitchen%20Dreams/Young%20Chef%20in%20Kitchen%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Kitchen%20Dreams/Young%20Chef%20in%20Kitchen%20Picture"/>
+</pictures>
+<notSearchable>1</notSearchable>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

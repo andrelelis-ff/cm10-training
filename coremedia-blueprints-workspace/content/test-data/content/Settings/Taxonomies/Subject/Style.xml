@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTaxonomy folder="/Settings/Taxonomies/Subject" name="Style" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Style</value>
+<children>
+<link href="Casual.xml" path="/Settings/Taxonomies/Subject/Casual"/>
+<link href="Luxury.xml" path="/Settings/Taxonomies/Subject/Luxury"/>
+<link href="Classic.xml" path="/Settings/Taxonomies/Subject/Classic"/>
+<link href="Stylish.xml" path="/Settings/Taxonomies/Subject/Stylish"/>
+</children>
+<externalReference></externalReference>
+</CMTaxonomy>

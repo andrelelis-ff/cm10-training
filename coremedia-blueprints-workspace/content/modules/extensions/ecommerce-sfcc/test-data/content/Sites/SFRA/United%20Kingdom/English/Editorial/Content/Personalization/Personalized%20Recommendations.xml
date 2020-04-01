@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMP13NSearch folder="/Sites/SFRA/United Kingdom/English/Editorial/Content/Personalization" name="Personalized Recommendations" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMChannel/landscape.xml" path="/Sites/SFRA/United%20Kingdom/English/Options/Viewtypes/CMChannel/landscape"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Your recommendations</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<maxLength>2</maxLength>
+<documentType>CMArticle</documentType>
+<searchContext>
+<link href="../../../Navigation/Homepage%20UK.xml" path="/Sites/SFRA/United%20Kingdom/English/Navigation/Homepage%20UK"/>
+</searchContext>
+<searchQuery href="Personalized%20Recommendations.searchQuery.plain" mimetype="text/plain"/>
+<defaultContent>
+<link href="../Articles/Fashions%20fade%2C%20style%20is%20eternal.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Articles/Fashions%20fade%2C%20style%20is%20eternal"/>
+<link href="../Articles/Fashion%20should%20be%20Fun.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Articles/Fashion%20should%20be%20Fun"/>
+</defaultContent>
+</CMP13NSearch>

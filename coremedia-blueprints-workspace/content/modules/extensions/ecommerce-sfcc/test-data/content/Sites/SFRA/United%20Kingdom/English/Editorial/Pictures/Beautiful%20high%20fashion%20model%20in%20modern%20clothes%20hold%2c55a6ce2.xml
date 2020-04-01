@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/United Kingdom/English/Editorial/Pictures" name="Beautiful high fashion model in modern clothes hold purse posing" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=0;width=1353;height=1804</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=0;width=1353;height=1353</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=1353;height=1015</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=1353;height=761</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=16;width=1353;height=507</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=63;width=1353;height=338</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio8x3">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.028481012658227847;x2=0.9999999999999999;y2=0.9304810126582278</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.015822784810126583;x2=0.9999999999999999;y2=0.6923227848101264</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.015822784810126583;x2=0.9999999999999999;y2=0.5231977848101265</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.015822784810126583;x2=0.9999999999999999;y2=0.39635403481012654</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.02531645569620253;x2=0.9999999999999999;y2=0.2790039556962025</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.031545741324921134;x2=1;y2=0.20067074132492113</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>sfcc:///catalog/product/22956726</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.5257009345794392</StringProperty>
+<StringProperty Name="y">0.1309148264984227</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Beautiful high fashion model in modern clothes hold purse posing</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>shutterstock_230972617</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1353</width>
+<height>2000</height>
+<data md5="2504c61f5b1811e88a6ed79d3c78dd75" size="444799" href="../../../../../../__blob/2504c61f5b1811e88a6ed79d3c78dd75.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

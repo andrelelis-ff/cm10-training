@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util.xsd">
+
+  <!-- import beans "contentRepository", "index", "contentFeederRepositoryListeners", "contentFeederOperations",
+                    "contentFeederBackgroundFeeds" -->
+  <import resource="classpath:/framework/spring/feeder/feeder.xml"/>
+  <!-- import bean "childrenTreeRelation" -->
+  <import resource="classpath:/com/coremedia/blueprint/base/tree/bpbase-treerelation-services.xml"/>
+  <!-- import bean "mbeanRegistry" -->
+  <import resource="classpath:/com/coremedia/jmx/mbean-services.xml"/>
+
+  <customize:append id="addAssetManagementFeedablePopulators" bean="index" property="feedablePopulators">
+    <list>
+      <!--
+        Feeds the assets metadata.
+      -->
+      <bean class="com.coremedia.blueprint.assets.feeder.AssetMetadataFeedablePopulator">
+        <property name="metadataProperty" value="metadata"/>
+      </bean>
+      <!--
+        Feeds the numeric id of asset taxonomies.
+      -->
+      <ref bean="assetTaxonomyIdsFeedablePopulator"/>
+    </list>
+  </customize:append>
+
+  <customize:append id="addPartialUpdateAssetManagementFeedablePopulators" bean="index"
+                    property="partialUpdateFeedablePopulators">
+    <list>
+      <ref bean="assetTaxonomyIdsFeedablePopulator"/>
+    </list>
+  </customize:append>
+
+  <customize:append id="addAssetTaxonomyIdsContentFeederRepositoryListener" bean="contentFeederRepositoryListeners">
+    <list>
+      <ref bean="assetTaxonomyIdsBackgroundFeed"/>
+    </list>
+  </customize:append>
+
+  <customize:append id="addAssetTaxonomyIdsBackgroundFeed" bean="contentFeederBackgroundFeeds">
+    <list>
+      <ref bean="assetTaxonomyIdsBackgroundFeed"/>
+    </list>
+  </customize:append>
+
+  <customize:append id="assetSubjectTaxonomyProperties" bean="subjectTaxonomyProperties">
+    <map>
+      <entry key="AMAsset" value="subjectTaxonomy"/>
+    </map>
+  </customize:append>
+
+  <customize:append id="assetLocationTaxonomyProperties" bean="locationTaxonomyProperties">
+    <map>
+      <entry key="AMAsset" value="locationTaxonomy"/>
+    </map>
+  </customize:append>
+
+  <bean id="contentFeederAssetTaxonomyIdsBackgroundFeedMBeanRegistrator" class="com.coremedia.jmx.MBeanRegistrator">
+    <property name="mbeans">
+      <map>
+        <entry key="type=AssetTaxonomyIdsBackgroundFeed">
+          <bean factory-bean="assetTaxonomyIdsBackgroundFeed" factory-method="getManager"/>
+        </entry>
+      </map>
+    </property>
+    <property name="registry" ref="mbeanRegistry"/>
+  </bean>
+
+  <util:constant id="assetTaxonomyAspect"
+                 static-field="com.coremedia.blueprint.assets.feeder.AssetTaxonomyFeedableAspect.ASSET_TAXONOMY_IDS"/>
+
+  <bean id="assetTaxonomyTreeContextRelation"
+        class="com.coremedia.blueprint.base.contentfeeder.tree.TreeRelationLinkedTreeContextRelation">
+    <constructor-arg index="0" name="treeRelation" ref="assetTaxonomyTreeRelation"/>
+    <constructor-arg index="1" name="contentType" value="AMAsset"/>
+    <constructor-arg index="2" name="contextProperty" value="assetTaxonomy"/>
+  </bean>
+
+  <bean id="assetTaxonomyIdsBackgroundFeed"
+        class="com.coremedia.blueprint.base.contentfeeder.tree.TreeContextBackgroundFeed">
+    <constructor-arg index="0" name="id" value="ASSET_TAXONOMY_IDS"/>
+    <constructor-arg index="1" name="feederOperations" ref="contentFeederOperations"/>
+    <constructor-arg index="2" name="contentRepository" ref="contentRepository"/>
+    <constructor-arg index="3" name="treeContextRelation" ref="assetTaxonomyTreeContextRelation"/>
+    <constructor-arg index="4" name="feedableAspect" ref="assetTaxonomyAspect"/>
+    <constructor-arg index="5" name="treeContentType" value="AMTaxonomy"/>
+    <constructor-arg index="6" name="treeChildrenProperty" value="children"/>
+  </bean>
+
+  <bean id="assetTaxonomyIdsFeedablePopulator"
+        class="com.coremedia.blueprint.base.contentfeeder.taxonomy.TaxonomyIdsFeedablePopulator">
+    <constructor-arg index="0" name="taxonomyTreeRelation" ref="assetTaxonomyTreeRelation"/>
+    <constructor-arg index="1" name="contentType" value="AMAsset"/>
+    <constructor-arg index="2" name="taxonomyProperty" value="assetTaxonomy"/>
+    <constructor-arg index="3" name="indexField" value="assettaxonomy"/>
+    <constructor-arg index="4" name="feedableAspect" ref="assetTaxonomyAspect"/>
+  </bean>
+
+  <bean id="assetTaxonomyTreeRelation" parent="childrenTreeRelation">
+    <property name="contentTypeName" value="AMTaxonomy"/>
+  </bean>
+
+</beans>
+

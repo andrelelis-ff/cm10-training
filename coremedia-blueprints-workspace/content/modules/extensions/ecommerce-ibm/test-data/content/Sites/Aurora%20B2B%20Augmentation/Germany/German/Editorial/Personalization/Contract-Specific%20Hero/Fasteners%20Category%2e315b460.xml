@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Personalization/Contract-Specific Hero" name="Fasteners Category Promotion Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Personalization/Contract-Specific%20Hero/Fasteners%20Cf8e19e72.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Personalization/Contract-Specific%20Hero/Fasteners%20Category%20Promotion%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>20% auf alle Schrauben</teaserTitle>
+<pictures>
+<link href="../../../Pictures/Product%20Category%20Pictures/Fasteners/Fasteners%20Category%20Pff616ece.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Pictures/Product%20Category%20Pictures/Fasteners/Fasteners%20Category%20Promotion%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../Augmentation/Fasteners/Fasteners.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Augmentation/Fasteners/Fasteners"/>
+</target>
+</CMTeaser>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Microsites/RGB LED Strip" name="Chef Corp RGB LED Strip Video Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=136;y=0;width=154;height=240</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=123;y=0;width=180;height=240</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=94;y=0;width=240;height=240</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=54;y=0;width=320;height=240</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=426;height=240</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=35;width=426;height=171</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=67;width=426;height=107</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.3188405797101449;y1=0;x2=0.6811594202898551;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2898550724637681;y1=0;x2=0.7125603864734299;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.21980676328502416;y1=0;x2=0.782608695652174;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.12560386473429952;y1=0;x2=0.8768115942028986;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.1459227467811159;x2=1;y2=0.8583690987124464</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.27896995708154504;x2=1;y2=0.7253218884120172</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Installation of the a LED light strip </title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Installation of the a LED light strip </alt>
+<copyright>azuri/Shutterstock Video 6975667</copyright>
+<dataUrl></dataUrl>
+<width>426</width>
+<height>240</height>
+<data md5="4b2b628325047b8a532649a24659f938" size="160931" href="../../../../../../../../__blob/4b2b628325047b8a532649a24659f938.blob" mimetype="image/png"/>
+<asset>
+<link href="../../../../../../../../Assets/Products/Lighting/Chef%20Corp%2E%20RGB%20LED%20Strip%20Mounting%20Instructions.xml" path="/Assets/Products/Lighting/Chef%20Corp%2E%20RGB%20LED%20Strip%20Mounting%20Instructions"/>
+</asset>
+</CMPicture>

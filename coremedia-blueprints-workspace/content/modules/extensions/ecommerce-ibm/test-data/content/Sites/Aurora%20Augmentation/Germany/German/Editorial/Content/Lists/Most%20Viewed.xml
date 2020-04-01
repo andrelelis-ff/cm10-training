@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMALXPageList folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Lists" name="Most Viewed" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Lists/Most%20Viewed.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Lists/Most%20Viewed"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Am häufigsten gesehen</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<maxLength>5</maxLength>
+<timeRange>40</timeRange>
+<analyticsProvider>googleAnalytics</analyticsProvider>
+<documentType>CMArticle</documentType>
+<baseChannel>
+<link href="../../../Navigation/Aurora%20Augmentation.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Navigation/Aurora%20Augmentation"/>
+</baseChannel>
+<defaultContent>
+<link href="../Eveningwear/Eveningwear%20Trends.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Eveningwear/Eveningwear%20Trends"/>
+<link href="../Eveningwear/Things%20you%20can%20do%20wrong%20with%20your%20E17d966a5.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Eveningwear/Things%20you%20can%20do%20wrong%20with%20your%20Evening%20Dresses"/>
+<link href="../Fashion%20Week/Why%20designers%20fall%20in%20love%20with%20Black.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion%20Week/Why%20designers%20fall%20in%20love%20with%20Black"/>
+</defaultContent>
+</CMALXPageList>

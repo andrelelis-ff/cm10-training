@@ -1,0 +1,6 @@
+{
+  "name": "kitchen",
+  "description": "This is the kitchen environment, representing a local setup using testkitchen.",
+  "chef_type": "environment",
+  "json_class": "Chef::Environment"
+}

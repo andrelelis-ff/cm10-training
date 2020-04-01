@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:EsAnalyticsChartPanelBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                                 xmlns:local="com.coremedia.blueprint.studio.esanalytics.*"
+                                 xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                                 xmlns="exml:ext.config"
+                                 xmlns:esalx="exml:com.coremedia.blueprint.studio.config.esanalytics"
+                                 title="{resourceManager.getString('com.coremedia.blueprint.studio.esanalytics.EsAnalyticsStudioPlugin', 'chart_container_label')}"
+                                 itemId="esAnalyticsChartForm">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.esanalytics.EsAnalyticsStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.esanalytics.esAnalyticsChartPanel";
+
+    public static const ES_ALX_CHART:String = "esAlxChartItemId";
+
+    public native function EsAnalyticsChartPanel(config:EsAnalyticsChartPanel = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <esalx:EsAnalyticsChart itemId="{ES_ALX_CHART}"
+                            bindTo="{getAlxData('data')}"
+                            timeRangeValueExpression="{getTimeRangeValueExpression()}"
+                            timeStampValueExpression="{getAlxData('timeStamp')}"
+                            chartHeight="200"/>
+  </local:items>
+
+</local:EsAnalyticsChartPanelBase>

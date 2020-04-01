@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/United States/English/Options/Personalization/Profiles" name="Female Elegant" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=66;y=0;width=243;height=377</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=46;y=0;width=283;height=377</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=2;width=374;height=374</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=48;width=374;height=281</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=84;width=374;height=210</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=114;width=374;height=150</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=142;width=374;height=94</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.17647058823529413;y1=0;x2=0.8262032085561497;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.12299465240641712;y1=0;x2=0.8796791443850267;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.005305039787798408;x2=1;y2=0.9973474801061007</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.1273209549071618;x2=1;y2=0.8726790450928382</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.22281167108753316;x2=1;y2=0.7798408488063661</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.30238726790450926;x2=1;y2=0.7002652519893899</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.376657824933687;x2=1;y2=0.6259946949602122</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Female Elegant</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Female Elegant</alt>
+<copyright>Pavel L Photo and Video/Shutterstock 66587146</copyright>
+<dataUrl></dataUrl>
+<width>374</width>
+<height>377</height>
+<data md5="1b7177e711e64136f65a4e898179d9b6" size="199626" href="../../../../../../../__blob/1b7177e711e64136f65a4e898179d9b6.blob" mimetype="image/png"/>
+<asset>
+</asset>
+</CMPicture>

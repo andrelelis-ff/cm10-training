@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Hybris Apparel/United Kingdom/English/Options/Settings" name="Elastic Social" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="elasticSocial">
+<Struct>
+<StringListProperty Name="commentDocumentTypes">
+<String>CMArticle</String>
+</StringListProperty>
+<StringProperty Name="commentType">ANONYMOUS</StringProperty>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<StringProperty Name="tenant">hybris-en-gb</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

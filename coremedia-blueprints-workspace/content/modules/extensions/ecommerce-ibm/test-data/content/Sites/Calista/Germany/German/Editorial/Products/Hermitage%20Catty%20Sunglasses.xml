@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/Calista/Germany/German/Editorial/Products" name="Hermitage Catty Sunglasses" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Editorial/Products/Hermitage%20Catty%20Sunglasses.xml" path="/Sites/Calista/United%20States/English/Editorial/Products/Hermitage%20Catty%20Sunglasses"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../Pictures/Blog/Photo%20Shooting%20in%20Rome%20-%20With%20my%20new%20Sun%20Glasses.xml" path="/Sites/Calista/Germany/German/Pictures/Blog/Photo%20Shooting%20in%20Rome%20-%20With%20my%20new%20Sun%20Glasses"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>ibm:///catalog/product/WAC007_0715</externalId>
+</CMProductTeaser>

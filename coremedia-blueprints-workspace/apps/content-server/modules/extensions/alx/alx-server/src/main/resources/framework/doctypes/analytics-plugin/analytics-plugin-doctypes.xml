@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!--
+  Analytics Document Types
+  (c) CoreMedia AG, 2011
+-->
+<DocumentTypeModel xmlns="http://www.coremedia.com/2008/documenttypes"
+                   xmlns:extensions="http://www.coremedia.com/2013/documenttypes-extensions"
+                   Name="analytics-doctypes"
+                   Title="Analytics Document Types">
+
+  <ImportDocType Name="CMTeasable" From="blueprint-doctypes"/>
+  <ImportDocType Name="CMDynamicList" From="blueprint-doctypes"/>
+  <ImportDocType Name="CMNavigation" From="blueprint-doctypes"/>
+
+  <!--
+      A document used for displaying a list of documents generated from an analytics event tracking report.
+  -->
+  <DocType Name="CMALXBaseList" Parent="CMDynamicList" Abstract="true">
+    <IntProperty Name="timeRange"/>
+    <StringProperty Name="analyticsProvider" Length="64"/>
+  </DocType>
+
+  <!--
+      A document used for displaying a list of documents generated from an analytics report, e.g.,
+      the most clicked articles in a given channel.
+  -->
+  <DocType Name="CMALXPageList" Parent="CMALXBaseList">
+    <LinkListProperty Name="master" Max="1" LinkType="CMALXPageList" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="documentType" Length="256"/>
+    <LinkListProperty Name="baseChannel" Max="1" LinkType="CMNavigation"/>
+    <LinkListProperty Name="defaultContent" LinkType="CMTeasable"/>
+  </DocType>
+
+  <!--
+      A document used for displaying a list of items generated from an analytics event tracking report.
+  -->
+  <DocType Name="CMALXEventList" Parent="CMALXBaseList">
+    <LinkListProperty Name="master" Max="1" LinkType="CMALXEventList" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="category" Length="512"/>
+    <StringProperty Name="action" Length="512"/>
+  </DocType>
+
+</DocumentTypeModel>

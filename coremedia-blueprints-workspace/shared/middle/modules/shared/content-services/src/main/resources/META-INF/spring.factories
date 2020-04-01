@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.coremedia.blueprint.coderesources.ThemeServiceConfiguration,\
+com.coremedia.blueprint.segments.SegmentsConfiguration

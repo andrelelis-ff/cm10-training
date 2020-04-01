@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/Chef Corp./Germany/German/Options/Viewtypes/CMPlaceholder" name="category-list-categories" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Options/Viewtypes/CMPlaceholder/category-list-categories.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Options/Viewtypes/CMPlaceholder/category-list-categories"/>
+</master>
+<description>Zeigt eine Liste der Unterkategorien</description>
+<icon md5="9ac22214fc7e962a398a837195a16c4c" size="34147" href="../../../../../../../__blob/9ac22214fc7e962a398a837195a16c4c.blob" mimetype="image/png"/>
+<layout>category-list-categories</layout>
+</CMViewtype>

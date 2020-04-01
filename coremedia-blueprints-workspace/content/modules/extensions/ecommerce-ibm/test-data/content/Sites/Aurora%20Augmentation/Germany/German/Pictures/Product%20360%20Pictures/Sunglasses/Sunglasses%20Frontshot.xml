@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/Germany/German/Pictures/Product 360 Pictures/Sunglasses" name="Sunglasses Frontshot" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses%20Frontshot.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Product%20360%20Pictures/Sunglasses/Sunglasses%20Frontshot"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="originReferences">
+<String>ibm:///catalog/sku/PC_HERMITAGE_CATTY_SUNGLASSES_SKU</String>
+<String>ibm:///catalog/product/PC_HERMITAGE_CATTY_SUNGLASSES</String>
+</StringListProperty>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/WAC007_0715</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=284;y=0;width=1032;height=1600</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=200;y=0;width=1200;height=1600</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=447;y=330;width=891;height=891</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=371;y=427;width=1044;height=782</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=350;width=1600;height=900</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=480;width=1600;height=640</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=645;width=1600;height=399</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.17884130982367757;y1=0;x2=0.8236775818639799;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.12594458438287154;y1=0;x2=0.8765743073047859;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.2795969773299748;y1=0.20654911838790932;x2=0.836272040302267;y2=0.7632241813602015</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.23173803526448364;y1=0.26700251889168763;x2=0.8841309823677582;y2=0.7556675062972292</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.21914357682619648;x2=1;y2=0.7808564231738035</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.29974811083123426;x2=1;y2=0.7002518891687658</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.40302267002518893;x2=1;y2=0.6523929471032746</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Sonnenbrille Frontshot</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Sonnenbrille Frontshot</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1600</width>
+<height>1600</height>
+<data md5="387df64ead9df1053d088ebe7171739c" size="57054" href="../../../../../../../__blob/387df64ead9df1053d088ebe7171739c.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

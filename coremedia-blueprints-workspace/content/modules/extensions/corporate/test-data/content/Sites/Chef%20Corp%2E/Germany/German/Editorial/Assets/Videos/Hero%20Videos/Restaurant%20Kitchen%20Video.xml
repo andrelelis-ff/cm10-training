@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Chef Corp./Germany/German/Editorial/Assets/Videos/Hero Videos" name="Restaurant Kitchen Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Assets/Videos/Hero%20Videos/Restaurant%20Kitchen%20Video.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Videos/Hero%20Videos/Restaurant%20Kitchen%20Video"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Restaurant Küche</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Dampf Rauch über Gemüse und Küchenutensilien in der Nähe von Glas mit Silhouetten von Menschen im Restaurant </p> </div></detailText>
+<pictures>
+<link href="Restaurant%20Kitchen%20Video%20Still%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Videos/Hero%20Videos/Restaurant%20Kitchen%20Video%20Still%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Shutterstock_v3418772_1280</alt>
+<copyright>Pavel L Foto und Video / Shutterstock 3418772</copyright>
+<dataUrl></dataUrl>
+<data md5="44ba900ab0de61e37d9b554100e840a9" size="655653" href="../../../../../../../../__blob/44ba900ab0de61e37d9b554100e840a9.blob" mimetype="video/mp4"/>
+<asset>
+</asset>
+</CMVideo>

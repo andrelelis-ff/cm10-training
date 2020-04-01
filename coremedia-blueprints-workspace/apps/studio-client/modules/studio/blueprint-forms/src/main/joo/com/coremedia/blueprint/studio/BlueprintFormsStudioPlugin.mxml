@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Configure the generic Studio components for the Blueprint document type model and use cases. -->
+<local:BlueprintFormsStudioPluginBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:pm="exml:com.coremedia.blueprint.base.pagegrid.config"
+        xmlns:bpb-components="exml:com.coremedia.blueprint.base.components.config"
+        xmlns:quickcreate="com.coremedia.cms.editor.sdk.quickcreate.*">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.cms.editor.sdk.quickcreate.QuickCreateSettings')]
+    [ResourceBundle('com.coremedia.blueprint.base.components.viewtypes.Viewtypes')]
+    [ResourceBundle('com.coremedia.blueprint.base.pagegrid.PageGridLayouts')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDeviceTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintImageEditor')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintPageGridLayouts')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintStudio')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintViewtypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomTimeZones')]
+    [ResourceBundle('com.coremedia.blueprint.studio.NewContentSettingsStudioPlugin')]
+    [ResourceBundle('com.coremedia.blueprint.studio.Validation')]
+    [ResourceBundle('com.coremedia.cms.editor.ContentTypes')]
+    [ResourceBundle('com.coremedia.cms.editor.DeviceTypes')]
+    [ResourceBundle('com.coremedia.cms.editor.TimeZones')]
+    [ResourceBundle('com.coremedia.cms.editor.sdk.actions.Actions')]
+    [ResourceBundle('com.coremedia.cms.editor.sdk.validation.Validators')]
+    [ResourceBundle('com.coremedia.cms.studio.imageeditor.ImageEditor')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cap.common.SESSION;
+    import com.coremedia.cap.content.Content;
+    import com.coremedia.cms.editor.sdk.dashboard.WidgetState;
+    import com.coremedia.cms.editor.sdk.desktop.FavoritesToolbar;
+    import com.coremedia.cms.editor.sdk.desktop.WorkArea;
+
+    import mx.resources.ResourceManager;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.blueprintFormsStudioPlugin";
+
+    public static const EDITED_BY_ME_TYPE:String = "editedByMe";
+
+    public static const EDITED_BY_OTHERS_TYPE:String = "editedByOthers";
+
+    /**
+     * The itemId of the first actions toolbar separator.
+     */
+    public static const ACTIONS_TOOLBAR_SEP_FIRST_ITEM_ID:String = "actionsToolbarSepFirst";
+
+    private var config:BlueprintFormsStudioPlugin;
+    private var root:Content;
+
+    // called by generated constructor code
+    private function __initialize__(config:BlueprintFormsStudioPlugin):void {
+      root = SESSION.getConnection().getContentRepository().getRoot();
+    }
+
+    public native function BlueprintFormsStudioPlugin(config:BlueprintFormsStudioPlugin = null);
+    ]]></fx:Script>
+
+  <local:rules>
+
+    <editor:FavoritesToolbarUserItemsArea>
+      <editor:plugins>
+        <ui:AddArrayItemsPlugin arrayProperty="{FavoritesToolbarUserItemsArea.DEFAULT_ITEMS}"
+                                items="{[ {'_main':{'searchText':'','contentType':'Document_','mode':'search','view':'list','folder':root,'orderBy':'freshness desc','limit':50},'status':{'inProduction':true,'editedByMe':true,'editedByOthers':true,'notEdited':true,'approved':true,'published':true,'deleted':false},'lastEdited':{'lastEditedBy':'me'},'_name': ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.BlueprintStudio', 'FavoritesToolbarDefaultSearchFolderNames_lastEdited')},
+                                            {'_main':{'searchText':'','contentType':'CMArticle','mode':'search','view':'list','folder':root,'orderBy':'freshness desc','limit':50},'site':{'site':'PREFERRED'},'status':{'inProduction':true,'editedByMe':true,'editedByOthers':true,'notEdited':true,'approved':true,'published':true,'deleted':false},'lastEdited':{'lastEditedBy':'anyone'},'_name': ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.BlueprintStudio', 'FavoritesToolbarDefaultSearchFolderNames_articles')},
+                                            {'_main':{'searchText':'','contentType':'CMPicture','mode':'search','view':'thumbnails','folder':root,'orderBy':'freshness desc','limit':50},'site':{'site':'PREFERRED'},'status':{'inProduction':true,'editedByMe':true,'editedByOthers':true,'notEdited':true,'approved':true,'published':true,'deleted':false},'lastEdited':{'lastEditedBy':'anyone'},'_name': ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.BlueprintStudio', 'FavoritesToolbarDefaultSearchFolderNames_pictures')},
+                                            {'_main':{'searchText':'','contentType':'CMChannel','mode':'search','view':'list','folder':root,'orderBy':'freshness desc','limit':50},'site':{'site':'PREFERRED'},'status':{'inProduction':true,'editedByMe':true,'editedByOthers':true,'notEdited':true,'approved':true,'published':true,'deleted':false},'lastEdited':{'lastEditedBy':'anyone'},'_name': ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.BlueprintStudio', 'FavoritesToolbarDefaultSearchFolderNames_pages')}
+                                          ]}"/>
+      </editor:plugins>
+    </editor:FavoritesToolbarUserItemsArea>
+
+
+    <editor:Startup>
+      <editor:plugins>
+        <bpforms:ConfigureCollectionViewColumnsPlugin/>
+      </editor:plugins>
+    </editor:Startup>
+
+    <editor:CollectionView>
+      <editor:plugins>
+        <bpb-components:PictureUtilsPlugin/>
+      </editor:plugins>
+    </editor:CollectionView>
+
+    <editor:PreviewPanel>
+      <editor:plugins>
+        <bpb-components:AddPreviewDateSelectorButtonPlugin/>
+        <bpforms:PreviewVariantsPreviewPanelPlugin previewVariantVE="{PreviewPanel.PREVIEW_VARIANT_VALUE_EXPRESSION}"/>
+        <ui:BindPlugin bindTo="{PreviewPanel.PREVIEW_VARIANT_VALUE_EXPRESSION}"
+                       boundValueChanged="{reloadPreview}"/>
+      </editor:plugins>
+    </editor:PreviewPanel>
+
+    <editor:PreviewIFrameToolbar>
+      <editor:plugins exml:mode="append">
+        <bpb-components:AddPlacementHighlightButtonPlugin/>
+      </editor:plugins>
+    </editor:PreviewIFrameToolbar>
+
+    <pm:PlacementLinkListPropertyField>
+      <pm:plugins>
+        <ui:NestedRulesPlugin>
+          <ui:rules>
+            <editor:LinkListPropertyField>
+              <editor:plugins>
+                <quickcreate:AddQuickCreateLinklistMenuPlugin/>
+              </editor:plugins>
+            </editor:LinkListPropertyField>
+          </ui:rules>
+        </ui:NestedRulesPlugin>
+      </pm:plugins>
+    </pm:PlacementLinkListPropertyField>
+
+    <editor:FavoritesToolbar>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:after>
+            <Button itemId="{FavoritesToolbar.NEW_MENU_BUTTON_ITEM_ID}"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:FavoritesToolbar>
+
+    <editor:EditorMainView>
+      <editor:plugins exml:mode="append">
+        <editor:AddDefaultFolderChooserEntry lookup="{calculateQuickCreateFolder}"/>
+      </editor:plugins>
+    </editor:EditorMainView>
+
+    <editor:TabbedDocumentFormDispatcher>
+      <editor:plugins>
+        <editor:AddTabbedDocumentFormsPlugin>
+          <editor:documentTabPanels>
+            <bpforms:EditorPreferencesForm itemId="EditorPreferences"/>
+            <bpforms:CMActionForm itemId="CMAction"/>
+            <bpforms:CMArticleForm itemId="CMArticle"/>
+            <bpforms:CMAudioForm itemId="CMAudio"/>
+            <bpforms:CMCSSForm itemId="CMCSS"/>
+            <bpforms:CMChannelForm itemId="CMChannel"/>
+            <bpforms:CMCollectionForm itemId="CMCollection"/>
+            <bpforms:CMExternalLinkForm itemId="CMExternalLink"/>
+            <bpforms:CMFolderPropertiesForm itemId="CMFolderProperties"/>
+            <bpforms:CMJavaScriptForm itemId="CMJavaScript"/>
+            <bpforms:CMGalleryForm itemId="CMGallery"/>
+            <bpforms:CMDownloadForm itemId="CMDownload"/>
+            <bpforms:CMHTMLForm itemId="CMHTML"/>
+            <bpforms:CMInteractiveForm itemId="CMInteractive"/>
+            <bpforms:CMImageForm itemId="CMImage"/>
+            <bpforms:CMImageMapForm itemId="CMImageMap"/>
+            <bpforms:CMLocTaxonomyForm itemId="CMLocTaxonomy"/>
+            <bpforms:CMPersonForm itemId="CMPerson"/>
+            <bpforms:CMPictureForm itemId="CMPicture"/>
+            <bpforms:CMPlaceholderForm itemId="CMPlaceholder"/>
+            <bpforms:CMResourceBundleForm itemId="CMResourceBundle"/>
+            <bpforms:CMSettingsForm itemId="CMSettings"/>
+            <bpforms:CMSiteForm itemId="CMSite"/>
+            <bpforms:CMSitemapForm itemId="CMSitemap"/>
+            <bpforms:CMSpinnerForm itemId="CMSpinner"/>
+            <bpforms:CMSymbolForm itemId="CMSymbol"/>
+            <bpforms:CMTaxonomyForm itemId="CMTaxonomy"/>
+            <bpforms:CMTemplateSetForm itemId="CMTemplateSet"/>
+            <bpforms:CMTeaserForm itemId="CMTeaser"/>
+            <bpforms:CMThemeForm itemId="CMTheme"/>
+            <bpforms:CMVideoForm itemId="CMVideo"/>
+            <bpforms:CMViewtypeForm itemId="CMViewtype"/>
+          </editor:documentTabPanels>
+        </editor:AddTabbedDocumentFormsPlugin>
+      </editor:plugins>
+    </editor:TabbedDocumentFormDispatcher>
+
+    <editor:DocumentTabPanel>
+      <editor:plugins exml:mode="append">
+        <ui:NestedRulesPlugin>
+          <ui:rules>
+            <ui:LocalComboBox>
+              <ui:plugins exml:mode="append">
+                <editor:SyncComboBoxValueOnTabReusePlugin/>
+              </ui:plugins>
+            </ui:LocalComboBox>
+          </ui:rules>
+        </ui:NestedRulesPlugin>
+      </editor:plugins>
+    </editor:DocumentTabPanel>
+
+    <editor:DocumentForm>
+      <editor:plugins>
+        <editor:ResetInactiveDocumentFormsPlugin/>
+      </editor:plugins>
+    </editor:DocumentForm>
+  </local:rules>
+
+  <local:configuration>
+    <!-- override the standard studio labels with custom properties -->
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.studio.imageeditor.ImageEditor')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.studio.BlueprintImageEditor')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.ContentTypes')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.studio.BlueprintDocumentTypes')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.sdk.actions.Actions')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.studio.CustomLabels')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.TimeZones')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.studio.CustomTimeZones')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.sdk.quickcreate.QuickCreateSettings')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.studio.NewContentSettingsStudioPlugin')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.sdk.validation.Validators')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.studio.Validation')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.DeviceTypes')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.studio.BlueprintDeviceTypes')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.base.components.viewtypes.Viewtypes')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.studio.BlueprintViewtypes')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.base.pagegrid.PageGridLayouts')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.blueprint.studio.BlueprintPageGridLayouts')}"/>
+
+    <!-- enable studio shortcuts, override Shortcut.properties to specify different shortcut keys -->
+    <editor:AddShortcutsPlugin/>
+
+    <editor:EnableStateBasedPublicationButtonsPlugin adminOnly="true"/>
+
+    <editor:ContentUtilConfigurationPlugin expandFolderLimit="100"/>
+
+    <editor:ConfigureDocumentTypes names="CMLinkable">
+      <editor:previewUrlTransformers>
+        <editor:AddDependingParameterPreviewUrlTransformer name="contentType"
+                                                           valueExpression="{getContentTypeVE()}"/>
+      </editor:previewUrlTransformers>
+    </editor:ConfigureDocumentTypes>
+
+    <!-- Register document types to be allowed to be dropped -->
+    <editor:ConfigureDocumentTypes names="CMTeasable"
+                                   richTextLinkable="true"/>
+
+    <!-- register Image Types for thumbnail view and RichText Drag'n'Drop -->
+    <editor:ConfigureDocumentTypes names="CMMedia,CMImage"
+                                   imageProperty="data"
+                                   richTextImageBlobProperty="data"/>
+    <editor:ConfigureDefaultRichTextImageDocumentType defaultRichTextImageType="CMPicture"/>
+
+    <!-- exclude DocTypes from the create new documents menu -->
+    <editor:ConfigureDocumentTypes names="Dictionary,Preferences,Query,CMDynamicList,CMVisual,EditorPreferences"
+                                   exclude="true"
+                                   excludeFromSearch="true"/>
+
+    <!-- there is no preview available for these DocTypes -->
+    <editor:ConfigureDocumentTypes names="CMAction,CMCSS,CMFolderProperties,CMImage,CMInteractive,CMJavaScript,
+                                            CMPlaceholder,CMResourceBundle,CMSettings,CMSite,CMSymbol,EditorPreferences,
+                                            CMTemplateSet,CMViewtype,CMTaxonomy,CMLocTaxonomy"
+                                   preview="false"/>
+    <!-- there may be no preview available for these DocTypes -->
+    <editor:ConfigureDocumentTypes names="CMObject"
+                                   mayPreview="{isValidCMLinkable}"/>
+
+    <!-- All CMHasContexts documents (essentially non-CMContext/CMChannel) are shown in "fragment preview" -->
+    <editor:ConfigureDocumentTypes names="CMHasContexts">
+      <editor:previewUrlTransformers>
+        <editor:AddParameterPreviewUrlTransformer name="view"
+                                                  value="fragmentPreview"/>
+      </editor:previewUrlTransformers>
+    </editor:ConfigureDocumentTypes>
+
+    <editor:ConfigureDocumentTypes names="CMTheme">
+      <editor:previewUrlTransformers>
+        <editor:AddParameterPreviewUrlTransformer name="view"
+                                                  value=""/>
+      </editor:previewUrlTransformers>
+    </editor:ConfigureDocumentTypes>
+
+    <editor:ConfigureDocumentTypes names="CMSitemap">
+      <editor:previewUrlTransformers>
+        <editor:AddParameterPreviewUrlTransformer name="view"
+                                                  value=""/>
+      </editor:previewUrlTransformers>
+    </editor:ConfigureDocumentTypes>
+
+    <editor:ConfigureDashboardPlugin>
+      <editor:widgets>
+        <editor:SimpleSearchWidgetState contentType="CMChannel"/>
+        <editor:SimpleSearchWidgetState contentType="CMArticle"/>
+        <editor:SimpleSearchWidgetState contentType="CMPicture"/>
+        <editor:WidgetState widgetTypeId="{EDITED_BY_ME_TYPE}"
+                            column="{WidgetState.NEXT}"
+                            rowspan="1"/>
+        <editor:WidgetState widgetTypeId="{EDITED_BY_OTHERS_TYPE}"/>
+        <editor:TranslationStatusWidgetState/>
+      </editor:widgets>
+
+      <editor:types>
+        <editor:SimpleSearchWidgetType/>
+
+        <editor:FixedSearchWidgetType id_="{EDITED_BY_ME_TYPE}"
+                                      name="{ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.BlueprintStudio', 'Dashboard_standardConfiguration_lastEdited')}">
+          <editor:search>
+            <editor:SearchState lastEditedBy="me"/>
+          </editor:search>
+        </editor:FixedSearchWidgetType>
+
+        <editor:FixedSearchWidgetType id_="{EDITED_BY_OTHERS_TYPE}"
+                                      name="{ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.BlueprintStudio', 'Dashboard_standardConfiguration_editedByOthers')}">
+          <editor:search>
+            <editor:SearchState editedByOthers="true"
+                                editedByMe="false"
+                                notEdited="false"
+                                approved="false"
+                                published="false"/>
+          </editor:search>
+        </editor:FixedSearchWidgetType>
+
+        <editor:TranslationStatusWidgetType/>
+      </editor:types>
+    </editor:ConfigureDashboardPlugin>
+
+    <editor:ReusableDocumentFormTabsPlugin defaultLimit="2"/>
+  </local:configuration>
+
+
+</local:BlueprintFormsStudioPluginBase>

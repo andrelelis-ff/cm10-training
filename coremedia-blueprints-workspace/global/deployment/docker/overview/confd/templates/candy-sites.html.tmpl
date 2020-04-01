@@ -1,0 +1,76 @@
+<div>
+{{ if or (eq (getv "/commerce/wcs/enabled" "true") "true") (eq (getv "/commerce/wcs/enabled" "true") "true") }}
+<h2>Candy Sites</h2>
+<p>
+  A <em>candy</em> host returns the favor, i.e. it redirects the callers request to the caller itself. This
+  allows the developer to start his webapps locally using a maven plugin and work with portless https URLs,
+  without having the need to start and configure any reverse proxy such as apache or nginx. In a Commerce Led
+  scenario, the candy host will redirect the fragment calls to the developers workstation. This way many
+  developers can share the same Commerce installation without interference. The candy setup also works locally
+  with the docker setup, but only if you choose the Hostname option in the compose script.
+</p>
+{{ end }}
+
+{{ if eq (getv "/commerce/wcs/enabled" "true") "true" }}
+<h3>HCL Commerce</h3>
+<table class="sites">
+  <thead>
+  <tr>
+    <th></th>
+    <th>Preview</th>
+    <th>Live</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Aurora</td>
+    <td>
+      <a href="https://candy-shop-preview-production-ibm.docker.localhost/wcs/shop/en/auroraesite" target="_blank">English</a> ·
+      <a href="https://candy-shop-preview-production-ibm.docker.localhost/wcs/shop/de/auroraesite" target="_blank">German</a>
+    </td>
+    <td>
+      <a href="https://candy-shop-ibm.docker.localhost/wcs/shop/en/auroraesite" target="_blank">English</a> ·
+      <a href="https://candy-shop-ibm.docker.localhost/wcs/shop/de/auroraesite" target="_blank">German</a>
+    </td>
+  </tr>
+  <tr>
+    <td>Aurora B2B</td>
+    <td>
+      <a href="https://candy-shop-preview-production-ibm.docker.localhost/wcs/shop/en/aurorab2besite" target="_blank">English</a> ·
+      <a href="https://candy-shop-preview-production-ibm.docker.localhost/wcs/shop/de/aurorab2besite" target="_blank">German</a>
+    </td>
+    <td>
+      <a href="https://candy-shop-ibm.docker.localhost/wcs/shop/en/aurorab2besite" target="_blank">English</a> ·
+      <a href="https://candy-shop-ibm.docker.localhost/wcs/shop/de/aurorab2besite" target="_blank">German</a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+{{ end }}
+
+{{ if eq (getv "/commerce/hybris/enabled" "true") "true" }}
+<h3>SAP Commerce Cloud</h3>
+<table class="sites">
+  <thead>
+  <tr>
+    <th></th>
+    <th>Preview</th>
+    <th>Live</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Apparel</td>
+    <td>
+      <a href="https://candy-shop-preview-hybris.docker.localhost/yacceleratorstorefront/?site=apparel-uk&clear=true" target="_blank">English</a> ·
+      <a href="https://candy-shop-preview-hybris.docker.localhost/yacceleratorstorefront/?site=apparel-de&clear=true" target="_blank">German</a>
+    </td>
+    <td>
+      <a href="https://candy-shop-hybris.docker.localhost/yacceleratorstorefront/?site=apparel-uk&clear=true" target="_blank">English</a> ·
+      <a href="https://candy-shop-hybris.docker.localhost/yacceleratorstorefront/?site=apparel-de&clear=true" target="_blank">German</a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+{{ end }}
+</div>

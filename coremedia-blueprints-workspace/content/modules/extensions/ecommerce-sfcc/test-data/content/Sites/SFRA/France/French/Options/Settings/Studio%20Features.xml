@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/SFRA/France/French/Options/Settings" name="Studio Features" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Options/Settings/Studio%20Features.xml" path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/Studio%20Features"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringListProperty Name="features">
+<String>enable_advanced_teaser_overlays</String>
+<String>Corporation Form Components</String>
+</StringListProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

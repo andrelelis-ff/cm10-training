@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:NestedRulesPlugin
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:ec="exml:com.coremedia.ecommerce.studio.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.collectionview.ICollectionView;
+
+    private var config:ECommerceLibraryPlugin;
+    private var selectionHolder:ICollectionView;
+
+    // called by generated constructor code
+    private function __initialize__(config:ECommerceLibraryPlugin):void {
+      selectionHolder = config.cmp as ICollectionView;
+    }
+
+    public native function ECommerceLibraryPlugin(config:ECommerceLibraryPlugin = null);
+    ]]></fx:Script>
+
+
+  <ui:rules>
+
+    <editor:FolderContentSwitchingContainer>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <ec:CatalogRepositoryListContainer selectedItemsValueExpression="{selectionHolder.getSelectedItemsValueExpression()}"
+                                               selectedFolderValueExpression="{selectionHolder.getSelectedFolderValueExpression()}"
+                                               selectedRepositoryItemsValueExpression="{selectionHolder.getSelectedRepositoryItemsValueExpression()}"
+                                               newContentDisabledValueExpression="{selectionHolder.getNewContentActionDisabledExpression()}"
+                                               createdContentValueExpression="{selectionHolder.getCreatedContentValueExpression()}"/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:FolderContentSwitchingContainer>
+
+    <editor:SearchSwitchingContainer>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <ec:CatalogSearchListContainer
+                    searchResultHitsValueExpression="{selectionHolder.getSearchResultHitsValueExpression()}"
+                    selectedItemsValueExpression="{selectionHolder.getSelectedSearchItemsValueExpression()}"/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:SearchSwitchingContainer>
+
+    <editor:RepositoryToolbarSwitchingContainer>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <ec:CatalogRepositoryToolbarContainer
+                    selectedFolderValueExpression="{selectionHolder.getSelectedFolderValueExpression()}"
+                    createdContentValueExpression="{selectionHolder.getCreatedContentValueExpression()}"
+                    selectedItemsValueExpression="{selectionHolder.getSelectedItemsValueExpression()}"/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:RepositoryToolbarSwitchingContainer>
+
+    <editor:SearchToolbarSwitchingContainer>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <ec:CatalogSearchToolbarContainer selectedSearchItemsValueExpression="{selectionHolder.getSelectedSearchItemsValueExpression()}"/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:SearchToolbarSwitchingContainer>
+
+  </ui:rules>
+
+</ui:NestedRulesPlugin>

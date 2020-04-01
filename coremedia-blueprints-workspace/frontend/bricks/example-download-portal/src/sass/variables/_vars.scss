@@ -1,0 +1,76 @@
+$am-primary-color: #B04747 !default;
+
+$am-gutter-width: 30px !default;
+
+$am-text-color: $am-black !default;
+$am-text-size: 15px !default;
+$am-margin-large: 24px !default;
+$am-margin-medium: 12px !default;
+$am-margin-small: 10px !default;
+$am-text-headline-weight: 500 !default;
+
+$am-notification-text-size: 18px !default;
+$am-notification-success-text-color: #3C763D !default;
+$am-notification-success-background-color: #DFF0D8 !default;
+$am-notification-success-border-color: #D6E9C6 !default;
+$am-notification-info-text-color: #31708F !default;
+$am-notification-info-background-color: #D9EDF7 !default;
+$am-notification-info-border-color: #BCE8F1 !default;
+$am-notification-warning-text-color: #8A6D3B !default;
+$am-notification-warning-background-color: #FCF8E3 !default;
+$am-notification-warning-border-color: #FAEBCC !default;
+$am-notification-error-text-color: #A94442 !default;
+$am-notification-error-background-color: #F2DEDE !default;
+$am-notification-error-border-color: #EBCCD1 !default;
+
+$am-page-number-border: 1px solid $am-gray !default;
+$am-page-number-text-color: $am-primary-color !default;
+$am-page-number-text-color-hover: $am-white !default;
+$am-page-number-text-color-active: $am-white !default;
+$am-page-number-background-color: $am-white !default;
+$am-page-number-background-color-hover: $am-gray !default;
+$am-page-number-background-color-active: $am-primary-color !default;
+
+$am-breadcrumb-item-link-color: $am-black !default;
+$am-breadcrumb-item-link-color-hover: $am-primary-color !default;
+
+$am-button-background-color: $am-white !default;
+$am-button-border-color: $am-primary-color !default;
+$am-button-border-width: 2px !default;
+$am-button-text-color: $am-primary-color !default;
+$am-button-height-circle: 30px !default;
+$am-button-background-color-hover: $am-primary-color !default;
+$am-button-text-color-hover: $am-white !default;
+$am-button-text-color-disabled: #CC8888 !default;
+$am-button-border-color-disabled: #CC8888 !default;
+
+$am-breakpoint-extra-small-device-min: 320px !default; // not used for media queries but for min-width of download-portal
+$am-breakpoint-extra-small-device-max: 479px !default;
+$am-breakpoint-small-device-min: $am-breakpoint-extra-small-device-max + 1px !default;
+$am-breakpoint-small-device-max: 599px !default;
+$am-breakpoint-medium-device-min: $am-breakpoint-small-device-max + 1px !default;
+$am-breakpoint-medium-device-max: 1023px !default;
+$am-breakpoint-large-device-min: $am-breakpoint-medium-device-max + 1px !default;
+
+$am-picture-box-badge-height-percentage: 20% !default;
+$am-picture-box-badge-icon-padding: 10% !default;
+$am-picture-box-empty-background-color: $am-gray !default;
+$am-picture-box-border-color: $am-gray !default;
+
+$am-overlay-shadow-background-color: #F1F1F1 !default;
+
+$am-subject-tag-background: $am-gray !default;
+$am-subject-tag-text-color: $am-white !default;
+
+$am-input-text-size: 17px !default;
+$am-input-height: 40px !default;
+$am-input-border-width: 1px !default;
+$am-input-border-color: $am-white !default;
+$am-input-border-color-focus: $am-primary-color !default;
+
+$am-icon-button-background-color: $am-primary-color !default;
+$am-icon-button-height: 40px !default;
+
+$am-search-border-color: $am-gray !default;
+$am-search-submit-width: 70px !default;
+$am-change-search-icon-on-hover: true !default;

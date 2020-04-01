@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content"
+                   xmlns:xi="http://www.w3.org/2001/XInclude">
+  <xi:include href="classpath:com/coremedia/blueprint/base/testing/blueprint-doctypes-xmlrepo.xml"/>
+
+  <!--
+    Test content for CodeResourcesImpl
+  -->
+  <content>
+    <folder id="1" name="">
+      <folder id="11" name="Sites">
+        <folder id="111" name="Media">
+          <folder id="1111" name="Navigation">
+            <document id="4" name="Media" type="CMChannel">
+              <!--
+                The Root Channel of the Media site.
+                Contains js and css.
+              -->
+              <version number="1">
+                <stringProperty name="segment" value="media"/>
+                <linkProperty name="css">
+                  <link id="30"/>
+                </linkProperty>
+                <linkProperty name="javaScript">
+                  <link id="50"/>
+                </linkProperty>
+                <!--excludes are defined here-->
+                <markupProperty name="localSettings" url="4settings.xml" grammar="coremedia-struct-2008"/>
+              </version>
+            </document>
+            <document id="666" name="BrokenChannel" type="CMChannel">
+              <!--
+                This channel links to a CSS document that links into a recursion
+              -->
+              <version number="1">
+                <stringProperty name="segment" value="media"/>
+                <linkProperty name="css">
+                  <link id="44"/>
+                </linkProperty>
+              </version>
+            </document>
+          </folder>
+        </folder>
+      </folder>
+
+      <!--
+        js and css to test
+      -->
+      <folder id="15" name="Themes">
+        <folder id="165" name="test">
+          <folder id="153" name="css">
+            <document id="30" type="CMCSS" name="root.css">
+              <version number="1">
+                <markupProperty name="code" url="30code.xml" grammar="coremedia-richtext-1.0"/>
+                <stringProperty name="description" value="CSS root document"/>
+                <linkProperty name="include">
+                  <link id="32"/>
+                  <link id="40"/>
+                  <link id="42"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="32" type="CMCSS" name="included.css">
+              <version number="1">
+                <markupProperty name="code" url="32code.xml" grammar="coremedia-richtext-1.0"/>
+                <stringProperty name="description" value="CSS included through linklist"/>
+                <linkProperty name="include">
+                  <link id="34"/>
+                  <link id="36"/>
+                  <link id="38"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="34" type="CMCSS" name="included-included.css">
+              <version number="1">
+                <markupProperty name="code" url="34code.xml" grammar="coremedia-richtext-1.0"/>
+                <stringProperty name="description" value="CSS included through linklist or already included document"/>
+              </version>
+            </document>
+            <document id="36" type="CMCSS" name="ieexpression.css">
+              <version number="1">
+                <markupProperty name="code" url="36code.xml" grammar="coremedia-richtext-1.0"/>
+                <stringProperty name="description" value="excluded CSS document because it's marked as IE only"/>
+                <stringProperty name="ieExpression" value="excluded CSS document because it's marked as IE only"/>
+              </version>
+            </document>
+            <document id="38" type="CMCSS" name="excluded.css">
+              <version number="1">
+                <markupProperty name="code" url="38code.xml" grammar="coremedia-richtext-1.0"/>
+                <stringProperty name="description" value="excluded CSS document because it's marked excluded by type"/>
+              </version>
+            </document>
+            <document id="40" type="CMCSS" name="externallink.css">
+              <version number="1">
+                <markupProperty name="code" url="40code.xml" grammar="coremedia-richtext-1.0"/>
+                <stringProperty name="dataUrl" value="this property contains a link to an external resource"/>
+                <stringProperty name="description" value="excluded CSS document because it's an external link"/>
+              </version>
+            </document>
+            <document id="42" type="CMCSS" name="externallink-withieexpression.css">
+              <version number="1">
+                <markupProperty name="code" url="42code.xml" grammar="coremedia-richtext-1.0"/>
+                <stringProperty name="dataUrl" value="this property contains a link to an external resource"/>
+                <stringProperty name="description" value="excluded CSS document because it's an external link"/>
+                <stringProperty name="ieExpression" value="this is the ieExpression"/>
+              </version>
+            </document>
+            <!-- these two CSS documents lead to a recursion -->
+            <document id="44" type="CMCSS" name="recursion1.css">
+              <version number="1">
+                <markupProperty name="code" url="42code.xml" grammar="coremedia-richtext-1.0"/>
+                <linkProperty name="include">
+                  <link id="46"/>
+                </linkProperty>
+              </version>
+            </document>
+            <document id="46" type="CMCSS" name="recursion2.css">
+              <version number="1">
+                <markupProperty name="code" url="42code.xml" grammar="coremedia-richtext-1.0"/>
+                <linkProperty name="include">
+                  <link id="44"/>
+                </linkProperty>
+              </version>
+            </document>
+          </folder>
+
+          <folder id="155" name="js">
+            <document id="50" type="CMJavaScript" name="not-merged.js">
+              <version number="1">
+                <markupProperty name="code" url="50code.xml" grammar="coremedia-richtext-1.0"/>
+                <stringProperty name="description" value="not yet merged JavaScript"/>
+              </version>
+            </document>
+          </folder>
+        </folder>
+      </folder>
+    </folder>
+  </content>
+</contentRepository>

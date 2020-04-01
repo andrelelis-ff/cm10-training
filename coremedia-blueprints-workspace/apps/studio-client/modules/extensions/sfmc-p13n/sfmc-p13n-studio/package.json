@@ -1,0 +1,8 @@
+{
+  "studioPlugins": [
+    {
+      "mainClass": "com.coremedia.blueprint.sfmc.p13n.studio.SFMCP13NStudioPlugin",
+      "name": "SFMC P13N Extensions"
+    }
+  ]
+}

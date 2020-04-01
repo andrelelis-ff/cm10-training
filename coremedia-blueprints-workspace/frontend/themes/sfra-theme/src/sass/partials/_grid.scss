@@ -1,0 +1,65 @@
+/*
+Grid
+========================================================================================================================
+*/
+
+.cm-placement {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  @include clearfix();
+
+  & + & {
+    margin-top: $cm-margin-7;
+  }
+
+  // center all inner items
+  > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  // add a margin-top, starting from the second item.
+  > * ~ * {
+    margin-top: $cm-margin-7;
+  }
+}
+
+.page .cm-details {
+  margin-top: $cm-margin-7;
+
+  &__authors,
+  &__related,
+  > .cm-comments,
+  > .cm-reviews {
+    margin: 30px 15px 0 15px;
+
+    @include breakpoint("lg-and-up") {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+// main page
+.cm-slot-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > .cm-placement {
+    @include cm-grid-container();
+  }
+}
+
+// landing page (e.g. editorial blog)
+.cm-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > .cm-row {
+    @include cm-grid-container();
+  }
+}

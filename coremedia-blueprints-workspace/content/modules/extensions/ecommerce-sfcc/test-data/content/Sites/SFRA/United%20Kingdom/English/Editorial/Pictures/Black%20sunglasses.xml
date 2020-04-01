@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/United Kingdom/English/Editorial/Pictures" name="Black sunglasses" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="uploadDone">true</BooleanProperty>
+<StringListProperty Name="references">
+<String>sfcc:///catalog/product/25772707M</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="enlarge">
+<Struct>
+<BooleanProperty Name="portrait_ratio20x31">true</BooleanProperty>
+<BooleanProperty Name="portrait_ratio1x1">true</BooleanProperty>
+<BooleanProperty Name="landscape_ratio235x100">true</BooleanProperty>
+<BooleanProperty Name="landscape_ratio4x3">true</BooleanProperty>
+<BooleanProperty Name="portrait_ratio3x4">true</BooleanProperty>
+<BooleanProperty Name="landscape_ratio16x9">true</BooleanProperty>
+<BooleanProperty Name="quickview_ratio5x6">true</BooleanProperty>
+<BooleanProperty Name="portrait_ratio5x6">true</BooleanProperty>
+<BooleanProperty Name="thumbnail">true</BooleanProperty>
+<BooleanProperty Name="portrait_ratio1x2">true</BooleanProperty>
+<BooleanProperty Name="landscape_ratio8x3">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=0;y=-989;width=2000;height=3101;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=-439;width=2000;height=2001;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=-320;y=0;width=2640;height=1123;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=-189;width=2000;height=1501;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=-772;width=2000;height=2667;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=-1;width=2000;height=1126;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="quickview_ratio5x6">b;a=0;c=1/crop;x=0;y=-639;width=2000;height=2401;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="portrait_ratio5x6">b;a=0;c=1/crop;x=0;y=-639;width=2000;height=2401;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="thumbnail">b;a=0;c=1/crop;x=0;y=-772;width=2000;height=2667;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="landscape_ratio7x2">b;a=0;c=1/crop;x=0;y=276;width=2000;height=571</StringProperty>
+<StringProperty Name="landscape_ratio5x3">b;a=0;c=1/crop;x=63;y=0;width=1872;height=1123</StringProperty>
+<StringProperty Name="portrait_ratio3x5">b;a=0;c=1/crop;x=658;y=0;width=674;height=1123</StringProperty>
+<StringProperty Name="portrait_ratio1x2">b;a=0;c=1/crop;x=0;y=-1439;width=2000;height=4001;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=-497;y=0;width=2995;height=1123;bg=FFFFFFFF</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Black sunglasses</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Black sunglasses</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1123</height>
+<data md5="292aedb7aea795c5ca9069365f93fc9b" size="114265" href="../../../../../../__blob/292aedb7aea795c5ca9069365f93fc9b.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

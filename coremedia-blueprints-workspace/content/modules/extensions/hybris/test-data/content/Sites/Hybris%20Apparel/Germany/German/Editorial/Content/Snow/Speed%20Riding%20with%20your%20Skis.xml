@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/Germany/German/Editorial/Content/Snow" name="Speed Riding with your Skis" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Snow/Speed%20Riding%20with%20your%20Skis.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/Speed%20Riding%20with%20your%20Skis"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Speed ​​Riding mit deinen Skiern</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Speedriding gibt Ihnen die Eile ähnelt Eile Nähe Wingsuit und Geschwindigkeit Drachenfliegen. </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Speedriding gibt Ihnen die Eile ähnelt Eile Nähe Wingsuit und Geschwindigkeit Gleitflug hängen, aber mit einigen seiner eigenen Süßigkeiten und Leckereien von Adrenalin Süßigkeiten. </p> <p> In Geschwindigkeit fahren können Sie so schnell wie 80 Knoten (144 km / h) zu gehen, und seine Vordach Wendigkeit und die geringe Größe ermöglicht es Ihnen, innerhalb sehr engen Stellen mit ihm zu gehen. Das Schöne daran ist, dass Sie Skifahren kombinieren kann mit dem Fliegen das Gefühl der Freiheit noch mehr schärft. </p> <p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Goggles/CM%20Action%20Goggles%20-%20Augmented.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Products/Goggles/CM%20Action%20Goggles%20-%20Augmented">CM Action Goggles 2.0</a><br/></p> <p> Stellen Sie sich auf einem Skifahren, erhöhen Sie Ihre Geschwindigkeit, bis zu einem bestimmten Punkt, den Sie aus dem Schnee sind anheben. Stellen Sie sich vor, dass Sie über den Schnee schnell und tief kommen, gibt es keine Möglichkeit Sie über die Oberfläche passieren können, sind Sie zu niedrig, der Himmel den Schnee berühren, die das Körpergewicht Transfers vom Geschirr an den Beinen ... Sie fahren Ski auf etwa 90 km / h ... direkt aus der Klippe ... dann sind Sie wieder Luft, sich auf die Dosis neben Adrenalin manövriert. </p> <p> Aber die aufregendste Sache in dieser Extremsportart ist die aggressive Wendigkeit der kleinen Geschwindigkeit Wings in der Nähe zum Ändern Gelände. Sie können mit ihm ziemlich anständig G ziehen. Eines der größten Adrenalinschub ist, wenn man mit Aggression sich in einer anspruchsvollen Umgebung mit einer perfekten Balance perfekt steuern folgenden ... dies die reinste Form von Adrenalin ist, ist der Grund, warum wir all diese Art von Extremsport ... an einem Ort zu sein, oder eine Situation, die normale Menschen nicht, die Tiefen der Physik herauszufordern. Das ist das Geheimnis, dass sie nie verstehen und Geschwindigkeit Reiten öffnet Ihnen das alles und mehr ... </p> </div></detailText>
+<pictures>
+<link href="../../../Pictures/Man%20skiing%20downhill.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Man%20skiing%20downhill"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../Authors/Joshua%20Campos%20Person.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Authors/Joshua%20Campos%20Person"/>
+</authors>
+</CMArticle>

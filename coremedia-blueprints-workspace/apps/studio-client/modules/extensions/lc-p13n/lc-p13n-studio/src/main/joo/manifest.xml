@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.livecontext.p13n.studio.CommerceGroupContainer"/>
+  <component class="com.coremedia.livecontext.p13n.studio.CommerceObjectsDisplayField"/>
+  <component class="com.coremedia.livecontext.p13n.studio.CommerceSegmentCondition"/>
+  <component class="com.coremedia.livecontext.p13n.studio.LivecontextP13NStudioPlugin"/>
+</componentPackage>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMDownload folder="/Sites/SFRA/France/French/Editorial/Content/Downloads" name="Gusso Satchel Bag Care Instructions" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Downloads/Gusso%20Satchel%20Bag%20Care%20Instructions.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Downloads/Gusso%20Satchel%20Bag%20Care%20Instructions"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>sfcc:///catalog/product/25589481</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Gusso Satchel Bag Care Instructions</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<data md5="380a7f6399f64ca2949c7747461a228d" size="269563" href="../../../../../../../__blob/380a7f6399f64ca2949c7747461a228d.blob" mimetype="application/pdf"/>
+<filename></filename>
+</CMDownload>

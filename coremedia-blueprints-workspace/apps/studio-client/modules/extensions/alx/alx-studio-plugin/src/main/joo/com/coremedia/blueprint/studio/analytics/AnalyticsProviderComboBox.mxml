@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ A ComboBox to choose between one of the configured analytics service providers.
+
+ It fetches the available choices from the applicationContext (see
+ AnalyticsPlugin) and retrieves/stores the current selected value
+ from the Content's 'settings' property.
+-->
+<ui:LocalComboBox
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        itemId="alxComboBox"
+        editable="false"
+        encodeItems="true"
+        store="{AnalyticsProviderBase.ANALYTICS_PROVIDERS}">
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.analytics.analyticsProviderComboBox";
+
+    private var config:AnalyticsProviderComboBox;
+
+    public native function AnalyticsProviderComboBox(config:AnalyticsProviderComboBox = null);
+
+    [Bindable]
+    public var bindTo:ValueExpression;
+
+    /**
+     * An optional ValueExpression which makes the component read-only if it is evaluated to true.
+     */
+    [Bindable]
+    public var forceReadOnlyValueExpression:ValueExpression;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <fx:String id="propertyName"/>
+  </fx:Declarations>
+
+  <ui:plugins>
+    <editor:SetPropertyLabelPlugin bindTo="{config.bindTo}"
+                                   propertyName="{config.propertyName}"/>
+    <editor:SetPropertyEmptyTextPlugin bindTo="{config.bindTo}"
+                                       propertyName="{config.propertyName}"/>
+    <editor:BindDisablePlugin bindTo="{config.bindTo}"
+                              forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+    <ui:BindPropertyPlugin bindTo="{config.bindTo.extendBy('properties',config.propertyName)}"
+                           ifUndefined=""
+                           bidirectional="true"
+                           componentEvent="select"/>
+  </ui:plugins>
+
+</ui:LocalComboBox>

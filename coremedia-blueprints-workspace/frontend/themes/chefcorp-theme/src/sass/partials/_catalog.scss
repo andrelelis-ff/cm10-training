@@ -1,0 +1,21 @@
+//
+// Catalog (Categories and Products)
+// --------------------------------------------------
+
+
+// hide CTA and disable links
+.cm-hero--category {
+  a {
+    pointer-events: none;
+    cursor: default;
+  }
+  .cm-hero__cta {
+    display: none;
+  }
+}
+
+.cm-category {
+  &__headline {
+    text-align: center;
+  }
+}

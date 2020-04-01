@@ -1,0 +1,13 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StructProperty Name="elasticSocial">
+    <Struct>
+      <StringProperty Name="tenant">tenant</StringProperty>
+    </Struct>
+  </StructProperty>
+  <StructProperty Name="service">
+    <Struct>
+      <StringProperty Name="applicationName">CoreMedia</StringProperty>
+      <StringProperty Name="password">password</StringProperty>
+    </Struct>
+  </StructProperty>
+</Struct>

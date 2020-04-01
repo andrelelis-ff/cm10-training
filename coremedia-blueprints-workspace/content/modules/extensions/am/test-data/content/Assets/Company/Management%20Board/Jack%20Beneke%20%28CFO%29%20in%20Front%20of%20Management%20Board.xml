@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AMPictureAsset folder="/Assets/Company/Management Board" name="Jack Beneke (CFO) in Front of Management Board" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<original md5="be5e40b2b5dc9ede124e25d6a4f835b9" size="523500" href="../../../__blob/be5e40b2b5dc9ede124e25d6a4f835b9.blob" mimetype="image/tiff"/>
+<thumbnail md5="06486e9fcb172ece8a2f5725fa62e068" size="10314" href="../../../__blob/06486e9fcb172ece8a2f5725fa62e068.blob" mimetype="image/jpeg"/>
+<state>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="original">
+<Struct>
+<StringProperty Name="modificationDate">1447771561781</StringProperty>
+<StringProperty Name="modifier">Amy</StringProperty>
+<IntProperty Name="version">1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="thumbnail">
+<Struct>
+<StringProperty Name="modificationDate">1447771565581</StringProperty>
+<StringProperty Name="modifier">Amy</StringProperty>
+<IntProperty Name="version">1</IntProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="web">
+<Struct>
+<StringProperty Name="modificationDate">1447771569591</StringProperty>
+<StringProperty Name="modifier">Amy</StringProperty>
+<IntProperty Name="version">1</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</state>
+<metadata>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="renditions">
+<Struct>
+<StructProperty Name="original">
+<Struct>
+<BooleanProperty Name="show">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="web">
+<Struct>
+<BooleanProperty Name="show">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="print">
+<Struct>
+<BooleanProperty Name="show">false</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="copyright">Andrey Popov/Shutterstock 125860454</StringProperty>
+<StringListProperty Name="channels">
+<String>print</String>
+<String>mobile</String>
+<String>web</String>
+<String>social</String>
+</StringListProperty>
+<StringListProperty Name="regions">
+<String>USA</String>
+<String>Europe</String>
+</StringListProperty>
+</Struct>
+</metadata>
+<keywords></keywords>
+<subjectTaxonomy>
+<link href="../../../Settings/Taxonomies/Subject/Investors.xml" path="/Settings/Taxonomies/Subject/Investors"/>
+<link href="../../../Settings/Taxonomies/Subject/Press.xml" path="/Settings/Taxonomies/Subject/Press"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<assetTaxonomy>
+<link href="../../../Settings/Taxonomies/Asset%20Download%20Portal/Management.xml" path="/Settings/Taxonomies/Asset%20Download%20Portal/Management"/>
+</assetTaxonomy>
+<web md5="6840cc7d0b5bc3feae0bfc799f8a313f" size="200530" href="../../../__blob/6840cc7d0b5bc3feae0bfc799f8a313f.blob" mimetype="image/jpeg"/>
+</AMPictureAsset>

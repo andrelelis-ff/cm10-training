@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!-- Extend the standard Studio and Blueprint components for Live Context -->
+<local:LivecontextAssetStudioPluginBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.livecontext.asset.studio.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:asset="exml:com.coremedia.livecontext.asset.studio.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.cms.editor.sdk.desktop.LicenseNames')]
+    [ResourceBundle('com.coremedia.cms.editor.sdk.validation.Validators')]
+    [ResourceBundle('com.coremedia.livecontext.asset.studio.LivecontextAssetStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.studio.forms.components.DefaultExtraDataForm;
+
+    import mx.resources.ResourceManager;
+
+    public static const xtype:String = "com.coremedia.livecontext.asset.studio.config.livecontextAssetStudioPlugin";
+
+    /**
+     * The itemId of the search product pictures button item.
+     */
+    public static const SEARCH_PRODUCT_PICTURES_BUTTON_ITEM_ID:String = "searchProductPictures";
+
+    /**
+     * The itemId of the search product pictures menu item.
+     */
+    public static const SEARCH_PRODUCT_PICTURES_MENU_ITEM_ID:String = "searchProductPictures";
+
+    //noinspection JSUnusedLocalSymbols
+    private var config:LivecontextAssetStudioPlugin;
+
+    public native function LivecontextAssetStudioPlugin(config:LivecontextAssetStudioPlugin = null);
+    ]]></fx:Script>
+
+  <local:rules>
+
+    <!--Add a Product Link List to the 'tags' tab of the form...-->
+
+    <bpforms:CMPictureForm>
+      <bpforms:plugins>
+        <ui:AddItemsPlugin recursive="true">
+          <ui:items>
+            <asset:CommerceReferencesForm>
+              <asset:additionalToolbarItems>
+                <asset:InheritReferencesButton/>
+              </asset:additionalToolbarItems>
+            </asset:CommerceReferencesForm>
+          </ui:items>
+          <ui:after>
+            <Component itemId="{CMPictureForm.COPYRIGHT_FORM_ITEM_ID}"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </bpforms:plugins>
+    </bpforms:CMPictureForm>
+
+    <bpforms:CMSpinnerForm>
+      <bpforms:plugins>
+        <ui:AddItemsPlugin recursive="true">
+          <ui:items>
+            <asset:CommerceReferencesForm>
+              <asset:additionalToolbarItems>
+                <asset:InheritReferencesButton/>
+              </asset:additionalToolbarItems>
+            </asset:CommerceReferencesForm>
+          </ui:items>
+          <ui:after>
+            <Component itemId="{CMPictureForm.COPYRIGHT_FORM_ITEM_ID}"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </bpforms:plugins>
+    </bpforms:CMSpinnerForm>
+
+    <bpforms:CMVideoForm>
+      <bpforms:plugins>
+        <ui:AddItemsPlugin recursive="true">
+          <ui:items>
+            <asset:CommerceReferencesForm/>
+          </ui:items>
+          <ui:after>
+            <Component itemId="{CMVideoForm.COPYRIGHT_FORM_ITEM_ID}"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </bpforms:plugins>
+    </bpforms:CMVideoForm>
+
+    <bpforms:CMDownloadForm>
+      <bpforms:plugins>
+        <ui:AddItemsPlugin recursive="true">
+          <ui:items>
+            <asset:CommerceReferencesForm/>
+          </ui:items>
+          <ui:after>
+            <Component itemId="{DefaultExtraDataForm.CATEGORY_DOCUMENT_FORM_ID}"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </bpforms:plugins>
+    </bpforms:CMDownloadForm>
+
+    <editor:CollectionView>
+      <editor:plugins>
+        <asset:LivecontextAssetLibraryPlugin/>
+      </editor:plugins>
+    </editor:CollectionView>
+
+  </local:rules>
+
+  <local:configuration>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.sdk.desktop.LicenseNames')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.livecontext.asset.studio.LivecontextAssetStudioPlugin')}"/>
+    <editor:CopyResourceBundleProperties
+            destination="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.cms.editor.sdk.validation.Validators')}"
+            source="{ResourceManager.getInstance().getResourceBundle(null, 'com.coremedia.livecontext.asset.studio.LivecontextAssetStudioPlugin')}"/>
+  </local:configuration>
+
+</local:LivecontextAssetStudioPluginBase>

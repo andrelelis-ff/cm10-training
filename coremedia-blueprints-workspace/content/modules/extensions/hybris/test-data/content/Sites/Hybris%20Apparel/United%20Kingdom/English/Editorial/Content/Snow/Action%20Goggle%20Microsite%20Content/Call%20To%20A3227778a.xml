@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Snow/Action Goggle Microsite Content" name="Call To Action Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Show Us Your Style</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Do you have your Action Goggles with you at all times? Share your latest action clips with others.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Do you have your Action Goggles with you at all times? Share your latest action clips with others.<br/></p><p>On snow, this latest sensation is called Speed Riding - a blend of paragliding and skiing that lets you ride/fly the slopes at incredible speeds. Adding the flight manouverability of a glider to the turn of your skis adds a whole new dimension to coming down the mountain. It's an exhilarating sport that will excite and fascinate both participants and spectators.</p><p>As with any extreme sport, take your time and don't rush things. At a minimum, you should have both excellent paragliding as well as skiing experience. That experience should involve awareness of mountain, climate, and equipment conditions. </p><p>There is no Guarantee every launch will allow you to complete your flight and you may not be able to relaunch to continue your flight, Off-piste skiing and mountaineering skills are required to get you off the mountain safely. Speed-Flying is banned on all marked or prepared piste's.</p></div></detailText>
+<pictures>
+<link href="../../../../Pictures/CM%20Action%20Goggles%2001.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/CM%20Action%20Goggles%2001"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../../Authors/Charlotte%20May%20Person.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Authors/Charlotte%20May%20Person"/>
+</authors>
+</CMArticle>

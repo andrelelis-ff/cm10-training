@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPerson folder="/Sites/SiteGenesis Global/United Kingdom/English/Editorial/Authors" name="Elle Quinn Person" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Fashion Journalist for SiteGenesis during the day, instagram fashion spy at night.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Elle – born 1989 – has studied philosophy at the University of Chicago. She has always expressed an acute interest in all things fashion. Interning at Vogue US, she immediately knew that fashion would be at the core of her career.</p><p>Today, Elle inspires thousands with her instagram channel.</p></div></detailText>
+<pictures>
+<link href="../../Pictures/Authors/Elle%20Quinn%20Picture.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Pictures/Authors/Elle%20Quinn%20Picture"/>
+</pictures>
+<related>
+<link href="Elle%27s%20Articles%20Query%20List.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Authors/Elle%27s%20Articles%20Query%20List"/>
+</related>
+<authors>
+</authors>
+<firstName>Elle</firstName>
+<lastName>Quinn</lastName>
+<displayName></displayName>
+<eMail>info@coremedia.com</eMail>
+<organization>SiteGenesis</organization>
+<jobTitle>Social Media Manager</jobTitle>
+<misc>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="instagram">https://www.instagram.com/coremediacloud/</StringProperty>
+</Struct>
+</misc>
+</CMPerson>

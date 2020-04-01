@@ -1,0 +1,9 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+    <Struct>
+      <LinkProperty Name="layout" xlink:href="coremedia:///cap/content/224" LinkType="coremedia:///cap/contenttype/CMSettings"/>
+      <StructProperty Name="placements"/>
+    </Struct>
+
+  </StructProperty>
+</Struct>

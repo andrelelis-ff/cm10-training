@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>studio-client.taxonomy</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>taxonomy-studio</artifactId>
+  <packaging>swc</packaging>
+
+  <description>Taxonomy Studio Plugin for the CoreMedia Studio</description>
+
+  <properties>
+    <coremedia.project.extension.for>studio</coremedia.project.extension.for>
+  </properties>
+
+
+  <dependencies>
+
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>blueprint-forms</artifactId>
+      <version>${project.version}</version>
+      <type>swc</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.blueprint.base</groupId>
+      <artifactId>bpbase-studio-dynamic-query-list</artifactId>
+      <type>swc</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.blueprint.base</groupId>
+      <artifactId>bpbase-studio-components</artifactId>
+      <type>swc</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.ui</groupId>
+      <artifactId>studio-theme</artifactId>
+      <type>swc</type>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+
+  <build>
+    <sourceDirectory>src/main/joo</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src/main/sencha</directory>
+        <targetPath>../packages/${project.groupId}__${project.artifactId}</targetPath>
+      </resource>
+    </resources>
+
+    <plugins>
+      <plugin>
+        <groupId>net.jangaroo</groupId>
+        <artifactId>jangaroo-maven-plugin</artifactId>
+        <version>${jangaroo.version}</version>
+        <extensions>true</extensions>
+        <configuration>
+          <namespaces>
+            <namespace>
+              <uri>exml:com.coremedia.blueprint.studio.config.taxonomy</uri>
+            </namespace>
+          </namespaces>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

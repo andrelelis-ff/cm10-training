@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="
+               http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+               http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd
+               http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+               ">
+
+  <import resource="classpath:/META-INF/coremedia/livecontext-handler-interceptors.xml"/>
+
+  <bean class="com.coremedia.livecontext.preview.PreviewCommerceContextInterceptor"
+        id="previewStoreContextProviderInterceptor" parent="storeContextInterceptor">
+    <property name="initUserContext" value="true"/>
+    <property name="sitesService" ref="sitesService"/>
+  </bean>
+
+  <bean class="com.coremedia.objectserver.web.MappedInterceptor" id="mappedPreviewStoreContextProviderInterceptor">
+    <property name="interceptor" ref="previewStoreContextProviderInterceptor"/>
+    <property name="includePatterns">
+      <list>
+        <util:constant static-field="com.coremedia.blueprint.cae.handlers.PreviewHandler.URI_PATTERN"/>
+        <util:constant static-field="com.coremedia.blueprint.cae.handlers.PreviewUrlHandler.URI_PATTERN"/>
+        <util:constant static-field="com.coremedia.blueprint.cae.handlers.PreviewUrlHandler.URI_PATTERN_LEGACY"/>
+      </list>
+    </property>
+  </bean>
+
+  <bean class="com.coremedia.livecontext.preview.PreferredSitePreviewCommerceContextInterceptor"
+        id="preferredSitePreviewCommerceContextInterceptor" parent="storeContextInterceptor">
+    <property name="initUserContext" value="false"/>
+    <property name="sitesService" ref="sitesService"/>
+  </bean>
+
+  <!-- add commerce context interceptors to the beginning -->
+  <customize:prepend id="appendCommercePreviewInterceptors" bean="handlerInterceptors" order="9999999">
+    <list>
+      <ref bean="mappedPreviewStoreContextProviderInterceptor"/>
+      <ref bean="preferredSitePreviewCommerceContextInterceptor"/>
+    </list>
+  </customize:prepend>
+
+</beans>

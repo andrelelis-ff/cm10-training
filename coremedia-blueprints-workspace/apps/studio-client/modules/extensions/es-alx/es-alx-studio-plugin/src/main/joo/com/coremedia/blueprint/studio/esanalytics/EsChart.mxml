@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:EsChartBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                   xmlns:local="com.coremedia.blueprint.studio.esanalytics.*"
+                   xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                   xmlns="exml:ext.config"
+                   xmlns:ui="exml:com.coremedia.ui.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.esanalytics.EsAnalyticsStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.esanalytics.esChart";
+
+    public static const NO_DATA_FIELD_ITEM_ID:String = "noDataLabelItemId";
+
+    public static const CHART_PANEL_ITEM_ID:String = "chartContainerItemId";
+
+    public static const ES_CHART_SWITCHER_ITEM_ID:String = "esChartSwitcher";
+
+    public static const TIME_STAMP_ITEM_ID:String = "timeStampItemId";
+
+    private var config:EsChart;
+
+    public native function EsChart(config:EsChart = null);
+
+    [Bindable]
+    public var timeStampValueExpression:ValueExpression;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <fx:Number id="chartHeight">250</fx:Number>
+  </fx:Declarations>
+
+  <local:plugins>
+    <ui:BindPropertyPlugin bindTo="{config.bindTo}"
+                           componentProperty="lineChartData"/>
+  </local:plugins>
+  <local:items>
+    <ui:SwitchingContainer itemId="{ES_CHART_SWITCHER_ITEM_ID}"
+                           activeItemValueExpression="{config.bindTo}"
+                           transformer="{getActiveItemId}">
+      <ui:items>
+        <!-- this label is only visible when there is no analytics data -->
+        <Label itemId="{NO_DATA_FIELD_ITEM_ID}"
+               text="{resourceManager.getString('com.coremedia.blueprint.studio.esanalytics.EsAnalyticsStudioPlugin', 'chart_data_unavailable')}"/>
+        <!-- this chart panel is only visible when there is valid analytics data -->
+        <Panel itemId="{CHART_PANEL_ITEM_ID}"
+               height="{config.chartHeight}"/>
+      </ui:items>
+    </ui:SwitchingContainer>
+    <!-- last fetched timestamp -->
+    <Container>
+      <items>
+        <Label text="{resourceManager.getString('com.coremedia.blueprint.studio.esanalytics.EsAnalyticsStudioPlugin', 'chart_time_stamp_update')}"/>
+        <Label itemId="{TIME_STAMP_ITEM_ID}">
+          <plugins>
+            <ui:BindPropertyPlugin bindTo="{config.timeStampValueExpression}"
+                                   componentProperty="text"
+                                   transformer="{transformTime}"/>
+          </plugins>
+        </Label>
+      </items>
+      <layout>
+        <layout_HBox align="middle"/>
+      </layout>
+    </Container>
+  </local:items>
+  <local:layout>
+    <layout_VBox align="stretch"/>
+  </local:layout>
+</local:EsChartBase>

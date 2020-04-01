@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:TaxonomyLinkListGridPanelBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                                     xmlns:local="com.coremedia.blueprint.studio.taxonomy.selection.*"
+                                     xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                                     xmlns="exml:ext.config"
+                                     xmlns:ui="exml:com.coremedia.ui.config"
+                                     xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                                     hideHeaders="true"
+                                     ui="{PanelSkin.NO_VALIDATION.getSkin()}"
+                                     forceFit="true">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpressionFactory;
+    import com.coremedia.ui.skins.PanelSkin;
+    import com.coremedia.ui.skins.TableViewSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.taxonomy.taxonomyLinkListGridPanel";
+
+    private var config:TaxonomyLinkListGridPanel;
+
+    public native function TaxonomyLinkListGridPanel(config:TaxonomyLinkListGridPanel = null);
+    ]]></fx:Script>
+
+  <local:plugins>
+    <editor:LinkListBindListPlugin bindTo="{config.linkListWrapper.getVE()}"/>
+    <editor:AriaVisibilityPlugin bindTo="{config.linkListWrapper.getVE()}"/>
+    <ui:BindSelectionPlugin selectedPositions="{config.selectedPositionsExpression}"
+                            selectedValues="{config.selectedValuesExpression}"/>
+  </local:plugins>
+  <local:columns>
+    <GridColumn stateId="name"
+                sortable="false"
+                dataIndex="name"
+                renderer="{taxonomyRenderer}"/>
+  </local:columns>
+  <local:selModel>
+    <selection_RowModel mode="MULTI"/>
+  </local:selModel>
+  <local:view>
+    <ui:StatefulTableView ui="{TableViewSkin.LARGE_CELLS.getSkin()}"
+                          deferEmptyText="false"
+                          stripeRows="false">
+      <ui:plugins>
+        <editor:LinkListViewDragDropPlugin linkListWrapper="{config.linkListWrapper}" />
+        <ui:BindPropertyPlugin componentProperty="readOnly"
+                               bindTo="{config.readOnlyValueExpression || ValueExpressionFactory.createFromValue(false)}"/>
+      </ui:plugins>
+    </ui:StatefulTableView>
+  </local:view>
+
+</local:TaxonomyLinkListGridPanelBase>

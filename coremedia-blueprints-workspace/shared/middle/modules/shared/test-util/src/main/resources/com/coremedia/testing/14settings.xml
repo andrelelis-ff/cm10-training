@@ -1,0 +1,8 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <BooleanProperty Name="kid">true</BooleanProperty>
+  <StructProperty Name="mergeTest">
+    <Struct>
+      <BooleanProperty Name="thisIsTrue">true</BooleanProperty>
+    </Struct>
+  </StructProperty>
+</Struct>

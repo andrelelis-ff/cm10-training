@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalLink folder="/Sites/Chef Corp./Germany/German/Editorial/Homepage/Company/Careers" name="Job Page Germany External Link" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Homepage/Company/Careers/Job%20Page%20Germany%20External%20Link.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Company/Careers/Job%20Page%20Germany%20External%20Link"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Job Seite Deutschland</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Übernehmen Sie mit uns für die Arbeitsplätze in Deutschland </p> </div></teaserText>
+<pictures>
+<link href="../../../Assets/Pictures/Careers/Germany%20Map%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Careers/Germany%20Map%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<url>http://www.coremedia.com/de/karriere</url>
+</CMExternalLink>

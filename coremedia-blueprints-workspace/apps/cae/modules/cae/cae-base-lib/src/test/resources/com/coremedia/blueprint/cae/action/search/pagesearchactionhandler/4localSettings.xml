@@ -1,0 +1,9 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+  <LinkProperty Name="searchChannel"
+                  LinkType="coremedia:///cap/contenttype/CMChannel"
+                  xlink:href="coremedia:///cap/resources/24"/>
+  <StringListProperty Name="searchDoctypeSelect">
+    <String>CMArticle</String>
+  </StringListProperty>
+</Struct>

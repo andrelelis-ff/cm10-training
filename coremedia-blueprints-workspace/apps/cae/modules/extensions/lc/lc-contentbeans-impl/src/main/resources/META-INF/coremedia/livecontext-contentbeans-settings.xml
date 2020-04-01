@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/framework/spring/blueprint-contentbeans-settings.xml"/>
+
+  <bean id="outOfStockImageMapAreaFilter" class="com.coremedia.livecontext.imagemap.OutOfStockImageMapAreaFilter">
+    <property name="settingsService" ref="settingsService" />
+  </bean>
+
+  <customize:append id="imageMapAreaFiltersLC" bean="imageMapAreaFilters">
+    <description>
+      Adds livecontext specific hotzone filters to ImageMap hotzone filters
+    </description>
+    <list>
+      <ref bean="outOfStockImageMapAreaFilter"/>
+    </list>
+  </customize:append>
+
+</beans>
+

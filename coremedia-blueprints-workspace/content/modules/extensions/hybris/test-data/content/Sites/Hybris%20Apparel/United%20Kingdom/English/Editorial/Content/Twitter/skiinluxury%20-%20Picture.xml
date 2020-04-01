@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Twitter" name="skiinluxury - Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=292;y=0;width=439;height=680</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=258;y=0;width=510;height=680</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=172;y=0;width=680;height=680</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=58;y=0;width=907;height=680</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=51;width=1024;height=576</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=135;width=1024;height=410</StringProperty>
+<StringProperty Name="landscape_ratio3x1">b;a=0;c=1/crop;x=0;y=169;width=1024;height=341</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=212;width=1024;height=256</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="857c6aae0cf3452034d426185a9536e2" size="140866" href="../../../../../../../__blob/857c6aae0cf3452034d426185a9536e2.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

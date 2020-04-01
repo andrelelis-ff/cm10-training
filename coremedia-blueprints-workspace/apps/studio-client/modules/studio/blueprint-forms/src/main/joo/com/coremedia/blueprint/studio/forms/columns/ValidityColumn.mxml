@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ A column object that displays the validity status of a content as an icon.
+ This column expects that a data field is defined, providing
+ the content's visibilityStatus.
+-->
+
+<ui:IconColumn xmlns:fx="http://ns.adobe.com/mxml/2009"
+               xmlns:exml="http://www.jangaroo.net/exml/0.8"
+               xmlns:ui="exml:com.coremedia.cms.editor.sdk.config"
+               xmlns="exml:ext.config"
+               header="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMLinkable_validity_text')}"
+               align="center"
+               stateId="{ValidityColumn.STATUS_ID}"
+               dataIndex="{ValidityColumn.STATUS_ID}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.Validation')]
+    [ResourceBundle('com.coremedia.cms.editor.Editor')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cap.content.Content;
+    import com.coremedia.ui.data.Calendar;
+    import com.coremedia.ui.util.ObjectUtils;
+
+    import ext.DateUtil;
+    import ext.data.Model;
+    import ext.data.Store;
+
+    import mx.resources.ResourceManager;
+
+    private var config:ValidityColumn;
+
+    public native function ValidityColumn(config:ValidityColumn = null);
+
+    public static const STATUS_ID:String = "validityStatus";
+    private static const INVALID_FUTURE:String = "invalid-future";
+    private static const INVALID_PAST:String = "invalid-past";
+    private static const DATE_FORMAT:String = ResourceManager.getInstance().getString('com.coremedia.cms.editor.Editor', 'dateFormat');
+
+    protected override function calculateIconCls(value:*, metadata:*, record:Model, rowIndex:Number, colIndex:Number, store:Store):String {
+      if (value && value.clsName) {
+        if (value.clsName == INVALID_PAST) {
+          return resourceManager.getString('com.coremedia.icons.CoreIcons', 'not_valid_anymore');
+        } else if (value.clsName == INVALID_FUTURE) {
+          return resourceManager.getString('com.coremedia.icons.CoreIcons', 'not_valid_yet');
+        }
+      }
+      return '';
+    }
+
+    protected override function calculateToolTipText(value:*, metadata:*, record:Model, rowIndex:Number, colIndex:Number, store:Store):String {
+      if (value) {
+        if (value.clsName == INVALID_PAST) {
+          return resourceManager.getString('com.coremedia.blueprint.studio.Validation', 'ValidationStatus_not_valid_anymore') + ' ' + value.dateString;
+        } else if (value.clsName == INVALID_FUTURE) {
+          return resourceManager.getString('com.coremedia.blueprint.studio.Validation', 'ValidationStatus_will_be_active') + ' ' + value.dateString;
+        }
+      }
+      return '';
+    }
+
+    protected override function calculateIconText(value:*, metadata:*, record:Model, rowIndex:Number, colIndex:Number, store:Store):String {
+      return calculateToolTipText(value, metadata, record, rowIndex, colIndex, store);
+    }
+
+
+    public static function convert(value:String, content:Content):Object {
+      var validFrom:Calendar = ObjectUtils.getPropertyAt(content, 'properties.validFrom', null);
+      var validTo:Calendar = ObjectUtils.getPropertyAt(content, 'properties.validTo', null);
+
+      if (validFrom === undefined || validTo === undefined) {
+        return undefined;
+      }
+
+      var clsName:String = "";
+      var dateString:String;
+
+      if (!validFrom && validTo && isBeforeToday(validTo)) {
+        clsName = INVALID_PAST;
+        dateString = DateUtil.format(validTo.getDate(), DATE_FORMAT);
+      }
+      else if (validFrom && !validTo && !isBeforeToday(validFrom)) {
+        clsName = INVALID_FUTURE;
+        dateString = DateUtil.format(validFrom.getDate(), DATE_FORMAT);
+      }
+      else if (validTo && isBeforeToday(validTo)) {
+        clsName = INVALID_PAST;
+        dateString = DateUtil.format(validTo.getDate(), DATE_FORMAT);
+      }
+      else if (validTo && validFrom && !isBeforeToday(validFrom) && !isBeforeToday(validTo)) {
+        clsName = INVALID_FUTURE;
+        dateString = DateUtil.format(validFrom.getDate(), DATE_FORMAT);
+      }
+      return {clsName: clsName, dateString: dateString};
+    }
+
+
+    private static function isBeforeToday(date:Calendar):Boolean {
+      var today:Date = new Date();
+      return date.getDate().getTime() < today.getTime();
+    }
+
+    private static function isOlderThan(date:Calendar, than:Calendar):Boolean {
+      return date.getDate().getTime() < than.getDate().getTime();
+    }
+    ]]></fx:Script>
+</ui:IconColumn>

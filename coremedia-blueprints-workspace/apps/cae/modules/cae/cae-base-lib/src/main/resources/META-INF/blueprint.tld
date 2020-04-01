@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?><!--
+
+  Tag Library Definition for the CoreMedia Website Blueprint,
+
+ -->
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+
+  <description>CoreMedia Website Blueprint Tag Library</description>
+  <tlib-version>1.0</tlib-version>
+  <short-name>bp</short-name>
+  <uri>http://www.coremedia.com/2012/blueprint</uri>
+
+  <tag>
+    <name>truncate</name>
+    <tag-class>com.coremedia.blueprint.cae.web.taglib.TruncateTag</tag-class>
+    <body-content>empty</body-content>
+    <attribute>
+      <description>
+        abbreviate a String or a Markup
+      </description>
+      <name>value</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>
+        a page variable to store the result in
+      </description>
+      <name>var</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+      <description>
+        the desired length
+      </description>
+      <name>maxLength</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+
+  <tag-file>
+    <description>Create a notification box of the following types "success", "error", warning" or "info"</description>
+    <name>notification</name>
+    <path>/META-INF/tags/notification.tag</path>
+  </tag-file>
+
+  <tag-file>
+    <name>notification-validation</name>
+    <path>/META-INF/tags/notification-validation.tag</path>
+  </tag-file>
+
+  <function>
+    <description>
+      offers access to one value of the merged settings map
+    </description>
+    <name>setting</name>
+    <function-class>com.coremedia.blueprint.cae.web.taglib.SettingsFunction</function-class>
+    <function-signature>
+      java.lang.Object
+      setting(com.coremedia.blueprint.base.settings.SettingsService, java.lang.Object, java.lang.String)
+    </function-signature>
+  </function>
+
+  <function>
+    <description>
+      offers access to one value of the merged settings map or return the default value
+    </description>
+    <name>settingWithDefault</name>
+    <function-class>com.coremedia.blueprint.cae.web.taglib.SettingsFunction</function-class>
+    <function-signature>
+      java.lang.Object
+      setting(com.coremedia.blueprint.base.settings.SettingsService, java.lang.Object, java.lang.String, java.lang.Object)
+    </function-signature>
+  </function>
+
+  <function>
+    <description>
+      Get an unique Id within a request with the default prefix.
+    </description>
+    <name>generateId</name>
+    <function-class>com.coremedia.blueprint.cae.web.taglib.GenerateUniqueId</function-class>
+    <function-signature>java.lang.String generateId(javax.servlet.jsp.PageContext)</function-signature>
+  </function>
+
+  <function>
+    <description>
+      Get an unique Id within a request with the given prefix.
+    </description>
+    <name>generateIdWithPrefix</name>
+    <function-class>com.coremedia.blueprint.cae.web.taglib.GenerateUniqueId</function-class>
+    <function-signature>java.lang.String generateId(java.lang.String,javax.servlet.jsp.PageContext)</function-signature>
+  </function>
+
+  <function>
+    <description>
+      Return list of area configurations with the 'coords' attribute being transformed according to the image map's
+      picture transformations. If cropping is disabled, only the transformations for "uncropped" are returned as entries
+      in the transformation map.
+    </description>
+    <name>responsiveImageMapAreasAll</name>
+    <function-class>com.coremedia.blueprint.cae.web.taglib.ImageFunctions</function-class>
+    <function-signature>
+      java.util.List
+      responsiveImageMapAreasAll(com.coremedia.blueprint.common.contentbeans.CMImageMap)
+    </function-signature>
+  </function>
+
+  <function>
+    <description>
+      Return list of area configurations with the 'coords' attribute being transformed according to the image map's
+      picture transformations. If cropping is disabled and transformationNames is empty or only contains "uncropped",
+      only the transformations for "uncropped" are returned as entries in the transformation map.
+    </description>
+    <name>responsiveImageMapAreas</name>
+    <function-class>com.coremedia.blueprint.cae.web.taglib.ImageFunctions</function-class>
+    <function-signature>
+      java.util.List
+      responsiveImageMapAreas(com.coremedia.blueprint.common.contentbeans.CMImageMap,java.util.List)
+    </function-signature>
+  </function>
+
+  <function>
+    <description>
+      Returns Map containing information to be rendered as data attribute delivering informationen about the ImageMap
+      areas to JavaScript.
+    </description>
+    <name>responsiveImageMapAreaData</name>
+    <function-class>com.coremedia.blueprint.cae.web.taglib.ImageFunctions</function-class>
+    <function-signature>
+      java.util.Map
+      responsiveImageMapAreaData(java.util.Map)
+    </function-signature>
+  </function>
+
+  <function>
+    <description>
+      Returns the width all image transformations are based on.
+    </description>
+    <name>getImageTransformationBaseWidth</name>
+    <function-class>com.coremedia.blueprint.base.cae.web.taglib.ImageFunctions</function-class>
+    <function-signature>
+      int
+      getImageTransformationBaseWidth()
+    </function-signature>
+  </function>
+
+  <function>
+    <description>
+      Checks whether the given Object is found within the given list.
+    </description>
+    <name>listContains</name>
+    <function-class>com.coremedia.blueprint.cae.web.taglib.ListUtil</function-class>
+    <function-signature>boolean contains(java.util.List,java.lang.Object)
+    </function-signature>
+  </function>
+</taglib>

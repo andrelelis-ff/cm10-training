@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Decorating" name="B2B_VASE_5 Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/flip;d=h/crop;x=960;y=170;width=805;height=1248</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/flip;d=h/crop;x=882;y=62;width=836;height=1114</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/flip;d=h/crop;x=506;y=0;width=1254;height=1253</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/flip;d=h/crop;x=206;y=52;width=1589;height=1191</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/flip;d=h/crop;x=144;y=201;width=1723;height=969</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/flip;d=h/crop;x=0;y=330;width=2048;height=820</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/flip;d=h/crop;x=0;y=413;width=2048;height=510</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.46851385390428213;y1=0.12;x2=0.8614609571788413;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.43073047858942065;y1=0.04363636363636364;x2=0.8387909319899244;y2=0.8290909090909091</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.24685138539042822;y1=0;x2=0.8589420654911839;y2=0.8836363636363637</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.10075566750629723;y1=0.03636363636363636;x2=0.8765743073047859;y2=0.8763636363636363</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.07052896725440806;y1=0.14181818181818182;x2=0.9118387909319899;y2=0.8254545454545454</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.23272727272727273;x2=1;y2=0.8109090909090909</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.2909090909090909;x2=1;y2=0.6509090909090909</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">true</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_VASE_5</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Cubic Vase</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Cubic Vase</alt>
+<copyright>johannviloria/Shutterstock 90745709</copyright>
+<dataUrl></dataUrl>
+<data md5="98fe2659d3d98ed9b739bf5701552f54" size="275543" href="../../../../../../../__blob/98fe2659d3d98ed9b739bf5701552f54.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

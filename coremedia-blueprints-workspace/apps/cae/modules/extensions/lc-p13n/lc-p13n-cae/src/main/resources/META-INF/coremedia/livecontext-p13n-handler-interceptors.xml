@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <import resource="classpath:/META-INF/coremedia/livecontext-handler-interceptors.xml"/>
+  <import resource="classpath:/META-INF/coremedia/livecontext-site-services.xml"/>
+
+  <bean class="com.coremedia.livecontext.p13n.handler.FragmentCommerceP13nContextInterceptor" id="fragmentCommerceP13nContextInterceptor" parent="storeContextInterceptor">
+    <property name="initUserContext" value="true" />
+    <property name="liveContextSiteResolver" ref="liveContextSiteResolver"/>
+  </bean>
+
+
+  <bean class="com.coremedia.objectserver.web.MappedInterceptor" id="mappedFragmentCommerceP13nContextInterceptor">
+    <property name="pathMatcher" ref="handlerPathMatcher"/>
+    <property name="interceptor" ref="fragmentCommerceP13nContextInterceptor"/>
+    <property name="includePatterns">
+      <list>
+        <util:constant static-field="com.coremedia.livecontext.fragment.FragmentPageHandler.FRAGMENT_INTERCEPTOR_PATTERN"/>
+      </list>
+    </property>
+  </bean>
+
+  <!-- add p13n commerce context interceptors to the end -->
+  <customize:append id="appendCommerceP13nInterceptors" bean="handlerInterceptors" order="99999999">
+    <list>
+      <ref bean="mappedFragmentCommerceP13nContextInterceptor"/>
+    </list>
+  </customize:append>
+
+</beans>

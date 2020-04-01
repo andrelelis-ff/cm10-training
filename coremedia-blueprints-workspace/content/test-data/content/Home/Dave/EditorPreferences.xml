@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<EditorPreferences folder="/Home/Dave" name="EditorPreferences" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<data>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="collection">
+<Struct>
+<StringListProperty Name="savedSearches">
+<String>{"_main":{"searchText":"","contentType":"Document_","mode":"search","view":"list","folder":{"$Ref":"content/1"},"orderBy":"freshness desc","limit":50},"status":{"inProduction":true,"editedByMe":true,"editedByOthers":true,"notEdited":true,"approved":true,"published":true,"deleted":false},"lastEdited":{"lastEditedBy":"me"},"_name":"Last edited"}</String>
+<String>{"_main":{"searchText":"","contentType":"CMArticle","mode":"search","view":"list","folder":{"$Ref":"content/1"},"orderBy":"freshness desc","limit":50},"status":{"inProduction":true,"editedByMe":true,"editedByOthers":true,"notEdited":true,"approved":true,"published":true,"deleted":false},"lastEdited":{"lastEditedBy":"anyone"},"_name":"Articles"}</String>
+<String>{"_main":{"searchText":"","contentType":"CMPicture","mode":"search","view":"thumbnails","folder":{"$Ref":"content/1"},"orderBy":"freshness desc","limit":50},"status":{"inProduction":true,"editedByMe":true,"editedByOthers":true,"notEdited":true,"approved":true,"published":true,"deleted":false},"lastEdited":{"lastEditedBy":"anyone"},"_name":"Pictures"}</String>
+<String>{"_main":{"searchText":"","contentType":"CMChannel","mode":"search","view":"list","folder":{"$Ref":"content/1"},"orderBy":"freshness desc","limit":50},"status":{"inProduction":true,"editedByMe":true,"editedByOthers":true,"notEdited":true,"approved":true,"published":true,"deleted":false},"lastEdited":{"lastEditedBy":"anyone"},"_name":"Pages"}</String>
+<String>{"_main":{"searchText":"","contentType":"CMTheme","mode":"search","view":"list","folder":{"$Ref":"content/1"},"orderBy":"name asc","limit":50},"status":{"inProduction":true,"editedByMe":true,"editedByOthers":true,"notEdited":true,"approved":true,"published":true,"deleted":false},"lastEdited":{"lastEditedBy":"anyone"},"_name":"Themes"}</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<BooleanProperty Name="showAllTabsInForm">true</BooleanProperty>
+<StructProperty Name="controlRoom">
+<Struct>
+<BooleanProperty Name="showAssets">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StringProperty Name="preferredSite">ced8921aa7b7f9b736b90e19afc2dd2a</StringProperty>
+<StructProperty Name="workarea">
+<Struct>
+<StructListProperty Name="tabs">
+<Struct>
+<StringProperty Name="typeId">com.coremedia.cms.editor.sdk.config.premular</StringProperty>
+<StructProperty Name="state">
+<Struct>
+<LinkProperty Name="content" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Sites/Calista/United%20States/English/Navigation/Calista.xml" cmexport:path="/Sites/Calista/United%20States/English/Navigation/Calista"/>
+</Struct>
+</StructProperty>
+</Struct>
+</StructListProperty>
+<IntProperty Name="activeTabIndex">0</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</data>
+</EditorPreferences>

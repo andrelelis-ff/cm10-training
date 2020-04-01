@@ -1,0 +1,391 @@
+/*
+  The following standard setting and these paragraph styles rules
+  should be listed before the alignment rules. Otherwise,
+  the alignment rules won't overwrite the standard setting.
+*/
+
+//styles
+.#{$cm-richtext-prefix} {
+
+  /* basic styles */
+  a,
+  .underline {
+    text-decoration: underline;
+  }
+
+  .strike {
+    text-decoration: line-through;
+  }
+
+  sub {
+    vertical-align: sub;
+  }
+
+  sup {
+    vertical-align: super;
+  }
+
+  .rte--list {
+    margin-bottom: 1em;
+    margin-left: 20px;
+  }
+
+  blockquote {
+    margin: 0 0 1rem 0;
+    padding: 1em;
+    background: #f0f0f0;
+    quotes: inherit;
+  }
+
+  blockquote p {
+    display: inline-block;
+  }
+
+  blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* alignment */
+  .align--left {
+    text-align: left;
+  }
+
+  .align--center {
+    text-align: center;
+  }
+
+  .align--right {
+    text-align: right;
+  }
+
+  .align--justify {
+    text-align: justify;
+  }
+
+  /* floating (images) */
+  .float--left {
+    float: left;
+  }
+
+  .float--right {
+    float: right;
+  }
+
+  .float--none {
+    float: none;
+  }
+
+  /* default table layout */
+  table {
+    width: 100%;
+    border: 1px solid #000;
+    margin: $cm-richtext-padding-base-horizontal 0;
+
+    th {
+      font-weight: bold;
+      text-align: left;
+      padding: $cm-richtext-padding-base-vertical $cm-richtext-padding-base-horizontal;
+      border-bottom: 1px dashed #000;
+    }
+
+    td {
+      padding: 5px $cm-richtext-padding-base-horizontal;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    tr:last-child {
+      td {
+        border-bottom: none;
+      }
+    }
+  }
+
+  /* headings for paragraphs [deprecated] */
+  .p--standard {
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  .p--heading-1 {
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .p--heading-2 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .p--heading-3 {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  .p--heading-4 {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .p--heading-5 {
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  .p--heading-6 {
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  /* font-families [deprecated] */
+  .font-name--arial {
+    font-family: Arial, sans-serif;
+  }
+
+  .font-name--arial-black {
+    font-family: "Arial Black", sans-serif;
+  }
+
+  .font-name--arial-narrow {
+    font-family: "Arial Narrow", sans-serif;
+  }
+
+  .font-name--century {
+    font-family: Century, serif;
+  }
+
+  .font-name--courier {
+    font-family: Courier, serif;
+  }
+
+  .font-name--lucida-console {
+    font-family: "Lucida Console", serif;
+  }
+
+  .font-name--lucida-sans-unicode {
+    font-family: "Lucida Sans Unicode", sans-serif;
+  }
+
+  .font-name--times-new-roman {
+    font-family: Times New Roman, serif;
+  }
+
+  .font-name--verdana {
+    font-family: Verdana, sans-serif;
+  }
+
+  /* font-sizes [deprecated] */
+  .font-size--8 {
+    font-size: 8px;
+  }
+
+  .font-size--9 {
+    font-size: 9px;
+  }
+
+  .font-size--10 {
+    font-size: 10px;
+  }
+
+  .font-size--11 {
+    font-size: 11px;
+  }
+
+  .font-size--12 {
+    font-size: 12px;
+  }
+
+  .font-size--14 {
+    font-size: 14px;
+  }
+
+  .font-size--16 {
+    font-size: 16px;
+  }
+
+  .font-size--18 {
+    font-size: 18px;
+  }
+
+  .font-size--20 {
+    font-size: 20px;
+  }
+
+  .font-size--24 {
+    font-size: 24px;
+  }
+
+  .font-size--26 {
+    font-size: 26px;
+  }
+
+  .font-size--28 {
+    font-size: 28px;
+  }
+
+  .font-size--36 {
+    font-size: 36px;
+  }
+
+  .font-size--48 {
+    font-size: 48px;
+  }
+
+  .font-size--72 {
+    font-size: 72px;
+  }
+
+  /* colors [deprecated] */
+  .color--black {
+    color: black;
+  }
+
+  .color--green {
+    color: green;
+  }
+
+  .color--silver {
+    color: silver;
+  }
+
+  .color--lime {
+    color: lime;
+  }
+
+  .color--gray {
+    color: gray;
+  }
+
+  .color--olive {
+    color: olive;
+  }
+
+  .color--white {
+    color: white;
+  }
+
+  .color--yellow {
+    color: yellow;
+  }
+
+  .color--maroon {
+    color: maroon;
+  }
+
+  .color--navy {
+    color: navy;
+  }
+
+  .color--red {
+    color: red;
+  }
+
+  .color--blue {
+    color: blue;
+  }
+
+  .color--purple {
+    color: purple;
+  }
+
+  .color--teal {
+    color: teal;
+  }
+
+  .color--fuchsia {
+    color: fuchsia;
+  }
+
+  .color--aqua {
+    color: aqua;
+  }
+
+  /* background-colors [deprecated] */
+  .background-color--black {
+    background-color: black;
+  }
+
+  .background-color--green {
+    background-color: green;
+  }
+
+  .background-color--silver {
+    background-color: silver;
+  }
+
+  .background-color--lime {
+    background-color: lime;
+  }
+
+  .background-color--gray {
+    background-color: gray;
+  }
+
+  .background-color--olive {
+    background-color: olive;
+  }
+
+  .background-color--white {
+    background-color: white;
+  }
+
+  .background-color--yellow {
+    background-color: yellow;
+  }
+
+  .background-color--maroon {
+    background-color: maroon;
+  }
+
+  .background-color--navy {
+    background-color: navy;
+  }
+
+  .background-color--red {
+    background-color: red;
+  }
+
+  .background-color--blue {
+    background-color: blue;
+  }
+
+  .background-color--purple {
+    background-color: purple;
+  }
+
+  .background-color--teal {
+    background-color: teal;
+  }
+
+  .background-color--fuchsia {
+    background-color: fuchsia;
+  }
+
+  .background-color--aqua {
+    background-color: aqua;
+  }
+
+  /* list items [deprecated] */
+  .list-item--none {
+    list-style-type: none;
+  }
+
+  .list-item--square {
+    list-style-type: square;
+  }
+
+  .list-item--circle {
+    list-style-type: circle;
+  }
+
+  .list-item--disc {
+    list-style-type: disc;
+  }
+
+  &--dark-shadow {
+    text-shadow: -1px 0 $cm-richtext-dark-shadow-color, 0 1px $cm-richtext-dark-shadow-color, 1px 0 $cm-richtext-dark-shadow-color, 0 -1px $cm-richtext-dark-shadow-color;
+  }
+
+  &--light-shadow {
+    text-shadow: 0 0 30px $cm-richtext-light-shadow-color;
+  }
+}

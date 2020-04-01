@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/United Kingdom/English/Pictures" name="Ski Season Begins" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=147;y=0;width=469;height=726</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=111;y=0;width=544;height=726</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=31;y=0;width=727;height=726</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=17;y=0;width=969;height=726</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=82;width=1000;height=562</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=80;width=1000;height=499</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=98;width=1000;height=400</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=125;width=1000;height=374</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=283;width=1000;height=251</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.1465798045602606;y1=0;x2=0.6156351791530945;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.11074918566775244;y1=0;x2=0.6547231270358306;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.03140096618357488;y1=0;x2=0.7584541062801933;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.016908212560386472;y1=0;x2=0.9855072463768116;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.11295681063122924;x2=1;y2=0.8870431893687708</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.10963455149501661;x2=1;y2=0.7973421926910299</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.13452914798206278;x2=1;y2=0.6860986547085202</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.17275747508305647;x2=1;y2=0.6877076411960132</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3901345291479821;x2=1;y2=0.7354260089686099</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Ski Season Begins</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Ski Season Begins</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1000</width>
+<height>726</height>
+<data md5="2ad5652c895095e4c4873ad1c65a991e" size="746511" href="../../../../../__blob/2ad5652c895095e4c4873ad1c65a991e.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

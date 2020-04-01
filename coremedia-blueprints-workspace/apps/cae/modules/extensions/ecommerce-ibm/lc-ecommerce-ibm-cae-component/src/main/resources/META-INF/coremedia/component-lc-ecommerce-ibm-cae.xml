@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <import resource="lc-ecommerce-ibm-sitemap.xml"/>
+  <import resource="lc-ecommerce-ibm-handler-interceptors.xml"/>
+  <import resource="lc-ecommerce-ibm-testurls.xml"/>
+
+  <import resource="classpath:/framework/spring/livecontext-services.xml"/>
+  <import resource="classpath:/framework/spring/livecontext-connection.xml"/>
+  <import resource="classpath:/com/coremedia/cae/link-services.xml"/>
+
+  <bean class="com.coremedia.livecontext.ecommerce.ibm.cae.storefront.StoreFrontConfiguration"/>
+
+  <bean id="wcsLoginUrlsProvider" class="com.coremedia.livecontext.ecommerce.ibm.cae.login.WcsLoginUrlsProvider">
+    <constructor-arg index="0" ref="previewTokenService"/>
+    <constructor-arg index="1" ref="linkFormatter"/>
+    <property name="defaultStoreFrontUrl" value="${livecontext.ibm.wcs.storefront.secureUrl}"/>
+    <property name="previewStoreFrontUrl" value="${livecontext.ibm.wcs.storefront.preview.secureUrl}"/>
+    <property name="loginFormUrlTemplate" value="${livecontext.ibm.wcs.loginForm.url}"/>
+    <property name="logoutUrlTemplate"    value="${livecontext.ibm.wcs.logout.url}"/>
+  </bean>
+
+  <bean id="cartHandler" class="com.coremedia.livecontext.ecommerce.ibm.cae.handler.CartHandler" parent="ecommerceHandlerBase">
+    <property name="resolveContextStrategy" ref="resolveLivecontextContextStrategy"/>
+    <property name="liveContextNavigationFactory" ref="liveContextNavigationFactory"/>
+    <property name="checkoutRedirectUrlProvider" ref="wcsCheckoutRedirectUrlProvider" />
+    <property name="linkFormatter" ref="linkFormatter"/>
+    <property name="permittedLinkParameterNames">
+      <list>
+        <value>targetView</value>
+      </list>
+    </property>
+  </bean>
+
+  <!-- Should be all handled by CommerceLinkScheme, after it fully supports content-led integerations -->
+  <bean id="externalPageLinkScheme" class="com.coremedia.livecontext.ecommerce.ibm.cae.handler.ExternalPageLinkScheme">
+    <constructor-arg ref="wcsExternalPageLinkScheme"/>
+    <constructor-arg ref="commerceConnectionSupplier"/>
+  </bean>
+
+  <bean id="wcsExternalPageLinkScheme" class="com.coremedia.livecontext.ecommerce.ibm.cae.WcsUrlProvider">
+    <qualifier value="searchUrlProvider"/>
+    <property name="defaultStoreFrontUrl" value="${livecontext.ibm.wcs.storefront.url}"/>
+    <property name="previewStoreFrontUrl" value="${livecontext.ibm.wcs.storefront.preview.url}"/>
+  </bean>
+
+  <bean id="wcsCheckoutRedirectUrlProvider" class="com.coremedia.livecontext.ecommerce.ibm.cae.WcsUrlProvider">
+    <qualifier value="checkoutUrlProvider"/>
+    <property name="defaultStoreFrontUrl" value="${livecontext.ibm.wcs.storefront.url}"/>
+    <property name="previewStoreFrontUrl" value="${livecontext.ibm.wcs.storefront.preview.url}"/>
+    <property name="urlPattern" value="${livecontext.ibm.wcs.checkout-redirect.url}"/>
+  </bean>
+
+  <bean id="wcsSearchResultRedirectUrlProvider" class="com.coremedia.livecontext.ecommerce.ibm.cae.WcsUrlProvider">
+    <qualifier value="searchUrlProvider"/>
+    <property name="defaultStoreFrontUrl" value="${livecontext.ibm.wcs.storefront.url}"/>
+    <property name="previewStoreFrontUrl" value="${livecontext.ibm.wcs.storefront.preview.url}"/>
+    <property name="urlPattern" value="${livecontext.ibm.wcs.search-result-redirect.url}"/>
+  </bean>
+
+  <bean id="wcsCommerceSearchResultRedirectUrlProvider" class="com.coremedia.livecontext.ecommerce.ibm.cae.WcsCommerceSearchRedirectUrlProvider">
+    <constructor-arg ref="wcsSearchResultRedirectUrlProvider"/>
+  </bean>
+
+</beans>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSelectionRules folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content/Lighting" name="Lighting Products Personalized Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Lighting/Lighting%20Products%20Personalized%20Teaser.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Lighting/Lighting%20Products%20Personalized%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<rules grammarName="coremedia-selectionrules-1.0"><rules version="1.0" xmlns="http://www.coremedia.com/2010/selectionrules" xmlns:xlink="http://www.w3.org/1999/xlink">select <content xlink:href="coremedia:///cap/resources/../../Products/Aurora%20B2B/Lighting/Dual-tube%20Ultraviolet%20Bulb%2bd844d94.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Lighting/Dual-tube%20Ultraviolet%20Bulb%20Product%20Teaser"/> if commerce.usersegments#"ibm:///catalog/segment/8500000000000323452"</rules></rules>
+<defaultContent>
+<link href="../../Products/Aurora%20B2B/Decorating/Lighting/Modern%20Tripod%20Spo2a46e99.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Products/Aurora%20B2B/Decorating/Lighting/Modern%20Tripod%20Spotlight%20-%20Augmented"/>
+</defaultContent>
+</CMSelectionRules>

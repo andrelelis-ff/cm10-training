@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:TaxonomyPreferencesBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                               xmlns:local="com.coremedia.blueprint.studio.taxonomy.preferences.*"
+                               xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                               xmlns="exml:ext.config"
+                               xmlns:ui="exml:com.coremedia.ui.config"
+                               xmlns:editor="exml:com.coremedia.ui.config"
+                               title="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyPreferences_tab_title')}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.skins.ButtonSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.taxonomy.taxonomyPreferences";
+
+    private var config:TaxonomyPreferences;
+
+    public native function TaxonomyPreferences(config:TaxonomyPreferences = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <FieldContainer fieldLabel="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyPreferences_option_name')}">
+      <items>
+        <editor:LocalComboBox encodeItems="true"
+                              valueField="value"
+                              hideEmptyLabel="true"
+                              displayField="name"
+                              store="{getStore()}"
+                              flex="1">
+          <editor:plugins exml:mode="append">
+            <ui:BindPropertyPlugin componentEvent="change"
+                                   componentProperty="value"
+                                   bindTo="{getSuggestionTypesValueExpression()}"
+                                   bidirectional="true"/>
+          </editor:plugins>
+          <editor:listConfig>
+            <BoundList/>
+          </editor:listConfig>
+        </editor:LocalComboBox>
+        <TbSpacer width="6"/>
+        <ui:IconDisplayField iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'help')}">
+          <ui:tooltip>
+            <ui:StatefulQuickTip text="{resourceManager.getString('com.coremedia.blueprint.studio.taxonomy.TaxonomyStudioPlugin', 'TaxonomyPreferences_settings_tooltip')}"/>
+          </ui:tooltip>
+        </ui:IconDisplayField>
+      </items>
+      <layout>
+        <layout_HBox align="middle"/>
+      </layout>
+    </FieldContainer>
+  </local:items>
+  <local:layout>
+    <layout_Anchor/>
+  </local:layout>
+</local:TaxonomyPreferencesBase>

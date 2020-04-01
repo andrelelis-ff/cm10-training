@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/Aurora Augmentation/United States/English/Editorial/Products" name="Gusso Cloth Satchel Bag" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../Content/Fashion/Gusso%20Cloth%20Satchel%20Bag%20%28shutterst20309b60.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Gusso%20Cloth%20Satchel%20Bag%20%28shutterstock_111120167%29"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>ibm:///catalog/sku/WBG006_061201</externalId>
+</CMProductTeaser>

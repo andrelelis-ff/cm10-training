@@ -1,0 +1,358 @@
+/*
+Search
+========================================================================================================================
+
+Contains styling definitions for search including search field and resultpage.
+- cm-search
+- cm-search--form
+- cm-search--results
+*/
+
+.#{$cm-search-prefix} {
+
+  &__wrapper {
+    @include breakpoint($cm-search-breakpoint) {
+      position: relative;
+    }
+    @include clearfix();
+  }
+
+  /* --- search form --- */
+  &__form-label {
+    display: $cm-search-show-label;
+  }
+
+  &__form-input {
+    width: $cm-search-input-width;
+    height: $cm-search-input-height;
+  }
+
+  &__form-button {
+    cursor: pointer;
+    padding: $cm-search-button-padding;
+  }
+
+  /* --- result page --- */
+  &__header {
+    padding-bottom: 20px;
+  }
+
+  &__link {
+    cursor: pointer;
+    color: $cm-search-link-color;
+    text-decoration: $cm-search-link-decoration;
+
+    &:hover {
+      color: $cm-search-link-color-hover;
+      text-decoration: $cm-search-link-decoration-hover;
+    }
+  }
+
+  &__status,
+  &__warning {
+    margin-top: 0;
+
+    span {
+      color: $cm-search-result-highlight-color;
+      font-style: italic;
+
+      &::before,
+      &::after {
+        content: "\"";
+      }
+    }
+  }
+
+  /* --- search field --- */
+
+  &--form-result-page {
+    margin-bottom: 20px;
+
+    @include breakpoint($cm-search-breakpoint) {
+      position: absolute;
+      padding-left: $cm-search-filter-width;
+      margin-bottom: 0;
+
+      &-without-filters {
+        padding-left: 0;
+      }
+    }
+  }
+
+  /* --- sort dropdown --- */
+  &__sort {
+    @include breakpoint($cm-search-breakpoint) {
+      float: right;
+      width: 100%;
+      padding-bottom: 20px;
+      margin-bottom: 0;
+      text-align: right;
+    }
+
+    &-label {
+      padding: 5px 10px 5px 0;
+    }
+
+    &--dropdown {
+      padding: 5px 10px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+  }
+
+  /* --- filters --- */
+  &__filters {
+    margin-bottom: 40px;
+
+    @include breakpoint($cm-search-breakpoint) {
+      width: $cm-search-filter-width;
+      float: left;
+    }
+  }
+
+  &__filter {
+    width: 100%;
+    max-width: 300px;
+    padding: $cm-search-filter-padding;
+    box-sizing: border-box;
+
+    &-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      &-count {
+        &::before {
+          content: $cm-search-filter-count-bracket-left;
+        }
+
+        &::after {
+          content: $cm-search-filter-count-bracket-right;
+        }
+      }
+    }
+
+    &-all-icon:before {
+      content: "<";
+    }
+
+    // caret
+    &-title {
+      cursor: pointer;
+      margin-top: 0;
+
+      &-icon {
+        display: inline-block;
+        transform: rotate(90deg);
+        vertical-align: bottom;
+        margin-left: 10px;
+
+        &:before {
+          content: $cm-search-filter-open;
+        }
+      }
+
+      &--list-collapsed &-icon {
+        &:before {
+          content: $cm-search-filter-close;
+        }
+      }
+    }
+
+    &-switch {
+      margin-bottom: 20px;
+      text-align: right;
+
+      @include breakpoint($cm-search-breakpoint) {
+        display: none;
+      }
+    }
+
+    /* --- mobile filter menu --- */
+    &-popup {
+      display: none;
+      box-sizing: border-box;
+      padding: 0 10px;
+
+      @include breakpoint($cm-search-breakpoint) {
+        display: block;
+        padding: 0;
+      }
+
+      &-head {
+        display: none;
+        margin: 20px 0;
+      }
+
+      &-heading {
+        flex: 1 1 auto; // use full flex definition because of different defaults in IE11
+        margin-top: 0;
+      }
+
+      &-close {
+        align-self: flex-start;
+      }
+
+      &--active {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        background-color: #fff;
+
+        & .#{$cm-search-prefix}__filter-popup-head {
+          display: flex;
+        }
+
+        @include breakpoint($cm-search-breakpoint) {
+          position: static;
+          top: auto;
+          left: auto;
+          width: auto;
+          z-index: auto;
+          background-color: transparent;
+
+          & .#{$cm-search-prefix}__filter-popup-head {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  /* --- results --- */
+  &__results {
+    @include breakpoint($cm-search-breakpoint) {
+      width: 100% - $cm-search-filter-width;
+      border: none;
+      float: right;
+    }
+
+    &--loading {
+      opacity: 0.3;
+      transition: opacity 0.3s ease;
+    }
+
+    &-without-filters {
+      width: 100%;
+      float: none;
+      clear: both;
+    }
+  }
+
+  /* --- single search result --- */
+  &-result {
+    &__item {
+      margin-bottom: $cm-search-result-margin-bottom;
+      display: flex;
+    }
+
+    &__image {
+      display: none; // hide images by default
+      width: $cm-search-result-picture-width;
+      max-width: $cm-search-result-picture-max-width;
+      flex-shrink: 0; //avoid shrinking below 25%
+      margin-right: 20px;
+
+      // show images on larger screens
+      @include breakpoint($cm-search-breakpoint) {
+        display: block;
+      }
+    }
+
+
+    &__picture-box {
+      @include aspect-ratio-box(4, 3);
+    }
+
+    &__picture {
+      @include stretch-absolute();
+    }
+
+    &__caption {
+      flex-grow: 1;
+
+      a {
+        color: $cm-search-link-color;
+      }
+
+      // the search word is marked as "<b>" via solr.
+      b {
+        color: $cm-search-result-highlight-color;
+      }
+    }
+
+    &__title {
+      margin-top: 0; //let the headlines top position be the same as the picture
+    }
+
+    &__date {
+      color: $cm-search-result-date-color;
+
+      // add divider between date and text
+      + span {
+        &:before {
+          color: $cm-search-result-date-color;
+          content: $cm-search-result-date-divider;
+          padding: 0 5px;
+        }
+      }
+    }
+
+    &__download-icon:before {
+      content: "\21e9";
+    }
+  }
+
+  /* --- load more button --- */
+  &__more {
+  }
+
+  &__loading {
+    display: none;
+    background: url("../../img/loader_big.gif") center center no-repeat;
+  }
+
+  /* --- pagination --- */
+  &__pagination {
+    text-align: $cm-search-pagination-align;
+    margin: $cm-search-pagination-margin;
+
+    &-first,
+    &-prev,
+    &-index,
+    &-next,
+    &-last {
+      display: inline-block;
+      border: $cm-search-pagination-button-border;
+      padding: $cm-search-pagination-button-padding;
+      text-decoration: none;
+    }
+
+    &-first span:before {
+      content: $cm-search-pagination-first;
+    }
+
+    &-prev span:before {
+      content: $cm-search-pagination-prev;
+    }
+
+    &-next span:before {
+      content: $cm-search-pagination-next;
+    }
+
+    &-last span:before {
+      content: $cm-search-pagination-last;
+    }
+  }
+}
+
+.cm-body--filter-popup-active {
+  overflow: hidden; // prevent scrolling
+
+  @include breakpoint($cm-search-breakpoint) {
+    overflow: visible;
+  }
+}

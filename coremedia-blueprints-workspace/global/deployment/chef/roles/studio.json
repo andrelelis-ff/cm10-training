@@ -1,0 +1,11 @@
+{
+  "name": "studio",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The role for the studio node",
+  "run_list": [
+    "role[base]",
+    "recipe[blueprint-spring-boot::studio-server]",
+    "recipe[blueprint-spring-boot::studio-client]"
+  ]
+}

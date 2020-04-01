@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProduct folder="/Sites/Chef Corp./United States/English/Products/Hoods and Extractors" name="Chef Extractor Hood HD900 Super Product" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="callToActionCustomText">More Product Information</StringProperty>
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>chef-extractor-hood-hd900-super</segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+<link href="Hoods%20and%20Extractors.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Hoods%20and%20Extractors/Hoods%20and%20Extractors"/>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Remove fumes and vapors with the powerful and silent Chef Extractor Hood HD900.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-3">Description</p><p>Remove fumes and vapors with the powerful and silent Chef Extractor Hood HD900. It's easy to use and has the best rate of noise generation vs. extraction rate. All Chef Extractor Hoods are available in dimensions that match our ranges.</p><p><br/></p><p class="p--heading-3">Key Features</p><p>• Extraction rate of 900m3/hr<br/>• Available in stainless steel or black<br/>• Dishwasher safe grease filters<br/>• Steplessly variable speed settings<br/>• Illuminated controls<br/>• Integrated three-step lighting<br/>• 3 year warranty</p><p><br/></p><p class="p--heading-3">Technical Specifications</p><table dir="ltr"><tbody><tr><td>Width</td><td>1090 mm</td></tr><tr><td>Depth</td><td>600 mm</td></tr><tr><td>Height (without duct cladding)</td><td>260 mm</td></tr><tr><td>Weight</td><td>48 lbs</td></tr><tr><td>Lighting</td><td>6×2W LED, dimmable</td></tr><tr><td>Decibel Ratings</td><td>52dB(A) - 68 dB(A) (steplessly variable)</td></tr><tr><td>Total Power Ratings</td><td>220W - 260W (steplessly variable)</td></tr><tr><td>Extraction Rate</td><td>900m3/hr</td></tr><tr><td>Duct Size</td><td>180 mm</td></tr><tr><td>W x D x H</td><td>1090 × 600 × 260</td></tr><tr><td>Accessories Included</td><td>Installation fixtures, two filter sets</td></tr></tbody></table><p><br/></p></div></detailText>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Products/Hoods%20and%20Extractors/Chef%20Extractor%aae22427.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Products/Hoods%20and%20Extractors/Chef%20Extractor%20Hood%20HD900%20Super%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<downloads>
+</downloads>
+<productCode>CC-HDS-900</productCode>
+<productName>Chef Extractor Hood HD900 (Super)</productName>
+</CMProduct>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSymbol folder="/Sites/Aurora Augmentation/Germany/German/Options/Settings/Pagegrid/Placements" name="product-detail" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Options/Settings/Pagegrid/Placements/product-detail.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/product-detail"/>
+</master>
+<description>Artikel Abschnitt</description>
+</CMSymbol>

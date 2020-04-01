@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint.boot</groupId>
+    <artifactId>workflow-server.spring-boot</artifactId>
+    <version>1-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>workflow-server-app</artifactId>
+
+  <description>
+    To start the workflow-server-app run: mvn spring-boot:run
+  </description>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.coremedia.blueprint.boot</groupId>
+      <artifactId>blueprint-spring-boot-autoconfigure</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>${blueprint.groupId}</groupId>
+      <artifactId>workflowserver-blueprint-component</artifactId>
+      <version>${blueprint.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-actuator</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-tomcat</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>workflow-server</finalName>
+
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <mainClass>com.coremedia.blueprint.boot.workflowserver.WorkflowServerApp</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>dev</id>
+      <build>
+        <plugins>
+          <plugin>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>unpack-corem-home</id>
+                <goals>
+                  <goal>unpack</goal>
+                </goals>
+                <phase>generate-resources</phase>
+                <configuration>
+                  <artifactItems>
+                    <artifactItem>
+                      <groupId>${blueprint.groupId}</groupId>
+                      <artifactId>workflowserver-blueprint-config</artifactId>
+                      <version>${blueprint.version}</version>
+                      <type>coremedia-application</type>
+                    </artifactItem>
+                  </artifactItems>
+                  <outputDirectory>${project.build.directory}/corem-home</outputDirectory>
+                  <excludes>lib</excludes>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>properties-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>set-spring-boot-run-properties</id>
+                <goals>
+                  <goal>set-system-properties</goal>
+                </goals>
+                <phase>initialize</phase>
+                <configuration>
+                  <properties>
+                    <!--
+                     | we need corem.home to be set as a system property, and because of https://issues.apache.org/jira/browse/MNG-5951
+                     | not yet released, we cannot inherit and append a text element
+                     -->
+                    <corem.home>${project.build.directory}/corem-home</corem.home>
+                  </properties>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>

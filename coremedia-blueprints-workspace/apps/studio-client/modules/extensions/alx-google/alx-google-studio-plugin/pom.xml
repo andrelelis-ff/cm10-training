@@ -1,0 +1,90 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>studio-client.alx-google</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>alx-google-studio-plugin</artifactId>
+  <packaging>swc</packaging>
+
+  <description>Google Analytics Plugin for the CoreMedia Studio</description>
+
+  <properties>
+    <coremedia.project.extension.for>studio-dynamic</coremedia.project.extension.for>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>alx-studio-plugin</artifactId>
+      <version>${project.version}</version>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>editor-components</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>ui-components</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>core-icons</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>net.jangaroo</groupId>
+      <artifactId>ext-as</artifactId>
+      <type>swc</type>
+    </dependency>
+
+    <dependency>
+      <groupId>net.jangaroo</groupId>
+      <artifactId>joounit</artifactId>
+      <type>swc</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>client-core-impl</artifactId>
+      <type>swc</type>
+      <!--<scope>test</scope> cannot be used here, because it would override the transitive compile dependency -->
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.ui.toolkit</groupId>
+      <artifactId>client-core-test-helper</artifactId>
+      <type>swc</type>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>net.jangaroo</groupId>
+        <artifactId>jangaroo-maven-plugin</artifactId>
+        <version>${jangaroo.version}</version> <!-- explicit version for IDEA! -->
+        <extensions>true</extensions>
+        <configuration>
+          <skip>false</skip>
+          <namespaces>
+            <namespace>
+              <uri>exml:com.coremedia.blueprint.studio.config.googleanalytics</uri>
+            </namespace>
+          </namespaces>
+          <production>
+            <requiredClasses>
+              <entry>com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsStudioPlugin</entry>
+            </requiredClasses>
+          </production>
+          <testSuite>com.coremedia.blueprint.studio.googleanalytics.TestSuite</testSuite>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

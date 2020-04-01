@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/Germany/German/Pictures" name="The Life Beanie" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Pictures/The%20Life%20Beanie.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/The%20Life%20Beanie"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=278;y=152;width=447;height=693</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=280;y=208;width=432;height=577</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=302;y=290;width=396;height=396</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=220;y=292;width=553;height=415</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=155;y=307;width=691;height=389</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=130;y=316;width=749;height=374</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=300;width=1000;height=401</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=314;width=1000;height=374</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=374;width=1000;height=251</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2777777777777778;y1=0.15217391304347827;x2=0.7246376811594203;y2=0.8454106280193237</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.28019323671497587;y1=0.20772946859903382;x2=0.7125603864734299;y2=0.785024154589372</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.30193236714975846;y1=0.2898550724637681;x2=0.6980676328502415;y2=0.6859903381642513</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.21980676328502416;y1=0.2922705314009662;x2=0.7729468599033816;y2=0.7077294685990339</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.15458937198067632;y1=0.30676328502415456;x2=0.8454106280193237;y2=0.6956521739130435</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0.13043478260869565;y1=0.3164251207729469;x2=0.8792270531400966;y2=0.6908212560386473</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2995169082125604;x2=1;y2=0.7004830917874396</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.3140096618357488;x2=1;y2=0.6884057971014492</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3743961352657005;x2=1;y2=0.6256038647342995</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio8x3">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>hybris:///catalog/product/105977</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>The Life Beanie</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>The Life Beanie</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>1000</width>
+<height>1000</height>
+<data md5="e7d06bd729228b98249aa999d09848d8" size="20630" href="../../../../../__blob/e7d06bd729228b98249aa999d09848d8.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

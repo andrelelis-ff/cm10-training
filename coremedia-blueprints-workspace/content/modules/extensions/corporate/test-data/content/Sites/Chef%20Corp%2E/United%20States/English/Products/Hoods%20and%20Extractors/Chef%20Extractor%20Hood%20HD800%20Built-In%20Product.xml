@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProduct folder="/Sites/Chef Corp./United States/English/Products/Hoods and Extractors" name="Chef Extractor Hood HD800 Built-In Product" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="callToActionCustomText">More Product Information</StringProperty>
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>chef-extractor-hood-hd800-built-in</segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+<link href="Hoods%20and%20Extractors.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Hoods%20and%20Extractors/Hoods%20and%20Extractors"/>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Remove fumes and vapors with the powerful and silent Chef Extractor Hood HD800.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-3">Description</p><p>Remove fumes and vapors with the powerful and silent Chef Extractor Hood HD800. Its handling is incredibly easy: the grease filters are dishwasher safe and it has just 4 buttons. All Chef Extractor Hoods are available in dimensions that match our ranges.</p><p/><p class="p--heading-3">Key Features</p><p>• Extraction rate of 800m3/hr<br/>• Available in stainless steel or black<br/>• Dishwasher safe grease filters<br/>• Variable speed settings<br/>• Integrated three-step lighting<br/>• 3 year warranty</p><p/><p class="p--heading-3">Technical Specifications</p><p/><table dir="ltr"><tbody><tr><td>Width</td><td>1090 mm</td></tr><tr><td>Depth</td><td>600 mm</td></tr><tr><td>Height (widthout duct cladding)</td><td>300 mm</td></tr><tr><td>Weight</td><td>52 lbs</td></tr><tr><td>Lighting</td><td>4×2.4W LED, dimmable</td></tr><tr><td>Decibel Ratings</td><td>54dB(A) minimum, 62 dB(A) medium, 70 dB(A) maximum</td></tr><tr><td>Total Power Ratings</td><td>220W minimum, 235W medium, 260W maximum</td></tr><tr><td>Extraction Rate</td><td>800m3/hr</td></tr><tr><td>Duct Size</td><td>140 mm-165 mm</td></tr><tr><td>W x D x H</td><td>1090 × 600 × 300</td></tr><tr><td>Accessories Included</td><td>Installation fixtures, two filter sets</td></tr></tbody></table><p/></div></detailText>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Products/Hoods%20and%20Extractors/Chef%20Extractor%fc41c69e.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Products/Hoods%20and%20Extractors/Chef%20Extractor%20Hood%20HD900%20Built-In%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<downloads>
+</downloads>
+<productCode>CC-HDB-800</productCode>
+<productName>Chef Extractor Hood HD800 (Built-In)</productName>
+</CMProduct>

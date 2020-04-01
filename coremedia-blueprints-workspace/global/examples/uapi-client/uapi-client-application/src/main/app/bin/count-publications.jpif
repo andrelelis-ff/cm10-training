@@ -1,0 +1,5 @@
+# Java main class to call:
+JAVA_MAIN_CLASS=com.coremedia.blueprint.example.PublicationCounter
+
+# Debugger
+#JAVA_VM_ARGS="$JAVA_VM_ARGS -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005"

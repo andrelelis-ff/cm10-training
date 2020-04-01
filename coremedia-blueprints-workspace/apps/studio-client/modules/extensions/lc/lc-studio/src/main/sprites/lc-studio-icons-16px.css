@@ -1,0 +1,31 @@
+/** sprite:lc-studio-icons-16px; sprite-image:url('../../images/lc-studio-icons-16px.png'); sprite-layout:vertical; */
+
+.wrapper-btn-xs .btn-lc-fragment-highlighting {
+  top: 4px;
+  border-radius: 2px;
+  -moz-border-radius: 2px; /* firefox rounded corners */
+  -webkit-border-radius: 2px; /* webkit rounded corners */
+}
+.btn-lc-fragment-highlighting-container .x-btn-icon {
+  margin-left: 3px;
+}
+
+.btn-lc-fragment-highlighting-container .x-btn-pressed {
+  background-color: #8B8787;
+}
+
+.btn-lc-fragment-highlighting-container .x-btn-over {
+  background-color: #DDDCDC;
+}
+
+.btn-lc-fragment-highlighting {
+  background-image: url(fragmentHighlighting/placement-view_pos_16_0.png) !important; /** sprite-ref:lc-studio-icons-16px; sprite-margin-bottom: 8px;*/
+}
+
+.x-btn-pressed .btn-lc-fragment-highlighting{
+  background-image: url(fragmentHighlighting/placement-view_neg_16_0.png) !important; /** sprite-ref:lc-studio-icons-16px; sprite-margin-bottom: 8px;*/
+}
+
+.icon-button-xs.x-btn-over .btn-lc-fragment-highlighting {
+  background-image: url(fragmentHighlighting/placement-view_pos_16_0.png) !important; /** sprite-ref:lc-studio-icons-16px; sprite-margin-bottom: 8px;*/
+}

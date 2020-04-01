@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Pictures/Microsites/Guide to Perfect Lighting" name="Lighting Inspiration Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Lighting%20Ifb3002dc.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Lighting%20Inspiration%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=629;y=0;width=882;height=1365</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=573;y=0;width=1027;height=1365</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=408;y=0;width=1367;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=165;y=0;width=1821;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=88;y=108;width=1960;height=1102</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=129;y=273;width=1919;height=767</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=150;y=428;width=1898;height=474</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.30730478589420657;y1=0;x2=0.7380352644836272;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2795969773299748;y1=0;x2=0.7808564231738035;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.19899244332493704;y1=0;x2=0.8664987405541562;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.08060453400503778;y1=0;x2=0.9697732997481109;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.042821158690176324;y1=0.07924528301886792;x2=1;y2=0.8867924528301887</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0.06297229219143577;y1=0.2;x2=1;y2=0.7622641509433963</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0.07304785894206549;y1=0.3132075471698113;x2=1;y2=0.660377358490566</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Lighting Inspiration</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Lighting Inspiration</alt>
+<copyright>zhu difeng/Shutterstock 171847178</copyright>
+<dataUrl></dataUrl>
+<width>2048</width>
+<height>1365</height>
+<data md5="f5c6f2c04b54fa763d18bc0d71841fb3" size="719841" href="../../../../../../../__blob/f5c6f2c04b54fa763d18bc0d71841fb3.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

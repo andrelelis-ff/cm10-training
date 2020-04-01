@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSite folder="/Sites/SiteGenesis Global/France/French" name="SiteGenesis [Site]" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../United%20Kingdom/English/SiteGenesis%20%5BSite%5D.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/SiteGenesis%20%5BSite%5D"/>
+</master>
+<id>50d97a81a483254eea413d320f355f62</id>
+<name>SiteGenesis</name>
+<root>
+<link href="Navigation/SiteGenesis.xml" path="/Sites/SiteGenesis%20Global/France/French/Navigation/SiteGenesis"/>
+</root>
+<siteManagerGroup>manager-sf-fr-FR</siteManagerGroup>
+<linkedSettings>
+<link href="Options/Settings/SiteSettings.xml" path="/Sites/SiteGenesis%20Global/France/French/Options/Settings/SiteSettings"/>
+</linkedSettings>
+</CMSite>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content" name="Kitchen Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Editorial/Content/Kitchen%20Teaser.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Kitchen%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../Options/Settings/Teaser%20Styles/Dark.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Options/Settings/Teaser%20Styles/Dark"/>
+<IntProperty Name="positionX">-47</IntProperty>
+<IntProperty Name="positionY">-3</IntProperty>
+<IntProperty Name="width">46</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center">Wie ich mein Geschäft aufbaute</p><p class="align--center">Erfahren Sie mehr über Küchenprodukte</p></div></teaserText>
+<pictures>
+<link href="Homepage/Corporate%20Image/Chef%20Corp%20Founder%20Port92e37975.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Homepage/Corporate%20Image/Chef%20Corp%20Founder%20Portrait%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+</target>
+<targets>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="links">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMLinkable" xlink:href="coremedia:///cap/resources/../../Augmentation/B2B_Kitchen_Products/Kitchen%20Products.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Augmentation/B2B_Kitchen_Products/Kitchen%20Products"/>
+<BooleanProperty Name="callToActionEnabled">true</BooleanProperty>
+<StringProperty Name="callToActionCustomText"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</targets>
+</CMTeaser>

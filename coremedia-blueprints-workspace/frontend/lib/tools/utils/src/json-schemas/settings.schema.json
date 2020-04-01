@@ -1,0 +1,162 @@
+{
+  "title": "JSON schema for CoreMedia settings. Details at https://documentation.coremedia.com/cms-9/artifacts/1807/webhelp/frontend-en",
+  "$id": "http://www.coremedia.com/json-schemas/settings.schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "structProperty": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "integer"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "$ref": "#/definitions/link"
+        },
+        {
+          "$ref": "#/definitions/date"
+        },
+        {
+          "$ref": "#/definitions/struct"
+        },
+        {
+          "$ref": "#/definitions/stringList"
+        },
+        {
+          "$ref": "#/definitions/integerList"
+        },
+        {
+          "$ref": "#/definitions/booleanList"
+        },
+        {
+          "$ref": "#/definitions/linkList"
+        },
+        {
+          "$ref": "#/definitions/dateList"
+        },
+        {
+          "$ref": "#/definitions/structList"
+        }
+      ]
+    },
+    "link": {
+      "type": "object",
+      "properties": {
+        "$Link": {
+          "type": "string"
+        }
+      },
+      "required": ["$Link"],
+      "additionalProperties": false
+    },
+    "date": {
+      "type": "object",
+      "properties": {
+        "$Date": {
+          "type": "string",
+          "anyOf": [
+            {
+              "format": "date-time"
+            },
+            {
+              "format": "date"
+            }
+          ]
+        }
+      },
+      "required": ["$Date"],
+      "additionalProperties": false
+    },
+    "struct": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[^:]+$"
+      },
+      "additionalProperties": {
+        "$ref": "#/definitions/structProperty"
+      },
+      "not": {
+        "anyOf": [
+          {
+            "required": ["$Link"]
+          },
+          {
+            "required": ["$Date"]
+          }
+        ]
+      }
+    },
+    "stringList": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minimum": 1
+      }
+    },
+    "integerList": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      }
+    },
+    "booleanList": {
+      "type": "array",
+      "items": {
+        "type": "boolean",
+        "minimum": 1
+      }
+    },
+    "linkList": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/definitions/link"
+          },
+          {
+            "minimum": 1
+          }
+        ]
+      }
+    },
+    "dateList": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/definitions/date"
+          },
+          {
+            "minimum": 1
+          }
+        ]
+      }
+    },
+    "structList": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          {
+            "$ref": "#/definitions/struct"
+          },
+          {
+            "minimum": 1
+          }
+        ]
+      }
+    }
+  },
+  "allOf": [
+    {
+      "type": "object"
+    },
+    {
+      "$ref": "#/definitions/struct"
+    }
+  ]
+}

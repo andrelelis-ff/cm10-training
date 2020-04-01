@@ -1,0 +1,27 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Content Management Server" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="CoreMedia Blueprint Apps">
+    <module name="content-server-app" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.coremedia.blueprint.boot.contentserver.ContentServerApp" />
+    <option name="ACTIVE_PROFILES" value="dev,local,cms-local" />
+    <option name="VM_PARAMETERS" value="-XX:+ExitOnOutOfMemoryError -Djava.net.preferIPv4Stack=true -Djava.net.preferIPv4Addresses -Xmx512m" />
+    <option name="WORKING_DIRECTORY" value="file://$MODULE_WORKING_DIR$" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+    <additionalParameters>
+      <param>
+        <option name="enabled" value="false" />
+        <option name="name" value="installation.host" />
+        <option name="value" value="SET_ME" />
+      </param>
+      <param>
+        <option name="enabled" value="false" />
+        <option name="name" value="db.host" />
+        <option name="value" value="SET_ME" />
+      </param>
+    </additionalParameters>
+    <method v="2">
+      <option name="Make" enabled="true" />
+      <option name="Maven.BeforeRunTask" enabled="true" file="$MODULE_WORKING_DIR$/pom.xml" goal="generate-resources" />
+    </method>
+  </configuration>
+</component>

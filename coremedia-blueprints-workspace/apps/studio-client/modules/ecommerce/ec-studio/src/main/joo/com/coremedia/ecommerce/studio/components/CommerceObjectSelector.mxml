@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CommerceObjectSelectorBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.ecommerce.studio.components.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        valueField="id"
+        displayField="name">
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.ecommerce.studio.config.commerceObjectSelector";
+
+    private var config:CommerceObjectSelector;
+
+    public native function CommerceObjectSelector(config:CommerceObjectSelector = null);
+
+    [Bindable]
+    public var contentValueExpression:ValueExpression;
+
+    [Bindable]
+    public var selectedCatalogObjectsExpression:ValueExpression;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <fx:Boolean id="quote"/>
+
+    <fx:Function id="getCommerceObjectsFunction"/>
+
+    <fx:String id="noStoreMessage"/>
+  </fx:Declarations>
+
+  <local:plugins>
+    <ui:BindListPlugin bindTo="{getSelectableCatalogObjectsExpression(config)}">
+      <ui:fields>
+        <ui:DataField name="id"/>
+        <ui:DataField name="name"/>
+      </ui:fields>
+    </ui:BindListPlugin>
+  </local:plugins>
+
+</local:CommerceObjectSelectorBase>

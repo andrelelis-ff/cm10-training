@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/SFRA/United Kingdom/English/Editorial/Content/Articles" name="Fashion should be Fun" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>fashion-fun</segment>
+<title>Fashion should be Fun</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription>Go to a place where you're not going to be stressed, because a honeymoon itself can be a stressful thing.</htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Luxury.xml" path="/Settings/Taxonomies/Subject/Luxury"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Women%282%29.xml" path="/Settings/Taxonomies/Subject/Women%282%29"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Fashion.xml" path="/Settings/Taxonomies/Subject/Fashion"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Fashion is made to become unfashionable. Dress up.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Grunge is a hippied romantic version of punk. Dressing up. People just don't do it anymore. We have to change that. Delete the negative; accentuate the positive! Instead of buying six things, one thing that you really like. Don't keep buying just for the sake of it. I don't care about money. I really don't care. I just want to do what I do.</p><p>Go to a place where you're not going to be stressed, because a honeymoon itself can be a stressful thing. I want to thank all the women who have worn my clothes, the famous and the unknown, who have been so faithful to me and given me so much joy. Fashion should be fun. It shouldn't be labelled intellectual. We must never confuse elegance with snobbery. Women are women, and hurray for that.</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Platinum%20V%20Neck%20Suit%20Dress.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Editorial/Products/Platinum%20V%20Neck%20Suit%20Dress">Platinum V Neck Suit Dress</a></p><p>I wish I had invented blue jeans. They have expression, modesty, sex appeal, simplicity - all I hope for in my clothes. I am never satisfied with myself and that is what keeps me going - I have no post-satisfaction. I remember walking the dog one day, I saw a car full of teenage girls, and one of them rolled down the window and yelled, 'Marc Jacobs!' in a French accent. My job is to bring out in people what they wouldn't dare do themselves. In order to be irreplaceable one must always be different.</p><p>Fashion is not something that exists in dresses only. Fashion is in the sky, in the street, fashion has to do with ideas, the way we live, what is happening. Age and size are only numbers. It's the attitude you bring to clothes that make the difference. Delete the negative; accentuate the positive! Doing collections, doing fashion is like a non-stop dialogue. I would like to be a one-man multinational fashion phenomenon.</p><p>Fashion is made to become unfashionable. Luxury must be comfortable, otherwise it is not luxury. What I hate is nasty, ugly people. There are always protests, whether you do something good or bad. Even if you do something beneficial, people say you do it because it's advertising. Fashion is not something that exists in dresses only. Fashion is in the sky, in the street, fashion has to do with ideas, the way we live, what is happening.</p><p>I've treated the waistcoat as if it were a corset, so that it becomes the first layer in the process of putting clothes on the body. There is constant motion between layering and revealing. I am never satisfied with myself and that is what keeps me going - I have no post-satisfaction. You're only as good as your last collection, which is an enormous pressure. When I was young, I lived like an old woman, and when I got old, I had to live like a young person. Over the years I have learned that what is important in a dress is the woman who is wearing it.</p></div></detailText>
+<pictures>
+<link href="../../Pictures/Fashion%20shooting%20in%20desert%20of%20palm%20springs%2E%203.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Pictures/Fashion%20shooting%20in%20desert%20of%20palm%20springs%2E%203"/>
+</pictures>
+<related>
+<link href="Fashions%20fade%2C%20style%20is%20eternal.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Articles/Fashions%20fade%2C%20style%20is%20eternal"/>
+<link href="Fashion%20Trends%20this%20Summer.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Articles/Fashion%20Trends%20this%20Summer"/>
+<link href="The%20Difference%20between%20Style%20and%20Fashion.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Articles/The%20Difference%20between%20Style%20and%20Fashion"/>
+</related>
+<authors>
+<link href="../../Authors/Charlotte%20May%20Person.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Authors/Charlotte%20May%20Person"/>
+</authors>
+</CMArticle>

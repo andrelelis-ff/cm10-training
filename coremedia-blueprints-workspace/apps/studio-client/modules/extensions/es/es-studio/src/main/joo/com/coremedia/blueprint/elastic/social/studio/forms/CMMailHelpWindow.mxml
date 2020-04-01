@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CMMailHelpWindowBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.elastic.social.studio.forms.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns="exml:ext.config"
+        id_="{ID}"
+        width="500"
+        height="650"
+        closeAction="destroy"
+        title="{resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'cmmail_help_window_title')}"
+        resizable="false"
+        constrainHeader="true"
+        constrain="true"
+        ui="{WindowSkin.GRID_200.getSkin()}"
+        cls="es-cm-mail-help-window">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.mixins.OverflowBehaviour;
+    import com.coremedia.ui.skins.ButtonSkin;
+    import com.coremedia.ui.skins.WindowSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.elastic.social.studio.config.cmMailHelpWindow";
+
+    private var config:CMMailHelpWindow;
+
+    public native function CMMailHelpWindow(config:CMMailHelpWindow = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <ui:ExtendedDisplayField
+            value="{resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'cmmail_help_window_content')}"
+            overflowBehaviour="{OverflowBehaviour.BREAK_WORD}"/>
+    <Box html="{TABLE}"/>
+  </local:items>
+
+  <local:buttons>
+    <Button ui="{ButtonSkin.FOOTER_SECONDARY.getSkin()}"
+            scale="small"
+            text="{resourceManager.getString('com.coremedia.blueprint.elastic.social.studio.ElasticSocialStudioPlugin', 'btn_close')}"
+            handler="{ function():void { close(); }}"/>
+  </local:buttons>
+  <local:layout>
+    <layout_VBox align="stretch"/>
+  </local:layout>
+</local:CMMailHelpWindowBase>

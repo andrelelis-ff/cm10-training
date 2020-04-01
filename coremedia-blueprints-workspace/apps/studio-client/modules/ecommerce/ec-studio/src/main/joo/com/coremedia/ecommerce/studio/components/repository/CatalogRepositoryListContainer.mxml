@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CatalogRepositoryListContainerBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.ecommerce.studio.components.repository.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ec="exml:com.coremedia.ecommerce.studio.config"
+        itemId="{VIEW_CONTAINER_ITEM_ID}"
+        activeItemValueExpression="{getActiveViewExpression()}">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.collectionview.CollectionViewConstants;
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.ecommerce.studio.config.catalogRepositoryListContainer";
+
+    public static const VIEW_CONTAINER_ITEM_ID:String = "commerceCatalogRepositoryContainer";
+
+    private var config:CatalogRepositoryListContainer;
+
+    /**
+     * value expression for the selected folder in the library tree
+     */
+    [Bindable]
+    public var selectedFolderValueExpression:ValueExpression;
+
+    /**
+     * value expression for the selected items, either in the list view, or - if the selection there is empty - the
+     * selected folder in the tree view.
+     */
+    [Bindable]
+    public var selectedItemsValueExpression:ValueExpression;
+
+    /**
+     * value expression evaluating to multiple selected items in the repository view.
+     *
+     */
+    [Bindable]
+    public var selectedRepositoryItemsValueExpression:ValueExpression;
+
+    /**
+     * value expression that acts as a model for informing a view of a newly created content object.
+     */
+    [Bindable]
+    public var createdContentValueExpression:ValueExpression;
+
+    /**
+     * Value expression that indicates if a new content can be created based on the current selection in the collection view.
+     */
+    [Bindable]
+    public var newContentDisabledValueExpression:ValueExpression;
+
+    public native function CatalogRepositoryListContainer(config:CatalogRepositoryListContainer = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <ec:CatalogRepositoryList itemId="{CollectionViewConstants.LIST_VIEW}"
+                              mySelectedItemsValueExpression="{config.selectedItemsValueExpression}"
+                              selectedItemsValueExpression="{config.selectedRepositoryItemsValueExpression}"
+                              selectedNodeValueExpression="{config.selectedFolderValueExpression}"
+                              newContentDisabledValueExpression="{config.newContentDisabledValueExpression}"
+                              createdContentValueExpression="{config.createdContentValueExpression}"/>
+    <ec:CatalogRepositoryThumbnails itemId="{CollectionViewConstants.THUMBNAILS_VIEW}"
+                                    newContentDisabledValueExpression="{config.newContentDisabledValueExpression}"
+                                    selectedItemsValueExpression="{config.selectedRepositoryItemsValueExpression}"
+                                    selectedFolderValueExpression="{config.selectedFolderValueExpression}"
+                                    createdContentValueExpression="{config.createdContentValueExpression}"/>
+  </local:items>
+
+</local:CatalogRepositoryListContainerBase>

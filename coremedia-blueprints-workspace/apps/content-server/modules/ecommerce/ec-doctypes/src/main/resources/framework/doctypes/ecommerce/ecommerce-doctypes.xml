@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<DocumentTypeModel xmlns="http://www.coremedia.com/2008/documenttypes"
+                   Name="ecommerce-doctypes">
+  <ImportGrammar Name="coremedia-richtext-1.0"/>
+
+  <!--- well known grammars -->
+  <ImportGrammar Name="coremedia-struct-2008"/>
+
+  <ImportDocType Name="CMChannel"/>
+
+  <!--
+    Base doctype for categories of CoreMedia Product Catalog and External Catalog
+  -->
+  <DocType Name="CMAbstractCategory" Parent="CMChannel" Abstract="true" >
+    <XmlProperty Name="pdpPagegrid" Grammar="coremedia-struct-2008"/>
+  </DocType>
+
+</DocumentTypeModel>

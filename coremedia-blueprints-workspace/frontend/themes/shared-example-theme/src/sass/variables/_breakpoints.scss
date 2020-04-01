@@ -1,0 +1,25 @@
+//
+// Variables
+//
+
+// So media queries don't overlap when required, provide a maximum
+$_cm-screen-xs-max: $cm-screen-sm-min - 1;
+$_cm-screen-sm-max: $cm-screen-lg-min - 1;
+
+//
+// Breakpoints
+// =====================================================================================================================
+//
+// Hold our breakpoint aliases and conditions in a list.
+// These can be invoked later on via the `breakpoint()` mixin the breakpoint are defined in the mixins class
+//
+
+$breakpoints: (
+  "xs": "screen and (max-width: #{$cm-screen-sm-min - 1})",
+  "xs-and-up": "screen and (min-width: 0)",
+  "sm": "screen and (min-width: #{$cm-screen-sm-min}) and (max-width: #{$cm-screen-lg-min - 1})",
+  "sm-and-up": "screen and (min-width: #{$cm-screen-sm-min})",
+  "lg": "screen and (min-width: #{$cm-screen-lg-min})",
+  "lg-and-up": "screen and (min-width: #{$cm-screen-lg-min})",
+  "pt": "print"
+) !default;

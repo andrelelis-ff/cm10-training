@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/Germany/German/Downloads" name="Women Snow Riding" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Downloads/Women%20Snow%20Riding.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Downloads/Women%20Snow%20Riding"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.3419753086419753</StringProperty>
+<StringProperty Name="y">0.36988847583643125</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=4000;height=2250</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=372;y=0;width=1996;height=2661</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=485;y=0;width=1774;height=2661</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=3548;height=2661</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=40;y=0;width=2661;height=2661</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=235;width=4000;height=1500</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>hybris:///catalog/category/200100</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Snowboarderin in Action</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Snowboarderin in Action</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2662</height>
+<data md5="e7adb7e92c2ecf846af5a87411c78e43" size="749524" href="../../../../../__blob/e7adb7e92c2ecf846af5a87411c78e43.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

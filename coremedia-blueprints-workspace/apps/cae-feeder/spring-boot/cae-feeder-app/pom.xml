@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint.boot</groupId>
+    <artifactId>cae-feeder.spring-boot</artifactId>
+    <version>1-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>cae-feeder-app</artifactId>
+
+  <description>
+    To start the preview cae-feeder-app, run:
+    mvn spring-boot:run
+
+    To start the live cae-feeder-app, run:
+      mvn spring-boot:run -Plive
+  </description>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.coremedia.blueprint.boot</groupId>
+      <artifactId>blueprint-spring-boot-autoconfigure</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.coremedia.blueprint.boot</groupId>
+      <artifactId>coremedia-transform-spring-boot-autoconfigure</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>${blueprint.groupId}</groupId>
+      <artifactId>caefeeder-blueprint-component</artifactId>
+      <version>${blueprint.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-autoconfigure</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-actuator</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-tomcat</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <properties>
+    <cae-feeder.spring.profiles>dev,local,preview-local</cae-feeder.spring.profiles>
+  </properties>
+  <profiles>
+    <profile>
+      <id>live</id>
+      <properties>
+        <cae-feeder.spring.profiles>dev,local,live-local</cae-feeder.spring.profiles>
+      </properties>
+    </profile>
+  </profiles>
+
+  <build>
+    <finalName>caefeeder</finalName>
+
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <mainClass>com.coremedia.blueprint.boot.caefeeder.CaeFeederApp</mainClass>
+          <profiles>${cae-feeder.spring.profiles}</profiles>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

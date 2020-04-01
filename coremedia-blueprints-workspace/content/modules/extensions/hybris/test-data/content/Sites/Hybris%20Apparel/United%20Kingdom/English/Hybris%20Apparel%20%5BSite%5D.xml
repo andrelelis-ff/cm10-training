@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSite folder="/Sites/Hybris Apparel/United Kingdom/English" name="Hybris Apparel [Site]">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<id>Hybris-Apparel-UK-Site-ID</id>
+<name>Hybris Apparel</name>
+<root>
+<link href="Navigation/Hybris%20Apparel%20UK.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Navigation/Hybris%20Apparel%20UK"/>
+</root>
+<siteManagerGroup>manager-h-b2c-en-GB</siteManagerGroup>
+<linkedSettings>
+</linkedSettings>
+</CMSite>

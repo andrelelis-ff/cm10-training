@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content/Microsites/RGB LED Strip" name="Chef Corp RGB LED Strip Mounting Instruction 4:3 Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Content/Microsites/RGB%20LED%20Strip/Chef%20Corp%20RGBf5b7b23.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/RGB%20LED%20Strip/Chef%20Corp%20RGB%20LED%20Strip%20Mounting%20Instruction%204%3A3%20Video"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Chefkoch Corp. Montageanleitung für RGB-LED-Streifen</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="Chef%20Corp%20RGB%20LED%20a66afe6b.xml" path="/Sites/Aurora%20B2B%20Augmentation/Germany/German/Editorial/Content/Microsites/RGB%20LED%20Strip/Chef%20Corp%20RGB%20LED%20Strip%20Video%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>ChefSupply_RGB_LED-Strip-v6975667-Video</alt>
+<copyright>azuri/Shutterstock Video 6975667</copyright>
+<dataUrl></dataUrl>
+<data md5="834ccd1b54dffd057a87c33a1cc93115" size="617816" href="../../../../../../../../__blob/834ccd1b54dffd057a87c33a1cc93115.blob" mimetype="video/mp4"/>
+<asset>
+<link href="../../../../../../../../Assets/Products/Lighting/Chef%20Corp%2E%20RGB%20LED%20Strip%20Mounting%20Instructions.xml" path="/Assets/Products/Lighting/Chef%20Corp%2E%20RGB%20LED%20Strip%20Mounting%20Instructions"/>
+</asset>
+</CMVideo>

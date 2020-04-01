@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/SFRA/United Kingdom/English/Navigation/New Arrivals" name="New Arrivals Navigation Container" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>New Arrivals</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../Editorial/Content/Personalization/Gender%20Specific%20Teaser.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Personalization/Gender%20Specific%20Teaser"/>
+<link href="Women%20New%20Arrivals.xml" path="/Sites/SFRA/United%20Kingdom/English/Navigation/New%20Arrivals/Women%20New%20Arrivals"/>
+<link href="Men%20New%20Arrivals.xml" path="/Sites/SFRA/United%20Kingdom/English/Navigation/New%20Arrivals/Men%20New%20Arrivals"/>
+</items>
+</CMCollection>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<editor:DocumentTabPanel xmlns:fx="http://ns.adobe.com/mxml/2009"
+                         xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                         xmlns="exml:ext.config"
+                         xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                         xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+                         xmlns:livecontext="exml:com.coremedia.livecontext.studio.config"
+                         xmlns:ui="exml:com.coremedia.ui.config">
+
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ecommerce.studio.helper.AugmentationUtil;
+    import com.coremedia.ecommerce.studio.model.CatalogObjectPropertyNames;
+    import com.coremedia.ecommerce.studio.model.Product;
+    import com.coremedia.ecommerce.studio.tree.augmentedCategoryTreeRelation;
+    import com.coremedia.livecontext.studio.CatalogThumbnailResolver;
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.cmExternalProductForm";
+    public static const CONTENT_TAB_ITEM_ID:String = "contentTab";
+    public static const STRUCTURE_TAB_ITEM_ID:String = "structureTab";
+
+    private var config:CMExternalProductForm;
+    private var catalogObjectExpression:ValueExpression;
+    private var augmentedCategoryExpression:ValueExpression;
+
+    // called by generated constructor code
+    private function __initialize__(config:CMExternalProductForm):void {
+      catalogObjectExpression = AugmentationUtil.getCatalogObjectExpression(config.bindTo);
+      augmentedCategoryExpression = ValueExpressionFactory.createFromFunction(function ():* {
+        return augmentedCategoryTreeRelation.getParentUnchecked(catalogObjectExpression.extendBy('category').getValue());
+      });
+    }
+
+    private function isPriceEnabled():Boolean {
+      var product:Product = catalogObjectExpression.getValue() as Product;
+      return null != product.getListPrice();
+    }
+
+    public native function CMExternalProductForm(config:CMExternalProductForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            itemId="{CONTENT_TAB_ITEM_ID}"
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}">
+      <editor:items>
+        <bpforms:CollapsibleStringPropertyForm propertyName="title"
+                                               title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMExternalProduct_title_text')}"/>
+        <livecontext:CommerceDetailsForm itemId="commerceDetails"
+                                         bindTo="{catalogObjectExpression}"
+                                         contentBindTo="{config.bindTo}"
+                                         collapsed="true"/>
+
+        <livecontext:CommerceAugmentedPageGridForm itemId="pdpPagegrid"
+                                                   pageGridPropertyName="pdpPagegrid"
+                                                   fallbackPageGridPropertyName="placement"/>
+
+        <livecontext:CommercePricesPropertyFieldGroup bindTo="{catalogObjectExpression}"
+                                                      itemId="prices"/>
+
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_PropertyGroup_thumbnail_title')}"
+                itemId="picture">
+          <editor:items>
+            <ui:Image width="120">
+              <ui:plugins>
+                <ui:BindPropertyPlugin componentProperty="src"
+                                       bindTo="{CatalogThumbnailResolver.imageValueExpression(catalogObjectExpression)}"/>
+              </ui:plugins>
+            </ui:Image>
+          </editor:items>
+          <editor:layout>
+            <layout_VBox/>
+          </editor:layout>
+        </editor:PropertyFieldGroup>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Product_PropertyGroup_richMedia_title')}"
+                itemId="richMedia"
+                bindTo="{catalogObjectExpression}">
+          <editor:items>
+            <livecontext:CatalogAssetsProperty propertyName="{CatalogObjectPropertyNames.VISUALS}"
+                                               assetContentTypes="{['CMPicture', 'CMVideo', 'CMSpinner']}"
+                                               emptyText="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Product_richMedia_emptyText')}"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Product_PropertyGroup_downloads_title')}"
+                itemId="downloads"
+                bindTo="{catalogObjectExpression}">
+          <editor:items>
+            <livecontext:CatalogAssetsProperty propertyName="{CatalogObjectPropertyNames.DOWNLOADS}"
+                                               assetContentTypes="{['CMDownload']}"
+                                               emptyText="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_Product_downloads_emptyText')}"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <bpforms:TeaserWithPictureDocumentForm/>
+        <bpforms:ValidityDocumentForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <livecontext:CommerceAttributesForm bindTo="{catalogObjectExpression}"/>
+    <livecontext:CommerceProductStructureForm itemId="{STRUCTURE_TAB_ITEM_ID}" bindTo="{catalogObjectExpression}"/>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_extras_title')}"
+            itemId="metadata">
+      <editor:items>
+        <bpforms:CategoryDocumentForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataInformationForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

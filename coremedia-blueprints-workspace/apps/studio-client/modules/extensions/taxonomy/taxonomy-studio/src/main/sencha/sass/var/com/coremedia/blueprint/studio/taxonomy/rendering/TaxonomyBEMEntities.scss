@@ -1,0 +1,15 @@
+/**
+ * @var {boolean}
+ * Enables styles for the taxonomy node wrap.
+ *
+ * @member com.coremedia.blueprint.studio.rendering.TaxonomyNodeBEMEntities
+ */
+$cm-include-taxonomy-node-wrap: dynamic(true);
+
+/**
+ * @var {boolean}
+ * Enables styles for the taxonomy node.
+ *
+ * @member com.coremedia.blueprint.studio.rendering.TaxonomyNodeBEMEntities
+ */
+$cm-include-taxonomy-node: dynamic(true);

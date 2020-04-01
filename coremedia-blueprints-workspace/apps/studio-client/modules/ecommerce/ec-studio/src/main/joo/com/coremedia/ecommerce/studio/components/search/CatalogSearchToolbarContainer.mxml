@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Container xmlns:fx="http://ns.adobe.com/mxml/2009"
+           xmlns:exml="http://www.jangaroo.net/exml/0.8"
+           xmlns="exml:ext.config"
+           xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+           xmlns:ec="exml:com.coremedia.ecommerce.studio.config"
+           itemId="{CATALOG_SEARCH_TOOLBAR_ITEM_ID}">
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.skins.ToolbarSkin;
+
+    public static const xtype:String = "com.coremedia.ecommerce.studio.config.catalogSearchToolbarContainer";
+
+    /**
+     * Used for extensions
+     */
+    public static const CATALOG_SEARCH_TOOLBAR_ITEM_ID:String = "catalogSearchToolbar";
+
+    private var config:CatalogSearchToolbarContainer;
+
+    [Bindable]
+    public var selectedSearchItemsValueExpression:ValueExpression;
+
+    public native function CatalogSearchToolbarContainer(config:CatalogSearchToolbarContainer = null);
+    ]]></fx:Script>
+
+  <items>
+    <ec:CatalogSearchToolbar selectedSearchItemsValueExpression="{config.selectedSearchItemsValueExpression}"/>
+    <Toolbar itemId="switchViewButtonsToolbar"
+             ariaLabel="{resourceManager.getString('com.coremedia.cms.editor.Editor', 'CollectionView_switchView_toolbar_label')}"
+             ui="{ToolbarSkin.LIGHT.getSkin()}">
+      <items>
+        <editor:SwitchViewButtonsContainer scope="{this}"/>
+      </items>
+    </Toolbar>
+  </items>
+  <layout>
+    <layout_HBox/>
+  </layout>
+
+</Container>

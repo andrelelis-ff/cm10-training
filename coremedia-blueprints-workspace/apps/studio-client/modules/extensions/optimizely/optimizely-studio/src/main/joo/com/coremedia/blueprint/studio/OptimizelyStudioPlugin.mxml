@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:StudioPlugin
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:optimizely="exml:com.coremedia.blueprint.studio.config.optimizely"
+        xmlns:ui="exml:com.coremedia.ui.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.OptimizelyStudioPlugin')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import mx.resources.ResourceManager;
+
+    private var config:OptimizelyStudioPlugin;
+
+    public native function OptimizelyStudioPlugin(config:OptimizelyStudioPlugin = null);
+    ]]></fx:Script>
+
+  <editor:rules>
+    <editor:ExtensionsMenuToolbar>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <Button itemId="btn-optimizely"
+                    tooltip="{ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.OptimizelyStudioPlugin', 'optimizely_fav_btn_tooltip')}">
+              <baseAction>
+                <optimizely:OpenOptimizelyServiceUrlAction
+                        text="{ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.OptimizelyStudioPlugin', 'optimizely_fav_btn_text')}"
+                        iconCls="{ResourceManager.getInstance().getString('com.coremedia.icons.CoreIcons', 'ab_testing_tool')}"/>
+              </baseAction>
+            </Button>
+          </ui:items>
+          <!-- insert before spacer, not at the end of the container -->
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:ExtensionsMenuToolbar>
+
+
+  </editor:rules>
+
+</editor:StudioPlugin>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- plugging into sub-extension points of <collab:projectContentContainer>: -->
+<ui:NestedRulesPlugin
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:collab="exml:com.coremedia.cms.editor.controlroom.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.controlroom.project.components.ProjectContentContainer;
+
+    private var config:BookmarkProjectContentViewPlugin;
+    private var projectContentContainer:ProjectContentContainer;
+
+    // called by generated constructor code
+    private function __initialize__(config:BookmarkProjectContentViewPlugin):void {
+      projectContentContainer = config.cmp as ProjectContentContainer;
+    }
+
+    public native function BookmarkProjectContentViewPlugin(config:BookmarkProjectContentViewPlugin = null);
+    ]]></fx:Script>
+
+  <ui:rules>
+    <collab:ProjectContentContextMenu>
+      <collab:plugins>
+        <ui:AddItemsPlugin index="3">
+          <ui:items>
+            <editor:BookmarkMenuItem contentValueExpression="{projectContentContainer.selectedItemsVE}"/>
+            <MenuSeparator/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </collab:plugins>
+    </collab:ProjectContentContextMenu>
+  </ui:rules>
+
+</ui:NestedRulesPlugin>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+  <import resource="classpath:/com/coremedia/cae/uapi-services.xml"/>
+  <import resource="classpath:/com/coremedia/jmx/mbean-services.xml"/>
+
+  <import resource="personalization-collection.xml"/>
+
+  <!-- ===============================================================
+
+    Configuration of context sources.
+
+  ================================================================ -->
+
+  <bean id="cookieSource_keyword" class="com.coremedia.personalization.context.collector.CookieSource">
+    <description>
+      Configures a context source that reads and writes context properties from and to cookies. Use the
+      contextName property to determine which context is to be managed by this source.
+
+      In this example, the context of name "keyword" is managed by the CookieSource. This context is
+      configured to be a ScoringContext using the PercentageFromMaxScoring strategy.
+    </description>
+    <property name="contextName" value="keyword"/>
+    <property name="cookieName" value="cmKeywordCookie"/>
+    <property name="contextCoDec">
+      <bean class="com.coremedia.personalization.scoring.ScoringContext$CoDec">
+        <property name="strategy">
+          <bean class="com.coremedia.personalization.scoring.PercentageFromMaxScoring"/>
+        </property>
+      </bean>
+    </property>
+  </bean>
+
+  <bean id="cookieSource_subject_taxonomies" class="com.coremedia.personalization.context.collector.CookieSource">
+    <property name="contextName" value="subjectTaxonomies"/>
+    <property name="cookieName" value="cmSubjectTaxonomiesCookie"/>
+    <property name="contextCoDec">
+      <bean class="com.coremedia.personalization.scoring.ScoringContext$CoDec">
+        <property name="strategy">
+          <bean class="com.coremedia.personalization.scoring.PercentageFromMaxScoring"/>
+        </property>
+      </bean>
+    </property>
+  </bean>
+
+  <bean id="cookieSource_location_taxonomies" class="com.coremedia.personalization.context.collector.CookieSource">
+    <property name="contextName" value="locationTaxonomies"/>
+    <property name="cookieName" value="cmLocationTaxonomiesCookie"/>
+    <property name="contextCoDec">
+      <bean class="com.coremedia.personalization.scoring.ScoringContext$CoDec">
+        <property name="strategy">
+          <bean class="com.coremedia.personalization.scoring.PercentageFromMaxScoring"/>
+        </property>
+      </bean>
+    </property>
+  </bean>
+
+  <bean id="lastVisitedSource" class="com.coremedia.personalization.context.collector.CookieSource">
+    <description>
+      Configures a context source that reads and writes context properties from and to cookies. Use the
+      contextName property to determine which context is to be managed by this source.
+
+      In this example, the profile of last visited pages.
+    </description>
+    <property name="contextName" value="last_visited"/>
+    <property name="cookieName" value="cmLastVisited"/>
+    <property name="contextCoDec">
+      <bean class="com.coremedia.personalization.context.PropertyProfile$CoDec"/>
+    </property>
+  </bean>
+
+  <bean id="systemDateTimeSource" class="com.coremedia.personalization.context.collector.SystemDateTimeSource">
+    <description>
+      Configures a context source that adds properties describing the CAE host-system's current date and time
+      to the context collection.
+    </description>
+    <property name="contextName" value="system"/>
+  </bean>
+
+  <bean id="segmentSource" class="com.coremedia.personalization.context.collector.SegmentSource">
+    <description>
+      The segment source creates a context that describes the current user's segment membership.
+    </description>
+    <property name="cache" ref="cache"/>
+    <property name="repository" ref="contentRepository"/>
+    <property name="contextName" value="segment"/>
+    <property name="evalPostHandle" value="true"/>
+    <property name="evalPreHandle" value="false"/>
+  </bean>
+
+  <bean id="referrerSource" class="com.coremedia.personalization.context.collector.CookieSource">
+    <description>
+      The referrer source creates a context that keeps the referrer URL of the first request
+      of a session. This URL is kept for the duration of the session.
+    </description>
+    <property name="contextName" value="referrer"/>
+    <property name="cookieName" value="cmReferrerCookie"/>
+    <property name="contextCoDec">
+      <bean class="com.coremedia.blueprint.personalization.sources.ReferrerContext$CoDec"/>
+    </property>
+  </bean>
+
+  <bean id="contextCollector" class="com.coremedia.personalization.context.collector.ContextCollector">
+    <property name="licenseHelper">
+      <bean class="com.coremedia.personalization.context.collector.LicenseHelper">
+        <property name="capConnection" ref="connection"/>
+      </bean>
+    </property>
+    <property name="contextCollection" ref="contextCollection"/>
+    <property name="contextSources" ref="contextSources"/>
+  </bean>
+
+  <bean id="contextSources" class="org.springframework.beans.factory.config.ListFactoryBean">
+    <description>
+      Global list of contextsources (com.coremedia.personalization.context.collector.ContextSource) to be used by the
+      ContextCollector.
+
+      Use customizer to add contextsources to this list.
+    </description>
+    <property name="sourceList">
+      <list>
+        <ref bean="cookieSource_keyword"/>
+        <ref bean="cookieSource_subject_taxonomies"/>
+        <ref bean="cookieSource_location_taxonomies"/>
+        <ref bean="referrerSource"/>
+        <ref bean="systemDateTimeSource"/>
+        <ref bean="lastVisitedSource"/>
+      </list>
+    </property>
+  </bean>
+
+  <!--
+   the segment source must be registered after all sources that provide properties used to
+   determine segment membership
+  -->
+
+  <customize:append id="addSegmentSource" bean="contextSources" order="1000000">
+    <list>
+      <ref bean="segmentSource"/>
+    </list>
+  </customize:append>
+
+  <!-- ===============================================================
+
+    JMX Configuration
+
+  ================================================================ -->
+
+  <bean id="contextCollectorManager"
+        class="com.coremedia.personalization.context.collector.ContextCollectorManagerImpl">
+    <property name="contextCollector" ref="contextCollector"/>
+  </bean>
+
+  <bean id="selectionRulesProcessorManager"
+        class="com.coremedia.personalization.rulelang.SelectionRulesProcessorManagerImpl"/>
+
+  <bean id="blueprintCaeMBeanRegistrator" class="com.coremedia.jmx.MBeanRegistrator">
+    <property name="registry" ref="mbeanRegistry"/>
+    <property name="mbeans">
+      <map>
+        <entry key="type=ContextCollector"
+               value-ref="contextCollectorManager"/>
+        <entry key="type=SelectionRulesProcessor"
+               value-ref="selectionRulesProcessorManager"/>
+      </map>
+    </property>
+  </bean>
+
+</beans>

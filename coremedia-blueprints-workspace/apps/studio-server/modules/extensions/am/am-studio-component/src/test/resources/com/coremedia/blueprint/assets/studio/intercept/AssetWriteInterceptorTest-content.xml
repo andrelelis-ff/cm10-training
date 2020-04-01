@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contentRepository xmlns="http://www.coremedia.com/2010/content">
+  <schema>
+    <type name="AMAsset" abstract="true">
+      <property name="original" type="blob" contentType="*/*"/>
+      <property name="thumbnail" type="blob" contentType="image/*"/>
+      <property name="state" type="markup" grammar="coremedia-struct-2008"/>
+      <property name="metadata" type="markup" grammar="coremedia-struct-2008"/>
+    </type>
+    <type name="AMPictureAsset" parent="AMAsset">
+      <property name="web" type="blob" contentType="image/*"/>
+      <property name="print" type="blob" contentType="image/*"/>
+    </type>
+    <type name="AMVideoAsset" parent="AMAsset">
+      <property name="web" type="blob" contentType="video/*"/>
+    </type>
+    <type name="CMPicture">
+      <property name="asset" type="link" linkType="AMAsset"/>
+    </type>
+    <type name="CMVideo">
+      <property name="asset" type="link" linkType="AMAsset"/>
+    </type>
+  </schema>
+  <content>
+    <folder id="1" name="">
+      <folder id="3"
+              name="Assets">
+        <document id="2"
+                  type="AMPictureAsset"
+                  name="Pic"
+                  checkedOut="true">
+          <version number="1">
+          </version>
+        </document>
+        <document id="4"
+                  type="AMPictureAsset"
+                  name="PicWithMetadataStruct"
+                  checkedOut="true">
+          <version number="1">
+            <markupProperty name="metadata" grammar="coremedia-struct-2008"
+                            url="metadataWithProductIdStruct.xml"/>
+          </version>
+        </document>
+        <document id="6"
+                  type="AMVideoAsset"
+                  name="VidWithMetadataStruct"
+                  checkedOut="true">
+          <version number="1">
+            <markupProperty name="metadata" grammar="coremedia-struct-2008"
+                            url="metadataWithProductIdStruct.xml"/>
+          </version>
+        </document>
+        <document name="PictureWithAssetLink" id="8" type="CMPicture">
+          <version number="1">
+            <linkProperty name="asset">
+              <link id="4"/>
+            </linkProperty>
+          </version>
+        </document>
+        <document name="PictureWithoutAssetLink" id="10" type="CMPicture">
+          <version number="1"/>
+        </document>
+
+        <document name="VideoWithVideoAssetLink" id="12" type="CMVideo">
+          <version number="1">
+            <linkProperty name="asset">
+              <link id="6"/>
+            </linkProperty>
+          </version>
+        </document>
+        <document name="PictureWithVideoAssetLink" id="14" type="CMPicture">
+          <version number="1">
+            <linkProperty name="asset">
+              <link id="6"/>
+            </linkProperty>
+          </version>
+        </document>
+      </folder>
+    </folder>
+  </content>
+  <rules>
+    <rule resourceId="1" group="0" doctype="Document_"><right value="ALL"/></rule>
+    <rule resourceId="1" group="0" doctype="Folder_"><right value="ALL"/></rule>
+  </rules>
+</contentRepository>

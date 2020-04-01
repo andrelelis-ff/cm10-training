@@ -1,0 +1,20 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <BooleanProperty Name="grandfather">true</BooleanProperty>
+  <StructProperty Name="elasticSocial">
+    <Struct>
+      <BooleanProperty Name="enabled">true</BooleanProperty>
+      <IntProperty Name="port">79</IntProperty>
+      <BooleanProperty Name="inheritedFromGrandfather">true</BooleanProperty>
+    </Struct>
+  </StructProperty>
+  <StructProperty Name="mergeTest">
+    <Struct>
+      <BooleanProperty Name="enabled">true</BooleanProperty>
+    </Struct>
+  </StructProperty>
+  <StringListProperty Name="viewRepositoryNames">
+    <String>media</String>
+    <String>notMedia</String>
+    <String>againNotMedia</String>
+  </StringListProperty>
+</Struct>

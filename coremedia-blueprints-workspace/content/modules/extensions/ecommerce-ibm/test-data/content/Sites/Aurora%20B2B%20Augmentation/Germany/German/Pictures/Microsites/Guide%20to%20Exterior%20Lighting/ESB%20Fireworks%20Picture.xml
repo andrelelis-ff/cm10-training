@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Pictures/Microsites/Guide to Exterior Lighting" name="ESB Fireworks Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Pictures/Microsites/Guide%20to%20Exterior%20Lighting/ESB%20Firew3e7c2326.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Microsites/Guide%20to%20Exterior%20Lighting/ESB%20Fireworks%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=550;y=0;width=826;height=1277</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=482;y=0;width=957;height=1277</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=325;y=0;width=1276;height=1277</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=113;y=0;width=1426;height=1070</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=100;width=1920;height=1083</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=0;width=1920;height=770</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=401;width=1920;height=482</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.28664495114006516;y1=0;x2=0.7166123778501629;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.250814332247557;y1=0;x2=0.749185667752443;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.16938110749185667;y1=0;x2=0.8338762214983714;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.05863192182410423;y1=0;x2=0.8013029315960912;y2=0.8382352941176471</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.0784313725490196;x2=1;y2=0.9264705882352942</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0;x2=1;y2=0.6029411764705882</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3137254901960784;x2=1;y2=0.6911764705882353</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<validFrom format="dd.MM.yyyy HH:mm:ss Z">01.07.2015 00:00:00 +0200</validFrom>
+<segment></segment>
+<title>ESB Fireworks Image</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Picture of the Empire State Building with fireworks</alt>
+<copyright>Songquan Deng/Shutterstock 108129104</copyright>
+<dataUrl></dataUrl>
+<width>1920</width>
+<height>1277</height>
+<data md5="6c6af67f02ddbd32b55667e362bcf0c9" size="852883" href="../../../../../../../__blob/6c6af67f02ddbd32b55667e362bcf0c9.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>middle.modules</artifactId>
+    <version>1-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <artifactId>middle.shared</artifactId>
+  <packaging>pom</packaging>
+
+  <description>Shared Library Module</description>
+
+  <modules>
+    <module>content-services</module>
+    <module>image-transformation</module>
+    <module>search-api</module>
+    <module>solr-search</module>
+    <module>test-util</module>
+  </modules>
+</project>
+

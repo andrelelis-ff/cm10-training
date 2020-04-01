@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <include resource="logback-common.xml"/>
+
+  <springProfile name="elk">
+    <include resource="logback-elk.xml"/>
+  </springProfile>
+
+  <!--  inject the property using default spring means for externalizing configurations  -->
+  <springProperty scope="context" name="console.log.file" source="console.log.file" defaultValue=""/>
+  <springProperty scope="context" name="console.log.level" source="console.log.level" defaultValue="warn"/>
+  <!--  unless not set enable the console logging-->
+  <if condition='!p("console.log.file").equals("")'>
+    <then>
+      <property name="CONSOLE_FILE_LOG_PATTERN"
+                value="%d{yyyy-MM-dd HH:mm:ss} %-7([%level]) %logger [%X{tenant}] - %message \\(%thread\\)%n"/>
+      <appender name="STUDIO_CONSOLE_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <encoder>
+          <pattern>${CONSOLE_FILE_LOG_PATTERN}</pattern>
+        </encoder>
+        <file>${console.log.file}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+          <fileNamePattern>${console.log.file}.console.%d{yyyy-MM-dd}.%i.gz</fileNamePattern>
+          <maxFileSize>${LOG_FILE_MAX_SIZE:-10MB}</maxFileSize>
+          <maxHistory>${LOG_FILE_MAX_HISTORY:-0}</maxHistory>
+        </rollingPolicy>
+      </appender>
+
+      <logger name="studio-console" additivity="false" level="${console.log.level}">
+        <appender-ref ref="STUDIO_CONSOLE_FILE"/>
+      </logger>
+    </then>
+  </if>
+
+  <root level="WARN">
+    <springProfile name="elk">
+      <appender-ref ref="ELASTIC"/>
+    </springProfile>
+    <appender-ref ref="FILE"/>
+    <appender-ref ref="CONSOLE"/>
+  </root>
+
+</configuration>

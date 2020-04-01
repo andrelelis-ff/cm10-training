@@ -1,0 +1,14 @@
+Hello ${name},
+
+your comment below from ${commentDate} has a new reply:
+
+"${commentText}"
+
+The reply from ${replyAuthorName} from ${replyDate} is:
+
+"${replyText}"
+
+${commentUrl}
+
+Kind regards,
+the editors

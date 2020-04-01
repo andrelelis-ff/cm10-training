@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPerson folder="/Sites/SiteGenesis Global/France/French/Editorial/Authors" name="Joshua Campos Person" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Editorial/Authors/Joshua%20Campos%20Person.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Authors/Joshua%20Campos%20Person"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>joshuacampos</segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Beard enthusiast. Creativity &amp; design. Rebellion &amp; optimism. The end of the t-shirt is neigh. Copywriting at SiteGenesis.</p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Joshua grew up in Dublin, the underground fashion capital of the world. From there, it was just a small step to becoming Aurora's chief design correspondent, reporting on everything from luxury fashion to interior design.</p> <p>Joshua is married and has two sons.</p> </div></detailText>
+<pictures>
+<link href="../../Pictures/Authors/Joshua%20Campos%20Picture.xml" path="/Sites/SiteGenesis%20Global/France/French/Pictures/Authors/Joshua%20Campos%20Picture"/>
+</pictures>
+<related>
+<link href="Joshua%27s%20Articles%20Query%20List.xml" path="/Sites/SiteGenesis%20Global/France/French/Editorial/Authors/Joshua%27s%20Articles%20Query%20List"/>
+</related>
+<authors>
+</authors>
+<firstName>Joshua</firstName>
+<lastName>Campos</lastName>
+<displayName>Joshua X. Campos</displayName>
+<eMail>info@coremedia.com</eMail>
+<organization>Apparel</organization>
+<jobTitle>Design Correspondent</jobTitle>
+<misc>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="twitter">https://twitter.com/coremedia</StringProperty>
+</Struct>
+</misc>
+</CMPerson>

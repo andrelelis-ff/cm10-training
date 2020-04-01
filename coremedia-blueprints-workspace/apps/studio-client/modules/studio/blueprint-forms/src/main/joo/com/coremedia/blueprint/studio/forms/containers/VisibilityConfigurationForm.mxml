@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ This is a form panel which combines several form elements to an editor for local settings to configure
+ the visibility behaviour. A combination of two date time field specifing visibleFrom and visibleTo.
+-->
+<editor:PropertyFieldGroup
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        itemId="visibilityConfigurationForm"
+        header="{false}"
+        propertyNames="{[]}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.visibilityConfigurationForm";
+
+    public static const VISIBLE_FROM_ITEM_ID:String = "visibleFrom";
+
+    public static const VISIBLE_TO_ITEM_ID:String = "visibleTo";
+
+    [Bindable]
+    public var propertyName:String;
+
+    private var config:VisibilityConfigurationForm;
+
+    public native function VisibilityConfigurationForm(config:VisibilityConfigurationForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DateTimePropertyField itemId="{VISIBLE_FROM_ITEM_ID}"
+                                  propertyName="{config.propertyName}.visibleFrom"
+                                  isLoadedPropertyName="{config.propertyName}">
+    </editor:DateTimePropertyField>
+    <editor:DateTimePropertyField itemId="{VISIBLE_TO_ITEM_ID}"
+                                  propertyName="{config.propertyName}.visibleTo"
+                                  isLoadedPropertyName="{config.propertyName}">
+    </editor:DateTimePropertyField>
+  </editor:items>
+</editor:PropertyFieldGroup>

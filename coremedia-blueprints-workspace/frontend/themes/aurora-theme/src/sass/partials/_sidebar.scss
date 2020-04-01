@@ -1,0 +1,47 @@
+.cm-placement--sidebar {
+
+  @include breakpoint(xs, landscape) {
+
+    & > * {
+      width: calc(50% - 5px);
+    }
+
+    & > :nth-child(2n + 1) {
+      margin-right: 5px;
+    }
+
+    & > :nth-child(2n) {
+      margin-left: 5px;
+    }
+  }
+
+  @include breakpoint(sm) {
+
+    & > * {
+      width: 100%;
+    }
+
+    & > :nth-child(2n + 1) {
+      margin-right: 0;
+    }
+
+    & > :nth-child(2n) {
+      margin-left: 0;
+    }
+
+    // REVERT: remove gutter for elements in the last row
+    // first element of last row
+    & > :nth-of-type(2n+1):nth-last-of-type(-n+2),
+      // and for all following elements
+    & > :nth-of-type(2n+1):nth-last-of-type(-n+2) ~ * {
+      margin-bottom: 10px;
+    }
+  }
+
+  @include breakpoint("lg-and-up") {
+
+    & > :not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

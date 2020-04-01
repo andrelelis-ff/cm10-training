@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PreviewContextMenu
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:livecontext="exml:com.coremedia.livecontext.studio.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.preview.PreviewContextMenu;
+    import com.coremedia.cms.editor.sdk.preview.PreviewPanelBase;
+    import com.coremedia.cms.editor.sdk.preview.metadata.MetadataTreeModel;
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.testPreviewContextMenu";
+
+    private var config:TestPreviewContextMenu;
+
+    public native function TestPreviewContextMenu(config:TestPreviewContextMenu = null);
+
+    [Bindable]
+    public var bindTo:ValueExpression;
+
+    [Bindable]
+    public var metadataTreeValueExpression:ValueExpression;
+    ]]></fx:Script>
+
+
+  <editor:items>
+    <editor:Breadcrumb id_="breadcrumb"
+                       itemId="{PreviewContextMenu.BREADCRUMB_ITEM_ID}"
+                       treeModel="{new MetadataTreeModel(config.metadataTreeValueExpression)}"
+                       enableOverflow="false"
+                       disableNavigation="true"
+                       hideElementTexts="true"
+                       hideOnEmpty="false"
+                       disableElementStrategy="{this['disableBreadcrumbElementStrategy']}"
+                       selectedNodeValueExpression="{config.selectedNodeValueExpression}"/>
+
+    <MenuItem itemId="{PreviewContextMenu.TITLE_MENU_ITEM_ID}"
+              canActivate="false">
+      <baseAction>
+        <editor:ShowMetadataIconDisplayFieldAction
+                metadataValueExpression="{config.selectedNodeValueExpression}"
+                hideOnDisable="true"/>
+      </baseAction>
+    </MenuItem>
+    <livecontext:OpenCreateExternalPageMenuItem/>
+    <livecontext:ShopPageShowInLibraryMenuItem/>
+  </editor:items>
+
+</editor:PreviewContextMenu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./Germany/German/Editorial/Homepage/Company/Investor Relations/Events/Event Items" name="Annual Report on fiscal 2020 with press conference and investor and analyst conference call" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../../United%20States/English/Editorial/Homepage/Company/Investor%20Relations/Events/Event%20Items/Annual%27644a74a.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Company/Investor%20Relations/Events/Event%20Items/Annual%20Report%20on%20fiscal%202020%20with%20press%20conference%20and%20investor%20and%20analyst%20conference%20call"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Jahresbericht Geschäftsjahr 2020</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Events.xml" path="/Settings/Taxonomies/Subject/Events"/>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Investors.xml" path="/Settings/Taxonomies/Subject/Investors"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Jährlicher Bericht über das Geschäftsjahr 2020 mit Pressekonferenz, Investor Information und Analyst Conference Call</p></div></detailText>
+<pictures>
+<link href="../../../../../Assets/Pictures/Kitchen%20Dreams/Kitchen%20Interior%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Kitchen%20Dreams/Kitchen%20Interior%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

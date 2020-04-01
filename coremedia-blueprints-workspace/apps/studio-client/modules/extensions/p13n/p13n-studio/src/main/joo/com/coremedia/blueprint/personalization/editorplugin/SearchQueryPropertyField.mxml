@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:StatefulTextArea xmlns:fx="http://ns.adobe.com/mxml/2009"
+                     xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                     xmlns="exml:ext.config"
+                     xmlns:ui="exml:com.coremedia.ui.config"
+                     xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                     xmlns:plugin="exml:com.coremedia.blueprint.personalization.editorplugin.config"
+                     name="{'properties.' + config.propertyName}"
+                     anchor="100%"
+                     checkChangeBuffer="500"
+                     labelSeparator="">
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.blueprint.personalization.editorplugin.config.searchQueryPropertyField";
+
+    private var config:SearchQueryPropertyField;
+
+    public native function SearchQueryPropertyField(config:SearchQueryPropertyField = null);
+
+    /**
+     * a property path expression leading to the Bean whose property is edited.
+     * This property editor assumes that this bean has a property 'properties'.
+     */
+    [Bindable]
+    public var bindTo:ValueExpression;
+
+    /**
+     * An optional ValueExpression which makes the component read-only if it is evaluated to true.
+     */
+    [Bindable]
+    public var forceReadOnlyValueExpression:ValueExpression;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!--- the property of the Bean to bind in this field -->
+    <fx:String id="propertyName"/>
+  </fx:Declarations>
+
+  <ui:plugins>
+    <editor:SetPropertyLabelPlugin bindTo="{config.bindTo}"
+                                   propertyName="{config.propertyName}"/>
+    <editor:SetPropertyEmptyTextPlugin bindTo="{config.bindTo}"
+                                       propertyName="{config.propertyName}"/>
+    <editor:BindReadOnlyPlugin bindTo="{config.bindTo}"
+                               forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+    <editor:PropertyFieldPlugin propertyName="{config.propertyName}"/>
+    <ui:BindBlobPropertyPlugin bindTo="{config.bindTo.extendBy('properties', config.propertyName)}"
+                               mimeType="text/plain"/>
+    <plugin:SearchValidator/>
+  </ui:plugins>
+
+</ui:StatefulTextArea>

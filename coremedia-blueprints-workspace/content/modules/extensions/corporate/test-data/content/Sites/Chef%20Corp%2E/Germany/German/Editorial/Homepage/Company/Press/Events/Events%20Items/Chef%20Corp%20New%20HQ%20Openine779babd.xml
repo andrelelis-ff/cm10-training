@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./Germany/German/Editorial/Homepage/Company/Press/Events/Events Items" name="Chef Corp New HQ Opening Party Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../../../United%20States/English/Editorial/Homepage/Company/Press/Events/Events%20Items/Chef%20Corp%20New%20HQ1129618b.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Company/Press/Events/Events%20Items/Chef%20Corp%20New%20HQ%20Opening%20Party%20Article"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText"/>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<extDisplayedDate format="dd.MM.yyyy HH:mm:ss Z">15.11.2018 00:00:00 +0200</extDisplayedDate>
+<segment></segment>
+<title>Chef Corp. New Headquarter Grand Opening Party-</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Events.xml" path="/Settings/Taxonomies/Subject/Events"/>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Press.xml" path="/Settings/Taxonomies/Subject/Press"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>New HQ Opening Party</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Chef Corp. wird eine große Party am 15. Juni in unserem neuen Büro in Downtown Chicago hosten. Treffen Sie Starköche und ihre Kreationen zu probieren. </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> <p> Chef Corp. wird die Eröffnung unseres neuen Verwaltungsgebäude in Downtown Chicago mit einer großen Eröffnungsparty feiern. Celebrity Chefs Jamie Oliver Anthony Bourdain und werden unsere Gäste mit ihren berühmten kulinarischen Kreationen in unserem Live-Show-Küche zubereitet beeindrucken. Verpassen Sie nicht auf den herrlichen Blick von unserer Dachterrasse Aussichtsterrasse - und Chill in den Sonnenuntergang mit Getränken aus unserer gut ausgestatteten Bar des berühmten gemischt, Michelin 3-Sterne "Barkeeper" Aaron Spangler. </p> </div></detailText>
+<pictures>
+<link href="../../../../../Assets/Pictures/News/Chef%20Corp%2E%20New%20HQ%20in%20Downtown%20Chicago%20%20Picture.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/News/Chef%20Corp%2E%20New%20HQ%20in%20Downtown%20Chicago%20%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

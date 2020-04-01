@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMDownload folder="/Sites/SiteGenesis Global/United Kingdom/English/Editorial/Content/Downloads" name="Enjoy Your Passion - Bracelet Product Details" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>sfcc:///catalog/product/25448070</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Enjoy Your Passion - Bracelet Product Details</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../../../Pictures/Bracelet%20-%203.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Pictures/Bracelet%20-%203"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<data md5="1530272a80c547eec3b55028be99e23e" size="285386" href="../../../../../../../__blob/1530272a80c547eec3b55028be99e23e.blob" mimetype="application/pdf"/>
+<filename></filename>
+</CMDownload>

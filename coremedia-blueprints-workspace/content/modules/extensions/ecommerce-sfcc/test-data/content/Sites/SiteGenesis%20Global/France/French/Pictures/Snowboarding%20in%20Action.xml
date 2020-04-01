@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/France/French/Pictures" name="Snowboarding in Action" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Pictures/Snowboarding%20in%20Action.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Pictures/Snowboarding%20in%20Action"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=161;y=0;width=1780;height=1335</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=123;width=2000;height=1125</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=203;width=2000;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=270;width=2000;height=800</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=292;width=2000;height=750</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=296;width=2000;height=500</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=664;y=0;width=1335;height=1335</StringProperty>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1137;y=0;width=861;height=1335</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=998;y=0;width=1001;height=1335</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.08033826638477802;y1=0;x2=0.9703382663847779;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.09177215189873418;x2=1;y2=0.9344687811122174</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.1518987341772152;x2=1;y2=0.9009624045892003</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.20253164556962025;x2=1;y2=0.8017825818992083</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.21835443037974683;x2=1;y2=0.7801521831887357</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.22151898734177214;x2=1;y2=0.5960508225477646</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.331923890063425;y1=0;x2=0.9994238900634249;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.5687103594080338;y1=0;x2=0.9993555206983564;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.49894291754756875;y1=0;x2=0.9995679175475687;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Snowboard en action</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Snowboard en action</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1335</height>
+<data md5="a6398a4b81e50e5261122b346ff26e40" size="860217" href="../../../../../__blob/a6398a4b81e50e5261122b346ff26e40.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

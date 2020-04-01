@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>cae.extensions</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>cae.corporate</artifactId>
+  <packaging>pom</packaging>
+
+  <properties>
+    <coremedia.project.extension.name>Corporate</coremedia.project.extension.name>
+    <coremedia.project.extension.modelVersion>1.0</coremedia.project.extension.modelVersion>
+  </properties>
+
+  <modules>
+    <module>corporate-cae</module>
+  </modules>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifestEntries>
+              <Required-Licenses>brand-blueprint</Required-Licenses>
+            </manifestEntries>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

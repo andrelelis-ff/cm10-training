@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/Germany/German/Pictures/Product 360 Pictures/Leather Bag" name="Leather-Bag-12" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-12.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20360%20Pictures/Leather%20Bag/Leather-Bag-12"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="inherit">true</BooleanProperty>
+<StringListProperty Name="originReferences">
+<String>ibm:///catalog/sku/PC_HERMITAGE_LEATHER_BAG_SKU</String>
+<String>ibm:///catalog/product/PC_HERMITAGE_LEATHER_BAG</String>
+</StringListProperty>
+<StringListProperty Name="references">
+<String>ibm:///catalog/sku/PC_HERMITAGE_LEATHER_BAG_SKU</String>
+<String>ibm:///catalog/product/PC_HERMITAGE_LEATHER_BAG</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio235x100">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio235x100">position;x1=0.11677852348993288;y1=0.07570977917981073;x2=0.9084081988996215;y2=0.8675078864353312</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=400;y=0;width=2000;height=2000</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=775;y=0;width=1250;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=-402;y=151;width=3721;height=1584;bg=FFFFFFFF</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=67;y=0;width=2667;height=2000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=650;y=0;width=1500;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=213;width=2800;height=1575</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="enlarge">
+<Struct>
+<BooleanProperty Name="landscape_ratio235x100">true</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Ledertasche-12</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Ledertasche-12</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2800</width>
+<height>2000</height>
+<data md5="32aca3917beb03e1ce6c83d11e4690a6" size="151762" href="../../../../../../../__blob/32aca3917beb03e1ce6c83d11e4690a6.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

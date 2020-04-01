@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMExternalPage folder="/Sites/Aurora Augmentation/United States/English/Navigation" name="Aurora Augmentation" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<LinkProperty Name="livecontext.assets.default.picture" LinkType="coremedia:///cap/contenttype/CMPicture" xlink:href="coremedia:///cap/resources/../Pictures/Picture%20Missing%20Product%20Picture.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Picture%20Missing%20Product%20Picture"/>
+<StringProperty Name="externalUriPath"/>
+<StringProperty Name="shopNow">disabled</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+<link href="../../../../../Settings/Options/Settings/OpenCalais.xml" path="/Settings/Options/Settings/OpenCalais"/>
+<link href="../Options/Settings/LiveContext.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/LiveContext"/>
+<link href="../Options/Settings/Elastic%20Social.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Elastic%20Social"/>
+<link href="../Options/Settings/CMChannel/Robots%2Etxt.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/CMChannel/Robots%2Etxt"/>
+<link href="../Options/Settings/Preview.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Preview"/>
+<link href="../Options/Settings/CMChannel/Vanity%20URLs.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/CMChannel/Vanity%20URLs"/>
+</linkedSettings>
+<resourceBundles2>
+<link href="../../../../../Settings/Options/Bundles/Elastic%20Social_en.xml" path="/Settings/Options/Bundles/Elastic%20Social_en"/>
+</resourceBundles2>
+<segment>aurora</segment>
+<title>Home</title>
+<htmlTitle></htmlTitle>
+<keywords>CoreMedia,Aurora,Aurora Augmentation,Demo,Blueprint</keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="../Editorial/Content/Startpage/Black-and-white%20portrait%20of%20a%20stund1866bc4.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Startpage/Black-and-white%20portrait%20of%20a%20stunning%20fashionable%20model%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<children>
+<link href="../Augmentation/Apparel/Women/Women.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Augmentation/Apparel/Women/Women"/>
+<link href="../Augmentation/Apparel/Men/Men.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Augmentation/Apparel/Men/Men"/>
+<link href="Microsites/Editorial%20Blog/Editorial%20Blog%20Microsite.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Microsites/Editorial%20Blog/Editorial%20Blog%20Microsite"/>
+<link href="Blog/Fashion%20Trends%202017/Fashion%20Trends.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Blog/Fashion%20Trends%202017/Fashion%20Trends"/>
+<link href="Microsites/Paris%20Fashion%20Week%20Trends/Paris%20Fashion%fd1da67.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Microsites/Paris%20Fashion%20Week%20Trends/Paris%20Fashion%20Week%20Trends"/>
+<link href="../Augmentation/Aurora%20B2C%20Catalog%20Root.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Augmentation/Aurora%20B2C%20Catalog%20Root"/>
+<link href="Fragments/Fragments%20Hidden%20Page.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Fragments%20Hidden%20Page"/>
+<link href="Fragments/Search%20Landing%20Pages/Search%20Landing%20Pages72667d05.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Fragments/Search%20Landing%20Pages/Search%20Landing%20Pages%20Hidden%20Page"/>
+<link href="Microsites/Microsite%20Root%20Page.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Microsites/Microsite%20Root%20Page"/>
+<link href="Topic%20Pages/Topicpage.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Navigation/Topic%20Pages/Topicpage"/>
+</children>
+<hidden>1</hidden>
+<hiddenInSitemap>1</hiddenInSitemap>
+<javaScript>
+</javaScript>
+<css>
+</css>
+<theme>
+<link href="../../../../../Themes/aurora/Aurora%20Theme.xml" path="/Themes/aurora/Aurora%20Theme"/>
+</theme>
+<placement>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="placements_2">
+<Struct>
+<LinkProperty Name="layout" LinkType="coremedia:///cap/contenttype/Document_" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Layouts/Hero%20Layout.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Layouts/Hero%20Layout"/>
+<StructProperty Name="placements">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="placements">
+<Struct>
+<StructListProperty Name="extendedItems">
+</StructListProperty>
+<BooleanProperty Name="locked">false</BooleanProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/header.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/header"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+</StructListProperty>
+<BooleanProperty Name="locked">false</BooleanProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/footer.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/footer"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Editorial/Content/Startpage/Gender%20Specific%20Teaser.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Startpage/Gender%20Specific%20Teaser"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Editorial/Content/Startpage/Women%20Homepage%20Teaser.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Startpage/Women%20Homepage%20Teaser"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Editorial/Content/Fashion/Women%27s%20Dresses%20Image%20Map.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Women%27s%20Dresses%20Image%20Map"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../Options/Viewtypes/CMChannel/hero.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Viewtypes/CMChannel/hero"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/hero.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/hero"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Editorial/Content/Startpage/Women%27s%20Category.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Startpage/Women%27s%20Category"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Editorial/Content/Startpage/Men%27s%20Category.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Startpage/Men%27s%20Category"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../Options/Viewtypes/CMChannel/square.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Viewtypes/CMChannel/square"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/placement1.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/placement1"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Editorial/Content/Fashion%20Week/Fashion%20Show%20Shoppable%20Video.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion%20Week/Fashion%20Show%20Shoppable%20Video"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../Options/Viewtypes/CMChannel/hero.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Viewtypes/CMChannel/hero"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/placement2.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/placement2"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Editorial/Content/Fashion%20Week/Black%20is%20the%20new%20Black%20Dresses.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion%20Week/Black%20is%20the%20new%20Black%20Dresses"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../Options/Viewtypes/CMChannel/square.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Viewtypes/CMChannel/square"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/placement3.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/placement3"/>
+</Struct>
+<Struct>
+<StructListProperty Name="extendedItems">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Editorial/Products/Albini%20Sleeveless%20Silk%20Dress%20-%20Augmented.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Albini%20Sleeveless%20Silk%20Dress%20-%20Augmented"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../Editorial/Products/Hermitage%20Fit%20and%20Flare%20Dress.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Hermitage%20Fit%20and%20Flare%20Dress"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Editorial/Products/Gusso%20Casual%20Strapless%20Dress.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Gusso%20Casual%20Strapless%20Dress"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Editorial/Products/Luigi%20Valenti%20Strapless%20Cocktail%20Dress.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Luigi%20Valenti%20Strapless%20Cocktail%20Dress"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Editorial/Products/Luigi%20Valenti%20Sleeveless%20Slip%20Dress.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Products/Luigi%20Valenti%20Sleeveless%20Slip%20Dress"/>
+</Struct>
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Editorial/Content/Eveningwear/Hermitage%20Pencil%20Cocktail%20Dress.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Eveningwear/Hermitage%20Pencil%20Cocktail%20Dress"/>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="viewtype" LinkType="coremedia:///cap/contenttype/CMViewtype" xlink:href="coremedia:///cap/resources/../Options/Viewtypes/CMChannel/carousel.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Viewtypes/CMChannel/carousel"/>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Options/Settings/Pagegrid/Placements/placement4.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Placements/placement4"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</placement>
+<header>
+</header>
+<footer>
+</footer>
+<externalUriPath></externalUriPath>
+<externalId></externalId>
+</CMExternalPage>

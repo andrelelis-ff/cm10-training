@@ -1,0 +1,12 @@
+/*
+  The following standard setting and these paragraph styles rules
+  should be listed before the alignment rules. Otherwise,
+  the alignment rules won't overwrite the standard setting.
+*/
+
+//default variables
+$cm-richtext-prefix: "cm-richtext" !default;
+$cm-richtext-padding-base-horizontal: 10px !default;
+$cm-richtext-padding-base-vertical: 10px !default;
+$cm-richtext-dark-shadow-color: #ffffff !default;
+$cm-richtext-light-shadow-color: #000000 !default;

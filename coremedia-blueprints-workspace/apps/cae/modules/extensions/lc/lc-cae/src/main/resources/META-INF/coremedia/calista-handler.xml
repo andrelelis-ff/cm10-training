@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+  <import resource="classpath:/META-INF/coremedia/livecontext-site-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/settings/impl/bpbase-settings-services.xml"/>
+
+  <bean id="managedPagePartsRestHandler" class="com.coremedia.livecontext.handler.ManagedPagePartsRestHandler">
+    <constructor-arg index="0" name="siteResolver" ref="liveContextSiteResolver"/>
+    <constructor-arg index="1" name="settingsService" ref="settingsService"/>
+  </bean>
+
+  <!--
+  A handler which only redirects to the given URL given as path parameter. Prevents third party systems from truncating
+  by hand over the redirect to the CMS.
+  -->
+  <bean id="nextURLRedirectHandler" class="com.coremedia.livecontext.handler.NextURLRedirectHandler"/>
+</beans>

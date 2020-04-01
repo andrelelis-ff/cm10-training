@@ -1,0 +1,280 @@
+@mixin am-asset-details(
+  $block: "am-asset-details"
+) {
+  .#{$block} {
+    display: block;
+    font-size: 0;
+
+    &__sub-categories {
+      margin-top: $am-margin-large;
+    }
+
+    &__left {
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      margin-top: $am-margin-large;
+    }
+
+    &__subject-tags {
+      display: block;
+      padding: 0; // reset possible padding (e.g. from ul), ok as there will be another element below this element
+      margin: $am-margin-medium 0 0;
+      text-align: left;
+    }
+
+    &__subject-tag {
+      display: inline-block;
+      margin: $am-margin-small / 2;
+    }
+
+    &__right {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: $am-margin-large;
+    }
+
+    &__renditions {
+      margin-top: $am-margin-large;
+    }
+
+    &__renditions-title {
+      margin-top: $am-margin-medium;
+    }
+
+    &__renditions-list {
+      margin-top: $am-margin-small;
+      width: 100%;
+
+      @include extra-small-device {
+        margin: 1% auto 0;
+        border-collapse: separate;
+        border-spacing: 0 30px;
+      }
+      @include small-device {
+        margin: 1% auto 0;
+        border-collapse: separate;
+        border-spacing: 0 30px;
+      }
+    }
+
+    @include medium-device {
+      &__left {
+        width: 25%;
+      }
+
+      &__right {
+        width: 75%;
+      }
+    }
+
+    @include large-device {
+      &__left {
+        width: 25%;
+      }
+
+      &__right {
+        width: 75%;
+      }
+    }
+  }
+}
+
+@mixin am-asset-info(
+  $block: "am-asset-info"
+) {
+  .#{$block} {
+    display: table;
+    margin: 0 20px;
+    color: $am-text-color;
+
+    @include extra-small-device {
+      margin: 0;
+    }
+    @include small-device {
+      margin: 0;
+    }
+
+    &__property {
+      display: table-row;
+      font-size: $am-text-size;
+    }
+
+    &__property + &__property {
+      border-top: 1px solid #ccc;
+    }
+
+    &__property-name {
+      display: table-cell;
+      vertical-align: top;
+      @include medium-device {
+        padding: 5px 50px 5px 5px;
+      }
+      @include large-device {
+        padding: 5px 50px 5px 5px;
+      }
+    }
+
+    &__property-value {
+      display: table-cell;
+      vertical-align: top;
+      padding: 5px 5px 5px 0;
+    }
+
+    &__property-name,
+    &__property-value {
+      @include extra-small-device {
+        width: 100%;
+        display: block;
+        margin-top: 1%;
+      }
+      @include small-device {
+        width: 100%;
+        display: block;
+        margin-top: 1%;
+      }
+      @include medium-device {
+
+      }
+      @include large-device {
+
+      }
+    }
+  }
+}
+
+.am-rendition {
+  $parent: &;
+  color: $am-text-color;
+  font-size: $am-text-size;
+
+  &__name,
+  &__size,
+  &__type,
+  &__download,
+  &__control {
+
+    line-height: 16px;
+    vertical-align: middle;
+
+    @include medium-device {
+      padding: 5px 5px;
+    }
+    @include large-device {
+      padding: 6px 25px;
+    }
+  }
+
+  @include extra-small-device {
+
+    > td:last-child {
+      margin-bottom: 2%;
+    }
+
+    &__name,
+    &__size,
+    &__type {
+      padding: 3px 15px;
+      display: inline;
+    }
+  }
+
+  @include small-device {
+
+    &__name,
+    &__size,
+    &__type {
+      padding: 3px 15px;
+      display: inline;
+    }
+  }
+
+  &__download,
+  &__control {
+    @include extra-small-device {
+      width: 100%;
+      display: block;
+      margin-top: 1%;
+    }
+    @include small-device {
+      width: 100%;
+      display: block;
+      margin-top: 1%;
+    }
+    @include medium-device {
+
+    }
+    @include large-device {
+
+    }
+  }
+
+  &__name {
+    text-align: left;
+    padding-left: 0;
+  }
+
+  &__size {
+    text-align: right;
+  }
+
+  &__type {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  &__download,
+  &__control {
+    padding-right: 0;
+    text-align: left;
+  }
+
+  &:first-child {
+    #{$parent}__name,
+    #{$parent}__size,
+    #{$parent}__type,
+    #{$parent}__download,
+    #{$parent}__control {
+      padding-top: 0;
+    }
+  }
+
+  &:last-child {
+    #{$parent}__name,
+    #{$parent}__size,
+    #{$parent}__type,
+    #{$parent}__download,
+    #{$parent}__control {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.am-rendition-type {
+  display: inline-block;
+  color: #fff;
+  background-color: #569bd5;
+  border-radius: 2px;
+  padding: 0.25em 0.5em;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.am-subject-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  color: $am-subject-tag-text-color;
+  background: $am-subject-tag-background;
+  border-radius: 5px;
+  padding: 5px 10px;
+
+  &:focus,
+  &:hover {
+    color: $am-subject-tag-text-color;
+    text-decoration: underline;
+  }
+}
+
+@include am-asset-details();
+@include am-asset-info();

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!--
+  Personalization Doctypes
+  (c) CoreMedia AG, 2010
+-->
+<DocumentTypeModel xmlns="http://www.coremedia.com/2008/documenttypes"
+                   xmlns:extensions="http://www.coremedia.com/2013/documenttypes-extensions"
+                   Name="blueprint-personalization-doctypes"
+                   Title="Personalization Document Types">
+
+  <ImportGrammar Name="coremedia-richtext-1.0"/>
+  <ImportGrammar Name="coremedia-struct-2008"/>
+
+  <ImportDocType Name="CMDynamicList" From="blueprint-doctypes"/>
+  <ImportDocType Name="CMTeasable" From="blueprint-doctypes"/>
+  <ImportDocType Name="CMLocalized" From="blueprint-doctypes"/>
+  <ImportDocType Name="CMNavigation" From="blueprint-doctypes"/>
+
+  <XmlSchema Name="coremedia-selectionrules-1.0"
+          SchemaLocation="classpath:xml/coremedia-selectionrules-1.0.xsd classpath:xml/xlink.xsd"
+          Language="http://www.w3.org/2001/XMLSchema"/>
+
+  <!--
+      Represents a document whose content is determined by a list of selection rules.
+  -->
+  <DocType Name="CMSelectionRules" Parent="CMDynamicList">
+    <LinkListProperty Name="master" Max="1" LinkType="CMSelectionRules" Override="true" extensions:weakLink="true"/>
+    <XmlProperty Name="text" Grammar="coremedia-richtext-1.0"/>
+    <XmlProperty Name="altText" Grammar="coremedia-richtext-1.0"/>
+    <XmlProperty Name="rules" Grammar="coremedia-selectionrules-1.0"/>
+    <LinkListProperty Name="defaultContent" LinkType="CMTeasable"/>
+  </DocType>
+
+  <!--
+      Represents a customer-segment definition.
+  -->
+  <DocType Name="CMSegment" Parent="CMLocalized">
+    <XmlProperty Name="description" Grammar="coremedia-richtext-1.0"/>
+    <XmlProperty Name="conditions" Grammar="coremedia-selectionrules-1.0"/>
+    <LinkListProperty Name="master" Max="1" LinkType="CMSegment" Override="true" extensions:weakLink="true"/>
+  </DocType>
+
+  <!--
+      Represents a document containing user-profile definitions.
+  -->
+  <DocType Name="CMUserProfile" Parent="CMLocalized">
+    <BlobProperty Name="profileSettings" MimeType="text/plain"/>
+    <XmlProperty Name="profileExtensions" Grammar="coremedia-struct-2008"/>
+    <LinkListProperty Name="master" Max="1" LinkType="CMUserProfile" Override="true" extensions:weakLink="true"/>
+  </DocType>
+
+  <!--
+      Represents a search using p13n features.
+  -->
+  <DocType Name="CMP13NSearch" Parent="CMDynamicList">
+    <LinkListProperty Name="master" Max="1" LinkType="CMP13NSearch" Override="true" extensions:weakLink="true"/>
+    <StringProperty Name="documentType" Length="256"/>
+    <LinkListProperty Name="searchContext" LinkType="CMNavigation"/>
+    <BlobProperty Name="searchQuery" MimeType="text/plain"/>
+    <LinkListProperty Name="defaultContent" LinkType="CMTeasable"/>
+  </DocType>
+
+</DocumentTypeModel>

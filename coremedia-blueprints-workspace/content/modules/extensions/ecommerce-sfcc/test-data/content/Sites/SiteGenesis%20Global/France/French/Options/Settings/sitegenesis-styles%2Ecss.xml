@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCSS folder="/Sites/SiteGenesis Global/France/French/Options/Settings" name="sitegenesis-styles.css" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Options/Settings/sitegenesis-styles%2Ecss.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Settings/sitegenesis-styles%2Ecss"/>
+</master>
+<description></description>
+<ieExpression></ieExpression>
+<include>
+</include>
+<dataUrl>https://{sitegenesis.host}/on/demandware.static/Sites-SiteGenesisGlobal-Site/-/en_GB/css/style.css</dataUrl>
+<media></media>
+</CMCSS>

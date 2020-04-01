@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMFolderProperties folder="/Sites/Chef Corp./Germany/German" name="_folderProperties" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../United%20States/English/_folderProperties.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/_folderProperties"/>
+</master>
+<contexts>
+<link href="Navigation/Hidden%20Navigation/Detail%20Page.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Navigation/Hidden%20Navigation/Detail%20Page"/>
+</contexts>
+</CMFolderProperties>

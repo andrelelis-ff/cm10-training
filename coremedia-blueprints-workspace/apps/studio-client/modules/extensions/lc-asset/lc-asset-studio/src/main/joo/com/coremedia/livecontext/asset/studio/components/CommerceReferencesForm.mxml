@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CommerceReferencesFormBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.livecontext.asset.studio.components.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:ec="exml:com.coremedia.ecommerce.studio.config"
+        itemId="commerceReferencesForm"
+        title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMPicture_propertyGroup_commerce')}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.ecommerce.studio.ECommerceStudioPlugin')]
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ecommerce.studio.CatalogModel;
+
+    public static const xtype:String = "com.coremedia.livecontext.asset.studio.config.commerceReferencesForm";
+
+    private var config:CommerceReferencesForm;
+
+    public native function CommerceReferencesForm(config:CommerceReferencesForm = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <fx:Array id="additionalToolbarItems"/>
+  </fx:Declarations>
+
+  <local:plugins exml:mode="append">
+    <ui:BindVisibilityPlugin bindTo="{getShopExpression(config)}"/>
+  </local:plugins>
+  <local:items>
+    <ec:CatalogLinkPropertyField
+            readOnlyValueExpression="{getReadOnlyExpression(config)}"
+            propertyName="{PROPERTY_NAME}"
+            hideCatalog="true"
+            linkTypeNames="{[CatalogModel.TYPE_CATEGORY, CatalogModel.TYPE_PRODUCT]}"
+            createStructFunction="{createStructs}"
+            dropAreaText="{resourceManager.getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin',
+              'Categorys_Products_Link_empty_text')}"
+            additionalToolbarItems="{config.additionalToolbarItems}"/>
+  </local:items>
+
+</local:CommerceReferencesFormBase>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:NestedRulesPlugin
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:cat="exml:com.coremedia.blueprint.studio.config.catalog"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.ecommerce.studio.ECommerceStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.collectionview.AbstractContextMenu;
+    import com.coremedia.cms.editor.sdk.collectionview.ICollectionView;
+
+    import mx.resources.ResourceManager;
+
+    /**
+     * The itemId of the delete menu item.
+     */
+    public static const CREATE_CATEGORY_MENU_ITEM_ID:String = "createCategory";
+
+    /**
+     * The itemId of the delete menu item.
+     */
+    public static const CREATE_PRODUCT_MENU_ITEM_ID:String = "createProduct";
+
+    private var config:CatalogLibraryPlugin;
+    private var selectionHolder:ICollectionView;
+
+    // called by generated constructor code
+    private function __initialize__(config:CatalogLibraryPlugin):void {
+      selectionHolder = config.cmp as ICollectionView;
+    }
+
+    public native function CatalogLibraryPlugin(config:CatalogLibraryPlugin = null);
+    ]]></fx:Script>
+
+
+  <ui:rules>
+
+    <editor:FolderContentSwitchingContainer>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <editor:FolderContentContainer instanceName="catalog"
+                                           itemId="{CatalogCollectionViewExtension.CATALOG_FOLDER_CONTAINER_ITEM_ID}"
+                                           selectedFolderValueExpression="{selectionHolder.getSelectedFolderValueExpression()}"
+                                           selectedRepositoryItemsValueExpression="{selectionHolder.getSelectedRepositoryItemsValueExpression()}"
+                                           newContentDisabledValueExpression="{selectionHolder.getNewContentActionDisabledExpression()}"
+                                           createdContentValueExpression="{selectionHolder.getCreatedContentValueExpression()}"/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:FolderContentSwitchingContainer>
+
+    <editor:SearchSwitchingContainer>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <cat:RepositoryCatalogSearchListContainer searchResultHitsValueExpression="{selectionHolder.getSearchResultHitsValueExpression()}"
+                                                      selectedItemsValueExpression="{selectionHolder.getSelectedSearchItemsValueExpression()}"/>
+          </ui:items>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:SearchSwitchingContainer>
+
+    <editor:RepositoryToolbar>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <ui:IconButton itemId="unlink">
+              <ui:baseAction>
+                <cat:UnlinkAction folderValueExpression="{selectionHolder.getSelectedFolderValueExpression()}"
+                                  contentValueExpression="{selectionHolder.getSelectedItemsValueExpression()}"/>
+              </ui:baseAction>
+            </ui:IconButton>
+          </ui:items>
+          <ui:before>
+            <Component itemId="{AbstractContextMenu.DELETE_MENU_ITEM_ID}"/>
+          </ui:before>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:RepositoryToolbar>
+
+    <editor:CollectionRepositoryContextMenu>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <MenuSeparator/>
+            <MenuItem itemId="unlink">
+              <baseAction>
+                <cat:UnlinkAction folderValueExpression="{selectionHolder.getSelectedFolderValueExpression()}"
+                                  contentValueExpression="{selectionHolder.getSelectedRepositoryItemsValueExpression()}"/>
+              </baseAction>
+            </MenuItem>
+          </ui:items>
+          <ui:after>
+            <Component itemId="{AbstractContextMenu.DELETE_MENU_ITEM_ID}"/>
+          </ui:after>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:CollectionRepositoryContextMenu>
+
+  </ui:rules>
+
+</ui:NestedRulesPlugin>

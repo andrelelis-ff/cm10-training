@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMLocTaxonomy folder="/Settings/Taxonomies/Location" name="United Kingdom" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>United Kingdom</value>
+<children>
+<link href="London.xml" path="/Settings/Taxonomies/Location/London"/>
+</children>
+<externalReference>http://d.opencalais.com/genericHasher-1/cc88b155-205c-3676-a151-d45f473f0b16</externalReference>
+<postcode></postcode>
+<latitudeLongitude>56.60477008624608,-3.883528312499976</latitudeLongitude>
+</CMLocTaxonomy>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:ViewSettingsRadioGroupBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.livecontext.studio.components.product.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:u="exml:untyped"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        columns="1"
+        itemId="viewSettingsPropertyField">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+
+    import ext.form.field.Radio;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.viewSettingsRadioGroup";
+
+    public static const INHERITED_SETTING:String = "inherited";
+
+    public static const ENABLED_SETTING:String = "enabled";
+
+    public static const DISABLED_SETTING:String = "disabled";
+
+    private var config:ViewSettingsRadioGroup;
+    public var radioButtonFormName:String;
+
+    // called by generated constructor code
+    private function __initialize__(config:ViewSettingsRadioGroup):void {
+      radioButtonFormName = getNameId();
+    }
+
+    public native function ViewSettingsRadioGroup(config:ViewSettingsRadioGroup = null);
+
+    /**
+     * A property path expression leading to the Bean whose property is edited.
+     * This property editor assumes that this bean has a property 'properties'.
+     */
+    [Bindable]
+    public var bindTo:ValueExpression;
+
+    [Bindable]
+    public var forceReadOnlyValueExpression:ValueExpression;
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!---
+     The name of the sting property of the Bean to bind in this field.
+     The string property holds the id of the catalog product
+    -->
+    <fx:String id="propertyName">localSettings.shopNow</fx:String>
+
+    <!--label of the first radio button.
+    Default is resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMProductTeaser_settings_inherit') -->
+    <fx:String id="inheritLabel"/>
+  </fx:Declarations>
+
+  <local:plugins>
+    <editor:SetPropertyLabelPlugin bindTo="{config.bindTo}"
+                                   propertyName="{config.propertyName}"/>
+    <ui:BindPropertyPlugin componentProperty="value"
+                           bindTo="{getRadioGroupValueExpression()}"
+                           transformer="{function stateToRadio(state:String):Object {
+                               var radioValueObject:Object = {};
+                               radioValueObject[radioButtonFormName] = state;
+                               return radioValueObject;}
+                             }"
+                           reverseTransformer="{function radioToState(radio:Radio):String {
+                               return (radio ? radio[radioButtonFormName] : '');}
+                             }"
+                           bidirectional="true"/>
+  </local:plugins>
+  <local:items>
+    <Radio inputValue="{INHERITED_SETTING}"
+           itemId="{INHERITED_SETTING}"
+           boxLabel="{config.inheritLabel || resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMProductTeaser_settings_inherit')}">
+      <plugins>
+        <editor:BindDisablePlugin bindTo="{config.bindTo}"
+                                  forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+        <ui:BindVisibilityPlugin bindTo="{getInheritOptionVisibleExpression(config.bindTo)}"/>
+      </plugins>
+    </Radio>
+    <Radio inputValue="{ENABLED_SETTING}"
+           itemId="{ENABLED_SETTING}"
+
+           boxLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMProductTeaser_settings_enabled')}">
+    </Radio>
+    <Radio inputValue="{DISABLED_SETTING}"
+           itemId="{DISABLED_SETTING}"
+           boxLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMProductTeaser_settings_disabled')}">
+    </Radio>
+  </local:items>
+  <local:defaults>
+    <Radio name="{radioButtonFormName}"
+           hideLabel="true"
+           u:inGroup="true">
+      <plugins>
+        <editor:BindDisablePlugin bindTo="{config.bindTo}"
+                                  forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
+      </plugins>
+    </Radio>
+  </local:defaults>
+
+</local:ViewSettingsRadioGroupBase>

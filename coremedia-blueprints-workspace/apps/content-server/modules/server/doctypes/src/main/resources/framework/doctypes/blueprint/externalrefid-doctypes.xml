@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<DocumentTypeModel xmlns="http://www.coremedia.com/2008/documenttypes"
+                   xmlns:extensions="http://www.coremedia.com/2013/documenttypes-extensions"
+                   Name="contenthub-doctypes">
+  <ImportDocType Name="CMObject"/>
+  <DocTypeAspect TargetType="CMObject">
+    <!--
+      externalRefId is currently needed only for contentHub.
+      If you do not use the contentHub, you can spare it in your project.
+    -->
+    <StringProperty Name="externalRefId" Length="256" Index="true" extensions:observe="true"/>
+  </DocTypeAspect>
+</DocumentTypeModel>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMFolderProperties folder="/Sites/Calista/Germany/German/Editorial/Products" name="_folderProperties" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Editorial/Products/_folderProperties.xml" path="/Sites/Calista/United%20States/English/Editorial/Products/_folderProperties"/>
+</master>
+<contexts>
+<link href="../../Augmentation/%5BDEFAULT%5D%20Calista%20Spring%20Fashions.xml" path="/Sites/Calista/Germany/German/Augmentation/%5BDEFAULT%5D%20Calista%20Spring%20Fashions"/>
+</contexts>
+</CMFolderProperties>

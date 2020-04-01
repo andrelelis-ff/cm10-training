@@ -1,0 +1,22 @@
+@if $cm-include-taxonomy-filter-panel {
+
+  $_block: "cm-taxonomy-filter-panel";
+  $_block-node: "cm-taxonomy-node";
+
+  // overrides styles of com.coremedia.blueprint.studio.rendering.TaxonomyNodeBEMEntities
+  .#{$_block} {
+    .#{$_block-node} {
+      display: flex;
+      &__box {
+        overflow: hidden;
+        display: flex;
+      }
+      &__name {
+        flex: 1 auto; //IE11 needs flex-basis auto explicitly here
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+  }
+}

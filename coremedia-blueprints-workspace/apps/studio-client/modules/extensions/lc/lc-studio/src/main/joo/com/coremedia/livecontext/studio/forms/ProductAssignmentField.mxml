@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PropertyFieldGroup
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns="exml:ext.config" xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMVideo_productAssignments_title')}"
+        collapsed="false"
+        padding="6 6 6 0">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cap.content.Content;
+    import com.coremedia.cap.content.ContentPropertyNames;
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.productAssignmentField";
+
+    private var config:ProductAssignmentField;
+
+    public native function ProductAssignmentField(config:ProductAssignmentField = null);
+
+    /**
+     * Checks if the view type value matches the given string value.
+     * The string value may be in in CSV format.
+     * @param bindTo the ValueExpression that contains the content to check the view type value for
+     * @param viewTypes the view type names to compare in CSV format
+     */
+    private static function getVisibleForViewTypeValueExpression(bindTo:ValueExpression, viewTypes:String):ValueExpression {
+      return ValueExpressionFactory.createFromFunction(function ():Boolean {
+        var values:Array = viewTypes.split(",");
+        var viewTypeArray:Array = bindTo.extendBy(ContentPropertyNames.PROPERTIES + ".viewtype").getValue();
+        if (viewTypeArray === undefined) {
+          return undefined;
+        }
+
+        if (!viewTypeArray || viewTypeArray.length === 0) {
+          return false;
+        }
+
+        var viewType:Content = viewTypeArray[0];
+        for each(var vt:String in values) {
+          if (vt === viewType.getName()) {
+            return true;
+          }
+        }
+
+        return false;
+      });
+    }
+    ]]></fx:Script>
+  <editor:plugins>
+    <ui:BindVisibilityPlugin bindTo="{getVisibleForViewTypeValueExpression(config.bindTo, 'shoppable')}"/>
+  </editor:plugins>
+  <editor:items>
+    <editor:LinkListPropertyField linkType="{'CMTeasable'}"
+                                  itemId="default"
+                                  showThumbnails="true"
+                                  propertyName="timeLine.defaultTarget"
+                                  bindTo="{config.bindTo}"
+                                  maxCardinality="1">
+      <editor:linkSuggester>
+        <editor:SearchContentLinkSuggester contentValueExpression="{config.bindTo}"
+                                           linkTypeName="CMProductTeaser"/>
+      </editor:linkSuggester>
+    </editor:LinkListPropertyField>
+    <bpforms:TimelineForm/>
+  </editor:items>
+</editor:PropertyFieldGroup>

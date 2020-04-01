@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMHTML folder="/Sites/Chef Corp./Germany/German/Editorial/Site-Wide/Integration/External Embedding" name="Google Calendar HTML Fragment" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Site-Wide/Integration/External%20Embedding/Google%20Calendar%20HTMLa9b80493.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Site-Wide/Integration/External%20Embedding/Google%20Calendar%20HTML%20Fragment"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<description></description>
+<data grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>&lt;div class="cm-container cm-container--default" style="text-align: center;"&gt;</p> <p>&lt;iframe src="https://www.google.com/calendar/embed?src=985vmedifus31hgah8on15vtmc%40group.calendar.google.com&amp;ctz=Europe/Vienna" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"&gt;&lt;/iframe&gt;</p> <p> &lt;/ div&gt; </p> </div></data>
+</CMHTML>

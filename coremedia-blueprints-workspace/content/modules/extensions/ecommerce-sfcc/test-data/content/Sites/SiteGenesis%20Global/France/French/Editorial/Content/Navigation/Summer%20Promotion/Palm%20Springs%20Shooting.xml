@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/SiteGenesis Global/France/French/Editorial/Content/Navigation/Summer Promotion" name="Palm Springs Shooting" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Editorial/Content/Navigation/Summer%20Promotion/Palm%20Springs%20Shooting.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Navigation/Summer%20Promotion/Palm%20Springs%20Shooting"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Tournage de mode à Palm Springs</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Bonjour test </p> </div></teaserText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="Fashion%20shooting%20in%20desert%4779f523.xml" path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/Navigation/Summer%20Promotion/Fashion%20shooting%20in%20desert%20of%20palm%20springs%2E%201"/>
+<link href="Fashion%20shooting%20in%20desert%4779f524.xml" path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/Navigation/Summer%20Promotion/Fashion%20shooting%20in%20desert%20of%20palm%20springs%2E%202"/>
+<link href="Fashion%20shooting%20in%20desert%4779f525.xml" path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/Navigation/Summer%20Promotion/Fashion%20shooting%20in%20desert%20of%20palm%20springs%2E%203"/>
+<link href="Fashion%20shooting%20in%20desert%4779f526.xml" path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/Navigation/Summer%20Promotion/Fashion%20shooting%20in%20desert%20of%20palm%20springs%2E%204"/>
+</items>
+</CMCollection>

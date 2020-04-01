@@ -1,0 +1,35 @@
+//
+// Scaffolding
+// --------------------------------------------------
+
+
+body {
+  font-family: $cm-font-family-base;
+  font-size: $cm-font-size-base;
+  color: $cm-text-color;
+  line-height: $cm-line-height-base;
+}
+
+a {
+  text-decoration: none;
+  color: $cm-text-color;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Raleway, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}

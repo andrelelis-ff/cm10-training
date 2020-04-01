@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!---
+ A column object that displays the hidden status of a content as an icon.
+ This column expects that a data field is defined, providing
+ the content's hiddenStatus.
+-->
+
+<ui:IconColumn xmlns:fx="http://ns.adobe.com/mxml/2009"
+               xmlns:exml="http://www.jangaroo.net/exml/0.8"
+               xmlns:ui="exml:com.coremedia.cms.editor.sdk.config"
+               xmlns="exml:ext.config"
+               align="center"
+               stateId="{HiddenChannelColumn.STATUS_ID}"
+               dataIndex="{HiddenChannelColumn.STATUS_ID}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.Validation')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import ext.data.Model;
+    import ext.data.Store;
+
+    import mx.resources.ResourceManager;
+
+    private var config:HiddenChannelColumn;
+
+    public native function HiddenChannelColumn(config:HiddenChannelColumn = null);
+
+    public static const STATUS_ID:String = "hidden";
+
+    protected override function calculateIconCls(value:*, metadata:*, record:Model, rowIndex:Number, colIndex:Number, store:Store):String {
+      if (value) {
+        return resourceManager.getString('com.coremedia.icons.CoreIcons', 'hidden_channel');
+      }
+      return '';
+    }
+
+    protected override function calculateToolTipText(value:*, metadata:*, record:Model, rowIndex:Number, colIndex:Number, store:Store):String {
+      if (value) {
+        return ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.Validation', 'CMNavigation_hidden_text');
+      }
+    }
+
+    protected override function calculateIconText(value:*, metadata:*, record:Model, rowIndex:Number, colIndex:Number, store:Store):String {
+      if (value) {
+        return ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.Validation', 'CMNavigation_hidden_text');
+      }
+    }
+    ]]></fx:Script>
+</ui:IconColumn>

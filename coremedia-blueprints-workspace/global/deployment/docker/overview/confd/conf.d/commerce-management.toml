@@ -1,0 +1,12 @@
+[template]
+src   = "commerce-management.html.tmpl"
+dest  = "/usr/share/nginx/html/assets/commerce-management.html"
+keys  = [
+         "/commerce/sfcc/enabled",
+         "/commerce/sfcc/host",
+         "/commerce/hybris/enabled",
+         "/commerce/hybris/host",
+         "/commerce/wcs/enabled",
+         "/commerce/wcs/host",
+         "/commerce/wcs/version"
+]

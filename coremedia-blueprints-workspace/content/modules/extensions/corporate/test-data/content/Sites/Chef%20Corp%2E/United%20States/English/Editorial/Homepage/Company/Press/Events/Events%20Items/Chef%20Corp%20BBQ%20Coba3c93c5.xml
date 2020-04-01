@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Chef Corp./United States/English/Editorial/Homepage/Company/Press/Events/Events Items" name="Chef Corp BBQ Cookout Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Chef Corp BBQ Cookout</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Events.xml" path="/Settings/Taxonomies/Subject/Events"/>
+<link href="../../../../../../../../../../Settings/Taxonomies/Subject/Press.xml" path="/Settings/Taxonomies/Subject/Press"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>May is coming and it is high time for a good American Barbecue. Chef Corp. ups the ante by opening the event for professional cooks.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>May is coming and it is high time for a good American Barbecue. Chef Corp. ups the ante by opening the event for professional cooks who will be in contention for a free year of our Extended Service and Maintenance Plan. Join us on the first weekend of May at the Waveland Park in Chicago, Illinois and rate the ribs!</p><p>Chef Corp. ups the ante by opening the event for professional cooks who will be in contention for a free year of our Extended Service and Maintenance Plan. Join us on the first weekend of May at the Waveland Park in Chicago, Illinois and rate the ribs!</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/Chef%20Corp%20Charity%5e7192ff.xml" cmexport:path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Company/Press/Events/Events%20Items/Chef%20Corp%20Charity%20Golf%20Tournament%20Article">Chef Corp Charity Golf Tournament Article</a></p><p><br/></p><p>Join us on the first weekend of May at the Waveland Park in Chicago, Illinois and rate the ribs! May is coming and it is high time for a good American Barbecue. Chef Corp. ups the ante by opening the event for professional cooks who will be in contention for a free year of our Extended Service and Maintenance Plan. Join us on the first weekend of May at the Waveland Park in Chicago, Illinois and rate the ribs!</p><p>Chef Corp. ups the ante by opening the event for professional cooks who will be in contention for a free year of our Extended Service and Maintenance Plan. Join us on the first weekend of May at the Waveland Park in Chicago, Illinois and rate the ribs!</p></div></detailText>
+<pictures>
+<link href="../../../../../Assets/Pictures/Events/Chef%20Corp%20BBQ%20Cookout%20Picture.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Events/Chef%20Corp%20BBQ%20Cookout%20Picture"/>
+</pictures>
+<related>
+<link href="../../../Investor%20Relations/Events/Event%20Items/Interim%e93dcb3a.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Company/Investor%20Relations/Events/Event%20Items/Interim%20Report%20on%20the%20third%20quarter%20of%202019"/>
+<link href="../../../../Kitchen%20Dreams/Learn%20how%20Jacob%20made%20his%20dream%a19d28af.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Homepage/Kitchen%20Dreams/Learn%20how%20Jacob%20made%20his%20dream%20come%20true"/>
+</related>
+<authors>
+<link href="../../../../../Authors/David%20Fuller%20Person.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Authors/David%20Fuller%20Person"/>
+</authors>
+</CMArticle>

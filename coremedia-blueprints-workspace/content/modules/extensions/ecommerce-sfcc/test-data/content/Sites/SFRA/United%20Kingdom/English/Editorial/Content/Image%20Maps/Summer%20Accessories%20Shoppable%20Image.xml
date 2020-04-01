@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMImageMap folder="/Sites/SFRA/United Kingdom/English/Editorial/Content/Image Maps" name="Summer Accessories Shoppable Image" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="overlay">
+<Struct>
+<BooleanProperty Name="displayTitle">true</BooleanProperty>
+<BooleanProperty Name="displayDefaultPrice">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="teaserOverlay">
+<Struct>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/Teaser%20Styles/Light"/>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructListProperty Name="image-map">
+<Struct>
+<StringProperty Name="id">map-area-1</StringProperty>
+<StringProperty Name="coords">1595,926,2128,1486</StringProperty>
+<StringProperty Name="alt"/>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">false</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">dark-on-light</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Videos/Shoppable%20Summer%20Video/Products/Silver%20Earrings.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Silver%20Earrings"/>
+</Struct>
+<Struct>
+<StringProperty Name="id">map-area-0</StringProperty>
+<StringProperty Name="coords">966,405,1818,824</StringProperty>
+<StringProperty Name="alt"/>
+<StringProperty Name="rotation"/>
+<StringProperty Name="shape">rect</StringProperty>
+<StringProperty Name="target">_blank</StringProperty>
+<BooleanProperty Name="displayAsInlineOverlay">false</BooleanProperty>
+<StringProperty Name="inlineOverlayTheme">dark-on-light</StringProperty>
+<LinkProperty Name="linkedContent" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Videos/Shoppable%20Summer%20Video/Products/Summer%20Sunglasses.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Videos/Shoppable%20Summer%20Video/Products/Summer%20Sunglasses"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Summer Image Map</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Earrings.xml" path="/Settings/Taxonomies/Subject/Earrings"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Sunglasses.xml" path="/Settings/Taxonomies/Subject/Sunglasses"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center">Summer Accessories</p><p class="align--center">The new style in 2019</p></div></teaserText>
+<pictures>
+<link href="../../Pictures/Summer%20Accessories%20Fun.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Pictures/Summer%20Accessories%20Fun"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+</target>
+</CMImageMap>

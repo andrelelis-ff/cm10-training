@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<perso:EnumCondition
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:perso="exml:com.coremedia.personalization.ui.config"
+        conditionName="{resourceManager.getString('com.coremedia.blueprint.studio.NuggadStudioPlugin', 'p13n_context_nuggad_gender')}"
+        propertyName="nuggad.gender"
+        operators="{['eq']}"
+        operatorNames="{{
+                          eq: resourceManager.getString('com.coremedia.blueprint.studio.NuggadStudioPlugin', 'p13n_context_nuggad_gender_eq')
+                       }}"
+        value="{[
+                        [1, resourceManager.getString('com.coremedia.blueprint.studio.NuggadStudioPlugin', 'p13n_context_nuggad_gender_1')],
+                        [2, resourceManager.getString('com.coremedia.blueprint.studio.NuggadStudioPlugin', 'p13n_context_nuggad_gender_2')],
+                        [9, resourceManager.getString('com.coremedia.blueprint.studio.NuggadStudioPlugin', 'p13n_context_nuggad_gender_9')]]}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.NuggadStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.nuggad.nuggAdGenderCondition";
+
+    private var config:NuggAdGenderCondition;
+
+    public native function NuggAdGenderCondition(config:NuggAdGenderCondition = null);
+    ]]></fx:Script>
+
+</perso:EnumCondition>

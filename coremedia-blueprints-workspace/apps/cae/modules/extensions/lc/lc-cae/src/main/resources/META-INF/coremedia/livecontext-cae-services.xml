@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <import resource="classpath:/framework/spring/blueprint-services.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-handlers.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/links/bpbase-links-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/contentbean-services.xml"/>
+  <import resource="classpath:META-INF/coremedia/context-services.xml"/>
+
+  <bean id="productListSubstitutionService" class="com.coremedia.livecontext.product.ProductListSubstitutionService">
+    <property name="liveContextNavigationFactory" ref="liveContextNavigationFactory"/>
+  </bean>
+
+</beans>

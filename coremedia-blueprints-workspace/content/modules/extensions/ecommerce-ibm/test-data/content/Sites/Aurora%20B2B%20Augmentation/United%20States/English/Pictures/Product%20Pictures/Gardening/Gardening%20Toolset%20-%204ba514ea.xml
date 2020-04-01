@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Gardening" name="Gardening Toolset - An Overview Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1123;y=630;width=1765;height=2741</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=1136;y=840;width=1704;height=2272</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=1012;y=1012;width=2025;height=2025</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=790;y=1099;width=2457;height=1840</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=531;y=1173;width=3074;height=1728</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=1198;width=4000;height=1605</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=1580;width=4000;height=1000</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2808641975308642;y1=0.1574074074074074;x2=0.7222222222222222;y2=0.8425925925925926</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2839506172839506;y1=0.20987654320987653;x2=0.7098765432098766;y2=0.7777777777777778</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.25308641975308643;y1=0.25308641975308643;x2=0.7592592592592593;y2=0.7592592592592593</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.19753086419753085;y1=0.27469135802469136;x2=0.8117283950617284;y2=0.7345679012345679</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.13271604938271606;y1=0.2932098765432099;x2=0.9012345679012346;y2=0.7253086419753086</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2993827160493827;x2=1;y2=0.7006172839506173</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3950617283950617;x2=1;y2=0.6450617283950617</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Gardening Toolset</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Gardening Toolset</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>4000</height>
+<data md5="56c27c1dac6466c81aa4be3fd1dfc744" size="286254" href="../../../../../../../__blob/56c27c1dac6466c81aa4be3fd1dfc744.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

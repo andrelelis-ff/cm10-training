@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/SiteGenesis Global/France/French/Options/Viewtypes/CMVideo" name="shoppable" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Options/Viewtypes/CMVideo/shoppable.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Viewtypes/CMVideo/shoppable"/>
+</master>
+<description>Pour les vidéos shoppable</description>
+<layout>shoppable</layout>
+</CMViewtype>

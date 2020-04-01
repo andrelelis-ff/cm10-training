@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Calista/United States/English/Options/Settings" name="LiveContext" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="livecontext.connectionId">wcs1</StringProperty>
+<BooleanProperty Name="livecontext.contentLed">true</BooleanProperty>
+<BooleanProperty Name="livecontext.policy.commerce-category-links">true</BooleanProperty>
+<BooleanProperty Name="p13n-dynamic-includes-enabled">false</BooleanProperty>
+<BooleanProperty Name="livecontext.manageHeader">true</BooleanProperty>
+<BooleanProperty Name="livecontext.manageFooter">true</BooleanProperty>
+<BooleanProperty Name="livecontext.manageFooterNavigation">true</BooleanProperty>
+<StructProperty Name="livecontext.store.config">
+<Struct>
+<StringProperty Name="currency">USD</StringProperty>
+<StringProperty Name="config.id">calista</StringProperty>
+<StringProperty Name="store.name">CalistaESite</StringProperty>
+</Struct>
+</StructProperty>
+<LinkProperty Name="cartAction" LinkType="coremedia:///cap/contenttype/CMAction" xlink:href="coremedia:///cap/resources/Actions/CartAction.xml" cmexport:path="/Sites/Calista/United%20States/English/Options/Settings/Actions/CartAction"/>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

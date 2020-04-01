@@ -1,0 +1,103 @@
+//
+// Slick Carousel
+// --------------------------------------------------
+
+
+.#{$cm-slick-carousel-prefix} {
+  //reset inner z-index of .slick-prev to work with outer elements like navigation
+  z-index: 0;
+
+  // prevents showing all slider content before initialisation, just show the first item
+  &__item {
+    display: none;
+
+    &:first-child {
+      display: block;
+    }
+  }
+
+
+  // left right arrows
+  @if $cm-slick-carousel-custom-arrows-enabled {
+    // show left/right icons as arrows
+    .slick-arrow {
+      &::before {
+        display: block;
+        height: 24px;
+        width: 24px;
+        background-size: cover;
+      }
+    }
+
+    .slick-prev {
+      &::before {
+        background-image: url(../../img/arrow-prev.svg);
+      }
+    }
+
+    .slick-next {
+      &::before {
+        background-image: url(../../img/arrow-next.svg);
+      }
+    }
+  }
+
+  &--inner-arrows {
+    .slick-arrow {
+      top: 0;
+      bottom: 0;
+      height: auto;
+      transform: none;
+      width: 5%;
+
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .slick-prev {
+      z-index: 1; // otherwise the prev-arrow is behind the slides
+      left: 0;
+
+      @if $cm-slick-carousel-custom-arrows-enabled {
+        &:before {
+          background-image: url(../../img/arrow-prev-inner.svg);
+        }
+        &:hover {
+          &:before {
+            background-image: url(../../img/arrow-prev-inner-hover.svg);
+          }
+        }
+      }
+    }
+
+    .slick-next {
+      right: 0;
+
+      @if $cm-slick-carousel-custom-arrows-enabled {
+        &:before {
+          background-image: url(../../img/arrow-next-inner.svg);
+        }
+        &:hover {
+          &:before {
+            background-image: url(../../img/arrow-next-inner-hover.svg);
+          }
+        }
+      }
+    }
+  }
+
+  // fixes flickering in IE11 if a video is played in an invisible slide
+  // because slick-current is set too early (before the transition is finished)
+  // we need to add a transitioning css class in JavaScript
+  .slick-slide:not(.slick-current) video {
+    visibility: hidden;
+  }
+
+  &--transitioning .slick-slide:not(.slick-current) video {
+    visibility: visible;
+  }
+}

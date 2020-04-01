@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
+
+  <description>
+    Enables SolrSearch with personalization features.
+  </description>
+
+  <import resource="personalization-collection.xml"/>
+
+  <bean id="solrContextualSearchPreprocessor"
+        class="com.coremedia.blueprint.personalization.search.SolrContextualSearchPreprocessor">
+    <property name="searchPreprocessor" ref="searchFunctionPreprocessor"/>
+    <property name="contextCollection" ref="contextCollection"/>
+  </bean>
+
+  <customize:replace id="personalizationSearchCustomizer"
+                     bean="solrSearchQueryBuilder" property="searchPreprocessor"
+                     custom-ref="solrContextualSearchPreprocessor"/>
+
+  <bean class="com.coremedia.personalization.search.SearchFunctionPreprocessor" id="searchFunctionPreprocessor">
+    <property name="functions">
+      <map>
+        <entry key="userKeywords">
+          <bean class="com.coremedia.personalization.search.solr.SolrScoredKeys">
+            <property name="defaultLimit" value="5"/>
+            <property name="defaultThreshold" value="0"/>
+            <property name="defaultContextName" value="keyword"/>
+            <property name="defaultField" value="keywords"/>
+          </bean>
+        </entry>
+        <entry key="userVisitedPages">
+          <bean class="com.coremedia.blueprint.personalization.search.SolrLastVisitedIDs">
+            <property name="defaultContextName" value="last_visited"/>
+            <property name="defaultField" value="id"/>
+          </bean>
+        </entry>
+        <entry key="userSegments">
+          <bean class="com.coremedia.personalization.search.solr.SolrSegments"/>
+        </entry>
+        <entry key="userSegmentTaxonomies">
+          <bean class="com.coremedia.blueprint.personalization.search.SolrSegmentTaxonomies">
+            <property name="defaultContextName" value="segment"/>
+            <property name="defaultField" value="subjecttaxonomy"/>
+            <property name="contentRepository" ref="contentRepository"/>
+          </bean>
+        </entry>
+        <entry key="contextProperty">
+          <bean class="com.coremedia.personalization.search.solr.SolrGeneralProperty"/>
+        </entry>
+      </map>
+    </property>
+  </bean>
+
+</beans>

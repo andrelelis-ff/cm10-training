@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Aurora Augmentation/United States/English/Editorial/Content/Eveningwear" name="Eveningwear Trends" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Teaser%20Styles/Light"/>
+<IntProperty Name="positionY">42</IntProperty>
+<IntProperty Name="width">56</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Eveningwear Trends</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Eveningwear.xml" path="/Settings/Taxonomies/Subject/Eveningwear"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-2 align--center">Check out our eveningwear trends for 2018</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Fashion to me has become very disposable; I wanted to get back to craft, to clothes that could last. My job is to bring out in people what they wouldn't dare do themselves. That is the key of this collection, being yourself. Don't be into trends. Don't make fashion own you, but you decide what you are, what you want to express by the way you dress and the way to live. Luxury must be comfortable, otherwise it is not luxury. I'm an accomplice to helping women get what they want.<br/></p></div></detailText>
+<pictures>
+<link href="Luigi%20Valenti%20Mid%20Length%20Cocktai29b6722e.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Eveningwear/Luigi%20Valenti%20Mid%20Length%20Cocktail%20Dress%20%28shutterstock_55370716%29"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../Authors/Charlotte%20May%20Person.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Authors/Charlotte%20May%20Person"/>
+</authors>
+</CMArticle>

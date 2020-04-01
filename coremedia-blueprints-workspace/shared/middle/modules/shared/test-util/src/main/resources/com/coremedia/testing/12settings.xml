@@ -1,0 +1,10 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <BooleanProperty Name="father">true</BooleanProperty>
+  <StructProperty Name="elasticSocial">
+    <Struct>
+      <BooleanProperty Name="enabled">false</BooleanProperty>
+      <IntProperty Name="anotherPort">81</IntProperty>
+      <BooleanProperty Name="inheritedFromFather">true</BooleanProperty>
+    </Struct>
+  </StructProperty>
+</Struct>

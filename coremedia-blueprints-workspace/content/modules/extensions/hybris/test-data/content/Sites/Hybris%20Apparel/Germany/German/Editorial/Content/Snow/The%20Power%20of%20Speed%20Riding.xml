@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/Germany/German/Editorial/Content/Snow" name="The Power of Speed Riding" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Snow/The%20Power%20of%20Speed%20Riding.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Content/Snow/The%20Power%20of%20Speed%20Riding"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Die Macht der Speed ​​Riding</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Speed%20Riding.xml" path="/Settings/Taxonomies/Subject/Speed%20Riding"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Beschleunigen Sie den neuen Extremsport Reiten Kombination von Skifahren und Paragliding. </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Speedriding ist eine neue Extremsportart Kombination von Skifahren und Paragliding. Die Grundlagen sind einfach- auf Ihrem Himmel setzen, schnallen Sie sich zu einem offenen Flügelförmigen Baldachin und starten Sie die Ski-Piste. Es gibt keine Grenzen, wie steil der Hang ist, oder wie groß die Sprünge sind. Wenn es zu steil gehen Sie nur airborn und manövrieren sich nach unten, bis Sie den Schnee wieder berühren. </p> <p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Freestyle%20Snowboard%20108295.xml" cmexport:path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Products/Freestyle%20Snowboard%20108295">Bandana 300515779</a><br/></p> <p> Speedriding hat seine Wurzeln in den 70er Jahren in Frankreich, als die Bergsteiger zu experimentieren begann, sich von steilen Berghängen startet beim Skifahren. Sehr schnell entwickelte sich die Fallschirme wie Vordächer Flügel- ähnlich denen in Paragliding verwendet. Die erfolgreiche Idee nahm in den USA in den 90er Jahren aus. Seitdem immer mehr Adrenalin-Junkies, die geliebt Skifahren diese wunderbare Extremsport zu entdecken und es wurde populär beenden. Die heutige Überdachungen sind für Speedflug und Speedriding speziell. </p> <p> Speedriding ist ähnlich Speedflying. Der Unterschied zwischen den beiden ist in der Startmethode. Im Geschwindigkeit fliegen Sie sich von den Füßen zu starten, in Geschwindigkeit Reiten Sie es Himmel tun tragen, die Sie sich auf Ihrem Weg zu halten bekommen, auf dem schneebedeckten Skifahren, wenn Sie es nicht haben genug Höhe zu überqueren, oder einfach nur für Spaß. </p> </div></detailText>
+<pictures>
+<link href="Speed%20Riding%20Touch%20Down.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Content/Snow/Speed%20Riding%20Touch%20Down"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../Authors/Michelle%20Villegas%20Person.xml" path="/Sites/Hybris%20Apparel/Germany/German/Editorial/Authors/Michelle%20Villegas%20Person"/>
+</authors>
+</CMArticle>

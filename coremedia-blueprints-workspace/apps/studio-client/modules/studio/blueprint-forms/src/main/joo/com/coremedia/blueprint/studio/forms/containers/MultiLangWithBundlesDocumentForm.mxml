@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentForm
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_locale_title')}"
+        itemId="locale"
+        autoHide="true">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.multiLangWithBundlesDocumentForm";
+
+    private var config:MultiLangWithBundlesDocumentForm;
+
+    public native function MultiLangWithBundlesDocumentForm(config:MultiLangWithBundlesDocumentForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:SiteInfo/>
+    <editor:PropertyFieldGroup
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_locale_title')}"
+            itemId="localizationForm"
+            collapsed="false">
+      <editor:items>
+        <editor:AvailableLocalesPropertyField propertyName="locale"/>
+        <editor:LinkListPropertyField propertyName="master"/>
+        <editor:MasterVersionPropertyField propertyName="masterVersion"/>
+        <editor:SynchronizationPropertyField propertyName="ignoreUpdates"/>
+        <editor:DerivedContentsList showThumbnails="true"/>
+      </editor:items>
+    </editor:PropertyFieldGroup>
+    <editor:PropertyFieldGroup
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_ResourceBundles_label')}"
+            itemId="resourceBundles">
+      <editor:items>
+        <editor:LinkListPropertyField propertyName="resourceBundles2"
+                                      hideLabel="true"/>
+      </editor:items>
+    </editor:PropertyFieldGroup>
+  </editor:items>
+
+</editor:DocumentForm>

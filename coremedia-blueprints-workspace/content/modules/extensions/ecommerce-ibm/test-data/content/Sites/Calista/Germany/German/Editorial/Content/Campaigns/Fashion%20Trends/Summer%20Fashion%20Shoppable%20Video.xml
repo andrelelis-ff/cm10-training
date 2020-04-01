@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Calista/Germany/German/Editorial/Content/Campaigns/Fashion Trends" name="Summer Fashion Shoppable Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Editorial/Content/Campaigns/Fashion%20Trends/Summer%20Fashion%20Shoppable%20Video.xml" path="/Sites/Calista/United%20States/English/Editorial/Content/Campaigns/Fashion%20Trends/Summer%20Fashion%20Shoppable%20Video"/>
+</master>
+<viewtype>
+<link href="../../../../Options/Viewtypes/CMVideo/shoppable.xml" path="/Sites/Calista/Germany/German/Options/Viewtypes/CMVideo/shoppable"/>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="playerSettings">
+<Struct>
+<BooleanProperty Name="autoplay">true</BooleanProperty>
+<BooleanProperty Name="loop">true</BooleanProperty>
+<BooleanProperty Name="muted">true</BooleanProperty>
+<BooleanProperty Name="hideControls">true</BooleanProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="teaserOverlay">
+<Struct>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/Calista/Germany/German/Options/Settings/Teaser%20Styles/Light"/>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<IntProperty Name="positionY">41</IntProperty>
+<IntProperty Name="width">70</IntProperty>
+</Struct>
+</StructProperty>
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+<StructProperty Name="teaserSettings">
+<Struct>
+<BooleanProperty Name="renderLinkToDetailPage">false</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Die neue Sommerkollektion</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Summer.xml" path="/Settings/Taxonomies/Subject/Summer"/>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Fashion%20Trends.xml" path="/Settings/Taxonomies/Subject/Fashion%20Trends"/>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Fashion%20Tag.xml" path="/Settings/Taxonomies/Subject/Fashion%20Tag"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Die neue Sommerkollektion</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="align--center p--heading-1">The New Summer Collection</p> <p class="align--center">Get your fresh look for this season</p> </div></teaserText>
+<pictures>
+<link href="Summer%20Fashion%20Shoppable%20Video%20Preview%20Picture.xml" path="/Sites/Calista/Germany/German/Editorial/Content/Campaigns/Fashion%20Trends/Summer%20Fashion%20Shoppable%20Video%20Preview%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="fdac885691dfc8d802c8c647eb49f107" size="15077323" href="../../../../../../../../__blob/fdac885691dfc8d802c8c647eb49f107.blob" mimetype="video/mp4"/>
+<timeLine>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="sequences">
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Products/Albini%20Summer%20Hat.xml" cmexport:path="/Sites/Calista/Germany/German/Editorial/Products/Albini%20Summer%20Hat"/>
+<IntProperty Name="startTimeMillis">0</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Products/Red%20Top.xml" cmexport:path="/Sites/Calista/Germany/German/Editorial/Products/Red%20Top"/>
+<IntProperty Name="startTimeMillis">6000</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Products/Yellow%20Sandals.xml" cmexport:path="/Sites/Calista/Germany/German/Editorial/Products/Yellow%20Sandals"/>
+<IntProperty Name="startTimeMillis">6000</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Products/Jeans%20Dress.xml" cmexport:path="/Sites/Calista/Germany/German/Editorial/Products/Jeans%20Dress"/>
+<IntProperty Name="startTimeMillis">9000</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Products/Albini%20Summer%20Hat.xml" cmexport:path="/Sites/Calista/Germany/German/Editorial/Products/Albini%20Summer%20Hat"/>
+<IntProperty Name="startTimeMillis">9000</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Products/Flower%20Dress.xml" cmexport:path="/Sites/Calista/Germany/German/Editorial/Products/Flower%20Dress"/>
+<IntProperty Name="startTimeMillis">12000</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Products/Leather%20Handbag.xml" cmexport:path="/Sites/Calista/Germany/German/Editorial/Products/Leather%20Handbag"/>
+<IntProperty Name="startTimeMillis">12000</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Products/White%20Blouse.xml" cmexport:path="/Sites/Calista/Germany/German/Editorial/Products/White%20Blouse"/>
+<IntProperty Name="startTimeMillis">19000</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Products/Albini%20Pleated%20Mini%20Skirt.xml" cmexport:path="/Sites/Calista/Germany/German/Editorial/Products/Albini%20Pleated%20Mini%20Skirt"/>
+<IntProperty Name="startTimeMillis">19000</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Products/Versatil%20Sunglasses.xml" cmexport:path="/Sites/Calista/Germany/German/Editorial/Products/Versatil%20Sunglasses"/>
+<IntProperty Name="startTimeMillis">25000</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Products/Summer%20Sunglasses.xml" cmexport:path="/Sites/Calista/Germany/German/Editorial/Products/Summer%20Sunglasses"/>
+<IntProperty Name="startTimeMillis">25000</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Products/Striped%20Dress.xml" cmexport:path="/Sites/Calista/Germany/German/Editorial/Products/Striped%20Dress"/>
+<IntProperty Name="startTimeMillis">30000</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="link" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Products/Jeans%20Dress.xml" cmexport:path="/Sites/Calista/Germany/German/Editorial/Products/Jeans%20Dress"/>
+<IntProperty Name="startTimeMillis">30000</IntProperty>
+</Struct>
+</StructListProperty>
+<LinkProperty Name="defaultTarget" LinkType="coremedia:///cap/contenttype/CMTeasable" xlink:href="coremedia:///cap/resources/../../Startpage/Gender%20Specific%20Teaser.xml" cmexport:path="/Sites/Calista/Germany/German/Editorial/Content/Startpage/Gender%20Specific%20Teaser"/>
+</Struct>
+</timeLine>
+<asset>
+</asset>
+</CMVideo>

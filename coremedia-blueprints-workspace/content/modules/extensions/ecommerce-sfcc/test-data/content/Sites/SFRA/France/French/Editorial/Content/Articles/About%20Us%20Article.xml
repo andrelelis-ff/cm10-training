@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/SFRA/France/French/Editorial/Content/Articles" name="About Us Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../United%20Kingdom/English/Editorial/Content/Articles/About%20Us%20Article.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Articles/About%20Us%20Article"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Qui sommes-nous</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1"> TOUT A COMMENCÉ AVEC UNE SÉRIE D'OBSERVATIONS: </p> <p> Le merchandising e-commerce et l'innovation marketing sont ce qui génèrent des revenus, mais la plupart des opérations dépensent 80% de leurs budgets tout en maintenant l'infrastructure actuelle. <br/> Le rythme du commerce électronique s'accélère chaque jour, mais la plupart des opérations se bousculent pour rester immobiles. <br/> Les merchandisers et les spécialistes du marketing sont extrêmement frustrés, passant plus de temps à rechercher des fournisseurs externalisés et des organisations informatiques internes qu'à commercialiser et à commercialiser leurs propres entreprises. </p> <p><br/> Il devait y avoir une meilleure façon ... </p> <p> Donc, en 2004, nous avons décidé de le trouver. La vision - alors et maintenant - était claire: mettre sur le marché une solution eCommerce de classe entreprise qui mettrait plus de puissance et d'innovation dans les mains des marchands et, en même temps, supprimera les coûts techniques, les risques et les complexités de la gestion d'une opération de commerce électronique . Nous avons pris ce que nous savions de la grande commercialisation de commerce électronique (nos fondateurs ont été en commerce électronique depuis 1994) et nous avons appliqué les progrès alors émergeants dans les architectures Software-as-A-Service et l'informatique de grille dynamique. Ensuite, nous avons travaillé dur. Nous sommes restés en retard. Nous avons bu beaucoup de café. Et finalement, à la fin de 2005, nous avons livré la première plate-forme de commerce électronique à la demande sur le marché. </p> <p class="p--heading-2"> NOS CLIENTS NE PEUVENT PAS ÊTRE HEUREUX AVEC LES RÉSULTATS. </p> <p> Avec Salesforce Commerce Cloud eCommerce, ils consacrent plus de temps à la commercialisation et au marketing. Ils contrôlent entièrement leur site, apportent des modifications et lancent de nouvelles vitrines quand ils le souhaitent. Ils passent plus de temps à développer leurs propres innovations propriétaires (par rapport à la fonctionnalité de création de produits). Ils reçoivent en permanence de nouvelles mises à niveau logicielles de Salesforce Commerce Cloud. Et ils ne se soucient jamais de la disponibilité, de la disponibilité et de la sécurité du site. </p> <p> Bref, ils sont gratuits. Libre de vendre. Gratuit à grandir. Libre d'innover. Libre de changer. N'est-ce pas ainsi que le commerce électronique est supposé être? </p> <p> Pour plus d'informations, veuillez consulter nos pages À propos de nous et Service à la clientèle. </p> </div></detailText>
+<pictures>
+<link href="../../Pictures/About%20Us.xml" path="/Sites/SFRA/France/French/Editorial/Pictures/About%20Us"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+</CMArticle>

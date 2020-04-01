@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PropertyFieldGroup
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns="exml:ext.config"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:bppm="exml:com.coremedia.blueprint.base.pagegrid.config" xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Placements_label')}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.studio.forms.columns.ValidityColumn;
+    import com.coremedia.blueprint.studio.util.ViewtypeRenderer;
+    import com.coremedia.ecommerce.studio.tree.augmentedCategoryTreeRelation;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.commerceAugmentedPageGridForm";
+
+    private var config:CommerceAugmentedPageGridForm;
+
+    public native function CommerceAugmentedPageGridForm(config:CommerceAugmentedPageGridForm = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <!---
+     Set true to display the inheritance information even if bindTo is considered to be the source of the local pagegrid. Default: false.
+    -->
+    <fx:Boolean id="showLocal"/>
+
+    <fx:String id="pageGridPropertyName"/>
+
+    <fx:String id="fallbackPageGridPropertyName"/>
+  </fx:Declarations>
+
+  <editor:plugins exml:mode="append">
+    <ui:AddQuickTipPlugin
+            text="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'AugmentedCategory_help_productpagegrid_tooltip')}"/>
+  </editor:plugins>
+
+  <editor:items>
+    <bppm:PageGridPropertyField propertyName="{config.pageGridPropertyName}"
+                                fallbackPropertyName="{config.fallbackPageGridPropertyName}"
+                                hideLabel="true"
+                                showLocal="{config.showLocal}"
+                                pageTreeRelation="{augmentedCategoryTreeRelation}">
+      <bppm:fields>
+        <ui:DataField name="{ValidityColumn.STATUS_ID}"
+                      ifUnreadable=""
+                      mapping=""
+                      convert_="{ValidityColumn.convert}"/>
+        <ui:DataField name="viewtypeStatus"
+                      ifUnreadable=""
+                      mapping=""
+                      convert_="{ViewtypeRenderer.convert}"/>
+      </bppm:fields>
+      <bppm:columns>
+        <editor:ThumbnailColumn/>
+        <editor:TypeIconColumn/>
+        <editor:NameColumn/>
+        <bpforms:ValidityColumn/>
+        <GridColumn stateId="viewTypeUrl"
+                    width="40"
+                    sortable="false"
+                    dataIndex="viewtypeStatus"
+                    fixed="true"
+                    renderer="{ViewtypeRenderer.renderer}"/>
+        <editor:StatusColumn/>
+      </bppm:columns>
+      <bppm:placementRowWidgetItems>
+        <bpforms:VisibilityConfigurationForm/>
+      </bppm:placementRowWidgetItems>
+    </bppm:PageGridPropertyField>
+  </editor:items>
+
+</editor:PropertyFieldGroup>

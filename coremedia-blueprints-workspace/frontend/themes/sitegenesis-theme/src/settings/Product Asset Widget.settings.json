@@ -1,0 +1,7 @@
+{
+  "productAssets": {
+    "zoom": {
+      "containerSelector": ".pdp-main"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTaxonomy folder="/Settings/Taxonomies/Subject" name="Target Group" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Target Group</value>
+<children>
+<link href="Job%20Seekers.xml" path="/Settings/Taxonomies/Subject/Job%20Seekers"/>
+<link href="Investors.xml" path="/Settings/Taxonomies/Subject/Investors"/>
+<link href="Consumers.xml" path="/Settings/Taxonomies/Subject/Consumers"/>
+<link href="Press.xml" path="/Settings/Taxonomies/Subject/Press"/>
+<link href="Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</children>
+<externalReference></externalReference>
+</CMTaxonomy>

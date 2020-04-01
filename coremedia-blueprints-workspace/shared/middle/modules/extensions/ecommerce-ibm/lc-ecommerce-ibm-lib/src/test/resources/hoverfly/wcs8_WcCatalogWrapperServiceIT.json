@@ -1,0 +1,332 @@
+{
+  "data" : {
+    "pairs" : [ {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/coremedia/storeinfo"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : { },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"serverTimezoneId\":\"Europe\\/Paris\",\"wcsVersion\":\"8.0\",\"stores\":{\"AuroraB2BESite\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store B2B Direct\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838085\",\"defaultCatalogId\":\"3074457345616676718\"},\"CalistaESite\":{\"defaultCatalog\":\"Calista Spring Fashions\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838086\",\"defaultCatalogId\":\"3074457345616676768\"},\"AuroraB2BStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838034\",\"defaultCatalogId\":\"3074457345616676668\"},\"AuroraStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715837984\",\"defaultCatalogId\":\"3074457345616676668\"},\"Extended Sites Hub\":{\"defaultCatalog\":\"\",\"catalogs\":{},\"storeId\":\"715837884\",\"defaultCatalogId\":null},\"Extended Sites Catalog Asset Store\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715837934\",\"defaultCatalogId\":\"3074457345616676668\"},\"AuroraESite\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store Consumer Direct\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838084\",\"defaultCatalogId\":\"3074457345616676719\"},\"CMStorefrontAssetStore\":{\"defaultCatalog\":\"Extended Sites Catalog Asset Store\",\"catalogs\":{\"Extended Sites Catalog Asset Store B2B Direct\":\"3074457345616676718\",\"Calista Spring Fashions\":\"3074457345616676768\",\"Extended Sites Catalog Asset Store Consumer Direct\":\"3074457345616676719\",\"Extended Sites Catalog Asset Store\":\"3074457345616676668\"},\"storeId\":\"715838584\",\"defaultCatalogId\":\"3074457345616676668\"}}}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "3042" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Fri, 15 Feb 2019 16:12:19 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=00003mnkZafgL2X8T5NPnEGh2Uo:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/coremedia/languagemap"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : { },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"ro\":\"-21\",\"zh\":\"-8\",\"pt_BR\":\"-6\",\"pl_PL\":\"-22\",\"en_US\":\"-1\",\"ja_JP\":\"-10\",\"ru_RU\":\"-20\",\"zh_CN\":\"-7\",\"ro_RO\":\"-21\",\"de\":\"-3\",\"zh_TW\":\"-8\",\"fr\":\"-2\",\"es_ES\":\"-5\",\"it\":\"-4\",\"ko_KR\":\"-9\",\"ko\":\"-9\",\"it_IT\":\"-4\",\"de_DE\":\"-3\",\"ar\":\"-23\",\"ar_EG\":\"-23\",\"fr_FR\":\"-2\",\"pl\":\"-22\",\"pt\":\"-6\",\"en\":\"-1\",\"ru\":\"-20\",\"es\":\"-5\",\"ja\":\"-10\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "323" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Fri, 15 Feb 2019 16:12:21 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000NVjxlL8pVLTP3EBnOHwYoKU:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/search/resources/store/715838084/productview/CLA022_2203"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com:3737"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "profileName" : [ {
+            "matcher" : "exact",
+            "value" : "IBM_findProductByPartNumber_Summary"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"recordSetTotal\":1,\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/CLA022_2203?profileName=IBM_findProductByPartNumber_Summary&currency=USD&langId=-1\",\"recordSetCount\":1,\"catalogEntryView\":[{\"hasSingleSKU\":true,\"catalogEntryTypeCode\":\"ProductBean\",\"disallowRecurringOrder\":\"1\",\"parentCatalogGroupID\":[\"3074457345616676668_3074457345616676697\",\"3074457345616676719_3074457345616676697\",\"3074457345616676768_3074457345616676697\"],\"price_USD\":\"575.0\",\"singleSKUCatalogEntryID\":\"3074457345616679332\",\"uniqueID\":\"3074457345616679331\",\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:3737\\/search\\/resources\\/store\\/715838084\\/productview\\/byId\\/3074457345616679331\",\"price\":[{\"description\":\"L\",\"value\":\"600.0\",\"usage\":\"Display\",\"currency\":\"USD\"},{\"description\":\"O\",\"value\":\"\",\"usage\":\"Offer\",\"currency\":\"USD\"}],\"thumbnail\":\"\\/wcsstore\\/ExtendedSitesCatalogAssetStore\\/images\\/catalog\\/electronics\\/cla022_laptops\\/200x310\\/cla022_2203.jpg\",\"shortDescription\":\"A lightweight and portable laptop with excellent battery life.\",\"manufacturer\":\"DVR Technics\",\"name\":\"Travel Laptop\",\"subscriptionTypeCode\":\"NONE\",\"buyable\":\"true\",\"attributes\":[{\"storeDisplay\":false,\"values\":[{\"sequence\":\"1.00000\",\"value\":\"2 GB\",\"uniqueID\":\"7741124012283334919\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"CLA022_2203\"}],\"sequence\":\".00000\",\"name\":\"Memory\",\"uniqueID\":\"7741124012283333417\",\"usage\":\"Descriptive\",\"comparable\":false,\"displayable\":true,\"identifier\":\"Memory\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\".00000\",\"value\":\"0\",\"uniqueID\":\"0\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"0\"}],\"sequence\":\".00000\",\"name\":\"Memory\",\"uniqueID\":\"7741124012283333421\",\"usage\":\"Defining\",\"comparable\":true,\"displayable\":true,\"identifier\":\"ComputersLaptopsMemory\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\".00000\",\"value\":\"0\",\"uniqueID\":\"0\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"0\"}],\"sequence\":\"1.00000\",\"name\":\"Brand\",\"uniqueID\":\"7741124012283333419\",\"usage\":\"Defining\",\"comparable\":false,\"displayable\":true,\"identifier\":\"ComputersLaptopsBrand\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"1.00000\",\"value\":\"1 lb\",\"uniqueID\":\"7741124012283334931\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"CLA022_2203\"}],\"sequence\":\"2.00000\",\"name\":\"Weight\",\"uniqueID\":\"7741124012283333424\",\"usage\":\"Descriptive\",\"comparable\":false,\"displayable\":true,\"identifier\":\"Weight\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\".00000\",\"value\":\"0\",\"uniqueID\":\"0\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"0\"}],\"sequence\":\"2.00000\",\"name\":\"Weight\",\"uniqueID\":\"7741124012283333422\",\"usage\":\"Defining\",\"comparable\":true,\"displayable\":true,\"identifier\":\"ComputersLaptopsWeight\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\"3.00000\",\"value\":\"6 hours\",\"uniqueID\":\"7741124012283334928\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"CLA022_2203\"}],\"sequence\":\"3.00000\",\"name\":\"Battery Life\",\"uniqueID\":\"7741124012283333423\",\"usage\":\"Descriptive\",\"comparable\":false,\"displayable\":true,\"identifier\":\"Battery Life\",\"facetable\":false,\"searchable\":false},{\"storeDisplay\":false,\"values\":[{\"sequence\":\".00000\",\"value\":\"0\",\"uniqueID\":\"0\",\"unitID\":\"\",\"unitOfMeasure\":\"\",\"identifier\":\"0\"}],\"sequence\":\"3.00000\",\"name\":\"Battery Life\",\"uniqueID\":\"7741124012283333420\",\"usage\":\"Defining\",\"comparable\":true,\"displayable\":true,\"identifier\":\"ComputersLaptopsBattery Life\",\"facetable\":false,\"searchable\":false}],\"storeID\":\"715837934\",\"partNumber\":\"CLA022_2203\"}],\"recordSetComplete\":\"true\",\"recordSetStartNumber\":0,\"recordSetTotalMatches\":1,\"metaData\":{\"price\":\"2\"},\"resourceName\":\"productview\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-transform, max-age=3600" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "3797" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Fri, 15 Feb 2019 16:12:21 GMT" ],
+          "Expires" : [ "Fri, 15 Feb 2019 17:12:21 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838084/price"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "forUser" : [ {
+            "matcher" : "exact",
+            "value" : "mr.unknown"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "partNumber" : [ {
+            "matcher" : "exact",
+            "value" : "CLA022_2203"
+          } ],
+          "q" : [ {
+            "matcher" : "exact",
+            "value" : "byPartNumbers"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 400,
+        "body" : "{\"errors\":[{\"errorMessage\":\"The following finder exception has occurred during processing: \\\"javax.ejb.ObjectNotFoundException: forUserId mr.unknown does not exist\\\".\",\"errorParameters\":\"\",\"errorCode\":\"The following finder exception has occurred during processing: \\\"javax.ejb.ObjectNotFoundException: forUserId mr.unknown does not exist\\\".\",\"errorKey\":\"The following finder exception has occurred during processing: \\\"javax.ejb.ObjectNotFoundException: forUserId mr.unknown does not exist\\\".\"}]}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "496" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Fri, 15 Feb 2019 16:12:21 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000wVhnwAOMiEcayQ-srPRNPuf:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838084/price"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "USD"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "partNumber" : [ {
+            "matcher" : "exact",
+            "value" : "CLA022_2203"
+          } ],
+          "q" : [ {
+            "matcher" : "exact",
+            "value" : "byPartNumbers"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:80\\/wcs\\/resources\\/store\\/715838084\\/price?q=byPartNumbers&partNumber=CLA022_2203&currency=USD&langId=-1\",\"EntitledPrice\":[{\"contractId\":\"4000000000000000005\",\"UnitPrice\":[{\"price\":{\"value\":575.00,\"currency\":\"USD\"},\"quantity\":{\"uom\":\"C62\",\"value\":1.0}}],\"productId\":\"3074457345616679331\",\"partNumber\":\"CLA022_2203\"}],\"resourceName\":\"price\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "398" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Fri, 15 Feb 2019 16:12:21 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=0000QZj52UgnYHO99octqwk_0bd:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    }, {
+      "request" : {
+        "path" : [ {
+          "matcher" : "exact",
+          "value" : "/wcs/resources/store/715838084/price"
+        } ],
+        "method" : [ {
+          "matcher" : "exact",
+          "value" : "GET"
+        } ],
+        "destination" : [ {
+          "matcher" : "exact",
+          "value" : "shop-ref.ecommerce.coremedia.com"
+        } ],
+        "scheme" : [ {
+          "matcher" : "exact",
+          "value" : "http"
+        } ],
+        "query" : {
+          "currency" : [ {
+            "matcher" : "exact",
+            "value" : "EUR"
+          } ],
+          "langId" : [ {
+            "matcher" : "exact",
+            "value" : "-1"
+          } ],
+          "partNumber" : [ {
+            "matcher" : "exact",
+            "value" : "CLA022_2203"
+          } ],
+          "q" : [ {
+            "matcher" : "exact",
+            "value" : "byPartNumbers"
+          } ]
+        },
+        "body" : [ {
+          "matcher" : "json",
+          "value" : ""
+        } ]
+      },
+      "response" : {
+        "status" : 200,
+        "body" : "{\"resourceId\":\"http:\\/\\/shop-ref.ecommerce.coremedia.com:80\\/wcs\\/resources\\/store\\/715838084\\/price?q=byPartNumbers&partNumber=CLA022_2203&currency=EUR&langId=-1\",\"EntitledPrice\":[{\"contractId\":\"4000000000000000005\",\"UnitPrice\":[{\"price\":{\"value\":450.18,\"currency\":\"EUR\"},\"quantity\":{\"uom\":\"C62\",\"value\":1.0}}],\"productId\":\"3074457345616679331\",\"partNumber\":\"CLA022_2203\"}],\"resourceName\":\"price\"}",
+        "encodedBody" : false,
+        "templated" : false,
+        "headers" : {
+          "Cache-Control" : [ "no-cache=\"set-cookie, set-cookie2\"" ],
+          "Content-Language" : [ "en-US" ],
+          "Content-Length" : [ "398" ],
+          "Content-Type" : [ "application/json" ],
+          "Date" : [ "Fri, 15 Feb 2019 16:12:21 GMT" ],
+          "Expires" : [ "Thu, 01 Dec 1994 16:00:00 GMT" ],
+          "Hoverfly" : [ "Was-Here" ],
+          "Set-Cookie" : [ "JSESSIONID=000071tkAnBtbkFcG8Sjc98YQ_w:-1; HTTPOnly; Path=/; Domain=.toko-ci-01-copenhagen04-tomcat-1-cms.coremedia.vm; HttpOnly" ],
+          "Vary" : [ "Accept,Accept-Encoding,User-Agent" ],
+          "X-Powered-By" : [ "Servlet/3.0" ]
+        }
+      }
+    } ],
+    "globalActions" : {
+      "delays" : [ ]
+    }
+  },
+  "meta" : {
+    "schemaVersion" : "v5",
+    "hoverflyVersion" : "v0.17.7",
+    "timeExported" : "2019-02-15T17:12:21+01:00"
+  }
+}

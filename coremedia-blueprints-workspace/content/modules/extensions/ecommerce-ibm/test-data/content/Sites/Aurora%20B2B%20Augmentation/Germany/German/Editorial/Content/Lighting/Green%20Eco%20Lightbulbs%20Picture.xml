@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content/Lighting" name="Green Eco Lightbulbs Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Lighting/Green%20Eco%20Lightbulbs%20Picture.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Lighting/Green%20Eco%20Lightbulbs%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=858;y=0;width=1292;height=2000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=750;y=0;width=1500;height=2000</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=506;y=0;width=1997;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=172;y=0;width=2666;height=2000</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=154;width=3000;height=1692</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=570;width=2169;height=869</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=624;width=3000;height=751</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.286144578313253;y1=0;x2=0.7168674698795181;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.25;y1=0;x2=0.75;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.1686746987951807;y1=0;x2=0.8343373493975904;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.0572289156626506;y1=0;x2=0.9457831325301205;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.07692307692307693;x2=1;y2=0.9230769230769231</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2850678733031674;x2=0.7228915662650602;y2=0.7194570135746606</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.31221719457013575;x2=1;y2=0.6877828054298643</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Environment Saving Lights</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Environment Saving Lights</alt>
+<copyright>graja / Shutterstock 173628629</copyright>
+<dataUrl></dataUrl>
+<width>3000</width>
+<height>2000</height>
+<data md5="bde57774efb724f3bedb370ef28b8696" size="315940" href="../../../../../../../__blob/bde57774efb724f3bedb370ef28b8696.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProduct folder="/Sites/Chef Corp./Germany/German/Products/Blenders and Food Processors" name="Kitchenette KNC30 Mixer Product" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Products/Blenders%20and%20Food%20Processors/Kitchenette%20KNC30%20Mixer%20Product.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Blenders%20and%20Food%20Processors/Kitchenette%20KNC30%20Mixer%20Product"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">Mehr Information</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>kitchenette-knc30-mixer</segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+<link href="Blenders%20and%20Food%20Processors.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/Blenders%20and%20Food%20Processors/Blenders%20and%20Food%20Processors"/>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Professionelle Küchenmaschinen müssen hohe Anforderungen erfüllen. Unsere Geräte eignen sich für die anspruchsvollsten Restaurantküchen.  </p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Professionelle Küchenmaschinen müssen hohe Anforderungen erfüllen. Unsere Geräte eignen sich für die anspruchsvollsten Restaurantküchen und sind stark genug um die härtesten Zutaten fein zu pürieren - von Mäusen bis hin zu Elefanten. </p></div></detailText>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Products/Blenders/PC_KITCHENETTE_KNC30%20Sideshot.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Products/Blenders/PC_KITCHENETTE_KNC30%20Sideshot"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<downloads>
+</downloads>
+<productCode>CC-KNC-30</productCode>
+<productName>Kitchenette KNC30 Mixer</productName>
+</CMProduct>

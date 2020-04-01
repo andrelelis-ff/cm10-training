@@ -1,0 +1,6 @@
+{
+  "loader" : {
+    "cache": "${build.timestamp}",
+    "cacheParam" : "_ts"
+  }
+}

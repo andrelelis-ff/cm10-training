@@ -1,0 +1,22 @@
+{
+  "name": "@coremedia-examples/brick-360-spinner",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@coremedia/brick-node-decoration-service": "^1.0.0",
+    "@coremedia/brick-media": "^1.0.0",
+    "@coremedia/brick-utils": "^1.0.0",
+    "jquery": "^3.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.0.0"
+  },
+  "scripts": {
+    "prettier": "prettier \"**/*\" --write"
+  },
+  "main": "src/js/index.js",
+  "coremedia": {
+    "type": "brick",
+    "init": "src/js/init.js"
+  }
+}

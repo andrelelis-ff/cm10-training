@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/United States/English/Pictures/Product Pictures/Decorating/Lighting" name="Arch Floor Light Lit Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=748;y=440;width=903;height=1397</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=694;y=502;width=1026;height=1373</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=586;y=586;width=1188;height=1188</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=440;y=648;width=1420;height=1065</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=170;y=640;width=1921;height=1080</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=748;width=2500;height=1003</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=810;width=2500;height=625</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2993827160493827;y1=0.17592592592592593;x2=0.6604938271604939;y2=0.7345679012345679</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2777777777777778;y1=0.2006172839506173;x2=0.6882716049382716;y2=0.75</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.2345679012345679;y1=0.2345679012345679;x2=0.7098765432098766;y2=0.7098765432098766</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.17592592592592593;y1=0.25925925925925924;x2=0.7438271604938271;y2=0.6851851851851852</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.06790123456790123;y1=0.25617283950617287;x2=0.8364197530864198;y2=0.6882716049382716</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2993827160493827;x2=1;y2=0.7006172839506173</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.32407407407407407;x2=1;y2=0.5740740740740741</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_HLG028_280113</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Arch Floor Light Lit</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Arch Floor Light Lit</alt>
+<copyright>Hard Ligth / Shutterstock 365805959</copyright>
+<dataUrl></dataUrl>
+<width>2500</width>
+<height>2500</height>
+<data md5="599bde9b432d0503181c50676c426872" size="216462" href="../../../../../../../../__blob/599bde9b432d0503181c50676c426872.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

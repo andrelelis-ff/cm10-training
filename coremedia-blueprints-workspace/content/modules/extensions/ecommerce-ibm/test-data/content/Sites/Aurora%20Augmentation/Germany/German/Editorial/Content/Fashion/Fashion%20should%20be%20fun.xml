@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Fashion" name="Fashion should be fun" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Fashion/Fashion%20should%20be%20fun.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Fashion%20should%20be%20fun"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Mode soll Spaß machen</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Apparel.xml" path="/Settings/Taxonomies/Subject/Apparel"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Löschen Sie das Negativ; betonen Sie das Positive! Anstatt sechs Dinge zu kaufen, eine Sache, die du wirklich magst.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Grunge ist eine hippied romantische Version von Punk. Verkleidung. Die Leute machen es einfach nicht mehr. Wir müssen das ändern. Löschen Sie das Negativ; Akzentuiere das positive! Statt sechs Sachen zu kaufen, eine Sache, die du wirklich magst. Halten Sie sich nicht nur um es willen. Ich interessiere mich nicht für Geld. Es ist mir egal. Ich will nur was ich tue<br/><br/>Gehen Sie zu einem Ort, wo Sie nicht gestresst werden, denn eine Flitterwoche selbst kann eine stressige Sache sein. Ich möchte mich bei allen Frauen bedanken, die meine Kleider gekleidet haben, die berühmten und die Unbekannten, die mir so treu gewesen sind und mir so viel Freude gemacht haben. Mode sollte Spaß machen Es sollte nicht intellektuell beschriftet werden. Wir dürfen niemals Eleganz mit Snobismus verwechseln. Frauen sind Frauen und Hurra dafür.<br/><br/>Ich wünschte, ich hätte Blue Jeans erfunden. Sie haben Ausdruck, Bescheidenheit, Sex-Appeal, Einfachheit - alles, was ich in meiner Kleidung hoffe. Ich bin nie mit mir zufrieden und das ist, was mich hält - ich habe keine Nachsorge. Ich erinnere mich, eines Tages den Hund zu gehen, ich sah ein Auto voller Teenager-Mädchen, und einer von ihnen rollte das Fenster herunter und schrie: "Marc Jacobs!" In einem französischen Akzent. Mein Job ist es, in Menschen zu bringen, was sie nicht wagen würden, sich selbst zu tun. Um unersetzlich zu sein, muss man immer anders sein<br/><br/>Mode ist nicht etwas, das nur in Kleidern existiert. Mode ist am Himmel, auf der Straße, Mode hat mit Ideen zu tun, wie wir leben, was passiert. Alter und Größe sind nur Zahlen. Es ist die Haltung, die du zu Kleidern bringst, die den Unterschied machen. Löschen Sie das Negativ; Akzentuiere das positive! Sammeln, Mode machen ist wie ein Non-Stop-Dialog. Ich möchte ein Ein-Mann-Multinational-Mode-Phänomen sein.<br/><br/>Mode wird gemacht, um unmodern zu werden. Luxus muss wohl sein, sonst ist es nicht Luxus. Was ich hasse, ist böse, hässliche Leute. Es gibt immer Proteste, ob du etwas Gutes oder Böses tust. Auch wenn du etwas Wohltätiges machst, sagst du, dass du es tust, weil es Werbung ist. Mode ist nicht etwas, das nur in Kleidern existiert. Mode ist am Himmel, auf der Straße, Mode hat mit Ideen zu tun, wie wir leben, was passiert.<br/><br/>Ich habe die Weste behandelt, als wäre es ein Korsett, so dass es die erste Schicht in den Prozess der Putting Kleidung auf den Körper. Es gibt eine ständige Bewegung zwischen Schichtung und Aufdeckung. Ich bin nie mit mir zufrieden und das ist, was mich hält - ich habe keine Nachsorge. Du bist nur so gut wie deine letzte Kollektion, was ein enormer Druck ist. Als ich jung war, lebte ich wie eine alte Frau, und als ich alt wurde, musste ich wie ein junger Mensch leben. Im Laufe der Jahre habe ich gelernt, dass das, was in einem Kleid wichtig ist, die Frau ist, die es trägt.</p></div></detailText>
+<pictures>
+<link href="Photo%20Shooting%20in%20Rome%20-%20Enjoying.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/Photo%20Shooting%20in%20Rome%20-%20Enjoying"/>
+</pictures>
+<related>
+<link href="Fashions%20fade%2C%20style%20is%20eternal.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/Fashions%20fade%2C%20style%20is%20eternal"/>
+<link href="The%20difference%20between%20style%20and%20fashion.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Fashion/The%20difference%20between%20style%20and%20fashion"/>
+</related>
+<authors>
+<link href="../../Authors/David%20Fuller%20Person.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Authors/David%20Fuller%20Person"/>
+<link href="../../Authors/Elle%20Quinn%20Person.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Authors/Elle%20Quinn%20Person"/>
+</authors>
+</CMArticle>

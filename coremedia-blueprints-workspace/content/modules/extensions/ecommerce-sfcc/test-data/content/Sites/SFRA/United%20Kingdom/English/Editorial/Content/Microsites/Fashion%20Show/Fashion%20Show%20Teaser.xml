@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/SFRA/United Kingdom/English/Editorial/Content/Microsites/Fashion Show" name="Fashion Show Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Relive the Runway</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Watch the best moments from 2018 fashion show</p></div></teaserText>
+<pictures>
+<link href="fashion%20show%20teaser%20image.xml" path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Microsites/Fashion%20Show/fashion%20show%20teaser%20image"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+</target>
+<targets>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="links">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../../Augmentation/Womens/Clothing/Dresses/Dresses.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Augmentation/Womens/Clothing/Dresses/Dresses"/>
+</Struct>
+</StructListProperty>
+</Struct>
+</targets>
+</CMTeaser>

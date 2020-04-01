@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentForm
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsStudioPlugin', 'SpacerTitle_googleanalytics')}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.googleanalytics.GoogleAnalyticsStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.googleanalytics.cmalxBaseListRetrievalTab";
+
+    private var config:CMALXBaseListRetrievalTab;
+
+    public native function CMALXBaseListRetrievalTab(config:CMALXBaseListRetrievalTab = null);
+    ]]></fx:Script>
+
+
+  <editor:items>
+    <Container>
+      <items>
+        <editor:PropertyFieldGroup bindTo="{config.bindTo}"
+                                   header="{false}"
+                                   itemId="propertyFieldGroup">
+          <editor:items>
+
+          </editor:items>
+        </editor:PropertyFieldGroup>
+      </items>
+    </Container>
+  </editor:items>
+
+</editor:DocumentForm>

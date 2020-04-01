@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/United States/English/Pictures/Sitewide Pictures" name="Country Flags Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=317;y=0;width=683;height=1062</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=317;y=0;width=796;height=1062</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=321;y=0;width=1061;height=1062</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=317;y=0;width=1415;height=1062</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=310;y=30;width=1834;height=1032</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=303;y=146;width=2289;height=916</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=299;y=123;width=3544;height=886</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.07936507936507936;y1=0;x2=0.25023342670401494;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.07936507936507936;y1=0;x2=0.27824463118580767;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.08029878618113913;y1=0;x2=0.34547152194211017;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.07936507936507936;y1=0;x2=0.4332399626517274;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0.07749766573295985;y1=0.028169014084507043;x2=0.5359477124183006;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0.07563025210084033;y1=0.13732394366197184;x2=0.6479925303454716;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0.07469654528478058;y1=0.11619718309859155;x2=0.9607843137254902;y2=0.9507042253521126</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Country Flags</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Country Flags</alt>
+<copyright>Mike Tan/Shutterstock 45804694</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>1062</height>
+<data md5="d49f81f66e6138f2b5ac685f20092104" size="234513" href="../../../../../../__blob/d49f81f66e6138f2b5ac685f20092104.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

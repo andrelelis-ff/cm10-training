@@ -1,0 +1,54 @@
+<div xmlns="http://www.coremedia.com/2003/richtext-1.0"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+  <p class="p--heading-1">h1</p>
+  <p class="p--heading-2 align--right">h2</p>
+  <p class="p--heading-3">h3</p>
+  <p class="p--heading-4">h4</p>
+  <p class="p--heading-5">h5</p>
+  <p class="p--heading-6">h6</p>
+  <p class="p--heading-7">h7</p>
+  <p class="p--heading-8">h8</p>
+  <p class="p--standard">p</p>
+  <p class="p--pre">pre</p>
+  <p>
+    <a xlink:href="coremedia:///cap/content/16"
+       xlink:show="embed"
+       xlink:actuate="onRequest">
+      LondonBus
+    </a>
+    <ol>
+      <li>one</li>
+      <li>two</li>
+    </ol>
+    London's vast urban area is often described
+    using a set of district names (e.g. Bloomsbury,
+    Knightsbridge, Mayfair, Whitechapel, Fitzrovia).
+    These are either informal designations, or
+    reflect the names of superseded villages,
+    parishes and city wards. Such names have
+    remained in use through tradition, each referring
+    to a neighbourhood with its own distinctive
+    character, but often with no modern official
+    boundaries. Since 1965 Greater London has
+    been divided into 32 London boroughs in addition
+    to the ancient City of London.
+    <ul>
+      <li>one</li>
+      <li>two</li>
+    </ul>
+  </p>
+  <p>
+    This article is licensed under the
+    <a xlink:href="http://www.gnu.org/copyleft/fdl.html"
+       xlink:show="new"
+       xlink:actuate="onRequest">
+      GNU Free Documentation License
+    </a>
+    . It uses material from the
+    <a xlink:href="http://en.wikipedia.org/wiki/London"
+       xlink:show="new"
+       xlink:actuate="onRequest">
+      Wikipedia article "London"
+    </a>
+  </p>
+</div>

@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.ecommerce.studio.components.repository.CatalogRepositoryListTestView"/>
+</componentPackage>

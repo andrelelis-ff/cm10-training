@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/France/French/Pictures" name="Stylish Women in Blue" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Pictures/Stylish%20Women%20in%20Blue.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Pictures/Stylish%20Women%20in%20Blue"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.0031645569620253164;x2=1;y2=0.5021020569620254</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.015822784810126583;x2=1;y2=0.39002590981012664</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.02531645569620253;x2=1;y2=0.35794145569620256</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.0379746835443038;x2=1;y2=0.3040746835443038</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.0379746835443038;x2=1;y2=0.2874434335443038</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.04113924050632911;x2=1;y2=0.2074517405063291</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.028481012658227847;x2=1;y2=0.6937310126582279</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.028481012658227847;x2=1;y2=0.9154810126582279</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=13;width=2661;height=1996</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=63;width=2661;height=1497</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=101;width=2661;height=1331</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=152;width=2661;height=1064</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=152;width=2661;height=998</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=165;width=2661;height=665</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=114;width=2661;height=2661</StringProperty>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=40;y=0;width=2581;height=4000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=114;width=2661;height=3548</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Femmes élégantes en bleu</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Stylish.xml" path="/Settings/Taxonomies/Subject/Stylish"/>
+<link href="../../../../../Settings/Taxonomies/Subject/Women%282%29.xml" path="/Settings/Taxonomies/Subject/Women%282%29"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Femmes élégantes en bleu</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2661</width>
+<height>4000</height>
+<data md5="1624f934c497b9781fea322b9b91b2bf" size="778624" href="../../../../../__blob/1624f934c497b9781fea322b9b91b2bf.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

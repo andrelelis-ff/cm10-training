@@ -1,0 +1,9 @@
+[template]
+src   = "sql.properties.tmpl"
+dest  = "/coremedia/tools/properties/corem/sql.properties"
+keys  = [
+        "/sql/store/driver",
+        "/sql/store/url",
+        "/sql/store/user",
+        "/sql/store/password"
+]

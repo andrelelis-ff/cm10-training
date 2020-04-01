@@ -1,0 +1,3 @@
+= Build and Run the Applications
+
+* Refer to the https://documentation.coremedia.com[Blueprint Developer Manual > Blueprint Workspace for Developers > Build And Run The Applications] for more information

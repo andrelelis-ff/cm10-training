@@ -1,0 +1,22 @@
+//
+// Load Webfonts
+//
+// disable eot and svg fonts, see
+// http://davidensinger.com/2014/10/update-your-font-face-file-formats-to-just-use-woff-and-woff2/ and
+// https://css-tricks.com/snippets/css/using-font-face/
+// supported browsers: Chrome 6+, Safari 3+, Firefox 3.5+, Opera 10+, IE 9+, Android 4.1+, iOS 7.1+
+//
+@mixin font-face($style-name, $file, $weight: normal, $style: normal, $path-to-fonts: "../fonts/") {
+  $filepath: $path-to-fonts + $file;
+  @font-face {
+    font-family: "#{$style-name}";
+    font-weight: $weight;
+    font-style: $style;
+    // woff2: Super Modern Browsers
+    // woff: Pretty Modern Browsers
+    // ttf: Safari, Android, iOS
+    src: url("#{$filepath}.woff2") format('woff2'),
+    url("#{$filepath}.woff") format('woff'),
+    url("#{$filepath}.ttf") format('truetype');
+  }
+}

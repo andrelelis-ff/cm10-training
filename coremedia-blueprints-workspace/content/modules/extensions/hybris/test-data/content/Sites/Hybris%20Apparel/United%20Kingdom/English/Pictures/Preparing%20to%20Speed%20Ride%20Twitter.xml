@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/United Kingdom/English/Pictures" name="Preparing to Speed Ride Twitter" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=736;y=0;width=861;height=1335</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=720;y=0;width=1003;height=1335</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=549;y=0;width=1335;height=1335</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=166;y=86;width=1668;height=1249</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=106;width=2000;height=1123</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=166;width=2000;height=1003</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=438;width=2000;height=801</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=438;width=2000;height=751</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=418;width=2000;height=499</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.3677581863979849;y1=0;x2=0.7984886649874056;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.3602015113350126;y1=0;x2=0.8614609571788413;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.27455919395465994;y1=0;x2=0.9420654911838791;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.08312342569269521;y1=0.06415094339622641;x2=0.9168765743073047;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.07924528301886792;x2=1;y2=0.9207547169811321</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.12452830188679245;x2=1;y2=0.8754716981132076</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.3283018867924528;x2=1;y2=0.9283018867924528</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.3283018867924528;x2=1;y2=0.8905660377358491</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3132075471698113;x2=1;y2=0.6867924528301886</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio2x1">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Preparing to Speed Ride</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/></div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Preparing to Speed Ride</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2000</width>
+<height>1335</height>
+<data md5="98af8dcdffcf3c17ea0bf1c11b2cd77f" size="355853" href="../../../../../__blob/98af8dcdffcf3c17ea0bf1c11b2cd77f.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

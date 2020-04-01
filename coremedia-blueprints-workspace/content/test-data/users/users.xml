@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository xmlns="http://www.coremedia.com/2005/contentserver/userrepository">
+  <group id="staff" name="staff" contentgroup="true" livegroup="false" administrative="false">
+    <rule content="/Home" type="Document_" rights="RMDS"/>
+    <rule content="/Home" type="Folder_" rights="RMDS"/>
+    <rule content="/Settings" type="Document_" rights="R"/>
+    <rule content="/Settings" type="Folder_" rights="R"/>
+    <members>
+      <group id="global-manager" name="global-manager" contentgroup="true" livegroup="false" administrative="false">
+        <rule content="/Settings/Options/Bundles" type="CMSettings" rights="RMDAP"/>
+        <rule content="/Settings/Options/Settings" type="CMSettings" rights="RMAP"/>
+        <rule content="/Settings/Taxonomies" type="CMTaxonomy" rights="RMDAP"/>
+        <rule content="/Themes" type="CMObject" rights="RMDAP"/>
+        <rule content="/Themes" type="CMTemplateSet" rights="RMDAP"/>
+        <rule content="/Themes" type="Folder_" rights="RMDAP"/>
+      </group>
+      <group id="local-manager" name="local-manager" contentgroup="true" livegroup="false" administrative="false">
+        <rule content="/Themes" type="CMObject" rights="RMDAP"/>
+        <rule content="/Themes" type="CMTemplateSet" rights="RMDAP"/>
+        <rule content="/Themes" type="Folder_" rights="RMDAP"/>
+      </group>
+      <group id="online-editor" name="online-editor" contentgroup="true" livegroup="false" administrative="false">
+      </group>
+      <group id="media-editor" name="media-editor" contentgroup="true" livegroup="false" administrative="false">
+      </group>
+    </members>
+  </group>
+
+  <group capid="coremedia:///cap/group/0" id="administrator" name="administratoren" contentgroup="true" livegroup="true"
+         administrative="true">
+    <rule content="/" type="Document_" rights="RMDAPS"/>
+    <rule content="/" type="Folder_" rights="RMDAPS"/>
+    <members>
+      <user id="adam" name="Adam" home="/Home/Adam"/>
+      <user id="teresa" name="Teresa" home="/Home/Teresa"/>
+    </members>
+  </group>
+  <group name="developer" contentgroup="true" livegroup="false" id="developer">
+    <rule content="/" type="Document_" rights="RMDAP"/>
+    <rule content="/" type="Folder_" rights="RMDAP"/>
+    <members>
+      <groupref id="administrator"/>
+      <user id="dave" name="Dave" home="/Home/Dave"/>
+    </members>
+  </group>
+
+  <group name="translation-manager-role" contentgroup="true" livegroup="false" administrative="false">
+    <members>
+      <groupref id="global-manager"/>
+      <groupref id="local-manager"/>
+    </members>
+  </group>
+
+  <group name="composer-role" contentgroup="true" livegroup="false" administrative="false">
+    <members>
+      <groupref id="global-manager"/>
+      <groupref id="local-manager"/>
+      <groupref id="online-editor"/>
+      <groupref id="media-editor"/>
+      <groupref id="developer"/>
+    </members>
+  </group>
+  <group name="approver-role" contentgroup="true" livegroup="false" administrative="false">
+    <members>
+      <groupref id="global-manager"/>
+      <groupref id="local-manager"/>
+      <groupref id="developer"/>
+    </members>
+  </group>
+  <group name="publisher-role" contentgroup="true" livegroup="false" administrative="false">
+    <members>
+      <groupref id="global-manager"/>
+      <groupref id="local-manager"/>
+      <groupref id="developer"/>
+    </members>
+  </group>
+
+  <group name="translation-workflow-robots" contentgroup="true" livegroup="false" administrative="false">
+    <rule content="/" type="Document_" rights="R"/>
+    <rule content="/" type="Folder_" rights="R"/>
+    <rule content="/Sites" type="Document_" rights="RMDA"/>
+    <rule content="/Sites" type="Folder_" rights="RMDA"/>
+    <members>
+      <user id="translation-workflow-robot" name="translation-workflow-robot"/>
+    </members>
+  </group>
+</repository>

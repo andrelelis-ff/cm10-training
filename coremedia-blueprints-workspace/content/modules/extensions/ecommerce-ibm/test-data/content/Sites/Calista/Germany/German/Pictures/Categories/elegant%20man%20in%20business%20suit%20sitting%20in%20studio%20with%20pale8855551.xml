@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/Germany/German/Pictures/Categories" name="elegant man in business suit sitting in studio with palms touching while resting his leg on chair" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Pictures/Categories/elegant%20man%20in%20business%20suit%20sitting%20in%20studio%20w8ad9c9c6.xml" path="/Sites/Calista/United%20States/English/Pictures/Categories/elegant%20man%20in%20business%20suit%20sitting%20in%20studio%20with%20palms%20touching%20while%20resting%20his%20leg%20on%20chair"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1827;y=0;width=1811;height=2804</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=1642;y=0;width=2101;height=2804</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=1304;y=105;width=2696;height=2699</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=266;y=0;width=3734;height=2804</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=73;width=4000;height=2256</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=89;width=4000;height=2006</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=89;width=4000;height=1603</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=81;width=4000;height=1499</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=113;width=4000;height=999</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=1124;y=0;width=1753;height=2804</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=62;width=4000;height=1702</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=1805;y=0;width=1869;height=2804</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.4567404426559356;y1=0;x2=0.9094567404426559;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.4104627766599598;y1=0;x2=0.9356136820925554;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.32595573440643866;y1=0.03735632183908046;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.06639839034205232;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.02586206896551724;x2=1;y2=0.8304597701149425</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.031609195402298854;x2=1;y2=0.7471264367816092</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.031609195402298854;x2=1;y2=0.603448275862069</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.028735632183908046;x2=1;y2=0.5632183908045977</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.040229885057471264;x2=1;y2=0.39655172413793105</StringProperty>
+<StringProperty Name="landscape_ratio235x100">position;x1=0;y1=0.022082018927444793;x2=1;y2=0.6291175608584247</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="landscape_ratio235x100">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/category/Men Suits</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.6825221238938053</StringProperty>
+<StringProperty Name="y">0.27917981072555204</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>shutterstock_342435623</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>shutterstock_342435623</copyright>
+<dataUrl></dataUrl>
+<width>4000</width>
+<height>2804</height>
+<data md5="99ff9a972567092c499b123458650d35" size="482930" href="../../../../../../__blob/99ff9a972567092c499b123458650d35.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

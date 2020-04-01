@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8"/>
+  <title>CoreMedia Content Cloud</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="robots" content="noindex, nofollow"/>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/overview.css">
+  <script src="assets/jquery.min.js"></script>
+  <script src="assets/tooling.js"></script>
+</head>
+<body>
+
+<!--# block name="fallback" -->&nbsp;<!--# endblock -->
+<!--# include file="assets/header.html" -->
+
+<div class="cm-grid">
+
+  <div class="cm-hero">
+    <div class="cm-hero__image">
+      <img src="assets/overview.jpg">
+    </div>
+    <div class="cm-hero__content">
+      <h1>CoreMedia Content Cloud</h1>
+      <a class="cm-hero__button" href="https://studio.docker.localhost" target="_blank" role="button">Open Studio</a>
+    </div>
+  </div>
+
+  <div id="main" class="cm-container">
+    <article class="cm-details">
+      <!--# include file="assets/sites.html" stub="fallback" -->
+      <!--# include file="assets/management.html" -->
+      <!--# include file="assets/commerce-management.html" stub="fallback" -->
+      <!--# include file="assets/administration.html" -->
+      <!--# include file="assets/development.html" -->
+      <!--# include file="assets/actuators.html" -->
+      <!--# include file="assets/candy-sites.html" stub="fallback" -->
+    </article>
+  </div>
+</div>
+
+<!--# include file="assets/footer.html" -->
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SFRA/United Kingdom/English/Editorial/Pictures" name="Jeans Dress" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<BooleanProperty Name="uploadDone">true</BooleanProperty>
+<BooleanProperty Name="inherit">false</BooleanProperty>
+<StringListProperty Name="originReferences">
+</StringListProperty>
+<StringListProperty Name="references">
+<String>sfcc:///catalog/product/25503585M</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.40441176470588236</StringProperty>
+<StringProperty Name="y">0.21608832807570977</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=262;y=118;width=439;height=681</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=88;y=0;width=799;height=799</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=270;width=1200;height=511</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=0;width=1065;height=799</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=229;y=15;width=514;height=686</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=0;width=1200;height=675</StringProperty>
+<StringProperty Name="quickview_ratio5x6">b;a=0;c=1/crop;x=155;y=0;width=666;height=799</StringProperty>
+<StringProperty Name="portrait_ratio5x6">b;a=0;c=1/crop;x=155;y=0;width=666;height=799</StringProperty>
+<StringProperty Name="thumbnail">b;a=0;c=1/crop;x=188;y=0;width=599;height=799</StringProperty>
+<StringProperty Name="landscape_ratio7x2">b;a=0;c=1/crop;x=0;y=354;width=1200;height=343</StringProperty>
+<StringProperty Name="landscape_ratio5x3">b;a=0;c=1/crop;x=0;y=78;width=1200;height=720</StringProperty>
+<StringProperty Name="portrait_ratio3x5">b;a=0;c=1/crop;x=248;y=0;width=479;height=799</StringProperty>
+<StringProperty Name="portrait_ratio1x2">b;a=0;c=1/crop;x=290;y=0;width=399;height=799</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=0;width=1200;height=450</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=222;y=0;width=533;height=799</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio1x2">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio1x2">position;x1=0.2415966386554622;y1=0;x2=0.5745133053221289;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.19117647058823528;y1=0.01892744479495268;x2=0.619662275004639;y2=0.8769716088328076</StringProperty>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2184873949579832;y1=0.14826498422712933;x2=0.5843671140991249;y2=0.9999999999999999</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Jeans Dress</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Jeans Dress</alt>
+<copyright>shutterstock_449912104</copyright>
+<dataUrl></dataUrl>
+<width>1200</width>
+<height>799</height>
+<data md5="eabe7c72f825af211cf9f13fd1c66bb3" size="170963" href="../../../../../../__blob/eabe7c72f825af211cf9f13fd1c66bb3.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

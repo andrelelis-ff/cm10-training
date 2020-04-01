@@ -1,0 +1,11 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <StructProperty Name="fq">
+    <Struct>
+      <StringProperty Name="documenttype">CMArticle</StringProperty>
+      <LinkListProperty Name="documents" LinkType="coremedia:///cap/contenttype/CMChannel">
+        <Link xlink:href="coremedia:///cap/content/10"/>
+      </LinkListProperty>
+    </Struct>
+  </StructProperty>
+  <IntProperty Name="limit">4</IntProperty>
+</Struct>

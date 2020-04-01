@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:FilterPanelBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.topicpages.administration.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns="exml:ext.config"
+        layout="hbox">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.topicpages.TopicPages')]
+    [ResourceBundle('com.coremedia.icons.CoreIcons')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.skins.ButtonSkin;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.topicpages.config.filterPanel";
+
+    private var config:FilterPanel;
+
+    public native function FilterPanel(config:FilterPanel = null);
+    ]]></fx:Script>
+  <fx:Declarations>
+    <fx:String id="emptyText"/>
+  </fx:Declarations>
+
+  <local:items>
+    <TextField itemId="filterTextField"
+               flex="1"
+               enableKeyEvents="true"
+               selectOnFocus="true"
+               emptyText="{config.emptyText}">
+      <listeners>
+        <fx:Object specialkey="{applyFilterInput}"/>
+      </listeners>
+      <plugins>
+        <ui:BindPropertyPlugin bindTo="{config.filterExpression}"
+                               bidirectional="true"/>
+      </plugins>
+    </TextField>
+    <ui:IconButton itemId="startSearch"
+                   ui="{ButtonSkin.SIMPLE.getSkin()}"
+                   scale="small"
+                   text="{resourceManager.getString('com.coremedia.blueprint.studio.topicpages.TopicPages', 'TopicPages_search_search_tooltip')}"
+                   tooltip="{resourceManager.getString('com.coremedia.blueprint.studio.topicpages.TopicPages', 'TopicPages_search_search_tooltip')}"
+                   iconCls="{resourceManager.getString('com.coremedia.icons.CoreIcons', 'search')}"
+                   handler="{config.applyFilterFunction}">
+    </ui:IconButton>
+    <Component width="10"/>
+  </local:items>
+
+</local:FilterPanelBase>

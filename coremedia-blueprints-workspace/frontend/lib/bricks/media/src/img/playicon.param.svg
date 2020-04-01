@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>
+    .st0 {
+      fill: param(circleBackgroundColor);
+      stroke: param(circleColor);
+      stroke-width: 30;
+      stroke-miterlimit: 10;
+    }
+    .st1 {
+      fill: param(color);
+    }
+  </style>
+  <circle cx="256" cy="256" r="231" class="st0"/>
+  <path d="M348.1 245.6l-134-78.2c-12.2-7.1-22.1-1.4-22 12.7l.7 155.2c.1 14.1 10 19.9 22.3 12.8l133-76.8c12.2-7.1 12.3-18.6 0-25.7z" class="st1"/>
+</svg>

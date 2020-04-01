@@ -1,0 +1,36 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="CAE Feeder Preview" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="CoreMedia Blueprint Apps">
+    <module name="cae-feeder-app" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.coremedia.blueprint.boot.caefeeder.CaeFeederApp" />
+    <option name="ACTIVE_PROFILES" value="dev, preview-local" />
+    <option name="VM_PARAMETERS" value="-XX:+ExitOnOutOfMemoryError -Djava.net.preferIPv4Stack=true -Djava.net.preferIPv4Addresses -Xmx256m" />
+    <option name="WORKING_DIRECTORY" value="file://$MODULE_WORKING_DIR$" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <option name="SHORTEN_COMMAND_LINE" value="ARGS_FILE" />
+    <additionalParameters>
+      <param>
+        <option name="enabled" value="false" />
+        <option name="name" value="installation.host" />
+        <option name="value" value="SET_ME" />
+      </param>
+      <param>
+        <option name="enabled" value="false" />
+        <option name="name" value="content-management-server.host" />
+        <option name="value" value="SET_ME" />
+      </param>
+      <param>
+        <option name="enabled" value="false" />
+        <option name="name" value="solr.host" />
+        <option name="value" value="SET_ME" />
+      </param>
+      <param>
+        <option name="enabled" value="false" />
+        <option name="name" value="db.host" />
+        <option name="value" value="SET_ME" />
+      </param>
+    </additionalParameters>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

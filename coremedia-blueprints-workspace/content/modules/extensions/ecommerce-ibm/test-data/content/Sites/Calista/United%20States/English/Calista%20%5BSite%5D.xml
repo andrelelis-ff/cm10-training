@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSite folder="/Sites/Calista/United States/English" name="Calista [Site]">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<id>ced8921aa7b7f9b736b90e19afc2dd2a</id>
+<name>Calista</name>
+<root>
+<link href="Navigation/Calista.xml" path="/Sites/Calista/United%20States/English/Navigation/Calista"/>
+</root>
+<siteManagerGroup>manager-calista-en-US</siteManagerGroup>
+<linkedSettings>
+<link href="Options/Settings/SiteSettings.xml" path="/Sites/Calista/United%20States/English/Options/Settings/SiteSettings"/>
+</linkedSettings>
+</CMSite>

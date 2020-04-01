@@ -1,0 +1,27 @@
+{
+  "name": "@coremedia-examples/brick-download-portal",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@coremedia/brick-dynamic-include": "^1.0.0",
+    "@coremedia/brick-node-decoration-service": "^1.0.0",
+    "@coremedia/brick-utils": "^1.0.0",
+    "jquery": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-jest": "^24.0.0",
+    "jest": "^24.0.0",
+    "prettier": "^1.0.0"
+  },
+  "scripts": {
+    "prettier": "prettier \"**/*\" --write",
+    "test": "jest"
+  },
+  "main": "src/js/index.js",
+  "coremedia": {
+    "type": "brick",
+    "init": "src/js/downloadCollection.init.js"
+  }
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductList folder="/Sites/SFRA/United Kingdom/English/Editorial/Content/Homepage" name="Styles to Love List" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMChannel/carousel.xml" path="/Sites/SFRA/United%20Kingdom/English/Options/Viewtypes/CMChannel/carousel"/>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="productList">
+<Struct>
+<IntProperty Name="offset">1</IntProperty>
+<IntProperty Name="maxLength">10</IntProperty>
+<StringProperty Name="selectedFacet">Colour</StringProperty>
+<StringProperty Name="selectedFacetValue">c_refinementColor=Pink</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Styles To Love</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<extendedItems>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="links">
+<Struct>
+<LinkProperty Name="target" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../Articles/Fashions%20fade%2C%20style%20is%20eternal.xml" cmexport:path="/Sites/SFRA/United%20Kingdom/English/Editorial/Content/Articles/Fashions%20fade%2C%20style%20is%20eternal"/>
+<IntProperty Name="index">3</IntProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</extendedItems>
+<externalId>sfcc:///catalog/category/newarrivals</externalId>
+</CMProductList>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:ec="exml:com.coremedia.ecommerce.studio.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ecommerce.studio.CatalogModel;
+    import com.coremedia.ecommerce.studio.helper.CatalogHelper;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.cmMarketingSpotForm";
+
+    private var config:CMMarketingSpotForm;
+
+    public native function CMMarketingSpotForm(config:CMMarketingSpotForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMMarketingSpot_text')}"
+                itemId="cmMarketingSpotExternalIdForm">
+          <editor:items>
+            <ec:CatalogLinkPropertyField propertyName="externalId"
+                                         maxCardinality="1"
+                                         replaceOnDrop="true"
+                                         linkTypeNames="{[CatalogModel.TYPE_MARKETING_SPOT]}"
+                                         dropAreaHandler="{CatalogHelper.getInstance().openMarketingSpots}"
+                                         dropAreaText="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'MarketingSpot_Link_empty_text')}"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataInformationForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

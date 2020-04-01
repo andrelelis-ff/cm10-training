@@ -1,0 +1,19 @@
+.cm-landscape-banner,
+.cm-portrait-banner,
+.cm-square-banner,
+.cm-carousel-banner,
+.cm-hero-banner {
+  &__shop-now-button {
+    @include sfra-primary-button();
+    white-space: nowrap; // avoid line-break
+  }
+}
+
+.cm-left-right-banner {
+  .cm-placement > & + & {
+    @include breakpoint("sm-and-up") {
+      // no margin top grid override
+      margin-top: 0;
+    }
+  }
+}

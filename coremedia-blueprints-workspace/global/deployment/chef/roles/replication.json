@@ -1,0 +1,11 @@
+{
+  "name": "replication",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The role for the replication node",
+  "run_list": [
+    "role[base]",
+    "recipe[blueprint-spring-boot::replication-live-server]",
+    "recipe[blueprint-tools::replication-live-server-tools]"
+  ]
+}

@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.coremedia.blueprint.base.sfmc.p13n.studiolib.BaseSFMCP13NStudioLibConfiguration

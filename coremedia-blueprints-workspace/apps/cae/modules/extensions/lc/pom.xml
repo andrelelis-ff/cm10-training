@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>cae.extensions</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>cae.lc</artifactId>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>lc-cae</module>
+    <module>lc-contentbeans-api</module>
+    <module>lc-contentbeans-impl</module>
+    <module>lc-preview-cae</module>
+  </modules>
+</project>

@@ -1,0 +1,46 @@
+// Aurora specific changes
+// =====================================================================================================================
+
+// fragment styling
+
+#headerWrapper {
+  .cm-placement {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+  }
+}
+
+#contentWrapper {
+  .cm-placement {
+    // reset margins from "div" selectors of aurora
+    margin: 0;
+  }
+
+  // add space between placements without surrounding pagegrid
+  .row ~ .row {
+    > div > .cm-placement {
+      margin-top: 30px;
+    }
+  }
+
+  // layout with sidebar
+  .ccol3,
+  .ccol9 {
+    > .cm-placement {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+}
+
+@include breakpoint(xs) {
+
+  .row.margin-true > .slot4 > .cm-product-assets {
+    margin-right: 5px;
+  }
+
+  .row.margin-true > .slot4 > .cm-product-assets > .cm-product-assets__downloads {
+    margin-left: 5px;
+  }
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Aurora B2B Augmentation/Germany/German/Editorial/Content/Kitchen Products" name="Install Energy Efficient Refrigerators and Freezers" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Kitchen%20Products/Install%20Energy%20Efficien210e8c63.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Kitchen%20Products/Install%20Energy%20Efficient%20Refrigerators%20and%20Freezers"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="playerSettings">
+<Struct>
+<BooleanProperty Name="hideControls">false</BooleanProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Installation von energieeffizienten Kühl- und Gefrierschränken</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl>https://www.youtube-nocookie.com/embed/3BlxNDLetk4</dataUrl>
+<asset>
+</asset>
+</CMVideo>

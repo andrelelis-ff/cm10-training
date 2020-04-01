@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:CommerceDetailsFormBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns:u="exml:untyped"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:local="com.coremedia.livecontext.studio.desktop.*"
+        title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_PropertyGroup_details_title')}">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.util.RichTextPlainTextTransformer;
+    import com.coremedia.ecommerce.studio.model.CatalogObjectPropertyNames;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+    import com.coremedia.ui.mixins.ReadOnlyStateMixin;
+    import com.coremedia.ui.util.createComponentSelector;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.commerceDetailsForm";
+
+    public static const SHORT_DESCRIPTION_COLLAPSIBLE_ITEM_ID:String = "shortDescriptionCollapsibleItemId";
+
+    private var config:CommerceDetailsForm;
+
+    public native function CommerceDetailsForm(config:CommerceDetailsForm = null);
+    ]]></fx:Script>
+
+  <local:items>
+    <ui:TextFieldContainer itemId="{CatalogObjectPropertyNames.NAME}"
+                           fieldLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_title_label')}"
+                           propertyPath="{CatalogObjectPropertyNames.NAME}"
+                           readOnly="true"/>
+    <ui:AdvancedFieldContainer fieldLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_description_label')}"
+                               defaultField="{createComponentSelector().itemId(CatalogObjectPropertyNames.LONG_DESCRIPTION).build()}"
+                               cls="{ReadOnlyStateMixin.READ_ONLY_CLS}">
+      <ui:items>
+        <ui:RichTextArea itemId="{CatalogObjectPropertyNames.LONG_DESCRIPTION}"
+                         u:focusable="true"
+                         tabIndex="0"
+                         minHeight="{23*5}"
+                         readOnly="true">
+          <ui:plugins>
+            <ui:BindPropertyPlugin bidirectional="false"
+                                   bindTo="{config.bindTo.extendBy(CatalogObjectPropertyNames.LONG_DESCRIPTION)}"/>
+          </ui:plugins>
+        </ui:RichTextArea>
+      </ui:items>
+    </ui:AdvancedFieldContainer>
+    <local:CommerceDetailsFormBase itemId="{SHORT_DESCRIPTION_COLLAPSIBLE_ITEM_ID}"
+                                   contentBindTo="{config.contentBindTo}"
+                                   title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_shortDescription_label')}"
+                                   collapsed="true">
+      <local:items>
+        <ui:AdvancedFieldContainer fieldLabel="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'Commerce_shortDescription_label')}"
+                                   defaultField="{createComponentSelector().itemId(CatalogObjectPropertyNames.SHORT_DESCRIPTION).build()}"
+                                   cls="{ReadOnlyStateMixin.READ_ONLY_CLS}">
+          <ui:items>
+            <ui:RichTextArea itemId="{CatalogObjectPropertyNames.SHORT_DESCRIPTION}"
+                             u:focusable="true"
+                             tabIndex="0"
+                             readOnly="true"
+                             height="100">
+              <ui:plugins>
+                <ui:BindPropertyPlugin bidirectional="false"
+                                       bindTo="{config.bindTo.extendBy(CatalogObjectPropertyNames.SHORT_DESCRIPTION)}"/>
+              </ui:plugins>
+            </ui:RichTextArea>
+          </ui:items>
+        </ui:AdvancedFieldContainer>
+      </local:items>
+    </local:CommerceDetailsFormBase>
+  </local:items>
+
+</local:CommerceDetailsFormBase>

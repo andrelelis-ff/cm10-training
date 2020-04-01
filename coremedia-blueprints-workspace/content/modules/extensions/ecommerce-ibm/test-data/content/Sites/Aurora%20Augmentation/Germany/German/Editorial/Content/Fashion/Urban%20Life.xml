@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Fashion" name="Urban Life" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Fashion/Urban%20Life.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Urban%20Life"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=244;y=0;width=364;height=565</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=214;y=0;width=423;height=565</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=143;y=0;width=565;height=565</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=49;y=0;width=753;height=565</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=11;width=849;height=477</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=17;width=849;height=340</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=68;width=849;height=212</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2871536523929471;y1=0;x2=0.7153652392947103;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2518891687657431;y1=0;x2=0.7506297229219143;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.16876574307304787;y1=0;x2=0.8337531486146096;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.05793450881612091;y1=0;x2=0.9445843828715366;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.01893939393939394;x2=1;y2=0.8636363636363636</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.030303030303030304;x2=1;y2=0.6325757575757576</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.12121212121212122;x2=1;y2=0.4962121212121212</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Stadtleben</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Stadtleben</alt>
+<copyright>Csondy / iStock 21236008</copyright>
+<dataUrl></dataUrl>
+<width>849</width>
+<height>565</height>
+<data md5="5e15190c47a18ef819e8ed20fe9307f0" size="686683" href="../../../../../../../__blob/5e15190c47a18ef819e8ed20fe9307f0.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

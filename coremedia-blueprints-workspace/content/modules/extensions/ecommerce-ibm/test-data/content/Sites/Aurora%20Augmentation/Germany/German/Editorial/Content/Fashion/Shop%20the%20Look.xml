@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Fashion" name="Shop the Look" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Fashion/Shop%20the%20Look.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Shop%20the%20Look"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=268;y=0;width=400;height=622</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=236;y=0;width=466;height=622</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=158;y=0;width=622;height=622</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=54;y=0;width=829;height=622</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=5;width=935;height=525</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=12;width=935;height=375</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=73;width=935;height=233</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.2871536523929471;y1=0;x2=0.7153652392947103;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2518891687657431;y1=0;x2=0.7506297229219143;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.16876574307304787;y1=0;x2=0.8337531486146096;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.05793450881612091;y1=0;x2=0.9445843828715366;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.007575757575757576;x2=1;y2=0.8522727272727273</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.01893939393939394;x2=1;y2=0.6212121212121212</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.11742424242424243;x2=1;y2=0.49242424242424243</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Kauft die Schau</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Kauft die Schau</alt>
+<copyright>Csondy / iStock 21236008</copyright>
+<dataUrl></dataUrl>
+<width>935</width>
+<height>622</height>
+<data md5="0518ce8b14a6071e8ce3fd466f0829c3" size="134798" href="../../../../../../../__blob/0518ce8b14a6071e8ce3fd466f0829c3.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

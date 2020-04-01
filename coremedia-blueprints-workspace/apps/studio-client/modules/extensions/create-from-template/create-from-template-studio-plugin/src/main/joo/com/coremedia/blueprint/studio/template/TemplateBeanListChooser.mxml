@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:TemplateBeanListChooserBase xmlns:fx="http://ns.adobe.com/mxml/2009"
+                                   xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                                   xmlns:ui="exml:com.coremedia.ui.config"
+                                   xmlns="exml:ext.config"
+                                   xmlns:local="com.coremedia.blueprint.studio.template.*"
+                                   propertyName="{CreateFromTemplateStudioPluginSettings_properties.INSTANCE.template_property}">
+
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.template.TemplateBeanListChooser";
+    private var config:TemplateBeanListChooser;
+
+    public native function TemplateBeanListChooser(config:TemplateBeanListChooser = null);
+    ]]></fx:Script>
+
+  <local:dataFields>
+    <ui:DataField name="iconUri"
+                  mapping="name"
+                  ifUnreadable=""
+                  convert="{computeIconURL}"/>
+    <ui:DataField name="description"
+                  mapping="name"
+                  ifUnreadable=""
+                  convert="{getDescription}"/>
+  </local:dataFields>
+</local:TemplateBeanListChooserBase>

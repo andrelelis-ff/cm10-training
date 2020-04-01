@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server_model>
+<%- services = [
+'content-management-server',
+'master-live-server',
+'workflow-server',
+'content-feeder',
+'user-changes',
+'elastic-worker',
+'caefeeder-preview',
+'caefeeder-live',
+'cae-preview',
+'studio-server',
+'studio-client',
+'cae-live',
+'headless-server-preview',
+'headless-server-live'
+ ]
+-%>
+<%- host = node['blueprint']['hostname'] %>
+<%- services.each do |service| -%>
+<%- jmx_remote_server_port = node['blueprint']['spring-boot'][service]['jmx_remote_server_port'] %>
+<%- jmx_remote_registry_port = node['blueprint']['spring-boot'][service]['jmx_remote_registry_port'] %>
+  <server>
+    <jmx_service_url>service:jmx:rmi://<%= host %>:<%= jmx_remote_registry_port %>/jndi/rmi://<%= host %>:<%= jmx_remote_server_port %>/jmxrmi</jmx_service_url>
+    <server_name><%= service %></server_name>
+    <server_path><%= host %></server_path>
+  </server>
+<%- end -%>
+  <server>
+    <jmx_service_url>service:jmx:rmi:///jndi/rmi://<%= host %>:40099/jmxrmi</jmx_service_url>
+    <server_name>Solr</server_name>
+    <server_path><%= host %></server_path>
+  </server>
+</server_model>

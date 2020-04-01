@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Hybris Apparel/United Kingdom/English/Editorial/Content/Snow" name="Ski Racing (Re)Defined" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Ski Racing (Re)Defined</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Ski.xml" path="/Settings/Taxonomies/Subject/Ski"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Competition.xml" path="/Settings/Taxonomies/Subject/Competition"/>
+<link href="../../../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+<link href="../../../../../../../Settings/Taxonomies/Location/Austria.xml" path="/Settings/Taxonomies/Location/Austria"/>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Everything you wanted to know about Speed Riding on skis</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1">The theologically minded call it “preaching to the choir.”</p><p>We do a bit of it around here. Let’s face facts, most folks who tap into skiing generally know a great deal about our sport. They’re looking for information they aren’t going to get anywhere else. We’re proud of that.</p><p>So when we quote a racer saying, “I grabbed my bully after that big left-footer, but next thing I knew I was visiting the red room,” we have an expectation our readers have a clue what the skier was talking about.</p><p>Statistics show us there are new readers every month who may not be as well versed in technical slang, or even basic terms. We pick up more casual fans after Kitzbuehel, around World Championships time, and particularly in Olympic years. If you’re kind of new around here, we’ve got your briefing.</p><p>Let’s start with the personal equipment. You’ve got skis, of course, and also boots, bindings and poles. Not sticks. Not binders. Not ski shoes. There could also be a binding plate, though these are mostly included in today’s skis that you might buy at a shop. The skis themselves have topsheets, shovels, waists and edges. We rarely talk specifically about those parts, but turn radius certainly peppers many discussions. The turn radius is the arc a ski would carve on its own if the edge was run in the snow without pressure applied. The bottoms of the skis, or bases, get waxed and/or “structured” with a pattern ground into them.<br/></p><p>To keep track of all of these parts, a race requires a plethora of officials. A finish referee, a start referee, gate judges and a local chief of race. The TD, or technical delegate, heads up the jury of these officials that will make sure the race follows protocol.</p><p>But that’s not all. There are course setters, usually coaches who draw the assignment. And forerunners, normally young racers proficient enough to race, but not good enough to have yet made the list of competitors. Back in the race office are another group of officials doing the calculations, crossing the T’s and dotting the I’s.</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Goggles/CM%20Action%20Goggles%20-%20Augmented.xml" cmexport:path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Products/Goggles/CM%20Action%20Goggles%20-%20Augmented">CM Action Goggles</a><br/></p><p>In alpine racing there are five disciplines, often listed in the order in which they were conceived: Downhill, slalom, giant slalom, super-G and alpine combined. Straight-up combined, however, was the first Olympic alpine sport, combining a run of downhill and a slalom race to get a winner who was once considered a true master of the sport. Today the alpine combined, altered regularly in the past decade by currently consisting of a single run of speed (either downhill or super-G and a single run of slalom), is the black sheep of the family, attracting calls for discontinuation. Personally, that seems sad.</p><p>Slalom has the gates placed the closest together. Slalom skis and also courses are occasionally referred to as “disco sticks.”</p></div></detailText>
+<pictures>
+<link href="../../../Pictures/Ski%20Mountains.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Pictures/Ski%20Mountains"/>
+</pictures>
+<related>
+</related>
+<authors>
+<link href="../../Authors/David%20Fuller%20Person.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Authors/David%20Fuller%20Person"/>
+<link href="../../Authors/Elle%20Quinn%20Person.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Editorial/Authors/Elle%20Quinn%20Person"/>
+</authors>
+</CMArticle>

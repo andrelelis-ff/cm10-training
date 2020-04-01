@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProduct folder="/Sites/Chef Corp./United States/English/Products/ChefWave" name="ChefWave HD - Large Product" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">More Product Information</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>chefwave-hd-large</segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+<link href="ChefWave.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/ChefWave/ChefWave"/>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>The groundbreaking ChefWave™ HD is the world's first high pressure microwave deep fryer.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/><p class="p--heading-3">Description</p><p>ChefWave™ HD is the world's first high pressure deep fryer that uses microwaves as a heat source. This unique piece of appliance combines several high-yield cooking technologies that interact in a completely novel way to utilize the viscosity of very hot oil, the enhancing physical properties of high pressure, and the deeply penetrating rays of microwaves. A world's first that lowers the required time to fry poultry by two thirds! That's one minute instead of three for a whole batch of chicken wings. The reduced exposure to oil lowers the fat content of the fried goods by an order of magnitude while keeping the savory goodness alive.</p><p class="p--heading-3">Key Features</p><p>• Groundbreaking technology<br/>• Advanced safety through highly durable pressure seal<br/>• Automatic oil filter monitoring<br/>• Easily cleanable, even in the rear<br/>• 3 year warranty</p><p class="p--heading-3">Technical Specifications</p><p/><table dir="ltr"><tbody><tr><td>Color</td><td>Stainless Steel</td></tr><tr><td>Form Factor</td><td>Large</td></tr><tr><td>Width</td><td>1090 mm</td></tr><tr><td>Depth</td><td>600 mm</td></tr><tr><td>Height</td><td>935 mm</td></tr><tr><td>Weight</td><td>587 lbs</td></tr><tr><td>Total Power Ratings</td><td>2.2kW</td></tr><tr><td>Capacity</td><td>8 liters</td></tr><tr><td>W x D x H</td><td>1090 × 600 × 935 mm</td></tr></tbody></table><p/></div></detailText>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Products/ChefWave/ChefWave%20HD%20Large%20Fryer%201fefc665b.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Products/ChefWave/ChefWave%20HD%20Large%20Fryer%201%20Picture"/>
+<link href="../../Editorial/Assets/Pictures/Products/ChefWave/ChefWave%20HD%20Large%20Fryer%202fefc665b.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Products/ChefWave/ChefWave%20HD%20Large%20Fryer%202%20Picture"/>
+</pictures>
+<related>
+<link href="ChefWave%20HD%20-%20Small%20Product.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/ChefWave/ChefWave%20HD%20-%20Small%20Product"/>
+<link href="../Hoods%20and%20Extractors/Chef%20Extractor%20Hood%20HD800%20Built-In%20Product.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Hoods%20and%20Extractors/Chef%20Extractor%20Hood%20HD800%20Built-In%20Product"/>
+<link href="../Ranges%20and%20Ovens/Chef%20Range%20CR1020%20Premium%20Product.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Ranges%20and%20Ovens/Chef%20Range%20CR1020%20Premium%20Product"/>
+</related>
+<authors>
+</authors>
+<downloads>
+<link href="../../Editorial/Assets/Downloads/Products/ChefWave/ChefWave%20HD%20%28large%29%20Da6ef131ca.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Downloads/Products/ChefWave/ChefWave%20HD%20%28large%29%20Datasheet%20PDF%20Download"/>
+<link href="../../Editorial/Assets/Downloads/Products/ChefWave/ChefWave%20HD%20%28large%29%20EU823818be.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Downloads/Products/ChefWave/ChefWave%20HD%20%28large%29%20EU%20Compliance%20PDF%20Download"/>
+</downloads>
+<productCode>CC-WAV-001</productCode>
+<productName>ChefWave™ HD High Pressure Microwave Deep Fryer (Large)</productName>
+</CMProduct>

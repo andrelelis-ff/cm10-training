@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>content.modules</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>content.extension-config</artifactId>
+  <packaging>pom</packaging>
+
+  <properties>
+    <!--
+     | these poms are generated so we can safely skip this
+     -->
+    <enforcer.skip>true</enforcer.skip>
+  </properties>
+
+
+  <modules>
+    <module>content-extension-dependencies</module>
+    <module>content-extensions-bom</module>
+  </modules>
+
+</project>

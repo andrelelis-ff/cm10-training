@@ -1,0 +1,21 @@
+#!/bin/sh
+
+echo "[DOCKER ENTRYPOINT] - entering $0"
+set -eu
+
+CONTENT_DIR=${EXPORT_CONTENT_DIR}
+EXPORT_PATHS=$1
+shift
+BLOB_STORAGE_URL=${BLOB_STORAGE_URL:-http://storage.coremedia.vm/cms/blueprint/test-data/blobs/}
+
+if [ ! -z "${BLOB_STORAGE_URL}" ]; then
+  BLOB_EXTRA_ARGS="--bloburl ${BLOB_STORAGE_URL} --blobsizelimit 1024 --sharedblobbasedir ${CONTENT_DIR}/__blob "
+fi
+
+# why cut 157, thats the normal path length we have left on windows :)
+DEFAULT_ARGS="-u ${TOOLS_USER} -p ${TOOLS_PASSWORD} --recursive --pretty --lint linkignored --cut 157 --basedir ${CONTENT_DIR}"
+
+echo "[DOCKER ENTRYPOINT] - exporting content to ${CONTENT_DIR}"
+./tools/bin/cm serverexport ${DEFAULT_ARGS} ${BLOB_EXTRA_ARGS} ${EXPORT_PATHS}
+
+test $# -gt 0 && exec ./$@ || echo "[DOCKER ENTRYPOINT] - entrypoint chain finished"

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMUserProfile folder="/Sites/Calista/United States/English/Options/Personalization/Profiles" name="Gary Stevens Persona" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<profileSettings href="Gary%20Stevens%20Persona.profileSettings.plain" mimetype="text/plain"/>
+<profileExtensions>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="properties">
+<Struct>
+<LinkListProperty Name="explicit" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Male.xml" cmexport:path="/Settings/Taxonomies/Subject/Male"/>
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Men.xml" cmexport:path="/Settings/Taxonomies/Subject/Men"/>
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Stylish.xml" cmexport:path="/Settings/Taxonomies/Subject/Stylish"/>
+</LinkListProperty>
+<LinkListProperty Name="subjectTaxonomies" LinkType="coremedia:///cap/contenttype/CMTaxonomy">
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Men.xml" cmexport:path="/Settings/Taxonomies/Subject/Men"/>
+<Link xlink:href="coremedia:///cap/resources/../../../../../../../Settings/Taxonomies/Subject/Stylish.xml" cmexport:path="/Settings/Taxonomies/Subject/Stylish"/>
+</LinkListProperty>
+<LinkListProperty Name="profileImage" LinkType="coremedia:///cap/contenttype/CMPicture">
+<Link xlink:href="coremedia:///cap/resources/Male%20Elegant.xml" cmexport:path="/Sites/Calista/United%20States/English/Options/Personalization/Profiles/Male%20Elegant"/>
+</LinkListProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="usersegments">
+<String>ibm:///catalog/segment/8000000000000003504</String>
+<String>ibm:///catalog/segment/8000000000000003501</String>
+<String>ibm:///catalog/segment/8000000000000003507</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</profileExtensions>
+</CMUserProfile>

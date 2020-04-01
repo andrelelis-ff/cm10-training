@@ -1,0 +1,17 @@
+.cm-slot {
+  > .cm-placement + .cm-placement {
+    margin-top: 48px;
+  }
+}
+
+.cm-slot-main {
+  padding: 48px 0;
+}
+
+.pt_categorylanding {
+
+  .secondary-content {
+    // margin on the placement has no effect because of floating elements
+    padding: 48px 0;
+  }
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Calista/United States/English/Editorial/Content/Site Wide/Footer Navigation" name="Men" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Men</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../../../Augmentation/Apparel/Men/Men%20Jackets/Men%20Jackets.xml" path="/Sites/Calista/United%20States/English/Augmentation/Apparel/Men/Men%20Jackets/Men%20Jackets"/>
+<link href="../../../../Augmentation/Apparel/Men/Men%20Pants/Men%20Pants.xml" path="/Sites/Calista/United%20States/English/Augmentation/Apparel/Men/Men%20Pants/Men%20Pants"/>
+<link href="../../../../Augmentation/Apparel/Men/Men%20Shirts/Men%20Shirts.xml" path="/Sites/Calista/United%20States/English/Augmentation/Apparel/Men/Men%20Shirts/Men%20Shirts"/>
+<link href="../../../../Augmentation/Apparel/Men/Men%20Suits/Men%20Suits.xml" path="/Sites/Calista/United%20States/English/Augmentation/Apparel/Men/Men%20Suits/Men%20Suits"/>
+<link href="../../../../Augmentation/Apparel/Men/Men%20Shoes/Men%20Shoes.xml" path="/Sites/Calista/United%20States/English/Augmentation/Apparel/Men/Men%20Shoes/Men%20Shoes"/>
+</items>
+</CMCollection>

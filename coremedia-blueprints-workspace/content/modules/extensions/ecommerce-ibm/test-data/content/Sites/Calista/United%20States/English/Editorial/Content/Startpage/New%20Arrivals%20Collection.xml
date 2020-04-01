@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMCollection folder="/Sites/Calista/United States/English/Editorial/Content/Startpage" name="New Arrivals Collection" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+<link href="../../../Options/Viewtypes/CMChannel/carousel.xml" path="/Sites/Calista/United%20States/English/Options/Viewtypes/CMChannel/carousel"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>New Arrivals</teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+<link href="../../Products/Hermitage%20Black%20Skinny%20Suit.xml" path="/Sites/Calista/United%20States/English/Editorial/Products/Hermitage%20Black%20Skinny%20Suit"/>
+<link href="../../Products/Luigi%20Valenti%20Strapless%20Cocktail%20Dress.xml" path="/Sites/Calista/United%20States/English/Editorial/Products/Luigi%20Valenti%20Strapless%20Cocktail%20Dress"/>
+<link href="../../Products/Hermitage%20Black%20Contemporary%20Three%20Button%20Suit.xml" path="/Sites/Calista/United%20States/English/Editorial/Products/Hermitage%20Black%20Contemporary%20Three%20Button%20Suit"/>
+<link href="../../Products/Luigi%20Valenti%20Sleeveless%20Slip%20Dress.xml" path="/Sites/Calista/United%20States/English/Editorial/Products/Luigi%20Valenti%20Sleeveless%20Slip%20Dress"/>
+<link href="../../Products/Albini%20Black%20Wool%20Suit.xml" path="/Sites/Calista/United%20States/English/Editorial/Products/Albini%20Black%20Wool%20Suit"/>
+<link href="../../Products/Albini%20Casual%20Knit%20Strapless%20Dress.xml" path="/Sites/Calista/United%20States/English/Editorial/Products/Albini%20Casual%20Knit%20Strapless%20Dress"/>
+<link href="../../Products/Luigi%20Valenti%20Navy%20Blue%20Formal%20Suit.xml" path="/Sites/Calista/United%20States/English/Editorial/Products/Luigi%20Valenti%20Navy%20Blue%20Formal%20Suit"/>
+<link href="../../Products/Hermitage%20Fit%20and%20Flare%20Dress.xml" path="/Sites/Calista/United%20States/English/Editorial/Products/Hermitage%20Fit%20and%20Flare%20Dress"/>
+</items>
+</CMCollection>

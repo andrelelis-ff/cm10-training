@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/United States/English/Pictures/Product Pictures/Men/Suits" name="Hermitage Black Contemporary Three Button Suit" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/MCL008_0815</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=44;y=0;width=2581;height=4000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=63;width=2669;height=3559</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=164;width=2669;height=2669</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=164;width=2669;height=2002</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=189;width=2669;height=1501</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=151;width=2669;height=1068</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=454;width=2669;height=667</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=84;y=0;width=2500;height=4000</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=177;width=2669;height=1136</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=0;y=0;width=2667;height=4000</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=479;width=2669;height=1001</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="landscape_ratio235x100">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.015772870662460567;x2=1;y2=0.9054395373291272</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.04100946372239748;x2=1;y2=0.7082594637223975</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.04100946372239748;x2=1;y2=0.5414469637223974</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.0473186119873817;x2=1;y2=0.42264673698738175</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.03785488958990536;x2=1;y2=0.3047548895899053</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.11356466876971609;x2=1;y2=0.2803771687697161</StringProperty>
+<StringProperty Name="landscape_ratio235x100">position;x1=0;y1=0.044164037854889586;x2=1;y2=0.32810020806765555</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.5306603773584906</StringProperty>
+<StringProperty Name="y">0.24132492113564669</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Hermitage Black Contemporary Three Button Suit</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright>Roman Samborskyi/shutterstock_496484668</copyright>
+<dataUrl></dataUrl>
+<width>2670</width>
+<height>4000</height>
+<data md5="6df029cb50cc077fe034ace466c5b862" size="494164" href="../../../../../../../../__blob/6df029cb50cc077fe034ace466c5b862.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

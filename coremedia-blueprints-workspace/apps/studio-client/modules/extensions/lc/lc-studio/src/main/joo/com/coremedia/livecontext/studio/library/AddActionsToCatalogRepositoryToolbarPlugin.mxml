@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:AddItemsPlugin xmlns:fx="http://ns.adobe.com/mxml/2009"
+                   xmlns="exml:ext.config"
+                   xmlns:ui="exml:com.coremedia.ui.config"
+                   xmlns:livecontext="exml:com.coremedia.livecontext.studio.config">
+<fx:Script><![CDATA[
+  import com.coremedia.ecommerce.studio.ECommerceStudioPlugin;
+  import com.coremedia.ecommerce.studio.components.repository.CatalogRepositoryToolbar;
+  import com.coremedia.livecontext.studio.LivecontextStudioPlugin;
+
+  private var config:AddActionsToCatalogRepositoryToolbarPlugin;
+  private var componentConfig:CatalogRepositoryToolbar;
+
+  // called by generated constructor code
+  private function __initialize__(config:AddActionsToCatalogRepositoryToolbarPlugin):void {
+    componentConfig = CatalogRepositoryToolbar(config.cmp.initialConfig);
+  }
+
+  public native function AddActionsToCatalogRepositoryToolbarPlugin(config:AddActionsToCatalogRepositoryToolbarPlugin = null);
+  ]]></fx:Script>
+  <ui:items>
+    <TbSeparator itemId="searchProductVariantsSeparator"/>
+    <ui:IconButton itemId="{LivecontextStudioPlugin.SEARCH_PRODUCT_VARIANTS_BUTTON_ITEM_ID}">
+      <ui:baseAction>
+        <livecontext:SearchProductVariantsAction
+                catalogObjectExpression="{componentConfig.selectedItemsValueExpression}"/>
+      </ui:baseAction>
+    </ui:IconButton>
+    <ui:IconButton itemId="{LivecontextStudioPlugin.AUGMENT_CATEGORY_BUTTON_ITEM_ID}">
+      <ui:baseAction>
+        <livecontext:AugmentCategoryAction
+                catalogObjectExpression="{componentConfig.selectedItemsValueExpression}"/>
+      </ui:baseAction>
+    </ui:IconButton>
+    <ui:IconButton itemId="{LivecontextStudioPlugin.AUGMENT_PRODUCT_BUTTON_ITEM_ID}">
+      <ui:baseAction>
+        <livecontext:AugmentProductAction
+                catalogObjectExpression="{componentConfig.selectedItemsValueExpression}"/>
+      </ui:baseAction>
+    </ui:IconButton>
+    <TbSeparator itemId="createProductTeaserSeparator"/>
+    <ui:IconButton itemId="{LivecontextStudioPlugin.CREATE_PRODUCT_TEASER_BUTTON_ITEM_ID}">
+      <ui:baseAction>
+        <livecontext:CreateProductTeaserAction
+                catalogObjectExpression="{componentConfig.selectedItemsValueExpression}"/>
+      </ui:baseAction>
+    </ui:IconButton>
+    <ui:IconButton itemId="{LivecontextStudioPlugin.CREATE_MARKETING_SPOT_BUTTON_ITEM_ID}">
+      <ui:baseAction>
+        <livecontext:CreateMarketingSpotAction
+                catalogObjectExpression="{componentConfig.selectedItemsValueExpression}"/>
+      </ui:baseAction>
+    </ui:IconButton>
+  </ui:items>
+  <ui:after>
+    <Component itemId="{ECommerceStudioPlugin.OPEN_IN_TAB_MENU_ITEM_ID}"/>
+  </ui:after>
+</ui:AddItemsPlugin>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Calista/Germany/German/Pictures/Product Pictures/Women/Dresses" name="Dress 2 Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Pictures/Product%20Pictures/Women/Dresses/Dress%202%20Picture.xml" path="/Sites/Calista/United%20States/English/Pictures/Product%20Pictures/Women/Dresses/Dress%202%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=22;y=0;width=1321;height=2048</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=114;width=1365;height=1820</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=0;width=1365;height=1365</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=76;width=1365;height=1024</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=45;width=1365;height=768</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=751;width=1365;height=546</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=853;width=1365;height=341</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=43;y=0;width=1280;height=2048</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=58;width=1365;height=581</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=0;y=0;width=1365;height=2048</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=174;width=1365;height=512</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.015113350125944584;y1=0;x2=0.9848866498740554;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.05536912751677853;x2=1;y2=0.9446308724832215</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.16778523489932887;x2=1;y2=0.8338926174496645</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.03691275167785235;x2=1;y2=0.5369127516778524</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.313758389261745;x2=1;y2=0.6879194630872483</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.3674496644295302;x2=1;y2=0.6342281879194631</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.41778523489932884;x2=1;y2=0.5838926174496645</StringProperty>
+<StringProperty Name="landscape_ratio235x100">position;x1=0;y1=0.028391167192429023;x2=1;y2=0.3120098507030673</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+<StringProperty Name="landscape_ratio235x100">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+</StringListProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.5521327014218009</StringProperty>
+<StringProperty Name="y">0.20662460567823343</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Kleid 2 Bild</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Kleid 2 Bild</alt>
+<copyright>Voyagerix / Shutterstock 130963460</copyright>
+<dataUrl></dataUrl>
+<width>1365</width>
+<height>2048</height>
+<data md5="89db47c6f9c565405a5af5d7d0f02079" size="154816" href="../../../../../../../../__blob/89db47c6f9c565405a5af5d7d0f02079.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

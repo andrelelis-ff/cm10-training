@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                          http://www.springframework.org/schema/beans/spring-beans.xsd
+                          http://www.springframework.org/schema/context
+                          http://www.springframework.org/schema/context/spring-context.xsd
+                          http://www.springframework.org/schema/util
+                          http://www.springframework.org/schema/util/spring-util.xsd">
+
+  <description>
+    Link transformation
+  </description>
+
+  <import resource="classpath:/com/coremedia/cap/multisite/multisite-services.xml"/>
+  <import resource="classpath:/com/coremedia/cae/link-services.xml"/>
+  <import resource="classpath:/com/coremedia/blueprint/base/links/bpbase-links-services.xml"/>
+
+  <context:component-scan base-package="com.coremedia.blueprint.cae.web.links" />
+
+<!--
+  <import resource="classpath:/com/coremedia/blueprint/base/links/bpbase-links-legacy.xml"/>
+  <customize:replace id="ruleProviderSwitch" bean="ruleUrlPrefixResolver" property="ruleProviders" custom-ref="legacyRuleProviders">
+    <description>
+      Old mixed content/configuration url prefix lookup.
+      Activate this customizer if and only if you have not yet migrated the
+      url prefix rules to absoluteUrlPrefixes structs in the site indicator
+      documents.
+
+      For details consult the DXP8 Developer Manual, Appendix / Link Format / Link Post Processors / makeAbsoluteUri
+    </description>
+  </customize:replace>
+-->
+
+  <bean id="themeResourceLinkBuilder" class="com.coremedia.blueprint.cae.web.links.ThemeResourceLinkBuilder">
+    <property name="useLocalResources" value="${cae.use.local.resources:false}"/>
+    <property name="linkFormatter" ref="linkFormatter"/>
+    <property name="contextService" ref="currentContextService"/>
+    <property name="repository" ref="contentRepository"/>
+    <property name="dataViewFactory" ref="dataViewFactory"/>
+    <property name="contentBeanFactory" ref="contentBeanFactory"/>
+  </bean>
+
+  <bean id="previewDateAppendingLinkTransformer" class="com.coremedia.objectserver.web.links.ParameterAppendingLinkTransformer">
+    <description>
+      Creates a CAE LinkTransformer that rewrites all generated links
+      and adds the request parameter for the preview  date
+    </description>
+    <property name="parameterName">
+      <util:constant static-field="com.coremedia.blueprint.common.datevalidation.ValidityPeriodValidator.REQUEST_PARAMETER_PREVIEW_DATE"/>
+    </property>
+  </bean>
+
+</beans>

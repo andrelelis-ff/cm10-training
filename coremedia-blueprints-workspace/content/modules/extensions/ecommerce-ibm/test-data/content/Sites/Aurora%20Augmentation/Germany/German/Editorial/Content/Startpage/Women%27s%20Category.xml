@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Startpage" name="Women's Category" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Startpage/Women%27s%20Category.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Startpage/Women%27s%20Category"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Teaser%20Styles/Light"/>
+<IntProperty Name="positionX">-42</IntProperty>
+<IntProperty Name="positionY">42</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Women's Apparel</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1">Damen</p><p>Entdecke die neuen Trends</p></div></teaserText>
+<pictures>
+<link href="Fashionable%20woman%20in%20a%20hat%20Picture.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Editorial/Content/Startpage/Fashionable%20woman%20in%20a%20hat%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../Augmentation/Apparel/Women/Women.xml" path="/Sites/Aurora%20Augmentation/Germany/German/Augmentation/Apparel/Women/Women"/>
+</target>
+</CMTeaser>

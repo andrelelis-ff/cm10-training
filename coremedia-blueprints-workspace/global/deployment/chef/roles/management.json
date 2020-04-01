@@ -1,0 +1,20 @@
+{
+  "name": "management",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The role for the management node",
+  "run_list": [
+    "role[base]",
+    "recipe[blueprint-spring-boot::content-management-server]",
+    "recipe[blueprint-tools::content-management-server-tools]",
+    "recipe[blueprint-tools::theme-importer-tools]",
+    "recipe[blueprint-spring-boot::workflow-server]",
+    "recipe[blueprint-tools::workflow-server-tools]",
+    "recipe[blueprint-spring-boot::content-feeder]",
+    "recipe[blueprint-spring-boot::user-changes]",
+    "recipe[blueprint-spring-boot::elastic-worker]",
+    "recipe[blueprint-spring-boot::commerce-adapter-mock]",
+    "recipe[blueprint-spring-boot::caefeeder-preview]",
+    "recipe[blueprint-tools::caefeeder-preview-tools]"
+  ]
+}

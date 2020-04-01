@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:PropertyFieldGroup
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        title="{resourceManager.getString('com.coremedia.blueprint.studio.analytics.AnalyticsStudioPlugin', 'Misc_title')}"
+        itemId="analyticsMiscPanel">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.analytics.AnalyticsStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.analytics.analyticsMiscPanel";
+
+    private var config:AnalyticsMiscPanel;
+
+    public native function AnalyticsMiscPanel(config:AnalyticsMiscPanel = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <!-- extend this one with miscellaneous options -->
+  </editor:items>
+
+</editor:PropertyFieldGroup>

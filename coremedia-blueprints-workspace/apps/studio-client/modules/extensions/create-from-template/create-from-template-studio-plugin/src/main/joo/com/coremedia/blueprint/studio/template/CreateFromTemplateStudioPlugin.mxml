@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:StudioPlugin
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:template="exml:com.coremedia.blueprint.studio.template.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.newcontent.NewContentMenu;
+
+    private var config:CreateFromTemplateStudioPlugin;
+
+    public native function CreateFromTemplateStudioPlugin(config:CreateFromTemplateStudioPlugin = null);
+    ]]></fx:Script>
+
+  <editor:rules>
+
+    <editor:NewContentMenu>
+      <editor:plugins>
+        <ui:AddItemsPlugin>
+          <ui:items>
+            <MenuSeparator itemId="createFromTemplateSeparator"/>
+            <template:CreateFromTemplateMenuItem/>
+          </ui:items>
+          <ui:before>
+            <Component itemId="{NewContentMenu.DYNAMIC_SEPARATOR}"/>
+          </ui:before>
+        </ui:AddItemsPlugin>
+      </editor:plugins>
+    </editor:NewContentMenu>
+
+  </editor:rules>
+
+</editor:StudioPlugin>

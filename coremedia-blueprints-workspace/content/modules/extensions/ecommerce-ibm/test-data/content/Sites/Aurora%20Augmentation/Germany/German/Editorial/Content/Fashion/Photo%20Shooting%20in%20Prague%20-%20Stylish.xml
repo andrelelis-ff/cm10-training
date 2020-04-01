@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/Germany/German/Editorial/Content/Fashion" name="Photo Shooting in Prague - Stylish" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../United%20States/English/Editorial/Content/Fashion/Photo%20Shooting%20in%20Prague%20-%20Stylish.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Editorial/Content/Fashion/Photo%20Shooting%20in%20Prague%20-%20Stylish"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=1112;y=637;width=1652;height=2563</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=983;y=774;width=1822;height=2426</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=725;y=725;width=2475;height=2475</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=621;y=871;width=2579;height=1935</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=911;width=3200;height=1797</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=959;width=3200;height=1282</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=975;width=3200;height=798</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.34760705289672544;y1=0.19899244332493704;x2=0.8639798488664987;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.30730478589420657;y1=0.24181360201511334;x2=0.8765743073047859;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.22670025188916876;y1=0.22670025188916876;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.19395465994962216;y1=0.27204030226700254;x2=1;y2=0.8765743073047859</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.28463476070528965;x2=1;y2=0.8463476070528967</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.29974811083123426;x2=1;y2=0.7002518891687658</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.3047858942065491;x2=1;y2=0.5541561712846348</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Shooting Foto im Prag - Stilvoll</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Shooting Foto im Prag - Stilvoll</alt>
+<copyright>solominviktor / Shutterstock</copyright>
+<dataUrl></dataUrl>
+<width>3200</width>
+<height>3200</height>
+<data md5="481faed2b72cc734304ac1fdd3aef49f" size="6276006" href="../../../../../../../__blob/481faed2b72cc734304ac1fdd3aef49f.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<included>
+
+  <property name="ELASTIC_BULK_URL"
+            value="${ELASTIC_BULK_URL:-http://localhost:9200/_bulk}"/>
+
+  <appender name="ELASTIC" class="com.internetitem.logback.elasticsearch.ElasticsearchAppender">
+    <url>${ELASTIC_BULK_URL}</url>
+    <index>coremedia-%date{yyyy-MM-dd}</index>
+    <type>application-logs</type>
+    <properties>
+      <property>
+        <name>host</name>
+        <value>${HOSTNAME}</value>
+        <allowEmpty>false</allowEmpty>
+      </property>
+      <property>
+        <name>application</name>
+        <value>${springAppName}</value>
+      </property>
+      <property>
+        <name>severity</name>
+        <value>%level</value>
+      </property>
+      <property>
+        <name>environment</name>
+        <value>${environment}</value>
+      </property>
+      <property>
+        <name>thread</name>
+        <value>%thread</value>
+      </property>
+      <property>
+        <name>stacktrace</name>
+        <value>%ex</value>
+      </property>
+      <property>
+        <name>logger</name>
+        <value>%logger</value>
+      </property>
+    </properties>
+    <headers>
+      <header>
+        <name>Content-Type</name>
+        <value>application/json</value>
+      </header>
+    </headers>
+  </appender>
+
+</included>

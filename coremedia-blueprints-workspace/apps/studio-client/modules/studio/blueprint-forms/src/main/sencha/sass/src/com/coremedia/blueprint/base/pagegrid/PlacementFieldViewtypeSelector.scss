@@ -1,0 +1,27 @@
+@if $cm-include-placement-field-viewtype-selector {
+
+  $_placement-field-viewtype-selector-color: $cm-font-color;
+  $_placement-field-viewtype-selector-opacity: 1;
+
+  .cm-placement-field-viewtype-selector input {
+    &::-webkit-input-placeholder {
+      color: $_placement-field-viewtype-selector-color;
+      opacity: $_placement-field-viewtype-selector-opacity;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+      color: $_placement-field-viewtype-selector-color;
+      opacity: $_placement-field-viewtype-selector-opacity;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+      color: $_placement-field-viewtype-selector-color;
+      opacity: $_placement-field-viewtype-selector-opacity;
+    }
+
+    &:-ms-input-placeholder {
+      color: $_placement-field-viewtype-selector-color;
+      opacity: $_placement-field-viewtype-selector-opacity;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.cm-cta-button {
+  color: #fff;
+  background-color: #ec7205;
+  border: 3px solid #ec7205;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 10px 15px;
+  font-size: 16px;
+  line-height: 1.375;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: #fff;
+    background-color: #ff973b;
+    border-color: #ff973b;
+    text-decoration: none;
+
+  }
+}

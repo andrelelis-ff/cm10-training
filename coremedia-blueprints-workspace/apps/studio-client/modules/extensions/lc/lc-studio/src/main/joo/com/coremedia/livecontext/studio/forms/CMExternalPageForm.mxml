@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config"
+        xmlns:bppm="exml:com.coremedia.blueprint.base.pagegrid.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.blueprint.studio.forms.columns.HiddenChannelColumn;
+    import com.coremedia.blueprint.studio.util.ViewtypeRenderer;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.cmExternalPageForm";
+
+    public static const EXTERNAL_ID_ITEM_ID:String = "externalIdString";
+
+    public static const EXTERNAL_URI_PATH_ITEM_ID:String = "externalUriPath";
+
+    public static const CHILDREN_LIST_ITEM_ID:String = "children";
+
+    public static const VISIBILITY_ITEM_ID:String = "visibility";
+
+    private var config:CMExternalPageForm;
+
+    public native function CMExternalPageForm(config:CMExternalPageForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <bpforms:CollapsibleStringPropertyForm propertyName="title"
+                                               title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMChannel_title_text')}"/>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Placements_label')}"
+                itemId="cmExternalChannelPlacementForm">
+          <editor:items>
+            <bppm:PageGridPropertyField propertyName="placement"
+                                        hideLabel="true">
+              <bppm:fields>
+                <ui:DataField name="{ValidityColumn.STATUS_ID}"
+                              ifUnreadable=""
+                              mapping=""
+                              convert_="{ValidityColumn.convert}"/>
+                <ui:DataField name="viewtypeStatus"
+                              ifUnreadable=""
+                              mapping=""
+                              convert_="{ViewtypeRenderer.convert}"/>
+              </bppm:fields>
+              <bppm:columns>
+                <editor:ThumbnailColumn/>
+                <editor:TypeIconColumn/>
+                <editor:NameColumn/>
+                <bpforms:ValidityColumn/>
+                <GridColumn stateId="viewTypeUrl"
+                            width="40"
+                            sortable="false"
+                            dataIndex="viewtypeStatus"
+                            fixed="true"
+                            renderer="{ViewtypeRenderer.renderer}"/>
+                <editor:StatusColumn/>
+              </bppm:columns>
+              <bppm:placementRowWidgetItems>
+                <bpforms:VisibilityConfigurationForm/>
+              </bppm:placementRowWidgetItems>
+            </bppm:PageGridPropertyField>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <bpforms:TeaserWithPictureDocumentForm/>
+        <bpforms:ValidityDocumentForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_navigation_title')}"
+            itemId="navigation">
+      <editor:items>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Navigation_label')}"
+                itemId="cmExternalPageNavigation">
+          <editor:items>
+            <editor:LinkListPropertyField bindTo="{config.bindTo}"
+                                          hideLabel="true"
+                                          propertyName="children"
+                                          itemId="{CHILDREN_LIST_ITEM_ID}">
+              <editor:fields>
+                <ui:DataField name="{ValidityColumn.STATUS_ID}"
+                              ifUnreadable=""
+                              mapping=""
+                              convert_="{ValidityColumn.convert}"/>
+                <ui:DataField name="{HiddenChannelColumn.STATUS_ID}"
+                              ifUnreadable=""
+                              mapping="properties.hidden"/>
+              </editor:fields>
+              <editor:columns>
+                <editor:ThumbnailColumn/>
+                <editor:TypeIconColumn/>
+                <editor:NameColumn/>
+                <bpforms:ValidityColumn/>
+                <bpforms:HiddenChannelColumn/>
+                <editor:StatusColumn/>
+              </editor:columns>
+            </editor:LinkListPropertyField>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <bpforms:VisibilityDocumentForm itemId="{VISIBILITY_ITEM_ID}"/>
+        <editor:PropertyFieldGroup
+                title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'EnhancedPageGroup_title')}"
+                itemId="cmExternalPageEnhancedPage">
+          <editor:items>
+            <editor:StringPropertyField propertyName="externalId"
+                                        changeBuffer="1000"
+                                        itemId="{EXTERNAL_ID_ITEM_ID}"/>
+            <editor:StringPropertyField propertyName="externalUriPath"
+                                        changeBuffer="1000"
+                                        itemId="{EXTERNAL_URI_PATH_ITEM_ID}"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+      </editor:items>
+    </editor:DocumentForm>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_extras_title')}"
+            itemId="metadata">
+      <editor:items>
+        <bpforms:CategoryDocumentForm/>
+        <bpforms:SEOForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:MultiLangWithBundlesDocumentForm/>
+    <bpforms:ChannelMetaDataInformationForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

@@ -1,0 +1,27 @@
+.cm-page {
+  height: 100%;
+  background-color: #fff;
+  margin: 0;
+}
+
+// no-js infobox
+.cm-javascript {
+  display: none;
+}
+
+.no-js {
+  margin-top: 40px;
+
+  .cm-javascript {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    line-height: 40px;
+    background: $cm-no-js-background;
+    color: $cm-no-js-color;
+    text-align: center;
+  }
+}

@@ -1,0 +1,129 @@
+.cm-cart {
+  text-align: center;
+
+  &__footer {
+    & .cm-button {
+      display: inline-block;
+    }
+  }
+
+  &__empty {
+    width: 200px;
+    padding: 12px 0;
+    border-bottom: 1px solid #EEEEEE;
+  }
+
+  &__arrow {
+    position: absolute;
+    border: 11px solid transparent;
+    top: -11px;
+    right: 7px;
+    margin-left: -11px;
+    border-top-width: 0;
+    border-bottom-color: #000;
+    &:after {
+      content: "";
+      position: absolute;
+      border: 10px solid transparent;
+      top:1px;
+      margin-left: -10px;
+      border-top-width: 0;
+      border-bottom-color: #FFFFFF;
+    }
+  }
+
+  &-item {
+    $_cart-item-width: 400px;
+    $_cart-item__image-width: 60px;
+
+    width: $_cart-item-width;
+    padding: 10px 0;
+    border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 10px;
+
+    &__image-box {
+      vertical-align:top;
+      display:inline-block;
+      width: $_cart-item__image-width;
+
+      @include aspect-ratio-box(2,3);
+    }
+
+
+    &__image {
+      @include stretch-absolute();
+    }
+
+    &__remove {
+      display: none;
+    }
+
+    &__properties {
+      vertical-align:top;
+      display: inline-block;
+      position: relative;
+      width: $_cart-item-width - $_cart-item__image-width - 20px;
+      text-align: left;
+
+      .cm-property {
+        &--title {
+          font-size: 16px;
+          margin-bottom: 6px;
+        }
+
+        &--description {
+          display: none;
+        }
+
+        &--price {
+          display: inline-block;
+          float: right;
+          font-size: 16px;
+          padding-right: 20px;
+        }
+
+        &__name,
+        &__value {
+          display: inline-block;
+        }
+
+        &--title,
+        &--price {
+          .cm-property__name {
+            @include visually-hidden();
+          }
+        }
+
+        &__link {
+          color: #000;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+    }
+  }
+
+  @mixin cart-icon() {
+    vertical-align: text-top;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__icon {
+    &-warning:before {
+      @include cart-icon;
+      background-image: url("../../img/warning.svg");
+    }
+    &-ok:before {
+      @include cart-icon;
+      background-image: url("../../img/ok.svg");
+    }
+  }
+}

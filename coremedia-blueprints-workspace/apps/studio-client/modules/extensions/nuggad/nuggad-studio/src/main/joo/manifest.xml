@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.studio.NuggadStudioPlugin"/>
+  <component class="com.coremedia.blueprint.studio.nuggad.NuggAdAgeCondition"/>
+  <component class="com.coremedia.blueprint.studio.nuggad.NuggAdEducationCondition"/>
+  <component class="com.coremedia.blueprint.studio.nuggad.NuggAdEmploymentStatusCondition"/>
+  <component class="com.coremedia.blueprint.studio.nuggad.NuggAdGenderCondition"/>
+  <component class="com.coremedia.blueprint.studio.nuggad.NuggAdHouseholdIncomeCondition"/>
+  <component class="com.coremedia.blueprint.studio.nuggad.NuggAdPersonalIncomeCondition"/>
+  <component class="com.coremedia.blueprint.studio.nuggad.NuggadUserProfileFormExtensions"/>
+</componentPackage>

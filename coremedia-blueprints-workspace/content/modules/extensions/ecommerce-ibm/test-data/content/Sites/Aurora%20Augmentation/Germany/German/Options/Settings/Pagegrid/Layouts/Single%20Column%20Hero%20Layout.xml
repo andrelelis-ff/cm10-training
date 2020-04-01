@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/Aurora Augmentation/Germany/German/Options/Settings/Pagegrid/Layouts" name="Single Column Hero Layout" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Options/Settings/Pagegrid/Layouts/Single%20Column%20Hero%20Layout.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Options/Settings/Pagegrid/Layouts/Single%20Column%20Hero%20Layout"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<IntProperty Name="colCount">12</IntProperty>
+<IntProperty Name="rowCount">4</IntProperty>
+<StringProperty Name="cssClassName">lc-single-column</StringProperty>
+<StructListProperty Name="items">
+<Struct>
+<BooleanProperty Name="editable">true</BooleanProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/header.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/header"/>
+<IntProperty Name="row">1</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">15</IntProperty>
+<IntProperty Name="width">100</IntProperty>
+<IntProperty Name="colspan">12</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/hero.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/hero"/>
+<IntProperty Name="row">2</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">20</IntProperty>
+<IntProperty Name="width">100</IntProperty>
+<IntProperty Name="colspan">12</IntProperty>
+</Struct>
+<Struct>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/main.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/main"/>
+<IntProperty Name="row">3</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">50</IntProperty>
+<IntProperty Name="width">100</IntProperty>
+<IntProperty Name="colspan">12</IntProperty>
+</Struct>
+<Struct>
+<BooleanProperty Name="editable">true</BooleanProperty>
+<LinkProperty Name="section" LinkType="coremedia:///cap/contenttype/CMSymbol" xlink:href="coremedia:///cap/resources/../Placements/footer.xml" cmexport:path="/Sites/Aurora%20Augmentation/Germany/German/Options/Settings/Pagegrid/Placements/footer"/>
+<IntProperty Name="row">4</IntProperty>
+<IntProperty Name="col">1</IntProperty>
+<IntProperty Name="height">15</IntProperty>
+<IntProperty Name="width">100</IntProperty>
+<IntProperty Name="colspan">12</IntProperty>
+</Struct>
+</StructListProperty>
+<StringProperty Name="name">Single Column Hero Layout</StringProperty>
+<StringProperty Name="description">A single column layout with "hero", "main", "header" and "footer" placements.</StringProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

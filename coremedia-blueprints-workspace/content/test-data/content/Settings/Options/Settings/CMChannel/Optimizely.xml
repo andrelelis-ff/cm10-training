@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Settings/Options/Settings/CMChannel" name="Optimizely" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="optimizely.enabled">false</BooleanProperty>
+<StringProperty Name="optimizely.id.external.account">0</StringProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

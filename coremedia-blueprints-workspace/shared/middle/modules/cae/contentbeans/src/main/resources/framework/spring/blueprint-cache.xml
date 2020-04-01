@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <import resource="classpath:/com/coremedia/blueprint/base/uapi/bpbase-uapi-cache-services.xml"/>
+
+  <bean id="contentbeanCacheCapacityConfigurer" class="com.coremedia.cache.CacheCapacityConfigurer" init-method="init">
+    <property name="cache" ref="cache"/>
+    <property name="capacities">
+      <map>
+        <!--
+          every CacheKey implementation must return a String constant in #cacheclass. ("java.lang.Object" is the default
+           if #cacheclass is not overwritten)
+
+          This constant *must* be configured with a capacity, otherwise the CacheKey will not be cached (!)
+        -->
+        <entry key="com.coremedia.blueprint.cae.search.solr.SolrQueryCacheKey" value="100"/>
+      </map>
+    </property>
+  </bean>
+
+</beans>

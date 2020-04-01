@@ -1,0 +1,31 @@
+.cm-details {
+  &__media-box {
+    @include aspect-ratio-box-by-breakpoint((("xs-and-up") (1, 1), ("xs-and-up", "landscape") (8, 3), ("sm-and-up") (16, 9), ("sm-and-up", "landscape") (8, 3), ("lg-and-up") (8, 3)));
+  }
+
+  &__text {
+    margin: 0 $cm-margin-2;
+    padding: 0;
+
+    @include breakpoint("sm-and-up") {
+      padding: 0 10%;
+    }
+  }
+
+  .cm-richtext-embedded {
+    margin: 0 auto 1rem auto;
+    //Fix for CMS-4977: Do not split embedded links or pictures
+    break-inside: avoid;
+
+    // set aspect ratio to 4x3 for embedded images
+    &__picture-box {
+      @include aspect-ratio-box(4, 3);
+    }
+
+    //Fix for CMS-4976: For multi-column-buggy webkit
+    &__picture {
+      @include stretch-absolute();
+      transform: translateZ(0);
+    }
+  }
+}

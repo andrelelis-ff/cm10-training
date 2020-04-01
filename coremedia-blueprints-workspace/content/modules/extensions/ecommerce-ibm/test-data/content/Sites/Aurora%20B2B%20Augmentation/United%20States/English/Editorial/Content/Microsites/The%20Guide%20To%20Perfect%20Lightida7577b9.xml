@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Content/Microsites/The Guide To Perfect Lighting" name="The Art of Perfect Lighting Article" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="teaserOverlay">
+<Struct>
+<LinkProperty Name="style" LinkType="coremedia:///cap/contenttype/Content_" xlink:href="coremedia:///cap/resources/../../../Options/Settings/Teaser%20Styles/Light.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Options/Settings/Teaser%20Styles/Light"/>
+<BooleanProperty Name="enabled">true</BooleanProperty>
+<IntProperty Name="positionY">38</IntProperty>
+<IntProperty Name="width">71</IntProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>The Art of Perfect Lighting</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>The Art of Perfect Lighting</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-1 align--center">Lighting Technologies Explained</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/><p>Humans have been making use of artificial lighting for thousands of years.  Based on archaeological exploration, it is believed that the first lamp was made as many as 70,000 years ago, using a primitive shell such as a hollowed-out rock, a fuel such as grass or wood, and animal fat as an accelerant.  Lamps continued to evolve as pottery and alabaster were discovered, and eventually wicks were added to control the burn rate.</p><p><strong>A brief history of lighting technologies</strong></p><p>Around the 7<sup>th</sup> century BC, terra cotta lamps appeared in Greece to replace handheld torches. Lamps such as these remained the primary source of artificial light for many centuries, with only minor improvements made to the design.</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../Products/Aurora%20B2B/Lighting/Standard%20Incandescentca28e03b.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Standard%20Incandescent%20Bulb%20Product%20Teaser">Standard Incandescent Bulb</a><br/></p><p>The next big technological leap didn’t come until 1801, when an English Chemist named Sir Humphrey Davy developed the first electric lamp, the Carbon-Arc Lamp.  The Carbon-Arc Lamp found widespread adoption in use as street lamps and interior lighting for large buildings, until it was superceded by the incandescent light in the early 20<sup>th</sup> century.  It found continued use for about ½ century more in specialized uses such as search lights and movie projects, but was nearly completely phased out by the end of World War II.</p><p><br/></p><p><strong>Incandescent light-bulbs</strong></p><p>It is debatable who first invented the Incandescent Light Bulb, but it is usually Thomas Edison who is credited with designing the first commercially-viable versions and it was certainly he who first patented one.  The invention of the Incandescent light bulb can easily be identified as the event which triggered the widespread adoption of interior lighting in the home.</p><p><strong>Compact Fluorescent Lamps (CFL’s)</strong></p><p>Iterating on the revolutionary impact of the Incandescent light bulb, Compact Fluorescent Lamps (CFL’s) were developed as a significantly more energy-efficient alternative.  Using ⅔ to ¾ less energy and lasting eight to fifteen times longer than Incandescent bulbs, CFL’s significantly reduce energy consumption and offer significant cost savings to the consumer.  The most significant disadvantage of CFL’s is that they contain mercury, which poses a health risk to anyone exposed to them when they break, as well as an environmental risk when they are disposed.</p><p><strong>Light-Emitting Diode (LED) Lamps</strong></p><p>Light-Emitting Diode (LED) lamps are the newest lighting technology.  By combining energy savings and longer lifespans over even CFL’s with a less dangerous mercury-free construction, LED’s are poised to become the preferred lighting choice.  Currently, their cost is prohibitive, but as with CFL’s when first introduced to the commercial market, prices are dropping rapidly and LED lamps are quickly becoming the smart choice in light bulbs.</p><p>Due to their compact design, it is much easier to develop LED bulbs in a wide variety of shapes and sizes, and LED’s can even be made to change colors!  Colored lighting strips are available with remote controls to change colors based on the whim of the owner.</p><p>Home-automation capable systems - including the Philips Hue – can be connected to smart phone controls and even linked to other systems, such as your TV set, to provide adaptive ambient lighting that complements the picture on the screen in color and intensity.</p></div></detailText>
+<pictures>
+<link href="../../../Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Artful%20Ant2d351213.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Artful%20Antique%20Picture"/>
+<link href="../../../Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Rockin%20in%7dd11c0e.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Rockin%20in%20Red%20Picture"/>
+<link href="../../../Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Stairs%20wit84710438.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Stairs%20with%20Ambiance%20Picture"/>
+<link href="../../../Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Perfect%20Li1d60e443.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Perfect%20Lighting%20Guide%20Picture"/>
+<link href="../../../Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Purple%20Accf704f943.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Microsites/Guide%20to%20Perfect%20Lighting/Purple%20Accents%20Picture"/>
+</pictures>
+<related>
+<link href="../../../Navigation/Fragments/Aurora%20B2B%20Homepage/Lighting%20Categoryf2cd0e93.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Navigation/Fragments/Aurora%20B2B%20Homepage/Lighting%20Category%20Promotion%20Teaser"/>
+<link href="../../Products/Aurora%20B2B/Lighting/Medium-base%20Chandelie5042562d.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Medium-base%20Chandelier%20Bulb%20Product%20Teaser"/>
+<link href="../../Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED5ed0ab2.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Chef%20Corp%20RGB%20LED%20Strip%20Product%20Teaser"/>
+<link href="../../../Navigation/Fragments/Aurora%20B2B%20Homepage/Guide%20to%20Exteri82fe3154.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Navigation/Fragments/Aurora%20B2B%20Homepage/Guide%20to%20Exterior%20Lighting%20Article%20Teaser"/>
+</related>
+<authors>
+<link href="../../Authors/Michelle%20Villegas%20Person.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Authors/Michelle%20Villegas%20Person"/>
+</authors>
+</CMArticle>

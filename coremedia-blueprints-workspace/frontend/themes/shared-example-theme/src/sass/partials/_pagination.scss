@@ -1,0 +1,38 @@
+.cm-pagination {
+  // block of items
+  &__block {
+    .cm-teasable__text {
+      padding-bottom: 0;
+    }
+  }
+
+  // load more button
+  &__more {
+    display: block;
+    margin: 48px auto 0 auto;
+    cursor: pointer;
+    @extend .cm-cta-button;
+  }
+
+  // load more spinner
+  &__loading {
+    display: none;
+    background: url("../../img/loader_big.gif") center center no-repeat;
+    height: 50px; //same height as button to avoid jumping of page
+  }
+}
+
+// some spacing for pagination
+.cm-left-right-banner-container--paginated {
+  margin-bottom: 48px;
+
+  .cm-pagination {
+    &__more,
+    &__loading {
+      @include breakpoint("sm-and-up") {
+        margin-top: 48px;
+        margin-bottom: 48px;
+      }
+    }
+  }
+}

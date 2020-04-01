@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<livecontext:CommerceWorkAreaTab
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:livecontext="exml:com.coremedia.livecontext.studio.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.livecontext.studio.LivecontextStudioPlugin')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import com.coremedia.ecommerce.studio.tree.augmentedCategoryTreeRelation;
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+
+    public static const xtype:String = "com.coremedia.livecontext.studio.config.commerceCategoryWorkAreaTab";
+
+    public static const CONTENT_TAB_ITEM_ID:String = "contentTab";
+
+    public static const STRUCTURE_TAB_ITEM_ID:String = "structureTab";
+
+    public static const SYSTEM_TAB_ITEM_ID:String = "systemTab";
+
+    public static const PDP_PAGEGRID_TAB_ITEM_ID:String = "pdpPageGridTab";
+
+    private var config:CommerceCategoryWorkAreaTab;
+    private var augmentedCategoryExpression:ValueExpression;
+
+    // called by generated constructor code
+    private function __initialize__(config:CommerceCategoryWorkAreaTab):void {
+      augmentedCategoryExpression = ValueExpressionFactory.createFromFunction(function ():* {
+        return augmentedCategoryTreeRelation.getParentUnchecked(getEntityExpression().getValue());
+      });
+    }
+
+    public native function CommerceCategoryWorkAreaTab(config:CommerceCategoryWorkAreaTab = null);
+    ]]></fx:Script>
+
+  <livecontext:subTabs>
+    <livecontext:CommerceCategoryContentForm itemId="{CONTENT_TAB_ITEM_ID}"
+                                             bindTo="{getEntityExpression()}"/>
+    <livecontext:CommerceCategoryStructureForm itemId="{STRUCTURE_TAB_ITEM_ID}"/>
+    <editor:DocumentForm itemId="{PDP_PAGEGRID_TAB_ITEM_ID}"
+                         title="{resourceManager.getString('com.coremedia.livecontext.studio.LivecontextStudioPlugin', 'CMExternalChannel_tab_PDP_pagegrid_title')}">
+      <editor:items>
+        <livecontext:CommerceAugmentedPageGridForm itemId="pdpPagegrid"
+                                                   showLocal="true"
+                                                   forceReadOnlyValueExpression="{ValueExpressionFactory.createFromValue(true)}"
+                                                   bindTo="{augmentedCategoryExpression}"
+                                                   pageGridPropertyName="pdpPagegrid"
+                                                   fallbackPageGridPropertyName="placement"/>
+      </editor:items>
+    </editor:DocumentForm>
+    <livecontext:CommerceSystemForm autoHide="true" itemId="{SYSTEM_TAB_ITEM_ID}"/>
+  </livecontext:subTabs>
+
+</livecontext:CommerceWorkAreaTab>

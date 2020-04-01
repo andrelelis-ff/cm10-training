@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/SiteGenesis Global/United Kingdom/English/Pictures" name="Man with Blue Shirt" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=458;width=2048;height=1536</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=458;width=2048;height=1152</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=429;width=2048;height=1024</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=458;width=2048;height=819</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=487;width=2048;height=768</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=614;width=2048;height=512</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=0;y=448;width=2048;height=2048</StringProperty>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=156;y=360;width=1753;height=2718</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=0;y=347;width=2048;height=2731</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio2x1">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio8x3">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.14873417721518986;x2=1;y2=0.6477595183457941</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.14873417721518986;x2=1;y2=0.5230031830631431</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.13924050632911392;x2=1;y2=0.47192406708285006</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.14873417721518986;x2=1;y2=0.41488102581817876</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.15822784810126583;x2=1;y2=0.40774051866656796</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.19936708860759494;x2=1;y2=0.36570886898446303</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0;y1=0.14556962025316456;x2=1;y2=0.8109367417606369</StringProperty>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.0761904761904762;y1=0.11708860759493671;x2=0.9322896652727546;y2=0.9999999999999999</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0;y1=0.11284383799003683;x2=1;y2=1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Man with Blue Shirt</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Man with Blue Shirt</alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<width>2048</width>
+<height>3078</height>
+<data md5="55398dd4e726d9f62b03a3928b0ff42e" size="1149867" href="../../../../../__blob/55398dd4e726d9f62b03a3928b0ff42e.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

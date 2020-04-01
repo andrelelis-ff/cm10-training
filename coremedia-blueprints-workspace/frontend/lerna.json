@@ -1,0 +1,15 @@
+{
+  "npmClient": "yarn",
+  "packages": [
+    "lib/bricks/*",
+    "lib/helpers/*",
+    "lib/js/*",
+    "lib/sass/*",
+    "lib/tools/*",
+    "themes/*",
+    "bricks/*"
+  ],
+  "hoist": true,
+  "parallel": true,
+  "version": "1.0.0"
+}

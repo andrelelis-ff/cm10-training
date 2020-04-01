@@ -1,0 +1,7 @@
+// make sure to import partials sass files in _partials.scss
+// the smart-import ensures, that all sass partials from depending bricks are loaded
+@import "?smart-import-partials";
+
+@import "partials/container";
+@import "partials/grid";
+@import "partials/square-banner";

@@ -1,0 +1,28 @@
+// Changes to default pdp styles
+.cm-product-assets {
+  &__carousel {
+    margin-top: 12px;
+
+    .slick-slide {
+      border: 1px solid transparent;
+      padding: 1px;
+
+      &--active {
+        background-color: $cm-standard-component-background-color;
+        border-color: $cm-border-color-default;
+      }
+    }
+  }
+}
+
+.cm-product-assets-downloads {
+  &__title {
+    font-size: $cm-font-size-normal;
+    color: $cm-text-color;
+    font-weight: bold;
+  }
+
+  &__item {
+    font-size: $cm-font-size-normal;
+  }
+}

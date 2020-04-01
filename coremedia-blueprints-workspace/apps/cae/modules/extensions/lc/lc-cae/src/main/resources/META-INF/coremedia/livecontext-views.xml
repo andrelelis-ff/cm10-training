@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <description>
+    View registration.
+  </description>
+
+  <import resource="classpath:/com/coremedia/cae/view-freemarker-services.xml"/>
+  <import resource="classpath:/framework/spring/blueprint-views.xml"/>
+  <import resource="classpath:/META-INF/coremedia/lc-services.xml"/>
+
+  <context:component-scan base-package="com.coremedia.livecontext.view"/>
+
+  <customize:append id="addDynamicPredicates" bean="dynamicIncludePredicates">
+    <list>
+      <bean id="cartPredicate" class="com.coremedia.livecontext.view.CartDynamicIncludePredicate"/>
+      <bean id="availabilityInfoDynamicIncludePredicate" class="com.coremedia.livecontext.product.ProductAvailabilityDynamicIncludePredicate"/>
+      <bean id="productAssetsPredicate" class="com.coremedia.livecontext.asset.ProductAssetsDynamicIncludePredicate"/>
+    </list>
+  </customize:append>
+
+  <customize:append id="livecontextFreemarkerSharedVariablesCustomizer" bean="freemarkerSharedVariables">
+    <map>
+      <entry key="liveContextFreemarkerFacade" value-ref="liveContextFreemarkerFacade"/>
+      <entry key="liveContextLoginFreemarkerFacade" value-ref="liveContextLoginFreemarkerFacade"/>
+    </map>
+  </customize:append>
+
+  <bean id="liveContextFreemarkerFacade" class="com.coremedia.livecontext.web.taglib.LiveContextFreemarkerFacade">
+    <property name="liveContextNavigationFactory" ref="liveContextNavigationFactory"/>
+    <property name="categoryAugmentationService" ref="categoryAugmentationService"/>
+    <property name="productAugmentationService" ref="productAugmentationService"/>
+    <property name="sitesService" ref="sitesService"/>
+  </bean>
+
+  <bean id="liveContextLoginFreemarkerFacade" class="com.coremedia.livecontext.web.taglib.LiveContextLoginFreemarkerFacade">
+  </bean>
+
+
+  <bean class="com.coremedia.livecontext.view.PrefetchFragmentsView" id="prefetchFragmentsView">
+    <description>
+      Programmed view to prefetch fragments in one call in the commerce-led fragment scenario.
+    </description>
+  </bean>
+
+  <customize:append id="liveContextProgrammedViewsCustomizer" bean="blueprintProgrammedViews">
+    <map>
+      <entry key="com.coremedia.blueprint.common.contentbeans.Page#prefetchFragments" value-ref="prefetchFragmentsView"/>
+      <entry key="com.coremedia.livecontext.ecommerce.catalog.Product#prefetchFragments" value-ref="prefetchFragmentsView"/>
+      <entry key="com.coremedia.blueprint.common.contentbeans.CMLinkable#prefetchFragments" value-ref="prefetchFragmentsView"/>
+    </map>
+  </customize:append>
+
+</beans>

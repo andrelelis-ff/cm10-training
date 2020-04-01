@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMJavaScript folder="/Sites/Hybris Apparel/United Kingdom/English/Options/Settings" name="hybris-bootstrap.js" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<description></description>
+<ieExpression></ieExpression>
+<include>
+</include>
+<dataUrl>//{hybris.host}/yacceleratorstorefront/_ui/responsive/common/bootstrap/dist/js/bootstrap.min.js</dataUrl>
+</CMJavaScript>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.assets.studio.AMCollectionViewPlugin"/>
+  <component class="com.coremedia.blueprint.assets.studio.AMStudioPlugin"/>
+  <component class="com.coremedia.blueprint.assets.studio.AddAssetLinkPlugin"/>
+  <component class="com.coremedia.blueprint.assets.studio.actions.CreateContentFromAssetAction"/>
+  <component class="com.coremedia.blueprint.assets.studio.actions.CreatePictureFromPictureAssetAction"/>
+  <component class="com.coremedia.blueprint.assets.studio.actions.CreateVideoFromVideoAssetAction"/>
+  <component class="com.coremedia.blueprint.assets.studio.columns.ExpirationDateColumn"/>
+  <component class="com.coremedia.blueprint.assets.studio.forms.AMAssetForm"/>
+  <component class="com.coremedia.blueprint.assets.studio.forms.AMAssetMetaDataTab"/>
+  <component class="com.coremedia.blueprint.assets.studio.forms.AMAssetSystemTab"/>
+  <component class="com.coremedia.blueprint.assets.studio.forms.AMDocumentAssetForm"/>
+  <component class="com.coremedia.blueprint.assets.studio.forms.AMPictureAssetForm"/>
+  <component class="com.coremedia.blueprint.assets.studio.forms.AMTaxonomyForm"/>
+  <component class="com.coremedia.blueprint.assets.studio.forms.AMVideoAssetForm"/>
+  <component class="com.coremedia.blueprint.assets.studio.forms.AssetDetailsBlobPropertyField"/>
+  <component class="com.coremedia.blueprint.assets.studio.forms.CheckboxGroup"/>
+  <component class="com.coremedia.blueprint.assets.studio.forms.ShowAssetsInEditedContentsCheckbox"/>
+  <component class="com.coremedia.blueprint.assets.studio.forms.StringListCheckboxPropertyField"/>
+  <component class="com.coremedia.blueprint.assets.studio.repository.AssetRepositoryListContainer"/>
+  <component class="com.coremedia.blueprint.assets.studio.repository.AssetSearchListContainer"/>
+  <component class="com.coremedia.blueprint.assets.studio.search.ExpirationDateFilterPanel"/>
+  <component class="com.coremedia.blueprint.assets.studio.search.ExpirationDateSelector"/>
+  <component class="com.coremedia.blueprint.assets.studio.search.StringListCheckboxFilterPanel"/>
+</componentPackage>

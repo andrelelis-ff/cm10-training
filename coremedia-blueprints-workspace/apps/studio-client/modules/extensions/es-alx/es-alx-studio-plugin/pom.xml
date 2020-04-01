@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>studio-client.es-alx</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>es-alx-studio-plugin</artifactId>
+  <packaging>swc</packaging>
+
+  <description>The Analytics Plugin for the CoreMedia Studio</description>
+
+  <properties>
+    <coremedia.project.extension.for>studio-dynamic</coremedia.project.extension.for>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>editor-components</artifactId>
+      <type>swc</type>
+    </dependency>
+
+    <!-- PROJECT DEPENDENCIES -->
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>blueprint-forms</artifactId>
+      <version>${project.version}</version>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>net.jangaroo</groupId>
+      <artifactId>joounit</artifactId>
+      <type>swc</type>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/sencha</directory>
+        <targetPath>../packages/${project.groupId}__${project.artifactId}</targetPath>
+      </resource>
+    </resources>
+    <plugins>
+
+      <plugin>
+        <groupId>net.jangaroo</groupId>
+        <artifactId>jangaroo-maven-plugin</artifactId>
+        <version>${jangaroo.version}</version> <!-- explicit version for IDEA! -->
+        <extensions>true</extensions>
+        <configuration>
+            <additionalCssNonBundle>
+              <value>resources/joo/resources/css/morris.css</value>
+            </additionalCssNonBundle>
+            <additionalJsNonBundle>
+              <value>resources/joo/resources/js/raphael.js</value>
+              <value>resources/joo/resources/js/jquery-3.4.1.min.js</value>
+              <value>resources/joo/resources/js/morris.js</value>
+              <value>resources/joo/resources/js/morris.esalx-plugin.js</value>
+            </additionalJsNonBundle>
+          <skip>false</skip>
+          <namespaces>
+            <namespace>
+              <uri>exml:com.coremedia.blueprint.studio.config.esanalytics</uri>
+            </namespace>
+          </namespaces>
+          <testSuite>com.coremedia.blueprint.studio.esanalytics.TestSuite</testSuite>
+          <jooUnitTestExecutionTimeout>90000</jooUnitTestExecutionTimeout>
+        </configuration>
+      </plugin>
+
+    </plugins>
+  </build>
+</project>

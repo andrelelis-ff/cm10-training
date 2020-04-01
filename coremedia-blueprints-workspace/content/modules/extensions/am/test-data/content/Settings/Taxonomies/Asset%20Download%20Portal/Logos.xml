@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AMTaxonomy folder="/Settings/Taxonomies/Asset Download Portal" name="Logos" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale></locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<value>Logos</value>
+<children>
+</children>
+<externalReference></externalReference>
+<assetThumbnail>
+<link href="../../../Assets/Company/Logos/Chef%20Corp%2E%20Logo%20Black.xml" path="/Assets/Company/Logos/Chef%20Corp%2E%20Logo%20Black"/>
+</assetThumbnail>
+</AMTaxonomy>

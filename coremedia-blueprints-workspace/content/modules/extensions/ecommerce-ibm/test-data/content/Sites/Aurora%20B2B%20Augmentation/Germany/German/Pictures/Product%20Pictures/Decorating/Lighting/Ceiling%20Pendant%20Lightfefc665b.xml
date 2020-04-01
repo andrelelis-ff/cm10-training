@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora B2B Augmentation/Germany/German/Pictures/Product Pictures/Decorating/Lighting" name="Ceiling Pendant Light Picture" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../../../United%20States/English/Pictures/Product%20Pictures/Decorating/Lighting/Ceiling%20Pendan856c5fc2.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Pictures/Product%20Pictures/Decorating/Lighting/Ceiling%20Pendant%20Light%20Picture"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=406;y=581;width=864;height=1337</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=365;y=622;width=921;height=1229</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=324;y=612;width=1286;height=1286</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=0;y=628;width=1667;height=1250</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=694;width=1667;height=936</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=710;width=1667;height=669</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=1044;width=1667;height=417</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.24382716049382716;y1=0.23251028806584362;x2=0.7623456790123457;y2=0.7674897119341564</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.2191358024691358;y1=0.24897119341563786;x2=0.7716049382716049;y2=0.7407407407407407</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.19444444444444445;y1=0.2448559670781893;x2=0.9660493827160493;y2=0.7592592592592593</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0;y1=0.25102880658436216;x2=1;y2=0.7510288065843621</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.2777777777777778;x2=1;y2=0.6522633744855967</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2839506172839506;x2=1;y2=0.551440329218107</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.4176954732510288;x2=1;y2=0.5843621399176955</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>ibm:///catalog/product/B2B_HLG028_280102</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Ceiling Pendant Light</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Ceiling Pendant Light</alt>
+<copyright>DuleS / Shutterstock 64327168</copyright>
+<dataUrl></dataUrl>
+<width>1667</width>
+<height>2500</height>
+<data md5="4f2341128ab6fc70b1e0f141c0e6325f" size="194392" href="../../../../../../../../__blob/4f2341128ab6fc70b1e0f141c0e6325f.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

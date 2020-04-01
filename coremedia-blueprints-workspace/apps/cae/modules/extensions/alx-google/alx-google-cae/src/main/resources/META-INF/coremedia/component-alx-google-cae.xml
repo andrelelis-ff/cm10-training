@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.coremedia.com/2007/coremedia-spring-beans-customization http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+  <import resource="classpath:/framework/spring/blueprint-contentbeans.xml" />
+
+  <context:component-scan base-package="com.coremedia.blueprint.analytics.google"/>
+
+  <customize:prepend id="addGoogleAnalyticsRepositoryName" bean="viewRepositories" order="1500">
+    <list>
+      <value>googleanalytics</value>
+    </list>
+  </customize:prepend>
+</beans>

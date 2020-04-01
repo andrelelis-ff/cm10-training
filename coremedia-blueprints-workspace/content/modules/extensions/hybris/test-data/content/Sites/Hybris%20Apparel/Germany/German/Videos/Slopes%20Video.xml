@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMVideo folder="/Sites/Hybris Apparel/Germany/German/Videos" name="Slopes Video" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20Kingdom/English/Videos/Slopes%20Video.xml" path="/Sites/Hybris%20Apparel/United%20Kingdom/English/Videos/Slopes%20Video"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="commerce">
+<Struct>
+<StringListProperty Name="references">
+<String>hybris:///catalog/product/300020294</String>
+</StringListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Häschen-Pisten</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Beobachten Hase Pisten bergab - Was für eine fantastische Fahrt! </p> </div></teaserText>
+<pictures>
+<link href="../Pictures/Bunny%20Slopes%20Image.xml" path="/Sites/Hybris%20Apparel/Germany/German/Pictures/Bunny%20Slopes%20Image"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt></alt>
+<copyright></copyright>
+<dataUrl></dataUrl>
+<data md5="e3fea626a9ac166270d05bdfa9ad4cea" size="36600756" href="../../../../../__blob/e3fea626a9ac166270d05bdfa9ad4cea.blob" mimetype="video/mp4"/>
+<timeLine>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructListProperty Name="sequences">
+</StructListProperty>
+<LinkProperty Name="defaultTarget" LinkType="coremedia:///cap/contenttype/CMTeasable"/>
+</Struct>
+</timeLine>
+<asset>
+</asset>
+</CMVideo>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Hybris Apparel/United Kingdom/English/Pictures" name="Ski Mountains" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=287;y=0;width=428;height=664</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=251;y=0;width=498;height=664</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=169;y=0;width=664;height=664</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=58;y=0;width=886;height=664</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=51;width=1000;height=563</StringProperty>
+<StringProperty Name="landscape_ratio2x1">b;a=0;c=1/crop;x=0;y=82;width=1000;height=500</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=133;width=1000;height=401</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=145;width=1000;height=374</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=208;width=1000;height=251</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.28743961352657005;y1=0;x2=0.714975845410628;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.25120772946859904;y1=0;x2=0.748792270531401;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.16908212560386474;y1=0;x2=0.8333333333333334;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.057971014492753624;y1=0;x2=0.9444444444444444;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.07636363636363637;x2=1;y2=0.9236363636363636</StringProperty>
+<StringProperty Name="landscape_ratio2x1">position;x1=0;y1=0.12363636363636364;x2=1;y2=0.8763636363636363</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.2;x2=1;y2=0.8036363636363636</StringProperty>
+<StringProperty Name="landscape_ratio8x3">position;x1=0;y1=0.21818181818181817;x2=1;y2=0.7818181818181819</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.31272727272727274;x2=1;y2=0.6909090909090909</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">true</StringProperty>
+<StringProperty Name="portrait_ratio3x4">true</StringProperty>
+<StringProperty Name="portrait_ratio1x1">true</StringProperty>
+<StringProperty Name="landscape_ratio4x3">true</StringProperty>
+<StringProperty Name="landscape_ratio16x9">true</StringProperty>
+<StringProperty Name="landscape_ratio2x1">true</StringProperty>
+<StringProperty Name="landscape_ratio5x2">true</StringProperty>
+<StringProperty Name="landscape_ratio8x3">true</StringProperty>
+<StringProperty Name="landscape_ratio4x1">true</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Ski Mountains</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../Settings/Taxonomies/Subject/Snow.xml" path="/Settings/Taxonomies/Subject/Snow"/>
+<link href="../../../../../Settings/Taxonomies/Subject/Ski.xml" path="/Settings/Taxonomies/Subject/Ski"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Ski Mountains</alt>
+<copyright>shutterstock_146196323</copyright>
+<dataUrl></dataUrl>
+<width>1000</width>
+<height>664</height>
+<data md5="a91bf8870c4e0763f756d2d3bc31e1b0" size="842330" href="../../../../../__blob/a91bf8870c4e0763f756d2d3bc31e1b0.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>

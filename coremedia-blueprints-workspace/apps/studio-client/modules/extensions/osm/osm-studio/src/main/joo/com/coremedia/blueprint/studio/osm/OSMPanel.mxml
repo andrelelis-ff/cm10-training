@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<local:OSMPanelBase
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:local="com.coremedia.blueprint.studio.osm.*"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        height="325"
+        itemId="osmPanel">
+  <fx:Script><![CDATA[
+    import com.coremedia.ui.data.ValueExpression;
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.osm.config.osmPanel";
+
+    private var config:OSMPanel;
+
+    public native function OSMPanel(config:OSMPanel = null);
+
+    /**
+     * Value expression that holds the latitude and longitude values.
+     */
+    [Bindable]
+    public var latLngExpression:ValueExpression;
+    ]]></fx:Script>
+
+  <local:items>
+  </local:items>
+  <local:layout>
+    <layout_Fit/>
+  </local:layout>
+
+</local:OSMPanelBase>

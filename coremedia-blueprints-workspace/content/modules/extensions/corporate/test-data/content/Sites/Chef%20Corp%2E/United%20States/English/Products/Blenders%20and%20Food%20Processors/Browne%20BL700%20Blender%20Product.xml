@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProduct folder="/Sites/Chef Corp./United States/English/Products/Blenders and Food Processors" name="Browne BL700 Blender Product" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+<StringProperty Name="callToActionCustomText">More Product Information</StringProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>browne-bl700-blender</segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+<link href="Blenders%20and%20Food%20Processors.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Blenders%20and%20Food%20Processors/Blenders%20and%20Food%20Processors"/>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Since 1999, our more than 125,000 customers have come to know Chef Supply, Inc as their premier provider to find virtually anything needed for the restaurant supply industry. We are committed to delivering expert solutions with the personal attention you deserve.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Since 1999, our more than 125,000 customers have come to know <em>Chef Supply, Inc</em> as their premier provider to find virtually anything needed for the restaurant supply industry. We are committed to delivering expert solutions with the personal attention you deserve.</p><p/><p>Our services range from commercial kitchen supplies, including our special dedication to kitchen lighting; to our consumer offering, Perfect Chef, an omni-channel shop and customer magazine that delivers seasonal news, ideas, recipes, and handpicked products to inspire cooks and connoisseurs of the good life – in all of its forms.</p><p> </p></div></detailText>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Products/Blenders/PC_BROWNE_BL700_BLENDER%20Frontshot.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Editorial/Assets/Pictures/Products/Blenders/PC_BROWNE_BL700_BLENDER%20Frontshot"/>
+</pictures>
+<related>
+<link href="Browne%20BL1300%20Blender%20Product.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Blenders%20and%20Food%20Processors/Browne%20BL1300%20Blender%20Product"/>
+<link href="Browne%20BL300%20Blender%20Product.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Blenders%20and%20Food%20Processors/Browne%20BL300%20Blender%20Product"/>
+</related>
+<authors>
+</authors>
+<downloads>
+</downloads>
+<productCode>CC-BBL-700</productCode>
+<productName>Browne BL700 Blender</productName>
+</CMProduct>

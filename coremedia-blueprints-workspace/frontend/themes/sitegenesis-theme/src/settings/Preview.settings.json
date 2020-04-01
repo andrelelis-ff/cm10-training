@@ -1,0 +1,156 @@
+{
+  "sliderMetaData": {
+    "cm_responsiveDevices": {
+      "mobile_portrait": {
+        "width": 320,
+        "height": 480,
+        "order": 1
+      },
+
+      "mobile_landscape": {
+        "width": 480,
+        "height": 320,
+        "order": 2
+      },
+
+      "tablet_portrait": {
+        "width": 600,
+        "height": 800,
+        "order": 3
+      },
+
+      "tablet_landscape": {
+        "width": 960,
+        "height": 540,
+        "order": 4
+      }
+    },
+
+    "cm_preferredWidth": 1281
+  },
+
+  "fragmentPreview": {
+    "CMArticle": [
+      {
+        "titleKey": "preview_label_default",
+        "viewName": "DEFAULT"
+      },
+      {
+        "titleKey": "preview_label_banner_hero",
+        "viewName": "asContainerPreview",
+        "viewParams": {
+          "containerView": "asHeroBanner"
+        }
+      },
+      {
+        "titleKey": "preview_label_banner_portrait",
+        "viewName": "asContainerPreview",
+        "viewParams": {
+          "containerView": "asPortraitBanner"
+        }
+      },
+      {
+        "titleKey": "preview_label_banner_landscape",
+        "viewName": "asContainerPreview",
+        "viewParams": {
+          "containerView": "asLandscapeBanner"
+        }
+      },
+      {
+        "titleKey": "preview_label_banner_square",
+        "viewName": "asContainerPreview",
+        "viewParams": {
+          "containerView": "asSquareBanner"
+        }
+      },
+      {
+        "titleKey": "preview_label_banner_leftright",
+        "viewName": "asContainerPreview",
+        "viewParams": {
+          "containerView": "asLeftRightBanner"
+        }
+      },
+      {
+        "titleKey": "preview_label_banner_carousel",
+        "viewName": "asContainerPreview",
+        "viewParams": {
+          "containerView": "asCarouselBanner"
+        }
+      }
+    ],
+    "CMTeasable": [
+      {
+        "titleKey": "preview_label_banner_hero",
+        "viewName": "asContainerPreview",
+        "viewParams": {
+          "containerView": "asHeroBanner"
+        }
+      },
+      {
+        "titleKey": "preview_label_banner_portrait",
+        "viewName": "asContainerPreview",
+        "viewParams": {
+          "containerView": "asPortraitBanner"
+        }
+      },
+      {
+        "titleKey": "preview_label_banner_landscape",
+        "viewName": "asContainerPreview",
+        "viewParams": {
+          "containerView": "asLandscapeBanner"
+        }
+      },
+      {
+        "titleKey": "preview_label_banner_square",
+        "viewName": "asContainerPreview",
+        "viewParams": {
+          "containerView": "asSquareBanner"
+        }
+      },
+      {
+        "titleKey": "preview_label_banner_leftright",
+        "viewName": "asContainerPreview",
+        "viewParams": {
+          "containerView": "asLeftRightBanner"
+        }
+      },
+      {
+        "titleKey": "preview_label_banner_carousel",
+        "viewName": "asContainerPreview",
+        "viewParams": {
+          "containerView": "asCarouselBanner"
+        }
+      }
+    ],
+    "CMCollection": [
+      {
+        "titleKey": "preview_label_banner_default",
+        "viewName": "asPlacement"
+      },
+      {
+        "titleKey": "preview_label_banner_hero",
+        "viewName": "asHeroBanner"
+      },
+      {
+        "titleKey": "preview_label_banner_portrait",
+        "viewName": "asPortraitBanner"
+      },
+      {
+        "titleKey": "preview_label_banner_landscape",
+        "viewName": "asLandscapeBanner"
+      },
+      {
+        "titleKey": "preview_label_banner_square",
+        "viewName": "asSquareBanner"
+      },
+      {
+        "titleKey": "preview_label_banner_leftright",
+        "viewName": "asLeftRightBanner"
+      },
+      {
+        "titleKey": "preview_label_banner_carousel",
+        "viewName": "asCarouselBanner"
+      }
+    ]
+  }
+}

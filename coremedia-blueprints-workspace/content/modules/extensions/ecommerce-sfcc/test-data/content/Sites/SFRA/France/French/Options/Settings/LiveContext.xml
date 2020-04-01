@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSettings folder="/Sites/SFRA/France/French/Options/Settings" name="LiveContext" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../United%20Kingdom/English/Options/Settings/LiveContext.xml" path="/Sites/SFRA/United%20Kingdom/English/Options/Settings/LiveContext"/>
+</master>
+<settings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="livecontext-fragments">
+<Struct>
+<StructProperty Name="prefetchedViews">
+<Struct>
+<StringListProperty Name="defaults">
+<String>metadata</String>
+<String>externalHead</String>
+<String>externalFooter</String>
+</StringListProperty>
+<StructListProperty Name="contentTypes">
+<Struct>
+<StringProperty Name="type">CMLinkable</StringProperty>
+<StringListProperty Name="prefetchedViews">
+<String>metadata</String>
+<String/>
+<String>externalHead</String>
+<String>externalFooter</String>
+</StringListProperty>
+</Struct>
+</StructListProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="commerce">
+<Struct>
+<StringProperty Name="endpoint">${commerce.hub.data.endpoints.sfcc}</StringProperty>
+<StringProperty Name="currency">EUR</StringProperty>
+<StringProperty Name="locale">fr-FR</StringProperty>
+<StructProperty Name="storeConfig">
+<Struct>
+<StringProperty Name="name">SFRA Global Shop</StringProperty>
+<StringProperty Name="id">RefArchGlobal</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="catalogConfig">
+<Struct>
+<StringProperty Name="id">storefront-catalog-m-non-en</StringProperty>
+<StringProperty Name="alias">catalog</StringProperty>
+<StringProperty Name="name">storefront-catalog-m-non-en</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</StructProperty>
+<BooleanProperty Name="livecontext.policy.commerce-category-links">true</BooleanProperty>
+<BooleanProperty Name="livecontext.policy.commerce-product-links">true</BooleanProperty>
+<BooleanProperty Name="livecontext.policy.commerce-page-links">true</BooleanProperty>
+<BooleanProperty Name="livecontext.policy.commerce-microsite-links">true</BooleanProperty>
+<BooleanProperty Name="livecontext.manageNavigation">true</BooleanProperty>
+</Struct>
+</settings>
+<identifier></identifier>
+</CMSettings>

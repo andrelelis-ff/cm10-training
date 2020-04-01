@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSelectionRules folder="/Sites/Aurora B2B Augmentation/United States/English/Editorial/Personalization" name="Contract-Based Personalized Product Promotion Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+<link href="../../Options/Viewtypes/CMChannel/hero.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Options/Viewtypes/CMChannel/hero"/>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<items>
+</items>
+<rules grammarName="coremedia-selectionrules-1.0"><rules version="1.0" xmlns="http://www.coremedia.com/2010/selectionrules" xmlns:xlink="http://www.w3.org/1999/xlink">select <content xlink:href="coremedia:///cap/resources/../Products/Aurora%20B2B/Lighting/Compact%20Fluorescent%28c216b1d.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Compact%20Fluorescent%20Bulb%20%20Product%20Teaser"/> if commerce.usersegments#"ibm:///catalog/segment/8500000000000323452"; select <content xlink:href="coremedia:///cap/resources/../Content/Microsites/The%20Guide%20To%20Perfect%20Lightif47044ae.xml" cmexport:path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Content/Microsites/The%20Guide%20To%20Perfect%20Lighting/The%20Guide%20to%20Perfect%20Lighting%20Article"/> if commerce.usersegments#"ibm:///catalog/segment/8500000000000323453" or commerce.usersegments#"ibm:///catalog/segment/8500000000000323451"</rules></rules>
+<defaultContent>
+<link href="../Products/Aurora%20B2B/Lighting/Compact%20Fluorescent%28c216b1d.xml" path="/Sites/Aurora%20B2B%20Augmentation/United%20States/English/Editorial/Products/Aurora%20B2B/Lighting/Compact%20Fluorescent%20Bulb%20%20Product%20Teaser"/>
+</defaultContent>
+</CMSelectionRules>

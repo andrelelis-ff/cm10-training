@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMSite folder="/Sites/SiteGenesis Global/United Kingdom/English" name="SiteGenesis [Site]">
+<externalRefId></externalRefId>
+<locale>en-GB</locale>
+<master>
+</master>
+<id>ce2aa655e5690201311770168bbefb77</id>
+<name>SiteGenesis</name>
+<root>
+<link href="Navigation/SiteGenesis%20UK.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Navigation/SiteGenesis%20UK"/>
+</root>
+<siteManagerGroup>manager-sf-en-GB</siteManagerGroup>
+<linkedSettings>
+<link href="Options/Settings/SiteSettings.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Options/Settings/SiteSettings"/>
+</linkedSettings>
+</CMSite>

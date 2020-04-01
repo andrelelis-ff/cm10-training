@@ -1,0 +1,66 @@
+version: "3.4"
+
+# default environment variables for all spring-boot services
+x-development-boot-envs:
+  &development-boot-envs
+  DEVELOPMENT_SETUP: "${DEVELOPMENT_SETUP:-false}"
+  JAVA_DEBUG: "${JAVA_DEBUG:-false}"
+  JAVA_DEBUG_SUSPEND: "${JAVA_DEBUG_SUSPEND:-false}"
+  # enable entrypoint debugging i.e. set -x
+  DEBUG_ENTRYPOINT: "${DEBUG_ENTRYPOINT:-false}"
+  JAVA_HEAP: '128m'
+  # writes heapdumps to /coremedia/heapdumps on oom exceptions. restart the container or mount a volume to
+  # that directory to inspect the heapdumps
+  HEAP_DUMP_ON_OOM: "${HEAP_DUMP_ON_OOM:-true}"
+
+# default logging configuration
+x-logging:
+  &default-logging
+  options:
+    max-size: '12m'
+    max-file: '5'
+  driver: json-file
+
+services:
+  commerce-adapter-wcs:
+    image: ${COMMERCE_REPOSITORY_PREFIX:-coremedia}/commerce-adapter-wcs:${COMMERCE_ADAPTER_WCS_VERSION:-1.2.9}
+    container_name: commerce-adapter-wcs
+    restart: always
+    logging: *default-logging
+    networks:
+      - backend
+    ports:
+      - 44365:6565
+      - 44381:8081
+      - 44305:5005
+    environment:
+      << : *development-boot-envs
+      WCS_URL: ${WCS_URL}
+      WCS_SECURE_URL: ${WCS_SECURE_URL}
+      WCS_SEARCH_URL: ${WCS_SEARCH_URL}
+      WCS_SECURE_SEARCH_URL: ${WCS_SECURE_SEARCH_URL}
+      WCS_LINK_STOREFRONT_HOST: ${WCS_LINK_STOREFRONT_HOST}
+      WCS_LINK_STOREFRONT_URL: ${WCS_LINK_STOREFRONT_URL}
+      WCS_LINK_PREVIEW_STOREFRONT_URL: ${WCS_LINK_PREVIEW_STOREFRONT_URL}
+      WCS_LINK_ASSET_URL: ${WCS_LINK_ASSET_URL}
+      WCS_LINK_PREVIEW_ASSET_URL: ${WCS_LINK_PREVIEW_ASSET_URL}
+      WCS_USERNAME: ${WCS_USERNAME}
+      WCS_PASSWORD: ${WCS_PASSWORD}
+      WCS_VERSION: ${WCS_VERSION}
+      MANAGEMENT_HEALTH_STORES_ENABLED: ${MANAGEMENT_HEALTH_STORES_ENABLED:-true}
+
+  studio-server:
+    environment:
+      COMMERCE_HUB_DATA_ENDPOINTS_WCS: ${COMMERCE_HUB_DATA_ENDPOINTS_WCS:-commerce-adapter-wcs:6565}
+  cae-preview:
+    environment:
+      COMMERCE_HUB_DATA_ENDPOINTS_WCS: ${COMMERCE_HUB_DATA_ENDPOINTS_WCS:-commerce-adapter-wcs:6565}
+  cae-live:
+    environment:
+      COMMERCE_HUB_DATA_ENDPOINTS_WCS: ${COMMERCE_HUB_DATA_ENDPOINTS_WCS:-commerce-adapter-wcs:6565}
+  headless-server-preview:
+    environment:
+      COMMERCE_HUB_DATA_ENDPOINTS_WCS: ${COMMERCE_HUB_DATA_ENDPOINTS_WCS:-commerce-adapter-wcs:6565}
+  headless-server-live:
+    environment:
+      COMMERCE_HUB_DATA_ENDPOINTS_WCS: ${COMMERCE_HUB_DATA_ENDPOINTS_WCS:-commerce-adapter-wcs:6565}

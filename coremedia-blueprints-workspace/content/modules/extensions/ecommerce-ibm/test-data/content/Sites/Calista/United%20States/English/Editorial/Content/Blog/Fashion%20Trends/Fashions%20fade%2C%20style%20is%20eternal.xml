@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMArticle folder="/Sites/Calista/United States/English/Editorial/Content/Blog/Fashion Trends" name="Fashions fade, style is eternal" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<BooleanProperty Name="callToActionDisabled">true</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Fashions fade, style is eternal</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Apparel.xml" path="/Settings/Taxonomies/Subject/Apparel"/>
+<link href="../../../../../../../../Settings/Taxonomies/Subject/Fashion%20Trends.xml" path="/Settings/Taxonomies/Subject/Fashion%20Trends"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Elegance isn't solely defined by what you wear. It's how you carry yourself, how you speak, what you read.</p></div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p>Over the years I have learned that what is important in a dress is the woman who is wearing it. Some people think luxury is the opposite of poverty. It is not. It is the opposite of vulgarity. It's sometimes said that I'm rebellious and I do things to push people's buttons, but I just like the challenge. Fashions fade, style is eternal. We must never confuse elegance with snobbery.</p><p>Elegance isn't solely defined by what you wear. It's how you carry yourself, how you speak, what you read. We have got to change our ethics and our financial system and our whole way of understanding the world. It has to be a world in which people live rather than die; a sustainable world. It could be great. It's a philosophy of life. A practice. If you do this, something will change, what will change is that you will change, your life will change, and if you can change you, you can perhaps change the world. I've treated the waistcoat as if it were a corset, so that it becomes the first layer in the process of putting clothes on the body. There is constant motion between layering and revealing. I love things that age well - things that don't date, that stand the test of time and that become living examples of the absolute best.</p><p><a xlink:show="embed" xlink:type="simple" xlink:href="coremedia:///cap/resources/../../../Products/Gusso%20Cloth%20Satchel%20Bag.xml" cmexport:path="/Sites/Calista/United%20States/English/Editorial/Products/Gusso%20Cloth%20Satchel%20Bag">Gusso Cloth Satchel Bag</a></p><p>I didn't consider myself a fashion designer at all at the time of punk. I was just using fashion as a way to express my resistance and to be rebellious. I came from the country, and by the time I got to London, I considered myself to be very stupid. It was my ambition to understand the world I live in. In a meat-eating world, wearing leather for shoes and clothes and even handbags, the discussion of fur is childish. Fashion never stops. There is always the new project, the new opportunity. I wanted to dress the woman who lives and works, not the woman in a painting. I don't like trends. They tend to make everybody look the same.</p><p>You're only as good as your last collection, which is an enormous pressure. I don't care about money. I really don't care. I just want to do what I do. Don't dress to kill, dress to survive. I didn't consider myself a fashion designer at all at the time of punk. I was just using fashion as a way to express my resistance and to be rebellious. I came from the country, and by the time I got to London, I considered myself to be very stupid. It was my ambition to understand the world I live in. My aim is to make the poor look rich and the rich look poor.</p><p>A girl should be two things: classy and fabulous. I want to thank all the women who have worn my clothes, the famous and the unknown, who have been so faithful to me and given me so much joy. Design and style should work toward making you look good and feel good without a lot of effort so you can get on with the things that matter. It is difficult to talk about fashion in the abstract, without a human body before my eyes, without drawings, without a choice of fabric - without a practical or visual reality. I'd like to believe that the women who wear my clothes are not dressing for other people, that they're wearing what they like and what suits them. It's not a status thing.</p><p>Women are women, and hurray for that. Insecurity is a waste of time. I am never satisfied with myself and that is what keeps me going - I have no post-satisfaction. Fashion is made to become unfashionable. You have a more interesting life if you wear impressive clothes.</p></div></detailText>
+<pictures>
+<link href="../../../../Pictures/Blog/Photo%20Shooting%20in%20Rome%20-%20With%20my%20new%20Sun%20Glasses.xml" path="/Sites/Calista/United%20States/English/Pictures/Blog/Photo%20Shooting%20in%20Rome%20-%20With%20my%20new%20Sun%20Glasses"/>
+<link href="../../../../Pictures/Blog/Photo%20Shooting%20in%20Rome%20-%20Shopping%20Life.xml" path="/Sites/Calista/United%20States/English/Pictures/Blog/Photo%20Shooting%20in%20Rome%20-%20Shopping%20Life"/>
+<link href="../../../../Pictures/Blog/Photo%20Shooting%20in%20Rome%20-%20My%20Style.xml" path="/Sites/Calista/United%20States/English/Pictures/Blog/Photo%20Shooting%20in%20Rome%20-%20My%20Style"/>
+</pictures>
+<related>
+<link href="The%20difference%20between%20style%20and%20fashion.xml" path="/Sites/Calista/United%20States/English/Editorial/Content/Blog/Fashion%20Trends/The%20difference%20between%20style%20and%20fashion"/>
+<link href="Fashion%20should%20be%20fun.xml" path="/Sites/Calista/United%20States/English/Editorial/Content/Blog/Fashion%20Trends/Fashion%20should%20be%20fun"/>
+</related>
+<authors>
+<link href="../../../Authors/Joshua%20Campos%20Person.xml" path="/Sites/Calista/United%20States/English/Editorial/Authors/Joshua%20Campos%20Person"/>
+</authors>
+</CMArticle>

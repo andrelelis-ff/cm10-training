@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<included>
+
+  <if condition='!isDefined("log.logstash.file")'>
+    <then>
+      <property name="log.logstash.file" value="${log.dir}/${application.name}-json.log"/>
+    </then>
+  </if>
+
+  <if condition='isDefined("log.logstash.destination")'>
+    <then>
+      <appender name="logstash-tcp" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+          <level>${log.logstash.levelThreshold:-info}</level>
+        </filter>
+        <destination>${log.logstash.destination}</destination>
+
+        <!-- encoder is required -->
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+          <customFields>{"app_name":"${application.name}","app_version":"${application.version:-not_available}",
+            "build_info": "${build.info:-not_available}"}
+          </customFields>
+          <includeContext>false</includeContext>
+          <throwableConverter class="net.logstash.logback.stacktrace.ShortenedThrowableConverter">
+            <maxDepthPerThrowable>30</maxDepthPerThrowable>
+            <maxLength>2048</maxLength>
+            <shortenedClassNameLength>20</shortenedClassNameLength>
+            <exclude>sun\.reflect\..*\.invoke.*</exclude>
+            <exclude>net\.sf\.cglib\.proxy\.MethodProxy\.invoke</exclude>
+            <rootCauseFirst>true</rootCauseFirst>
+          </throwableConverter>
+        </encoder>
+      </appender>
+    </then>
+  </if>
+
+  <appender name="logstash-file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>${log.logstash.levelThreshold:-info}</level>
+    </filter>
+    <file>${log.logstash.file}</file>
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <fileNamePattern>${log.logstash.file}.%d{yyyy-MM-dd}</fileNamePattern>
+      <maxHistory>30</maxHistory>
+    </rollingPolicy>
+    <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+      <customFields>{"app_name":"${application.name}","app_version":"${application.version:-not_available}"}
+      </customFields>
+      <includeContext>false</includeContext>
+      <throwableConverter class="net.logstash.logback.stacktrace.ShortenedThrowableConverter">
+        <maxDepthPerThrowable>30</maxDepthPerThrowable>
+        <maxLength>2048</maxLength>
+        <shortenedClassNameLength>20</shortenedClassNameLength>
+        <exclude>sun\.reflect\..*\.invoke.*</exclude>
+        <exclude>net\.sf\.cglib\.proxy\.MethodProxy\.invoke</exclude>
+        <rootCauseFirst>true</rootCauseFirst>
+      </throwableConverter>
+    </encoder>
+  </appender>
+
+</included>

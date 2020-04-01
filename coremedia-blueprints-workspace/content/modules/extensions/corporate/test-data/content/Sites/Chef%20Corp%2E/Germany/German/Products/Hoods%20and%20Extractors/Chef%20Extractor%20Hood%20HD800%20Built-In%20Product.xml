@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProduct folder="/Sites/Chef Corp./Germany/German/Products/Hoods and Extractors" name="Chef Extractor Hood HD800 Built-In Product" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../../United%20States/English/Products/Hoods%20and%20Extractors/Chef%20Extractor%20Hood%20HD800%20Built-In%20Product.xml" path="/Sites/Chef%20Corp%2E/United%20States/English/Products/Hoods%20and%20Extractors/Chef%20Extractor%20Hood%20HD800%20Built-In%20Product"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StringProperty Name="callToActionCustomText">More Product Information</StringProperty>
+<BooleanProperty Name="callToActionDisabled">false</BooleanProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment>chef-extractor-hood-hd800-built-in</segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+<link href="../../../../../../Settings/Taxonomies/Subject/Professionals.xml" path="/Settings/Taxonomies/Subject/Professionals"/>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+<link href="Hoods%20and%20Extractors.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Products/Hoods%20and%20Extractors/Hoods%20and%20Extractors"/>
+</contexts>
+<teaserTitle></teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Rauch und Dämpfe mit der leistungsstarken und leisen Chef Dunstabzugshaube HD800 entfernen. </p> </div></teaserText>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p class="p--heading-3"> Beschreibung </p> <p> Rauch und Dämpfe mit der leistungsstarken und leisen Chef Dunstabzugshaube HD800 entfernen. Die Handhabung ist denkbar einfach: die Fettfilter sind spülmaschinenfest und verfügt über nur 4 Tasten. Alle Chef Dunstabzugshauben sind in den Abmessungen, die unsere Bereiche entsprechen. </p> <p/> <p class="p--heading-3"> Hauptmerkmale </p> <p> • Extraktionsrate von 800m3 / h <br/> • Erhältlich in Edelstahl oder schwarz <br/> • Spülmaschinenfest Fettfilter <br/> • Variable Geschwindigkeitsstufen <br/> • Integrierte Dreistufenbeleuchtung <br/> • 3 Jahre Garantie </p> <p/> <p class="p--heading-3"> Technische Spezifikationen </p> <p/> <table dir="ltr"><tbody><tr><td> Breite </td><td> 1090 mm </td></tr><tr><td> Tiefe </td><td> 600 mm </td></tr><tr><td> Höhe (widthout Kanalverkleidung) </td><td> 300 mm </td></tr><tr><td> Gewicht </td><td> £ 52 </td></tr><tr><td> Beleuchtung </td><td> 4 x 2,4 W LED, dimmbar </td></tr><tr><td> Decibel Bewertungen </td><td> 54dB (A) mindestens 62 dB (A) mittel, 70 dB (A) Maximal </td></tr><tr><td> Total Power Bewertungen </td><td> 220W Minimum 235W Medium, 260W max </td></tr><tr><td> Extraktionsrate </td><td> 800m3 / h </td></tr><tr><td> Duct Größe </td><td> 140 mm-165 mm </td></tr><tr><td> B x T x H </td><td> 1090 × 600 × 300 </td></tr><tr><td> Zubehör im Lieferumfang enthalten </td><td> Installation Armaturen, zwei Filtersätze </td></tr></tbody></table> <p/> </div></detailText>
+<pictures>
+<link href="../../Editorial/Assets/Pictures/Products/Hoods%20and%20Extractors/Chef%20Extractor%20Hood%20e96a8175.xml" path="/Sites/Chef%20Corp%2E/Germany/German/Editorial/Assets/Pictures/Products/Hoods%20and%20Extractors/Chef%20Extractor%20Hood%20HD900%20Built-In%20Picture"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<downloads>
+</downloads>
+<productCode>CC-HDB-800</productCode>
+<productName>Chef Extractor Hood HD800 (Built-In)</productName>
+</CMProduct>

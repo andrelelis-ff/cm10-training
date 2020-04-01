@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.cmInteractiveForm";
+
+    //noinspection JSUnusedLocalSymbols
+    private var config:CMInteractiveForm;
+
+    public native function CMInteractiveForm(config:CMInteractiveForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="contentTab">
+      <editor:items>
+        <bpforms:DataDocumentForm
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_InteractiveData_label')}"
+                helpText="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMInteractive_data_helpText')}"/>
+        <bpforms:CollapsibleStringPropertyForm propertyName="copyright"
+                                               title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMMedia_copyright_text')}"/>
+        <bpforms:MediaDocumentForm/>
+        <bpforms:RelatedDocumentForm collapsed="true"/>
+        <bpforms:ViewTypeSelectorForm collapsed="true"/>
+        <bpforms:ValidityDocumentForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:DefaultExtraDataForm/>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataWithoutSearchableForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

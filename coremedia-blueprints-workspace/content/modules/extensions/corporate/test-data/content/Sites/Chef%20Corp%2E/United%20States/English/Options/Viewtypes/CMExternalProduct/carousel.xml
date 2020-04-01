@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMViewtype folder="/Sites/Chef Corp./United States/English/Options/Viewtypes/CMExternalProduct" name="carousel" xmlns:cmexport="http://www.coremedia.com/2012/cmexport">
+<externalRefId></externalRefId>
+<locale>en-US</locale>
+<master>
+</master>
+<description>Displays content in a carousel view that shows multiple banners at once.</description>
+<icon href="carousel.icon.svg%2Bxml" mimetype="image/svg+xml"/>
+<layout>carousel</layout>
+</CMViewtype>

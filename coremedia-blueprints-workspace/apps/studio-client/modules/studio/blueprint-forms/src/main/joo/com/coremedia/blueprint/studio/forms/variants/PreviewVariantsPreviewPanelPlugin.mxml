@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:NestedRulesPlugin
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns:ui="exml:com.coremedia.ui.config"
+        xmlns="exml:ext.config" xmlns:editor="exml:com.coremedia.cms.editor.sdk.config">
+  <fx:Script><![CDATA[
+    import com.coremedia.cms.editor.sdk.editorContext;
+    import com.coremedia.cms.editor.sdk.preview.PreviewIFrameToolbarBase;
+    import com.coremedia.cms.editor.sdk.preview.PreviewPanel;
+    import com.coremedia.ui.bem.IconWithTextBEMEntities;
+    import com.coremedia.ui.data.ValueExpression;
+    import com.coremedia.ui.data.ValueExpressionFactory;
+
+    private var config:PreviewVariantsPreviewPanelPlugin;
+    private var componentConfig:PreviewPanel;
+
+    [Bindable]
+    public var previewVariantVE:ValueExpression;
+
+    // called by generated constructor code
+    //noinspection JSUnusedLocalSymbols
+    private function __initialize__(config:PreviewVariantsPreviewPanelPlugin):void {
+      componentConfig = PreviewPanel(config.cmp.initialConfig);
+      PreviewPanel.PREVIEW_VARIANT_VALUE_EXPRESSION.setValue(PreviewVariantsUtil.getDefaultPreviewVariant())
+    }
+
+    public native function PreviewVariantsPreviewPanelPlugin(config:PreviewVariantsPreviewPanelPlugin = null);
+
+    /**
+     * The template for displaying the combobox entries.
+     * @return
+     */
+    public static function getTemplate():Array {
+      // TODO Ext6: just refactored existing code for now, a common base template needs to be extracted here, see CMS-7870
+      return ['<tpl for=".">',
+        '<div class="x-menu-item x-menu-item-default ' + LocalComboBox.COMBO_BOX_TPL_ITEM_CLASS + '" role="option">',
+        '<span class="' + IconWithTextBEMEntities.BLOCK + '">',
+        '<span class="' + IconWithTextBEMEntities.ELEMENT_ICON + ' {icon}"></span>',
+        '<span class="' + IconWithTextBEMEntities.ELEMENT_TEXT + '">{label}</span>',
+        '</span>',
+        '</div>',
+        '</tpl>'];
+    }
+
+    private static function isPreviewUrlServiceEnabled():Boolean {
+      return editorContext.getConfiguration()['previewUrlService'] && editorContext.getConfiguration()['previewUrlService'].enable;
+    }
+    ]]></fx:Script>
+
+  <ui:rules>
+    <editor:PreviewIFrameToolbar>
+      <editor:plugins>
+        <editor:OnlyIf
+                condition="{isPreviewUrlServiceEnabled}">
+          <editor:then>
+            <ui:AddItemsPlugin>
+              <ui:before>
+                <Component itemId="{PreviewIFrameToolbarBase.DEVICE_TYPE_SLIDER_SPACER_ITEM_ID}"/>
+              </ui:before>
+              <ui:items>
+                <TbSpacer width="18"/>
+                <ui:LocalComboBox forceSelection="true"
+                                  allowBlank="false"
+                                  displayField="label"
+                                  valueField="key"
+                                  tpl="{getTemplate()}">
+                  <ui:plugins exml:mode="append">
+                    <ui:BindPropertyPlugin bindTo="{config.previewVariantVE}"
+                                           bidirectional="true"/>
+                    <ui:BindListPlugin
+                            bindTo="{ValueExpressionFactory.createFromValue(PreviewVariantsUtil.PREVIEW_VARIANTS)}">
+                      <ui:fields>
+                        <ui:DataField name="key" mapping=""/>
+                        <ui:DataField name="label" mapping=""
+                                      convert_="{PreviewVariantsUtil.calculateDisplayNameForVariant}"/>
+                      </ui:fields>
+                    </ui:BindListPlugin>
+                    <ui:BindVisibilityPlugin bindTo="{componentConfig.bindTo}"
+                                             transformer="{PreviewVariantsUtil.canHaveVariants}"/>
+                  </ui:plugins>
+                </ui:LocalComboBox>
+              </ui:items>
+            </ui:AddItemsPlugin>
+          </editor:then>
+        </editor:OnlyIf>
+      </editor:plugins>
+    </editor:PreviewIFrameToolbar>
+  </ui:rules>
+
+</ui:NestedRulesPlugin>

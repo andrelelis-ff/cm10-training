@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMProductTeaser folder="/Sites/SiteGenesis Global/France/French/Editorial/Content/Microsites/Fashion Show" name="Product Teaser 02" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../United%20Kingdom/English/Editorial/Content/Microsites/Fashion%20Show/Product%20Teaser%2002.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Content/Microsites/Fashion%20Show/Product%20Teaser%2002"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<pictures>
+<link href="fashion-show-1746592.xml" path="/Sites/SiteGenesis%20Global/France/French/Editorial/Content/Microsites/Fashion%20Show/fashion-show-1746592"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<externalId>sfcc:///catalog/product/SpringLooks</externalId>
+</CMProductTeaser>

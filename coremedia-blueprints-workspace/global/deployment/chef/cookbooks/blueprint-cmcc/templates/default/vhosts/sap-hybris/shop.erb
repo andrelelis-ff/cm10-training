@@ -1,0 +1,80 @@
+<VirtualHost *:80 >
+  ServerName <%= @server_name %>
+
+  <% unless @server_aliases.nil? || @server_aliases.empty? -%>
+  ServerAlias <%= @server_aliases.join " " %>
+  <% end -%>
+
+  #####################
+  ###    Rewrite    ###
+  #####################
+  RewriteEngine On
+
+  RewriteCond %{HTTPS} off
+  RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+  LogLevel <%= @apache_log_level.nil? ? 'warn' : @apache_log_level %> rewrite:<%= @rewrite_log_level.nil? ? 'trace1' : @rewrite_log_level %>
+  ErrorLog /var/log/httpd/<%= @application_name %>-error.log
+  CustomLog /var/log/httpd/<%= @application_name %>-access.log combined
+</Virtualhost>
+
+<VirtualHost *:443 >
+  ServerName <%= @server_name %>
+  <% unless @server_aliases.nil? || @server_aliases.empty? -%>
+  ServerAlias <%= @server_aliases.join " " %>
+  <% end -%>
+  SSLEngine  On
+
+  <%- unless @custom_conf.nil? || @custom_conf.empty? -%>
+  <%- @custom_conf.each do |custom| %>
+  <%= custom %>
+  <%- end -%>
+  <%- end -%>
+
+  #####################
+  ###    Rewrite    ###
+  #####################
+  RewriteEngine On
+  <%- if @preview -%>
+  RequestHeader set X-FragmentHost preview
+  Header unset X-Frame-Options
+  <%- else -%>
+  RequestHeader set X-FragmentHost live
+  Header unset X-Frame-Options
+  # Send empty URL to shop home page
+  RewriteRule ^/$ /yacceleratorstorefront [R=302,L]
+  <%- end -%>
+
+  #####################
+  ###    Proxy      ###
+  #####################
+  SSLProxyEngine On
+  <%- unless @ssl_proxy_verify -%>
+  SSLProxyVerify none
+  SSLProxyCheckPeerCN off
+  SSLProxyCheckPeerName off
+  <%- end -%>
+
+  ProxyPreserveHost On
+
+  <%- if @headers -%>
+  # during development it may be convenient to add headers
+    <%- @headers.sort.each do |header| -%>
+  <%= header %>
+    <%- end -%>
+  <%- end -%>
+
+  RewriteCond %{REQUEST_FILENAME} !yacceleratorstorefront/
+  RewriteCond %{REQUEST_FILENAME} !medias/
+  RewriteRule .* - [F]
+
+  # Hybris stores  pass through for preview
+  ProxyPass / https://<%= @hybris_host %>:9002/ timeout=600 nocanon
+
+  #####################
+  ###    Logging    ###
+  #####################
+  LogLevel <%= @apache_log_level.nil? ? 'warn' : @apache_log_level %> rewrite:<%= @rewrite_log_level.nil? ? 'trace1' : @rewrite_log_level %>
+  ErrorLog /var/log/httpd/<%= @application_name %>-ssl-error.log
+  CustomLog /var/log/httpd/<%= @application_name %>-ssl-access.log combined
+
+</VirtualHost>

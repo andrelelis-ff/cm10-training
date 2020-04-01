@@ -1,0 +1,1853 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!--
+          CoreMedia Blueprint Editor Configuration
+          properties/corem/editor.xml
+-->
+
+<!-- <Editor>:
+  * startup attribute might take the values: OpenExplorer, OpenQuery, OpenWorkflow and OpenUserManager
+  * see documentation for many more attributes
+-->
+<Editor enableDirectPublication="true" startup="OpenExplorer" showCurrentUser="false">
+  <DocumentTableLayout horizontalLines="true" verticalLines="false"/>
+  <!-- To control the port the RemoteControl listens to you might add the attribute port="44444" (this is the default)
+       for example. -->
+  <RemoteControl enabled="true"/>
+
+  <!-- control the analysis of the site structure -->
+  <SiteModel siteIndicatorDocumentType="CMSite" siteIndicatorDepth="0"
+             idProperty="id" rootProperty="root" masterProperty="master" localeProperty="locale" nameProperty="name"/>
+
+  <LookAndFeel class="com.apple.laf.AquaLookAndFeel" os="mac"/>
+
+  <!--
+   The element <WebBrowsers> contains a list of <WebBrowser> elements. A <WebBrowser> element describes a web browser
+   installation for a specific locale and operating system. The locale is controlled by the optional attributes
+   "language" and "country". For example language="en" country="US" will be for browsers installed on an american
+   machine while language="en" country="GB" will be for browsers on british machines (if this makes any difference...).
+
+   If one of the browsers is optional, i. e. Preview shouldn't raise an error if the browser is missing for
+   "Preview All" you should add the attribute optional="true" (default is "false").
+  -->
+
+
+  <WebBrowsers>
+    <WebBrowser command="cmd.exe /C start &quot;&quot; &quot;%s&quot;" id="default" os="win"/>
+    <WebBrowser command="c:\\Programme\\Mozilla Firefox\\firefox.exe %s" id="Firefox" optional="true" os="win"/>
+    <WebBrowser command="c:\\Programme\\Internet Explorer\\iexplore.exe %s" id="IE_Safari" optional="true" os="win"/>
+    <WebBrowser command="open -a /Applications/Safari.app %s" id="IE_Safari" os="mac"/>
+    <WebBrowser command="open -a /Applications/Firefox.app %s" id="Firefox" optional="true" os="mac"/>
+    <WebBrowser command="firefox %s" id="Firefox" os="linux"/>
+  </WebBrowsers>
+
+  <WebContext context="blueprint" host="localhost" port="40081">
+    <WebExtension name="preview" open="last">
+      <Pattern browser="default" id="Default" pattern="%p://%h:%n/blueprint/servlet/preview?id=%i"/>
+      <Pattern browser="Firefox" id="Firefox" pattern="%p://%h:%n/blueprint/servlet/preview?id=%i"/>
+      <Pattern browser="IE_Safari" id="Internet Explorer (Windows) / Safari (MacOS)"
+               pattern="%p://%h:%n/blueprint/servlet/preview?id=%i"/>
+    </WebExtension>
+  </WebContext>
+
+  <WfClientActionListenerFactory
+          wfClientActionListenerClass="hox.corem.editor.workflow.adapters.EditorClientActionListener"/>
+
+  <!-- <PropertyLanguageResolverFactory>:
+    Define a class which controls which locale is used for spellchecking. This can be distinguished on document
+    level and on property level (for custom ResolverFactories). -->
+  <PropertyLanguageResolverFactory class="hox.corem.editor.DefaultPropertyLanguageResolverFactory"/>
+  <!-- <SpellChecker>:
+    Control which dictionaries to use, if the spellchecker is enabled or not and what class
+    to use for spellchecking where the default is the Bridge2JavaWordDictionary which will
+    use instances of Microsoft Word in the background for spellchecking.
+    The os-attribute allows to restrict a spellchecker to a certain operating system. Matching is
+    done against Java system property os.name ignoring case. The most specific os-configuration wins, i. e.
+    if you specify one spellchecker for "Windows" and one for "Windows 7" the "Windows 7"-spellchecker will win. -->
+  <SpellChecker enabled="true" os="windows">
+    <MainDictionary class="com.coremedia.spellchecker.impl.Bridge2JavaWordDictionary"/>
+    <CustomDictionary class="hox.corem.editor.spellchecker.Dictionary"/>
+  </SpellChecker>
+
+  <SpellChecker enabled="true" os="mac">
+    <MainDictionary class="com.coremedia.spellchecker.impl.Bridge2AppleDictionary"/>
+    <CustomDictionary class="hox.corem.editor.spellchecker.Dictionary"/>
+  </SpellChecker>
+
+  <DocumentTypes>
+
+    <DocumentType name="CMTeaser">
+      <PropertyType name="teaserTitle">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+      <PropertyType name="segment">
+        <Initializer class="com.coremedia.blueprint.editor.init.SegmentInitializer"/>
+      </PropertyType>
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+      <PropertyType name="target">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMTaxonomy">
+      <PropertyType name="value">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMLocTaxonomy">
+      <PropertyType name="value">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMImage">
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMCSS">
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMJavaScript">
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMArticle">
+      <PropertyType name="title">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+      <PropertyType name="segment">
+        <Initializer class="com.coremedia.blueprint.editor.init.SegmentInitializer"/>
+      </PropertyType>
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+      <PropertyType name="title">
+        <Validator class="NotEmpty2"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMAction">
+      <PropertyType name="title">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+      <PropertyType name="segment">
+        <Initializer class="com.coremedia.blueprint.editor.init.SegmentInitializer"/>
+      </PropertyType>
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMPlaceholder">
+      <PropertyType name="title">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+      <PropertyType name="segment">
+        <Initializer class="com.coremedia.blueprint.editor.init.SegmentInitializer"/>
+      </PropertyType>
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMVisual">
+      <PropertyType name="teaserTitle">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+      <PropertyType name="segment">
+        <Initializer class="com.coremedia.blueprint.editor.init.SegmentInitializer"/>
+      </PropertyType>
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMAudio">
+      <PropertyType name="teaserTitle">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+      <PropertyType name="segment">
+        <Initializer class="com.coremedia.blueprint.editor.init.SegmentInitializer"/>
+      </PropertyType>
+      <PropertyType name="alt">
+        <Validator class="NotEmpty2"/>
+      </PropertyType>
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMVideo">
+      <PropertyType name="teaserTitle">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+      <PropertyType name="segment">
+        <Initializer class="com.coremedia.blueprint.editor.init.SegmentInitializer"/>
+      </PropertyType>
+      <PropertyType name="alt">
+        <Validator class="NotEmpty2"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMInteractive">
+      <PropertyType name="teaserTitle">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+      <PropertyType name="segment">
+        <Initializer class="com.coremedia.blueprint.editor.init.SegmentInitializer"/>
+      </PropertyType>
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMPicture">
+      <PropertyType name="teaserTitle">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+      <PropertyType name="segment">
+        <Initializer class="com.coremedia.blueprint.editor.init.SegmentInitializer"/>
+      </PropertyType>
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMCollection">
+      <PropertyType name="teaserTitle">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+      <PropertyType name="segment">
+        <Initializer class="com.coremedia.blueprint.editor.init.SegmentInitializer"/>
+      </PropertyType>
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMGallery">
+      <PropertyType name="teaserTitle">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+      <PropertyType name="segment">
+        <Initializer class="com.coremedia.blueprint.editor.init.SegmentInitializer"/>
+      </PropertyType>
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMQueryList">
+      <PropertyType name="teaserTitle">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+      <PropertyType name="segment">
+        <Initializer class="com.coremedia.blueprint.editor.init.SegmentInitializer"/>
+      </PropertyType>
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMExternalLink">
+      <PropertyType name="teaserTitle">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+      <PropertyType name="segment">
+        <Initializer class="com.coremedia.blueprint.editor.init.SegmentInitializer"/>
+      </PropertyType>
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMDownload">
+      <PropertyType name="teaserTitle">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+      <PropertyType name="segment">
+        <Initializer class="com.coremedia.blueprint.editor.init.SegmentInitializer"/>
+      </PropertyType>
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMHTML">
+      <PropertyType name="teaserTitle">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+      <PropertyType name="segment">
+        <Initializer class="com.coremedia.blueprint.editor.init.SegmentInitializer"/>
+      </PropertyType>
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+    </DocumentType>
+
+    <DocumentType name="CMChannel">
+      <PropertyType name="title">
+        <Initializer class="com.coremedia.blueprint.editor.init.NameInitializer"/>
+      </PropertyType>
+      <PropertyType name="segment">
+        <Initializer class="com.coremedia.blueprint.editor.init.SegmentInitializer"/>
+      </PropertyType>
+      <PropertyType name="master">
+        <Validator class="LinkListValidator" maxLength="1"/>
+      </PropertyType>
+      <PropertyType name="title">
+        <Validator class="NotEmpty2"/>
+      </PropertyType>
+
+    </DocumentType>
+
+
+    <!-- Personalization-specific doctypes -->
+    <!--
+        <DocumentType name="CMSelectionRules">
+          <PropertyType name="rules">
+            <ModelClass class="hox.corem.editor.toolkit.property.richtext.impl.ConcurrentXmlPropertyModel"/>
+          </PropertyType>
+        </DocumentType>
+
+        <DocumentType name="CMSegment">
+          <PropertyType name="conditions">
+            <ModelClass class="hox.corem.editor.toolkit.property.richtext.impl.ConcurrentXmlPropertyModel"/>
+          </PropertyType>
+        </DocumentType>
+
+        <DocumentType name="CMP13NSearch">
+          <PropertyType Name="searchQuery"/>
+          <PropertyType Name="documentType"/>
+          <PropertyType Name="searchContext">
+            <Validator class="LinkListValidator"/>
+          </PropertyType>
+        </DocumentType>
+    -->
+
+  </DocumentTypes>
+
+  <Documents>
+    <!-- <Document> has many more attributes especially depending on the implementation of the viewClass. So
+         documentation for further details.
+         Child elements are <Property> and <Tab> where the latter one might be used to group property editors
+         into tabs. -->
+    <Document type="Preferences">
+      <Property name="Data" editorClass="GenericSgmlTextRenderer"/>
+    </Document>
+    <Document type="Dictionary">
+      <Property name="Data" editorClass="hox.corem.editor.spellchecker.DictionaryEditor"/>
+    </Document>
+    <Document type="EditorPreferences">
+      <Property name="data"
+                editorClass="StructRichTextPane" expandOnStartup="true"/>
+    </Document>
+
+    <Document type="CMTeaser" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="teaserTitle"/>
+        <Property name="teaserText"/>
+        <Property name="detailText"/>
+        <Property name="target"/>
+        <Property name="pictures"/>
+        <Property name="notSearchable" visible="false"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMTeasable"
+                  siteSpecificPaths="Options/Viewtypes/CMTeasable"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMVisual" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="teaserTitle"/>
+        <Property name="teaserText"/>
+        <Property name="detailText"/>
+        <Property name="caption"/>
+        <Property name="alt"/>
+        <Property name="copyright"/>
+        <Property name="data"/>
+        <Property name="dataUrl"/>
+        <Property name="width"/>
+        <Property name="height"/>
+        <Property name="pictures"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMTeasable"
+                  siteSpecificPaths="Options/Viewtypes/CMTeasable"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="notSearchable" editorClass="JCheckBoxIntegerEditor"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMAudio" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="title"/>
+        <Property name="teaserTitle"/>
+        <Property name="caption"/>
+        <Property name="alt"/>
+        <Property name="copyright"/>
+        <Property name="teaserText"/>
+        <Property name="detailText"/>
+        <Property name="data"/>
+        <Property name="dataUrl"/>
+        <Property name="related"/>
+        <Property name="pictures"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMTeasable"
+                  siteSpecificPaths="Options/Viewtypes/CMTeasable"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="notSearchable" editorClass="JCheckBoxIntegerEditor"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMVideo" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="title"/>
+        <Property name="teaserTitle"/>
+        <Property name="teaserText"/>
+        <Property name="detailText"/>
+        <Property name="caption"/>
+        <Property name="alt"/>
+        <Property name="copyright"/>
+        <Property name="data"/>
+        <Property name="dataUrl"/>
+        <Property name="width"/>
+        <Property name="height"/>
+        <Property name="related"/>
+        <Property name="pictures"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMTeasable"
+                  siteSpecificPaths="Options/Viewtypes/CMTeasable"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="notSearchable" editorClass="JCheckBoxIntegerEditor"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMPicture" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="teaserTitle"/>
+        <Property name="teaserText"/>
+        <Property name="detailText"/>
+        <Property name="data"/>
+        <Property name="dataUrl"/>
+        <Property name="copyright"/>
+        <Property name="width"/>
+        <Property name="height"/>
+        <Property name="caption"/>
+        <Property name="alt"/>
+        <Property name="pictures" visible="false"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMTeasable"
+                  siteSpecificPaths="Options/Viewtypes/CMTeasable"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="notSearchable" editorClass="JCheckBoxIntegerEditor"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMInteractive" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="teaserTitle"/>
+        <Property name="teaserText"/>
+        <Property name="detailText"/>
+        <Property name="caption"/>
+        <Property name="alt"/>
+        <Property name="copyright"/>
+        <Property name="data"/>
+        <Property name="dataUrl"/>
+        <Property name="width"/>
+        <Property name="height"/>
+        <Property name="pictures"/>
+        <Property name="related"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMTeasable"
+                  siteSpecificPaths="Options/Viewtypes/CMTeasable"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="notSearchable" editorClass="JCheckBoxIntegerEditor"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMAction" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="title"/>
+        <Property name="contexts"/>
+        <Property name="segment"/>
+        <Property name="id"/>
+        <Property name="type"/>
+        <Property name="keywords" visible="false"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMAction"
+                  siteSpecificPaths="Options/Viewtypes/CMAction"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMPlaceholder" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="title"/>
+        <Property name="contexts"/>
+        <Property name="segment"/>
+        <Property name="id"/>
+        <Property name="keywords" visible="false"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMAction"
+                  siteSpecificPaths="Options/Viewtypes/CMAction"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMImage" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="data"/>
+        <Property name="description"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMCSS" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="description"/>
+        <Property name="dataUrl"/>
+        <Property name="code"/>
+        <Property name="ieExpression"/>
+        <Property name="include"/>
+        <Property name="media"/>
+        <Property name="ieRevealed" editorClass="JCheckBoxIntegerEditor"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMJavaScript" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="description"/>
+        <Property name="dataUrl"/>
+        <Property name="code"/>
+        <Property name="ieExpression"/>
+        <Property name="include"/>
+        <Property name="ieRevealed" editorClass="JCheckBoxIntegerEditor"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+      </Tab>
+    </Document>
+
+    <Document type="CMChannel" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Content">
+        <Property name="title" visible="true"/>
+        <Property name="children" visible="true"/>
+        <Property name="picture" visible="false"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMChannel"
+                  siteSpecificPaths="Options/Viewtypes/CMChannel"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Layout">
+        <Property name="placement"
+                  editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="header" visible="true"/>
+        <Property name="footer" visible="true"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMChannel"
+                  siteSpecificPaths="Options/Settings/CMChannel,Options/Bundles,/Settings/Options/Bundles"
+                  listHeight="180"/>
+        <Property name="hidden" editorClass="JCheckBoxIntegerEditor"/>
+        <Property name="hiddenInSitemap" editorClass="JCheckBoxIntegerEditor"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMArticle" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="title"/>
+        <Property name="teaserTitle"/>
+        <Property name="teaserText"/>
+        <Property name="detailText"/>
+        <Property name="related"/>
+        <Property name="pictures"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMTeasable"
+                  siteSpecificPaths="Options/Viewtypes/CMTeasable"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="notSearchable" editorClass="JCheckBoxIntegerEditor"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMMail" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="from"/>
+        <Property name="subject"/>
+        <Property name="text"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMCollection" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="teaserTitle"/>
+        <Property name="teaserText"/>
+        <Property name="detailText"/>
+        <Property name="items"/>
+        <Property name="pictures"/>
+        <Property name="related"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMCollection"
+                  siteSpecificPaths="Options/Viewtypes/CMCollection"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="notSearchable" editorClass="JCheckBoxIntegerEditor"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+
+    <Document type="CMALXEventList" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="teaserTitle"/>
+        <Property name="teaserText"/>
+        <Property name="title"/>
+        <Property name="detailText"/>
+        <Property name="maxLength"/>
+        <Property name="category"/>
+        <Property name="action"/>
+        <Property name="profileId"/>
+        <Property name="pictures"/>
+        <Property name="related"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMCollection"
+                  siteSpecificPaths="Options/Viewtypes/CMCollection"
+                  emptySelection="default"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="notSearchable" editorClass="JCheckBoxIntegerEditor"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMALXPageList" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="teaserTitle"/>
+        <Property name="teaserText"/>
+        <Property name="title"/>
+        <Property name="detailText"/>
+        <Property editorClass="ComboBoxStringEditor" name="documentType" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="Article" value="CMArticle"/>
+          <LabeledItem label="Audio" value="CMAudio"/>
+          <LabeledItem label="Image" value="CMPicture"/>
+          <LabeledItem label="Video" value="CMVideo"/>
+        </Property>
+        <Property name="baseChannel"/>
+        <Property name="defaultContent"/>
+        <Property name="maxLength"/>
+        <Property name="profileId"/>
+        <Property name="pictures"/>
+        <Property name="related"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMCollection"
+                  siteSpecificPaths="Options/Viewtypes/CMCollection"
+                  emptySelection="default"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="notSearchable" editorClass="JCheckBoxIntegerEditor"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+
+    <Document type="CMGallery" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="title"/>
+        <Property name="teaserTitle"/>
+        <Property name="teaserText"/>
+        <Property name="detailText"/>
+        <Property name="items"/>
+        <Property name="pictures"/>
+        <Property name="related"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMGallery"
+                  siteSpecificPaths="Options/Viewtypes/CMGallery"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="notSearchable" editorClass="JCheckBoxIntegerEditor"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMP13NSearch" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="teaserTitle"/>
+        <Property name="teaserText" visible="false"/>
+        <Property name="detailText" visible="false"/>
+        <Property name="items" visible="false"/>
+        <Property name="related" visible="false"/>
+        <Property name="documentType"/>
+        <Property name="searchContext"/>
+        <Property name="searchQuery"/>
+        <Property name="defaultContent"/>
+        <Property name="maxLength"/>
+        <Property name="pictures" visible="false"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMCollection"
+                  siteSpecificPaths="Options/Viewtypes/CMCollection"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="notSearchable" editorClass="JCheckBoxIntegerEditor"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMQueryList" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="teaserTitle"/>
+        <Property name="teaserText"/>
+        <Property name="detailText"/>
+        <Property name="items"/>
+        <Property name="pictures"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMCollection"
+                  siteSpecificPaths="Options/Viewtypes/CMCollection"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="notSearchable" editorClass="JCheckBoxIntegerEditor"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMExternalLink" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="url"/>
+        <Property name="title"/>
+        <Property name="teaserTitle"/>
+        <Property name="teaserText"/>
+        <Property name="detailText"/>
+        <Property name="pictures" visible="false"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMTeasable"
+                  siteSpecificPaths="Options/Viewtypes/CMTeasable"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="notSearchable" editorClass="JCheckBoxIntegerEditor"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMDownload" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="teaserTitle"/>
+        <Property name="teaserText"/>
+        <Property name="detailText"/>
+        <Property name="data"/>
+        <Property name="pictures"/>
+        <Property name="related"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMTeasable"
+                  siteSpecificPaths="Options/Viewtypes/CMTeasable"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="notSearchable" editorClass="JCheckBoxIntegerEditor"/>
+        <Property name="validFrom" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+        <Property name="validTo" editorClass="DatePickEditor" format="dd.MM.yyyy HH:mm zzzz"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMHTML" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="teaserTitle"/>
+        <Property name="teaserText"/>
+        <Property name="detailText"/>
+        <Property name="description"/>
+        <Property name="data"/>
+        <Property name="caption"/>
+        <Property name="alt"/>
+        <Property name="copyright"/>
+        <Property name="pictures" visible="false"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMTeasable"
+                  siteSpecificPaths="Options/Viewtypes/CMTeasable"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+        <Property name="notSearchable" editorClass="JCheckBoxIntegerEditor"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMSitemap" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="title"/>
+        <Property name="root"/>
+        <Property name="keywords"/>
+        <Property name="segment"/>
+        <Property name="viewtype"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                  path="/Settings/Options/Viewtypes/CMSitemap"
+                  siteSpecificPaths="Options/Viewtypes/CMSitemap"
+                  emptySelection="default"/>
+      </Tab>
+      <Tab name="Categorization">
+        <Property name="keywords"/>
+        <Property name="subjectTaxonomy" visible="true"/>
+        <Property name="locationTaxonomy" visible="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+      <Tab name="Misc">
+        <Property name="segment"/>
+        <Property name="localSettings" editorClass="StructRichTextPane" expandOnStartup="true"/>
+        <Property name="linkedSettings"
+                  editorClass="com.coremedia.blueprint.editor.property.SiteSpecificLinkListEditor"
+                  path="/Settings/Options/Settings/CMTeasable"
+                  siteSpecificPaths="Options/Settings/CMTeasable" listHeight="180"/>
+      </Tab>
+    </Document>
+
+    <Document type="CMSettings" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+      <Tab name="Main">
+        <Property name="identifier"/>
+        <!--Property name="settings" editorClass="StructRichTextPane"/-->
+        <Property name="settings" prototypesFolder="/Settings/Options/CMSettings/Settings"
+                  editorClass="StructRichTextPane" expandOnStartup="true"/>
+      </Tab>
+      <Tab name="Language">
+        <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+          <LabeledItem label="" value=""/>
+          <LabeledItem label="English" value="en"/>
+          <LabeledItem label="English (UK)" value="en_GB"/>
+          <LabeledItem label="English (US)" value="en_US"/>
+          <LabeledItem label="French" value="fr"/>
+          <LabeledItem label="German" value="de"/>
+          <LabeledItem label="German (Germany)" value="de_DE"/>
+        </Property>
+        <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                  versionProperty="masterVersion"/>
+        <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Tab>
+    </Document>
+
+    <!-- Personalization doctypes -->
+    <!--
+        <Document type="CMSelectionRules" viewClass="hox.corem.editor.generic.TabbedDocumentView">
+          <Tab name="Main">
+            <Property name="teaserTitle"/>
+            <Property name="title"/>
+            <Property name="defaultContent"/>
+            <Property name="related" visible="false"/>
+            <Property name="items" visible="false"/>
+            <Property name="teaserText"/>
+            <Property name="detailText"/>
+            <Property name="rules" editorClass="PlainXmlPropertyEditor"/>
+            <Property name="maxLength"/>
+            <Property name="pictures" visible="false"/>
+            <Property name="viewtype"
+                      editorClass="com.coremedia.blueprint.editor.property.SiteSpecificComboBoxLinkListEditor"
+                      path="/Settings/Options/Viewtypes/CMCollection"
+                      siteSpecificPaths="Options/Viewtypes/CMCollection"
+                      emptySelection="default"/>
+          </Tab>
+          <Tab name="Categorization">
+            <Property name="keywords"/>
+            <Property name="subjectTaxonomy" visible="true"/>
+            <Property name="locationTaxonomy" visible="true"/>
+          </Tab>
+          <Tab name="Language">
+            <Property name="locale" editorClass="ComboBoxStringEditor" visible="true" fixedChoice="false">
+              <LabeledItem label="" value=""/>
+              <LabeledItem label="English" value="en"/>
+              <LabeledItem label="English (UK)" value="en_GB"/>
+              <LabeledItem label="English (US)" value="en_US"/>
+              <LabeledItem label="French" value="fr"/>
+              <LabeledItem label="German" value="de"/>
+              <LabeledItem label="German (Germany)" value="de_DE"/>
+            </Property>
+            <Property name="master" editorClass="hox.corem.editor.toolkit.property.VersionLinkEditor"
+                      versionProperty="masterVersion"/>
+            <Property name="masterVersion" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+          </Tab>
+          <Tab name="Misc">
+            <Property name="segment"/>
+            <Property name="notSearchable" editorClass="JCheckBoxIntegerEditor"/>
+          </Tab>
+        </Document>
+
+    <Document type="CMSegment">
+      <Property name="conditions" editorClass="PlainXmlPropertyEditor"/>
+    </Document>
+    -->
+
+  </Documents>
+
+  <!-- <Processes>: This element is used to group the elements which define the view of the workflow variables. -->
+  <Processes>
+    <Process name="ThreeStepPublication">
+      <WorkflowStartup class="hox.corem.editor.workflow.foureyes.FourEyesWorkflowStartup"/>
+      <View>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+      </View>
+      <Task name="Compose">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.PublicationResultAggregationEditor"
+                             name="publicationResultCodes"/>
+      </Task>
+      <Task name="Approve">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.PublicationResultAggregationEditor"
+                             name="publicationResultCodes"/>
+      </Task>
+      <Task name="Publish">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+      </Task>
+    </Process>
+
+    <Process name="TwoStepPublication">
+      <WorkflowStartup class="hox.corem.editor.workflow.foureyes.FourEyesWorkflowStartup"/>
+      <View>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+      </View>
+      <Task name="Compose">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.PublicationResultAggregationEditor"
+                             name="publicationResultCodes"/>
+      </Task>
+      <Task name="Approve">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.PublicationResultAggregationEditor"
+                             name="publicationResultCodes"/>
+      </Task>
+      <Task name="Publish">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+      </Task>
+    </Process>
+
+    <Process name="StudioTwoStepPublication">
+      <View>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+      </View>
+      <Task name="Compose">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.PublicationResultAggregationEditor"
+                             name="publicationResultCodes"/>
+      </Task>
+      <Task name="Approve">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.PublicationResultAggregationEditor"
+                             name="publicationResultCodes"/>
+      </Task>
+      <Task name="Publish">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+      </Task>
+    </Process>
+
+    <Process name="TwoStepApproval">
+      <WorkflowStartup class="hox.corem.editor.workflow.foureyes.FourEyesWorkflowStartup"/>
+      <View>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+      </View>
+      <Task name="Compose">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.PublicationResultAggregationEditor"
+                             name="publicationResultCodes"/>
+      </Task>
+      <Task name="Approve">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.PublicationResultAggregationEditor"
+                             name="publicationResultCodes"/>
+      </Task>
+    </Process>
+
+    <Process name="SimplePublication">
+      <WorkflowStartup class="hox.corem.editor.workflow.foureyes.FourEyesWorkflowStartup"/>
+      <View>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.ChangeSetEditor"
+                             name="changeSet"/>
+      </View>
+      <Task name="Compose">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.ChangeSetEditor"
+                             name="changeSet"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.PublicationResultAggregationEditor"
+                             name="publicationResultCodes"/>
+      </Task>
+      <Task name="Publish">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.ChangeSetEditor"
+                             name="changeSet"/>
+      </Task>
+    </Process>
+
+    <Process name="StudioSimplePublication">
+      <View>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.ChangeSetEditor"
+                             name="changeSet"/>
+      </View>
+      <Task name="Compose">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.ChangeSetEditor"
+                             name="changeSet"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.PublicationResultAggregationEditor"
+                             name="publicationResultCodes"/>
+      </Task>
+      <Task name="Publish">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.ChangeSetEditor"
+                             name="changeSet"/>
+      </Task>
+    </Process>
+
+    <Process name="SimpleTimeBasedPublication">
+      <WorkflowStartup class="hox.corem.editor.workflow.foureyes.FourEyesWorkflowStartup"/>
+      <View>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.ChangeSetEditor"
+                             name="changeSet"/>
+      </View>
+      <Task name="Compose">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.ChangeSetEditor"
+                             name="changeSet"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.PublicationResultAggregationEditor"
+                             name="publicationResultCodes"/>
+      </Task>
+      <Task name="Publish">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.ChangeSetEditor"
+                             name="changeSet"/>
+      </Task>
+    </Process>
+
+    <Process name="ThreeStepTimeBasedPublication">
+      <WorkflowStartup class="hox.corem.editor.workflow.foureyes.FourEyesWorkflowStartup"/>
+      <View>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.ChangeSetEditor"
+                             name="changeSet"/>
+      </View>
+      <Task name="Compose">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.ChangeSetEditor"
+                             name="changeSet"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.PublicationResultAggregationEditor"
+                             name="publicationResultCodes"/>
+      </Task>
+      <Task name="FirstApprove">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.PublicationResultAggregationEditor"
+                             name="publicationResultCodes"/>
+      </Task>
+      <Task name="FirstApproveRetry">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.PublicationResultAggregationEditor"
+                             name="publicationResultCodes"/>
+      </Task>
+      <Task name="SecondApprove">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.FourEyesAggregationEditor"
+                             name="changeSet"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.PublicationResultAggregationEditor"
+                             name="publicationResultCodes"/>
+      </Task>
+      <Task name="Publish">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.foureyes.ChangeSetEditor"
+                             name="changeSet"/>
+      </Task>
+    </Process>
+
+    <Process name="GlobalSearchAndReplace">
+      <WorkflowStartup class="hox.corem.editor.workflow.searchandreplace.SearchAndReplaceWorkflowStartup"
+                       softLimit="400" hardLimit="600"/>
+
+      <Task name="Compose">
+        <AggregationVariable
+                editorClass="hox.corem.editor.workflow.searchandreplace.SearchAndReplaceChangeSetEditor"
+                name="replaceSet" foldersAllowed="false" versionsAllowed="false" softLimit="400" hardLimit="600"/>
+      </Task>
+
+      <Task name="SearchAndReplaceOptions">
+        <AggregationVariable
+                editorClass="hox.corem.editor.workflow.searchandreplace.SearchAndReplaceAttributesAggregationEditor"
+                name="attributes"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.InvisibleAggregationEditor"
+                             name="replaceSet"/>
+        <Variable name="searchItem" editorClass="hox.corem.editor.toolkit.property.JTextFieldXHTMLEditor"/>
+        <Variable name="replacement" editorClass="hox.corem.editor.toolkit.property.JTextFieldXHTMLEditor"/>
+      </Task>
+
+      <Task name="SearchAndReplace">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.searchandreplace.SearchAndReplaceAggregationEditor"
+                             name="replaceSet"/>
+      </Task>
+    </Process>
+
+    <Process name="MarkupSearchAndReplace">
+      <WorkflowStartup class="hox.corem.editor.workflow.searchandreplace.SearchAndReplaceWorkflowStartup"
+                       softLimit="400" hardLimit="600"/>
+
+      <Task name="Compose">
+        <AggregationVariable
+                editorClass="hox.corem.editor.workflow.searchandreplace.SearchAndReplaceChangeSetEditor"
+                name="replaceSet" foldersAllowed="false" versionsAllowed="false" softLimit="400" hardLimit="600"/>
+      </Task>
+
+      <Task name="SearchAndReplaceOptions">
+        <AggregationVariable
+                editorClass="hox.corem.editor.workflow.searchandreplace.SearchAndReplaceAttributesAggregationEditor"
+                name="attributes" xhtmlModeModelName="markup"/>
+        <AggregationVariable editorClass="hox.corem.editor.workflow.variables.InvisibleAggregationEditor"
+                             name="replaceSet"/>
+        <Variable name="searchItem" editorClass="hox.corem.editor.toolkit.property.JTextFieldXHTMLEditor"
+                  xhtmlModeModelName="markup"/>
+        <Variable name="replacement" editorClass="hox.corem.editor.toolkit.property.JTextFieldXHTMLEditor"
+                  xhtmlModeModelName="markup"/>
+        <Variable name="markup" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Task>
+
+      <Task name="SearchAndReplace">
+        <AggregationVariable editorClass="hox.corem.editor.workflow.searchandreplace.SearchAndReplaceAggregationEditor"
+                             name="replaceSet" xhtmlModeModelName="markup"/>
+        <Variable name="markup" editorClass="hox.corem.editor.toolkit.property.InvisibleEditor"/>
+      </Task>
+    </Process>
+  </Processes>
+
+  <!-- <Explorer>:
+    You might modify the given configuration to influence the look and behavior of the standard explorer. Or you
+    might add other <Explorer> elements (with unique names) to give the option to the user to switch between
+    different views e. g. for different tasks. Again much more information is available in the manual.
+  -->
+  <Explorer name="configurable-explorer">
+    <Filter name="undeleted-filter">
+      <Predicate class="UndeletedPredicate"/>
+    </Filter>
+
+    <Filter name="unapprovedunpublished-filter">
+      <Predicate class="UnapprovedUnpublishedPredicate"/>
+    </Filter>
+
+    <Filter name="tobeapproved-filter">
+      <Predicate class="ToBeApprovedPredicate"/>
+    </Filter>
+
+    <Filter name="tobepublished-filter">
+      <Predicate class="ToBePublishedPredicate"/>
+    </Filter>
+
+    <Filter name="published-filter">
+      <Predicate class="PublishedPredicate"/>
+    </Filter>
+
+    <TableDefinition>
+      <ColumnDefinition class="DocumentTypeColumn"/>
+
+      <ColumnDefinition class="ResourceDisplacementColumn" width="20" resizable="false" weight="0.0"/>
+
+      <ColumnDefinition class="StringColumn" name="documentname-column">
+        <DisplayMap document="Content_" property="name_"/>
+      </ColumnDefinition>
+
+      <ColumnDefinition class="DocumentVersionColumn"/>
+
+      <ColumnDefinition class="DateColumn">
+        <DisplayMap document="Content_" property="creationDate_"/>
+      </ColumnDefinition>
+
+    </TableDefinition>
+  </Explorer>
+
+
+  <!-- <ResourceChooser>:
+    Control the look and behavior of the resource chooser dialog which opens e. g. when creating
+    internal links. -->
+  <ResourceChooser>
+    <TableDefinition>
+      <ColumnDefinition class="ResourceDisplacementColumn" width="20" resizable="false" weight="0.0"/>
+
+      <ColumnDefinition class="StringColumn" name="documentname-column">
+        <DisplayMap document="Content_" property="name_"/>
+      </ColumnDefinition>
+
+      <ColumnDefinition class="DocumentTypeColumn"/>
+    </TableDefinition>
+  </ResourceChooser>
+
+  <!-- <Search>: Control the appearance of search results. -->
+  <Search>
+    <TableDefinition>
+      <ColumnDefinition class="PathColumn"/>
+
+      <ColumnDefinition class="ResourceDisplacementColumn" width="20" resizable="false" weight="0.0"/>
+
+      <ColumnDefinition class="StringColumn" name="documentname-column">
+        <DisplayMap document="Content_" property="name_"/>
+      </ColumnDefinition>
+
+      <ColumnDefinition class="DocumentVersionColumn"/>
+
+      <ColumnDefinition class="DocumentTypeColumn"/>
+    </TableDefinition>
+  </Search>
+
+  <!-- <Query>: Control the appearance of query results -->
+  <Query>
+    <TableDefinition>
+      <ColumnDefinition class="DocumentTypeColumn"/>
+
+      <ColumnDefinition class="ResourceDisplacementColumn" width="20" resizable="false" weight="0.0"/>
+
+      <ColumnDefinition class="PathColumn"/>
+
+      <ColumnDefinition class="StringColumn" name="documentname-column">
+        <DisplayMap document="Content_" property="name_"/>
+      </ColumnDefinition>
+
+      <ColumnDefinition class="DocumentVersionColumn"/>
+    </TableDefinition>
+  </Query>
+
+  <!-- <Workflow>: Control the appearance of the workflow window -->
+  <Workflow>
+    <Predicate class="hox.corem.editor.workflow.DefaultWorklistPredicate"/>
+    <TableDefinition rowHeight="25">
+      <ColumnDefinition class="hox.corem.editor.workflow.columns.WorklistDetailColumn" weight="0.7">
+        <ComponentFactory subjectVariable="subject" processName="ThreeStepPublication"/>
+        <ComponentFactory subjectVariable="subject" processName="TwoStepPublication"/>
+        <ComponentFactory subjectVariable="subject" processName="StudioTwoStepPublication"/>
+        <ComponentFactory subjectVariable="subject" processName="TwoStepApproval"/>
+        <ComponentFactory subjectVariable="subject" processName="SimplePublication"/>
+        <ComponentFactory subjectVariable="subject" processName="StudioSimplePublication"/>
+      </ColumnDefinition>
+      <ColumnDefinition class="hox.corem.editor.workflow.columns.WorklistProcessColumn" weight="0.3"/>
+    </TableDefinition>
+  </Workflow>
+
+  <!-- Further Elements as documented in the Editor Developer Manual -->
+
+  <!-- Use the element <Bundle name="my/bundle"/> to add custom localizations for document types etc. -->
+  <!-- Using the <FrameFactory> element you can define your own classes to be used for ExplorerView, DocumentView, etc. -->
+  <!-- <PropertyModelFactory> to define factories for custom PropertyModels -->
+  <!-- <ResourceNamingFactory> to control naming of new resources (e. g. how a new document is named) -->
+  <!-- <DocumentTypes> to control for example sorting in the "New Resource" dialog or even which document types are
+       available within the editor. And this element gives access to fine grained property initializers, validators
+       etc. -->
+
+</Editor>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editor:DocumentTabPanel
+        xmlns:fx="http://ns.adobe.com/mxml/2009"
+        xmlns:exml="http://www.jangaroo.net/exml/0.8"
+        xmlns="exml:ext.config"
+        xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+        xmlns:bpforms="exml:com.coremedia.blueprint.studio.config">
+  <fx:Metadata>
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
+    [ResourceBundle('com.coremedia.blueprint.studio.BlueprintTabs')]
+    [ResourceBundle('com.coremedia.blueprint.studio.CustomLabels')]
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.cmVideoForm";
+
+    public static const COPYRIGHT_FORM_ITEM_ID:String = "copyrightFormItemId";
+
+    public static const EXTRAS_TAB_ITEM_ID:String = "extrasTab";
+
+    public static const CONTENT_TAB_ITEM_ID:String = "contentTab";
+
+    private var config:CMVideoForm;
+
+    public native function CMVideoForm(config:CMVideoForm = null);
+    ]]></fx:Script>
+
+  <editor:items>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_content_title')}"
+            itemId="{CONTENT_TAB_ITEM_ID}">
+      <editor:items>
+        <bpforms:DetailsDocumentForm/>
+        <bpforms:TeaserDocumentForm/>
+        <bpforms:DataDocumentForm
+                title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMVideo_data_text')}"
+                helpText="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMVideo_data_helpText')}"/>
+        <bpforms:PlayerSettingsPropertyGroup itemId="mediaOptionsPropertyFieldGroup"
+                                             columns="2"
+                                             title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_VideoProperties_label')}"/>
+        <bpforms:MediaDocumentForm collapsed="true"
+                                   maxCardinality="1"/>
+        <bpforms:RelatedDocumentForm collapsed="false"/>
+        <bpforms:ViewTypeSelectorForm/>
+        <bpforms:ValidityDocumentForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <editor:DocumentForm
+            title="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintTabs', 'Tab_extras_title')}"
+            itemId="{EXTRAS_TAB_ITEM_ID}">
+      <editor:items>
+        <bpforms:CategoryDocumentForm/>
+        <editor:PropertyFieldGroup collapsed="false"
+                                   itemId="{COPYRIGHT_FORM_ITEM_ID}"
+                                   title="{resourceManager.getString('com.coremedia.blueprint.studio.CustomLabels', 'PropertyGroup_Description_label')}"
+                                   forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}">
+          <editor:items>
+            <editor:StringPropertyField propertyName="copyright"/>
+          </editor:items>
+        </editor:PropertyFieldGroup>
+        <bpforms:SEOForm/>
+      </editor:items>
+    </editor:DocumentForm>
+    <bpforms:MultiLanguageDocumentForm/>
+    <bpforms:MetaDataWithoutSearchableForm/>
+  </editor:items>
+
+</editor:DocumentTabPanel>

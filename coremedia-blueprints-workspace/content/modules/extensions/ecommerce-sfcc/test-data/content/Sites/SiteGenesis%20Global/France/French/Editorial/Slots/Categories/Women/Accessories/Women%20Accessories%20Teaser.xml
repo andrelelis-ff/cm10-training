@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMTeaser folder="/Sites/SiteGenesis Global/France/French/Editorial/Slots/Categories/Women/Accessories" name="Women Accessories Teaser" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>fr-FR</locale>
+<master>
+<link href="../../../../../../../United%20Kingdom/English/Editorial/Slots/Categories/Women/Accessories/Women%20Accessories%20Teaser.xml" path="/Sites/SiteGenesis%20Global/United%20Kingdom/English/Editorial/Slots/Categories/Women/Accessories/Women%20Accessories%20Teaser"/>
+</master>
+<viewtype>
+</viewtype>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title></title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle>Accessoires</teaserTitle>
+<teaserText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p> Il n'est question que de toi </p> </div></teaserText>
+<pictures>
+<link href="../../../../../Pictures/Woman%20in%20stripy%20black%20and%20white%20dress%20posing%20near%20crea10bb120e.xml" path="/Sites/SiteGenesis%20Global/France/French/Pictures/Woman%20in%20stripy%20black%20and%20white%20dress%20posing%20near%20creative%20red%20pool%20in%20height%20heeled%20classic%20pumps"/>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<target>
+<link href="../../../../../Augmentation/Womens/Accessories/Women%20Accessories.xml" path="/Sites/SiteGenesis%20Global/France/French/Augmentation/Womens/Accessories/Women%20Accessories"/>
+</target>
+</CMTeaser>

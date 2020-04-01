@@ -1,0 +1,18 @@
+<Struct xmlns="http://www.coremedia.com/2008/struct">
+  <StructProperty  Name="siteMappings">
+    <Struct>
+      <StringProperty Name="site-id">http://absolute-url.com</StringProperty>
+
+      <!--
+        These are not used in the test.
+        Just have them parsed to make sure that Struct accepts such geeky Strings
+        as the patterns of the AbstractUrlProvider as property keys.
+      -->
+      <StringProperty Name="[site, org.example.Type, view]">http://absolute-url.com</StringProperty>
+      <StringProperty Name="5.*">http://absolute-url.com</StringProperty>
+      <StringProperty Name="siteSecure">http://absolute-url.com</StringProperty>
+      <StringProperty Name="1.[site, ?, view]">http://absolute-url.com</StringProperty>
+      <StringProperty Name="2.[*,*,json]">http://absolute-url.com</StringProperty>
+    </Struct>
+  </StructProperty>
+</Struct>

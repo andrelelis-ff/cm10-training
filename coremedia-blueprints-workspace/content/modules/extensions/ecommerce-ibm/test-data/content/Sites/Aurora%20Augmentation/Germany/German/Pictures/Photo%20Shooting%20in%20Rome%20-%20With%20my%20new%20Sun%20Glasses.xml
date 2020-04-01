@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CMPicture folder="/Sites/Aurora Augmentation/Germany/German/Pictures" name="Photo Shooting in Rome - With my new Sun Glasses" xmlns:cmexport="http://www.coremedia.com/2012/cmexport" translationState="up-to-date">
+<externalRefId></externalRefId>
+<locale>de-DE</locale>
+<master>
+<link href="../../../United%20States/English/Pictures/Photo%20Shooting%20in%20Rome%20-%20With%20my%20new%20Sun%20Glasses.xml" path="/Sites/Aurora%20Augmentation/United%20States/English/Pictures/Photo%20Shooting%20in%20Rome%20-%20With%20my%20new%20Sun%20Glasses"/>
+</master>
+<viewtype>
+</viewtype>
+<localSettings>
+<Struct xmlns="http://www.coremedia.com/2008/struct" xmlns:xlink="http://www.w3.org/1999/xlink">
+<StructProperty Name="focusArea">
+<Struct>
+<StringProperty Name="x1">0</StringProperty>
+<StringProperty Name="y1">0</StringProperty>
+<StringProperty Name="x2">1</StringProperty>
+<StringProperty Name="y2">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="transforms">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">b;a=0;c=1/crop;x=597;y=0;width=647;height=1000</StringProperty>
+<StringProperty Name="portrait_ratio3x4">b;a=0;c=1/crop;x=543;y=0;width=751;height=1000</StringProperty>
+<StringProperty Name="portrait_ratio1x1">b;a=0;c=1/crop;x=412;y=0;width=1001;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio4x3">b;a=0;c=1/crop;x=192;y=0;width=1336;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio16x9">b;a=0;c=1/crop;x=0;y=8;width=1528;height=858</StringProperty>
+<StringProperty Name="landscape_ratio5x2">b;a=0;c=1/crop;x=0;y=65;width=1528;height=612</StringProperty>
+<StringProperty Name="landscape_ratio4x1">b;a=0;c=1/crop;x=0;y=162;width=1528;height=381</StringProperty>
+<StringProperty Name="portrait_ratio10x16">b;a=0;c=1/crop;x=452;y=0;width=625;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio235x100">b;a=0;c=1/crop;x=0;y=0;width=1528;height=650</StringProperty>
+<StringProperty Name="portrait_ratio2x3">b;a=0;c=1/crop;x=565;y=0;width=667;height=1000</StringProperty>
+<StringProperty Name="landscape_ratio8x3">b;a=0;c=1/crop;x=0;y=232;width=1528;height=573</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="relative">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">position;x1=0.3904282115869018;y1=0;x2=0.8136020151133502;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio3x4">position;x1=0.35516372795969775;y1=0;x2=0.8463476070528967;y2=1</StringProperty>
+<StringProperty Name="portrait_ratio1x1">position;x1=0.2695214105793451;y1=0;x2=0.924433249370277;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio4x3">position;x1=0.12594458438287154;y1=0;x2=1;y2=1</StringProperty>
+<StringProperty Name="landscape_ratio16x9">position;x1=0;y1=0.007692307692307693;x2=1;y2=0.8653846153846154</StringProperty>
+<StringProperty Name="landscape_ratio5x2">position;x1=0;y1=0.06538461538461539;x2=1;y2=0.676923076923077</StringProperty>
+<StringProperty Name="landscape_ratio4x1">position;x1=0;y1=0.16153846153846155;x2=1;y2=0.5423076923076923</StringProperty>
+<StringProperty Name="landscape_ratio235x100">position;x1=0;y1=0;x2=1;y2=0.6502127659574467</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="isDefault">
+<Struct>
+<StringProperty Name="portrait_ratio20x31">false</StringProperty>
+<StringProperty Name="portrait_ratio3x4">false</StringProperty>
+<StringProperty Name="portrait_ratio1x1">false</StringProperty>
+<StringProperty Name="landscape_ratio4x3">false</StringProperty>
+<StringProperty Name="landscape_ratio16x9">false</StringProperty>
+<StringProperty Name="landscape_ratio5x2">false</StringProperty>
+<StringProperty Name="landscape_ratio4x1">false</StringProperty>
+<StringProperty Name="landscape_ratio235x100">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="reflection">
+<Struct>
+<StringProperty Name="h">false</StringProperty>
+<StringProperty Name="v">false</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="rotation">
+<Struct>
+<StringProperty Name="crude">0</StringProperty>
+<StringProperty Name="fine">0</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="coloring">
+<Struct>
+<StringProperty Name="brightness">0</StringProperty>
+<StringProperty Name="contrast">1</StringProperty>
+</Struct>
+</StructProperty>
+<StructProperty Name="focusPoint">
+<Struct>
+<StringProperty Name="x">0.5884353741496599</StringProperty>
+<StringProperty Name="y">0.5187110187110187</StringProperty>
+</Struct>
+</StructProperty>
+</Struct>
+</localSettings>
+<linkedSettings>
+</linkedSettings>
+<resourceBundles2>
+</resourceBundles2>
+<segment></segment>
+<title>Shooting Foto im Rom - Mit meinem neuen Sun-Glas-</title>
+<htmlTitle></htmlTitle>
+<keywords></keywords>
+<htmlDescription></htmlDescription>
+<subjectTaxonomy>
+</subjectTaxonomy>
+<locationTaxonomy>
+</locationTaxonomy>
+<contexts>
+</contexts>
+<teaserTitle></teaserTitle>
+<detailText grammarName="coremedia-richtext-1.0"><div xmlns="http://www.coremedia.com/2003/richtext-1.0" xmlns:xlink="http://www.w3.org/1999/xlink"><p/> </div></detailText>
+<pictures>
+</pictures>
+<related>
+</related>
+<authors>
+</authors>
+<alt>Shooting Foto im Rom - Mit meinem neuen Sun-Glas-</alt>
+<copyright>Zoom Team- / Shutterstock</copyright>
+<dataUrl></dataUrl>
+<width>1528</width>
+<height>1000</height>
+<data md5="9abb61f05a5191b475844a767d4650b1" size="355226" href="../../../../../__blob/9abb61f05a5191b475844a767d4650b1.blob" mimetype="image/jpeg"/>
+<asset>
+</asset>
+</CMPicture>
