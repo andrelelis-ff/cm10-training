@@ -31,13 +31,11 @@ const request = options => {
           let httpError;
 
           if (response.statusCode === 401) {
-            let error = JSON.parse(body);
-            let message = (error.cause === "unknown") ? "Invalid username or password." : "You are not a member of any developer group.";
             httpError = new HttpError(
               "EUNAUTHORIZED",
               `${response.statusCode} ${response.statusMessage}: ${
                 /login$/.test(options.url)
-                  ? message
+                  ? "Invalid username or password."
                   : "Your API key is invalid and has been removed. Please login again."
               }`
             );
@@ -50,7 +48,7 @@ const request = options => {
             let errors = JSON.parse(body);
             httpError = new HttpError(
               "ECONFLICT",
-              `${response.statusCode}: Could not upload theme because of problems with following files:
+              `${response.statusCode}: Could not upload theme because of problems with following files: 
                   ${errors.failedPaths}
                   Please check the status of the files in Studio.`
             );

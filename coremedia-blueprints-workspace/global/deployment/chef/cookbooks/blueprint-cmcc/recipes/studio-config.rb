@@ -35,7 +35,7 @@ if node['blueprint']['ibm-wcs']['enabled']
 end
 
 if node['blueprint']['sap-hybris']['enabled']
-  node.default['blueprint']['apps']['studio-server']['application.properties']['commerce.hub.data.customEntityParams.catalogversion'] = 'Staged'
+  node.default['blueprint']['apps']['studio-server']['application.properties']['commerce.hub.data.customEntityParams.catalogVersion'] = 'Staged'
   # inject sap-hybris configuration
   if node['blueprint']['sap-hybris']['application.properties']
     node['blueprint']['sap-hybris']['application.properties'].each_pair do |k, v|

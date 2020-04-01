@@ -239,11 +239,8 @@ public class CommerceFacade {
   private CommerceConnection getCommerceConnection(String siteId) {
     try {
       Site site = sitesService.getSite(siteId);
-      if (site == null) {
-        LOG.info("Cannot find site for siteId {}.", siteId);
-        return null;
-      }
       CommerceConnection connection = commerceConnectionInitializer.findConnectionForSite(site).orElse(null);
+
       if (connection == null) {
         LOG.warn("Cannot find commerce connection for siteId {}", siteId);
         return null;

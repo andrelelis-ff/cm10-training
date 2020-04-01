@@ -23,7 +23,7 @@
         <plugin>
           <groupId>com.coremedia.maven</groupId>
           <artifactId>extensions-maven-plugin</artifactId>
-          <version>4.0.2</version>
+          <version>4.0.1</version>
           <configuration>
             <projectRoot>../..</projectRoot>
             <extensionsPath>modules/extensions</extensionsPath>

@@ -25,7 +25,6 @@ import com.coremedia.livecontext.studio.library.LivecontextCollectionViewActions
 import com.coremedia.livecontext.studio.library.LivecontextCollectionViewExtension;
 import com.coremedia.ui.components.SwitchingContainer;
 import com.coremedia.ui.data.Bean;
-import com.coremedia.ui.data.RemoteBean;
 import com.coremedia.ui.data.ValueExpression;
 import com.coremedia.ui.data.ValueExpressionFactory;
 import com.coremedia.ui.data.beanFactory;
@@ -86,17 +85,6 @@ public class SearchProductImagesTest extends AbstractCatalogAssetTest {
             ((editorContext.getCollectionViewManager()) as CollectionViewManagerInternal);
 
     var catalogTreeModel:CatalogTreeModel = new CatalogTreeModel();
-    var originalGetNodeModelFunction:Function = catalogTreeModel.getNodeModel;
-    catalogTreeModel.getNodeModel = function (nodeId:String):Object {
-      var remoteBean:RemoteBean = originalGetNodeModelFunction(nodeId) as RemoteBean;
-      //as the TreeModel now is lazy, we need to load the content for the Test
-      remoteBean && remoteBean.load();
-      return remoteBean;
-    };
-    catalogTreeModel["getSortCategoriesByName"] = function():Boolean {
-      return true;
-    };
-
     collectionViewManagerInternal.addTreeModel(catalogTreeModel, new CatalogTreeDragDropModel(catalogTreeModel));
 
     var extension:CollectionViewExtension = new ECommerceCollectionViewExtension();

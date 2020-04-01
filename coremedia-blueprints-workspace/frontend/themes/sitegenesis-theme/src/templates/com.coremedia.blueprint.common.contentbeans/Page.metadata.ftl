@@ -5,5 +5,5 @@
 <#assign augmentedContent = lc.augmentedContent()>
 
 <#if augmentedContent>
-<!--VTL $include.metadata('${content.htmlTitle?replace("'", "''")}','${content.htmlDescription?replace("'", "''")}','${content.keywords?replace("'", "''")}') VTL-->
+<!--VTL $include.metadata('${content.htmlTitle}','${content.htmlDescription}','${content.keywords}') VTL-->
 </#if>

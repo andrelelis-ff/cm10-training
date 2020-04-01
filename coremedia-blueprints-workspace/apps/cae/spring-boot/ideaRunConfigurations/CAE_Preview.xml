@@ -3,7 +3,7 @@
     <module name="cae-preview-app" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="com.coremedia.blueprint.boot.cae.preview.CaePreviewApp" />
     <option name="ENABLE_JMX_AGENT" value="false" />
-    <option name="ACTIVE_PROFILES" value="dev,local,disableDataViews" />
+    <option name="ACTIVE_PROFILES" value="dev,local" />
     <option name="VM_PARAMETERS" value="-XX:+ExitOnOutOfMemoryError -Djava.net.preferIPv4Stack=true -Djava.net.preferIPv4Addresses -Xmx1024m" />
     <option name="WORKING_DIRECTORY" value="file://$MODULE_WORKING_DIR$" />
     <option name="ALTERNATIVE_JRE_PATH" />

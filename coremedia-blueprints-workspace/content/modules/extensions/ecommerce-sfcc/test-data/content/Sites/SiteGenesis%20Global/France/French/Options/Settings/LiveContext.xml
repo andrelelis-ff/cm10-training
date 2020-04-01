@@ -51,8 +51,8 @@
 <StringProperty Name="type">CMChannel</StringProperty>
 <StringListProperty Name="prefetchedViews">
 <String>metadata</String>
-<String>DEFAULT</String>
 <String>asBreadcrumb</String>
+<String>asMicroSite</String>
 <String>externalHead</String>
 <String>externalFooter</String>
 </StringListProperty>

@@ -20,7 +20,7 @@ node.default_unless['blueprint']['apps'][service_name]['application.properties']
 node.default_unless['blueprint']['apps'][service_name]['application.properties']['link.urlPrefixType'] = 'preview'
 node.default_unless['blueprint']['apps'][service_name]['application.properties']['caas-rest.jslt-enabled'] = 'true'
 node.default_unless['blueprint']['apps'][service_name]['application.properties']['caas.remote.baseurl'] = "http://#{node['blueprint']['hostname']}:40980/blueprint/servlet/internal/service/url"
-node.default_unless['blueprint']['apps'][service_name]['application.properties']['commerce.hub.data.customEntityParams.catalogversion'] = 'Staged'
+node.default_unless['blueprint']['apps'][service_name]['application.properties']['commerce.hub.data.customEntityParams.catalogVersion'] = 'Staged'
 
 application_config_hash = Mash.new
 application_config_hash = Chef::Mixin::DeepMerge.hash_only_merge!(application_config_hash, node['blueprint']['apps'][service_name]['application.properties'])

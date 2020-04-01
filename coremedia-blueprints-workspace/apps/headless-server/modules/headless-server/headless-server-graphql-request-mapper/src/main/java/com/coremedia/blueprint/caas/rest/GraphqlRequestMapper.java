@@ -42,7 +42,7 @@ public class GraphqlRequestMapper {
   private static Expression DEFAULT_EXPRESSION;
   private static boolean DEFAULT_EXPRESSION_EXISTS = false;
 
-  @Value("classpath*:transformations/*.jslt")
+  @Value("classpath:transformations/*.jslt")
   private Resource[] resources;
 
   static {

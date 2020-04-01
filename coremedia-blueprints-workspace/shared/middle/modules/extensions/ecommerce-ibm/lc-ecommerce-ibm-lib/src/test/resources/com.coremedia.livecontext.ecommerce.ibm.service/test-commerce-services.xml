@@ -19,7 +19,7 @@
 
   <bean id="siteModel" class="com.coremedia.blueprint.base.multisite.BlueprintSiteModel">
     <property name="siteIndicatorDocumentType" value="CMSite"/>
-    <property name="siteIndicatorDepth" value="0"/>
+    <property name="siteIndicatorDepth" value="1"/>
     <property name="idProperty" value="id"/>
     <property name="localeProperty" value="locale"/>
     <property name="masterProperty" value="master"/>

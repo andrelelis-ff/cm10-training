@@ -212,7 +212,7 @@ a start or a restart action but not both.
 * `node['blueprint']['spring-boot']['commerce-adapter-hybris']['boot_opts']` -  Defaults to `{ ... }`.
 * `node['blueprint']['spring-boot']['commerce-adapter-sfcc']['heap']` -  Defaults to `64m`.
 * `node['blueprint']['spring-boot']['commerce-adapter-sfcc']['boot_opts']` -  Defaults to `{ ... }`.
-* `node['blueprint']['spring-boot']['commerce-adapter-wcs']['heap']` -  Defaults to `128m`.
+* `node['blueprint']['spring-boot']['commerce-adapter-wcs']['heap']` -  Defaults to `64m`.
 * `node['blueprint']['spring-boot']['commerce-adapter-wcs']['boot_opts']` -  Defaults to `{ ... }`.
 
 # Recipes

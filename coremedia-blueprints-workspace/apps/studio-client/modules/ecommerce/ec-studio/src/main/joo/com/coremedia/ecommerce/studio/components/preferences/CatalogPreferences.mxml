@@ -31,14 +31,6 @@
                                    bindTo="{getShowCatalogValueExpression()}"/>
           </plugins>
         </Checkbox>
-        <Checkbox itemId="sortChildrenAndDisableLazyLoading"
-                  boxLabel="{resourceManager.getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'EcCatalogPreferences_sort_children')}">
-          <plugins>
-            <ui:BindPropertyPlugin bidirectional="true"
-                                   ifUndefined="true"
-                                   bindTo="{getSortCategoriesByNameExpression()}"/>
-          </plugins>
-        </Checkbox>
       </items>
     </CheckboxGroup>
   </local:items>

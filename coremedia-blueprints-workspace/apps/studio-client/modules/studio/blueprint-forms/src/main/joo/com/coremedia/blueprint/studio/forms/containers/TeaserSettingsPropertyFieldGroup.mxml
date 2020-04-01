@@ -36,8 +36,6 @@
                                ifUndefined="{true}"
                                bindTo="{config.bindTo.extendBy(ContentPropertyNames.PROPERTIES, RENDER_LINK_TO_DETAIL_PAGE_PATH)}">
         </ui:BindPropertyPlugin>
-        <editor:ShowIssuesPlugin propertyName="{RENDER_LINK_TO_DETAIL_PAGE_PATH}"
-                                 bindTo="{config.bindTo}"/>
         <editor:BindDisablePlugin bindTo="{config.bindTo}"
                                   forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
       </ui:plugins>

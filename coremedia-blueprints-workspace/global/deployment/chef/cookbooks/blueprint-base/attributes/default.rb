@@ -112,15 +112,15 @@ default['blueprint']['apps']['commerce-adapter-mock']['version'] = '1.2.5'
 
 default['blueprint']['apps']['commerce-adapter-hybris']['group_id'] = 'com.coremedia.commerce.adapter.hybris'
 default['blueprint']['apps']['commerce-adapter-hybris']['artifact_id'] = 'adapter-hybris-app'
-default['blueprint']['apps']['commerce-adapter-hybris']['version'] = '1.1.12'
+default['blueprint']['apps']['commerce-adapter-hybris']['version'] = '1.1.7'
 
 default['blueprint']['apps']['commerce-adapter-sfcc']['group_id'] = 'com.coremedia.commerce.adapter.sfcc'
 default['blueprint']['apps']['commerce-adapter-sfcc']['artifact_id'] = 'adapter-sfcc-app'
-default['blueprint']['apps']['commerce-adapter-sfcc']['version'] = '1.1.10'
+default['blueprint']['apps']['commerce-adapter-sfcc']['version'] = '1.1.7'
 
 default['blueprint']['apps']['commerce-adapter-wcs']['group_id'] = 'com.coremedia.commerce.adapter.wcs'
 default['blueprint']['apps']['commerce-adapter-wcs']['artifact_id'] = 'adapter-wcs-app'
-default['blueprint']['apps']['commerce-adapter-wcs']['version'] = '1.2.9'
+default['blueprint']['apps']['commerce-adapter-wcs']['version'] = '1.2.5'
 
 default['blueprint']['solr']['config_zip_version'] = node['blueprint']['default_version']
 

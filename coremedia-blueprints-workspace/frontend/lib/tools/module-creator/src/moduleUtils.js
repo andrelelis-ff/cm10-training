@@ -246,19 +246,19 @@ const createBrickFiles = (brickPath, brickName, log) => {
     },
     {
       path: `src/sass/_partials.scss`,
-      data: brickData.initBrickPartialsScss(brickName),
+      data: brickData.initBrickPartialsScss(),
     },
     {
       path: `src/sass/_variables.scss`,
-      data: brickData.initBrickVariablesScss(brickName),
+      data: brickData.initBrickVariablesScss(),
     },
     {
-      path: `src/sass/partials/_${brickName}.scss`,
-      data: brickData.initBrickCustomPartialsScss(),
+      path: `src/sass/partials/_custom-text.scss`,
+      data: brickData.initBrickCustomTextPartialsScss(),
     },
     {
-      path: `src/sass/variables/_${brickName}.scss`,
-      data: brickData.initBrickCustomVariablesScss(),
+      path: `src/sass/variables/_custom-text.scss`,
+      data: brickData.initBrickCustomTextVariablesScss(),
     },
     {
       path: `src/l10n/${sharedData.titleCase(brickName)}_en.properties`,

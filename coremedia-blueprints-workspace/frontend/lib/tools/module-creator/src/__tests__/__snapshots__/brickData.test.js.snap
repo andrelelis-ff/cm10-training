@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`initBrickCustomPartialsScss() returns data for partials/<brickName>.scss 1`] = `
+exports[`initBrickCustomTextPartialsScss() returns data for partials/_custom-text.scss 1`] = `
 "// css rules in partials may use variables, defined in the sass/variables folder
 .custom-text {
   color: $custom-text-color;
@@ -8,7 +8,7 @@ exports[`initBrickCustomPartialsScss() returns data for partials/<brickName>.scs
 "
 `;
 
-exports[`initBrickCustomVariablesScss() returns data for variables/<brickName>.scss 1`] = `
+exports[`initBrickCustomTextVariablesScss() returns data for variables/_custom-text.scss 1`] = `
 "// brick scss variables to be used in partials files
 // use the !default flag to make this variable configurable in themes
 $custom-text-color: #FF0000 !default;
@@ -24,7 +24,7 @@ exports[`initBrickIndexJs() returns data for index.js 1`] = `
 "
 `;
 
-exports[`initBrickInitJs() returns data for init.js 1`] = `
+exports[`initBrickInitJs() returns data for intit.js 1`] = `
 "//import $ from \\"jquery\\";
 import * as test from \\"./test\\";
 // --- JQUERY DOCUMENT READY -------------------------------------------------------------------------------------------
@@ -61,7 +61,7 @@ exports[`initBrickPartialsScss() returns data for _partials.scss 1`] = `
 "// make sure to import partials sass files in _partials.scss
 // the smart-import ensures, that all sass partials from depending bricks are loaded
 @import \\"?smart-import-partials\\";
-@import \\"partials/test\\";
+@import \\"partials/custom-text\\";
 
 "
 `;
@@ -76,7 +76,7 @@ exports[`initBrickPrettierignore() returns data for .prettierignore 1`] = `
 
 exports[`initBrickVariablesScss() returns data for _variables.scss 1`] = `
 "// make sure to import variables sass files in _variables.scss
-@import \\"variables/test\\";
+@import \\"variables/custom-text\\";
 // the smart-import ensures, that all sass variables from depending bricks are loaded
 @import \\"?smart-import-variables\\";
 "

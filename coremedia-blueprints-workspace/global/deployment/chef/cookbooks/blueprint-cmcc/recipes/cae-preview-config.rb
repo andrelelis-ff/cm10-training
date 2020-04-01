@@ -37,7 +37,7 @@ if node['blueprint']['ibm-wcs']['enabled']
 end
 
 if node['blueprint']['sap-hybris']['enabled']
-  node.default['blueprint']['apps']['cae-preview']['application.properties']['commerce.hub.data.customEntityParams.catalogversion'] = 'Staged'
+  node.default['blueprint']['apps']['cae-preview']['application.properties']['commerce.hub.data.customEntityParams.catalogVersion'] = 'Staged'
 
   cors_hosts << "https://#{node['blueprint']['sap-hybris']['virtual_host']['shop-preview']['server_name']}"
   node['blueprint']['sap-hybris']['virtual_host']['shop-preview']['server_aliases'].each do |s|

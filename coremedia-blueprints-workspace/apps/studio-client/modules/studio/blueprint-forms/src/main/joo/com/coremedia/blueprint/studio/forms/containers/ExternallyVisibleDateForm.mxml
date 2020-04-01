@@ -18,7 +18,6 @@
     [ResourceBundle('com.coremedia.blueprint.studio.BlueprintDocumentTypes')]
   </fx:Metadata>
   <fx:Script><![CDATA[
-    import com.coremedia.cms.editor.sdk.premular.fields.DateTimePropertyFieldBase;
 
     public static const xtype:String = "com.coremedia.blueprint.studio.config.externallyVisibleDateForm";
 
@@ -46,20 +45,15 @@
         <editor:BindDisablePlugin bindTo="{config.bindTo}"
                                   forceReadOnlyValueExpression="{config.forceReadOnlyValueExpression}"/>
         <editor:ShowIssuesPlugin propertyName="extDisplayedDate"
-                                 bindTo="{config.bindTo}"
-                                 statefulSubComponentsFunction="{function():Array {
-                                         return [
-                                            queryById('publicationDate'),
-                                            queryById('ownDate')]
-                                       }}"/>
+                                 bindTo="{config.bindTo}"/>
       </ui:plugins>
       <ui:items>
-        <ui:StatefulRadio itemId="publicationDate"
-                          inputValue="publicationDate"
-                          boxLabel="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMLinkable_externally_visible_date_use_publication_date_text')}"/>
-        <ui:StatefulRadio itemId="ownDate"
-                          inputValue="ownDate"
-                          boxLabel="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMLinkable_externally_visible_date_use_custom_date_text')}"/>
+        <Radio itemId="publicationDate"
+               inputValue="publicationDate"
+               boxLabel="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMLinkable_externally_visible_date_use_publication_date_text')}"/>
+        <Radio itemId="ownDate"
+               inputValue="ownDate"
+               boxLabel="{resourceManager.getString('com.coremedia.blueprint.studio.BlueprintDocumentTypes', 'CMLinkable_externally_visible_date_use_custom_date_text')}"/>
       </ui:items>
     </ui:BoundRadioGroup>
     <Container>
@@ -78,13 +72,7 @@
                                       timeZoneHidden="false">
           <editor:plugins exml:mode="append">
             <editor:ShowIssuesPlugin propertyName="extDisplayedDate"
-                                     bindTo="{config.bindTo}"
-                                     statefulSubComponentsFunction="{function():Array {
-                                         return [
-                                            queryById(DateTimePropertyFieldBase.DATE_ITEM_ID),
-                                            queryById(DateTimePropertyFieldBase.TIME_ITEM_ID),
-                                            queryById(DateTimePropertyFieldBase.TIME_ZONE_ITEM_ID)]
-                                       }}"/>
+                                     bindTo="{config.bindTo}"/>
           </editor:plugins>
         </editor:DateTimePropertyField>
       </items>

@@ -50,14 +50,6 @@
       <artifactId>logging-config</artifactId>
       <scope>runtime</scope>
     </dependency>
-
-    <dependency>
-      <groupId>${project.groupId}</groupId>
-      <artifactId>workflow-server-extension-dependencies</artifactId>
-      <version>${project.version}</version>
-      <type>pom</type>
-      <scope>runtime</scope>
-    </dependency>
   </dependencies>
   <build>
     <finalName>wfs-tools</finalName>

@@ -3,10 +3,9 @@ package com.coremedia.blueprint.studio.taxonomy.administration {
 import com.coremedia.blueprint.studio.taxonomy.TaxonomyNode;
 import com.coremedia.blueprint.studio.taxonomy.TaxonomyNodeFactory;
 import com.coremedia.blueprint.studio.taxonomy.TaxonomyNodeList;
+import com.coremedia.blueprint.studio.taxonomy.TaxonomyUtil;
 import com.coremedia.cms.editor.sdk.editorContext;
-import com.coremedia.cms.editor.sdk.sites.Site;
 import com.coremedia.ui.data.Bean;
-import com.coremedia.ui.data.Locale;
 import com.coremedia.ui.data.ValueExpression;
 import com.coremedia.ui.data.ValueExpressionFactory;
 import com.coremedia.ui.data.beanFactory;
@@ -292,12 +291,8 @@ public class TaxonomyExplorerColumnBase extends GridPanel {
           name = i18nName;
         }
 
-        var site:Site = editorContext.getSitesService().getSite(record.data.siteId);
-        if(site) {
-          var siteName:String = site.getName();
-          var locale:Locale = site.getLocale();
-          name += ' (' + siteName + ' - ' + locale.getDisplayName() + ')';
-        }
+        var siteName:String = editorContext.getSitesService().getSite(record.data.siteId).getName();
+        name += ' (' + siteName + ')';
       }
     } else {
       if (name.length === 0) {

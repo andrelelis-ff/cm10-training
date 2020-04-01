@@ -1,6 +1,5 @@
 @mixin cm-grid-container() {
-  width: calc(100% - #{2 * $cm-standard-spacing});
-  //width: 100%;
+  width: 100%;
   @include breakpoint("sm-and-up") {
     width: 690px;
   }

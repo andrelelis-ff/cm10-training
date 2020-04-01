@@ -6,6 +6,6 @@ import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @Profile("dev")
-@PropertySource("classpath:/com/coremedia/blueprint/boot/autoconfigure/default-dev.properties")
+@PropertySource("classpath:/com/coremedia/blueprint/boot/autoconfigure/dev.properties")
 public class DevPropertiesConfiguration {
 }

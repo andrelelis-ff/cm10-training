@@ -6,7 +6,6 @@ import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration;
-import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
 import org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory;
 import org.springframework.boot.web.server.WebServerFactoryCustomizer;
@@ -28,7 +27,7 @@ import java.util.List;
  *  for CAE and studio for server also exclude JDBC
  */
 @EnableWebSecurity
-@SpringBootApplication(exclude = {WebMvcAutoConfiguration.class, FreeMarkerAutoConfiguration.class, MongoAutoConfiguration.class})
+@SpringBootApplication(exclude = {WebMvcAutoConfiguration.class, FreeMarkerAutoConfiguration.class})
 public class CaePreviewApp {
 
   // ... Bean definitions

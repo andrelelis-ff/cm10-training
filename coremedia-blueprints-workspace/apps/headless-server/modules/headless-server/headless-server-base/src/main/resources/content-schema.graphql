@@ -470,6 +470,32 @@ type Base64Image {
   base64: String
 }
 
+interface CMProductList @inherit(from: ["CMQueryList"]) {
+  externalId: String
+}
+
+interface CMExternalPage  @inherit(from: ["CMChannel"]) {
+  externalUriPath: String
+  externalId: String
+}
+
+interface CMAbstractCategory @inherit(from: ["CMChannel"]) {
+  externalId: String
+  pdpPagegrid: PageGrid
+}
+
+interface CMExternalChannel @inherit(from: ["CMAbstractCategory"]) {
+}
+
+interface CMProductTeaser @inherit(from: ["CMTeasable"]) {
+  externalId: String
+}
+
+interface CMExternalProduct @inherit(from: ["CMTeasable"]) {
+  externalId: String
+  pdpPagegrid :PageGrid
+}
+
 interface Detail {
   detailText(view: String): String
   detailTextAsTree(view: String): RichTextTree
@@ -491,6 +517,34 @@ interface HasPageGrid {
   grid: PageGrid
 }
 
+type CMProductListImpl implements CMProductList @inherit(from: ["CMQueryListImpl"]) {
+  externalId: String
+  items: [CollectionItem] @fetch(from: "@productListAdapter.to(#root).getItems()")
+  teasableItems: [CMTeasable] @fetch(from: "@productListAdapter.to(#root).getFixedItems()")
+  bannerItems: [Banner]  @fetch(from: "@productListAdapter.to(#root).getItems()")
+}
 
+type CMExternalPageImpl implements CMExternalPage @inherit(from: ["CMChannelImpl"]) {
+  externalUriPath: String
+  externalId: String
+}
+
+type CMProductTeaserImpl implements CMProductTeaser @inherit(from: ["CMTeasableImpl"]) {
+  externalId: String
+}
+
+type CMExternalProductImpl implements CMExternalProduct @inherit(from: ["CMTeasableImpl"]) {
+  externalId: String
+  pdpPagegrid :PageGrid @fetch(from: "@pageGridAdapter.to(#root,'pdpPagegrid')")
+}
+
+type CMAbstractCategoryImpl implements CMAbstractCategory @inherit(from: ["CMChannelImpl"]) {
+  externalId: String
+  pdpPagegrid: PageGrid @fetch(from: "@pageGridAdapter.to(#root,'pdpPagegrid')")
+}
+
+type CMExternalChannelImpl implements CMExternalChannel @inherit(from: ["CMAbstractCategoryImpl"]) {
+  externalId: String
+}
 
 

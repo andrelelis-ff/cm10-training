@@ -7,8 +7,8 @@ const {
   initBrickJs,
   initBrickPartialsScss,
   initBrickVariablesScss,
-  initBrickCustomPartialsScss,
-  initBrickCustomVariablesScss,
+  initBrickCustomTextPartialsScss,
+  initBrickCustomTextVariablesScss,
   initBrickPrettierignore,
   initBrickPageBodyFtl,
   initBrickDeProperties,
@@ -28,7 +28,7 @@ describe("initBrickIndexJs()", () => {
 });
 
 describe("initBrickInitJs()", () => {
-  it("returns data for init.js", () => {
+  it("returns data for intit.js", () => {
     expect(initBrickInitJs("test")).toMatchSnapshot();
   });
 });
@@ -41,25 +41,25 @@ describe("initBrickJs()", () => {
 
 describe("initBrickPartialsScss()", () => {
   it("returns data for _partials.scss", () => {
-    expect(initBrickPartialsScss("test")).toMatchSnapshot();
+    expect(initBrickPartialsScss()).toMatchSnapshot();
   });
 });
 
 describe("initBrickVariablesScss()", () => {
   it("returns data for _variables.scss", () => {
-    expect(initBrickVariablesScss("test")).toMatchSnapshot();
+    expect(initBrickVariablesScss()).toMatchSnapshot();
   });
 });
 
-describe("initBrickCustomPartialsScss()", () => {
-  it("returns data for partials/<brickName>.scss", () => {
-    expect(initBrickCustomPartialsScss()).toMatchSnapshot();
+describe("initBrickCustomTextPartialsScss()", () => {
+  it("returns data for partials/_custom-text.scss", () => {
+    expect(initBrickCustomTextPartialsScss()).toMatchSnapshot();
   });
 });
 
-describe("initBrickCustomVariablesScss()", () => {
-  it("returns data for variables/<brickName>.scss", () => {
-    expect(initBrickCustomVariablesScss()).toMatchSnapshot();
+describe("initBrickCustomTextVariablesScss()", () => {
+  it("returns data for variables/_custom-text.scss", () => {
+    expect(initBrickCustomTextVariablesScss()).toMatchSnapshot();
   });
 });
 

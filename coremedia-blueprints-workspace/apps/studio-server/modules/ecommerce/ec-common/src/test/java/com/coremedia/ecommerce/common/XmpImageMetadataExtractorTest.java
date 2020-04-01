@@ -1,6 +1,6 @@
 package com.coremedia.ecommerce.common;
 
-import com.adobe.internal.xmp.properties.XMPPropertyInfo;
+import com.adobe.xmp.properties.XMPPropertyInfo;
 import com.coremedia.common.util.Predicate;
 import com.drew.imaging.ImageMetadataReader;
 import com.drew.imaging.ImageProcessingException;

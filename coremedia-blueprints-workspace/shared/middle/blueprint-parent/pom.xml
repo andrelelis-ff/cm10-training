@@ -30,10 +30,10 @@
 
     <customer>Blueprint</customer>
 
-    <cm.middle.core.version>2001.2</cm.middle.core.version>
+    <cm.middle.core.version>2001.1</cm.middle.core.version>
 
-    <spring.boot.version>2.2.5.RELEASE</spring.boot.version>
-    <application-plugin.version>2.8.3</application-plugin.version>
+    <spring.boot.version>2.2.3.RELEASE</spring.boot.version>
+    <application-plugin.version>2.7.10</application-plugin.version>
 
     <!--
     | the following *.host properties are defined here for convenience, so that they can be overridden
@@ -77,12 +77,12 @@
     <skip-hybris-tests>true</skip-hybris-tests>
 
     <!-- Version for Spring Boot Apps embedded Tomcat. Tomcat 9 is supported -->
-    <tomcat.embed.version>9.0.31</tomcat.embed.version>
+    <tomcat.embed.version>9.0.30</tomcat.embed.version>
     <blueprint.groupId>com.coremedia.blueprint</blueprint.groupId>
     <!-- keep this version in sync with this poms parent version -->
     <blueprint.version>${project.version}</blueprint.version>
-    <cm.middle.core.version>2001.2</cm.middle.core.version>
-    <cm.common.core.version>2001.2</cm.common.core.version>
+    <cm.middle.core.version>2001.1</cm.middle.core.version>
+    <cm.common.core.version>2001.1</cm.common.core.version>
     <cm.common.bp.version>1-SNAPSHOT</cm.common.bp.version>
     <maven-surefire-plugin.version>3.0.0-M3</maven-surefire-plugin.version>
 
@@ -588,7 +588,7 @@
                 <X-Compile-Target-JDK>${maven.compiler.release}</X-Compile-Target-JDK>
                 <!-- Configure WebSphere to not scan ASM jars in the WAR, because they contain Java 9 module-info.class
                      files and cause exceptions in WebSphere. See CMS-12354 -->
-                <Ignore-Scanning-Archives>asm-analysis-7.3.jar,asm-7.3.jar,asm-commons-7.3.jar,asm-tree-7.3.jar</Ignore-Scanning-Archives>
+                <Ignore-Scanning-Archives>asm-analysis-7.2.jar,asm-7.2.jar,asm-commons-7.2.jar,asm-tree-7.2.jar</Ignore-Scanning-Archives>
               </manifestEntries>
             </archive>
             <failOnMissingWebXml>false</failOnMissingWebXml>

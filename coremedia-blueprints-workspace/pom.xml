@@ -64,15 +64,13 @@
           <plugin>
             <groupId>org.owasp</groupId>
             <artifactId>dependency-check-maven</artifactId>
-            <version>5.3.0</version>
+            <version>5.2.4</version>
             <configuration>
               <skipArtifactType>pom|coremedia-application</skipArtifactType>
               <skipProvidedScope>true</skipProvidedScope>
               <skipSystemScope>true</skipSystemScope>
               <failOnError>true</failOnError>
               <assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
-              <nodeAnalyzerEnabled>false</nodeAnalyzerEnabled>
-              <nodeAuditAnalyzerEnabled>false</nodeAuditAnalyzerEnabled>
               <cveUrlBase>https://nvd.nist.gov/feeds/json/cve/1.0/nvdcve-1.0-%d.json.gz</cveUrlBase>
               <cveUrlModified>https://nvd.nist.gov/feeds/json/cve/1.0/nvdcve-1.0-modified.json.gz</cveUrlModified>
             </configuration>

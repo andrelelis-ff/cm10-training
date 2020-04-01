@@ -19,6 +19,9 @@
   <!-- Must configure the urlSegmentService which comes in via component-bpbase-studio-rest / bpbase-links-services -->
   <import resource="classpath:/com/coremedia/blueprint/segments/blueprint-segments.xml"/>
 
+  <customize:replace id="studioServiceInfoManager" bean="serviceInfoManager" property="serviceType"
+                     custom-value="studio"/>
+
   <!--
 
   Extension Point for Adding Contents to XLIFF: List Bean translate.xliff.translatableExpressions

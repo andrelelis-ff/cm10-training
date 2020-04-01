@@ -107,7 +107,7 @@
       };
       module.showBox = function(id) {
         var modal = document.getElementById(id);
-        /* move modal div to end of dom to ensure that it will be rendered as overlay */
+        // move modal div to end of dom to ensure that it will be rendered as overlay
         document.body.appendChild(modal);
         modal.style.display = "block";
         return false;
@@ -116,14 +116,14 @@
         document.getElementById(id).style.display = "none";
       };
       module.hideAllBoxes = function() {
-        for (var boxIndex in module.boxes) {
-          module.hideBox(module.boxes[boxIndex]);
+        for (var i = 0; i < module.boxes.length; i++) {
+          module.hideBox(module.boxes[i]);
         }
       };
       return module;
     }(cmError || {}));
 
-    /* hide popup with ESC key */
+    // hide popup with ESC key
     document.onkeydown = function(e) {
       e = e || window.event;
       if (e.keyCode === 27) {
@@ -133,7 +133,7 @@
 
     cmError.registerBox("${boxId}");
 
-    /* log error output to javascript console */
+    // log error output to javascript console
     if (!window.console) {
       console = {
         warn: function() {
@@ -143,13 +143,14 @@
     console.warn("CoreMedia Templating Error:\n<#noautoesc>${self.messagesAsList?keep_before("\n----")?js_string}</#noautoesc>");
   </script>
   <div class="cm-error__info">
-      <span>An error occurred in template <em>${template}</em>
+      <span>An error occured in template <em>${template}</em>
       <#if contentId?has_content> for Content with ID <b>${contentId}</b>.</#if><br>
       <a href="#" onclick="cmError.showBox('${boxId}'); return false;">Show Details</a></span>
   </div>
   <div id="${boxId}" class="cm-error__background">
     <div class="cm-error__box">
       <button onclick="cmError.hideBox('${boxId}');">Close</button>
+
       <div class="cm-error__details">
         <label class="cm-error__label">View:</label>
         <pre class="cm-error__view">${self.view!""}</pre>
@@ -158,8 +159,9 @@
         <label class="cm-error__label">Cause:</label>
         <pre class="cm-error__cause cm-error__small"><#noautoesc>${self.messagesAsHtml!""}</#noautoesc></pre>
         <label class="cm-error__label">Class Hierarchy:</label>
-        <pre class="cm-error__small"><#list self.getHierarchy() as hierarchy>
-          ${hierarchy}</#list></pre>
+        <pre class="cm-error__small"><#list self.getHierarchy() as hierachy>
+          ${hierachy}
+        </#list></pre>
         <label class="cm-error__label">Full Stack Trace:</label>
         <pre class="cm-error__stacktrace cm-error__small">${bp.getStackTraceAsString(self)!""}</pre>
       </div>

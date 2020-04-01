@@ -1,8 +1,6 @@
 package com.coremedia.ecommerce.studio.components.tree.impl {
 import com.coremedia.cms.editor.sdk.collectionview.tree.CompoundChildTreeModel;
-import com.coremedia.cms.editor.sdk.editorContext;
 import com.coremedia.ecommerce.studio.augmentation.augmentationService;
-import com.coremedia.ecommerce.studio.components.preferences.CatalogPreferencesBase;
 import com.coremedia.ecommerce.studio.helper.CatalogHelper;
 import com.coremedia.ecommerce.studio.model.CatalogObject;
 import com.coremedia.ecommerce.studio.model.Category;
@@ -13,15 +11,12 @@ import com.coremedia.ecommerce.studio.model.Store;
 import com.coremedia.ecommerce.studio.tree.categoryTreeRelation;
 import com.coremedia.ui.data.RemoteBean;
 import com.coremedia.ui.data.beanFactory;
-import com.coremedia.ui.models.LazyLoadingTreeModel;
 import com.coremedia.ui.models.NodeChildren;
-
-import ext.data.TreeModel;
 
 import mx.resources.ResourceManager;
 
 [ResourceBundle('com.coremedia.ecommerce.studio.ECommerceStudioPlugin')]
-public class CatalogTreeModel implements CompoundChildTreeModel, LazyLoadingTreeModel {
+public class CatalogTreeModel implements CompoundChildTreeModel {
 
   private var enabled:Boolean = true;
   public static const ID_PREFIX:String = "livecontext/";
@@ -46,7 +41,7 @@ public class CatalogTreeModel implements CompoundChildTreeModel, LazyLoadingTree
   public function rename(model:Object, newName:String, oldName:String, callback:Function):void {
   }
 
-  public function isRootVisible():Boolean {
+  public function isRootVisible():Boolean{
     return true;
   }
 
@@ -54,7 +49,7 @@ public class CatalogTreeModel implements CompoundChildTreeModel, LazyLoadingTree
     if (!getStore()) {
       return null;
     }
-    if (CatalogHelper.getInstance().isActiveCoreMediaStore()) {
+    if(CatalogHelper.getInstance().isActiveCoreMediaStore()) {
       return null;
     }
     return getNodeId(getStore());
@@ -71,11 +66,14 @@ public class CatalogTreeModel implements CompoundChildTreeModel, LazyLoadingTree
       var node:RemoteBean = getNodeModel(nodeId) as RemoteBean;
       if (node is Category) {
         return getCategoryName(Category(node));
-      } else if (node is Product) {
+      }
+      else if (node is Product) {
         return Product(node).getName();
-      } else if (node is Marketing) {
+      }
+      else if (node is Marketing) {
         return ResourceManager.getInstance().getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'StoreTree_marketing_root');
-      } else if (node is MarketingSpot) {
+      }
+      else if (node is MarketingSpot) {
         return MarketingSpot(node).getName();
       }
     }
@@ -83,17 +81,14 @@ public class CatalogTreeModel implements CompoundChildTreeModel, LazyLoadingTree
     return undefined;
   }
 
-  private static function getCategoryName(node:Category):String {
-    //when multi-catalog is not configured there will be only one root category. Then the root category should be called.
-    if (node.isLoaded()) {
-      // 'Product Catalog' for the sake of backward compatibility.
-      var isSingleRootCategory:Boolean = !node.getStore() || !node.getStore().getCatalogs() ||
-              node.getStore().getCatalogs().length <= 1;
-      return isSingleRootCategory && categoryTreeRelation.isRoot(node) ?
-              ResourceManager.getInstance().getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'StoreTree_root_category') :
-              node.getDisplayName();
-    }
-    return node.getUriPath();
+  private function getCategoryName(node:Category):String {
+    //when multi-catalog is not configured there will be only one root category. then the root category should called
+    // 'Product Catalog' for the sake of backward compatibility.
+    var isSingleRootCategory:Boolean = !node.getStore() || !node.getStore().getCatalogs() ||
+            node.getStore().getCatalogs().length <= 1;
+    return isSingleRootCategory && categoryTreeRelation.isRoot(node) ?
+            ResourceManager.getInstance().getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'StoreTree_root_category') :
+            node.getDisplayName();
   }
 
   public function getIconCls(nodeId:String):String {
@@ -125,16 +120,9 @@ public class CatalogTreeModel implements CompoundChildTreeModel, LazyLoadingTree
     if (!subCategories) {
       return undefined;
     }
-
-    var sortCategoriesByName:Boolean = getSortCategoriesByName();
-
-    //sorting should be activated if undefined to avoid breaking change. Deactivated by default since 2004.1
-    if(sortCategoriesByName === undefined){
-      sortCategoriesByName = true;
-    }
-
-    //sorting will disable lazy loading
-    if (subCategories.length > 0 && sortCategoriesByName) {
+    //we would like to sort the sub categories by display names.
+    //but before that we have to make sure that all sub categories are loaded.
+    if (subCategories.length > 0) {
       if (!preloadChildren(subCategories)) {
         return undefined;
       }
@@ -160,10 +148,10 @@ public class CatalogTreeModel implements CompoundChildTreeModel, LazyLoadingTree
    * found in the tree since it has been not loaded yet.
    * As a result, the BindTreeSelectionPlugin selected the default node, which is the content root.
    * @param subCategories
-   * @return true if all children are loaded.
+   * @return true if all children are loaded
    */
   private function preloadChildren(subCategories:Array):Boolean {
-    return subCategories.every(function (subCategory:Category):Boolean {
+    return subCategories.every(function(subCategory:Category):Boolean {
       subCategory.load();
       return subCategory.isLoaded();
     });
@@ -182,32 +170,25 @@ public class CatalogTreeModel implements CompoundChildTreeModel, LazyLoadingTree
     var namesById:Object = {};
     var iconById:Object = {};
     for (var i:uint = 0; i < children.length; i++) {
-      var child:RemoteBean = children[i];
-      var childId:String = getNodeId(child);
+      var childId:String = getNodeId(children[i]);
       childIds.push(childId);
-      if (child.isLoaded()) {
-        namesById[childId] = nameByChildId[childId];
-        iconById[childId] = computeIconCls(childId, iconCls);
-      } else {
-        setEmptyNodeChildData(childId, namesById, iconById, null, null, null);
-      }
+      namesById[childId] = nameByChildId[childId];
+      iconById[childId] = computeIconCls(childId, iconCls);
     }
     return new NodeChildren(childIds, namesById, iconById);
   }
 
   private function computeIconCls(childId:String, defaultIconCls:String):String {
-    if (CatalogHelper.isMarketing(childId)) {
+    if(CatalogHelper.isMarketing(childId)) {
       return ResourceManager.getInstance().getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'Marketing_icon');
     }
-    if (childId == getRootId()) {
+    if(childId == getRootId()) {
       return ResourceManager.getInstance().getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'Store_icon');
     }
     var child:RemoteBean = beanFactory.getRemoteBean(childId);
-    if (child.isLoaded()) {
-      //is the child an augmented category?
-      if (child is Category && augmentationService.getContent(Category(child))) {
-        return ResourceManager.getInstance().getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'AugmentedCategory_icon');
-      }
+    //is the child an augmented category?
+    if (child is Category && augmentationService.getContent(Category(child))) {
+      return ResourceManager.getInstance().getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'AugmentedCategory_icon');
     }
     return defaultIconCls;
   }
@@ -216,11 +197,13 @@ public class CatalogTreeModel implements CompoundChildTreeModel, LazyLoadingTree
     var nameByUriPath:Object = {};
     for (var childId:String in childrenByIds) {
       var child:CatalogObject = childrenByIds[childId].child as CatalogObject;
-      if (child is Marketing) {
+      if(child is Marketing) {
         nameByUriPath[getNodeId(child)] = ResourceManager.getInstance().getString('com.coremedia.ecommerce.studio.ECommerceStudioPlugin', 'StoreTree_marketing_root');
-      } else if (child is Category) {
+      }
+      else if (child is Category) {
         nameByUriPath[getNodeId(child)] = getCategoryName(Category(child));
-      } else if (child) {
+      }
+      else if (child) {
         nameByUriPath[getNodeId(child)] = childrenByIds[childId].displayName;
       }
     }
@@ -241,7 +224,7 @@ public class CatalogTreeModel implements CompoundChildTreeModel, LazyLoadingTree
   }
 
   public function getIdPathFromModel(model:Object):Array {
-    if (!(model is CatalogObject)) {
+    if(!(model is CatalogObject)) {
       return null;
     }
     if (!getStore()) {
@@ -263,13 +246,13 @@ public class CatalogTreeModel implements CompoundChildTreeModel, LazyLoadingTree
     if (category) {
       //we have to reverse the path to root as we want from the root.
       var pathToRoot:Array = categoryTreeRelation.pathToRoot(treeNode);
-      if (pathToRoot === undefined) {
+      if(pathToRoot === undefined) {
         return undefined;
       } else if (!pathToRoot) {
         return null;
       }
       path = pathToRoot.reverse();
-      //In this case "path" contains the root category at the top. So we need the store above it.
+      //path contains the root category at top. so we need the store above it. and not catalog or something
       treeNode = getStore();
     }
     path.unshift(treeNode);
@@ -285,7 +268,7 @@ public class CatalogTreeModel implements CompoundChildTreeModel, LazyLoadingTree
     return CatalogHelper.getInstance().getActiveStoreExpression().getValue();
   }
 
-  private static function computeStoreText():String {
+  private function computeStoreText():String {
     var workspaceName:String;
     if (getStore().getCurrentWorkspace()) {
       workspaceName = getStore().getCurrentWorkspace().getName();
@@ -303,7 +286,7 @@ public class CatalogTreeModel implements CompoundChildTreeModel, LazyLoadingTree
   }
 
   public function getNodeModel(nodeId:String):Object {
-    if (!nodeId || nodeId.indexOf(ID_PREFIX) != 0) {
+    if (nodeId.indexOf(ID_PREFIX) != 0) {
       return null;
     }
     return beanFactory.getRemoteBean(nodeId);
@@ -317,33 +300,5 @@ public class CatalogTreeModel implements CompoundChildTreeModel, LazyLoadingTree
   public function getTreeId():String {
     return CATALOG_TREE_ID;
   }
-
-  public function loadNodeModels(nodeList:Array):Boolean {
-    var reloadNecessary:Boolean = false;
-    nodeList.forEach(function (node:TreeModel):void {
-      var category:RemoteBean = getNodeModel(node.getId()) as RemoteBean;
-
-      //" " is used as a placeholder text, for an entirely empty String the folder would show "Root" as text.
-      //we check for loaded content that still has placeholder data shown, in that case we need to manually trigger "reload" of the tree
-      if (category.isLoaded() && node.data.text === " ") {
-        reloadNecessary = true;
-      } else {
-        category.load();
-      }
-    });
-
-    return !reloadNecessary;
-  }
-
-
-  public function setEmptyNodeChildData(childId:String, textsByChildId:Object, iconsByChildId:Object, clsByChildId:Object, leafByChildId:Object, qtipsByChildId:Object):void {
-    textsByChildId[childId] = " ";
-    iconsByChildId[childId] = ResourceManager.getInstance().getString('com.coremedia.icons.CoreIcons', "tree_view_spinner") + " "  + "cm-spin";
-  }
-
-  internal function getSortCategoriesByName():* {
-    return editorContext.getPreferences().get(CatalogPreferencesBase.SORT_CATEGORIES_BY_NAME_KEY);
-  }
-
 }
 }

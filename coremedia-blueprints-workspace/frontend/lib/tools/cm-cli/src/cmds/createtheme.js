@@ -19,7 +19,7 @@ const {
   sortChoices,
 } = require("../lib/output");
 
-const command = "create-theme [name]";
+const command = "create-theme <name>";
 const desc = "Create a new CoreMedia theme";
 const builder = yargs =>
   yargs
@@ -45,10 +45,24 @@ const handler = ({ name, verbose }) => {
     process.exit(1);
   }
 
+  const themeName = convertModuleName(name);
+  if (!themeName) {
+    log.error(
+      "No valid theme name was provided. Only lowercase characters (a-z), numbers (0-9) and hyphens (-) are allowed. Please try again."
+    );
+    process.exit(1);
+  }
+
+  const themePath = path.join(wsConfig.themesPath, `${themeName}-theme`);
+  if (isModuleNameInUse(themePath)) {
+    log.error(
+      `The theme "${themeName}" already exists. Please choose another name.`
+    );
+    process.exit(1);
+  }
+
   const availableBricks = getAvailableBricks();
   const availableThemes = getAvailableThemes();
-  let themeName ="";
-  let themePath ="";
   let themeToDeriveFrom = "";
   let dependenciesToActivate = {};
   let dependenciesToCommentOut = availableBricks;
@@ -94,7 +108,7 @@ const handler = ({ name, verbose }) => {
           type: "checkbox",
           pageSize: 20,
           name: "chosenBricks",
-          message: "Which bricks should be activated?",
+          message: "Which bricks should be activated:",
           choices: brickChoices,
           default: [],
         },
@@ -152,67 +166,20 @@ const handler = ({ name, verbose }) => {
       });
   };
 
-  const askToDerive = () => {
-    inquirer
-      .prompt({
-        type: "confirm",
-        name: "deriveFromTheme",
-        message: "Do you want to derive the theme from another theme?",
-        default: false,
-      })
-      .then(({ deriveFromTheme }) => {
-        if (deriveFromTheme) {
-          askForThemes();
-        } else {
-          askForBricks();
-        }
-      });
-  };
-
-  const setPath = (newName) => {
-    themePath = path.join(wsConfig.themesPath, `${newName}-theme`);
-    if (isModuleNameInUse(themePath)) {
-      log.error(
-        `The theme "${newName}" already exists. Please choose another name.`
-      );
-      getName();
-    } else {
-      askToDerive();
-    }
-  };
-
-  const getName = () => {
-    inquirer
-      .prompt([
-        {
-          type: "string",
-          name: "chosenName",
-          message: "How should the theme be named?",
-        },
-      ])
-      .then(({ chosenName }) => {
-        if (!chosenName) {
-          log.error(
-            `The theme name must not be empty.`
-          );
-          getName();
-        } else {
-          themeName = chosenName;
-          setPath(chosenName);
-        }
-      });
-  };
-
-  // starting cli prompts
-
-  themeName = convertModuleName(name);
-
-  if (!themeName) {
-    getName();
-  } else {
-    setPath(themeName);
-  }
-
+  inquirer
+    .prompt({
+      type: "confirm",
+      name: "deriveFromTheme",
+      message: "Do you want to derive the theme from another theme?",
+      default: false,
+    })
+    .then(({ deriveFromTheme }) => {
+      if (deriveFromTheme) {
+        askForThemes();
+      } else {
+        askForBricks();
+      }
+    });
 };
 
 module.exports = {

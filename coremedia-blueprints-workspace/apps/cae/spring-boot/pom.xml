@@ -76,7 +76,6 @@
               <!-- spring profile for local development, activates application-local.properties -->
               <profile>local</profile>
               <profile>dev</profile>
-              <profile>disableDataViews</profile>
             </profiles>
             <!--
              | DO NOT USE jvmArguments, the spring boot plugin will then fork a VM, which is not possible on Windows

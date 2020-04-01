@@ -38,11 +38,11 @@ class RSSContentHubAdapter implements ContentHubAdapter {
   private final SyndFeed feed;
   private final RSSColumnProvider columnProvider;
 
-  RSSContentHubAdapter(@NonNull RSSContentHubSettings settings, @NonNull String connectionId) {
+  RSSContentHubAdapter(RSSContentHubSettings settings, String connectionId) {
     this.settings = settings;
     this.connectionId = connectionId;
     columnProvider = new RSSColumnProvider();
-    String url = settings.getUrl();
+    String url = settings!=null ? settings.getUrl() : null;
     if (url == null) {
       String msg = "Error reading url for RSS stream with id:" + connectionId;
       LOGGER.error(msg);

@@ -145,4 +145,6 @@
     <property name="sitesService" ref="sitesService"/>
   </bean>
 
+  <customize:replace id="contentFeederServiceInfoManager" bean="serviceInfoManager" property="serviceType"
+                     custom-value="content-feeder"/>
 </beans>

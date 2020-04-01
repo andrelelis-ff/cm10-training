@@ -48,7 +48,7 @@ class YouTubeContentHubAdapter implements ContentHubAdapter, ContentHubSearchSer
   private final YouTubeConnector youTubeConnector;
   private final ContentHubObjectId rootId;
 
-  YouTubeContentHubAdapter(@NonNull YouTubeContentHubSettings settings, @NonNull String connectionId) {
+  YouTubeContentHubAdapter(YouTubeContentHubSettings settings, String connectionId) {
     this.settings = settings;
     this.connectionId = connectionId;
     rootId = new ContentHubObjectId(connectionId, connectionId);
@@ -56,7 +56,10 @@ class YouTubeContentHubAdapter implements ContentHubAdapter, ContentHubSearchSer
 
     try {
       List<String> scopes = Lists.newArrayList(HTTPS_WWW_GOOGLEAPIS_COM_AUTH_YOUTUBE_FORCE_SSL);
-      String credentialsJson = settings.getCredentialsJson();
+      String credentialsJson = null;
+      if (settings != null) {
+        credentialsJson = settings.getCredentialsJson();
+      }
       if (credentialsJson == null || credentialsJson.length() == 0) {
         throw new ContentHubException("No credentialsJson found for youtube adapter '" + connectionId + "'");
       }
@@ -97,11 +100,7 @@ class YouTubeContentHubAdapter implements ContentHubAdapter, ContentHubSearchSer
   @Nullable
   @Override
   public Folder getFolder(@NonNull ContentHubContext context, @NonNull ContentHubObjectId id) throws ContentHubException {
-    if(id.getExternalId().equals(connectionId)){
-      return getRootFolder(context);
-    } else {
-      return getYouTubeFolder(youTubeConnector.getPlayListById(id.getExternalId()));
-    }
+    return getRootFolder(context);
   }
 
   @NonNull
@@ -133,13 +132,14 @@ class YouTubeContentHubAdapter implements ContentHubAdapter, ContentHubSearchSer
     if (rootId.equals(folder.getId())) {
       List<Playlist> playLists = getPlaylists();
       int counter = 0;
-      for (Playlist playlist : playLists) {
+      for (Playlist list : playLists) {
         //in order to prevent performance issues, only deliver 1000 items max!
         if (counter == 1000) {
           break;
         }
-        Folder playListFolder = getYouTubeFolder(playlist);
-        result.add(playListFolder);
+        ContentHubObjectId categoryId = new ContentHubObjectId(connectionId, list.getId());
+        YouTubeFolder channel = new YouTubeFolder(categoryId, list);
+        result.add(channel);
         counter++;
       }
     }
@@ -265,11 +265,6 @@ class YouTubeContentHubAdapter implements ContentHubAdapter, ContentHubSearchSer
     }
 
     return Collections.emptyList();
-  }
-
-  private Folder getYouTubeFolder(Playlist list) {
-    ContentHubObjectId categoryId = new ContentHubObjectId(connectionId, list.getId());
-    return new YouTubeFolder(categoryId, list);
   }
 
   @NonNull

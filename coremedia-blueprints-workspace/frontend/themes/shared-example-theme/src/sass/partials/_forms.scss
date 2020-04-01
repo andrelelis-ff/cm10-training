@@ -6,6 +6,8 @@ input {
 }
 
 .cm-form {
+  padding: 0 $cm-standard-spacing;
+
   @include breakpoint("sm-and-up") {
     padding: 0;
   }

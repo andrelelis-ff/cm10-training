@@ -353,14 +353,11 @@ services:
     labels:
       traefik.enable: "true"
       traefik.actuator.port: "8081"
-      traefik.frontend.headers.SSLRedirect: "false"
-      traefik.preview-test.frontend.rule: Host:headless-server-preview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefix:/
       traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/headless-server-preview;AddPrefix:/actuator
       # one rule fits all for dev environments (overide of rule in default.yml)
       traefik.caas.frontend.rule: Host:headless-server-preview.${ENVIRONMENT_FQDN:-docker.localhost}
     volumes:
       - heapdumps:/coremedia/heapdumps
-
   headless-server-live:
     ports:
       - 41280:8080
@@ -380,8 +377,6 @@ services:
     labels:
       traefik.enable: "true"
       traefik.actuator.port: "8081"
-      traefik.frontend.headers.SSLRedirect: "false"
-      traefik.live-test.frontend.rule: Host:headless-server-live.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefix:/
       traefik.actuator.frontend.rule: Host:overview.${ENVIRONMENT_FQDN:-docker.localhost};PathPrefixStrip:/headless-server-live;AddPrefix:/actuator
       # one rule fits all for dev environments (overide of rule in default.yml)
       traefik.caas.frontend.rule: Host:headless-server-live.${ENVIRONMENT_FQDN:-docker.localhost}

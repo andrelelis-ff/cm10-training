@@ -17,18 +17,6 @@
   & .cm-button {
     @extend .cm-cta-button;
   }
-
-  @include breakpoint("sm-and-up") {
-    &--userdetails,
-    &--userdetailsform,
-    &--login,
-    &--registration,
-    &--reset,
-    &--resetpassword {
-      width: 600px;
-      margin: 0 auto;
-    }
-  }
 }
 
 // comments

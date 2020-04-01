@@ -26,7 +26,7 @@ export function detectDeviceType() {
   return window
     .getComputedStyle(document.body, ":after")
     .getPropertyValue("content")
-    .replace(/['"]/g, "");
+    .replace(/\'|\"/g, "");
 }
 
 /**
@@ -37,7 +37,7 @@ export function detectDeviceOrientation() {
   return window
     .getComputedStyle(document.body, ":before")
     .getPropertyValue("content")
-    .replace(/['"]/g, "");
+    .replace(/\'|\"/g, "");
 }
 
 /**
@@ -45,7 +45,7 @@ export function detectDeviceOrientation() {
  * @returns {boolean} true if touch device otherwise false
  */
 export function isTouchDevice() {
-  return "ontouchstart" in window || navigator.msMaxTouchPoints > 0;
+  return "ontouchstart" in window || navigator.msMaxTouchPoints;
 }
 
 /**

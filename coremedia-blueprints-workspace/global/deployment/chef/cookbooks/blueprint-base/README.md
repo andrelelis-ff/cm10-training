@@ -110,13 +110,13 @@ Use this cookbook with care and only put things in here if they don't fit anywhe
 * `node['blueprint']['apps']['commerce-adapter-mock']['version']` -  Defaults to `1.2.5`.
 * `node['blueprint']['apps']['commerce-adapter-hybris']['group_id']` -  Defaults to `com.coremedia.commerce.adapter.hybris`.
 * `node['blueprint']['apps']['commerce-adapter-hybris']['artifact_id']` -  Defaults to `adapter-hybris-app`.
-* `node['blueprint']['apps']['commerce-adapter-hybris']['version']` -  Defaults to `1.1.12`.
+* `node['blueprint']['apps']['commerce-adapter-hybris']['version']` -  Defaults to `1.1.7`.
 * `node['blueprint']['apps']['commerce-adapter-sfcc']['group_id']` -  Defaults to `com.coremedia.commerce.adapter.sfcc`.
 * `node['blueprint']['apps']['commerce-adapter-sfcc']['artifact_id']` -  Defaults to `adapter-sfcc-app`.
-* `node['blueprint']['apps']['commerce-adapter-sfcc']['version']` -  Defaults to `1.1.10`.
+* `node['blueprint']['apps']['commerce-adapter-sfcc']['version']` -  Defaults to `1.1.7`.
 * `node['blueprint']['apps']['commerce-adapter-wcs']['group_id']` -  Defaults to `com.coremedia.commerce.adapter.wcs`.
 * `node['blueprint']['apps']['commerce-adapter-wcs']['artifact_id']` -  Defaults to `adapter-wcs-app`.
-* `node['blueprint']['apps']['commerce-adapter-wcs']['version']` -  Defaults to `1.2.9`.
+* `node['blueprint']['apps']['commerce-adapter-wcs']['version']` -  Defaults to `1.2.5`.
 * `node['blueprint']['solr']['config_zip_version']` -  Defaults to `node['blueprint']['default_version']`.
 * `node['blueprint']['tools']['content-management-server']['group_id']` -  Defaults to `com.coremedia.blueprint`.
 * `node['blueprint']['tools']['content-management-server']['artifact_id']` -  Defaults to `cms-tools-application`.

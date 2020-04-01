@@ -164,10 +164,6 @@
       <artifactId>springfox-swagger-ui</artifactId>
       <scope>runtime</scope>
     </dependency>
-    <dependency>
-      <groupId>commons-io</groupId>
-      <artifactId>commons-io</artifactId>
-    </dependency>
     <!-- to embed GraphiQL tool -->
     <dependency>
       <groupId>com.graphql-java-kickstart</groupId>

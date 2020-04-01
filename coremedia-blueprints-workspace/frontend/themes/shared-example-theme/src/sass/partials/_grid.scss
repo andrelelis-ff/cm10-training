@@ -73,13 +73,6 @@
     @include cm-grid-container();
   }
 
-  // full width for hero and carousel on mobile
-
-  .cm-placement--hero {
-    @include breakpoint("xs") {
-      width: 100%;
-    }
-  }
 
   // there is no margin between footer-navigation and footer
   .cm-placement--footer-navigation + .cm-placement--footer {

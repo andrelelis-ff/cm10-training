@@ -14,7 +14,6 @@
   </fx:Metadata>
   <fx:Script><![CDATA[
     import com.coremedia.blueprint.studio.TeaserOverlayConstants;
-    import com.coremedia.cms.editor.sdk.premular.fields.teaser.TeaserOverlayPropertyFieldBase;
 
     public static const xtype:String = "com.coremedia.blueprint.studio.config.teaserDocumentForm";
 
@@ -35,18 +34,7 @@
                                        initialHeight="100"
                                        itemId="teaserText"
                                        settingsPath="{TeaserOverlayConstants.DEFAULT_SETTINGS_PATH}"
-                                       styleDescriptorFolderPaths="{TeaserOverlayConstants.DEFAULT_STYLE_DESCRIPTOR_FOLDER_PATHS}">
-      <editor:plugins exml:mode="append">
-        <editor:ShowIssuesPlugin
-                bindTo="{config.bindTo}"
-                propertyName="teaserText"
-                statefulSubComponentsFunction="{
-            function():Array {
-              return [queryById(TeaserOverlayPropertyField.TEASER_OVERLAY_RICHTEXT_ITEM_ID)]
-            }
-          }"/>
-      </editor:plugins>
-    </editor:TeaserOverlayPropertyField>
+                                       styleDescriptorFolderPaths="{TeaserOverlayConstants.DEFAULT_STYLE_DESCRIPTOR_FOLDER_PATHS}"/>
     <bpforms:TeaserSettingsPropertyFieldGroup/>
   </local:items>
 

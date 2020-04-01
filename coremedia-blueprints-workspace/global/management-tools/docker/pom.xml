@@ -30,7 +30,7 @@
     <docker.tools-base-image.repo>coremedia/java-application-base</docker.tools-base-image.repo>
     <docker.tools-base-image.tag>2.1.6</docker.tools-base-image.tag>
 
-    <application-plugin.version>2.8.3</application-plugin.version>
+    <application-plugin.version>2.7.10</application-plugin.version>
   </properties>
 
   <modules>
@@ -43,7 +43,20 @@
         <plugin>
           <groupId>com.spotify</groupId>
           <artifactId>dockerfile-maven-plugin</artifactId>
-          <version>1.4.13</version>
+          <version>1.4.4</version>
+          <!-- Workaround for Java 11. See https://github.com/spotify/dockerfile-maven/issues/163 -->
+          <dependencies>
+            <dependency>
+              <groupId>org.codehaus.plexus</groupId>
+              <artifactId>plexus-archiver</artifactId>
+              <version>3.4</version>
+            </dependency>
+            <dependency>
+              <groupId>com.sun.activation</groupId>
+              <artifactId>jakarta.activation</artifactId>
+              <version>1.2.1</version>
+            </dependency>
+          </dependencies>
           <configuration>
             <!--if set to true you cannot build offline-->
             <pullNewerImage>false</pullNewerImage>

@@ -19,7 +19,7 @@
     Prerequisites:
 
     - Download the official Solr distribution,
-      for example from http://archive.apache.org/dist/lucene/solr/8.4.1/solr-8.4.1.tgz
+      for example from http://archive.apache.org/dist/lucene/solr/8.4.0/solr-8.4.0.tgz
     - Extract it into a directory of your choice
     - Set the environment variable SOLR_SCRIPT to point to the Solr start/stop script
       in the extracted directory. Choose "bin/solr" for Unix or "bin/solr.cmd" for a Windows shell.

@@ -2,10 +2,13 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:customize="http://www.coremedia.com/2007/coremedia-spring-beans-customization"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                            http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context
-                           http://www.springframework.org/schema/context/spring-context.xsd">
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization
+                           http://www.coremedia.com/2007/coremedia-spring-beans-customization.xsd">
 
   <context:annotation-config/>
 
@@ -29,6 +32,9 @@
       </map>
     </property>
   </bean>
+
+  <customize:replace id="elasticWorkerServiceInfoManager" bean="serviceInfoManager" property="serviceType"
+                     custom-value="elastic-worker"/>
 
   <bean id="contentBeanIdScheme" class="com.coremedia.objectserver.beans.ContentBeanIdScheme">
     <property name="contentBeanFactory">

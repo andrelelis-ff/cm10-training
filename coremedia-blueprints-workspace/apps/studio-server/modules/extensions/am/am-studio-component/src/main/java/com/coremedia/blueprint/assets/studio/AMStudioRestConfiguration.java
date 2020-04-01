@@ -12,12 +12,12 @@ import com.coremedia.rest.cap.config.StudioConfigurationProperties;
 import com.coremedia.rest.cap.configuration.ConfigurationPublisher;
 import com.coremedia.rest.cap.validation.ContentTypeValidator;
 import com.coremedia.springframework.xml.ResourceAwareXmlBeanDefinitionReader;
-import edu.umd.cs.findbugs.annotations.NonNull;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.ImportResource;
+import org.springframework.lang.NonNull;
 
 import java.util.Collections;
 

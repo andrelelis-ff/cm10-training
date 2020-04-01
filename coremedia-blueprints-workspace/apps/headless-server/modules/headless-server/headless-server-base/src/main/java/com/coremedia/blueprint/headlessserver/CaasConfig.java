@@ -104,7 +104,6 @@ import graphql.schema.idl.TypeDefinitionRegistry;
 import graphql.schema.idl.WiringFactory;
 import graphql.spring.web.servlet.ExecutionResultHandler;
 import graphql.spring.web.servlet.GraphQLInvocation;
-import org.apache.commons.io.IOUtils;
 import org.apache.solr.client.solrj.SolrClient;
 import org.dataloader.BatchLoaderEnvironment;
 import org.dataloader.BatchLoaderWithContext;
@@ -630,9 +629,9 @@ public class CaasConfig implements WebMvcConfigurer {
   }
 
   @Bean
-  public PersistedQueriesLoader persistedQueriesLoader(@Value("${caas.persisted-queries.query-resources-pattern:classpath*:graphql/queries/*.graphql}") String queryResourcesPattern,
-                                                       @Value("${caas.persisted-queries.query-resources-map-pattern.apollo:classpath*:graphql/queries/apollo*.json}") String apolloQueryMapResourcesPattern,
-                                                       @Value("${caas.persisted-queries.query-resources-map-pattern.relay:classpath*:graphql/queries/relay*.json}") String relayQueryMapResourcesPattern,
+  public PersistedQueriesLoader persistedQueriesLoader(@Value("${caas.persisted-queries.query-resources-pattern:classpath:graphql/queries/*.graphql}") String queryResourcesPattern,
+                                                       @Value("${caas.persisted-queries.query-resources-map-pattern.apollo:classpath:graphql/queries/apollo*.json}") String apolloQueryMapResourcesPattern,
+                                                       @Value("${caas.persisted-queries.query-resources-map-pattern.relay:classpath:graphql/queries/relay*.json}") String relayQueryMapResourcesPattern,
                                                        @Value("${caas.persisted-queries.query-resources-exclude-pattern:.*Fragment(s)?.graphql}") String excludeFileNamePattern) {
     return new DefaultPersistedQueriesLoader(queryResourcesPattern,
             apolloQueryMapResourcesPattern,
@@ -694,13 +693,14 @@ public class CaasConfig implements WebMvcConfigurer {
           throws IOException {
     SchemaParser schemaParser = new SchemaParser();
     PathMatchingResourcePatternResolver loader = new PathMatchingResourcePatternResolver();
-    StringBuilder stringBuilder = new StringBuilder();
+    var typeRegistry = new TypeDefinitionRegistry();
     for (var resource : loader.getResources("classpath*:*-schema.graphql")) {
       LOG.info("merging GraphQL schema {}", resource.getURI());
       InputStreamReader in = new InputStreamReader(resource.getInputStream());
-      stringBuilder.append(IOUtils.toString(in));
+      TypeDefinitionRegistry newRegistry = schemaParser.parse(in);
+      typeRegistry.merge(newRegistry);
     }
-    return schemaParser.parse(stringBuilder.toString());
+    return typeRegistry;
   }
 
   @Bean

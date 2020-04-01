@@ -80,12 +80,3 @@
     }
   }
 }
-
-/* full width for carousel on mobile */
-.cm-carousel-banner-container {
-  @include breakpoint("xs") {
-    margin: 0 -$cm-standard-spacing;
-    width: auto;
-  }
-}
-

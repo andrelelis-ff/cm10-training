@@ -2,8 +2,8 @@ package com.coremedia.ecommerce.studio {
 
 import com.coremedia.ecommerce.studio.components.repository.CatalogRepositoryListTest;
 import com.coremedia.ecommerce.studio.components.tree.AugmentedCategoryTreeRelationTest;
+import com.coremedia.ecommerce.studio.components.tree.CatalogTreeModelTest;
 import com.coremedia.ecommerce.studio.components.tree.ShowInLibraryHelperTest;
-import com.coremedia.ecommerce.studio.components.tree.impl.CatalogTreeModelTest;
 import com.coremedia.ecommerce.studio.helper.CatalogHelperTest;
 
 import flexunit.framework.TestSuite;

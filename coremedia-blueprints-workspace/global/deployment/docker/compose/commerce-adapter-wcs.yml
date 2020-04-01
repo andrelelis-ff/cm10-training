@@ -8,10 +8,6 @@ x-development-boot-envs:
   JAVA_DEBUG_SUSPEND: "${JAVA_DEBUG_SUSPEND:-false}"
   # enable entrypoint debugging i.e. set -x
   DEBUG_ENTRYPOINT: "${DEBUG_ENTRYPOINT:-false}"
-  JAVA_HEAP: '128m'
-  # writes heapdumps to /coremedia/heapdumps on oom exceptions. restart the container or mount a volume to
-  # that directory to inspect the heapdumps
-  HEAP_DUMP_ON_OOM: "${HEAP_DUMP_ON_OOM:-true}"
 
 # default logging configuration
 x-logging:
@@ -23,7 +19,7 @@ x-logging:
 
 services:
   commerce-adapter-wcs:
-    image: ${COMMERCE_REPOSITORY_PREFIX:-coremedia}/commerce-adapter-wcs:${COMMERCE_ADAPTER_WCS_VERSION:-1.2.9}
+    image: ${COMMERCE_REPOSITORY_PREFIX:-coremedia}/commerce-adapter-wcs:${COMMERCE_ADAPTER_WCS_VERSION:-1.2.5}
     container_name: commerce-adapter-wcs
     restart: always
     logging: *default-logging

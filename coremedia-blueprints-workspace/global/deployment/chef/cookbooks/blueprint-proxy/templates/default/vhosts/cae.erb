@@ -38,8 +38,6 @@
   <%- end -%>
   # Send empty URL to default site home page
   RewriteRule ^/$ /<%= @servlet_context %>/servlet/<%= @default_site %> [R=302,L]
-  RewriteRule ^/+internal/preview/previewurl - [PT,L]
-  RewriteRule ^/<%= @servlet_context %>/+servlet/+internal/preview/previewurl - [PT,L]
   RewriteRule ^/<%= @servlet_context %>/+servlet/+internal/(.*) - [F,PT,L]
   RewriteRule ^/+internal/(.*) - [F,PT,L]
 

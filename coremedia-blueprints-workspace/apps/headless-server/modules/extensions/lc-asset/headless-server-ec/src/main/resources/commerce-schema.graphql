@@ -108,37 +108,6 @@ interface ProductVariant @inherit(from: ["Product"]) {
   parent: Product
 }
 
-interface CMAbstractCategory @inherit(from: ["CMChannel"]) {
-  externalId: String
-  pdpPagegrid: PageGrid
-}
-
-
-interface CMProductList @inherit(from: ["CMQueryList"]) {
-  category: Category
-  productItems: [Product]
-  externalId: String
-}
-
-interface CMExternalPage  @inherit(from: ["CMChannel"]) {
-  externalUriPath: String
-  externalId: String
-}
-
-interface CMProductTeaser @inherit(from: ["CMTeasable"]) {
-  externalId: String
-  product: Product
-}
-
-interface CMExternalProduct @inherit(from: ["CMTeasable"]) {
-  externalId: String
-  pdpPagegrid :PageGrid
-}
-
-interface CMExternalChannel @inherit(from: ["CMAbstractCategory"]) {
-  category: Category
-}
-
 type CommerceBeanImpl implements CommerceBean {
   externalId: String @fetch(from: "@commerceFacade.getExternalId(#this)")
   externalTechId: String
@@ -171,6 +140,10 @@ type CategoryImpl implements Category, HasPageGrid @inherit(from: ["CommerceBean
   externalChannel: CMExternalChannel @fetch(from: "@categoryAugmentationService.getContent(#this)")
   grid: PageGrid  @fetch(from: "@categoryPageGridAdapter.to(#this)")
 }
+
+extend interface HasPageGrid {}
+extend interface Banner {}
+extend interface CollectionItem {}
 
 type ProductImpl implements Product, Banner, CollectionItem, HasPageGrid @inherit(from: ["CommerceBeanImpl"]) {
   name: String @fetch(from: "getName()")
@@ -240,38 +213,37 @@ type CatalogPicture {
   picture: CMPicture
 }
 
-type CMAbstractCategoryImpl implements CMAbstractCategory @inherit(from: ["CMChannelImpl"]) {
-  externalId: String
-  pdpPagegrid: PageGrid @fetch(from: "@pageGridAdapter.to(#root,'pdpPagegrid')")
+extend interface CMProductList  {
+  category: Category
+  productItems: [Product]
 }
 
-type CMProductListImpl implements CMProductList @inherit(from: ["CMQueryListImpl"]) {
-  externalId: String
-  items: [CollectionItem] @fetch(from: "@productListAdapter.to(#root).getItems()")
-  teasableItems: [CMTeasable] @fetch(from: "@productListAdapter.to(#root).getFixedItems()")
-  bannerItems: [Banner]  @fetch(from: "@productListAdapter.to(#root).getItems()")
+extend type CMProductListImpl {
   category: Category @fetch(from: "@commerceFacade.getCategory(#this.externalId, @sitesService.getContentSiteAspect(#this).site?.id)")
   productItems: [Product] @fetch(from: "@productListAdapter.to(#root).getProducts()")
 }
 
-type CMExternalPageImpl implements CMExternalPage @inherit(from: ["CMChannelImpl"]) {
-  externalUriPath: String
-  externalId: String
+extend interface CMExternalChannel {
+  category: Category
 }
 
-type CMProductTeaserImpl implements CMProductTeaser @inherit(from: ["CMTeasableImpl"]) {
-  externalId: String
+extend type CMExternalChannelImpl {
+  category: Category @fetch(from: "@commerceFacade.getCategory(#this.externalId, @sitesService.getContentSiteAspect(#this).site?.id)")
+}
+
+extend interface CMProductTeaser {
+  product: Product
+}
+
+extend type CMProductTeaserImpl {
   product: Product @fetch(from: "@commerceFacade.getProduct(#this.externalId, @sitesService.getContentSiteAspect(#this).site?.id)")
   teaserTitle: String @fetch(from: "teaserTitle?:@commerceFacade.getProduct(#this.externalId, @sitesService.getContentSiteAspect(#this).site?.id)?.name")
 }
 
-type CMExternalProductImpl implements CMExternalProduct @inherit(from: ["CMTeasableImpl"]) {
-  externalId: String
-  pdpPagegrid :PageGrid @fetch(from: "@pageGridAdapter.to(#root,'pdpPagegrid')")
-  product: Product @fetch(from: "@commerceFacade.getProduct(#this.externalId, @sitesService.getContentSiteAspect(#this).site?.id)")
+extend interface CMExternalProduct {
+  product: Product
 }
 
-type CMExternalChannelImpl implements CMExternalChannel @inherit(from: ["CMAbstractCategoryImpl"]) {
-  externalId: String
-  category: Category @fetch(from: "@commerceFacade.getCategory(#this.externalId, @sitesService.getContentSiteAspect(#this).site?.id)")
+extend type CMExternalProductImpl {
+  product: Product @fetch(from: "@commerceFacade.getProduct(#this.externalId, @sitesService.getContentSiteAspect(#this).site?.id)")
 }
