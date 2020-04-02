@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<componentPackage>
+  <component class="com.coremedia.blueprint.studio.prj.PRJStudioPlugin"/>
+  <component class="com.coremedia.blueprint.studio.prj.containers.SourcesForm"/>
+</componentPackage>

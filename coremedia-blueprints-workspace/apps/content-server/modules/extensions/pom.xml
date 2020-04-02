@@ -19,6 +19,7 @@
     <module>es</module>
     <module>lc</module>
     <module>p13n</module>
+    <module>prj</module>
   </modules>
 
 </project>

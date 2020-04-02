@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.coremedia.blueprint</groupId>
+    <artifactId>studio-client.prj</artifactId>
+    <version>1-SNAPSHOT</version>
+  </parent>
+  <artifactId>prj-studio</artifactId>
+  <packaging>swc</packaging>
+  <properties>
+    <coremedia.project.extension.for>studio-dynamic</coremedia.project.extension.for>
+  </properties>
+  <dependencies>
+    <!-- dependencies left out - add from sample source or while developing code -->
+  </dependencies>
+  <build>
+    <resources>
+      <resource>
+        <directory>target/generated-resources</directory>
+      </resource>
+    </resources>
+    <plugins>
+      <plugin>
+        <groupId>net.jangaroo</groupId>
+        <artifactId>jangaroo-maven-plugin</artifactId>
+        <version>${jangaroo.version}</version>
+        <extensions>true</extensions>
+        <configuration>
+          <namespaces>
+            <namespace>
+              <uri>exml:com.coremedia.blueprint.studio.config.prj</uri>
+            </namespace>
+          </namespaces>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DocumentTypeModel xmlns="http://www.coremedia.com/2008/documenttypes" Name="prj-doctypes">
+  <!-- import used grammar -->
+  <ImportGrammar Name="coremedia-struct-2008" />
+  <!-- import used content types -->
+  <ImportDocType Name="CMLinkable" />
+  <!-- add generic struct property to store arbitrary new (non-translatable) properties for linkables -->
+  <DocTypeAspect TargetType="CMLinkable">
+    <XmlProperty Name="prjExtendedFields" Grammar="coremedia-struct-2008" />
+  </DocTypeAspect>
+</DocumentTypeModel>
