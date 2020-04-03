@@ -1,19 +1,17 @@
 package com.coremedia.blueprint.cae.contentbeans;
 
-import com.coremedia.blueprint.common.contentbeans.CMContext;
-import com.coremedia.blueprint.common.contentbeans.CMNavigation;
-import com.coremedia.blueprint.common.contentbeans.CMSettings;
-import com.coremedia.blueprint.common.contentbeans.CMViewtype;
+import com.coremedia.blueprint.common.contentbeans.*;
 import com.coremedia.blueprint.common.navigation.Navigation;
+import com.coremedia.cap.common.InvalidPropertyValueException;
+import com.coremedia.cap.common.NoSuchPropertyDescriptorException;
+import com.coremedia.cap.content.Content;
 import com.coremedia.cap.struct.Struct;
 import com.coremedia.cap.struct.StructBuilder;
 import com.coremedia.cap.struct.StructBuilderMode;
+import com.coremedia.objectserver.beans.UnexpectedBeanTypeException;
 import org.springframework.util.StringUtils;
 
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Generated extension class for immutable beans of document type "CMLinkable".
@@ -70,5 +68,39 @@ public abstract class CMLinkableImpl extends CMLinkableBase {
   @Override
   public boolean isOpenInNewTab() {
     return false;
+  }
+
+  /**
+   * {@inheritDoc}
+   */
+  @Override
+  public Struct getPRJExtendedFields() {
+    Struct struct = getContent().getStruct(PRJ_EXTENDED_FIELDS);
+    return struct != null ? struct : getContent().getRepository().getConnection().getStructService().
+            emptyStruct();
+  }
+
+  /**
+   * {@inheritDoc}
+   * <br/>
+   * If an error is encountered at some point of reading the list of sources, only a list with partial, up-to-now
+   * results is returned.
+   */
+  @Override
+  public List<CMSymbol> getSources() {
+    List<CMSymbol> sourceDocuments = new ArrayList<>();
+    Struct prjExtendedFields = getPRJExtendedFields();
+    try {
+      List<Struct> sources = prjExtendedFields.getStructs(SOURCES_STRUCT_PROPERTY);
+      for (Struct source : sources) {
+        Content sourceContent = source.getLink(LINK_STRUCT_PROPERTY);
+        sourceDocuments.add(getContentBeanFactory().createBeanFor(sourceContent, CMSymbol.class));
+      }
+    } catch (NoSuchPropertyDescriptorException e) {
+      // no error, simply no sources edited
+    } catch (InvalidPropertyValueException | UnexpectedBeanTypeException e) {
+      //LOG.warn("unexpected value at struct property {}.{} for document id {}", PRJ_EXTENDED_FIELDS, SOURCES_STRUCT_PROPERTY, getContentId());
+    }
+    return sourceDocuments;
   }
 }

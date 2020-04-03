@@ -403,4 +403,30 @@ public interface CMLinkable extends Linkable, CMLocalized, BelowRootNavigation, 
    * @cm.template.api
    */
   boolean isOpenInNewTab();
+
+
+  /**
+   * Name of the document property 'prjExtendedFields'.
+   */
+  String PRJ_EXTENDED_FIELDS = "prjExtendedFields";
+  /**
+   * Return extended fields as a Struct.
+   *
+   * @return extended fields. May return null, if no settings are found.
+   */
+  Struct getPRJExtendedFields();
+  /**
+   * {@link #getPRJExtendedFields() Extended field's} struct property for sources list.
+   */
+  String SOURCES_STRUCT_PROPERTY = "sources";
+  /**
+   * {@link #getPRJExtendedFields() Extended field's} struct property for source links (below
+   * {@link #SOURCES_STRUCT_PROPERTY}).
+   */
+  String LINK_STRUCT_PROPERTY = "link";
+  /**
+   * Returns the linked sources.
+   * @cm.template.api
+   */
+  List<CMSymbol> getSources();
 }
