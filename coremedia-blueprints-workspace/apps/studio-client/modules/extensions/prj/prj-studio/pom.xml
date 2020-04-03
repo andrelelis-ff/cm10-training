@@ -13,7 +13,23 @@
     <coremedia.project.extension.for>studio-dynamic</coremedia.project.extension.for>
   </properties>
   <dependencies>
-    <!-- dependencies left out - add from sample source or while developing code -->
+    <dependency>
+      <groupId>com.coremedia.blueprint.base</groupId>
+      <artifactId>bpbase-studio-components</artifactId>
+      <type>swc</type>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>blueprint-forms</artifactId>
+      <version>${project.version}</version>
+      <type>swc</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>editor-components</artifactId>
+      <type>swc</type>
+    </dependency>
   </dependencies>
   <build>
     <resources>

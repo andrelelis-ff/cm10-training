@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <local:SourcesFormBase xmlns:fx="http://ns.adobe.com/mxml/2009"
-   xmlns:exml="http://www.jangaroo.net/exml/0.8"
-   xmlns="exml:ext.config"
-   xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
-   xmlns:local="com.coremedia.blueprint.studio.prj.containers.*"
-   title="{ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.prj.PRJStudio', 'SourcesGroup_label')}"
-   itemId="sourcesForm">
-   <fx:Metadata>
+                       xmlns:exml="http://www.jangaroo.net/exml/0.8"
+                       xmlns="exml:ext.config"
+                       xmlns:editor="exml:com.coremedia.cms.editor.sdk.config"
+                       xmlns:local="com.coremedia.blueprint.studio.prj.containers.*"
+                       title="{ResourceManager.getInstance().getString('com.coremedia.blueprint.studio.prj.PRJStudio', 'SourcesGroup_label')}"
+                       itemId="sourcesForm">
+  <fx:Metadata>
     [ResourceBundle('com.coremedia.blueprint.studio.prj.PRJStudio')]
-   </fx:Metadata>
-   <fx:Script><![CDATA[
-   import mx.resources.ResourceManager;
-   public static const xtype:String = "com.coremedia.blueprint.studio.config.prj.sourcesForm";
-   private var config:SourcesForm;
-   public native function SourcesForm(config:SourcesForm = null);
-   ]]></fx:Script>
-   <local:items>
-     <editor:LinkListPropertyField propertyName="{FULL_PROPERTY_NAME}"
-     linkType="{LINK_TYPE_NAME}"
-     linkListWrapper="{getStructContentLinkListWrapper(config)}"/>
-   </local:items>
+  </fx:Metadata>
+  <fx:Script><![CDATA[
+    import mx.resources.ResourceManager;
+    public static const xtype:String = "com.coremedia.blueprint.studio.config.prj.sourcesForm";
+    private var config:SourcesForm;
+    public native function SourcesForm(config:SourcesForm = null);
+    ]]></fx:Script>
+  <local:items>
+    <editor:LinkListPropertyField propertyName="{FULL_PROPERTY_NAME}"
+                                  linkType="{LINK_TYPE_NAME}"
+                                  linkListWrapper="{getStructContentLinkListWrapper(config)}"/>
+  </local:items>
 </local:SourcesFormBase>
