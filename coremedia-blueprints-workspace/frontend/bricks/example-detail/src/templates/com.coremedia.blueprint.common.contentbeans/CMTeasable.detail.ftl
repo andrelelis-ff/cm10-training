@@ -53,6 +53,12 @@
     <@cm.include self=self view="_related" params={"relatedView": relatedView, "additionalClass": "${blockClass}__related"}/>
   </#if>
 
+  <#-- BEGIN modification for extension prj -->
+  <#if self.sources?has_content>
+    <div>Source: ${self.sources[0].description}</div>
+  </#if>
+
+  <#-- END modification for extension prj -->
   <#-- extensions -->
   <@cm.hook id=bp.viewHookEventNames.VIEW_HOOK_END />
 </div>

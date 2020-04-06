@@ -30,6 +30,7 @@
       <artifactId>editor-components</artifactId>
       <type>swc</type>
     </dependency>
+
   </dependencies>
   <build>
     <resources>
