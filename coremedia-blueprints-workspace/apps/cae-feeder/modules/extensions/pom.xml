@@ -15,6 +15,7 @@
     <module>am</module>
     <module>corporate</module>
     <module>lc</module>
+    <module>prj</module>
   </modules>
 
 </project>
