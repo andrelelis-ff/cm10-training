@@ -48,11 +48,6 @@
         <artifactId>p13n-server</artifactId>
         <version>1-SNAPSHOT</version>
       </dependency>
-      <dependency>
-        <groupId>com.coremedia.blueprint</groupId>
-        <artifactId>prj-server</artifactId>
-        <version>1-SNAPSHOT</version>
-      </dependency>
     </dependencies>
   </dependencyManagement>
 </project>

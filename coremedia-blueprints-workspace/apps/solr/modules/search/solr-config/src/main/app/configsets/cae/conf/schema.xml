@@ -311,4 +311,9 @@
   </fieldType>
   -->
 
+  <!-- BEGIN modification for extension prj -->
+  <!-- Content IDs of linked "sources" -->
+  <field name="sources" type="pint" indexed="true" stored="true" multiValued="true" useDocValuesAsStored="false"/>
+  <!-- END modification for extension prj -->
+
 </schema>

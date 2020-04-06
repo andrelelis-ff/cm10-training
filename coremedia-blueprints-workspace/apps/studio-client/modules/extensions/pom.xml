@@ -33,7 +33,6 @@
     <module>optimizely</module>
     <module>osm</module>
     <module>p13n</module>
-    <module>prj</module>
     <module>taxonomy</module>
     <module>validators</module>
   </modules>

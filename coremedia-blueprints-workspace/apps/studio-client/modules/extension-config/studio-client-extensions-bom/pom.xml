@@ -153,12 +153,6 @@
       </dependency>
       <dependency>
         <groupId>com.coremedia.blueprint</groupId>
-        <artifactId>prj-studio</artifactId>
-        <version>1-SNAPSHOT</version>
-        <type>swc</type>
-      </dependency>
-      <dependency>
-        <groupId>com.coremedia.blueprint</groupId>
         <artifactId>taxonomy-studio</artifactId>
         <version>1-SNAPSHOT</version>
         <type>swc</type>
